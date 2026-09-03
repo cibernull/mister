@@ -119,3 +119,90 @@ adicionales para acotarlo, por ejemplo:
 Estas son desigualdades, no igualdades: acotan, no determinan. Si al final el
 saldo de los rivales solo pudiera acotarse y no calcularse, **hay que decirlo
 explícitamente** en vez de presentar un número aproximado como si fuera exacto.
+
+---
+
+# Investigación del descuadre (2026-09-03, tras cerrar la Fase 1)
+
+## Los presupuestos iniciales NO son iguales para todos
+
+Probado y descartado. Suponiendo que los ocho partieran del mismo saldo que se
+despeja con el propio (11.923.670 €), los saldos calculados en el cierre de la
+jornada 3 dan:
+
+| Equipo | Saldo calculado | ¿Mister lo marca negativo? |
+|---|---|---|
+| Saiyans FC (Fran) | −24.754.070 € | **Sí** ✓ coherente |
+| Mario80 | −12.085.510 € | **No** ✗ **contradicción** |
+
+Si todos hubieran partido de lo mismo, Mario80 también estaría en negativo y
+Mister lo habría marcado. No lo hace. **Cada equipo arrancó con un saldo
+distinto tras el `reset-all`.**
+
+**Consecuencia directa:** el feed permite reconstruir con exactitud *cuánto ha
+variado* el dinero de cada rival, pero **no su saldo absoluto**. Solo el propio
+es conocido, porque Mister lo publica.
+
+## Hallazgo que abre una vía: `other_bids`
+
+Los movimientos de tipo `transfer` incluyen un campo `other_bids` con **las
+pujas perdedoras y su importe exacto**:
+
+```json
+"other_bids": [
+  { "name": "Saiyans FC (Fran)", "bid": 1600000 },
+  { "name": "Mario80",           "bid": 1062020 }
+]
+```
+
+**49 de los 252 movimientos** lo traen. Cada puja demuestra que ese rival tenía
+esa capacidad de gasto en esa fecha, lo que da una **cota inferior** de su saldo.
+Las marcas `negative` de los cierres de jornada dan **cotas superiores**. Con
+suficientes de ambas, el saldo de cada rival queda encajonado.
+
+## Pero las cotas actuales se contradicen
+
+Calculadas con `tope = saldo + 0,25 × valor de plantilla`:
+
+| Equipo | Cota mínima | Cota máxima | |
+|---|---|---|---|
+| Saiyans FC (Fran) | 39.632.740 € | 36.677.740 € | **imposible: se cruzan** |
+| Mario80 | 32.011.400 € | — | |
+| Neky F.C. (Sergio) | 21.211.285 € | — | |
+| Cacaculopedopis | 20.399.725 € | — | |
+| Niutin FC (Isaac) | 7.894.259 € | — | real: 11.923.670 ✓ coherente |
+
+Que la cota mínima de Saiyans supere a su máxima demuestra que **alguna
+suposición del método es falsa**. Candidatas, por orden de probabilidad:
+
+1. **El valor de plantilla usado es el de la jornada anterior**, no el del
+   instante de la puja. El valor cambia con cada fichaje y con las variaciones
+   diarias de mercado, así que el error puede ser de millones. *Es la causa más
+   probable y la más fácil de eliminar.*
+2. **Pujar no exige tener los fondos en ese instante.** Si Mister acepta pujas
+   por encima del tope y las descarta al resolverse, una puja no prueba nada
+   sobre el saldo.
+3. **El coeficiente 0,25 no es universal**: podría depender de reglas de liga o
+   del número de jugadores.
+4. **`payment` no recoge todo el dinero que entra** por una jornada.
+
+## Qué desbloquea esto
+
+**Capturar el valor de plantilla de cada rival a diario.** `/standings` lo
+publica para los ocho equipos, y hoy solo se conoce en los cierres de jornada.
+Con la serie diaria, la causa 1 desaparece y las cotas se estrechan de golpe.
+
+Es un añadido pequeño a la recolección y **debería ser lo primero de la Fase 2**,
+antes de escribir ningún motor contable: sin él, el método de acotación no se
+puede ni evaluar.
+
+## Y el propio presupuesto inicial sigue sin explicarse
+
+11.923.670 € no es una cifra redonda, y debería serlo si el reinicio repartiera
+un presupuesto limpio. Como ahora sabemos que cada equipo arrancó distinto, la
+hipótesis más plausible pasa a ser que **el reinicio conservó algo de la
+temporada anterior** —saldo, o el valor de la plantilla heredada— en vez de
+repartir una cantidad igual para todos.
+
+Eso encajaría con que tres equipos tengan cero compras y aun así plantilla.
+Queda por confirmar.
