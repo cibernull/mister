@@ -32,15 +32,7 @@ const VALOR = new Map()
 for (const j of D.jugadores) VALOR.set(String(j.id), j.valor)
 for (const j of J) VALOR.set(String(j.id), j.valor)
 
-const EQ = [
- {n:'Betico1993',pos:8,pts:25,saldo:44706500,pl:9295000,rep:10419000,ini:39581000,com:0,ven:4000500,pre:1125000},
- {n:'Los tocahuevos C.F ( juanito)',pos:6,pts:67,saldo:21818000,pl:34158000,rep:31407000,ini:18593000,com:0,ven:1000000,pre:2225000},
- {n:'Niutin FC (Isaac)',pos:2,pts:119,saldo:9209955,pl:77386000,rep:33800000,ini:16200000,com:107997495,ven:97733250,pre:3275000,mio:1},
- {n:'Legalize F.C (Victor)',pos:7,pts:48,saldo:17104000,pl:44476000,rep:38225000,ini:11775000,com:0,ven:4029000,pre:1300000},
- {n:'Cacaculopedopis',pos:4,pts:93,saldo:16529646,pl:37177000,rep:19942000,ini:30058000,com:61422844,ven:45594490,pre:2300000},
- {n:'Neky F.C. (Sergio)',pos:1,pts:146,saldo:42285,pl:93660000,rep:31142000,ini:18858000,com:135478325,ven:112112610,pre:4550000},
- {n:'Mario80',pos:3,pts:110,saldo:3871150,pl:75124000,rep:28838000,ini:21162000,com:64304040,ven:43963190,pre:3050000},
- {n:'Saiyans FC (Fran)',pos:5,pts:70,saldo:1115300,pl:81659000,rep:21730000,ini:28270000,com:98059000,ven:68954300,pre:1950000}]
+const EQ = leer('equipos.json')
 EQ.forEach(e => {
   e.tope = e.saldo + .25 * e.pl
   e.corto = e.n.replace(/\s*\(.*\)\s*/, '').trim()
@@ -242,7 +234,7 @@ ${js.map(j => `<tr><td>${esc(j.nombre)}${j.delReparto ? '<span class="et-rep">de
 </tbody></table>${hayReparto ? '<p class="pie">«Del reparto» son los que le tocaron al empezar: no pagó nada por ellos, así que aquí todo lo que cobró cuenta entero. Por eso este total supera la ganancia real de arriba: los del reparto no eran gratis de verdad, ya valían dinero el día del reinicio.</p>' : ''}` : '<p class="vacio2">No ha hecho ningún movimiento.</p>'
 
   return `<details class="eq-det${e.mio ? ' yo' : ''}">
-    <summary><span class="pos">${e.pos}º</span><span class="eqn">${esc(e.corto)}</span>${e.mio ? '<span class="tuyo">tú</span>' : ''}<span class="barra"><i style="width:${(e.tope/maxTope*100).toFixed(0)}%"></i></span><span class="tp">${eur(e.tope)}</span></summary>
+    <summary><span class="pos">${e.pos}º</span><span class="eqn">${esc(e.corto)}</span>${e.mio ? '<span class="tuyo">tú</span>' : ''}<span class="barra"><i style="width:${(e.tope/maxTope*100).toFixed(0)}%"></i></span><span class="cifra caja"><i>en caja</i><b>${eur(e.saldo)}</b></span><span class="cifra"><i>tope de puja</i><b>${eur(e.tope)}</b></span></summary>
     <div class="eq-cuerpo">
       <p class="frase">Puede gastar hasta <strong>${eur(e.tope)}</strong> — ${eur(e.saldo)} en caja más el 25 % de su plantilla.</p>
       <div class="cuenta">
@@ -250,7 +242,7 @@ ${js.map(j => `<tr><td>${esc(j.nombre)}${j.delReparto ? '<span class="et-rep">de
         <div class="l"><span>Premios</span><span class="mas">+${eur(e.pre)}</span></div>
         <div class="l"><span>Ha vendido por</span><span class="mas">+${eur(e.ven)}</span></div>
         <div class="l"><span>Ha fichado por</span><span class="menos">−${eur(e.com)}</span></div>
-        <div class="l tot"><span>Le queda en caja</span><span>${eur(e.saldo)}</span></div>
+        <div class="l tot caja"><span>Le queda en caja</span><span>${eur(e.saldo)}</span></div>
         <div class="l"><span>Más su plantilla, que vale</span><span>${eur(e.pl)}</span></div>
         <div class="l tot"><span>Patrimonio hoy</span><span>${eur(e.patrimonio)}</span></div>
         <div class="l"><span>Sobre los 50.000.000 € de salida</span><span class="${e.sobre50>0?'mas':'menos'}">${firma(e.sobre50)}</span></div>

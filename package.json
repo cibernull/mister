@@ -2,14 +2,20 @@
   "name": "mister-inteligencia",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "recolectar": "mkdir -p datos && tsx src/cli/recolectar.ts",
     "importar": "mkdir -p datos && tsx src/cli/importar.ts",
-    "analizar": "mkdir -p datos && tsx src/cli/analizar.ts"
+    "analizar": "mkdir -p datos && tsx src/cli/analizar.ts",
+    "app": "node modulo/servidor.cjs",
+    "generar": "node modulo/generar.cjs",
+    "actualizar": "tsx src/actualizacion/actualizar.ts",
+    "credenciales": "tsx src/sesion/importar.ts"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.11",

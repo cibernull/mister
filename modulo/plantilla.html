@@ -100,7 +100,10 @@ h1 em{font-style:normal;color:var(--rojo)}
 .barra{height:5px;background:var(--linea);border-radius:99px;overflow:hidden;width:60px;flex:none}
 .barra i{display:block;height:100%;background:var(--gris);border-radius:99px}
 .eq-det.yo .barra i{background:var(--rojo)}
-.tp{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:15px;font-variant-numeric:tabular-nums}
+.cifra{display:flex;flex-direction:column;align-items:flex-end;line-height:1.1;flex:none}
+.cifra i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:8.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--tenue)}
+.cifra b{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:15px;font-variant-numeric:tabular-nums}
+.cifra.caja b{color:var(--oro)}
 .eq-cuerpo{padding:4px 17px 18px;display:flex;flex-direction:column;gap:14px;border-top:1px solid var(--linea)}
 .frase{margin:14px 0 0;font-size:15px}
 .cuenta{display:flex;flex-direction:column;gap:5px;font-size:14.5px}
@@ -108,6 +111,7 @@ h1 em{font-style:normal;color:var(--rojo)}
 .cuenta .l>span:first-child{color:var(--gris)}
 .cuenta .l>span:last-child{font-family:"IBM Plex Mono",monospace;font-size:13.5px}
 .cuenta .l.tot{border-top:1px solid var(--linea);padding-top:7px;margin-top:2px;font-weight:600;font-size:15.5px}
+.cuenta .l.caja>span:last-child{color:var(--oro);font-size:18px;font-weight:700}
 .mas{color:var(--verde)}.menos{color:var(--rojo)}
 table.jt{width:100%;border-collapse:collapse;font-size:13.5px}
 table.jt th{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--tenue);text-align:right;padding:0 0 7px;border-bottom:1px solid var(--linea)}
@@ -129,6 +133,21 @@ table.jt tr:last-child td{border-bottom:0}
 .cierre{font-size:12.5px;color:var(--gris);text-align:center;max-width:64ch;margin:22px auto 0;line-height:1.6}
 .cierre strong{color:var(--tinta)}
 label:focus-within{outline:2px solid var(--rojo);outline-offset:2px}
+
+/* botón de actualizar */
+.act{display:flex;align-items:center;gap:11px;flex-wrap:wrap}
+.act button{font:inherit;font-size:14px;font-weight:600;color:#fff;background:var(--rojo);border:0;border-radius:99px;padding:9px 18px;cursor:pointer;display:flex;align-items:center;gap:7px}
+.act button:hover{filter:brightness(1.1)}
+.act button:disabled{opacity:.55;cursor:progress}
+.act .giro{display:inline-block;width:12px;height:12px;border:2px solid rgba(255,255,255,.35);border-top-color:#fff;border-radius:50%;animation:gira .7s linear infinite}
+@keyframes gira{to{transform:rotate(360deg)}}
+.act .est{font-size:12.5px;color:var(--gris);font-variant-numeric:tabular-nums}
+.act .est code{font-family:"IBM Plex Mono",monospace;font-size:11.5px;background:var(--caja);border:1px solid var(--linea);padding:2px 6px;border-radius:4px}
+.aviso-act{background:var(--caja);border:1px solid var(--linea);border-left:3px solid var(--rojo);border-radius:9px;padding:13px 15px;margin:0 0 16px;font-size:13.5px;line-height:1.65}
+.aviso-act.bien{border-left-color:var(--verde)}
+.aviso-act b{display:block;margin-bottom:5px;font-size:14.5px}
+.aviso-act ul{margin:7px 0 0;padding-left:19px;color:var(--gris)}
+.aviso-act li{font-variant-numeric:tabular-nums}
 </style>
 </head>
 <body>
@@ -154,6 +173,13 @@ label:focus-within{outline:2px solid var(--rojo);outline-offset:2px}
     <h1>Mercado de <em>La Liga</em></h1>
     <div class="mitope">Tu tope de puja: <b>28.556.455 €</b></div>
   </div>
+
+  <div class="act">
+    <button id="btn-act" type="button" hidden>Actualizar</button>
+    <span class="est" id="est-act"></span>
+  </div>
+
+  <div id="resu-act"></div>
 
   <div class="pest">
     <label for="t1">Jugadores</label>
@@ -222,5 +248,67 @@ label:focus-within{outline:2px solid var(--rojo);outline-offset:2px}
   <p class="cierre" style="margin-top:8px"><!--__SELLO__--></p>
 
 </div>
+
+<script>
+// Lo único para lo que hace falta JavaScript en toda la página. Sin él, las
+// pestañas y los filtros siguen funcionando: solo desaparece el botón.
+(function () {
+  var btn = document.getElementById('btn-act')
+  var est = document.getElementById('est-act')
+  var caja = document.getElementById('resu-act')
+
+  function pinta(r) {
+    var lis = (r.detalle || []).map(function (d) {
+      return '<li>' + String(d).replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</li>'
+    }).join('')
+    caja.innerHTML = '<div class="aviso-act' + (r.ok ? ' bien' : '') + '"><b>' +
+      (r.ok ? '\u2705 ' : '\u26a0\ufe0f ') + String(r.mensaje) + '</b>' +
+      (lis ? '<ul>' + lis + '</ul>' : '') + '</div>'
+  }
+
+  // Abierta con doble clic (file://) no hay a quién pedirle los datos.
+  if (location.protocol !== 'http:' && location.protocol !== 'https:') {
+    est.innerHTML = 'Para poder actualizar, abre la app con <code>node modulo/servidor.cjs</code>'
+    return
+  }
+  btn.hidden = false
+
+  btn.addEventListener('click', function () {
+    btn.disabled = true
+    btn.innerHTML = '<span class="giro"></span>Actualizando'
+    caja.innerHTML = ''
+    var t0 = Date.now()
+    var reloj = setInterval(function () {
+      est.textContent = Math.round((Date.now() - t0) / 1000) + ' s \u2014 buscando movimientos nuevos\u2026'
+    }, 1000)
+
+    function acaba(r) {
+      clearInterval(reloj)
+      est.textContent = ''
+      btn.disabled = false
+      btn.textContent = 'Actualizar'
+      pinta(r)
+    }
+
+    fetch('/actualizar', { method: 'POST' })
+      .then(function (r) { return r.json() })
+      .then(function (r) {
+        if (!r.ok) return acaba(r)
+        // Recargar es lo que enseña las cifras nuevas: la página es estática.
+        sessionStorage.setItem('resultado-act', JSON.stringify(r))
+        location.reload()
+      })
+      .catch(function (e) {
+        acaba({ ok: false, mensaje: 'No pude hablar con el servidor local.', detalle: [String(e)] })
+      })
+  })
+
+  var guardado = sessionStorage.getItem('resultado-act')
+  if (guardado) {
+    sessionStorage.removeItem('resultado-act')
+    try { pinta(JSON.parse(guardado)) } catch (e) {}
+  }
+})()
+</script>
 </body>
 </html>
