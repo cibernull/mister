@@ -353,3 +353,103 @@ precio que registra el feed con el incremento real del saldo.
 venta al mercado, y volver a mirarlo. La diferencia entre el `price` que
 registre el feed y el aumento real del saldo revela el concepto que falta en una
 sola operación.
+
+---
+
+# RESUELTO: el mecanismo del saldo, cuadrado al 0,0016 %
+
+Cerrado el 2026-09-03. **El saldo de cualquier equipo es calculable con
+exactitud**, no solo acotable. Queda anulado lo dicho antes sobre que solo
+podría acotarse.
+
+## La ecuación, verificada
+
+```
+saldo inicial = 50.000.000 − Σ(valor de los jugadores del reparto, el día del reinicio)
+saldo hoy     = saldo inicial + Σ premios + Σ ventas − Σ compras
+```
+
+Comprobada contra el saldo real propio:
+
+| Concepto | Importe |
+|---|---|
+| Reparto inicial: **16** jugadores, valores del 3-ago | 33.800.000 € |
+| Saldo inicial = 50.000.000 − reparto | **16.200.000 €** |
+| + premios de jornada (3 jornadas, deduplicadas) | 3.275.000 € |
+| + ventas (deduplicadas) | 97.733.250 € |
+| − compras | 107.997.495 € |
+| **Saldo predicho** | **9.210.755 €** |
+| Saldo real (`_FG_user.balance.current`) | 9.209.955 € |
+| **Desvío** | **800 €** |
+
+Los 800 € son **redondeo a millares del gráfico de valores**. El saldo inicial
+real es 16.199.200 €, que exige un reparto de 33.800.800 € — es decir, los
+valores exactos tienen unidades que el gráfico no muestra. **Para exactitud al
+euro hay que obtener los valores sin redondear**, o aceptar y declarar un
+margen de ±1.000 € por jugador del reparto.
+
+## Los tres hallazgos que lo hicieron posible
+
+### 1. `player_transfer` con equipo vacío NO es ruido: es una baja de plantilla
+
+**Ronald Araújo no aparece en ningún movimiento del feed** y sin embargo estaba
+en el reparto inicial propio: salió de LaLiga el 10 de agosto y desapareció de
+la plantilla sin generar ningún `transfer` ni compensación.
+
+Los 20 eventos `player_transfer` con `id_team` vacío son exactamente esas
+salidas. **Hay que reclasificarlos**: no mueven dinero, pero sí determinan qué
+jugadores formaban parte de un reparto inicial, y sin ellos el reparto queda
+incompleto y el saldo descuadra.
+
+Ojo con el caso contrario: Carlos Domínguez también salió de LaLiga (11 de
+agosto), pero como se había **comprado** cuatro días antes, sí generó un
+movimiento de tipo `rescind` con compensación (559.200 €). Es decir, la salida
+de LaLiga se trata distinto según cómo llegara el jugador al equipo. Requiere
+comprobación adicional en la Fase 2.
+
+### 2. El feed DUPLICA eventos entre lotes contiguos
+
+3 movimientos aparecen dos veces, cada uno en dos páginas consecutivas (offsets
+21 y 40, 60 y 79, 79 y 98). El feed crece por arriba mientras se pagina, así que
+el offset retrocede y repite lo ya servido.
+
+**Suman 17.051.490 € contados de más** en el conjunto de la liga. Uno de ellos
+era una venta propia de 4.275.530 €.
+
+**`comprobarContinuidad` NO lo detecta**, porque los offsets sí encajan. La
+deduplicación por `id_transfer` (y por `id_gameweek` en los cierres) es
+obligatoria y debe ser una tarea de la Fase 2.
+
+### 3. Los valores históricos exactos están en Chart.js
+
+Ya descrito arriba. Es lo que permite valorar el reparto inicial de cualquier
+equipo en la fecha del reinicio.
+
+## Cómo aplicarlo a los rivales
+
+Para cada uno de los siete, el mismo procedimiento:
+
+1. **Reconstruir su reparto inicial**: jugadores que vendió sin haberlos
+   comprado antes, más los que conserva sin haberlos comprado, más los que
+   perdió por salidas de LaLiga.
+2. **Valorar ese reparto** al 3 de agosto con la serie de Chart.js.
+3. `saldo inicial = 50.000.000 − ese valor`.
+4. Sumar sus movimientos y premios, ya deduplicados.
+
+Y como validación cruzada, sin necesidad de conocer su saldo real:
+
+- Los equipos marcados `negative` en un cierre de jornada deben salir con saldo
+  **negativo** en esa fecha, y los no marcados, **no negativo**. Ocho
+  comprobaciones por jornada, gratis.
+- El tope de puja resultante debe ser coherente con las pujas que ese equipo
+  ganó y perdió (`other_bids`).
+
+## Qué queda pendiente
+
+- Obtener los valores **sin redondear** para bajar el desvío de 800 € a cero, o
+  declarar el margen explícitamente.
+- Confirmar la regla de las salidas de LaLiga: cuándo generan `rescind` con
+  compensación y cuándo no.
+- Reconstruir el reparto inicial de los equipos que apenas han vendido
+  (Legalize, Betico1993, Los tocahuevos), cuyo reparto está casi entero en su
+  plantilla actual y hay que leerlo de ahí.
