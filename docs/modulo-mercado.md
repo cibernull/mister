@@ -54,11 +54,23 @@ que le corresponden y ninguna más.
 Los ocho ordenados por capacidad de compra. Al desplegar uno: sus cuentas
 completas y todos sus jugadores con lo que pagó, cobró y ganó en cada uno.
 
+## El precio: cláusula o valor
+
+Cada jugador muestra **lo que cuesta ficharlo de verdad**, no una cifra
+orientativa:
+
+- **Con dueño** → su **cláusula de rescisión**, en rojo y etiquetada. Es lo que
+  hay que pagar para arrebatárselo a su equipo. 70 de los 197 están en este caso.
+- **Libre** → su **valor de mercado**. Los otros 127.
+
+El contador `x/8` de cada fila usa ese precio efectivo, así que ya responde a la
+pregunta real: cuántos equipos pueden pagar lo que ese jugador cuesta hoy.
+
+Ejemplo: Aubameyang vale 5.614.000 € pero su cláusula es **12.342.000 €** —más
+del doble—, porque Mister la fija en el doble de lo que se pagó por él.
+
 ## Lo que el módulo NO sabe
 
-- **El precio es el valor de mercado, no la cláusula.** Fichar a un jugador de
-  otro equipo cuesta su cláusula de rescisión, que Mister fija en el doble de lo
-  pagado por él. Para los libres del mercado, el valor sí es la referencia buena.
 - **Conoce 197 jugadores, no todo LaLiga.** No hay catálogo completo accesible:
   `/search` redirige al mercado y no se encontró ningún endpoint que lo sirva.
 - **Los datos son una foto fija** del 3 de septiembre. Regenerarlo solo es el
