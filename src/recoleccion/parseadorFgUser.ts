@@ -17,6 +17,46 @@ export class FgUserNoEncontradoError extends Error {
   }
 }
 
+/** Hay más de una asignación real de `_FG_user` en la página: no se puede elegir sin adivinar. */
+export class FgUserAmbiguoError extends Error {
+  constructor() {
+    super('la página contiene más de una asignación real de _FG_user: no se puede determinar cuál usar')
+    this.name = 'FgUserAmbiguoError'
+  }
+}
+
+/** Se localizó la asignación real de `_FG_user`, pero el bloque que la sigue está corrupto o incompleto. */
+export class FgUserBloqueCorruptoError extends Error {
+  constructor() {
+    super('el bloque de _FG_user no se pudo interpretar: JSON corrupto o incompleto')
+    this.name = 'FgUserBloqueCorruptoError'
+  }
+}
+
+/**
+ * Reconoce una asignación *real* de `_FG_user`: el nombre de la variable,
+ * sin sufijo (no confundir con `_FG_userAlgo`), seguido de `=` y de `{`,
+ * con cualquier cantidad de espacio en blanco alrededor del `=`.
+ *
+ * No basta con que el texto `_FG_user` aparezca en la página: podría estar
+ * dentro de un comentario, de una cadena de JavaScript, o ser una
+ * declaración obsoleta duplicada. Por eso se exige la forma sintáctica
+ * completa de la asignación, y punto de partida es siempre la llave `{`
+ * de la asignación encontrada.
+ */
+const RE_ASIGNACION_FG_USER = /(?<![A-Za-z0-9_$])_FG_user(?![A-Za-z0-9_$])\s*=\s*\{/g
+
+/** Localiza la posición de la `{` de la única asignación real de `_FG_user`. */
+function localizarLlaveDeAsignacion(html: string): number {
+  const coincidencias = [...html.matchAll(RE_ASIGNACION_FG_USER)]
+  if (coincidencias.length === 0) throw new FgUserNoEncontradoError()
+  if (coincidencias.length > 1) throw new FgUserAmbiguoError()
+
+  const unica = coincidencias[0]
+  if (!unica) throw new FgUserNoEncontradoError()
+  return unica.index + unica[0].length - 1
+}
+
 /**
  * Extrae el bloque `var _FG_user = {...}` que Mister incrusta en cada página.
  *
@@ -24,21 +64,20 @@ export class FgUserNoEncontradoError extends Error {
  * identificadores de Apple/Google del usuario.
  */
 export function parsearFgUser(html: string): DatosUsuario {
-  const inicio = html.indexOf('var _FG_user')
-  if (inicio < 0) throw new FgUserNoEncontradoError()
-
-  const llave = html.indexOf('{', inicio)
-  if (llave < 0) throw new FgUserNoEncontradoError()
+  const llave = localizarLlaveDeAsignacion(html)
 
   const bruto = recortarObjeto(html, llave)
   let datos: Record<string, unknown>
   try {
     datos = JSON.parse(bruto) as Record<string, unknown>
   } catch {
-    throw new FgUserNoEncontradoError()
+    throw new FgUserBloqueCorruptoError()
   }
 
   const balance = datos['balance']
+  if (Array.isArray(balance)) {
+    throw new Error('el campo balance de _FG_user es un array, se esperaba un objeto')
+  }
   if (!balance || typeof balance !== 'object') {
     throw new Error('_FG_user no trae el bloque balance')
   }
@@ -68,7 +107,7 @@ function recortarObjeto(texto: string, desde: number): string {
     if (c === '{') nivel++
     else if (c === '}') { nivel--; if (nivel === 0) return texto.slice(desde, i + 1) }
   }
-  throw new FgUserNoEncontradoError()
+  throw new FgUserBloqueCorruptoError()
 }
 
 function entero(valor: unknown, campo: string): number {
