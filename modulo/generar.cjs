@@ -93,9 +93,13 @@ for (const j of J) {
   const noRinde = j.partidos === 0 || j.media < 5
   if (noRinde && parado) {
     j.vender = 1
+    // Un jugador puede llevar ⭐ y 📤 a la vez: la estrella dice que su media
+    // está en el tercio alto de la liga, y 📤 dice que para lo que cuesta no
+    // compensa tenerlo parado.  No es una contradicción, pero hay que decirlo.
     j.razon = j.partidos === 0
-      ? 'no ha jugado ni un partido y su valor está plano'
-      : `media de ${j.media.toFixed(1).replace('.', ',')} y su valor solo sube un ${Math.round(j.subeMes * 100)} % al mes`
+      ? 'no ha jugado ni un partido y su valor lleva un mes plano'
+      : `${j.p ? 'aunque su media esté en el tercio alto de la liga, son ' : ''}${eur(j.valor)} inmovilizados para una media de ${
+          j.media.toFixed(1).replace('.', ',')}, y su valor solo sube un ${Math.round(j.subeMes * 100)} % al mes`
     continue
   }
 
@@ -116,7 +120,7 @@ J.sort((a, b) => (b.p + b.d) - (a.p + a.d) || b.media - a.media || b.valor - a.v
 
 const filas = J.map(j => {
   const cls = ['fj', j.mk ? 'mk' : 'nomk', j.p ? 'tp' : '', j.d ? 'td' : '', j.a ? 'ta' : '',
-    j.duenio ? 'tc' : 'tl', j.mio ? 'tmio' : '', j.vender ? 'tv' : '', j.blindar ? 'tb' : ''].filter(Boolean).join(' ')
+    j.duenio ? 'tc' : 'tl', j.mio ? 'tmio' : ''].filter(Boolean).join(' ')
   const pct = j.subeMes != null ? Math.round(j.subeMes * 100) : null
   const precio = j.clausula
     ? `<span class="jc">${eur(j.clausula)}</span><span class="jc-et">cláusula</span>`
@@ -133,10 +137,79 @@ const filas = J.map(j => {
       <div class="ji">${j.p ? '⭐' : ''}${j.d ? '💵' : ''}${j.vender ? '📤' : ''}${j.blindar ? '🔒' : ''}</div>
       <div class="js">media ${(j.media || 0).toFixed(1).replace('.', ',')} · ${j.puntos} pts en ${j.partidos} part.${
         pct != null ? ` · ${pct > 0 ? '+' : ''}${pct} % mes` : ''}${
-        j.clausula ? ` · vale ${eur(j.valor)}` : ''} · ${alcance}</div>${
-        j.razon ? `<div class="jr">${j.vender ? '📤 <b>Véndelo:</b>' : '🔒 <b>Súbele la cláusula:</b>'} ${esc(j.razon)}.</div>` : ''}
+        j.clausula ? ` · vale ${eur(j.valor)}` : ''} · ${alcance}</div>
     </div>`
 }).join(NL)
+
+// ── Mi equipo ────────────────────────────────────────────────────────────────
+// Los consejos viven aquí, en su propia pestaña, no escondidos entre los 197.
+const MIOS = J.filter(j => j.mio)
+if (MIOS.length !== PL[MI_EQUIPO].length) {
+  throw new Error(`Tengo ${PL[MI_EQUIPO].length} jugadores en plantilla pero solo ${MIOS.length} con datos`)
+}
+const MIS_MOVS = (D.porEquipo[MI_EQUIPO] || { porJugador: {} }).porJugador
+
+// Vender sube el tope: la caja crece con el valor entero y la plantilla pierde
+// ese valor, del que solo contaba el 25 %.  Neto: +0,75 × valor.
+const topeTrasVender = valorVendido =>
+  (MIO.saldo + valorVendido) + .25 * (MIO.pl - valorVendido)
+
+const filaMia = (j, modo) => {
+  const pct = j.subeMes != null ? Math.round(j.subeMes * 100) : null
+  const mov = MIS_MOVS[String(j.id)]
+  const pago = mov ? mov.compras : 0
+  const precio = modo === 'clausula'
+    ? `<span class="jc">${eur(j.clausula)}</span><span class="jc-et">te lo quitan por</span>`
+    : `<span class="jv">${eur(j.valor)}</span><span class="jc-et">${modo === 'venta' ? 'te darían' : 'vale'}</span>`
+  const trato = pago
+    ? `pagaste ${eur(pago)}, <b class="${j.valor >= pago ? 'mas' : 'menos'}">${firma(j.valor - pago)}</b>`
+    : 'del reparto, no te costó nada'
+  const extra = modo === 'clausula'
+    ? `vale ${eur(j.valor)} · <b>${j.rivalesQuePueden}/7</b> rivales pueden pagarla`
+    : j.clausula ? `cláusula ${eur(j.clausula)}` : 'sin cláusula'
+  return `<div class="fj">
+      <div class="jn">${esc(j.nombre)}${j.mk ? '<span class="et-mk">en venta</span>' : ''}</div>
+      <div class="jp">${precio}</div>
+      <div class="ji">${j.p ? '⭐' : ''}${j.d ? '💵' : ''}${j.vender ? '📤' : ''}${j.blindar ? '🔒' : ''}</div>
+      <div class="js">media ${(j.media || 0).toFixed(1).replace('.', ',')} · ${j.puntos} pts en ${j.partidos} part.${
+        pct != null ? ` · ${pct > 0 ? '+' : ''}${pct} % mes` : ''} · ${extra} · ${trato}</div>${
+        j.razon ? `<div class="jr">${j.vender
+          ? `📤 <b>Véndelo:</b> ${esc(j.razon)}. Solo con él, tu tope de puja pasaría a ${eur(topeTrasVender(j.valor))}.`
+          : `🔒 <b>Súbele la cláusula:</b> ${esc(j.razon)}.`}</div>` : ''}
+    </div>`
+}
+
+const seccion = (icono, titulo, desc, lista, modo) => lista.length ? `    <div class="sec">
+      <h2 class="sh">${icono ? `<span class="se">${icono}</span>` : ''}${titulo} <em>${lista.length}</em></h2>
+      <p class="sd">${desc}</p>
+      <div class="lista">
+${lista.map(j => filaMia(j, modo)).join(NL)}
+      </div>
+    </div>` : ''
+
+const aVender = MIOS.filter(j => j.vender).sort((a, b) => b.valor - a.valor)
+const aBlindar = MIOS.filter(j => j.blindar).sort((a, b) => a.clausula / a.media - b.clausula / b.media)
+const resto = MIOS.filter(j => !j.vender && !j.blindar).sort((a, b) => b.valor - a.valor)
+const sumaVenta = aVender.reduce((s, j) => s + j.valor, 0)
+const topeSiVendo = topeTrasVender(sumaVenta)
+
+const miEquipo = `    <div class="yo-cab">
+      <h2>Vas ${MIO.pos}º con ${MIO.pts} puntos</h2>
+      <div class="yo-cif">
+        <div><dt>En caja</dt><dd>${eur(MIO.saldo)}</dd></div>
+        <div><dt>Tu plantilla vale</dt><dd>${eur(MIO.pl)}</dd></div>
+        <div><dt>Tope de puja</dt><dd class="r">${eur(MIO.tope)}</dd></div>
+        <div><dt>Patrimonio</dt><dd>${eur(MIO.patrimonio)}</dd></div>
+        <div><dt>Sobre los 50 M</dt><dd class="${MIO.sobre50 > 0 ? 'v' : 'r'}">${firma(MIO.sobre50)}</dd></div>
+      </div>
+    </div>
+${seccion('📤', 'Deberías vender', aVender.length
+  ? `Dinero parado: ni te dan puntos ni les sube el valor. Vendiendo los ${aVender.length} entrarían <strong>${eur(sumaVenta)}</strong> en caja y tu tope de puja pasaría de ${eur(MIO.tope)} a <strong>${eur(topeSiVendo)}</strong>.`
+  : '', aVender, 'venta')}
+${seccion('🔒', 'Deberías blindar', aBlindar.length
+  ? 'Rinden y su cláusula es barata para lo que producen, así que cualquier rival puede llevárselos pagándola. Subírsela es lo que lo evita.'
+  : '', aBlindar, 'clausula')}
+${seccion('', 'El resto de tu plantilla', 'Ni urge venderlos ni están especialmente expuestos.', resto, 'valor')}`
 
 // ── Equipos ──────────────────────────────────────────────────────────────────
 const filasEq = [...EQ].sort((a, b) => b.tope - a.tope).map(e => {
@@ -192,8 +265,11 @@ const plantilla = fs.readFileSync(path.join(AQUI, 'plantilla.html'), 'utf8')
 const html = plantilla
   .replace('<!--__JUGADORES__-->', filas)
   .replace('<!--__EQUIPOS__-->', filasEq)
+  .replace('<!--__MIEQUIPO__-->', miEquipo)
   .replace('<!--__SELLO__-->', 'Generado el ' + new Date().toLocaleString('es-ES', {dateStyle:'long', timeStyle:'short'}) + '.')
-if (html.includes('__JUGADORES__') || html.includes('__EQUIPOS__') || html.includes('__SELLO__')) throw new Error('Quedaron huecos sin rellenar')
+for (const hueco of ['__JUGADORES__', '__EQUIPOS__', '__MIEQUIPO__', '__SELLO__']) {
+  if (html.includes(hueco)) throw new Error(`El hueco ${hueco} se quedó sin rellenar`)
+}
 fs.writeFileSync(SALIDA, html)
 
 const mios = J.filter(j => j.mio)

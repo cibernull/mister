@@ -14,15 +14,20 @@ Se regenera con:
 node modulo/generar.cjs
 ```
 
-## Cómo funciona el filtrado
+## Tres pestañas
+
+**Jugadores** — los 197 con sus filtros. **Equipos** — los ocho con sus
+cuentas. **Mi equipo** — la plantilla propia y los dos consejos.
+
+## Cómo funciona el filtrado (pestaña Jugadores)
 
 Tres selectores que se combinan en cascada, con radios ocultos y selectores CSS:
 
 **Dónde busco** — solo los 32 jugadores en venta ahora mismo, o los 197 que
 conozco (los que han pasado por la liga más los del mercado).
 
-**Qué me interesa** — todos, los dos iconos, solo puntos, solo dinero, lo que
-cabe en el propio tope de puja, o los dos consejos sobre la plantilla propia.
+**Qué me interesa** — todos, los dos iconos, solo puntos, solo dinero, o lo que
+cabe en el propio tope de puja.
 
 **De quién es** — cualquiera, sin dueño (117), de algún equipo (80), o la
 plantilla propia (18).
@@ -34,8 +39,8 @@ rojo los propios, en verde los que no son de nadie.
 |---|---|---|
 | ⭐ | Está en el **tercio con mejor media** de puntos por partido, y ha jugado al menos dos | A cualquiera |
 | 💵 | Su valor **sube esta semana** y está en el tercio que **más ha crecido en el mes** | A cualquiera |
-| 📤 | **Capital parado**: no rinde (media < 5 o cero partidos) **y** su valor sube menos del 25 % al mes | Solo a los propios |
-| 🔒 | **Te lo pueden quitar barato**: rinde (media ≥ 5 o ≥ 20 puntos), al menos 5 rivales pueden pagar su cláusula, **y** esa cláusula sale a menos de 1,1 M € por punto de media **o** sigue en el mínimo (1,5 × valor) | Solo a los propios |
+| 📤 | **Capital parado**: no rinde (media < 5 o cero partidos) **y** su valor sube menos del 25 % al mes | Solo a los propios; su sitio es la pestaña Mi equipo |
+| 🔒 | **Te lo pueden quitar barato**: rinde (media ≥ 5 o ≥ 20 puntos), al menos 5 rivales pueden pagar su cláusula, **y** esa cláusula sale a menos de 1,1 M € por punto de media **o** sigue en el mínimo (1,5 × valor) | Solo a los propios; su sitio es la pestaña Mi equipo |
 
 ⭐ y 💵 son **percentiles** sobre los 197 jugadores, no umbrales fijos: siguen
 significando algo cuando cambie el nivel general de la liga. Con los datos del
@@ -49,22 +54,18 @@ los 67 jugadores con cláusula que han jugado.
 mostrado.** Así una estrella significa lo mismo se mire donde se mire, y el
 selector de ámbito solo decide a quién se enseña.
 
-Las tres opciones que hablan de la plantilla propia —**Mi plantilla**, 📤 y 🔒—
-**se saltan el selector de ámbito**, porque enseñar solo los que están en el
-mercado dejaría la lista casi vacía sin decir por qué: «Solo el mercado» + 📤
-no daba ninguno, y «Solo el mercado» + Mi plantilla daba 5 de 18. La página lo
-avisa con un recuadro cuando alguna de las tres está activa.
-
-Está hecho sin `!important`, que se llevaba por delante el filtro de iconos:
-la regla del ámbito se aparta sola encadenando hermanos
-(`#a1:checked~#f6:not(:checked)~#f7:not(:checked)~#d4:not(:checked)~.env`).
-Así «Mi plantilla + ⭐» sigue dando los 9 que toca y no los 18.
+**Mi plantilla** se salta el selector de ámbito, porque enseñar solo los que
+están en el mercado daba 5 de 18 sin decir por qué. La página lo avisa con un
+recuadro. Está hecho sin `!important`, que se llevaba por delante el filtro de
+iconos: la regla del ámbito se aparta sola encadenando hermanos
+(`#a1:checked~#d4:not(:checked)~.env`), así que «Mi plantilla + ⭐» sigue dando
+los 9 que toca y no los 18.
 
 Con los datos del 3 de septiembre: 📤 señala a Rodri Hernández, José Giménez y
 Hector Fort; 🔒 a Roger Brugué, Aubameyang, Dani Lorenzo, Ramón Terrats y
 Álvaro Valles.
 
-## Las 56 combinaciones, verificadas
+## Las 40 combinaciones, verificadas
 
 | Ámbito | Filtro | Cualquiera | Sin dueño | De algún equipo | Mi plantilla |
 |---|---|---|---|---|---|
@@ -78,8 +79,6 @@ Hector Fort; 🔒 a Roger Brugué, Aubameyang, Dani Lorenzo, Ramón Terrats y
 | Todos | ⭐ | 52 | 13 | 39 | 9 |
 | Todos | 💵 | 63 | 18 | 45 | 14 |
 | Todos | A mi alcance | 197 | 117 | 80 | 18 |
-| cualquiera | 📤 | 3 | 3 | 3 | 3 |
-| cualquiera | 🔒 | 5 | 5 | 5 | 5 |
 
 La columna «Mi plantilla» sale igual con «Mercado» que con «Todos», que es
 precisamente lo que se buscaba. Comprobado en el navegador, con clics reales
@@ -88,6 +87,32 @@ corresponden y ninguna más.
 
 La página lleva al pie la **fecha y hora en que se generó**, para saber de un
 vistazo si lo que se está mirando es la última versión.
+
+## Pestaña «Mi equipo»
+
+Los consejos vivían como dos chips más entre los otros cinco, y ahí no se veían.
+Ahora tienen pestaña propia, con la plantilla partida en tres bloques:
+
+1. **📤 Deberías vender** — con lo que entraría en caja y, sobre todo, en cuánto
+   quedaría el tope de puja después. Vendiendo los tres que salen hoy, pasaría
+   de 28.556.455 € a **39.486.205 €**.
+2. **🔒 Deberías blindar** — con la cláusula como cifra grande, que es lo que
+   pagaría el rival, y cuántos de los siete llegan a pagarla.
+3. **El resto de tu plantilla** — para que estén los 18 y no solo los señalados.
+
+Arriba, un resumen: puesto, puntos, caja, valor de plantilla, tope de puja,
+patrimonio y la diferencia sobre los 50 M de salida.
+
+Cada jugador lleva además **lo que se pagó por él y lo que se gana o se pierde
+hoy** con él, que es la misma cuenta corregida de la pestaña de equipos.
+
+### ⭐ y 📤 a la vez no es una errata
+
+Rodri Hernández lleva las dos. La estrella dice que su media (4,5) está en el
+tercio alto de la liga; el 📤 dice que 12.395.000 € inmovilizados para esa media,
+con el valor plano desde hace un mes, no compensan. Son dos preguntas distintas
+—«¿es bueno?» y «¿me renta tenerlo?»— y la línea de consejo lo explica en vez de
+dejar los dos iconos peleándose.
 
 ## Pestaña de equipos
 
