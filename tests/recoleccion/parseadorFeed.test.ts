@@ -555,6 +555,12 @@ describe('parsearPaginaFeed', () => {
         ).toThrow(/id_team/)
       })
 
+      it('lanza si id_team es un entero negativo, en vez de clasificarlo en silencio como ruido', () => {
+        expect(() =>
+          parsearPaginaFeed(playerTransfer({ id: 1, name: 'X', id_team: -1 })),
+        ).toThrow(/id_team/)
+      })
+
       it('el mensaje de error no vuelca el objeto crudo del movimiento', () => {
         let error: Error | undefined
         try {

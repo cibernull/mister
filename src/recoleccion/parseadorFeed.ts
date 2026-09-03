@@ -244,24 +244,47 @@ function parsearTransaccion(m: Record<string, unknown>, fecha: string, idEventoC
  * ruido (fichaje de LaLiga entre clubes), a partir de `id_team`.
  *
  * Las tres únicas formas legítimas observadas en el histórico real: `null`,
- * ausente, o un entero (`0` es "sin equipo"; un entero positivo es un
- * fichaje entre clubes). Cualquier otra forma lanza — no se resuelve por
- * coacción con `Number(x)`, porque `Number([])` es `0` (clasificaría un
+ * ausente, o un entero NO NEGATIVO (`0` es "sin equipo"; un entero positivo
+ * es un fichaje entre clubes). Cualquier otra forma lanza — no se resuelve
+ * por coacción con `Number(x)`, porque `Number([])` es `0` (clasificaría un
  * array como baja falsa) y `Number("N/A")` es `NaN` (ni `=== 0` ni verdadero
  * en ninguna comparación, así que el evento se perdería como ruido en
  * silencio). Una cadena numérica como `"0"` tampoco es una de las tres
  * formas observadas — Mister nunca la manda así — y un decimal tampoco es
- * un entero: ambas lanzan en vez de truncarse o coaccionarse.
+ * un entero: ambas lanzan en vez de truncarse o coaccionarse. Un entero
+ * negativo tampoco es una de las tres formas legítimas — no existe un
+ * `id_team` negativo real — y clasificarlo como ruido por pasar
+ * `Number.isInteger` sin más contradiría este mismo contrato.
  */
 function esBajaDePlantilla(idEquipo: unknown, contexto: string): boolean {
   if (idEquipo === null || idEquipo === undefined) return true
-  if (Number.isInteger(idEquipo)) return (idEquipo as number) === 0
+  if (esEnteroNoNegativo(idEquipo)) return idEquipo === 0
   // Se informa del propio valor de `id_team` (no del movimiento entero: ese
   // sí podría traer datos personales, ver `idMovimiento`), recortado por si
   // fuera un array u objeto grande.
   throw new Error(
-    `id_team no es null, ausente, ni un entero: tipo ${typeof idEquipo}, valor ${JSON.stringify(idEquipo).slice(0, 200)} (${contexto})`,
+    `id_team no es null, ausente, ni un entero no negativo: tipo ${typeof idEquipo}, valor ${JSON.stringify(idEquipo).slice(0, 200)} (${contexto})`,
   )
+}
+
+/**
+ * Réplica local de `exigirEnteroNoNegativo` (`src/almacen/crudo.ts`), en
+ * forma de predicado en vez de función que exige y lanza: aquí un entero
+ * negativo es una forma más de `id_team` que cae en la rama de "forma
+ * inesperada" ya existente, no un caso que deba lanzar por su cuenta.
+ *
+ * No se importa la de `crudo.ts`: es una función privada (no exportada) de
+ * la capa de almacenamiento, pensada para validar los campos que persiste
+ * esa capa (`offset`, `nEventos`). Exportarla desde allí para que la use el
+ * parseador acoplaría una regla de negocio del feed (la forma de `id_team`)
+ * a un detalle interno del almacén, con el que no comparte más que la
+ * casualidad de ambos siendo "entero no negativo": un cambio futuro en esa
+ * función por motivos de almacenamiento alteraría el parseo del feed sin
+ * que nadie lo esperase. Duplicar esta única comprobación de una línea es
+ * más barato que esa dependencia.
+ */
+function esEnteroNoNegativo(valor: unknown): valor is number {
+  return Number.isInteger(valor) && (valor as number) >= 0
 }
 
 /**

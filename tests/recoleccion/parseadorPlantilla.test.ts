@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { parsearPlantilla } from '../../src/recoleccion/parseadorPlantilla.js'
+import { PlantillaVaciaError, parsearPlantilla } from '../../src/recoleccion/parseadorPlantilla.js'
 
 const pagina = (enlaces: string[]) =>
   `<html><body>${enlaces.map((h) => `<a href="${h}">x</a>`).join('')}</body></html>`
@@ -21,8 +21,12 @@ describe('parsearPlantilla', () => {
     expect(parsearPlantilla(pagina(['users/123/equipo', 'players/34/x', '/market']))).toEqual([34])
   })
 
-  it('devuelve vacío si no hay jugadores', () => {
-    expect(parsearPlantilla('<html><body>nada</body></html>')).toEqual([])
+  it('lanza si no encuentra ningún jugador, en vez de devolver una plantilla vacía', () => {
+    // Para la página de un equipo activo, una plantilla vacía no es un
+    // resultado legítimo: significa que el marcado cambió y la extracción se
+    // rompió. Devolver [] lo haría indistinguible de "este equipo no tiene
+    // jugadores" y falsearía el reparto inicial de ese equipo.
+    expect(() => parsearPlantilla('<html><body>nada</body></html>')).toThrow(PlantillaVaciaError)
   })
 
   describe('la ruta players/ debe ir anclada al principio del camino', () => {
@@ -37,9 +41,13 @@ describe('parsearPlantilla', () => {
     })
 
     it('rechaza un enlace de publicidad/seguimiento que contenga "players/" en un parámetro', () => {
-      expect(
+      // Ningún enlace legítimo casa (el único presente es de seguimiento), así
+      // que ahora lanza en vez de devolver una plantilla vacía: sigue
+      // probando que el enlace de publicidad NO se aceptó como jugador (de
+      // haberlo aceptado, no lanzaría y devolvería [99]).
+      expect(() =>
         parsearPlantilla(pagina(['https://ads.ejemplo.com/track?u=/players/99/x'])),
-      ).toEqual([])
+      ).toThrow(PlantillaVaciaError)
     })
   })
 })

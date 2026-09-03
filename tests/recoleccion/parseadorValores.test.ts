@@ -39,6 +39,22 @@ describe('parsearSerieValores', () => {
     expect(() => parsearSerieValores(con([['1', '3 xxx 2026']]))).toThrow(/mes/i)
   })
 
+  it('lanza si a la fecha le falta el año, en vez de producir "undefined-08-03"', () => {
+    expect(() => parsearSerieValores(con([['1', '3 ago']]))).toThrow(/fecha/i)
+  })
+
+  it('lanza si la fecha trae partes de más', () => {
+    expect(() => parsearSerieValores(con([['1', '3 ago 2026 extra']]))).toThrow(/fecha/i)
+  })
+
+  it('lanza si el día no es numérico', () => {
+    expect(() => parsearSerieValores(con([['1', 'tres ago 2026']]))).toThrow(/día/i)
+  })
+
+  it('lanza si el año no tiene cuatro cifras', () => {
+    expect(() => parsearSerieValores(con([['1', '3 ago 26']]))).toThrow(/año/i)
+  })
+
   it('lanza si la página no trae ningún punto', () => {
     expect(() => parsearSerieValores('<html>nada</html>')).toThrow(SerieVaciaError)
   })

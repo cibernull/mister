@@ -277,7 +277,17 @@ describe('almacén crudo', () => {
       const a = abrirAlmacen(':memory:')
       a.guardarPagina({ ruta: '/players/1/x', cuerpo: 'de ayer', capturadaEn: '2026-09-02T10:00:00Z' })
       a.guardarPagina({ ruta: '/players/1/x', cuerpo: 'de hoy', capturadaEn: '2026-09-03T10:00:00Z' })
+
+      // leerPagina por sí solo (devuelve solo la más reciente) no basta para
+      // comprobar que nada se pierde: seguiría siendo cierto aunque
+      // guardarPagina hiciera un upsert que destruyera la fila vieja.
+      // leerCapturasDePagina expone TODAS las filas guardadas para esa ruta,
+      // así que es la única comprobación capaz de detectar esa regresión.
       expect(a.leerPagina('/players/1/x')!.cuerpo).toBe('de hoy')
+
+      const capturas = a.leerCapturasDePagina('/players/1/x')
+      expect(capturas).toHaveLength(2)
+      expect(capturas.map((c) => c.cuerpo)).toEqual(['de ayer', 'de hoy'])
       a.cerrar()
     })
 

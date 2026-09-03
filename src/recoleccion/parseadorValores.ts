@@ -50,12 +50,31 @@ export function parsearSerieValores(html: string): PuntoValor[] {
     .sort((a, b) => a.fecha.localeCompare(b.fecha))
 }
 
+/**
+ * Exige exactamente tres partes (día, mes, año). Desestructurar un array no
+ * añade `| undefined` bajo `noUncheckedIndexedAccess`, así que sin esta
+ * comprobación una fecha sin año produciría `anio === undefined` y
+ * `aIso` devolvería silenciosamente `"undefined-08-03"` en vez de lanzar.
+ */
 function aIso(fecha: string): string {
   const partes = fecha.trim().split(/\s+/)
-  const [dia, mes, anio] = partes
-  const mm = mes ? MESES[mes.toLowerCase()] : undefined
+  if (partes.length !== 3) {
+    throw new Error(
+      `fecha con forma inesperada (se esperaban tres partes: día, mes y año): ${JSON.stringify(fecha)}`,
+    )
+  }
+  const [dia, mes, anio] = partes as [string, string, string]
+
+  if (!/^\d{1,2}$/.test(dia)) {
+    throw new Error(`día no numérico en la fecha ${JSON.stringify(fecha)}`)
+  }
+  if (!/^\d{4}$/.test(anio)) {
+    throw new Error(`año inesperado (se esperaban cuatro cifras) en la fecha ${JSON.stringify(fecha)}`)
+  }
+
+  const mm = MESES[mes.toLowerCase()]
   if (!mm) throw new Error(`mes no reconocido en la fecha ${JSON.stringify(fecha)}`)
-  return `${anio}-${mm}-${String(dia).padStart(2, '0')}`
+  return `${anio}-${mm}-${dia.padStart(2, '0')}`
 }
 
 /** Valor exacto en una fecha, o null si ese día no está en la serie. */

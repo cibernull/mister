@@ -46,6 +46,13 @@ export type Almacen = {
   guardarPagina(p: PaginaGuardada): void
   /** La captura más reciente de esa ruta, o `null` si no hay ninguna. */
   leerPagina(ruta: string): PaginaGuardada | null
+  /**
+   * TODAS las capturas guardadas de esa ruta, ordenadas cronológicamente
+   * (de más antigua a más reciente). A diferencia de `leerPagina`, que solo
+   * expone la más reciente, esta es la única forma de comprobar que un
+   * refresco añade una captura nueva sin destruir las anteriores.
+   */
+  leerCapturasDePagina(ruta: string): PaginaGuardada[]
   /** Las rutas distintas guardadas, sin repetir aunque tengan varias capturas. */
   rutasGuardadas(): string[]
   cerrar(): void
@@ -143,6 +150,11 @@ export function abrirAlmacen(ruta: string): Almacen {
     `SELECT ruta, cuerpo, capturada_en AS capturadaEn FROM paginas
      WHERE ruta = ? ORDER BY capturada_en DESC LIMIT 1`,
   )
+  // TODAS las capturas de esa ruta, de más antigua a más reciente.
+  const seleccionarCapturasDePagina = db.prepare(
+    `SELECT ruta, cuerpo, capturada_en AS capturadaEn FROM paginas
+     WHERE ruta = ? ORDER BY capturada_en ASC`,
+  )
   const listarRutas = db.prepare(`SELECT DISTINCT ruta FROM paginas ORDER BY ruta`)
 
   // Ver esViolacionDeUnicidad: misma técnica que existeCaptura, aplicada a la
@@ -200,6 +212,9 @@ export function abrirAlmacen(ruta: string): Almacen {
     },
     leerPagina(ruta) {
       return (seleccionarPagina.get(ruta) as PaginaGuardada | undefined) ?? null
+    },
+    leerCapturasDePagina(ruta) {
+      return seleccionarCapturasDePagina.all(ruta) as PaginaGuardada[]
     },
     rutasGuardadas() {
       return (listarRutas.all() as { ruta: string }[]).map((f) => f.ruta)

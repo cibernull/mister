@@ -70,7 +70,14 @@ export function crearCliente(opciones: OpcionesCliente): Cliente {
       try {
         res = await hacerFetch(`${base}${ruta}`, init)
       } catch (causa) {
-        ultimoFallo = new Error(`${descripcion} falló por red: ${(causa as Error).message}`)
+        // `causa` puede no ser una instancia de Error (incluido `null`):
+        // `(causa as Error).message` daría `undefined` sin más, o lanzaría un
+        // TypeError ajeno con `causa === null`, rompiendo el reintento de una
+        // forma distinta a un fallo de red corriente. Se coacciona con
+        // `String(causa)` en vez de asumir su forma, y se conserva el
+        // encadenamiento con `cause` para no perder la causa original.
+        const mensaje = causa instanceof Error ? causa.message : String(causa)
+        ultimoFallo = new Error(`${descripcion} falló por red: ${mensaje}`, { cause: causa })
         continue
       }
 
