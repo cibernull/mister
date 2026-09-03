@@ -8,7 +8,7 @@ const transaccion: Evento = {
   origen: { clase: 'equipo', nombre: 'Neky F.C. (Sergio)' },
   destino: { clase: 'mercado' },
   importe: 5712300,
-  porClausula: false,
+  operacion: 'normal',
 }
 
 const cierre: Evento = {

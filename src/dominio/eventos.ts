@@ -1,6 +1,9 @@
 /** Una de las dos partes de una transacción: el mercado o un equipo. */
 export type Parte = { clase: 'mercado' } | { clase: 'equipo'; nombre: string }
 
+/** Los tres tipos de movimiento observados en el histórico. */
+export type TipoOperacion = 'normal' | 'clause' | 'rescind'
+
 /** Movimiento de un jugador con importe. */
 export type Transaccion = {
   tipo: 'transaccion'
@@ -9,7 +12,8 @@ export type Transaccion = {
   origen: Parte
   destino: Parte
   importe: number
-  porClausula: boolean
+  /** Tipo de operación tal y como lo publica Mister. */
+  operacion: TipoOperacion
 }
 
 /** Resultado de un equipo en el cierre de una jornada. */
