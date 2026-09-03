@@ -4,10 +4,10 @@
 .env
 .env.*
 
-# Datos recolectados
+# Datos recolectados (el volcado del feed, la base y el HTML generado)
 *.sqlite
 *.sqlite-journal
-datos/
+/datos/
 
 node_modules/
 dist/

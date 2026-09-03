@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mercado de La Liga</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@500;600&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--fondo:#F1F3F6;--caja:#FFF;--linea:#DDE2EA;--tinta:#141922;--gris:#606A79;--tenue:#949DAB;--rojo:#A21C3A;--rojo-suave:#FBEAEE;--verde:#0E7A43;--verde-suave:#E3F3EA;--oro:#8A5D00;--oro-suave:#FBF0D8;--sombra:0 1px 2px rgba(20,25,34,.05),0 10px 30px -14px rgba(20,25,34,.2)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--fondo:#0C0F14;--caja:#161B23;--linea:#2A323E;--tinta:#EAEDF2;--gris:#98A2B2;--tenue:#69727F;--rojo:#F0607F;--rojo-suave:#33131B;--verde:#4ADE93;--verde-suave:#112A1E;--oro:#F0C674;--oro-suave:#2C2413;--sombra:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7)}}
+:root[data-theme=dark]{--fondo:#0C0F14;--caja:#161B23;--linea:#2A323E;--tinta:#EAEDF2;--gris:#98A2B2;--tenue:#69727F;--rojo:#F0607F;--rojo-suave:#33131B;--verde:#4ADE93;--verde-suave:#112A1E;--oro:#F0C674;--oro-suave:#2C2413;--sombra:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7)}
+*{box-sizing:border-box}
+body{background:var(--fondo);color:var(--tinta);font-family:"Public Sans",ui-sans-serif,system-ui,sans-serif;font-size:16px;line-height:1.5;margin:0;padding:26px 16px 70px;-webkit-font-smoothing:antialiased}
+.env{max-width:840px;margin:0 auto}
+h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:25px;letter-spacing:-.025em;margin:0}
+h1 em{font-style:normal;color:var(--rojo)}
+.top{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin-bottom:20px}
+.mitope{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--gris)}
+.mitope b{color:var(--rojo);font-size:15px}
+
+/* radios de control, ocultos */
+.ctrl{position:absolute;opacity:0;pointer-events:none;width:0;height:0}
+
+/* pestañas */
+.pest{display:flex;gap:4px;background:var(--caja);border:1px solid var(--linea);border-radius:11px;padding:5px;box-shadow:var(--sombra);margin-bottom:18px}
+.pest label{flex:1;text-align:center;font-size:15px;font-weight:500;padding:11px 8px;border-radius:8px;color:var(--gris);cursor:pointer;user-select:none}
+.pest label:hover{color:var(--tinta)}
+#t1:checked~.env .pest label[for=t1],#t2:checked~.env .pest label[for=t2]{background:var(--rojo);color:#fff;font-weight:600}
+.panel{display:none;flex-direction:column;gap:14px}
+#t1:checked~.env #p1,#t2:checked~.env #p2{display:flex}
+
+/* filtros */
+.grupo{display:flex;flex-direction:column;gap:7px}
+.grupo>span{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue)}
+.ops{display:flex;gap:7px;flex-wrap:wrap}
+.ops label{font-size:14.5px;padding:8px 15px;border-radius:99px;border:1px solid var(--linea);background:var(--caja);color:var(--gris);cursor:pointer;user-select:none}
+.ops label:hover{border-color:var(--rojo);color:var(--rojo)}
+#a1:checked~.env label[for=a1],#a2:checked~.env label[for=a2],
+#f1:checked~.env label[for=f1],#f2:checked~.env label[for=f2],#f3:checked~.env label[for=f3],
+#f4:checked~.env label[for=f4],#f5:checked~.env label[for=f5],
+#f6:checked~.env label[for=f6],#f7:checked~.env label[for=f7],
+#d1:checked~.env label[for=d1],#d2:checked~.env label[for=d2],#d3:checked~.env label[for=d3],#d4:checked~.env label[for=d4]{border-color:var(--rojo);color:var(--rojo);background:var(--rojo-suave);font-weight:600}
+
+/* LOS FILTROS: ámbito y criterio, en cascada */
+#a1:checked~.env .fj.nomk{display:none}
+#f2:checked~.env .fj:not(.tp),#f2:checked~.env .fj:not(.td){display:none}
+#f3:checked~.env .fj:not(.tp){display:none}
+#f4:checked~.env .fj:not(.td){display:none}
+#f5:checked~.env .fj:not(.ta){display:none}
+#d2:checked~.env .fj:not(.tl){display:none}
+#d3:checked~.env .fj:not(.tc){display:none}
+#d4:checked~.env .fj:not(.tmio){display:none}
+#f6:checked~.env .fj:not(.tv){display:none}
+#f7:checked~.env .fj:not(.tb){display:none}
+#f6:checked~.env .fj.tv,#f7:checked~.env .fj.tb{display:grid!important}
+.aviso{display:none;font-size:13px;color:var(--oro);background:var(--oro-suave);border:1px solid var(--oro);border-radius:9px;padding:10px 13px;margin:0}
+#f6:checked~.env .aviso,#f7:checked~.env .aviso{display:block}
+
+.lista{background:var(--caja);border:1px solid var(--linea);border-radius:12px;box-shadow:var(--sombra);overflow:hidden}
+.fj{display:grid;grid-template-columns:1fr auto auto;gap:3px 14px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--linea)}
+.fj:last-child{border-bottom:0}
+.jn{font-weight:500;font-size:15.5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.et-mk{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--rojo);background:var(--rojo-suave);border:1px solid currentColor;border-radius:3px;padding:1px 5px}
+.jp{display:flex;flex-direction:column;align-items:flex-end;line-height:1.15}
+.jc,.jv{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:15px;font-variant-numeric:tabular-nums}
+.jc{color:var(--rojo)}
+.jc-et{font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:var(--tenue)}
+.et-eq{font-size:11.5px;color:var(--gris);background:var(--fondo);border:1px solid var(--linea);border-radius:99px;padding:1px 9px;white-space:nowrap}
+.et-eq.et-mio{color:var(--rojo);border-color:var(--rojo);background:var(--rojo-suave);font-weight:600}
+.et-libre{font-size:11.5px;color:var(--verde);background:var(--verde-suave);border:1px solid currentColor;border-radius:99px;padding:1px 9px;white-space:nowrap}
+.ji{font-size:16px;letter-spacing:2px;white-space:nowrap;min-width:42px;text-align:right}
+.js{grid-column:1/-1;font-size:12.5px;color:var(--gris);font-variant-numeric:tabular-nums}
+.js b{color:var(--tinta)}
+.jr{grid-column:1/-1;font-size:12.5px;color:var(--tinta);background:var(--oro-suave);border-left:3px solid var(--oro);border-radius:0 5px 5px 0;padding:6px 10px;margin-top:3px}
+.jr b{color:var(--oro)}
+.contador{font-size:13.5px;color:var(--gris);text-align:center}
+
+/* equipos */
+.eq-det{background:var(--caja);border:1px solid var(--linea);border-radius:12px;box-shadow:var(--sombra);overflow:hidden}
+.eq-det+.eq-det{margin-top:9px}
+.eq-det.yo{border-color:var(--rojo)}
+.eq-det summary{display:flex;align-items:center;gap:11px;padding:14px 17px;cursor:pointer;list-style:none}
+.eq-det summary::-webkit-details-marker{display:none}
+.eq-det summary:hover{background:var(--rojo-suave)}
+.pos{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--tenue);width:24px;flex:none}
+.eqn{flex:1;font-weight:500;font-size:15.5px}
+.tuyo{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--rojo);border:1px solid currentColor;border-radius:3px;padding:1px 5px;flex:none}
+.barra{height:5px;background:var(--linea);border-radius:99px;overflow:hidden;width:60px;flex:none}
+.barra i{display:block;height:100%;background:var(--gris);border-radius:99px}
+.eq-det.yo .barra i{background:var(--rojo)}
+.tp{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:15px;font-variant-numeric:tabular-nums}
+.eq-cuerpo{padding:4px 17px 18px;display:flex;flex-direction:column;gap:14px;border-top:1px solid var(--linea)}
+.frase{margin:14px 0 0;font-size:15px}
+.cuenta{display:flex;flex-direction:column;gap:5px;font-size:14.5px}
+.cuenta .l{display:flex;justify-content:space-between;gap:16px;font-variant-numeric:tabular-nums}
+.cuenta .l>span:first-child{color:var(--gris)}
+.cuenta .l>span:last-child{font-family:"IBM Plex Mono",monospace;font-size:13.5px}
+.cuenta .l.tot{border-top:1px solid var(--linea);padding-top:7px;margin-top:2px;font-weight:600;font-size:15.5px}
+.mas{color:var(--verde)}.menos{color:var(--rojo)}
+table.jt{width:100%;border-collapse:collapse;font-size:13.5px}
+table.jt th{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--tenue);text-align:right;padding:0 0 7px;border-bottom:1px solid var(--linea)}
+table.jt th:first-child{text-align:left}
+table.jt td{padding:8px 0;border-bottom:1px solid var(--linea);text-align:right;font-variant-numeric:tabular-nums;font-family:"IBM Plex Mono",monospace;font-size:12.5px}
+table.jt td:first-child{text-align:left;font-family:"Public Sans",sans-serif;font-size:13.5px}
+table.jt tr.sum td{border-bottom:0;border-top:1px solid var(--tinta);font-weight:600;padding-top:9px}
+table.jt tr:last-child td{border-bottom:0}
+.et-rep{font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:var(--tenue);border:1px solid var(--linea);border-radius:3px;padding:1px 4px;margin-left:7px;white-space:nowrap}
+.pie{font-size:12px;color:var(--tenue);margin:9px 0 0;line-height:1.55}
+.vacio2{color:var(--tenue);font-size:14px;margin:0}
+
+.leyenda{background:var(--caja);border:1px solid var(--linea);border-radius:12px;box-shadow:var(--sombra);padding:16px 18px;display:flex;flex-direction:column;gap:9px;font-size:14px;color:var(--gris)}
+.leyenda div{display:flex;gap:10px;align-items:flex-start}
+.leyenda b{color:var(--tinta);font-weight:600}
+.leyenda .ic{font-size:16px;flex:none;width:22px}
+.nota{font-size:12.5px;color:var(--gris);line-height:1.6;margin:0}
+.nota strong{color:var(--tinta)}
+.cierre{font-size:12.5px;color:var(--gris);text-align:center;max-width:64ch;margin:22px auto 0;line-height:1.6}
+.cierre strong{color:var(--tinta)}
+label:focus-within{outline:2px solid var(--rojo);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<input class="ctrl" type="radio" name="pest" id="t1" checked>
+<input class="ctrl" type="radio" name="pest" id="t2">
+<input class="ctrl" type="radio" name="ambito" id="a1" checked>
+<input class="ctrl" type="radio" name="ambito" id="a2">
+<input class="ctrl" type="radio" name="filtro" id="f1" checked>
+<input class="ctrl" type="radio" name="filtro" id="f2">
+<input class="ctrl" type="radio" name="filtro" id="f3">
+<input class="ctrl" type="radio" name="filtro" id="f4">
+<input class="ctrl" type="radio" name="filtro" id="f5">
+<input class="ctrl" type="radio" name="filtro" id="f6">
+<input class="ctrl" type="radio" name="filtro" id="f7">
+<input class="ctrl" type="radio" name="duenio" id="d1" checked>
+<input class="ctrl" type="radio" name="duenio" id="d2">
+<input class="ctrl" type="radio" name="duenio" id="d3">
+<input class="ctrl" type="radio" name="duenio" id="d4">
+
+<div class="env">
+
+  <div class="top">
+    <h1>Mercado de <em>La Liga</em></h1>
+    <div class="mitope">Tu tope de puja: <b>28.556.455 €</b></div>
+  </div>
+
+  <div class="pest">
+    <label for="t1">Jugadores</label>
+    <label for="t2">Equipos</label>
+  </div>
+
+  <div class="panel" id="p1">
+
+    <div class="grupo">
+      <span>Dónde busco</span>
+      <div class="ops">
+        <label for="a1">Solo el mercado</label>
+        <label for="a2">Todos los jugadores</label>
+      </div>
+    </div>
+
+    <div class="grupo">
+      <span>Qué me interesa</span>
+      <div class="ops">
+        <label for="f1">Todos</label>
+        <label for="f2">⭐💵 Los dos</label>
+        <label for="f3">⭐ Puntos</label>
+        <label for="f4">💵 Dinero</label>
+        <label for="f5">A mi alcance</label>
+        <label for="f6">📤 Vender</label>
+        <label for="f7">🔒 Blindar</label>
+      </div>
+    </div>
+
+    <div class="grupo">
+      <span>De quién es</span>
+      <div class="ops">
+        <label for="d1">Cualquiera</label>
+        <label for="d2">Sin dueño</label>
+        <label for="d3">De algún equipo</label>
+        <label for="d4">Mi plantilla</label>
+      </div>
+    </div>
+
+    <p class="aviso">Este consejo mira <strong>toda tu plantilla</strong>: los otros dos selectores no lo recortan.</p>
+
+    <div class="lista">
+<!--__JUGADORES__-->
+    </div>
+
+    <div class="leyenda">
+      <div><span class="ic">⭐</span><span><b>Puntos.</b> Está en el tercio con mejor media por partido de todos los jugadores que conozco, y ha jugado al menos dos.</span></div>
+      <div><span class="ic">💵</span><span><b>Dinero.</b> Su valor sube esta semana y está en el tercio que más ha crecido en el último mes: comprarlo y revenderlo debería dejar beneficio.</span></div>
+      <div><span class="ic" style="color:var(--rojo);font-family:'IBM Plex Mono',monospace;font-size:12px">€</span><span><b>El precio es lo que cuesta ficharlo.</b> Si el jugador tiene dueño, su <b>cláusula</b> —en rojo—: lo que hay que pagar para arrebatárselo. Si está <b>libre</b>, su valor de mercado. El <b>x/8</b> cuenta cuántos equipos llegan a ese precio.</span></div>
+      <div><span class="ic">🏷️</span><span><b>La etiqueta junto al nombre es su equipo</b> en tu liga. Los tuyos van en rojo; los que no son de nadie, en verde.</span></div>
+      <div><span class="ic">📤</span><span><b>Véndelo</b> (solo sobre los tuyos). No puntúa y su valor lleva un mes plano: ni te da puntos ni plusvalía. Vendiéndolo, ese dinero vuelve a la caja y te sube el tope de puja.</span></div>
+      <div><span class="ic">🔒</span><span><b>Súbele la cláusula</b> (solo sobre los tuyos). Rinde, casi todos los rivales pueden pagar su cláusula, y esa cláusula es barata para lo que produce o sigue en el mínimo. Es el candidato a que te lo quiten.</span></div>
+      <p class="nota">Los dos criterios se calculan sobre <strong>todos</strong> los jugadores, así que una estrella significa lo mismo mires donde mires; los selectores de arriba solo deciden a quién enseño. Son criterios sobre datos publicados, no una bola de cristal: un jugador puede lesionarse o dejar de jugar.</p>
+    </div>
+
+  </div>
+
+  <div class="panel" id="p2">
+    <p class="contador" style="text-align:left;color:var(--gris)">Pulsa un equipo para ver sus cuentas y todos sus fichajes.</p>
+<!--__EQUIPOS__-->
+  </div>
+
+  <p class="cierre">Reconstruido movimiento a movimiento desde el reinicio de la liga del 3 de agosto. El tope de puja propio calculado coincide <strong>al euro</strong> con el que muestra Mister.</p>
+
+</div>
+</body>
+</html>
