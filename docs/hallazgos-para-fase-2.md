@@ -298,3 +298,58 @@ saldo hoy = 50.000.000 − valor del reparto + ventas + premios
 
 Si para ellos cuadra y para el propio no, la diferencia está en las operaciones
 (hipótesis 1). Si tampoco cuadra, está en el reparto o en la ventana temporal.
+
+---
+
+# Los valores históricos exactos SÍ son extraíbles
+
+La ficha de cada jugador dibuja el gráfico de valor con **Chart.js**, y la
+instancia expone la serie completa día a día:
+
+```js
+const c = Object.values(Chart.instances)[0]
+c.data.labels            // ["30 jun 2026", "1 jul 2026", ... ] hasta 366 días
+c.data.datasets[0].data  // valor exacto de cada día
+```
+
+Comprobado contra los 15 jugadores del reparto inicial: coincide al euro con la
+estimación hecha restando el "cambio en un mes" del bloque de texto. **Esta es
+la fuente fiable del valor histórico**, y resuelve el problema de que `value`
+en el feed sea el valor actual.
+
+Es la vía para reconstruir el valor de plantilla de cualquier equipo en
+cualquier fecha, que es lo que la fórmula del tope de puja necesita.
+
+# El descuadre acotado: 9.123.330 € de gasto invisible
+
+Con los valores exactos del 3 de agosto, el reparto inicial propio (15
+jugadores, confirmado por el usuario) suma **28.953.000 €**. Por tanto:
+
+```
+saldo inicial según el mecanismo   50.000.000 − 28.953.000 = 21.047.000 €
+saldo hoy que eso predice          21.047.000 + 3.275.000 + 102.008.780 − 107.997.495 = 18.333.285 €
+saldo hoy real (Mister)                                                                =  9.209.955 €
+                                                                                          -----------
+gasto que el feed no registra                                                             9.123.330 €
+```
+
+**Descartado, con la comprobación hecha:**
+
+| Hipótesis | Por qué se descarta |
+|---|---|
+| Comisión al vender | Las ventas se hacen **por encima** del valor (son subastas), no por debajo |
+| Jugadores perdidos por salir de LaLiga | 20 jugadores salieron, pero el único que afectó (Carlos Domínguez) se había **comprado** cuatro días antes |
+| Valores históricos imprecisos | Verificados al euro con la serie de Chart.js |
+| Haber subido cláusulas pagando | Los ratios altos son automáticos: al fichar por cláusula, Mister fija la nueva en **el doble de lo pagado**. Comprobado en Aubameyang (12.342.000 = 2 × 6.171.000) y Brugué (2.000.000 = 2 × 1.000.000) |
+| Reparto de más de 15 jugadores | El usuario confirma que fueron unos 15 |
+
+**Pista cuantitativa:** 9.123.330 sobre las ventas normales al mercado
+(101.449.580 €) es un **8,99 %**. La cercanía a un 9 % redondo es demasiado
+buena para ignorarla, pero no encaja con que las ventas se cobren por encima del
+valor. Merece una comprobación dirigida: contrastar, para varias ventas, el
+precio que registra el feed con el incremento real del saldo.
+
+**Cómo cerrarlo definitivamente:** anotar el saldo propio hoy, hacer una única
+venta al mercado, y volver a mirarlo. La diferencia entre el `price` que
+registre el feed y el aumento real del saldo revela el concepto que falta en una
+sola operación.
