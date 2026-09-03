@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conectar con Mister</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@500;600&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--fondo:#F1F3F6;--caja:#FFF;--linea:#DDE2EA;--tinta:#141922;--gris:#606A79;--tenue:#949DAB;--rojo:#A21C3A;--rojo-suave:#FBEAEE;--verde:#0E7A43;--verde-suave:#E3F3EA;--oro:#8A5D00;--oro-suave:#FBF0D8;--sombra:0 1px 2px rgba(20,25,34,.05),0 10px 30px -14px rgba(20,25,34,.2)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--fondo:#0C0F14;--caja:#161B23;--linea:#2A323E;--tinta:#EAEDF2;--gris:#98A2B2;--tenue:#69727F;--rojo:#F0607F;--rojo-suave:#33131B;--verde:#4ADE93;--verde-suave:#112A1E;--oro:#F0C674;--oro-suave:#2C2413;--sombra:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7)}}
+:root[data-theme=dark]{--fondo:#0C0F14;--caja:#161B23;--linea:#2A323E;--tinta:#EAEDF2;--gris:#98A2B2;--tenue:#69727F;--rojo:#F0607F;--rojo-suave:#33131B;--verde:#4ADE93;--verde-suave:#112A1E;--oro:#F0C674;--oro-suave:#2C2413;--sombra:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7)}
+*{box-sizing:border-box}
+body{background:var(--fondo);color:var(--tinta);font-family:"Public Sans",ui-sans-serif,system-ui,sans-serif;font-size:16px;line-height:1.55;margin:0;padding:34px 16px 70px;-webkit-font-smoothing:antialiased}
+.env{max-width:660px;margin:0 auto}
+h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:26px;letter-spacing:-.025em;margin:0 0 8px}
+h1 em{font-style:normal;color:var(--rojo)}
+.sub{color:var(--gris);margin:0 0 24px;font-size:15px}
+.tarjeta{background:var(--caja);border:1px solid var(--linea);border-radius:13px;box-shadow:var(--sombra);padding:20px 22px;margin-bottom:16px}
+ol{margin:0;padding-left:22px}
+ol li{margin-bottom:9px}
+ol li:last-child{margin-bottom:0}
+kbd{font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:var(--fondo);border:1px solid var(--linea);border-bottom-width:2px;border-radius:5px;padding:1px 6px;white-space:nowrap}
+.ruta{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--rojo);white-space:nowrap}
+textarea{width:100%;min-height:120px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;line-height:1.5;color:var(--tinta);background:var(--fondo);border:1px solid var(--linea);border-radius:9px;padding:12px 13px;resize:vertical}
+textarea:focus{outline:2px solid var(--rojo);outline-offset:1px;border-color:var(--rojo)}
+.fila{display:flex;align-items:center;gap:13px;flex-wrap:wrap;margin-top:13px}
+button{font:inherit;font-size:15px;font-weight:600;color:#fff;background:var(--rojo);border:0;border-radius:99px;padding:11px 22px;cursor:pointer;display:flex;align-items:center;gap:8px}
+button:hover{filter:brightness(1.1)}
+button:disabled{opacity:.55;cursor:progress}
+.giro{display:inline-block;width:12px;height:12px;border:2px solid rgba(255,255,255,.35);border-top-color:#fff;border-radius:50%;animation:gira .7s linear infinite}
+@keyframes gira{to{transform:rotate(360deg)}}
+.saltar{font-size:14px;color:var(--gris)}
+.saltar a{color:var(--gris)}
+.res{border-radius:9px;padding:13px 15px;margin-top:14px;font-size:14px;line-height:1.6;border:1px solid var(--linea);border-left:3px solid var(--rojo);background:var(--fondo)}
+.res.bien{border-left-color:var(--verde)}
+.res b{display:block;margin-bottom:4px;font-size:15px}
+.res ul{margin:6px 0 0;padding-left:19px;color:var(--gris)}
+.nota{font-size:13px;color:var(--gris);line-height:1.65;margin:0}
+.nota strong{color:var(--tinta)}
+h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:16px;margin:0 0 11px}
+</style>
+</head>
+<body>
+<div class="env">
+
+  <h1>Conectar con <em>Mister</em></h1>
+  <p class="sub">Necesito tu sesión para poder bajar los movimientos de la liga. Se hace una vez.</p>
+
+  <div class="tarjeta">
+    <h2>Cómo se copia</h2>
+    <ol>
+      <li>Abre <span class="ruta">mister.mundodeportivo.com</span> en Chrome, con tu sesión iniciada.</li>
+      <li>Abre las herramientas de desarrollo: <kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>I</kbd></li>
+      <li>Ve a la pestaña <b>Network</b> y recarga con <kbd>⌘</kbd> <kbd>R</kbd>.</li>
+      <li>Clic derecho sobre cualquier petición de la lista → <b>Copy</b> → <b>Copy as cURL</b>.</li>
+      <li>Pégalo aquí abajo.</li>
+    </ol>
+  </div>
+
+  <div class="tarjeta">
+    <h2>Pega aquí</h2>
+    <textarea id="pegado" placeholder="curl 'https://mister.mundodeportivo.com/…' -H '…'" spellcheck="false" autocomplete="off"></textarea>
+    <div class="fila">
+      <button id="enviar" type="button">Conectar</button>
+      <span class="saltar"><a href="/?saltar=1">o mira los datos de la última actualización</a></span>
+    </div>
+    <div id="res"></div>
+  </div>
+
+  <p class="nota">De ese pegado saco solo dos cosas: la <strong>cookie de sesión</strong> y el token <strong>X-Auth</strong>. Se prueban contra Mister antes de guardar nada y quedan en <span class="ruta">.sesion/</span>, que git ignora. <strong>No salen de este ordenador</strong> y no se escriben en ningún registro.</p>
+
+<script>
+(function () {
+  var area = document.getElementById('pegado')
+  var btn = document.getElementById('enviar')
+  var res = document.getElementById('res')
+
+  function pinta(r) {
+    var lis = (r.detalle || []).map(function (d) {
+      return '<li>' + String(d).replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</li>'
+    }).join('')
+    res.innerHTML = '<div class="res' + (r.ok ? ' bien' : '') + '"><b>' +
+      (r.ok ? '✅ ' : '⚠️ ') + String(r.mensaje) + '</b>' +
+      (lis ? '<ul>' + lis + '</ul>' : '') + '</div>'
+  }
+
+  btn.addEventListener('click', function () {
+    btn.disabled = true
+    btn.innerHTML = '<span class="giro"></span>Probando'
+    res.innerHTML = ''
+    fetch('/credenciales', { method: 'POST', headers: { 'content-type': 'text/plain' }, body: area.value })
+      .then(function (r) { return r.json() })
+      .then(function (r) {
+        if (r.ok) {
+          // Que no se quede el pegado en el campo ni en el historial del formulario.
+          area.value = ''
+          pinta(r)
+          setTimeout(function () { location.href = '/' }, 900)
+          return
+        }
+        btn.disabled = false
+        btn.textContent = 'Conectar'
+        pinta(r)
+      })
+      .catch(function (e) {
+        btn.disabled = false
+        btn.textContent = 'Conectar'
+        pinta({ ok: false, mensaje: 'No pude hablar con el servidor local.', detalle: [String(e)] })
+      })
+  })
+
+  area.focus()
+})()
+</script>
+</div>
+</body>
+</html>

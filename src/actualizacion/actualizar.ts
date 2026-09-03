@@ -32,6 +32,8 @@ export type Resultado = {
   cuando: string
   mensaje: string
   detalle?: string[]
+  /** Ruta a la que mandar al usuario para arreglarlo, si la hay. */
+  irA?: string
   cambios?: { lotesNuevos: number; traspasosNuevos: number; fichasPedidas: number }
 }
 
@@ -47,14 +49,8 @@ async function main(): Promise<Resultado> {
       ok: false,
       cuando,
       mensaje: 'Faltan las credenciales de la sesión de Mister.',
-      detalle: [
-        e instanceof Error ? e.message : String(e),
-        'Se arregla una sola vez, con un clic derecho y un pegado:',
-        '1. En Chrome, con Mister abierto y la sesión iniciada, abre ⌥⌘I y ve a Network.',
-        '2. Recarga (⌘R), clic derecho en cualquier petición → Copy → Copy as cURL.',
-        '3. En el Terminal, dentro del proyecto:  npm run credenciales  — y pega (⌘V), Enter, Ctrl+D.',
-        'Ese pegado lleva las dos credenciales. Quedan en .sesion/, que git ignora, y no salen del ordenador.',
-      ],
+      irA: '/credenciales',
+      detalle: ['Se arregla en un minuto y solo hay que hacerlo una vez.'],
     }
   }
 

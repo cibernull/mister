@@ -13,35 +13,39 @@ JavaScript— pero ahí el botón no aparece: en su sitio se lee cómo arrancar 
 servidor. Un navegador no puede pedirle nada a Mister por su cuenta, así que
 quien va a buscar los datos es el proceso de Node.
 
-## Antes: las credenciales, una sola vez
+## La sesión: la pide la propia app
+
+Al arrancar, el servidor comprueba si la sesión guardada sigue valiendo. Si no
+hay ninguna, o ya no vale, lo primero que se abre **no es el módulo sino la
+pantalla para pegarla**. No hay que salir al Terminal.
 
 Mister exige dos cosas en cada petición: la cookie de sesión y el token
 `X-Auth`. La cuenta entra con Apple y la cookie es **HttpOnly**, así que ni el
-JavaScript de la propia página la ve. No hay forma de sacarlas por código.
+JavaScript de la propia página la ve. No hay forma de sacarlas por código: las
+tiene que traer una persona.
 
-Las dos viajan juntas en la cabecera de cualquier petición del navegador, y
-Chrome sabe copiar una petición entera como comando cURL. De ahí salen las dos
-de golpe:
+Ahora bien, las dos viajan juntas en la cabecera de cualquier petición del
+navegador, y Chrome sabe copiar una petición entera como comando cURL. Así que
+son un clic derecho y un pegado, no dos búsquedas por separado:
 
 1. En Chrome, con Mister abierto y la sesión iniciada, abre `⌥⌘I` → pestaña
    **Network**.
 2. Recarga con `⌘R`, clic derecho sobre cualquier petición →
    **Copy** → **Copy as cURL**.
-3. En el Terminal, dentro del proyecto:
+3. Pégalo en el recuadro y dale a **Conectar**.
 
-```bash
-npm run credenciales
-```
+De ahí se sacan solo esas dos cabeceras. **Se prueban contra Mister antes de
+guardar nada** —unas credenciales caducadas guardadas solo cambian el error de
+sitio, y encima pisarían unas que quizá sí valían— y se escriben en `.sesion/`
+con permisos 0600. No se imprimen nunca, ni en los errores, y `.sesion/` está
+en `.gitignore`.
 
-y pega (`⌘V`), Enter, `Ctrl+D`.
+Desde el enlace *«o mira los datos de la última actualización»* se entra igual
+al módulo sin conectar: tener los datos viejos es mejor que no poder mirarlos.
 
-El comando saca las dos cabeceras, **las prueba contra Mister antes de guardar
-nada** —unas credenciales caducadas guardadas solo cambian el error de sitio— y
-las escribe en `.sesion/` con permisos 0600. Nunca las imprime, ni en los
-errores. `.sesion/` está en `.gitignore`.
-
-Cuando la sesión del navegador caduque, el botón lo dirá y basta con repetir
-estos tres pasos.
+Cuando la sesión caduque, el botón Actualizar lo dirá y ofrecerá un botón que
+lleva a esa misma pantalla. Y quien prefiera el Terminal tiene
+`npm run credenciales`, que hace exactamente lo mismo.
 
 ## Qué hace una pasada
 
@@ -131,6 +135,6 @@ El navegador recarga y aparece un aviso con lo que ha cambiado.
 | Comando | Qué hace |
 |---|---|
 | `npm run app` | Levanta la app con el botón en `127.0.0.1:4788` |
-| `npm run credenciales` | Guarda la sesión desde un «Copy as cURL» |
+| `npm run credenciales` | Lo mismo que la pantalla, desde el Terminal |
 | `npm run actualizar` | Una pasada desde el Terminal, sin la app |
 | `npm run generar` | Solo rehace el HTML con los datos que ya hay |

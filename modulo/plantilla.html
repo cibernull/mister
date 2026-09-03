@@ -148,6 +148,8 @@ label:focus-within{outline:2px solid var(--rojo);outline-offset:2px}
 .aviso-act b{display:block;margin-bottom:5px;font-size:14.5px}
 .aviso-act ul{margin:7px 0 0;padding-left:19px;color:var(--gris)}
 .aviso-act li{font-variant-numeric:tabular-nums}
+.aviso-act .arreglo{display:inline-block;font-size:14px;font-weight:600;color:#fff;background:var(--rojo);border-radius:99px;padding:8px 17px;text-decoration:none}
+.aviso-act .arreglo:hover{filter:brightness(1.1)}
 </style>
 </head>
 <body>
@@ -263,7 +265,8 @@ label:focus-within{outline:2px solid var(--rojo);outline-offset:2px}
     }).join('')
     caja.innerHTML = '<div class="aviso-act' + (r.ok ? ' bien' : '') + '"><b>' +
       (r.ok ? '\u2705 ' : '\u26a0\ufe0f ') + String(r.mensaje) + '</b>' +
-      (lis ? '<ul>' + lis + '</ul>' : '') + '</div>'
+      (lis ? '<ul>' + lis + '</ul>' : '') +
+      (r.irA ? '<p style="margin:11px 0 0"><a class="arreglo" href="' + r.irA + '">Conectar con Mister &rarr;</a></p>' : '') + '</div>'
   }
 
   // Abierta con doble clic (file://) no hay a quién pedirle los datos.
