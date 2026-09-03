@@ -930,7 +930,6 @@ git commit -m "feat: parseadores de plantilla y de la serie histórica de valore
 - Modificar: `src/recoleccion/cliente.ts` (añadir `pedirPagina`)
 - Modificar: `src/almacen/esquema.ts` y `src/almacen/crudo.ts` (tabla de páginas)
 - Crear: `src/recoleccion/auxiliares.ts`
-- Crear: `src/cli/auxiliares.ts`
 - Crear: `tests/recoleccion/auxiliares.test.ts`
 - Modificar: `package.json`
 
