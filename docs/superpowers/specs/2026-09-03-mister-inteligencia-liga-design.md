@@ -1,7 +1,8 @@
 # Mister — Inteligencia de liga Fantasy
 
 **Fecha:** 2026-09-03
-**Estado:** diseño aprobado, pendiente de plan de implementación
+**Estado:** diseño aprobado; Fase 1 en ejecución. Actualizado el 2026-09-03 con
+los hechos verificados de `docs/api-mister.md`.
 
 ## Propósito
 
@@ -31,11 +32,15 @@ suposiciones.
 
 ### Autenticación
 
-La sesión viaja en una **cookie `HttpOnly`** del dominio
-`mister.mundodeportivo.com`. No hay token en `localStorage` (solo el perfil del
-usuario) ni cabecera `Authorization`. La cuenta usa login con Apple, así que no
-existe la posibilidad de autenticarse programáticamente: la cookie hay que
-tomarla de un navegador ya autenticado.
+Hacen falta **dos** credenciales, y ambas salen de un navegador ya autenticado
+—la cuenta usa login con Apple, así que no hay autenticación programática
+posible:
+
+1. La **cookie de sesión**, `HttpOnly`, del dominio `mister.mundodeportivo.com`.
+2. El **token `X-Auth`**, que la web guarda en `window._FG_cfg.auth`.
+
+No hay token en `localStorage` (solo el perfil del usuario) ni cabecera
+`Authorization`.
 
 La sesión observada estaba viva desde agosto de 2023, lo que indica una cookie
 de larga duración. Se asume que capturarla una vez basta durante meses.
@@ -91,22 +96,31 @@ cambió y hay que avisar en vez de calcular mal en silencio.
 ### El histórico: `POST /ajax/feed`
 
 El "Inicio" de la liga es un muro paginado que **retrocede hasta el origen de la
-liga**. Se alimenta de `POST /ajax/feed` con un campo `page` (entero creciente
-hacia el pasado), y responde JSON que la aplicación renderiza con plantillas
-Twig. Los nombres de esas plantillas revelan los tipos de evento:
+liga**. Se alimenta de `POST /ajax/feed`, con la cabecera `X-Auth` y un cuerpo
+con `offset` acumulado y `cardsPerPage`. Responde JSON: `data` es el array de
+eventos y el histórico se agota cuando llega vacío.
 
-| Plantilla | Evento | Uso |
+**Recorrido completo verificado:** 285 eventos en 16 lotes, desde el 2026-08-03.
+De las 12 categorías del feed, solo dos son contables:
+
+| `category` | Nº | Uso |
 |---|---|---|
-| `feed/transfer.twig` | Transacción de mercado | **Esencial** |
-| `feed/gameweek_end.twig` | Cierre de jornada | **Esencial** |
-| `feed/player_transfer.twig` | Fichaje real de LaLiga | Ruido, se descarta |
+| `transfer` | 183 | **Esencial** — transacción de la liga |
+| `gameweek_end` | 4 | **Esencial** — cierre de jornada con premios |
+| las otras diez | 98 | Ruido catalogado, se descarta a conciencia |
 
-Formas de transacción observadas, todas con importe explícito:
+La petición exacta y el catálogo íntegro están en `docs/api-mister.md`.
+
+Formas de `transfer` observadas, **todas con importe entero explícito**. Un
+`transfer` sin `price` es una anomalía y debe detener el proceso, no asumirse
+como cero:
 
 - `«Jugador» cambia de «Manager» a «Mister»` — venta al mercado.
 - `«Jugador» cambia de «Mister» a «Manager»` — compra en el mercado.
 - `«Jugador» cambia de «Manager A» a «Manager B» por pago de cláusula`.
-- `«Jugador» abandona la competición` — baja, sin importe.
+- `«Jugador» abandona la competición` — NO es una transacción: es el
+  renderizado de un `player_transfer` (jugador que deja LaLiga). Es ruido y no
+  afecta a la contabilidad. Ver `docs/api-mister.md`.
 
 El evento de cierre de jornada lista, para cada equipo, **el dinero ganado y los
 puntos** (por ejemplo `+725.000 · 29 PTS`), incluido el caso
@@ -142,34 +156,32 @@ saldo(equipo) = presupuesto inicial
 - Un `ajax/balance` visible en el tráfico **no es de Mister**: proviene de otra
   extensión instalada en el navegador del autor.
 
-### Incógnita conocida, y por qué no pone en riesgo la exactitud
+### La incógnita del 401, resuelta
 
-Reproducir `POST /ajax/feed` desde fuera del navegador devuelve 401 aunque se
-envíen `page` y `auth`. La aplicación lo consigue, luego falta alguna cabecera
-que no se llegó a capturar.
+`POST /ajax/feed` devolvía 401 por dos errores de diagnóstico: el token va en la
+cabecera **`X-Auth`**, no en el cuerpo, y la paginación es por **`offset`**
+acumulado, no por un campo `page` que no existe. Con eso, responde 200.
 
-Como el requisito es fidelidad absoluta, la recolección se diseña con **dos vías
-y una condición de aceptación común**, no con una vía y una esperanza:
+Aun resuelto, la recolección conserva **dos vías con una condición de aceptación
+común**, porque el requisito es fidelidad absoluta y no conviene depender de una
+sola:
 
-- **Vía A — cliente HTTP directo.** Se replica la petición de la aplicación
-  cabecera por cabecera. Es la preferible: rápida, programable y sin
+- **Vía A — cliente HTTP directo.** Replica la petición de la aplicación
+  cabecera por cabecera. Es la principal: rápida, programable y sin
   dependencias externas.
-- **Vía B — recolección conducida en el navegador.** Si la vía A no se
-  consigue, el recorrido se ejecuta **dentro de la propia página**, que es donde
-  la petición funciona con certeza, y vuelca el JSON íntegro a disco para que el
-  resto del sistema lo procese igual.
+- **Vía B — recolección conducida en el navegador.** El recorrido se ejecuta
+  **dentro de la propia página** y vuelca el JSON íntegro a disco. Es el
+  respaldo si las credenciales caducan, y es con la que se capturó el histórico
+  de referencia.
 
 Ambas producen exactamente el mismo artefacto: las respuestas crudas del feed,
 página a página, sin alterar. **El resto del sistema no sabe cuál se usó**, así
 que la elección es reversible y no contamina el diseño.
 
 La condición de aceptación no cambia con la vía elegida: el histórico está
-completo cuando se alcanza el primer evento de la liga sin huecos en la
-paginación y las tres comprobaciones de la sección de exactitud cuadran al
-céntimo. Mientras eso no ocurra, la recolección no se da por buena.
-
-Resolver la vía A es la primera tarea del plan; la vía B es la garantía de que
-el proyecto no depende de que se consiga.
+completo cuando el feed se agota y los lotes encajan sin hueco ni solape —cada
+`offset` es el anterior más su número de eventos—, y las tres comprobaciones de
+la sección de exactitud cuadran al céntimo.
 
 ## Arquitectura
 
@@ -178,7 +190,7 @@ estrechas. Cada una se entiende y se prueba por separado.
 
 ```
   Sesión  ─────►  Recolector  ─────►  Almacén  ─────►  Motor  ─────►  Panel
- (cookie)        (HTTP + parseo)     (SQLite)        (cálculo)       (web)
+(credenciales)   (HTTP + parseo)     (SQLite)        (cálculo)       (web)
 ```
 
 ### 1. Sesión
@@ -204,8 +216,8 @@ Pide páginas y las convierte en eventos. Dos capas separadas a propósito:
 
 El recolector tiene dos modos:
 
-- **Recolección inicial**: recorre `/ajax/feed` desde `page=0` hacia atrás hasta
-  agotar el histórico. Se ejecuta una vez.
+- **Recolección inicial**: recorre `/ajax/feed` desde `offset=0` hacia atrás
+  hasta agotar el histórico. Se ejecuta una vez.
 - **Recolección incremental**: recorre solo hasta encontrar el último evento ya
   conocido. Se ejecuta a diario.
 

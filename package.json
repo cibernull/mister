@@ -1,0 +1,23 @@
+{
+  "name": "mister-inteligencia",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "recolectar": "mkdir -p datos && tsx src/cli/recolectar.ts",
+    "importar": "mkdir -p datos && tsx src/cli/importar.ts"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.3"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.5.0"
+  }
+}
