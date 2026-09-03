@@ -380,52 +380,109 @@ git commit -m "feat: tipos de evento del dominio"
 
 ### Tarea 4: Parseador del feed
 
-**Base fáctica:** la forma real de la respuesta está documentada en
-`docs/api-mister.md`, verificada contra el histórico completo de la liga. Los
-fixtures reales están en `fixtures/`. **No inventes campos**: los de aquí son
-los que existen.
+**Base fáctica: verificada contra el volcado completo de la liga.** La forma de
+la respuesta está en `docs/api-mister.md`; los fixtures reales, saneados de
+credenciales y datos personales, están en `fixtures/`. **No inventes campos.**
 
 **Ficheros:**
+- Modificar: `src/dominio/eventos.ts` (el campo `porClausula` pasa a `operacion`)
+- Modificar: `tests/dominio/eventos.test.ts` (adaptar el objeto de prueba)
 - Crear: `src/recoleccion/parseadorFeed.ts`
 - Crear: `tests/recoleccion/parseadorFeed.test.ts`
 
 **Interfaces:**
-- Consume: `Evento`, `Transaccion`, `CierreJornada`, `Ruido`, `esContable` (Tarea 3).
+- Consume: `Evento`, `Transaccion`, `CierreJornada`, `Parte`, `ResultadoEquipo`, `esContable` (Tarea 3).
 - Produce:
   - `function parsearPaginaFeed(cuerpo: string): PaginaFeed`
   - `type PaginaFeed = { eventos: Evento[]; agotado: boolean }`
   - `class CategoriaDesconocidaError extends Error { readonly categoria: string; readonly crudo: string }`
+  - `class OperacionDesconocidaError extends Error { readonly operacion: string; readonly crudo: string }`
 
-**Estructura de la respuesta** (ver `docs/api-mister.md`):
+#### Dos hechos que cambian el diseño respecto a lo que se supuso al principio
+
+**1. Un evento `transfer` contiene VARIOS movimientos.** Su `data` es un
+**array**. En el histórico real, 183 eventos `transfer` contienen **252
+movimientos**: 32 de esos eventos traen más de uno. Un parseador que asumiera
+un movimiento por evento **perdería 69 transacciones en silencio** — justo el
+fallo que este proyecto no admite. `parsearPaginaFeed` debe devolver una
+`Transaccion` **por movimiento**, no por evento.
+
+**2. Hay tres tipos de operación**, no dos: `normal` (244), `clause` (7) y
+`rescind` (1). Un booleano `porClausula` perdería la distinción entre `clause`
+y `rescind`, y el signo contable de cada una puede diferir. Por eso el campo
+pasa a ser `operacion: 'normal' | 'clause' | 'rescind'`, y **un cuarto valor
+lanza error** en vez de tratarse como `normal`.
+
+#### Estructura real de cada categoría
+
+**`transfer`** — `evento.data` es un array; cada elemento trae:
+
+| Campo | Tipo | Significado |
+|---|---|---|
+| `id_transfer` | entero | Identificador único del movimiento |
+| `id_uc_from` | entero | Vendedor. **`0` = el mercado (Mister)** |
+| `id_uc_to` | entero | Comprador. **`0` = el mercado** |
+| `from` / `to` | texto | Nombres mostrados |
+| `price` | **entero** | Importe. Verificado: los 252 movimientos lo traen |
+| `type` | texto | `normal`, `clause` o `rescind` |
+| `name` | texto | Nombre del jugador |
+
+**`gameweek_end`** — la lista de equipos está anidada tres niveles:
 
 ```
-{ status: "ok", data: [ { category, created, date, data, id, ... } ], cfg, isAjax }
+evento.data.gameweek                          → número de jornada
+evento.data.ranking.ranking.positions         → array de equipos
 ```
 
-- `data` es un **array**. No hay `has_more`: `agotado` es `data.length === 0`.
-- `category` es el discriminador del tipo.
-- En un `transfer`, la carga útil está en `evento.data` e incluye
-  `id_transfer`, `id_uc_from`, `id_uc_to`, `price` (**entero**), `type`,
-  `from`, `to`, `name`.
-- `id_uc_from === 0` o `id_uc_to === 0` significa **el mercado**, no un equipo.
+Cada posición trae:
 
-**Catálogo de categorías** — las 12 observadas. Contables: `transfer` y
-`gameweek_end`. Ruido catalogado: las otras diez.
+| Campo | Tipo | Significado |
+|---|---|---|
+| `idUc` | entero | Identidad estable del equipo |
+| `user.name` | texto | Nombre del equipo |
+| `points` | entero | Puntos de la jornada (puede ser negativo) |
+| `payment` | entero **o `null`** | Premio. `null` cuando el equipo no cobra |
+| `teamValue` | entero | Valor de plantilla en esa jornada |
+| `negative` | booleano | Saldo negativo, no puntuó |
 
-- [ ] **Paso 1: Escribir el test que falla**
+**`payment` es `null`, no 0, cuando no se cobra.** Se normaliza a `0` en
+`premio`, que es lo correcto contablemente, pero **solo** para `null`; cualquier
+otro valor no entero es un error.
 
-Fichero `tests/recoleccion/parseadorFeed.test.ts`. Los tests exigen que exista
-al menos un evento de cada tipo antes de comprobarlo: un bucle vacío **no**
-puede pasar en verde.
+- [ ] **Paso 1: Ajustar el tipo `Transaccion`**
+
+En `src/dominio/eventos.ts`, sustituir el campo `porClausula: boolean` por:
+
+```ts
+  /** Tipo de operación tal y como lo publica Mister. */
+  operacion: TipoOperacion
+```
+
+y añadir, junto a los demás tipos:
+
+```ts
+/** Los tres tipos de movimiento observados en el histórico. */
+export type TipoOperacion = 'normal' | 'clause' | 'rescind'
+```
+
+En `tests/dominio/eventos.test.ts`, cambiar `porClausula: false` por
+`operacion: 'normal'` en el objeto de prueba. Ese test debe seguir pasando.
+
+- [ ] **Paso 2: Escribir el test que falla**
+
+Fichero `tests/recoleccion/parseadorFeed.test.ts`. Cada test exige que exista
+al menos un elemento de su tipo antes de comprobarlo: **un bucle vacío no puede
+pasar en verde**.
 
 ```ts
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import {
   CategoriaDesconocidaError,
+  OperacionDesconocidaError,
   parsearPaginaFeed,
 } from '../../src/recoleccion/parseadorFeed.js'
-import type { Transaccion, CierreJornada } from '../../src/dominio/eventos.js'
+import type { CierreJornada, Transaccion } from '../../src/dominio/eventos.js'
 
 const pagina0 = readFileSync('fixtures/feed-offset-0.json', 'utf8')
 const paginaCierre = readFileSync('fixtures/feed-con-cierre-jornada.json', 'utf8')
@@ -437,13 +494,17 @@ const transaccionesDe = (cuerpo: string): Transaccion[] =>
 const cierresDe = (cuerpo: string): CierreJornada[] =>
   parsearPaginaFeed(cuerpo).eventos.filter((e): e is CierreJornada => e.tipo === 'cierreJornada')
 
+const conCategoria = (categoria: string) =>
+  JSON.stringify({ status: 'ok', data: [{ category: categoria, created: '2026-09-03 10:00:00', data: [] }] })
+
 describe('parsearPaginaFeed', () => {
   it('extrae eventos de la página real', () => {
     expect(parsearPaginaFeed(pagina0).eventos.length).toBeGreaterThan(0)
   })
 
-  it('la página real contiene transacciones', () => {
-    expect(transaccionesDe(pagina0).length).toBeGreaterThan(0)
+  it('produce una transacción por cada movimiento, no por evento', () => {
+    // El fixture tiene 7 eventos `transfer` que contienen 8 movimientos.
+    expect(transaccionesDe(pagina0)).toHaveLength(8)
   })
 
   it('toda transacción tiene importe entero no negativo', () => {
@@ -455,7 +516,7 @@ describe('parsearPaginaFeed', () => {
     }
   })
 
-  it('toda transacción nombra jugador y ambas partes', () => {
+  it('toda transacción nombra al jugador y a ambas partes', () => {
     const ts = transaccionesDe(pagina0)
     expect(ts.length).toBeGreaterThan(0)
     for (const t of ts) {
@@ -467,36 +528,64 @@ describe('parsearPaginaFeed', () => {
 
   it('reconoce el mercado cuando id_uc vale 0', () => {
     const ts = transaccionesDe(pagina0)
-    const conMercado = ts.filter(
-      (t) => t.origen.clase === 'mercado' || t.destino.clase === 'mercado',
-    )
+    const conMercado = ts.filter((t) => t.origen.clase === 'mercado' || t.destino.clase === 'mercado')
     expect(conMercado.length).toBeGreaterThan(0)
   })
 
-  it('la página de cierre contiene un cierre de jornada con resultados', () => {
+  it('nombra los equipos cuando id_uc no es 0', () => {
+    const ts = transaccionesDe(pagina0)
+    const conEquipo = ts.filter((t) => t.origen.clase === 'equipo' || t.destino.clase === 'equipo')
+    expect(conEquipo.length).toBeGreaterThan(0)
+    for (const t of conEquipo) {
+      if (t.origen.clase === 'equipo') expect(t.origen.nombre).not.toBe('')
+      if (t.destino.clase === 'equipo') expect(t.destino.nombre).not.toBe('')
+    }
+  })
+
+  it('conserva el tipo de operación', () => {
+    const ts = transaccionesDe(pagina0)
+    expect(ts.length).toBeGreaterThan(0)
+    for (const t of ts) {
+      expect(['normal', 'clause', 'rescind']).toContain(t.operacion)
+    }
+  })
+
+  it('la página de cierre trae un cierre con los ocho equipos', () => {
     const cs = cierresDe(paginaCierre)
     expect(cs.length).toBeGreaterThan(0)
     for (const c of cs) {
-      expect(c.resultados.length).toBeGreaterThan(0)
+      expect(c.resultados).toHaveLength(8)
       expect(Number.isInteger(c.jornada)).toBe(true)
     }
   })
 
-  it('todo resultado de jornada tiene premio entero y puntos', () => {
+  it('todo resultado de jornada trae equipo, premio entero y puntos', () => {
     const cs = cierresDe(paginaCierre)
     expect(cs.length).toBeGreaterThan(0)
     for (const c of cs) {
       for (const r of c.resultados) {
+        expect(r.equipo).not.toBe('')
         expect(Number.isInteger(r.premio)).toBe(true)
         expect(Number.isInteger(r.puntos)).toBe(true)
-        expect(r.equipo).not.toBe('')
       }
     }
   })
 
-  it('clasifica player_transfer como ruido, no como transacción', () => {
-    const { eventos } = parsearPaginaFeed(pagina0)
-    const ruido = eventos.filter((e) => e.tipo === 'ruido')
+  it('normaliza a cero el premio de quien no cobra', () => {
+    const cs = cierresDe(paginaCierre)
+    const sinPremio = cs.flatMap((c) => c.resultados).filter((r) => r.premio === 0)
+    // En la jornada del fixture hay dos equipos con `payment: null`.
+    expect(sinPremio.length).toBeGreaterThan(0)
+  })
+
+  it('marca sinPuntuar a quien tiene saldo negativo', () => {
+    const cs = cierresDe(paginaCierre)
+    const negativos = cs.flatMap((c) => c.resultados).filter((r) => r.sinPuntuar)
+    expect(negativos.length).toBeGreaterThan(0)
+  })
+
+  it('clasifica player_transfer como ruido', () => {
+    const ruido = parsearPaginaFeed(pagina0).eventos.filter((e) => e.tipo === 'ruido')
     expect(ruido.length).toBeGreaterThan(0)
   })
 
@@ -509,36 +598,60 @@ describe('parsearPaginaFeed', () => {
   })
 
   it('lanza CategoriaDesconocidaError ante una categoría no catalogada', () => {
-    const inventado = JSON.stringify({
-      status: 'ok',
-      data: [{ category: 'categoria_que_no_existe', created: '2026-09-03 10:00:00', data: {} }],
-    })
-    expect(() => parsearPaginaFeed(inventado)).toThrow(CategoriaDesconocidaError)
+    expect(() => parsearPaginaFeed(conCategoria('categoria_inventada'))).toThrow(CategoriaDesconocidaError)
   })
 
-  it('el error conserva la categoría y el contenido crudo', () => {
-    const inventado = JSON.stringify({
-      status: 'ok',
-      data: [{ category: 'categoria_que_no_existe', created: '2026-09-03 10:00:00', data: {} }],
-    })
+  it('el error de categoría conserva su nombre y el crudo', () => {
     try {
-      parsearPaginaFeed(inventado)
+      parsearPaginaFeed(conCategoria('categoria_inventada'))
       expect.unreachable('debería haber lanzado')
     } catch (e) {
       expect(e).toBeInstanceOf(CategoriaDesconocidaError)
-      expect((e as CategoriaDesconocidaError).categoria).toBe('categoria_que_no_existe')
-      expect((e as CategoriaDesconocidaError).crudo).toContain('categoria_que_no_existe')
+      expect((e as CategoriaDesconocidaError).categoria).toBe('categoria_inventada')
+      expect((e as CategoriaDesconocidaError).crudo).toContain('categoria_inventada')
     }
+  })
+
+  it('lanza OperacionDesconocidaError ante un tipo de operación no catalogado', () => {
+    const cuerpo = JSON.stringify({
+      status: 'ok',
+      data: [
+        {
+          category: 'transfer',
+          created: '2026-09-03 10:00:00',
+          data: [
+            { id_transfer: 1, id_uc_from: 0, id_uc_to: 5, from: 'Mister', to: 'Equipo', price: 100, type: 'permuta_inventada', name: 'Jugador' },
+          ],
+        },
+      ],
+    })
+    expect(() => parsearPaginaFeed(cuerpo)).toThrow(OperacionDesconocidaError)
+  })
+
+  it('lanza si un movimiento no trae price entero', () => {
+    const cuerpo = JSON.stringify({
+      status: 'ok',
+      data: [
+        {
+          category: 'transfer',
+          created: '2026-09-03 10:00:00',
+          data: [
+            { id_transfer: 1, id_uc_from: 0, id_uc_to: 5, from: 'Mister', to: 'Equipo', price: null, type: 'normal', name: 'Jugador' },
+          ],
+        },
+      ],
+    })
+    expect(() => parsearPaginaFeed(cuerpo)).toThrow(/price/i)
   })
 })
 ```
 
-- [ ] **Paso 2: Ejecutar el test y comprobar que falla**
+- [ ] **Paso 3: Ejecutar el test y comprobar que falla**
 
 Ejecutar: `npx vitest run tests/recoleccion/parseadorFeed.test.ts`
 Esperado: FALLA por módulo `src/recoleccion/parseadorFeed.js` inexistente.
 
-- [ ] **Paso 3: Escribir la implementación**
+- [ ] **Paso 4: Escribir la implementación**
 
 Fichero `src/recoleccion/parseadorFeed.ts`:
 
@@ -548,6 +661,7 @@ import type {
   Evento,
   Parte,
   ResultadoEquipo,
+  TipoOperacion,
   Transaccion,
 } from '../dominio/eventos.js'
 
@@ -573,9 +687,22 @@ export class CategoriaDesconocidaError extends Error {
   }
 }
 
+/** Tipo de movimiento no catalogado: su signo contable es desconocido. */
+export class OperacionDesconocidaError extends Error {
+  readonly operacion: string
+  readonly crudo: string
+
+  constructor(operacion: string, crudo: string) {
+    super(`tipo de operación no catalogado: ${operacion}. Recolección detenida.`)
+    this.name = 'OperacionDesconocidaError'
+    this.operacion = operacion
+    this.crudo = crudo
+  }
+}
+
 /** Categorías sin efecto contable, ignoradas a conciencia y de forma explícita. */
 const CATEGORIAS_RUIDO = new Set([
-  'player_transfer',  // fichaje de LaLiga real, no de la liga Fantasy
+  'player_transfer', // fichaje de LaLiga real, no de la liga Fantasy
   'post',
   'blog',
   'news_md',
@@ -587,10 +714,12 @@ const CATEGORIAS_RUIDO = new Set([
   'market_unified',
 ])
 
+const OPERACIONES: ReadonlySet<string> = new Set<TipoOperacion>(['normal', 'clause', 'rescind'])
+
 type EventoBruto = {
   category?: string
   created?: string
-  data?: Record<string, unknown>
+  data?: unknown
 }
 
 export function parsearPaginaFeed(cuerpo: string): PaginaFeed {
@@ -598,23 +727,41 @@ export function parsearPaginaFeed(cuerpo: string): PaginaFeed {
   const brutos = respuesta.data ?? []
 
   return {
-    eventos: brutos.map(parsearEvento),
+    eventos: brutos.flatMap(parsearEvento),
     agotado: brutos.length === 0,
   }
 }
 
-function parsearEvento(bruto: EventoBruto): Evento {
+/**
+ * Un evento bruto produce CERO O VARIOS eventos de dominio.
+ *
+ * Un `transfer` puede contener varios movimientos en su array `data`: en el
+ * histórico real, 183 eventos contienen 252 movimientos. Devolver uno solo por
+ * evento perdería transacciones en silencio.
+ */
+function parsearEvento(bruto: EventoBruto): Evento[] {
   const categoria = bruto.category ?? ''
   const fecha = bruto.created ?? ''
 
-  if (categoria === 'transfer') return parsearTransaccion(bruto, fecha)
-  if (categoria === 'gameweek_end') return parsearCierreJornada(bruto, fecha)
+  if (categoria === 'transfer') {
+    return comoLista(bruto.data).map((m) => parsearTransaccion(m, fecha))
+  }
+
+  if (categoria === 'gameweek_end') {
+    return [parsearCierreJornada(bruto.data, fecha)]
+  }
 
   if (CATEGORIAS_RUIDO.has(categoria)) {
-    return { tipo: 'ruido', fecha, motivo: `categoría sin efecto contable: ${categoria}` }
+    return [{ tipo: 'ruido', fecha, motivo: `categoría sin efecto contable: ${categoria}` }]
   }
 
   throw new CategoriaDesconocidaError(categoria, JSON.stringify(bruto))
+}
+
+function comoLista(valor: unknown): Record<string, unknown>[] {
+  if (Array.isArray(valor)) return valor as Record<string, unknown>[]
+  if (valor && typeof valor === 'object') return Object.values(valor as object)
+  return []
 }
 
 /** `id_uc` 0 es el mercado de Mister, no un equipo. */
@@ -624,66 +771,94 @@ function parte(idUc: unknown, nombre: unknown): Parte {
     : { clase: 'equipo', nombre: String(nombre ?? '') }
 }
 
-function exigirEntero(valor: unknown, campo: string): number {
-  const n = Number(valor)
-  if (!Number.isInteger(n)) {
-    throw new Error(`campo ${campo} no es un entero: ${JSON.stringify(valor)}`)
+function exigirEntero(valor: unknown, campo: string, crudo: unknown): number {
+  if (!Number.isInteger(valor)) {
+    throw new Error(`el campo ${campo} no es un entero: ${JSON.stringify(valor)} en ${JSON.stringify(crudo)}`)
   }
-  return n
+  return valor as number
 }
 
-function parsearTransaccion(bruto: EventoBruto, fecha: string): Transaccion {
-  const d = bruto.data ?? {}
+function parsearTransaccion(m: Record<string, unknown>, fecha: string): Transaccion {
+  const operacion = String(m['type'] ?? '')
+  if (!OPERACIONES.has(operacion)) {
+    throw new OperacionDesconocidaError(operacion, JSON.stringify(m))
+  }
 
   return {
     tipo: 'transaccion',
     fecha,
-    jugador: String(d['name'] ?? ''),
-    origen: parte(d['id_uc_from'], d['from']),
-    destino: parte(d['id_uc_to'], d['to']),
-    importe: exigirEntero(d['price'], 'price'),
-    porClausula: String(d['type'] ?? '') === 'clause',
+    jugador: String(m['name'] ?? ''),
+    origen: parte(m['id_uc_from'], m['from']),
+    destino: parte(m['id_uc_to'], m['to']),
+    importe: exigirEntero(m['price'], 'price', m),
+    operacion: operacion as TipoOperacion,
   }
 }
 
-function parsearCierreJornada(bruto: EventoBruto, fecha: string): CierreJornada {
-  const d = bruto.data ?? {}
-  const ranking = (d['ranking'] ?? []) as Record<string, unknown>[]
+function parsearCierreJornada(datos: unknown, fecha: string): CierreJornada {
+  const d = (datos ?? {}) as Record<string, unknown>
+  const anidado = (d['ranking'] ?? {}) as Record<string, unknown>
+  const interno = (anidado['ranking'] ?? {}) as Record<string, unknown>
+  const posiciones = comoLista(interno['positions'])
 
-  const resultados: ResultadoEquipo[] = ranking.map((r) => ({
-    equipo: String(r['name'] ?? r['team'] ?? ''),
-    premio: exigirEntero(r['cash'] ?? r['prize'] ?? 0, 'premio'),
-    puntos: exigirEntero(r['points'] ?? 0, 'puntos'),
-    sinPuntuar: Boolean(r['negative'] ?? false),
-  }))
+  const resultados: ResultadoEquipo[] = posiciones.map((p) => {
+    const usuario = (p['user'] ?? {}) as Record<string, unknown>
+
+    return {
+      equipo: String(usuario['name'] ?? ''),
+      // `payment` viene null cuando el equipo no cobra; eso sí es cero.
+      premio: p['payment'] === null ? 0 : exigirEntero(p['payment'], 'payment', p),
+      puntos: exigirEntero(p['points'], 'points', p),
+      sinPuntuar: Boolean(p['negative'] ?? false),
+    }
+  })
 
   return {
     tipo: 'cierreJornada',
     fecha,
-    jornada: exigirEntero(d['gameweek'], 'gameweek'),
+    jornada: exigirEntero(d['gameweek'], 'gameweek', d),
     resultados,
   }
 }
 ```
 
-**Nota importante:** los nombres de los campos dentro de `ranking` de
-`gameweek_end` (`name`/`team`, `cash`/`prize`, `negative`) están sin confirmar,
-porque solo se inspeccionó el nivel superior. **Antes de implementar, abre
-`fixtures/feed-con-cierre-jornada.json` y comprueba los nombres reales.** Ajusta
-`parsearCierreJornada` a lo que haya y quita las alternativas que sobren: dejar
-un `??` de más es exactamente el tipo de suposición que este proyecto no admite.
-
-- [ ] **Paso 4: Ejecutar los tests y comprobar que pasan**
+- [ ] **Paso 5: Ejecutar los tests y comprobar que pasan**
 
 Ejecutar: `npx vitest run tests/recoleccion/parseadorFeed.test.ts`
-Esperado: PASA, 12 tests.
+Esperado: PASA, 17 tests.
 
-- [ ] **Paso 5: Comprobar tipos y commit**
+- [ ] **Paso 6: Comprobar el histórico entero**
+
+El parseador debe digerir el volcado completo sin lanzar y con los recuentos
+verificados. Ejecutar:
 
 ```bash
-npm run typecheck
-git add src/recoleccion/parseadorFeed.ts tests/recoleccion/parseadorFeed.test.ts
-git commit -m "feat: parseador del feed con parada ante categorías no catalogadas"
+npx tsx -e "
+import { readFileSync } from 'node:fs'
+import { parsearPaginaFeed } from './src/recoleccion/parseadorFeed.js'
+const v = JSON.parse(readFileSync('datos/volcado-feed.json','utf8'))
+let t=0, c=0, r=0
+for (const p of v.paginas) for (const e of parsearPaginaFeed(p.cuerpo).eventos) {
+  if (e.tipo==='transaccion') t++; else if (e.tipo==='cierreJornada') c++; else r++
+}
+console.log({ transacciones: t, cierres: c, ruido: r })
+"
+```
+
+Esperado exactamente: `{ transacciones: 252, cierres: 4, ruido: 98 }`.
+
+Si sale otra cosa, **no ajustes el número esperado**: investiga por qué.
+
+- [ ] **Paso 7: Ejecutar la batería completa y comprobar tipos**
+
+Ejecutar: `npm test && npm run typecheck`
+Esperado: todo pasa, incluidos los tests de dominio adaptados.
+
+- [ ] **Paso 8: Commit**
+
+```bash
+git add src/dominio/eventos.ts tests/dominio/eventos.test.ts src/recoleccion/parseadorFeed.ts tests/recoleccion/parseadorFeed.test.ts
+git commit -m "feat: parseador del feed, una transacción por movimiento"
 ```
 
 ---
@@ -1671,8 +1846,8 @@ Con `.sesion/cookie` y `.sesion/auth` en su sitio:
 Ejecutar: `npm run recolectar`
 
 Esperado: recorre el histórico entero e imprime el resumen sin errores. Con los
-datos de referencia del 2026-09-03 deberían salir **16 lotes y 285 eventos**,
-de los cuales **187 contables** (183 `transfer` + 4 `gameweek_end`) y 98 ruido.
+datos de referencia del 2026-09-03: **16 lotes**, **256 eventos contables**
+(252 transacciones + 4 cierres) y **98 de ruido**.
 Si se detiene por una categoría no catalogada, añadirla a `CATEGORIAS_RUIDO` o
 a `parsearEvento` **de forma razonada**, nunca al bulto, y repetir.
 
@@ -1875,7 +2050,7 @@ Esperado: PASA, 3 tests.
 - [ ] **Paso 6: Importar el volcado real**
 
 Ejecutar: `npm run importar -- datos/volcado-feed.json`
-Esperado: 16 lotes, 285 eventos, 187 contables, sin discontinuidad.
+Esperado: 16 lotes, 256 contables (252 transacciones + 4 cierres), 98 de ruido, sin discontinuidad.
 
 - [ ] **Paso 7: Commit**
 
@@ -1896,8 +2071,11 @@ La fase está terminada cuando:
 3. `paginas_crudas` es continua: cada offset es el anterior más su número de
    eventos, empezando en 0.
 4. Ninguna categoría del histórico real ha quedado sin catalogar.
-5. Los recuentos coinciden con la referencia del 2026-09-03: 16 lotes, 285
-   eventos, 187 contables (183 `transfer` + 4 `gameweek_end`).
+5. Los recuentos coinciden con la referencia del 2026-09-03, verificada contra
+   el volcado completo: **16 lotes, 285 eventos brutos**, que producen
+   **252 transacciones + 4 cierres de jornada = 256 eventos contables**, y 98 de
+   ruido. Las 252 transacciones salen de 183 eventos `transfer`, porque 32 de
+   ellos contienen más de un movimiento.
 
 **No se pasa a la Fase 2** hasta que los cinco se cumplan.
 

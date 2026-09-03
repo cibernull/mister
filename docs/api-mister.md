@@ -73,7 +73,14 @@ Recuento del histórico entero de la liga (285 eventos, 16 páginas, desde el
 
 ## `transfer` — la transacción
 
-Los campos que importan para la contabilidad:
+**Su `data` es un ARRAY: un evento puede contener varios movimientos.** En el
+histórico completo, 183 eventos `transfer` contienen **252 movimientos**; 32 de
+ellos traen más de uno. Un parseador que asuma uno por evento perdería 69
+transacciones en silencio.
+
+**Tipos de operación observados:** `normal` (244), `clause` (7), `rescind` (1).
+
+Los campos de cada movimiento:
 
 | Campo | Tipo | Significado |
 |---|---|---|
@@ -93,8 +100,23 @@ flotante en el camino crítico.
 
 ## `gameweek_end` — el cierre de jornada
 
-`data` contiene `id_gameweek`, `gameweek` y `ranking`. El ranking lleva, por
-equipo, los puntos y el premio en metálico.
+`data` contiene `id_gameweek`, `gameweek` y `ranking`. La lista de equipos está
+anidada tres niveles: **`data.ranking.ranking.positions`**, un array con una
+entrada por equipo:
+
+| Campo | Tipo | Significado |
+|---|---|---|
+| `idUc` | entero | Identidad estable del equipo |
+| `user.name` | texto | Nombre del equipo |
+| `points` | entero | Puntos de la jornada (puede ser negativo) |
+| `payment` | entero **o `null`** | Premio; `null` cuando el equipo no cobra |
+| `teamValue` | entero | Valor de plantilla en esa jornada |
+| `negative` | booleano | Saldo negativo, no puntuó |
+
+**Aviso de privacidad:** cada posición incluye un objeto `user` con el correo
+electrónico y los identificadores de Apple/Google/Facebook de cada rival. Los
+fixtures del repositorio los llevan redactados; cualquier volcado nuevo debe
+sanearse antes de comitearlo.
 
 ## Discrepancia pendiente de resolver
 
