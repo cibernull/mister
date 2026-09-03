@@ -1,48 +1,71 @@
 # El módulo de mercado
 
-`datos/mercado.html` — una sola página, sin servidor ni instalación: se abre con
-doble clic. Todos los datos van incrustados en el propio fichero.
+`datos/mercado.html` — una sola página que se abre con doble clic. **No usa
+JavaScript**: las pestañas y los filtros funcionan con HTML y CSS, así que
+también se ven bien en visores que no ejecutan scripts.
 
 ```bash
 open datos/mercado.html
 ```
 
-## Qué tiene
+## Cómo funciona el filtrado
 
-**Mercado.** Los jugadores en venta ahora mismo, con dos recomendaciones:
+Dos selectores que se combinan en cascada, con radios ocultos y selectores CSS:
+
+**Dónde busco** — solo los 32 jugadores en venta ahora mismo, o los 197 que
+conozco (los que han pasado por la liga más los del mercado).
+
+**Qué me interesa** — todos, los dos iconos, solo puntos, solo dinero, o lo que
+cabe en el propio tope de puja.
 
 | Icono | Criterio |
 |---|---|
-| ⭐ | Está en el **tercio del mercado con mejor media** de puntos por partido, y ha jugado al menos dos |
-| 💵 | Su valor **sube esta semana** y está en el tercio que **más ha crecido en el último mes** |
+| ⭐ | Está en el **tercio con mejor media** de puntos por partido, y ha jugado al menos dos |
+| 💵 | Su valor **sube esta semana** y está en el tercio que **más ha crecido en el mes** |
 
-Los criterios son percentiles sobre el mercado del día, no umbrales fijos: así
-siguen significando algo cuando cambie el nivel general de la liga. Se pueden
-filtrar por ambos, por uno, o por lo que cabe en el propio tope de puja.
+**Los criterios se calculan sobre los 197 jugadores, no sobre el subconjunto
+mostrado.** Así una estrella significa lo mismo se mire donde se mire, y el
+selector de ámbito solo decide a quién se enseña. Son percentiles, no umbrales
+fijos: siguen significando algo cuando cambie el nivel general de la liga.
 
-**¿Quién puede fichar?** Se escribe un jugador y dice qué equipos llegan a su
-precio, ordenados por capacidad. Conoce a los jugadores que se han movido en la
-liga más los que están hoy en el mercado.
+Con los datos del 3 de septiembre, los umbrales salen en media 4,3 y +55 % de
+crecimiento mensual.
 
-**Equipos.** El listado por capacidad de compra, y al pulsar uno, sus cuentas
-completas y todos sus fichajes con lo que ganó o perdió en cada jugador.
+## Las diez combinaciones, verificadas
 
-## Lo que el módulo NO sabe todavía
+| Ámbito | Filtro | Jugadores |
+|---|---|---|
+| Mercado | Todos | 32 |
+| Mercado | ⭐💵 | 5 |
+| Mercado | ⭐ | 9 |
+| Mercado | 💵 | 14 |
+| Mercado | A mi alcance | 32 |
+| Todos | Todos | 197 |
+| Todos | ⭐💵 | 25 |
+| Todos | ⭐ | 52 |
+| Todos | 💵 | 63 |
+| Todos | A mi alcance | 197 |
 
-- **El precio mostrado es el valor de mercado, no la cláusula.** Fichar a un
-  jugador de otro equipo cuesta su cláusula de rescisión, que Mister fija en el
-  doble de lo pagado por él. Para los jugadores libres del mercado, el valor sí
-  es la referencia correcta.
-- **Solo conoce a los jugadores que han pasado por la liga o están hoy en venta.**
-  No hay catálogo completo de LaLiga: `/search` redirige al mercado y no se
-  encontró ningún endpoint que lo sirva.
-- **Los datos son de una foto fija.** Regenerarlo automáticamente es el trabajo
-  de la Fase 3.
+Comprobado en el navegador que cada combinación muestra exactamente las filas
+que le corresponden y ninguna más.
+
+## Pestaña de equipos
+
+Los ocho ordenados por capacidad de compra. Al desplegar uno: sus cuentas
+completas y todos sus jugadores con lo que pagó, cobró y ganó en cada uno.
+
+## Lo que el módulo NO sabe
+
+- **El precio es el valor de mercado, no la cláusula.** Fichar a un jugador de
+  otro equipo cuesta su cláusula de rescisión, que Mister fija en el doble de lo
+  pagado por él. Para los libres del mercado, el valor sí es la referencia buena.
+- **Conoce 197 jugadores, no todo LaLiga.** No hay catálogo completo accesible:
+  `/search` redirige al mercado y no se encontró ningún endpoint que lo sirva.
+- **Los datos son una foto fija** del 3 de septiembre. Regenerarlo solo es el
+  trabajo de la Fase 3, que necesita las credenciales de sesión en disco.
 
 ## Cómo se generó
 
-Los datos salen de tres sitios: el histórico ya recolectado
-(`datos/volcado-feed.json`), la clasificación, y la ficha de cada jugador del
-mercado —de donde se leen puntos, media y la evolución de valor—.
-
-La Fase 3 sustituirá ese proceso manual por una orden que lo rehaga sola.
+Del histórico ya recolectado salen los movimientos y los nombres; de la
+clasificación, los valores de plantilla; y de la ficha de cada jugador, los
+puntos, la media y la evolución de valor. Ese proceso es hoy manual.
