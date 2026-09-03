@@ -1,4 +1,4 @@
-import type { PaginaCruda } from '../almacen/crudo.js'
+import type { Captura } from '../almacen/crudo.js'
 
 /** Los lotes recolectados no encajan: faltan eventos o se cuentan dos veces. */
 export class DiscontinuidadError extends Error {
@@ -23,13 +23,13 @@ export class DiscontinuidadError extends Error {
  * anterior. Un salto significa eventos perdidos —y un saldo plausible pero
  * equivocado—, así que es un error, no un aviso.
  */
-export function comprobarContinuidad(paginas: PaginaCruda[]): void {
+export function comprobarContinuidad(capturas: Captura[]): void {
   let esperado = 0
 
-  for (const pagina of paginas) {
-    if (pagina.offset !== esperado) {
-      throw new DiscontinuidadError(esperado, pagina.offset)
+  for (const captura of capturas) {
+    if (captura.offset !== esperado) {
+      throw new DiscontinuidadError(esperado, captura.offset)
     }
-    esperado += pagina.nEventos
+    esperado += captura.nEventos
   }
 }

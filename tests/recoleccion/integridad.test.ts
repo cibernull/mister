@@ -3,9 +3,10 @@ import {
   DiscontinuidadError,
   comprobarContinuidad,
 } from '../../src/recoleccion/integridad.js'
-import type { PaginaCruda } from '../../src/almacen/crudo.js'
+import type { Captura } from '../../src/almacen/crudo.js'
 
-const p = (offset: number, nEventos: number): PaginaCruda => ({
+const p = (offset: number, nEventos: number): Captura => ({
+  recoleccion: 'r1',
   offset,
   nEventos,
   cuerpo: '{}',
