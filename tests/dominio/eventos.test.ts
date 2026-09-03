@@ -11,6 +11,7 @@ const transaccion: Evento = {
   importe: 5712300,
   operacion: 'normal',
   idTransfer: 544729389,
+  idJugador: 34,
 }
 
 const cierre: Evento = {
@@ -18,6 +19,7 @@ const cierre: Evento = {
   idEvento: 955555681,
   fecha: '2026-08-31T22:00:00Z',
   jornada: 3,
+  idJornada: 4044,
   resultados: [
     { equipo: 'Cacaculopedopis', idUc: 13435216, premio: 725000, puntos: 29, sinPuntuar: false, valorPlantilla: 56737000 },
     { equipo: 'Saiyans FC (Fran)', idUc: 13428410, premio: 0, puntos: 0, sinPuntuar: true, valorPlantilla: 29956000 },

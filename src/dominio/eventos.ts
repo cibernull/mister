@@ -30,6 +30,8 @@ export type Transaccion = {
   operacion: TipoOperacion
   /** Identificador de la operación en el crudo de Mister; sirve para conciliar y depurar. */
   idTransfer: number
+  /** `id` del jugador en el crudo de Mister. Identidad estable del jugador. */
+  idJugador: number
 }
 
 /** Resultado de un equipo en el cierre de una jornada. */
@@ -51,6 +53,12 @@ export type CierreJornada = {
   idEvento: number
   fecha: string
   jornada: number
+  /**
+   * `id_gameweek` del crudo. Identifica la jornada de forma estable: el feed
+   * publica el mismo cierre más de una vez, y el número de `jornada` no basta
+   * para distinguirlos de una repetición.
+   */
+  idJornada: number
   resultados: ResultadoEquipo[]
 }
 

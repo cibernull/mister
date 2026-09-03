@@ -239,6 +239,18 @@ describe('parsearPaginaFeed', () => {
     }
   })
 
+  it('toda transacción del fixture real trae el identificador del jugador', () => {
+    const ts = transaccionesDe(pagina0)
+    expect(ts.length).toBeGreaterThan(0)
+    for (const t of ts) expect(Number.isInteger(t.idJugador)).toBe(true)
+  })
+
+  it('todo cierre del fixture real trae el identificador de la jornada', () => {
+    const cs = cierresDe(paginaCierre)
+    expect(cs.length).toBeGreaterThan(0)
+    for (const c of cs) expect(Number.isInteger(c.idJornada)).toBe(true)
+  })
+
   it('extrae idUc, valorPlantilla (teamValue) e idEvento en el cierre de jornada real', () => {
     const cs = cierresDe(paginaCierre)
     expect(cs.length).toBeGreaterThan(0)

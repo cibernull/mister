@@ -34,6 +34,7 @@ const transferConDosMovimientos = JSON.stringify({
       id: 42,
       data: [
         {
+          id: 101,
           id_transfer: 1,
           id_uc_from: 0,
           id_uc_to: 10,
@@ -44,6 +45,7 @@ const transferConDosMovimientos = JSON.stringify({
           name: 'Jugador 1',
         },
         {
+          id: 102,
           id_transfer: 2,
           id_uc_from: 10,
           id_uc_to: 20,

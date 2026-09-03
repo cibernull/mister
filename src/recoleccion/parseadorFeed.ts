@@ -229,6 +229,7 @@ function parsearTransaccion(m: Record<string, unknown>, fecha: string, idEventoC
     operacion: operacion as TipoOperacion,
     idTransfer: exigirEntero(m['id_transfer'], 'id_transfer', contexto),
     idEvento: exigirEntero(idEventoCrudo, 'id', contexto),
+    idJugador: exigirEntero(m['id'], 'id', contexto),
   }
 }
 
@@ -306,6 +307,7 @@ function parsearCierreJornada(datos: unknown, fecha: string, idEventoCrudo: unkn
     idEvento: exigirEntero(idEventoCrudo, 'id', `fecha=${fecha}`),
     fecha,
     jornada: exigirEntero(d['gameweek'], 'gameweek', `fecha=${fecha}`),
+    idJornada: exigirEntero(d['id_gameweek'], 'id_gameweek', `fecha=${fecha}`),
     resultados,
   }
 }
