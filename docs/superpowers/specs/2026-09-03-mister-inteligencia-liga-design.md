@@ -382,3 +382,31 @@ maquetación, que es justo lo frágil.
 Pujar o realizar cualquier operación en Mister; la aplicación es de solo
 lectura. Tampoco: distribución a terceros, aplicación móvil, notificaciones,
 predicción de puntos ni recomendaciones de alineación.
+
+---
+
+## Requisito añadido: refresco bajo demanda (2026-09-03)
+
+> "Es importante que yo en tiempo real pueda ver en todo momento cuánto dinero
+> tiene cada uno, y si alguien vende o ficha y vuelvo a refrescar, que me vuelva
+> a calcular todo."
+
+**Qué significa en la práctica.** No hace falta un proceso permanente ni avisos
+automáticos: basta con que **refrescar recalcule todo desde cero** con los datos
+del momento. El coste de un refresco completo es asumible —el histórico entero
+son 16 lotes, unos 16 segundos con el ritmo de una petición por segundo— así que
+no hace falta recolección incremental para cumplirlo.
+
+**Qué implica para el diseño:**
+
+- La orden de análisis debe poder **recolectar y recalcular en una sola
+  ejecución**, no solo leer lo ya guardado.
+- Las **plantillas actuales** y el **valor de mercado de hoy** cambian a diario,
+  así que su caché no puede ser permanente como la de los valores históricos: un
+  valor de una fecha pasada nunca cambia, pero el de hoy sí. Hay que distinguir
+  ambas cosas o el refresco devolverá cifras viejas.
+- El **panel de la Fase 3** se sirve de esa orden: al recargar la página,
+  recolecta, recalcula y pinta.
+
+Es un requisito de la Fase 3, pero condiciona la Fase 2: la caché de páginas
+auxiliares debe poder invalidarse.
