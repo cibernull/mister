@@ -37,9 +37,22 @@ cuerpo. El campo `page` no existe — la paginación es por `offset`.
 { status: "ok", data: [ ...eventos... ], cfg: {...}, isAjax: ... }
 ```
 
-`data` es un **array** de eventos. No hay campo `has_more`: **el histórico se
-agota cuando `data` llega vacío**. La paginación avanza sumando
-`offset += data.length`, no de uno en uno.
+`data` es un **array** de eventos. La paginación avanza sumando
+`offset += data.length` — el recuento **bruto** de la respuesta, no el número de
+eventos de dominio que se deriven de ella (un `transfer` produce varios).
+
+**El fin del histórico se señala con `status`, nunca con `data` vacío:**
+
+| `status` | Significado |
+|---|---|
+| `"ok"` | Lote con datos; **debe** traer un array `data` |
+| `"end"` | Histórico agotado; **no trae campo `data` en absoluto** |
+| `"error"` | Fallo, típicamente 401 por sesión caducada; tampoco trae `data` |
+
+Verificado contra los 16 lotes del histórico real. Esto importa: como una
+respuesta de error tampoco trae `data`, deducir el final de que la lista esté
+vacía **confundiría una sesión caducada con el fin del histórico** y cortaría la
+recolección en silencio.
 
 Cada evento trae:
 
