@@ -4,6 +4,7 @@ import { basename, join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { abrirAlmacen } from '../../src/almacen/crudo.js'
 import { importarVolcado } from '../../src/cli/importar.js'
+import { RecoleccionIncompletaError } from '../../src/recoleccion/integridad.js'
 
 const ruido = (n: number) =>
   JSON.stringify({
@@ -81,7 +82,7 @@ describe('importarVolcado', () => {
     const resumen = await importarVolcado(
       volcadoCon([
         { offset: 0, cuerpo: ruido(21) },
-        { offset: 21, cuerpo: vacio },
+        { offset: 21, cuerpo: fin },
       ]),
       almacen,
       'r1',
@@ -94,9 +95,17 @@ describe('importarVolcado', () => {
 
   it('cuenta los eventos igual que la recolección directa', async () => {
     const almacen = abrirAlmacen(':memory:')
-    const resumen = await importarVolcado(volcadoCon([{ offset: 0, cuerpo: ruido(3) }]), almacen, 'r1')
+    const resumen = await importarVolcado(
+      volcadoCon([
+        { offset: 0, cuerpo: ruido(3) },
+        { offset: 3, cuerpo: fin },
+      ]),
+      almacen,
+      'r1',
+    )
 
     expect(resumen.eventos).toBe(3)
+    expect(resumen.eventosBrutos).toBe(3)
     expect(resumen.ruido).toBe(3)
     almacen.cerrar()
   })
@@ -106,7 +115,7 @@ describe('importarVolcado', () => {
     const resumen = await importarVolcado(
       volcadoCon([
         { offset: 0, cuerpo: transferConDosMovimientos },
-        { offset: 1, cuerpo: vacio },
+        { offset: 1, cuerpo: fin },
       ]),
       almacen,
       'r1',
@@ -161,7 +170,7 @@ describe('importarVolcado', () => {
     const almacen = abrirAlmacen(':memory:')
     const resumen = await importarVolcado(
       volcadoCon([
-        { offset: 21, cuerpo: vacio },
+        { offset: 21, cuerpo: fin },
         { offset: 0, cuerpo: ruido(21) },
       ]),
       almacen,
@@ -191,7 +200,7 @@ describe('importarVolcado', () => {
   })
 
   it('usa "volcado:<nombre del fichero>" como recolección por defecto', async () => {
-    const ruta = volcadoCon([{ offset: 0, cuerpo: vacio }])
+    const ruta = volcadoCon([{ offset: 0, cuerpo: fin }])
     const almacen = abrirAlmacen(':memory:')
     await importarVolcado(ruta, almacen)
 
@@ -213,17 +222,39 @@ describe('importarVolcado', () => {
     almacen.cerrar()
   })
 
-  it('no marca agotado cuando el volcado no llega al fin del histórico', async () => {
+  it('marca la recolección como completa en el almacén cuando el volcado llega al fin real', async () => {
     const almacen = abrirAlmacen(':memory:')
-    const resumen = await importarVolcado(
+    await importarVolcado(
       volcadoCon([
         { offset: 0, cuerpo: ruido(21) },
-        { offset: 21, cuerpo: vacio },
+        { offset: 21, cuerpo: fin },
       ]),
       almacen,
       'r1',
     )
-    expect(resumen.agotado).toBe(false)
+
+    const veredicto = almacen.leerCompletitud('r1')
+    expect(veredicto?.completa).toBe(true)
+    almacen.cerrar()
+  })
+
+  it('lanza si el volcado no llega al fin del histórico ("status":"end"), y no se da por buena la importación', async () => {
+    const almacen = abrirAlmacen(':memory:')
+    await expect(
+      importarVolcado(
+        volcadoCon([
+          { offset: 0, cuerpo: ruido(21) },
+          { offset: 21, cuerpo: vacio },
+        ]),
+        almacen,
+        'r1',
+      ),
+    ).rejects.toThrow(RecoleccionIncompletaError)
+
+    // Los lotes ya quedan guardados en "capturas", pero el veredicto de
+    // completitud debe reflejar que la recolección NO se da por buena.
+    expect(almacen.leerCapturas('r1')).toHaveLength(2)
+    expect(almacen.leerCompletitud('r1')?.completa).toBe(false)
     almacen.cerrar()
   })
 

@@ -11,20 +11,17 @@ async function principal(): Promise<void> {
       cliente: crearCliente({ credenciales: obtenerCredenciales() }),
       almacen,
     })
+    const veredicto = almacen.leerCompletitud(resumen.recoleccion)
 
     console.log(`Lotes recorridos: ${resumen.lotes}`)
+    console.log(`Eventos brutos:   ${resumen.eventosBrutos}`)
     console.log(`Eventos totales:  ${resumen.eventos}`)
     console.log(`  contables:      ${resumen.contables}`)
     console.log(`  ruido:          ${resumen.ruido}`)
-
-    if (resumen.agotado) {
-      console.log('\nHistórico completo y continuo.')
-    } else {
-      console.log(
-        `\nSe alcanzó el límite de ${resumen.lotes} lotes sin agotar el histórico: la recolección quedó incompleta.`,
-      )
-      process.exitCode = 1
-    }
+    console.log(
+      `\nHistórico completo y continuo. Recolección "${resumen.recoleccion}" marcada como completa` +
+        (veredicto ? ` (${veredicto.marcadaEn}).` : '.'),
+    )
   } finally {
     almacen.cerrar()
   }

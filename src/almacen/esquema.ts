@@ -8,4 +8,17 @@ CREATE TABLE IF NOT EXISTS capturas (
   capturada_en TEXT    NOT NULL,
   UNIQUE (recoleccion, offset_feed)
 );
+
+-- Veredicto de completitud de una recolección: si su histórico llegó de
+-- verdad al final del feed (ver comprobarCompletitud), para que la Fase 2
+-- pueda elegir con qué recolección trabajar sin tener que releer y
+-- reinterpretar sus capturas para adivinarlo. Como la capa cruda, no se
+-- sobrescribe: una recolección se marca una sola vez.
+CREATE TABLE IF NOT EXISTS recolecciones (
+  id           INTEGER PRIMARY KEY AUTOINCREMENT,
+  nombre       TEXT    NOT NULL,
+  completa     INTEGER NOT NULL,
+  marcada_en   TEXT    NOT NULL,
+  UNIQUE (nombre)
+);
 `

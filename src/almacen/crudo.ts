@@ -11,10 +11,26 @@ export type Captura = {
   capturadaEn: string
 }
 
+/** Veredicto de completitud de una recolección (ver `comprobarCompletitud`). */
+export type VeredictoRecoleccion = {
+  nombre: string
+  completa: boolean
+  marcadaEn: string
+}
+
 export type Almacen = {
   guardarCaptura(c: Captura): void
   leerCapturas(recoleccion: string): Captura[]
   recolecciones(): string[]
+  /**
+   * Registra si una recolección llegó de verdad al final del feed. Solo se
+   * puede marcar una vez: una segunda llamada para el mismo nombre, aunque
+   * lleve el mismo veredicto, lanza `VeredictoYaMarcadoError` en vez de
+   * sobrescribir en silencio.
+   */
+  marcarCompletitud(nombre: string, completa: boolean, marcadaEn: string): void
+  /** `undefined` si esa recolección todavía no tiene veredicto marcado. */
+  leerCompletitud(nombre: string): VeredictoRecoleccion | undefined
   cerrar(): void
 }
 
@@ -31,6 +47,20 @@ export class CapturaDuplicadaError extends Error {
     this.name = 'CapturaDuplicadaError'
     this.recoleccion = recoleccion
     this.offset = offset
+  }
+}
+
+/** Se intentó marcar el veredicto de completitud de una recolección que ya lo tenía. */
+export class VeredictoYaMarcadoError extends Error {
+  readonly nombre: string
+
+  constructor(nombre: string) {
+    super(
+      `la recolección ${nombre} ya tiene un veredicto de completitud guardado. ` +
+        `No se sobrescribe: si hace falta uno nuevo, usa un nombre de recolección distinto.`,
+    )
+    this.name = 'VeredictoYaMarcadoError'
+    this.nombre = nombre
   }
 }
 
@@ -65,6 +95,18 @@ export function abrirAlmacen(ruta: string): Almacen {
   // mensaje de SQLite.
   const existeCaptura = db.prepare(`SELECT 1 FROM capturas WHERE recoleccion = ? AND offset_feed = ?`)
 
+  const insertarVeredicto = db.prepare(
+    `INSERT INTO recolecciones (nombre, completa, marcada_en) VALUES (@nombre, @completa, @marcadaEn)`,
+  )
+
+  const seleccionarVeredicto = db.prepare(
+    `SELECT nombre, completa, marcada_en AS marcadaEn FROM recolecciones WHERE nombre = ?`,
+  )
+
+  // Ver esViolacionDeUnicidadDeVeredicto: misma técnica que existeCaptura,
+  // aplicada a la restricción UNIQUE (nombre) de recolecciones.
+  const existeVeredicto = db.prepare(`SELECT 1 FROM recolecciones WHERE nombre = ?`)
+
   return {
     guardarCaptura(c) {
       exigirEnteroNoNegativo(c.offset, 'offset')
@@ -84,6 +126,23 @@ export function abrirAlmacen(ruta: string): Almacen {
     },
     recolecciones() {
       return (listarRecolecciones.all() as { recoleccion: string }[]).map((f) => f.recoleccion)
+    },
+    marcarCompletitud(nombre, completa, marcadaEn) {
+      try {
+        insertarVeredicto.run({ nombre, completa: completa ? 1 : 0, marcadaEn })
+      } catch (e) {
+        if (esViolacionDeUnicidadDeVeredicto(e, nombre, existeVeredicto)) {
+          throw new VeredictoYaMarcadoError(nombre)
+        }
+        throw e
+      }
+    },
+    leerCompletitud(nombre) {
+      const fila = seleccionarVeredicto.get(nombre) as
+        | { nombre: string; completa: number; marcadaEn: string }
+        | undefined
+      if (!fila) return undefined
+      return { nombre: fila.nombre, completa: fila.completa === 1, marcadaEn: fila.marcadaEn }
     },
     cerrar() {
       db.close()
@@ -113,21 +172,36 @@ function exigirEnteroNoNegativo(valor: number, campo: string): void {
  * restricción real. Si no existe tal fila, el fallo vino de otra restricción
  * UNIQUE y debe propagarse tal cual, no reinterpretarse como duplicado.
  *
- * Mientras el esquema (ver esquema.ts) siga teniendo una única restricción
- * UNIQUE, el código de error por sí solo ya bastaría; esta comprobación
- * adicional documenta esa suposición en código en vez de darla por sentada,
- * y sigue siendo correcta si el esquema gana una restricción UNIQUE más.
+ * Mientras la tabla `capturas` (ver esquema.ts) siga teniendo una única
+ * restricción UNIQUE, el código de error por sí solo ya bastaría —da igual
+ * cuántas gane el resto del esquema, como la de `recolecciones` más abajo:
+ * este INSERT solo escribe en `capturas`, así que solo puede chocar con una
+ * restricción de esa tabla—; esta comprobación adicional documenta esa
+ * suposición en código en vez de darla por sentada, y sigue siendo correcta
+ * si `capturas` gana una restricción UNIQUE más.
  */
 function esViolacionDeUnicidadDeCaptura(
   e: unknown,
   c: Pick<Captura, 'recoleccion' | 'offset'>,
   existeCaptura: Database.Statement,
 ): boolean {
-  if (!isErrorWithCode(e)) return false
+  if (!esErrorConCodigo(e)) return false
   if (e.code !== 'SQLITE_CONSTRAINT_UNIQUE') return false
   return existeCaptura.get(c.recoleccion, c.offset) !== undefined
 }
 
-function isErrorWithCode(e: unknown): e is { code: string } {
+function esErrorConCodigo(e: unknown): e is { code: string } {
   return typeof e === 'object' && e !== null && typeof (e as Record<string, unknown>).code === 'string'
+}
+
+/**
+ * Misma técnica que `esViolacionDeUnicidadDeCaptura`, aplicada a la
+ * restricción UNIQUE (nombre) de `recolecciones`: comprueba semánticamente
+ * si ya existía un veredicto para ese nombre, en lugar de mirar el texto del
+ * mensaje de SQLite.
+ */
+function esViolacionDeUnicidadDeVeredicto(e: unknown, nombre: string, existeVeredicto: Database.Statement): boolean {
+  if (!esErrorConCodigo(e)) return false
+  if (e.code !== 'SQLITE_CONSTRAINT_UNIQUE') return false
+  return existeVeredicto.get(nombre) !== undefined
 }

@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { abrirAlmacen } from '../../src/almacen/crudo.js'
+import { RecoleccionIncompletaError } from '../../src/recoleccion/integridad.js'
 import { recolectarHistorico } from '../../src/recoleccion/recolectar.js'
 import type { Cliente } from '../../src/recoleccion/cliente.js'
 
@@ -106,13 +107,21 @@ describe('recolectarHistorico', () => {
     almacen.cerrar()
   })
 
-  it('se detiene al alcanzar el límite de lotes', async () => {
+  it('se detiene al alcanzar el límite de lotes, pero no da la recolección por completa', async () => {
     const almacen = abrirAlmacen(':memory:')
     const lotes: Record<number, string> = {}
     for (let i = 0; i < 50; i++) lotes[i * 21] = ruido(21)
 
-    const resumen = await recolectarHistorico({ cliente: clienteCon(lotes), almacen, maxLotes: 5 })
-    expect(resumen.lotes).toBe(5)
+    // El feed tiene más lotes que ofrecer (50 disponibles); maxLotes corta el
+    // recorrido en 5, así que nunca llega al marcador de fin. Continuidad
+    // pasa (los 5 lotes encajan sin hueco), pero completitud no: por eso
+    // debe lanzar en vez de devolver un resumen normal.
+    await expect(
+      recolectarHistorico({ cliente: clienteCon(lotes), almacen, maxLotes: 5, recoleccion: 'r1' }),
+    ).rejects.toThrow(RecoleccionIncompletaError)
+
+    // Los 5 lotes procesados hasta el límite quedan guardados de todos modos.
+    expect(almacen.leerCapturas('r1')).toHaveLength(5)
     almacen.cerrar()
   })
 
@@ -150,8 +159,9 @@ describe('recolectarHistorico', () => {
     const lotes: Record<number, string> = {}
     for (let i = 0; i < 50; i++) lotes[i * 21] = ruido(21)
 
-    const conLimite = await recolectarHistorico({ cliente: clienteCon(lotes), almacen, maxLotes: 5, recoleccion: 'limite' })
-    expect(conLimite.agotado).toBe(false)
+    await expect(
+      recolectarHistorico({ cliente: clienteCon(lotes), almacen, maxLotes: 5, recoleccion: 'limite' }),
+    ).rejects.toThrow(RecoleccionIncompletaError)
 
     const completo = await recolectarHistorico({
       cliente: clienteCon({ 0: ruido(21), 21: fin }),
@@ -248,6 +258,49 @@ describe('recolectarHistorico', () => {
     ).rejects.toThrow()
 
     expect(almacen.leerCapturas('r1')).toHaveLength(0)
+    almacen.cerrar()
+  })
+
+  it('marca la recolección como completa en el almacén cuando el histórico se agota', async () => {
+    const almacen = abrirAlmacen(':memory:')
+    await recolectarHistorico({
+      cliente: clienteCon({ 0: ruido(21), 21: fin }),
+      almacen,
+      recoleccion: 'r1',
+    })
+
+    const veredicto = almacen.leerCompletitud('r1')
+    expect(veredicto?.completa).toBe(true)
+    almacen.cerrar()
+  })
+
+  it('marca la recolección como incompleta en el almacén cuando se alcanza el límite de lotes sin agotar el feed', async () => {
+    const almacen = abrirAlmacen(':memory:')
+    const lotes: Record<number, string> = {}
+    for (let i = 0; i < 50; i++) lotes[i * 21] = ruido(21)
+
+    await expect(
+      recolectarHistorico({ cliente: clienteCon(lotes), almacen, maxLotes: 5, recoleccion: 'r1' }),
+    ).rejects.toThrow(RecoleccionIncompletaError)
+
+    const veredicto = almacen.leerCompletitud('r1')
+    expect(veredicto?.completa).toBe(false)
+    almacen.cerrar()
+  })
+
+  it('cuenta los eventos brutos por separado de los eventos de dominio, y su total cuadra con el offset final', async () => {
+    const almacen = abrirAlmacen(':memory:')
+    const resumen = await recolectarHistorico({
+      cliente: clienteCon({ 0: ruido(21), 21: ruido(5), 26: fin }),
+      almacen,
+      recoleccion: 'r1',
+    })
+
+    // Sin transfers de varios movimientos en este caso, brutos y de dominio
+    // coinciden; lo relevante es que el campo existe y refleja el offset
+    // final (21 + 5 = 26), no el número de lotes ni una cifra distinta.
+    expect(resumen.eventosBrutos).toBe(26)
+    expect(resumen.eventos).toBe(26)
     almacen.cerrar()
   })
 })

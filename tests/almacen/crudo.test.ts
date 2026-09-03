@@ -3,7 +3,7 @@ import { mkdtempSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { CapturaDuplicadaError, abrirAlmacen } from '../../src/almacen/crudo.js'
+import { CapturaDuplicadaError, VeredictoYaMarcadoError, abrirAlmacen } from '../../src/almacen/crudo.js'
 
 const almacenEnMemoria = () => abrirAlmacen(':memory:')
 
@@ -181,5 +181,67 @@ describe('almacén crudo', () => {
     expect(capturedError).not.toBeInstanceOf(CapturaDuplicadaError)
 
     a.cerrar()
+  })
+
+  describe('veredicto de completitud', () => {
+    it('devuelve undefined para una recolección sin marcar', () => {
+      const a = almacenEnMemoria()
+      expect(a.leerCompletitud('r1')).toBeUndefined()
+      a.cerrar()
+    })
+
+    it('guarda y recupera el veredicto de una recolección completa', () => {
+      const a = almacenEnMemoria()
+      a.marcarCompletitud('r1', true, '2026-09-03T12:00:00Z')
+      expect(a.leerCompletitud('r1')).toEqual({
+        nombre: 'r1',
+        completa: true,
+        marcadaEn: '2026-09-03T12:00:00Z',
+      })
+      a.cerrar()
+    })
+
+    it('guarda y recupera el veredicto de una recolección incompleta', () => {
+      const a = almacenEnMemoria()
+      a.marcarCompletitud('r1', false, '2026-09-03T12:00:00Z')
+      expect(a.leerCompletitud('r1')).toEqual({
+        nombre: 'r1',
+        completa: false,
+        marcadaEn: '2026-09-03T12:00:00Z',
+      })
+      a.cerrar()
+    })
+
+    it('distingue el veredicto de recolecciones distintas', () => {
+      const a = almacenEnMemoria()
+      a.marcarCompletitud('r1', true, '2026-09-03T12:00:00Z')
+      a.marcarCompletitud('r2', false, '2026-09-03T13:00:00Z')
+      expect(a.leerCompletitud('r1')!.completa).toBe(true)
+      expect(a.leerCompletitud('r2')!.completa).toBe(false)
+      a.cerrar()
+    })
+
+    it('rechaza marcar dos veces la misma recolección: el veredicto no se sobrescribe en silencio', () => {
+      const a = almacenEnMemoria()
+      a.marcarCompletitud('r1', false, '2026-09-03T12:00:00Z')
+      expect(() => a.marcarCompletitud('r1', true, '2026-09-03T13:00:00Z')).toThrow(VeredictoYaMarcadoError)
+      a.cerrar()
+    })
+
+    it('el segundo intento de marcar no altera el veredicto original', () => {
+      const a = almacenEnMemoria()
+      a.marcarCompletitud('r1', false, '2026-09-03T12:00:00Z')
+      try {
+        a.marcarCompletitud('r1', true, '2026-09-03T13:00:00Z')
+      } catch {
+        // esperado
+      }
+      expect(a.leerCompletitud('r1')).toEqual({
+        nombre: 'r1',
+        completa: false,
+        marcadaEn: '2026-09-03T12:00:00Z',
+      })
+      a.cerrar()
+    })
   })
 })
