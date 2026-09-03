@@ -249,7 +249,8 @@ equipo, jugadores, importes ni fechas: son los datos que los tests verifican.
 - Crear: `tests/dominio/eventos.test.ts`
 
 **Interfaces:**
-- Consume: `parsearImporte` de la Tarea 1.
+- Consume: nada. Los importes llegan ya como enteros desde el feed, así que
+  esta tarea no usa `parsearImporte`.
 - Produce:
   - `type Evento = Transaccion | CierreJornada | Ruido`
   - `type Transaccion = { tipo: 'transaccion'; fecha: string; jugador: string; origen: Parte; destino: Parte; importe: number; porClausula: boolean }`
