@@ -49,10 +49,16 @@ los 67 jugadores con cláusula que han jugado.
 mostrado.** Así una estrella significa lo mismo se mire donde se mire, y el
 selector de ámbito solo decide a quién se enseña.
 
-📤 y 🔒 son la excepción deliberada: hablan de la plantilla propia entera, así
-que **ignoran los otros dos selectores**. Si no fuera así, elegir «Solo el
-mercado» + 📤 dejaría la lista vacía sin explicar por qué. La página avisa de
-ello con un recuadro cuando uno de los dos está activo.
+Las tres opciones que hablan de la plantilla propia —**Mi plantilla**, 📤 y 🔒—
+**se saltan el selector de ámbito**, porque enseñar solo los que están en el
+mercado dejaría la lista casi vacía sin decir por qué: «Solo el mercado» + 📤
+no daba ninguno, y «Solo el mercado» + Mi plantilla daba 5 de 18. La página lo
+avisa con un recuadro cuando alguna de las tres está activa.
+
+Está hecho sin `!important`, que se llevaba por delante el filtro de iconos:
+la regla del ámbito se aparta sola encadenando hermanos
+(`#a1:checked~#f6:not(:checked)~#f7:not(:checked)~#d4:not(:checked)~.env`).
+Así «Mi plantilla + ⭐» sigue dando los 9 que toca y no los 18.
 
 Con los datos del 3 de septiembre: 📤 señala a Rodri Hernández, José Giménez y
 Hector Fort; 🔒 a Roger Brugué, Aubameyang, Dani Lorenzo, Ramón Terrats y
@@ -62,11 +68,11 @@ Hector Fort; 🔒 a Roger Brugué, Aubameyang, Dani Lorenzo, Ramón Terrats y
 
 | Ámbito | Filtro | Cualquiera | Sin dueño | De algún equipo | Mi plantilla |
 |---|---|---|---|---|---|
-| Mercado | Todos | 32 | 20 | 12 | 5 |
-| Mercado | ⭐💵 | 5 | 1 | 4 | 2 |
-| Mercado | ⭐ | 9 | 5 | 4 | 2 |
-| Mercado | 💵 | 14 | 3 | 11 | 5 |
-| Mercado | A mi alcance | 32 | 20 | 12 | 5 |
+| Mercado | Todos | 32 | 20 | 12 | 18 |
+| Mercado | ⭐💵 | 5 | 1 | 4 | 7 |
+| Mercado | ⭐ | 9 | 5 | 4 | 9 |
+| Mercado | 💵 | 14 | 3 | 11 | 14 |
+| Mercado | A mi alcance | 32 | 20 | 12 | 18 |
 | Todos | Todos | 197 | 117 | 80 | 18 |
 | Todos | ⭐💵 | 25 | 4 | 21 | 7 |
 | Todos | ⭐ | 52 | 13 | 39 | 9 |
@@ -75,8 +81,13 @@ Hector Fort; 🔒 a Roger Brugué, Aubameyang, Dani Lorenzo, Ramón Terrats y
 | cualquiera | 📤 | 3 | 3 | 3 | 3 |
 | cualquiera | 🔒 | 5 | 5 | 5 | 5 |
 
-Comprobado en el navegador que cada combinación muestra exactamente las filas
-que le corresponden y ninguna más.
+La columna «Mi plantilla» sale igual con «Mercado» que con «Todos», que es
+precisamente lo que se buscaba. Comprobado en el navegador, con clics reales
+sobre los chips, que cada combinación muestra exactamente las filas que le
+corresponden y ninguna más.
+
+La página lleva al pie la **fecha y hora en que se generó**, para saber de un
+vistazo si lo que se está mirando es la última versión.
 
 ## Pestaña de equipos
 

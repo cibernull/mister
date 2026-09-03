@@ -44,19 +44,18 @@ h1 em{font-style:normal;color:var(--rojo)}
 #d1:checked~.env label[for=d1],#d2:checked~.env label[for=d2],#d3:checked~.env label[for=d3],#d4:checked~.env label[for=d4]{border-color:var(--rojo);color:var(--rojo);background:var(--rojo-suave);font-weight:600}
 
 /* LOS FILTROS: ámbito y criterio, en cascada */
-#a1:checked~.env .fj.nomk{display:none}
+#a1:checked~#f6:not(:checked)~#f7:not(:checked)~#d4:not(:checked)~.env .fj.nomk{display:none}
 #f2:checked~.env .fj:not(.tp),#f2:checked~.env .fj:not(.td){display:none}
 #f3:checked~.env .fj:not(.tp){display:none}
 #f4:checked~.env .fj:not(.td){display:none}
 #f5:checked~.env .fj:not(.ta){display:none}
-#d2:checked~.env .fj:not(.tl){display:none}
-#d3:checked~.env .fj:not(.tc){display:none}
+#f6:not(:checked)~#f7:not(:checked)~#d2:checked~.env .fj:not(.tl){display:none}
+#f6:not(:checked)~#f7:not(:checked)~#d3:checked~.env .fj:not(.tc){display:none}
 #d4:checked~.env .fj:not(.tmio){display:none}
 #f6:checked~.env .fj:not(.tv){display:none}
 #f7:checked~.env .fj:not(.tb){display:none}
-#f6:checked~.env .fj.tv,#f7:checked~.env .fj.tb{display:grid!important}
 .aviso{display:none;font-size:13px;color:var(--oro);background:var(--oro-suave);border:1px solid var(--oro);border-radius:9px;padding:10px 13px;margin:0}
-#f6:checked~.env .aviso,#f7:checked~.env .aviso{display:block}
+#f6:checked~.env .aviso,#f7:checked~.env .aviso,#d4:checked~.env .aviso{display:block}
 
 .lista{background:var(--caja);border:1px solid var(--linea);border-radius:12px;box-shadow:var(--sombra);overflow:hidden}
 .fj{display:grid;grid-template-columns:1fr auto auto;gap:3px 14px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--linea)}
@@ -184,7 +183,7 @@ label:focus-within{outline:2px solid var(--rojo);outline-offset:2px}
       </div>
     </div>
 
-    <p class="aviso">Este consejo mira <strong>toda tu plantilla</strong>: los otros dos selectores no lo recortan.</p>
+    <p class="aviso">Esto mira <strong>toda tu plantilla</strong>, esté o no en el mercado: el selector de arriba no lo recorta.</p>
 
     <div class="lista">
 <!--__JUGADORES__-->
@@ -208,6 +207,8 @@ label:focus-within{outline:2px solid var(--rojo);outline-offset:2px}
   </div>
 
   <p class="cierre">Reconstruido movimiento a movimiento desde el reinicio de la liga del 3 de agosto. El tope de puja propio calculado coincide <strong>al euro</strong> con el que muestra Mister.</p>
+
+  <p class="cierre" style="margin-top:8px"><!--__SELLO__--></p>
 
 </div>
 </body>

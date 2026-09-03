@@ -192,7 +192,8 @@ const plantilla = fs.readFileSync(path.join(AQUI, 'plantilla.html'), 'utf8')
 const html = plantilla
   .replace('<!--__JUGADORES__-->', filas)
   .replace('<!--__EQUIPOS__-->', filasEq)
-if (html.includes('__JUGADORES__') || html.includes('__EQUIPOS__')) throw new Error('Quedaron huecos sin rellenar')
+  .replace('<!--__SELLO__-->', 'Generado el ' + new Date().toLocaleString('es-ES', {dateStyle:'long', timeStyle:'short'}) + '.')
+if (html.includes('__JUGADORES__') || html.includes('__EQUIPOS__') || html.includes('__SELLO__')) throw new Error('Quedaron huecos sin rellenar')
 fs.writeFileSync(SALIDA, html)
 
 const mios = J.filter(j => j.mio)
