@@ -207,136 +207,38 @@ git commit -m "feat: esqueleto del proyecto y parseo exacto de importes"
 
 ---
 
-### Tarea 2: Capturar una respuesta real del feed
+### Tarea 2: Capturar el histórico real del navegador ✅ COMPLETADA
 
-**Por qué es la primera tarea real:** nunca se ha observado una respuesta
-correcta de `POST /ajax/feed` (desde fuera del navegador siempre devuelve 401).
-Escribir el parseador contra un formato supuesto produciría exactamente el tipo
-de fallo silencioso que este proyecto no admite. Esta tarea obtiene el formato
-auténtico y lo congela.
+**Ejecutada el 2026-09-03 por el controlador**, porque requiere el navegador del
+usuario con la sesión de Mister abierta.
 
-**Ficheros:**
-- Crear: `navegador/capturar-feed.js`
-- Crear: `fixtures/feed-pagina-0.json` (generado, se comitea)
-- Crear: `fixtures/feed-pagina-1.json` (generado, se comitea)
-- Crear: `fixtures/README.md`
+**Qué se resolvió:** el 401 que bloqueaba `POST /ajax/feed` venía de dos errores
+de diagnóstico previos. El token va en la cabecera `X-Auth`, no en el cuerpo, y
+la paginación es por `offset` acumulado, no por un campo `page` que no existe.
+Ver `docs/api-mister.md` para la petición exacta y el catálogo de categorías.
 
-**Interfaces:**
-- Consume: nada.
-- Produce: ficheros de fixture con la respuesta íntegra de `/ajax/feed`, y el
-  conocimiento del nombre exacto de los campos, que las tareas 3 y 4 necesitan.
+**Resultado:** histórico completo de la liga recorrido y agotado — 16 lotes,
+285 eventos, desde el 2026-08-03. Categorías contables: 183 `transfer` y
+4 `gameweek_end`.
 
-- [ ] **Paso 1: Escribir el script de captura**
+**Artefactos producidos:**
+- `docs/api-mister.md` — la petición, la forma de la respuesta y las 12
+  categorías, todo verificado.
+- `navegador/capturar-feed.js` — script de captura para la consola de Mister.
+- `datos/volcado-feed.json` — el histórico crudo íntegro (~975 KB, no se
+  comitea: está en `datos/`, ignorado por git).
+- `fixtures/feed-offset-0.json`, `fixtures/feed-con-cierre-jornada.json`,
+  `fixtures/feed-final-vacio.json` — lotes reales congelados para los tests.
 
-Fichero `navegador/capturar-feed.js`. Se pega en la consola de la pestaña de
-Mister ya autenticada, o se ejecuta mediante las herramientas de navegador.
-
-```js
-/**
- * Captura páginas crudas de POST /ajax/feed desde dentro de la propia página,
- * que es el único contexto donde la petición está autenticada con certeza.
- *
- * Devuelve un objeto { paginas: [...] } listo para volcar a disco.
- * No inspecciona ni transforma el contenido: lo entrega íntegro.
- */
-async function capturarFeed(desde = 0, hasta = 1) {
-  const paginas = []
-
-  for (let page = desde; page <= hasta; page++) {
-    const respuesta = await fetch('/ajax/feed', {
-      method: 'POST',
-      credentials: 'include',
-      headers: {
-        'X-Requested-With': 'XMLHttpRequest',
-        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-      },
-      body: new URLSearchParams({ page: String(page) }).toString(),
-    })
-
-    const texto = await respuesta.text()
-    paginas.push({ page, estado: respuesta.status, cuerpo: texto })
-
-    await new Promise((r) => setTimeout(r, 1000))
-  }
-
-  return { paginas }
-}
-
-globalThis.capturarFeed = capturarFeed
-```
-
-- [ ] **Paso 2: Ejecutar la captura en el navegador**
-
-Abrir `https://mister.mundodeportivo.com/feed` en Chrome con la sesión
-iniciada, pegar el script y ejecutar:
-
-```js
-await capturarFeed(0, 1)
-```
-
-Esperado: dos entradas con `estado: 200` y un `cuerpo` no vacío.
-
-**Si devuelve 401**, la petición necesita algo más de lo que envía este script.
-Diagnóstico, en este orden:
-
-1. Volver a cargar `/feed`, instalar un interceptor de `fetch` y
-   `XMLHttpRequest.prototype.setRequestHeader` **antes** de hacer scroll.
-2. Hacer scroll hasta que la aplicación cargue otra página del feed.
-3. Registrar la lista de **nombres** de cabecera que la aplicación añade (no sus
-   valores) y el nombre de los campos del cuerpo.
-4. Añadir esas cabeceras al script y repetir.
-
-No continuar con la Tarea 3 hasta obtener un `estado: 200` con cuerpo.
-
-- [ ] **Paso 3: Guardar los fixtures**
-
-Volcar cada `cuerpo` a `fixtures/feed-pagina-0.json` y
-`fixtures/feed-pagina-1.json`, tal cual, sin reformatear.
-
-- [ ] **Paso 4: Anonimizar solo lo que sea secreto**
-
-Revisar los fixtures y sustituir cualquier token de sesión o identificador de
-autenticación por `"REDACTADO"`. **No tocar** nombres de equipo, jugadores,
-importes ni fechas: son los datos que los tests deben verificar.
-
-Ejecutar: `grep -riE "auth|token|cookie|session" fixtures/`
-Esperado: sin resultados, o solo `"REDACTADO"`.
-
-- [ ] **Paso 5: Documentar la estructura observada**
-
-Fichero `fixtures/README.md`. Rellenar con lo realmente observado:
-
-```markdown
-# Fixtures del feed
-
-Respuestas íntegras de `POST /ajax/feed`, capturadas el <fecha> desde la sesión
-del navegador. Son la única fuente fiable del formato: se capturaron porque la
-petición no se pudo reproducir desde fuera del navegador.
-
-## Estructura de la respuesta
-
-- Claves de la raíz: <rellenar>
-- Cómo se identifica el tipo de cada evento: <rellenar>
-- Campo con la fecha del evento: <rellenar>
-- Cómo se señala el final del histórico: <rellenar>
-
-## Tipos de evento presentes
-
-| Tipo | Campos relevantes | Contable |
-|---|---|---|
-| <rellenar> | | |
-
-## Regenerarlos
-
-Ejecutar `navegador/capturar-feed.js` en la consola de la página de Mister.
-```
-
-- [ ] **Paso 6: Commit**
+**Antes de dar la tarea por buena**, comprobar que los fixtures no contienen
+credenciales:
 
 ```bash
-git add navegador fixtures
-git commit -m "feat: capturar y congelar respuestas reales del feed"
+grep -riE '"auth"|token|cookie|session' fixtures/ || echo "limpio"
 ```
+
+Si aparece algún token, sustituirlo por `"REDACTADO"`. **No tocar** nombres de
+equipo, jugadores, importes ni fechas: son los datos que los tests verifican.
 
 ---
 
@@ -477,195 +379,310 @@ git commit -m "feat: tipos de evento del dominio"
 
 ### Tarea 4: Parseador del feed
 
-**Depende de la Tarea 2:** los tests se escriben contra
-`fixtures/feed-pagina-0.json`, y el cuerpo del parseador contra la estructura
-documentada en `fixtures/README.md`. **No inventar el formato**: leer el fixture
-primero.
+**Base fáctica:** la forma real de la respuesta está documentada en
+`docs/api-mister.md`, verificada contra el histórico completo de la liga. Los
+fixtures reales están en `fixtures/`. **No inventes campos**: los de aquí son
+los que existen.
 
 **Ficheros:**
 - Crear: `src/recoleccion/parseadorFeed.ts`
 - Crear: `tests/recoleccion/parseadorFeed.test.ts`
 
 **Interfaces:**
-- Consume: `Evento` y afines (Tarea 3), `parsearImporte` (Tarea 1).
+- Consume: `Evento`, `Transaccion`, `CierreJornada`, `Ruido`, `esContable` (Tarea 3).
 - Produce:
   - `function parsearPaginaFeed(cuerpo: string): PaginaFeed`
-  - `type PaginaFeed = { eventos: Evento[]; hayMas: boolean }`
-  - `class EventoDesconocidoError extends Error { readonly crudo: string }`
+  - `type PaginaFeed = { eventos: Evento[]; agotado: boolean }`
+  - `class CategoriaDesconocidaError extends Error { readonly categoria: string; readonly crudo: string }`
 
-- [ ] **Paso 1: Leer el fixture y anotar la estructura**
+**Estructura de la respuesta** (ver `docs/api-mister.md`):
 
-Ejecutar: `node -e "const f=require('fs').readFileSync('fixtures/feed-pagina-0.json','utf8');const j=JSON.parse(f);console.log(Object.keys(j))"`
+```
+{ status: "ok", data: [ { category, created, date, data, id, ... } ], cfg, isAjax }
+```
 
-Anotar las claves reales. Todo lo que sigue usa esos nombres, no otros.
+- `data` es un **array**. No hay `has_more`: `agotado` es `data.length === 0`.
+- `category` es el discriminador del tipo.
+- En un `transfer`, la carga útil está en `evento.data` e incluye
+  `id_transfer`, `id_uc_from`, `id_uc_to`, `price` (**entero**), `type`,
+  `from`, `to`, `name`.
+- `id_uc_from === 0` o `id_uc_to === 0` significa **el mercado**, no un equipo.
 
-- [ ] **Paso 2: Escribir el test que falla**
+**Catálogo de categorías** — las 12 observadas. Contables: `transfer` y
+`gameweek_end`. Ruido catalogado: las otras diez.
 
-Fichero `tests/recoleccion/parseadorFeed.test.ts`. Los valores esperados se
-toman **del fixture real**, leyéndolo:
+- [ ] **Paso 1: Escribir el test que falla**
+
+Fichero `tests/recoleccion/parseadorFeed.test.ts`. Los tests exigen que exista
+al menos un evento de cada tipo antes de comprobarlo: un bucle vacío **no**
+puede pasar en verde.
 
 ```ts
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import {
-  EventoDesconocidoError,
+  CategoriaDesconocidaError,
   parsearPaginaFeed,
 } from '../../src/recoleccion/parseadorFeed.js'
-import { esContable } from '../../src/dominio/eventos.js'
+import type { Transaccion, CierreJornada } from '../../src/dominio/eventos.js'
 
-const pagina0 = readFileSync('fixtures/feed-pagina-0.json', 'utf8')
+const pagina0 = readFileSync('fixtures/feed-offset-0.json', 'utf8')
+const paginaCierre = readFileSync('fixtures/feed-con-cierre-jornada.json', 'utf8')
+const paginaFinal = readFileSync('fixtures/feed-final-vacio.json', 'utf8')
+
+const transaccionesDe = (cuerpo: string): Transaccion[] =>
+  parsearPaginaFeed(cuerpo).eventos.filter((e): e is Transaccion => e.tipo === 'transaccion')
+
+const cierresDe = (cuerpo: string): CierreJornada[] =>
+  parsearPaginaFeed(cuerpo).eventos.filter((e): e is CierreJornada => e.tipo === 'cierreJornada')
 
 describe('parsearPaginaFeed', () => {
-  it('extrae al menos un evento de la página real', () => {
-    const { eventos } = parsearPaginaFeed(pagina0)
-    expect(eventos.length).toBeGreaterThan(0)
+  it('extrae eventos de la página real', () => {
+    expect(parsearPaginaFeed(pagina0).eventos.length).toBeGreaterThan(0)
   })
 
-  it('reconoce el tipo de todos los eventos de la página real', () => {
-    const { eventos } = parsearPaginaFeed(pagina0)
-    // Si algún evento no se reconociera, el parseo habría lanzado.
-    // Este test documenta que la página real se procesa entera.
-    for (const e of eventos) {
-      expect(['transaccion', 'cierreJornada', 'ruido']).toContain(e.tipo)
+  it('la página real contiene transacciones', () => {
+    expect(transaccionesDe(pagina0).length).toBeGreaterThan(0)
+  })
+
+  it('toda transacción tiene importe entero no negativo', () => {
+    const ts = transaccionesDe(pagina0)
+    expect(ts.length).toBeGreaterThan(0)
+    for (const t of ts) {
+      expect(Number.isInteger(t.importe)).toBe(true)
+      expect(t.importe).toBeGreaterThanOrEqual(0)
     }
   })
 
-  it('toda transacción tiene importe entero y no negativo', () => {
-    const { eventos } = parsearPaginaFeed(pagina0)
-    for (const e of eventos) {
-      if (e.tipo === 'transaccion') {
-        expect(Number.isInteger(e.importe)).toBe(true)
-        expect(e.importe).toBeGreaterThanOrEqual(0)
+  it('toda transacción nombra jugador y ambas partes', () => {
+    const ts = transaccionesDe(pagina0)
+    expect(ts.length).toBeGreaterThan(0)
+    for (const t of ts) {
+      expect(t.jugador).not.toBe('')
+      expect(t.origen).toBeDefined()
+      expect(t.destino).toBeDefined()
+    }
+  })
+
+  it('reconoce el mercado cuando id_uc vale 0', () => {
+    const ts = transaccionesDe(pagina0)
+    const conMercado = ts.filter(
+      (t) => t.origen.clase === 'mercado' || t.destino.clase === 'mercado',
+    )
+    expect(conMercado.length).toBeGreaterThan(0)
+  })
+
+  it('la página de cierre contiene un cierre de jornada con resultados', () => {
+    const cs = cierresDe(paginaCierre)
+    expect(cs.length).toBeGreaterThan(0)
+    for (const c of cs) {
+      expect(c.resultados.length).toBeGreaterThan(0)
+      expect(Number.isInteger(c.jornada)).toBe(true)
+    }
+  })
+
+  it('todo resultado de jornada tiene premio entero y puntos', () => {
+    const cs = cierresDe(paginaCierre)
+    expect(cs.length).toBeGreaterThan(0)
+    for (const c of cs) {
+      for (const r of c.resultados) {
+        expect(Number.isInteger(r.premio)).toBe(true)
+        expect(Number.isInteger(r.puntos)).toBe(true)
+        expect(r.equipo).not.toBe('')
       }
     }
   })
 
-  it('todo cierre de jornada trae resultados de equipos', () => {
+  it('clasifica player_transfer como ruido, no como transacción', () => {
     const { eventos } = parsearPaginaFeed(pagina0)
-    for (const e of eventos) {
-      if (e.tipo === 'cierreJornada') {
-        expect(e.resultados.length).toBeGreaterThan(0)
-      }
-    }
+    const ruido = eventos.filter((e) => e.tipo === 'ruido')
+    expect(ruido.length).toBeGreaterThan(0)
   })
 
-  it('indica si hay más páginas', () => {
-    const { hayMas } = parsearPaginaFeed(pagina0)
-    expect(typeof hayMas).toBe('boolean')
+  it('marca agotado cuando data llega vacío', () => {
+    expect(parsearPaginaFeed(paginaFinal).agotado).toBe(true)
   })
 
-  it('lanza EventoDesconocidoError ante un tipo no catalogado', () => {
-    const inventado = JSON.stringify({ items: [{ type: 'tipo_que_no_existe' }] })
-    expect(() => parsearPaginaFeed(inventado)).toThrow(EventoDesconocidoError)
+  it('no marca agotado en una página con eventos', () => {
+    expect(parsearPaginaFeed(pagina0).agotado).toBe(false)
   })
 
-  it('el error de evento desconocido conserva el contenido crudo', () => {
-    const inventado = JSON.stringify({ items: [{ type: 'tipo_que_no_existe' }] })
+  it('lanza CategoriaDesconocidaError ante una categoría no catalogada', () => {
+    const inventado = JSON.stringify({
+      status: 'ok',
+      data: [{ category: 'categoria_que_no_existe', created: '2026-09-03 10:00:00', data: {} }],
+    })
+    expect(() => parsearPaginaFeed(inventado)).toThrow(CategoriaDesconocidaError)
+  })
+
+  it('el error conserva la categoría y el contenido crudo', () => {
+    const inventado = JSON.stringify({
+      status: 'ok',
+      data: [{ category: 'categoria_que_no_existe', created: '2026-09-03 10:00:00', data: {} }],
+    })
     try {
       parsearPaginaFeed(inventado)
       expect.unreachable('debería haber lanzado')
     } catch (e) {
-      expect(e).toBeInstanceOf(EventoDesconocidoError)
-      expect((e as EventoDesconocidoError).crudo).toContain('tipo_que_no_existe')
+      expect(e).toBeInstanceOf(CategoriaDesconocidaError)
+      expect((e as CategoriaDesconocidaError).categoria).toBe('categoria_que_no_existe')
+      expect((e as CategoriaDesconocidaError).crudo).toContain('categoria_que_no_existe')
     }
-  })
-
-  it('no descarta ningún evento contable de la página real', () => {
-    const { eventos } = parsearPaginaFeed(pagina0)
-    const contables = eventos.filter(esContable)
-    expect(contables.length).toBeGreaterThan(0)
   })
 })
 ```
 
-**Nota para el implementador:** el test del tipo inventado usa la clave `items`.
-Si el fixture real usa otro nombre para la lista de eventos, ajustar ese test
-para que use el nombre real; el resto no cambia.
-
-- [ ] **Paso 3: Ejecutar el test y comprobar que falla**
+- [ ] **Paso 2: Ejecutar el test y comprobar que falla**
 
 Ejecutar: `npx vitest run tests/recoleccion/parseadorFeed.test.ts`
-Esperado: FALLA por módulo inexistente.
+Esperado: FALLA por módulo `src/recoleccion/parseadorFeed.js` inexistente.
 
-- [ ] **Paso 4: Escribir la implementación**
+- [ ] **Paso 3: Escribir la implementación**
 
-Fichero `src/recoleccion/parseadorFeed.ts`. La estructura del esqueleto es
-fija; los nombres de campo marcados se sustituyen por los reales del fixture.
+Fichero `src/recoleccion/parseadorFeed.ts`:
 
 ```ts
-import type { Evento } from '../dominio/eventos.js'
+import type {
+  CierreJornada,
+  Evento,
+  Parte,
+  ResultadoEquipo,
+  Transaccion,
+} from '../dominio/eventos.js'
 
 export type PaginaFeed = {
   eventos: Evento[]
-  hayMas: boolean
+  /** El histórico se agota cuando el servidor devuelve `data` vacío. */
+  agotado: boolean
 }
 
 /**
- * Un evento cuyo tipo no está catalogado. Detiene la recolección a propósito:
- * descartarlo produciría una contabilidad plausible y equivocada.
+ * Categoría de feed no catalogada. Detiene la recolección a propósito:
+ * descartarla produciría una contabilidad plausible y equivocada.
  */
-export class EventoDesconocidoError extends Error {
+export class CategoriaDesconocidaError extends Error {
+  readonly categoria: string
   readonly crudo: string
 
-  constructor(crudo: string) {
-    super(`evento de feed no catalogado; recolección detenida`)
-    this.name = 'EventoDesconocidoError'
+  constructor(categoria: string, crudo: string) {
+    super(`categoría de feed no catalogada: ${categoria}. Recolección detenida.`)
+    this.name = 'CategoriaDesconocidaError'
+    this.categoria = categoria
     this.crudo = crudo
   }
 }
 
-/** Tipos sin efecto contable, ignorados a conciencia y de forma explícita. */
-const TIPOS_RUIDO = new Set([
-  'player_transfer', // fichaje de LaLiga real, no de la liga Fantasy
+/** Categorías sin efecto contable, ignoradas a conciencia y de forma explícita. */
+const CATEGORIAS_RUIDO = new Set([
+  'player_transfer',  // fichaje de LaLiga real, no de la liga Fantasy
+  'post',
+  'blog',
+  'news_md',
+  'pool_public',
+  'porra',
+  'gameweek_start',
+  'admin',
+  'change_name',
+  'market_unified',
 ])
 
-export function parsearPaginaFeed(cuerpo: string): PaginaFeed {
-  const datos = JSON.parse(cuerpo) as Record<string, unknown>
-
-  // NOMBRE REAL DEL CAMPO: tomar de fixtures/README.md
-  const brutos = (datos['items'] ?? []) as Record<string, unknown>[]
-
-  const eventos = brutos.map((bruto) => parsearEvento(bruto))
-
-  // NOMBRE REAL DEL CAMPO: tomar de fixtures/README.md
-  const hayMas = Boolean(datos['has_more'] ?? brutos.length > 0)
-
-  return { eventos, hayMas }
+type EventoBruto = {
+  category?: string
+  created?: string
+  data?: Record<string, unknown>
 }
 
-function parsearEvento(bruto: Record<string, unknown>): Evento {
-  const tipo = String(bruto['type'] ?? '')
+export function parsearPaginaFeed(cuerpo: string): PaginaFeed {
+  const respuesta = JSON.parse(cuerpo) as { data?: EventoBruto[] }
+  const brutos = respuesta.data ?? []
 
-  if (TIPOS_RUIDO.has(tipo)) {
-    return {
-      tipo: 'ruido',
-      fecha: leerFecha(bruto),
-      motivo: `tipo de feed sin efecto contable: ${tipo}`,
-    }
+  return {
+    eventos: brutos.map(parsearEvento),
+    agotado: brutos.length === 0,
+  }
+}
+
+function parsearEvento(bruto: EventoBruto): Evento {
+  const categoria = bruto.category ?? ''
+  const fecha = bruto.created ?? ''
+
+  if (categoria === 'transfer') return parsearTransaccion(bruto, fecha)
+  if (categoria === 'gameweek_end') return parsearCierreJornada(bruto, fecha)
+
+  if (CATEGORIAS_RUIDO.has(categoria)) {
+    return { tipo: 'ruido', fecha, motivo: `categoría sin efecto contable: ${categoria}` }
   }
 
-  if (tipo === 'transfer') return parsearTransaccion(bruto)
-  if (tipo === 'gameweek_end') return parsearCierreJornada(bruto)
+  throw new CategoriaDesconocidaError(categoria, JSON.stringify(bruto))
+}
 
-  throw new EventoDesconocidoError(JSON.stringify(bruto))
+/** `id_uc` 0 es el mercado de Mister, no un equipo. */
+function parte(idUc: unknown, nombre: unknown): Parte {
+  return Number(idUc) === 0
+    ? { clase: 'mercado' }
+    : { clase: 'equipo', nombre: String(nombre ?? '') }
+}
+
+function exigirEntero(valor: unknown, campo: string): number {
+  const n = Number(valor)
+  if (!Number.isInteger(n)) {
+    throw new Error(`campo ${campo} no es un entero: ${JSON.stringify(valor)}`)
+  }
+  return n
+}
+
+function parsearTransaccion(bruto: EventoBruto, fecha: string): Transaccion {
+  const d = bruto.data ?? {}
+
+  return {
+    tipo: 'transaccion',
+    fecha,
+    jugador: String(d['name'] ?? ''),
+    origen: parte(d['id_uc_from'], d['from']),
+    destino: parte(d['id_uc_to'], d['to']),
+    importe: exigirEntero(d['price'], 'price'),
+    porClausula: String(d['type'] ?? '') === 'clause',
+  }
+}
+
+function parsearCierreJornada(bruto: EventoBruto, fecha: string): CierreJornada {
+  const d = bruto.data ?? {}
+  const ranking = (d['ranking'] ?? []) as Record<string, unknown>[]
+
+  const resultados: ResultadoEquipo[] = ranking.map((r) => ({
+    equipo: String(r['name'] ?? r['team'] ?? ''),
+    premio: exigirEntero(r['cash'] ?? r['prize'] ?? 0, 'premio'),
+    puntos: exigirEntero(r['points'] ?? 0, 'puntos'),
+    sinPuntuar: Boolean(r['negative'] ?? false),
+  }))
+
+  return {
+    tipo: 'cierreJornada',
+    fecha,
+    jornada: exigirEntero(d['gameweek'], 'gameweek'),
+    resultados,
+  }
 }
 ```
 
-Completar `parsearTransaccion`, `parsearCierreJornada` y `leerFecha` con los
-campos reales del fixture. Todas ellas deben usar `parsearImporte` para los
-importes y lanzar si un campo obligatorio falta.
+**Nota importante:** los nombres de los campos dentro de `ranking` de
+`gameweek_end` (`name`/`team`, `cash`/`prize`, `negative`) están sin confirmar,
+porque solo se inspeccionó el nivel superior. **Antes de implementar, abre
+`fixtures/feed-con-cierre-jornada.json` y comprueba los nombres reales.** Ajusta
+`parsearCierreJornada` a lo que haya y quita las alternativas que sobren: dejar
+un `??` de más es exactamente el tipo de suposición que este proyecto no admite.
 
-- [ ] **Paso 5: Ejecutar los tests y comprobar que pasan**
+- [ ] **Paso 4: Ejecutar los tests y comprobar que pasan**
 
 Ejecutar: `npx vitest run tests/recoleccion/parseadorFeed.test.ts`
-Esperado: PASA, 8 tests.
+Esperado: PASA, 12 tests.
 
-- [ ] **Paso 6: Comprobar tipos y commit**
+- [ ] **Paso 5: Comprobar tipos y commit**
 
 ```bash
 npm run typecheck
-git add src/recoleccion/parseadorFeed.ts tests/recoleccion/parseadorFeed.test.ts fixtures/README.md
-git commit -m "feat: parseador del feed con parada ante eventos no catalogados"
+git add src/recoleccion/parseadorFeed.ts tests/recoleccion/parseadorFeed.test.ts
+git commit -m "feat: parseador del feed con parada ante categorías no catalogadas"
 ```
 
 ---
@@ -681,8 +698,13 @@ git commit -m "feat: parseador del feed con parada ante eventos no catalogados"
 - Consume: nada del proyecto.
 - Produce:
   - `function abrirAlmacen(ruta: string): Almacen`
-  - `type Almacen = { guardarPagina(p: PaginaCruda): void; leerPaginas(): PaginaCruda[]; paginasGuardadas(): number[]; cerrar(): void }`
-  - `type PaginaCruda = { pagina: number; cuerpo: string; capturadaEn: string }`
+  - `type PaginaCruda = { offset: number; nEventos: number; cuerpo: string; capturadaEn: string }`
+  - `type Almacen = { guardarPagina(p: PaginaCruda): void; leerPaginas(): PaginaCruda[]; cerrar(): void }`
+
+La clave es el **`offset`**, no un número de página: la paginación del feed
+avanza sumando el tamaño de cada lote. Se guarda también `nEventos` porque es
+lo que permite verificar después que los lotes encajan sin solaparse ni dejar
+hueco.
 
 - [ ] **Paso 1: Escribir el test que falla**
 
@@ -692,50 +714,55 @@ Fichero `tests/almacen/crudo.test.ts`:
 import { describe, expect, it } from 'vitest'
 import { abrirAlmacen } from '../../src/almacen/crudo.js'
 
-function almacenEnMemoria() {
-  return abrirAlmacen(':memory:')
-}
+const almacenEnMemoria = () => abrirAlmacen(':memory:')
+
+const pagina = (offset: number, nEventos: number, cuerpo = '{}') => ({
+  offset,
+  nEventos,
+  cuerpo,
+  capturadaEn: '2026-09-03T10:00:00Z',
+})
 
 describe('almacén crudo', () => {
   it('guarda y recupera una página íntegra', () => {
     const a = almacenEnMemoria()
-    a.guardarPagina({ pagina: 0, cuerpo: '{"a":1}', capturadaEn: '2026-09-03T10:00:00Z' })
+    a.guardarPagina(pagina(0, 21, '{"a":1}'))
     expect(a.leerPaginas()).toEqual([
-      { pagina: 0, cuerpo: '{"a":1}', capturadaEn: '2026-09-03T10:00:00Z' },
+      { offset: 0, nEventos: 21, cuerpo: '{"a":1}', capturadaEn: '2026-09-03T10:00:00Z' },
     ])
     a.cerrar()
   })
 
-  it('devuelve las páginas ordenadas por número', () => {
+  it('devuelve las páginas ordenadas por offset', () => {
     const a = almacenEnMemoria()
-    a.guardarPagina({ pagina: 2, cuerpo: 'c', capturadaEn: '2026-09-03T10:00:02Z' })
-    a.guardarPagina({ pagina: 0, cuerpo: 'a', capturadaEn: '2026-09-03T10:00:00Z' })
-    a.guardarPagina({ pagina: 1, cuerpo: 'b', capturadaEn: '2026-09-03T10:00:01Z' })
-    expect(a.paginasGuardadas()).toEqual([0, 1, 2])
+    a.guardarPagina(pagina(42, 21))
+    a.guardarPagina(pagina(0, 21))
+    a.guardarPagina(pagina(21, 21))
+    expect(a.leerPaginas().map((p) => p.offset)).toEqual([0, 21, 42])
     a.cerrar()
   })
 
-  it('reguardar una página la sustituye en vez de duplicarla', () => {
+  it('reguardar un offset lo sustituye en vez de duplicarlo', () => {
     const a = almacenEnMemoria()
-    a.guardarPagina({ pagina: 0, cuerpo: 'viejo', capturadaEn: '2026-09-03T10:00:00Z' })
-    a.guardarPagina({ pagina: 0, cuerpo: 'nuevo', capturadaEn: '2026-09-03T11:00:00Z' })
-    const paginas = a.leerPaginas()
-    expect(paginas).toHaveLength(1)
-    expect(paginas[0]!.cuerpo).toBe('nuevo')
+    a.guardarPagina(pagina(0, 21, 'viejo'))
+    a.guardarPagina(pagina(0, 21, 'nuevo'))
+    const ps = a.leerPaginas()
+    expect(ps).toHaveLength(1)
+    expect(ps[0]!.cuerpo).toBe('nuevo')
     a.cerrar()
   })
 
   it('no altera el cuerpo guardado', () => {
     const a = almacenEnMemoria()
     const raro = '{"texto":"acentos áéí, emoji 🏆, comillas \\" y salto\\n"}'
-    a.guardarPagina({ pagina: 0, cuerpo: raro, capturadaEn: '2026-09-03T10:00:00Z' })
+    a.guardarPagina(pagina(0, 1, raro))
     expect(a.leerPaginas()[0]!.cuerpo).toBe(raro)
     a.cerrar()
   })
 })
 ```
 
-- [ ] **Paso 2: Ejecutar el test y comprobar que falla**
+- [ ] **Paso 2: Ejecutar y comprobar que falla**
 
 Ejecutar: `npx vitest run tests/almacen/crudo.test.ts`
 Esperado: FALLA por módulo inexistente.
@@ -747,7 +774,8 @@ Fichero `src/almacen/esquema.ts`:
 ```ts
 export const ESQUEMA = `
 CREATE TABLE IF NOT EXISTS paginas_crudas (
-  pagina       INTEGER PRIMARY KEY,
+  offset_feed  INTEGER PRIMARY KEY,
+  n_eventos    INTEGER NOT NULL,
   cuerpo       TEXT    NOT NULL,
   capturada_en TEXT    NOT NULL
 );
@@ -763,7 +791,8 @@ import Database from 'better-sqlite3'
 import { ESQUEMA } from './esquema.js'
 
 export type PaginaCruda = {
-  pagina: number
+  offset: number
+  nEventos: number
   cuerpo: string
   capturadaEn: string
 }
@@ -771,7 +800,6 @@ export type PaginaCruda = {
 export type Almacen = {
   guardarPagina(p: PaginaCruda): void
   leerPaginas(): PaginaCruda[]
-  paginasGuardadas(): number[]
   cerrar(): void
 }
 
@@ -787,16 +815,18 @@ export function abrirAlmacen(ruta: string): Almacen {
   db.exec(ESQUEMA)
 
   const insertar = db.prepare(
-    `INSERT INTO paginas_crudas (pagina, cuerpo, capturada_en)
-     VALUES (@pagina, @cuerpo, @capturadaEn)
-     ON CONFLICT(pagina) DO UPDATE SET
+    `INSERT INTO paginas_crudas (offset_feed, n_eventos, cuerpo, capturada_en)
+     VALUES (@offset, @nEventos, @cuerpo, @capturadaEn)
+     ON CONFLICT(offset_feed) DO UPDATE SET
+       n_eventos = excluded.n_eventos,
        cuerpo = excluded.cuerpo,
        capturada_en = excluded.capturada_en`,
   )
 
   const seleccionar = db.prepare(
-    `SELECT pagina, cuerpo, capturada_en AS capturadaEn
-     FROM paginas_crudas ORDER BY pagina`,
+    `SELECT offset_feed AS "offset", n_eventos AS nEventos,
+            cuerpo, capturada_en AS capturadaEn
+     FROM paginas_crudas ORDER BY offset_feed`,
   )
 
   return {
@@ -805,9 +835,6 @@ export function abrirAlmacen(ruta: string): Almacen {
     },
     leerPaginas() {
       return seleccionar.all() as PaginaCruda[]
-    },
-    paginasGuardadas() {
-      return (seleccionar.all() as PaginaCruda[]).map((p) => p.pagina)
     },
     cerrar() {
       db.close()
@@ -825,25 +852,27 @@ Esperado: PASA, 4 tests.
 
 ```bash
 git add src/almacen tests/almacen
-git commit -m "feat: almacén crudo inmutable sobre SQLite"
+git commit -m "feat: almacén crudo inmutable indexado por offset"
 ```
 
 ---
 
-### Tarea 6: Detección de huecos y fin del histórico
+### Tarea 6: Verificación de continuidad del histórico
 
 **Ficheros:**
 - Crear: `src/recoleccion/integridad.ts`
 - Crear: `tests/recoleccion/integridad.test.ts`
 
 **Interfaces:**
-- Consume: nada del proyecto.
+- Consume: `PaginaCruda` (Tarea 5).
 - Produce:
-  - `function comprobarSinHuecos(paginas: number[]): void` — lanza `HuecoError` si falta alguna página entre la primera y la última.
-  - `class HuecoError extends Error { readonly faltantes: number[] }`
+  - `function comprobarContinuidad(paginas: PaginaCruda[]): void`
+  - `class DiscontinuidadError extends Error { readonly offsetEsperado: number; readonly offsetHallado: number }`
 
-Esta es la garantía de completitud: sin ella, una página perdida por un fallo de
-red produciría una contabilidad silenciosamente incompleta.
+Esta es la garantía de completitud. Los lotes del feed encajan como piezas: el
+`offset` de cada página debe ser exactamente el anterior más el número de
+eventos que trajo. Un salto significa eventos perdidos; un solape, eventos
+contados dos veces. Ambos falsearían la contabilidad, así que ambos son error.
 
 - [ ] **Paso 1: Escribir el test que falla**
 
@@ -851,46 +880,58 @@ Fichero `tests/recoleccion/integridad.test.ts`:
 
 ```ts
 import { describe, expect, it } from 'vitest'
-import { HuecoError, comprobarSinHuecos } from '../../src/recoleccion/integridad.js'
+import {
+  DiscontinuidadError,
+  comprobarContinuidad,
+} from '../../src/recoleccion/integridad.js'
+import type { PaginaCruda } from '../../src/almacen/crudo.js'
 
-describe('comprobarSinHuecos', () => {
-  it('acepta una secuencia completa desde cero', () => {
-    expect(() => comprobarSinHuecos([0, 1, 2, 3])).not.toThrow()
+const p = (offset: number, nEventos: number): PaginaCruda => ({
+  offset,
+  nEventos,
+  cuerpo: '{}',
+  capturadaEn: '2026-09-03T10:00:00Z',
+})
+
+describe('comprobarContinuidad', () => {
+  it('acepta lotes que encajan exactamente', () => {
+    expect(() => comprobarContinuidad([p(0, 21), p(21, 21), p(42, 5), p(47, 0)])).not.toThrow()
   })
 
   it('acepta una sola página', () => {
-    expect(() => comprobarSinHuecos([0])).not.toThrow()
+    expect(() => comprobarContinuidad([p(0, 21)])).not.toThrow()
   })
 
   it('acepta una lista vacía', () => {
-    expect(() => comprobarSinHuecos([])).not.toThrow()
+    expect(() => comprobarContinuidad([])).not.toThrow()
   })
 
-  it('acepta páginas desordenadas si están todas', () => {
-    expect(() => comprobarSinHuecos([2, 0, 1])).not.toThrow()
+  it('lanza si el primer offset no es cero', () => {
+    expect(() => comprobarContinuidad([p(21, 21)])).toThrow(DiscontinuidadError)
   })
 
-  it('lanza si falta una página intermedia', () => {
-    expect(() => comprobarSinHuecos([0, 1, 3])).toThrow(HuecoError)
+  it('lanza si hay un salto entre lotes', () => {
+    expect(() => comprobarContinuidad([p(0, 21), p(50, 21)])).toThrow(DiscontinuidadError)
   })
 
-  it('enumera todas las páginas que faltan', () => {
+  it('lanza si hay solape entre lotes', () => {
+    expect(() => comprobarContinuidad([p(0, 21), p(10, 21)])).toThrow(DiscontinuidadError)
+  })
+
+  it('el error dice qué offset se esperaba y cuál se halló', () => {
     try {
-      comprobarSinHuecos([0, 3, 6])
+      comprobarContinuidad([p(0, 21), p(50, 21)])
       expect.unreachable('debería haber lanzado')
     } catch (e) {
-      expect(e).toBeInstanceOf(HuecoError)
-      expect((e as HuecoError).faltantes).toEqual([1, 2, 4, 5])
+      expect(e).toBeInstanceOf(DiscontinuidadError)
+      expect((e as DiscontinuidadError).offsetEsperado).toBe(21)
+      expect((e as DiscontinuidadError).offsetHallado).toBe(50)
     }
-  })
-
-  it('lanza si la secuencia no empieza en cero', () => {
-    expect(() => comprobarSinHuecos([1, 2])).toThrow(HuecoError)
   })
 })
 ```
 
-- [ ] **Paso 2: Ejecutar el test y comprobar que falla**
+- [ ] **Paso 2: Ejecutar y comprobar que falla**
 
 Ejecutar: `npx vitest run tests/recoleccion/integridad.test.ts`
 Esperado: FALLA por módulo inexistente.
@@ -900,38 +941,40 @@ Esperado: FALLA por módulo inexistente.
 Fichero `src/recoleccion/integridad.ts`:
 
 ```ts
-/** Faltan páginas del histórico: la contabilidad sería incompleta. */
-export class HuecoError extends Error {
-  readonly faltantes: number[]
+import type { PaginaCruda } from '../almacen/crudo.js'
 
-  constructor(faltantes: number[]) {
+/** Los lotes recolectados no encajan: faltan eventos o se cuentan dos veces. */
+export class DiscontinuidadError extends Error {
+  readonly offsetEsperado: number
+  readonly offsetHallado: number
+
+  constructor(offsetEsperado: number, offsetHallado: number) {
     super(
-      `faltan ${faltantes.length} página(s) del histórico: ${faltantes.join(', ')}. ` +
-        `La recolección no se da por buena.`,
+      `el histórico no es continuo: se esperaba el offset ${offsetEsperado} ` +
+        `y se halló ${offsetHallado}. La recolección no se da por buena.`,
     )
-    this.name = 'HuecoError'
-    this.faltantes = faltantes
+    this.name = 'DiscontinuidadError'
+    this.offsetEsperado = offsetEsperado
+    this.offsetHallado = offsetHallado
   }
 }
 
 /**
- * Comprueba que las páginas recolectadas forman la serie 0..n sin saltos.
+ * Comprueba que los lotes recolectados encajan sin hueco ni solape.
  *
- * Un hueco significa que un fallo de red se tragó parte del histórico, lo que
- * produciría un saldo plausible y equivocado. Por eso es un error, no un aviso.
+ * El feed pagina por offset acumulado: cada página empieza donde acabó la
+ * anterior. Un salto significa eventos perdidos —y un saldo plausible pero
+ * equivocado—, así que es un error, no un aviso.
  */
-export function comprobarSinHuecos(paginas: number[]): void {
-  if (paginas.length === 0) return
+export function comprobarContinuidad(paginas: PaginaCruda[]): void {
+  let esperado = 0
 
-  const presentes = new Set(paginas)
-  const maximo = Math.max(...paginas)
-  const faltantes: number[] = []
-
-  for (let i = 0; i <= maximo; i++) {
-    if (!presentes.has(i)) faltantes.push(i)
+  for (const pagina of paginas) {
+    if (pagina.offset !== esperado) {
+      throw new DiscontinuidadError(esperado, pagina.offset)
+    }
+    esperado += pagina.nEventos
   }
-
-  if (faltantes.length > 0) throw new HuecoError(faltantes)
 }
 ```
 
@@ -944,69 +987,83 @@ Esperado: PASA, 7 tests.
 
 ```bash
 git add src/recoleccion/integridad.ts tests/recoleccion/integridad.test.ts
-git commit -m "feat: detección de huecos en el histórico"
+git commit -m "feat: verificación de continuidad del histórico por offset"
 ```
 
 ---
 
 ### Tarea 7: Sesión y cliente HTTP
 
+**Base fáctica:** la petición exacta está documentada en `docs/api-mister.md`.
+Hacen falta **dos** credenciales: la cookie de sesión y el token `X-Auth`.
+
 **Ficheros:**
-- Crear: `src/sesion/cookie.ts`
+- Crear: `src/sesion/credenciales.ts`
 - Crear: `src/recoleccion/cliente.ts`
-- Crear: `tests/sesion/cookie.test.ts`
+- Crear: `tests/sesion/credenciales.test.ts`
 - Crear: `tests/recoleccion/cliente.test.ts`
 
 **Interfaces:**
 - Consume: nada del proyecto.
 - Produce:
-  - `function obtenerCookie(ruta?: string): string` — lee `.sesion/cookie` y lanza si no existe o está vacía.
-  - `function crearCliente(opciones: OpcionesCliente): Cliente`
-  - `type Cliente = { pedirPaginaFeed(pagina: number): Promise<string> }`
-  - `type OpcionesCliente = { cookie: string; base?: string; esperaMs?: number; fetch?: typeof globalThis.fetch }`
+  - `type Credenciales = { cookie: string; auth: string }`
+  - `function obtenerCredenciales(dir?: string): Credenciales` — lee `.sesion/cookie` y `.sesion/auth`
+  - `function crearCliente(o: OpcionesCliente): Cliente`
+  - `type Cliente = { pedirLote(offset: number): Promise<string> }`
+  - `type OpcionesCliente = { credenciales: Credenciales; base?: string; esperaMs?: number; fetch?: typeof globalThis.fetch }`
 
-- [ ] **Paso 1: Escribir el test de la sesión**
+- [ ] **Paso 1: Escribir el test de credenciales**
 
-Fichero `tests/sesion/cookie.test.ts`:
+Fichero `tests/sesion/credenciales.test.ts`:
 
 ```ts
 import { mkdtempSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { obtenerCookie } from '../../src/sesion/cookie.js'
+import { obtenerCredenciales } from '../../src/sesion/credenciales.js'
 
-function ficheroCon(contenido: string): string {
+function dirCon(cookie: string | null, auth: string | null): string {
   const dir = mkdtempSync(join(tmpdir(), 'mister-'))
-  const ruta = join(dir, 'cookie')
-  writeFileSync(ruta, contenido)
-  return ruta
+  if (cookie !== null) writeFileSync(join(dir, 'cookie'), cookie)
+  if (auth !== null) writeFileSync(join(dir, 'auth'), auth)
+  return dir
 }
 
-describe('obtenerCookie', () => {
-  it('lee la cookie del fichero', () => {
-    expect(obtenerCookie(ficheroCon('sesion=abc123'))).toBe('sesion=abc123')
+describe('obtenerCredenciales', () => {
+  it('lee la cookie y el token', () => {
+    expect(obtenerCredenciales(dirCon('sesion=abc', 'tok123'))).toEqual({
+      cookie: 'sesion=abc',
+      auth: 'tok123',
+    })
   })
 
   it('recorta espacios y saltos de línea', () => {
-    expect(obtenerCookie(ficheroCon('  sesion=abc123\n\n'))).toBe('sesion=abc123')
+    expect(obtenerCredenciales(dirCon('  sesion=abc\n', ' tok123 \n\n'))).toEqual({
+      cookie: 'sesion=abc',
+      auth: 'tok123',
+    })
   })
 
-  it('lanza si el fichero no existe', () => {
-    expect(() => obtenerCookie('/ruta/que/no/existe')).toThrow(/no se encontró la sesión/i)
+  it('lanza si falta la cookie', () => {
+    expect(() => obtenerCredenciales(dirCon(null, 'tok123'))).toThrow(/cookie/i)
   })
 
-  it('lanza si el fichero está vacío', () => {
-    expect(() => obtenerCookie(ficheroCon('   \n'))).toThrow(/sesión vacía/i)
+  it('lanza si falta el token', () => {
+    expect(() => obtenerCredenciales(dirCon('sesion=abc', null))).toThrow(/auth/i)
   })
 
-  it('el mensaje de error no incluye el contenido del fichero', () => {
-    const ruta = ficheroCon('   \n')
+  it('lanza si la cookie está vacía', () => {
+    expect(() => obtenerCredenciales(dirCon('  \n', 'tok123'))).toThrow(/vací/i)
+  })
+
+  it('ningún mensaje de error revela el contenido de los ficheros', () => {
+    const dir = dirCon('sesion=secretisima', null)
     try {
-      obtenerCookie(ruta)
+      obtenerCredenciales(dir)
       expect.unreachable('debería haber lanzado')
     } catch (e) {
-      expect((e as Error).message).not.toContain('sesion=')
+      expect((e as Error).message).not.toContain('secretisima')
     }
   })
 })
@@ -1014,43 +1071,53 @@ describe('obtenerCookie', () => {
 
 - [ ] **Paso 2: Ejecutar y comprobar que falla**
 
-Ejecutar: `npx vitest run tests/sesion/cookie.test.ts`
+Ejecutar: `npx vitest run tests/sesion/credenciales.test.ts`
 Esperado: FALLA por módulo inexistente.
 
-- [ ] **Paso 3: Implementar la sesión**
+- [ ] **Paso 3: Implementar las credenciales**
 
-Fichero `src/sesion/cookie.ts`:
+Fichero `src/sesion/credenciales.ts`:
 
 ```ts
 import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 
-const RUTA_POR_DEFECTO = '.sesion/cookie'
+const DIR_POR_DEFECTO = '.sesion'
+
+export type Credenciales = {
+  cookie: string
+  auth: string
+}
 
 /**
- * Devuelve la cookie de sesión de Mister.
+ * Lee las dos credenciales que Mister exige.
  *
- * La cookie es HttpOnly y la cuenta usa login con Apple, así que no puede
- * obtenerse programáticamente: se copia una vez desde un navegador autenticado.
+ * La cuenta usa login con Apple y la cookie es HttpOnly, así que ninguna de las
+ * dos puede obtenerse programáticamente: se copian de un navegador autenticado.
  *
  * Ningún mensaje de error incluye su valor.
  */
-export function obtenerCookie(ruta: string = RUTA_POR_DEFECTO): string {
+export function obtenerCredenciales(dir: string = DIR_POR_DEFECTO): Credenciales {
+  return {
+    cookie: leer(join(dir, 'cookie'), 'cookie'),
+    auth: leer(join(dir, 'auth'), 'auth'),
+  }
+}
+
+function leer(ruta: string, nombre: string): string {
   let contenido: string
   try {
     contenido = readFileSync(ruta, 'utf8')
   } catch {
-    throw new Error(
-      `no se encontró la sesión en ${ruta}. ` +
-        `Cópiala desde el navegador y guárdala ahí.`,
-    )
+    throw new Error(`falta la credencial ${nombre}: no se encontró ${ruta}. Cópiala del navegador.`)
   }
 
-  const cookie = contenido.trim()
-  if (cookie === '') {
-    throw new Error(`sesión vacía en ${ruta}. Vuelve a capturarla del navegador.`)
+  const valor = contenido.trim()
+  if (valor === '') {
+    throw new Error(`la credencial ${nombre} está vacía en ${ruta}. Vuelve a capturarla.`)
   }
 
-  return cookie
+  return valor
 }
 ```
 
@@ -1062,55 +1129,56 @@ Fichero `tests/recoleccion/cliente.test.ts`:
 import { describe, expect, it, vi } from 'vitest'
 import { crearCliente } from '../../src/recoleccion/cliente.js'
 
-function respuesta(cuerpo: string, status = 200): Response {
-  return new Response(cuerpo, { status })
-}
+const credenciales = { cookie: 'sesion=x', auth: 'tok123' }
+const respuesta = (cuerpo: string, status = 200) => new Response(cuerpo, { status })
+
+const cliente = (fetchFalso: unknown) =>
+  crearCliente({ credenciales, esperaMs: 0, fetch: fetchFalso as never })
 
 describe('cliente del feed', () => {
-  it('pide la página indicada y devuelve el cuerpo', async () => {
-    const fetchFalso = vi.fn(async () => respuesta('{"ok":1}'))
-    const c = crearCliente({ cookie: 'sesion=x', esperaMs: 0, fetch: fetchFalso as never })
+  it('pide el offset indicado y devuelve el cuerpo', async () => {
+    const f = vi.fn(async () => respuesta('{"data":[]}'))
+    expect(await cliente(f).pedirLote(42)).toBe('{"data":[]}')
 
-    expect(await c.pedirPaginaFeed(3)).toBe('{"ok":1}')
-
-    const [url, init] = fetchFalso.mock.calls[0] as unknown as [string, RequestInit]
+    const [url, init] = f.mock.calls[0] as unknown as [string, RequestInit]
     expect(url).toContain('/ajax/feed')
-    expect(String(init.body)).toContain('page=3')
+    expect(init.method).toBe('POST')
+    const cuerpo = new URLSearchParams(String(init.body))
+    expect(cuerpo.get('offset')).toBe('42')
+    expect(cuerpo.get('cardsPerPage')).toBe('20')
   })
 
-  it('envía la cookie en la cabecera', async () => {
-    const fetchFalso = vi.fn(async () => respuesta('{}'))
-    const c = crearCliente({ cookie: 'sesion=secreta', esperaMs: 0, fetch: fetchFalso as never })
-    await c.pedirPaginaFeed(0)
+  it('envía la cookie y el token X-Auth', async () => {
+    const f = vi.fn(async () => respuesta('{}'))
+    await cliente(f).pedirLote(0)
 
-    const [, init] = fetchFalso.mock.calls[0] as unknown as [string, RequestInit]
-    expect((init.headers as Record<string, string>)['Cookie']).toBe('sesion=secreta')
+    const [, init] = f.mock.calls[0] as unknown as [string, RequestInit]
+    const h = init.headers as Record<string, string>
+    expect(h['Cookie']).toBe('sesion=x')
+    expect(h['X-Auth']).toBe('tok123')
+    expect(h['X-Requested-With']).toBe('XMLHttpRequest')
   })
 
   it('reintenta ante un error del servidor y acaba devolviendo el cuerpo', async () => {
-    const fetchFalso = vi
-      .fn()
-      .mockResolvedValueOnce(respuesta('', 500))
-      .mockResolvedValueOnce(respuesta('{"ok":1}'))
-    const c = crearCliente({ cookie: 'sesion=x', esperaMs: 0, fetch: fetchFalso as never })
-
-    expect(await c.pedirPaginaFeed(0)).toBe('{"ok":1}')
-    expect(fetchFalso).toHaveBeenCalledTimes(2)
+    const f = vi.fn().mockResolvedValueOnce(respuesta('', 500)).mockResolvedValueOnce(respuesta('{"ok":1}'))
+    expect(await cliente(f).pedirLote(0)).toBe('{"ok":1}')
+    expect(f).toHaveBeenCalledTimes(2)
   })
 
-  it('no reintenta ante un 401 y avisa de la sesión', async () => {
-    const fetchFalso = vi.fn(async () => respuesta('{"status":"error"}', 401))
-    const c = crearCliente({ cookie: 'sesion=x', esperaMs: 0, fetch: fetchFalso as never })
-
-    await expect(c.pedirPaginaFeed(0)).rejects.toThrow(/sesión/i)
-    expect(fetchFalso).toHaveBeenCalledTimes(1)
+  it('no reintenta ante un 401 y avisa de las credenciales', async () => {
+    const f = vi.fn(async () => respuesta('{"status":"error"}', 401))
+    await expect(cliente(f).pedirLote(0)).rejects.toThrow(/credencial|sesión/i)
+    expect(f).toHaveBeenCalledTimes(1)
   })
 
-  it('el error de sesión no revela la cookie', async () => {
-    const fetchFalso = vi.fn(async () => respuesta('', 401))
-    const c = crearCliente({ cookie: 'sesion=secreta', esperaMs: 0, fetch: fetchFalso as never })
-
-    await expect(c.pedirPaginaFeed(0)).rejects.not.toThrow(/secreta/)
+  it('el error de credenciales no revela la cookie ni el token', async () => {
+    const f = vi.fn(async () => respuesta('', 401))
+    const c = crearCliente({
+      credenciales: { cookie: 'sesion=secretisima', auth: 'tokensecreto' },
+      esperaMs: 0,
+      fetch: f as never,
+    })
+    await expect(c.pedirLote(0)).rejects.toThrow(/^(?!.*secretisima)(?!.*tokensecreto).*$/s)
   })
 })
 ```
@@ -1125,19 +1193,22 @@ Esperado: FALLA por módulo inexistente.
 Fichero `src/recoleccion/cliente.ts`:
 
 ```ts
+import type { Credenciales } from '../sesion/credenciales.js'
+
 const BASE_POR_DEFECTO = 'https://mister.mundodeportivo.com'
 const ESPERA_POR_DEFECTO_MS = 1000
+const EVENTOS_POR_LOTE = 20
 const REINTENTOS = 3
 
 export type OpcionesCliente = {
-  cookie: string
+  credenciales: Credenciales
   base?: string
   esperaMs?: number
   fetch?: typeof globalThis.fetch
 }
 
 export type Cliente = {
-  pedirPaginaFeed(pagina: number): Promise<string>
+  pedirLote(offset: number): Promise<string>
 }
 
 const dormir = (ms: number) => new Promise((r) => setTimeout(r, ms))
@@ -1146,8 +1217,8 @@ const dormir = (ms: number) => new Promise((r) => setTimeout(r, ms))
  * Cliente HTTP del feed. Solo pide y devuelve texto: no interpreta nada.
  *
  * Espacia las peticiones para no castigar el servidor de Mister y reintenta los
- * fallos transitorios, pero nunca un 401: eso significa sesión caducada y
- * reintentarlo solo añade ruido.
+ * fallos transitorios, pero nunca un 401: eso significa credenciales caducadas
+ * y reintentarlo solo añade ruido.
  */
 export function crearCliente(opciones: OpcionesCliente): Cliente {
   const base = opciones.base ?? BASE_POR_DEFECTO
@@ -1155,7 +1226,7 @@ export function crearCliente(opciones: OpcionesCliente): Cliente {
   const hacerFetch = opciones.fetch ?? globalThis.fetch
 
   return {
-    async pedirPaginaFeed(pagina: number): Promise<string> {
+    async pedirLote(offset: number): Promise<string> {
       let ultimoFallo: Error | undefined
 
       for (let intento = 0; intento < REINTENTOS; intento++) {
@@ -1164,16 +1235,23 @@ export function crearCliente(opciones: OpcionesCliente): Cliente {
         const res = await hacerFetch(`${base}/ajax/feed`, {
           method: 'POST',
           headers: {
-            Cookie: opciones.cookie,
+            Cookie: opciones.credenciales.cookie,
+            'X-Auth': opciones.credenciales.auth,
             'X-Requested-With': 'XMLHttpRequest',
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            Accept: 'application/json',
           },
-          body: new URLSearchParams({ page: String(pagina) }).toString(),
+          body: new URLSearchParams({
+            end: '0',
+            loading: '0',
+            offset: String(offset),
+            cardsPerPage: String(EVENTOS_POR_LOTE),
+          }).toString(),
         })
 
         if (res.status === 401) {
           throw new Error(
-            'sesión de Mister caducada o no válida. Vuelve a capturar la cookie.',
+            'credenciales de Mister caducadas o no válidas. Vuelve a copiar la cookie y el token del navegador.',
           )
         }
 
@@ -1182,43 +1260,43 @@ export function crearCliente(opciones: OpcionesCliente): Cliente {
           return await res.text()
         }
 
-        ultimoFallo = new Error(`la página ${pagina} devolvió HTTP ${res.status}`)
+        ultimoFallo = new Error(`el offset ${offset} devolvió HTTP ${res.status}`)
       }
 
-      throw ultimoFallo ?? new Error(`no se pudo obtener la página ${pagina}`)
+      throw ultimoFallo ?? new Error(`no se pudo obtener el offset ${offset}`)
     },
   }
 }
 ```
 
-- [ ] **Paso 7: Ejecutar todos los tests**
+- [ ] **Paso 7: Ejecutar toda la batería y comprobar tipos**
 
-Ejecutar: `npm test`
-Esperado: PASAN todos.
+Ejecutar: `npm test && npm run typecheck`
+Esperado: todo pasa.
 
 - [ ] **Paso 8: Commit**
 
 ```bash
 git add src/sesion src/recoleccion/cliente.ts tests/sesion tests/recoleccion/cliente.test.ts
-git commit -m "feat: sesión desde fichero y cliente HTTP con ritmo y reintentos"
+git commit -m "feat: credenciales desde fichero y cliente HTTP del feed"
 ```
 
 ---
 
-### Tarea 8: Recolección completa y comprobación
+### Tarea 8: Recolección completa
 
 **Ficheros:**
 - Crear: `src/recoleccion/recolectar.ts`
 - Crear: `src/cli/recolectar.ts`
 - Crear: `tests/recoleccion/recolectar.test.ts`
-- Modificar: `package.json` (añadir el script `recolectar`)
+- Modificar: `package.json` (script `recolectar`)
 
 **Interfaces:**
-- Consume: `Cliente` (T7), `Almacen` (T5), `parsearPaginaFeed` (T4), `comprobarSinHuecos` (T6).
+- Consume: `Cliente` (T7), `Almacen` (T5), `parsearPaginaFeed` (T4), `comprobarContinuidad` (T6), `esContable` (T3).
 - Produce:
   - `async function recolectarHistorico(dep: Dependencias): Promise<Resumen>`
-  - `type Dependencias = { cliente: Cliente; almacen: Almacen; maxPaginas?: number }`
-  - `type Resumen = { paginas: number; eventos: number; contables: number; ruido: number }`
+  - `type Dependencias = { cliente: Cliente; almacen: Almacen; maxLotes?: number }`
+  - `type Resumen = { lotes: number; eventos: number; contables: number; ruido: number }`
 
 - [ ] **Paso 1: Escribir el test que falla**
 
@@ -1230,89 +1308,95 @@ import { abrirAlmacen } from '../../src/almacen/crudo.js'
 import { recolectarHistorico } from '../../src/recoleccion/recolectar.js'
 import type { Cliente } from '../../src/recoleccion/cliente.js'
 
-/** Cliente falso que sirve páginas preparadas y luego se agota. */
-function clienteCon(paginas: string[]): Cliente {
-  return {
-    async pedirPaginaFeed(n: number) {
-      return paginas[n] ?? JSON.stringify({ items: [], has_more: false })
-    },
-  }
+const ruido = (n: number) =>
+  JSON.stringify({
+    status: 'ok',
+    data: Array.from({ length: n }, () => ({
+      category: 'player_transfer',
+      created: '2026-09-01 10:00:00',
+      data: {},
+    })),
+  })
+
+const vacio = JSON.stringify({ status: 'ok', data: [] })
+
+/** Cliente falso que sirve lotes por offset. */
+function clienteCon(lotes: Record<number, string>): Cliente {
+  return { async pedirLote(offset: number) { return lotes[offset] ?? vacio } }
 }
-
-const conRuido = JSON.stringify({
-  items: [{ type: 'player_transfer', date: '2026-09-01T00:00:00Z' }],
-  has_more: true,
-})
-
-const vacia = JSON.stringify({ items: [], has_more: false })
 
 describe('recolectarHistorico', () => {
   it('recorre hasta agotar el histórico', async () => {
     const almacen = abrirAlmacen(':memory:')
     const resumen = await recolectarHistorico({
-      cliente: clienteCon([conRuido, conRuido, vacia]),
+      cliente: clienteCon({ 0: ruido(21), 21: ruido(21), 42: vacio }),
       almacen,
     })
 
-    expect(resumen.paginas).toBe(3)
-    expect(almacen.paginasGuardadas()).toEqual([0, 1, 2])
+    expect(resumen.lotes).toBe(3)
+    expect(almacen.leerPaginas().map((p) => p.offset)).toEqual([0, 21, 42])
     almacen.cerrar()
   })
 
-  it('guarda el cuerpo crudo de cada página', async () => {
+  it('guarda el cuerpo crudo y el número de eventos de cada lote', async () => {
     const almacen = abrirAlmacen(':memory:')
-    await recolectarHistorico({ cliente: clienteCon([conRuido, vacia]), almacen })
+    await recolectarHistorico({ cliente: clienteCon({ 0: ruido(21), 21: vacio }), almacen })
 
-    expect(almacen.leerPaginas()[0]!.cuerpo).toBe(conRuido)
+    const primera = almacen.leerPaginas()[0]!
+    expect(primera.cuerpo).toBe(ruido(21))
+    expect(primera.nEventos).toBe(21)
     almacen.cerrar()
   })
 
   it('cuenta eventos contables y ruido por separado', async () => {
     const almacen = abrirAlmacen(':memory:')
     const resumen = await recolectarHistorico({
-      cliente: clienteCon([conRuido, vacia]),
+      cliente: clienteCon({ 0: ruido(3), 3: vacio }),
       almacen,
     })
 
-    expect(resumen.ruido).toBe(1)
+    expect(resumen.eventos).toBe(3)
+    expect(resumen.ruido).toBe(3)
     expect(resumen.contables).toBe(0)
     almacen.cerrar()
   })
 
-  it('se detiene al alcanzar el límite de páginas', async () => {
+  it('se detiene al alcanzar el límite de lotes', async () => {
     const almacen = abrirAlmacen(':memory:')
-    const infinitas = Array.from({ length: 50 }, () => conRuido)
-    const resumen = await recolectarHistorico({
-      cliente: clienteCon(infinitas),
-      almacen,
-      maxPaginas: 5,
+    const lotes: Record<number, string> = {}
+    for (let i = 0; i < 50; i++) lotes[i * 21] = ruido(21)
+
+    const resumen = await recolectarHistorico({ cliente: clienteCon(lotes), almacen, maxLotes: 5 })
+    expect(resumen.lotes).toBe(5)
+    almacen.cerrar()
+  })
+
+  it('propaga el error si una categoría no está catalogada', async () => {
+    const almacen = abrirAlmacen(':memory:')
+    const desconocida = JSON.stringify({
+      status: 'ok',
+      data: [{ category: 'inventada', created: '2026-09-01 10:00:00', data: {} }],
     })
 
-    expect(resumen.paginas).toBe(5)
+    await expect(
+      recolectarHistorico({ cliente: clienteCon({ 0: desconocida }), almacen }),
+    ).rejects.toThrow(/no catalogada/i)
     almacen.cerrar()
   })
 
-  it('propaga el error si un evento no está catalogado', async () => {
+  it('guarda el lote crudo aunque su contenido no se pueda interpretar', async () => {
     const almacen = abrirAlmacen(':memory:')
-    const desconocido = JSON.stringify({ items: [{ type: 'inventado' }], has_more: true })
+    const desconocida = JSON.stringify({
+      status: 'ok',
+      data: [{ category: 'inventada', created: '2026-09-01 10:00:00', data: {} }],
+    })
 
     await expect(
-      recolectarHistorico({ cliente: clienteCon([desconocido]), almacen }),
-    ).rejects.toThrow(/no catalogado/i)
-
-    almacen.cerrar()
-  })
-
-  it('guarda la página cruda aunque su contenido no se pueda interpretar', async () => {
-    const almacen = abrirAlmacen(':memory:')
-    const desconocido = JSON.stringify({ items: [{ type: 'inventado' }], has_more: true })
-
-    await expect(
-      recolectarHistorico({ cliente: clienteCon([desconocido]), almacen }),
+      recolectarHistorico({ cliente: clienteCon({ 0: desconocida }), almacen }),
     ).rejects.toThrow()
 
-    // El crudo se guarda antes de interpretar, para poder diagnosticar.
-    expect(almacen.paginasGuardadas()).toEqual([0])
+    // El crudo se guarda antes de interpretar, para poder diagnosticarlo.
+    expect(almacen.leerPaginas()).toHaveLength(1)
     almacen.cerrar()
   })
 })
@@ -1331,45 +1415,48 @@ Fichero `src/recoleccion/recolectar.ts`:
 import type { Almacen } from '../almacen/crudo.js'
 import { esContable } from '../dominio/eventos.js'
 import type { Cliente } from './cliente.js'
-import { comprobarSinHuecos } from './integridad.js'
+import { comprobarContinuidad } from './integridad.js'
 import { parsearPaginaFeed } from './parseadorFeed.js'
 
-const MAX_PAGINAS_POR_DEFECTO = 2000
+const MAX_LOTES_POR_DEFECTO = 500
 
 export type Dependencias = {
   cliente: Cliente
   almacen: Almacen
-  maxPaginas?: number
+  maxLotes?: number
 }
 
 export type Resumen = {
-  paginas: number
+  lotes: number
   eventos: number
   contables: number
   ruido: number
 }
 
 /**
- * Recorre el feed desde la página 0 hacia atrás hasta agotar el histórico.
+ * Recorre el feed desde el offset 0 hacia atrás hasta agotar el histórico.
  *
- * Guarda el crudo ANTES de interpretarlo: si un evento no está catalogado, el
- * proceso se detiene pero la página queda en disco para poder diagnosticarla.
+ * Guarda el crudo ANTES de interpretarlo: si una categoría no está catalogada,
+ * el proceso se detiene pero el lote queda en disco para poder diagnosticarlo.
  */
 export async function recolectarHistorico(dep: Dependencias): Promise<Resumen> {
-  const maxPaginas = dep.maxPaginas ?? MAX_PAGINAS_POR_DEFECTO
-  const resumen: Resumen = { paginas: 0, eventos: 0, contables: 0, ruido: 0 }
+  const maxLotes = dep.maxLotes ?? MAX_LOTES_POR_DEFECTO
+  const resumen: Resumen = { lotes: 0, eventos: 0, contables: 0, ruido: 0 }
+  let offset = 0
 
-  for (let pagina = 0; pagina < maxPaginas; pagina++) {
-    const cuerpo = await dep.cliente.pedirPaginaFeed(pagina)
+  for (let lote = 0; lote < maxLotes; lote++) {
+    const cuerpo = await dep.cliente.pedirLote(offset)
+    const nEventos = contarEventos(cuerpo)
 
     dep.almacen.guardarPagina({
-      pagina,
+      offset,
+      nEventos,
       cuerpo,
       capturadaEn: new Date().toISOString(),
     })
-    resumen.paginas++
+    resumen.lotes++
 
-    const { eventos, hayMas } = parsearPaginaFeed(cuerpo)
+    const { eventos, agotado } = parsearPaginaFeed(cuerpo)
 
     for (const evento of eventos) {
       resumen.eventos++
@@ -1377,12 +1464,19 @@ export async function recolectarHistorico(dep: Dependencias): Promise<Resumen> {
       else resumen.ruido++
     }
 
-    if (!hayMas) break
+    if (agotado) break
+    offset += eventos.length
   }
 
-  comprobarSinHuecos(dep.almacen.paginasGuardadas())
+  comprobarContinuidad(dep.almacen.leerPaginas())
 
   return resumen
+}
+
+/** Cuenta sin interpretar, para poder guardar el crudo antes de parsearlo. */
+function contarEventos(cuerpo: string): number {
+  const datos = JSON.parse(cuerpo) as { data?: unknown[] }
+  return (datos.data ?? []).length
 }
 ```
 
@@ -1399,22 +1493,22 @@ Fichero `src/cli/recolectar.ts`:
 import { abrirAlmacen } from '../almacen/crudo.js'
 import { crearCliente } from '../recoleccion/cliente.js'
 import { recolectarHistorico } from '../recoleccion/recolectar.js'
-import { obtenerCookie } from '../sesion/cookie.js'
+import { obtenerCredenciales } from '../sesion/credenciales.js'
 
 async function principal(): Promise<void> {
   const almacen = abrirAlmacen('datos/mister.sqlite')
 
   try {
     const resumen = await recolectarHistorico({
-      cliente: crearCliente({ cookie: obtenerCookie() }),
+      cliente: crearCliente({ credenciales: obtenerCredenciales() }),
       almacen,
     })
 
-    console.log(`Páginas recorridas: ${resumen.paginas}`)
-    console.log(`Eventos totales:    ${resumen.eventos}`)
-    console.log(`  contables:        ${resumen.contables}`)
-    console.log(`  ruido:            ${resumen.ruido}`)
-    console.log('\nHistórico completo, sin huecos.')
+    console.log(`Lotes recorridos: ${resumen.lotes}`)
+    console.log(`Eventos totales:  ${resumen.eventos}`)
+    console.log(`  contables:      ${resumen.contables}`)
+    console.log(`  ruido:          ${resumen.ruido}`)
+    console.log('\nHistórico completo y continuo.')
   } finally {
     almacen.cerrar()
   }
@@ -1436,114 +1530,49 @@ En `"scripts"`, añadir:
 
 - [ ] **Paso 7: Ejecutar la recolección real**
 
-Guardar la cookie del navegador en `.sesion/cookie` y ejecutar:
+Con `.sesion/cookie` y `.sesion/auth` en su sitio:
 
 Ejecutar: `npm run recolectar`
 
-Esperado: recorre todas las páginas hasta el origen de la liga e imprime el
-resumen sin errores. Si se detiene por un evento no catalogado, añadir ese tipo
-a `parsearEvento` o a `TIPOS_RUIDO` **de forma razonada** —nunca al bulto— y
-repetir.
+Esperado: recorre el histórico entero e imprime el resumen sin errores. Con los
+datos de referencia del 2026-09-03 deberían salir **16 lotes y 285 eventos**,
+de los cuales **187 contables** (183 `transfer` + 4 `gameweek_end`) y 98 ruido.
+Si se detiene por una categoría no catalogada, añadirla a `CATEGORIAS_RUIDO` o
+a `parsearEvento` **de forma razonada**, nunca al bulto, y repetir.
 
-- [ ] **Paso 8: Comprobar la completitud a mano**
-
-Ejecutar:
-
-```bash
-node -e "const D=require('better-sqlite3');const db=new D('datos/mister.sqlite');console.log(db.prepare('SELECT COUNT(*) n, MIN(pagina) min, MAX(pagina) max FROM paginas_crudas').get())"
-```
-
-Esperado: `n` igual a `max + 1` y `min` igual a `0`. Cualquier otra cosa
-significa hueco y ya habría fallado antes.
-
-- [ ] **Paso 9: Ejecutar toda la batería y comprobar tipos**
+- [ ] **Paso 8: Ejecutar la batería completa y comprobar tipos**
 
 Ejecutar: `npm test && npm run typecheck`
 Esperado: todo pasa.
 
-- [ ] **Paso 10: Commit**
+- [ ] **Paso 9: Commit**
 
 ```bash
 git add src/recoleccion/recolectar.ts src/cli tests/recoleccion/recolectar.test.ts package.json
-git commit -m "feat: recolección completa del histórico con verificación de integridad"
+git commit -m "feat: recolección completa del histórico con verificación de continuidad"
 ```
 
 ---
 
-### Tarea 9 (condicional): recolección completa por la vía B
+### Tarea 9: Importador de volcados del navegador
 
-**Cuándo hacerla:** solo si en la Tarea 2 no se consiguió que
-`POST /ajax/feed` respondiera 200 desde fuera del navegador. Si la vía A
-funciona, esta tarea se salta entera.
-
-**Por qué existe:** el requisito es fidelidad absoluta, y eso no puede depender
-de resolver una incógnita. Dentro de la página la petición funciona con certeza,
-así que esta vía garantiza el histórico completo pase lo que pase.
+**Por qué sigue existiendo aunque la vía A funcione:** es el respaldo si el
+token `X-Auth` o la cookie caducan en mal momento, y es la vía con la que se
+capturó el histórico de referencia. Ambas producen filas idénticas en
+`paginas_crudas`; nada aguas abajo distingue su procedencia.
 
 **Ficheros:**
-- Modificar: `navegador/capturar-feed.js`
 - Crear: `src/cli/importar.ts`
 - Crear: `tests/cli/importar.test.ts`
+- Modificar: `package.json` (script `importar`)
 
 **Interfaces:**
-- Consume: `abrirAlmacen` (T5), `parsearPaginaFeed` (T4), `comprobarSinHuecos` (T6).
-- Produce: `async function importarVolcado(ruta: string, almacen: Almacen): Promise<Resumen>` — mismo `Resumen` que `recolectarHistorico`.
+- Consume: `abrirAlmacen` (T5), `parsearPaginaFeed` (T4), `comprobarContinuidad` (T6), `Resumen` (T8).
+- Produce: `async function importarVolcado(ruta: string, almacen: Almacen): Promise<Resumen>`
 
-El artefacto que produce es **idéntico** al de la vía A: filas en
-`paginas_crudas`. Nada aguas abajo distingue una vía de otra.
+El volcado tiene la forma `{ paginas: [{ offset, cuerpo, capturadaEn }] }`.
 
-- [ ] **Paso 1: Ampliar el script del navegador para recorrer todo**
-
-Añadir a `navegador/capturar-feed.js`:
-
-```js
-/**
- * Recorre el feed entero desde dentro de la página y descarga un único fichero
- * JSON con todas las páginas crudas, listo para `npm run importar`.
- */
-async function volcarHistoricoCompleto(maxPaginas = 2000) {
-  const paginas = []
-
-  for (let page = 0; page < maxPaginas; page++) {
-    const respuesta = await fetch('/ajax/feed', {
-      method: 'POST',
-      credentials: 'include',
-      headers: {
-        'X-Requested-With': 'XMLHttpRequest',
-        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-      },
-      body: new URLSearchParams({ page: String(page) }).toString(),
-    })
-
-    if (!respuesta.ok) throw new Error(`página ${page}: HTTP ${respuesta.status}`)
-
-    const cuerpo = await respuesta.text()
-    paginas.push({ pagina: page, cuerpo, capturadaEn: new Date().toISOString() })
-
-    // Fin del histórico: la página no trae eventos.
-    const datos = JSON.parse(cuerpo)
-    if (!(datos.items ?? []).length) break
-
-    console.log(`página ${page} · ${paginas.length} acumuladas`)
-    await new Promise((r) => setTimeout(r, 1000))
-  }
-
-  const blob = new Blob([JSON.stringify({ paginas })], { type: 'application/json' })
-  const a = document.createElement('a')
-  a.href = URL.createObjectURL(blob)
-  a.download = 'volcado-feed.json'
-  a.click()
-
-  return paginas.length
-}
-
-globalThis.volcarHistoricoCompleto = volcarHistoricoCompleto
-```
-
-**Nota:** ajustar `datos.items` al nombre real del campo documentado en
-`fixtures/README.md`.
-
-- [ ] **Paso 2: Escribir el test que falla**
+- [ ] **Paso 1: Escribir el test que falla**
 
 Fichero `tests/cli/importar.test.ts`:
 
@@ -1555,114 +1584,111 @@ import { describe, expect, it } from 'vitest'
 import { abrirAlmacen } from '../../src/almacen/crudo.js'
 import { importarVolcado } from '../../src/cli/importar.js'
 
-const conRuido = JSON.stringify({
-  items: [{ type: 'player_transfer', date: '2026-09-01T00:00:00Z' }],
-  has_more: true,
-})
-const vacia = JSON.stringify({ items: [], has_more: false })
+const ruido = (n: number) =>
+  JSON.stringify({
+    status: 'ok',
+    data: Array.from({ length: n }, () => ({
+      category: 'player_transfer',
+      created: '2026-09-01 10:00:00',
+      data: {},
+    })),
+  })
+const vacio = JSON.stringify({ status: 'ok', data: [] })
 
-function volcadoCon(paginas: { pagina: number; cuerpo: string }[]): string {
+function volcadoCon(paginas: { offset: number; cuerpo: string }[]): string {
   const dir = mkdtempSync(join(tmpdir(), 'mister-volcado-'))
   const ruta = join(dir, 'volcado-feed.json')
   writeFileSync(
     ruta,
-    JSON.stringify({
-      paginas: paginas.map((p) => ({ ...p, capturadaEn: '2026-09-03T10:00:00Z' })),
-    }),
+    JSON.stringify({ paginas: paginas.map((p) => ({ ...p, capturadaEn: '2026-09-03T10:00:00Z' })) }),
   )
   return ruta
 }
 
 describe('importarVolcado', () => {
-  it('guarda todas las páginas del volcado', async () => {
+  it('guarda todos los lotes del volcado', async () => {
     const almacen = abrirAlmacen(':memory:')
     const resumen = await importarVolcado(
-      volcadoCon([
-        { pagina: 0, cuerpo: conRuido },
-        { pagina: 1, cuerpo: vacia },
-      ]),
+      volcadoCon([{ offset: 0, cuerpo: ruido(21) }, { offset: 21, cuerpo: vacio }]),
       almacen,
     )
 
-    expect(resumen.paginas).toBe(2)
-    expect(almacen.paginasGuardadas()).toEqual([0, 1])
+    expect(resumen.lotes).toBe(2)
+    expect(almacen.leerPaginas().map((p) => p.offset)).toEqual([0, 21])
     almacen.cerrar()
   })
 
-  it('produce el mismo recuento de eventos que la vía A', async () => {
+  it('cuenta los eventos igual que la recolección directa', async () => {
     const almacen = abrirAlmacen(':memory:')
-    const resumen = await importarVolcado(
-      volcadoCon([{ pagina: 0, cuerpo: conRuido }]),
-      almacen,
-    )
+    const resumen = await importarVolcado(volcadoCon([{ offset: 0, cuerpo: ruido(3) }]), almacen)
 
-    expect(resumen.ruido).toBe(1)
-    expect(resumen.contables).toBe(0)
+    expect(resumen.eventos).toBe(3)
+    expect(resumen.ruido).toBe(3)
     almacen.cerrar()
   })
 
-  it('rechaza un volcado con huecos', async () => {
+  it('rechaza un volcado con discontinuidad', async () => {
     const almacen = abrirAlmacen(':memory:')
     await expect(
       importarVolcado(
-        volcadoCon([
-          { pagina: 0, cuerpo: conRuido },
-          { pagina: 2, cuerpo: vacia },
-        ]),
+        volcadoCon([{ offset: 0, cuerpo: ruido(21) }, { offset: 99, cuerpo: vacio }]),
         almacen,
       ),
-    ).rejects.toThrow(/faltan .* página/i)
+    ).rejects.toThrow(/no es continuo/i)
     almacen.cerrar()
   })
 })
 ```
 
-- [ ] **Paso 3: Ejecutar y comprobar que falla**
+- [ ] **Paso 2: Ejecutar y comprobar que falla**
 
 Ejecutar: `npx vitest run tests/cli/importar.test.ts`
 Esperado: FALLA por módulo inexistente.
 
-- [ ] **Paso 4: Implementar el importador**
+- [ ] **Paso 3: Implementar el importador**
 
 Fichero `src/cli/importar.ts`:
 
 ```ts
 import { readFileSync } from 'node:fs'
-import type { Almacen, PaginaCruda } from '../almacen/crudo.js'
+import type { Almacen } from '../almacen/crudo.js'
 import { abrirAlmacen } from '../almacen/crudo.js'
 import { esContable } from '../dominio/eventos.js'
-import { comprobarSinHuecos } from '../recoleccion/integridad.js'
+import { comprobarContinuidad } from '../recoleccion/integridad.js'
 import { parsearPaginaFeed } from '../recoleccion/parseadorFeed.js'
 import type { Resumen } from '../recoleccion/recolectar.js'
 
-/**
- * Importa un volcado producido en el navegador (vía B).
- *
- * Aplica exactamente las mismas comprobaciones que la vía A: mismo parseo,
- * misma detección de huecos, mismo resumen. La procedencia no relaja nada.
- */
-export async function importarVolcado(
-  ruta: string,
-  almacen: Almacen,
-): Promise<Resumen> {
-  const { paginas } = JSON.parse(readFileSync(ruta, 'utf8')) as {
-    paginas: PaginaCruda[]
-  }
+type PaginaVolcada = { offset: number; cuerpo: string; capturadaEn: string }
 
-  const resumen: Resumen = { paginas: 0, eventos: 0, contables: 0, ruido: 0 }
+/**
+ * Importa un volcado capturado en el navegador.
+ *
+ * Aplica exactamente las mismas comprobaciones que la recolección directa:
+ * mismo parseo, misma verificación de continuidad. La procedencia no relaja nada.
+ */
+export async function importarVolcado(ruta: string, almacen: Almacen): Promise<Resumen> {
+  const { paginas } = JSON.parse(readFileSync(ruta, 'utf8')) as { paginas: PaginaVolcada[] }
+  const resumen: Resumen = { lotes: 0, eventos: 0, contables: 0, ruido: 0 }
 
   for (const pagina of paginas) {
-    almacen.guardarPagina(pagina)
-    resumen.paginas++
+    const { eventos } = parsearPaginaFeed(pagina.cuerpo)
 
-    for (const evento of parsearPaginaFeed(pagina.cuerpo).eventos) {
+    almacen.guardarPagina({
+      offset: pagina.offset,
+      nEventos: eventos.length,
+      cuerpo: pagina.cuerpo,
+      capturadaEn: pagina.capturadaEn,
+    })
+    resumen.lotes++
+
+    for (const evento of eventos) {
       resumen.eventos++
       if (esContable(evento)) resumen.contables++
       else resumen.ruido++
     }
   }
 
-  comprobarSinHuecos(almacen.paginasGuardadas())
+  comprobarContinuidad(almacen.leerPaginas())
 
   return resumen
 }
@@ -1677,16 +1703,16 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const almacen = abrirAlmacen('datos/mister.sqlite')
   try {
     const r = await importarVolcado(ruta, almacen)
-    console.log(`Páginas importadas: ${r.paginas}`)
-    console.log(`Eventos totales:    ${r.eventos} (contables ${r.contables}, ruido ${r.ruido})`)
-    console.log('\nHistórico completo, sin huecos.')
+    console.log(`Lotes importados: ${r.lotes}`)
+    console.log(`Eventos totales:  ${r.eventos} (contables ${r.contables}, ruido ${r.ruido})`)
+    console.log('\nHistórico completo y continuo.')
   } finally {
     almacen.cerrar()
   }
 }
 ```
 
-- [ ] **Paso 5: Añadir el script a `package.json`**
+- [ ] **Paso 4: Añadir el script a `package.json`**
 
 En `"scripts"`, añadir:
 
@@ -1694,24 +1720,21 @@ En `"scripts"`, añadir:
 "importar": "mkdir -p datos && tsx src/cli/importar.ts"
 ```
 
-- [ ] **Paso 6: Ejecutar los tests y comprobar que pasan**
+- [ ] **Paso 5: Ejecutar los tests y comprobar que pasan**
 
 Ejecutar: `npx vitest run tests/cli/importar.test.ts`
 Esperado: PASA, 3 tests.
 
-- [ ] **Paso 7: Ejecutar el volcado real e importarlo**
+- [ ] **Paso 6: Importar el volcado real**
 
-En la consola de Mister: `await volcarHistoricoCompleto()`. Descarga
-`volcado-feed.json`. Después:
+Ejecutar: `npm run importar -- datos/volcado-feed.json`
+Esperado: 16 lotes, 285 eventos, 187 contables, sin discontinuidad.
 
-Ejecutar: `npm run importar -- ~/Downloads/volcado-feed.json`
-Esperado: resumen sin errores y sin huecos.
-
-- [ ] **Paso 8: Commit**
+- [ ] **Paso 7: Commit**
 
 ```bash
-git add navegador/capturar-feed.js src/cli/importar.ts tests/cli/importar.test.ts package.json
-git commit -m "feat: vía B, recolección del histórico desde el navegador"
+git add src/cli/importar.ts tests/cli/importar.test.ts package.json
+git commit -m "feat: importador de volcados del navegador"
 ```
 
 ---
@@ -1721,19 +1744,25 @@ git commit -m "feat: vía B, recolección del histórico desde el navegador"
 La fase está terminada cuando:
 
 1. `npm test` pasa entero y `npm run typecheck` no da errores.
-2. El histórico se ha recolectado entero por la vía A (`npm run recolectar`) o
-   por la vía B (`npm run importar`), terminando sin errores.
-3. `paginas_crudas` contiene la serie `0..n` completa, sin huecos.
-4. Ningún evento del histórico real ha quedado sin catalogar.
-5. El recuento de eventos contables es mayor que cero y coherente con lo que se
-   ve en la web.
+2. El histórico se ha recolectado completo, por `npm run recolectar` o por
+   `npm run importar`, terminando sin errores.
+3. `paginas_crudas` es continua: cada offset es el anterior más su número de
+   eventos, empezando en 0.
+4. Ninguna categoría del histórico real ha quedado sin catalogar.
+5. Los recuentos coinciden con la referencia del 2026-09-03: 16 lotes, 285
+   eventos, 187 contables (183 `transfer` + 4 `gameweek_end`).
 
-**No se pasa a la Fase 2** hasta que los cinco se cumplan. La Fase 2 calibra el
-motor contra `balance.current`, y esa comprobación solo tiene valor si el
-histórico de partida está completo.
+**No se pasa a la Fase 2** hasta que los cinco se cumplan.
+
+## Asunto abierto para la Fase 2
+
+Hay **4 eventos `gameweek_end`** con la liga en la jornada 6. Podría ser normal
+(jornadas aún sin cerrar, o la primera sin premio) o un hueco real. La
+comprobación de la Fase 2 —saldo propio reconstruido igual a `balance.current`
+al céntimo— lo resolverá: si falta una jornada, no cuadrará.
 
 ## Qué queda fuera de este plan
 
 - Motor contable y cálculo de saldos → Fase 2.
-- Estimación de rivales, topes de puja y panel web → Fase 3.
-- Recolección incremental diaria → Fase 3, cuando haya algo que actualizar.
+- Saldos de rivales, topes de puja y panel web → Fase 3.
+- Recolección incremental diaria → Fase 3.
