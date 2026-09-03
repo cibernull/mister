@@ -142,13 +142,34 @@ saldo(equipo) = presupuesto inicial
 - Un `ajax/balance` visible en el tráfico **no es de Mister**: proviene de otra
   extensión instalada en el navegador del autor.
 
-### Incógnita conocida
+### Incógnita conocida, y por qué no pone en riesgo la exactitud
 
-Reproducir `POST /ajax/feed` desde la consola devuelve 401 aunque se envíen
-`page` y `auth`. La aplicación lo consigue, luego falta alguna cabecera que no
-se llegó a capturar. **Es un detalle de implementación, no un riesgo de
-viabilidad**: la petición funciona en el navegador y basta con replicarla con
-fidelidad. Resolverlo es la primera tarea del plan.
+Reproducir `POST /ajax/feed` desde fuera del navegador devuelve 401 aunque se
+envíen `page` y `auth`. La aplicación lo consigue, luego falta alguna cabecera
+que no se llegó a capturar.
+
+Como el requisito es fidelidad absoluta, la recolección se diseña con **dos vías
+y una condición de aceptación común**, no con una vía y una esperanza:
+
+- **Vía A — cliente HTTP directo.** Se replica la petición de la aplicación
+  cabecera por cabecera. Es la preferible: rápida, programable y sin
+  dependencias externas.
+- **Vía B — recolección conducida en el navegador.** Si la vía A no se
+  consigue, el recorrido se ejecuta **dentro de la propia página**, que es donde
+  la petición funciona con certeza, y vuelca el JSON íntegro a disco para que el
+  resto del sistema lo procese igual.
+
+Ambas producen exactamente el mismo artefacto: las respuestas crudas del feed,
+página a página, sin alterar. **El resto del sistema no sabe cuál se usó**, así
+que la elección es reversible y no contamina el diseño.
+
+La condición de aceptación no cambia con la vía elegida: el histórico está
+completo cuando se alcanza el primer evento de la liga sin huecos en la
+paginación y las tres comprobaciones de la sección de exactitud cuadran al
+céntimo. Mientras eso no ocurra, la recolección no se da por buena.
+
+Resolver la vía A es la primera tarea del plan; la vía B es la garantía de que
+el proyecto no depende de que se consiga.
 
 ## Arquitectura
 
