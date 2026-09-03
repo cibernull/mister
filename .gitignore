@@ -1,0 +1,14 @@
+# Sesión de Mister — nunca debe entrar en git
+.sesion/
+*.cookie
+.env
+.env.*
+
+# Datos recolectados
+*.sqlite
+*.sqlite-journal
+datos/
+
+node_modules/
+dist/
+.DS_Store

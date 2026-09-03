@@ -1,0 +1,351 @@
+# Mister — Inteligencia de liga Fantasy
+
+**Fecha:** 2026-09-03
+**Estado:** diseño aprobado, pendiente de plan de implementación
+
+## Propósito
+
+Reconstruir la contabilidad completa de una liga Fantasy de Mister desde su
+primer día, para responder en cualquier momento a tres preguntas:
+
+1. Cuánto dinero tiene cada rival y cuánto puede pujar como máximo.
+2. Cómo va uno mismo: balance, plusvalías, puntos, posición relativa.
+3. Qué ha pasado en la liga: todos los fichajes, ventas, cláusulas y premios
+   desde la jornada 1.
+
+Mister responde la primera pregunta solo para uno mismo, y la tercera únicamente
+como un muro que hay que recorrer a mano. Este proyecto convierte ambas en datos
+consultables.
+
+## Alcance
+
+Primera versión **de uso personal**, para la liga del autor. No se distribuye,
+no hay instaladores ni gestión de múltiples usuarios. El diseño deja aislada la
+única pieza que impediría distribuirlo más adelante (la obtención de la sesión),
+pero no se construye esa capacidad ahora.
+
+## Hechos verificados
+
+Todo lo que sigue se comprobó el 2026-09-03 contra una sesión real. No son
+suposiciones.
+
+### Autenticación
+
+La sesión viaja en una **cookie `HttpOnly`** del dominio
+`mister.mundodeportivo.com`. No hay token en `localStorage` (solo el perfil del
+usuario) ni cabecera `Authorization`. La cuenta usa login con Apple, así que no
+existe la posibilidad de autenticarse programáticamente: la cookie hay que
+tomarla de un navegador ya autenticado.
+
+La sesión observada estaba viva desde agosto de 2023, lo que indica una cookie
+de larga duración. Se asume que capturarla una vez basta durante meses.
+
+### Datos en cada página
+
+Toda página HTML incluye `var _FG_user = {...}` y `var _FG_cfg = {...}` como
+JSON literal, extraíbles con una expresión regular. **No hay que raspar el DOM.**
+
+`_FG_user` contiene, entre otros campos:
+
+| Campo | Contenido |
+|---|---|
+| `id`, `id_uc`, `id_community` | Identificadores de usuario, usuario-en-liga y liga |
+| `balance.current` / `balance.future` | Saldo actual y comprometido |
+| `balance.maxDebt` | **Tope máximo de puja** |
+| `team_limit`, `mode`, `salaries`, `market_speed`, `loans_floor` | Reglas de la liga |
+| `custom_rules` | Reglas escritas por el administrador |
+
+`_FG_cfg` aporta el contexto de la aplicación, incluidos `id_competition`,
+`season`, `market_date` y un campo `auth` usado por las llamadas internas.
+
+`_FG_data` viene vacío en las vistas examinadas y no se usa.
+
+### La fórmula del tope de puja
+
+Con datos reales de la liga:
+
+```
+saldo                    9.209.955
+valor de la plantilla   77.386.000
+maxDebt informado       28.556.455
+
+77.386.000 × 0,25    =  19.346.500
+ 9.209.955 + 19.346.500 = 28.556.455   ← coincide exactamente
+```
+
+Es decir:
+
+```
+tope de puja = saldo + 0,25 × valor de la plantilla
+```
+
+Esto es lo que hace viable el objetivo principal. El **valor de plantilla de
+cada rival es público** en la clasificación, de modo que en cuanto se conoce el
+saldo de un rival se obtiene su tope exacto, no una aproximación.
+
+El coeficiente 0,25 se ha verificado con una sola observación. La implementación
+debe tratarlo como parámetro configurable y comprobarlo contra el propio
+`maxDebt` en cada recolección: si algún día deja de cuadrar, es que la regla
+cambió y hay que avisar en vez de calcular mal en silencio.
+
+### El histórico: `POST /ajax/feed`
+
+El "Inicio" de la liga es un muro paginado que **retrocede hasta el origen de la
+liga**. Se alimenta de `POST /ajax/feed` con un campo `page` (entero creciente
+hacia el pasado), y responde JSON que la aplicación renderiza con plantillas
+Twig. Los nombres de esas plantillas revelan los tipos de evento:
+
+| Plantilla | Evento | Uso |
+|---|---|---|
+| `feed/transfer.twig` | Transacción de mercado | **Esencial** |
+| `feed/gameweek_end.twig` | Cierre de jornada | **Esencial** |
+| `feed/player_transfer.twig` | Fichaje real de LaLiga | Ruido, se descarta |
+
+Formas de transacción observadas, todas con importe explícito:
+
+- `«Jugador» cambia de «Manager» a «Mister»` — venta al mercado.
+- `«Jugador» cambia de «Mister» a «Manager»` — compra en el mercado.
+- `«Jugador» cambia de «Manager A» a «Manager B» por pago de cláusula`.
+- `«Jugador» abandona la competición` — baja, sin importe.
+
+El evento de cierre de jornada lista, para cada equipo, **el dinero ganado y los
+puntos** (por ejemplo `+725.000 · 29 PTS`), incluido el caso
+`Saldo negativo, no puntuó`.
+
+Con esas dos familias de evento la contabilidad queda cerrada:
+
+```
+saldo(equipo) = presupuesto inicial
+              + Σ premios de jornada
+              + Σ ventas
+              − Σ compras y pagos de cláusula
+              + Σ cobros de cláusula recibidos
+```
+
+### Rutas útiles
+
+| Ruta | Aporta |
+|---|---|
+| `/standings` | Clasificación: jugadores, valor de plantilla y puntos por equipo |
+| `/users/{id}/{slug}` | Puntos por jornada y plantilla de un rival |
+| `/market` | Mercado actual |
+| `/players/{id}/{slug}` | Ficha de jugador |
+| `/team` | Plantilla propia |
+| `POST /ajax/feed` | Histórico paginado |
+
+### Callejones sin salida, ya descartados
+
+- `/api2/*` existe pero devuelve 500 con la cookie del navegador: espera
+  cabeceras de la aplicación móvil. No se investiga más por ahora.
+- `/activity`, `/history`, `/movements`, `/transfers`, `/community`, `/news`
+  devuelven 404. No hay página de histórico distinta del feed.
+- Un `ajax/balance` visible en el tráfico **no es de Mister**: proviene de otra
+  extensión instalada en el navegador del autor.
+
+### Incógnita conocida
+
+Reproducir `POST /ajax/feed` desde la consola devuelve 401 aunque se envíen
+`page` y `auth`. La aplicación lo consigue, luego falta alguna cabecera que no
+se llegó a capturar. **Es un detalle de implementación, no un riesgo de
+viabilidad**: la petición funciona en el navegador y basta con replicarla con
+fidelidad. Resolverlo es la primera tarea del plan.
+
+## Arquitectura
+
+Cuatro piezas con una responsabilidad cada una, comunicadas por interfaces
+estrechas. Cada una se entiende y se prueba por separado.
+
+```
+  Sesión  ─────►  Recolector  ─────►  Almacén  ─────►  Motor  ─────►  Panel
+ (cookie)        (HTTP + parseo)     (SQLite)        (cálculo)       (web)
+```
+
+### 1. Sesión
+
+Única responsabilidad: entregar una cookie válida. Interfaz de una sola
+operación, `obtenerCookie()`, con una implementación en la v1 que la lee de un
+fichero local fuera del repositorio. Si algún día se hace una extensión de
+Chrome, se añade una segunda implementación y **nada más cambia**.
+
+Valida al arrancar que la sesión sigue viva y falla con un mensaje claro —
+"cookie caducada, vuelve a capturarla" — en lugar de producir datos vacíos.
+
+### 2. Recolector
+
+Pide páginas y las convierte en eventos. Dos capas separadas a propósito:
+
+- **Cliente HTTP**: hace las peticiones y guarda la respuesta cruda. Espacia
+  las peticiones (mínimo un segundo entre ellas) y reintenta con retroceso
+  exponencial. No interpreta nada.
+- **Parseadores**: funciones puras `texto → objetos`. Uno extrae `_FG_user`,
+  otro convierte una página de feed en eventos tipados, otro lee la
+  clasificación. Al no tener red dentro, se prueban con respuestas guardadas.
+
+El recolector tiene dos modos:
+
+- **Recolección inicial**: recorre `/ajax/feed` desde `page=0` hacia atrás hasta
+  agotar el histórico. Se ejecuta una vez.
+- **Recolección incremental**: recorre solo hasta encontrar el último evento ya
+  conocido. Se ejecuta a diario.
+
+### 3. Almacén
+
+SQLite, en dos capas:
+
+- **Crudo**: cada respuesta HTTP tal cual llegó, con su fecha y su ruta. Nunca
+  se borra. Si mañana se descubre un dato que hoy se ignora, se reprocesa el
+  pasado sin volver a pedir nada al servidor. Esto es lo que hace que un error
+  de interpretación no cueste datos.
+- **Derivado**: tablas normalizadas de equipos, jugadores, transacciones,
+  jornadas e instantáneas de saldo. Se regeneran por completo desde el crudo.
+
+Que el derivado sea reconstruible es una propiedad deliberada, no un detalle:
+permite corregir el motor y recalcular toda la historia.
+
+### 4. Motor contable
+
+Función pura: recibe la lista de eventos y las reglas de la liga, devuelve el
+estado financiero de cada equipo. Sin red, sin base de datos, sin reloj.
+
+Produce por equipo: saldo, tope de puja, valor de plantilla, dinero
+ganado acumulado, gasto en fichajes, ingresos por ventas y plusvalía.
+
+**No estima: calcula.** El requisito es cifra exacta, sin margen de error. El
+motor no devuelve intervalos ni grados de confianza: devuelve el número, o
+falla. Cómo se consigue y cómo se demuestra está en la sección siguiente.
+
+## Exactitud: requisito y demostración
+
+**Requisito.** Todos los movimientos de todos los equipos, uno a uno, desde el
+primer día hasta el momento de la consulta, sin excepciones. La cifra de hoy
+debe ser exacta, no aproximada.
+
+No es una aspiración: es comprobable, porque el sistema tiene tres ecuaciones de
+control que sobran respecto a las incógnitas. Si el recorrido estuviera
+incompleto, no cuadrarían.
+
+### El presupuesto inicial se deduce, no se supone
+
+Es la única incógnita del sistema, y se despeja con el saldo propio, que Mister
+informa:
+
+```
+presupuesto inicial = balance.current − (Σ premios + Σ ventas − Σ compras)
+```
+
+Todos los equipos de una liga parten del mismo presupuesto, así que el valor
+despejado con los datos propios debe reproducir también los saldos de los siete
+rivales. Ocho comprobaciones donde bastaría una.
+
+### Las tres comprobaciones
+
+1. **Saldo propio.** El saldo reconstruido desde cero debe coincidir **al
+   céntimo** con `balance.current`. Es la prueba maestra: si el recorrido del
+   feed tuviera un solo hueco, este número se desviaría.
+2. **Tope de puja propio.** `saldo + 0,25 × valor de plantilla` debe dar
+   exactamente el `maxDebt` informado. Verifica la fórmula además del saldo.
+3. **Valor de plantilla de cada rival.** El valor calculado sumando sus altas y
+   bajas debe coincidir con el que publica la clasificación. Extiende la
+   verificación a los siete rivales, no solo a uno mismo.
+
+Las tres se ejecutan en cada recolección. **Mientras las tres cuadren, las
+cifras de los rivales son exactas por construcción**, porque salen del mismo
+motor y los mismos eventos que reproducen los datos conocidos.
+
+### Completitud del recorrido
+
+- La recolección inicial avanza por el feed hasta **agotarlo de verdad**,
+  identificando el primer evento de la liga. No se detiene por número de
+  páginas ni por fecha.
+- Se registran páginas recorridas y eventos por página. Un hueco en la
+  numeración **aborta el proceso**; no se continúa con datos incompletos.
+- Un fallo de red en una página se reintenta. Si tras los reintentos sigue
+  fallando, el proceso para y lo dice.
+
+### Ningún evento se descarta en silencio
+
+Solo se ignoran los tipos catalogados explícitamente como ruido —hoy,
+`player_transfer`, que son fichajes de LaLiga real y no afectan a la
+contabilidad—. Cualquier tipo no catalogado **detiene el proceso y se
+reporta**, con su contenido crudo guardado para inspección.
+
+Esta es la diferencia entre un sistema exacto y uno que parece exacto: un evento
+raro descartado en silencio produciría un número plausible y equivocado. Aquí
+produce una parada.
+
+### Si algo no cuadra
+
+El panel no muestra una cifra aproximada ni un margen. Muestra que la
+verificación ha fallado, en qué equipo y por cuánto, y las cifras afectadas
+quedan marcadas como no fiables hasta corregir el motor o completar la
+recolección. El descuadre es un fallo a arreglar, no un dato a presentar.
+
+### 5. Panel web local
+
+Servidor local que sirve una página con:
+
+- **Tabla de rivales**: saldo, tope de puja, valor de plantilla, puntos
+  y posición, ordenable.
+- **Ficha de rival**: su histórico de movimientos y su evolución de saldo.
+- **Balance propio**: plusvalías por jugador, ingresos y gastos.
+- **Histórico de la liga**: todos los eventos, filtrables por equipo, jugador,
+  tipo y jornada.
+
+Sin autenticación: escucha solo en la interfaz local.
+
+## Fases
+
+El orden importa: cada fase deja algo utilizable y valida la siguiente.
+
+**Fase 1 — Histórico.** Resolver el 401, recorrer el feed entero, guardar el
+crudo y extraer los eventos. Entregable: base de datos con toda la historia de
+la liga y un volcado legible. Valida lo más incierto del proyecto antes de
+construir nada encima.
+
+**Fase 2 — Balance propio.** Motor contable calibrado contra el saldo real
+propio. Entregable: cifras propias correctas y comprobables.
+
+**Fase 3 — Rivales y panel.** Aplicar el motor a los rivales, calcular topes de
+puja y construir la interfaz.
+
+## Pruebas
+
+- **Parseadores**: respuestas reales guardadas como ficheros de prueba. Cuando
+  Mister cambie su formato, fallarán con precisión en vez de producir datos
+  silenciosamente incorrectos.
+- **Motor**: casos de tabla con ligas inventadas pequeñas, donde el resultado se
+  calcula a mano. Al ser una función pura no necesita andamiaje.
+- **Prueba de integración clave**: el saldo propio calculado desde cero debe
+  coincidir al céntimo con el `balance.current` informado. Es la comprobación
+  que demuestra que toda la cadena funciona.
+- **Recolector**: contra un servidor de prueba, sin tocar Mister.
+
+## Errores y límites
+
+- **Cookie caducada** → mensaje claro y parada. Nunca datos parciales mudos.
+- **Formato cambiado** → el parseador falla ruidosamente y se conserva el crudo.
+- **Evento desconocido** → detiene el proceso y se reporta, con su contenido
+  crudo guardado. Nunca se descarta en silencio: eso produciría una cifra
+  plausible y equivocada.
+- **Ritmo de peticiones** → mínimo un segundo entre peticiones, y la recolección
+  incremental se detiene en cuanto reconoce lo ya visto. La recolección inicial
+  es un evento único.
+
+Estos datos son de una liga privada del propio autor y de uso personal.
+
+## Decisiones técnicas
+
+**TypeScript sobre Node.** El proyecto es sobre todo peticiones HTTP, parseo de
+texto y una interfaz web; Node los cubre con la biblioteca estándar, y compartir
+lenguaje entre recolector y panel evita duplicar los tipos de los eventos.
+SQLite mediante `better-sqlite3`, síncrono, que encaja con un proceso por lotes.
+
+**Sin dependencias de scraping.** Los datos salen de JSON embebido y de
+respuestas JSON. Introducir un analizador de HTML invitaría a depender de la
+maquetación, que es justo lo frágil.
+
+## Fuera de alcance
+
+Pujar o realizar cualquier operación en Mister; la aplicación es de solo
+lectura. Tampoco: distribución a terceros, aplicación móvil, notificaciones,
+predicción de puntos ni recomendaciones de alineación.
