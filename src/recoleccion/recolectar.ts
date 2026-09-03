@@ -61,7 +61,12 @@ export async function recolectarHistorico(dep: Dependencias): Promise<Resumen> {
       resumen.agotado = true
       break
     }
-    offset += eventos.length
+    // El offset del feed avanza por eventos BRUTOS consumidos (`nEventos`,
+    // calculado arriba con `contarEventos`), nunca por eventos de dominio ya
+    // expandidos (`eventos.length`): un `transfer` con varios movimientos
+    // produce más eventos de dominio que eventos brutos, y pedir el siguiente
+    // lote con `eventos.length` saltaría eventos reales del feed.
+    offset += nEventos
   }
 
   comprobarContinuidad(dep.almacen.leerCapturas(recoleccion))

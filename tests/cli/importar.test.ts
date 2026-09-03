@@ -8,9 +8,10 @@ import { importarVolcado } from '../../src/cli/importar.js'
 const ruido = (n: number) =>
   JSON.stringify({
     status: 'ok',
-    data: Array.from({ length: n }, () => ({
+    data: Array.from({ length: n }, (_, i) => ({
       category: 'player_transfer',
       created: '2026-09-01 10:00:00',
+      id: 1_000_000 + i,
       data: {},
     })),
   })
@@ -29,6 +30,7 @@ const transferConDosMovimientos = JSON.stringify({
     {
       category: 'transfer',
       created: '2026-09-01 10:00:00',
+      id: 42,
       data: [
         {
           id_transfer: 1,

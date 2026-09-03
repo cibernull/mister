@@ -68,6 +68,7 @@ const CATEGORIAS_RUIDO = new Set([
 const OPERACIONES: ReadonlySet<string> = new Set<TipoOperacion>(['normal', 'clause', 'rescind'])
 
 type EventoBruto = {
+  id?: unknown
   category?: string
   created?: string
   data?: unknown
@@ -102,6 +103,16 @@ export function parsearPaginaFeed(cuerpo: string): PaginaFeed {
 }
 
 /**
+ * Identifica un evento bruto de forma segura para mensajes de error: solo
+ * `category` y `created`, nunca su `data` — una categoría no catalogada
+ * podría traer datos personales en un campo todavía no visto (ver
+ * `CategoriaDesconocidaError`).
+ */
+function contextoEvento(bruto: EventoBruto): string {
+  return `category=${JSON.stringify(bruto.category ?? null)}, created=${JSON.stringify(bruto.created ?? null)}`
+}
+
+/**
  * Un evento bruto produce CERO O VARIOS eventos de dominio.
  *
  * Un `transfer` puede contener varios movimientos en su array `data`: en el
@@ -110,18 +121,25 @@ export function parsearPaginaFeed(cuerpo: string): PaginaFeed {
  */
 function parsearEvento(bruto: EventoBruto): Evento[] {
   const categoria = bruto.category ?? ''
-  const fecha = bruto.created ?? ''
+  const fecha = exigirTexto(bruto.created, 'created', contextoEvento(bruto))
 
   if (categoria === 'transfer') {
-    return exigirMovimientos(bruto.data, fecha).map((m) => parsearTransaccion(m, fecha))
+    return exigirMovimientos(bruto.data, fecha).map((m) => parsearTransaccion(m, fecha, bruto.id))
   }
 
   if (categoria === 'gameweek_end') {
-    return [parsearCierreJornada(bruto.data, fecha)]
+    return [parsearCierreJornada(bruto.data, fecha, bruto.id)]
   }
 
   if (CATEGORIAS_RUIDO.has(categoria)) {
-    return [{ tipo: 'ruido', fecha, motivo: `categoría sin efecto contable: ${categoria}` }]
+    return [
+      {
+        tipo: 'ruido',
+        idEvento: exigirEntero(bruto.id, 'id', contextoEvento(bruto)),
+        fecha,
+        motivo: `categoría sin efecto contable: ${categoria}`,
+      },
+    ]
   }
 
   throw new CategoriaDesconocidaError(categoria, JSON.stringify({ category: bruto.category, created: bruto.created }))
@@ -144,10 +162,11 @@ function exigirMovimientos(valor: unknown, fecha: string): Record<string, unknow
 }
 
 /** `id_uc` 0 es el mercado de Mister, no un equipo. */
-function parte(idUc: unknown, nombre: unknown): Parte {
-  return Number(idUc) === 0
+function parte(idUc: unknown, nombre: unknown, campoIdUc: string, campoNombre: string, contexto: string): Parte {
+  const idUcEntero = exigirEntero(idUc, campoIdUc, contexto)
+  return idUcEntero === 0
     ? { clase: 'mercado' }
-    : { clase: 'equipo', nombre: String(nombre ?? '') }
+    : { clase: 'equipo', nombre: exigirTexto(nombre, campoNombre, contexto), idUc: idUcEntero }
 }
 
 function exigirEntero(valor: unknown, campo: string, contexto: string): number {
@@ -155,6 +174,30 @@ function exigirEntero(valor: unknown, campo: string, contexto: string): number {
     throw new Error(`el campo ${campo} no es un entero: ${JSON.stringify(valor)} (${contexto})`)
   }
   return valor as number
+}
+
+/**
+ * Exige que `valor` sea una cadena no vacía. Un texto ausente o de otro tipo
+ * no debe degradarse a `''`: una fecha vacía rompe el orden temporal, un
+ * nombre vacío es un dato falso, no un dato ausente marcado como tal.
+ */
+function exigirTexto(valor: unknown, campo: string, contexto: string): string {
+  if (typeof valor !== 'string' || valor === '') {
+    throw new Error(`el campo ${campo} no es una cadena no vacía: ${JSON.stringify(valor)} (${contexto})`)
+  }
+  return valor
+}
+
+/**
+ * Exige que `valor` sea estrictamente `true` o `false`. `Boolean(x ?? false)`
+ * degradaría en silencio cualquier forma inesperada a `false` — y además
+ * `Boolean('false')` es `true`, así que ni siquiera es una degradación segura.
+ */
+function exigirBooleano(valor: unknown, campo: string, contexto: string): boolean {
+  if (typeof valor !== 'boolean') {
+    throw new Error(`el campo ${campo} no es un booleano: ${JSON.stringify(valor)} (${contexto})`)
+  }
+  return valor
 }
 
 /**
@@ -168,20 +211,24 @@ function idMovimiento(m: Record<string, unknown>): string {
   return `id_transfer=${JSON.stringify(m['id_transfer'] ?? null)}`
 }
 
-function parsearTransaccion(m: Record<string, unknown>, fecha: string): Transaccion {
+function parsearTransaccion(m: Record<string, unknown>, fecha: string, idEventoCrudo: unknown): Transaccion {
   const operacion = String(m['type'] ?? '')
   if (!OPERACIONES.has(operacion)) {
     throw new OperacionDesconocidaError(operacion, idMovimiento(m))
   }
 
+  const contexto = idMovimiento(m)
+
   return {
     tipo: 'transaccion',
     fecha,
-    jugador: String(m['name'] ?? ''),
-    origen: parte(m['id_uc_from'], m['from']),
-    destino: parte(m['id_uc_to'], m['to']),
-    importe: exigirEntero(m['price'], 'price', idMovimiento(m)),
+    jugador: exigirTexto(m['name'], 'name', contexto),
+    origen: parte(m['id_uc_from'], m['from'], 'id_uc_from', 'from', contexto),
+    destino: parte(m['id_uc_to'], m['to'], 'id_uc_to', 'to', contexto),
+    importe: exigirEntero(m['price'], 'price', contexto),
     operacion: operacion as TipoOperacion,
+    idTransfer: exigirEntero(m['id_transfer'], 'id_transfer', contexto),
+    idEvento: exigirEntero(idEventoCrudo, 'id', contexto),
   }
 }
 
@@ -191,16 +238,17 @@ function comoObjeto(valor: unknown): Record<string, unknown> | undefined {
 }
 
 /**
- * Exige que `valor` sea un objeto: uno de los tres niveles de anidamiento de
- * `gameweek_end` (`data`, `data.ranking` o `data.ranking.ranking`). Si falta
- * cualquiera de ellos, lanza nombrando qué nivel falta: un cierre de jornada
- * sin equipos nunca es legítimo, sería perder los premios de una jornada
- * entera.
+ * Exige que `valor` sea un objeto: uno de los niveles de anidamiento de
+ * `gameweek_end` (`data`, `data.ranking`, `data.ranking.ranking`, o el `user`
+ * de una posición). Si falta cualquiera de ellos, lanza nombrando qué nivel
+ * falta: un cierre de jornada sin equipos, o una posición sin usuario, nunca
+ * es legítimo — sería perder los premios de una jornada entera, o atribuir
+ * dinero a un equipo que no se puede identificar.
  */
-function exigirNivel(valor: unknown, nivel: string, fecha: string): Record<string, unknown> {
+function exigirNivel(valor: unknown, nivel: string, contexto: string): Record<string, unknown> {
   const objeto = comoObjeto(valor)
   if (!objeto) {
-    throw new Error(`cierre de jornada (${fecha}): falta el nivel "${nivel}" en el evento gameweek_end`)
+    throw new Error(`cierre de jornada (${contexto}): falta el nivel "${nivel}" en el evento gameweek_end`)
   }
   return objeto
 }
@@ -232,27 +280,30 @@ function idPosicion(p: Record<string, unknown>, indice: number): string {
   return `idUc=${JSON.stringify(p['idUc'] ?? null)}, índice=${indice}`
 }
 
-function parsearCierreJornada(datos: unknown, fecha: string): CierreJornada {
+function parsearCierreJornada(datos: unknown, fecha: string, idEventoCrudo: unknown): CierreJornada {
   const d = exigirNivel(datos, 'data', fecha)
   const anidado = exigirNivel(d['ranking'], 'data.ranking', fecha)
   const interno = exigirNivel(anidado['ranking'], 'data.ranking.ranking', fecha)
   const posiciones = exigirPosiciones(interno['positions'], fecha)
 
   const resultados: ResultadoEquipo[] = posiciones.map((p, indice) => {
-    const usuario = comoObjeto(p['user']) ?? {}
     const contexto = idPosicion(p, indice)
+    const usuario = exigirNivel(p['user'], 'user', contexto)
 
     return {
-      equipo: String(usuario['name'] ?? ''),
+      equipo: exigirTexto(usuario['name'], 'name', contexto),
+      idUc: exigirEntero(p['idUc'], 'idUc', contexto),
       // `payment` viene null cuando el equipo no cobra; eso sí es cero.
       premio: p['payment'] === null ? 0 : exigirEntero(p['payment'], 'payment', contexto),
       puntos: exigirEntero(p['points'], 'points', contexto),
-      sinPuntuar: Boolean(p['negative'] ?? false),
+      sinPuntuar: exigirBooleano(p['negative'], 'negative', contexto),
+      valorPlantilla: exigirEntero(p['teamValue'], 'teamValue', contexto),
     }
   })
 
   return {
     tipo: 'cierreJornada',
+    idEvento: exigirEntero(idEventoCrudo, 'id', `fecha=${fecha}`),
     fecha,
     jornada: exigirEntero(d['gameweek'], 'gameweek', `fecha=${fecha}`),
     resultados,

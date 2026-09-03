@@ -221,6 +221,232 @@ describe('parsearPaginaFeed', () => {
     expect(() => parsearPaginaFeed(gameweekEndCon(datos))).toThrow(/positions|vacío/i)
   })
 
+  it('extrae idTransfer e idEvento (entero) en cada transacción de la página real', () => {
+    const ts = transaccionesDe(pagina0)
+    expect(ts.length).toBeGreaterThan(0)
+    for (const t of ts) {
+      expect(Number.isInteger(t.idTransfer)).toBe(true)
+      expect(Number.isInteger(t.idEvento)).toBe(true)
+    }
+  })
+
+  it('extrae idUc en las partes de clase equipo', () => {
+    const ts = transaccionesDe(pagina0)
+    const conEquipo = ts.flatMap((t) => [t.origen, t.destino]).filter((p) => p.clase === 'equipo')
+    expect(conEquipo.length).toBeGreaterThan(0)
+    for (const p of conEquipo) {
+      if (p.clase === 'equipo') expect(Number.isInteger(p.idUc)).toBe(true)
+    }
+  })
+
+  it('extrae idUc, valorPlantilla (teamValue) e idEvento en el cierre de jornada real', () => {
+    const cs = cierresDe(paginaCierre)
+    expect(cs.length).toBeGreaterThan(0)
+    for (const c of cs) {
+      expect(Number.isInteger(c.idEvento)).toBe(true)
+      for (const r of c.resultados) {
+        expect(Number.isInteger(r.idUc)).toBe(true)
+        expect(Number.isInteger(r.valorPlantilla)).toBe(true)
+        expect(r.valorPlantilla).toBeGreaterThan(0)
+      }
+    }
+  })
+
+  describe('parte(): la identidad mercado/equipo exige un entero, nunca Number(x) === 0', () => {
+    const transferCon = (movimiento: Record<string, unknown>) =>
+      JSON.stringify({
+        status: 'ok',
+        data: [{ category: 'transfer', created: '2026-09-03 10:00:00', id: 1, data: [movimiento] }],
+      })
+
+    it('lanza si id_uc_from es null, en vez de clasificarlo como mercado (Number(null) === 0)', () => {
+      const cuerpo = transferCon({
+        id_transfer: 1,
+        id_uc_from: null,
+        id_uc_to: 5,
+        from: 'Mister',
+        to: 'Equipo',
+        price: 100,
+        type: 'normal',
+        name: 'Jugador',
+      })
+      expect(() => parsearPaginaFeed(cuerpo)).toThrow(/id_uc_from/)
+    })
+
+    it('lanza si id_uc_from es una cadena vacía, en vez de clasificarlo como mercado (Number("") === 0)', () => {
+      const cuerpo = transferCon({
+        id_transfer: 1,
+        id_uc_from: '',
+        id_uc_to: 5,
+        from: 'Mister',
+        to: 'Equipo',
+        price: 100,
+        type: 'normal',
+        name: 'Jugador',
+      })
+      expect(() => parsearPaginaFeed(cuerpo)).toThrow(/id_uc_from/)
+    })
+
+    it('lanza si id_uc_from es false, en vez de clasificarlo como mercado (Number(false) === 0)', () => {
+      const cuerpo = transferCon({
+        id_transfer: 1,
+        id_uc_from: false,
+        id_uc_to: 5,
+        from: 'Mister',
+        to: 'Equipo',
+        price: 100,
+        type: 'normal',
+        name: 'Jugador',
+      })
+      expect(() => parsearPaginaFeed(cuerpo)).toThrow(/id_uc_from/)
+    })
+
+    it('lanza si falta id_uc_from, en vez de clasificarlo como equipo con nombre vacío (Number(undefined) es NaN)', () => {
+      const cuerpo = JSON.stringify({
+        status: 'ok',
+        data: [
+          {
+            category: 'transfer',
+            created: '2026-09-03 10:00:00',
+            id: 1,
+            data: [
+              { id_transfer: 1, id_uc_to: 5, from: 'Mister', to: 'Equipo', price: 100, type: 'normal', name: 'Jugador' },
+            ],
+          },
+        ],
+      })
+      expect(() => parsearPaginaFeed(cuerpo)).toThrow(/id_uc_from/)
+    })
+
+    it('lanza si el equipo de una parte no trae nombre, en vez de producir un nombre vacío', () => {
+      const cuerpo = transferCon({
+        id_transfer: 1,
+        id_uc_from: 0,
+        id_uc_to: 5,
+        from: 'Mister',
+        price: 100,
+        type: 'normal',
+        name: 'Jugador',
+        // "to" ausente: id_uc_to=5 no es mercado, así que hace falta nombre de equipo.
+      })
+      expect(() => parsearPaginaFeed(cuerpo)).toThrow(/campo to /)
+    })
+  })
+
+  it('lanza si a una transacción le falta "created", en vez de producir fecha vacía', () => {
+    const cuerpo = JSON.stringify({
+      status: 'ok',
+      data: [
+        {
+          category: 'transfer',
+          id: 1,
+          data: [
+            { id_transfer: 1, id_uc_from: 0, id_uc_to: 5, from: 'Mister', to: 'Equipo', price: 100, type: 'normal', name: 'Jugador' },
+          ],
+        },
+      ],
+    })
+    expect(() => parsearPaginaFeed(cuerpo)).toThrow(/created/)
+  })
+
+  it('lanza si a un movimiento le falta el nombre del jugador, en vez de producir un nombre vacío', () => {
+    const cuerpo = JSON.stringify({
+      status: 'ok',
+      data: [
+        {
+          category: 'transfer',
+          created: '2026-09-03 10:00:00',
+          id: 1,
+          data: [{ id_transfer: 1, id_uc_from: 0, id_uc_to: 5, from: 'Mister', to: 'Equipo', price: 100, type: 'normal' }],
+        },
+      ],
+    })
+    expect(() => parsearPaginaFeed(cuerpo)).toThrow(/name/)
+  })
+
+  it('lanza si una posición del cierre de jornada no trae "user", en vez de producir un equipo con nombre vacío', () => {
+    const datos = {
+      gameweek: 6,
+      ranking: {
+        ranking: {
+          positions: [{ idUc: 999, payment: 0, points: 10, negative: false, teamValue: 1000000 }],
+        },
+      },
+    }
+    expect(() => parsearPaginaFeed(gameweekEndCon(datos))).toThrow(/user/)
+  })
+
+  it('lanza si el "user" de una posición no trae "name", en vez de producir un equipo con nombre vacío', () => {
+    const datos = {
+      gameweek: 6,
+      ranking: {
+        ranking: {
+          positions: [
+            { idUc: 999, user: { email: null }, payment: 0, points: 10, negative: false, teamValue: 1000000 },
+          ],
+        },
+      },
+    }
+    expect(() => parsearPaginaFeed(gameweekEndCon(datos))).toThrow(/name/)
+  })
+
+  it('lanza si "negative" no es un booleano, en vez de degradar con Boolean (donde Boolean("false") es true)', () => {
+    const datos = {
+      gameweek: 6,
+      ranking: {
+        ranking: {
+          positions: [
+            {
+              idUc: 999,
+              user: { name: 'Equipo' },
+              payment: 0,
+              points: 10,
+              negative: 'false',
+              teamValue: 1000000,
+            },
+          ],
+        },
+      },
+    }
+    expect(() => parsearPaginaFeed(gameweekEndCon(datos))).toThrow(/negative/)
+  })
+
+  it('ningún mensaje de error por "name" vacío en el user de una posición filtra el email del rival', () => {
+    const emailSecreto = 'rival-secreto-name-vacio@example.com'
+    const datos = {
+      gameweek: 6,
+      ranking: {
+        ranking: {
+          positions: [
+            {
+              idUc: 999,
+              user: { name: '', email: emailSecreto, apple_id: 'apple-id-secreto-456' },
+              payment: 0,
+              points: 10,
+              negative: false,
+              teamValue: 1000000,
+            },
+          ],
+        },
+      },
+    }
+
+    // No se usa expect.unreachable() dentro de un try/catch que lo envuelve:
+    // si parsearPaginaFeed no lanzara, ese expect.unreachable() lanzaría a su
+    // vez y quedaría atrapado por el mismo catch, dejando pasar el test sin
+    // haber comprobado nada. Se captura el error por fuera, en su lugar.
+    let error: Error | undefined
+    try {
+      parsearPaginaFeed(gameweekEndCon(datos))
+    } catch (e) {
+      error = e as Error
+    }
+
+    expect(error, 'debería haber lanzado por name vacío').toBeDefined()
+    expect(error!.message).not.toContain(emailSecreto)
+    expect(error!.message).not.toContain('apple-id-secreto-456')
+  })
+
   it('ningún mensaje de error del parseo de un cierre de jornada filtra el email de un rival', () => {
     const emailSecreto = 'rival-secreto-no-debe-aparecer@example.com'
     const datos = {

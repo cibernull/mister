@@ -6,9 +6,10 @@ import type { Cliente } from '../../src/recoleccion/cliente.js'
 const ruido = (n: number) =>
   JSON.stringify({
     status: 'ok',
-    data: Array.from({ length: n }, () => ({
+    data: Array.from({ length: n }, (_, i) => ({
       category: 'player_transfer',
       created: '2026-09-01 10:00:00',
+      id: 1_000_000 + i,
       data: {},
     })),
   })
@@ -18,6 +19,45 @@ const fin = JSON.stringify({ status: 'end' })
 
 /** Sesión caducada a mitad de recorrido: 401, sin campo `data`. No es un fin de histórico. */
 const expirada = JSON.stringify({ status: 'error', popup: false })
+
+/**
+ * Un evento bruto `transfer` con DOS movimientos. Sirve para distinguir el
+ * recuento de eventos brutos (1, lo que avanza el offset del feed) del
+ * recuento de eventos de dominio tras parsear (2 transacciones). Caso
+ * equivalente al de `tests/cli/importar.test.ts`.
+ */
+const transferConDosMovimientos = JSON.stringify({
+  status: 'ok',
+  data: [
+    {
+      category: 'transfer',
+      created: '2026-09-01 10:00:00',
+      id: 42,
+      data: [
+        {
+          id_transfer: 1,
+          id_uc_from: 0,
+          id_uc_to: 10,
+          price: 5,
+          type: 'normal',
+          from: 'Mister',
+          to: 'Equipo A',
+          name: 'Jugador 1',
+        },
+        {
+          id_transfer: 2,
+          id_uc_from: 10,
+          id_uc_to: 20,
+          price: 7,
+          type: 'normal',
+          from: 'Equipo A',
+          to: 'Equipo B',
+          name: 'Jugador 2',
+        },
+      ],
+    },
+  ],
+})
 
 /** Cliente falso que sirve lotes por offset. */
 function clienteCon(lotes: Record<number, string>): Cliente {
@@ -171,6 +211,31 @@ describe('recolectarHistorico', () => {
     const capturas = almacen.leerCapturas('r1')
     expect(capturas).toHaveLength(1)
     expect(capturas[0]!.offset).toBe(0)
+    almacen.cerrar()
+  })
+
+  it('avanza el offset por eventos brutos consumidos, no por transacciones de dominio ya expandidas', async () => {
+    const almacen = abrirAlmacen(':memory:')
+    const offsetsPedidos: number[] = []
+    const cliente: Cliente = {
+      async pedirLote(offset: number) {
+        offsetsPedidos.push(offset)
+        if (offset === 0) return transferConDosMovimientos
+        return fin
+      },
+    }
+
+    const resumen = await recolectarHistorico({ cliente, almacen, recoleccion: 'r1' })
+
+    // Un solo evento bruto "transfer" (aunque contenga 2 movimientos): el
+    // siguiente lote debe pedirse en el offset 1 (el recuento bruto), no en
+    // el 2 (las 2 transacciones de dominio ya expandidas). Pedir el offset 2
+    // saltaría eventos reales del feed en silencio.
+    expect(offsetsPedidos).toEqual([0, 1])
+
+    // El resumen, en cambio, sí cuenta las 2 transacciones ya expandidas.
+    expect(resumen.eventos).toBe(2)
+    expect(resumen.contables).toBe(2)
     almacen.cerrar()
   })
 
