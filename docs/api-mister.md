@@ -88,7 +88,7 @@ Los campos de cada movimiento:
 | `id_uc_from` | número | Vendedor. **`0` significa el mercado (Mister)** |
 | `id_uc_to` | número | Comprador. `0` significa el mercado |
 | `price` | **número entero** | Importe. Ya viene como entero, no como texto |
-| `type` | texto | `"normal"`; otros valores por confirmar (cláusula) |
+| `type` | texto | `normal`, `clause` o `rescind` |
 | `from` / `to` | texto | Nombres mostrados, p. ej. `"Mister"`, `"Niutin FC (Isaac)"` |
 | `id_user1` / `id_user2` | número | Usuarios implicados |
 | `name` | texto | Nombre del jugador |
