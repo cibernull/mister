@@ -941,12 +941,28 @@ git commit -m "feat: parseadores de plantilla y de la serie histórica de valore
   - En `Almacen`: `guardarPagina(p: PaginaGuardada): void`, `leerPagina(ruta: string): PaginaGuardada | null`, `rutasGuardadas(): string[]`
   - `type PaginaGuardada = { ruta: string; cuerpo: string; capturadaEn: string }`
   - `async function recolectarAuxiliares(dep: DependenciasAux): Promise<ResumenAux>`
-  - `type DependenciasAux = { cliente: Cliente; almacen: Almacen; idsUc: number[]; idsJugador: number[] }`
+  - `type DependenciasAux = { cliente: Cliente; almacen: Almacen; idsUc: number[]; idsJugador: number[]; maxEdadMs?: number; ahora?: () => number }`
   - `type ResumenAux = { plantillas: number; jugadores: number; yaEnCache: number }`
 
-Las páginas se guardan crudas y **se reutilizan si ya están**: son ~130 fichas
-de jugador, y volver a pedirlas en cada análisis castigaría el servidor sin
-motivo. La capa cruda mantiene su regla: nada se sobrescribe en silencio.
+`maxEdadMs` por defecto es **12 horas**. Una captura más vieja se vuelve a
+pedir; una más reciente se reutiliza. `ahora` se inyecta para poder probar la
+caducidad sin esperar.
+
+Las páginas se guardan crudas y **se reutilizan mientras sigan frescas**: son
+~130 fichas de jugador, y volver a pedirlas en cada análisis castigaría el
+servidor sin motivo.
+
+**Pero el usuario necesita refrescar y que se recalcule todo**, y hay dos clases
+de dato con caducidades muy distintas:
+
+- El **valor de un jugador en una fecha pasada** no cambia nunca.
+- La **plantilla actual** de un equipo y el **valor de hoy** cambian con cada
+  fichaje.
+
+Por eso la caché lleva **edad máxima**, y la tabla guarda una fila por captura
+—clave `(ruta, capturada_en)`— en vez de una por ruta. Así el refresco **añade
+una versión nueva** en lugar de sobrescribir, y la capa cruda mantiene su regla:
+nada se pierde. `leerPagina` devuelve siempre la captura más reciente.
 
 - [ ] **Paso 1: Escribir el test**
 
@@ -991,12 +1007,45 @@ describe('recolectarAuxiliares', () => {
     a.cerrar()
   })
 
-  it('no vuelve a pedir una página ya guardada', async () => {
+  it('no vuelve a pedir una página guardada que sigue fresca', async () => {
     const a = abrirAlmacen(':memory:'), c = clienteFalso()
     await recolectarAuxiliares({ cliente: c, almacen: a, idsUc: [1], idsJugador: [] })
     const r = await recolectarAuxiliares({ cliente: c, almacen: a, idsUc: [1], idsJugador: [] })
     expect(c.pedidas).toHaveLength(1)
     expect(r.yaEnCache).toBe(1)
+    a.cerrar()
+  })
+
+  it('vuelve a pedir una página cuya captura ha caducado', async () => {
+    const a = abrirAlmacen(':memory:'), c = clienteFalso()
+    let t = Date.parse('2026-09-03T10:00:00Z')
+    const ahora = () => t
+    await recolectarAuxiliares({ cliente: c, almacen: a, idsUc: [1], idsJugador: [], ahora })
+    t += 13 * 60 * 60 * 1000   // trece horas después
+    const r = await recolectarAuxiliares({ cliente: c, almacen: a, idsUc: [1], idsJugador: [], ahora })
+    expect(c.pedidas).toHaveLength(2)
+    expect(r.plantillas).toBe(1)
+    expect(r.yaEnCache).toBe(0)
+    a.cerrar()
+  })
+
+  it('respeta una edad máxima explícita', async () => {
+    const a = abrirAlmacen(':memory:'), c = clienteFalso()
+    let t = Date.parse('2026-09-03T10:00:00Z')
+    const ahora = () => t
+    await recolectarAuxiliares({ cliente: c, almacen: a, idsUc: [1], idsJugador: [], ahora, maxEdadMs: 60_000 })
+    t += 61_000
+    await recolectarAuxiliares({ cliente: c, almacen: a, idsUc: [1], idsJugador: [], ahora, maxEdadMs: 60_000 })
+    expect(c.pedidas).toHaveLength(2)
+    a.cerrar()
+  })
+
+  it('lanza si una captura guardada tiene la fecha ilegible', async () => {
+    const a = abrirAlmacen(':memory:')
+    a.guardarPagina({ ruta: '/users/1/x', cuerpo: 'x', capturadaEn: 'no es una fecha' })
+    await expect(
+      recolectarAuxiliares({ cliente: clienteFalso(), almacen: a, idsUc: [1], idsJugador: [] }),
+    ).rejects.toThrow(/ilegible/i)
     a.cerrar()
   })
 
@@ -1083,11 +1132,17 @@ En `src/almacen/esquema.ts`, añadir al SQL:
 
 ```sql
 CREATE TABLE IF NOT EXISTS paginas (
-  ruta         TEXT PRIMARY KEY,
+  id           INTEGER PRIMARY KEY AUTOINCREMENT,
+  ruta         TEXT NOT NULL,
   cuerpo       TEXT NOT NULL,
-  capturada_en TEXT NOT NULL
+  capturada_en TEXT NOT NULL,
+  UNIQUE (ruta, capturada_en)
 );
+CREATE INDEX IF NOT EXISTS idx_paginas_ruta ON paginas (ruta, capturada_en DESC);
 ```
+
+La clave es el par `(ruta, capturada_en)`, no la ruta: un refresco **añade** una
+captura nueva sin destruir la anterior.
 
 En `src/almacen/crudo.ts`, añadir el tipo y las tres operaciones:
 
@@ -1116,10 +1171,12 @@ dentro de `abrirAlmacen`, las sentencias:
   const insertarPagina = db.prepare(
     `INSERT INTO paginas (ruta, cuerpo, capturada_en) VALUES (@ruta, @cuerpo, @capturadaEn)`,
   )
+  // La más reciente de esa ruta.
   const seleccionarPagina = db.prepare(
-    `SELECT ruta, cuerpo, capturada_en AS capturadaEn FROM paginas WHERE ruta = ?`,
+    `SELECT ruta, cuerpo, capturada_en AS capturadaEn FROM paginas
+     WHERE ruta = ? ORDER BY capturada_en DESC LIMIT 1`,
   )
-  const listarRutas = db.prepare(`SELECT ruta FROM paginas ORDER BY ruta`)
+  const listarRutas = db.prepare(`SELECT DISTINCT ruta FROM paginas ORDER BY ruta`)
 ```
 
 y los tres métodos del objeto devuelto:
@@ -1129,6 +1186,8 @@ y los tres métodos del objeto devuelto:
       try {
         insertarPagina.run(p)
       } catch (e) {
+        // Solo colisiona si se guarda dos veces la MISMA ruta en el MISMO
+        // instante; un refresco posterior añade una captura nueva sin chocar.
         if (esViolacionDeUnicidad(e)) throw new PaginaDuplicadaError(p.ruta)
         throw e
       }
@@ -1162,12 +1221,28 @@ describe('páginas guardadas', () => {
     a.cerrar()
   })
 
-  it('rechaza guardar dos veces la misma ruta', () => {
+  it('rechaza guardar la misma ruta en el mismo instante', () => {
     const a = abrirAlmacen(':memory:')
     const p = { ruta: '/players/1/x', cuerpo: 'primero', capturadaEn: '2026-09-03T10:00:00Z' }
     a.guardarPagina(p)
     expect(() => a.guardarPagina({ ...p, cuerpo: 'segundo' })).toThrow(PaginaDuplicadaError)
     expect(a.leerPagina('/players/1/x')!.cuerpo).toBe('primero')
+    a.cerrar()
+  })
+
+  it('un refresco añade una captura nueva sin destruir la anterior', () => {
+    const a = abrirAlmacen(':memory:')
+    a.guardarPagina({ ruta: '/players/1/x', cuerpo: 'de ayer', capturadaEn: '2026-09-02T10:00:00Z' })
+    a.guardarPagina({ ruta: '/players/1/x', cuerpo: 'de hoy', capturadaEn: '2026-09-03T10:00:00Z' })
+    expect(a.leerPagina('/players/1/x')!.cuerpo).toBe('de hoy')
+    a.cerrar()
+  })
+
+  it('no repite la ruta al listarla aunque tenga varias capturas', () => {
+    const a = abrirAlmacen(':memory:')
+    a.guardarPagina({ ruta: '/a', cuerpo: 'x', capturadaEn: '2026-09-02T10:00:00Z' })
+    a.guardarPagina({ ruta: '/a', cuerpo: 'y', capturadaEn: '2026-09-03T10:00:00Z' })
+    expect(a.rutasGuardadas()).toEqual(['/a'])
     a.cerrar()
   })
 
@@ -1189,11 +1264,16 @@ Fichero `src/recoleccion/auxiliares.ts`:
 import type { Almacen } from '../almacen/crudo.js'
 import type { Cliente } from './cliente.js'
 
+const DOCE_HORAS_MS = 12 * 60 * 60 * 1000
+
 export type DependenciasAux = {
   cliente: Cliente
   almacen: Almacen
   idsUc: number[]
   idsJugador: number[]
+  /** Edad a partir de la cual una captura se considera caducada. 12 h por defecto. */
+  maxEdadMs?: number
+  ahora?: () => number
 }
 
 export type ResumenAux = {
@@ -1208,17 +1288,30 @@ export const rutaJugador = (idJugador: number) => `/players/${idJugador}/x`
 /**
  * Descarga las plantillas actuales y las fichas de jugador que hacen falta.
  *
- * Reutiliza lo ya guardado: son más de cien fichas y volver a pedirlas en cada
- * análisis castigaría el servidor sin ganar nada. Los valores de una fecha
- * pasada no cambian.
+ * Reutiliza lo guardado mientras siga fresco: son más de cien fichas y volver a
+ * pedirlas en cada análisis castigaría el servidor. Pero la plantilla de un
+ * equipo y el valor de hoy cambian con cada fichaje, así que la caché caduca:
+ * pasada `maxEdadMs`, se vuelve a pedir y se guarda una captura nueva junto a
+ * la vieja, sin destruirla.
  */
 export async function recolectarAuxiliares(dep: DependenciasAux): Promise<ResumenAux> {
   const resumen: ResumenAux = { plantillas: 0, jugadores: 0, yaEnCache: 0 }
+  const maxEdadMs = dep.maxEdadMs ?? DOCE_HORAS_MS
+  const ahora = dep.ahora ?? (() => Date.now())
+
+  const fresca = (capturadaEn: string): boolean => {
+    const t = Date.parse(capturadaEn)
+    if (Number.isNaN(t)) {
+      throw new Error(`la captura guardada tiene una fecha ilegible: ${JSON.stringify(capturadaEn)}`)
+    }
+    return ahora() - t < maxEdadMs
+  }
 
   const pedir = async (ruta: string, contador: 'plantillas' | 'jugadores') => {
-    if (dep.almacen.leerPagina(ruta)) { resumen.yaEnCache++; return }
+    const guardada = dep.almacen.leerPagina(ruta)
+    if (guardada && fresca(guardada.capturadaEn)) { resumen.yaEnCache++; return }
     const cuerpo = await dep.cliente.pedirPagina(ruta)
-    dep.almacen.guardarPagina({ ruta, cuerpo, capturadaEn: new Date().toISOString() })
+    dep.almacen.guardarPagina({ ruta, cuerpo, capturadaEn: new Date(ahora()).toISOString() })
     resumen[contador]++
   }
 
