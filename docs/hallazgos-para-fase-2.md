@@ -206,3 +206,95 @@ repartir una cantidad igual para todos.
 
 Eso encajaría con que tres equipos tengan cero compras y aun así plantilla.
 Queda por confirmar.
+
+---
+
+# El mecanismo del saldo inicial (aportado por el usuario, 2026-09-03)
+
+> "Todos empezamos con 50 millones y se le resta el valor de los jugadores que
+> teníamos por defecto. Casi todos hemos vendido la totalidad del equipo, y los
+> que no se han vendido puedes entrar en la ficha del jugador y ver cuánto
+> costaba en esa fecha."
+
+Es decir:
+
+```
+saldo inicial(equipo) = 50.000.000 − valor de la plantilla repartida en el reinicio
+```
+
+Eso explica de golpe por qué los saldos iniciales son **distintos** entre equipos
+(cada uno recibió una plantilla de distinto valor) y por qué el propio no sale
+redondo.
+
+## Cómo se reconstruye la plantilla repartida
+
+Un jugador que un equipo **vendió sin haberlo comprado antes** en el histórico
+formaba parte de su reparto inicial. Los que aún conserva sin haberlos comprado,
+también. Recuento sobre el histórico real:
+
+| Equipo | Jugadores del reparto detectados |
+|---|---|
+| Cacaculopedopis | 15 |
+| Neky F.C. (Sergio) | 14 |
+| Niutin FC (Isaac) | 14 vendidos + 1 en plantilla = **15** |
+| Saiyans FC (Fran) | 14 |
+| Mario80 | 9 |
+| Betico1993 | 2 |
+| Legalize F.C (Victor) | 1 |
+| Los tocahuevos C.F ( juanito) | 1 |
+
+Los tres últimos apenas han vendido, así que su reparto está casi entero en su
+plantilla actual: hay que leerlo de ahí, no del histórico de movimientos.
+
+## Los valores históricos SÍ son accesibles
+
+La ficha de cada jugador (`/players/{id}/{slug}`) trae un bloque **"Historial de
+valores"** con el cambio en **un día**, **una semana** y **un mes**. Restando el
+cambio del mes al valor actual se obtiene el valor de hace un mes, que para esta
+liga es prácticamente el día del reinicio.
+
+**Aviso importante que se descubrió aquí:** el campo `value` de los movimientos
+del feed **no es el valor en el momento del movimiento, sino el valor ACTUAL del
+jugador**. Comprobado: Lucas Torró se vendió el 3 de agosto y su `value` en ese
+evento (1.266.000) coincide exactamente con su valor de hoy. **No usar `value`
+como valor histórico bajo ningún concepto.**
+
+## La verificación, que todavía NO cuadra
+
+Aplicando el mecanismo a la plantilla inicial propia (15 jugadores, valores del
+3 de agosto reconstruidos desde el historial de cada ficha):
+
+```
+valor de la plantilla repartida     28.953.000 €
+50.000.000 − 28.953.000           = 21.047.000 €   ← saldo inicial según el mecanismo
+saldo inicial despejado con el real = 11.923.670 €
+                                      ------------
+diferencia                            9.123.330 €
+```
+
+**El mecanismo es casi con certeza el correcto, pero falta un concepto de unos
+9,1 millones.** Hipótesis, por orden de facilidad de comprobación:
+
+1. **Una comisión sobre las operaciones.** 9.123.330 sobre unas ventas de
+   102.008.780 € es un 8,94 %. Sospechosamente cerca de un 9 %, aunque no
+   exacto. Se comprueba mirando si el `price` de una venta al mercado difiere
+   sistemáticamente del valor del jugador en esa fecha.
+2. **El "hace un mes" de la ficha no cae exactamente en el día del reinicio.**
+   El reinicio fue el 3 de agosto a las 06:17 y la consulta se hizo el 3 de
+   septiembre: la ventana puede desplazarse unas horas o redondearse.
+3. **El reparto tenía más de 15 jugadores.** Faltarían jugadores que salieron
+   del equipo por una vía que el feed no registra como `transfer`.
+
+## Cómo cerrarlo
+
+La prueba más limpia es un equipo que apenas se haya movido: **Legalize F.C**,
+**Betico1993** o **Los tocahuevos C.F** tienen **cero compras** en todo el
+histórico. Su plantilla actual es casi íntegramente el reparto inicial, así que
+su saldo se calcula con muy pocos términos:
+
+```
+saldo hoy = 50.000.000 − valor del reparto + ventas + premios
+```
+
+Si para ellos cuadra y para el propio no, la diferencia está en las operaciones
+(hipótesis 1). Si tampoco cuadra, está en el reparto o en la ventana temporal.
