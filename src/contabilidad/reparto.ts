@@ -24,6 +24,7 @@ export type RepartoEquipo = {
 export function reconstruirRepartos(
   eventos: Evento[],
   plantillas: Map<number, number[]>,
+  asignaciones: Map<number, number>,
 ): Map<number, RepartoEquipo> {
   const cronologico = [...eventos].sort((a, b) => a.fecha.localeCompare(b.fecha))
 
@@ -78,13 +79,58 @@ export function reconstruirRepartos(
     }
   }
 
-  // 3: bajas de jugadores que un equipo tuviera del reparto y nunca movió.
-  //    Si nadie lo compró ni lo vendió, no hay forma de saber de quién era:
-  //    se deja fuera y el motor lo declarará como incertidumbre.
+  // 3: bajas asignadas a mano. Un jugador que desapareció al abandonar LaLiga
+  //    y que el equipo NO había comprado formaba parte de su reparto inicial.
+  //    Sin asignación no se le atribuye a nadie: adivinarlo produciría una
+  //    cifra plausible y equivocada.
+  for (const e of cronologico) {
+    if (e.tipo !== 'bajaPlantilla') continue
+    const idUc = asignaciones.get(e.idJugador)
+    if (idUc === undefined) continue
+
+    const r = repartos.get(idUc)
+    if (!r) {
+      throw new Error(`la baja del jugador ${e.idJugador} está asignada al equipo ${idUc}, que no existe en la liga`)
+    }
+    if (compradosDe(idUc).has(e.idJugador)) continue
+    if (!r.porVenta.includes(e.idJugador) && !r.porBaja.includes(e.idJugador)) {
+      r.porBaja.push(e.idJugador)
+    }
+  }
+
+  // recalcular la unión de las tres vías, sin repetidos.
   for (const [, r] of repartos) {
     r.jugadores = [...new Set([...r.porVenta, ...r.porPlantilla, ...r.porBaja])]
     r.nombre = nombres.get(r.idUc) ?? r.nombre
   }
 
   return repartos
+}
+
+/**
+ * Bajas de plantilla que ningún reparto reclama.
+ *
+ * Cada una es un jugador cuyo dueño no consta en ninguna fuente. Quien llame
+ * debe declararlas, no repartirlas: son incertidumbre, no ruido.
+ */
+export function bajasSinDuenio(
+  eventos: Evento[],
+  repartos: Map<number, RepartoEquipo>,
+): number[] {
+  const reclamados = new Set<number>()
+  for (const r of repartos.values()) for (const id of r.jugadores) reclamados.add(id)
+
+  // Un jugador que aparece en algún movimiento tiene dueño conocido por el
+  // feed, aunque no esté en ningún reparto inicial: no hay incertidumbre.
+  const movidos = new Set<number>()
+  for (const e of eventos) if (e.tipo === 'transaccion') movidos.add(e.idJugador)
+
+  const sinDuenio: number[] = []
+  for (const e of eventos) {
+    if (e.tipo !== 'bajaPlantilla') continue
+    if (reclamados.has(e.idJugador) || movidos.has(e.idJugador)) continue
+    if (!sinDuenio.includes(e.idJugador)) sinDuenio.push(e.idJugador)
+  }
+
+  return sinDuenio
 }
