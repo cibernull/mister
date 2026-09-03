@@ -70,7 +70,10 @@ const transferConDosMovimientos = JSON.stringify({
 
 /** Cliente falso que sirve lotes por offset. */
 function clienteCon(lotes: Record<number, string>): Cliente {
-  return { async pedirLote(offset: number) { return lotes[offset] ?? fin } }
+  return {
+    async pedirLote(offset: number) { return lotes[offset] ?? fin },
+    async pedirPagina() { throw new Error('no usado') },
+  }
 }
 
 describe('recolectarHistorico', () => {
@@ -241,6 +244,7 @@ describe('recolectarHistorico', () => {
         if (offset === 0) return transferConDosMovimientos
         return fin
       },
+      async pedirPagina() { throw new Error('no usado') },
     }
 
     const resumen = await recolectarHistorico({ cliente, almacen, recoleccion: 'r1' })

@@ -3,7 +3,12 @@ import { mkdtempSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { CapturaDuplicadaError, VeredictoYaMarcadoError, abrirAlmacen } from '../../src/almacen/crudo.js'
+import {
+  CapturaDuplicadaError,
+  PaginaDuplicadaError,
+  VeredictoYaMarcadoError,
+  abrirAlmacen,
+} from '../../src/almacen/crudo.js'
 
 const almacenEnMemoria = () => abrirAlmacen(':memory:')
 
@@ -241,6 +246,54 @@ describe('almacén crudo', () => {
         completa: false,
         marcadaEn: '2026-09-03T12:00:00Z',
       })
+      a.cerrar()
+    })
+  })
+
+  describe('páginas guardadas', () => {
+    it('guarda y recupera una página', () => {
+      const a = abrirAlmacen(':memory:')
+      a.guardarPagina({ ruta: '/players/1/x', cuerpo: '<html>x</html>', capturadaEn: '2026-09-03T10:00:00Z' })
+      expect(a.leerPagina('/players/1/x')!.cuerpo).toBe('<html>x</html>')
+      a.cerrar()
+    })
+
+    it('devuelve null para una ruta desconocida', () => {
+      const a = abrirAlmacen(':memory:')
+      expect(a.leerPagina('/no/existe')).toBe(null)
+      a.cerrar()
+    })
+
+    it('rechaza guardar la misma ruta en el mismo instante', () => {
+      const a = abrirAlmacen(':memory:')
+      const p = { ruta: '/players/1/x', cuerpo: 'primero', capturadaEn: '2026-09-03T10:00:00Z' }
+      a.guardarPagina(p)
+      expect(() => a.guardarPagina({ ...p, cuerpo: 'segundo' })).toThrow(PaginaDuplicadaError)
+      expect(a.leerPagina('/players/1/x')!.cuerpo).toBe('primero')
+      a.cerrar()
+    })
+
+    it('un refresco añade una captura nueva sin destruir la anterior', () => {
+      const a = abrirAlmacen(':memory:')
+      a.guardarPagina({ ruta: '/players/1/x', cuerpo: 'de ayer', capturadaEn: '2026-09-02T10:00:00Z' })
+      a.guardarPagina({ ruta: '/players/1/x', cuerpo: 'de hoy', capturadaEn: '2026-09-03T10:00:00Z' })
+      expect(a.leerPagina('/players/1/x')!.cuerpo).toBe('de hoy')
+      a.cerrar()
+    })
+
+    it('no repite la ruta al listarla aunque tenga varias capturas', () => {
+      const a = abrirAlmacen(':memory:')
+      a.guardarPagina({ ruta: '/a', cuerpo: 'x', capturadaEn: '2026-09-02T10:00:00Z' })
+      a.guardarPagina({ ruta: '/a', cuerpo: 'y', capturadaEn: '2026-09-03T10:00:00Z' })
+      expect(a.rutasGuardadas()).toEqual(['/a'])
+      a.cerrar()
+    })
+
+    it('lista las rutas guardadas', () => {
+      const a = abrirAlmacen(':memory:')
+      a.guardarPagina({ ruta: '/b', cuerpo: 'x', capturadaEn: '2026-09-03T10:00:00Z' })
+      a.guardarPagina({ ruta: '/a', cuerpo: 'x', capturadaEn: '2026-09-03T10:00:00Z' })
+      expect(a.rutasGuardadas()).toEqual(['/a', '/b'])
       a.cerrar()
     })
   })

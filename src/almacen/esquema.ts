@@ -21,4 +21,17 @@ CREATE TABLE IF NOT EXISTS recolecciones (
   marcada_en   TEXT    NOT NULL,
   UNIQUE (nombre)
 );
+
+-- Páginas auxiliares (plantillas de equipo y fichas de jugador), guardadas
+-- crudas. La clave es (ruta, capturada_en), no solo ruta: un refresco añade
+-- una captura nueva junto a la vieja en vez de sobrescribirla, igual que
+-- capturas. leerPagina (ver crudo.ts) devuelve siempre la más reciente.
+CREATE TABLE IF NOT EXISTS paginas (
+  id           INTEGER PRIMARY KEY AUTOINCREMENT,
+  ruta         TEXT NOT NULL,
+  cuerpo       TEXT NOT NULL,
+  capturada_en TEXT NOT NULL,
+  UNIQUE (ruta, capturada_en)
+);
+CREATE INDEX IF NOT EXISTS idx_paginas_ruta ON paginas (ruta, capturada_en DESC);
 `
