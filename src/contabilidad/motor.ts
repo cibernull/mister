@@ -122,3 +122,54 @@ export function calcularEstado(entrada: EntradaMotor): Map<number, EstadoEquipo>
 
   return estados
 }
+
+export type ResultadoValorPlantillas = {
+  /** idUc -> valor de plantilla actual, listo para `EntradaMotor.valorPlantillaActual`. */
+  valorPlantillaActual: Map<number, number>
+  /**
+   * idUc -> jugadores de su plantilla ACTUAL sin serie de valores conocida.
+   * EXCLUIDOS de la suma, nunca contados como cero (ver la nota de más abajo).
+   */
+  jugadoresSinValorActual: Map<number, number[]>
+}
+
+/**
+ * Valor de la plantilla actual de cada equipo: la suma del último valor
+ * conocido de cada uno de sus jugadores de hoy (no el valor en la fecha del
+ * reinicio, que es lo que usa `valorReparto` más arriba).
+ *
+ * Un jugador sin serie de valores no cuenta como cero: se excluye de la suma
+ * y se declara en `jugadoresSinValorActual`, por la misma razón que ya
+ * documenta esta función más arriba para `jugadoresSinValor` — un cero
+ * silencioso produce un tope de puja plausible y equivocado. Antes de que
+ * quien llama a esta función pidiera la ficha de TODOS los jugadores de la
+ * plantilla actual (y no solo los del reparto), esta rama se activaba para
+ * cualquier jugador comprado y todavía en plantilla: su ficha nunca se había
+ * pedido, `valores.get(id)` no existía, y su valor contaba cero sin que nada
+ * lo dijera (hallazgo Crítico 1). Con las fichas ya pedidas, esta lista
+ * debería quedar vacía en el uso normal; se conserva como red de seguridad
+ * declarada, no como salto silencioso.
+ */
+export function calcularValorPlantillaActual(
+  plantillas: Map<number, number[]>,
+  valores: Map<number, PuntoValor[]>,
+): ResultadoValorPlantillas {
+  const valorPlantillaActual = new Map<number, number>()
+  const jugadoresSinValorActual = new Map<number, number[]>()
+
+  for (const [idUc, jugadores] of plantillas) {
+    let total = 0
+    const sinValor: number[] = []
+
+    for (const id of jugadores) {
+      const serie = valores.get(id)
+      if (serie && serie.length) total += serie[serie.length - 1]!.valor
+      else sinValor.push(id)
+    }
+
+    valorPlantillaActual.set(idUc, total)
+    if (sinValor.length) jugadoresSinValorActual.set(idUc, sinValor)
+  }
+
+  return { valorPlantillaActual, jugadoresSinValorActual }
+}

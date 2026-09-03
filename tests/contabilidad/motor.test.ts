@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { calcularEstado } from '../../src/contabilidad/motor.js'
+import { calcularEstado, calcularValorPlantillaActual } from '../../src/contabilidad/motor.js'
 import type { Evento, Transaccion } from '../../src/dominio/eventos.js'
 import type { RepartoEquipo } from '../../src/contabilidad/reparto.js'
 import type { PuntoValor } from '../../src/recoleccion/parseadorValores.js'
@@ -88,5 +88,57 @@ describe('calcularEstado', () => {
     for (const v of [e.get(1)!.saldo, e.get(1)!.saldoInicial, e.get(1)!.valorReparto]) {
       expect(Number.isInteger(v)).toBe(true)
     }
+  })
+})
+
+describe('calcularValorPlantillaActual', () => {
+  // Serie con dos puntos: el valor "actual" es el ÚLTIMO, no el del reinicio.
+  const serieActual = (...valores: number[]): PuntoValor[] =>
+    valores.map((valor, i) => ({ fecha: `2026-08-0${i + 1}`, valor }))
+
+  it('suma el último valor conocido de cada jugador de la plantilla', () => {
+    const r = calcularValorPlantillaActual(
+      new Map([[1, [10, 11]]]),
+      new Map([[10, serieActual(1_000, 5_000)], [11, serieActual(2_000)]]),
+    )
+    expect(r.valorPlantillaActual.get(1)).toBe(5_000 + 2_000)
+    expect(r.jugadoresSinValorActual.size).toBe(0)
+  })
+
+  it('un jugador COMPRADO y en plantilla, sin ficha descargada, cuenta su valor real (Crítico 1)', () => {
+    // Antes de la corrección, un jugador comprado y todavía en plantilla no
+    // pertenecía a ningún reparto inicial, así que `necesarios` (en
+    // analizar.ts) nunca pedía su ficha: `valores` no traía su id, y su
+    // aportación al total desaparecía en silencio (efecto idéntico a
+    // contarlo como cero). Aquí se comprueba el lado del motor: SI la ficha
+    // se pidió y está en `valores`, su valor cuenta en el total.
+    const r = calcularValorPlantillaActual(
+      new Map([[1, [10, 20]]]), // 20 es un jugador comprado, no del reparto
+      new Map([[10, serieActual(1_000)], [20, serieActual(4_847_000)]]),
+    )
+    expect(r.valorPlantillaActual.get(1)).toBe(1_000 + 4_847_000)
+  })
+
+  it('un jugador de la plantilla sin serie de valores no cuenta como cero: se declara y se excluye', () => {
+    const r = calcularValorPlantillaActual(
+      new Map([[1, [10, 99]]]),
+      new Map([[10, serieActual(1_000)]]), // 99 no tiene ficha en absoluto
+    )
+    expect(r.valorPlantillaActual.get(1)).toBe(1_000)
+    expect(r.jugadoresSinValorActual.get(1)).toEqual([99])
+  })
+
+  it('calcula el valor de cada equipo de forma independiente', () => {
+    const r = calcularValorPlantillaActual(
+      new Map([[1, [10]], [2, [11]]]),
+      new Map([[10, serieActual(1_000)], [11, serieActual(2_000)]]),
+    )
+    expect(r.valorPlantillaActual.get(1)).toBe(1_000)
+    expect(r.valorPlantillaActual.get(2)).toBe(2_000)
+  })
+
+  it('un equipo sin ningún jugador sin valor no aparece en jugadoresSinValorActual', () => {
+    const r = calcularValorPlantillaActual(new Map([[1, [10]]]), new Map([[10, serieActual(1_000)]]))
+    expect(r.jugadoresSinValorActual.has(1)).toBe(false)
   })
 })
