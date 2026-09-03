@@ -18,6 +18,11 @@ conozco (los que han pasado por la liga más los del mercado).
 **Qué me interesa** — todos, los dos iconos, solo puntos, solo dinero, o lo que
 cabe en el propio tope de puja.
 
+**De quién es** — cualquiera, sin dueño (117), o de algún equipo (80).
+
+Cada jugador lleva junto al nombre la **etiqueta de su equipo** en la liga: en
+rojo los propios, en verde los que no son de nadie.
+
 | Icono | Criterio |
 |---|---|
 | ⭐ | Está en el **tercio con mejor media** de puntos por partido, y ha jugado al menos dos |
