@@ -698,14 +698,29 @@ git commit -m "feat: parseador del feed con parada ante categorías no catalogad
 **Interfaces:**
 - Consume: nada del proyecto.
 - Produce:
+  - `type Captura = { recoleccion: string; offset: number; nEventos: number; cuerpo: string; capturadaEn: string }`
   - `function abrirAlmacen(ruta: string): Almacen`
-  - `type PaginaCruda = { offset: number; nEventos: number; cuerpo: string; capturadaEn: string }`
-  - `type Almacen = { guardarPagina(p: PaginaCruda): void; leerPaginas(): PaginaCruda[]; cerrar(): void }`
+  - `type Almacen = { guardarCaptura(c: Captura): void; leerCapturas(recoleccion: string): Captura[]; recolecciones(): string[]; cerrar(): void }`
+  - `class CapturaDuplicadaError extends Error { readonly recoleccion: string; readonly offset: number }`
 
-La clave es el **`offset`**, no un número de página: la paginación del feed
-avanza sumando el tamaño de cada lote. Se guarda también `nEventos` porque es
-lo que permite verificar después que los lotes encajan sin solaparse ni dejar
-hueco.
+**Por qué el diseño es así.** Esta capa existe para que un error de
+interpretación no cueste datos: si mañana se descubre un campo que hoy se
+ignora, se reprocesa el pasado sin volver a pedir nada al servidor. Para que eso
+sea cierto, **nada se sobrescribe nunca**.
+
+Y el `offset` **no es una identidad estable**: el feed crece por arriba, así que
+el offset 0 de hoy no apunta a los mismos eventos que el de mañana. Solo
+significa algo *dentro de una misma recolección*. Por eso cada fila lleva un
+identificador de recolección, y la unicidad es del par
+`(recoleccion, offset)` — no del offset a secas.
+
+Reinsertar un par que ya existe es un **error**, no una actualización: dentro de
+una recolección cada offset se pide exactamente una vez, así que un duplicado
+significa que algo va mal en el recorrido.
+
+Se valida además que `offset` y `nEventos` sean enteros no negativos. Un valor
+anómalo ahí podría enmascarar después una discontinuidad real detrás de una
+aritmética que cuadra por casualidad.
 
 - [ ] **Paso 1: Escribir el test que falla**
 
@@ -713,11 +728,12 @@ Fichero `tests/almacen/crudo.test.ts`:
 
 ```ts
 import { describe, expect, it } from 'vitest'
-import { abrirAlmacen } from '../../src/almacen/crudo.js'
+import { CapturaDuplicadaError, abrirAlmacen } from '../../src/almacen/crudo.js'
 
 const almacenEnMemoria = () => abrirAlmacen(':memory:')
 
-const pagina = (offset: number, nEventos: number, cuerpo = '{}') => ({
+const captura = (offset: number, nEventos: number, cuerpo = '{}', recoleccion = 'r1') => ({
+  recoleccion,
   offset,
   nEventos,
   cuerpo,
@@ -725,39 +741,96 @@ const pagina = (offset: number, nEventos: number, cuerpo = '{}') => ({
 })
 
 describe('almacén crudo', () => {
-  it('guarda y recupera una página íntegra', () => {
+  it('guarda y recupera una captura íntegra', () => {
     const a = almacenEnMemoria()
-    a.guardarPagina(pagina(0, 21, '{"a":1}'))
-    expect(a.leerPaginas()).toEqual([
-      { offset: 0, nEventos: 21, cuerpo: '{"a":1}', capturadaEn: '2026-09-03T10:00:00Z' },
+    a.guardarCaptura(captura(0, 21, '{"a":1}'))
+    expect(a.leerCapturas('r1')).toEqual([
+      {
+        recoleccion: 'r1',
+        offset: 0,
+        nEventos: 21,
+        cuerpo: '{"a":1}',
+        capturadaEn: '2026-09-03T10:00:00Z',
+      },
     ])
     a.cerrar()
   })
 
-  it('devuelve las páginas ordenadas por offset', () => {
+  it('devuelve las capturas ordenadas por offset', () => {
     const a = almacenEnMemoria()
-    a.guardarPagina(pagina(42, 21))
-    a.guardarPagina(pagina(0, 21))
-    a.guardarPagina(pagina(21, 21))
-    expect(a.leerPaginas().map((p) => p.offset)).toEqual([0, 21, 42])
-    a.cerrar()
-  })
-
-  it('reguardar un offset lo sustituye en vez de duplicarlo', () => {
-    const a = almacenEnMemoria()
-    a.guardarPagina(pagina(0, 21, 'viejo'))
-    a.guardarPagina(pagina(0, 21, 'nuevo'))
-    const ps = a.leerPaginas()
-    expect(ps).toHaveLength(1)
-    expect(ps[0]!.cuerpo).toBe('nuevo')
+    a.guardarCaptura(captura(42, 21))
+    a.guardarCaptura(captura(0, 21))
+    a.guardarCaptura(captura(21, 21))
+    expect(a.leerCapturas('r1').map((c) => c.offset)).toEqual([0, 21, 42])
     a.cerrar()
   })
 
   it('no altera el cuerpo guardado', () => {
     const a = almacenEnMemoria()
-    const raro = '{"texto":"acentos áéí, emoji 🏆, comillas \\" y salto\\n"}'
-    a.guardarPagina(pagina(0, 1, raro))
-    expect(a.leerPaginas()[0]!.cuerpo).toBe(raro)
+    const raro = '{"texto":"acentos áéí, emoji 🏆, comillas \" y salto\n"}'
+    a.guardarCaptura(captura(0, 1, raro))
+    expect(a.leerCapturas('r1')[0]!.cuerpo).toBe(raro)
+    a.cerrar()
+  })
+
+  it('rechaza duplicar el mismo offset dentro de una recolección', () => {
+    const a = almacenEnMemoria()
+    a.guardarCaptura(captura(0, 21, 'primero'))
+    expect(() => a.guardarCaptura(captura(0, 21, 'segundo'))).toThrow(CapturaDuplicadaError)
+    a.cerrar()
+  })
+
+  it('el duplicado no destruye la captura original', () => {
+    const a = almacenEnMemoria()
+    a.guardarCaptura(captura(0, 21, 'primero'))
+    try {
+      a.guardarCaptura(captura(0, 21, 'segundo'))
+    } catch {
+      // esperado
+    }
+    expect(a.leerCapturas('r1')).toHaveLength(1)
+    expect(a.leerCapturas('r1')[0]!.cuerpo).toBe('primero')
+    a.cerrar()
+  })
+
+  it('admite el mismo offset en recolecciones distintas', () => {
+    const a = almacenEnMemoria()
+    a.guardarCaptura(captura(0, 21, 'de ayer', 'r1'))
+    a.guardarCaptura(captura(0, 25, 'de hoy', 'r2'))
+    expect(a.leerCapturas('r1')[0]!.cuerpo).toBe('de ayer')
+    expect(a.leerCapturas('r2')[0]!.cuerpo).toBe('de hoy')
+    a.cerrar()
+  })
+
+  it('lista las recolecciones guardadas', () => {
+    const a = almacenEnMemoria()
+    a.guardarCaptura(captura(0, 1, '{}', 'r1'))
+    a.guardarCaptura(captura(0, 1, '{}', 'r2'))
+    expect(a.recolecciones().sort()).toEqual(['r1', 'r2'])
+    a.cerrar()
+  })
+
+  it('devuelve vacío para una recolección desconocida', () => {
+    const a = almacenEnMemoria()
+    expect(a.leerCapturas('no-existe')).toEqual([])
+    a.cerrar()
+  })
+
+  it('rechaza un offset negativo', () => {
+    const a = almacenEnMemoria()
+    expect(() => a.guardarCaptura(captura(-1, 21))).toThrow(/offset/i)
+    a.cerrar()
+  })
+
+  it('rechaza un nEventos negativo', () => {
+    const a = almacenEnMemoria()
+    expect(() => a.guardarCaptura(captura(0, -1))).toThrow(/nEventos/i)
+    a.cerrar()
+  })
+
+  it('rechaza un nEventos no entero', () => {
+    const a = almacenEnMemoria()
+    expect(() => a.guardarCaptura(captura(0, 2.5))).toThrow(/nEventos/i)
     a.cerrar()
   })
 })
@@ -774,11 +847,14 @@ Fichero `src/almacen/esquema.ts`:
 
 ```ts
 export const ESQUEMA = `
-CREATE TABLE IF NOT EXISTS paginas_crudas (
-  offset_feed  INTEGER PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS capturas (
+  id           INTEGER PRIMARY KEY AUTOINCREMENT,
+  recoleccion  TEXT    NOT NULL,
+  offset_feed  INTEGER NOT NULL,
   n_eventos    INTEGER NOT NULL,
   cuerpo       TEXT    NOT NULL,
-  capturada_en TEXT    NOT NULL
+  capturada_en TEXT    NOT NULL,
+  UNIQUE (recoleccion, offset_feed)
 );
 `
 ```
@@ -791,7 +867,10 @@ Fichero `src/almacen/crudo.ts`:
 import Database from 'better-sqlite3'
 import { ESQUEMA } from './esquema.js'
 
-export type PaginaCruda = {
+export type Captura = {
+  /** Identifica el recorrido completo al que pertenece. */
+  recoleccion: string
+  /** Posición en el feed. Solo significa algo dentro de su recolección. */
   offset: number
   nEventos: number
   cuerpo: string
@@ -799,15 +878,32 @@ export type PaginaCruda = {
 }
 
 export type Almacen = {
-  guardarPagina(p: PaginaCruda): void
-  leerPaginas(): PaginaCruda[]
+  guardarCaptura(c: Captura): void
+  leerCapturas(recoleccion: string): Captura[]
+  recolecciones(): string[]
   cerrar(): void
+}
+
+/** Se intentó guardar dos veces el mismo offset de una recolección. */
+export class CapturaDuplicadaError extends Error {
+  readonly recoleccion: string
+  readonly offset: number
+
+  constructor(recoleccion: string, offset: number) {
+    super(
+      `la recolección ${recoleccion} ya tiene guardado el offset ${offset}. ` +
+        `El crudo no se sobrescribe: revisa el recorrido.`,
+    )
+    this.name = 'CapturaDuplicadaError'
+    this.recoleccion = recoleccion
+    this.offset = offset
+  }
 }
 
 /**
  * Capa cruda del almacén: guarda las respuestas tal y como llegaron.
  *
- * Nunca se borra ni se transforma. Si mañana se descubre un dato que hoy se
+ * Nunca se sobrescribe ni se borra. Si mañana se descubre un campo que hoy se
  * ignora, se reprocesa el pasado sin volver a pedir nada al servidor.
  */
 export function abrirAlmacen(ruta: string): Almacen {
@@ -816,44 +912,67 @@ export function abrirAlmacen(ruta: string): Almacen {
   db.exec(ESQUEMA)
 
   const insertar = db.prepare(
-    `INSERT INTO paginas_crudas (offset_feed, n_eventos, cuerpo, capturada_en)
-     VALUES (@offset, @nEventos, @cuerpo, @capturadaEn)
-     ON CONFLICT(offset_feed) DO UPDATE SET
-       n_eventos = excluded.n_eventos,
-       cuerpo = excluded.cuerpo,
-       capturada_en = excluded.capturada_en`,
+    `INSERT INTO capturas (recoleccion, offset_feed, n_eventos, cuerpo, capturada_en)
+     VALUES (@recoleccion, @offset, @nEventos, @cuerpo, @capturadaEn)`,
   )
 
   const seleccionar = db.prepare(
-    `SELECT offset_feed AS "offset", n_eventos AS nEventos,
+    `SELECT recoleccion, offset_feed AS "offset", n_eventos AS nEventos,
             cuerpo, capturada_en AS capturadaEn
-     FROM paginas_crudas ORDER BY offset_feed`,
+     FROM capturas WHERE recoleccion = ? ORDER BY offset_feed`,
+  )
+
+  const listarRecolecciones = db.prepare(
+    `SELECT DISTINCT recoleccion FROM capturas ORDER BY recoleccion`,
   )
 
   return {
-    guardarPagina(p) {
-      insertar.run(p)
+    guardarCaptura(c) {
+      exigirEnteroNoNegativo(c.offset, 'offset')
+      exigirEnteroNoNegativo(c.nEventos, 'nEventos')
+
+      try {
+        insertar.run(c)
+      } catch (e) {
+        if (esViolacionDeUnicidad(e)) {
+          throw new CapturaDuplicadaError(c.recoleccion, c.offset)
+        }
+        throw e
+      }
     },
-    leerPaginas() {
-      return seleccionar.all() as PaginaCruda[]
+    leerCapturas(recoleccion) {
+      return seleccionar.all(recoleccion) as Captura[]
+    },
+    recolecciones() {
+      return (listarRecolecciones.all() as { recoleccion: string }[]).map((f) => f.recoleccion)
     },
     cerrar() {
       db.close()
     },
   }
 }
+
+function exigirEnteroNoNegativo(valor: number, campo: string): void {
+  if (!Number.isInteger(valor) || valor < 0) {
+    throw new Error(`${campo} debe ser un entero no negativo, y vale ${valor}`)
+  }
+}
+
+function esViolacionDeUnicidad(e: unknown): boolean {
+  return e instanceof Error && e.message.includes('UNIQUE constraint failed')
+}
 ```
 
 - [ ] **Paso 5: Ejecutar los tests y comprobar que pasan**
 
 Ejecutar: `npx vitest run tests/almacen/crudo.test.ts`
-Esperado: PASA, 4 tests.
+Esperado: PASA, 11 tests.
 
 - [ ] **Paso 6: Commit**
 
 ```bash
 git add src/almacen tests/almacen
-git commit -m "feat: almacén crudo inmutable indexado por offset"
+git commit -m "feat: almacén crudo inmutable, agrupado por recolección"
 ```
 
 ---
@@ -865,9 +984,9 @@ git commit -m "feat: almacén crudo inmutable indexado por offset"
 - Crear: `tests/recoleccion/integridad.test.ts`
 
 **Interfaces:**
-- Consume: `PaginaCruda` (Tarea 5).
+- Consume: `Captura` (Tarea 5).
 - Produce:
-  - `function comprobarContinuidad(paginas: PaginaCruda[]): void`
+  - `function comprobarContinuidad(capturas: Captura[]): void`
   - `class DiscontinuidadError extends Error { readonly offsetEsperado: number; readonly offsetHallado: number }`
 
 Esta es la garantía de completitud. Los lotes del feed encajan como piezas: el
@@ -885,9 +1004,10 @@ import {
   DiscontinuidadError,
   comprobarContinuidad,
 } from '../../src/recoleccion/integridad.js'
-import type { PaginaCruda } from '../../src/almacen/crudo.js'
+import type { Captura } from '../../src/almacen/crudo.js'
 
-const p = (offset: number, nEventos: number): PaginaCruda => ({
+const p = (offset: number, nEventos: number): Captura => ({
+  recoleccion: 'r1',
   offset,
   nEventos,
   cuerpo: '{}',
@@ -942,7 +1062,7 @@ Esperado: FALLA por módulo inexistente.
 Fichero `src/recoleccion/integridad.ts`:
 
 ```ts
-import type { PaginaCruda } from '../almacen/crudo.js'
+import type { Captura } from '../almacen/crudo.js'
 
 /** Los lotes recolectados no encajan: faltan eventos o se cuentan dos veces. */
 export class DiscontinuidadError extends Error {
@@ -967,7 +1087,7 @@ export class DiscontinuidadError extends Error {
  * anterior. Un salto significa eventos perdidos —y un saldo plausible pero
  * equivocado—, así que es un error, no un aviso.
  */
-export function comprobarContinuidad(paginas: PaginaCruda[]): void {
+export function comprobarContinuidad(capturas: Captura[]): void {
   let esperado = 0
 
   for (const pagina of paginas) {
@@ -1296,8 +1416,12 @@ git commit -m "feat: credenciales desde fichero y cliente HTTP del feed"
 - Consume: `Cliente` (T7), `Almacen` (T5), `parsearPaginaFeed` (T4), `comprobarContinuidad` (T6), `esContable` (T3).
 - Produce:
   - `async function recolectarHistorico(dep: Dependencias): Promise<Resumen>`
-  - `type Dependencias = { cliente: Cliente; almacen: Almacen; maxLotes?: number }`
-  - `type Resumen = { lotes: number; eventos: number; contables: number; ruido: number }`
+  - `type Dependencias = { cliente: Cliente; almacen: Almacen; maxLotes?: number; recoleccion?: string }`
+  - `type Resumen = { recoleccion: string; lotes: number; eventos: number; contables: number; ruido: number }`
+
+Cada recorrido completo se identifica con una etiqueta (`recoleccion`). Por
+defecto es la marca de tiempo del arranque. Los `offset` solo tienen sentido
+dentro de ella, porque el feed crece por arriba.
 
 - [ ] **Paso 1: Escribir el test que falla**
 
@@ -1332,18 +1456,24 @@ describe('recolectarHistorico', () => {
     const resumen = await recolectarHistorico({
       cliente: clienteCon({ 0: ruido(21), 21: ruido(21), 42: vacio }),
       almacen,
+      recoleccion: 'r1',
     })
 
     expect(resumen.lotes).toBe(3)
-    expect(almacen.leerPaginas().map((p) => p.offset)).toEqual([0, 21, 42])
+    expect(resumen.recoleccion).toBe('r1')
+    expect(almacen.leerCapturas('r1').map((c) => c.offset)).toEqual([0, 21, 42])
     almacen.cerrar()
   })
 
   it('guarda el cuerpo crudo y el número de eventos de cada lote', async () => {
     const almacen = abrirAlmacen(':memory:')
-    await recolectarHistorico({ cliente: clienteCon({ 0: ruido(21), 21: vacio }), almacen })
+    await recolectarHistorico({
+      cliente: clienteCon({ 0: ruido(21), 21: vacio }),
+      almacen,
+      recoleccion: 'r1',
+    })
 
-    const primera = almacen.leerPaginas()[0]!
+    const primera = almacen.leerCapturas('r1')[0]!
     expect(primera.cuerpo).toBe(ruido(21))
     expect(primera.nEventos).toBe(21)
     almacen.cerrar()
@@ -1380,7 +1510,7 @@ describe('recolectarHistorico', () => {
     })
 
     await expect(
-      recolectarHistorico({ cliente: clienteCon({ 0: desconocida }), almacen }),
+      recolectarHistorico({ cliente: clienteCon({ 0: desconocida }), almacen, recoleccion: 'r1' }),
     ).rejects.toThrow(/no catalogada/i)
     almacen.cerrar()
   })
@@ -1393,11 +1523,11 @@ describe('recolectarHistorico', () => {
     })
 
     await expect(
-      recolectarHistorico({ cliente: clienteCon({ 0: desconocida }), almacen }),
+      recolectarHistorico({ cliente: clienteCon({ 0: desconocida }), almacen, recoleccion: 'r1' }),
     ).rejects.toThrow()
 
     // El crudo se guarda antes de interpretar, para poder diagnosticarlo.
-    expect(almacen.leerPaginas()).toHaveLength(1)
+    expect(almacen.leerCapturas('r1')).toHaveLength(1)
     almacen.cerrar()
   })
 })
@@ -1425,9 +1555,12 @@ export type Dependencias = {
   cliente: Cliente
   almacen: Almacen
   maxLotes?: number
+  /** Etiqueta del recorrido. Por defecto, la marca de tiempo del arranque. */
+  recoleccion?: string
 }
 
 export type Resumen = {
+  recoleccion: string
   lotes: number
   eventos: number
   contables: number
@@ -1442,14 +1575,16 @@ export type Resumen = {
  */
 export async function recolectarHistorico(dep: Dependencias): Promise<Resumen> {
   const maxLotes = dep.maxLotes ?? MAX_LOTES_POR_DEFECTO
-  const resumen: Resumen = { lotes: 0, eventos: 0, contables: 0, ruido: 0 }
+  const recoleccion = dep.recoleccion ?? new Date().toISOString()
+  const resumen: Resumen = { recoleccion, lotes: 0, eventos: 0, contables: 0, ruido: 0 }
   let offset = 0
 
   for (let lote = 0; lote < maxLotes; lote++) {
     const cuerpo = await dep.cliente.pedirLote(offset)
     const nEventos = contarEventos(cuerpo)
 
-    dep.almacen.guardarPagina({
+    dep.almacen.guardarCaptura({
+      recoleccion,
       offset,
       nEventos,
       cuerpo,
@@ -1469,7 +1604,7 @@ export async function recolectarHistorico(dep: Dependencias): Promise<Resumen> {
     offset += eventos.length
   }
 
-  comprobarContinuidad(dep.almacen.leerPaginas())
+  comprobarContinuidad(dep.almacen.leerCapturas(recoleccion))
 
   return resumen
 }
@@ -1569,7 +1704,10 @@ capturó el histórico de referencia. Ambas producen filas idénticas en
 
 **Interfaces:**
 - Consume: `abrirAlmacen` (T5), `parsearPaginaFeed` (T4), `comprobarContinuidad` (T6), `Resumen` (T8).
-- Produce: `async function importarVolcado(ruta: string, almacen: Almacen): Promise<Resumen>`
+- Produce: `async function importarVolcado(ruta: string, almacen: Almacen, recoleccion?: string): Promise<Resumen>`
+
+La etiqueta de recolección por defecto es `volcado:<nombre del fichero>`, para
+distinguir en el almacén lo importado de lo recolectado en directo.
 
 El volcado tiene la forma `{ paginas: [{ offset, cuerpo, capturadaEn }] }`.
 
@@ -1612,16 +1750,17 @@ describe('importarVolcado', () => {
     const resumen = await importarVolcado(
       volcadoCon([{ offset: 0, cuerpo: ruido(21) }, { offset: 21, cuerpo: vacio }]),
       almacen,
+      'r1',
     )
 
     expect(resumen.lotes).toBe(2)
-    expect(almacen.leerPaginas().map((p) => p.offset)).toEqual([0, 21])
+    expect(almacen.leerCapturas('r1').map((c) => c.offset)).toEqual([0, 21])
     almacen.cerrar()
   })
 
   it('cuenta los eventos igual que la recolección directa', async () => {
     const almacen = abrirAlmacen(':memory:')
-    const resumen = await importarVolcado(volcadoCon([{ offset: 0, cuerpo: ruido(3) }]), almacen)
+    const resumen = await importarVolcado(volcadoCon([{ offset: 0, cuerpo: ruido(3) }]), almacen, 'r1')
 
     expect(resumen.eventos).toBe(3)
     expect(resumen.ruido).toBe(3)
@@ -1634,6 +1773,7 @@ describe('importarVolcado', () => {
       importarVolcado(
         volcadoCon([{ offset: 0, cuerpo: ruido(21) }, { offset: 99, cuerpo: vacio }]),
         almacen,
+        'r1',
       ),
     ).rejects.toThrow(/no es continuo/i)
     almacen.cerrar()
@@ -1652,6 +1792,7 @@ Fichero `src/cli/importar.ts`:
 
 ```ts
 import { readFileSync } from 'node:fs'
+import { basename } from 'node:path'
 import type { Almacen } from '../almacen/crudo.js'
 import { abrirAlmacen } from '../almacen/crudo.js'
 import { esContable } from '../dominio/eventos.js'
@@ -1667,14 +1808,19 @@ type PaginaVolcada = { offset: number; cuerpo: string; capturadaEn: string }
  * Aplica exactamente las mismas comprobaciones que la recolección directa:
  * mismo parseo, misma verificación de continuidad. La procedencia no relaja nada.
  */
-export async function importarVolcado(ruta: string, almacen: Almacen): Promise<Resumen> {
+export async function importarVolcado(
+  ruta: string,
+  almacen: Almacen,
+  recoleccion: string = `volcado:${basename(ruta)}`,
+): Promise<Resumen> {
   const { paginas } = JSON.parse(readFileSync(ruta, 'utf8')) as { paginas: PaginaVolcada[] }
-  const resumen: Resumen = { lotes: 0, eventos: 0, contables: 0, ruido: 0 }
+  const resumen: Resumen = { recoleccion, lotes: 0, eventos: 0, contables: 0, ruido: 0 }
 
   for (const pagina of paginas) {
     const { eventos } = parsearPaginaFeed(pagina.cuerpo)
 
-    almacen.guardarPagina({
+    almacen.guardarCaptura({
+      recoleccion,
       offset: pagina.offset,
       nEventos: eventos.length,
       cuerpo: pagina.cuerpo,
@@ -1689,7 +1835,7 @@ export async function importarVolcado(ruta: string, almacen: Almacen): Promise<R
     }
   }
 
-  comprobarContinuidad(almacen.leerPaginas())
+  comprobarContinuidad(almacen.leerCapturas(recoleccion))
 
   return resumen
 }
