@@ -24,10 +24,19 @@ describe('parsearSerieValores', () => {
     expect(parsearSerieValores(con([['1', '3 ago 2026']]))[0]!.fecha).toBe('2026-08-03')
   })
 
-  it('elimina fechas repetidas quedándose con la primera', () => {
-    const s = parsearSerieValores(con([['100', '3 ago 2026'], ['200', '3 ago 2026']]))
+  it('elimina fechas repetidas con el MISMO valor, sin lanzar', () => {
+    const s = parsearSerieValores(con([['100', '3 ago 2026'], ['100', '3 ago 2026']]))
     expect(s).toHaveLength(1)
     expect(s[0]!.valor).toBe(100)
+  })
+
+  it('lanza si la misma fecha aparece con dos valores distintos, en vez de quedarse con el primero', () => {
+    // Ese número entra directo en el valor del reparto inicial, del que sale
+    // el saldo de partida de un equipo: elegir uno de los dos en silencio
+    // podría falsear esa cifra sin que nadie se entere.
+    expect(() =>
+      parsearSerieValores(con([['100', '3 ago 2026'], ['200', '3 ago 2026']])),
+    ).toThrow(/valor/i)
   })
 
   it('devuelve la serie ordenada cronológicamente', () => {

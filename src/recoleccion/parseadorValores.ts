@@ -40,7 +40,19 @@ export function parsearSerieValores(html: string): PuntoValor[] {
       )
     }
     const fecha = aIso(m[2]!)
-    if (!porFecha.has(fecha)) porFecha.set(fecha, Number(valorCrudo))
+    const valor = Number(valorCrudo)
+    const existente = porFecha.get(fecha)
+    if (existente === undefined) {
+      porFecha.set(fecha, valor)
+    } else if (existente !== valor) {
+      // Una repetición legítima del HTML trae el mismo valor. Dos valores
+      // distintos para la misma fecha no es una repetición: es una anomalía
+      // (dato corregido, o una lectura mal hecha), y quedarse con el primero
+      // en silencio falsearía el valor del reparto inicial que sale de aquí.
+      throw new Error(
+        `la misma fecha trae dos valores distintos en la serie: fecha=${fecha}, valores ${existente} y ${valor}`,
+      )
+    }
   }
 
   if (porFecha.size === 0) throw new SerieVaciaError()

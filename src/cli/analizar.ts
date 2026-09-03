@@ -239,7 +239,12 @@ async function principal(): Promise<void> {
       const pagina = almacen.leerPagina(rutaEquipo(idUc))
       if (!pagina) throw new Error(`falta la plantilla del equipo ${idUc}`)
       capturadaEnAuxiliares.push(pagina.capturadaEn)
-      plantillas.set(idUc, parsearPlantilla(pagina.cuerpo))
+      // `parsearPlantilla` ahora también trae el slug de cada jugador (para
+      // que la Fase 3 pueda buscarlos por nombre), pero el reparto y el
+      // valor de plantilla de este módulo solo necesitan el id: se proyecta
+      // aquí mismo, en la frontera, en vez de propagar el tipo más allá de
+      // lo que este cambio exige.
+      plantillas.set(idUc, parsearPlantilla(pagina.cuerpo).map((j) => j.idJugador))
     }
 
     // Las bajas sin dueño identificable son un dato de entrada que aporta la
