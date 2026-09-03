@@ -159,3 +159,26 @@ Cada página HTML incluye `var _FG_user = {...}` con `balance.current`,
 extrae con una expresión regular sobre el HTML.
 
 **Fórmula verificada:** `maxDebt = balance.current + 0,25 × valor de plantilla`.
+
+## Serie histórica de valores de un jugador
+
+`GET /players/{id}/{slug}` incluye en el HTML la serie completa de valor diario
+como objetos JSON:
+
+```
+{"value":"6792000","date":"3 ago 2026"}
+```
+
+Se extrae con `/\{"value":"(\d+)","date":"([^"]+)"\}/g`. **No hace falta
+navegador ni ejecutar Chart.js**: basta pedir la página con la cookie.
+
+Verificado contra el gráfico de la interfaz: coinciden al euro.
+
+Detalles a tener en cuenta:
+
+- La serie llega a **68 puntos** cuando el gráfico dibuja 66: **hay entradas
+  repetidas**. Hay que deduplicar por fecha y ordenar cronológicamente, no
+  fiarse del orden de aparición.
+- Las fechas vienen en castellano abreviado (`3 ago 2026`), no en ISO.
+- **Los valores están redondeados a millares.** Es el origen del desvío de 800 €
+  al cuadrar el saldo propio. Para exactitud al euro haría falta otra fuente.
