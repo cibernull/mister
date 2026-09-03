@@ -1090,11 +1090,11 @@ export class DiscontinuidadError extends Error {
 export function comprobarContinuidad(capturas: Captura[]): void {
   let esperado = 0
 
-  for (const pagina of paginas) {
-    if (pagina.offset !== esperado) {
-      throw new DiscontinuidadError(esperado, pagina.offset)
+  for (const captura of capturas) {
+    if (captura.offset !== esperado) {
+      throw new DiscontinuidadError(esperado, captura.offset)
     }
-    esperado += pagina.nEventos
+    esperado += captura.nEventos
   }
 }
 ```
