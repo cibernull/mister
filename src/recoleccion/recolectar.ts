@@ -72,12 +72,33 @@ export async function recolectarHistorico(dep: Dependencias): Promise<Resumen> {
 /**
  * Cuenta sin interpretar, para poder guardar el crudo antes de parsearlo.
  *
- * Exige que `data` sea un array: según la API, siempre lo es. Si no lo fuera,
- * es una respuesta con forma inesperada y debe fallar, no contarse como cero
- * eventos —eso se confundiría con un histórico agotado.
+ * El único caso en que falta `data` de forma legítima es el lote final real,
+ * que trae `status: "end"` y ningún campo `data`. Lo que distingue ese caso
+ * de una forma anómala es el `status`, nunca la ausencia de `data` por sí
+ * sola: una sesión caducada (`status: "error"`, p. ej.) tampoco trae `data`,
+ * y contarla como cero eventos la confundiría con el fin del histórico.
+ *
+ * Por eso, ante `status: "end"` se exige además que `data` esté
+ * completamente ausente: si apareciera (aunque fuera vacío) sería una forma
+ * que la API nunca ha producido, y contarla como cero sería descartar en
+ * silencio eventos que pudiera traer.
+ *
+ * Para cualquier otro `status` (incluido "ok"), se exige que `data` sea un
+ * array: si no lo es, es una forma inesperada y debe fallar, no contarse
+ * como cero eventos.
  */
 function contarEventos(cuerpo: string): number {
-  const datos = JSON.parse(cuerpo) as { data?: unknown }
+  const datos = JSON.parse(cuerpo) as { status?: string; data?: unknown }
+
+  if (datos.status === 'end') {
+    if (datos.data !== undefined) {
+      throw new Error(
+        `el lote final ("status":"end") no debería traer "data", y sin embargo lo trae (${JSON.stringify(cuerpo).slice(0, 200)})`,
+      )
+    }
+    return 0
+  }
+
   if (!Array.isArray(datos.data)) {
     throw new Error(
       `la respuesta del feed no tiene la forma esperada: falta el array "data" (${JSON.stringify(cuerpo).slice(0, 200)})`,

@@ -13,18 +13,22 @@ const ruido = (n: number) =>
     })),
   })
 
-const vacio = JSON.stringify({ status: 'ok', data: [] })
+/** Lote final real: `status: "end"`, sin campo `data` en absoluto. */
+const fin = JSON.stringify({ status: 'end' })
+
+/** Sesión caducada a mitad de recorrido: 401, sin campo `data`. No es un fin de histórico. */
+const expirada = JSON.stringify({ status: 'error', popup: false })
 
 /** Cliente falso que sirve lotes por offset. */
 function clienteCon(lotes: Record<number, string>): Cliente {
-  return { async pedirLote(offset: number) { return lotes[offset] ?? vacio } }
+  return { async pedirLote(offset: number) { return lotes[offset] ?? fin } }
 }
 
 describe('recolectarHistorico', () => {
   it('recorre hasta agotar el histórico', async () => {
     const almacen = abrirAlmacen(':memory:')
     const resumen = await recolectarHistorico({
-      cliente: clienteCon({ 0: ruido(21), 21: ruido(21), 42: vacio }),
+      cliente: clienteCon({ 0: ruido(21), 21: ruido(21), 42: fin }),
       almacen,
       recoleccion: 'r1',
     })
@@ -38,7 +42,7 @@ describe('recolectarHistorico', () => {
   it('guarda el cuerpo crudo y el número de eventos de cada lote', async () => {
     const almacen = abrirAlmacen(':memory:')
     await recolectarHistorico({
-      cliente: clienteCon({ 0: ruido(21), 21: vacio }),
+      cliente: clienteCon({ 0: ruido(21), 21: fin }),
       almacen,
       recoleccion: 'r1',
     })
@@ -52,7 +56,7 @@ describe('recolectarHistorico', () => {
   it('cuenta eventos contables y ruido por separado', async () => {
     const almacen = abrirAlmacen(':memory:')
     const resumen = await recolectarHistorico({
-      cliente: clienteCon({ 0: ruido(3), 3: vacio }),
+      cliente: clienteCon({ 0: ruido(3), 3: fin }),
       almacen,
     })
 
@@ -110,7 +114,7 @@ describe('recolectarHistorico', () => {
     expect(conLimite.agotado).toBe(false)
 
     const completo = await recolectarHistorico({
-      cliente: clienteCon({ 0: ruido(21), 21: vacio }),
+      cliente: clienteCon({ 0: ruido(21), 21: fin }),
       almacen,
       recoleccion: 'completo',
     })
@@ -127,6 +131,57 @@ describe('recolectarHistorico', () => {
     ).rejects.toThrow(/forma esperada/i)
 
     // No debe haberse guardado como si tuviera 0 eventos y tratado como fin de histórico.
+    expect(almacen.leerCapturas('r1')).toHaveLength(0)
+    almacen.cerrar()
+  })
+
+  it('termina limpiamente al llegar al lote final real ("status":"end", sin "data"), y lo guarda con nEventos: 0', async () => {
+    const almacen = abrirAlmacen(':memory:')
+    const resumen = await recolectarHistorico({
+      cliente: clienteCon({ 0: ruido(21), 21: fin }),
+      almacen,
+      recoleccion: 'r1',
+    })
+
+    expect(resumen.agotado).toBe(true)
+    expect(resumen.lotes).toBe(2)
+
+    const capturas = almacen.leerCapturas('r1')
+    expect(capturas).toHaveLength(2)
+    const ultima = capturas[1]!
+    expect(ultima.offset).toBe(21)
+    expect(ultima.cuerpo).toBe(fin)
+    expect(ultima.nEventos).toBe(0)
+    almacen.cerrar()
+  })
+
+  it('falla si un lote intermedio devuelve "status":"error" (sesión caducada), en vez de darse por terminada', async () => {
+    const almacen = abrirAlmacen(':memory:')
+
+    await expect(
+      recolectarHistorico({
+        cliente: clienteCon({ 0: ruido(21), 21: expirada }),
+        almacen,
+        recoleccion: 'r1',
+      }),
+    ).rejects.toThrow()
+
+    // El primer lote, legítimo, ya quedó guardado; el fallo no debe leerse
+    // como un histórico agotado.
+    const capturas = almacen.leerCapturas('r1')
+    expect(capturas).toHaveLength(1)
+    expect(capturas[0]!.offset).toBe(0)
+    almacen.cerrar()
+  })
+
+  it('falla si el lote final ("status":"end") trae, contra lo esperado, un campo "data"', async () => {
+    const almacen = abrirAlmacen(':memory:')
+    const finConDataInesperada = JSON.stringify({ status: 'end', data: [] })
+
+    await expect(
+      recolectarHistorico({ cliente: clienteCon({ 0: finConDataInesperada }), almacen, recoleccion: 'r1' }),
+    ).rejects.toThrow()
+
     expect(almacen.leerCapturas('r1')).toHaveLength(0)
     almacen.cerrar()
   })
