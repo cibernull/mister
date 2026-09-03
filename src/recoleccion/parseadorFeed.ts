@@ -53,7 +53,6 @@ export class OperacionDesconocidaError extends Error {
 
 /** Categorías sin efecto contable, ignoradas a conciencia y de forma explícita. */
 const CATEGORIAS_RUIDO = new Set([
-  'player_transfer', // fichaje de LaLiga real, no de la liga Fantasy
   'post',
   'blog',
   'news_md',
@@ -124,11 +123,18 @@ function parsearEvento(bruto: EventoBruto): Evento[] {
   const fecha = exigirTexto(bruto.created, 'created', contextoEvento(bruto))
 
   if (categoria === 'transfer') {
-    return exigirMovimientos(bruto.data, fecha).map((m) => parsearTransaccion(m, fecha, bruto.id))
+    return exigirMovimientos(bruto.data, fecha, 'transfer').map((m) => parsearTransaccion(m, fecha, bruto.id))
   }
 
   if (categoria === 'gameweek_end') {
     return [parsearCierreJornada(bruto.data, fecha, bruto.id)]
+  }
+
+  if (categoria === 'player_transfer') {
+    const idEvento = exigirEntero(bruto.id, 'id', contextoEvento(bruto))
+    return exigirMovimientos(bruto.data, fecha, 'player_transfer').map((m) =>
+      parsearMovimientoDeLaLiga(m, fecha, idEvento),
+    )
   }
 
   if (CATEGORIAS_RUIDO.has(categoria)) {
@@ -146,16 +152,16 @@ function parsearEvento(bruto: EventoBruto): Evento[] {
 }
 
 /**
- * Exige que `data` de un evento `transfer` sea una lista de movimientos no
- * vacía. Una forma inesperada (ausente, objeto, vacía) debe lanzar: un
- * `transfer` sin ningún movimiento no es legítimo, y degradar a cero
- * transacciones perdería dinero en silencio.
+ * Exige que `data` de un evento `transfer` o `player_transfer` sea una lista
+ * de movimientos no vacía. Una forma inesperada (ausente, objeto, vacía) debe
+ * lanzar: un evento sin ningún movimiento no es legítimo, y degradar a cero
+ * movimientos perdería dinero (o una baja de plantilla) en silencio.
  */
-function exigirMovimientos(valor: unknown, fecha: string): Record<string, unknown>[] {
+function exigirMovimientos(valor: unknown, fecha: string, categoria: string): Record<string, unknown>[] {
   if (!Array.isArray(valor) || valor.length === 0) {
     throw new Error(
-      `evento transfer (${fecha}): "data" no es una lista de movimientos, o está vacía; ` +
-        `un transfer sin movimientos no es legítimo`,
+      `evento ${categoria} (${fecha}): "data" no es una lista de movimientos, o está vacía; ` +
+        `un ${categoria} sin movimientos no es legítimo`,
     )
   }
   return valor as Record<string, unknown>[]
@@ -230,6 +236,32 @@ function parsearTransaccion(m: Record<string, unknown>, fecha: string, idEventoC
     idTransfer: exigirEntero(m['id_transfer'], 'id_transfer', contexto),
     idEvento: exigirEntero(idEventoCrudo, 'id', contexto),
     idJugador: exigirEntero(m['id'], 'id', contexto),
+  }
+}
+
+/**
+ * Un fichaje de LaLiga real. Si el jugador se queda sin equipo, abandona la
+ * competición: eso sí afecta a las plantillas de la liga Fantasy.
+ */
+function parsearMovimientoDeLaLiga(
+  m: Record<string, unknown>,
+  fecha: string,
+  idEvento: number,
+): Evento {
+  const idEquipo = m['id_team']
+  const sinEquipo = idEquipo === null || idEquipo === undefined || Number(idEquipo) === 0
+
+  if (!sinEquipo) {
+    return { tipo: 'ruido', idEvento, fecha, motivo: 'fichaje de LaLiga entre clubes' }
+  }
+
+  const contexto = `idEvento=${idEvento}`
+  return {
+    tipo: 'bajaPlantilla',
+    idEvento,
+    fecha,
+    idJugador: exigirEntero(m['id'], 'id', contexto),
+    jugador: exigirTexto(m['name'], 'name', contexto),
   }
 }
 

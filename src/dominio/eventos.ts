@@ -71,7 +71,20 @@ export type Ruido = {
   motivo: string
 }
 
-export type Evento = Transaccion | CierreJornada | Ruido
+/**
+ * Un jugador abandona la competición y desaparece de la plantilla de quien lo
+ * tuviera, sin compensación ni movimiento de mercado. No mueve dinero, pero sí
+ * determina qué jugadores formaban parte de un reparto inicial.
+ */
+export type BajaPlantilla = {
+  tipo: 'bajaPlantilla'
+  idEvento: number
+  fecha: string
+  idJugador: number
+  jugador: string
+}
+
+export type Evento = Transaccion | CierreJornada | BajaPlantilla | Ruido
 
 /** Un evento es contable si mueve dinero de algún equipo. */
 export function esContable(e: Evento): e is Transaccion | CierreJornada {

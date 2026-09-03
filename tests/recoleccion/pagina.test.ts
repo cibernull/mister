@@ -3,11 +3,17 @@ import { abrirAlmacen } from '../../src/almacen/crudo.js'
 import { contarEventosBrutos, procesarPagina } from '../../src/recoleccion/pagina.js'
 import type { Resumen } from '../../src/recoleccion/pagina.js'
 
+/**
+ * `post` es ruido genérico que no inspecciona su `data`; sirve aquí solo para
+ * generar volumen. `player_transfer` ya no vale para esto: desde la Tarea 2,
+ * un `player_transfer` sin equipo es una baja de plantilla y exige que su
+ * `data` sea una lista de movimientos real.
+ */
 const ruido = (n: number) =>
   JSON.stringify({
     status: 'ok',
     data: Array.from({ length: n }, (_, i) => ({
-      category: 'player_transfer',
+      category: 'post',
       created: '2026-09-01 10:00:00',
       id: 1_000_000 + i,
       data: {},

@@ -33,6 +33,14 @@ const ruido: Evento = {
   motivo: 'fichaje de LaLiga real',
 }
 
+const bajaPlantilla: Evento = {
+  tipo: 'bajaPlantilla',
+  idEvento: 952080285,
+  fecha: '2026-08-10T22:06:12Z',
+  idJugador: 19977,
+  jugador: 'Ronald Araújo',
+}
+
 describe('esContable', () => {
   it('considera contable una transacción', () => {
     expect(esContable(transaccion)).toBe(true)
@@ -44,5 +52,9 @@ describe('esContable', () => {
 
   it('no considera contable el ruido', () => {
     expect(esContable(ruido)).toBe(false)
+  })
+
+  it('no considera contable una baja de plantilla: no mueve dinero', () => {
+    expect(esContable(bajaPlantilla)).toBe(false)
   })
 })
