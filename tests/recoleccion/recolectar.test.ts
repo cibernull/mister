@@ -4,11 +4,17 @@ import { RecoleccionIncompletaError } from '../../src/recoleccion/integridad.js'
 import { recolectarHistorico } from '../../src/recoleccion/recolectar.js'
 import type { Cliente } from '../../src/recoleccion/cliente.js'
 
+/**
+ * `post` es ruido genérico que no inspecciona su `data`; sirve aquí solo para
+ * generar volumen. `player_transfer` ya no vale para esto: desde la Tarea 2,
+ * un `player_transfer` sin equipo es una baja de plantilla y exige que su
+ * `data` sea una lista de movimientos real.
+ */
 const ruido = (n: number) =>
   JSON.stringify({
     status: 'ok',
     data: Array.from({ length: n }, (_, i) => ({
-      category: 'player_transfer',
+      category: 'post',
       created: '2026-09-01 10:00:00',
       id: 1_000_000 + i,
       data: {},
@@ -36,6 +42,7 @@ const transferConDosMovimientos = JSON.stringify({
       id: 42,
       data: [
         {
+          id: 101,
           id_transfer: 1,
           id_uc_from: 0,
           id_uc_to: 10,
@@ -46,6 +53,7 @@ const transferConDosMovimientos = JSON.stringify({
           name: 'Jugador 1',
         },
         {
+          id: 102,
           id_transfer: 2,
           id_uc_from: 10,
           id_uc_to: 20,
@@ -62,7 +70,10 @@ const transferConDosMovimientos = JSON.stringify({
 
 /** Cliente falso que sirve lotes por offset. */
 function clienteCon(lotes: Record<number, string>): Cliente {
-  return { async pedirLote(offset: number) { return lotes[offset] ?? fin } }
+  return {
+    async pedirLote(offset: number) { return lotes[offset] ?? fin },
+    async pedirPagina() { throw new Error('no usado') },
+  }
 }
 
 describe('recolectarHistorico', () => {
@@ -233,6 +244,7 @@ describe('recolectarHistorico', () => {
         if (offset === 0) return transferConDosMovimientos
         return fin
       },
+      async pedirPagina() { throw new Error('no usado') },
     }
 
     const resumen = await recolectarHistorico({ cliente, almacen, recoleccion: 'r1' })

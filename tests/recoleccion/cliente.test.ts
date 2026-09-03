@@ -82,6 +82,42 @@ describe('cliente del feed', () => {
     expect(f).toHaveBeenCalledTimes(3)
   })
 
+  it('un rechazo de fetch que NO es una instancia de Error también se reintenta, y el mensaje final sigue siendo útil', async () => {
+    // `fetch` puede rechazar con cualquier valor, no solo un Error (p. ej. un
+    // string, o incluso null): `(causa as Error).message` en ese caso da
+    // `undefined` en vez de lanzar, y con causa `null` directamente lanza un
+    // TypeError ajeno que rompería el reintento de una forma distinta a la
+    // esperada. La coerción defensiva (`causa instanceof Error ? causa.message
+    // : String(causa)`) cubre ambos casos.
+    const f = vi.fn().mockRejectedValueOnce('ENOTFOUND mister.mundodeportivo.com').mockResolvedValueOnce(respuesta('{"ok":1}'))
+    expect(await cliente(f).pedirLote(3)).toBe('{"ok":1}')
+    expect(f).toHaveBeenCalledTimes(2)
+  })
+
+  it('si todos los intentos fallan por una causa que no es un Error, el mensaje final la incluye y encadena la causa original', async () => {
+    const f = vi.fn().mockRejectedValue('ENOTFOUND mister.mundodeportivo.com')
+    let error: Error | undefined
+    try {
+      await cliente(f).pedirLote(7)
+    } catch (e) {
+      error = e as Error
+    }
+    expect(error).toBeDefined()
+    expect(error?.message).toMatch(/7/)
+    expect(error?.message).toMatch(/ENOTFOUND/)
+    expect(error?.cause).toBe('ENOTFOUND mister.mundodeportivo.com')
+    expect(f).toHaveBeenCalledTimes(3)
+  })
+
+  it('un rechazo de fetch con causa null no rompe el reintento con un TypeError ajeno', async () => {
+    // `(causa as Error).message` con `causa === null` lanza un TypeError al
+    // acceder a una propiedad de null — un fallo distinto del que el bucle de
+    // reintentos espera manejar. La coerción defensiva evita ese TypeError.
+    const f = vi.fn().mockRejectedValueOnce(null).mockResolvedValueOnce(respuesta('{"ok":1}'))
+    expect(await cliente(f).pedirLote(3)).toBe('{"ok":1}')
+    expect(f).toHaveBeenCalledTimes(2)
+  })
+
   it('no reintenta ante un 401 y avisa de las credenciales', async () => {
     const f = vi.fn(async () => respuesta('{"status":"error"}', 401))
     await expect(cliente(f).pedirLote(0)).rejects.toThrow(/credencial|sesión/i)

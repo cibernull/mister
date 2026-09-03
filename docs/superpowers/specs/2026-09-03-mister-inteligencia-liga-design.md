@@ -382,3 +382,98 @@ maquetación, que es justo lo frágil.
 Pujar o realizar cualquier operación en Mister; la aplicación es de solo
 lectura. Tampoco: distribución a terceros, aplicación móvil, notificaciones,
 predicción de puntos ni recomendaciones de alineación.
+
+---
+
+## Requisito añadido: refresco bajo demanda (2026-09-03)
+
+> "Es importante que yo en tiempo real pueda ver en todo momento cuánto dinero
+> tiene cada uno, y si alguien vende o ficha y vuelvo a refrescar, que me vuelva
+> a calcular todo."
+
+**Qué significa en la práctica.** No hace falta un proceso permanente ni avisos
+automáticos: basta con que **refrescar recalcule todo desde cero** con los datos
+del momento. El coste de un refresco completo es asumible —el histórico entero
+son 16 lotes, unos 16 segundos con el ritmo de una petición por segundo— así que
+no hace falta recolección incremental para cumplirlo.
+
+**Qué implica para el diseño:**
+
+- La orden de análisis debe poder **recolectar y recalcular en una sola
+  ejecución**, no solo leer lo ya guardado.
+- Las **plantillas actuales** y el **valor de mercado de hoy** cambian a diario,
+  así que su caché no puede ser permanente como la de los valores históricos: un
+  valor de una fecha pasada nunca cambia, pero el de hoy sí. Hay que distinguir
+  ambas cosas o el refresco devolverá cifras viejas.
+- El **panel de la Fase 3** se sirve de esa orden: al recargar la página,
+  recolecta, recalcula y pinta.
+
+Es un requisito de la Fase 3, pero condiciona la Fase 2: la caché de páginas
+auxiliares debe poder invalidarse.
+
+---
+
+## Alcance de la Fase 3, ampliado por el usuario (2026-09-03)
+
+Deja de ser "un panel" para ser **un módulo de apoyo al juego**, con varias
+piezas. Lo pedido, en sus palabras:
+
+### 1. Buscador de equipo
+
+Filtrar por nombre y ver **todo** de ese equipo: los fichajes que ha hecho, lo
+que ha ganado o perdido con cada jugador, el total, su saldo de hoy y su tope de
+puja.
+
+### 2. Módulo de viabilidad de un fichaje
+
+Escribir el nombre de un futbolista y obtener su valor de mercado ahora mismo y,
+sobre todo, **qué equipos podrían ficharlo hoy**. En sus palabras: *"pongo
+Mbappé y tú me dices: Mbappé vale 24 millones; hoy solo podrían ficharlo estos
+equipos"*.
+
+Lo que hace esto calculable es la fórmula ya verificada:
+`tope de puja = saldo + 0,25 × valor de plantilla`. Un equipo puede ficharlo si
+su tope supera el precio, sea la cláusula o lo que costaría en el mercado.
+
+### 3. Búsqueda y estadísticas de jugadores
+
+Buscar cualquier jugador y ver sus datos y su evolución. La serie diaria de valor
+ya es accesible desde su ficha, así que el dato está.
+
+### 4. Ranking de equipos
+
+Por puntos y por capacidad de compra.
+
+### 5. Recolección incremental — el requisito técnico que condiciona todo
+
+> "Que la próxima vez que vuelva a mirar, solo mire el histórico desde el último
+> día que se actualizó hasta hoy, para no tener que buscar siempre el histórico.
+> Tienes que mirar siempre desde qué día y hora exactamente para luego seguir
+> desde el mismo punto."
+
+**Cómo se hace, y por qué es viable.** El feed se sirve de lo más reciente a lo
+más antiguo, así que un recorrido incremental **avanza hasta reconocer el primer
+evento ya conocido y para ahí**. Guardando el `id_transfer` y el `id` de evento
+más recientes de cada recolección, la siguiente solo pide los lotes necesarios:
+con un puñado de movimientos nuevos al día, eso es **un lote en vez de dieciséis**.
+
+**Lo que hay que cuidar, y no es menor:**
+
+- El feed **repite eventos entre lotes contiguos** porque crece por arriba. Un
+  recorrido incremental que pare "al ver algo conocido" puede pararse demasiado
+  pronto si topa con una repetición. Hay que parar por **identificador de evento
+  ya almacenado**, no por posición.
+- Los **valores de mercado y las plantillas cambian a diario** aunque no haya
+  movimientos: el histórico incremental ahorra pedir el feed, pero esos datos hay
+  que refrescarlos igual.
+- La contabilidad se **recalcula entera** desde el crudo acumulado. Lo
+  incremental es la recolección, no el cálculo: recalcular es barato y así un
+  error de interpretación se corrige reprocesando, sin volver a pedir nada.
+
+### Sobre el rendimiento
+
+El usuario pide que "sea muy rentable y que funcione muy bien". Las cifras de
+hoy: el histórico completo son 16 peticiones, y las fichas de jugador ~130 —
+pero estas últimas solo cambian de valor, y su serie histórica no cambia nunca
+hacia atrás. Con la recolección incremental y la caché con caducidad, un refresco
+típico debería quedarse en unas pocas peticiones.

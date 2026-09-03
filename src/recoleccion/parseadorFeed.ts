@@ -53,7 +53,6 @@ export class OperacionDesconocidaError extends Error {
 
 /** Categorías sin efecto contable, ignoradas a conciencia y de forma explícita. */
 const CATEGORIAS_RUIDO = new Set([
-  'player_transfer', // fichaje de LaLiga real, no de la liga Fantasy
   'post',
   'blog',
   'news_md',
@@ -124,11 +123,18 @@ function parsearEvento(bruto: EventoBruto): Evento[] {
   const fecha = exigirTexto(bruto.created, 'created', contextoEvento(bruto))
 
   if (categoria === 'transfer') {
-    return exigirMovimientos(bruto.data, fecha).map((m) => parsearTransaccion(m, fecha, bruto.id))
+    return exigirMovimientos(bruto.data, fecha, 'transfer').map((m) => parsearTransaccion(m, fecha, bruto.id))
   }
 
   if (categoria === 'gameweek_end') {
     return [parsearCierreJornada(bruto.data, fecha, bruto.id)]
+  }
+
+  if (categoria === 'player_transfer') {
+    const idEvento = exigirEntero(bruto.id, 'id', contextoEvento(bruto))
+    return exigirMovimientos(bruto.data, fecha, 'player_transfer').map((m) =>
+      parsearMovimientoDeLaLiga(m, fecha, idEvento),
+    )
   }
 
   if (CATEGORIAS_RUIDO.has(categoria)) {
@@ -146,16 +152,16 @@ function parsearEvento(bruto: EventoBruto): Evento[] {
 }
 
 /**
- * Exige que `data` de un evento `transfer` sea una lista de movimientos no
- * vacía. Una forma inesperada (ausente, objeto, vacía) debe lanzar: un
- * `transfer` sin ningún movimiento no es legítimo, y degradar a cero
- * transacciones perdería dinero en silencio.
+ * Exige que `data` de un evento `transfer` o `player_transfer` sea una lista
+ * de movimientos no vacía. Una forma inesperada (ausente, objeto, vacía) debe
+ * lanzar: un evento sin ningún movimiento no es legítimo, y degradar a cero
+ * movimientos perdería dinero (o una baja de plantilla) en silencio.
  */
-function exigirMovimientos(valor: unknown, fecha: string): Record<string, unknown>[] {
+function exigirMovimientos(valor: unknown, fecha: string, categoria: string): Record<string, unknown>[] {
   if (!Array.isArray(valor) || valor.length === 0) {
     throw new Error(
-      `evento transfer (${fecha}): "data" no es una lista de movimientos, o está vacía; ` +
-        `un transfer sin movimientos no es legítimo`,
+      `evento ${categoria} (${fecha}): "data" no es una lista de movimientos, o está vacía; ` +
+        `un ${categoria} sin movimientos no es legítimo`,
     )
   }
   return valor as Record<string, unknown>[]
@@ -229,6 +235,80 @@ function parsearTransaccion(m: Record<string, unknown>, fecha: string, idEventoC
     operacion: operacion as TipoOperacion,
     idTransfer: exigirEntero(m['id_transfer'], 'id_transfer', contexto),
     idEvento: exigirEntero(idEventoCrudo, 'id', contexto),
+    idJugador: exigirEntero(m['id'], 'id', contexto),
+  }
+}
+
+/**
+ * Decide si un `player_transfer` es una baja de plantilla (sin equipo) o
+ * ruido (fichaje de LaLiga entre clubes), a partir de `id_team`.
+ *
+ * Las tres únicas formas legítimas observadas en el histórico real: `null`,
+ * ausente, o un entero NO NEGATIVO (`0` es "sin equipo"; un entero positivo
+ * es un fichaje entre clubes). Cualquier otra forma lanza — no se resuelve
+ * por coacción con `Number(x)`, porque `Number([])` es `0` (clasificaría un
+ * array como baja falsa) y `Number("N/A")` es `NaN` (ni `=== 0` ni verdadero
+ * en ninguna comparación, así que el evento se perdería como ruido en
+ * silencio). Una cadena numérica como `"0"` tampoco es una de las tres
+ * formas observadas — Mister nunca la manda así — y un decimal tampoco es
+ * un entero: ambas lanzan en vez de truncarse o coaccionarse. Un entero
+ * negativo tampoco es una de las tres formas legítimas — no existe un
+ * `id_team` negativo real — y clasificarlo como ruido por pasar
+ * `Number.isInteger` sin más contradiría este mismo contrato.
+ */
+function esBajaDePlantilla(idEquipo: unknown, contexto: string): boolean {
+  if (idEquipo === null || idEquipo === undefined) return true
+  if (esEnteroNoNegativo(idEquipo)) return idEquipo === 0
+  // Se informa del propio valor de `id_team` (no del movimiento entero: ese
+  // sí podría traer datos personales, ver `idMovimiento`), recortado por si
+  // fuera un array u objeto grande.
+  throw new Error(
+    `id_team no es null, ausente, ni un entero no negativo: tipo ${typeof idEquipo}, valor ${JSON.stringify(idEquipo).slice(0, 200)} (${contexto})`,
+  )
+}
+
+/**
+ * Réplica local de `exigirEnteroNoNegativo` (`src/almacen/crudo.ts`), en
+ * forma de predicado en vez de función que exige y lanza: aquí un entero
+ * negativo es una forma más de `id_team` que cae en la rama de "forma
+ * inesperada" ya existente, no un caso que deba lanzar por su cuenta.
+ *
+ * No se importa la de `crudo.ts`: es una función privada (no exportada) de
+ * la capa de almacenamiento, pensada para validar los campos que persiste
+ * esa capa (`offset`, `nEventos`). Exportarla desde allí para que la use el
+ * parseador acoplaría una regla de negocio del feed (la forma de `id_team`)
+ * a un detalle interno del almacén, con el que no comparte más que la
+ * casualidad de ambos siendo "entero no negativo": un cambio futuro en esa
+ * función por motivos de almacenamiento alteraría el parseo del feed sin
+ * que nadie lo esperase. Duplicar esta única comprobación de una línea es
+ * más barato que esa dependencia.
+ */
+function esEnteroNoNegativo(valor: unknown): valor is number {
+  return Number.isInteger(valor) && (valor as number) >= 0
+}
+
+/**
+ * Un fichaje de LaLiga real. Si el jugador se queda sin equipo, abandona la
+ * competición: eso sí afecta a las plantillas de la liga Fantasy.
+ */
+function parsearMovimientoDeLaLiga(
+  m: Record<string, unknown>,
+  fecha: string,
+  idEvento: number,
+): Evento {
+  const contexto = `idEvento=${idEvento}`
+  const sinEquipo = esBajaDePlantilla(m['id_team'], contexto)
+
+  if (!sinEquipo) {
+    return { tipo: 'ruido', idEvento, fecha, motivo: 'fichaje de LaLiga entre clubes' }
+  }
+
+  return {
+    tipo: 'bajaPlantilla',
+    idEvento,
+    fecha,
+    idJugador: exigirEntero(m['id'], 'id', contexto),
+    jugador: exigirTexto(m['name'], 'name', contexto),
   }
 }
 
@@ -306,6 +386,7 @@ function parsearCierreJornada(datos: unknown, fecha: string, idEventoCrudo: unkn
     idEvento: exigirEntero(idEventoCrudo, 'id', `fecha=${fecha}`),
     fecha,
     jornada: exigirEntero(d['gameweek'], 'gameweek', `fecha=${fecha}`),
+    idJornada: exigirEntero(d['id_gameweek'], 'id_gameweek', `fecha=${fecha}`),
     resultados,
   }
 }

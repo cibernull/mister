@@ -930,7 +930,6 @@ git commit -m "feat: parseadores de plantilla y de la serie histórica de valore
 - Modificar: `src/recoleccion/cliente.ts` (añadir `pedirPagina`)
 - Modificar: `src/almacen/esquema.ts` y `src/almacen/crudo.ts` (tabla de páginas)
 - Crear: `src/recoleccion/auxiliares.ts`
-- Crear: `src/cli/auxiliares.ts`
 - Crear: `tests/recoleccion/auxiliares.test.ts`
 - Modificar: `package.json`
 
@@ -941,12 +940,28 @@ git commit -m "feat: parseadores de plantilla y de la serie histórica de valore
   - En `Almacen`: `guardarPagina(p: PaginaGuardada): void`, `leerPagina(ruta: string): PaginaGuardada | null`, `rutasGuardadas(): string[]`
   - `type PaginaGuardada = { ruta: string; cuerpo: string; capturadaEn: string }`
   - `async function recolectarAuxiliares(dep: DependenciasAux): Promise<ResumenAux>`
-  - `type DependenciasAux = { cliente: Cliente; almacen: Almacen; idsUc: number[]; idsJugador: number[] }`
+  - `type DependenciasAux = { cliente: Cliente; almacen: Almacen; idsUc: number[]; idsJugador: number[]; maxEdadMs?: number; ahora?: () => number }`
   - `type ResumenAux = { plantillas: number; jugadores: number; yaEnCache: number }`
 
-Las páginas se guardan crudas y **se reutilizan si ya están**: son ~130 fichas
-de jugador, y volver a pedirlas en cada análisis castigaría el servidor sin
-motivo. La capa cruda mantiene su regla: nada se sobrescribe en silencio.
+`maxEdadMs` por defecto es **12 horas**. Una captura más vieja se vuelve a
+pedir; una más reciente se reutiliza. `ahora` se inyecta para poder probar la
+caducidad sin esperar.
+
+Las páginas se guardan crudas y **se reutilizan mientras sigan frescas**: son
+~130 fichas de jugador, y volver a pedirlas en cada análisis castigaría el
+servidor sin motivo.
+
+**Pero el usuario necesita refrescar y que se recalcule todo**, y hay dos clases
+de dato con caducidades muy distintas:
+
+- El **valor de un jugador en una fecha pasada** no cambia nunca.
+- La **plantilla actual** de un equipo y el **valor de hoy** cambian con cada
+  fichaje.
+
+Por eso la caché lleva **edad máxima**, y la tabla guarda una fila por captura
+—clave `(ruta, capturada_en)`— en vez de una por ruta. Así el refresco **añade
+una versión nueva** en lugar de sobrescribir, y la capa cruda mantiene su regla:
+nada se pierde. `leerPagina` devuelve siempre la captura más reciente.
 
 - [ ] **Paso 1: Escribir el test**
 
@@ -991,12 +1006,45 @@ describe('recolectarAuxiliares', () => {
     a.cerrar()
   })
 
-  it('no vuelve a pedir una página ya guardada', async () => {
+  it('no vuelve a pedir una página guardada que sigue fresca', async () => {
     const a = abrirAlmacen(':memory:'), c = clienteFalso()
     await recolectarAuxiliares({ cliente: c, almacen: a, idsUc: [1], idsJugador: [] })
     const r = await recolectarAuxiliares({ cliente: c, almacen: a, idsUc: [1], idsJugador: [] })
     expect(c.pedidas).toHaveLength(1)
     expect(r.yaEnCache).toBe(1)
+    a.cerrar()
+  })
+
+  it('vuelve a pedir una página cuya captura ha caducado', async () => {
+    const a = abrirAlmacen(':memory:'), c = clienteFalso()
+    let t = Date.parse('2026-09-03T10:00:00Z')
+    const ahora = () => t
+    await recolectarAuxiliares({ cliente: c, almacen: a, idsUc: [1], idsJugador: [], ahora })
+    t += 13 * 60 * 60 * 1000   // trece horas después
+    const r = await recolectarAuxiliares({ cliente: c, almacen: a, idsUc: [1], idsJugador: [], ahora })
+    expect(c.pedidas).toHaveLength(2)
+    expect(r.plantillas).toBe(1)
+    expect(r.yaEnCache).toBe(0)
+    a.cerrar()
+  })
+
+  it('respeta una edad máxima explícita', async () => {
+    const a = abrirAlmacen(':memory:'), c = clienteFalso()
+    let t = Date.parse('2026-09-03T10:00:00Z')
+    const ahora = () => t
+    await recolectarAuxiliares({ cliente: c, almacen: a, idsUc: [1], idsJugador: [], ahora, maxEdadMs: 60_000 })
+    t += 61_000
+    await recolectarAuxiliares({ cliente: c, almacen: a, idsUc: [1], idsJugador: [], ahora, maxEdadMs: 60_000 })
+    expect(c.pedidas).toHaveLength(2)
+    a.cerrar()
+  })
+
+  it('lanza si una captura guardada tiene la fecha ilegible', async () => {
+    const a = abrirAlmacen(':memory:')
+    a.guardarPagina({ ruta: '/users/1/x', cuerpo: 'x', capturadaEn: 'no es una fecha' })
+    await expect(
+      recolectarAuxiliares({ cliente: clienteFalso(), almacen: a, idsUc: [1], idsJugador: [] }),
+    ).rejects.toThrow(/ilegible/i)
     a.cerrar()
   })
 
@@ -1083,11 +1131,17 @@ En `src/almacen/esquema.ts`, añadir al SQL:
 
 ```sql
 CREATE TABLE IF NOT EXISTS paginas (
-  ruta         TEXT PRIMARY KEY,
+  id           INTEGER PRIMARY KEY AUTOINCREMENT,
+  ruta         TEXT NOT NULL,
   cuerpo       TEXT NOT NULL,
-  capturada_en TEXT NOT NULL
+  capturada_en TEXT NOT NULL,
+  UNIQUE (ruta, capturada_en)
 );
+CREATE INDEX IF NOT EXISTS idx_paginas_ruta ON paginas (ruta, capturada_en DESC);
 ```
+
+La clave es el par `(ruta, capturada_en)`, no la ruta: un refresco **añade** una
+captura nueva sin destruir la anterior.
 
 En `src/almacen/crudo.ts`, añadir el tipo y las tres operaciones:
 
@@ -1116,10 +1170,12 @@ dentro de `abrirAlmacen`, las sentencias:
   const insertarPagina = db.prepare(
     `INSERT INTO paginas (ruta, cuerpo, capturada_en) VALUES (@ruta, @cuerpo, @capturadaEn)`,
   )
+  // La más reciente de esa ruta.
   const seleccionarPagina = db.prepare(
-    `SELECT ruta, cuerpo, capturada_en AS capturadaEn FROM paginas WHERE ruta = ?`,
+    `SELECT ruta, cuerpo, capturada_en AS capturadaEn FROM paginas
+     WHERE ruta = ? ORDER BY capturada_en DESC LIMIT 1`,
   )
-  const listarRutas = db.prepare(`SELECT ruta FROM paginas ORDER BY ruta`)
+  const listarRutas = db.prepare(`SELECT DISTINCT ruta FROM paginas ORDER BY ruta`)
 ```
 
 y los tres métodos del objeto devuelto:
@@ -1129,6 +1185,8 @@ y los tres métodos del objeto devuelto:
       try {
         insertarPagina.run(p)
       } catch (e) {
+        // Solo colisiona si se guarda dos veces la MISMA ruta en el MISMO
+        // instante; un refresco posterior añade una captura nueva sin chocar.
         if (esViolacionDeUnicidad(e)) throw new PaginaDuplicadaError(p.ruta)
         throw e
       }
@@ -1162,12 +1220,28 @@ describe('páginas guardadas', () => {
     a.cerrar()
   })
 
-  it('rechaza guardar dos veces la misma ruta', () => {
+  it('rechaza guardar la misma ruta en el mismo instante', () => {
     const a = abrirAlmacen(':memory:')
     const p = { ruta: '/players/1/x', cuerpo: 'primero', capturadaEn: '2026-09-03T10:00:00Z' }
     a.guardarPagina(p)
     expect(() => a.guardarPagina({ ...p, cuerpo: 'segundo' })).toThrow(PaginaDuplicadaError)
     expect(a.leerPagina('/players/1/x')!.cuerpo).toBe('primero')
+    a.cerrar()
+  })
+
+  it('un refresco añade una captura nueva sin destruir la anterior', () => {
+    const a = abrirAlmacen(':memory:')
+    a.guardarPagina({ ruta: '/players/1/x', cuerpo: 'de ayer', capturadaEn: '2026-09-02T10:00:00Z' })
+    a.guardarPagina({ ruta: '/players/1/x', cuerpo: 'de hoy', capturadaEn: '2026-09-03T10:00:00Z' })
+    expect(a.leerPagina('/players/1/x')!.cuerpo).toBe('de hoy')
+    a.cerrar()
+  })
+
+  it('no repite la ruta al listarla aunque tenga varias capturas', () => {
+    const a = abrirAlmacen(':memory:')
+    a.guardarPagina({ ruta: '/a', cuerpo: 'x', capturadaEn: '2026-09-02T10:00:00Z' })
+    a.guardarPagina({ ruta: '/a', cuerpo: 'y', capturadaEn: '2026-09-03T10:00:00Z' })
+    expect(a.rutasGuardadas()).toEqual(['/a'])
     a.cerrar()
   })
 
@@ -1189,11 +1263,16 @@ Fichero `src/recoleccion/auxiliares.ts`:
 import type { Almacen } from '../almacen/crudo.js'
 import type { Cliente } from './cliente.js'
 
+const DOCE_HORAS_MS = 12 * 60 * 60 * 1000
+
 export type DependenciasAux = {
   cliente: Cliente
   almacen: Almacen
   idsUc: number[]
   idsJugador: number[]
+  /** Edad a partir de la cual una captura se considera caducada. 12 h por defecto. */
+  maxEdadMs?: number
+  ahora?: () => number
 }
 
 export type ResumenAux = {
@@ -1208,17 +1287,30 @@ export const rutaJugador = (idJugador: number) => `/players/${idJugador}/x`
 /**
  * Descarga las plantillas actuales y las fichas de jugador que hacen falta.
  *
- * Reutiliza lo ya guardado: son más de cien fichas y volver a pedirlas en cada
- * análisis castigaría el servidor sin ganar nada. Los valores de una fecha
- * pasada no cambian.
+ * Reutiliza lo guardado mientras siga fresco: son más de cien fichas y volver a
+ * pedirlas en cada análisis castigaría el servidor. Pero la plantilla de un
+ * equipo y el valor de hoy cambian con cada fichaje, así que la caché caduca:
+ * pasada `maxEdadMs`, se vuelve a pedir y se guarda una captura nueva junto a
+ * la vieja, sin destruirla.
  */
 export async function recolectarAuxiliares(dep: DependenciasAux): Promise<ResumenAux> {
   const resumen: ResumenAux = { plantillas: 0, jugadores: 0, yaEnCache: 0 }
+  const maxEdadMs = dep.maxEdadMs ?? DOCE_HORAS_MS
+  const ahora = dep.ahora ?? (() => Date.now())
+
+  const fresca = (capturadaEn: string): boolean => {
+    const t = Date.parse(capturadaEn)
+    if (Number.isNaN(t)) {
+      throw new Error(`la captura guardada tiene una fecha ilegible: ${JSON.stringify(capturadaEn)}`)
+    }
+    return ahora() - t < maxEdadMs
+  }
 
   const pedir = async (ruta: string, contador: 'plantillas' | 'jugadores') => {
-    if (dep.almacen.leerPagina(ruta)) { resumen.yaEnCache++; return }
+    const guardada = dep.almacen.leerPagina(ruta)
+    if (guardada && fresca(guardada.capturadaEn)) { resumen.yaEnCache++; return }
     const cuerpo = await dep.cliente.pedirPagina(ruta)
-    dep.almacen.guardarPagina({ ruta, cuerpo, capturadaEn: new Date().toISOString() })
+    dep.almacen.guardarPagina({ ruta, cuerpo, capturadaEn: new Date(ahora()).toISOString() })
     resumen[contador]++
   }
 
@@ -1480,6 +1572,329 @@ git commit -m "feat: reconstrucción del reparto inicial por sus tres vías"
 
 ---
 
+### Tarea 6b: Asignación de las bajas sin dueño
+
+**Ficheros:**
+- Crear: `src/contabilidad/asignaciones.ts`
+- Crear: `tests/contabilidad/asignaciones.test.ts`
+- Crear: `datos/bajas-asignadas.json` (no versionado: `datos/` está en `.gitignore`)
+- Modificar: `src/contabilidad/reparto.ts`
+- Modificar: `tests/contabilidad/reparto.test.ts`
+
+**Interfaces:**
+- Produce:
+  - `function leerAsignaciones(ruta: string): Map<number, number>` — idJugador → idUc
+  - `class AsignacionesIlegiblesError extends Error`
+  - `reconstruirRepartos` gana un tercer parámetro: `asignaciones: Map<number, number>`
+  - `RepartoEquipo.porBaja` pasa a contener las bajas **asignadas** a ese equipo
+  - `function bajasSinDuenio(eventos: Evento[], repartos: Map<number, RepartoEquipo>): number[]`
+
+**El problema que resuelve, y por qué no tiene solución automática.**
+
+Un jugador puede desaparecer del reparto inicial de un equipo al abandonar
+LaLiga, sin dejar **ningún** rastro en el feed. Le ocurrió a Ronald Araújo
+(idJugador 19977) con el equipo propio: valía 4.847.000 € el día del reinicio, y
+sin él el saldo calculado se desviaba exactamente en esa cantidad.
+
+**Se comprobó que no hay forma de deducir de quién era:** su ficha de jugador no
+menciona ningún equipo de la liga, y el feed no registra la baja como
+movimiento. La información no existe en ninguna fuente accesible.
+
+Por eso la asignación es **un dato de entrada que aporta la persona**, no algo
+que el programa adivine. Un reparto por ajuste —buscar qué baja cuadra con el
+desvío— produciría exactamente la cifra plausible y equivocada que este proyecto
+prohíbe.
+
+**Formato del fichero**, con la única asignación conocida hoy y su
+justificación:
+
+```json
+{
+  "comentario": "Bajas por salida de LaLiga cuyo dueño no consta en ninguna fuente. Se asignan a mano.",
+  "asignaciones": [
+    {
+      "idJugador": 19977,
+      "jugador": "Ronald Araújo",
+      "idUc": 12493763,
+      "equipo": "Niutin FC (Isaac)",
+      "motivo": "Valía 4.847.000 € el 2026-08-03 y es exactamente lo que faltaba para cuadrar el saldo propio con el que publica Mister."
+    }
+  ]
+}
+```
+
+- [ ] **Paso 1: Escribir el test de las asignaciones**
+
+Fichero `tests/contabilidad/asignaciones.test.ts`:
+
+```ts
+import { mkdtempSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
+import { describe, expect, it } from 'vitest'
+import { AsignacionesIlegiblesError, leerAsignaciones } from '../../src/contabilidad/asignaciones.js'
+
+function ficheroCon(contenido: string): string {
+  const dir = mkdtempSync(join(tmpdir(), 'mister-asig-'))
+  const ruta = join(dir, 'bajas-asignadas.json')
+  writeFileSync(ruta, contenido)
+  return ruta
+}
+
+const valido = JSON.stringify({
+  asignaciones: [{ idJugador: 19977, jugador: 'Ronald Araújo', idUc: 12493763, equipo: 'X', motivo: 'y' }],
+})
+
+describe('leerAsignaciones', () => {
+  it('lee las asignaciones como un mapa de jugador a equipo', () => {
+    expect(leerAsignaciones(ficheroCon(valido)).get(19977)).toBe(12493763)
+  })
+
+  it('devuelve un mapa vacío si el fichero no existe', () => {
+    expect(leerAsignaciones('/ruta/que/no/existe').size).toBe(0)
+  })
+
+  it('acepta un fichero sin asignaciones', () => {
+    expect(leerAsignaciones(ficheroCon('{"asignaciones":[]}')).size).toBe(0)
+  })
+
+  it('lanza si el fichero no es JSON', () => {
+    expect(() => leerAsignaciones(ficheroCon('esto no es json'))).toThrow(AsignacionesIlegiblesError)
+  })
+
+  it('lanza si una asignación no trae idJugador entero', () => {
+    const malo = JSON.stringify({ asignaciones: [{ idJugador: 'x', idUc: 1 }] })
+    expect(() => leerAsignaciones(ficheroCon(malo))).toThrow(/idJugador/i)
+  })
+
+  it('lanza si una asignación no trae idUc entero', () => {
+    const malo = JSON.stringify({ asignaciones: [{ idJugador: 1, idUc: null }] })
+    expect(() => leerAsignaciones(ficheroCon(malo))).toThrow(/idUc/i)
+  })
+
+  it('lanza si el mismo jugador se asigna dos veces', () => {
+    const malo = JSON.stringify({ asignaciones: [{ idJugador: 1, idUc: 5 }, { idJugador: 1, idUc: 6 }] })
+    expect(() => leerAsignaciones(ficheroCon(malo))).toThrow(/dos veces|duplicad/i)
+  })
+})
+```
+
+- [ ] **Paso 2: Ejecutar y comprobar que falla**
+
+Ejecutar: `npx vitest run tests/contabilidad/asignaciones.test.ts`
+Esperado: FALLA por módulo inexistente.
+
+- [ ] **Paso 3: Implementar las asignaciones**
+
+Fichero `src/contabilidad/asignaciones.ts`:
+
+```ts
+import { readFileSync } from 'node:fs'
+
+export class AsignacionesIlegiblesError extends Error {
+  constructor(ruta: string, causa: string) {
+    super(`el fichero de asignaciones ${ruta} no se pudo leer: ${causa}`)
+    this.name = 'AsignacionesIlegiblesError'
+  }
+}
+
+type AsignacionBruta = { idJugador?: unknown; idUc?: unknown }
+
+/**
+ * Lee a qué equipo pertenecía cada baja sin dueño.
+ *
+ * Un jugador puede desaparecer de un reparto inicial al abandonar LaLiga sin
+ * dejar rastro en el feed, y ninguna fuente accesible dice de quién era. Por eso
+ * esto es un dato de entrada que aporta la persona: deducirlo por ajuste
+ * produciría una cifra plausible y equivocada.
+ *
+ * Un fichero ausente significa "ninguna asignación", que es un estado legítimo.
+ * Un fichero presente pero malformado, en cambio, lanza.
+ */
+export function leerAsignaciones(ruta: string): Map<number, number> {
+  let contenido: string
+  try {
+    contenido = readFileSync(ruta, 'utf8')
+  } catch {
+    return new Map()
+  }
+
+  let datos: { asignaciones?: unknown }
+  try {
+    datos = JSON.parse(contenido) as { asignaciones?: unknown }
+  } catch (e) {
+    throw new AsignacionesIlegiblesError(ruta, (e as Error).message)
+  }
+
+  const lista = datos.asignaciones
+  if (!Array.isArray(lista)) {
+    throw new AsignacionesIlegiblesError(ruta, 'falta la lista `asignaciones`')
+  }
+
+  const mapa = new Map<number, number>()
+  for (const bruta of lista as AsignacionBruta[]) {
+    const idJugador = bruta.idJugador
+    const idUc = bruta.idUc
+    if (!Number.isInteger(idJugador)) {
+      throw new Error(`una asignación de ${ruta} no trae un idJugador entero`)
+    }
+    if (!Number.isInteger(idUc)) {
+      throw new Error(`la asignación del jugador ${idJugador} en ${ruta} no trae un idUc entero`)
+    }
+    if (mapa.has(idJugador as number)) {
+      throw new Error(`el jugador ${idJugador} está asignado dos veces en ${ruta}`)
+    }
+    mapa.set(idJugador as number, idUc as number)
+  }
+
+  return mapa
+}
+```
+
+- [ ] **Paso 4: Escribir el test de la vía 3 en el reparto**
+
+Añadir a `tests/contabilidad/reparto.test.ts`:
+
+```ts
+describe('vía 3: bajas asignadas a mano', () => {
+  it('una baja asignada entra en el reparto de su equipo', () => {
+    const eventos = [baja(19977, '2026-08-10 10:00:00')]
+    const r = reconstruirRepartos(eventos, new Map([[1, []]]), new Map([[19977, 1]]))
+    expect(r.get(1)!.porBaja).toEqual([19977])
+    expect(r.get(1)!.jugadores).toContain(19977)
+  })
+
+  it('una baja sin asignar no entra en ningún reparto', () => {
+    const eventos = [baja(19977, '2026-08-10 10:00:00')]
+    const r = reconstruirRepartos(eventos, new Map([[1, []]]), new Map())
+    expect([...r.values()].flatMap((x) => x.jugadores)).not.toContain(19977)
+  })
+
+  it('una baja de un jugador que el equipo había comprado no entra, aunque esté asignada', () => {
+    const eventos = [mov(30, null, 1, '2026-08-04 10:00:00'), baja(30, '2026-08-10 10:00:00')]
+    const r = reconstruirRepartos(eventos, new Map([[1, []]]), new Map([[30, 1]]))
+    expect(r.get(1)!.jugadores).toEqual([])
+  })
+
+  it('no cuenta dos veces una baja asignada que además se vendió', () => {
+    const eventos = [mov(40, 1, null, '2026-08-05 10:00:00'), baja(40, '2026-08-10 10:00:00')]
+    const r = reconstruirRepartos(eventos, new Map([[1, []]]), new Map([[40, 1]]))
+    expect(r.get(1)!.jugadores).toEqual([40])
+  })
+
+  it('lanza si una baja se asigna a un equipo que no existe', () => {
+    const eventos = [baja(19977, '2026-08-10 10:00:00')]
+    expect(() => reconstruirRepartos(eventos, new Map([[1, []]]), new Map([[19977, 999]]))).toThrow(/999/)
+  })
+})
+
+describe('bajasSinDuenio', () => {
+  it('lista las bajas que ningún reparto reclama', () => {
+    const eventos = [baja(19977, '2026-08-10 10:00:00'), baja(88, '2026-08-11 10:00:00')]
+    const repartos = reconstruirRepartos(eventos, new Map([[1, []]]), new Map([[88, 1]]))
+    expect(bajasSinDuenio(eventos, repartos)).toEqual([19977])
+  })
+
+  it('no lista una baja de un jugador que un equipo compró y sí movió', () => {
+    const eventos = [mov(30, null, 1, '2026-08-04 10:00:00'), baja(30, '2026-08-10 10:00:00')]
+    const repartos = reconstruirRepartos(eventos, new Map([[1, []]]), new Map())
+    expect(bajasSinDuenio(eventos, repartos)).toEqual([])
+  })
+})
+```
+
+Los constructores `mov`, `baja` y `reparto` ya existen en ese fichero. **Los
+nueve tests que ya están deben seguir pasando**: pásales `new Map()` como tercer
+parámetro.
+
+- [ ] **Paso 5: Ejecutar y comprobar que falla**
+
+Ejecutar: `npx vitest run tests/contabilidad/reparto.test.ts`
+Esperado: FALLA — `reconstruirRepartos` no acepta el tercer parámetro.
+
+- [ ] **Paso 6: Implementar la vía 3**
+
+En `src/contabilidad/reparto.ts`, añadir el tercer parámetro y, tras las vías 1
+y 2, el bloque de la vía 3:
+
+```ts
+  // 3: bajas asignadas a mano. Un jugador que desapareció al abandonar LaLiga
+  //    y que el equipo NO había comprado formaba parte de su reparto inicial.
+  //    Sin asignación no se le atribuye a nadie: adivinarlo produciría una
+  //    cifra plausible y equivocada.
+  for (const e of cronologico) {
+    if (e.tipo !== 'bajaPlantilla') continue
+    const idUc = asignaciones.get(e.idJugador)
+    if (idUc === undefined) continue
+
+    const r = repartos.get(idUc)
+    if (!r) {
+      throw new Error(`la baja del jugador ${e.idJugador} está asignada al equipo ${idUc}, que no existe en la liga`)
+    }
+    if (compradosDe(idUc).has(e.idJugador)) continue
+    if (!r.porVenta.includes(e.idJugador) && !r.porBaja.includes(e.idJugador)) {
+      r.porBaja.push(e.idJugador)
+    }
+  }
+```
+
+y al final del fichero:
+
+```ts
+/**
+ * Bajas de plantilla que ningún reparto reclama.
+ *
+ * Cada una es un jugador cuyo dueño no consta en ninguna fuente. Quien llame
+ * debe declararlas, no repartirlas: son incertidumbre, no ruido.
+ */
+export function bajasSinDuenio(
+  eventos: Evento[],
+  repartos: Map<number, RepartoEquipo>,
+): number[] {
+  const reclamados = new Set<number>()
+  for (const r of repartos.values()) for (const id of r.jugadores) reclamados.add(id)
+
+  const sinDuenio: number[] = []
+  for (const e of eventos) {
+    if (e.tipo !== 'bajaPlantilla') continue
+    if (reclamados.has(e.idJugador)) continue
+    if (!sinDuenio.includes(e.idJugador)) sinDuenio.push(e.idJugador)
+  }
+
+  return sinDuenio
+}
+```
+
+**Ojo con el orden:** la vía 3 debe ejecutarse antes de recalcular
+`r.jugadores`, para que las bajas asignadas entren en la unión final.
+
+- [ ] **Paso 7: Ejecutar y comprobar que pasan**
+
+Ejecutar: `npx vitest run tests/contabilidad/`
+Esperado: PASAN los 9 previos más los 7 nuevos.
+
+- [ ] **Paso 8: Crear el fichero de asignaciones**
+
+Crear `datos/bajas-asignadas.json` con el contenido literal de la cabecera de
+esta tarea. No se versiona: `datos/` está en `.gitignore`.
+
+- [ ] **Paso 9: Comprobar contra el histórico real**
+
+Con un script temporal que borres después: reconstruir los repartos con las
+asignaciones del fichero y comprobar que **Ronald Araújo (19977) aparece ahora
+en el reparto de Niutin FC (idUc 12493763)**, y que `bajasSinDuenio` lista las
+demás bajas sin reclamar.
+
+- [ ] **Paso 10: Commit**
+
+```bash
+npm test && npm run typecheck
+git add src/contabilidad/asignaciones.ts src/contabilidad/reparto.ts tests/contabilidad/
+git commit -m "feat: asignación manual de las bajas sin dueño"
+```
+
+---
+
 ### Tarea 7: Motor contable
 
 **Ficheros:**
@@ -1512,6 +1927,10 @@ cruzada de la Tarea 8.
 **Si a un jugador del reparto le falta el valor en la fecha del reinicio**, no
 se le asigna cero: se devuelve en `jugadoresSinValor` y quien llame decide.
 Rellenar con cero produciría un saldo inicial inflado y plausible.
+
+**Las bajas sin dueño** (Tarea 6b) no llegan al motor: no están en ningún
+reparto. Es la orden de análisis quien debe listarlas, para que la incertidumbre
+quede declarada y no disimulada.
 
 - [ ] **Paso 1: Escribir el test que falla**
 

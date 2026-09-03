@@ -5,7 +5,7 @@ import {
   OperacionDesconocidaError,
   parsearPaginaFeed,
 } from '../../src/recoleccion/parseadorFeed.js'
-import type { CierreJornada, Transaccion } from '../../src/dominio/eventos.js'
+import { esContable, type BajaPlantilla, type CierreJornada, type Transaccion } from '../../src/dominio/eventos.js'
 
 const pagina0 = readFileSync('fixtures/feed-offset-0.json', 'utf8')
 const paginaCierre = readFileSync('fixtures/feed-con-cierre-jornada.json', 'utf8')
@@ -237,6 +237,18 @@ describe('parsearPaginaFeed', () => {
     for (const p of conEquipo) {
       if (p.clase === 'equipo') expect(Number.isInteger(p.idUc)).toBe(true)
     }
+  })
+
+  it('toda transacción del fixture real trae el identificador del jugador', () => {
+    const ts = transaccionesDe(pagina0)
+    expect(ts.length).toBeGreaterThan(0)
+    for (const t of ts) expect(Number.isInteger(t.idJugador)).toBe(true)
+  })
+
+  it('todo cierre del fixture real trae el identificador de la jornada', () => {
+    const cs = cierresDe(paginaCierre)
+    expect(cs.length).toBeGreaterThan(0)
+    for (const c of cs) expect(Number.isInteger(c.idJornada)).toBe(true)
   })
 
   it('extrae idUc, valorPlantilla (teamValue) e idEvento en el cierre de jornada real', () => {
@@ -474,5 +486,91 @@ describe('parsearPaginaFeed', () => {
       expect(mensaje).not.toContain(emailSecreto)
       expect(mensaje).not.toContain('apple-id-secreto-123')
     }
+  })
+
+  const feedCon = (evento: Record<string, unknown>) =>
+    JSON.stringify({ status: 'ok', data: [evento] })
+
+  const playerTransfer = (datos: Record<string, unknown>) => feedCon({
+    category: 'player_transfer', id: 1, created: '2026-08-10 10:00:00', data: [datos],
+  })
+
+  describe('bajas de plantilla', () => {
+    it('un player_transfer sin equipo es una baja, no ruido', () => {
+      const { eventos } = parsearPaginaFeed(playerTransfer({ id: 19977, name: 'Ronald Araújo', id_team: 0 }))
+      expect(eventos).toHaveLength(1)
+      expect(eventos[0]!.tipo).toBe('bajaPlantilla')
+    })
+
+    it('la baja conserva el identificador y el nombre del jugador', () => {
+      const { eventos } = parsearPaginaFeed(playerTransfer({ id: 19977, name: 'Ronald Araújo', id_team: 0 }))
+      const b = eventos[0] as BajaPlantilla
+      expect(b.idJugador).toBe(19977)
+      expect(b.jugador).toBe('Ronald Araújo')
+    })
+
+    it('trata id_team ausente o nulo igual que cero', () => {
+      for (const datos of [{ id: 1, name: 'X' }, { id: 1, name: 'X', id_team: null }]) {
+        expect(parsearPaginaFeed(playerTransfer(datos)).eventos[0]!.tipo).toBe('bajaPlantilla')
+      }
+    })
+
+    it('un player_transfer CON equipo sigue siendo ruido', () => {
+      const { eventos } = parsearPaginaFeed(playerTransfer({ id: 5, name: 'Y', id_team: 6 }))
+      expect(eventos[0]!.tipo).toBe('ruido')
+    })
+
+    it('una baja no es contable: no mueve dinero', () => {
+      const { eventos } = parsearPaginaFeed(playerTransfer({ id: 1, name: 'X', id_team: 0 }))
+      expect(esContable(eventos[0]!)).toBe(false)
+    })
+
+    it('el histórico real contiene bajas de plantilla', () => {
+      const bajas = parsearPaginaFeed(pagina0).eventos.filter((e) => e.tipo === 'bajaPlantilla')
+      expect(bajas.length).toBeGreaterThan(0)
+    })
+
+    describe('id_team con forma inesperada: lanza, nunca se resuelve por coacción numérica', () => {
+      it('lanza si id_team es un array, en vez de clasificarlo como baja (Number([]) === 0)', () => {
+        expect(() =>
+          parsearPaginaFeed(playerTransfer({ id: 1, name: 'X', id_team: [] })),
+        ).toThrow(/id_team/)
+      })
+
+      it('lanza si id_team es una cadena no numérica, en vez de perder el evento (Number("N/A") es NaN)', () => {
+        expect(() =>
+          parsearPaginaFeed(playerTransfer({ id: 1, name: 'X', id_team: 'N/A' })),
+        ).toThrow(/id_team/)
+      })
+
+      it('lanza si id_team es la cadena numérica "0", en vez de tratarla como el entero 0', () => {
+        expect(() =>
+          parsearPaginaFeed(playerTransfer({ id: 1, name: 'X', id_team: '0' })),
+        ).toThrow(/id_team/)
+      })
+
+      it('lanza si id_team es un número decimal, en vez de truncarlo a entero', () => {
+        expect(() =>
+          parsearPaginaFeed(playerTransfer({ id: 1, name: 'X', id_team: 6.5 })),
+        ).toThrow(/id_team/)
+      })
+
+      it('lanza si id_team es un entero negativo, en vez de clasificarlo en silencio como ruido', () => {
+        expect(() =>
+          parsearPaginaFeed(playerTransfer({ id: 1, name: 'X', id_team: -1 })),
+        ).toThrow(/id_team/)
+      })
+
+      it('el mensaje de error no vuelca el objeto crudo del movimiento', () => {
+        let error: Error | undefined
+        try {
+          parsearPaginaFeed(playerTransfer({ id: 1, name: 'X', id_team: 'N/A', fb_id1: 'facebook-secreto-789' }))
+        } catch (e) {
+          error = e as Error
+        }
+        expect(error, 'debería haber lanzado por id_team inválido').toBeDefined()
+        expect(error!.message).not.toContain('facebook-secreto-789')
+      })
+    })
   })
 })
