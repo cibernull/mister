@@ -104,4 +104,38 @@ describe('almacén crudo', () => {
     expect(() => a.guardarCaptura(captura(0, 2.5))).toThrow(/nEventos/i)
     a.cerrar()
   })
+
+  it('propaga errores de base de datos que NO sean violación de unicidad', () => {
+    const a = almacenEnMemoria()
+    a.guardarCaptura(captura(0, 21))
+
+    // Cerrar la base de datos para provocar un error de "database is closed"
+    a.cerrar()
+
+    // Intentar insertar después de cerrada debe propagar el error original, no CapturaDuplicadaError
+    expect(() => a.guardarCaptura(captura(1, 21))).toThrow()
+    expect(() => a.guardarCaptura(captura(1, 21))).not.toThrow(CapturaDuplicadaError)
+  })
+
+  it('identifica duplicados por código de error (SQLITE_CONSTRAINT_UNIQUE) y columnas específicas', () => {
+    const a = almacenEnMemoria()
+    a.guardarCaptura(captura(0, 21, '{}', 'r1'))
+
+    // Capturar el error de duplicado
+    let capturedError: unknown
+    try {
+      a.guardarCaptura(captura(0, 21, '{}', 'r1'))
+    } catch (e) {
+      capturedError = e
+    }
+
+    // Verificar que es CapturaDuplicadaError (no por coincidencia de texto)
+    expect(capturedError).toBeInstanceOf(CapturaDuplicadaError)
+    if (capturedError instanceof CapturaDuplicadaError) {
+      expect(capturedError.recoleccion).toBe('r1')
+      expect(capturedError.offset).toBe(0)
+    }
+
+    a.cerrar()
+  })
 })

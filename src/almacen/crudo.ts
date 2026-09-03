@@ -93,5 +93,23 @@ function exigirEnteroNoNegativo(valor: number, campo: string): void {
 }
 
 function esViolacionDeUnicidad(e: unknown): boolean {
-  return e instanceof Error && e.message.includes('UNIQUE constraint failed')
+  // Usar el código de error estable en lugar del texto del mensaje.
+  // better-sqlite3 expone SqliteError con la propiedad 'code'.
+  // Para la restricción UNIQUE de (recoleccion, offset_feed), el código es SQLITE_CONSTRAINT_UNIQUE.
+  // Verificamos también que el mensaje contiene ambas columnas para asegurar que es la restricción
+  // correcta y no otra UNIQUE futura en la tabla.
+  if (!isErrorWithCode(e)) return false
+  if (e.code !== 'SQLITE_CONSTRAINT_UNIQUE') return false
+  // Verificar que el error menciona las dos columnas de la restricción
+  const message = e.message ?? ''
+  return message.includes('recoleccion') && message.includes('offset_feed')
+}
+
+function isErrorWithCode(e: unknown): e is { code: string; message: string } {
+  return (
+    typeof e === 'object' &&
+    e !== null &&
+    typeof (e as Record<string, unknown>).code === 'string' &&
+    typeof (e as Record<string, unknown>).message === 'string'
+  )
 }
