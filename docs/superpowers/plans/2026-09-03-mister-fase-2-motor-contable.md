@@ -1572,6 +1572,329 @@ git commit -m "feat: reconstrucción del reparto inicial por sus tres vías"
 
 ---
 
+### Tarea 6b: Asignación de las bajas sin dueño
+
+**Ficheros:**
+- Crear: `src/contabilidad/asignaciones.ts`
+- Crear: `tests/contabilidad/asignaciones.test.ts`
+- Crear: `datos/bajas-asignadas.json` (no versionado: `datos/` está en `.gitignore`)
+- Modificar: `src/contabilidad/reparto.ts`
+- Modificar: `tests/contabilidad/reparto.test.ts`
+
+**Interfaces:**
+- Produce:
+  - `function leerAsignaciones(ruta: string): Map<number, number>` — idJugador → idUc
+  - `class AsignacionesIlegiblesError extends Error`
+  - `reconstruirRepartos` gana un tercer parámetro: `asignaciones: Map<number, number>`
+  - `RepartoEquipo.porBaja` pasa a contener las bajas **asignadas** a ese equipo
+  - `function bajasSinDuenio(eventos: Evento[], repartos: Map<number, RepartoEquipo>): number[]`
+
+**El problema que resuelve, y por qué no tiene solución automática.**
+
+Un jugador puede desaparecer del reparto inicial de un equipo al abandonar
+LaLiga, sin dejar **ningún** rastro en el feed. Le ocurrió a Ronald Araújo
+(idJugador 19977) con el equipo propio: valía 4.847.000 € el día del reinicio, y
+sin él el saldo calculado se desviaba exactamente en esa cantidad.
+
+**Se comprobó que no hay forma de deducir de quién era:** su ficha de jugador no
+menciona ningún equipo de la liga, y el feed no registra la baja como
+movimiento. La información no existe en ninguna fuente accesible.
+
+Por eso la asignación es **un dato de entrada que aporta la persona**, no algo
+que el programa adivine. Un reparto por ajuste —buscar qué baja cuadra con el
+desvío— produciría exactamente la cifra plausible y equivocada que este proyecto
+prohíbe.
+
+**Formato del fichero**, con la única asignación conocida hoy y su
+justificación:
+
+```json
+{
+  "comentario": "Bajas por salida de LaLiga cuyo dueño no consta en ninguna fuente. Se asignan a mano.",
+  "asignaciones": [
+    {
+      "idJugador": 19977,
+      "jugador": "Ronald Araújo",
+      "idUc": 12493763,
+      "equipo": "Niutin FC (Isaac)",
+      "motivo": "Valía 4.847.000 € el 2026-08-03 y es exactamente lo que faltaba para cuadrar el saldo propio con el que publica Mister."
+    }
+  ]
+}
+```
+
+- [ ] **Paso 1: Escribir el test de las asignaciones**
+
+Fichero `tests/contabilidad/asignaciones.test.ts`:
+
+```ts
+import { mkdtempSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
+import { describe, expect, it } from 'vitest'
+import { AsignacionesIlegiblesError, leerAsignaciones } from '../../src/contabilidad/asignaciones.js'
+
+function ficheroCon(contenido: string): string {
+  const dir = mkdtempSync(join(tmpdir(), 'mister-asig-'))
+  const ruta = join(dir, 'bajas-asignadas.json')
+  writeFileSync(ruta, contenido)
+  return ruta
+}
+
+const valido = JSON.stringify({
+  asignaciones: [{ idJugador: 19977, jugador: 'Ronald Araújo', idUc: 12493763, equipo: 'X', motivo: 'y' }],
+})
+
+describe('leerAsignaciones', () => {
+  it('lee las asignaciones como un mapa de jugador a equipo', () => {
+    expect(leerAsignaciones(ficheroCon(valido)).get(19977)).toBe(12493763)
+  })
+
+  it('devuelve un mapa vacío si el fichero no existe', () => {
+    expect(leerAsignaciones('/ruta/que/no/existe').size).toBe(0)
+  })
+
+  it('acepta un fichero sin asignaciones', () => {
+    expect(leerAsignaciones(ficheroCon('{"asignaciones":[]}')).size).toBe(0)
+  })
+
+  it('lanza si el fichero no es JSON', () => {
+    expect(() => leerAsignaciones(ficheroCon('esto no es json'))).toThrow(AsignacionesIlegiblesError)
+  })
+
+  it('lanza si una asignación no trae idJugador entero', () => {
+    const malo = JSON.stringify({ asignaciones: [{ idJugador: 'x', idUc: 1 }] })
+    expect(() => leerAsignaciones(ficheroCon(malo))).toThrow(/idJugador/i)
+  })
+
+  it('lanza si una asignación no trae idUc entero', () => {
+    const malo = JSON.stringify({ asignaciones: [{ idJugador: 1, idUc: null }] })
+    expect(() => leerAsignaciones(ficheroCon(malo))).toThrow(/idUc/i)
+  })
+
+  it('lanza si el mismo jugador se asigna dos veces', () => {
+    const malo = JSON.stringify({ asignaciones: [{ idJugador: 1, idUc: 5 }, { idJugador: 1, idUc: 6 }] })
+    expect(() => leerAsignaciones(ficheroCon(malo))).toThrow(/dos veces|duplicad/i)
+  })
+})
+```
+
+- [ ] **Paso 2: Ejecutar y comprobar que falla**
+
+Ejecutar: `npx vitest run tests/contabilidad/asignaciones.test.ts`
+Esperado: FALLA por módulo inexistente.
+
+- [ ] **Paso 3: Implementar las asignaciones**
+
+Fichero `src/contabilidad/asignaciones.ts`:
+
+```ts
+import { readFileSync } from 'node:fs'
+
+export class AsignacionesIlegiblesError extends Error {
+  constructor(ruta: string, causa: string) {
+    super(`el fichero de asignaciones ${ruta} no se pudo leer: ${causa}`)
+    this.name = 'AsignacionesIlegiblesError'
+  }
+}
+
+type AsignacionBruta = { idJugador?: unknown; idUc?: unknown }
+
+/**
+ * Lee a qué equipo pertenecía cada baja sin dueño.
+ *
+ * Un jugador puede desaparecer de un reparto inicial al abandonar LaLiga sin
+ * dejar rastro en el feed, y ninguna fuente accesible dice de quién era. Por eso
+ * esto es un dato de entrada que aporta la persona: deducirlo por ajuste
+ * produciría una cifra plausible y equivocada.
+ *
+ * Un fichero ausente significa "ninguna asignación", que es un estado legítimo.
+ * Un fichero presente pero malformado, en cambio, lanza.
+ */
+export function leerAsignaciones(ruta: string): Map<number, number> {
+  let contenido: string
+  try {
+    contenido = readFileSync(ruta, 'utf8')
+  } catch {
+    return new Map()
+  }
+
+  let datos: { asignaciones?: unknown }
+  try {
+    datos = JSON.parse(contenido) as { asignaciones?: unknown }
+  } catch (e) {
+    throw new AsignacionesIlegiblesError(ruta, (e as Error).message)
+  }
+
+  const lista = datos.asignaciones
+  if (!Array.isArray(lista)) {
+    throw new AsignacionesIlegiblesError(ruta, 'falta la lista `asignaciones`')
+  }
+
+  const mapa = new Map<number, number>()
+  for (const bruta of lista as AsignacionBruta[]) {
+    const idJugador = bruta.idJugador
+    const idUc = bruta.idUc
+    if (!Number.isInteger(idJugador)) {
+      throw new Error(`una asignación de ${ruta} no trae un idJugador entero`)
+    }
+    if (!Number.isInteger(idUc)) {
+      throw new Error(`la asignación del jugador ${idJugador} en ${ruta} no trae un idUc entero`)
+    }
+    if (mapa.has(idJugador as number)) {
+      throw new Error(`el jugador ${idJugador} está asignado dos veces en ${ruta}`)
+    }
+    mapa.set(idJugador as number, idUc as number)
+  }
+
+  return mapa
+}
+```
+
+- [ ] **Paso 4: Escribir el test de la vía 3 en el reparto**
+
+Añadir a `tests/contabilidad/reparto.test.ts`:
+
+```ts
+describe('vía 3: bajas asignadas a mano', () => {
+  it('una baja asignada entra en el reparto de su equipo', () => {
+    const eventos = [baja(19977, '2026-08-10 10:00:00')]
+    const r = reconstruirRepartos(eventos, new Map([[1, []]]), new Map([[19977, 1]]))
+    expect(r.get(1)!.porBaja).toEqual([19977])
+    expect(r.get(1)!.jugadores).toContain(19977)
+  })
+
+  it('una baja sin asignar no entra en ningún reparto', () => {
+    const eventos = [baja(19977, '2026-08-10 10:00:00')]
+    const r = reconstruirRepartos(eventos, new Map([[1, []]]), new Map())
+    expect([...r.values()].flatMap((x) => x.jugadores)).not.toContain(19977)
+  })
+
+  it('una baja de un jugador que el equipo había comprado no entra, aunque esté asignada', () => {
+    const eventos = [mov(30, null, 1, '2026-08-04 10:00:00'), baja(30, '2026-08-10 10:00:00')]
+    const r = reconstruirRepartos(eventos, new Map([[1, []]]), new Map([[30, 1]]))
+    expect(r.get(1)!.jugadores).toEqual([])
+  })
+
+  it('no cuenta dos veces una baja asignada que además se vendió', () => {
+    const eventos = [mov(40, 1, null, '2026-08-05 10:00:00'), baja(40, '2026-08-10 10:00:00')]
+    const r = reconstruirRepartos(eventos, new Map([[1, []]]), new Map([[40, 1]]))
+    expect(r.get(1)!.jugadores).toEqual([40])
+  })
+
+  it('lanza si una baja se asigna a un equipo que no existe', () => {
+    const eventos = [baja(19977, '2026-08-10 10:00:00')]
+    expect(() => reconstruirRepartos(eventos, new Map([[1, []]]), new Map([[19977, 999]]))).toThrow(/999/)
+  })
+})
+
+describe('bajasSinDuenio', () => {
+  it('lista las bajas que ningún reparto reclama', () => {
+    const eventos = [baja(19977, '2026-08-10 10:00:00'), baja(88, '2026-08-11 10:00:00')]
+    const repartos = reconstruirRepartos(eventos, new Map([[1, []]]), new Map([[88, 1]]))
+    expect(bajasSinDuenio(eventos, repartos)).toEqual([19977])
+  })
+
+  it('no lista una baja de un jugador que un equipo compró y sí movió', () => {
+    const eventos = [mov(30, null, 1, '2026-08-04 10:00:00'), baja(30, '2026-08-10 10:00:00')]
+    const repartos = reconstruirRepartos(eventos, new Map([[1, []]]), new Map())
+    expect(bajasSinDuenio(eventos, repartos)).toEqual([])
+  })
+})
+```
+
+Los constructores `mov`, `baja` y `reparto` ya existen en ese fichero. **Los
+nueve tests que ya están deben seguir pasando**: pásales `new Map()` como tercer
+parámetro.
+
+- [ ] **Paso 5: Ejecutar y comprobar que falla**
+
+Ejecutar: `npx vitest run tests/contabilidad/reparto.test.ts`
+Esperado: FALLA — `reconstruirRepartos` no acepta el tercer parámetro.
+
+- [ ] **Paso 6: Implementar la vía 3**
+
+En `src/contabilidad/reparto.ts`, añadir el tercer parámetro y, tras las vías 1
+y 2, el bloque de la vía 3:
+
+```ts
+  // 3: bajas asignadas a mano. Un jugador que desapareció al abandonar LaLiga
+  //    y que el equipo NO había comprado formaba parte de su reparto inicial.
+  //    Sin asignación no se le atribuye a nadie: adivinarlo produciría una
+  //    cifra plausible y equivocada.
+  for (const e of cronologico) {
+    if (e.tipo !== 'bajaPlantilla') continue
+    const idUc = asignaciones.get(e.idJugador)
+    if (idUc === undefined) continue
+
+    const r = repartos.get(idUc)
+    if (!r) {
+      throw new Error(`la baja del jugador ${e.idJugador} está asignada al equipo ${idUc}, que no existe en la liga`)
+    }
+    if (compradosDe(idUc).has(e.idJugador)) continue
+    if (!r.porVenta.includes(e.idJugador) && !r.porBaja.includes(e.idJugador)) {
+      r.porBaja.push(e.idJugador)
+    }
+  }
+```
+
+y al final del fichero:
+
+```ts
+/**
+ * Bajas de plantilla que ningún reparto reclama.
+ *
+ * Cada una es un jugador cuyo dueño no consta en ninguna fuente. Quien llame
+ * debe declararlas, no repartirlas: son incertidumbre, no ruido.
+ */
+export function bajasSinDuenio(
+  eventos: Evento[],
+  repartos: Map<number, RepartoEquipo>,
+): number[] {
+  const reclamados = new Set<number>()
+  for (const r of repartos.values()) for (const id of r.jugadores) reclamados.add(id)
+
+  const sinDuenio: number[] = []
+  for (const e of eventos) {
+    if (e.tipo !== 'bajaPlantilla') continue
+    if (reclamados.has(e.idJugador)) continue
+    if (!sinDuenio.includes(e.idJugador)) sinDuenio.push(e.idJugador)
+  }
+
+  return sinDuenio
+}
+```
+
+**Ojo con el orden:** la vía 3 debe ejecutarse antes de recalcular
+`r.jugadores`, para que las bajas asignadas entren en la unión final.
+
+- [ ] **Paso 7: Ejecutar y comprobar que pasan**
+
+Ejecutar: `npx vitest run tests/contabilidad/`
+Esperado: PASAN los 9 previos más los 7 nuevos.
+
+- [ ] **Paso 8: Crear el fichero de asignaciones**
+
+Crear `datos/bajas-asignadas.json` con el contenido literal de la cabecera de
+esta tarea. No se versiona: `datos/` está en `.gitignore`.
+
+- [ ] **Paso 9: Comprobar contra el histórico real**
+
+Con un script temporal que borres después: reconstruir los repartos con las
+asignaciones del fichero y comprobar que **Ronald Araújo (19977) aparece ahora
+en el reparto de Niutin FC (idUc 12493763)**, y que `bajasSinDuenio` lista las
+demás bajas sin reclamar.
+
+- [ ] **Paso 10: Commit**
+
+```bash
+npm test && npm run typecheck
+git add src/contabilidad/asignaciones.ts src/contabilidad/reparto.ts tests/contabilidad/
+git commit -m "feat: asignación manual de las bajas sin dueño"
+```
+
+---
+
 ### Tarea 7: Motor contable
 
 **Ficheros:**
@@ -1604,6 +1927,10 @@ cruzada de la Tarea 8.
 **Si a un jugador del reparto le falta el valor en la fecha del reinicio**, no
 se le asigna cero: se devuelve en `jugadoresSinValor` y quien llame decide.
 Rellenar con cero produciría un saldo inicial inflado y plausible.
+
+**Las bajas sin dueño** (Tarea 6b) no llegan al motor: no están en ningún
+reparto. Es la orden de análisis quien debe listarlas, para que la incertidumbre
+quede declarada y no disimulada.
 
 - [ ] **Paso 1: Escribir el test que falla**
 
