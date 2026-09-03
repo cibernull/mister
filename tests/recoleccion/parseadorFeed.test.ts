@@ -9,7 +9,7 @@ import type { CierreJornada, Transaccion } from '../../src/dominio/eventos.js'
 
 const pagina0 = readFileSync('fixtures/feed-offset-0.json', 'utf8')
 const paginaCierre = readFileSync('fixtures/feed-con-cierre-jornada.json', 'utf8')
-const paginaFinal = readFileSync('fixtures/feed-final-vacio.json', 'utf8')
+const paginaFinal = readFileSync('fixtures/feed-final-agotado.json', 'utf8')
 
 const transaccionesDe = (cuerpo: string): Transaccion[] =>
   parsearPaginaFeed(cuerpo).eventos.filter((e): e is Transaccion => e.tipo === 'transaccion')
@@ -112,12 +112,23 @@ describe('parsearPaginaFeed', () => {
     expect(ruido.length).toBeGreaterThan(0)
   })
 
-  it('marca agotado cuando data llega vacío', () => {
-    expect(parsearPaginaFeed(paginaFinal).agotado).toBe(true)
+  it('marca agotado cuando status es "end" (sin campo data), y no produce eventos', () => {
+    const pagina = parsearPaginaFeed(paginaFinal)
+    expect(pagina.agotado).toBe(true)
+    expect(pagina.eventos).toEqual([])
   })
 
   it('no marca agotado en una página con eventos', () => {
     expect(parsearPaginaFeed(pagina0).agotado).toBe(false)
+  })
+
+  it('lanza si status es "ok" pero no trae el array data', () => {
+    expect(() => parsearPaginaFeed(JSON.stringify({ status: 'ok' }))).toThrow()
+  })
+
+  it('lanza si status es "error" (p. ej. sesión caducada, 401), y el mensaje menciona el status', () => {
+    const cuerpo = JSON.stringify({ status: 'error', popup: false })
+    expect(() => parsearPaginaFeed(cuerpo)).toThrow(/error/)
   })
 
   it('lanza CategoriaDesconocidaError ante una categoría no catalogada', () => {
@@ -165,5 +176,77 @@ describe('parsearPaginaFeed', () => {
       ],
     })
     expect(() => parsearPaginaFeed(cuerpo)).toThrow(/price/i)
+  })
+
+  it('lanza si el data de un evento transfer no es una lista de movimientos', () => {
+    const cuerpo = JSON.stringify({
+      status: 'ok',
+      data: [
+        {
+          category: 'transfer',
+          created: '2026-09-03 10:00:00',
+          // Forma inesperada: ni ausente ni array. Un transfer sin movimientos
+          // no es legítimo: debe lanzar, no producir cero transacciones.
+          data: { motivo: 'forma inesperada' },
+        },
+      ],
+    })
+    expect(() => parsearPaginaFeed(cuerpo)).toThrow()
+  })
+
+  it('lanza si el data de un evento transfer es una lista vacía', () => {
+    const cuerpo = JSON.stringify({
+      status: 'ok',
+      data: [{ category: 'transfer', created: '2026-09-03 10:00:00', data: [] }],
+    })
+    expect(() => parsearPaginaFeed(cuerpo)).toThrow()
+  })
+
+  const gameweekEndCon = (data: unknown) =>
+    JSON.stringify({
+      status: 'ok',
+      data: [{ category: 'gameweek_end', created: '2026-09-03 10:00:00', data }],
+    })
+
+  it('lanza si a un gameweek_end le falta el nivel ranking', () => {
+    expect(() => parsearPaginaFeed(gameweekEndCon({ gameweek: 6 }))).toThrow(/ranking/)
+  })
+
+  it('lanza si a un gameweek_end le falta el nivel ranking.ranking', () => {
+    expect(() => parsearPaginaFeed(gameweekEndCon({ gameweek: 6, ranking: {} }))).toThrow(/ranking/)
+  })
+
+  it('lanza si un gameweek_end trae positions vacío: un cierre sin equipos no es legítimo', () => {
+    const datos = { gameweek: 6, ranking: { ranking: { positions: [] } } }
+    expect(() => parsearPaginaFeed(gameweekEndCon(datos))).toThrow(/positions|vacío/i)
+  })
+
+  it('ningún mensaje de error del parseo de un cierre de jornada filtra el email de un rival', () => {
+    const emailSecreto = 'rival-secreto-no-debe-aparecer@example.com'
+    const datos = {
+      gameweek: 6,
+      ranking: {
+        ranking: {
+          positions: [
+            {
+              idUc: 999,
+              user: { name: 'Equipo Rival', email: emailSecreto, apple_id: 'apple-id-secreto-123' },
+              payment: 0,
+              points: 'no-es-un-entero', // fuerza el fallo de validación
+              negative: false,
+            },
+          ],
+        },
+      },
+    }
+
+    try {
+      parsearPaginaFeed(gameweekEndCon(datos))
+      expect.unreachable('debería haber lanzado por points inválido')
+    } catch (e) {
+      const mensaje = (e as Error).message
+      expect(mensaje).not.toContain(emailSecreto)
+      expect(mensaje).not.toContain('apple-id-secreto-123')
+    }
   })
 })

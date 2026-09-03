@@ -1,3 +1,7 @@
+import Database from 'better-sqlite3'
+import { mkdtempSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { CapturaDuplicadaError, abrirAlmacen } from '../../src/almacen/crudo.js'
 
@@ -117,7 +121,7 @@ describe('almacén crudo', () => {
     expect(() => a.guardarCaptura(captura(1, 21))).not.toThrow(CapturaDuplicadaError)
   })
 
-  it('identifica duplicados por código de error (SQLITE_CONSTRAINT_UNIQUE) y columnas específicas', () => {
+  it('identifica duplicados por código de error (SQLITE_CONSTRAINT_UNIQUE), sin mirar el texto del mensaje', () => {
     const a = almacenEnMemoria()
     a.guardarCaptura(captura(0, 21, '{}', 'r1'))
 
@@ -135,6 +139,46 @@ describe('almacén crudo', () => {
       expect(capturedError.recoleccion).toBe('r1')
       expect(capturedError.offset).toBe(0)
     }
+
+    a.cerrar()
+  })
+
+  it('propaga la violación de otra restricción UNIQUE aunque su mensaje contenga, por casualidad, las palabras "recoleccion" y "offset_feed"', () => {
+    // Regresión del Fallo 5: la detección de duplicados no debe depender del
+    // texto del mensaje de SQLite. Para probarlo sin tocar esquema.ts, se le
+    // añade a la MISMA base de datos (mediante una segunda conexión al mismo
+    // fichero) una restricción UNIQUE ajena, sobre columnas cuyo nombre
+    // contiene esas dos palabras como subcadena sin ser la restricción real
+    // (recoleccion, offset_feed). Una comparación de texto —aunque revise
+    // ambas palabras— caería en un falso positivo aquí; una comprobación
+    // semántica (¿existe ya esa fila?) no.
+    const dir = mkdtempSync(join(tmpdir(), 'mister-crudo-test-'))
+    const ruta = join(dir, 'test.db')
+
+    const a = abrirAlmacen(ruta)
+    a.guardarCaptura(captura(0, 21, '{}', 'r1'))
+
+    const raw = new Database(ruta)
+    raw.exec(`
+      ALTER TABLE capturas ADD COLUMN recoleccion_legado TEXT NOT NULL DEFAULT '';
+      ALTER TABLE capturas ADD COLUMN offset_feed_alt TEXT NOT NULL DEFAULT '';
+      CREATE UNIQUE INDEX idx_legado_test ON capturas(recoleccion_legado, offset_feed_alt);
+    `)
+    raw.close()
+
+    // (recoleccion, offset) distintos de la primera fila: NO choca con la
+    // restricción real. Pero como las dos columnas nuevas se quedan en su
+    // valor por defecto ('', '') igual que en la primera fila, sí choca con
+    // la restricción ajena idx_legado_test.
+    let capturedError: unknown
+    try {
+      a.guardarCaptura(captura(1, 21, '{}', 'r2'))
+    } catch (e) {
+      capturedError = e
+    }
+
+    expect(capturedError).toBeDefined()
+    expect(capturedError).not.toBeInstanceOf(CapturaDuplicadaError)
 
     a.cerrar()
   })

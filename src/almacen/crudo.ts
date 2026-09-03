@@ -60,6 +60,11 @@ export function abrirAlmacen(ruta: string): Almacen {
     `SELECT DISTINCT recoleccion FROM capturas ORDER BY recoleccion`,
   )
 
+  // Ver esViolacionDeUnicidadDeCaptura: comprueba semánticamente si la fila
+  // (recoleccion, offset_feed) ya existía, en lugar de mirar el texto del
+  // mensaje de SQLite.
+  const existeCaptura = db.prepare(`SELECT 1 FROM capturas WHERE recoleccion = ? AND offset_feed = ?`)
+
   return {
     guardarCaptura(c) {
       exigirEnteroNoNegativo(c.offset, 'offset')
@@ -68,7 +73,7 @@ export function abrirAlmacen(ruta: string): Almacen {
       try {
         insertar.run(c)
       } catch (e) {
-        if (esViolacionDeUnicidad(e)) {
+        if (esViolacionDeUnicidadDeCaptura(e, c, existeCaptura)) {
           throw new CapturaDuplicadaError(c.recoleccion, c.offset)
         }
         throw e
@@ -92,24 +97,37 @@ function exigirEnteroNoNegativo(valor: number, campo: string): void {
   }
 }
 
-function esViolacionDeUnicidad(e: unknown): boolean {
-  // Usar el código de error estable en lugar del texto del mensaje.
-  // better-sqlite3 expone SqliteError con la propiedad 'code'.
-  // Para la restricción UNIQUE de (recoleccion, offset_feed), el código es SQLITE_CONSTRAINT_UNIQUE.
-  // Verificamos también que el mensaje contiene ambas columnas para asegurar que es la restricción
-  // correcta y no otra UNIQUE futura en la tabla.
+/**
+ * Distingue una violación de la restricción UNIQUE (recoleccion, offset_feed)
+ * de cualquier otra violación UNIQUE que el esquema pudiera adquirir en el
+ * futuro — SIN mirar el texto del mensaje de SQLite.
+ *
+ * Comparar subcadenas del mensaje es frágil por dos motivos: el formato del
+ * mensaje no es un contrato estable de SQLite/better-sqlite3, y una
+ * comparación por subcadena puede dar un falso positivo si alguna columna
+ * futura se llama, por ejemplo, "recoleccion_legado" u "offset_feed_alt"
+ * (ambas contienen las palabras buscadas sin ser la restricción real).
+ *
+ * En vez de eso, se comprueba directamente si ya existía una fila con esa
+ * (recoleccion, offset): el INSERT solo pudo chocar con ELLA a través de la
+ * restricción real. Si no existe tal fila, el fallo vino de otra restricción
+ * UNIQUE y debe propagarse tal cual, no reinterpretarse como duplicado.
+ *
+ * Mientras el esquema (ver esquema.ts) siga teniendo una única restricción
+ * UNIQUE, el código de error por sí solo ya bastaría; esta comprobación
+ * adicional documenta esa suposición en código en vez de darla por sentada,
+ * y sigue siendo correcta si el esquema gana una restricción UNIQUE más.
+ */
+function esViolacionDeUnicidadDeCaptura(
+  e: unknown,
+  c: Pick<Captura, 'recoleccion' | 'offset'>,
+  existeCaptura: Database.Statement,
+): boolean {
   if (!isErrorWithCode(e)) return false
   if (e.code !== 'SQLITE_CONSTRAINT_UNIQUE') return false
-  // Verificar que el error menciona las dos columnas de la restricción
-  const message = e.message ?? ''
-  return message.includes('recoleccion') && message.includes('offset_feed')
+  return existeCaptura.get(c.recoleccion, c.offset) !== undefined
 }
 
-function isErrorWithCode(e: unknown): e is { code: string; message: string } {
-  return (
-    typeof e === 'object' &&
-    e !== null &&
-    typeof (e as Record<string, unknown>).code === 'string' &&
-    typeof (e as Record<string, unknown>).message === 'string'
-  )
+function isErrorWithCode(e: unknown): e is { code: string } {
+  return typeof e === 'object' && e !== null && typeof (e as Record<string, unknown>).code === 'string'
 }

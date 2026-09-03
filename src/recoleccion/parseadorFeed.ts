@@ -9,7 +9,7 @@ import type {
 
 export type PaginaFeed = {
   eventos: Evento[]
-  /** El histórico se agota cuando el servidor devuelve `data` vacío. */
+  /** El histórico se agota cuando el servidor devuelve `status: "end"`. */
   agotado: boolean
 }
 
@@ -19,6 +19,14 @@ export type PaginaFeed = {
  */
 export class CategoriaDesconocidaError extends Error {
   readonly categoria: string
+  /**
+   * Identificador seguro del evento (categoría y fecha), NO el evento
+   * completo: al ser una categoría no catalogada, no se sabe qué trae su
+   * `data` — podría llevar datos personales de algún miembro de la liga en
+   * una categoría futura todavía no vista. El crudo íntegro ya queda guardado
+   * en el almacén antes de parsear (ver recolectar.ts), así que no hace
+   * falta repetirlo aquí para poder diagnosticarlo.
+   */
   readonly crudo: string
 
   constructor(categoria: string, crudo: string) {
@@ -32,6 +40,7 @@ export class CategoriaDesconocidaError extends Error {
 /** Tipo de movimiento no catalogado: su signo contable es desconocido. */
 export class OperacionDesconocidaError extends Error {
   readonly operacion: string
+  /** Identificador seguro del movimiento (ver nota de privacidad en `idMovimiento`). */
   readonly crudo: string
 
   constructor(operacion: string, crudo: string) {
@@ -64,14 +73,32 @@ type EventoBruto = {
   data?: unknown
 }
 
+/**
+ * Parsea una página del feed.
+ *
+ * El fin del histórico se decide por `status`, nunca por que `data` esté
+ * vacío: una respuesta de error (401 por sesión caducada, p. ej.) tampoco
+ * trae `data`, y confundirla con el final legítimo cortaría la recolección
+ * en silencio, perdiendo todos los eventos restantes.
+ */
 export function parsearPaginaFeed(cuerpo: string): PaginaFeed {
-  const respuesta = JSON.parse(cuerpo) as { data?: EventoBruto[] }
-  const brutos = respuesta.data ?? []
+  const respuesta = JSON.parse(cuerpo) as { status?: string; data?: unknown }
 
-  return {
-    eventos: brutos.flatMap(parsearEvento),
-    agotado: brutos.length === 0,
+  if (respuesta.status === 'end') {
+    return { eventos: [], agotado: true }
   }
+
+  if (respuesta.status === 'ok') {
+    if (!Array.isArray(respuesta.data)) {
+      throw new Error(
+        `la respuesta trae status "ok" pero no un array "data": ${JSON.stringify(cuerpo).slice(0, 200)}`,
+      )
+    }
+    const brutos = respuesta.data as EventoBruto[]
+    return { eventos: brutos.flatMap(parsearEvento), agotado: false }
+  }
+
+  throw new Error(`status de feed inesperado: ${JSON.stringify(respuesta.status)}`)
 }
 
 /**
@@ -86,7 +113,7 @@ function parsearEvento(bruto: EventoBruto): Evento[] {
   const fecha = bruto.created ?? ''
 
   if (categoria === 'transfer') {
-    return comoLista(bruto.data).map((m) => parsearTransaccion(m, fecha))
+    return exigirMovimientos(bruto.data, fecha).map((m) => parsearTransaccion(m, fecha))
   }
 
   if (categoria === 'gameweek_end') {
@@ -97,13 +124,23 @@ function parsearEvento(bruto: EventoBruto): Evento[] {
     return [{ tipo: 'ruido', fecha, motivo: `categoría sin efecto contable: ${categoria}` }]
   }
 
-  throw new CategoriaDesconocidaError(categoria, JSON.stringify(bruto))
+  throw new CategoriaDesconocidaError(categoria, JSON.stringify({ category: bruto.category, created: bruto.created }))
 }
 
-function comoLista(valor: unknown): Record<string, unknown>[] {
-  if (Array.isArray(valor)) return valor as Record<string, unknown>[]
-  if (valor && typeof valor === 'object') return Object.values(valor as object)
-  return []
+/**
+ * Exige que `data` de un evento `transfer` sea una lista de movimientos no
+ * vacía. Una forma inesperada (ausente, objeto, vacía) debe lanzar: un
+ * `transfer` sin ningún movimiento no es legítimo, y degradar a cero
+ * transacciones perdería dinero en silencio.
+ */
+function exigirMovimientos(valor: unknown, fecha: string): Record<string, unknown>[] {
+  if (!Array.isArray(valor) || valor.length === 0) {
+    throw new Error(
+      `evento transfer (${fecha}): "data" no es una lista de movimientos, o está vacía; ` +
+        `un transfer sin movimientos no es legítimo`,
+    )
+  }
+  return valor as Record<string, unknown>[]
 }
 
 /** `id_uc` 0 es el mercado de Mister, no un equipo. */
@@ -113,17 +150,28 @@ function parte(idUc: unknown, nombre: unknown): Parte {
     : { clase: 'equipo', nombre: String(nombre ?? '') }
 }
 
-function exigirEntero(valor: unknown, campo: string, crudo: unknown): number {
+function exigirEntero(valor: unknown, campo: string, contexto: string): number {
   if (!Number.isInteger(valor)) {
-    throw new Error(`el campo ${campo} no es un entero: ${JSON.stringify(valor)} en ${JSON.stringify(crudo)}`)
+    throw new Error(`el campo ${campo} no es un entero: ${JSON.stringify(valor)} (${contexto})`)
   }
   return valor as number
+}
+
+/**
+ * Identifica un movimiento de forma segura, sin volcar el objeto entero: un
+ * movimiento real trae `fb_id1`/`fb_id2` (identificadores de Facebook de los
+ * usuarios implicados, ver aviso de privacidad en docs/api-mister.md), además
+ * de fotos de perfil. `id_transfer` es el identificador de la operación y
+ * basta para localizarla en el crudo ya guardado en el almacén.
+ */
+function idMovimiento(m: Record<string, unknown>): string {
+  return `id_transfer=${JSON.stringify(m['id_transfer'] ?? null)}`
 }
 
 function parsearTransaccion(m: Record<string, unknown>, fecha: string): Transaccion {
   const operacion = String(m['type'] ?? '')
   if (!OPERACIONES.has(operacion)) {
-    throw new OperacionDesconocidaError(operacion, JSON.stringify(m))
+    throw new OperacionDesconocidaError(operacion, idMovimiento(m))
   }
 
   return {
@@ -132,25 +180,73 @@ function parsearTransaccion(m: Record<string, unknown>, fecha: string): Transacc
     jugador: String(m['name'] ?? ''),
     origen: parte(m['id_uc_from'], m['from']),
     destino: parte(m['id_uc_to'], m['to']),
-    importe: exigirEntero(m['price'], 'price', m),
+    importe: exigirEntero(m['price'], 'price', idMovimiento(m)),
     operacion: operacion as TipoOperacion,
   }
 }
 
-function parsearCierreJornada(datos: unknown, fecha: string): CierreJornada {
-  const d = (datos ?? {}) as Record<string, unknown>
-  const anidado = (d['ranking'] ?? {}) as Record<string, unknown>
-  const interno = (anidado['ranking'] ?? {}) as Record<string, unknown>
-  const posiciones = comoLista(interno['positions'])
+/** Interpreta `valor` como objeto plano (no array, no null); `undefined` si no lo es. */
+function comoObjeto(valor: unknown): Record<string, unknown> | undefined {
+  return valor && typeof valor === 'object' && !Array.isArray(valor) ? (valor as Record<string, unknown>) : undefined
+}
 
-  const resultados: ResultadoEquipo[] = posiciones.map((p) => {
-    const usuario = (p['user'] ?? {}) as Record<string, unknown>
+/**
+ * Exige que `valor` sea un objeto: uno de los tres niveles de anidamiento de
+ * `gameweek_end` (`data`, `data.ranking` o `data.ranking.ranking`). Si falta
+ * cualquiera de ellos, lanza nombrando qué nivel falta: un cierre de jornada
+ * sin equipos nunca es legítimo, sería perder los premios de una jornada
+ * entera.
+ */
+function exigirNivel(valor: unknown, nivel: string, fecha: string): Record<string, unknown> {
+  const objeto = comoObjeto(valor)
+  if (!objeto) {
+    throw new Error(`cierre de jornada (${fecha}): falta el nivel "${nivel}" en el evento gameweek_end`)
+  }
+  return objeto
+}
+
+/** Exige que `data.ranking.ranking.positions` sea una lista de equipos no vacía. */
+function exigirPosiciones(valor: unknown, fecha: string): Record<string, unknown>[] {
+  if (!Array.isArray(valor)) {
+    throw new Error(
+      `cierre de jornada (${fecha}): falta el nivel "data.ranking.ranking.positions" en el evento gameweek_end`,
+    )
+  }
+  if (valor.length === 0) {
+    throw new Error(
+      `cierre de jornada (${fecha}): "data.ranking.ranking.positions" está vacío; ` +
+        `un cierre de jornada sin equipos no es legítimo`,
+    )
+  }
+  return valor as Record<string, unknown>[]
+}
+
+/**
+ * Identifica una posición de forma segura, sin volcar el objeto entero: cada
+ * posición trae un `user` con el correo electrónico y los identificadores de
+ * Apple/Google/Facebook del equipo rival (ver aviso de privacidad en
+ * docs/api-mister.md). `idUc` es la identidad estable y pública del equipo
+ * dentro de la liga.
+ */
+function idPosicion(p: Record<string, unknown>, indice: number): string {
+  return `idUc=${JSON.stringify(p['idUc'] ?? null)}, índice=${indice}`
+}
+
+function parsearCierreJornada(datos: unknown, fecha: string): CierreJornada {
+  const d = exigirNivel(datos, 'data', fecha)
+  const anidado = exigirNivel(d['ranking'], 'data.ranking', fecha)
+  const interno = exigirNivel(anidado['ranking'], 'data.ranking.ranking', fecha)
+  const posiciones = exigirPosiciones(interno['positions'], fecha)
+
+  const resultados: ResultadoEquipo[] = posiciones.map((p, indice) => {
+    const usuario = comoObjeto(p['user']) ?? {}
+    const contexto = idPosicion(p, indice)
 
     return {
       equipo: String(usuario['name'] ?? ''),
       // `payment` viene null cuando el equipo no cobra; eso sí es cero.
-      premio: p['payment'] === null ? 0 : exigirEntero(p['payment'], 'payment', p),
-      puntos: exigirEntero(p['points'], 'points', p),
+      premio: p['payment'] === null ? 0 : exigirEntero(p['payment'], 'payment', contexto),
+      puntos: exigirEntero(p['points'], 'points', contexto),
       sinPuntuar: Boolean(p['negative'] ?? false),
     }
   })
@@ -158,7 +254,7 @@ function parsearCierreJornada(datos: unknown, fecha: string): CierreJornada {
   return {
     tipo: 'cierreJornada',
     fecha,
-    jornada: exigirEntero(d['gameweek'], 'gameweek', d),
+    jornada: exigirEntero(d['gameweek'], 'gameweek', `fecha=${fecha}`),
     resultados,
   }
 }
