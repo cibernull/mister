@@ -27,9 +27,20 @@ const MESES: Record<string, string> = {
 export function parsearSerieValores(html: string): PuntoValor[] {
   const porFecha = new Map<string, number>()
 
-  for (const m of html.matchAll(/\{"value":"(\d+)","date":"([^"]+)"\}/g)) {
+  // La forma general acepta cualquier contenido entre comillas en "value"
+  // (incluida la cadena vacía): si se exigiera `\d+` aquí, un punto con el
+  // valor vacío, nulo o no numérico simplemente no haría match y
+  // desaparecería de la serie sin que nadie se enterara — luego `valorEn`
+  // devolvería `null` para ese día, indistinguible de "no hay dato".
+  for (const m of html.matchAll(/\{"value":"([^"]*)","date":"([^"]+)"\}/g)) {
+    const valorCrudo = m[1]!
+    if (!/^\d+$/.test(valorCrudo)) {
+      throw new Error(
+        `valor no numérico en un punto de la serie: "value":${JSON.stringify(valorCrudo)}, "date":${JSON.stringify(m[2])}`,
+      )
+    }
     const fecha = aIso(m[2]!)
-    if (!porFecha.has(fecha)) porFecha.set(fecha, Number(m[1]))
+    if (!porFecha.has(fecha)) porFecha.set(fecha, Number(valorCrudo))
   }
 
   if (porFecha.size === 0) throw new SerieVaciaError()

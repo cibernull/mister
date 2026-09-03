@@ -42,6 +42,32 @@ describe('parsearSerieValores', () => {
   it('lanza si la página no trae ningún punto', () => {
     expect(() => parsearSerieValores('<html>nada</html>')).toThrow(SerieVaciaError)
   })
+
+  it('lanza si un punto trae un valor no numérico, en vez de desaparecer de la serie en silencio', () => {
+    // Junto a un punto válido: si el inválido desapareciera en silencio, esto
+    // NO lanzaría (la serie tendría igualmente su único punto válido) — la
+    // prueba deja de depender de que la serie quede vacía.
+    expect(() =>
+      parsearSerieValores(con([['100', '3 ago 2026'], ['N/A', '4 ago 2026']])),
+    ).toThrow(/valor/i)
+  })
+
+  it('lanza si un punto trae el valor vacío', () => {
+    expect(() =>
+      parsearSerieValores(con([['100', '3 ago 2026'], ['', '4 ago 2026']])),
+    ).toThrow(/valor/i)
+  })
+
+  it('el punto inválido no desaparece silenciosamente dejando pasar solo los válidos', () => {
+    let error: Error | undefined
+    try {
+      parsearSerieValores(con([['100', '3 ago 2026'], ['N/A', '4 ago 2026'], ['300', '5 ago 2026']]))
+    } catch (e) {
+      error = e as Error
+    }
+    expect(error, 'debería haber lanzado en vez de devolver una serie con huecos').toBeDefined()
+    expect(error).not.toBeInstanceOf(SerieVaciaError)
+  })
 })
 
 describe('valorEn', () => {

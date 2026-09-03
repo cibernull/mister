@@ -529,5 +529,42 @@ describe('parsearPaginaFeed', () => {
       const bajas = parsearPaginaFeed(pagina0).eventos.filter((e) => e.tipo === 'bajaPlantilla')
       expect(bajas.length).toBeGreaterThan(0)
     })
+
+    describe('id_team con forma inesperada: lanza, nunca se resuelve por coacción numérica', () => {
+      it('lanza si id_team es un array, en vez de clasificarlo como baja (Number([]) === 0)', () => {
+        expect(() =>
+          parsearPaginaFeed(playerTransfer({ id: 1, name: 'X', id_team: [] })),
+        ).toThrow(/id_team/)
+      })
+
+      it('lanza si id_team es una cadena no numérica, en vez de perder el evento (Number("N/A") es NaN)', () => {
+        expect(() =>
+          parsearPaginaFeed(playerTransfer({ id: 1, name: 'X', id_team: 'N/A' })),
+        ).toThrow(/id_team/)
+      })
+
+      it('lanza si id_team es la cadena numérica "0", en vez de tratarla como el entero 0', () => {
+        expect(() =>
+          parsearPaginaFeed(playerTransfer({ id: 1, name: 'X', id_team: '0' })),
+        ).toThrow(/id_team/)
+      })
+
+      it('lanza si id_team es un número decimal, en vez de truncarlo a entero', () => {
+        expect(() =>
+          parsearPaginaFeed(playerTransfer({ id: 1, name: 'X', id_team: 6.5 })),
+        ).toThrow(/id_team/)
+      })
+
+      it('el mensaje de error no vuelca el objeto crudo del movimiento', () => {
+        let error: Error | undefined
+        try {
+          parsearPaginaFeed(playerTransfer({ id: 1, name: 'X', id_team: 'N/A', fb_id1: 'facebook-secreto-789' }))
+        } catch (e) {
+          error = e as Error
+        }
+        expect(error, 'debería haber lanzado por id_team inválido').toBeDefined()
+        expect(error!.message).not.toContain('facebook-secreto-789')
+      })
+    })
   })
 })

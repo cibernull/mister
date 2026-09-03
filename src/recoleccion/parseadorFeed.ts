@@ -240,6 +240,31 @@ function parsearTransaccion(m: Record<string, unknown>, fecha: string, idEventoC
 }
 
 /**
+ * Decide si un `player_transfer` es una baja de plantilla (sin equipo) o
+ * ruido (fichaje de LaLiga entre clubes), a partir de `id_team`.
+ *
+ * Las tres únicas formas legítimas observadas en el histórico real: `null`,
+ * ausente, o un entero (`0` es "sin equipo"; un entero positivo es un
+ * fichaje entre clubes). Cualquier otra forma lanza — no se resuelve por
+ * coacción con `Number(x)`, porque `Number([])` es `0` (clasificaría un
+ * array como baja falsa) y `Number("N/A")` es `NaN` (ni `=== 0` ni verdadero
+ * en ninguna comparación, así que el evento se perdería como ruido en
+ * silencio). Una cadena numérica como `"0"` tampoco es una de las tres
+ * formas observadas — Mister nunca la manda así — y un decimal tampoco es
+ * un entero: ambas lanzan en vez de truncarse o coaccionarse.
+ */
+function esBajaDePlantilla(idEquipo: unknown, contexto: string): boolean {
+  if (idEquipo === null || idEquipo === undefined) return true
+  if (Number.isInteger(idEquipo)) return (idEquipo as number) === 0
+  // Se informa del propio valor de `id_team` (no del movimiento entero: ese
+  // sí podría traer datos personales, ver `idMovimiento`), recortado por si
+  // fuera un array u objeto grande.
+  throw new Error(
+    `id_team no es null, ausente, ni un entero: tipo ${typeof idEquipo}, valor ${JSON.stringify(idEquipo).slice(0, 200)} (${contexto})`,
+  )
+}
+
+/**
  * Un fichaje de LaLiga real. Si el jugador se queda sin equipo, abandona la
  * competición: eso sí afecta a las plantillas de la liga Fantasy.
  */
@@ -248,14 +273,13 @@ function parsearMovimientoDeLaLiga(
   fecha: string,
   idEvento: number,
 ): Evento {
-  const idEquipo = m['id_team']
-  const sinEquipo = idEquipo === null || idEquipo === undefined || Number(idEquipo) === 0
+  const contexto = `idEvento=${idEvento}`
+  const sinEquipo = esBajaDePlantilla(m['id_team'], contexto)
 
   if (!sinEquipo) {
     return { tipo: 'ruido', idEvento, fecha, motivo: 'fichaje de LaLiga entre clubes' }
   }
 
-  const contexto = `idEvento=${idEvento}`
   return {
     tipo: 'bajaPlantilla',
     idEvento,

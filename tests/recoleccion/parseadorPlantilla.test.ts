@@ -24,4 +24,22 @@ describe('parsearPlantilla', () => {
   it('devuelve vacío si no hay jugadores', () => {
     expect(parsearPlantilla('<html><body>nada</body></html>')).toEqual([])
   })
+
+  describe('la ruta players/ debe ir anclada al principio del camino', () => {
+    it('acepta la ruta relativa players/{id}/slug', () => {
+      expect(parsearPlantilla(pagina(['players/34/slug']))).toEqual([34])
+    })
+
+    it('acepta la ruta absoluta con el dominio real', () => {
+      expect(
+        parsearPlantilla(pagina(['https://mister.mundodeportivo.com/players/34/slug'])),
+      ).toEqual([34])
+    })
+
+    it('rechaza un enlace de publicidad/seguimiento que contenga "players/" en un parámetro', () => {
+      expect(
+        parsearPlantilla(pagina(['https://ads.ejemplo.com/track?u=/players/99/x'])),
+      ).toEqual([])
+    })
+  })
 })
