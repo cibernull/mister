@@ -159,6 +159,7 @@ body{
 #a1:checked~.env label[for=a1],#a2:checked~.env label[for=a2],#a3:checked~.env label[for=a3],
 #f1:checked~.env label[for=f1],#f2:checked~.env label[for=f2],#f3:checked~.env label[for=f3],
 #f4:checked~.env label[for=f4],#f5:checked~.env label[for=f5],#f6:checked~.env label[for=f6],
+#g1:checked~.env label[for=g1],#g2:checked~.env label[for=g2],#g3:checked~.env label[for=g3],#g4:checked~.env label[for=g4],
 #d1:checked~.env label[for=d1],#d2:checked~.env label[for=d2],#d3:checked~.env label[for=d3],#d4:checked~.env label[for=d4],
 #s1:checked~.env label[for=s1],#s2:checked~.env label[for=s2],#s3:checked~.env label[for=s3],
 #s4:checked~.env label[for=s4],#s5:checked~.env label[for=s5],
@@ -175,6 +176,9 @@ body{
 #f4:checked~.env .fj:not(.td){display:none}
 #f5:checked~.env .fj:not(.ta){display:none}
 #f6:checked~.env .fj:not(.once){display:none}
+#g2:checked~.env .fj:not(.tl){display:none}
+#g3:checked~.env .fj.tl{display:none}
+#g4:checked~.env .fj:not(.tced){display:none}
 #d2:checked~.env .fj:not(.tl){display:none}
 #d3:checked~.env .fj:not(.triv){display:none}
 #d4:checked~.env .fj:not(.tmio){display:none}
@@ -410,6 +414,10 @@ a{color:var(--oro)}
 <input class="ctrl" type="radio" name="sitio" id="s3">
 <input class="ctrl" type="radio" name="sitio" id="s4">
 <input class="ctrl" type="radio" name="sitio" id="s5">
+<input class="ctrl" type="radio" name="jug" id="g1" checked>
+<input class="ctrl" type="radio" name="jug" id="g2">
+<input class="ctrl" type="radio" name="jug" id="g3">
+<input class="ctrl" type="radio" name="jug" id="g4">
 <input class="ctrl" type="radio" name="duenio" id="d1" checked>
 <input class="ctrl" type="radio" name="duenio" id="d2">
 <input class="ctrl" type="radio" name="duenio" id="d3">
@@ -491,6 +499,12 @@ a{color:var(--oro)}
           <span>Dónde busco</span>
           <div class="ops">
             <label for="a3">Los que puedo fichar</label><label for="a1">Solo el mercado de hoy</label><label for="a2">Toda LaLiga</label>
+          </div>
+        </div>
+        <div class="grupo">
+          <span>Jugadores</span>
+          <div class="ops">
+            <label for="g1">Todos</label><label for="g2">Libres</label><label for="g3">No libres</label><label for="g4">Cedibles</label>
           </div>
         </div>
         <div class="grupo">

@@ -270,6 +270,7 @@ const filaJugador = (j) => {
     j.d ? 'td' : '',
     j.a ? 'ta' : '',
     j.duenio ? (j.mio ? 'tmio' : 'triv') : 'tl',
+    j.ced ? 'tced' : '',
     `z${j.puesto}`,
   ]
     .filter(Boolean)
@@ -287,7 +288,7 @@ const filaJugador = (j) => {
   const rec = (j.p + j.d) * 1000 + j.media
   return `<div class="${cls}" data-busca="${esc(j.nombre)} ${esc(j.duenioCorto ?? 'libre')} ${PUESTOS_LARGO[j.puesto]}" data-rec="${rec.toFixed(2)}" data-precio="${j.precio}" data-media="${j.media}" data-puntos="${j.puntos}" data-sube="${(j.subeMes ?? -9).toFixed(4)}" data-hoy="${j.semana ?? -9e9}" data-prox="${j.esperado.toFixed(2)}" data-gol="${j.gol ?? 0}">
       ${dorsal(j.puesto)}
-      <div class="jn">${nombreEnlazado(j)}${j.mk ? '<span class="et et-mk">en el mercado</span>' : ''}${
+      <div class="jn">${nombreEnlazado(j)}${j.mk ? `<span class="et et-mk">${j.ced ? 'se cede' : 'en el mercado'}</span>` : ''}${
         j.duenio
           ? `<span class="et et-eq${j.mio ? ' et-mio' : ''}">${esc(j.duenioCorto)}</span>`
           : '<span class="et et-libre">libre</span>'

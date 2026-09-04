@@ -456,7 +456,7 @@ function detalleDe(f: FichaGuardada | undefined): {
  */
 function construirJugadores(
   universo: JugadorMister[],
-  enVenta: { id: string; precio: number }[],
+  enVenta: { id: string; precio: number; cedible: boolean }[],
   cuentas: ReturnType<typeof reconstruir>,
   fichas: Map<string, { valor: number; nombre?: string; posicion?: number; subeDia?: number; subeMes?: number; dia?: string }>,
   delMes: Map<string, number>,
@@ -469,6 +469,7 @@ function construirJugadores(
   const mesDe = (id: string): number | null =>
     delMes.get(id) ?? (fichas.get(id)?.dia === hoy ? (fichas.get(id)?.subeMes ?? null) : null)
   const seVende = new Map(enVenta.map((v) => [v.id, v.precio]))
+  const enCesion = new Set(enVenta.filter((v) => v.cedible).map((v) => v.id))
 
   const lista = universo.map((j) => ({
     id: j.id,
@@ -483,6 +484,8 @@ function construirJugadores(
     mk: seVende.has(j.id) ? 1 : 0,
     /** Lo que pide quien lo vende. Solo si está en el mercado. */
     pv: seVende.get(j.id) ?? null,
+    /** Su dueño lo ofrece en cesión, no en venta. */
+    ced: enCesion.has(j.id) ? 1 : 0,
     pos: j.posicion,
     /** `injury`, `doubt`… o `null` si está sano. */
     est: j.estado,
@@ -515,6 +518,7 @@ function construirJugadores(
       mes: mesDe(id),
       mk: 0,
       pv: null,
+      ced: 0,
       pos: f.posicion ?? 0,
       est: 'out',
       bl: 0,

@@ -17,6 +17,14 @@ export type EnVenta = {
   precio: number
   /** `id_uc` del rival que lo vende, o `null` si lo ofrece el mercado. */
   idUcVendedor: number | null
+  /**
+   * Su dueño lo ofrece en cesión, no en venta.
+   *
+   * Mister lo marca con `data-loanable` en el puesto del mercado. Hoy no hay
+   * ninguno, pero la liga las tiene permitidas (`loans: 1`) y cuando aparezcan
+   * hay que poder distinguirlos: una cesión no es un fichaje.
+   */
+  cedible: boolean
 }
 
 /**
@@ -57,7 +65,13 @@ export function parsearMercado(html: string): EnVenta[] {
     const duenio = /\bdata-owner="(\d*)"/.exec(trozo)
     const idUc = duenio && duenio[1] !== '' ? Number(duenio[1]) : 0
 
-    salida.push({ id, precio: Number(precio[1]), idUcVendedor: idUc === 0 ? null : idUc })
+    const cesion = /\bdata-loanable="([^"]*)"/.exec(trozo)
+    salida.push({
+      id,
+      precio: Number(precio[1]),
+      idUcVendedor: idUc === 0 ? null : idUc,
+      cedible: cesion !== null && cesion[1] !== '',
+    })
   }
 
   if (salida.length === 0) throw new MercadoVacioError()
