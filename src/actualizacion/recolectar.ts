@@ -98,14 +98,15 @@ export function fundir(volcado: Volcado, nuevas: PaginaCruda[]): Volcado {
 }
 
 /**
- * El slug de nombre de cada jugador, leído de las páginas de los equipos.
+ * Las plantillas de los ocho equipos, leídas de sus páginas.
  *
- * La ficha de un jugador **exige** el slug: `/players/20449` redirige al feed
- * y solo `/players/20449/fer-nino` responde. El id suelto no basta, y el único
- * sitio donde están emparejados es la página del equipo que lo tiene.
+ * El feed no vale para esto: hay altas que Mister no publica como traspaso, y
+ * reconstruir la plantilla sumando traspasos deja jugadores fuera.
  *
- * Son ocho peticiones, y como los slugs no cambian se guardan en caché: en las
- * siguientes pasadas no hace falta volver a pedirlas.
+ * De paso salen los slugs de nombre. Ya no hacen falta para pedir una ficha
+ * —`/players/{id}/x` la devuelve igual; lo que no vale es el id a secas, que
+ * redirige a las noticias— pero se siguen guardando porque son la única forma
+ * de enlazar a la página de un jugador en Mister.
  */
 export async function recolectarPlantillas(
   cliente: Cliente,
@@ -164,11 +165,10 @@ export async function recolectarValores(
   const fallidos: { id: string; motivo: string }[] = []
 
   for (const id of ids) {
-    const slug = slugs.get(String(id))
-    if (slug === undefined) {
-      fallidos.push({ id, motivo: 'no sé su slug, así que no puedo pedir su ficha' })
-      continue
-    }
+    // El slug es decorativo: cualquier cosa que no esté vacía vale. Antes se
+    // dejaba fuera al jugador cuyo slug no se conocía, y eso descartaba justo a
+    // los que no aparecen en ninguna página de equipo.
+    const slug = slugs.get(String(id)) ?? 'x'
     try {
       const html = await cliente.pedirPagina(`/players/${id}/${slug}`)
       const serie = parsearSerieValores(html)

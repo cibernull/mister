@@ -111,22 +111,29 @@ la página del equipo. Los cinco que discrepan son jugadores que **se han ido de
 LaLiga** y siguen en la plantilla: el censo ya no los lista y su valor residual
 solo lo tiene su ficha. Se avisa por su nombre en vez de dejarlos fuera.
 
-### 3 bis. Las fichas, ya casi ninguna
+### 3 bis. El histórico de valores
 
-Solo quedan dos motivos para pedir una ficha de una en una:
+Lo que sube o baja un jugador **en un mes** no lo publica Mister en ningún
+sitio: solo está en la gráfica de su ficha, y las fichas se piden de una en una.
+Por eso el módulo tenía esa cifra para unos pocos y en el resto callaba.
 
-- **el porcentaje del mes**, que no está en ningún sitio salvo la gráfica de la
-  ficha, y que es lo que decide el 📤 y el 🔒 de la propia plantilla;
-- **los que ya no están en LaLiga**, cuyo valor residual solo tiene su ficha.
+Pero una ficha no trae un punto: trae la **serie diaria entera**, más de un año.
+Con una pasada —una petición por jugador— queda el histórico completo:
 
-Eran ciento veintidós fichas al día —dos minutos y medio—; ahora son
-veintitantas, y una pasada entera baja de 2,5 min a unos 25 s.
+```bash
+npm run historico
+```
 
-Además, cada pasada guarda en `modulo/datos/historico-valores.json` lo que vale
-hoy cada uno de los 523. Dentro de un mes el porcentaje mensual saldrá de ahí,
-gratis y para todos, y las fichas dejarán de hacer falta también para eso.
-Hasta entonces se usa la de la ficha **solo si se pidió hoy**: una cifra vieja
-no se enseña.
+Tarda unos nueve minutos y se hace **una vez**. A partir de ahí la cifra del mes
+sale de `modulo/datos/historico-valores.json` para los 523 y sin pedir nada, y
+cada actualización añade su foto del día. Se guardan cuarenta días.
+
+El slug del enlace, por cierto, es decorativo: `/players/{id}/x` devuelve la
+ficha igual. Lo que no vale es el id a secas, que redirige a las noticias.
+
+Las fichas sueltas solo quedan para los huecos: los míos de los que el histórico
+aún no sabe, y los que siguen en una plantilla pero ya no están en LaLiga. Con
+el histórico lleno son cero, y una pasada entera baja de 2,5 min a unos 25 s.
 
 ### 4. Comprueba antes de escribir
 
@@ -151,23 +158,15 @@ El navegador recarga y aparece un aviso con lo que ha cambiado.
 
 - **Cinco jugadores fuera de LaLiga siguen contando.** Javi López, Javi Muñoz,
   Unai Vencedor, Iker Benito y José Ángel Jurado están en la plantilla que
-  publica Mister pero ya no en su censo. Suman 919.000 € entre tres rivales, o
-  sea unos 230.000 € de tope. Se cuentan por su valor residual, que es lo que
-  hace la página del equipo, pero no está confirmado que Mister los sume.
+  publica Mister pero ya no en su censo. No hay forma de comprobarlo desde
+  fuera: el único tope de puja que Mister publica es el propio, y en la
+  plantilla propia no hay ninguno. El `teamValue` de los cierres de jornada no
+  sirve —es el del once, no el de la plantilla: 54.979.000 frente a los
+  80.305.000 que sí cuadran con `maxDebt`—. Así que se cuentan por su valor
+  residual, que es lo que hace la página del equipo, y la ficha de cada equipo
+  dice cuánto pesan: entre 40.000 € y 100.250 € de tope, según el equipo.
 - **Cacaculopedopis: 92 puntos sumando jornadas, 93 en la clasificación.** Un
   punto de diferencia, sin explicar.
-- **El porcentaje del mes solo lo tienen unos pocos** hasta que el histórico de
-  valores tenga tres semanas de recorrido. Mientras tanto, el resto enseña la
-  subida del día, que sí es exacta para todos.
-
-## Comandos
-
-| Comando | Qué hace |
-|---|---|
-| `npm run app` | Levanta la app con el botón en `127.0.0.1:4788` |
-| `npm run credenciales` | Lo mismo que la pantalla, desde el Terminal |
-| `npm run actualizar` | Una pasada desde el Terminal, sin la app |
-| `npm run generar` | Solo rehace el HTML con los datos que ya hay |
 
 ## Verla desde el móvil
 
@@ -183,3 +182,14 @@ su sitio se lee de cuándo son los datos.
 Es una foto fija: cada vez que se actualice en el Mac hay que volver a
 publicarla sobre la misma dirección. A cambio se abre desde cualquier sitio, con
 el Mac apagado, y es la forma de enseñársela a alguien más.
+
+## Comandos
+
+| Comando | Qué hace |
+|---|---|
+| `npm run app` | Levanta la app con el botón en `127.0.0.1:4788` |
+| `npm run credenciales` | Lo mismo que la pantalla, desde el Terminal |
+| `npm run actualizar` | Una pasada desde el Terminal, sin la app |
+| `npm run generar` | Solo rehace el HTML con los datos que ya hay |
+| `npm run publicar` | Prepara `datos/publicada.html` para subirla a la web |
+| `npm run historico` | Rellena el histórico de valores desde las fichas (una vez, ~9 min) |

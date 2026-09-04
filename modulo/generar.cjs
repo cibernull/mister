@@ -240,6 +240,7 @@ const filaJugador = (j) => {
 }
 
 const filasJugadores = J.map(filaJugador).join(NL)
+const PORID_PRE = new Map(J.map((j) => [String(j.id), j]))
 
 // ── Marcador ─────────────────────────────────────────────────────────────────
 const ico = (d) =>
@@ -252,6 +253,25 @@ const marcador = `  <div class="marcador">
   </div>`
 
 // ── Cuentas de un equipo ─────────────────────────────────────────────────────
+// Los que ya no juegan en LaLiga siguen en la plantilla que publica Mister,
+// con un valor residual, pero desaparecen de su censo de jugadores. No hay
+// forma de saber desde fuera si Mister los suma al valor de plantilla —el
+// único tope de puja que publica es el mío, y en mi plantilla no hay ninguno—,
+// así que se cuentan, que es lo que hace su propia página, y se dice cuánto
+// pesan por si acaso.
+const FUERA = new Map(
+  EQ.map((e) => {
+    const idos = (PL[e.n] ?? []).map((id) => PORID_PRE.get(String(id))).filter((j) => j && j.est === 'out')
+    return [e.n, { n: idos.length, valor: idos.reduce((s, j) => s + j.valor, 0), nombres: idos.map((j) => j.nombre) }]
+  }),
+)
+
+const avisoFuera = (e) => {
+  const f = FUERA.get(e.n)
+  if (!f || f.n === 0) return ''
+  return `<p class="nota-fuera">Incluye ${eur(f.valor)} de ${f.n === 1 ? '1 jugador que ya no juega' : `${f.n} jugadores que ya no juegan`} en LaLiga (${f.nombres.map(esc).join(', ')}). Si Mister no los contara, su tope de puja bajaría ${eur(0.25 * f.valor)}.</p>`
+}
+
 const cuentasDe = (e) => `<div class="cuenta">
         <div class="l"><span>Empezó con</span><span>${eur(e.ini)}</span></div>
         <div class="l"><span>Premios de las jornadas</span><span class="mas">+${eur(e.pre)}</span></div>
@@ -261,10 +281,11 @@ const cuentasDe = (e) => `<div class="cuenta">
         <div class="l"><span>Más su plantilla, que vale</span><span>${eur(e.pl)}</span></div>
         <div class="l tot"><span>Patrimonio hoy</span><span>${eur(e.patrimonio)}</span></div>
         <div class="l"><span>Sobre los 50.000.000 € de salida</span><span class="${clase(e.sobre50)}">${firma(e.sobre50)}</span></div>
-      </div>`
+      </div>
+      ${avisoFuera(e)}`
 
 /** La plantilla completa de un equipo, por posición y valor. */
-const PORID = new Map(J.map((j) => [String(j.id), j]))
+const PORID = PORID_PRE
 const plantillaDe = (e) => {
   const suyos = (PL[e.n] ?? [])
     .map((id) => PORID.get(String(id)) ?? { id, nombre: null, puesto: 0, valor: VALOR.get(String(id)) ?? null, clausula: null, media: null })

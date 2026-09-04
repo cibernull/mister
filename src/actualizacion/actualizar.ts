@@ -25,6 +25,7 @@ import {
 } from './recolectar.js'
 import type { JugadorMister } from '../recoleccion/parseadorUniverso.js'
 import { verificar } from './verificar.js'
+import { podar, subidasDelMes, type Historico } from './historicoValores.js'
 
 const RAIZ = process.cwd()
 const VOLCADO = join(RAIZ, 'datos', 'volcado-feed.json')
@@ -32,10 +33,6 @@ const DATOS = join(RAIZ, 'modulo', 'datos')
 const CACHE_VALORES = join(DATOS, 'valores-ficha.json')
 const CACHE_SLUGS = join(DATOS, 'slugs.json')
 const HISTORICO = join(DATOS, 'historico-valores.json')
-/** Días de valores que se guardan. Con 40 sobra para mirar un mes atrás. */
-const DIAS_DE_HISTORICO = 40
-/** A partir de cuántos días de histórico la cifra ya se puede llamar «del mes». */
-const DIAS_PARA_LLAMARLO_MES = 21
 
 const paso = (t: string) => process.stderr.write(`${t}\n`)
 const leerJson = <T>(ruta: string): T => JSON.parse(readFileSync(ruta, 'utf8')) as T
@@ -128,23 +125,36 @@ async function main(): Promise<Resultado> {
 
   let cuentas = reconstruir(hechos, constantes, conUniverso(), leidas.plantillas)
 
+  // ── 3 ter. El histórico de valores ─────────────────────────────────────────
+  // Lo que sube o baja un jugador EN UN MES no lo publica Mister en ningún
+  // sitio: solo está en la gráfica de su ficha, de una en una. Guardando cada
+  // día lo que vale cada uno, esa cifra sale de aquí para los 523 y gratis.
+  // `npm run historico` lo rellena de golpe leyendo las fichas una vez.
+  const hoy = new Date().toISOString().slice(0, 10)
+  const historico = existsSync(HISTORICO) ? leerJson<Historico>(HISTORICO) : {}
+  historico[hoy] = Object.fromEntries(universo.map((j) => [j.id, j.valor]))
+  podar(historico)
+  escribirJson(HISTORICO, historico)
+  const delMes = subidasDelMes(historico, hoy)
+  paso(`Histórico: ${Object.keys(historico).length} días, ${delMes.size} jugadores con tendencia del mes.`)
+
   // Qué fichas hay que pedir.
   //
-  // Ya no hacen falta para el valor: el censo lo da al día para los 523. Solo
-  // quedan dos motivos, y los dos son cortos:
+  // Cada vez menos. El valor lo da el censo al día para los 523, y la
+  // tendencia del mes la da el histórico en cuanto tiene recorrido. Solo
+  // quedan los huecos:
   //
-  //   · el porcentaje del mes, que solo está en la serie diaria de la ficha y
-  //     es lo que decide el 📤 y el 🔒 de mi propia plantilla;
+  //   · los míos de los que el histórico aún no sabe, porque son los que
+  //     deciden el 📤 y el 🔒;
   //   · los que siguen en una plantilla pero ya no están en LaLiga, que el
   //     censo no lista y cuyo valor residual solo tiene su ficha.
   //
-  // Eran ciento veintidós fichas al día, dos minutos y medio; ahora son
-  // veintitantas.
-  const hoy = new Date().toISOString().slice(0, 10)
+  // Eran ciento veintidós al día, dos minutos y medio. Con el histórico lleno
+  // son cero.
   const enPlantilla = [...new Set(Object.values(cuentas.plantillas).flat())]
   const mios = cuentas.plantillas[constantes.equipos.find((e) => e.mio)?.nombre ?? ''] ?? []
   const fueraDelCenso = enPlantilla.filter((id) => !porId.has(id))
-  const interesan = [...new Set([...mios, ...fueraDelCenso])]
+  const interesan = [...new Set([...mios.filter((id) => !delMes.has(id)), ...fueraDelCenso])]
   const faltan = interesan.filter((id) => cache.get(id)?.dia !== hoy)
   let fichasPedidas = 0
   if (faltan.length > 0) {
@@ -209,18 +219,7 @@ async function main(): Promise<Resultado> {
   // las trae todas y al día.
   const clausulas = universo.filter((j) => j.clausula !== null)
   escribirJson(join(DATOS, 'clausulas.json'), clausulas.map((j) => [Number(j.id), j.clausula! / 1000]))
-
-  // El histórico de valores, que es lo que con el tiempo hará innecesarias las
-  // fichas. Mister no publica en ningún sitio lo que ha subido un jugador en un
-  // mes: solo lo tiene la gráfica de su ficha, de una en una. Guardando cada
-  // día lo que vale cada uno, dentro de un mes esa cifra sale de aquí, gratis y
-  // para los 523, en vez de costar ciento veintidós peticiones.
-  const historico = existsSync(HISTORICO) ? leerJson<Record<string, Record<string, number>>>(HISTORICO) : {}
-  historico[hoy] = Object.fromEntries(universo.map((j) => [j.id, j.valor]))
-  for (const d of Object.keys(historico).sort().slice(0, -DIAS_DE_HISTORICO)) delete historico[d]
-  escribirJson(HISTORICO, historico)
-
-  escribirJson(join(DATOS, 'jugadores-calc.json'), construirJugadores(universo, enVenta, cuentas, cache, subidasDelMes(historico, hoy)))
+  escribirJson(join(DATOS, 'jugadores-calc.json'), construirJugadores(universo, enVenta, cuentas, cache, delMes))
   escribirJson(
     join(DATOS, 'jornadas.json'),
     hechos.jornadas.map((j) => ({
@@ -282,37 +281,6 @@ function construirDatosLiga(
     .reverse()
     .map((t) => ({ id: t.idJugador, nombre: t.nombre, de: t.idUcDe ? t.de : null, a: t.idUcA ? t.a : null, importe: t.importe, tipo: t.tipo, fecha: t.cuando, pos: t.posicion }))
   return { jugadores: [...jugadores.values()], movimientos, porEquipo }
-}
-
-/**
- * Lo que ha subido cada jugador en el último mes, según nuestro histórico.
- *
- * Se compara con la foto más antigua que haya, siempre que sea de hace al
- * menos tres semanas: con menos recorrido la cifra existiría pero significaría
- * otra cosa, y presentarla como «este mes» sería mentir por omisión. Hasta que
- * el histórico crezca, quien llama tira de la ficha.
- */
-function subidasDelMes(historico: Record<string, Record<string, number>>, hoy: string): Map<string, number> {
-  const dias = Object.keys(historico).sort()
-  const haceUnMes = new Date(`${hoy}T00:00:00Z`)
-  haceUnMes.setUTCDate(haceUnMes.getUTCDate() - 30)
-  const objetivo = haceUnMes.toISOString().slice(0, 10)
-
-  // El primer día que llegue al mes; si no hay ninguno, el más antiguo que haya.
-  const referencia = dias.find((d) => d >= objetivo) ?? dias[0]
-  const antes = referencia === undefined ? undefined : historico[referencia]
-  if (referencia === undefined || antes === undefined) return new Map()
-
-  const dist = Math.round((Date.parse(`${hoy}T00:00:00Z`) - Date.parse(`${referencia}T00:00:00Z`)) / 86400000)
-  if (dist < DIAS_PARA_LLAMARLO_MES) return new Map()
-
-  const ahora = historico[hoy] ?? {}
-  const subidas = new Map<string, number>()
-  for (const [id, v] of Object.entries(ahora)) {
-    const previo = antes[id]
-    if (previo !== undefined) subidas.set(id, v - previo)
-  }
-  return subidas
 }
 
 /**
