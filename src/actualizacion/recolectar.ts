@@ -143,7 +143,15 @@ export async function recolectarPlantillas(
  * Un fallo suelto no aborta la pasada: se devuelve aparte para poder decir de
  * quién no se sabe el valor, en vez de dar una plantilla corta sin avisar.
  */
-export type DatosFicha = { valor: number; nombre: string; posicion: number }
+export type DatosFicha = {
+  valor: number
+  nombre: string
+  posicion: number
+  /** Lo que ha cambiado su valor desde ayer. */
+  dia: number
+  /** Lo que ha cambiado en los últimos 30 días. */
+  mes: number
+}
 
 export async function recolectarValores(
   cliente: Cliente,
@@ -165,7 +173,18 @@ export async function recolectarValores(
       const ultimo = serie[serie.length - 1]
       if (ultimo === undefined) throw new Error('la serie de valores vino vacía')
       const ficha = parsearFicha(html)
-      valores.set(id, { valor: ultimo.valor, nombre: ficha.nombre, posicion: ficha.posicion })
+      // La serie diaria da gratis lo que antes venía de una captura a mano: lo
+      // que sube o baja en un día y en un mes. Si la serie es corta se compara
+      // con el punto más antiguo que haya, que es lo más honesto que se puede.
+      const ayer = serie[serie.length - 2] ?? ultimo
+      const haceUnMes = serie[Math.max(0, serie.length - 31)] ?? serie[0]!
+      valores.set(id, {
+        valor: ultimo.valor,
+        nombre: ficha.nombre,
+        posicion: ficha.posicion,
+        dia: ultimo.valor - ayer.valor,
+        mes: ultimo.valor - haceUnMes.valor,
+      })
     } catch (e) {
       fallidos.push({ id, motivo: e instanceof Error ? e.message : String(e) })
     }

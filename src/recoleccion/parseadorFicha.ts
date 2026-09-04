@@ -22,7 +22,8 @@ export class FichaIlegibleError extends Error {
 
 /**
  * El nombre sale del `<title id="page-title">Nombre Apellido | Mister</title>`,
- * y la posición del `data-position` del bloque de la ficha.
+ * y la posición del `data-position` del bloque que además lleva la clase
+ * `player-position`.
  *
  * Si el nombre no está, es error: dar uno inventado a partir del slug perdería
  * las tildes y la ñ, y quedaría ahí para siempre sin que nadie lo notara. La
@@ -39,6 +40,10 @@ export function parsearFicha(html: string): Ficha {
     throw new FichaIlegibleError(`el título no tiene la forma esperada: ${JSON.stringify(titulo[1])}`)
   }
 
-  const pos = /data-position=['"](\d)['"]/.exec(html)
+  // Ojo: la ficha lleva en su <style> reglas como
+  //   .player-position[data-position="1"]:after { content: "PT" }
+  // así que buscar el atributo suelto devolvía siempre 1. Tiene que ser el
+  // atributo de un elemento que además tenga la clase.
+  const pos = /class=['"][^'"]*player-position[^'"]*['"][^>]*data-position=['"](\d)['"]/.exec(html)
   return { nombre, posicion: pos ? Number(pos[1]) : 0 }
 }

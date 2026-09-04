@@ -504,6 +504,9 @@ const topMedia = [...conPartidos].sort((a, b) => b.media - a.media).slice(0, 8)
 const topPuntos = [...J].sort((a, b) => b.puntos - a.puntos).slice(0, 8)
 const topSube = [...J].filter((j) => j.subeMes != null).sort((a, b) => b.subeMes - a.subeMes).slice(0, 8)
 const topCaros = [...J].sort((a, b) => b.valor - a.valor).slice(0, 8)
+const topHoy = [...J].filter((j) => j.semana != null && j.semana !== 0).sort((a, b) => b.semana - a.semana).slice(0, 8)
+// Lo que cuesta cada punto de media: la forma más directa de ver qué sale a cuenta.
+const topGanga = [...conPartidos].filter((j) => j.media > 0).sort((a, b) => a.precio / a.media - b.precio / b.media).slice(0, 8)
 
 // Récords del mercado, sacados del histórico completo.
 const masCaro = [...MOVS].sort((a, b) => b.importe - a.importe)[0]
@@ -563,11 +566,39 @@ ${record('Movimientos', `${MOVS.length} en ${dias.length} días`, `${eur(totalGa
       </div>
     </div>
 
+    <div class="tarjeta">
+      <h2 class="sh">El mercado en cifras</h2>
+      <div class="records">
+${record('Precio medio de un fichaje', eur(totalGastado / MOVS.length), `Sobre ${MOVS.length} movimientos en ${dias.length} días.`, '')}
+${record('Lo que vale la liga', eur(EQ.reduce((s, e) => s + e.pl, 0)), `Sumando las ocho plantillas, ${Object.values(PL).flat().length} jugadores.`, '')}
+${record('Dinero parado en caja', eur(EQ.reduce((s, e) => s + e.saldo, 0)), `El ${Math.round((EQ.reduce((s, e) => s + e.saldo, 0) / EQ.reduce((s, e) => s + e.patrimonio, 0)) * 100)} % del patrimonio de la liga está sin invertir.`, '')}
+${record('Cuánto ha crecido todo', firma(EQ.reduce((s, e) => s + e.sobre50, 0)), `Entre los ocho, sobre los ${corto(50000000 * EQ.length)} de salida.`, EQ.reduce((s, e) => s + e.sobre50, 0) > 0 ? 'bien' : 'mal')}
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <h2 class="sh">Cómo está repartida la liga por posiciones</h2>
+      <p class="sd">Cuántos jugadores tiene cada equipo en cada línea. Un hueco es una posición sin cubrir.</p>
+      <div class="tabla-scroll"><table class="jt"><thead><tr><th>Equipo</th><th>POR</th><th>DEF</th><th>MED</th><th>DEL</th><th>Total</th><th>Valor medio</th></tr></thead><tbody>
+${[...EQ]
+  .sort((a, b) => b.pl - a.pl)
+  .map((e) => {
+    const suyos = (PL[e.n] ?? []).map((id) => PORID.get(String(id))).filter(Boolean)
+    const porLinea = [1, 2, 3, 4].map((p) => suyos.filter((j) => j.puesto === p).length)
+    const medio = suyos.length ? e.pl / suyos.length : 0
+    return `<tr class="${e.mio ? 'mio' : ''}"><td>${esc(e.corto)}</td>${porLinea.map((n) => `<td>${n || '—'}</td>`).join('')}<td><b>${suyos.length}</b></td><td>${eur(medio)}</td></tr>`
+  })
+  .join(NL)}
+</tbody></table></div>
+    </div>
+
     <div class="rejilla">
 ${tablaTop('Mejor media', 'Con dos partidos o más.', topMedia.map((j) => lineaTop(j, dec(j.media))))}
 ${tablaTop('Más puntos', '', topPuntos.map((j) => lineaTop(j, String(j.puntos))))}
 ${tablaTop('Los que más suben', 'Crecimiento del valor en el último mes.', topSube.map((j) => lineaTop(j, `+${Math.round(j.subeMes * 100)} %`)))}
 ${tablaTop('Los más valiosos', '', topCaros.map((j) => lineaTop(j, corto(j.valor))))}
+${tablaTop('Los que más suben hoy', 'Lo que ha cambiado su valor desde ayer.', topHoy.map((j) => lineaTop(j, firmaCorta(j.semana))))}
+${tablaTop('Gangas', 'Los más baratos por punto de media, con dos partidos o más.', topGanga.map((j) => lineaTop(j, `${corto(j.precio / j.media)}/pt`)))}
     </div>
 
     <div class="tarjeta">

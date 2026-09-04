@@ -71,7 +71,7 @@ async function main(): Promise<Resultado> {
 
   // ── 3. Rehacer las cuentas ─────────────────────────────────────────────────
   const constantes = leerJson<Constantes>(join(DATOS, 'liga.json'))
-  type EnCache = { valor: number; dia: string; nombre?: string; posicion?: number }
+  type EnCache = { valor: number; dia: string; nombre?: string; posicion?: number; subeDia?: number; subeMes?: number }
   const cache = existsSync(CACHE_VALORES)
     ? new Map(Object.entries(leerJson<Record<string, EnCache>>(CACHE_VALORES)))
     : new Map<string, EnCache>()
@@ -113,7 +113,8 @@ async function main(): Promise<Resultado> {
     paso(`Pidiendo la ficha de ${faltan.length} jugadores para saber lo que valen hoy…`)
     const { valores, fallidos } = await recolectarValores(cliente, faltan, slugs)
     fichasPedidas = valores.size
-    for (const [id, v] of valores) cache.set(id, { valor: v.valor, dia: hoy, nombre: v.nombre, posicion: v.posicion })
+    for (const [id, v] of valores)
+      cache.set(id, { valor: v.valor, dia: hoy, nombre: v.nombre, posicion: v.posicion, subeDia: v.dia, subeMes: v.mes })
     escribirJson(CACHE_VALORES, Object.fromEntries(cache))
     if (fallidos.length > 0) paso(`No pude con ${fallidos.length}: ${fallidos.map((f) => `${f.id} (${f.motivo})`).join(', ')}`)
     cuentas = reconstruir(hechos, constantes, soloValores(), leidas.plantillas)
@@ -142,7 +143,11 @@ async function main(): Promise<Resultado> {
   escribirJson(join(DATOS, 'equipos.json'), cuentas.equipos)
   escribirJson(join(DATOS, 'plantillas.json'), cuentas.plantillas)
   escribirJson(join(DATOS, 'datos-liga.json'), construirDatosLiga(hechos, cuentas.valores))
-  escribirJson(join(DATOS, 'clausulas.json'), [...cuentas.clausulas].map(([id, c]) => [Number(id), c / 1000]))
+  const clausulasPrevias = existsSync(join(DATOS, 'clausulas.json'))
+    ? new Map(leerJson<[number, number][]>(join(DATOS, 'clausulas.json')).map(([id, k]) => [String(id), k * 1000]))
+    : new Map<string, number>()
+  for (const [id, c] of cuentas.clausulas) clausulasPrevias.set(id, c)
+  escribirJson(join(DATOS, 'clausulas.json'), [...clausulasPrevias].map(([id, c]) => [Number(id), c / 1000]))
   escribirJson(join(DATOS, 'jugadores-calc.json'), construirJugadores(hechos, cuentas, cache))
   escribirJson(
     join(DATOS, 'jornadas.json'),
@@ -216,7 +221,7 @@ function construirDatosLiga(
 function construirJugadores(
   hechos: ReturnType<typeof extraerHechos>,
   cuentas: ReturnType<typeof reconstruir>,
-  fichas: Map<string, { valor: number; nombre?: string; posicion?: number }>,
+  fichas: Map<string, { valor: number; nombre?: string; posicion?: number; subeDia?: number; subeMes?: number }>,
 ): unknown[] {
   const enMercado = new Set(hechos.mercado.map((m) => m.idJugador))
   const ficha = new Map<string, { id: string; nombre: string; valor: number; puntos: number; media: number; partidos: number; semana: number | null; mes: number | null; mk: number; pos: number }>()
@@ -231,8 +236,8 @@ function construirJugadores(
       puntos: t.puntos,
       media: t.media,
       partidos: cuenta(t.racha),
-      semana: null,
-      mes: null,
+      semana: fichas.get(t.idJugador)?.subeDia ?? null,
+      mes: fichas.get(t.idJugador)?.subeMes ?? null,
       mk: enMercado.has(t.idJugador) ? 1 : 0,
       pos: t.posicion,
     })
@@ -247,8 +252,8 @@ function construirJugadores(
       puntos: m.puntos,
       media: m.media,
       partidos: m.partidos,
-      semana: m.valor - m.valorPrevio,
-      mes: previo?.mes ?? null,
+      semana: fichas.get(m.idJugador)?.subeDia ?? m.valor - m.valorPrevio,
+      mes: fichas.get(m.idJugador)?.subeMes ?? previo?.mes ?? null,
       mk: 1,
       pos: m.posicion,
     })
@@ -268,8 +273,8 @@ function construirJugadores(
       puntos: 0,
       media: 0,
       partidos: 0,
-      semana: null,
-      mes: null,
+      semana: f.subeDia ?? null,
+      mes: f.subeMes ?? null,
       mk: 0,
       pos: f.posicion ?? 0,
     })
