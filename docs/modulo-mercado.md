@@ -1,7 +1,6 @@
 # El módulo
 
-Una sola página, `datos/mercado.html`, generada por `modulo/generar.cjs` a
-partir de los datos del motor contable.
+Una sola página, `datos/mercado.html`, generada por `modulo/generar.cjs`.
 
 ```bash
 npm run app      # con botón de actualizar, en 127.0.0.1:4788
@@ -9,43 +8,43 @@ npm run generar  # solo rehace el HTML con los datos que ya hay
 ```
 
 Abrirla con doble clic también funciona: pestañas y filtros van con CSS, y
-JavaScript solo añade el buscador, el orden y el botón. Sin él se ve la lista
-entera, que sigue siendo útil.
+JavaScript solo añade los buscadores, el orden y el botón.
 
-## Está pensada para que la entienda alguien de fuera
+## Está organizada por preguntas, no por tablas
 
-Es el requisito que manda desde que la idea es enseñársela a la gente de la
-liga. De ahí salen la mitad de las decisiones:
+Cada pestaña responde a una, y en el orden en que uno se las hace:
 
-- Una pestaña **Guía** que explica la fórmula del tope de puja, los cuatro
-  iconos, la diferencia entre valor y cláusula, y lo que el módulo **no** sabe.
-- Un **marcador** siempre visible arriba con las cuatro cifras que resumen tu
-  situación: puesto, caja, tope de puja y cuánto has ganado sobre los 50 M.
-- La barra de cada equipo **descompone el tope en vez de enunciarlo**: la parte
-  sólida es la caja y la rayada el 25 % que le fía su plantilla. Se ve de un
-  vistazo quién tiene dinero de verdad y quién lo tiene metido en jugadores —
-  Betico1993 es casi todo sólido, Neky F.C. casi todo rayado.
-- La **tira de cuadraditos** de cada jugador dice cuántos equipos llegan a
-  pagar su precio. Es la misma información que el `7/8`, pero se lee sin leerla.
+| Pestaña | La pregunta | Qué hay |
+|---|---|---|
+| **Mi equipo** | ¿Cómo voy y qué hago con mi plantilla? | Tu plantilla partida en los que deberías vender, los que deberías blindar y el resto; y tus cuentas completas |
+| **Fichar** | ¿A quién puedo fichar y a qué precio? | Los 197 jugadores con buscador, orden y cuatro grupos de filtros |
+| **Rivales** | ¿Qué tienen los demás? | Los ocho equipos: dinero, plantilla entera y jugador a jugador |
+| **Movimientos** | ¿Qué ha pasado en la liga? | Los 249 fichajes y ventas en orden, con el pulso diario del mercado |
+| **Números** | ¿Quién va ganando, en puntos y en dinero? | Clasificación, riqueza, quién comercia mejor, récords y los mejores |
+| **Guía** | ¿Qué significa todo esto? | Cada término y cada icono, para quien abre esto por primera vez |
 
-## Las cuatro pestañas
+Encima de todas, un **marcador** fijo con las cuatro cifras que resumen tu
+situación: puesto, caja, tope de puja y ganancia sobre los 50 M.
 
-| | Qué hay |
-|---|---|
-| **Jugadores** | Los 197 con buscador, orden y cuatro grupos de filtros |
-| **Equipos** | Los 8 por capacidad de compra, desplegables a sus cuentas completas |
-| **Mi equipo** | La plantilla propia partida en vender / blindar / el resto |
-| **Guía** | Qué significa cada cosa, para quien abre esto por primera vez |
+## Quién puede ficharlo
+
+Era la pregunta que originó el módulo y durante días solo salía el recuento.
+Ahora la tira de cuadraditos de cada jugador **se despliega** y enseña qué
+equipos concretos llegan a su precio y con cuánto margen:
+
+- Roger Brugué, cláusula de 2 M → los **7 de 7** rivales, y al más rico le
+  sobran 45 M después de pagarla.
+- Mikel Oyarzabal, 25,5 M → solo **5 de 7**.
+
+El propio dueño no cuenta: nadie se ficha a sí mismo.
 
 ## Buscar, ordenar, filtrar
 
-**Buscador**: por nombre de jugador, por equipo (`neky` → sus 22) y también por
-posición escrita (`portero` → los 17). Necesita JavaScript.
+**Buscador** en Fichar (jugador, equipo o posición escrita: `portero` da los 17)
+y en Movimientos (jugador o equipo).
 
 **Orden**: recomendados, más caros, más baratos, mejor media, más puntos, los
 que más suben.
-
-**Filtros**, cuatro grupos que se combinan:
 
 | Grupo | Opciones |
 |---|---|
@@ -53,13 +52,14 @@ que más suben.
 | De quién es | Cualquiera · Libres · De un rival · Míos |
 | Dónde busco | Todos · Solo lo que está en venta |
 | Qué destaca | Todo · ⭐ Puntos · 💵 Dinero · Los dos · Puedo pagarlo |
+| Movimientos | Todo · Solo compras · Solo ventas al mercado · Solo lo mío |
 
 **Míos** se salta el selector de ámbito a propósito: enseñar solo los tuyos que
-están en venta deja la lista casi vacía sin explicar por qué. La página lo avisa.
+están en venta deja la lista casi vacía sin explicar por qué.
 
-Los filtros van con CSS —radios ocultos y selectores de hermano— y el buscador
-con JavaScript; se componen porque cada uno esconde por su lado y el contador
-solo cuenta lo que de verdad se ve (`offsetParent !== null`).
+Los filtros van con CSS —radios ocultos y selectores de hermano— y los
+buscadores con JavaScript; se componen porque cada uno esconde por su lado y el
+contador solo cuenta lo que de verdad se ve (`offsetParent !== null`).
 
 ## Los cuatro iconos
 
@@ -76,9 +76,6 @@ septiembre salen en media 4,3 y +55 % mensual. El umbral de 1,1 M € por punto
 que usa 🔒 es aproximadamente el cuartil bajo de la liga (p25 = 954 k€,
 p50 = 1,53 M€) sobre los 67 jugadores con cláusula que han jugado.
 
-**Los criterios se calculan sobre los 197, no sobre lo que estás viendo.** Así
-una estrella significa lo mismo mires donde mires.
-
 ### ⭐ y 📤 a la vez no es una errata
 
 Rodri Hernández lleva las dos. La estrella dice que su media (4,5) está en el
@@ -87,13 +84,15 @@ valor plano desde hace un mes, no compensan. Son dos preguntas distintas
 —«¿es bueno?» y «¿me renta tenerlo?»— y la línea de consejo lo explica en vez
 de dejar los iconos peleándose.
 
-## El precio es lo que cuesta ficharlo
+## Lo que se ve sin leer
 
-- **Con dueño** → su **cláusula**, en ámbar. 70 de los 197.
-- **Libre** → su **valor de mercado**. Los otros 127.
-
-La tira cuenta sobre los 8 equipos en los jugadores ajenos y sobre los 7
-rivales en los propios, que es la pregunta que importa cuando ya es tuyo.
+- La **barra de cada equipo** descompone el tope en vez de enunciarlo: sólido
+  es caja, rayado el 25 % que le fía su plantilla. Betico1993 es casi todo
+  sólido; Neky F.C., que va primero, casi todo rayado — tiene 42.285 € en caja.
+- La **tira de cuadraditos** dice cuántos llegan a pagar a un jugador.
+- El **pulso del mercado**: una barra por día, 32 días, el más movido con 18.
+- En **Números**, las barras de riqueza son de dos tonos: lleno es caja, claro
+  es plantilla.
 
 ## El balance por jugador cuenta lo que vale hoy
 
@@ -114,8 +113,8 @@ Patrimonio hoy         = caja + valor de la plantilla
 Sobre los 50.000.000 € = patrimonio − 50.000.000
 ```
 
-Para Niutin FC: 9.209.955 + 77.386.000 = **86.595.955 €**, o sea
-**+36.595.955 €**, de los que 3.275.000 € son premios.
+Y en Números, **quién comercia mejor** descuenta además los premios, para que
+sea solo lo ganado en el mercado.
 
 ## El diseño
 
@@ -125,14 +124,13 @@ reservados a ganar y perder y no se usan para nada más, que es lo que permite
 leer un signo sin leer la cifra.
 
 **Barlow Condensed** para nombres y titulares (condensada: caben los nombres
-largos de equipo y tiene aire de marcador), **Manrope** para el texto y
-**IBM Plex Mono** con cifras tabulares para todo lo que sea dinero, para que
-las columnas de números cuadren.
+largos y tiene aire de marcador), **Manrope** para el texto y **IBM Plex Mono**
+con cifras tabulares para todo lo que sea dinero.
 
 Los dorsales de color marcan la posición: azul portero, verde defensa, ámbar
 medio, rojo delantero.
 
-Tres temas, como debe ser: `:root` define la paleta clara completa,
+Tres temas: `:root` define la paleta clara completa,
 `@media (prefers-color-scheme: dark)` la redefine con guarda
 `:root:not([data-theme=light])`, y `:root[data-theme=dark]` otra vez para que
 una elección explícita gane en las dos direcciones.
@@ -140,10 +138,11 @@ una elección explícita gane en las dos direcciones.
 ## Lo que el módulo NO sabe
 
 - **No conoce a todo LaLiga.** Conoce 197 jugadores: los que han pasado por la
-  liga y los que están hoy en el mercado. `/search` redirige a `/market` y no
-  se encontró ningún endpoint que sirva el catálogo.
-- **12 de esos 197 no tienen posición**, porque vienen de la captura manual y
-  no del feed. Salen con un dorsal gris.
+  liga y los que están hoy en el mercado. `/search` redirige a `/market`.
+- **49 jugadores de plantilla no tienen datos.** Son los que nadie ha movido
+  nunca, así que no aparecen en el feed. En «Rivales» salen en su plantilla con
+  **«sin datos»** en vez de desaparecer, que es lo que hacían antes. Los
+  arregla la primera pasada de `npm run actualizar`, que pide su ficha.
 - **No sabe cuánto cuesta subir una cláusula.** 🔒 dice quién está expuesto.
 - **El nombre de la liga y el equipo propio están escritos en el generador**
   (`MI_EQUIPO`, `NOMBRE_LIGA`). Para que otro de la liga lo use tal cual habría
@@ -160,7 +159,8 @@ una elección explícita gane en las dos direcciones.
 | `plantillas.json` | Quién tiene a quién hoy |
 | `clausulas.json` | La cláusula de los 70 con dueño |
 | `jugadores-calc.json` | Puntos, media, partidos, posición y evolución |
-| `datos-liga.json` | Movimientos por equipo y por jugador |
+| `datos-liga.json` | Movimientos, por equipo y como lista única |
+| `jornadas.json` | Puntos, puesto y premio de cada equipo por jornada |
 | `liga.json` | Las constantes del reinicio (no cambian nunca) |
 
 Todos los rehace `npm run actualizar` — ver [actualizar.md](actualizar.md).

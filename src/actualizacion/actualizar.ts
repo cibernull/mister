@@ -115,6 +115,19 @@ async function main(): Promise<Resultado> {
   escribirJson(join(DATOS, 'datos-liga.json'), construirDatosLiga(hechos, cuentas.valores))
   escribirJson(join(DATOS, 'clausulas.json'), [...cuentas.clausulas].map(([id, c]) => [Number(id), c / 1000]))
   escribirJson(join(DATOS, 'jugadores-calc.json'), construirJugadores(hechos, cuentas))
+  escribirJson(
+    join(DATOS, 'jornadas.json'),
+    hechos.jornadas.map((j) => ({
+      jornada: j.jornada,
+      cuando: j.cuando.slice(0, 10),
+      equipos: j.posiciones.map((p) => ({
+        equipo: constantes.equipos.find((e) => e.idUc === p.idUc)?.nombre ?? String(p.idUc),
+        puntos: p.puntos,
+        puesto: p.puesto,
+        premio: p.premio,
+      })),
+    })),
+  )
 
   const gen = spawnSync('node', [join(RAIZ, 'modulo', 'generar.cjs')], { encoding: 'utf8' })
   if (gen.status !== 0) throw new Error(`el generador falló: ${gen.stderr || gen.stdout}`)
@@ -135,7 +148,7 @@ async function main(): Promise<Resultado> {
 function construirDatosLiga(
   hechos: ReturnType<typeof extraerHechos>,
   valores: Map<string, number>,
-): { jugadores: unknown[]; porEquipo: Record<string, unknown> } {
+): { jugadores: unknown[]; movimientos: unknown[]; porEquipo: Record<string, unknown> } {
   const jugadores = new Map<string, { id: string; nombre: string; valor: number }>()
   const porEquipo: Record<string, { movimientos: unknown[]; porJugador: Record<string, { nombre: string; compras: number; ventas: number; ops: number }> }> = {}
 
@@ -156,7 +169,13 @@ function construirDatosLiga(
   for (const e of Object.values(porEquipo)) {
     ;(e.movimientos as { fecha: string }[]).sort((a, b) => b.fecha.localeCompare(a.fecha))
   }
-  return { jugadores: [...jugadores.values()], porEquipo }
+  // El histórico también como lista única, en orden inverso: es lo que pide la
+  // pestaña de movimientos, y reconstruirlo desde porEquipo sería lossy porque
+  // cada traspaso está ahí dos veces, una por cada lado.
+  const movimientos = [...hechos.traspasos]
+    .reverse()
+    .map((t) => ({ id: t.idJugador, nombre: t.nombre, de: t.idUcDe ? t.de : null, a: t.idUcA ? t.a : null, importe: t.importe, tipo: t.tipo, fecha: t.cuando, pos: t.posicion }))
+  return { jugadores: [...jugadores.values()], movimientos, porEquipo }
 }
 
 /**

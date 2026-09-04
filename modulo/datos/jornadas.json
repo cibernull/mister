@@ -1,0 +1,164 @@
+[
+ {
+  "jornada": 1,
+  "cuando": "2026-08-20",
+  "equipos": [
+   {
+    "equipo": "Neky F.C. (Sergio)",
+    "puntos": 66,
+    "puesto": 1,
+    "premio": 2450000
+   },
+   {
+    "equipo": "Mario80",
+    "puntos": 42,
+    "puesto": 2,
+    "premio": 1150000
+   },
+   {
+    "equipo": "Niutin FC (Isaac)",
+    "puntos": 38,
+    "puesto": 3,
+    "premio": 1050000
+   },
+   {
+    "equipo": "Saiyans FC (Fran)",
+    "puntos": 35,
+    "puesto": 4,
+    "premio": 975000
+   },
+   {
+    "equipo": "Cacaculopedopis",
+    "puntos": 34,
+    "puesto": 5,
+    "premio": 850000
+   },
+   {
+    "equipo": "Legalize F.C (Victor)",
+    "puntos": 26,
+    "puesto": 6,
+    "premio": 750000
+   },
+   {
+    "equipo": "Los tocahuevos C.F ( juanito)",
+    "puntos": 17,
+    "puesto": 7,
+    "premio": 525000
+   },
+   {
+    "equipo": "Betico1993",
+    "puntos": 12,
+    "puesto": 8,
+    "premio": 300000
+   }
+  ]
+ },
+ {
+  "jornada": 2,
+  "cuando": "2026-08-25",
+  "equipos": [
+   {
+    "equipo": "Neky F.C. (Sergio)",
+    "puntos": 48,
+    "puesto": 1,
+    "premio": 1200000
+   },
+   {
+    "equipo": "Saiyans FC (Fran)",
+    "puntos": 35,
+    "puesto": 2,
+    "premio": 975000
+   },
+   {
+    "equipo": "Mario80",
+    "puntos": 33,
+    "puesto": 3,
+    "premio": 925000
+   },
+   {
+    "equipo": "Niutin FC (Isaac)",
+    "puntos": 29,
+    "puesto": 4,
+    "premio": 725000
+   },
+   {
+    "equipo": "Cacaculopedopis",
+    "puntos": 29,
+    "puesto": 5,
+    "premio": 725000
+   },
+   {
+    "equipo": "Betico1993",
+    "puntos": 19,
+    "puesto": 6,
+    "premio": 825000
+   },
+   {
+    "equipo": "Los tocahuevos C.F ( juanito)",
+    "puntos": 15,
+    "puesto": 7,
+    "premio": 375000
+   },
+   {
+    "equipo": "Legalize F.C (Victor)",
+    "puntos": 13,
+    "puesto": 8,
+    "premio": 325000
+   }
+  ]
+ },
+ {
+  "jornada": 3,
+  "cuando": "2026-09-01",
+  "equipos": [
+   {
+    "equipo": "Niutin FC (Isaac)",
+    "puntos": 52,
+    "puesto": 1,
+    "premio": 1500000
+   },
+   {
+    "equipo": "Mario80",
+    "puntos": 35,
+    "puesto": 2,
+    "premio": 975000
+   },
+   {
+    "equipo": "Los tocahuevos C.F ( juanito)",
+    "puntos": 35,
+    "puesto": 3,
+    "premio": 1325000
+   },
+   {
+    "equipo": "Neky F.C. (Sergio)",
+    "puntos": 32,
+    "puesto": 4,
+    "premio": 900000
+   },
+   {
+    "equipo": "Cacaculopedopis",
+    "puntos": 29,
+    "puesto": 5,
+    "premio": 725000
+   },
+   {
+    "equipo": "Legalize F.C (Victor)",
+    "puntos": 9,
+    "puesto": 6,
+    "premio": 225000
+   },
+   {
+    "equipo": "Saiyans FC (Fran)",
+    "puntos": 0,
+    "puesto": 7,
+    "premio": 0
+   },
+   {
+    "equipo": "Betico1993",
+    "puntos": -6,
+    "puesto": 8,
+    "premio": 0
+   }
+  ]
+ }
+]

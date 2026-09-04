@@ -1,6 +1,14 @@
 #!/usr/bin/env node
 // Genera el módulo (una página) a partir de los datos del motor contable.
 //   node modulo/generar.cjs [salida.html]
+//
+// La página se organiza por preguntas, no por tablas:
+//   Mi equipo   ¿cómo voy y qué hago con mi plantilla?
+//   Fichar      ¿a quién puedo fichar, a qué precio, y quién me lo puede quitar?
+//   Rivales     ¿qué tienen los demás?
+//   Movimientos ¿qué ha pasado en la liga?
+//   Números     ¿quién va ganando, en puntos y en dinero?
+//   Guía        ¿qué significa todo esto?
 'use strict'
 const fs = require('fs')
 const path = require('path')
@@ -17,6 +25,7 @@ const CL = new Map(leer('clausulas.json').map(([id, k]) => [String(id), k * 1000
 const D = leer('datos-liga.json')
 const PL = leer('plantillas.json')
 const EQ = leer('equipos.json')
+const JOR = leer('jornadas.json')
 
 // Dueño actual de cada jugador. Un jugador solo puede estar en una plantilla:
 // si aparece en dos, la captura está mal y prefiero enterarme a taparlo.
@@ -29,7 +38,6 @@ for (const [eq, ids] of Object.entries(PL)) {
   }
 }
 
-// Valor de mercado de hoy. jugadores-calc manda sobre el volcado general.
 const VALOR = new Map()
 for (const j of D.jugadores) VALOR.set(String(j.id), j.valor)
 for (const j of J) VALOR.set(String(j.id), j.valor)
@@ -43,24 +51,30 @@ EQ.forEach((e) => {
 const maxTope = Math.max(...EQ.map((e) => e.tope))
 const MIO = EQ.find((e) => e.mio)
 if (!MIO) throw new Error('No encuentro mi equipo en la tabla de equipos')
-const TOPE_MIO = MIO.tope
 const RIVALES = EQ.filter((e) => !e.mio)
+const POR_NOMBRE = new Map(EQ.map((e) => [e.n, e]))
 
 const eur = (n) => `${Math.round(n).toLocaleString('es-ES')} €`
-// Cifras redondas para donde manda el vistazo, no el céntimo.
 const corto = (n) => {
   const m = Math.round(n)
-  if (Math.abs(m) >= 1000000) return `${(m / 1000000).toFixed(m % 1000000 === 0 ? 0 : 1).replace('.', ',')} M`
+  if (Math.abs(m) >= 1000000) return `${(m / 1000000).toFixed(Math.abs(m) >= 10000000 ? 0 : 1).replace('.', ',')} M`
   if (Math.abs(m) >= 1000) return `${Math.round(m / 1000)} K`
   return String(m)
 }
 const firma = (n) => (n > 0 ? '+' : n < 0 ? '−' : '') + eur(Math.abs(n))
+const firmaCorta = (n) => (n > 0 ? '+' : n < 0 ? '−' : '') + corto(Math.abs(n))
 const dec = (n) => (n || 0).toFixed(1).replace('.', ',')
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]))
+const dia = (f) => {
+  const [a, m, d] = f.slice(0, 10).split('-')
+  return `${Number(d)} ${['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'][Number(m) - 1]}`
+}
 const NL = '\n'
+const clase = (n) => (n > 0 ? 'sube' : n < 0 ? 'baja' : '')
 
 const PUESTOS = { 0: '—', 1: 'POR', 2: 'DEF', 3: 'MED', 4: 'DEL' }
 const PUESTOS_LARGO = { 0: 'sin posición', 1: 'portero', 2: 'defensa', 3: 'centrocampista', 4: 'delantero' }
+const dorsal = (p) => `<span class="dorsal p${p}" title="${PUESTOS_LARGO[p]}">${PUESTOS[p]}</span>`
 
 // ── Jugadores ────────────────────────────────────────────────────────────────
 for (const j of J) {
@@ -70,9 +84,10 @@ for (const j of J) {
   j.mio = j.duenio === MI_EQUIPO ? 1 : 0
   // Precio efectivo: cláusula si tiene dueño, valor si está libre.
   j.precio = j.clausula ?? j.valor
-  j.a = j.precio <= TOPE_MIO ? 1 : 0
-  j.pueden = EQ.filter((e) => e.tope >= j.precio).length
-  j.rivalesQuePueden = RIVALES.filter((e) => e.tope >= j.precio).length
+  j.a = j.precio <= MIO.tope ? 1 : 0
+  // Quién llega a pagarlo. Su propio dueño no cuenta: no se ficha a sí mismo.
+  j.compradores = EQ.filter((e) => e.n !== j.duenio && e.tope >= j.precio)
+  j.rivalesQuePueden = j.compradores.filter((e) => !e.mio).length
   j.subeMes = j.mes != null && j.valor ? j.mes / j.valor : null
   j.puesto = j.pos ?? 0
 }
@@ -98,7 +113,7 @@ for (const j of J) {
     j.vender = 1
     // Un jugador puede llevar ⭐ y 📤 a la vez: la estrella dice que su media
     // está en el tercio alto de la liga, y 📤 dice que para lo que cuesta no
-    // compensa tenerlo parado. No es una contradicción, pero hay que decirlo.
+    // compensa tenerlo parado. No es contradicción, pero hay que decirlo.
     j.razon =
       j.partidos === 0
         ? 'no ha jugado ni un partido y su valor lleva un mes plano'
@@ -120,18 +135,35 @@ for (const j of J) {
 }
 
 J.sort((a, b) => b.p + b.d - (a.p + a.d) || b.media - a.media || b.valor - a.valor)
+const iconos = (j) => `${j.p ? '⭐' : ''}${j.d ? '💵' : ''}${j.vender ? '📤' : ''}${j.blindar ? '🔒' : ''}`
 
-/** Tira de cuadraditos: cuántos equipos llegan a pagar ese precio. */
-const tira = (llegan, total) =>
-  `<span class="puede"><span class="tira" role="img" aria-label="${llegan} de ${total} pueden pagarlo">${Array.from(
-    { length: total },
-    (_, i) => `<i class="${i < llegan ? 'on' : ''}"></i>`,
-  ).join('')}</span><em>${llegan}/${total}</em></span>`
+/**
+ * Quién puede ficharlo, desplegable.
+ *
+ * Era la pregunta original del módulo —«pongo un futbolista y me dices quién
+ * podría ficharlo»— y hasta ahora solo salía el recuento. Aquí están los
+ * nombres y con cuánto margen se lo pueden permitir.
+ */
+const quienPuede = (j) => {
+  const total = j.duenio ? EQ.length - 1 : EQ.length
+  const n = j.compradores.length
+  const tira = Array.from({ length: total }, (_, i) => `<i class="${i < n ? 'on' : ''}"></i>`).join('')
+  const chips = j.compradores.length
+    ? [...j.compradores]
+        .sort((a, b) => b.tope - a.tope)
+        .map(
+          (e) =>
+            `<span class="chip${e.mio ? ' mio' : ''}">${esc(e.corto)}<em>le sobran ${corto(e.tope - j.precio)}</em></span>`,
+        )
+        .join('')
+    : '<span class="chip nadie">Nadie de la liga llega a ese precio.</span>'
+  return `<details class="quien">
+        <summary><span class="tira">${tira}</span><span class="txt"><b>${n}</b> de ${total} pueden pagar ${corto(j.precio)}</span></summary>
+        <div class="chips">${chips}</div>
+      </details>`
+}
 
-const iconos = (j) =>
-  `${j.p ? '⭐' : ''}${j.d ? '💵' : ''}${j.vender ? '📤' : ''}${j.blindar ? '🔒' : ''}`
-
-const filas = J.map((j) => {
+const filaJugador = (j) => {
   const cls = [
     'fj',
     j.mk ? 'mk' : 'nomk',
@@ -144,48 +176,121 @@ const filas = J.map((j) => {
     .filter(Boolean)
     .join(' ')
   const pct = j.subeMes != null ? Math.round(j.subeMes * 100) : null
-  const etiquetaEquipo = j.duenio
-    ? `<span class="et et-eq${j.mio ? ' et-mio' : ''}">${esc(j.duenioCorto)}</span>`
-    : '<span class="et et-libre">libre</span>'
-  // Ordenar por «recomendados» tiene que dar lo mismo que el orden de partida.
   const rec = (j.p + j.d) * 1000 + j.media
   return `<div class="${cls}" data-busca="${esc(j.nombre)} ${esc(j.duenioCorto ?? 'libre')} ${PUESTOS_LARGO[j.puesto]}" data-rec="${rec.toFixed(2)}" data-precio="${j.precio}" data-media="${j.media}" data-puntos="${j.puntos}" data-sube="${(j.subeMes ?? -9).toFixed(4)}">
-      <span class="dorsal p${j.puesto}" title="${PUESTOS_LARGO[j.puesto]}">${PUESTOS[j.puesto]}</span>
-      <div class="jn">${esc(j.nombre)}${j.mk ? '<span class="et et-mk">en venta</span>' : ''}${etiquetaEquipo}</div>
-      <div class="jp">
-        <b class="${j.clausula ? 'cl' : ''}">${eur(j.precio)}</b>
-        <i>${j.clausula ? 'cláusula' : 'valor'}</i>
-        <span class="ico">${iconos(j)}</span>
-      </div>
+      ${dorsal(j.puesto)}
+      <div class="jn">${esc(j.nombre)}${j.mk ? '<span class="et et-mk">en venta</span>' : ''}${
+        j.duenio
+          ? `<span class="et et-eq${j.mio ? ' et-mio' : ''}">${esc(j.duenioCorto)}</span>`
+          : '<span class="et et-libre">libre</span>'
+      }</div>
+      <div class="jp"><b class="${j.clausula ? 'cl' : ''}">${eur(j.precio)}</b><i>${j.clausula ? 'cláusula' : 'valor'}</i><span class="ico">${iconos(j)}</span></div>
       <div class="js">
         <span>media <b>${dec(j.media)}</b></span><span class="sep">·</span>
         <span>${j.puntos} pts en ${j.partidos} part.</span>${
-          pct != null
-            ? `<span class="sep">·</span><span class="${pct > 0 ? 'sube' : pct < 0 ? 'baja' : ''}">${pct > 0 ? '+' : ''}${pct} % este mes</span>`
-            : ''
+          pct != null ? `<span class="sep">·</span><span class="${clase(pct)}">${pct > 0 ? '+' : ''}${pct} % este mes</span>` : ''
         }${j.clausula ? `<span class="sep">·</span><span>vale ${corto(j.valor)}</span>` : ''}
-        <span class="sep">·</span>${j.mio ? tira(j.rivalesQuePueden, RIVALES.length) : tira(j.pueden, EQ.length)}
       </div>
+      ${quienPuede(j)}
     </div>`
-}).join(NL)
+}
 
-// ── Marcador propio ──────────────────────────────────────────────────────────
+const filasJugadores = J.map(filaJugador).join(NL)
+
+// ── Marcador ─────────────────────────────────────────────────────────────────
 const ico = (d) =>
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`
 const marcador = `  <div class="marcador">
     <div><dt>${ico('<path d="M8 21h8M12 17v4M6 4h12v5a6 6 0 0 1-12 0V4Z"/><path d="M6 6H3v2a3 3 0 0 0 3 3M18 6h3v2a3 3 0 0 1-3 3"/>')} Tu puesto</dt><dd>${MIO.pos}º<small>de ${EQ.length} · ${MIO.pts} pts</small></dd></div>
     <div><dt>${ico('<rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/>')} En caja</dt><dd class="oro">${eur(MIO.saldo)}</dd></div>
     <div><dt>${ico('<path d="M3 17l6-6 4 4 7-7"/><path d="M14 8h6v6"/>')} Tope de puja</dt><dd>${eur(MIO.tope)}</dd></div>
-    <div><dt>${ico('<path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>')} Sobre los 50 M</dt><dd class="${MIO.sobre50 > 0 ? 'sube' : 'baja'}">${firma(MIO.sobre50)}</dd></div>
+    <div><dt>${ico('<path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>')} Sobre los 50 M</dt><dd class="${clase(MIO.sobre50)}">${firma(MIO.sobre50)}</dd></div>
   </div>`
 
-// ── Mi equipo ────────────────────────────────────────────────────────────────
+// ── Cuentas de un equipo ─────────────────────────────────────────────────────
+const cuentasDe = (e) => `<div class="cuenta">
+        <div class="l"><span>Empezó con</span><span>${eur(e.ini)}</span></div>
+        <div class="l"><span>Premios de las jornadas</span><span class="mas">+${eur(e.pre)}</span></div>
+        <div class="l"><span>Ha vendido por</span><span class="mas">+${eur(e.ven)}</span></div>
+        <div class="l"><span>Ha fichado por</span><span class="menos">−${eur(e.com)}</span></div>
+        <div class="l tot caja"><span>Le queda en caja</span><span>${eur(e.saldo)}</span></div>
+        <div class="l"><span>Más su plantilla, que vale</span><span>${eur(e.pl)}</span></div>
+        <div class="l tot"><span>Patrimonio hoy</span><span>${eur(e.patrimonio)}</span></div>
+        <div class="l"><span>Sobre los 50.000.000 € de salida</span><span class="${clase(e.sobre50)}">${firma(e.sobre50)}</span></div>
+      </div>`
+
+/** La plantilla completa de un equipo, por posición y valor. */
+const PORID = new Map(J.map((j) => [String(j.id), j]))
+const plantillaDe = (e) => {
+  const suyos = (PL[e.n] ?? [])
+    .map((id) => PORID.get(String(id)) ?? { id, nombre: null, puesto: 0, valor: VALOR.get(String(id)) ?? null, clausula: null, media: null })
+    .sort((a, b) => a.puesto - b.puesto || (b.valor ?? 0) - (a.valor ?? 0))
+  if (!suyos.length) return '<p class="vacio2">No tengo su plantilla.</p>'
+  return `<div class="mini">
+${suyos
+  .map(
+    (j) => `        <div class="mj">${dorsal(j.puesto)}<span class="n">${j.nombre ? esc(j.nombre) : `<em class="desc">jugador ${esc(j.id)}</em>`}</span>
+          <span class="v">${j.valor != null ? eur(j.valor) : '—'}</span>${
+            j.clausula ? `<span class="c">cláusula ${corto(j.clausula)}</span>` : '<span class="c">—</span>'
+          }<span class="m">${j.media != null ? `media ${dec(j.media)}` : 'sin datos'}</span></div>`,
+  )
+  .join(NL)}
+      </div>`
+}
+
+/** La barra que descompone el tope: sólido es caja, rayado el 25 % de plantilla. */
+const barraPoder = (e) => `<div class="poder">
+        <span class="barra"><span class="caja" style="width:${((e.saldo / maxTope) * 100).toFixed(1)}%"></span><span class="credito" style="width:${(((0.25 * e.pl) / maxTope) * 100).toFixed(1)}%"></span></span>
+        <small>${corto(e.saldo)} en caja + ${corto(0.25 * e.pl)} de su plantilla</small>
+      </div>`
+
+const tablaMovimientos = (e) => {
+  const d = (D.porEquipo || {})[e.n] || { porJugador: {} }
+  const js = Object.entries(d.porJugador)
+    .map(([id, x]) => {
+      const loTiene = DUENIO.get(String(id)) === e.n
+      const valeHoy = loTiene ? VALOR.get(String(id)) : null
+      if (loTiene && valeHoy == null) throw new Error(`Sin valor de hoy para ${x.nombre} (${id}), que sigue en ${e.n}`)
+      return {
+        ...x,
+        valeHoy,
+        // Un fichaje que sigue en plantilla no es una pérdida: es dinero
+        // convertido en jugador.
+        balance: x.ventas + (valeHoy ?? 0) - x.compras,
+        delReparto: x.compras === 0,
+      }
+    })
+    .sort((a, b) => b.balance - a.balance)
+  if (!js.length) return '<p class="vacio2">No ha hecho ningún movimiento.</p>'
+
+  const tot = js.reduce(
+    (s, j) => ({
+      compras: s.compras + j.compras,
+      ventas: s.ventas + j.ventas,
+      valeHoy: s.valeHoy + (j.valeHoy ?? 0),
+      balance: s.balance + j.balance,
+    }),
+    { compras: 0, ventas: 0, valeHoy: 0, balance: 0 },
+  )
+  const cel = (n) => (n ? eur(n) : '—')
+  const hayReparto = js.some((j) => j.delReparto && j.ventas)
+  return `<div class="tabla-scroll"><table class="jt"><thead><tr><th>Jugador</th><th>Pagó</th><th>Cobró</th><th>Vale hoy</th><th>Balance</th></tr></thead><tbody>
+${js
+  .map(
+    (j) =>
+      `<tr><td>${esc(j.nombre)}${j.delReparto ? '<span class="et-rep">del reparto</span>' : ''}</td><td>${cel(j.compras)}</td><td>${cel(j.ventas)}</td><td>${cel(j.valeHoy)}</td><td class="${j.balance > 0 ? 'mas' : j.balance < 0 ? 'menos' : ''}">${firma(j.balance)}</td></tr>`,
+  )
+  .join(NL)}
+<tr class="sum"><td>${js.length} jugador${js.length === 1 ? '' : 'es'}</td><td>${cel(tot.compras)}</td><td>${cel(tot.ventas)}</td><td>${cel(tot.valeHoy)}</td><td class="${tot.balance > 0 ? 'mas' : 'menos'}">${firma(tot.balance)}</td></tr>
+</tbody></table></div>${hayReparto ? '<p class="pie">«Del reparto» son los que le tocaron al empezar: no pagó nada por ellos, así que aquí todo lo cobrado cuenta entero. Por eso este total supera la ganancia real de arriba: los del reparto ya valían dinero el día del reinicio.</p>' : ''}`
+}
+
+// ── 1. Mi equipo ─────────────────────────────────────────────────────────────
 const MIOS = J.filter((j) => j.mio)
 if (MIOS.length !== PL[MI_EQUIPO].length) {
   throw new Error(`Tengo ${PL[MI_EQUIPO].length} jugadores en plantilla pero solo ${MIOS.length} con datos`)
 }
 const MIS_MOVS = (D.porEquipo[MI_EQUIPO] || { porJugador: {} }).porJugador
-
 // Vender sube el tope: la caja crece con el valor entero y la plantilla pierde
 // ese valor, del que solo contaba el 25 %. Neto: +0,75 × valor.
 const topeTrasVender = (v) => MIO.saldo + v + 0.25 * (MIO.pl - v)
@@ -196,23 +301,19 @@ const filaMia = (j, modo) => {
   const grande = modo === 'clausula' ? j.clausula : j.valor
   const rotulo = modo === 'clausula' ? 'te lo quitan por' : modo === 'venta' ? 'te darían' : 'vale'
   const trato = pago
-    ? `pagaste ${corto(pago)}, <b class="${j.valor >= pago ? 'sube' : 'baja'}">${firma(j.valor - pago)}</b>`
+    ? `pagaste ${corto(pago)}, <b class="${clase(j.valor - pago)}">${firmaCorta(j.valor - pago)}</b>`
     : 'del reparto'
   return `<div class="fj">
-      <span class="dorsal p${j.puesto}" title="${PUESTOS_LARGO[j.puesto]}">${PUESTOS[j.puesto]}</span>
+      ${dorsal(j.puesto)}
       <div class="jn">${esc(j.nombre)}${j.mk ? '<span class="et et-mk">en venta</span>' : ''}</div>
-      <div class="jp">
-        <b class="${modo === 'clausula' ? 'cl' : ''}">${eur(grande)}</b><i>${rotulo}</i>
-        <span class="ico">${iconos(j)}</span>
-      </div>
+      <div class="jp"><b class="${modo === 'clausula' ? 'cl' : ''}">${eur(grande)}</b><i>${rotulo}</i><span class="ico">${iconos(j)}</span></div>
       <div class="js">
         <span>media <b>${dec(j.media)}</b></span><span class="sep">·</span>
         <span>${j.puntos} pts en ${j.partidos} part.</span>${
-          pct != null ? `<span class="sep">·</span><span class="${pct > 0 ? 'sube' : 'baja'}">${pct > 0 ? '+' : ''}${pct} %</span>` : ''
-        }<span class="sep">·</span><span>${trato}</span>${
-          modo === 'clausula' ? `<span class="sep">·</span>${tira(j.rivalesQuePueden, RIVALES.length)}` : ''
-        }
-      </div>${
+          pct != null ? `<span class="sep">·</span><span class="${clase(pct)}">${pct > 0 ? '+' : ''}${pct} %</span>` : ''
+        }<span class="sep">·</span><span>${trato}</span>
+      </div>
+      ${modo === 'clausula' ? quienPuede(j) : ''}${
         j.razon
           ? `<div class="jr">${
               j.vender
@@ -224,23 +325,23 @@ const filaMia = (j, modo) => {
     </div>`
 }
 
-const seccion = (icono, titulo, desc, lista, modo) =>
+const bloque = (icono, titulo, desc, lista, modo) =>
   lista.length
-    ? `    <div class="sec">
+    ? `    <section class="sec">
       <h2 class="sh">${icono ? `<span class="se">${icono}</span>` : ''}${titulo} <em>${lista.length}</em></h2>
-      <p class="sd">${desc}</p>
+      ${desc ? `<p class="sd">${desc}</p>` : ''}
       <div class="lista">
 ${lista.map((j) => filaMia(j, modo)).join(NL)}
       </div>
-    </div>`
+    </section>`
     : ''
 
 const aVender = MIOS.filter((j) => j.vender).sort((a, b) => b.valor - a.valor)
 const aBlindar = MIOS.filter((j) => j.blindar).sort((a, b) => a.clausula / a.media - b.clausula / b.media)
-const resto = MIOS.filter((j) => !j.vender && !j.blindar).sort((a, b) => b.valor - a.valor)
+const resto = MIOS.filter((j) => !j.vender && !j.blindar).sort((a, b) => a.puesto - b.puesto || b.valor - a.valor)
 const sumaVenta = aVender.reduce((s, j) => s + j.valor, 0)
 
-const miEquipo = `${seccion(
+const miEquipo = `${bloque(
   '📤',
   'Deberías vender',
   aVender.length
@@ -249,113 +350,268 @@ const miEquipo = `${seccion(
   aVender,
   'venta',
 )}
-${seccion(
+${bloque(
   '🔒',
   'Deberías blindar',
-  'Rinden, y su cláusula es barata para lo que producen: cualquier rival puede llevárselos pagándola. Subírsela es lo que lo evita.',
+  'Rinden, y su cláusula es barata para lo que producen: cualquier rival puede llevárselos pagándola. Despliega para ver quiénes.',
   aBlindar,
   'clausula',
 )}
-${seccion('', 'El resto de tu plantilla', 'Ni urge venderlos ni están especialmente expuestos.', resto, 'valor')}`
+${bloque('', 'El resto de tu plantilla', 'Ni urge venderlos ni están especialmente expuestos.', resto, 'valor')}
+    <section class="sec">
+      <h2 class="sh">Tus cuentas</h2>
+      <p class="sd">De dónde sale cada euro, desde el reinicio de la liga.</p>
+      <div class="ficha">${cuentasDe(MIO)}</div>
+    </section>`
 
-// ── Equipos ──────────────────────────────────────────────────────────────────
-const filasEq = [...EQ]
-  .sort((a, b) => b.tope - a.tope)
-  .map((e) => {
-    const d = (D.porEquipo || {})[e.n] || { movimientos: [], porJugador: {} }
-    const js = Object.entries(d.porJugador)
-      .map(([id, x]) => {
-        const loTiene = DUENIO.get(String(id)) === e.n
-        const valeHoy = loTiene ? VALOR.get(String(id)) : null
-        if (loTiene && valeHoy == null) throw new Error(`Sin valor de hoy para ${x.nombre} (${id}), que sigue en ${e.n}`)
-        return {
-          ...x,
-          valeHoy,
-          // Lo que este jugador le ha dejado: lo cobrado más lo que vale si lo
-          // conserva, menos lo pagado. Un fichaje que aún tiene en plantilla no
-          // es una pérdida: es dinero convertido en jugador.
-          balance: x.ventas + (valeHoy ?? 0) - x.compras,
-          delReparto: x.compras === 0,
-        }
-      })
-      .sort((a, b) => b.balance - a.balance)
-
-    const tot = js.reduce(
-      (s, j) => ({
-        compras: s.compras + j.compras,
-        ventas: s.ventas + j.ventas,
-        valeHoy: s.valeHoy + (j.valeHoy ?? 0),
-        balance: s.balance + j.balance,
-      }),
-      { compras: 0, ventas: 0, valeHoy: 0, balance: 0 },
-    )
-
-    const cel = (n) => (n ? eur(n) : '—')
-    const hayReparto = js.some((j) => j.delReparto && j.ventas)
-    const tabla = js.length
-      ? `<div class="tabla-scroll"><table class="jt"><thead><tr><th>Jugador</th><th>Pagó</th><th>Cobró</th><th>Vale hoy</th><th>Balance</th></tr></thead><tbody>
-${js
-  .map(
-    (j) =>
-      `<tr><td>${esc(j.nombre)}${j.delReparto ? '<span class="et-rep">del reparto</span>' : ''}</td><td>${cel(j.compras)}</td><td>${cel(j.ventas)}</td><td>${cel(j.valeHoy)}</td><td class="${j.balance > 0 ? 'mas' : j.balance < 0 ? 'menos' : ''}">${firma(j.balance)}</td></tr>`,
-  )
-  .join(NL)}
-<tr class="sum"><td>${js.length} jugador${js.length === 1 ? '' : 'es'}</td><td>${cel(tot.compras)}</td><td>${cel(tot.ventas)}</td><td>${cel(tot.valeHoy)}</td><td class="${tot.balance > 0 ? 'mas' : 'menos'}">${firma(tot.balance)}</td></tr>
-</tbody></table></div>${hayReparto ? '<p class="pie">«Del reparto» son los que le tocaron al empezar: no pagó nada por ellos, así que aquí todo lo cobrado cuenta entero. Por eso este total supera la ganancia real de arriba: los del reparto ya valían dinero el día del reinicio.</p>' : ''}`
-      : '<p class="vacio2">No ha hecho ningún movimiento.</p>'
-
-    // La barra descompone el tope: lo sólido es caja, lo rayado es el 25 % de
-    // la plantilla. Se ve de un vistazo quién tiene dinero de verdad y quién
-    // lo tiene metido en jugadores.
-    const anchoCaja = ((e.saldo / maxTope) * 100).toFixed(1)
-    const anchoCred = (((0.25 * e.pl) / maxTope) * 100).toFixed(1)
-
-    return `<details class="eq${e.mio ? ' yo' : ''}">
+// ── 2. Rivales ───────────────────────────────────────────────────────────────
+const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     <summary>
       <span class="puesto">${e.pos}º</span>
       <div class="eqn">${esc(e.corto)}${e.mio ? '<span class="et et-eq et-mio">tú</span>' : ''}</div>
       <div class="eqp"><b>${eur(e.tope)}</b><i>puede gastar</i></div>
-      <div class="poder">
-        <span class="barra"><span class="caja" style="width:${anchoCaja}%"></span><span class="credito" style="width:${anchoCred}%"></span></span>
-        <small>${corto(e.saldo)} en caja + ${corto(0.25 * e.pl)} de su plantilla</small>
-      </div>
+      ${barraPoder(e)}
     </summary>
     <div class="cuerpo">
-      <p class="frase">Va <strong>${e.pos}º con ${e.pts} puntos</strong> y su plantilla vale ${eur(e.pl)}.</p>
-      <div class="cuenta">
-        <div class="l"><span>Empezó con</span><span>${eur(e.ini)}</span></div>
-        <div class="l"><span>Premios de las jornadas</span><span class="mas">+${eur(e.pre)}</span></div>
-        <div class="l"><span>Ha vendido por</span><span class="mas">+${eur(e.ven)}</span></div>
-        <div class="l"><span>Ha fichado por</span><span class="menos">−${eur(e.com)}</span></div>
-        <div class="l tot caja"><span>Le queda en caja</span><span>${eur(e.saldo)}</span></div>
-        <div class="l"><span>Más su plantilla, que vale</span><span>${eur(e.pl)}</span></div>
-        <div class="l tot"><span>Patrimonio hoy</span><span>${eur(e.patrimonio)}</span></div>
-        <div class="l"><span>Sobre los 50.000.000 € de salida</span><span class="${e.sobre50 > 0 ? 'mas' : 'menos'}">${firma(e.sobre50)}</span></div>
-      </div>
-      ${tabla}
+      <p class="frase">Va <strong>${e.pos}º con ${e.pts} puntos</strong>. Tiene <strong>${eur(e.saldo)}</strong> en caja y una plantilla de ${(PL[e.n] ?? []).length} jugadores que vale ${eur(e.pl)}.</p>
+      <h3 class="sub">Su plantilla</h3>
+      ${plantillaDe(e)}
+      <h3 class="sub">Sus cuentas</h3>
+      ${cuentasDe(e)}
+      <h3 class="sub">Jugador a jugador</h3>
+      ${tablaMovimientos(e)}
     </div>
   </details>`
-  })
+
+const rivales = `    <p class="intro">Ordenados por lo que pueden gastar hoy. La parte sólida de cada barra es dinero en caja; la rayada, el crédito que le da su plantilla.</p>
+${[...EQ]
+  .sort((a, b) => b.tope - a.tope)
+  .map(fichaEquipo)
+  .join(NL)}`
+
+// ── 3. Movimientos ───────────────────────────────────────────────────────────
+const MOVS = D.movimientos ?? []
+const OPS = { normal: '', clause: 'cláusula', rescind: 'rescisión' }
+
+const filaMov = (m) => {
+  const eqDe = m.de ? POR_NOMBRE.get(m.de) : null
+  const eqA = m.a ? POR_NOMBRE.get(m.a) : null
+  const mio = (eqDe && eqDe.mio) || (eqA && eqA.mio) ? ' mio' : ''
+  const tipo = m.a ? 'compra' : 'venta'
+  return `<div class="mv ${tipo}${mio}" data-busca="${esc(m.nombre)} ${esc(eqDe ? eqDe.corto : 'mercado')} ${esc(eqA ? eqA.corto : 'mercado')}">
+      <span class="fecha">${dia(m.fecha)}</span>
+      ${dorsal(m.pos ?? 0)}
+      <div class="mn">${esc(m.nombre)}${OPS[m.tipo] ? `<span class="et et-op">${OPS[m.tipo]}</span>` : ''}</div>
+      <div class="mr"><span class="${eqDe && eqDe.mio ? 'yo' : eqDe ? '' : 'mercado'}">${esc(eqDe ? eqDe.corto : 'Mercado')}</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg><span class="${eqA && eqA.mio ? 'yo' : eqA ? '' : 'mercado'}">${esc(eqA ? eqA.corto : 'Mercado')}</span></div>
+      <div class="mi">${eur(m.importe)}</div>
+    </div>`
+}
+
+// Actividad por día: 32 días de mercado en una sola tira.
+const porDia = new Map()
+for (const m of MOVS) {
+  const d = m.fecha.slice(0, 10)
+  porDia.set(d, (porDia.get(d) ?? 0) + 1)
+}
+const dias = [...porDia.entries()].sort((a, b) => a[0].localeCompare(b[0]))
+const maxDia = Math.max(...dias.map(([, n]) => n))
+const totalGastado = MOVS.reduce((s, m) => s + m.importe, 0)
+
+const movimientos = `    <div class="tarjeta">
+      <h2 class="sh">Actividad del mercado</h2>
+      <p class="sd"><strong>${MOVS.length} movimientos</strong> desde el 3 de agosto, ${eur(totalGastado)} en total. El día más movido fueron ${maxDia}.</p>
+      <div class="pulso">
+${dias
+  .map(
+    ([d, n]) =>
+      `        <span class="d" style="--alto:${Math.max(6, (n / maxDia) * 100).toFixed(0)}%" title="${dia(d)}: ${n} movimiento${n === 1 ? '' : 's'}"></span>`,
+  )
+  .join(NL)}
+      </div>
+      <div class="pulso-pie"><span>${dia(dias[0][0])}</span><span>${dia(dias[dias.length - 1][0])}</span></div>
+    </div>
+
+    <div class="mando">
+      <div class="buscar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="qm" type="search" placeholder="Buscar por jugador o equipo…" autocomplete="off" spellcheck="false">
+        <span class="cuenta-res" id="cuenta-mov"></span>
+      </div>
+      <div class="grupos">
+        <div class="grupo">
+          <span>Qué enseño</span>
+          <div class="ops">
+            <label for="m1">Todo</label>
+            <label for="m2">Solo compras</label>
+            <label for="m3">Solo ventas al mercado</label>
+            <label for="m4">Solo lo mío</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lista" id="lista-mov">
+${MOVS.map(filaMov).join(NL)}
+      <p class="vacio" id="sin-mov" hidden>Ningún movimiento cumple eso.</p>
+    </div>`
+
+// ── 4. Números ───────────────────────────────────────────────────────────────
+const maxPts = Math.max(...EQ.map((e) => e.pts))
+const maxPatrimonio = Math.max(...EQ.map((e) => e.patrimonio))
+
+const clasificacion = [...EQ]
+  .sort((a, b) => b.pts - a.pts)
+  .map(
+    (e) => `        <div class="ranking${e.mio ? ' mio' : ''}">
+          <span class="pos">${e.pos}º</span><span class="nom">${esc(e.corto)}</span>
+          <span class="bar"><i style="width:${((e.pts / maxPts) * 100).toFixed(1)}%"></i></span>
+          <span class="val">${e.pts}</span>
+        </div>`,
+  )
   .join(NL)
 
-// ── Guía ─────────────────────────────────────────────────────────────────────
-const def = (marca, clase, termino, texto) =>
-  `<div class="def"><span class="marca-def${clase ? ` ${clase}` : ''}">${marca}</span><dt>${termino}</dt><dd>${texto}</dd></div>`
+const riqueza = [...EQ]
+  .sort((a, b) => b.patrimonio - a.patrimonio)
+  .map(
+    (e) => `        <div class="ranking${e.mio ? ' mio' : ''}">
+          <span class="pos">${e.pos}º</span><span class="nom">${esc(e.corto)}</span>
+          <span class="bar doble"><i class="caja" style="width:${((e.saldo / maxPatrimonio) * 100).toFixed(1)}%" title="caja ${eur(e.saldo)}"></i><i class="plant" style="width:${((e.pl / maxPatrimonio) * 100).toFixed(1)}%" title="plantilla ${eur(e.pl)}"></i></span>
+          <span class="val">${corto(e.patrimonio)}</span>
+        </div>`,
+  )
+  .join(NL)
 
-const guia = `    <div class="guia">
-      <h2>Qué es esto</h2>
-      <p>Un panel de la liga privada de Mister, reconstruido movimiento a movimiento desde que empezó. Sirve para responder a una pregunta: <strong>¿quién puede fichar a quién, y a qué precio?</strong></p>
+// Quién comercia mejor: lo cobrado más lo que conserva, menos lo pagado, y
+// descontando lo que valía su reparto — así el que vendió gratis no gana de más.
+const comercio = [...EQ]
+  .map((e) => ({ ...e, negocio: e.sobre50 - e.pre }))
+  .sort((a, b) => b.negocio - a.negocio)
+const maxNeg = Math.max(...comercio.map((e) => Math.abs(e.negocio)))
+
+const tablaTop = (titulo, nota, filas) => `      <div class="tarjeta">
+        <h3 class="sub2">${titulo}</h3>
+        ${nota ? `<p class="sd">${nota}</p>` : ''}
+        <ol class="top">
+${filas.join(NL)}
+        </ol>
+      </div>`
+
+const lineaTop = (j, valor) =>
+  `          <li><span class="d">${dorsal(j.puesto)}</span><span class="n">${esc(j.nombre)}</span><span class="e">${esc(j.duenioCorto ?? 'libre')}</span><span class="v">${valor}</span></li>`
+
+const conPartidos = J.filter((j) => j.partidos >= 2)
+const topMedia = [...conPartidos].sort((a, b) => b.media - a.media).slice(0, 8)
+const topPuntos = [...J].sort((a, b) => b.puntos - a.puntos).slice(0, 8)
+const topSube = [...J].filter((j) => j.subeMes != null).sort((a, b) => b.subeMes - a.subeMes).slice(0, 8)
+const topCaros = [...J].sort((a, b) => b.valor - a.valor).slice(0, 8)
+
+// Récords del mercado, sacados del histórico completo.
+const masCaro = [...MOVS].sort((a, b) => b.importe - a.importe)[0]
+const porJugador = new Map()
+for (const [eq, d] of Object.entries(D.porEquipo)) {
+  for (const [id, x] of Object.entries(d.porJugador)) {
+    const loTiene = DUENIO.get(String(id)) === eq
+    const bal = x.ventas + (loTiene ? VALOR.get(String(id)) ?? 0 : 0) - x.compras
+    if (x.compras > 0) porJugador.set(`${eq}|${id}`, { equipo: POR_NOMBRE.get(eq), nombre: x.nombre, bal })
+  }
+}
+const negocios = [...porJugador.values()].sort((a, b) => b.bal - a.bal)
+const mejorNegocio = negocios[0]
+const peorNegocio = negocios[negocios.length - 1]
+
+const record = (etiqueta, titular, pie, tono) =>
+  `        <div class="record${tono ? ` ${tono}` : ''}"><dt>${etiqueta}</dt><dd>${titular}</dd><p>${pie}</p></div>`
+
+const numeros = `    <div class="tarjeta">
+      <h2 class="sh">Clasificación</h2>
+      <div class="rankings">
+${clasificacion}
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <h2 class="sh">Quién es más rico</h2>
+      <p class="sd">Patrimonio = caja + plantilla. La parte <span class="clave caja">llena</span> es dinero disponible; la <span class="clave plant">clara</span>, jugadores. Todos empezasteis en 50 M.</p>
+      <div class="rankings">
+${riqueza}
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <h2 class="sh">Quién comercia mejor</h2>
+      <p class="sd">Lo ganado solo en el mercado, sin contar los premios: patrimonio de hoy menos los 50 M de salida, menos lo cobrado por jornadas.</p>
+      <div class="rankings">
+${comercio
+  .map(
+    (e) => `        <div class="ranking${e.mio ? ' mio' : ''}">
+          <span class="pos">${e.pos}º</span><span class="nom">${esc(e.corto)}</span>
+          <span class="bar centro"><i class="${e.negocio >= 0 ? 'pos' : 'neg'}" style="width:${((Math.abs(e.negocio) / maxNeg) * 50).toFixed(1)}%;${e.negocio >= 0 ? 'left:50%' : `right:50%`}"></i></span>
+          <span class="val ${clase(e.negocio)}">${firmaCorta(e.negocio)}</span>
+        </div>`,
+  )
+  .join(NL)}
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <h2 class="sh">Récords de la liga</h2>
+      <div class="records">
+${record('Fichaje más caro', `${esc(masCaro.nombre)} · ${eur(masCaro.importe)}`, `Lo fichó ${esc(POR_NOMBRE.get(masCaro.a)?.corto ?? masCaro.a ?? 'el mercado')} el ${dia(masCaro.fecha)}.`, '')}
+${record('El mejor negocio', `${esc(mejorNegocio.nombre)} · ${firma(mejorNegocio.bal)}`, `De ${esc(mejorNegocio.equipo?.corto ?? '—')}, contando lo que vale hoy.`, 'bien')}
+${record('El peor negocio', `${esc(peorNegocio.nombre)} · ${firma(peorNegocio.bal)}`, `De ${esc(peorNegocio.equipo?.corto ?? '—')}, contando lo que vale hoy.`, 'mal')}
+${record('Movimientos', `${MOVS.length} en ${dias.length} días`, `${eur(totalGastado)} han cambiado de manos desde el reinicio.`, '')}
+      </div>
+    </div>
+
+    <div class="rejilla">
+${tablaTop('Mejor media', 'Con dos partidos o más.', topMedia.map((j) => lineaTop(j, dec(j.media))))}
+${tablaTop('Más puntos', '', topPuntos.map((j) => lineaTop(j, String(j.puntos))))}
+${tablaTop('Los que más suben', 'Crecimiento del valor en el último mes.', topSube.map((j) => lineaTop(j, `+${Math.round(j.subeMes * 100)} %`)))}
+${tablaTop('Los más valiosos', '', topCaros.map((j) => lineaTop(j, corto(j.valor))))}
+    </div>
+
+    <div class="tarjeta">
+      <h2 class="sh">Jornada a jornada</h2>
+      <div class="tabla-scroll"><table class="jt jornadas"><thead><tr><th>Equipo</th>${JOR.map((j) => `<th>J${j.jornada}</th>`).join('')}<th>Total</th><th>Premios</th></tr></thead><tbody>
+${[...EQ]
+  .sort((a, b) => b.pts - a.pts)
+  .map((e) => {
+    const suyas = JOR.map((j) => j.equipos.find((x) => x.equipo === e.n))
+    return `<tr class="${e.mio ? 'mio' : ''}"><td>${esc(e.corto)}</td>${suyas.map((s) => `<td>${s ? s.puntos : '—'}</td>`).join('')}<td><b>${e.pts}</b></td><td class="mas">+${corto(e.pre)}</td></tr>`
+  })
+  .join(NL)}
+</tbody></table></div>
+    </div>`
+
+// ── 5. Guía ──────────────────────────────────────────────────────────────────
+const def = (marca, clase2, termino, texto) =>
+  `<div class="def"><span class="marca-def${clase2 ? ` ${clase2}` : ''}">${marca}</span><dt>${termino}</dt><dd>${texto}</dd></div>`
+
+const guia = `    <div class="tarjeta">
+      <h2 class="sh">Qué es esto</h2>
+      <p class="sd">Un panel de la liga privada de Mister, reconstruido movimiento a movimiento desde que empezó. Responde a una pregunta: <strong>¿quién puede fichar a quién, y a qué precio?</strong></p>
       <div class="formula">
 Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que os tocó.<br>
 <b>caja</b> = eso + premios + lo vendido − lo fichado<br>
 <b>tope de puja</b> = caja + 25 % del valor de tu plantilla
       </div>
-      <p style="margin:13px 0 0">Ese 25 % es crédito que Mister fía contra tus jugadores: por eso alguien con poca caja pero buena plantilla puede pujar más de lo que tiene. En la pestaña <strong>Equipos</strong>, la parte sólida de cada barra es la caja y la rayada ese crédito.</p>
+      <p class="sd" style="margin-top:13px">Ese 25 % es crédito que Mister fía contra tus jugadores: por eso alguien con poca caja pero buena plantilla puede pujar más de lo que tiene.</p>
     </div>
 
-    <div class="guia">
-      <h2>Los iconos</h2>
-      <p>Los dos primeros pueden salir en cualquier jugador. Los dos últimos, solo en los tuyos.</p>
+    <div class="tarjeta">
+      <h2 class="sh">Dónde está cada cosa</h2>
+      <div class="defs">
+        ${def('🛡️', '', 'Mi equipo', 'Tus cifras, tu plantilla partida en los que deberías vender, los que deberías blindar y el resto, y tus cuentas completas.')}
+        ${def('🔎', '', 'Fichar', 'Los ' + J.length + ' jugadores que conozco, con buscador y filtros. Despliega el <strong>x de y pueden pagar</strong> de cualquiera para ver qué equipos concretos llegan a su precio y con cuánto margen.')}
+        ${def('👥', '', 'Rivales', 'Los ocho equipos por capacidad de compra. Al abrir uno: su plantilla entera, sus cuentas y qué ha ganado o perdido con cada jugador.')}
+        ${def('⇄', '', 'Movimientos', 'Los ' + MOVS.length + ' fichajes y ventas de la liga en orden, filtrables por compras, ventas o solo los tuyos.')}
+        ${def('📊', '', 'Números', 'Clasificación, quién es más rico, quién comercia mejor, récords y los mejores por media, puntos, subida y valor.')}
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <h2 class="sh">Los iconos</h2>
+      <p class="sd">Los dos primeros pueden salir en cualquier jugador. Los dos últimos, solo en los tuyos.</p>
       <div class="defs">
         ${def('⭐', '', 'Va a darte puntos', 'Su media por partido está en el tercio alto de la liga y ha jugado al menos dos partidos.')}
         ${def('💵', '', 'Va a darte dinero', 'Su valor sube esta semana y está entre los que más han crecido en el último mes: comprarlo y revenderlo debería dejar beneficio.')}
@@ -364,39 +620,41 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
       </div>
     </div>
 
-    <div class="guia">
-      <h2>Las palabras</h2>
+    <div class="tarjeta">
+      <h2 class="sh">Las palabras</h2>
       <div class="defs">
-        ${def('€', '', 'Valor y cláusula', 'El <strong>valor</strong> es lo que Mister dice que vale un jugador, y es lo que cobras si lo vendes al mercado. La <strong>cláusula</strong> es lo que un rival tiene que pagarte para quitártelo sin tu permiso, y siempre es mayor. En la lista, la cifra grande es <strong>lo que costaría ficharlo de verdad</strong>: la cláusula si tiene dueño, el valor si está libre.')}
-        ${def('▐', '', 'La tira de cuadraditos', `Cuántos de los ${EQ.length} equipos llegan a pagar ese precio hoy. En tus jugadores cuenta solo a los ${RIVALES.length} rivales, que es lo que importa cuando el jugador ya es tuyo.`)}
-        ${def('POR', 'txt', 'Los dorsales de color', 'La posición del jugador: <strong>POR</strong> portero, <strong>DEF</strong> defensa, <strong>MED</strong> centrocampista, <strong>DEL</strong> delantero.')}
+        ${def('€', '', 'Valor y cláusula', 'El <strong>valor</strong> es lo que Mister dice que vale un jugador, y lo que cobras si lo vendes al mercado. La <strong>cláusula</strong> es lo que un rival paga para quitártelo sin tu permiso, y siempre es mayor. La cifra grande de cada fila es <strong>lo que costaría ficharlo de verdad</strong>.')}
+        ${def('POR', 'txt', 'Los dorsales de color', 'La posición: <strong>POR</strong> portero, <strong>DEF</strong> defensa, <strong>MED</strong> centrocampista, <strong>DEL</strong> delantero.')}
+        ${def('▐', '', 'Las barras de los equipos', 'La parte sólida es dinero en caja; la rayada, el crédito que le da su plantilla. Juntas, lo que puede gastar.')}
       </div>
     </div>
 
-    <div class="guia">
-      <h2>Lo que no sabe</h2>
+    <div class="tarjeta">
+      <h2 class="sh">Lo que no sabe</h2>
       <div class="defs">
         ${def('?', 'txt', 'No conoce a todo LaLiga', `Conoce ${J.length} jugadores: los que han pasado por la liga y los que están hoy en el mercado. Mister no publica un catálogo completo.`)}
         ${def('?', 'txt', 'No sabe qué cuesta blindar', 'El 🔒 dice quién está expuesto, no lo que cuesta subirle la cláusula.')}
-        ${def('?', 'txt', 'No adivina el futuro', 'Los iconos son criterios sobre datos publicados. Un jugador puede lesionarse o dejar de jugar el domingo siguiente.')}
+        ${def('?', 'txt', 'No adivina el futuro', 'Los iconos son criterios sobre datos publicados. Un jugador puede lesionarse el domingo siguiente.')}
       </div>
     </div>`
 
 // ── Montaje ──────────────────────────────────────────────────────────────────
 const plantilla = fs.readFileSync(path.join(AQUI, 'plantilla.html'), 'utf8')
-const html = plantilla
-  .replace('__LIGA__', esc(NOMBRE_LIGA))
-  .replace('<!--__MARCADOR__-->', marcador)
-  .replace('<!--__JUGADORES__-->', filas)
-  .replace('<!--__EQUIPOS__-->', filasEq)
-  .replace('<!--__MIEQUIPO__-->', miEquipo)
-  .replace('<!--__GUIA__-->', guia)
-  .replace(
-    '<!--__SELLO__-->',
-    `Generado el ${new Date().toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'short' })}.`,
-  )
-for (const hueco of ['__LIGA__', '__MARCADOR__', '__JUGADORES__', '__EQUIPOS__', '__MIEQUIPO__', '__GUIA__', '__SELLO__']) {
-  if (html.includes(hueco)) throw new Error(`El hueco ${hueco} se quedó sin rellenar`)
+const huecos = {
+  __LIGA__: esc(NOMBRE_LIGA),
+  '<!--__MARCADOR__-->': marcador,
+  '<!--__MIEQUIPO__-->': miEquipo,
+  '<!--__JUGADORES__-->': filasJugadores,
+  '<!--__RIVALES__-->': rivales,
+  '<!--__MOVIMIENTOS__-->': movimientos,
+  '<!--__NUMEROS__-->': numeros,
+  '<!--__GUIA__-->': guia,
+  '<!--__SELLO__-->': `Generado el ${new Date().toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'short' })}.`,
+}
+let html = plantilla
+for (const [hueco, valor] of Object.entries(huecos)) {
+  if (!html.includes(hueco)) throw new Error(`La plantilla no tiene el hueco ${hueco}`)
+  html = html.replace(hueco, valor)
 }
 fs.writeFileSync(SALIDA, html)
 
@@ -405,8 +663,8 @@ console.log(
     {
       salida: SALIDA,
       jugadores: J.length,
-      conClausula: J.filter((j) => j.clausula).length,
-      conDuenio: J.filter((j) => j.duenio).length,
+      movimientos: MOVS.length,
+      jornadas: JOR.length,
       porPosicion: Object.fromEntries(
         Object.entries(PUESTOS).map(([k, v]) => [v, J.filter((j) => j.puesto === Number(k)).length]),
       ),

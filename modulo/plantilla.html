@@ -11,7 +11,8 @@
 /* ── Paleta ────────────────────────────────────────────────────────────────
    Neutros con un punto de verde: el césped, sin disfrazarse de él.
    El acento es ámbar porque el tema de todo esto es el dinero.
-   Verde y rosa quedan reservados a ganar y perder, y no se usan para nada más. */
+   Verde y rosa quedan reservados a ganar y perder, y no se usan para nada más:
+   así un signo se lee sin leer la cifra. */
 :root{
   --suelo:#F3F5F0; --tabla:#FFFFFF; --hueco:#EAEDE6; --raya:#DFE4D9;
   --tinta:#151A16; --gris:#5B6660; --tenue:#8B958D;
@@ -42,112 +43,124 @@
 }
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 body{
   background:var(--suelo); color:var(--tinta);
   font-family:Manrope,ui-sans-serif,system-ui,-apple-system,sans-serif;
   font-size:15.5px; line-height:1.55; margin:0; padding:0 16px 80px;
   -webkit-font-smoothing:antialiased;
 }
-.env{max-width:940px;margin:0 auto}
-.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace;font-variant-numeric:tabular-nums}
-.cifra{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums;font-weight:600}
+.env{max-width:960px;margin:0 auto}
 .sube{color:var(--sube)} .baja{color:var(--baja)}
+.mas{color:var(--sube)} .menos{color:var(--baja)}
 
 /* ── Cabecera ─────────────────────────────────────────────────────────── */
 .cab{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:22px 0 16px}
 .marca{display:flex;align-items:center;gap:11px;min-width:0}
 .escudo{width:34px;height:34px;flex:none;border-radius:9px;background:var(--oro);display:grid;place-items:center;color:var(--suelo)}
 .escudo svg{width:19px;height:19px;display:block}
-.marca h1{
-  font-family:"Barlow Condensed",Impact,sans-serif;font-weight:700;
-  font-size:29px;line-height:1;letter-spacing:.005em;text-transform:uppercase;margin:0;
-}
+.marca h1{font-family:"Barlow Condensed",Impact,sans-serif;font-weight:700;font-size:29px;line-height:1;letter-spacing:.005em;text-transform:uppercase;margin:0}
 .marca p{margin:1px 0 0;font-size:12.5px;color:var(--gris);line-height:1.3}
 
-/* ── Marcador: las cuatro cifras que resumen tu situación ─────────────── */
+/* ── Marcador ─────────────────────────────────────────────────────────── */
 .marcador{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));
   background:var(--tabla);border:1px solid var(--raya);border-radius:var(--radio);
   box-shadow:var(--sombra);overflow:hidden;margin-bottom:18px;
 }
-.marcador > div{padding:14px 17px;border-right:1px solid var(--raya)}
+.marcador > div{padding:13px 17px;border-right:1px solid var(--raya)}
 .marcador > div:last-child{border-right:0}
-.marcador dt{
-  font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.11em;
-  text-transform:uppercase;color:var(--tenue);margin:0 0 3px;
-  display:flex;align-items:center;gap:5px;
-}
+.marcador dt{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--tenue);margin:0 0 3px;display:flex;align-items:center;gap:5px}
 .marcador dt svg{width:11px;height:11px;flex:none;opacity:.8}
 .marcador dd{margin:0;white-space:nowrap;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;font-size:19px;line-height:1.15}
 .marcador dd small{font-size:12px;font-weight:500;color:var(--gris);margin-left:4px}
 .marcador dd.oro{color:var(--oro)}
-@media(max-width:640px){.marcador > div{border-right:0;border-bottom:1px solid var(--raya)}}
+@media(max-width:660px){.marcador > div{border-right:0;border-bottom:1px solid var(--raya)}}
 
 /* ── Navegación ───────────────────────────────────────────────────────── */
 .ctrl{position:absolute;opacity:0;pointer-events:none;width:0;height:0}
-.pest{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:3px;
-  background:var(--hueco);border-radius:11px;padding:4px;margin-bottom:20px;
-}
+.pest{display:grid;grid-template-columns:repeat(6,1fr);gap:3px;background:var(--hueco);border-radius:11px;padding:4px;margin-bottom:20px}
 .pest label{
-  display:flex;align-items:center;justify-content:center;gap:7px;
-  font-size:14px;font-weight:600;padding:10px 6px;border-radius:8px;
+  display:flex;align-items:center;justify-content:center;gap:6px;
+  font-size:13.5px;font-weight:600;padding:10px 4px;border-radius:8px;
   color:var(--gris);cursor:pointer;user-select:none;white-space:nowrap;
   transition:background .12s,color .12s;
 }
 .pest label svg{width:15px;height:15px;flex:none}
 .pest label:hover{color:var(--tinta)}
-.pest label span{overflow:hidden;text-overflow:ellipsis}
-#t1:checked~.env label[for=t1],#t2:checked~.env label[for=t2],
-#t3:checked~.env label[for=t3],#t4:checked~.env label[for=t4]{
+#t1:checked~.env label[for=t1],#t2:checked~.env label[for=t2],#t3:checked~.env label[for=t3],
+#t4:checked~.env label[for=t4],#t5:checked~.env label[for=t5],#t6:checked~.env label[for=t6]{
   background:var(--tabla);color:var(--tinta);box-shadow:0 1px 3px rgba(0,0,0,.09)
 }
-@media(max-width:560px){.pest label span{display:none} .pest label{padding:11px 4px}}
+@media(max-width:720px){.pest label span{display:none} .pest label{padding:11px 4px}}
 .panel{display:none;flex-direction:column;gap:16px}
-#t1:checked~.env #p1,#t2:checked~.env #p2,#t3:checked~.env #p3,#t4:checked~.env #p4{display:flex}
+#t1:checked~.env #p1,#t2:checked~.env #p2,#t3:checked~.env #p3,
+#t4:checked~.env #p4,#t5:checked~.env #p5,#t6:checked~.env #p6{display:flex}
+
+/* ── Piezas comunes ───────────────────────────────────────────────────── */
+.tarjeta,.mando,.lista,.ficha{background:var(--tabla);border:1px solid var(--raya);border-radius:var(--radio);box-shadow:var(--sombra)}
+.tarjeta{padding:18px 20px}
+.lista{overflow:hidden}
+.ficha{padding:16px 18px}
+.sh{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:21px;text-transform:uppercase;letter-spacing:.015em;margin:0 0 4px;display:flex;align-items:center;gap:9px}
+.sh .se{font-size:18px}
+.sh em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;color:var(--tenue);letter-spacing:0}
+.sd{font-size:13.5px;color:var(--gris);margin:0 0 13px;max-width:70ch;line-height:1.6}
+.sd:last-child{margin-bottom:0}
+.sd strong{color:var(--tinta)}
+.intro{font-size:13.5px;color:var(--gris);margin:0;max-width:70ch;line-height:1.6}
+.sub{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.07em;color:var(--tenue);margin:16px 0 0}
+.sub2{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:17px;text-transform:uppercase;letter-spacing:.02em;margin:0 0 3px}
+.sec{display:flex;flex-direction:column;gap:9px}
+.vacio{padding:34px 20px;text-align:center;color:var(--tenue);font-size:14px;margin:0}
+.vacio2{color:var(--tenue);font-size:14px;margin:0}
+.rejilla{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:660px){.rejilla{grid-template-columns:1fr 1fr}}
+
+/* ── Dorsales de posición ─────────────────────────────────────────────── */
+.dorsal{
+  width:34px;height:34px;flex:none;border-radius:8px;display:grid;place-items:center;
+  font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:12px;letter-spacing:.04em;color:#fff;
+}
+.dorsal.p1{background:var(--por)} .dorsal.p2{background:var(--def)}
+.dorsal.p3{background:var(--med)} .dorsal.p4{background:var(--del)}
+.dorsal.p0{background:var(--tenue)}
+
+.et{font-size:10.5px;font-weight:600;letter-spacing:.02em;border-radius:99px;padding:2px 8px;white-space:nowrap;line-height:1.4}
+.et-mk{color:var(--oro);background:var(--oro-fondo);border:1px solid var(--oro-raya)}
+.et-eq{color:var(--gris);background:var(--hueco);border:1px solid var(--raya)}
+.et-eq.et-mio{color:var(--oro);background:var(--oro-fondo);border-color:var(--oro-raya)}
+.et-libre{color:var(--sube);background:var(--sube-fondo);border:1px solid currentColor}
+.et-op{color:var(--baja);background:var(--baja-fondo);border:1px solid currentColor}
 
 /* ── Barra de control ─────────────────────────────────────────────────── */
-.mando{background:var(--tabla);border:1px solid var(--raya);border-radius:var(--radio);box-shadow:var(--sombra);overflow:hidden}
+.mando{overflow:hidden}
 .buscar{display:flex;align-items:center;gap:10px;padding:12px 15px;border-bottom:1px solid var(--raya)}
 .buscar svg{width:16px;height:16px;flex:none;color:var(--tenue)}
-.buscar input{
-  flex:1;min-width:0;font:inherit;font-size:15px;color:var(--tinta);
-  background:transparent;border:0;padding:2px 0;
-}
+.buscar input{flex:1;min-width:0;font:inherit;font-size:15px;color:var(--tinta);background:transparent;border:0;padding:2px 0}
 .buscar input::placeholder{color:var(--tenue)}
 .buscar input:focus{outline:0}
-.buscar select{
-  font:inherit;font-size:13px;font-weight:600;color:var(--gris);background:var(--hueco);
-  border:1px solid var(--raya);border-radius:8px;padding:6px 9px;cursor:pointer;
-}
+.buscar select{font:inherit;font-size:13px;font-weight:600;color:var(--gris);background:var(--hueco);border:1px solid var(--raya);border-radius:8px;padding:6px 9px;cursor:pointer}
 .cuenta-res{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--tenue);white-space:nowrap}
 .grupos{display:grid;grid-template-columns:1fr;gap:1px;background:var(--raya)}
-@media(min-width:700px){.grupos{grid-template-columns:1fr 1fr}}
+@media(min-width:700px){.grupos.dos{grid-template-columns:1fr 1fr}}
 .grupo{background:var(--tabla);padding:12px 15px 13px}
-.grupo > span{
-  display:block;font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.11em;
-  text-transform:uppercase;color:var(--tenue);margin-bottom:8px;
-}
+.grupo > span{display:block;font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--tenue);margin-bottom:8px}
 .ops{display:flex;gap:5px;flex-wrap:wrap}
-.ops label{
-  font-size:13px;font-weight:600;padding:5px 11px;border-radius:7px;
-  border:1px solid var(--raya);background:var(--suelo);color:var(--gris);
-  cursor:pointer;user-select:none;white-space:nowrap;transition:border-color .12s,color .12s;
-}
+.ops label{font-size:13px;font-weight:600;padding:5px 11px;border-radius:7px;border:1px solid var(--raya);background:var(--suelo);color:var(--gris);cursor:pointer;user-select:none;white-space:nowrap;transition:border-color .12s,color .12s}
 .ops label:hover{border-color:var(--oro);color:var(--oro)}
 #a1:checked~.env label[for=a1],#a2:checked~.env label[for=a2],
 #f1:checked~.env label[for=f1],#f2:checked~.env label[for=f2],#f3:checked~.env label[for=f3],
 #f4:checked~.env label[for=f4],#f5:checked~.env label[for=f5],
 #d1:checked~.env label[for=d1],#d2:checked~.env label[for=d2],#d3:checked~.env label[for=d3],#d4:checked~.env label[for=d4],
 #s1:checked~.env label[for=s1],#s2:checked~.env label[for=s2],#s3:checked~.env label[for=s3],
-#s4:checked~.env label[for=s4],#s5:checked~.env label[for=s5]{
+#s4:checked~.env label[for=s4],#s5:checked~.env label[for=s5],
+#m1:checked~.env label[for=m1],#m2:checked~.env label[for=m2],#m3:checked~.env label[for=m3],#m4:checked~.env label[for=m4]{
   border-color:var(--oro);background:var(--oro-fondo);color:var(--oro)
 }
 
-/* Los filtros, en cascada. «Míos» se salta el «dónde» a propósito: enseñar
-   solo los tuyos que están en venta deja la lista casi vacía sin explicar por qué. */
+/* Filtros en cascada. «Míos» se salta el «dónde» a propósito: enseñar solo los
+   tuyos que están en venta deja la lista casi vacía sin explicar por qué. */
 #a1:checked~#d4:not(:checked)~.env .fj.nomk{display:none}
 #f2:checked~.env .fj:not(.tp),#f2:checked~.env .fj:not(.td){display:none}
 #f3:checked~.env .fj:not(.tp){display:none}
@@ -160,100 +173,72 @@ body{
 #s3:checked~.env .fj:not(.z2){display:none}
 #s4:checked~.env .fj:not(.z3){display:none}
 #s5:checked~.env .fj:not(.z4){display:none}
+#m2:checked~.env .mv:not(.compra){display:none}
+#m3:checked~.env .mv:not(.venta){display:none}
+#m4:checked~.env .mv:not(.mio){display:none}
 .oculto{display:none!important}
 
-.aviso{
-  display:none;font-size:13px;color:var(--oro);background:var(--oro-fondo);
-  border:1px solid var(--oro-raya);border-radius:9px;padding:10px 13px;margin:0;
-}
+.aviso{display:none;font-size:13px;color:var(--oro);background:var(--oro-fondo);border:1px solid var(--oro-raya);border-radius:9px;padding:10px 13px;margin:0}
 #d4:checked~.env .aviso{display:block}
 
-/* ── Lista de jugadores ───────────────────────────────────────────────── */
-.lista{background:var(--tabla);border:1px solid var(--raya);border-radius:var(--radio);box-shadow:var(--sombra);overflow:hidden}
-.fj{
-  display:grid;grid-template-columns:34px 1fr auto;gap:2px 12px;
-  align-items:center;padding:11px 15px;border-bottom:1px solid var(--raya);
-}
-.fj:last-child{border-bottom:0}
+/* ── Fila de jugador ──────────────────────────────────────────────────── */
+.fj{display:grid;grid-template-columns:34px 1fr auto;gap:2px 12px;align-items:center;padding:11px 15px;border-bottom:1px solid var(--raya)}
+.fj:last-of-type{border-bottom:0}
 .fj:hover{background:var(--suelo)}
-
-.dorsal{
-  grid-column:1;grid-row:1/3;align-self:start;margin-top:2px;
-  width:34px;height:34px;border-radius:8px;display:grid;place-items:center;
-  font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:12px;
-  letter-spacing:.04em;color:#fff;
-}
-.dorsal.p1{background:var(--por)} .dorsal.p2{background:var(--def)}
-.dorsal.p3{background:var(--med)} .dorsal.p4{background:var(--del)}
-.dorsal.p0{background:var(--tenue)}
-
-.jn{
-  grid-column:2;grid-row:1;
-  font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:19px;
-  line-height:1.15;display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-width:0;
-}
-.et{
-  font-family:Manrope,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.02em;
-  border-radius:99px;padding:2px 8px;white-space:nowrap;line-height:1.4;
-}
-.et-mk{color:var(--oro);background:var(--oro-fondo);border:1px solid var(--oro-raya)}
-.et-eq{color:var(--gris);background:var(--hueco);border:1px solid var(--raya)}
-.et-eq.et-mio{color:var(--oro);background:var(--oro-fondo);border-color:var(--oro-raya)}
-.et-libre{color:var(--sube);background:var(--sube-fondo);border:1px solid currentColor}
-
+.fj > .dorsal{grid-column:1;grid-row:1/3;align-self:start;margin-top:2px}
+.jn{grid-column:2;grid-row:1;font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:19px;line-height:1.15;display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-width:0}
 .jp{grid-column:3;grid-row:1/3;text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:1px;white-space:nowrap}
 .jp b{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;font-size:15px}
 .jp b.cl{color:var(--oro)}
 .jp i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue)}
 .jp .ico{font-size:14px;letter-spacing:1px;line-height:1.2;margin-top:2px;min-height:17px}
-
-.js{grid-column:2;grid-row:2;font-size:12.5px;color:var(--gris);display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.js{grid-column:2;grid-row:2;font-size:12.5px;color:var(--gris);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .js b{color:var(--tinta);font-weight:600}
 .js .sep{color:var(--raya)}
 
-/* Cuántos equipos llegan a pagarlo: se ve antes de leerlo. */
-.puede{display:inline-flex;align-items:center;gap:5px}
-.puede .tira{display:inline-flex;gap:2px}
-.puede .tira i{width:5px;height:11px;border-radius:1.5px;background:var(--raya);display:block}
-.puede .tira i.on{background:var(--oro)}
-.puede em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--tenue)}
+/* Quién puede ficharlo: la pregunta original del módulo, ahora con nombres. */
+.quien{grid-column:2/-1;grid-row:3;margin-top:5px}
+.quien summary{display:inline-flex;align-items:center;gap:8px;cursor:pointer;list-style:none;padding:3px 9px 3px 5px;border-radius:99px;border:1px solid transparent}
+.quien summary::-webkit-details-marker{display:none}
+.quien summary:hover{border-color:var(--oro-raya);background:var(--oro-fondo)}
+.quien .tira{display:inline-flex;gap:2px}
+.quien .tira i{width:5px;height:11px;border-radius:1.5px;background:var(--raya);display:block}
+.quien .tira i.on{background:var(--oro)}
+.quien .txt{font-size:11.5px;color:var(--tenue);font-family:"IBM Plex Mono",monospace}
+.quien .txt b{color:var(--tinta)}
+.quien[open] summary{border-color:var(--oro-raya);background:var(--oro-fondo)}
+.chips{display:flex;flex-wrap:wrap;gap:5px;padding:9px 0 3px}
+.chip{display:inline-flex;align-items:baseline;gap:6px;font-size:12px;font-weight:600;border:1px solid var(--raya);background:var(--suelo);border-radius:7px;padding:4px 9px}
+.chip em{font-style:normal;font-weight:500;font-size:10.5px;color:var(--tenue);font-family:"IBM Plex Mono",monospace}
+.chip.mio{border-color:var(--oro);background:var(--oro-fondo);color:var(--oro)}
+.chip.mio em{color:var(--oro)}
+.chip.nadie{color:var(--tenue);font-weight:500}
 
-.jr{
-  grid-column:2/-1;grid-row:3;font-size:12.5px;line-height:1.5;color:var(--tinta);
-  background:var(--oro-fondo);border-left:3px solid var(--oro);border-radius:0 6px 6px 0;
-  padding:7px 11px;margin-top:5px;
-}
+.jr{grid-column:2/-1;grid-row:4;font-size:12.5px;line-height:1.5;color:var(--tinta);background:var(--oro-fondo);border-left:3px solid var(--oro);border-radius:0 6px 6px 0;padding:7px 11px;margin-top:6px}
 .jr b{color:var(--oro)}
-
-.vacio{padding:34px 20px;text-align:center;color:var(--tenue);font-size:14px}
 
 /* ── Equipos ──────────────────────────────────────────────────────────── */
 .eq{background:var(--tabla);border:1px solid var(--raya);border-radius:var(--radio);box-shadow:var(--sombra);overflow:hidden}
-.eq + .eq{margin-top:9px}
 .eq.yo{border-color:var(--oro)}
 .eq > summary{display:grid;grid-template-columns:26px 1fr auto;gap:4px 12px;align-items:center;padding:13px 16px;cursor:pointer;list-style:none}
 .eq > summary::-webkit-details-marker{display:none}
 .eq > summary:hover{background:var(--suelo)}
-.puesto{
-  grid-row:1/3;align-self:start;margin-top:1px;
-  font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:17px;
-  color:var(--tenue);text-align:center;
-}
+.puesto{grid-row:1/3;align-self:start;margin-top:1px;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:17px;color:var(--tenue);text-align:center}
 .eq.yo .puesto{color:var(--oro)}
 .eqn{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:20px;line-height:1.15;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.eqp{text-align:right;white-space:nowrap;display:flex;flex-direction:column;align-items:flex-end;gap:0}
+.eqp{text-align:right;white-space:nowrap;display:flex;flex-direction:column;align-items:flex-end}
 .eqp b{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;font-size:16px}
 .eqp i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue)}
 
-/* La barra explica la fórmula sin enunciarla: lo sólido es caja, lo rayado
-   es el crédito que le da su plantilla. Juntos, el tope de puja. */
+/* La barra explica la fórmula sin enunciarla: sólido es caja, rayado el
+   crédito que da la plantilla. Juntos, el tope de puja. */
 .poder{grid-column:2/-1;display:flex;align-items:center;gap:9px;margin-top:2px}
 .poder .barra{flex:1;height:9px;border-radius:99px;background:var(--hueco);overflow:hidden;display:flex}
 .poder .caja{background:var(--oro)}
 .poder .credito{background:repeating-linear-gradient(115deg,var(--oro-raya) 0 4px,transparent 4px 8px);border-right:1px solid var(--oro-raya)}
 .poder small{font-size:11px;color:var(--tenue);white-space:nowrap}
 
-.cuerpo{padding:0 16px 17px;display:flex;flex-direction:column;gap:15px;border-top:1px solid var(--raya)}
+.cuerpo{padding:0 16px 18px;display:flex;flex-direction:column;gap:9px;border-top:1px solid var(--raya)}
 .frase{margin:15px 0 0;font-size:14.5px;color:var(--gris)}
 .frase strong{color:var(--tinta)}
 .cuenta{display:flex;flex-direction:column;gap:4px;font-size:14px}
@@ -262,60 +247,102 @@ body{
 .cuenta .l > span:last-child{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:13.5px}
 .cuenta .l.tot{border-top:1px solid var(--raya);padding-top:6px;margin-top:3px;font-weight:600}
 .cuenta .l.caja > span:last-child{color:var(--oro);font-size:18px;font-weight:700}
-.mas{color:var(--sube)} .menos{color:var(--baja)}
+
+/* Plantilla compacta dentro de la ficha de un equipo. */
+.mini{display:grid;grid-template-columns:1fr;gap:1px;background:var(--raya);border:1px solid var(--raya);border-radius:9px;overflow:hidden}
+@media(min-width:620px){.mini{grid-template-columns:1fr 1fr}}
+.mj{display:flex;align-items:center;gap:9px;background:var(--tabla);padding:7px 10px;font-size:13px}
+.mj .dorsal{width:28px;height:22px;font-size:10px;border-radius:5px}
+.mj .n{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+.mj .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:12px;white-space:nowrap}
+.mj .n .desc{font-style:italic;color:var(--tenue);font-weight:500}
+.mj .c,.mj .m{font-size:10.5px;color:var(--tenue);white-space:nowrap;font-family:"IBM Plex Mono",monospace}
+@media(max-width:520px){.mj .c{display:none}}
 
 table.jt{width:100%;border-collapse:collapse;font-size:13px}
 .tabla-scroll{overflow-x:auto}
-table.jt th{
-  font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:500;letter-spacing:.09em;
-  text-transform:uppercase;color:var(--tenue);text-align:right;padding:0 0 6px;border-bottom:1px solid var(--raya);white-space:nowrap;
-}
-table.jt th:first-child{text-align:left}
+table.jt th{font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--tenue);text-align:right;padding:0 0 6px 12px;border-bottom:1px solid var(--raya);white-space:nowrap}
+table.jt th:first-child{text-align:left;padding-left:0}
 table.jt td{padding:7px 0 7px 12px;border-bottom:1px solid var(--raya);text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:12px;white-space:nowrap}
 table.jt td:first-child{text-align:left;padding-left:0;font-family:Manrope,sans-serif;font-size:13px;white-space:normal}
 table.jt tr.sum td{border-bottom:0;border-top:1px solid var(--tinta);font-weight:700;padding-top:8px}
+table.jt tr.mio td{background:var(--oro-fondo)}
+table.jt.jornadas tr:last-child td{border-bottom:0}
 .et-rep{font-family:"IBM Plex Mono",monospace;font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--tenue);border:1px solid var(--raya);border-radius:3px;padding:1px 4px;margin-left:6px;white-space:nowrap}
 .pie{font-size:11.5px;color:var(--tenue);margin:8px 0 0;line-height:1.55}
-.vacio2{color:var(--tenue);font-size:14px;margin:0}
 
-/* ── Mi equipo ────────────────────────────────────────────────────────── */
-.sec{display:flex;flex-direction:column;gap:9px}
-.sh{
-  font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:22px;
-  text-transform:uppercase;letter-spacing:.015em;margin:6px 0 0;
-  display:flex;align-items:center;gap:9px;
+/* ── Movimientos ──────────────────────────────────────────────────────── */
+.mv{display:grid;grid-template-columns:46px 34px 1fr auto auto;gap:3px 11px;align-items:center;padding:9px 15px;border-bottom:1px solid var(--raya)}
+.mv:last-of-type{border-bottom:0}
+.mv:hover{background:var(--suelo)}
+.mv.mio{background:var(--oro-fondo)}
+.mv .fecha{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--tenue);white-space:nowrap}
+.mv .dorsal{width:30px;height:24px;font-size:10px;border-radius:6px}
+.mn{font-weight:600;font-size:14.5px;display:flex;align-items:center;gap:7px;flex-wrap:wrap;min-width:0}
+.mr{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--gris);white-space:nowrap}
+.mr svg{width:13px;height:13px;flex:none;color:var(--tenue)}
+.mr .mercado{color:var(--tenue);font-style:italic}
+.mr .yo{color:var(--oro);font-weight:700}
+.mi{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;font-size:14px;white-space:nowrap;text-align:right}
+@media(max-width:700px){
+  .mv{grid-template-columns:46px 30px 1fr auto}
+  .mv .mr{grid-column:3/-1;grid-row:2}
 }
-.sh .se{font-size:19px}
-.sh em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;color:var(--tenue);letter-spacing:0}
-.sd{font-size:14px;color:var(--gris);margin:0;max-width:66ch}
-.sd strong{color:var(--tinta)}
+
+/* Pulso del mercado: una barra por día. */
+.pulso{display:flex;align-items:flex-end;gap:2px;height:76px;padding:0 0 2px;border-bottom:1px solid var(--raya)}
+.pulso .d{flex:1;min-width:3px;height:var(--alto);background:var(--oro);border-radius:2px 2px 0 0;opacity:.85}
+.pulso .d:hover{opacity:1;background:var(--tinta)}
+.pulso-pie{display:flex;justify-content:space-between;font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--tenue);padding-top:5px}
+
+/* ── Números ──────────────────────────────────────────────────────────── */
+.rankings{display:flex;flex-direction:column;gap:6px}
+.ranking{display:grid;grid-template-columns:26px minmax(90px,1fr) 3fr auto;gap:10px;align-items:center;font-size:13.5px}
+.ranking .pos{font-family:"Barlow Condensed",sans-serif;font-weight:700;color:var(--tenue);text-align:center}
+.ranking .nom{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ranking.mio .nom,.ranking.mio .pos{color:var(--oro)}
+.ranking .bar{position:relative;height:12px;border-radius:4px;background:var(--hueco);overflow:hidden;display:flex}
+.ranking .bar i{display:block;height:100%;background:var(--oro);border-radius:3px}
+.ranking .bar .caja{background:var(--oro)}
+.ranking .bar .plant{background:var(--oro-raya)}
+.ranking .bar.centro{background:linear-gradient(90deg,var(--hueco) 0 calc(50% - 1px),var(--raya) calc(50% - 1px) calc(50% + 1px),var(--hueco) calc(50% + 1px) 100%)}
+.ranking .bar.centro i{position:absolute;top:0}
+.ranking .bar.centro i.pos{background:var(--sube)}
+.ranking .bar.centro i.neg{background:var(--baja)}
+.ranking .val{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;font-size:13px;text-align:right;min-width:58px}
+.clave{font-weight:700}
+.clave.caja{color:var(--oro)}
+.clave.plant{color:var(--oro-raya)}
+
+.records{display:grid;grid-template-columns:1fr;gap:1px;background:var(--raya);border:1px solid var(--raya);border-radius:10px;overflow:hidden}
+@media(min-width:620px){.records{grid-template-columns:1fr 1fr}}
+.record{background:var(--tabla);padding:13px 15px}
+.record dt{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue);margin-bottom:3px}
+.record dd{margin:0;font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:20px;line-height:1.15}
+.record.bien dd{color:var(--sube)} .record.mal dd{color:var(--baja)}
+.record p{margin:3px 0 0;font-size:12px;color:var(--gris);line-height:1.5}
+
+ol.top{list-style:none;margin:9px 0 0;padding:0;display:flex;flex-direction:column;gap:1px}
+ol.top li{display:grid;grid-template-columns:auto 1fr auto auto;gap:9px;align-items:center;padding:5px 0;border-bottom:1px solid var(--raya);font-size:13px}
+ol.top li:last-child{border-bottom:0}
+ol.top .d .dorsal{width:28px;height:22px;font-size:10px;border-radius:5px}
+ol.top .n{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ol.top .e{font-size:10.5px;color:var(--tenue);white-space:nowrap;max-width:88px;overflow:hidden;text-overflow:ellipsis}
+ol.top .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
 
 /* ── Guía ─────────────────────────────────────────────────────────────── */
-.guia{background:var(--tabla);border:1px solid var(--raya);border-radius:var(--radio);box-shadow:var(--sombra);padding:20px 22px}
-.guia + .guia{margin-top:0}
-.guia h2{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;margin:0 0 4px;letter-spacing:.015em}
-.guia > p{margin:0 0 14px;color:var(--gris);font-size:14.5px;max-width:66ch}
 .defs{display:flex;flex-direction:column;gap:13px;margin:0}
 .def{display:grid;grid-template-columns:auto 1fr;gap:3px 13px;align-items:start}
-.def .marca-def{
-  grid-row:1/3;width:38px;height:38px;border-radius:9px;background:var(--hueco);
-  display:grid;place-items:center;font-size:18px;
-}
-.def .marca-def.txt{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:12px;color:#fff}
+.def .marca-def{grid-row:1/3;width:38px;height:38px;border-radius:9px;background:var(--hueco);display:grid;place-items:center;font-size:18px}
+.def .marca-def.txt{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:12px;color:var(--gris)}
 .def dt{font-weight:700;font-size:15px}
 .def dd{margin:0;color:var(--gris);font-size:13.5px;line-height:1.55}
-.formula{
-  font-family:"IBM Plex Mono",monospace;font-size:12.5px;line-height:1.9;
-  background:var(--suelo);border:1px solid var(--raya);border-radius:9px;padding:12px 14px;margin:12px 0 0;overflow-x:auto;
-}
+.formula{font-family:"IBM Plex Mono",monospace;font-size:12.5px;line-height:1.9;background:var(--suelo);border:1px solid var(--raya);border-radius:9px;padding:12px 14px;margin:12px 0 0;overflow-x:auto}
 .formula b{color:var(--oro)}
 
 /* ── Actualizar ───────────────────────────────────────────────────────── */
 .acc{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin-left:auto}
-.acc button{
-  font:inherit;font-size:14px;font-weight:700;color:var(--suelo);background:var(--tinta);
-  border:0;border-radius:9px;padding:9px 16px;cursor:pointer;display:flex;align-items:center;gap:7px;
-}
+.acc button{font:inherit;font-size:14px;font-weight:700;color:var(--suelo);background:var(--tinta);border:0;border-radius:9px;padding:9px 16px;cursor:pointer;display:flex;align-items:center;gap:7px}
 .acc button svg{width:14px;height:14px}
 .acc button:hover{opacity:.88}
 .acc button:disabled{opacity:.5;cursor:progress}
@@ -323,10 +350,7 @@ table.jt tr.sum td{border-bottom:0;border-top:1px solid var(--tinta);font-weight
 @keyframes gira{to{transform:rotate(360deg)}}
 .acc .est{font-size:12px;color:var(--tenue);font-variant-numeric:tabular-nums}
 .acc .est code{font-family:"IBM Plex Mono",monospace;font-size:11.5px;background:var(--hueco);border:1px solid var(--raya);padding:2px 6px;border-radius:5px}
-.parte{
-  background:var(--tabla);border:1px solid var(--raya);border-left:3px solid var(--baja);
-  border-radius:9px;padding:13px 15px;margin:0 0 16px;font-size:13.5px;line-height:1.6;
-}
+.parte{background:var(--tabla);border:1px solid var(--raya);border-left:3px solid var(--baja);border-radius:9px;padding:13px 15px;margin:0 0 16px;font-size:13.5px;line-height:1.6}
 .parte.bien{border-left-color:var(--sube)}
 .parte b{display:block;margin-bottom:4px;font-size:14.5px}
 .parte ul{margin:6px 0 0;padding-left:19px;color:var(--gris)}
@@ -344,6 +368,8 @@ a{color:var(--oro)}
 <input class="ctrl" type="radio" name="pest" id="t2">
 <input class="ctrl" type="radio" name="pest" id="t3">
 <input class="ctrl" type="radio" name="pest" id="t4">
+<input class="ctrl" type="radio" name="pest" id="t5">
+<input class="ctrl" type="radio" name="pest" id="t6">
 <input class="ctrl" type="radio" name="ambito" id="a1">
 <input class="ctrl" type="radio" name="ambito" id="a2" checked>
 <input class="ctrl" type="radio" name="filtro" id="f1" checked>
@@ -360,6 +386,10 @@ a{color:var(--oro)}
 <input class="ctrl" type="radio" name="duenio" id="d2">
 <input class="ctrl" type="radio" name="duenio" id="d3">
 <input class="ctrl" type="radio" name="duenio" id="d4">
+<input class="ctrl" type="radio" name="movs" id="m1" checked>
+<input class="ctrl" type="radio" name="movs" id="m2">
+<input class="ctrl" type="radio" name="movs" id="m3">
+<input class="ctrl" type="radio" name="movs" id="m4">
 
 <div class="env">
 
@@ -382,18 +412,23 @@ a{color:var(--oro)}
 <!--__MARCADOR__-->
 
   <nav class="pest">
-    <label for="t1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg><span>Jugadores</span></label>
-    <label for="t2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/><path d="M3 21v-1.5a3 3 0 0 1 3-3M21 21v-1.5a3 3 0 0 0-3-3"/></svg><span>Equipos</span></label>
-    <label for="t3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M8 16V9M12 16v-4M16 16V6"/></svg><span>Mi equipo</span></label>
-    <label for="t4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.2a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.6"/><path d="M12 17.2h.01"/></svg><span>Guía</span></label>
+    <label for="t1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg><span>Mi equipo</span></label>
+    <label for="t2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Fichar</span></label>
+    <label for="t3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/><path d="M3 21v-1.5a3 3 0 0 1 3-3M21 21v-1.5a3 3 0 0 0-3-3"/></svg><span>Rivales</span></label>
+    <label for="t4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13M13 4l4 4-4 4"/><path d="M20 16H7M11 12l-4 4 4 4"/></svg><span>Movimientos</span></label>
+    <label for="t5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M8 16V9M12 16v-4M16 16V6"/></svg><span>Números</span></label>
+    <label for="t6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.2a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.6"/><path d="M12 17.2h.01"/></svg><span>Guía</span></label>
   </nav>
 
   <div class="panel" id="p1">
+<!--__MIEQUIPO__-->
+  </div>
 
+  <div class="panel" id="p2">
     <div class="mando">
       <div class="buscar">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input id="q" type="search" placeholder="Buscar jugador o equipo…" autocomplete="off" spellcheck="false">
+        <input id="q" type="search" placeholder="Buscar jugador, equipo o posición…" autocomplete="off" spellcheck="false">
         <select id="orden" aria-label="Ordenar por">
           <option value="recomendado">Recomendados</option>
           <option value="precio-desc">Más caros</option>
@@ -404,41 +439,29 @@ a{color:var(--oro)}
         </select>
         <span class="cuenta-res" id="cuenta-res"></span>
       </div>
-      <div class="grupos">
+      <div class="grupos dos">
         <div class="grupo">
           <span>Posición</span>
           <div class="ops">
-            <label for="s1">Todas</label>
-            <label for="s2">Porteros</label>
-            <label for="s3">Defensas</label>
-            <label for="s4">Medios</label>
-            <label for="s5">Delanteros</label>
+            <label for="s1">Todas</label><label for="s2">Porteros</label><label for="s3">Defensas</label><label for="s4">Medios</label><label for="s5">Delanteros</label>
           </div>
         </div>
         <div class="grupo">
           <span>De quién es</span>
           <div class="ops">
-            <label for="d1">Cualquiera</label>
-            <label for="d2">Libres</label>
-            <label for="d3">De un rival</label>
-            <label for="d4">Míos</label>
+            <label for="d1">Cualquiera</label><label for="d2">Libres</label><label for="d3">De un rival</label><label for="d4">Míos</label>
           </div>
         </div>
         <div class="grupo">
           <span>Dónde busco</span>
           <div class="ops">
-            <label for="a2">Todos</label>
-            <label for="a1">Solo lo que está en venta</label>
+            <label for="a2">Todos</label><label for="a1">Solo lo que está en venta</label>
           </div>
         </div>
         <div class="grupo">
           <span>Qué destaca</span>
           <div class="ops">
-            <label for="f1">Todo</label>
-            <label for="f3">⭐ Puntos</label>
-            <label for="f4">💵 Dinero</label>
-            <label for="f2">Los dos</label>
-            <label for="f5">Puedo pagarlo</label>
+            <label for="f1">Todo</label><label for="f3">⭐ Puntos</label><label for="f4">💵 Dinero</label><label for="f2">Los dos</label><label for="f5">Puedo pagarlo</label>
           </div>
         </div>
       </div>
@@ -450,18 +473,21 @@ a{color:var(--oro)}
 <!--__JUGADORES__-->
       <p class="vacio" id="sin-res" hidden>Ningún jugador cumple eso. Prueba a quitar algún filtro.</p>
     </div>
-
-  </div>
-
-  <div class="panel" id="p2">
-<!--__EQUIPOS__-->
   </div>
 
   <div class="panel" id="p3">
-<!--__MIEQUIPO__-->
+<!--__RIVALES__-->
   </div>
 
   <div class="panel" id="p4">
+<!--__MOVIMIENTOS__-->
+  </div>
+
+  <div class="panel" id="p5">
+<!--__NUMEROS__-->
+  </div>
+
+  <div class="panel" id="p6">
 <!--__GUIA__-->
   </div>
 
@@ -470,56 +496,68 @@ a{color:var(--oro)}
 </div>
 
 <script>
-// La página se lee entera sin JavaScript: las pestañas y todos los filtros van
-// con CSS. Esto solo añade el buscador, el orden y el botón de actualizar.
+// La página se lee entera sin JavaScript: pestañas y filtros van con CSS. Esto
+// solo añade los buscadores, el orden y el botón de actualizar.
 (function () {
-  var lista = document.getElementById('lista-jug')
-  var filas = [].slice.call(lista.querySelectorAll('.fj'))
-  var q = document.getElementById('q')
-  var orden = document.getElementById('orden')
-  var cuenta = document.getElementById('cuenta-res')
-  var sinRes = document.getElementById('sin-res')
-
-  var normal = function (s) {
+  function normal (s) {
     return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
   }
-  filas.forEach(function (f) { f._busca = normal(f.getAttribute('data-busca') || '') })
 
-  var criterios = {
-    recomendado: function (a, b) { return num(b, 'rec') - num(a, 'rec') },
-    'precio-desc': function (a, b) { return num(b, 'precio') - num(a, 'precio') },
-    'precio-asc': function (a, b) { return num(a, 'precio') - num(b, 'precio') },
-    media: function (a, b) { return num(b, 'media') - num(a, 'media') },
-    puntos: function (a, b) { return num(b, 'puntos') - num(a, 'puntos') },
-    sube: function (a, b) { return num(b, 'sube') - num(a, 'sube') },
+  // Buscador + orden sobre una lista cualquiera.
+  function conectar (opciones) {
+    var lista = document.getElementById(opciones.lista)
+    if (!lista) return null
+    var filas = [].slice.call(lista.querySelectorAll(opciones.fila))
+    var q = document.getElementById(opciones.caja)
+    var cuenta = document.getElementById(opciones.cuenta)
+    var vacio = document.getElementById(opciones.vacio)
+    filas.forEach(function (f) { f._busca = normal(f.getAttribute('data-busca') || '') })
+
+    function repasar () {
+      var texto = normal(q.value.trim())
+      var vistos = 0
+      filas.forEach(function (f) {
+        var pasa = texto === '' || f._busca.indexOf(texto) !== -1
+        f.classList.toggle('oculto', !pasa)
+        // offsetParent descarta las que ya esconde el CSS de los filtros.
+        if (pasa && f.offsetParent !== null) vistos++
+      })
+      cuenta.textContent = vistos + ' ' + (vistos === 1 ? opciones.singular : opciones.plural)
+      if (vacio) vacio.hidden = vistos !== 0
+      return vistos
+    }
+    q.addEventListener('input', repasar)
+    return { filas: filas, lista: lista, repasar: repasar, vacio: vacio }
   }
-  function num (el, campo) { return parseFloat(el.getAttribute('data-' + campo)) || 0 }
 
-  function repasar () {
-    var texto = normal(q.value.trim())
-    var vistos = 0
-    filas.forEach(function (f) {
-      var pasa = texto === '' || f._busca.indexOf(texto) !== -1
-      f.classList.toggle('oculto', !pasa)
-      // offsetParent descarta las que ya esconde el CSS de los filtros.
-      if (pasa && f.offsetParent !== null) vistos++
+  var jug = conectar({ lista: 'lista-jug', fila: '.fj', caja: 'q', cuenta: 'cuenta-res', vacio: 'sin-res', singular: 'jugador', plural: 'jugadores' })
+  var mov = conectar({ lista: 'lista-mov', fila: '.mv', caja: 'qm', cuenta: 'cuenta-mov', vacio: 'sin-mov', singular: 'movimiento', plural: 'movimientos' })
+
+  if (jug) {
+    var orden = document.getElementById('orden')
+    function num (el, campo) { return parseFloat(el.getAttribute('data-' + campo)) || 0 }
+    var criterios = {
+      recomendado: function (a, b) { return num(b, 'rec') - num(a, 'rec') },
+      'precio-desc': function (a, b) { return num(b, 'precio') - num(a, 'precio') },
+      'precio-asc': function (a, b) { return num(a, 'precio') - num(b, 'precio') },
+      media: function (a, b) { return num(b, 'media') - num(a, 'media') },
+      puntos: function (a, b) { return num(b, 'puntos') - num(a, 'puntos') },
+      sube: function (a, b) { return num(b, 'sube') - num(a, 'sube') }
+    }
+    orden.addEventListener('change', function () {
+      var cmp = criterios[orden.value] || criterios.recomendado
+      jug.filas.slice().sort(cmp).forEach(function (f) { jug.lista.insertBefore(f, jug.vacio) })
+      jug.repasar()
     })
-    cuenta.textContent = vistos + (vistos === 1 ? ' jugador' : ' jugadores')
-    sinRes.hidden = vistos !== 0
   }
 
-  function reordenar () {
-    var cmp = criterios[orden.value] || criterios.recomendado
-    filas.slice().sort(cmp).forEach(function (f) { lista.insertBefore(f, sinRes) })
-  }
-
-  q.addEventListener('input', repasar)
-  orden.addEventListener('change', function () { reordenar(); repasar() })
-  // Los filtros de CSS cambian qué se ve, y el contador tiene que enterarse.
+  // Los filtros de CSS cambian qué se ve, y los contadores tienen que enterarse.
   ;[].slice.call(document.querySelectorAll('.ctrl')).forEach(function (r) {
-    r.addEventListener('change', repasar)
+    r.addEventListener('change', function () {
+      if (jug) jug.repasar()
+      if (mov) mov.repasar()
+    })
   })
-  repasar()
 
   // ── Botón de actualizar ────────────────────────────────────────────────
   var btn = document.getElementById('btn-act')
