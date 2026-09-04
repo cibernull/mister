@@ -149,6 +149,22 @@ de hoy que están mal sin que nadie lo diga.
 El margen es de 5.000 €, para cubrir el redondeo a millares de 800 € sin tapar
 un error de verdad, que sería de otro orden.
 
+**Y desde ahora también los siete rivales.** `_FG_user` solo habla de uno mismo,
+así que los demás equipos no se comprobaban contra nada. Pero `/standings` se
+renderiza en el servidor y publica, por equipo, **cuántos jugadores tiene y
+cuánto vale su plantilla**, además de sus puntos: las tres cifras que el módulo
+calcula por su cuenta.
+
+No es teórico. Nada más ponerlo, saltó: a Los tocahuevos les faltaba **Matteo
+Ruggeri** —13 jugadores y 32.359.000 € frente a los 14 y 33.658.000 € de
+Mister—. El feed había publicado su salida de LaLiga y el módulo lo borraba de
+la plantilla, mientras Mister lo seguía contando con su valor residual. De paso
+quedó contestada la duda de los otros cinco: **Mister los cuenta**, porque el
+número de jugadores y el valor de plantilla solo cuadran contándolos.
+
+El puesto también sale de ahí, y no de ordenar por puntos: con dos equipos
+empatados, el desempate es cosa de Mister.
+
 ### 5. Regenera la página
 
 Con el veredicto en la mano se escriben los datos y se lanza `modulo/generar.cjs`.
@@ -156,17 +172,12 @@ El navegador recarga y aparece un aviso con lo que ha cambiado.
 
 ## Lo que queda pendiente
 
-- **Cinco jugadores fuera de LaLiga siguen contando.** Javi López, Javi Muñoz,
-  Unai Vencedor, Iker Benito y José Ángel Jurado están en la plantilla que
-  publica Mister pero ya no en su censo. No hay forma de comprobarlo desde
-  fuera: el único tope de puja que Mister publica es el propio, y en la
-  plantilla propia no hay ninguno. El `teamValue` de los cierres de jornada no
-  sirve —es el del once, no el de la plantilla: 54.979.000 frente a los
-  80.305.000 que sí cuadran con `maxDebt`—. Así que se cuentan por su valor
-  residual, que es lo que hace la página del equipo, y la ficha de cada equipo
-  dice cuánto pesan: entre 40.000 € y 100.250 € de tope, según el equipo.
-- **Cacaculopedopis: 92 puntos sumando jornadas, 93 en la clasificación.** Un
-  punto de diferencia, sin explicar.
+- **El «% este mes» le falta a 71 de los 523**, los que llevan menos de un mes
+  en LaLiga. No es un hueco: es que no existe esa cifra todavía. Enseñan la
+  subida del día, que sí es exacta.
+- El `teamValue` de los cierres de jornada sigue sin usarse para nada, porque
+  **no es el valor de la plantilla sino el del once**: 54.979.000 € frente a los
+  80.305.000 € que sí cuadran con `maxDebt`. Anotado para no volver a caer.
 
 ## Verla desde el móvil
 
@@ -179,9 +190,13 @@ el `<html>` de fuera —quien la publica la envuelve por su cuenta— y con el b
 de actualizar apagado, porque ahí no hay servidor local al que pedirle nada. En
 su sitio se lee de cuándo son los datos.
 
-Es una foto fija: cada vez que se actualice en el Mac hay que volver a
-publicarla sobre la misma dirección. A cambio se abre desde cualquier sitio, con
-el Mac apagado, y es la forma de enseñársela a alguien más.
+Se publica **siempre sobre la misma dirección**, así que el enlace no cambia
+nunca: quien lo tenga guardado ve lo último cada vez que entra.
+
+De republicar se encarga una tarea programada, `liga-de-mister-actualizar`, que
+cada dos horas entre las 9:00 y las 23:00 hace la pasada y vuelve a subir la
+página. Necesita el Mac encendido y con la app abierta; si estaba cerrado, la
+tarea se ejecuta al abrirla.
 
 ## Comandos
 

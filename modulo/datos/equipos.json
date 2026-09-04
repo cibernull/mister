@@ -10,6 +10,7 @@
   "com": 0,
   "ven": 4000500,
   "pre": 1125000,
+  "plantilla": 13,
   "sinValorar": []
  },
  {
@@ -17,12 +18,13 @@
   "pos": 6,
   "pts": 65,
   "saldo": 21818000,
-  "pl": 32359000,
+  "pl": 33658000,
   "rep": 31407000,
   "ini": 18593000,
   "com": 0,
   "ven": 1000000,
   "pre": 2225000,
+  "plantilla": 14,
   "sinValorar": []
  },
  {
@@ -36,6 +38,7 @@
   "com": 110017601,
   "ven": 97733250,
   "pre": 3275000,
+  "plantilla": 20,
   "mio": 1,
   "sinValorar": []
  },
@@ -50,6 +53,7 @@
   "com": 0,
   "ven": 4029000,
   "pre": 1350000,
+  "plantilla": 14,
   "sinValorar": []
  },
  {
@@ -63,6 +67,7 @@
   "com": 61422844,
   "ven": 45594490,
   "pre": 2375000,
+  "plantilla": 14,
   "sinValorar": []
  },
  {
@@ -76,6 +81,7 @@
   "com": 137729325,
   "ven": 117203730,
   "pre": 4550000,
+  "plantilla": 18,
   "sinValorar": []
  },
  {
@@ -89,6 +95,7 @@
   "com": 64304040,
   "ven": 43963190,
   "pre": 3125000,
+  "plantilla": 16,
   "sinValorar": []
  },
  {
@@ -102,6 +109,7 @@
   "com": 108059000,
   "ven": 80069200,
   "pre": 1950000,
+  "plantilla": 14,
   "sinValorar": []
  }
 ]

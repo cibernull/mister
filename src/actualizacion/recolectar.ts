@@ -12,6 +12,7 @@ import { parsearPlantilla } from '../recoleccion/parseadorPlantilla.js'
 import { parsearFicha } from '../recoleccion/parseadorFicha.js'
 import { parsearJugadores, type JugadorMister } from '../recoleccion/parseadorUniverso.js'
 import { parsearMercado, MercadoVacioError, type EnVenta } from '../recoleccion/parseadorMercado.js'
+import { parsearClasificacion, type PuestoClasificacion } from '../recoleccion/parseadorClasificacion.js'
 import type { PaginaCruda, Volcado } from './feed.js'
 
 /** Límite de páginas por pasada: una red de seguridad, no un objetivo. */
@@ -242,4 +243,9 @@ export async function recolectarMercado(cliente: Cliente): Promise<EnVenta[]> {
     if (e instanceof MercadoVacioError) return []
     throw e
   }
+}
+
+/** La clasificación oficial, que es contra lo que se contrastan las cuentas. */
+export async function recolectarClasificacion(cliente: Cliente): Promise<PuestoClasificacion[]> {
+  return parsearClasificacion(await cliente.pedirPagina('/standings'))
 }

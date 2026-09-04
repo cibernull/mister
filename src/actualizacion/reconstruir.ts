@@ -40,6 +40,8 @@ export type Equipo = {
   com: number
   ven: number
   pre: number
+  /** Cuántos jugadores tiene. Se contrasta con la clasificación de Mister. */
+  plantilla: number
   mio?: 1
   /** Jugadores de la plantilla sin valor conocido: `pl` se queda corto. */
   sinValorar: string[]
@@ -127,10 +129,15 @@ export function reconstruir(
       plantillas.get(e.nombre)!.add(t.idJugador)
     }
   }
-  // Salir de LaLiga vacía la ficha: el jugador desaparece de toda plantilla.
-  // Con las plantillas leídas de sus páginas esto ya viene aplicado, pero no
-  // estorba y cubre el camino derivado.
-  for (const s of hechos.salidas) for (const set of plantillas.values()) set.delete(s.idJugador)
+  // Salir de LaLiga NO vacía la plantilla: Mister sigue contando al jugador,
+  // con su valor residual. Se comprobó contra la clasificación, que publica
+  // cuántos jugadores tiene cada equipo y cuánto vale su plantilla: Los
+  // tocahuevos salían con 13 jugadores y 32.359.000 € cuando Mister decía 14 y
+  // 33.658.000 €, y el que faltaba era Matteo Ruggeri, borrado justamente por
+  // esto. Solo se aplica al camino derivado, donde no hay página que mande.
+  if (derivadas) {
+    for (const s of hechos.salidas) for (const set of plantillas.values()) set.delete(s.idJugador)
+  }
 
   // ── Dinero y puntos ────────────────────────────────────────────────────────
   const acumulado = new Map<number, { pts: number; pre: number }>()
@@ -166,6 +173,7 @@ export function reconstruir(
       com,
       ven,
       pre: a.pre,
+      plantilla: plantilla.length,
       ...(e.mio ? { mio: 1 as const } : {}),
       sinValorar,
     }

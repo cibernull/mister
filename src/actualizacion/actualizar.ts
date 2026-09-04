@@ -21,10 +21,11 @@ import {
   recolectarPlantillas,
   recolectarUniverso,
   recolectarMercado,
+  recolectarClasificacion,
   fundir,
 } from './recolectar.js'
 import type { JugadorMister } from '../recoleccion/parseadorUniverso.js'
-import { verificar } from './verificar.js'
+import { verificar, verificarLiga } from './verificar.js'
 import { podar, subidasDelMes, type Historico } from './historicoValores.js'
 
 const RAIZ = process.cwd()
@@ -194,16 +195,29 @@ async function main(): Promise<Resultado> {
   const mio = cuentas.equipos.find((e) => e.mio)
   if (!mio) throw new Error('las constantes de la liga no marcan cuál es mi equipo')
 
+  // Dos contrastes, no uno. `_FG_user` solo habla de mí; la clasificación
+  // publica los jugadores, el valor de plantilla y los puntos de los ocho.
+  const clasificacion = await recolectarClasificacion(cliente)
   const veredicto = verificar(mio, mister)
-  if (!veredicto.cuadra) {
+  const dLiga = verificarLiga(cuentas.equipos, clasificacion)
+  if (!veredicto.cuadra || dLiga.length > 0) {
     return {
       ok: false,
       cuando,
       mensaje: 'Las cuentas no cuadran con las de Mister, así que no he tocado nada.',
-      detalle: [...veredicto.motivos, 'Los datos que ves siguen siendo los de la última actualización buena.'],
+      detalle: [...veredicto.motivos, ...dLiga, 'Los datos que ves siguen siendo los de la última actualización buena.'],
     }
   }
-  paso(`Cuadra: saldo ${Math.round(mio.saldo).toLocaleString('es-ES')} €, tope ${Math.round(veredicto.topeCalculado).toLocaleString('es-ES')} €.`)
+  // El puesto sale de la clasificación oficial, no de ordenar por puntos: con
+  // dos equipos empatados, el desempate es cosa de Mister.
+  for (const c of clasificacion) {
+    const e = cuentas.equipos.find((x) => x.n === c.equipo)
+    if (e) e.pos = c.puesto
+  }
+  paso(
+    `Cuadra: saldo ${Math.round(mio.saldo).toLocaleString('es-ES')} €, tope ${Math.round(veredicto.topeCalculado).toLocaleString('es-ES')} €, ` +
+      `y los ${clasificacion.length} equipos coinciden con la clasificación en jugadores, plantilla y puntos.`,
+  )
 
   // ── 5. Escribir y regenerar ────────────────────────────────────────────────
   // Solo a partir de aquí, con el veredicto en la mano, se toca nada en disco.

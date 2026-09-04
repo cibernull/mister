@@ -72,6 +72,34 @@ const dia = (f) => {
 const NL = '\n'
 const clase = (n) => (n > 0 ? 'sube' : n < 0 ? 'baja' : '')
 
+/**
+ * Enlace a la ficha del jugador en Mister.
+ *
+ * El slug del enlace es decorativo —`/players/{id}/x` devuelve la misma ficha—
+ * pero se usa el de verdad cuando se conoce, y si no se saca del nombre: así la
+ * dirección se lee, y en el móvil la abre la app de Mister si está instalada.
+ * Lo que no vale es el id a secas, que redirige a las noticias.
+ */
+const SLUGS = (() => {
+  try {
+    return new Map(Object.entries(leer('slugs.json')))
+  } catch {
+    return new Map()
+  }
+})()
+const aSlug = (nombre) =>
+  String(nombre)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '') || 'x'
+const fichaEn = (id, nombre) =>
+  `https://mister.mundodeportivo.com/players/${encodeURIComponent(id)}/${SLUGS.get(String(id)) ?? aSlug(nombre)}`
+/** El nombre, enlazado a su ficha. Abre fuera para no perder el sitio. */
+const nombreEnlazado = (j) =>
+  `<a class="jl" href="${fichaEn(j.id, j.nombre)}" target="_blank" rel="noopener" title="Ver su ficha en Mister">${esc(j.nombre)}</a>`
+
 const PUESTOS = { 0: '—', 1: 'POR', 2: 'DEF', 3: 'MED', 4: 'DEL' }
 const PUESTOS_LARGO = { 0: 'sin posición', 1: 'portero', 2: 'defensa', 3: 'centrocampista', 4: 'delantero' }
 const dorsal = (p) => `<span class="dorsal p${p}" title="${PUESTOS_LARGO[p]}">${PUESTOS[p]}</span>`
@@ -223,7 +251,7 @@ const filaJugador = (j) => {
   const rec = (j.p + j.d) * 1000 + j.media
   return `<div class="${cls}" data-busca="${esc(j.nombre)} ${esc(j.duenioCorto ?? 'libre')} ${PUESTOS_LARGO[j.puesto]}" data-rec="${rec.toFixed(2)}" data-precio="${j.precio}" data-media="${j.media}" data-puntos="${j.puntos}" data-sube="${(j.subeMes ?? -9).toFixed(4)}" data-hoy="${j.semana ?? -9e9}">
       ${dorsal(j.puesto)}
-      <div class="jn">${esc(j.nombre)}${j.mk ? '<span class="et et-mk">en el mercado</span>' : ''}${
+      <div class="jn">${nombreEnlazado(j)}${j.mk ? '<span class="et et-mk">en el mercado</span>' : ''}${
         j.duenio
           ? `<span class="et et-eq${j.mio ? ' et-mio' : ''}">${esc(j.duenioCorto)}</span>`
           : '<span class="et et-libre">libre</span>'
@@ -253,12 +281,12 @@ const marcador = `  <div class="marcador">
   </div>`
 
 // ── Cuentas de un equipo ─────────────────────────────────────────────────────
-// Los que ya no juegan en LaLiga siguen en la plantilla que publica Mister,
-// con un valor residual, pero desaparecen de su censo de jugadores. No hay
-// forma de saber desde fuera si Mister los suma al valor de plantilla —el
-// único tope de puja que publica es el mío, y en mi plantilla no hay ninguno—,
-// así que se cuentan, que es lo que hace su propia página, y se dice cuánto
-// pesan por si acaso.
+// Los que ya no juegan en LaLiga siguen en la plantilla, con un valor
+// residual, aunque desaparezcan del censo de jugadores. Que Mister los cuenta
+// está comprobado: su clasificación publica cuántos jugadores tiene cada
+// equipo y cuánto vale su plantilla, y las dos cifras solo cuadran contándolos.
+// Se dice de todas formas, porque un jugador que ya no juega no vale lo mismo
+// que uno que sí.
 const FUERA = new Map(
   EQ.map((e) => {
     const idos = (PL[e.n] ?? []).map((id) => PORID_PRE.get(String(id))).filter((j) => j && j.est === 'out')
@@ -269,7 +297,7 @@ const FUERA = new Map(
 const avisoFuera = (e) => {
   const f = FUERA.get(e.n)
   if (!f || f.n === 0) return ''
-  return `<p class="nota-fuera">Incluye ${eur(f.valor)} de ${f.n === 1 ? '1 jugador que ya no juega' : `${f.n} jugadores que ya no juegan`} en LaLiga (${f.nombres.map(esc).join(', ')}). Si Mister no los contara, su tope de puja bajaría ${eur(0.25 * f.valor)}.</p>`
+  return `<p class="nota-fuera">De esa plantilla, ${eur(f.valor)} ${f.n === 1 ? 'son de 1 jugador que ya no juega' : `son de ${f.n} jugadores que ya no juegan`} en LaLiga: ${f.nombres.map(esc).join(', ')}. Cuentan para su tope de puja —Mister los suma— pero no le van a dar un punto.</p>`
 }
 
 const cuentasDe = (e) => `<div class="cuenta">
@@ -294,7 +322,7 @@ const plantillaDe = (e) => {
   return `<div class="mini">
 ${suyos
   .map(
-    (j) => `        <div class="mj">${dorsal(j.puesto)}<span class="n">${j.nombre ? esc(j.nombre) : `<em class="desc">jugador ${esc(j.id)}</em>`}</span>
+    (j) => `        <div class="mj">${dorsal(j.puesto)}<span class="n">${j.nombre ? nombreEnlazado(j) : `<a class="jl" href="${fichaEn(j.id, j.id)}" target="_blank" rel="noopener"><em class="desc">jugador ${esc(j.id)}</em></a>`}</span>
           <span class="v">${j.valor != null ? eur(j.valor) : '—'}</span>${
             j.clausula ? `<span class="c">cláusula ${corto(j.clausula)}</span>` : '<span class="c">—</span>'
           }<span class="m">${j.media != null ? `media ${dec(j.media)}` : 'sin datos'}</span></div>`,
@@ -379,7 +407,7 @@ const filaMia = (j, modo) => {
     : 'del reparto'
   return `<div class="fj">
       ${dorsal(j.puesto)}
-      <div class="jn">${esc(j.nombre)}${j.mk ? '<span class="et et-mk">en venta</span>' : ''}</div>
+      <div class="jn">${nombreEnlazado(j)}${j.mk ? '<span class="et et-mk">en venta</span>' : ''}</div>
       <div class="jp"><b class="${modo === 'clausula' ? 'cl' : ''}">${eur(grande)}</b><i>${rotulo}</i><span class="ico">${iconos(j)}</span></div>
       <div class="js">
         <span>media <b>${dec(j.media)}</b></span><span class="sep">·</span>
@@ -475,7 +503,7 @@ const filaMov = (m) => {
   return `<div class="mv ${tipo}${mio}" data-busca="${esc(m.nombre)} ${esc(eqDe ? eqDe.corto : 'mercado')} ${esc(eqA ? eqA.corto : 'mercado')}">
       <span class="fecha">${dia(m.fecha)}</span>
       ${dorsal(m.pos ?? 0)}
-      <div class="mn">${esc(m.nombre)}${OPS[m.tipo] ? `<span class="et et-op">${OPS[m.tipo]}</span>` : ''}</div>
+      <div class="mn">${nombreEnlazado(m)}${OPS[m.tipo] ? `<span class="et et-op">${OPS[m.tipo]}</span>` : ''}</div>
       <div class="mr"><span class="${eqDe && eqDe.mio ? 'yo' : eqDe ? '' : 'mercado'}">${esc(eqDe ? eqDe.corto : 'Mercado')}</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg><span class="${eqA && eqA.mio ? 'yo' : eqA ? '' : 'mercado'}">${esc(eqA ? eqA.corto : 'Mercado')}</span></div>
       <div class="mi">${eur(m.importe)}</div>
     </div>`
