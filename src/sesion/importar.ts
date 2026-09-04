@@ -39,7 +39,7 @@ export const PASOS = [
   'En Chrome, con Mister abierto y tu sesión iniciada, abre las herramientas con ⌥⌘I.',
   'Ve a la pestaña Red (Network) y escribe ajax en el cuadro Filtrar.',
   'Si no sale nada, baja por la lista de Actividad de Mister hasta que cargue más: eso dispara la petición.',
-  'Clic derecho sobre la petición «feed» → Copy → Copy as cURL.',
+  'Clic derecho sobre cualquiera de las que salgan («balance», «feed»…) → Copy → Copy as cURL.',
   'Pega aquí lo copiado.',
 ]
 
