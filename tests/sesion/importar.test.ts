@@ -39,3 +39,31 @@ describe('extraerCabecera', () => {
     expect(extraerCabecera(`-H 'set-cookie: a=1' -H 'cookie: b=2'`, 'cookie')).toBe('b=2')
   })
 })
+
+describe('extraerCabecera con cabeceras sueltas', () => {
+  // Dar con la petición correcta en DevTools ya cuesta bastante: si alguien
+  // acaba copiando el bloque de Request Headers a mano, también debe valer.
+  const CABECERAS = `:authority: mister.mundodeportivo.com
+accept: */*
+cookie: PHPSESSID=abc123; user=42
+x-auth: TOKEN-SUELTO
+x-requested-with: XMLHttpRequest`
+
+  it('lee un bloque de Request Headers pegado tal cual', () => {
+    expect(extraerCabecera(CABECERAS, 'cookie')).toBe('PHPSESSID=abc123; user=42')
+    expect(extraerCabecera(CABECERAS, 'x-auth')).toBe('TOKEN-SUELTO')
+  })
+
+  it('no se lleva la línea siguiente por delante', () => {
+    expect(extraerCabecera(CABECERAS, 'accept')).toBe('*/*')
+  })
+
+  it('una cabecera sin valor sigue siendo null', () => {
+    expect(extraerCabecera('cookie:\nx-auth: T', 'cookie')).toBeNull()
+  })
+
+  it('el cURL manda cuando están las dos formas', () => {
+    const mezcla = `cookie: de-la-linea\ncurl 'https://x' -H 'cookie: del-curl'`
+    expect(extraerCabecera(mezcla, 'cookie')).toBe('del-curl')
+  })
+})

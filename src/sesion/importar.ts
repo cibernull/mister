@@ -37,26 +37,44 @@ export type Resultado = {
 
 export const PASOS = [
   'En Chrome, con Mister abierto y tu sesión iniciada, abre las herramientas con ⌥⌘I.',
-  'Ve a la pestaña Network (Red) y recarga con ⌘R.',
-  'Clic derecho sobre cualquier petición de la lista → Copy → Copy as cURL.',
+  'Ve a la pestaña Red (Network) y escribe ajax en el cuadro Filtrar.',
+  'Si no sale nada, baja por la lista de Actividad de Mister hasta que cargue más: eso dispara la petición.',
+  'Clic derecho sobre la petición «feed» → Copy → Copy as cURL.',
   'Pega aquí lo copiado.',
 ]
 
 /**
- * Saca el valor de una cabecera de un comando cURL pegado.
+ * Saca el valor de una cabecera de lo que sea que se haya pegado.
  *
- * Chrome entrecomilla con `'` en Mac y Linux y con `"` en Windows, y escapa
- * las comillas internas como `'\''`. Se aceptan las dos formas: equivocarse
- * aquí significaría guardar una credencial truncada, que falla luego y de
- * forma confusa.
+ * Se aceptan las dos formas en que Chrome las enseña, porque dar con la
+ * petición correcta ya cuesta bastante como para además fallar por haber
+ * copiado del sitio de al lado:
+ *
+ *     -H 'cookie: …'    del «Copy as cURL». Entrecomilla con ' en Mac y Linux
+ *                       y con " en Windows, y escapa las comillas internas
+ *                       de dentro como '\''
+ *     cookie: …         una línea suelta, tal como se lee en Request Headers
+ *
+ * Equivocarse aquí significaría guardar una credencial truncada, que falla más
+ * tarde y de forma confusa.
  */
-export function extraerCabecera(curl: string, nombre: string): string | null {
+export function extraerCabecera(pegado: string, nombre: string): string | null {
   const escapado = nombre.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-  const re = new RegExp(`-H\\s+(['"])${escapado}:\\s*([\\s\\S]*?)\\1(?=\\s|$)`, 'i')
-  const m = re.exec(curl)
-  if (!m) return null
-  const valor = m[2]!.replace(/'\\''/g, "'").trim()
-  return valor === '' ? null : valor
+
+  const entrecomillada = new RegExp(`-H\\s+(['"])${escapado}:\\s*([\\s\\S]*?)\\1(?=\\s|$)`, 'i')
+  const m = entrecomillada.exec(pegado)
+  if (m) return limpiar(m[2]!)
+
+  // Una línea suelta termina donde termina la línea: ni la cookie ni el token
+  // llevan saltos dentro.
+  const suelta = new RegExp(`^[ \\t]*${escapado}:[ \\t]*(\\S.*)$`, 'im')
+  const n = suelta.exec(pegado)
+  return n ? limpiar(n[1]!) : null
+}
+
+function limpiar(valor: string): string | null {
+  const v = valor.replace(/'\\''/g, "'").trim()
+  return v === '' ? null : v
 }
 
 /** Pregunta a Mister si un par de credenciales sirve todavía. */
@@ -130,9 +148,9 @@ export async function importarDesdeCurl(pegado: string): Promise<Resultado> {
       causa: 'ilegible',
       mensaje: `En lo que has pegado no encuentro ${faltan}.`,
       detalle: [
-        'Tiene que ser una petición hecha con la sesión iniciada: las de imágenes',
-        'o las que van a un CDN no llevan esas cabeceras. Una que vaya a',
-        'mister.mundodeportivo.com sirve.',
+        'Las imágenes, la analítica y la propia página no llevan esas dos cabeceras juntas:',
+        'solo las llamadas a /ajax/ de Mister. Filtra por «ajax» en la pestaña Red.',
+        'También vale pegar directamente las dos líneas de Request Headers.',
       ],
     }
   }

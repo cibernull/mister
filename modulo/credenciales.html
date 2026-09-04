@@ -53,8 +53,9 @@ h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:16px;m
     <ol>
       <li>Abre <span class="ruta">mister.mundodeportivo.com</span> en Chrome, con tu sesión iniciada.</li>
       <li>Abre las herramientas de desarrollo: <kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>I</kbd></li>
-      <li>Ve a la pestaña <b>Network</b> y recarga con <kbd>⌘</kbd> <kbd>R</kbd>.</li>
-      <li>Clic derecho sobre cualquier petición de la lista → <b>Copy</b> → <b>Copy as cURL</b>.</li>
+      <li>Ve a la pestaña <b>Red</b> (Network) y escribe <b>ajax</b> en el cuadro <b>Filtrar</b>.</li>
+      <li>Si no sale ninguna, baja por la lista de <b>Actividad</b> de Mister hasta que cargue más: eso dispara la petición.</li>
+      <li>Clic derecho sobre <b>feed</b> → <b>Copy</b> → <b>Copy as cURL</b>.</li>
       <li>Pégalo aquí abajo.</li>
     </ol>
   </div>
@@ -69,7 +70,9 @@ h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:16px;m
     <div id="res"></div>
   </div>
 
-  <p class="nota">De ese pegado saco solo dos cosas: la <strong>cookie de sesión</strong> y el token <strong>X-Auth</strong>. Se prueban contra Mister antes de guardar nada y quedan en <span class="ruta">.sesion/</span>, que git ignora. <strong>No salen de este ordenador</strong> y no se escriben en ningún registro.</p>
+  <p class="nota">Si no das con ella, también vale pegar a mano las dos líneas de <b>Request Headers</b>: <span class="ruta">cookie:</span> y <span class="ruta">x-auth:</span>.</p>
+
+  <p class="nota" style="margin-top:10px">De ese pegado saco solo dos cosas: la <strong>cookie de sesión</strong> y el token <strong>X-Auth</strong>. Se prueban contra Mister antes de guardar nada y quedan en <span class="ruta">.sesion/</span>, que git ignora. <strong>No salen de este ordenador</strong> y no se escriben en ningún registro.</p>
 
 <script>
 (function () {
