@@ -15,7 +15,8 @@
     "app": "node modulo/servidor.cjs",
     "generar": "node modulo/generar.cjs",
     "actualizar": "tsx src/actualizacion/actualizar.ts",
-    "credenciales": "tsx src/sesion/importar.ts"
+    "credenciales": "tsx src/sesion/importar.ts",
+    "instalar-app": "bash aplicacion/construir.sh"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.11",

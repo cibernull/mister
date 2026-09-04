@@ -631,6 +631,14 @@ a{color:var(--oro)}
       })
   })
 
+  // Latido: mientras esta página esté abierta, el servidor sigue vivo. En
+  // cuanto se cierra deja de llegar y se apaga solo, que es lo que evita que
+  // el puerto quede ocupado hasta el siguiente reinicio.
+  function latir () { fetch('/latido', { method: 'POST' }).catch(function () {}) }
+  latir()
+  setInterval(latir, 20000)
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) latir() })
+
   var guardado = sessionStorage.getItem('parte-act')
   if (guardado) {
     sessionStorage.removeItem('parte-act')

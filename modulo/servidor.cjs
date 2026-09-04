@@ -24,6 +24,28 @@ const PUERTO = Number(process.env.PUERTO ?? 4788)
 /** Un pegado de cURL ronda los 3 KB; 256 KB es holgura de sobra. */
 const MAX_CUERPO = 256 * 1024
 
+/**
+ * Apagarse solo cuando ya no hay nadie mirando.
+ *
+ * Lanzado desde la app de /Applications no hay Terminal donde hacer Ctrl+C, y
+ * dejar el proceso vivo para siempre acaba en «el puerto ya está ocupado». La
+ * página manda un latido mientras está abierta; si deja de llegar, esto se
+ * apaga. El margen es generoso a propósito: los navegadores frenan los
+ * temporizadores de las pestañas que están en segundo plano, y apagarse con la
+ * pestaña todavía abierta sería peor que tardar un minuto de más en salir.
+ */
+const AUTOCERRAR = process.argv.includes('--autocerrar')
+const SIN_LATIDO_MS = 3 * 60 * 1000
+let ultimoLatido = Date.now()
+
+if (AUTOCERRAR) {
+  setInterval(() => {
+    if (Date.now() - ultimoLatido < SIN_LATIDO_MS) return
+    console.log('Nadie mirando desde hace un rato. Cierro.')
+    process.exit(0)
+  }, 15000).unref()
+}
+
 /** Lo último que se sabe de la sesión. Se refresca al arrancar y tras cada uso. */
 let sesion = { ok: false, causa: 'faltan' }
 /** Una actualización cada vez: dos a la vez se pisarían los ficheros. */
@@ -137,6 +159,13 @@ const servidor = http.createServer((req, res) => {
     return
   }
 
+  if (req.method === 'POST' && ruta === '/latido') {
+    ultimoLatido = Date.now()
+    res.writeHead(204, { 'cache-control': 'no-store' })
+    res.end()
+    return
+  }
+
   if (req.method === 'POST' && ruta === '/actualizar') {
     actualizar().then((r) => json(res, r.ok ? 200 : 500, r))
     return
@@ -177,12 +206,15 @@ servidor.on('error', (e) => {
 })
 
 servidor.listen(PUERTO, '127.0.0.1', async () => {
+  ultimoLatido = Date.now()
   const url = `http://127.0.0.1:${PUERTO}/`
   console.log(`Módulo de Mister en ${url}`)
   process.stdout.write('Mirando si la sesión de Mister sigue valiendo… ')
   await comprobarSesion()
   console.log(sesion.ok ? 'sí.' : `no: ${sesion.mensaje ?? sesion.causa}`)
   if (!sesion.ok) console.log('Se abrirá la pantalla para pegarla.')
-  console.log('Ctrl+C para parar.')
-  spawn('open', [url], { stdio: 'ignore' }).on('error', () => {})
+  console.log(AUTOCERRAR ? 'Se cierra solo al cerrar la pestaña.' : 'Ctrl+C para parar.')
+  // Lanzado desde la app, quien abre el navegador es el script del bundle:
+  // hacerlo también aquí abriría dos pestañas.
+  if (!process.argv.includes('--sin-abrir')) spawn('open', [url], { stdio: 'ignore' }).on('error', () => {})
 })
