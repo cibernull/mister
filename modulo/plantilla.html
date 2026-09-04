@@ -290,7 +290,15 @@ body{
 .mj .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:12px;white-space:nowrap}
 .mj .n .desc{font-style:italic;color:var(--tenue);font-weight:500}
 .mj .c,.mj .m{font-size:10.5px;color:var(--tenue);white-space:nowrap;font-family:"IBM Plex Mono",monospace}
-@media(max-width:520px){.mj .c{display:none}}
+/* En el móvil la cláusula no cabe en la misma línea, pero esconderla —que es
+   lo que se hacía— se llevaba por delante la marca de blindaje, que es
+   justamente lo que hay que ver de un vistazo. Se pasa a un segundo renglón,
+   alineado bajo el nombre. */
+@media(max-width:520px){
+  .mj{flex-wrap:wrap;row-gap:3px;padding-bottom:9px}
+  .mj .v{margin-left:auto}
+  .mj .c{margin-left:37px}
+}
 
 table.jt{width:100%;border-collapse:collapse;font-size:13px}
 .tabla-scroll{overflow-x:auto}
