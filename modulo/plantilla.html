@@ -223,6 +223,10 @@ body{
 .quien[open] summary{border-color:var(--oro-raya);background:var(--oro-fondo)}
 .jx{grid-column:2/-1;grid-row:3;display:flex;flex-wrap:wrap;align-items:center;gap:0 7px;font-size:12px;color:var(--tenue);margin-top:3px}
 .jx b{color:var(--gris);font-weight:600}
+.club{display:inline-flex;align-items:center;gap:5px;color:var(--gris);font-weight:600}
+.ec{width:18px;height:18px;flex:none;background-size:contain;background-repeat:no-repeat;background-position:center}
+/*__ESCUDOS__*/
+.jn .club{font-family:Manrope,sans-serif;font-size:12px;font-weight:600}
 .jx .prox{color:var(--gris)}
 .jx .prox i{font-style:normal;color:var(--tenue)}
 .et-once{color:var(--sube);background:var(--sube-fondo);border:1px solid currentColor}
@@ -571,6 +575,13 @@ a{color:var(--oro)}
       return vistos
     }
     q.addEventListener('input', repasar)
+    // Al cargar, el panel de esta pestaña está oculto y `offsetParent` es null
+    // en todas las filas: la cuenta salía «0 jugadores» hasta que tocabas algo.
+    // Los filtros y las pestañas son radios sin JavaScript, así que basta con
+    // volver a contar cuando cambie cualquiera.
+    document.addEventListener('change', function (e) {
+      if (e.target && e.target.classList && e.target.classList.contains('ctrl')) repasar()
+    })
     return { filas: filas, lista: lista, repasar: repasar, vacio: vacio }
   }
 

@@ -289,3 +289,4 @@ ejecuta al abrirla.
 | `npm run generar` | Solo rehace el HTML con los datos que ya hay |
 | `npm run publicar` | Prepara `datos/publicada.html` para subirla a la web |
 | `npm run fichas` | La pasada larga: lee las 523 fichas (~9 min, una vez al día) |
+| `python3 modulo/escudos.py` | Baja los escudos de los clubes. Una vez y ya |

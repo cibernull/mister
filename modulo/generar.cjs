@@ -28,6 +28,16 @@ const EQ = leer('equipos.json')
 const JOR = leer('jornadas.json')
 // Los clubes reales, para poder decir «Sevilla» y no «rival 19». Es un
 // adorno: si el fichero no está, la línea del próximo partido no se pinta.
+// Los escudos van dentro del HTML como data URI: la página publicada no puede
+// cargar imágenes del CDN de Mister —el visor solo deja pasar tipografías— y
+// quedaría un hueco sin avisar. Los baja `python3 modulo/escudos.py`.
+const ESCUDOS = (() => {
+  try {
+    return new Map(Object.entries(leer('escudos.json')))
+  } catch {
+    return new Map()
+  }
+})()
 const CLUBES = (() => {
   try {
     return new Map(Object.entries(leer('clubes.json')))
@@ -240,6 +250,26 @@ const ESTADOS = {
 }
 
 /**
+ * El escudo y el nombre del club real al que pertenece.
+ *
+ * El escudo va por CSS y no en un `<img src="data:…">` dentro de cada fila:
+ * son treinta y tres imágenes y quinientas cuarenta filas, así que repetir el
+ * data URI en cada una engordaba la página de 1,1 MB a 3,7 MB. Como regla de
+ * hoja de estilos, cada escudo aparece una sola vez.
+ */
+const club = (idClub) => {
+  const nombre = CLUBES.get(String(idClub))
+  if (!nombre) return ''
+  const hay = ESCUDOS.has(String(idClub))
+  return `<span class="club">${hay ? `<i class="ec e${idClub}"></i>` : ''}${esc(nombre)}</span>`
+}
+
+/** Las reglas con los escudos, una por club. */
+const estiloEscudos = [...ESCUDOS]
+  .map(([id, datos]) => `.e${id}{background-image:url(${datos})}`)
+  .join(NL)
+
+/**
  * La marca de cláusula subida, igual en todas partes.
  *
  * Sale en la pestaña Fichar, en Mi equipo y en la plantilla desplegada de cada
@@ -258,6 +288,7 @@ const marcaBlindaje = (j, compacta) => {
 /** La línea de detalle: lo que solo está en la ficha de cada jugador. */
 const detalleDe = (j) => {
   const trozos = []
+  if (j.eq) trozos.push(club(j.eq))
   if (j.gol) trozos.push(`<span title="goles esta temporada">⚽ ${j.gol}</span>`)
   if (j.tar) trozos.push(`<span title="tarjetas">🟨 ${j.tar}</span>`)
   if (j.mc != null && j.mf != null && j.mc !== j.mf) {
@@ -478,7 +509,7 @@ const filaMia = (j, modo) => {
     : 'del reparto'
   return `<div class="fj">
       ${dorsal(j.puesto)}
-      <div class="jn">${nombreEnlazado(j)}${j.mk ? '<span class="et et-mk">en venta</span>' : ''}${marcaBlindaje(j)}</div>
+      <div class="jn">${nombreEnlazado(j)}${j.mk ? '<span class="et et-mk">en venta</span>' : ''}${marcaBlindaje(j)}${j.eq ? club(j.eq) : ''}</div>
       <div class="jp"><b class="${modo === 'clausula' ? 'cl' : ''}">${eur(grande)}</b><i>${rotulo}</i><span class="ico">${iconos(j)}</span></div>
       <div class="js">
         <span>media <b>${dec(j.media)}</b></span><span class="sep">·</span>
@@ -879,6 +910,7 @@ const huecos = {
   '<!--__MOVIMIENTOS__-->': movimientos,
   '<!--__NUMEROS__-->': numeros,
   '<!--__GUIA__-->': guia,
+  '/*__ESCUDOS__*/': estiloEscudos,
   '<!--__SELLO__-->': `Generado el ${new Date().toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'short' })}.`,
   // La fecha del dato, arriba y a la vista. Una pestaña vieja que el
   // navegador restaura enseña cifras plausibles y de hace días sin decirlo:

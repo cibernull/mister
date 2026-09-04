@@ -493,6 +493,8 @@ function construirJugadores(
     bl: j.blindado ? 1 : 0,
     /** Veces que le han subido la cláusula, y sigue subida. */
     sub: j.clausula === null ? 0 : subidasVivas(j.valor, j.clausula),
+    /** Su club de verdad, para poder pintar el escudo. */
+    eq: j.idClub,
     /** El club contra el que juega la próxima jornada, y si es en casa. */
     riv: j.rival,
     casa: j.enCasa === null ? null : j.enCasa ? 1 : 0,
@@ -523,6 +525,7 @@ function construirJugadores(
       est: 'out',
       bl: 0,
       sub: 0,
+      eq: 0,
       riv: null,
       casa: null,
       ...detalleDe(detalle[id]),
