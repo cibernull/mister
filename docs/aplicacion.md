@@ -69,3 +69,29 @@ Y para verlo todo en directo, sin la app de por medio:
 ```bash
 npm run app
 ```
+
+## El icono
+
+```bash
+npm run icono          # lo redibuja
+npm run instalar-app   # lo mete en el bundle
+```
+
+`aplicacion/icono.py` lo dibuja con PIL a 4096 px y lo reduce con Lanczos a
+cada tamaño; `iconutil` lo empaqueta. No hace falta ningún editor gráfico ni
+tener el fichero binario a mano: el icono **es** el script, y cambiarlo es
+cambiar cuatro números.
+
+Tres detalles que separan un icono correcto de uno que parece del sistema:
+
+- **La forma no es un rectángulo redondeado.** Desde Big Sur es una
+  superelipse: la esquina empieza a curvarse mucho antes. Con
+  `rounded_rectangle` se nota al lado de los demás iconos del Dock, así que se
+  calcula punto a punto.
+- **El símbolo va recortado del escudo**, no encima. Un hueco da cuerpo; un
+  símbolo pegado se queda en pegatina.
+- **Un filo de luz por dentro del borde superior**, del escudo y de la placa.
+  Es lo que hace que parezcan piezas con canto en vez de siluetas planas.
+
+Los colores son los mismos de la app: verde de césped casi negro y el ámbar
+del dinero. Comprobado que a 16 px sigue leyéndose el escudo, y a 32 el €.
