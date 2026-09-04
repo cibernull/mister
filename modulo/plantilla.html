@@ -162,8 +162,8 @@ body{
 #a1:checked~.env label[for=a1],#a2:checked~.env label[for=a2],#a3:checked~.env label[for=a3],
 #f1:checked~.env label[for=f1],#f2:checked~.env label[for=f2],#f3:checked~.env label[for=f3],
 #f4:checked~.env label[for=f4],#f5:checked~.env label[for=f5],#f6:checked~.env label[for=f6],
-#g1:checked~.env label[for=g1],#g2:checked~.env label[for=g2],#g3:checked~.env label[for=g3],#g4:checked~.env label[for=g4],
-#d1:checked~.env label[for=d1],#d2:checked~.env label[for=d2],#d3:checked~.env label[for=d3],#d4:checked~.env label[for=d4],
+#d1:checked~.env label[for=d1],#d2:checked~.env label[for=d2],#d3:checked~.env label[for=d3],
+#d4:checked~.env label[for=d4],#d5:checked~.env label[for=d5],
 #s1:checked~.env label[for=s1],#s2:checked~.env label[for=s2],#s3:checked~.env label[for=s3],
 #s4:checked~.env label[for=s4],#s5:checked~.env label[for=s5],
 #m1:checked~.env label[for=m1],#m2:checked~.env label[for=m2],#m3:checked~.env label[for=m3],#m4:checked~.env label[for=m4]{
@@ -172,19 +172,17 @@ body{
 
 /* Filtros en cascada. «Míos» se salta el «dónde» a propósito: enseñar solo los
    tuyos que están en venta deja la lista casi vacía sin explicar por qué. */
-#a1:checked~#d4:not(:checked)~.env .fj.nomk{display:none}
-#a3:checked~#d4:not(:checked)~.env .fj.nofich{display:none}
+#a1:checked~#d4:not(:checked)~#d5:not(:checked)~.env .fj.nomk{display:none}
+#a3:checked~#d4:not(:checked)~#d5:not(:checked)~.env .fj.nofich{display:none}
 #f2:checked~.env .fj:not(.tp),#f2:checked~.env .fj:not(.td){display:none}
 #f3:checked~.env .fj:not(.tp){display:none}
 #f4:checked~.env .fj:not(.td){display:none}
 #f5:checked~.env .fj:not(.ta){display:none}
 #f6:checked~.env .fj:not(.once){display:none}
-#g2:checked~.env .fj:not(.tl){display:none}
-#g3:checked~.env .fj.tl{display:none}
-#g4:checked~.env .fj:not(.tced){display:none}
 #d2:checked~.env .fj:not(.tl){display:none}
 #d3:checked~.env .fj:not(.triv){display:none}
 #d4:checked~.env .fj:not(.tmio){display:none}
+#d5:checked~.env .fj:not(.tced){display:none}
 #s2:checked~.env .fj:not(.z1){display:none}
 #s3:checked~.env .fj:not(.z2){display:none}
 #s4:checked~.env .fj:not(.z3){display:none}
@@ -420,14 +418,11 @@ a{color:var(--oro)}
 <input class="ctrl" type="radio" name="sitio" id="s3">
 <input class="ctrl" type="radio" name="sitio" id="s4">
 <input class="ctrl" type="radio" name="sitio" id="s5">
-<input class="ctrl" type="radio" name="jug" id="g1" checked>
-<input class="ctrl" type="radio" name="jug" id="g2">
-<input class="ctrl" type="radio" name="jug" id="g3">
-<input class="ctrl" type="radio" name="jug" id="g4">
 <input class="ctrl" type="radio" name="duenio" id="d1" checked>
 <input class="ctrl" type="radio" name="duenio" id="d2">
 <input class="ctrl" type="radio" name="duenio" id="d3">
 <input class="ctrl" type="radio" name="duenio" id="d4">
+<input class="ctrl" type="radio" name="duenio" id="d5">
 <input class="ctrl" type="radio" name="movs" id="m1" checked>
 <input class="ctrl" type="radio" name="movs" id="m2">
 <input class="ctrl" type="radio" name="movs" id="m3">
@@ -498,19 +493,13 @@ a{color:var(--oro)}
         <div class="grupo">
           <span>De quién es</span>
           <div class="ops">
-            <label for="d1">Cualquiera</label><label for="d2">Libres</label><label for="d3">De un rival</label><label for="d4">Míos</label>
+            <label for="d1">Todos</label><label for="d2">Libres</label><label for="d3">De un rival</label><label for="d4">Míos</label><label for="d5">Cedibles</label>
           </div>
         </div>
         <div class="grupo">
           <span>Dónde busco</span>
           <div class="ops">
             <label for="a3">Los que puedo fichar</label><label for="a1">Solo el mercado de hoy</label><label for="a2">Toda LaLiga</label>
-          </div>
-        </div>
-        <div class="grupo">
-          <span>Jugadores</span>
-          <div class="ops">
-            <label for="g1">Todos</label><label for="g2">Libres</label><label for="g3">No libres</label><label for="g4">Cedibles</label>
           </div>
         </div>
         <div class="grupo">
