@@ -11,7 +11,11 @@
   "ven": 4000500,
   "pre": 1125000,
   "plantilla": 13,
-  "sinValorar": []
+  "sinValorar": [],
+  "subidas": 0,
+  "blindados": 0,
+  "costeSubidas": 0,
+  "gastoVisto": 0
  },
  {
   "n": "Los tocahuevos C.F ( juanito)",
@@ -25,7 +29,11 @@
   "ven": 1000000,
   "pre": 2225000,
   "plantilla": 14,
-  "sinValorar": []
+  "sinValorar": [],
+  "subidas": 0,
+  "blindados": 0,
+  "costeSubidas": 0,
+  "gastoVisto": 0
  },
  {
   "n": "Niutin FC (Isaac)",
@@ -40,7 +48,12 @@
   "pre": 3275000,
   "plantilla": 18,
   "mio": 1,
-  "sinValorar": []
+  "sinValorar": [],
+  "subidas": 10,
+  "blindados": 7,
+  "costeSubidas": 6018400,
+  "gastoVisto": 0,
+  "costeReal": 5263619
  },
  {
   "n": "Legalize F.C (Victor)",
@@ -54,7 +67,11 @@
   "ven": 4029000,
   "pre": 1350000,
   "plantilla": 14,
-  "sinValorar": []
+  "sinValorar": [],
+  "subidas": 0,
+  "blindados": 0,
+  "costeSubidas": 0,
+  "gastoVisto": 0
  },
  {
   "n": "Cacaculopedopis",
@@ -68,7 +85,11 @@
   "ven": 45594490,
   "pre": 2375000,
   "plantilla": 14,
-  "sinValorar": []
+  "sinValorar": [],
+  "subidas": 0,
+  "blindados": 0,
+  "costeSubidas": 0,
+  "gastoVisto": 0
  },
  {
   "n": "Neky F.C. (Sergio)",
@@ -82,7 +103,11 @@
   "ven": 117203730,
   "pre": 4550000,
   "plantilla": 18,
-  "sinValorar": []
+  "sinValorar": [],
+  "subidas": 4,
+  "blindados": 2,
+  "costeSubidas": 2373000,
+  "gastoVisto": 0
  },
  {
   "n": "Mario80",
@@ -96,7 +121,11 @@
   "ven": 43963190,
   "pre": 3125000,
   "plantilla": 16,
-  "sinValorar": []
+  "sinValorar": [],
+  "subidas": 9,
+  "blindados": 5,
+  "costeSubidas": 5999000,
+  "gastoVisto": 0
  },
  {
   "n": "Saiyans FC (Fran)",
@@ -110,6 +139,10 @@
   "ven": 80069200,
   "pre": 1950000,
   "plantilla": 14,
-  "sinValorar": []
+  "sinValorar": [],
+  "subidas": 6,
+  "blindados": 3,
+  "costeSubidas": 3098800,
+  "gastoVisto": 0
  }
 ]

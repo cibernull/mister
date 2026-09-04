@@ -30,6 +30,7 @@ import { verificar, verificarLiga } from './verificar.js'
 import { podar, subidasDelMes, type Historico } from './historicoValores.js'
 import type { FichaGuardada } from './fichas.js'
 import { reinicioDeLiga } from '../recoleccion/parseadorSaldo.js'
+import { detectarSubidas, gastoPorEquipo, subidasVivas, type Subida } from './clausulas.js'
 
 const RAIZ = process.cwd()
 const VOLCADO = join(RAIZ, 'datos', 'volcado-feed.json')
@@ -39,6 +40,8 @@ const CACHE_SLUGS = join(DATOS, 'slugs.json')
 const HISTORICO = join(DATOS, 'historico-valores.json')
 const FICHAS = join(DATOS, 'fichas.json')
 const CAJA = join(DATOS, 'caja.json')
+const HISTORICO_CL = join(DATOS, 'historico-clausulas.json')
+const SUBIDAS = join(DATOS, 'subidas-clausula.json')
 
 const paso = (t: string) => process.stderr.write(`${t}\n`)
 const eur = (n: number) => `${Math.round(n).toLocaleString('es-ES')} €`
@@ -237,6 +240,36 @@ async function main(): Promise<Resultado> {
   const reconstruido = mio.saldo
   mio.saldo = libro.saldo
 
+  // ── Quién sube cláusulas, y lo que le cuesta ───────────────────────────────
+  // Mister cobra el 20 % del valor por cada modificación, y solo se puede leer
+  // el libro de caja propio. Pero la cláusula se puede mirar: comparando la de
+  // hoy con la de ayer se ve quién ha pagado, y cuánto. De aquí en adelante es
+  // exacto; de lo de antes solo se sabe cuántas subidas siguen vivas.
+  const clausulasDeHoy = Object.fromEntries(
+    universo.filter((j) => j.duenio !== null && j.clausula !== null).map((j) => [j.id, j.clausula!]),
+  )
+  const histCl = existsSync(HISTORICO_CL) ? leerJson<Record<string, Record<string, number>>>(HISTORICO_CL) : {}
+  const diasCl = Object.keys(histCl).sort()
+  const ayer = diasCl.filter((d) => d < hoy).pop()
+  const nuevasSubidas =
+    ayer === undefined
+      ? []
+      : detectarSubidas(
+          universo.map((j) => ({ id: j.id, duenio: j.duenio, valor: j.valor, clausula: j.clausula })),
+          histCl[ayer] ?? {},
+          hoy,
+        )
+  histCl[hoy] = clausulasDeHoy
+  podar(histCl)
+  escribirJson(HISTORICO_CL, histCl)
+
+  const subidasVistas = existsSync(SUBIDAS) ? leerJson<Subida[]>(SUBIDAS) : []
+  for (const s of nuevasSubidas) {
+    if (!subidasVistas.some((v) => v.idJugador === s.idJugador && v.dia === s.dia)) subidasVistas.push(s)
+  }
+  escribirJson(SUBIDAS, subidasVistas)
+  const gastoVisto = gastoPorEquipo(subidasVistas)
+
   const veredicto = verificar(mio, mister, libro.saldo)
   const dLiga = verificarLiga(cuentas.equipos, clasificacion)
   if (!veredicto.cuadra || dLiga.motivos.length > 0) {
@@ -292,6 +325,24 @@ async function main(): Promise<Resultado> {
   escribirJson(join(DATOS, 'clubes.json'), Object.fromEntries(clubes))
   // El libro entero no: la página solo enseña lo reciente, y son 1255 apuntes.
   escribirJson(join(DATOS, 'caja.json'), { saldo: libro.saldo, apuntes: desdeElReinicio.slice(0, 60) })
+  // Lo detectado se le resta al rival: es dinero que ya no tiene. Al propio no,
+  // que su saldo sale del libro de caja y ahí ya está descontado.
+  for (const e of cuentas.equipos) {
+    const suyos = universo.filter((j) => j.duenio === e.n)
+    e.subidas = suyos.reduce((n, j) => n + (j.clausula === null ? 0 : subidasVivas(j.valor, j.clausula)), 0)
+    e.blindados = suyos.filter((j) => j.clausula !== null && subidasVivas(j.valor, j.clausula) > 0).length
+    // Lo que costarían esas subidas al valor de hoy. Para el equipo propio se
+    // enseña la cifra exacta del libro de caja, que es otra y es la buena.
+    e.costeSubidas = suyos.reduce(
+      (t, j) => t + (j.clausula === null ? 0 : subidasVivas(j.valor, j.clausula) * j.valor * 0.2),
+      0,
+    )
+    e.gastoVisto = gastoVisto.get(e.n) ?? 0
+    if (!e.mio && e.gastoVisto > 0) e.saldo -= e.gastoVisto
+  }
+  const mioExacto = cuentas.equipos.find((e) => e.mio)
+  if (mioExacto) mioExacto.costeReal = -desdeElReinicio.filter((a) => a.tipo === 'Penalización').reduce((s, a) => s + a.importe, 0)
+
   escribirJson(join(DATOS, 'equipos.json'), cuentas.equipos)
   escribirJson(join(DATOS, 'plantillas.json'), cuentas.plantillas)
   escribirJson(join(DATOS, 'datos-liga.json'), construirDatosLiga(hechos, cuentas.valores))
@@ -437,6 +488,8 @@ function construirJugadores(
     est: j.estado,
     /** Su cláusula está blindada: no se le puede pagar. */
     bl: j.blindado ? 1 : 0,
+    /** Veces que le han subido la cláusula, y sigue subida. */
+    sub: j.clausula === null ? 0 : subidasVivas(j.valor, j.clausula),
     /** El club contra el que juega la próxima jornada, y si es en casa. */
     riv: j.rival,
     casa: j.enCasa === null ? null : j.enCasa ? 1 : 0,
@@ -465,6 +518,7 @@ function construirJugadores(
       pos: f.posicion ?? 0,
       est: 'out',
       bl: 0,
+      sub: 0,
       riv: null,
       casa: null,
       ...detalleDe(detalle[id]),

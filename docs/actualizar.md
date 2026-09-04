@@ -112,6 +112,36 @@ que solo restan. Así que **el dinero de un rival es un techo**: tiene eso o
 menos. Para la pregunta que hace esta app —«¿puede pagarme la cláusula?»— errar
 por arriba es el lado seguro.
 
+### Deducir lo que un rival paga por blindar
+
+Aunque su libro de caja no se pueda leer, sus cláusulas sí. Dos cosas
+comprobadas contra el libro propio:
+
+- La cláusula base es **1,5 × el valor** (con un suelo de **1.000.000 €**), y se
+  recalcula sola cada día. 61 jugadores con dueño están clavados en ese ×1,50, y
+  21 en el suelo del millón.
+- Mister ofrece subirla al 100 %, 150 %, 200 % y 250 %, y el multiplicador
+  resultante es `1 + porcentaje/100`: ×2, ×2,5, ×3, ×3,5. **Cada escalón de
+  medio punto cuesta el 20 % del valor**, dé igual a qué nivel se suba. Siete de
+  siete penalizaciones propias con valor conocido dan 20,00 % exacto, y Juan
+  Foyth —que pagó tres veces, al 100 %, al 150 % y al 200 %— está hoy en ×3,000.
+
+Con eso:
+
+- **Cuántas subidas tiene vivas cada equipo** se sabe hoy, mirando el
+  multiplicador. Exacto.
+- **Lo que le costaron** solo se puede estimar, valorándolas al precio de hoy en
+  vez de al de aquel día: en el equipo propio esa cuenta da 6.018.400 € contra
+  los 5.263.619 € reales del libro. Se enseña como estimación, y la propia se
+  enseña exacta.
+- **De aquí en adelante es exacto**: cada pasada guarda las cláusulas de los 522
+  en `historico-clausulas.json`, y una que suba por encima de su base y de donde
+  estaba ayer es una modificación pagada ese día, al valor de ese día. Se
+  acumulan en `subidas-clausula.json` y se le restan al rival.
+
+Lo que no se hace es deducir hacia atrás cuándo se subió cada una: haría falta
+adivinar la fecha, y este módulo no adivina.
+
 El resto del dinero sigue saliendo del feed. Lo único que
 se da por dado son las constantes del reinicio de liga, en
 `modulo/datos/liga.json`: qué jugadores recibió cada equipo y cuánto valía ese

@@ -42,6 +42,16 @@ export type Equipo = {
   pre: number
   /** Cuántos jugadores tiene. Se contrasta con la clasificación de Mister. */
   plantilla: number
+  /** Subidas de cláusula que siguen vivas en su plantilla. */
+  subidas?: number
+  /** Cuántos jugadores suyos las tienen. */
+  blindados?: number
+  /** Lo que costarían esas subidas al valor de hoy. Aproximado. */
+  costeSubidas?: number
+  /** Lo que se le ha visto pagar desde que llevamos la cuenta. Exacto. */
+  gastoVisto?: number
+  /** Solo el equipo propio: lo que dice su libro de caja. Exacto. */
+  costeReal?: number
   mio?: 1
   /** Jugadores de la plantilla sin valor conocido: `pl` se queda corto. */
   sinValorar: string[]

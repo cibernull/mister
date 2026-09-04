@@ -291,7 +291,7 @@ const filaJugador = (j) => {
         j.duenio
           ? `<span class="et et-eq${j.mio ? ' et-mio' : ''}">${esc(j.duenioCorto)}</span>`
           : '<span class="et et-libre">libre</span>'
-      }${j.once === 1 ? '<span class="et et-once" title="Mister lo da por titular en el próximo partido">👕 titular</span>' : ''}${ESTADOS[j.est] ?? ''}</div>
+      }${j.sub ? `<span class="et et-sub" title="le han subido la cláusula ${j.sub} ${j.sub === 1 ? 'vez' : 'veces'}: cuesta ${eur(j.sub * j.valor * 0.2)} al valor de hoy">🔺 ×${(1.5 + 0.5 * j.sub).toFixed(1).replace('.', ',')}</span>` : ''}${j.once === 1 ? '<span class="et et-once" title="Mister lo da por titular en el próximo partido">👕 titular</span>' : ''}${ESTADOS[j.est] ?? ''}</div>
       <div class="jp"><b class="${etiquetaPrecio(j) === 'cláusula' ? 'cl' : ''}">${eur(j.precio)}</b><i>${etiquetaPrecio(j)}</i><span class="ico">${iconos(j)}</span></div>
       <div class="js">
         <span>media <b>${dec(j.media)}</b></span><span class="sep">·</span>
@@ -337,6 +337,23 @@ const avisoFuera = (e) => {
   return `<p class="nota-fuera">De esa plantilla, ${eur(f.valor)} ${f.n === 1 ? 'son de 1 jugador que ya no juega' : `son de ${f.n} jugadores que ya no juegan`} en LaLiga: ${f.nombres.map(esc).join(', ')}. Cuentan para su tope de puja —Mister los suma— pero no le van a dar un punto.</p>`
 }
 
+/**
+ * Lo que ha invertido en blindar.
+ *
+ * Para el equipo propio la cifra es exacta: sale del libro de caja de Mister.
+ * Para un rival hay que deducirla, porque Mister oculta su saldo — se sabe
+ * cuántas subidas tiene vivas, y se valoran al precio de hoy, que no es lo que
+ * pagó pero se le acerca: en el equipo propio esa cuenta da 6.018.400 € contra
+ * los 5.263.619 € reales.
+ */
+const avisoClausulas = (e) => {
+  if (!e.subidas) return ''
+  const cuantos = `${e.subidas} subida${e.subidas === 1 ? '' : 's'} de cláusula en ${e.blindados} jugador${e.blindados === 1 ? '' : 'es'}`
+  return e.mio
+    ? `<p class="nota-cl">Has pagado <b>${eur(e.costeReal)}</b> por subir cláusulas desde que empezó la liga — ${cuantos} siguen vivas. Sale de tu libro de caja, así que es exacto.</p>`
+    : `<p class="nota-cl">${cuantos}. Le habrán costado <b>unos ${eur(e.costeSubidas)}</b>: Mister cobra el 20 % del valor por cada una. Es una estimación al valor de hoy, porque su saldo no lo publica.</p>`
+}
+
 const cuentasDe = (e) => `<div class="cuenta">
         <div class="l"><span>Empezó con</span><span>${eur(e.ini)}</span></div>
         <div class="l"><span>Premios de las jornadas</span><span class="mas">+${eur(e.pre)}</span></div>
@@ -347,7 +364,7 @@ const cuentasDe = (e) => `<div class="cuenta">
         <div class="l tot"><span>Patrimonio hoy</span><span>${eur(e.patrimonio)}</span></div>
         <div class="l"><span>Sobre los 50.000.000 € de salida</span><span class="${clase(e.sobre50)}">${firma(e.sobre50)}</span></div>
       </div>
-      ${avisoFuera(e)}`
+      ${avisoFuera(e)}${avisoClausulas(e)}`
 
 /** La plantilla completa de un equipo, por posición y valor. */
 const PORID = PORID_PRE
@@ -620,6 +637,22 @@ const riqueza = [...EQ]
   )
   .join(NL)
 
+// Quién blinda: subir una cláusula cuesta el 20 % del valor del jugador, y es
+// dinero que no se ve venir en ningún sitio. Lo que se enseña son las subidas
+// que siguen vivas hoy, no las que se pagaron sobre jugadores ya vendidos.
+const blindaje = [...EQ].filter((e) => e.subidas > 0).sort((a, b) => b.costeSubidas - a.costeSubidas)
+const maxBlindaje = Math.max(1, ...blindaje.map((e) => e.costeSubidas))
+const filasBlindaje = blindaje
+  .map(
+    (e) => `        <div class="ranking${e.mio ? ' mio' : ''}">
+          <span class="pos">${e.subidas}×</span><span class="nom">${esc(e.corto)}</span>
+          <span class="bar"><i style="width:${((e.costeSubidas / maxBlindaje) * 100).toFixed(1)}%"></i></span>
+          <span class="val">${e.mio ? eur(e.costeReal) : `~${corto(e.costeSubidas)}`}</span>
+        </div>`,
+  )
+  .join(NL)
+const sinBlindar = EQ.filter((e) => !e.subidas)
+
 // Quién comercia mejor: lo cobrado más lo que conserva, menos lo pagado, y
 // descontando lo que valía su reparto — así el que vendió gratis no gana de más.
 const comercio = [...EQ]
@@ -677,6 +710,15 @@ ${clasificacion}
       <div class="rankings">
 ${riqueza}
       </div>
+    </div>
+
+    <div class="tarjeta">
+      <h2 class="sh">Quién blinda a los suyos</h2>
+      <p class="sd">Subir una cláusula cuesta el <strong>20 % del valor</strong> del jugador. Son las subidas que siguen vivas hoy. Tu cifra sale de tu libro de caja y es exacta; la de los rivales es una estimación al valor de hoy, porque Mister no publica sus saldos.</p>
+      <div class="rankings">
+${filasBlindaje || '        <p class="vacio2">Nadie ha tocado ninguna cláusula.</p>'}
+      </div>
+      ${sinBlindar.length ? `<p class="pie">Sin blindar a nadie: ${sinBlindar.map((e) => esc(e.corto)).join(', ')}. Sus jugadores se pueden fichar pagando 1,5 veces su valor.</p>` : ''}
     </div>
 
     <div class="tarjeta">
