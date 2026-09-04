@@ -15,7 +15,15 @@ import { obtenerCredenciales } from '../sesion/credenciales.js'
 import { parsearFgUser } from '../recoleccion/parseadorFgUser.js'
 import { extraerHechos, type Volcado } from './feed.js'
 import { reconstruir, type Constantes } from './reconstruir.js'
-import { recolectarFeed, recolectarValores, recolectarPlantillas, fundir } from './recolectar.js'
+import {
+  recolectarFeed,
+  recolectarValores,
+  recolectarPlantillas,
+  recolectarUniverso,
+  recolectarMercado,
+  fundir,
+} from './recolectar.js'
+import type { JugadorMister } from '../recoleccion/parseadorUniverso.js'
 import { verificar } from './verificar.js'
 
 const RAIZ = process.cwd()
@@ -23,6 +31,11 @@ const VOLCADO = join(RAIZ, 'datos', 'volcado-feed.json')
 const DATOS = join(RAIZ, 'modulo', 'datos')
 const CACHE_VALORES = join(DATOS, 'valores-ficha.json')
 const CACHE_SLUGS = join(DATOS, 'slugs.json')
+const HISTORICO = join(DATOS, 'historico-valores.json')
+/** Días de valores que se guardan. Con 40 sobra para mirar un mes atrás. */
+const DIAS_DE_HISTORICO = 40
+/** A partir de cuántos días de histórico la cifra ya se puede llamar «del mes». */
+const DIAS_PARA_LLAMARLO_MES = 21
 
 const paso = (t: string) => process.stderr.write(`${t}\n`)
 const leerJson = <T>(ruta: string): T => JSON.parse(readFileSync(ruta, 'utf8')) as T
@@ -92,32 +105,77 @@ async function main(): Promise<Resultado> {
   }
   escribirJson(CACHE_SLUGS, Object.fromEntries(leidas.slugs))
 
-  let cuentas = reconstruir(hechos, constantes, soloValores(), leidas.plantillas)
+  // ── 3 bis. El censo de jugadores ───────────────────────────────────────────
+  // Esto es lo que sabe Mister de cada jugador HOY: puntos, media, racha,
+  // valor, cláusula y dueño. Antes se deducía del feed, y el feed solo publica
+  // una foto del jugador en el instante de un evento y no la refresca nunca:
+  // los puntos se quedaban congelados en el día del traspaso, y quien no había
+  // pasado por ahí ni siquiera existía —de 523 jugadores de LaLiga, el feed
+  // conocía 238—. Once peticiones cubren la competición entera.
+  paso('Pidiendo el censo de jugadores…')
+  const universo = await recolectarUniverso(cliente)
+  const porId = new Map(universo.map((j) => [j.id, j]))
+  paso(`${universo.length} jugadores.`)
+
+  paso('Mirando quién está hoy en el mercado…')
+  const enVenta = await recolectarMercado(cliente)
+  paso(`${enVenta.length} a la venta.`)
+
+  const valoresUniverso = new Map(universo.map((j) => [j.id, j.valor]))
+  // El censo pisa a la caché de fichas: es de hoy y cubre a todo el mundo. La
+  // caché solo se queda con los que el censo ya no lista.
+  const conUniverso = () => new Map([...soloValores(), ...valoresUniverso])
+
+  let cuentas = reconstruir(hechos, constantes, conUniverso(), leidas.plantillas)
 
   // Qué fichas hay que pedir.
   //
-  // No solo las de los que no tienen valor: el feed guarda el valor que tenía
-  // el jugador el día de su traspaso, no el de hoy, así que toda plantilla
-  // acaba con cifras viejas y el tope de puja sale corto. Mister recalcula los
-  // valores una vez al día, de madrugada, de modo que basta con refrescar los
-  // que no se hayan pedido HOY: la primera pasada del día cuesta unas 130
-  // peticiones y las siguientes, ninguna.
+  // Ya no hacen falta para el valor: el censo lo da al día para los 523. Solo
+  // quedan dos motivos, y los dos son cortos:
+  //
+  //   · el porcentaje del mes, que solo está en la serie diaria de la ficha y
+  //     es lo que decide el 📤 y el 🔒 de mi propia plantilla;
+  //   · los que siguen en una plantilla pero ya no están en LaLiga, que el
+  //     censo no lista y cuyo valor residual solo tiene su ficha.
+  //
+  // Eran ciento veintidós fichas al día, dos minutos y medio; ahora son
+  // veintitantas.
   const hoy = new Date().toISOString().slice(0, 10)
   const enPlantilla = [...new Set(Object.values(cuentas.plantillas).flat())]
-  const faltan = enPlantilla.filter((id) => cache.get(id)?.dia !== hoy)
+  const mios = cuentas.plantillas[constantes.equipos.find((e) => e.mio)?.nombre ?? ''] ?? []
+  const fueraDelCenso = enPlantilla.filter((id) => !porId.has(id))
+  const interesan = [...new Set([...mios, ...fueraDelCenso])]
+  const faltan = interesan.filter((id) => cache.get(id)?.dia !== hoy)
   let fichasPedidas = 0
   if (faltan.length > 0) {
     // La ficha exige el slug del nombre; vino con la plantilla.
     const slugs = leidas.slugs
 
-    paso(`Pidiendo la ficha de ${faltan.length} jugadores para saber lo que valen hoy…`)
+    paso(`Pidiendo la ficha de ${faltan.length} jugadores para saber su tendencia del mes…`)
     const { valores, fallidos } = await recolectarValores(cliente, faltan, slugs)
     fichasPedidas = valores.size
     for (const [id, v] of valores)
       cache.set(id, { valor: v.valor, dia: hoy, nombre: v.nombre, posicion: v.posicion, subeDia: v.dia, subeMes: v.mes })
     escribirJson(CACHE_VALORES, Object.fromEntries(cache))
     if (fallidos.length > 0) paso(`No pude con ${fallidos.length}: ${fallidos.map((f) => `${f.id} (${f.motivo})`).join(', ')}`)
-    cuentas = reconstruir(hechos, constantes, soloValores(), leidas.plantillas)
+    cuentas = reconstruir(hechos, constantes, conUniverso(), leidas.plantillas)
+  }
+
+  // El censo también dice de quién es cada jugador, así que sirve de contraste
+  // con la página del equipo. Discrepar no tumba la pasada: los que se han ido
+  // de LaLiga siguen en la plantilla y el censo ya no los lista. Pero se dice.
+  for (const [equipo, ids] of Object.entries(cuentas.plantillas)) {
+    const ajenos = ids.filter((id) => porId.has(id) && porId.get(id)!.duenio !== equipo)
+    if (ajenos.length > 0) {
+      cuentas.avisos.push(`${equipo}: Mister no da por suyos a ${ajenos.map((id) => porId.get(id)!.nombre).join(', ')}`)
+    }
+  }
+  if (fueraDelCenso.length > 0) {
+    const n = fueraDelCenso.length
+    cuentas.avisos.push(
+      `${n} jugador${n === 1 ? '' : 'es'} sigue${n === 1 ? '' : 'n'} en una plantilla pero ya no está${n === 1 ? '' : 'n'} en LaLiga ` +
+        `(${fueraDelCenso.map((id) => cache.get(id)?.nombre ?? id).join(', ')}): cuentan por su valor residual`,
+    )
   }
 
   // ── 4. Contrastar con lo que dice Mister ───────────────────────────────────
@@ -143,12 +201,26 @@ async function main(): Promise<Resultado> {
   escribirJson(join(DATOS, 'equipos.json'), cuentas.equipos)
   escribirJson(join(DATOS, 'plantillas.json'), cuentas.plantillas)
   escribirJson(join(DATOS, 'datos-liga.json'), construirDatosLiga(hechos, cuentas.valores))
-  const clausulasPrevias = existsSync(join(DATOS, 'clausulas.json'))
-    ? new Map(leerJson<[number, number][]>(join(DATOS, 'clausulas.json')).map(([id, k]) => [String(id), k * 1000]))
-    : new Map<string, number>()
-  for (const [id, c] of cuentas.clausulas) clausulasPrevias.set(id, c)
-  escribirJson(join(DATOS, 'clausulas.json'), [...clausulasPrevias].map(([id, c]) => [Number(id), c / 1000]))
-  escribirJson(join(DATOS, 'jugadores-calc.json'), construirJugadores(hechos, cuentas, cache))
+  // Las cláusulas se reescriben enteras, no se acumulan. Acumularlas era lo
+  // que hacía falta cuando la única fuente era el mercado del día —tres
+  // jugadores cada vez—, y el precio de dejaba envejecer: de las 73 guardadas,
+  // 63 estaban mal y 52 jugadores con dueño no tenían ninguna, así que la
+  // pestaña de fichar les ponía su valor y se quedaba 78 M € corta. El censo
+  // las trae todas y al día.
+  const clausulas = universo.filter((j) => j.clausula !== null)
+  escribirJson(join(DATOS, 'clausulas.json'), clausulas.map((j) => [Number(j.id), j.clausula! / 1000]))
+
+  // El histórico de valores, que es lo que con el tiempo hará innecesarias las
+  // fichas. Mister no publica en ningún sitio lo que ha subido un jugador en un
+  // mes: solo lo tiene la gráfica de su ficha, de una en una. Guardando cada
+  // día lo que vale cada uno, dentro de un mes esa cifra sale de aquí, gratis y
+  // para los 523, en vez de costar ciento veintidós peticiones.
+  const historico = existsSync(HISTORICO) ? leerJson<Record<string, Record<string, number>>>(HISTORICO) : {}
+  historico[hoy] = Object.fromEntries(universo.map((j) => [j.id, j.valor]))
+  for (const d of Object.keys(historico).sort().slice(0, -DIAS_DE_HISTORICO)) delete historico[d]
+  escribirJson(HISTORICO, historico)
+
+  escribirJson(join(DATOS, 'jugadores-calc.json'), construirJugadores(universo, enVenta, cuentas, cache, subidasDelMes(historico, hoy)))
   escribirJson(
     join(DATOS, 'jornadas.json'),
     hechos.jornadas.map((j) => ({
@@ -213,74 +285,105 @@ function construirDatosLiga(
 }
 
 /**
+ * Lo que ha subido cada jugador en el último mes, según nuestro histórico.
+ *
+ * Se compara con la foto más antigua que haya, siempre que sea de hace al
+ * menos tres semanas: con menos recorrido la cifra existiría pero significaría
+ * otra cosa, y presentarla como «este mes» sería mentir por omisión. Hasta que
+ * el histórico crezca, quien llama tira de la ficha.
+ */
+function subidasDelMes(historico: Record<string, Record<string, number>>, hoy: string): Map<string, number> {
+  const dias = Object.keys(historico).sort()
+  const haceUnMes = new Date(`${hoy}T00:00:00Z`)
+  haceUnMes.setUTCDate(haceUnMes.getUTCDate() - 30)
+  const objetivo = haceUnMes.toISOString().slice(0, 10)
+
+  // El primer día que llegue al mes; si no hay ninguno, el más antiguo que haya.
+  const referencia = dias.find((d) => d >= objetivo) ?? dias[0]
+  const antes = referencia === undefined ? undefined : historico[referencia]
+  if (referencia === undefined || antes === undefined) return new Map()
+
+  const dist = Math.round((Date.parse(`${hoy}T00:00:00Z`) - Date.parse(`${referencia}T00:00:00Z`)) / 86400000)
+  if (dist < DIAS_PARA_LLAMARLO_MES) return new Map()
+
+  const ahora = historico[hoy] ?? {}
+  const subidas = new Map<string, number>()
+  for (const [id, v] of Object.entries(ahora)) {
+    const previo = antes[id]
+    if (previo !== undefined) subidas.set(id, v - previo)
+  }
+  return subidas
+}
+
+/**
  * Los jugadores con sus estadísticas y los dos criterios de siempre.
  *
- * ⭐ y 💵 son percentiles sobre todos los jugadores conocidos, no umbrales
- * fijos: así siguen significando lo mismo cuando cambie el nivel de la liga.
+ * La lista es el censo entero de la competición, no solo los que han pasado
+ * por el feed: los doce mejores de LaLiga estaban libres y ninguno aparecía.
+ *
+ * ⭐ y 💵 son percentiles sobre todos los jugadores, no umbrales fijos: así
+ * siguen significando lo mismo cuando cambie el nivel de la liga.
  */
 function construirJugadores(
-  hechos: ReturnType<typeof extraerHechos>,
+  universo: JugadorMister[],
+  enVenta: { id: string; precio: number }[],
   cuentas: ReturnType<typeof reconstruir>,
-  fichas: Map<string, { valor: number; nombre?: string; posicion?: number; subeDia?: number; subeMes?: number }>,
+  fichas: Map<string, { valor: number; nombre?: string; posicion?: number; subeDia?: number; subeMes?: number; dia?: string }>,
+  delMes: Map<string, number>,
 ): unknown[] {
-  const enMercado = new Set(hechos.mercado.map((m) => m.idJugador))
-  const ficha = new Map<string, { id: string; nombre: string; valor: number; puntos: number; media: number; partidos: number; semana: number | null; mes: number | null; mk: number; pos: number }>()
+  // El histórico manda en cuanto tiene recorrido; hasta entonces, la ficha, y
+  // solo si se pidió hoy. Una cifra vieja del mes pasado no se enseña: era así
+  // como se colaban los datos rancios que había que quitar de en medio.
+  const hoy = new Date().toISOString().slice(0, 10)
+  const mesDe = (id: string): number | null =>
+    delMes.get(id) ?? (fichas.get(id)?.dia === hoy ? (fichas.get(id)?.subeMes ?? null) : null)
+  const seVende = new Map(enVenta.map((v) => [v.id, v.precio]))
 
-  const cuenta = (racha: string) => racha.split(',').filter((x) => x !== '' && x !== '-').length
+  const lista = universo.map((j) => ({
+    id: j.id,
+    nombre: j.nombre,
+    valor: j.valor,
+    puntos: j.puntos,
+    media: j.media,
+    partidos: j.partidos,
+    /** Lo que ha cambiado su valor desde ayer. */
+    semana: j.sube,
+    mes: mesDe(j.id),
+    mk: seVende.has(j.id) ? 1 : 0,
+    /** Lo que pide quien lo vende. Solo si está en el mercado. */
+    pv: seVende.get(j.id) ?? null,
+    pos: j.posicion,
+    /** `injury`, `doubt`… o `null` si está sano. */
+    est: j.estado,
+    /** Su cláusula está blindada: no se le puede pagar. */
+    bl: j.blindado ? 1 : 0,
+  }))
 
-  for (const t of hechos.traspasos) {
-    ficha.set(t.idJugador, {
-      id: t.idJugador,
-      nombre: t.nombre,
-      valor: cuentas.valores.get(t.idJugador) ?? t.valor,
-      puntos: t.puntos,
-      media: t.media,
-      partidos: cuenta(t.racha),
-      semana: fichas.get(t.idJugador)?.subeDia ?? null,
-      mes: fichas.get(t.idJugador)?.subeMes ?? null,
-      mk: enMercado.has(t.idJugador) ? 1 : 0,
-      pos: t.posicion,
-    })
-  }
-  // El mercado del día manda: trae media, puntos y partidos de hoy.
-  for (const m of hechos.mercado) {
-    const previo = ficha.get(m.idJugador)
-    ficha.set(m.idJugador, {
-      id: m.idJugador,
-      nombre: m.nombre,
-      valor: m.valor,
-      puntos: m.puntos,
-      media: m.media,
-      partidos: m.partidos,
-      semana: fichas.get(m.idJugador)?.subeDia ?? m.valor - m.valorPrevio,
-      mes: fichas.get(m.idJugador)?.subeMes ?? previo?.mes ?? null,
-      mk: 1,
-      pos: m.posicion,
-    })
-  }
-
-  // Los que están en una plantilla pero no en el feed: Mister no publicó su
-  // alta, así que su ficha es lo único que hay. Sin esto el generador se
-  // encuentra con un jugador de plantilla del que no sabe ni el nombre.
+  // Los que siguen en una plantilla y ya no están en LaLiga. No los lista el
+  // censo, pero el generador tiene que saber su nombre: si no, se encuentra
+  // con un jugador de plantilla del que no sabe nada y lo pinta «sin datos».
+  const censados = new Set(lista.map((j) => j.id))
   for (const id of new Set(Object.values(cuentas.plantillas).flat())) {
-    if (ficha.has(id)) continue
+    if (censados.has(id)) continue
     const f = fichas.get(id)
     if (f?.nombre === undefined) continue
-    ficha.set(id, {
+    lista.push({
       id,
       nombre: f.nombre,
       valor: f.valor,
       puntos: 0,
       media: 0,
       partidos: 0,
-      semana: f.subeDia ?? null,
-      mes: f.subeMes ?? null,
+      semana: f.subeDia ?? 0,
+      mes: mesDe(id),
       mk: 0,
+      pv: null,
       pos: f.posicion ?? 0,
+      est: 'out',
+      bl: 0,
     })
   }
 
-  const lista = [...ficha.values()]
   const medias = lista.filter((j) => j.partidos >= 2).map((j) => j.media).sort((a, b) => b - a)
   const umbralPts = medias[Math.floor(medias.length / 3)] ?? Infinity
   const crece = (j: (typeof lista)[number]) => (j.mes != null && j.valor ? j.mes / j.valor : null)
@@ -296,6 +399,7 @@ function construirJugadores(
     }
   })
 }
+
 
 main()
   .then((r) => {

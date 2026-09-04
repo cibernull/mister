@@ -17,6 +17,8 @@ export type Cliente = {
   pedirLote(offset: number): Promise<string>
   /** Pide una página HTML cualquiera, con el mismo regulador de ritmo. */
   pedirPagina(ruta: string): Promise<string>
+  /** Una página del buscador de jugadores: cincuenta desde `offset`. */
+  pedirJugadores(offset: number): Promise<string>
 }
 
 const dormir = (ms: number) => new Promise((r) => setTimeout(r, ms))
@@ -123,6 +125,34 @@ export function crearCliente(opciones: OpcionesCliente): Cliente {
           Accept: 'text/html',
         },
       }, ruta)
+    },
+
+    /**
+     * El buscador de jugadores, que es de donde salen las estadísticas.
+     *
+     * Tiene que ser POST aunque la propia web lo pida por GET: por GET el
+     * servidor ignora el `offset` y devuelve siempre los mismos cincuenta, de
+     * modo que paginar en silencio daba cuarenta veces la primera página.
+     *
+     * `X-Requested-With` no es decorativo: sin él la respuesta es un 403.
+     */
+    async pedirJugadores(offset: number): Promise<string> {
+      return pedir(`los jugadores desde ${offset}`, {
+        method: 'POST',
+        headers: {
+          Cookie: opciones.credenciales.cookie,
+          'X-Auth': opciones.credenciales.auth,
+          'X-Requested-With': 'XMLHttpRequest',
+          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+          Accept: 'application/json',
+        },
+        body: new URLSearchParams({
+          post: 'players',
+          offset: String(offset),
+          order: '0',
+          name: '',
+        }).toString(),
+      }, '/ajax/sw/players')
     },
   }
 }

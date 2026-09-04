@@ -82,11 +82,21 @@ for (const j of J) {
   j.duenio = DUENIO.get(String(j.id)) ?? null
   j.duenioCorto = j.duenio ? j.duenio.replace(/\s*\(.*\)\s*/, '').trim() : null
   j.mio = j.duenio === MI_EQUIPO ? 1 : 0
-  // Precio efectivo: cláusula si tiene dueño, valor si está libre.
-  j.precio = j.clausula ?? j.valor
-  j.a = j.precio <= MIO.tope ? 1 : 0
+  // Lo que costaría de verdad llevárselo hoy, que son tres cosas distintas:
+  //   · en el mercado, lo que pide quien lo vende;
+  //   · de un rival, su cláusula;
+  //   · libre y fuera del mercado, nada: no se puede fichar hasta que salga.
+  //     Se enseña su valor como referencia, no como precio.
+  j.precio = j.mk ? j.pv : (j.clausula ?? j.valor)
+  // Si hoy hay una manera de pagarlo. Un libre que no está en el mercado no
+  // tiene precio: no se le puede fichar hasta que salga, y enseñar su valor
+  // como si fuera un precio hacía creer que Mbappé estaba a tiro.
+  j.pagable = j.mk === 1 || (j.clausula != null && !j.bl) ? 1 : 0
+  j.fichable = j.pagable && !j.mio ? 1 : 0
+  j.a = j.fichable && j.precio <= MIO.tope ? 1 : 0
   // Quién llega a pagarlo. Su propio dueño no cuenta: no se ficha a sí mismo.
-  j.compradores = EQ.filter((e) => e.n !== j.duenio && e.tope >= j.precio)
+  // Vale también para los míos: es lo que dice si hay que blindar a alguno.
+  j.compradores = j.pagable ? EQ.filter((e) => e.n !== j.duenio && e.tope >= j.precio) : []
   j.rivalesQuePueden = j.compradores.filter((e) => !e.mio).length
   j.subeMes = j.mes != null && j.valor ? j.mes / j.valor : null
   j.puesto = j.pos ?? 0
@@ -145,6 +155,15 @@ const iconos = (j) => `${j.p ? '⭐' : ''}${j.d ? '💵' : ''}${j.vender ? '📤
  * nombres y con cuánto margen se lo pueden permitir.
  */
 const quienPuede = (j) => {
+  // A un libre que no está en el mercado no se le puede pagar nada hoy, así
+  // que la barra de «quién puede» sobra: lo que hace falta es decir por qué.
+  if (!j.pagable) {
+    return `<div class="quien nohay">${
+      j.bl
+        ? 'Cláusula blindada: hoy no se le puede pagar.'
+        : 'Libre, pero hoy no está en el mercado. Habrá que esperar a que salga.'
+    }</div>`
+  }
   const total = j.duenio ? EQ.length - 1 : EQ.length
   const n = j.compradores.length
   const tira = Array.from({ length: total }, (_, i) => `<i class="${i < n ? 'on' : ''}"></i>`).join('')
@@ -163,10 +182,26 @@ const quienPuede = (j) => {
       </details>`
 }
 
+/**
+ * Lo que Mister dice del estado físico. `out` es de cosecha propia: los que
+ * siguen en una plantilla pero ya no juegan en LaLiga.
+ */
+const ESTADOS = {
+  injury: '<span class="et et-mal" title="lesionado">🏥 lesionado</span>',
+  doubt: '<span class="et et-duda" title="duda para la próxima jornada">❓ duda</span>',
+  double: '<span class="et et-duda" title="doble amarilla o sanción">🟨 sancionado</span>',
+  other: '<span class="et et-duda" title="no disponible">⚠️ no disponible</span>',
+  out: '<span class="et et-mal" title="ya no juega en LaLiga">✈️ fuera de LaLiga</span>',
+}
+
+/** Qué es la cifra grande de la derecha, que no siempre es lo mismo. */
+const etiquetaPrecio = (j) => (j.mk ? 'lo piden' : j.clausula ? 'cláusula' : 'valor')
+
 const filaJugador = (j) => {
   const cls = [
     'fj',
     j.mk ? 'mk' : 'nomk',
+    j.fichable ? 'fich' : 'nofich',
     j.p ? 'tp' : '',
     j.d ? 'td' : '',
     j.a ? 'ta' : '',
@@ -176,20 +211,29 @@ const filaJugador = (j) => {
     .filter(Boolean)
     .join(' ')
   const pct = j.subeMes != null ? Math.round(j.subeMes * 100) : null
+  // Sin la cifra del mes se enseña la del día, que Mister sí da para todos.
+  // Antes esta línea se quedaba muda, y un jugador sin tendencia parecía un
+  // jugador plano.
+  const tendencia =
+    pct != null
+      ? `<span class="${clase(pct)}">${pct > 0 ? '+' : ''}${pct} % este mes</span>`
+      : j.semana
+        ? `<span class="${clase(j.semana)}">${firmaCorta(j.semana)} hoy</span>`
+        : ''
   const rec = (j.p + j.d) * 1000 + j.media
   return `<div class="${cls}" data-busca="${esc(j.nombre)} ${esc(j.duenioCorto ?? 'libre')} ${PUESTOS_LARGO[j.puesto]}" data-rec="${rec.toFixed(2)}" data-precio="${j.precio}" data-media="${j.media}" data-puntos="${j.puntos}" data-sube="${(j.subeMes ?? -9).toFixed(4)}" data-hoy="${j.semana ?? -9e9}">
       ${dorsal(j.puesto)}
-      <div class="jn">${esc(j.nombre)}${j.mk ? '<span class="et et-mk">en venta</span>' : ''}${
+      <div class="jn">${esc(j.nombre)}${j.mk ? '<span class="et et-mk">en el mercado</span>' : ''}${
         j.duenio
           ? `<span class="et et-eq${j.mio ? ' et-mio' : ''}">${esc(j.duenioCorto)}</span>`
           : '<span class="et et-libre">libre</span>'
-      }</div>
-      <div class="jp"><b class="${j.clausula ? 'cl' : ''}">${eur(j.precio)}</b><i>${j.clausula ? 'cláusula' : 'valor'}</i><span class="ico">${iconos(j)}</span></div>
+      }${ESTADOS[j.est] ?? ''}</div>
+      <div class="jp"><b class="${etiquetaPrecio(j) === 'cláusula' ? 'cl' : ''}">${eur(j.precio)}</b><i>${etiquetaPrecio(j)}</i><span class="ico">${iconos(j)}</span></div>
       <div class="js">
         <span>media <b>${dec(j.media)}</b></span><span class="sep">·</span>
         <span>${j.puntos} pts en ${j.partidos} part.</span>${
-          pct != null ? `<span class="sep">·</span><span class="${clase(pct)}">${pct > 0 ? '+' : ''}${pct} % este mes</span>` : ''
-        }${j.clausula ? `<span class="sep">·</span><span>vale ${corto(j.valor)}</span>` : ''}
+          tendencia ? `<span class="sep">·</span>${tendencia}` : ''
+        }${j.precio !== j.valor ? `<span class="sep">·</span><span>vale ${corto(j.valor)}</span>` : ''}
       </div>
       ${quienPuede(j)}
     </div>`
@@ -297,6 +341,15 @@ const topeTrasVender = (v) => MIO.saldo + v + 0.25 * (MIO.pl - v)
 
 const filaMia = (j, modo) => {
   const pct = j.subeMes != null ? Math.round(j.subeMes * 100) : null
+  // Sin la cifra del mes se enseña la del día, que Mister sí da para todos.
+  // Antes esta línea se quedaba muda, y un jugador sin tendencia parecía un
+  // jugador plano.
+  const tendencia =
+    pct != null
+      ? `<span class="${clase(pct)}">${pct > 0 ? '+' : ''}${pct} % este mes</span>`
+      : j.semana
+        ? `<span class="${clase(j.semana)}">${firmaCorta(j.semana)} hoy</span>`
+        : ''
   const pago = MIS_MOVS[String(j.id)] ? MIS_MOVS[String(j.id)].compras : 0
   const grande = modo === 'clausula' ? j.clausula : j.valor
   const rotulo = modo === 'clausula' ? 'te lo quitan por' : modo === 'venta' ? 'te darían' : 'vale'

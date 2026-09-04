@@ -73,6 +73,7 @@ function clienteCon(lotes: Record<number, string>): Cliente {
   return {
     async pedirLote(offset: number) { return lotes[offset] ?? fin },
     async pedirPagina() { throw new Error('no usado') },
+    async pedirJugadores() { throw new Error('no usado') },
   }
 }
 
@@ -245,6 +246,7 @@ describe('recolectarHistorico', () => {
         return fin
       },
       async pedirPagina() { throw new Error('no usado') },
+    async pedirJugadores() { throw new Error('no usado') },
     }
 
     const resumen = await recolectarHistorico({ cliente, almacen, recoleccion: 'r1' })

@@ -133,6 +133,8 @@ body{
 .et-eq.et-mio{color:var(--oro);background:var(--oro-fondo);border-color:var(--oro-raya)}
 .et-libre{color:var(--sube);background:var(--sube-fondo);border:1px solid currentColor}
 .et-op{color:var(--baja);background:var(--baja-fondo);border:1px solid currentColor}
+.et-mal{color:var(--baja);background:var(--baja-fondo);border:1px solid var(--baja-raya,currentColor)}
+.et-duda{color:var(--med);background:var(--oro-fondo);border:1px solid var(--oro-raya)}
 
 /* ── Barra de control ─────────────────────────────────────────────────── */
 .mando{overflow:hidden}
@@ -154,7 +156,7 @@ body{
 .ops button{font:inherit;font-size:13px;font-weight:600;padding:5px 11px;border-radius:7px;border:1px solid var(--raya);background:var(--suelo);color:var(--gris);cursor:pointer;white-space:nowrap;transition:border-color .12s,color .12s}
 .ops button:hover{border-color:var(--oro);color:var(--oro)}
 .ops button.on{border-color:var(--oro);background:var(--oro-fondo);color:var(--oro)}
-#a1:checked~.env label[for=a1],#a2:checked~.env label[for=a2],
+#a1:checked~.env label[for=a1],#a2:checked~.env label[for=a2],#a3:checked~.env label[for=a3],
 #f1:checked~.env label[for=f1],#f2:checked~.env label[for=f2],#f3:checked~.env label[for=f3],
 #f4:checked~.env label[for=f4],#f5:checked~.env label[for=f5],
 #d1:checked~.env label[for=d1],#d2:checked~.env label[for=d2],#d3:checked~.env label[for=d3],#d4:checked~.env label[for=d4],
@@ -167,6 +169,7 @@ body{
 /* Filtros en cascada. «Míos» se salta el «dónde» a propósito: enseñar solo los
    tuyos que están en venta deja la lista casi vacía sin explicar por qué. */
 #a1:checked~#d4:not(:checked)~.env .fj.nomk{display:none}
+#a3:checked~#d4:not(:checked)~.env .fj.nofich{display:none}
 #f2:checked~.env .fj:not(.tp),#f2:checked~.env .fj:not(.td){display:none}
 #f3:checked~.env .fj:not(.tp){display:none}
 #f4:checked~.env .fj:not(.td){display:none}
@@ -212,6 +215,7 @@ body{
 .quien .txt{font-size:11.5px;color:var(--tenue);font-family:"IBM Plex Mono",monospace}
 .quien .txt b{color:var(--tinta)}
 .quien[open] summary{border-color:var(--oro-raya);background:var(--oro-fondo)}
+.quien.nohay{font-size:11.5px;color:var(--tenue);font-family:"IBM Plex Mono",monospace;padding:3px 5px}
 .chips{display:flex;flex-wrap:wrap;gap:5px;padding:9px 0 3px}
 .chip{display:inline-flex;align-items:baseline;gap:6px;font-size:12px;font-weight:600;border:1px solid var(--raya);background:var(--suelo);border-radius:7px;padding:4px 9px}
 .chip em{font-style:normal;font-weight:500;font-size:10.5px;color:var(--tenue);font-family:"IBM Plex Mono",monospace}
@@ -377,7 +381,8 @@ a{color:var(--oro)}
 <input class="ctrl" type="radio" name="pest" id="t5">
 <input class="ctrl" type="radio" name="pest" id="t6">
 <input class="ctrl" type="radio" name="ambito" id="a1">
-<input class="ctrl" type="radio" name="ambito" id="a2" checked>
+<input class="ctrl" type="radio" name="ambito" id="a2">
+<input class="ctrl" type="radio" name="ambito" id="a3" checked>
 <input class="ctrl" type="radio" name="filtro" id="f1" checked>
 <input class="ctrl" type="radio" name="filtro" id="f2">
 <input class="ctrl" type="radio" name="filtro" id="f3">
@@ -465,7 +470,7 @@ a{color:var(--oro)}
         <div class="grupo">
           <span>Dónde busco</span>
           <div class="ops">
-            <label for="a2">Todos</label><label for="a1">Solo lo que está en venta</label>
+            <label for="a3">Los que puedo fichar</label><label for="a1">Solo el mercado de hoy</label><label for="a2">Toda LaLiga</label>
           </div>
         </div>
         <div class="grupo">

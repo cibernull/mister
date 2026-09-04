@@ -10,6 +10,8 @@ import { contarEventosBrutos } from '../recoleccion/pagina.js'
 import { parsearSerieValores } from '../recoleccion/parseadorValores.js'
 import { parsearPlantilla } from '../recoleccion/parseadorPlantilla.js'
 import { parsearFicha } from '../recoleccion/parseadorFicha.js'
+import { parsearJugadores, type JugadorMister } from '../recoleccion/parseadorUniverso.js'
+import { parsearMercado, MercadoVacioError, type EnVenta } from '../recoleccion/parseadorMercado.js'
 import type { PaginaCruda, Volcado } from './feed.js'
 
 /** Límite de páginas por pasada: una red de seguridad, no un objetivo. */
@@ -191,4 +193,53 @@ export async function recolectarValores(
   }
 
   return { valores, fallidos }
+}
+
+/**
+ * El censo entero de jugadores de la competición.
+ *
+ * Once peticiones y unos segundos, frente a las ciento veintidós fichas de una
+ * en una que costaba antes saber solo los valores. Y a cambio se sabe de los
+ * 523, no de los 238 que habían pasado alguna vez por el feed.
+ *
+ * Se para al recibir una página corta, que es como el buscador dice que ya no
+ * queda nada. El tope de páginas es una red por si eso deja de cumplirse: sin
+ * él, un cambio en el servidor se convertiría en un bucle infinito.
+ */
+const MAX_PAGINAS_JUGADORES = 60
+const JUGADORES_POR_PAGINA = 50
+
+export async function recolectarUniverso(cliente: Cliente): Promise<JugadorMister[]> {
+  const todos: JugadorMister[] = []
+  const vistos = new Set<string>()
+
+  for (let pagina = 0; pagina < MAX_PAGINAS_JUGADORES; pagina += 1) {
+    const leidos = parsearJugadores(await cliente.pedirJugadores(pagina * JUGADORES_POR_PAGINA))
+    for (const j of leidos) {
+      // Paginar sobre una lista que el servidor reordena podría repetir a
+      // alguien; quedarse con la primera lectura es estable y no infla nada.
+      if (vistos.has(j.id)) continue
+      vistos.add(j.id)
+      todos.push(j)
+    }
+    if (leidos.length < JUGADORES_POR_PAGINA) return todos
+  }
+
+  throw new Error(`el buscador no se acabó en ${MAX_PAGINAS_JUGADORES} páginas; algo va mal`)
+}
+
+/**
+ * Los jugadores que están hoy a la venta.
+ *
+ * Un mercado vacío se devuelve como lista vacía en vez de romper la pasada:
+ * pasa de verdad durante la rotación, y no vale la pena tirar una
+ * actualización buena por una etiqueta.
+ */
+export async function recolectarMercado(cliente: Cliente): Promise<EnVenta[]> {
+  try {
+    return parsearMercado(await cliente.pedirPagina('/market'))
+  } catch (e) {
+    if (e instanceof MercadoVacioError) return []
+    throw e
+  }
 }

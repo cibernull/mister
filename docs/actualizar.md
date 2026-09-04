@@ -63,37 +63,70 @@ traspaso no cambian, pero el valor del jugador que viaja con él sí —el feed 
 reescribe con el de hoy cada vez que se pide—, así que quedarse con la primera
 aparición congelaría los valores para siempre.
 
-### 2. Rehace las cuentas
+### 2. Pide el censo de jugadores
 
-Todo sale del feed. Lo único que se da por dado son las constantes del reinicio
-de liga, en `modulo/datos/liga.json`: qué jugadores recibió cada equipo y cuánto
-valía ese reparto. Por definición no vuelven a cambiar.
+`POST /ajax/sw/players` es la lista que alimenta la pestaña Buscar de Mister:
+**todos los jugadores de la competición**, de cincuenta en cincuenta, con sus
+puntos, su media, su racha, su valor de hoy, su cláusula, su lesión y quién los
+tiene. Son once peticiones y unos segundos.
+
+Tiene que pedirse por **POST** aunque la web lo pida por GET: por GET el
+servidor ignora el `offset` y devuelve siempre los mismos cincuenta, así que
+paginar en silencio daba cuarenta veces la primera página. Y hace falta la
+cabecera `X-Requested-With: XMLHttpRequest` o responde 403.
+
+Esto sustituye a lo que antes se deducía del feed. **El feed no vale para
+estadísticas**: solo publica una foto del jugador en el instante de un evento
+—un traspaso, o los tres que entran al mercado en cada rotación— y no la
+refresca nunca. El día que se contrastó, de 523 jugadores de LaLiga el feed
+conocía 238, los partidos jugados estaban mal en 127 de 223, y de 73 cláusulas
+guardadas 63 no coincidían con las de Mister. Los doce mejores de la
+competición estaban libres y ninguno aparecía.
+
+El mercado del día sale de la página `/market`, que sí los trae todos. El
+evento `market_unified` del feed **no es el mercado**: son solo los que entran
+en esa rotación, y tomarlo por el mercado dejaba la etiqueta «en venta» en tres
+jugadores cuando había treinta y tres.
+
+### 3. Rehace las cuentas
+
+El dinero sigue saliendo del feed, que es lo que cuadra al euro. Lo único que
+se da por dado son las constantes del reinicio de liga, en
+`modulo/datos/liga.json`: qué jugadores recibió cada equipo y cuánto valía ese
+reparto. Por definición no vuelven a cambiar.
 
 ```
-saldo    = (50.000.000 − valor del reparto) + premios + ventas − compras
-plantilla = reparto + los que entraron − los que salieron
-tope     = saldo + 25 % del valor de la plantilla
+saldo     = (50.000.000 − valor del reparto) + premios + ventas − compras
+plantilla = la que publica la página de cada equipo
+tope      = saldo + 25 % del valor de la plantilla
 ```
 
-Contrastado contra las cifras ya verificadas, el feed reproduce por sí solo:
+Los **valores** vienen del censo, que los da al día para los 523. Las
+plantillas siguen leyéndose de la página de cada equipo, no del feed: hay altas
+que Mister no publica como traspaso, y reconstruirlas sumando traspasos deja
+jugadores fuera.
 
-| Dato | Resultado |
-|---|---|
-| Premios de los 8 equipos | exacto |
-| Compras y ventas de los 8 | exacto |
-| Saldo | exacto en 7; el propio se aparta 800 € (el redondeo a millares conocido) |
-| Puntos | exacto en 7; Cacaculopedopis sale 92 y no 93 |
-| Valor de plantilla | depende de los valores de ficha, abajo |
+El censo también dice de quién es cada jugador, así que sirve de contraste con
+la página del equipo. Los cinco que discrepan son jugadores que **se han ido de
+LaLiga** y siguen en la plantilla: el censo ya no los lista y su valor residual
+solo lo tiene su ficha. Se avisa por su nombre en vez de dejarlos fuera.
 
-### 3. Pide las fichas que falten
+### 3 bis. Las fichas, ya casi ninguna
 
-Un jugador que sigue en la plantilla del reparto y por el que nadie ha pujado
-nunca no aparece en el feed: su ficha es el único sitio donde está su valor. Son
-34 en la primera pasada, y quedan cacheados en `modulo/datos/valores-ficha.json`;
-después solo se piden los que aparezcan nuevos.
+Solo quedan dos motivos para pedir una ficha de una en una:
 
-Sin ellos el valor de plantilla se queda corto, y con él el tope de puja. El
-motor lo dice por su nombre en vez de dar una cifra baja sin avisar.
+- **el porcentaje del mes**, que no está en ningún sitio salvo la gráfica de la
+  ficha, y que es lo que decide el 📤 y el 🔒 de la propia plantilla;
+- **los que ya no están en LaLiga**, cuyo valor residual solo tiene su ficha.
+
+Eran ciento veintidós fichas al día —dos minutos y medio—; ahora son
+veintitantas, y una pasada entera baja de 2,5 min a unos 25 s.
+
+Además, cada pasada guarda en `modulo/datos/historico-valores.json` lo que vale
+hoy cada uno de los 523. Dentro de un mes el porcentaje mensual saldrá de ahí,
+gratis y para todos, y las fichas dejarán de hacer falta también para eso.
+Hasta entonces se usa la de la ficha **solo si se pidió hoy**: una cifra vieja
+no se enseña.
 
 ### 4. Comprueba antes de escribir
 
@@ -116,19 +149,16 @@ El navegador recarga y aparece un aviso con lo que ha cambiado.
 
 ## Lo que queda pendiente
 
-- **Una plantilla del feed no es igual que la de la página del equipo.** Las
-  reconstruidas salen más cortas: les faltan exactamente los jugadores vendidos
-  hace poco. Las páginas de equipo parecen enlazar también a los que acaban de
-  salir —es lo que puso a Roger Brugué en dos plantillas a la vez—, y la
-  plantilla raspada de Neky supera en 24 M € el valor de plantilla que publica
-  el propio Mister, mientras que la reconstruida se queda a 2,7 M. Todo apunta a
-  que manda el feed, pero no está cerrado del todo.
+- **Cinco jugadores fuera de LaLiga siguen contando.** Javi López, Javi Muñoz,
+  Unai Vencedor, Iker Benito y José Ángel Jurado están en la plantilla que
+  publica Mister pero ya no en su censo. Suman 919.000 € entre tres rivales, o
+  sea unos 230.000 € de tope. Se cuentan por su valor residual, que es lo que
+  hace la página del equipo, pero no está confirmado que Mister los sume.
 - **Cacaculopedopis: 92 puntos sumando jornadas, 93 en la clasificación.** Un
   punto de diferencia, sin explicar.
-- **La primera pasada de verdad está sin hacer**, porque necesita las
-  credenciales. Los pasos 1, 3 y 4 hablan con Mister y no se han podido probar
-  contra el servidor real: lo probado es la reconstrucción, contra el histórico
-  ya guardado.
+- **El porcentaje del mes solo lo tienen unos pocos** hasta que el histórico de
+  valores tenga tres semanas de recorrido. Mientras tanto, el resto enseña la
+  subida del día, que sí es exacta para todos.
 
 ## Comandos
 
