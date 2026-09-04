@@ -1,0 +1,485 @@
+{
+ "saldo": 11929000,
+ "apuntes": [
+  {
+   "cuando": 1788560011,
+   "fecha": "2026-09-05 00:13",
+   "motivo": "Modificación de cláusula (100%) de Oriol Rey",
+   "tipo": "Penalización",
+   "importe": -203800,
+   "saldo": 11929000
+  },
+  {
+   "cuando": 1788560001,
+   "fecha": "2026-09-05 00:13",
+   "motivo": "Modificación de cláusula (100%) de Beñat Gerenabarrena",
+   "tipo": "Penalización",
+   "importe": -212019,
+   "saldo": 12132800
+  },
+  {
+   "cuando": 1788538635,
+   "fecha": "2026-09-04 18:17",
+   "motivo": "Fer Niño a Mister",
+   "tipo": "Venta",
+   "importe": 2445040,
+   "saldo": 12344819
+  },
+  {
+   "cuando": 1788538621,
+   "fecha": "2026-09-04 18:17",
+   "motivo": "Gabriel Suazo a Mister",
+   "tipo": "Venta",
+   "importe": 2709930,
+   "saldo": 9899779
+  },
+  {
+   "cuando": 1788490800,
+   "fecha": "2026-09-04 05:00",
+   "motivo": "Oriol Rey a Mister",
+   "tipo": "Compra",
+   "importe": -960010,
+   "saldo": 7189849
+  },
+  {
+   "cuando": 1788490800,
+   "fecha": "2026-09-04 05:00",
+   "motivo": "Beñat Gerenabarrena a Mister",
+   "tipo": "Compra",
+   "importe": -1060096,
+   "saldo": 8149859
+  },
+  {
+   "cuando": 1788404400,
+   "fecha": "2026-09-03 05:00",
+   "motivo": "José Giménez a Mister",
+   "tipo": "Compra",
+   "importe": -2034236,
+   "saldo": 9209955
+  },
+  {
+   "cuando": 1788391689,
+   "fecha": "2026-09-03 01:28",
+   "motivo": "Jorge Herrando a Mister",
+   "tipo": "Venta",
+   "importe": 641680,
+   "saldo": 11244191
+  },
+  {
+   "cuando": 1788289227,
+   "fecha": "2026-09-01 21:00",
+   "motivo": "Ryunosuke Sato a Mister",
+   "tipo": "Venta",
+   "importe": 3621450,
+   "saldo": 10602511
+  },
+  {
+   "cuando": 1788252243,
+   "fecha": "2026-09-01 10:44",
+   "motivo": "Jornada 3",
+   "tipo": "Bonificación",
+   "importe": 1500000,
+   "saldo": 6981061
+  },
+  {
+   "cuando": 1788188400,
+   "fecha": "2026-08-31 17:00",
+   "motivo": "Hector Fort a Mister",
+   "tipo": "Compra",
+   "importe": -878010,
+   "saldo": 5481061
+  },
+  {
+   "cuando": 1788165321,
+   "fecha": "2026-08-31 10:35",
+   "motivo": "Modificación de cláusula (100%) de Roger Brugué",
+   "tipo": "Penalización",
+   "importe": -200000,
+   "saldo": 6359071
+  },
+  {
+   "cuando": 1788165214,
+   "fecha": "2026-08-31 10:33",
+   "motivo": "Modificación de cláusula (100%) de Pierre-Emerick Aubameyang",
+   "tipo": "Penalización",
+   "importe": -1234200,
+   "saldo": 6559071
+  },
+  {
+   "cuando": 1788165011,
+   "fecha": "2026-08-31 10:30",
+   "motivo": "Jon Moncayola a Mister",
+   "tipo": "Venta",
+   "importe": 5107000,
+   "saldo": 7793271
+  },
+  {
+   "cuando": 1788145200,
+   "fecha": "2026-08-31 05:00",
+   "motivo": "Dani Lorenzo a Mister",
+   "tipo": "Compra",
+   "importe": -3244010,
+   "saldo": 2686271
+  },
+  {
+   "cuando": 1788086560,
+   "fecha": "2026-08-30 12:42",
+   "motivo": "Roger Brugué a Los tocahuevos C.F ( juanito)",
+   "tipo": "Compra por cláusula",
+   "importe": -1000000,
+   "saldo": 5930281
+  },
+  {
+   "cuando": 1787929200,
+   "fecha": "2026-08-28 17:00",
+   "motivo": "Álvaro Valles a Mister",
+   "tipo": "Compra",
+   "importe": -7813750,
+   "saldo": 6930281
+  },
+  {
+   "cuando": 1787907426,
+   "fecha": "2026-08-28 10:57",
+   "motivo": "Jornada 1",
+   "tipo": "Bonificación",
+   "importe": 1050000,
+   "saldo": 14744031
+  },
+  {
+   "cuando": 1787799600,
+   "fecha": "2026-08-27 05:00",
+   "motivo": "Gabriel Suazo a Mister",
+   "tipo": "Compra",
+   "importe": -2327010,
+   "saldo": 13694031
+  },
+  {
+   "cuando": 1787776698,
+   "fecha": "2026-08-26 22:38",
+   "motivo": "Etta Eyong a Mister",
+   "tipo": "Venta",
+   "importe": 4275530,
+   "saldo": 16021041
+  },
+  {
+   "cuando": 1787733676,
+   "fecha": "2026-08-26 10:41",
+   "motivo": "Modificación de cláusula (200%) de Juan Foyth",
+   "tipo": "Penalización",
+   "importe": -442800,
+   "saldo": 11745511
+  },
+  {
+   "cuando": 1787727969,
+   "fecha": "2026-08-26 09:06",
+   "motivo": "Modificación de cláusula (100%) de Rafita Garrido",
+   "tipo": "Penalización",
+   "importe": -255000,
+   "saldo": 12188311
+  },
+  {
+   "cuando": 1787727892,
+   "fecha": "2026-08-26 09:04",
+   "motivo": "Pathé Ciss a Mister",
+   "tipo": "Venta",
+   "importe": 4811040,
+   "saldo": 12443311
+  },
+  {
+   "cuando": 1787727846,
+   "fecha": "2026-08-26 09:04",
+   "motivo": "Pierre-Emerick Aubameyang a Saiyans FC (Fran)",
+   "tipo": "Compra por cláusula",
+   "importe": -6171000,
+   "saldo": 7632271
+  },
+  {
+   "cuando": 1787713200,
+   "fecha": "2026-08-26 05:00",
+   "motivo": "Jorge Herrando a Mister",
+   "tipo": "Compra",
+   "importe": -185010,
+   "saldo": 13803271
+  },
+  {
+   "cuando": 1787694054,
+   "fecha": "2026-08-25 23:40",
+   "motivo": "Carlos Álvarez a Mister",
+   "tipo": "Venta",
+   "importe": 4171800,
+   "saldo": 13988281
+  },
+  {
+   "cuando": 1787651931,
+   "fecha": "2026-08-25 11:58",
+   "motivo": "Jornada 2",
+   "tipo": "Bonificación",
+   "importe": 725000,
+   "saldo": 9816481
+  },
+  {
+   "cuando": 1787640712,
+   "fecha": "2026-08-25 08:51",
+   "motivo": "Justin De Haas a Mister",
+   "tipo": "Venta",
+   "importe": 4831000,
+   "saldo": 9091481
+  },
+  {
+   "cuando": 1787626800,
+   "fecha": "2026-08-25 05:00",
+   "motivo": "Rafita Garrido a Mister",
+   "tipo": "Compra",
+   "importe": -1180860,
+   "saldo": 4260481
+  },
+  {
+   "cuando": 1787573164,
+   "fecha": "2026-08-24 14:06",
+   "motivo": "Modificación de cláusula (100%) de Jorge Salinas",
+   "tipo": "Penalización",
+   "importe": -783400,
+   "saldo": 5441341
+  },
+  {
+   "cuando": 1787403671,
+   "fecha": "2026-08-22 15:01",
+   "motivo": "Álvaro Valles a Mister",
+   "tipo": "Venta",
+   "importe": 6910050,
+   "saldo": 6224741
+  },
+  {
+   "cuando": 1787367600,
+   "fecha": "2026-08-22 05:00",
+   "motivo": "Ryunosuke Sato a Mister",
+   "tipo": "Compra",
+   "importe": -2666250,
+   "saldo": -685309
+  },
+  {
+   "cuando": 1787343541,
+   "fecha": "2026-08-21 22:19",
+   "motivo": "Iago Aspas a Mister",
+   "tipo": "Venta",
+   "importe": 3915450,
+   "saldo": 1980941
+  },
+  {
+   "cuando": 1787281200,
+   "fecha": "2026-08-21 05:00",
+   "motivo": "Ramón Terrats a Mister",
+   "tipo": "Compra",
+   "importe": -2201650,
+   "saldo": -1934509
+  },
+  {
+   "cuando": 1787214239,
+   "fecha": "2026-08-20 10:23",
+   "motivo": "Modificación de cláusula (150%) de Juan Foyth",
+   "tipo": "Penalización",
+   "importe": -340000,
+   "saldo": 267141
+  },
+  {
+   "cuando": 1787214186,
+   "fecha": "2026-08-20 10:23",
+   "motivo": "Modificación de cláusula (100%) de Juan Foyth",
+   "tipo": "Penalización",
+   "importe": -340000,
+   "saldo": 607141
+  },
+  {
+   "cuando": 1787214164,
+   "fecha": "2026-08-20 10:22",
+   "motivo": "Modificación de cláusula (100%) de Fran García",
+   "tipo": "Penalización",
+   "importe": -575200,
+   "saldo": 947141
+  },
+  {
+   "cuando": 1787213435,
+   "fecha": "2026-08-20 10:10",
+   "motivo": "Luismi Cruz a Mister",
+   "tipo": "Venta",
+   "importe": 1816000,
+   "saldo": 1522341
+  },
+  {
+   "cuando": 1787213425,
+   "fecha": "2026-08-20 10:10",
+   "motivo": "Alejandro Grimaldo a Mister",
+   "tipo": "Venta",
+   "importe": 8935470,
+   "saldo": -293659
+  },
+  {
+   "cuando": 1787194800,
+   "fecha": "2026-08-20 05:00",
+   "motivo": "Rodri Hernández a Mister",
+   "tipo": "Compra",
+   "importe": -13057233,
+   "saldo": -9229129
+  },
+  {
+   "cuando": 1787174439,
+   "fecha": "2026-08-19 23:20",
+   "motivo": "Modificación de cláusula (100%) de Alfonso Herrero",
+   "tipo": "Penalización",
+   "importe": -677200,
+   "saldo": 3828104
+  },
+  {
+   "cuando": 1787170335,
+   "fecha": "2026-08-19 22:12",
+   "motivo": "Álvaro Mantilla a Mister",
+   "tipo": "Venta",
+   "importe": 1604890,
+   "saldo": 4505304
+  },
+  {
+   "cuando": 1787069986,
+   "fecha": "2026-08-18 18:19",
+   "motivo": "Aimar Oroz a Mister",
+   "tipo": "Venta",
+   "importe": 5403960,
+   "saldo": 2900414
+  },
+  {
+   "cuando": 1786935600,
+   "fecha": "2026-08-17 05:00",
+   "motivo": "Etta Eyong a Mister",
+   "tipo": "Compra",
+   "importe": -3289630,
+   "saldo": -2503546
+  },
+  {
+   "cuando": 1786762800,
+   "fecha": "2026-08-15 05:00",
+   "motivo": "Jorge Salinas a Mister",
+   "tipo": "Compra",
+   "importe": -3163520,
+   "saldo": 786084
+  },
+  {
+   "cuando": 1786719792,
+   "fecha": "2026-08-14 17:03",
+   "motivo": "Karim Adeyemi a Mister",
+   "tipo": "Venta",
+   "importe": 10210000,
+   "saldo": 3949604
+  },
+  {
+   "cuando": 1786719600,
+   "fecha": "2026-08-14 17:00",
+   "motivo": "Jonny Otto a Mister",
+   "tipo": "Compra",
+   "importe": -1801050,
+   "saldo": -6260396
+  },
+  {
+   "cuando": 1786695681,
+   "fecha": "2026-08-14 10:21",
+   "motivo": "Luis Rioja a Mister",
+   "tipo": "Venta",
+   "importe": 5467280,
+   "saldo": -4459346
+  },
+  {
+   "cuando": 1786633734,
+   "fecha": "2026-08-13 17:08",
+   "motivo": "Arouna Sangante a Mister",
+   "tipo": "Venta",
+   "importe": 1768000,
+   "saldo": -9926626
+  },
+  {
+   "cuando": 1786609738,
+   "fecha": "2026-08-13 10:28",
+   "motivo": "Djibril Sow a Mister",
+   "tipo": "Venta",
+   "importe": 1862700,
+   "saldo": -11694626
+  },
+  {
+   "cuando": 1786460400,
+   "fecha": "2026-08-11 17:00",
+   "motivo": "Aimar Oroz a Mister",
+   "tipo": "Compra",
+   "importe": -4764360,
+   "saldo": -13557326
+  },
+  {
+   "cuando": 1786440378,
+   "fecha": "2026-08-11 11:26",
+   "motivo": "Carlos Dominguez a Mister",
+   "tipo": "Venta por rescisión",
+   "importe": 559200,
+   "saldo": -8792966
+  },
+  {
+   "cuando": 1786330800,
+   "fecha": "2026-08-10 05:00",
+   "motivo": "Mario Soriano a Mister",
+   "tipo": "Compra",
+   "importe": -2307010,
+   "saldo": -9352166
+  },
+  {
+   "cuando": 1786265523,
+   "fecha": "2026-08-09 10:52",
+   "motivo": "Pedro Díaz a Mister",
+   "tipo": "Venta",
+   "importe": 1205400,
+   "saldo": -7045156
+  },
+  {
+   "cuando": 1786244400,
+   "fecha": "2026-08-09 05:00",
+   "motivo": "Sergio Canales a Mister",
+   "tipo": "Compra",
+   "importe": -4038280,
+   "saldo": -8250556
+  },
+  {
+   "cuando": 1786203725,
+   "fecha": "2026-08-08 17:42",
+   "motivo": "Tyrhys Dolan a Mister",
+   "tipo": "Venta",
+   "importe": 1476960,
+   "saldo": -4212276
+  },
+  {
+   "cuando": 1786158000,
+   "fecha": "2026-08-08 05:00",
+   "motivo": "Karim Adeyemi a Mister",
+   "tipo": "Compra",
+   "importe": -10070010,
+   "saldo": -5689236
+  },
+  {
+   "cuando": 1786158000,
+   "fecha": "2026-08-08 05:00",
+   "motivo": "Fran García a Mister",
+   "tipo": "Compra",
+   "importe": -2689960,
+   "saldo": 4380774
+  },
+  {
+   "cuando": 1786158000,
+   "fecha": "2026-08-08 05:00",
+   "motivo": "Carlos Álvarez a Mister",
+   "tipo": "Compra",
+   "importe": -3011780,
+   "saldo": 7070734
+  },
+  {
+   "cuando": 1786149534,
+   "fecha": "2026-08-08 02:38",
+   "motivo": "Diego Conde a Mister",
+   "tipo": "Venta",
+   "importe": 500650,
+   "saldo": 10082514
+  }
+ ]
+}

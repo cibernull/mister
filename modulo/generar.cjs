@@ -820,6 +820,10 @@ const huecos = {
   '<!--__NUMEROS__-->': numeros,
   '<!--__GUIA__-->': guia,
   '<!--__SELLO__-->': `Generado el ${new Date().toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'short' })}.`,
+  // La fecha del dato, arriba y a la vista. Una pestaña vieja que el
+  // navegador restaura enseña cifras plausibles y de hace días sin decirlo:
+  // así se ve de un vistazo si lo que estás mirando es de ahora.
+  '<!--__FECHA__-->': new Date().toLocaleString('es-ES', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }),
 }
 let html = plantilla
 for (const [hueco, valor] of Object.entries(huecos)) {

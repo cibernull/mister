@@ -13,6 +13,7 @@ import { parsearFicha } from '../recoleccion/parseadorFicha.js'
 import { parsearJugadores, type JugadorMister } from '../recoleccion/parseadorUniverso.js'
 import { parsearMercado, MercadoVacioError, type EnVenta } from '../recoleccion/parseadorMercado.js'
 import { parsearClasificacion, parsearClubes, type PuestoClasificacion } from '../recoleccion/parseadorClasificacion.js'
+import { parsearSaldo, type LibroDeCaja } from '../recoleccion/parseadorSaldo.js'
 import type { PaginaCruda, Volcado } from './feed.js'
 
 /** Límite de páginas por pasada: una red de seguridad, no un objetivo. */
@@ -256,4 +257,9 @@ export async function recolectarClasificacion(
 ): Promise<{ clasificacion: PuestoClasificacion[]; clubes: Map<number, string> }> {
   const html = await cliente.pedirPagina('/standings')
   return { clasificacion: parsearClasificacion(html), clubes: parsearClubes(html) }
+}
+
+/** El libro de caja propio: la única fuente exacta del saldo. */
+export async function recolectarCaja(cliente: Cliente): Promise<LibroDeCaja> {
+  return parsearSaldo(await cliente.pedirSaldo())
 }

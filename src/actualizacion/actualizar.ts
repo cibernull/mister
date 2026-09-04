@@ -22,12 +22,14 @@ import {
   recolectarUniverso,
   recolectarMercado,
   recolectarClasificacion,
+  recolectarCaja,
   fundir,
 } from './recolectar.js'
 import type { JugadorMister } from '../recoleccion/parseadorUniverso.js'
 import { verificar, verificarLiga } from './verificar.js'
 import { podar, subidasDelMes, type Historico } from './historicoValores.js'
 import type { FichaGuardada } from './fichas.js'
+import { reinicioDeLiga } from '../recoleccion/parseadorSaldo.js'
 
 const RAIZ = process.cwd()
 const VOLCADO = join(RAIZ, 'datos', 'volcado-feed.json')
@@ -36,8 +38,10 @@ const CACHE_VALORES = join(DATOS, 'valores-ficha.json')
 const CACHE_SLUGS = join(DATOS, 'slugs.json')
 const HISTORICO = join(DATOS, 'historico-valores.json')
 const FICHAS = join(DATOS, 'fichas.json')
+const CAJA = join(DATOS, 'caja.json')
 
 const paso = (t: string) => process.stderr.write(`${t}\n`)
+const eur = (n: number) => `${Math.round(n).toLocaleString('es-ES')} €`
 function leerJson<T>(ruta: string, sino?: T): T {
   if (sino !== undefined && !existsSync(ruta)) return sino
   return JSON.parse(readFileSync(ruta, 'utf8')) as T
@@ -218,7 +222,22 @@ async function main(): Promise<Resultado> {
   // Dos contrastes, no uno. `_FG_user` solo habla de mí; la clasificación
   // publica los jugadores, el valor de plantilla y los puntos de los ocho.
   const { clasificacion, clubes } = await recolectarClasificacion(cliente)
-  const veredicto = verificar(mio, mister)
+
+  // El saldo propio ya no se calcula: se lee del libro de caja de Mister, que
+  // publica cada euro con su motivo. Reconstruirlo sumando el feed no podía
+  // salir bien —el feed no publica las penalizaciones por subir cláusulas, y en
+  // un mes van 5.263.619 €— y obligaba a llevar una constante fabricada a mano
+  // que volvía a descuadrar en cuanto alguien tocaba una cláusula.
+  const libro = await recolectarCaja(cliente)
+  const reinicio = reinicioDeLiga(libro)
+  const desdeElReinicio = reinicio === null ? libro.apuntes : libro.apuntes.filter((a) => a.cuando > reinicio.cuando)
+  const invisible = desdeElReinicio
+    .filter((a) => a.tipo === 'Penalización')
+    .reduce((s, a) => s + a.importe, 0)
+  const reconstruido = mio.saldo
+  mio.saldo = libro.saldo
+
+  const veredicto = verificar(mio, mister, libro.saldo)
   const dLiga = verificarLiga(cuentas.equipos, clasificacion)
   if (!veredicto.cuadra || dLiga.motivos.length > 0) {
     return {
@@ -233,6 +252,21 @@ async function main(): Promise<Resultado> {
     }
   }
   cuentas.avisos.push(...dLiga.avisos)
+
+  // Lo que el feed no ve, dicho con su número. A los rivales les pasa lo mismo
+  // y de ellos no hay libro de caja —Mister oculta sus saldos—, así que su
+  // dinero es un techo: el de verdad es ese o menos.
+  if (invisible !== 0) {
+    cuentas.avisos.push(
+      `Llevas ${eur(-invisible)} en penalizaciones por subir cláusulas, que el feed no publica. ` +
+        `Tu saldo sale del libro de caja de Mister, así que es exacto; el de los rivales es un techo.`,
+    )
+  }
+  if (Math.abs(reconstruido - libro.saldo) > 1000) {
+    cuentas.avisos.push(
+      `Sumando el feed me salían ${eur(reconstruido)} y el libro de caja dice ${eur(libro.saldo)}: mando el libro.`,
+    )
+  }
 
   // Puntos y puesto salen de la clasificación oficial, no de sumar los cierres
   // de jornada del feed. Mister los revisa cuando llegan las estadísticas
@@ -256,6 +290,8 @@ async function main(): Promise<Resultado> {
   // Solo a partir de aquí, con el veredicto en la mano, se toca nada en disco.
   escribirJson(VOLCADO, fundido)
   escribirJson(join(DATOS, 'clubes.json'), Object.fromEntries(clubes))
+  // El libro entero no: la página solo enseña lo reciente, y son 1255 apuntes.
+  escribirJson(join(DATOS, 'caja.json'), { saldo: libro.saldo, apuntes: desdeElReinicio.slice(0, 60) })
   escribirJson(join(DATOS, 'equipos.json'), cuentas.equipos)
   escribirJson(join(DATOS, 'plantillas.json'), cuentas.plantillas)
   escribirJson(join(DATOS, 'datos-liga.json'), construirDatosLiga(hechos, cuentas.valores))

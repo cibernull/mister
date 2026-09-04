@@ -90,7 +90,29 @@ jugadores cuando había treinta y tres.
 
 ### 3. Rehace las cuentas
 
-El dinero sigue saliendo del feed, que es lo que cuadra al euro. Lo único que
+**El saldo propio no se calcula: se lee.** `POST /ajax/sw/balance` es el libro
+de caja de Mister —1255 apuntes, cada euro con su motivo y el balance que
+dejó—, y ahí están categorías enteras que el feed no publica nunca:
+
+| Tipo | Qué es |
+|---|---|
+| `Penalización` | Lo que cuesta subirle la cláusula a un jugador. **5.263.619 € en un mes** |
+| `Bonificación` | Los premios de cada jornada |
+| `Ajuste de balance por reinicio de liga` | El punto de partida real de la temporada |
+| `Compra/Venta por cláusula`, `por cesión`, `por rescisión`, `por trueque` | |
+
+Reconstruir el saldo sumando el feed obligaba a llevar una constante fabricada
+a mano por equipo para que cuadrase, y volvía a descuadrar en cuanto alguien
+tocaba una cláusula: una noche de septiembre la app se quedó sin poder
+actualizarse por 416.619 € que eran dos subidas de cláusula de la misma tarde.
+
+Los saldos de los rivales sí hay que seguir reconstruyéndolos —Mister los oculta
+(`show_balances: 0`)—, y lo que les falta son justamente esas penalizaciones,
+que solo restan. Así que **el dinero de un rival es un techo**: tiene eso o
+menos. Para la pregunta que hace esta app —«¿puede pagarme la cláusula?»— errar
+por arriba es el lado seguro.
+
+El resto del dinero sigue saliendo del feed. Lo único que
 se da por dado son las constantes del reinicio de liga, en
 `modulo/datos/liga.json`: qué jugadores recibió cada equipo y cuánto valía ese
 reparto. Por definición no vuelven a cambiar.

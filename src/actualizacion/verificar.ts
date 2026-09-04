@@ -16,10 +16,10 @@ import type { PuestoClasificacion } from '../recoleccion/parseadorClasificacion.
 import type { Equipo } from './reconstruir.js'
 
 /**
- * Mister publica los valores de los jugadores redondeados a millares, y el
- * valor de plantilla del reparto inicial se reconstruyó sumando esos valores
- * redondeados. El desfase acumulado medido es de 800 €; este margen lo cubre
- * con holgura sin tapar un error de verdad, que sería de otro orden.
+ * Mister publica los valores de los jugadores redondeados a millares, así que
+ * la suma de una plantilla puede quedar unos cientos de euros por debajo del
+ * `maxDebt` que él mismo calcula. Este margen lo cubre con holgura sin tapar un
+ * error de verdad, que sería de otro orden.
  */
 export const MARGEN_REDONDEO = 5000
 
@@ -32,17 +32,22 @@ export type Veredicto = {
   motivos: string[]
 }
 
-export function verificar(mio: Equipo, mister: DatosUsuario): Veredicto {
+export function verificar(mio: Equipo, mister: DatosUsuario, saldoDelLibro: number): Veredicto {
   const topeCalculado = mio.saldo + 0.25 * mio.pl
   const motivos: string[] = []
 
-  const dSaldo = mio.saldo - mister.saldo
-  if (Math.abs(dSaldo) > MARGEN_REDONDEO) {
+  // El saldo ya no se calcula: se lee del libro de caja. Compararlo con el que
+  // trae la página es una comprobación de que se ha leído bien, y ahí no hay
+  // margen que valga: son dos cifras de Mister sobre lo mismo.
+  if (saldoDelLibro !== mister.saldo) {
     motivos.push(
-      `el saldo calculado (${euros(mio.saldo)}) se aparta ${euros(Math.abs(dSaldo))} del que publica Mister (${euros(mister.saldo)})`,
+      `el libro de caja dice ${euros(saldoDelLibro)} y la página dice ${euros(mister.saldo)}; algo he leído mal`,
     )
   }
 
+  // Lo que sí se calcula aquí es el valor de la plantilla, y el tope de puja lo
+  // delata: Mister publica `maxDebt`, que es el saldo más el 25 % de la
+  // plantilla. Si sobra o falta un jugador, o su valor está viejo, se ve aquí.
   const dTope = topeCalculado - mister.topePuja
   if (Math.abs(dTope) > MARGEN_REDONDEO) {
     motivos.push(
@@ -50,10 +55,6 @@ export function verificar(mio: Equipo, mister: DatosUsuario): Veredicto {
     )
   }
 
-  // Si falta el valor de algún jugador de la plantilla propia, el tope sale
-  // corto y la comparación de arriba ya lo delata. Se dice aparte porque la
-  // causa es distinta —un dato que falta, no una cuenta mal hecha— y también
-  // el remedio.
   if (mio.sinValorar.length > 0) {
     motivos.push(
       `faltan por valorar ${mio.sinValorar.length} jugadores de tu plantilla (${mio.sinValorar.join(', ')})`,
@@ -69,8 +70,6 @@ export function verificar(mio: Equipo, mister: DatosUsuario): Veredicto {
     motivos,
   }
 }
-
-const euros = (n: number) => `${Math.round(n).toLocaleString('es-ES')} €`
 
 /**
  * La otra mitad del seguro: contrastar los ocho equipos, no solo el propio.
@@ -131,3 +130,5 @@ export function verificarLiga(
 
   return { motivos, avisos }
 }
+
+const euros = (n: number) => `${Math.round(n).toLocaleString('es-ES')} €`

@@ -17,6 +17,7 @@ function clienteFalso(): Cliente & { pedidas: string[] } {
       return ruta.includes('/players/') ? pagJugador(1000) : pagEquipo
     },
     async pedirJugadores() { throw new Error('no usado') },
+    async pedirSaldo() { throw new Error('no usado') },
   } as Cliente & { pedidas: string[] }
 }
 

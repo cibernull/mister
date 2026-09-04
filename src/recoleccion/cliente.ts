@@ -19,6 +19,8 @@ export type Cliente = {
   pedirPagina(ruta: string): Promise<string>
   /** Una página del buscador de jugadores: cincuenta desde `offset`. */
   pedirJugadores(offset: number): Promise<string>
+  /** El libro de caja propio: saldo de hoy y todos los movimientos. */
+  pedirSaldo(): Promise<string>
 }
 
 const dormir = (ms: number) => new Promise((r) => setTimeout(r, ms))
@@ -153,6 +155,24 @@ export function crearCliente(opciones: OpcionesCliente): Cliente {
           name: '',
         }).toString(),
       }, '/ajax/sw/players')
+    },
+
+    /**
+     * El libro de caja. Mismo trato que el buscador: POST y
+     * `X-Requested-With`, o contesta la página entera en vez del JSON.
+     */
+    async pedirSaldo(): Promise<string> {
+      return pedir('el libro de caja', {
+        method: 'POST',
+        headers: {
+          Cookie: opciones.credenciales.cookie,
+          'X-Auth': opciones.credenciales.auth,
+          'X-Requested-With': 'XMLHttpRequest',
+          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+          Accept: 'application/json',
+        },
+        body: 'post=balance',
+      }, '/ajax/sw/balance')
     },
   }
 }

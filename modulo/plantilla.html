@@ -359,13 +359,15 @@ ol.top .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-num
 .formula b{color:var(--oro)}
 
 /* ── Actualizar ───────────────────────────────────────────────────────── */
-.acc{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin-left:auto}
+.acc{display:flex;align-items:center;gap:11px;flex-wrap:wrap}
 .acc button{font:inherit;font-size:14px;font-weight:700;color:var(--suelo);background:var(--tinta);border:0;border-radius:9px;padding:9px 16px;cursor:pointer;display:flex;align-items:center;gap:7px}
 .acc button svg{width:14px;height:14px}
 .acc button:hover{opacity:.88}
 .acc button:disabled{opacity:.5;cursor:progress}
 .giro{display:inline-block;width:12px;height:12px;border:2px solid rgba(128,128,128,.35);border-top-color:currentColor;border-radius:50%;animation:gira .7s linear infinite}
 @keyframes gira{to{transform:rotate(360deg)}}
+.sello{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--tenue);border:1px solid var(--raya);border-radius:99px;padding:5px 11px;white-space:nowrap}
+.sello b{color:var(--gris);font-weight:600}
 .acc{flex-wrap:wrap;justify-content:flex-end}
 .acc .est{font-size:12px;color:var(--tenue);font-variant-numeric:tabular-nums;text-align:right;line-height:1.45}
 .acc .est b{color:var(--gris);font-weight:600}
@@ -424,7 +426,8 @@ a{color:var(--oro)}
         <p>Quién tiene dinero, quién puede fichar a quién, y a qué precio.</p>
       </div>
     </div>
-    <div class="acc">
+    <div class="sello" title="Cuándo se leyeron estos datos de Mister">Datos del <b><!--__FECHA__--></b></div>
+      <div class="acc">
       <button id="btn-act" type="button" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>Actualizar</button>
       <span class="est" id="est-act"></span>
     </div>
