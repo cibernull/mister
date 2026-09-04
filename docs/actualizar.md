@@ -199,9 +199,20 @@ npm run generar && npm run publicar
 ```
 
 Deja en `datos/publicada.html` la misma página, lista para subirla a la web: sin
-el `<html>` de fuera —quien la publica la envuelve por su cuenta— y con el botón
-de actualizar apagado, porque ahí no hay servidor local al que pedirle nada. En
-su sitio se lee de cuándo son los datos.
+el `<html>` de fuera —quien la publica la envuelve por su cuenta— y sin el botón
+de Actualizar, porque ahí no hay servidor local al que pedirle nada.
+
+En su sitio va un botón de **Recargar** y la hora de los datos. No es lo mismo y
+conviene no confundirlo: **quien habla con Mister es el Mac**. La página
+publicada es una copia, y ninguna de las cosas que un navegador puede hacer
+desde fuera —ni las capacidades que da el visor— llega a un servidor que
+escucha en `127.0.0.1` de otra máquina. Recargar trae la última versión que el
+Mac haya subido, que es lo que hace falta casi siempre.
+
+Para un botón que de verdad actualice desde el móvil harían falta dos cosas que
+hoy no están: que el Mac fuera accesible desde internet (un túnel tipo Tailscale
+o Cloudflare) y que ese servidor tuviera autenticación, porque expondría
+`/actualizar` y `/credenciales`.
 
 Se publica **siempre sobre la misma dirección**, así que el enlace no cambia
 nunca: quien lo tenga guardado ve lo último cada vez que entra.
@@ -211,7 +222,7 @@ De republicar se encargan dos tareas programadas:
 | Tarea | Cuándo | Qué hace |
 |---|---|---|
 | `liga-de-mister-fichas` | 8:40, a diario | La pasada larga: las 523 fichas |
-| `liga-de-mister-actualizar` | cada 2 h, de 9:15 a 23:15 | Actualiza y republica |
+| `liga-de-mister-actualizar` | cada 20 min, de 9:00 a 23:59 | Actualiza y republica |
 
 Necesitan el Mac encendido y con la app abierta; si estaba cerrado, la tarea se
 ejecuta al abrirla.

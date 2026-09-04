@@ -366,7 +366,9 @@ ol.top .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-num
 .acc button:disabled{opacity:.5;cursor:progress}
 .giro{display:inline-block;width:12px;height:12px;border:2px solid rgba(128,128,128,.35);border-top-color:currentColor;border-radius:50%;animation:gira .7s linear infinite}
 @keyframes gira{to{transform:rotate(360deg)}}
-.acc .est{font-size:12px;color:var(--tenue);font-variant-numeric:tabular-nums}
+.acc{flex-wrap:wrap;justify-content:flex-end}
+.acc .est{font-size:12px;color:var(--tenue);font-variant-numeric:tabular-nums;text-align:right;line-height:1.45}
+.acc .est b{color:var(--gris);font-weight:600}
 .acc .est code{font-family:"IBM Plex Mono",monospace;font-size:11.5px;background:var(--hueco);border:1px solid var(--raya);padding:2px 6px;border-radius:5px}
 .parte{background:var(--tabla);border:1px solid var(--raya);border-left:3px solid var(--baja);border-radius:9px;padding:13px 15px;margin:0 0 16px;font-size:13.5px;line-height:1.6}
 .parte.bien{border-left-color:var(--sube)}
@@ -612,12 +614,23 @@ a{color:var(--oro)}
       (r.irA ? '<a class="arreglo" href="' + r.irA + '">Conectar con Mister &rarr;</a>' : '') + '</div>'
   }
 
-  // Publicada en la web: no hay servidor local al que pedirle nada, así que ni
-  // botón ni latido. Se dice de cuándo son los datos, que es lo único que
-  // importa saber cuando la miras desde el móvil.
+  // Publicada en la web. Aquí no hay servidor local al que pedirle nada: el
+  // botón de Actualizar no puede funcionar, porque quien habla con Mister es el
+  // Mac. Lo que sí sirve es volver a pedir la página, que es como llega la
+  // versión que el Mac haya subido mientras tanto — y eso es lo que hace falta
+  // el 99 % de las veces, porque el Mac la sube solo cada veinte minutos.
+  var svgRecargar = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>'
+
   if (window.PUBLICADO) {
-    caja.innerHTML = '<div class="parte"><b>Copia publicada — ' + (window.PUBLICADO_CUANDO || '') + '</b>' +
-      'Se actualiza desde el Mac, con la app abierta. Aquí solo se mira.</div>'
+    btn.hidden = false
+    btn.innerHTML = svgRecargar + 'Recargar'
+    btn.title = 'Traer la última versión que haya subido el Mac'
+    btn.addEventListener('click', function () {
+      btn.disabled = true
+      btn.innerHTML = '<span class="giro"></span>Recargando'
+      location.reload()
+    })
+    est.innerHTML = 'Datos del <b>' + (window.PUBLICADO_CUANDO || '?') + '</b><br>El Mac los sube solo cada 20 min'
     return
   }
 
