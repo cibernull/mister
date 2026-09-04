@@ -37,9 +37,10 @@ export type Resultado = {
 
 export const PASOS = [
   'En Chrome, con Mister abierto y tu sesión iniciada, abre las herramientas con ⌥⌘I.',
-  'Ve a la pestaña Red (Network) y escribe ajax en el cuadro Filtrar.',
-  'Si no sale nada, baja por la lista de Actividad de Mister hasta que cargue más: eso dispara la petición.',
-  'Clic derecho sobre cualquiera de las que salgan («balance», «feed»…) → Copy → Copy as cURL.',
+  'Ve a la pestaña Red (Network) y escribe ajax en el cuadro Filtrar. Deja marcado «Todo».',
+  'Recarga con ⌘R y espera unos segundos: la lista solo graba desde que abriste las herramientas.',
+  'Si sigue vacía, pincha en Mercado o baja por la Actividad: eso dispara una llamada.',
+  'Clic derecho sobre cualquiera («balance», «feed», «market»…) → Copy → Copy as cURL.',
   'Pega aquí lo copiado.',
 ]
 
