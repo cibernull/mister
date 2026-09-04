@@ -43,6 +43,7 @@
 }
 
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 body{
   background:var(--suelo); color:var(--tinta);
@@ -358,6 +359,7 @@ ol.top .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-num
 .parte.bien{border-left-color:var(--sube)}
 .parte b{display:block;margin-bottom:4px;font-size:14.5px}
 .parte ul{margin:6px 0 0;padding-left:19px;color:var(--gris)}
+.parte code{font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:var(--hueco);border:1px solid var(--raya);padding:2px 6px;border-radius:5px}
 .parte .arreglo{display:inline-block;margin-top:10px;font-size:14px;font-weight:700;color:var(--suelo);background:var(--tinta);border-radius:9px;padding:8px 16px;text-decoration:none}
 
 .cierre{font-size:12px;color:var(--tenue);text-align:center;max-width:62ch;margin:26px auto 0;line-height:1.65}
@@ -592,7 +594,12 @@ a{color:var(--oro)}
   }
 
   if (location.protocol !== 'http:' && location.protocol !== 'https:') {
-    est.innerHTML = 'Para actualizar, abre con <code>npm run app</code>'
+    // Fichero suelto: no hay servidor detrás.
+    caja.innerHTML = '<div class="parte"><b>Esto es una copia guardada</b>' +
+      'Los datos son de cuando se generó, y el botón de actualizar no puede funcionar aquí ' +
+      'porque no hay nada detrás que hable con Mister. La app de verdad se abre en el Terminal, ' +
+      'dentro de la carpeta del proyecto, con <code>npm run app</code>.' +
+      '<a class="arreglo" href="http://127.0.0.1:4788/">Abrir la app &rarr;</a></div>'
     return
   }
   btn.hidden = false
