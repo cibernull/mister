@@ -239,6 +239,22 @@ const ESTADOS = {
   out: '<span class="et et-mal" title="ya no juega en LaLiga">✈️ fuera de LaLiga</span>',
 }
 
+/**
+ * La marca de cláusula subida, igual en todas partes.
+ *
+ * Sale en la pestaña Fichar, en Mi equipo y en la plantilla desplegada de cada
+ * rival: es un estado del jugador, no un consejo, y tenerlo con la misma pinta
+ * en los tres sitios es lo que hace que se lea sin pensar.
+ */
+const marcaBlindaje = (j, compacta) => {
+  if (!j.sub) return ''
+  const mult = (1.5 + 0.5 * j.sub).toFixed(1).replace('.', ',')
+  const titulo = `Cláusula subida ${j.sub} ${j.sub === 1 ? 'vez' : 'veces'}: cuesta ${eur(j.sub * j.valor * 0.2)} al valor de hoy`
+  return compacta
+    ? `<b class="cx" title="${titulo}">×${mult}</b>`
+    : `<span class="et et-sub" title="${titulo}">🛡 ×${mult}</span>`
+}
+
 /** La línea de detalle: lo que solo está en la ficha de cada jugador. */
 const detalleDe = (j) => {
   const trozos = []
@@ -292,7 +308,7 @@ const filaJugador = (j) => {
         j.duenio
           ? `<span class="et et-eq${j.mio ? ' et-mio' : ''}">${esc(j.duenioCorto)}</span>`
           : '<span class="et et-libre">libre</span>'
-      }${j.sub ? `<span class="et et-sub" title="le han subido la cláusula ${j.sub} ${j.sub === 1 ? 'vez' : 'veces'}: cuesta ${eur(j.sub * j.valor * 0.2)} al valor de hoy">🔺 ×${(1.5 + 0.5 * j.sub).toFixed(1).replace('.', ',')}</span>` : ''}${j.once === 1 ? '<span class="et et-once" title="Mister lo da por titular en el próximo partido">👕 titular</span>' : ''}${ESTADOS[j.est] ?? ''}</div>
+      }${marcaBlindaje(j)}${j.once === 1 ? '<span class="et et-once" title="Mister lo da por titular en el próximo partido">👕 titular</span>' : ''}${ESTADOS[j.est] ?? ''}</div>
       <div class="jp"><b class="${etiquetaPrecio(j) === 'cláusula' ? 'cl' : ''}">${eur(j.precio)}</b><i>${etiquetaPrecio(j)}</i><span class="ico">${iconos(j)}</span></div>
       <div class="js">
         <span>media <b>${dec(j.media)}</b></span><span class="sep">·</span>
@@ -379,7 +395,7 @@ ${suyos
   .map(
     (j) => `        <div class="mj">${dorsal(j.puesto)}<span class="n">${j.nombre ? nombreEnlazado(j) : `<a class="jl" href="${fichaEn(j.id, j.id)}" target="_blank" rel="noopener"><em class="desc">jugador ${esc(j.id)}</em></a>`}</span>
           <span class="v">${j.valor != null ? eur(j.valor) : '—'}</span>${
-            j.clausula ? `<span class="c">cláusula ${corto(j.clausula)}</span>` : '<span class="c">—</span>'
+            j.clausula ? `<span class="c">cláusula ${corto(j.clausula)}${marcaBlindaje(j, true)}</span>` : '<span class="c">—</span>'
           }<span class="m">${j.media != null ? `media ${dec(j.media)}` : 'sin datos'}</span></div>`,
   )
   .join(NL)}
@@ -462,7 +478,7 @@ const filaMia = (j, modo) => {
     : 'del reparto'
   return `<div class="fj">
       ${dorsal(j.puesto)}
-      <div class="jn">${nombreEnlazado(j)}${j.mk ? '<span class="et et-mk">en venta</span>' : ''}</div>
+      <div class="jn">${nombreEnlazado(j)}${j.mk ? '<span class="et et-mk">en venta</span>' : ''}${marcaBlindaje(j)}</div>
       <div class="jp"><b class="${modo === 'clausula' ? 'cl' : ''}">${eur(grande)}</b><i>${rotulo}</i><span class="ico">${iconos(j)}</span></div>
       <div class="js">
         <span>media <b>${dec(j.media)}</b></span><span class="sep">·</span>
@@ -830,6 +846,7 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
         ${def('💵', '', 'Va a darte dinero', 'Su valor sube esta semana y está entre los que más han crecido en el último mes: comprarlo y revenderlo debería dejar beneficio.')}
         ${def('📤', '', 'Véndelo', 'Ni puntúa ni le sube el valor. Es dinero parado, y en caja te subiría el tope de puja.')}
         ${def('🔒', '', 'Súbele la cláusula', 'Rinde y su cláusula es barata para lo que produce, así que cualquier rival puede llevárselo pagándola.')}
+        ${def('🛡', '', 'Ya tiene la cláusula subida', 'La marca morada <b class="cx">×3,0</b> dice a cuántas veces su valor está la cláusula. La base es ×1,5, y cada escalón de medio punto le costó a su dueño el 20 % del valor del jugador. Cuanto más alta, más difícil quitárselo.')}
       </div>
     </div>
 

@@ -20,6 +20,7 @@
   --sube:#137A47; --sube-fondo:#E4F2E9;
   --baja:#B3243F; --baja-fondo:#FAE7EA;
   --por:#1F6FB2; --def:#3F7A34; --med:#8A5A00; --del:#A83A2B;
+  --blinda:#6B3FA0; --blinda-fondo:#F1EAFA; --blinda-raya:#D6C2EE;
   --sombra:0 1px 2px rgba(21,26,22,.05), 0 12px 28px -18px rgba(21,26,22,.35);
   --radio:12px;
 }
@@ -30,6 +31,7 @@
   --sube:#54CE90; --sube-fondo:#0F2A1C;
   --baja:#F2718D; --baja-fondo:#2E1219;
   --por:#66B2E8; --def:#7FC46E; --med:#E5B65C; --del:#F0836F;
+  --blinda:#C4A2F0; --blinda-fondo:#241733; --blinda-raya:#3E2A57;
   --sombra:0 1px 2px rgba(0,0,0,.5), 0 12px 28px -18px rgba(0,0,0,.9);
 }}
 :root[data-theme=dark]{
@@ -39,6 +41,7 @@
   --sube:#54CE90; --sube-fondo:#0F2A1C;
   --baja:#F2718D; --baja-fondo:#2E1219;
   --por:#66B2E8; --def:#7FC46E; --med:#E5B65C; --del:#F0836F;
+  --blinda:#C4A2F0; --blinda-fondo:#241733; --blinda-raya:#3E2A57;
   --sombra:0 1px 2px rgba(0,0,0,.5), 0 12px 28px -18px rgba(0,0,0,.9);
 }
 
@@ -227,7 +230,10 @@ body{
 .et-once{color:var(--sube);background:var(--sube-fondo);border:1px solid currentColor}
 .jl{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
 .jl:hover,.jl:focus-visible{color:var(--oro);border-bottom-color:var(--oro-raya)}
-.et-sub{color:var(--baja);background:var(--baja-fondo);border:1px solid currentColor}
+/* Cláusula subida. Color propio: verde y rosa son ganar y perder, y el oro
+   es el dinero. Esto es otra cosa —lo blindado— y se distingue de un vistazo. */
+.et-sub{color:var(--blinda);background:var(--blinda-fondo);border:1px solid var(--blinda-raya);font-variant-numeric:tabular-nums}
+.cx{color:var(--blinda);background:var(--blinda-fondo);border:1px solid var(--blinda-raya);border-radius:5px;padding:0 4px;margin-left:5px;font-size:10px;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
 .nota-cl{font-size:12px;color:var(--gris);background:var(--hueco);border:1px solid var(--raya);border-radius:8px;padding:8px 11px;margin:8px 0 0}
 .nota-cl b{color:var(--tinta)}
 .nota-fuera{font-size:12px;color:var(--gris);background:var(--hueco);border:1px solid var(--raya);border-radius:8px;padding:8px 11px;margin:10px 0 0}
