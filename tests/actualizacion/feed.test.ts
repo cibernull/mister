@@ -25,6 +25,7 @@ const traspaso = (over: Record<string, unknown> = {}) => ({
       points: 10,
       avg: 5,
       streak: '4,6,-',
+      position: 3,
       ...over,
     },
   ],
@@ -50,6 +51,16 @@ describe('extraerHechos', () => {
     })
     expect(h.traspasos).toHaveLength(1)
     expect(h.traspasos[0]!.valor).toBe(1_250_000)
+  })
+
+  it('trae la posición del jugador, que es lo que pinta el dorsal de color', () => {
+    const h = extraerHechos({ paginas: [pagina(0, '2026-09-03T10:00:00Z', [traspaso()])] })
+    expect(h.traspasos[0]!.posicion).toBe(3)
+  })
+
+  it('sin posición se queda en 0 en vez de reventar: el dorsal sale gris', () => {
+    const h = extraerHechos({ paginas: [pagina(0, '2026-09-03T10:00:00Z', [traspaso({ position: undefined })])] })
+    expect(h.traspasos[0]!.posicion).toBe(0)
   })
 
   it('ordena los traspasos por fecha aunque las páginas lleguen al revés', () => {
@@ -94,6 +105,7 @@ describe('extraerHechos', () => {
                     average: 6.5,
                     points: 13,
                     streak: [4, 9],
+                    position: 4,
                     clause: { value: 3_000_000, multiplier: 1.5 },
                     ownerId: 42,
                   },
@@ -115,6 +127,7 @@ describe('extraerHechos', () => {
         partidos: 2,
         clausula: 3_000_000,
         idDuenio: 42,
+        posicion: 4,
       },
     ])
   })
