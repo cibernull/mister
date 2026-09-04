@@ -168,3 +168,18 @@ El navegador recarga y aparece un aviso con lo que ha cambiado.
 | `npm run credenciales` | Lo mismo que la pantalla, desde el Terminal |
 | `npm run actualizar` | Una pasada desde el Terminal, sin la app |
 | `npm run generar` | Solo rehace el HTML con los datos que ya hay |
+
+## Verla desde el móvil
+
+```bash
+npm run generar && npm run publicar
+```
+
+Deja en `datos/publicada.html` la misma página, lista para subirla a la web: sin
+el `<html>` de fuera —quien la publica la envuelve por su cuenta— y con el botón
+de actualizar apagado, porque ahí no hay servidor local al que pedirle nada. En
+su sitio se lee de cuándo son los datos.
+
+Es una foto fija: cada vez que se actualice en el Mac hay que volver a
+publicarla sobre la misma dirección. A cambio se abre desde cualquier sitio, con
+el Mac apagado, y es la forma de enseñársela a alguien más.

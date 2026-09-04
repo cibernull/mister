@@ -14,6 +14,7 @@
     "analizar": "mkdir -p datos && tsx src/cli/analizar.ts",
     "app": "node modulo/servidor.cjs",
     "generar": "node modulo/generar.cjs",
+    "publicar": "node modulo/publicar.cjs",
     "actualizar": "tsx src/actualizacion/actualizar.ts",
     "credenciales": "tsx src/sesion/importar.ts",
     "instalar-app": "bash aplicacion/construir.sh",

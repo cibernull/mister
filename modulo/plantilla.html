@@ -598,6 +598,15 @@ a{color:var(--oro)}
       (r.irA ? '<a class="arreglo" href="' + r.irA + '">Conectar con Mister &rarr;</a>' : '') + '</div>'
   }
 
+  // Publicada en la web: no hay servidor local al que pedirle nada, así que ni
+  // botón ni latido. Se dice de cuándo son los datos, que es lo único que
+  // importa saber cuando la miras desde el móvil.
+  if (window.PUBLICADO) {
+    caja.innerHTML = '<div class="parte"><b>Copia publicada — ' + (window.PUBLICADO_CUANDO || '') + '</b>' +
+      'Se actualiza desde el Mac, con la app abierta. Aquí solo se mira.</div>'
+    return
+  }
+
   if (location.protocol !== 'http:' && location.protocol !== 'https:') {
     // Fichero suelto: no hay servidor detrás.
     caja.innerHTML = '<div class="parte"><b>Esto es una copia guardada</b>' +
