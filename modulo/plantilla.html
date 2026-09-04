@@ -224,7 +224,12 @@ body{
 .jx{grid-column:2/-1;grid-row:3;display:flex;flex-wrap:wrap;align-items:center;gap:0 7px;font-size:12px;color:var(--tenue);margin-top:3px}
 .jx b{color:var(--gris);font-weight:600}
 .club{display:inline-flex;align-items:center;gap:5px;color:var(--gris);font-weight:600}
-.ec{width:18px;height:18px;flex:none;background-size:contain;background-repeat:no-repeat;background-position:center}
+.ec{width:18px;height:18px;flex:none;display:inline-block;vertical-align:-4px;background-size:contain;background-repeat:no-repeat;background-position:center}
+.mj > .ec{margin-left:-3px}
+.mn > .ec{margin-right:1px}
+ol.top .n .ec{width:15px;height:15px;vertical-align:-3px;margin-right:5px}
+table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
+.record dd .ec{width:19px;height:19px;vertical-align:-4px;margin-right:7px}
 /*__ESCUDOS__*/
 .jn .club{font-family:Manrope,sans-serif;font-size:12px;font-weight:600}
 .jx .prox{color:var(--gris)}
@@ -285,8 +290,9 @@ body{
 .mini{display:grid;grid-template-columns:1fr;gap:1px;background:var(--raya);border:1px solid var(--raya);border-radius:9px;overflow:hidden}
 @media(min-width:620px){.mini{grid-template-columns:1fr 1fr}}
 .mj{display:flex;align-items:center;gap:9px;background:var(--tabla);padding:7px 10px;font-size:13px}
+.mj .v{white-space:nowrap}
 .mj .dorsal{width:28px;height:22px;font-size:10px;border-radius:5px}
-.mj .n{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+.mj .n{flex:1 1 auto;min-width:0;font-weight:600;overflow-wrap:anywhere}
 .mj .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:12px;white-space:nowrap}
 .mj .n .desc{font-style:italic;color:var(--tenue);font-weight:500}
 .mj .c,.mj .m{font-size:10.5px;color:var(--tenue);white-space:nowrap;font-family:"IBM Plex Mono",monospace}
@@ -295,9 +301,10 @@ body{
    justamente lo que hay que ver de un vistazo. Se pasa a un segundo renglón,
    alineado bajo el nombre. */
 @media(max-width:520px){
-  .mj{flex-wrap:wrap;row-gap:3px;padding-bottom:9px}
-  .mj .v{margin-left:auto}
-  .mj .c{margin-left:37px}
+  .mj{flex-wrap:wrap;row-gap:3px;padding-bottom:9px;align-items:flex-start}
+  .mj .dorsal,.mj > .ec{margin-top:1px}
+  .mj .v{margin-left:auto;align-self:flex-start}
+  .mj .c{margin-left:55px}
 }
 
 table.jt{width:100%;border-collapse:collapse;font-size:13px}
@@ -340,7 +347,7 @@ table.jt.jornadas tr:last-child td{border-bottom:0}
 .rankings{display:flex;flex-direction:column;gap:6px}
 .ranking{display:grid;grid-template-columns:26px minmax(90px,1fr) 3fr auto;gap:10px;align-items:center;font-size:13.5px}
 .ranking .pos{font-family:"Barlow Condensed",sans-serif;font-weight:700;color:var(--tenue);text-align:center}
-.ranking .nom{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ranking .nom{font-weight:600;min-width:0;overflow-wrap:anywhere}
 .ranking.mio .nom,.ranking.mio .pos{color:var(--oro)}
 .ranking .bar{position:relative;height:12px;border-radius:4px;background:var(--hueco);overflow:hidden;display:flex}
 .ranking .bar i{display:block;height:100%;background:var(--oro);border-radius:3px}
@@ -367,8 +374,8 @@ ol.top{list-style:none;margin:9px 0 0;padding:0;display:flex;flex-direction:colu
 ol.top li{display:grid;grid-template-columns:auto 1fr auto auto;gap:9px;align-items:center;padding:5px 0;border-bottom:1px solid var(--raya);font-size:13px}
 ol.top li:last-child{border-bottom:0}
 ol.top .d .dorsal{width:28px;height:22px;font-size:10px;border-radius:5px}
-ol.top .n{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-ol.top .e{font-size:10.5px;color:var(--tenue);white-space:nowrap;max-width:88px;overflow:hidden;text-overflow:ellipsis}
+ol.top .n{font-weight:600;min-width:0;overflow-wrap:anywhere}
+ol.top .e{font-size:10.5px;color:var(--tenue);max-width:88px;overflow-wrap:anywhere;text-align:right}
 ol.top .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
 
 /* ── Guía ─────────────────────────────────────────────────────────────── */
