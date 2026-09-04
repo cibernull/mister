@@ -106,3 +106,19 @@ describe('valorEn', () => {
     expect(valorEn(serie, '2026-08-04')).toBe(null)
   })
 })
+
+describe('los meses como los escribe Mister', () => {
+  // Septiembre va con cuatro letras en español, «sept», y era el único que
+  // faltaba. La ficha entera reventaba al llegar a la primera fecha de
+  // septiembre, que es justo cuando hacía falta.
+  it('entiende «sept», que es como abrevia septiembre', () => {
+    const html = '{"value":"167000","date":"1 sept 2026"}'
+    expect(parsearSerieValores(html)).toEqual([{ fecha: '2026-09-01', valor: 167000 }])
+  })
+
+  it('sigue entendiendo «sep» por si alguna página usa tres letras', () => {
+    expect(parsearSerieValores('{"value":"1000","date":"1 sep 2026"}')).toEqual([
+      { fecha: '2026-09-01', valor: 1000 },
+    ])
+  })
+})

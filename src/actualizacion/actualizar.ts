@@ -15,13 +15,14 @@ import { obtenerCredenciales } from '../sesion/credenciales.js'
 import { parsearFgUser } from '../recoleccion/parseadorFgUser.js'
 import { extraerHechos, type Volcado } from './feed.js'
 import { reconstruir, type Constantes } from './reconstruir.js'
-import { recolectarFeed, recolectarValores, fundir } from './recolectar.js'
+import { recolectarFeed, recolectarValores, recolectarPlantillas, fundir } from './recolectar.js'
 import { verificar } from './verificar.js'
 
 const RAIZ = process.cwd()
 const VOLCADO = join(RAIZ, 'datos', 'volcado-feed.json')
 const DATOS = join(RAIZ, 'modulo', 'datos')
 const CACHE_VALORES = join(DATOS, 'valores-ficha.json')
+const CACHE_SLUGS = join(DATOS, 'slugs.json')
 
 const paso = (t: string) => process.stderr.write(`${t}\n`)
 const leerJson = <T>(ruta: string): T => JSON.parse(readFileSync(ruta, 'utf8')) as T
@@ -70,24 +71,52 @@ async function main(): Promise<Resultado> {
 
   // ── 3. Rehacer las cuentas ─────────────────────────────────────────────────
   const constantes = leerJson<Constantes>(join(DATOS, 'liga.json'))
+  type EnCache = { valor: number; dia: string; nombre?: string; posicion?: number }
   const cache = existsSync(CACHE_VALORES)
-    ? new Map(Object.entries(leerJson<Record<string, number>>(CACHE_VALORES)))
-    : new Map<string, number>()
+    ? new Map(Object.entries(leerJson<Record<string, EnCache>>(CACHE_VALORES)))
+    : new Map<string, EnCache>()
+  const soloValores = () => new Map([...cache].map(([id, v]) => [id, v.valor]))
 
-  let cuentas = reconstruir(hechos, constantes, cache)
+  paso('Leyendo las plantillas de los ocho equipos…')
+  const leidas = await recolectarPlantillas(cliente, constantes.equipos)
+  if (leidas.fallidos.length > 0) {
+    return {
+      ok: false,
+      cuando,
+      mensaje: 'No he podido leer la plantilla de todos los equipos, así que no he tocado nada.',
+      detalle: [
+        ...leidas.fallidos.map((f) => `${f.equipo}: ${f.motivo}`),
+        'Sin todas las plantillas las cuentas saldrían cortas sin avisar.',
+      ],
+    }
+  }
+  escribirJson(CACHE_SLUGS, Object.fromEntries(leidas.slugs))
 
-  // Los que siguen sin valor no han pasado nunca por el feed: su ficha es el
-  // único sitio donde está. Se piden una vez y quedan en la caché.
-  const faltan = [...new Set(cuentas.equipos.flatMap((e) => e.sinValorar))]
+  let cuentas = reconstruir(hechos, constantes, soloValores(), leidas.plantillas)
+
+  // Qué fichas hay que pedir.
+  //
+  // No solo las de los que no tienen valor: el feed guarda el valor que tenía
+  // el jugador el día de su traspaso, no el de hoy, así que toda plantilla
+  // acaba con cifras viejas y el tope de puja sale corto. Mister recalcula los
+  // valores una vez al día, de madrugada, de modo que basta con refrescar los
+  // que no se hayan pedido HOY: la primera pasada del día cuesta unas 130
+  // peticiones y las siguientes, ninguna.
+  const hoy = new Date().toISOString().slice(0, 10)
+  const enPlantilla = [...new Set(Object.values(cuentas.plantillas).flat())]
+  const faltan = enPlantilla.filter((id) => cache.get(id)?.dia !== hoy)
   let fichasPedidas = 0
   if (faltan.length > 0) {
-    paso(`Pidiendo la ficha de ${faltan.length} jugadores para saber lo que valen…`)
-    const { valores, fallidos } = await recolectarValores(cliente, faltan)
+    // La ficha exige el slug del nombre; vino con la plantilla.
+    const slugs = leidas.slugs
+
+    paso(`Pidiendo la ficha de ${faltan.length} jugadores para saber lo que valen hoy…`)
+    const { valores, fallidos } = await recolectarValores(cliente, faltan, slugs)
     fichasPedidas = valores.size
-    for (const [id, v] of valores) cache.set(id, v)
+    for (const [id, v] of valores) cache.set(id, { valor: v.valor, dia: hoy, nombre: v.nombre, posicion: v.posicion })
     escribirJson(CACHE_VALORES, Object.fromEntries(cache))
-    if (fallidos.length > 0) paso(`No pude con ${fallidos.length}: ${fallidos.map((f) => f.id).join(', ')}`)
-    cuentas = reconstruir(hechos, constantes, cache)
+    if (fallidos.length > 0) paso(`No pude con ${fallidos.length}: ${fallidos.map((f) => `${f.id} (${f.motivo})`).join(', ')}`)
+    cuentas = reconstruir(hechos, constantes, soloValores(), leidas.plantillas)
   }
 
   // ── 4. Contrastar con lo que dice Mister ───────────────────────────────────
@@ -114,7 +143,7 @@ async function main(): Promise<Resultado> {
   escribirJson(join(DATOS, 'plantillas.json'), cuentas.plantillas)
   escribirJson(join(DATOS, 'datos-liga.json'), construirDatosLiga(hechos, cuentas.valores))
   escribirJson(join(DATOS, 'clausulas.json'), [...cuentas.clausulas].map(([id, c]) => [Number(id), c / 1000]))
-  escribirJson(join(DATOS, 'jugadores-calc.json'), construirJugadores(hechos, cuentas))
+  escribirJson(join(DATOS, 'jugadores-calc.json'), construirJugadores(hechos, cuentas, cache))
   escribirJson(
     join(DATOS, 'jornadas.json'),
     hechos.jornadas.map((j) => ({
@@ -187,6 +216,7 @@ function construirDatosLiga(
 function construirJugadores(
   hechos: ReturnType<typeof extraerHechos>,
   cuentas: ReturnType<typeof reconstruir>,
+  fichas: Map<string, { valor: number; nombre?: string; posicion?: number }>,
 ): unknown[] {
   const enMercado = new Set(hechos.mercado.map((m) => m.idJugador))
   const ficha = new Map<string, { id: string; nombre: string; valor: number; puntos: number; media: number; partidos: number; semana: number | null; mes: number | null; mk: number; pos: number }>()
@@ -221,6 +251,27 @@ function construirJugadores(
       mes: previo?.mes ?? null,
       mk: 1,
       pos: m.posicion,
+    })
+  }
+
+  // Los que están en una plantilla pero no en el feed: Mister no publicó su
+  // alta, así que su ficha es lo único que hay. Sin esto el generador se
+  // encuentra con un jugador de plantilla del que no sabe ni el nombre.
+  for (const id of new Set(Object.values(cuentas.plantillas).flat())) {
+    if (ficha.has(id)) continue
+    const f = fichas.get(id)
+    if (f?.nombre === undefined) continue
+    ficha.set(id, {
+      id,
+      nombre: f.nombre,
+      valor: f.valor,
+      puntos: 0,
+      media: 0,
+      partidos: 0,
+      semana: null,
+      mes: null,
+      mk: 0,
+      pos: f.posicion ?? 0,
     })
   }
 

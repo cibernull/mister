@@ -12,9 +12,12 @@ export class SerieVaciaError extends Error {
   }
 }
 
+// Mister escribe los meses como los abrevia el español: tres letras todos
+// menos septiembre, que va con cuatro. Se aceptan las dos formas porque no
+// todas las páginas de Mister usan la misma.
 const MESES: Record<string, string> = {
   ene: '01', feb: '02', mar: '03', abr: '04', may: '05', jun: '06',
-  jul: '07', ago: '08', sep: '09', oct: '10', nov: '11', dic: '12',
+  jul: '07', ago: '08', sep: '09', sept: '09', oct: '10', nov: '11', dic: '12',
 }
 
 /**

@@ -8,6 +8,8 @@
 import type { Cliente } from '../recoleccion/cliente.js'
 import { contarEventosBrutos } from '../recoleccion/pagina.js'
 import { parsearSerieValores } from '../recoleccion/parseadorValores.js'
+import { parsearPlantilla } from '../recoleccion/parseadorPlantilla.js'
+import { parsearFicha } from '../recoleccion/parseadorFicha.js'
 import type { PaginaCruda, Volcado } from './feed.js'
 
 /** Límite de páginas por pasada: una red de seguridad, no un objetivo. */
@@ -94,6 +96,43 @@ export function fundir(volcado: Volcado, nuevas: PaginaCruda[]): Volcado {
 }
 
 /**
+ * El slug de nombre de cada jugador, leído de las páginas de los equipos.
+ *
+ * La ficha de un jugador **exige** el slug: `/players/20449` redirige al feed
+ * y solo `/players/20449/fer-nino` responde. El id suelto no basta, y el único
+ * sitio donde están emparejados es la página del equipo que lo tiene.
+ *
+ * Son ocho peticiones, y como los slugs no cambian se guardan en caché: en las
+ * siguientes pasadas no hace falta volver a pedirlas.
+ */
+export async function recolectarPlantillas(
+  cliente: Cliente,
+  equipos: { nombre: string; url: string }[],
+): Promise<{
+  plantillas: Map<string, string[]>
+  slugs: Map<string, string>
+  fallidos: { equipo: string; motivo: string }[]
+}> {
+  const plantillas = new Map<string, string[]>()
+  const slugs = new Map<string, string>()
+  const fallidos: { equipo: string; motivo: string }[] = []
+
+  for (const e of equipos) {
+    try {
+      const jugadores = parsearPlantilla(await cliente.pedirPagina(e.url))
+      plantillas.set(e.nombre, jugadores.map((j) => String(j.idJugador)))
+      for (const j of jugadores) slugs.set(String(j.idJugador), j.slug)
+    } catch (err) {
+      // Sin la página de un equipo no se inventa su plantilla: se dice y se
+      // deja fuera, que el resto de las cuentas siguen siendo buenas.
+      fallidos.push({ equipo: e.nombre, motivo: err instanceof Error ? err.message : String(err) })
+    }
+  }
+
+  return { plantillas, slugs, fallidos }
+}
+
+/**
  * Pide la ficha de cada jugador y se queda con su valor de hoy.
  *
  * Hace falta para los jugadores que siguen en la plantilla del reparto y por
@@ -104,21 +143,29 @@ export function fundir(volcado: Volcado, nuevas: PaginaCruda[]): Volcado {
  * Un fallo suelto no aborta la pasada: se devuelve aparte para poder decir de
  * quién no se sabe el valor, en vez de dar una plantilla corta sin avisar.
  */
+export type DatosFicha = { valor: number; nombre: string; posicion: number }
+
 export async function recolectarValores(
   cliente: Cliente,
   ids: string[],
-): Promise<{ valores: Map<string, number>; fallidos: { id: string; motivo: string }[] }> {
-  const valores = new Map<string, number>()
+  slugs: Map<string, string>,
+): Promise<{ valores: Map<string, DatosFicha>; fallidos: { id: string; motivo: string }[] }> {
+  const valores = new Map<string, DatosFicha>()
   const fallidos: { id: string; motivo: string }[] = []
 
   for (const id of ids) {
+    const slug = slugs.get(String(id))
+    if (slug === undefined) {
+      fallidos.push({ id, motivo: 'no sé su slug, así que no puedo pedir su ficha' })
+      continue
+    }
     try {
-      // La ruta acepta cualquier slug —o ninguno—: resuelve por id.
-      const html = await cliente.pedirPagina(`/players/${id}`)
+      const html = await cliente.pedirPagina(`/players/${id}/${slug}`)
       const serie = parsearSerieValores(html)
       const ultimo = serie[serie.length - 1]
       if (ultimo === undefined) throw new Error('la serie de valores vino vacía')
-      valores.set(id, ultimo.valor)
+      const ficha = parsearFicha(html)
+      valores.set(id, { valor: ultimo.valor, nombre: ficha.nombre, posicion: ficha.posicion })
     } catch (e) {
       fallidos.push({ id, motivo: e instanceof Error ? e.message : String(e) })
     }

@@ -20,6 +20,8 @@ export type ConstantesEquipo = {
   reparto: string[]
   /** Lo que valía ese reparto el día del reinicio. */
   valorReparto: number
+  /** Ruta de su página, de donde salen los slugs de sus jugadores. */
+  url: string
 }
 
 export type Constantes = {
@@ -64,6 +66,7 @@ export function reconstruir(
   hechos: Hechos,
   constantes: Constantes,
   valoresExtra: Map<string, number> = new Map(),
+  plantillasReales?: Map<string, string[]>,
 ): Reconstruccion {
   const avisos: string[] = []
   const porUc = new Map<number, ConstantesEquipo>()
@@ -73,20 +76,34 @@ export function reconstruir(
     porNombre.set(e.nombre, e)
   }
 
-  // ── Valor de hoy de cada jugador ───────────────────────────────────────────
-  // El feed reescribe el objeto del jugador con su valor actual cada vez que
-  // se pide, así que la aparición más reciente manda. El mercado del día es la
-  // fuente más fresca de todas.
-  const valores = new Map<string, number>(valoresExtra)
+  // ── Valor de hoy de cada jugador, de la fuente más fresca a la más vieja ───
+  // De menos a más fiable, pisando lo anterior:
+  //   1. el feed, que guarda el valor que tenía el jugador el DÍA DE SU
+  //      TRASPASO, no el de hoy;
+  //   2. el mercado del día, que sí es de hoy pero solo cubre a los listados;
+  //   3. su ficha, pedida hoy, que es la única fuente al día de todos.
+  // Tenerlo al revés dejaba el valor de plantilla corto y el tope de puja no
+  // cuadraba con el de Mister.
+  const valores = new Map<string, number>()
   for (const t of hechos.traspasos) valores.set(t.idJugador, t.valor)
   for (const m of hechos.mercado) valores.set(m.idJugador, m.valor)
+  for (const [id, v] of valoresExtra) valores.set(id, v)
 
   const clausulas = new Map<string, number>()
   for (const m of hechos.mercado) if (m.clausula !== null) clausulas.set(m.idJugador, m.clausula)
 
-  // ── Plantillas: el reparto, más lo que entró, menos lo que salió ───────────
+  // ── Plantillas ─────────────────────────────────────────────────────────────
+  // Manda la página de cada equipo cuando se ha podido leer. El feed NO vale
+  // para esto: hay incorporaciones que no publica como traspaso —Beñat
+  // Gerenabarrena y Oriol Rey entraron en Niutin FC sin dejar rastro—, así que
+  // reconstruir la plantilla sumando traspasos deja jugadores fuera y el valor
+  // de plantilla corto. Para el dinero el feed sí basta: esas altas no costaron
+  // nada y el saldo calculado sigue cuadrando con el de Mister.
   const plantillas = new Map<string, Set<string>>()
-  for (const e of constantes.equipos) plantillas.set(e.nombre, new Set(e.reparto))
+  const derivadas = plantillasReales === undefined
+  for (const e of constantes.equipos) {
+    plantillas.set(e.nombre, new Set(plantillasReales?.get(e.nombre) ?? e.reparto))
+  }
 
   // Un equipo puede haberse cambiado el nombre a mitad de temporada, y los
   // traspasos antiguos llevan el nombre viejo. El idUc no cambia nunca, así
@@ -96,7 +113,7 @@ export function reconstruir(
     return nombre === null ? undefined : porNombre.get(nombre)
   }
 
-  for (const t of hechos.traspasos) {
+  for (const t of derivadas ? hechos.traspasos : []) {
     if (t.idUcDe !== 0) {
       const e = equipoDe(t.idUcDe, t.de)
       if (!e) throw new Error(`traspaso ${t.idTransfer}: no conozco al equipo que vende (idUc ${t.idUcDe})`)
@@ -111,6 +128,8 @@ export function reconstruir(
     }
   }
   // Salir de LaLiga vacía la ficha: el jugador desaparece de toda plantilla.
+  // Con las plantillas leídas de sus páginas esto ya viene aplicado, pero no
+  // estorba y cubre el camino derivado.
   for (const s of hechos.salidas) for (const set of plantillas.values()) set.delete(s.idJugador)
 
   // ── Dinero y puntos ────────────────────────────────────────────────────────

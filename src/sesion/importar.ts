@@ -77,6 +77,19 @@ function limpiar(valor: string): string | null {
   return v === '' ? null : v
 }
 
+/**
+ * La cookie, que además tiene bandera propia en cURL.
+ *
+ * Chrome no la escribe como cabecera: la saca aparte con `-b` (o `--cookie`),
+ * que es la forma que genera hoy su «Copy as cURL». Buscar solo
+ * `-H 'cookie: …'` hacía fallar el pegado real con un mensaje que además
+ * mandaba a copiar otra petición, que no era el problema.
+ */
+export function extraerCookie(pegado: string): string | null {
+  const bandera = /(?:^|\s)(?:-b|--cookie)\s+(['"])([\s\S]*?)\1(?=\s|$)/.exec(pegado)
+  return bandera ? limpiar(bandera[2]!) : extraerCabecera(pegado, 'cookie')
+}
+
 /** Pregunta a Mister si un par de credenciales sirve todavía. */
 async function sirven(cookie: string, auth: string): Promise<Resultado> {
   let res: Response
@@ -139,7 +152,7 @@ export async function importarDesdeCurl(pegado: string): Promise<Resultado> {
     return { ok: false, causa: 'ilegible', mensaje: 'No has pegado nada.', detalle: PASOS }
   }
 
-  const cookie = extraerCabecera(pegado, 'cookie')
+  const cookie = extraerCookie(pegado)
   const auth = extraerCabecera(pegado, 'x-auth')
   if (!cookie || !auth) {
     const faltan = [!cookie && 'la cookie', !auth && 'el token X-Auth'].filter(Boolean).join(' y ')

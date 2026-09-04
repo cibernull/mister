@@ -1,0 +1,734 @@
+{
+ "31": {
+  "valor": 9921000,
+  "dia": "2026-09-04",
+  "nombre": "Jan Oblak",
+  "posicion": 1
+ },
+ "34": {
+  "valor": 1150000,
+  "dia": "2026-09-04",
+  "nombre": "José Giménez",
+  "posicion": 1
+ },
+ "63": {
+  "valor": 3630000,
+  "dia": "2026-09-04",
+  "nombre": "Marc Bartra",
+  "posicion": 1
+ },
+ "118": {
+  "valor": 3822000,
+  "dia": "2026-09-04",
+  "nombre": "Jonny Otto",
+  "posicion": 1
+ },
+ "208": {
+  "valor": 1069000,
+  "dia": "2026-09-04",
+  "nombre": "Moi Gómez",
+  "posicion": 1
+ },
+ "308": {
+  "valor": 2481000,
+  "dia": "2026-09-04",
+  "nombre": "Johan Mojica",
+  "posicion": 1
+ },
+ "364": {
+  "valor": 6065000,
+  "dia": "2026-09-04",
+  "nombre": "Sergio Canales",
+  "posicion": 1
+ },
+ "432": {
+  "valor": 2982000,
+  "dia": "2026-09-04",
+  "nombre": "José Luis Gayà",
+  "posicion": 1
+ },
+ "564": {
+  "valor": 16723000,
+  "dia": "2026-09-04",
+  "nombre": "Mikel Oyarzabal",
+  "posicion": 1
+ },
+ "607": {
+  "valor": 1450000,
+  "dia": "2026-09-04",
+  "nombre": "Borja Mayoral",
+  "posicion": 1
+ },
+ "616": {
+  "valor": 12438000,
+  "dia": "2026-09-04",
+  "nombre": "Rodri Hernández",
+  "posicion": 1
+ },
+ "1737": {
+  "valor": 2258000,
+  "dia": "2026-09-04",
+  "nombre": "Einar Galilea",
+  "posicion": 1
+ },
+ "3060": {
+  "valor": 1926000,
+  "dia": "2026-09-04",
+  "nombre": "Mariano Díaz",
+  "posicion": 1
+ },
+ "4774": {
+  "valor": 342000,
+  "dia": "2026-09-04",
+  "nombre": "Álvaro Fernández",
+  "posicion": 1
+ },
+ "4886": {
+  "valor": 3846000,
+  "dia": "2026-09-04",
+  "nombre": "Asier Villalibre",
+  "posicion": 1
+ },
+ "5920": {
+  "valor": 790000,
+  "dia": "2026-09-04",
+  "nombre": "Carles Aleñá",
+  "posicion": 1
+ },
+ "6032": {
+  "valor": 10221000,
+  "dia": "2026-09-04",
+  "nombre": "Alex Remiro",
+  "posicion": 1
+ },
+ "6044": {
+  "valor": 3589000,
+  "dia": "2026-09-04",
+  "nombre": "Enes Ünal",
+  "posicion": 1
+ },
+ "7784": {
+  "valor": 2324000,
+  "dia": "2026-09-04",
+  "nombre": "Unai Núñez",
+  "posicion": 1
+ },
+ "8953": {
+  "valor": 3681000,
+  "dia": "2026-09-04",
+  "nombre": "Pablo Maffeo",
+  "posicion": 1
+ },
+ "13005": {
+  "valor": 566000,
+  "dia": "2026-09-04",
+  "nombre": "Andriy Lunin",
+  "posicion": 1
+ },
+ "13420": {
+  "valor": 1321000,
+  "dia": "2026-09-04",
+  "nombre": "Mouctar Diakhaby",
+  "posicion": 1
+ },
+ "14379": {
+  "valor": 500000,
+  "dia": "2026-09-04",
+  "nombre": "Aitor Fernández",
+  "posicion": 1
+ },
+ "14911": {
+  "valor": 7707000,
+  "dia": "2026-09-04",
+  "nombre": "Álvaro García",
+  "posicion": 1
+ },
+ "15342": {
+  "valor": 8027000,
+  "dia": "2026-09-04",
+  "nombre": "Ander Barrenetxea",
+  "posicion": 1
+ },
+ "15345": {
+  "valor": 267000,
+  "dia": "2026-09-04",
+  "nombre": "Aihen Muñoz",
+  "posicion": 1
+ },
+ "15566": {
+  "valor": 2519000,
+  "dia": "2026-09-04",
+  "nombre": "Yangel Herrera",
+  "posicion": 1
+ },
+ "15653": {
+  "valor": 10490000,
+  "dia": "2026-09-04",
+  "nombre": "Kang-In Lee",
+  "posicion": 1
+ },
+ "17459": {
+  "valor": 444000,
+  "dia": "2026-09-04",
+  "nombre": "Rodrygo",
+  "posicion": 1
+ },
+ "17572": {
+  "valor": 205000,
+  "dia": "2026-09-04",
+  "nombre": "Javi Muñoz",
+  "posicion": 1
+ },
+ "17615": {
+  "valor": 7920000,
+  "dia": "2026-09-04",
+  "nombre": "Sergio Herrera",
+  "posicion": 1
+ },
+ "19524": {
+  "valor": 205000,
+  "dia": "2026-09-04",
+  "nombre": "Iker Losada",
+  "posicion": 1
+ },
+ "20131": {
+  "valor": 2162000,
+  "dia": "2026-09-04",
+  "nombre": "Manu Sánchez",
+  "posicion": 1
+ },
+ "20449": {
+  "valor": 2351000,
+  "dia": "2026-09-04",
+  "nombre": "Fer Niño",
+  "posicion": 1
+ },
+ "21366": {
+  "valor": 196000,
+  "dia": "2026-09-04",
+  "nombre": "Unai Vencedor",
+  "posicion": 1
+ },
+ "22455": {
+  "valor": 160000,
+  "dia": "2026-09-04",
+  "nombre": "Javi López",
+  "posicion": 1
+ },
+ "22502": {
+  "valor": 11544000,
+  "dia": "2026-09-04",
+  "nombre": "Alex Baena",
+  "posicion": 1
+ },
+ "22595": {
+  "valor": 2352000,
+  "dia": "2026-09-04",
+  "nombre": "Joaquín Muñoz",
+  "posicion": 1
+ },
+ "22604": {
+  "valor": 6943000,
+  "dia": "2026-09-04",
+  "nombre": "Iñigo Vicente",
+  "posicion": 1
+ },
+ "23369": {
+  "valor": 3214000,
+  "dia": "2026-09-04",
+  "nombre": "Juan Foyth",
+  "posicion": 1
+ },
+ "25579": {
+  "valor": 1019000,
+  "dia": "2026-09-04",
+  "nombre": "Oriol Rey",
+  "posicion": 1
+ },
+ "27422": {
+  "valor": 161000,
+  "dia": "2026-09-04",
+  "nombre": "Cristian Rivero",
+  "posicion": 1
+ },
+ "27516": {
+  "valor": 6255000,
+  "dia": "2026-09-04",
+  "nombre": "Andrés Martín",
+  "posicion": 1
+ },
+ "27518": {
+  "valor": 1970000,
+  "dia": "2026-09-04",
+  "nombre": "Óscar Valentín",
+  "posicion": 1
+ },
+ "27520": {
+  "valor": 5247000,
+  "dia": "2026-09-04",
+  "nombre": "Fran García",
+  "posicion": 1
+ },
+ "27874": {
+  "valor": 1016000,
+  "dia": "2026-09-04",
+  "nombre": "Iván Martín",
+  "posicion": 1
+ },
+ "27907": {
+  "valor": 807000,
+  "dia": "2026-09-04",
+  "nombre": "Roger Brugué",
+  "posicion": 1
+ },
+ "28773": {
+  "valor": 2343000,
+  "dia": "2026-09-04",
+  "nombre": "Aitor Paredes",
+  "posicion": 1
+ },
+ "28774": {
+  "valor": 3057000,
+  "dia": "2026-09-04",
+  "nombre": "Julen Agirrezabala",
+  "posicion": 1
+ },
+ "28779": {
+  "valor": 6448000,
+  "dia": "2026-09-04",
+  "nombre": "Iván Romero",
+  "posicion": 1
+ },
+ "28787": {
+  "valor": 198000,
+  "dia": "2026-09-04",
+  "nombre": "Diego López",
+  "posicion": 1
+ },
+ "29163": {
+  "valor": 3879000,
+  "dia": "2026-09-04",
+  "nombre": "Omar El Hilali",
+  "posicion": 1
+ },
+ "29168": {
+  "valor": 198000,
+  "dia": "2026-09-04",
+  "nombre": "Iker Benito",
+  "posicion": 1
+ },
+ "29169": {
+  "valor": 3092000,
+  "dia": "2026-09-04",
+  "nombre": "Pablo Ibáñez",
+  "posicion": 1
+ },
+ "29223": {
+  "valor": 5229000,
+  "dia": "2026-09-04",
+  "nombre": "Mario Soriano",
+  "posicion": 1
+ },
+ "33053": {
+  "valor": 7362000,
+  "dia": "2026-09-04",
+  "nombre": "Adrián de la Fuente",
+  "posicion": 1
+ },
+ "35059": {
+  "valor": 7384000,
+  "dia": "2026-09-04",
+  "nombre": "Ferran Jutglà",
+  "posicion": 1
+ },
+ "36046": {
+  "valor": 3224000,
+  "dia": "2026-09-04",
+  "nombre": "Gonzalo Villar",
+  "posicion": 1
+ },
+ "36334": {
+  "valor": 1753000,
+  "dia": "2026-09-04",
+  "nombre": "Adama Traoré",
+  "posicion": 1
+ },
+ "36410": {
+  "valor": 5740000,
+  "dia": "2026-09-04",
+  "nombre": "Pierre-Emerick Aubameyang",
+  "posicion": 1
+ },
+ "48194": {
+  "valor": 2763000,
+  "dia": "2026-09-04",
+  "nombre": "Williot Swedberg",
+  "posicion": 1
+ },
+ "48203": {
+  "valor": 3778000,
+  "dia": "2026-09-04",
+  "nombre": "Ramón Terrats",
+  "posicion": 1
+ },
+ "48556": {
+  "valor": 1690000,
+  "dia": "2026-09-04",
+  "nombre": "Andreas Christensen",
+  "posicion": 1
+ },
+ "52117": {
+  "valor": 3151000,
+  "dia": "2026-09-04",
+  "nombre": "Jon Ander Olasagasti",
+  "posicion": 1
+ },
+ "52372": {
+  "valor": 6376000,
+  "dia": "2026-09-04",
+  "nombre": "Javi Guerra",
+  "posicion": 1
+ },
+ "53111": {
+  "valor": 8352000,
+  "dia": "2026-09-04",
+  "nombre": "Álvaro Valles",
+  "posicion": 1
+ },
+ "54817": {
+  "valor": 13497000,
+  "dia": "2026-09-04",
+  "nombre": "Arda Güler",
+  "posicion": 1
+ },
+ "55045": {
+  "valor": 990000,
+  "dia": "2026-09-04",
+  "nombre": "Hugo Sotelo",
+  "posicion": 1
+ },
+ "55088": {
+  "valor": 2365000,
+  "dia": "2026-09-04",
+  "nombre": "Carl Starfelt",
+  "posicion": 1
+ },
+ "55664": {
+  "valor": 291000,
+  "dia": "2026-09-04",
+  "nombre": "Unai Marrero",
+  "posicion": 1
+ },
+ "55738": {
+  "valor": 3435000,
+  "dia": "2026-09-04",
+  "nombre": "César Tárrega",
+  "posicion": 1
+ },
+ "55966": {
+  "valor": 2489000,
+  "dia": "2026-09-04",
+  "nombre": "Adrià Altimira",
+  "posicion": 1
+ },
+ "56632": {
+  "valor": 3507000,
+  "dia": "2026-09-04",
+  "nombre": "Isaac Romero",
+  "posicion": 1
+ },
+ "56971": {
+  "valor": 1104000,
+  "dia": "2026-09-04",
+  "nombre": "Hector Fort",
+  "posicion": 1
+ },
+ "58125": {
+  "valor": 1494000,
+  "dia": "2026-09-04",
+  "nombre": "Mario Martín",
+  "posicion": 1
+ },
+ "58383": {
+  "valor": 4459000,
+  "dia": "2026-09-04",
+  "nombre": "Christantus Uche",
+  "posicion": 1
+ },
+ "58438": {
+  "valor": 4741000,
+  "dia": "2026-09-04",
+  "nombre": "Flavien Boyomo",
+  "posicion": 1
+ },
+ "58467": {
+  "valor": 2185000,
+  "dia": "2026-09-04",
+  "nombre": "Chidera Ejuke",
+  "posicion": 1
+ },
+ "60271": {
+  "valor": 624000,
+  "dia": "2026-09-04",
+  "nombre": "Rafa Bauza",
+  "posicion": 1
+ },
+ "60861": {
+  "valor": 505000,
+  "dia": "2026-09-04",
+  "nombre": "Jones El-Abdellaoui",
+  "posicion": 1
+ },
+ "60888": {
+  "valor": 7752000,
+  "dia": "2026-09-04",
+  "nombre": "Roberto Fernández",
+  "posicion": 1
+ },
+ "61013": {
+  "valor": 14979000,
+  "dia": "2026-09-04",
+  "nombre": "Antony Santos",
+  "posicion": 1
+ },
+ "63705": {
+  "valor": 8058000,
+  "dia": "2026-09-04",
+  "nombre": "Ionuț Radu",
+  "posicion": 1
+ },
+ "63871": {
+  "valor": 3501000,
+  "dia": "2026-09-04",
+  "nombre": "Marc Aguado",
+  "posicion": 1
+ },
+ "64033": {
+  "valor": 570000,
+  "dia": "2026-09-04",
+  "nombre": "Jon Gorrotxategi",
+  "posicion": 1
+ },
+ "64382": {
+  "valor": 2631000,
+  "dia": "2026-09-04",
+  "nombre": "Gabriel Suazo",
+  "posicion": 1
+ },
+ "64411": {
+  "valor": 1389000,
+  "dia": "2026-09-04",
+  "nombre": "Youssef Enríquez",
+  "posicion": 1
+ },
+ "64468": {
+  "valor": 3861000,
+  "dia": "2026-09-04",
+  "nombre": "Tyrhys Dolan",
+  "posicion": 1
+ },
+ "65136": {
+  "valor": 529000,
+  "dia": "2026-09-04",
+  "nombre": "Fede Redondo",
+  "posicion": 1
+ },
+ "65269": {
+  "valor": 529000,
+  "dia": "2026-09-04",
+  "nombre": "Ali Houary",
+  "posicion": 1
+ },
+ "65704": {
+  "valor": 14390000,
+  "dia": "2026-09-04",
+  "nombre": "Georges Mikautadze",
+  "posicion": 1
+ },
+ "66706": {
+  "valor": 1371000,
+  "dia": "2026-09-04",
+  "nombre": "Javi Hernandez",
+  "posicion": 1
+ },
+ "68498": {
+  "valor": 4956000,
+  "dia": "2026-09-04",
+  "nombre": "Zaid Romero",
+  "posicion": 1
+ },
+ "68652": {
+  "valor": 2305000,
+  "dia": "2026-09-04",
+  "nombre": "Ville Koski",
+  "posicion": 1
+ },
+ "68835": {
+  "valor": 193000,
+  "dia": "2026-09-04",
+  "nombre": "Job Ochieng",
+  "posicion": 1
+ },
+ "70499": {
+  "valor": 160000,
+  "dia": "2026-09-04",
+  "nombre": "Iñaki Rupérez",
+  "posicion": 1
+ },
+ "70638": {
+  "valor": 14708000,
+  "dia": "2026-09-04",
+  "nombre": "Anthony Gordon",
+  "posicion": 1
+ },
+ "70932": {
+  "valor": 1152000,
+  "dia": "2026-09-04",
+  "nombre": "Sergio Martinez",
+  "posicion": 1
+ },
+ "70935": {
+  "valor": 5100000,
+  "dia": "2026-09-04",
+  "nombre": "Jorge Salinas",
+  "posicion": 1
+ },
+ "70936": {
+  "valor": 2530000,
+  "dia": "2026-09-04",
+  "nombre": "Manu Hernando",
+  "posicion": 1
+ },
+ "70939": {
+  "valor": 7798000,
+  "dia": "2026-09-04",
+  "nombre": "Yeremay Hernández",
+  "posicion": 1
+ },
+ "70941": {
+  "valor": 3354000,
+  "dia": "2026-09-04",
+  "nombre": "Bil Nsongo",
+  "posicion": 1
+ },
+ "70946": {
+  "valor": 160000,
+  "dia": "2026-09-04",
+  "nombre": "José Ángel Jurado",
+  "posicion": 1
+ },
+ "70949": {
+  "valor": 195000,
+  "dia": "2026-09-04",
+  "nombre": "Dani Barcia",
+  "posicion": 1
+ },
+ "70993": {
+  "valor": 628000,
+  "dia": "2026-09-04",
+  "nombre": "Haitam Abaida",
+  "posicion": 1
+ },
+ "70994": {
+  "valor": 167000,
+  "dia": "2026-09-04",
+  "nombre": "Eneko Jauregi",
+  "posicion": 1
+ },
+ "70999": {
+  "valor": 3892000,
+  "dia": "2026-09-04",
+  "nombre": "Dani Lorenzo",
+  "posicion": 1
+ },
+ "71004": {
+  "valor": 2422000,
+  "dia": "2026-09-04",
+  "nombre": "Carlos Puga",
+  "posicion": 1
+ },
+ "71008": {
+  "valor": 1809000,
+  "dia": "2026-09-04",
+  "nombre": "Rafita Garrido",
+  "posicion": 1
+ },
+ "71011": {
+  "valor": 5661000,
+  "dia": "2026-09-04",
+  "nombre": "Alfonso Herrero",
+  "posicion": 1
+ },
+ "71061": {
+  "valor": 5654000,
+  "dia": "2026-09-04",
+  "nombre": "Álex Calatrava",
+  "posicion": 1
+ },
+ "71132": {
+  "valor": 4524000,
+  "dia": "2026-09-04",
+  "nombre": "Facundo Bernal",
+  "posicion": 1
+ },
+ "71139": {
+  "valor": 1551000,
+  "dia": "2026-09-04",
+  "nombre": "Bright Ede",
+  "posicion": 1
+ },
+ "71154": {
+  "valor": 6427000,
+  "dia": "2026-09-04",
+  "nombre": "Lorenzo Amatucci",
+  "posicion": 1
+ },
+ "71505": {
+  "valor": 160000,
+  "dia": "2026-09-04",
+  "nombre": "Jairo Noriega",
+  "posicion": 1
+ },
+ "71511": {
+  "valor": 160000,
+  "dia": "2026-09-04",
+  "nombre": "Moussa Diarra",
+  "posicion": 1
+ },
+ "71574": {
+  "valor": 10930000,
+  "dia": "2026-09-04",
+  "nombre": "Karim Adeyemi",
+  "posicion": 1
+ },
+ "71616": {
+  "valor": 3267000,
+  "dia": "2026-09-04",
+  "nombre": "Yassir Zabiri",
+  "posicion": 1
+ },
+ "71623": {
+  "valor": 1374000,
+  "dia": "2026-09-04",
+  "nombre": "Roger Hinojo",
+  "posicion": 1
+ },
+ "71639": {
+  "valor": 896000,
+  "dia": "2026-09-04",
+  "nombre": "Beñat Gerenabarrena",
+  "posicion": 1
+ },
+ "71795": {
+  "valor": 2035000,
+  "dia": "2026-09-04",
+  "nombre": "Angeliño",
+  "posicion": 1
+ },
+ "4764213": {
+  "valor": 3646000,
+  "dia": "2026-09-04",
+  "nombre": "Gabriel Jesus",
+  "posicion": 1
+ }
+}

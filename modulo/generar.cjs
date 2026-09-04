@@ -17,7 +17,7 @@ const AQUI = __dirname
 const DAT = path.join(AQUI, 'datos')
 const SALIDA = process.argv[2] || path.join(AQUI, '..', 'datos', 'mercado.html')
 const MI_EQUIPO = 'Niutin FC (Isaac)'
-const NOMBRE_LIGA = 'La Liga de Niutin'
+const NOMBRE_LIGA = 'La Liga de Mister'
 
 const leer = (n) => JSON.parse(fs.readFileSync(path.join(DAT, n), 'utf8'))
 const J = leer('jugadores-calc.json')
@@ -177,7 +177,7 @@ const filaJugador = (j) => {
     .join(' ')
   const pct = j.subeMes != null ? Math.round(j.subeMes * 100) : null
   const rec = (j.p + j.d) * 1000 + j.media
-  return `<div class="${cls}" data-busca="${esc(j.nombre)} ${esc(j.duenioCorto ?? 'libre')} ${PUESTOS_LARGO[j.puesto]}" data-rec="${rec.toFixed(2)}" data-precio="${j.precio}" data-media="${j.media}" data-puntos="${j.puntos}" data-sube="${(j.subeMes ?? -9).toFixed(4)}">
+  return `<div class="${cls}" data-busca="${esc(j.nombre)} ${esc(j.duenioCorto ?? 'libre')} ${PUESTOS_LARGO[j.puesto]}" data-rec="${rec.toFixed(2)}" data-precio="${j.precio}" data-media="${j.media}" data-puntos="${j.puntos}" data-sube="${(j.subeMes ?? -9).toFixed(4)}" data-hoy="${j.semana ?? -9e9}">
       ${dorsal(j.puesto)}
       <div class="jn">${esc(j.nombre)}${j.mk ? '<span class="et et-mk">en venta</span>' : ''}${
         j.duenio

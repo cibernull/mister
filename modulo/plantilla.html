@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>La Liga de Niutin</title>
+<title>La Liga de Mister</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap">
@@ -145,10 +145,14 @@ body{
 .grupos{display:grid;grid-template-columns:1fr;gap:1px;background:var(--raya)}
 @media(min-width:700px){.grupos.dos{grid-template-columns:1fr 1fr}}
 .grupo{background:var(--tabla);padding:12px 15px 13px}
+@media(min-width:700px){.grupo.ancho{grid-column:1/-1}}
 .grupo > span{display:block;font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--tenue);margin-bottom:8px}
 .ops{display:flex;gap:5px;flex-wrap:wrap}
 .ops label{font-size:13px;font-weight:600;padding:5px 11px;border-radius:7px;border:1px solid var(--raya);background:var(--suelo);color:var(--gris);cursor:pointer;user-select:none;white-space:nowrap;transition:border-color .12s,color .12s}
 .ops label:hover{border-color:var(--oro);color:var(--oro)}
+.ops button{font:inherit;font-size:13px;font-weight:600;padding:5px 11px;border-radius:7px;border:1px solid var(--raya);background:var(--suelo);color:var(--gris);cursor:pointer;white-space:nowrap;transition:border-color .12s,color .12s}
+.ops button:hover{border-color:var(--oro);color:var(--oro)}
+.ops button.on{border-color:var(--oro);background:var(--oro-fondo);color:var(--oro)}
 #a1:checked~.env label[for=a1],#a2:checked~.env label[for=a2],
 #f1:checked~.env label[for=f1],#f2:checked~.env label[for=f2],#f3:checked~.env label[for=f3],
 #f4:checked~.env label[for=f4],#f5:checked~.env label[for=f5],
@@ -416,7 +420,7 @@ a{color:var(--oro)}
     <label for="t2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Fichar</span></label>
     <label for="t3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/><path d="M3 21v-1.5a3 3 0 0 1 3-3M21 21v-1.5a3 3 0 0 0-3-3"/></svg><span>Rivales</span></label>
     <label for="t4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13M13 4l4 4-4 4"/><path d="M20 16H7M11 12l-4 4 4 4"/></svg><span>Movimientos</span></label>
-    <label for="t5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M8 16V9M12 16v-4M16 16V6"/></svg><span>Números</span></label>
+    <label for="t5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M8 16V9M12 16v-4M16 16V6"/></svg><span>Estadísticas</span></label>
     <label for="t6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.2a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.6"/><path d="M12 17.2h.01"/></svg><span>Guía</span></label>
   </nav>
 
@@ -429,17 +433,21 @@ a{color:var(--oro)}
       <div class="buscar">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
         <input id="q" type="search" placeholder="Buscar jugador, equipo o posición…" autocomplete="off" spellcheck="false">
-        <select id="orden" aria-label="Ordenar por">
-          <option value="recomendado">Recomendados</option>
-          <option value="precio-desc">Más caros</option>
-          <option value="precio-asc">Más baratos</option>
-          <option value="media">Mejor media</option>
-          <option value="puntos">Más puntos</option>
-          <option value="sube">Los que más suben</option>
-        </select>
         <span class="cuenta-res" id="cuenta-res"></span>
       </div>
       <div class="grupos dos">
+        <div class="grupo ancho">
+          <span>Ordenar por</span>
+          <div class="ops" id="ordenar">
+            <button type="button" data-orden="puntos" class="on">Más puntos</button>
+            <button type="button" data-orden="media">Mejor media</button>
+            <button type="button" data-orden="hoy">Suben hoy</button>
+            <button type="button" data-orden="sube">Suben este mes</button>
+            <button type="button" data-orden="precio-asc">Más baratos</button>
+            <button type="button" data-orden="precio-desc">Más caros</button>
+            <button type="button" data-orden="recomendado">Recomendados</button>
+          </div>
+        </div>
         <div class="grupo">
           <span>Posición</span>
           <div class="ops">
@@ -534,7 +542,6 @@ a{color:var(--oro)}
   var mov = conectar({ lista: 'lista-mov', fila: '.mv', caja: 'qm', cuenta: 'cuenta-mov', vacio: 'sin-mov', singular: 'movimiento', plural: 'movimientos' })
 
   if (jug) {
-    var orden = document.getElementById('orden')
     function num (el, campo) { return parseFloat(el.getAttribute('data-' + campo)) || 0 }
     var criterios = {
       recomendado: function (a, b) { return num(b, 'rec') - num(a, 'rec') },
@@ -542,13 +549,23 @@ a{color:var(--oro)}
       'precio-asc': function (a, b) { return num(a, 'precio') - num(b, 'precio') },
       media: function (a, b) { return num(b, 'media') - num(a, 'media') },
       puntos: function (a, b) { return num(b, 'puntos') - num(a, 'puntos') },
+      hoy: function (a, b) { return num(b, 'hoy') - num(a, 'hoy') },
       sube: function (a, b) { return num(b, 'sube') - num(a, 'sube') }
     }
-    orden.addEventListener('change', function () {
-      var cmp = criterios[orden.value] || criterios.recomendado
+    function ordenar (clave) {
+      var cmp = criterios[clave] || criterios.puntos
       jug.filas.slice().sort(cmp).forEach(function (f) { jug.lista.insertBefore(f, jug.vacio) })
       jug.repasar()
+    }
+    var botones = [].slice.call(document.querySelectorAll('#ordenar button'))
+    botones.forEach(function (b) {
+      b.addEventListener('click', function () {
+        botones.forEach(function (o) { o.classList.toggle('on', o === b) })
+        ordenar(b.getAttribute('data-orden'))
+      })
     })
+    // El orden de partida es por puntos, que es lo primero que se mira.
+    ordenar('puntos')
   }
 
   // Los filtros de CSS cambian qué se ve, y los contadores tienen que enterarse.

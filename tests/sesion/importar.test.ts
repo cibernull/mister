@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { extraerCabecera } from '../../src/sesion/importar.js'
+import { extraerCabecera, extraerCookie } from '../../src/sesion/importar.js'
 
 // Un «Copy as cURL» de Chrome en Mac, recortado pero con la forma real.
 const CURL_MAC = `curl 'https://mister.mundodeportivo.com/ajax/feed' \\
@@ -65,5 +65,30 @@ x-requested-with: XMLHttpRequest`
   it('el cURL manda cuando están las dos formas', () => {
     const mezcla = `cookie: de-la-linea\ncurl 'https://x' -H 'cookie: del-curl'`
     expect(extraerCabecera(mezcla, 'cookie')).toBe('del-curl')
+  })
+})
+
+describe('extraerCookie', () => {
+  // Chrome no escribe la cookie como cabecera: la saca con -b. Buscar solo
+  // `-H 'cookie: …'` hacía fallar el pegado real, y encima con un mensaje que
+  // mandaba a copiar otra petición cuando el problema era este.
+  it('lee la bandera -b, que es la que genera Chrome', () => {
+    expect(extraerCookie(`curl --url 'https://x' -X 'POST' -b 'a=1; b=2' -H 'x-auth: T'`)).toBe('a=1; b=2')
+  })
+
+  it('lee también --cookie', () => {
+    expect(extraerCookie(`curl 'https://x' --cookie "a=1; b=2"`)).toBe('a=1; b=2')
+  })
+
+  it('sigue leyendo la cabecera cuando no hay bandera', () => {
+    expect(extraerCookie(`-H 'cookie: c=3'`)).toBe('c=3')
+  })
+
+  it('no confunde -b con el final de otra opción', () => {
+    expect(extraerCookie(`curl 'https://x' --data-b 'no' -b 'si=1'`)).toBe('si=1')
+  })
+
+  it('devuelve null si no hay cookie por ningún lado', () => {
+    expect(extraerCookie(`curl 'https://x' -H 'x-auth: T'`)).toBeNull()
   })
 })
