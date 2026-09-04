@@ -220,23 +220,36 @@ async function main(): Promise<Resultado> {
   const { clasificacion, clubes } = await recolectarClasificacion(cliente)
   const veredicto = verificar(mio, mister)
   const dLiga = verificarLiga(cuentas.equipos, clasificacion)
-  if (!veredicto.cuadra || dLiga.length > 0) {
+  if (!veredicto.cuadra || dLiga.motivos.length > 0) {
     return {
       ok: false,
       cuando,
       mensaje: 'Las cuentas no cuadran con las de Mister, así que no he tocado nada.',
-      detalle: [...veredicto.motivos, ...dLiga, 'Los datos que ves siguen siendo los de la última actualización buena.'],
+      detalle: [
+        ...veredicto.motivos,
+        ...dLiga.motivos,
+        'Los datos que ves siguen siendo los de la última actualización buena.',
+      ],
     }
   }
-  // El puesto sale de la clasificación oficial, no de ordenar por puntos: con
-  // dos equipos empatados, el desempate es cosa de Mister.
+  cuentas.avisos.push(...dLiga.avisos)
+
+  // Puntos y puesto salen de la clasificación oficial, no de sumar los cierres
+  // de jornada del feed. Mister los revisa cuando llegan las estadísticas
+  // oficiales —en una tarde bajó a Betico de 17 a 9 y subió a Niutin de 119 a
+  // 134—, así que la suma del feed siempre iba a acabar desfasada, y con ella
+  // la clasificación entera. Y el desempate entre dos equipos igualados también
+  // es cosa suya.
   for (const c of clasificacion) {
     const e = cuentas.equipos.find((x) => x.n === c.equipo)
-    if (e) e.pos = c.puesto
+    if (e) {
+      e.pts = c.puntos
+      e.pos = c.puesto
+    }
   }
   paso(
     `Cuadra: saldo ${Math.round(mio.saldo).toLocaleString('es-ES')} €, tope ${Math.round(veredicto.topeCalculado).toLocaleString('es-ES')} €, ` +
-      `y los ${clasificacion.length} equipos coinciden con la clasificación en jugadores, plantilla y puntos.`,
+      `y los ${clasificacion.length} equipos coinciden con la clasificación en jugadores y valor de plantilla.`,
   )
 
   // ── 5. Escribir y regenerar ────────────────────────────────────────────────

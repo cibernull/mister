@@ -77,19 +77,30 @@ const euros = (n: number) => `${Math.round(n).toLocaleString('es-ES')} €`
  *
  * `_FG_user` solo habla de uno mismo, así que hasta ahora los siete rivales no
  * se comprobaban contra nada. Pero la clasificación publica, por equipo,
- * **cuántos jugadores tiene y cuánto vale su plantilla**, además de sus
- * puntos, y esas tres cifras el módulo las calcula por su cuenta.
+ * **cuántos jugadores tiene y cuánto vale su plantilla**, y esas dos cifras el
+ * módulo las calcula por su cuenta desde el censo.
  *
  * No es teórico: así se descubrió que a Los tocahuevos les faltaba Matteo
  * Ruggeri —13 jugadores y 32.359.000 € frente a los 14 y 33.658.000 € de
  * Mister—, porque el feed había publicado su salida de LaLiga y el módulo lo
  * borraba de la plantilla mientras Mister lo seguía contando.
  *
+ * Los **puntos no se comprueban**, y es a propósito: ya no se calculan, se
+ * copian de aquí. Mister los revisa cuando llegan las estadísticas oficiales
+ * —un día bajó a Betico de 17 a 9 y subió a Niutin de 119 a 134 a la vez— y
+ * sumar los cierres de jornada del feed nunca iba a seguirle el paso. Cuando la
+ * suma y la cifra oficial no coinciden se dice, pero no se bloquea nada: manda
+ * la oficial.
+ *
  * El valor de plantilla admite el mismo margen de redondeo que el saldo. El
- * número de jugadores y los puntos son enteros: ahí no hay margen que valga.
+ * número de jugadores es entero: ahí no hay margen que valga.
  */
-export function verificarLiga(equipos: Equipo[], clasificacion: PuestoClasificacion[]): string[] {
+export function verificarLiga(
+  equipos: Equipo[],
+  clasificacion: PuestoClasificacion[],
+): { motivos: string[]; avisos: string[] } {
   const motivos: string[] = []
+  const avisos: string[] = []
   const porNombre = new Map(equipos.map((e) => [e.n, e]))
 
   for (const c of clasificacion) {
@@ -98,12 +109,8 @@ export function verificarLiga(equipos: Equipo[], clasificacion: PuestoClasificac
       motivos.push(`Mister clasifica a «${c.equipo}» y yo no sé quién es`)
       continue
     }
-    if (e.pts !== c.puntos) {
-      motivos.push(`${c.equipo}: calculo ${c.puntos === e.pts ? '' : ''}${e.pts} puntos y Mister dice ${c.puntos}`)
-    }
-    const jugadores = e.plantilla
-    if (jugadores !== c.jugadores) {
-      motivos.push(`${c.equipo}: le cuento ${jugadores} jugadores y Mister dice ${c.jugadores}`)
+    if (e.plantilla !== c.jugadores) {
+      motivos.push(`${c.equipo}: le cuento ${e.plantilla} jugadores y Mister dice ${c.jugadores}`)
     }
     const dif = e.pl - c.valorPlantilla
     if (Math.abs(dif) > MARGEN_REDONDEO) {
@@ -111,10 +118,16 @@ export function verificarLiga(equipos: Equipo[], clasificacion: PuestoClasificac
         `${c.equipo}: su plantilla me sale ${euros(e.pl)} y Mister dice ${euros(c.valorPlantilla)} (${euros(Math.abs(dif))} de diferencia)`,
       )
     }
+    if (e.pts !== c.puntos) {
+      avisos.push(
+        `${c.equipo}: Mister ha revisado sus puntos de ${e.pts} a ${c.puntos}; mando la cifra suya`,
+      )
+    }
   }
 
-  const sinClasificar = equipos.filter((e) => !clasificacion.some((c) => c.equipo === e.n))
-  for (const e of sinClasificar) motivos.push(`${e.n} no aparece en la clasificación de Mister`)
+  for (const e of equipos) {
+    if (!clasificacion.some((c) => c.equipo === e.n)) motivos.push(`${e.n} no aparece en la clasificación de Mister`)
+  }
 
-  return motivos
+  return { motivos, avisos }
 }

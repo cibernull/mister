@@ -159,8 +159,7 @@ un error de verdad, que sería de otro orden.
 **Y desde ahora también los siete rivales.** `_FG_user` solo habla de uno mismo,
 así que los demás equipos no se comprobaban contra nada. Pero `/standings` se
 renderiza en el servidor y publica, por equipo, **cuántos jugadores tiene y
-cuánto vale su plantilla**, además de sus puntos: las tres cifras que el módulo
-calcula por su cuenta.
+cuánto vale su plantilla**: dos cifras que el módulo calcula por su cuenta.
 
 No es teórico. Nada más ponerlo, saltó: a Los tocahuevos les faltaba **Matteo
 Ruggeri** —13 jugadores y 32.359.000 € frente a los 14 y 33.658.000 € de
@@ -169,8 +168,15 @@ la plantilla, mientras Mister lo seguía contando con su valor residual. De paso
 quedó contestada la duda de los otros cinco: **Mister los cuenta**, porque el
 número de jugadores y el valor de plantilla solo cuadran contándolos.
 
-El puesto también sale de ahí, y no de ordenar por puntos: con dos equipos
-empatados, el desempate es cosa de Mister.
+**Los puntos no se comprueban: se copian.** Antes se calculaban sumando los
+cierres de jornada del feed, y eso no podía sostenerse. Mister los **revisa**
+cuando llegan las estadísticas oficiales: en una misma tarde bajó a Betico de 17
+a 9 y subió a Niutin de 119 a 134. Contrastar una suma propia contra una cifra
+que se revisa significaba bloquear la actualización cada vez, y encima
+perdiendo, porque la buena es la suya. Ahora los puntos y el puesto salen de la
+clasificación —el desempate entre dos equipos igualados también es cosa de
+Mister— y, cuando la suma del feed no coincide, se dice como aviso en vez de
+tumbar la pasada.
 
 ### 5. Regenera la página
 
