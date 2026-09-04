@@ -3,153 +3,339 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mercado de La Liga</title>
+<title>La Liga de Niutin</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@500;600&family=Public+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap">
 <style>
-:root{--fondo:#F1F3F6;--caja:#FFF;--linea:#DDE2EA;--tinta:#141922;--gris:#606A79;--tenue:#949DAB;--rojo:#A21C3A;--rojo-suave:#FBEAEE;--verde:#0E7A43;--verde-suave:#E3F3EA;--oro:#8A5D00;--oro-suave:#FBF0D8;--sombra:0 1px 2px rgba(20,25,34,.05),0 10px 30px -14px rgba(20,25,34,.2)}
-@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--fondo:#0C0F14;--caja:#161B23;--linea:#2A323E;--tinta:#EAEDF2;--gris:#98A2B2;--tenue:#69727F;--rojo:#F0607F;--rojo-suave:#33131B;--verde:#4ADE93;--verde-suave:#112A1E;--oro:#F0C674;--oro-suave:#2C2413;--sombra:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7)}}
-:root[data-theme=dark]{--fondo:#0C0F14;--caja:#161B23;--linea:#2A323E;--tinta:#EAEDF2;--gris:#98A2B2;--tenue:#69727F;--rojo:#F0607F;--rojo-suave:#33131B;--verde:#4ADE93;--verde-suave:#112A1E;--oro:#F0C674;--oro-suave:#2C2413;--sombra:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7)}
+/* ── Paleta ────────────────────────────────────────────────────────────────
+   Neutros con un punto de verde: el césped, sin disfrazarse de él.
+   El acento es ámbar porque el tema de todo esto es el dinero.
+   Verde y rosa quedan reservados a ganar y perder, y no se usan para nada más. */
+:root{
+  --suelo:#F3F5F0; --tabla:#FFFFFF; --hueco:#EAEDE6; --raya:#DFE4D9;
+  --tinta:#151A16; --gris:#5B6660; --tenue:#8B958D;
+  --oro:#9A6100; --oro-fondo:#FBF1DC; --oro-raya:#E8CE9A;
+  --sube:#137A47; --sube-fondo:#E4F2E9;
+  --baja:#B3243F; --baja-fondo:#FAE7EA;
+  --por:#1F6FB2; --def:#3F7A34; --med:#8A5A00; --del:#A83A2B;
+  --sombra:0 1px 2px rgba(21,26,22,.05), 0 12px 28px -18px rgba(21,26,22,.35);
+  --radio:12px;
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --suelo:#0A0D0B; --tabla:#141813; --hueco:#1B211A; --raya:#28301F;
+  --tinta:#E9EDE6; --gris:#96A099; --tenue:#69736C;
+  --oro:#F0B44B; --oro-fondo:#2B2211; --oro-raya:#54401A;
+  --sube:#54CE90; --sube-fondo:#0F2A1C;
+  --baja:#F2718D; --baja-fondo:#2E1219;
+  --por:#66B2E8; --def:#7FC46E; --med:#E5B65C; --del:#F0836F;
+  --sombra:0 1px 2px rgba(0,0,0,.5), 0 12px 28px -18px rgba(0,0,0,.9);
+}}
+:root[data-theme=dark]{
+  --suelo:#0A0D0B; --tabla:#141813; --hueco:#1B211A; --raya:#28301F;
+  --tinta:#E9EDE6; --gris:#96A099; --tenue:#69736C;
+  --oro:#F0B44B; --oro-fondo:#2B2211; --oro-raya:#54401A;
+  --sube:#54CE90; --sube-fondo:#0F2A1C;
+  --baja:#F2718D; --baja-fondo:#2E1219;
+  --por:#66B2E8; --def:#7FC46E; --med:#E5B65C; --del:#F0836F;
+  --sombra:0 1px 2px rgba(0,0,0,.5), 0 12px 28px -18px rgba(0,0,0,.9);
+}
+
 *{box-sizing:border-box}
-body{background:var(--fondo);color:var(--tinta);font-family:"Public Sans",ui-sans-serif,system-ui,sans-serif;font-size:16px;line-height:1.5;margin:0;padding:26px 16px 70px;-webkit-font-smoothing:antialiased}
-.env{max-width:840px;margin:0 auto}
-h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:25px;letter-spacing:-.025em;margin:0}
-h1 em{font-style:normal;color:var(--rojo)}
-.top{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin-bottom:20px}
-.mitope{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--gris)}
-.mitope b{color:var(--rojo);font-size:15px}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+body{
+  background:var(--suelo); color:var(--tinta);
+  font-family:Manrope,ui-sans-serif,system-ui,-apple-system,sans-serif;
+  font-size:15.5px; line-height:1.55; margin:0; padding:0 16px 80px;
+  -webkit-font-smoothing:antialiased;
+}
+.env{max-width:940px;margin:0 auto}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace;font-variant-numeric:tabular-nums}
+.cifra{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums;font-weight:600}
+.sube{color:var(--sube)} .baja{color:var(--baja)}
 
-/* radios de control, ocultos */
+/* ── Cabecera ─────────────────────────────────────────────────────────── */
+.cab{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:22px 0 16px}
+.marca{display:flex;align-items:center;gap:11px;min-width:0}
+.escudo{width:34px;height:34px;flex:none;border-radius:9px;background:var(--oro);display:grid;place-items:center;color:var(--suelo)}
+.escudo svg{width:19px;height:19px;display:block}
+.marca h1{
+  font-family:"Barlow Condensed",Impact,sans-serif;font-weight:700;
+  font-size:29px;line-height:1;letter-spacing:.005em;text-transform:uppercase;margin:0;
+}
+.marca p{margin:1px 0 0;font-size:12.5px;color:var(--gris);line-height:1.3}
+
+/* ── Marcador: las cuatro cifras que resumen tu situación ─────────────── */
+.marcador{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  background:var(--tabla);border:1px solid var(--raya);border-radius:var(--radio);
+  box-shadow:var(--sombra);overflow:hidden;margin-bottom:18px;
+}
+.marcador > div{padding:14px 17px;border-right:1px solid var(--raya)}
+.marcador > div:last-child{border-right:0}
+.marcador dt{
+  font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--tenue);margin:0 0 3px;
+  display:flex;align-items:center;gap:5px;
+}
+.marcador dt svg{width:11px;height:11px;flex:none;opacity:.8}
+.marcador dd{margin:0;white-space:nowrap;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;font-size:19px;line-height:1.15}
+.marcador dd small{font-size:12px;font-weight:500;color:var(--gris);margin-left:4px}
+.marcador dd.oro{color:var(--oro)}
+@media(max-width:640px){.marcador > div{border-right:0;border-bottom:1px solid var(--raya)}}
+
+/* ── Navegación ───────────────────────────────────────────────────────── */
 .ctrl{position:absolute;opacity:0;pointer-events:none;width:0;height:0}
-
-/* pestañas */
-.pest{display:flex;gap:4px;background:var(--caja);border:1px solid var(--linea);border-radius:11px;padding:5px;box-shadow:var(--sombra);margin-bottom:18px}
-.pest label{flex:1;text-align:center;font-size:15px;font-weight:500;padding:11px 8px;border-radius:8px;color:var(--gris);cursor:pointer;user-select:none}
+.pest{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:3px;
+  background:var(--hueco);border-radius:11px;padding:4px;margin-bottom:20px;
+}
+.pest label{
+  display:flex;align-items:center;justify-content:center;gap:7px;
+  font-size:14px;font-weight:600;padding:10px 6px;border-radius:8px;
+  color:var(--gris);cursor:pointer;user-select:none;white-space:nowrap;
+  transition:background .12s,color .12s;
+}
+.pest label svg{width:15px;height:15px;flex:none}
 .pest label:hover{color:var(--tinta)}
-#t1:checked~.env .pest label[for=t1],#t2:checked~.env .pest label[for=t2],#t3:checked~.env .pest label[for=t3]{background:var(--rojo);color:#fff;font-weight:600}
-.panel{display:none;flex-direction:column;gap:14px}
-#t1:checked~.env #p1,#t2:checked~.env #p2,#t3:checked~.env #p3{display:flex}
+.pest label span{overflow:hidden;text-overflow:ellipsis}
+#t1:checked~.env label[for=t1],#t2:checked~.env label[for=t2],
+#t3:checked~.env label[for=t3],#t4:checked~.env label[for=t4]{
+  background:var(--tabla);color:var(--tinta);box-shadow:0 1px 3px rgba(0,0,0,.09)
+}
+@media(max-width:560px){.pest label span{display:none} .pest label{padding:11px 4px}}
+.panel{display:none;flex-direction:column;gap:16px}
+#t1:checked~.env #p1,#t2:checked~.env #p2,#t3:checked~.env #p3,#t4:checked~.env #p4{display:flex}
 
-/* filtros */
-.grupo{display:flex;flex-direction:column;gap:7px}
-.grupo>span{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue)}
-.ops{display:flex;gap:7px;flex-wrap:wrap}
-.ops label{font-size:14.5px;padding:8px 15px;border-radius:99px;border:1px solid var(--linea);background:var(--caja);color:var(--gris);cursor:pointer;user-select:none}
-.ops label:hover{border-color:var(--rojo);color:var(--rojo)}
+/* ── Barra de control ─────────────────────────────────────────────────── */
+.mando{background:var(--tabla);border:1px solid var(--raya);border-radius:var(--radio);box-shadow:var(--sombra);overflow:hidden}
+.buscar{display:flex;align-items:center;gap:10px;padding:12px 15px;border-bottom:1px solid var(--raya)}
+.buscar svg{width:16px;height:16px;flex:none;color:var(--tenue)}
+.buscar input{
+  flex:1;min-width:0;font:inherit;font-size:15px;color:var(--tinta);
+  background:transparent;border:0;padding:2px 0;
+}
+.buscar input::placeholder{color:var(--tenue)}
+.buscar input:focus{outline:0}
+.buscar select{
+  font:inherit;font-size:13px;font-weight:600;color:var(--gris);background:var(--hueco);
+  border:1px solid var(--raya);border-radius:8px;padding:6px 9px;cursor:pointer;
+}
+.cuenta-res{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--tenue);white-space:nowrap}
+.grupos{display:grid;grid-template-columns:1fr;gap:1px;background:var(--raya)}
+@media(min-width:700px){.grupos{grid-template-columns:1fr 1fr}}
+.grupo{background:var(--tabla);padding:12px 15px 13px}
+.grupo > span{
+  display:block;font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--tenue);margin-bottom:8px;
+}
+.ops{display:flex;gap:5px;flex-wrap:wrap}
+.ops label{
+  font-size:13px;font-weight:600;padding:5px 11px;border-radius:7px;
+  border:1px solid var(--raya);background:var(--suelo);color:var(--gris);
+  cursor:pointer;user-select:none;white-space:nowrap;transition:border-color .12s,color .12s;
+}
+.ops label:hover{border-color:var(--oro);color:var(--oro)}
 #a1:checked~.env label[for=a1],#a2:checked~.env label[for=a2],
 #f1:checked~.env label[for=f1],#f2:checked~.env label[for=f2],#f3:checked~.env label[for=f3],
 #f4:checked~.env label[for=f4],#f5:checked~.env label[for=f5],
-#d1:checked~.env label[for=d1],#d2:checked~.env label[for=d2],#d3:checked~.env label[for=d3],#d4:checked~.env label[for=d4]{border-color:var(--rojo);color:var(--rojo);background:var(--rojo-suave);font-weight:600}
+#d1:checked~.env label[for=d1],#d2:checked~.env label[for=d2],#d3:checked~.env label[for=d3],#d4:checked~.env label[for=d4],
+#s1:checked~.env label[for=s1],#s2:checked~.env label[for=s2],#s3:checked~.env label[for=s3],
+#s4:checked~.env label[for=s4],#s5:checked~.env label[for=s5]{
+  border-color:var(--oro);background:var(--oro-fondo);color:var(--oro)
+}
 
-/* LOS FILTROS: ámbito y criterio, en cascada */
+/* Los filtros, en cascada. «Míos» se salta el «dónde» a propósito: enseñar
+   solo los tuyos que están en venta deja la lista casi vacía sin explicar por qué. */
 #a1:checked~#d4:not(:checked)~.env .fj.nomk{display:none}
 #f2:checked~.env .fj:not(.tp),#f2:checked~.env .fj:not(.td){display:none}
 #f3:checked~.env .fj:not(.tp){display:none}
 #f4:checked~.env .fj:not(.td){display:none}
 #f5:checked~.env .fj:not(.ta){display:none}
 #d2:checked~.env .fj:not(.tl){display:none}
-#d3:checked~.env .fj:not(.tc){display:none}
+#d3:checked~.env .fj:not(.triv){display:none}
 #d4:checked~.env .fj:not(.tmio){display:none}
-.aviso{display:none;font-size:13px;color:var(--oro);background:var(--oro-suave);border:1px solid var(--oro);border-radius:9px;padding:10px 13px;margin:0}
+#s2:checked~.env .fj:not(.z1){display:none}
+#s3:checked~.env .fj:not(.z2){display:none}
+#s4:checked~.env .fj:not(.z3){display:none}
+#s5:checked~.env .fj:not(.z4){display:none}
+.oculto{display:none!important}
+
+.aviso{
+  display:none;font-size:13px;color:var(--oro);background:var(--oro-fondo);
+  border:1px solid var(--oro-raya);border-radius:9px;padding:10px 13px;margin:0;
+}
 #d4:checked~.env .aviso{display:block}
 
-.lista{background:var(--caja);border:1px solid var(--linea);border-radius:12px;box-shadow:var(--sombra);overflow:hidden}
-.fj{display:grid;grid-template-columns:1fr auto auto;gap:3px 14px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--linea)}
+/* ── Lista de jugadores ───────────────────────────────────────────────── */
+.lista{background:var(--tabla);border:1px solid var(--raya);border-radius:var(--radio);box-shadow:var(--sombra);overflow:hidden}
+.fj{
+  display:grid;grid-template-columns:34px 1fr auto;gap:2px 12px;
+  align-items:center;padding:11px 15px;border-bottom:1px solid var(--raya);
+}
 .fj:last-child{border-bottom:0}
-.jn{font-weight:500;font-size:15.5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.et-mk{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--rojo);background:var(--rojo-suave);border:1px solid currentColor;border-radius:3px;padding:1px 5px}
-.jp{display:flex;flex-direction:column;align-items:flex-end;line-height:1.15}
-.jc,.jv{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:15px;font-variant-numeric:tabular-nums}
-.jc{color:var(--rojo)}
-.jc-et{font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:var(--tenue)}
-.et-eq{font-size:11.5px;color:var(--gris);background:var(--fondo);border:1px solid var(--linea);border-radius:99px;padding:1px 9px;white-space:nowrap}
-.et-eq.et-mio{color:var(--rojo);border-color:var(--rojo);background:var(--rojo-suave);font-weight:600}
-.et-libre{font-size:11.5px;color:var(--verde);background:var(--verde-suave);border:1px solid currentColor;border-radius:99px;padding:1px 9px;white-space:nowrap}
-.ji{font-size:16px;letter-spacing:2px;white-space:nowrap;min-width:42px;text-align:right}
-.js{grid-column:1/-1;font-size:12.5px;color:var(--gris);font-variant-numeric:tabular-nums}
-.js b{color:var(--tinta)}
-.jr{grid-column:1/-1;font-size:12.5px;color:var(--tinta);background:var(--oro-suave);border-left:3px solid var(--oro);border-radius:0 5px 5px 0;padding:6px 10px;margin-top:3px}
-.jr b{color:var(--oro)}
-.yo-cab{background:var(--caja);border:1px solid var(--rojo);border-radius:12px;box-shadow:var(--sombra);padding:17px 19px}
-.yo-cab h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:19px;letter-spacing:-.02em;margin:0 0 12px}
-.yo-cif{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:13px}
-.yo-cif div{display:flex;flex-direction:column;gap:1px}
-.yo-cif dt{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--tenue)}
-.yo-cif dd{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:16px;font-variant-numeric:tabular-nums;margin:0}
-.yo-cif dd.r{color:var(--rojo)}
-.yo-cif dd.v{color:var(--verde)}
-.sec{display:flex;flex-direction:column;gap:10px}
-.sh{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:18px;letter-spacing:-.02em;margin:8px 0 0;display:flex;align-items:baseline;gap:9px}
-.sh .se{font-size:17px;line-height:1}
-.sh em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--tenue);font-weight:500}
-.sd{font-size:14px;color:var(--gris);margin:0}
-.sd strong{color:var(--tinta)}
-.contador{font-size:13.5px;color:var(--gris);text-align:center}
+.fj:hover{background:var(--suelo)}
 
-/* equipos */
-.eq-det{background:var(--caja);border:1px solid var(--linea);border-radius:12px;box-shadow:var(--sombra);overflow:hidden}
-.eq-det+.eq-det{margin-top:9px}
-.eq-det.yo{border-color:var(--rojo)}
-.eq-det summary{display:flex;align-items:center;gap:11px;padding:14px 17px;cursor:pointer;list-style:none}
-.eq-det summary::-webkit-details-marker{display:none}
-.eq-det summary:hover{background:var(--rojo-suave)}
-.pos{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--tenue);width:24px;flex:none}
-.eqn{flex:1;font-weight:500;font-size:15.5px}
-.tuyo{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--rojo);border:1px solid currentColor;border-radius:3px;padding:1px 5px;flex:none}
-.barra{height:5px;background:var(--linea);border-radius:99px;overflow:hidden;width:60px;flex:none}
-.barra i{display:block;height:100%;background:var(--gris);border-radius:99px}
-.eq-det.yo .barra i{background:var(--rojo)}
-.cifra{display:flex;flex-direction:column;align-items:flex-end;line-height:1.1;flex:none}
-.cifra i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:8.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--tenue)}
-.cifra b{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:15px;font-variant-numeric:tabular-nums}
-.cifra.caja b{color:var(--oro)}
-.eq-cuerpo{padding:4px 17px 18px;display:flex;flex-direction:column;gap:14px;border-top:1px solid var(--linea)}
-.frase{margin:14px 0 0;font-size:15px}
-.cuenta{display:flex;flex-direction:column;gap:5px;font-size:14.5px}
-.cuenta .l{display:flex;justify-content:space-between;gap:16px;font-variant-numeric:tabular-nums}
-.cuenta .l>span:first-child{color:var(--gris)}
-.cuenta .l>span:last-child{font-family:"IBM Plex Mono",monospace;font-size:13.5px}
-.cuenta .l.tot{border-top:1px solid var(--linea);padding-top:7px;margin-top:2px;font-weight:600;font-size:15.5px}
-.cuenta .l.caja>span:last-child{color:var(--oro);font-size:18px;font-weight:700}
-.mas{color:var(--verde)}.menos{color:var(--rojo)}
-table.jt{width:100%;border-collapse:collapse;font-size:13.5px}
-table.jt th{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--tenue);text-align:right;padding:0 0 7px;border-bottom:1px solid var(--linea)}
+.dorsal{
+  grid-column:1;grid-row:1/3;align-self:start;margin-top:2px;
+  width:34px;height:34px;border-radius:8px;display:grid;place-items:center;
+  font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:12px;
+  letter-spacing:.04em;color:#fff;
+}
+.dorsal.p1{background:var(--por)} .dorsal.p2{background:var(--def)}
+.dorsal.p3{background:var(--med)} .dorsal.p4{background:var(--del)}
+.dorsal.p0{background:var(--tenue)}
+
+.jn{
+  grid-column:2;grid-row:1;
+  font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:19px;
+  line-height:1.15;display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-width:0;
+}
+.et{
+  font-family:Manrope,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.02em;
+  border-radius:99px;padding:2px 8px;white-space:nowrap;line-height:1.4;
+}
+.et-mk{color:var(--oro);background:var(--oro-fondo);border:1px solid var(--oro-raya)}
+.et-eq{color:var(--gris);background:var(--hueco);border:1px solid var(--raya)}
+.et-eq.et-mio{color:var(--oro);background:var(--oro-fondo);border-color:var(--oro-raya)}
+.et-libre{color:var(--sube);background:var(--sube-fondo);border:1px solid currentColor}
+
+.jp{grid-column:3;grid-row:1/3;text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:1px;white-space:nowrap}
+.jp b{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;font-size:15px}
+.jp b.cl{color:var(--oro)}
+.jp i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue)}
+.jp .ico{font-size:14px;letter-spacing:1px;line-height:1.2;margin-top:2px;min-height:17px}
+
+.js{grid-column:2;grid-row:2;font-size:12.5px;color:var(--gris);display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.js b{color:var(--tinta);font-weight:600}
+.js .sep{color:var(--raya)}
+
+/* Cuántos equipos llegan a pagarlo: se ve antes de leerlo. */
+.puede{display:inline-flex;align-items:center;gap:5px}
+.puede .tira{display:inline-flex;gap:2px}
+.puede .tira i{width:5px;height:11px;border-radius:1.5px;background:var(--raya);display:block}
+.puede .tira i.on{background:var(--oro)}
+.puede em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--tenue)}
+
+.jr{
+  grid-column:2/-1;grid-row:3;font-size:12.5px;line-height:1.5;color:var(--tinta);
+  background:var(--oro-fondo);border-left:3px solid var(--oro);border-radius:0 6px 6px 0;
+  padding:7px 11px;margin-top:5px;
+}
+.jr b{color:var(--oro)}
+
+.vacio{padding:34px 20px;text-align:center;color:var(--tenue);font-size:14px}
+
+/* ── Equipos ──────────────────────────────────────────────────────────── */
+.eq{background:var(--tabla);border:1px solid var(--raya);border-radius:var(--radio);box-shadow:var(--sombra);overflow:hidden}
+.eq + .eq{margin-top:9px}
+.eq.yo{border-color:var(--oro)}
+.eq > summary{display:grid;grid-template-columns:26px 1fr auto;gap:4px 12px;align-items:center;padding:13px 16px;cursor:pointer;list-style:none}
+.eq > summary::-webkit-details-marker{display:none}
+.eq > summary:hover{background:var(--suelo)}
+.puesto{
+  grid-row:1/3;align-self:start;margin-top:1px;
+  font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:17px;
+  color:var(--tenue);text-align:center;
+}
+.eq.yo .puesto{color:var(--oro)}
+.eqn{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:20px;line-height:1.15;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.eqp{text-align:right;white-space:nowrap;display:flex;flex-direction:column;align-items:flex-end;gap:0}
+.eqp b{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;font-size:16px}
+.eqp i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue)}
+
+/* La barra explica la fórmula sin enunciarla: lo sólido es caja, lo rayado
+   es el crédito que le da su plantilla. Juntos, el tope de puja. */
+.poder{grid-column:2/-1;display:flex;align-items:center;gap:9px;margin-top:2px}
+.poder .barra{flex:1;height:9px;border-radius:99px;background:var(--hueco);overflow:hidden;display:flex}
+.poder .caja{background:var(--oro)}
+.poder .credito{background:repeating-linear-gradient(115deg,var(--oro-raya) 0 4px,transparent 4px 8px);border-right:1px solid var(--oro-raya)}
+.poder small{font-size:11px;color:var(--tenue);white-space:nowrap}
+
+.cuerpo{padding:0 16px 17px;display:flex;flex-direction:column;gap:15px;border-top:1px solid var(--raya)}
+.frase{margin:15px 0 0;font-size:14.5px;color:var(--gris)}
+.frase strong{color:var(--tinta)}
+.cuenta{display:flex;flex-direction:column;gap:4px;font-size:14px}
+.cuenta .l{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+.cuenta .l > span:first-child{color:var(--gris)}
+.cuenta .l > span:last-child{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:13.5px}
+.cuenta .l.tot{border-top:1px solid var(--raya);padding-top:6px;margin-top:3px;font-weight:600}
+.cuenta .l.caja > span:last-child{color:var(--oro);font-size:18px;font-weight:700}
+.mas{color:var(--sube)} .menos{color:var(--baja)}
+
+table.jt{width:100%;border-collapse:collapse;font-size:13px}
+.tabla-scroll{overflow-x:auto}
+table.jt th{
+  font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:500;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--tenue);text-align:right;padding:0 0 6px;border-bottom:1px solid var(--raya);white-space:nowrap;
+}
 table.jt th:first-child{text-align:left}
-table.jt td{padding:8px 0;border-bottom:1px solid var(--linea);text-align:right;font-variant-numeric:tabular-nums;font-family:"IBM Plex Mono",monospace;font-size:12.5px}
-table.jt td:first-child{text-align:left;font-family:"Public Sans",sans-serif;font-size:13.5px}
-table.jt tr.sum td{border-bottom:0;border-top:1px solid var(--tinta);font-weight:600;padding-top:9px}
-table.jt tr:last-child td{border-bottom:0}
-.et-rep{font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:var(--tenue);border:1px solid var(--linea);border-radius:3px;padding:1px 4px;margin-left:7px;white-space:nowrap}
-.pie{font-size:12px;color:var(--tenue);margin:9px 0 0;line-height:1.55}
+table.jt td{padding:7px 0 7px 12px;border-bottom:1px solid var(--raya);text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:12px;white-space:nowrap}
+table.jt td:first-child{text-align:left;padding-left:0;font-family:Manrope,sans-serif;font-size:13px;white-space:normal}
+table.jt tr.sum td{border-bottom:0;border-top:1px solid var(--tinta);font-weight:700;padding-top:8px}
+.et-rep{font-family:"IBM Plex Mono",monospace;font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--tenue);border:1px solid var(--raya);border-radius:3px;padding:1px 4px;margin-left:6px;white-space:nowrap}
+.pie{font-size:11.5px;color:var(--tenue);margin:8px 0 0;line-height:1.55}
 .vacio2{color:var(--tenue);font-size:14px;margin:0}
 
-.leyenda{background:var(--caja);border:1px solid var(--linea);border-radius:12px;box-shadow:var(--sombra);padding:16px 18px;display:flex;flex-direction:column;gap:9px;font-size:14px;color:var(--gris)}
-.leyenda div{display:flex;gap:10px;align-items:flex-start}
-.leyenda b{color:var(--tinta);font-weight:600}
-.leyenda .ic{font-size:16px;flex:none;width:22px}
-.nota{font-size:12.5px;color:var(--gris);line-height:1.6;margin:0}
-.nota strong{color:var(--tinta)}
-.cierre{font-size:12.5px;color:var(--gris);text-align:center;max-width:64ch;margin:22px auto 0;line-height:1.6}
-.cierre strong{color:var(--tinta)}
-label:focus-within{outline:2px solid var(--rojo);outline-offset:2px}
+/* ── Mi equipo ────────────────────────────────────────────────────────── */
+.sec{display:flex;flex-direction:column;gap:9px}
+.sh{
+  font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:22px;
+  text-transform:uppercase;letter-spacing:.015em;margin:6px 0 0;
+  display:flex;align-items:center;gap:9px;
+}
+.sh .se{font-size:19px}
+.sh em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;color:var(--tenue);letter-spacing:0}
+.sd{font-size:14px;color:var(--gris);margin:0;max-width:66ch}
+.sd strong{color:var(--tinta)}
 
-/* botón de actualizar */
-.act{display:flex;align-items:center;gap:11px;flex-wrap:wrap}
-.act button{font:inherit;font-size:14px;font-weight:600;color:#fff;background:var(--rojo);border:0;border-radius:99px;padding:9px 18px;cursor:pointer;display:flex;align-items:center;gap:7px}
-.act button:hover{filter:brightness(1.1)}
-.act button:disabled{opacity:.55;cursor:progress}
-.act .giro{display:inline-block;width:12px;height:12px;border:2px solid rgba(255,255,255,.35);border-top-color:#fff;border-radius:50%;animation:gira .7s linear infinite}
+/* ── Guía ─────────────────────────────────────────────────────────────── */
+.guia{background:var(--tabla);border:1px solid var(--raya);border-radius:var(--radio);box-shadow:var(--sombra);padding:20px 22px}
+.guia + .guia{margin-top:0}
+.guia h2{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;margin:0 0 4px;letter-spacing:.015em}
+.guia > p{margin:0 0 14px;color:var(--gris);font-size:14.5px;max-width:66ch}
+.defs{display:flex;flex-direction:column;gap:13px;margin:0}
+.def{display:grid;grid-template-columns:auto 1fr;gap:3px 13px;align-items:start}
+.def .marca-def{
+  grid-row:1/3;width:38px;height:38px;border-radius:9px;background:var(--hueco);
+  display:grid;place-items:center;font-size:18px;
+}
+.def .marca-def.txt{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:12px;color:#fff}
+.def dt{font-weight:700;font-size:15px}
+.def dd{margin:0;color:var(--gris);font-size:13.5px;line-height:1.55}
+.formula{
+  font-family:"IBM Plex Mono",monospace;font-size:12.5px;line-height:1.9;
+  background:var(--suelo);border:1px solid var(--raya);border-radius:9px;padding:12px 14px;margin:12px 0 0;overflow-x:auto;
+}
+.formula b{color:var(--oro)}
+
+/* ── Actualizar ───────────────────────────────────────────────────────── */
+.acc{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin-left:auto}
+.acc button{
+  font:inherit;font-size:14px;font-weight:700;color:var(--suelo);background:var(--tinta);
+  border:0;border-radius:9px;padding:9px 16px;cursor:pointer;display:flex;align-items:center;gap:7px;
+}
+.acc button svg{width:14px;height:14px}
+.acc button:hover{opacity:.88}
+.acc button:disabled{opacity:.5;cursor:progress}
+.giro{display:inline-block;width:12px;height:12px;border:2px solid rgba(128,128,128,.35);border-top-color:currentColor;border-radius:50%;animation:gira .7s linear infinite}
 @keyframes gira{to{transform:rotate(360deg)}}
-.act .est{font-size:12.5px;color:var(--gris);font-variant-numeric:tabular-nums}
-.act .est code{font-family:"IBM Plex Mono",monospace;font-size:11.5px;background:var(--caja);border:1px solid var(--linea);padding:2px 6px;border-radius:4px}
-.aviso-act{background:var(--caja);border:1px solid var(--linea);border-left:3px solid var(--rojo);border-radius:9px;padding:13px 15px;margin:0 0 16px;font-size:13.5px;line-height:1.65}
-.aviso-act.bien{border-left-color:var(--verde)}
-.aviso-act b{display:block;margin-bottom:5px;font-size:14.5px}
-.aviso-act ul{margin:7px 0 0;padding-left:19px;color:var(--gris)}
-.aviso-act li{font-variant-numeric:tabular-nums}
-.aviso-act .arreglo{display:inline-block;font-size:14px;font-weight:600;color:#fff;background:var(--rojo);border-radius:99px;padding:8px 17px;text-decoration:none}
-.aviso-act .arreglo:hover{filter:brightness(1.1)}
+.acc .est{font-size:12px;color:var(--tenue);font-variant-numeric:tabular-nums}
+.acc .est code{font-family:"IBM Plex Mono",monospace;font-size:11.5px;background:var(--hueco);border:1px solid var(--raya);padding:2px 6px;border-radius:5px}
+.parte{
+  background:var(--tabla);border:1px solid var(--raya);border-left:3px solid var(--baja);
+  border-radius:9px;padding:13px 15px;margin:0 0 16px;font-size:13.5px;line-height:1.6;
+}
+.parte.bien{border-left-color:var(--sube)}
+.parte b{display:block;margin-bottom:4px;font-size:14.5px}
+.parte ul{margin:6px 0 0;padding-left:19px;color:var(--gris)}
+.parte .arreglo{display:inline-block;margin-top:10px;font-size:14px;font-weight:700;color:var(--suelo);background:var(--tinta);border-radius:9px;padding:8px 16px;text-decoration:none}
+
+.cierre{font-size:12px;color:var(--tenue);text-align:center;max-width:62ch;margin:26px auto 0;line-height:1.65}
+.cierre strong{color:var(--gris)}
+a{color:var(--oro)}
+:focus-visible{outline:2px solid var(--oro);outline-offset:2px;border-radius:4px}
 </style>
 </head>
 <body>
@@ -157,13 +343,19 @@ label:focus-within{outline:2px solid var(--rojo);outline-offset:2px}
 <input class="ctrl" type="radio" name="pest" id="t1" checked>
 <input class="ctrl" type="radio" name="pest" id="t2">
 <input class="ctrl" type="radio" name="pest" id="t3">
-<input class="ctrl" type="radio" name="ambito" id="a1" checked>
-<input class="ctrl" type="radio" name="ambito" id="a2">
+<input class="ctrl" type="radio" name="pest" id="t4">
+<input class="ctrl" type="radio" name="ambito" id="a1">
+<input class="ctrl" type="radio" name="ambito" id="a2" checked>
 <input class="ctrl" type="radio" name="filtro" id="f1" checked>
 <input class="ctrl" type="radio" name="filtro" id="f2">
 <input class="ctrl" type="radio" name="filtro" id="f3">
 <input class="ctrl" type="radio" name="filtro" id="f4">
 <input class="ctrl" type="radio" name="filtro" id="f5">
+<input class="ctrl" type="radio" name="sitio" id="s1" checked>
+<input class="ctrl" type="radio" name="sitio" id="s2">
+<input class="ctrl" type="radio" name="sitio" id="s3">
+<input class="ctrl" type="radio" name="sitio" id="s4">
+<input class="ctrl" type="radio" name="sitio" id="s5">
 <input class="ctrl" type="radio" name="duenio" id="d1" checked>
 <input class="ctrl" type="radio" name="duenio" id="d2">
 <input class="ctrl" type="radio" name="duenio" id="d3">
@@ -171,73 +363,97 @@ label:focus-within{outline:2px solid var(--rojo);outline-offset:2px}
 
 <div class="env">
 
-  <div class="top">
-    <h1>Mercado de <em>La Liga</em></h1>
-    <div class="mitope">Tu tope de puja: <b>28.556.455 €</b></div>
-  </div>
+  <header class="cab">
+    <div class="marca">
+      <span class="escudo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg></span>
+      <div>
+        <h1>__LIGA__</h1>
+        <p>Quién tiene dinero, quién puede fichar a quién, y a qué precio.</p>
+      </div>
+    </div>
+    <div class="acc">
+      <button id="btn-act" type="button" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>Actualizar</button>
+      <span class="est" id="est-act"></span>
+    </div>
+  </header>
 
-  <div class="act">
-    <button id="btn-act" type="button" hidden>Actualizar</button>
-    <span class="est" id="est-act"></span>
-  </div>
+  <div id="parte-act"></div>
 
-  <div id="resu-act"></div>
+<!--__MARCADOR__-->
 
-  <div class="pest">
-    <label for="t1">Jugadores</label>
-    <label for="t2">Equipos</label>
-    <label for="t3">Mi equipo</label>
-  </div>
+  <nav class="pest">
+    <label for="t1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg><span>Jugadores</span></label>
+    <label for="t2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/><path d="M3 21v-1.5a3 3 0 0 1 3-3M21 21v-1.5a3 3 0 0 0-3-3"/></svg><span>Equipos</span></label>
+    <label for="t3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M8 16V9M12 16v-4M16 16V6"/></svg><span>Mi equipo</span></label>
+    <label for="t4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.2a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.6"/><path d="M12 17.2h.01"/></svg><span>Guía</span></label>
+  </nav>
 
   <div class="panel" id="p1">
 
-    <div class="grupo">
-      <span>Dónde busco</span>
-      <div class="ops">
-        <label for="a1">Solo el mercado</label>
-        <label for="a2">Todos los jugadores</label>
+    <div class="mando">
+      <div class="buscar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Buscar jugador o equipo…" autocomplete="off" spellcheck="false">
+        <select id="orden" aria-label="Ordenar por">
+          <option value="recomendado">Recomendados</option>
+          <option value="precio-desc">Más caros</option>
+          <option value="precio-asc">Más baratos</option>
+          <option value="media">Mejor media</option>
+          <option value="puntos">Más puntos</option>
+          <option value="sube">Los que más suben</option>
+        </select>
+        <span class="cuenta-res" id="cuenta-res"></span>
+      </div>
+      <div class="grupos">
+        <div class="grupo">
+          <span>Posición</span>
+          <div class="ops">
+            <label for="s1">Todas</label>
+            <label for="s2">Porteros</label>
+            <label for="s3">Defensas</label>
+            <label for="s4">Medios</label>
+            <label for="s5">Delanteros</label>
+          </div>
+        </div>
+        <div class="grupo">
+          <span>De quién es</span>
+          <div class="ops">
+            <label for="d1">Cualquiera</label>
+            <label for="d2">Libres</label>
+            <label for="d3">De un rival</label>
+            <label for="d4">Míos</label>
+          </div>
+        </div>
+        <div class="grupo">
+          <span>Dónde busco</span>
+          <div class="ops">
+            <label for="a2">Todos</label>
+            <label for="a1">Solo lo que está en venta</label>
+          </div>
+        </div>
+        <div class="grupo">
+          <span>Qué destaca</span>
+          <div class="ops">
+            <label for="f1">Todo</label>
+            <label for="f3">⭐ Puntos</label>
+            <label for="f4">💵 Dinero</label>
+            <label for="f2">Los dos</label>
+            <label for="f5">Puedo pagarlo</label>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="grupo">
-      <span>Qué me interesa</span>
-      <div class="ops">
-        <label for="f1">Todos</label>
-        <label for="f2">⭐💵 Los dos</label>
-        <label for="f3">⭐ Puntos</label>
-        <label for="f4">💵 Dinero</label>
-        <label for="f5">A mi alcance</label>
-      </div>
-    </div>
+    <p class="aviso">Esto mira <strong>toda tu plantilla</strong>, esté o no en venta. Los consejos de vender y blindar están en <strong>Mi equipo</strong>.</p>
 
-    <div class="grupo">
-      <span>De quién es</span>
-      <div class="ops">
-        <label for="d1">Cualquiera</label>
-        <label for="d2">Sin dueño</label>
-        <label for="d3">De algún equipo</label>
-        <label for="d4">Mi plantilla</label>
-      </div>
-    </div>
-
-    <p class="aviso">Esto mira <strong>toda tu plantilla</strong>, esté o no en el mercado: el selector de arriba no lo recorta. Los consejos de venta y blindaje están en la pestaña <strong>Mi equipo</strong>.</p>
-
-    <div class="lista">
+    <div class="lista" id="lista-jug">
 <!--__JUGADORES__-->
-    </div>
-
-    <div class="leyenda">
-      <div><span class="ic">⭐</span><span><b>Puntos.</b> Está en el tercio con mejor media por partido de todos los jugadores que conozco, y ha jugado al menos dos.</span></div>
-      <div><span class="ic">💵</span><span><b>Dinero.</b> Su valor sube esta semana y está en el tercio que más ha crecido en el último mes: comprarlo y revenderlo debería dejar beneficio.</span></div>
-      <div><span class="ic" style="color:var(--rojo);font-family:'IBM Plex Mono',monospace;font-size:12px">€</span><span><b>El precio es lo que cuesta ficharlo.</b> Si el jugador tiene dueño, su <b>cláusula</b> —en rojo—: lo que hay que pagar para arrebatárselo. Si está <b>libre</b>, su valor de mercado. El <b>x/8</b> cuenta cuántos equipos llegan a ese precio.</span></div>
-      <div><span class="ic">🏷️</span><span><b>La etiqueta junto al nombre es su equipo</b> en tu liga. Los tuyos van en rojo; los que no son de nadie, en verde.</span></div>
-      <p class="nota">Los dos criterios se calculan sobre <strong>todos</strong> los jugadores, así que una estrella significa lo mismo mires donde mires; los selectores de arriba solo deciden a quién enseño. Son criterios sobre datos publicados, no una bola de cristal: un jugador puede lesionarse o dejar de jugar.</p>
+      <p class="vacio" id="sin-res" hidden>Ningún jugador cumple eso. Prueba a quitar algún filtro.</p>
     </div>
 
   </div>
 
   <div class="panel" id="p2">
-    <p class="contador" style="text-align:left;color:var(--gris)">Pulsa un equipo para ver sus cuentas y todos sus fichajes.</p>
 <!--__EQUIPOS__-->
   </div>
 
@@ -245,33 +461,83 @@ label:focus-within{outline:2px solid var(--rojo);outline-offset:2px}
 <!--__MIEQUIPO__-->
   </div>
 
-  <p class="cierre">Reconstruido movimiento a movimiento desde el reinicio de la liga del 3 de agosto. El tope de puja propio calculado coincide <strong>al euro</strong> con el que muestra Mister.</p>
+  <div class="panel" id="p4">
+<!--__GUIA__-->
+  </div>
 
-  <p class="cierre" style="margin-top:8px"><!--__SELLO__--></p>
+  <p class="cierre">Reconstruido movimiento a movimiento desde el reinicio de la liga del 3 de agosto. El tope de puja calculado coincide <strong>al euro</strong> con el que muestra Mister.<br><!--__SELLO__--></p>
 
 </div>
 
 <script>
-// Lo único para lo que hace falta JavaScript en toda la página. Sin él, las
-// pestañas y los filtros siguen funcionando: solo desaparece el botón.
+// La página se lee entera sin JavaScript: las pestañas y todos los filtros van
+// con CSS. Esto solo añade el buscador, el orden y el botón de actualizar.
 (function () {
+  var lista = document.getElementById('lista-jug')
+  var filas = [].slice.call(lista.querySelectorAll('.fj'))
+  var q = document.getElementById('q')
+  var orden = document.getElementById('orden')
+  var cuenta = document.getElementById('cuenta-res')
+  var sinRes = document.getElementById('sin-res')
+
+  var normal = function (s) {
+    return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+  }
+  filas.forEach(function (f) { f._busca = normal(f.getAttribute('data-busca') || '') })
+
+  var criterios = {
+    recomendado: function (a, b) { return num(b, 'rec') - num(a, 'rec') },
+    'precio-desc': function (a, b) { return num(b, 'precio') - num(a, 'precio') },
+    'precio-asc': function (a, b) { return num(a, 'precio') - num(b, 'precio') },
+    media: function (a, b) { return num(b, 'media') - num(a, 'media') },
+    puntos: function (a, b) { return num(b, 'puntos') - num(a, 'puntos') },
+    sube: function (a, b) { return num(b, 'sube') - num(a, 'sube') },
+  }
+  function num (el, campo) { return parseFloat(el.getAttribute('data-' + campo)) || 0 }
+
+  function repasar () {
+    var texto = normal(q.value.trim())
+    var vistos = 0
+    filas.forEach(function (f) {
+      var pasa = texto === '' || f._busca.indexOf(texto) !== -1
+      f.classList.toggle('oculto', !pasa)
+      // offsetParent descarta las que ya esconde el CSS de los filtros.
+      if (pasa && f.offsetParent !== null) vistos++
+    })
+    cuenta.textContent = vistos + (vistos === 1 ? ' jugador' : ' jugadores')
+    sinRes.hidden = vistos !== 0
+  }
+
+  function reordenar () {
+    var cmp = criterios[orden.value] || criterios.recomendado
+    filas.slice().sort(cmp).forEach(function (f) { lista.insertBefore(f, sinRes) })
+  }
+
+  q.addEventListener('input', repasar)
+  orden.addEventListener('change', function () { reordenar(); repasar() })
+  // Los filtros de CSS cambian qué se ve, y el contador tiene que enterarse.
+  ;[].slice.call(document.querySelectorAll('.ctrl')).forEach(function (r) {
+    r.addEventListener('change', repasar)
+  })
+  repasar()
+
+  // ── Botón de actualizar ────────────────────────────────────────────────
   var btn = document.getElementById('btn-act')
   var est = document.getElementById('est-act')
-  var caja = document.getElementById('resu-act')
+  var caja = document.getElementById('parte-act')
 
-  function pinta(r) {
+  function parte (r) {
     var lis = (r.detalle || []).map(function (d) {
       return '<li>' + String(d).replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</li>'
     }).join('')
-    caja.innerHTML = '<div class="aviso-act' + (r.ok ? ' bien' : '') + '"><b>' +
-      (r.ok ? '\u2705 ' : '\u26a0\ufe0f ') + String(r.mensaje) + '</b>' +
+    caja.innerHTML = '<div class="parte' + (r.ok ? ' bien' : '') + '"><b>' +
+      (r.ok ? '✅ ' : '⚠️ ') + String(r.mensaje) + '</b>' +
       (lis ? '<ul>' + lis + '</ul>' : '') +
-      (r.irA ? '<p style="margin:11px 0 0"><a class="arreglo" href="' + r.irA + '">Conectar con Mister &rarr;</a></p>' : '') + '</div>'
+      (r.irA ? '<a class="arreglo" href="' + r.irA + '">Conectar con Mister &rarr;</a>' : '') + '</div>'
   }
 
-  // Abierta con doble clic (file://) no hay a quién pedirle los datos.
   if (location.protocol !== 'http:' && location.protocol !== 'https:') {
-    est.innerHTML = 'Para poder actualizar, abre la app con <code>node modulo/servidor.cjs</code>'
+    est.innerHTML = 'Para actualizar, abre con <code>npm run app</code>'
     return
   }
   btn.hidden = false
@@ -282,23 +548,20 @@ label:focus-within{outline:2px solid var(--rojo);outline-offset:2px}
     caja.innerHTML = ''
     var t0 = Date.now()
     var reloj = setInterval(function () {
-      est.textContent = Math.round((Date.now() - t0) / 1000) + ' s \u2014 buscando movimientos nuevos\u2026'
+      est.textContent = Math.round((Date.now() - t0) / 1000) + ' s — buscando movimientos nuevos…'
     }, 1000)
-
-    function acaba(r) {
+    function acaba (r) {
       clearInterval(reloj)
       est.textContent = ''
       btn.disabled = false
-      btn.textContent = 'Actualizar'
-      pinta(r)
+      btn.innerHTML = 'Actualizar'
+      parte(r)
     }
-
     fetch('/actualizar', { method: 'POST' })
       .then(function (r) { return r.json() })
       .then(function (r) {
         if (!r.ok) return acaba(r)
-        // Recargar es lo que enseña las cifras nuevas: la página es estática.
-        sessionStorage.setItem('resultado-act', JSON.stringify(r))
+        sessionStorage.setItem('parte-act', JSON.stringify(r))
         location.reload()
       })
       .catch(function (e) {
@@ -306,10 +569,10 @@ label:focus-within{outline:2px solid var(--rojo);outline-offset:2px}
       })
   })
 
-  var guardado = sessionStorage.getItem('resultado-act')
+  var guardado = sessionStorage.getItem('parte-act')
   if (guardado) {
-    sessionStorage.removeItem('resultado-act')
-    try { pinta(JSON.parse(guardado)) } catch (e) {}
+    sessionStorage.removeItem('parte-act')
+    try { parte(JSON.parse(guardado)) } catch (e) {}
   }
 })()
 </script>

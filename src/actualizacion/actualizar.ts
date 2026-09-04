@@ -170,7 +170,7 @@ function construirJugadores(
   cuentas: ReturnType<typeof reconstruir>,
 ): unknown[] {
   const enMercado = new Set(hechos.mercado.map((m) => m.idJugador))
-  const ficha = new Map<string, { id: string; nombre: string; valor: number; puntos: number; media: number; partidos: number; semana: number | null; mes: number | null; mk: number }>()
+  const ficha = new Map<string, { id: string; nombre: string; valor: number; puntos: number; media: number; partidos: number; semana: number | null; mes: number | null; mk: number; pos: number }>()
 
   const cuenta = (racha: string) => racha.split(',').filter((x) => x !== '' && x !== '-').length
 
@@ -185,6 +185,7 @@ function construirJugadores(
       semana: null,
       mes: null,
       mk: enMercado.has(t.idJugador) ? 1 : 0,
+      pos: t.posicion,
     })
   }
   // El mercado del día manda: trae media, puntos y partidos de hoy.
@@ -200,6 +201,7 @@ function construirJugadores(
       semana: m.valor - m.valorPrevio,
       mes: previo?.mes ?? null,
       mk: 1,
+      pos: m.posicion,
     })
   }
 

@@ -32,6 +32,8 @@ export type Traspaso = {
   cuando: string
   /** Valor, puntos y media del jugador tal como los traía ese evento. */
   valor: number
+  /** 1 portero, 2 defensa, 3 centrocampista, 4 delantero. */
+  posicion: number
   puntos: number
   media: number
   racha: string
@@ -58,6 +60,7 @@ export type EnMercado = {
   partidos: number
   clausula: number | null
   idDuenio: number | null
+  posicion: number
 }
 
 export type Hechos = {
@@ -134,6 +137,7 @@ export function extraerHechos(volcado: Volcado): Hechos {
               tipo: texto(m['type'], 'type'),
               cuando,
               valor: num(m['value'], 'value'),
+              posicion: num(m['position'] ?? 0, 'position'),
               puntos: num(m['points'] ?? 0, 'points'),
               media: typeof m['avg'] === 'number' ? m['avg'] : 0,
               racha: typeof m['streak'] === 'string' ? m['streak'] : '',
@@ -190,6 +194,7 @@ export function extraerHechos(volcado: Volcado): Hechos {
               partidos: Array.isArray(racha) ? racha.length : 0,
               clausula: clausula ? num(clausula['value'], 'clause.value') : null,
               idDuenio: j['ownerId'] == null ? null : num(j['ownerId'], 'ownerId'),
+              posicion: num(j['position'] ?? 0, 'position'),
             }
           })
           mercado = leido

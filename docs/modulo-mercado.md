@@ -1,203 +1,177 @@
-# El módulo de mercado
+# El módulo
 
-`datos/mercado.html` — una sola página que se abre con doble clic. **No usa
-JavaScript**: las pestañas y los filtros funcionan con HTML y CSS, así que
-también se ven bien en visores que no ejecutan scripts.
-
-```bash
-open datos/mercado.html
-```
-
-Se regenera con:
+Una sola página, `datos/mercado.html`, generada por `modulo/generar.cjs` a
+partir de los datos del motor contable.
 
 ```bash
-node modulo/generar.cjs
+npm run app      # con botón de actualizar, en 127.0.0.1:4788
+npm run generar  # solo rehace el HTML con los datos que ya hay
 ```
 
-## Tres pestañas
+Abrirla con doble clic también funciona: pestañas y filtros van con CSS, y
+JavaScript solo añade el buscador, el orden y el botón. Sin él se ve la lista
+entera, que sigue siendo útil.
 
-**Jugadores** — los 197 con sus filtros. **Equipos** — los ocho con sus
-cuentas. **Mi equipo** — la plantilla propia y los dos consejos.
+## Está pensada para que la entienda alguien de fuera
 
-## Cómo funciona el filtrado (pestaña Jugadores)
+Es el requisito que manda desde que la idea es enseñársela a la gente de la
+liga. De ahí salen la mitad de las decisiones:
 
-Tres selectores que se combinan en cascada, con radios ocultos y selectores CSS:
+- Una pestaña **Guía** que explica la fórmula del tope de puja, los cuatro
+  iconos, la diferencia entre valor y cláusula, y lo que el módulo **no** sabe.
+- Un **marcador** siempre visible arriba con las cuatro cifras que resumen tu
+  situación: puesto, caja, tope de puja y cuánto has ganado sobre los 50 M.
+- La barra de cada equipo **descompone el tope en vez de enunciarlo**: la parte
+  sólida es la caja y la rayada el 25 % que le fía su plantilla. Se ve de un
+  vistazo quién tiene dinero de verdad y quién lo tiene metido en jugadores —
+  Betico1993 es casi todo sólido, Neky F.C. casi todo rayado.
+- La **tira de cuadraditos** de cada jugador dice cuántos equipos llegan a
+  pagar su precio. Es la misma información que el `7/8`, pero se lee sin leerla.
 
-**Dónde busco** — solo los 32 jugadores en venta ahora mismo, o los 197 que
-conozco (los que han pasado por la liga más los del mercado).
+## Las cuatro pestañas
 
-**Qué me interesa** — todos, los dos iconos, solo puntos, solo dinero, o lo que
-cabe en el propio tope de puja.
+| | Qué hay |
+|---|---|
+| **Jugadores** | Los 197 con buscador, orden y cuatro grupos de filtros |
+| **Equipos** | Los 8 por capacidad de compra, desplegables a sus cuentas completas |
+| **Mi equipo** | La plantilla propia partida en vender / blindar / el resto |
+| **Guía** | Qué significa cada cosa, para quien abre esto por primera vez |
 
-**De quién es** — cualquiera, sin dueño (117), de algún equipo (80), o la
-plantilla propia (18).
+## Buscar, ordenar, filtrar
 
-Cada jugador lleva junto al nombre la **etiqueta de su equipo** en la liga: en
-rojo los propios, en verde los que no son de nadie.
+**Buscador**: por nombre de jugador, por equipo (`neky` → sus 22) y también por
+posición escrita (`portero` → los 17). Necesita JavaScript.
 
-| Icono | Criterio | A quién se le pone |
+**Orden**: recomendados, más caros, más baratos, mejor media, más puntos, los
+que más suben.
+
+**Filtros**, cuatro grupos que se combinan:
+
+| Grupo | Opciones |
+|---|---|
+| Posición | Todas · Porteros · Defensas · Medios · Delanteros |
+| De quién es | Cualquiera · Libres · De un rival · Míos |
+| Dónde busco | Todos · Solo lo que está en venta |
+| Qué destaca | Todo · ⭐ Puntos · 💵 Dinero · Los dos · Puedo pagarlo |
+
+**Míos** se salta el selector de ámbito a propósito: enseñar solo los tuyos que
+están en venta deja la lista casi vacía sin explicar por qué. La página lo avisa.
+
+Los filtros van con CSS —radios ocultos y selectores de hermano— y el buscador
+con JavaScript; se componen porque cada uno esconde por su lado y el contador
+solo cuenta lo que de verdad se ve (`offsetParent !== null`).
+
+## Los cuatro iconos
+
+| Icono | Criterio | A quién |
 |---|---|---|
-| ⭐ | Está en el **tercio con mejor media** de puntos por partido, y ha jugado al menos dos | A cualquiera |
-| 💵 | Su valor **sube esta semana** y está en el tercio que **más ha crecido en el mes** | A cualquiera |
-| 📤 | **Capital parado**: no rinde (media < 5 o cero partidos) **y** su valor sube menos del 25 % al mes | Solo a los propios; su sitio es la pestaña Mi equipo |
-| 🔒 | **Te lo pueden quitar barato**: rinde (media ≥ 5 o ≥ 20 puntos), al menos 5 rivales pueden pagar su cláusula, **y** esa cláusula sale a menos de 1,1 M € por punto de media **o** sigue en el mínimo (1,5 × valor) | Solo a los propios; su sitio es la pestaña Mi equipo |
+| ⭐ | Media en el **tercio alto** de la liga, con dos partidos o más | Cualquiera |
+| 💵 | Su valor **sube esta semana** y está en el tercio que **más creció en el mes** | Cualquiera |
+| 📤 | **Capital parado**: no rinde (media < 5 o cero partidos) **y** sube menos del 25 % al mes | Solo los propios |
+| 🔒 | **Te lo quitan barato**: rinde (media ≥ 5 o ≥ 20 pts), 5 o más rivales pagan su cláusula, **y** esa cláusula sale a menos de 1,1 M € por punto de media **o** sigue en el mínimo (1,5 × valor) | Solo los propios |
 
-⭐ y 💵 son **percentiles** sobre los 197 jugadores, no umbrales fijos: siguen
-significando algo cuando cambie el nivel general de la liga. Con los datos del
-3 de septiembre salen en media 4,3 y +55 % de crecimiento mensual.
+⭐ y 💵 son **percentiles** sobre los 197, no umbrales fijos: siguen
+significando lo mismo cuando cambie el nivel de la liga. Con los datos del 3 de
+septiembre salen en media 4,3 y +55 % mensual. El umbral de 1,1 M € por punto
+que usa 🔒 es aproximadamente el cuartil bajo de la liga (p25 = 954 k€,
+p50 = 1,53 M€) sobre los 67 jugadores con cláusula que han jugado.
 
-El umbral de 1,1 M € por punto de media que usa 🔒 tampoco es inventado: es
-aproximadamente el cuartil bajo de la liga (p25 = 954 k€, p50 = 1,53 M€) sobre
-los 67 jugadores con cláusula que han jugado.
-
-**Los criterios se calculan sobre los 197 jugadores, no sobre el subconjunto
-mostrado.** Así una estrella significa lo mismo se mire donde se mire, y el
-selector de ámbito solo decide a quién se enseña.
-
-**Mi plantilla** se salta el selector de ámbito, porque enseñar solo los que
-están en el mercado daba 5 de 18 sin decir por qué. La página lo avisa con un
-recuadro. Está hecho sin `!important`, que se llevaba por delante el filtro de
-iconos: la regla del ámbito se aparta sola encadenando hermanos
-(`#a1:checked~#d4:not(:checked)~.env`), así que «Mi plantilla + ⭐» sigue dando
-los 9 que toca y no los 18.
-
-Con los datos del 3 de septiembre: 📤 señala a Rodri Hernández, José Giménez y
-Hector Fort; 🔒 a Roger Brugué, Aubameyang, Dani Lorenzo, Ramón Terrats y
-Álvaro Valles.
-
-## Las 40 combinaciones, verificadas
-
-| Ámbito | Filtro | Cualquiera | Sin dueño | De algún equipo | Mi plantilla |
-|---|---|---|---|---|---|
-| Mercado | Todos | 32 | 20 | 12 | 18 |
-| Mercado | ⭐💵 | 5 | 1 | 4 | 7 |
-| Mercado | ⭐ | 9 | 5 | 4 | 9 |
-| Mercado | 💵 | 14 | 3 | 11 | 14 |
-| Mercado | A mi alcance | 32 | 20 | 12 | 18 |
-| Todos | Todos | 197 | 117 | 80 | 18 |
-| Todos | ⭐💵 | 25 | 4 | 21 | 7 |
-| Todos | ⭐ | 52 | 13 | 39 | 9 |
-| Todos | 💵 | 63 | 18 | 45 | 14 |
-| Todos | A mi alcance | 197 | 117 | 80 | 18 |
-
-La columna «Mi plantilla» sale igual con «Mercado» que con «Todos», que es
-precisamente lo que se buscaba. Comprobado en el navegador, con clics reales
-sobre los chips, que cada combinación muestra exactamente las filas que le
-corresponden y ninguna más.
-
-La página lleva al pie la **fecha y hora en que se generó**, para saber de un
-vistazo si lo que se está mirando es la última versión.
-
-## Pestaña «Mi equipo»
-
-Los consejos vivían como dos chips más entre los otros cinco, y ahí no se veían.
-Ahora tienen pestaña propia, con la plantilla partida en tres bloques:
-
-1. **📤 Deberías vender** — con lo que entraría en caja y, sobre todo, en cuánto
-   quedaría el tope de puja después. Vendiendo los tres que salen hoy, pasaría
-   de 28.556.455 € a **39.486.205 €**.
-2. **🔒 Deberías blindar** — con la cláusula como cifra grande, que es lo que
-   pagaría el rival, y cuántos de los siete llegan a pagarla.
-3. **El resto de tu plantilla** — para que estén los 18 y no solo los señalados.
-
-Arriba, un resumen: puesto, puntos, caja, valor de plantilla, tope de puja,
-patrimonio y la diferencia sobre los 50 M de salida.
-
-Cada jugador lleva además **lo que se pagó por él y lo que se gana o se pierde
-hoy** con él, que es la misma cuenta corregida de la pestaña de equipos.
+**Los criterios se calculan sobre los 197, no sobre lo que estás viendo.** Así
+una estrella significa lo mismo mires donde mires.
 
 ### ⭐ y 📤 a la vez no es una errata
 
 Rodri Hernández lleva las dos. La estrella dice que su media (4,5) está en el
-tercio alto de la liga; el 📤 dice que 12.395.000 € inmovilizados para esa media,
-con el valor plano desde hace un mes, no compensan. Son dos preguntas distintas
-—«¿es bueno?» y «¿me renta tenerlo?»— y la línea de consejo lo explica en vez de
-dejar los dos iconos peleándose.
+tercio alto; el 📤 dice que 12.395.000 € inmovilizados para esa media, con el
+valor plano desde hace un mes, no compensan. Son dos preguntas distintas
+—«¿es bueno?» y «¿me renta tenerlo?»— y la línea de consejo lo explica en vez
+de dejar los iconos peleándose.
 
-## Pestaña de equipos
+## El precio es lo que cuesta ficharlo
 
-Los ocho ordenados por capacidad de compra. Al desplegar uno: sus cuentas
-completas y todos sus jugadores.
+- **Con dueño** → su **cláusula**, en ámbar. 70 de los 197.
+- **Libre** → su **valor de mercado**. Los otros 127.
 
-### El balance de cada jugador cuenta lo que vale hoy
+La tira cuenta sobre los 8 equipos en los jugadores ajenos y sobre los 7
+rivales en los propios, que es la pregunta que importa cuando ya es tuyo.
 
-La tabla es `Pagó · Cobró · Vale hoy · Balance`, y
+## El balance por jugador cuenta lo que vale hoy
+
+En la tabla de cada equipo: `Pagó · Cobró · Vale hoy · Balance`, con
 
 ```
 balance = cobró + (vale hoy, si aún lo tiene) − pagó
 ```
 
-Un fichaje que sigue en plantilla **no es una pérdida**: es dinero convertido en
-jugador. Si costó 13 M y hoy vale 14, se está ganando 1 M, no perdiendo 13. Una
-versión anterior de la tabla mostraba solo `cobró − pagó` y pintaba de rojo a
-casi toda la plantilla; era engañosa.
+Un fichaje que sigue en plantilla no es una pérdida: es dinero convertido en
+jugador. Los marcados **«del reparto»** no costaron nada, así que todo lo
+cobrado cuenta entero — y por eso el total de la tabla supera la ganancia real.
 
-Los jugadores marcados **«del reparto»** son los que tocaron al empezar. No se
-pagó nada por ellos, así que todo lo cobrado cuenta entero — y por eso el total
-de la tabla supera la ganancia real: los del reparto ya valían dinero el día del
-reinicio.
-
-### La ganancia real está arriba, y es exacta
-
-El recuadro de cuentas termina con:
+La ganancia de verdad está en el recuadro de cuentas, y es exacta:
 
 ```
-Patrimonio hoy            = saldo en caja + valor de la plantilla
-Sobre los 50.000.000 €    = patrimonio − 50.000.000
+Patrimonio hoy         = caja + valor de la plantilla
+Sobre los 50.000.000 € = patrimonio − 50.000.000
 ```
 
-Ese sí es el «voy ganando o perdiendo», y sale del motor contable, no de la
-tabla. Para Niutin FC: 9.209.955 + 77.386.000 = **86.595.955 €**, es decir
-**+36.595.955 €** sobre la salida, de los que 3.275.000 € son premios.
+Para Niutin FC: 9.209.955 + 77.386.000 = **86.595.955 €**, o sea
+**+36.595.955 €**, de los que 3.275.000 € son premios.
 
-## El precio: cláusula o valor
+## El diseño
 
-Cada jugador muestra **lo que cuesta ficharlo de verdad**, no una cifra
-orientativa:
+Neutros con un punto de verde —el césped, sin disfrazarse de él— y **ámbar
+como acento, porque el tema de todo esto es el dinero**. Verde y rosa quedan
+reservados a ganar y perder y no se usan para nada más, que es lo que permite
+leer un signo sin leer la cifra.
 
-- **Con dueño** → su **cláusula de rescisión**, en rojo y etiquetada. Es lo que
-  hay que pagar para arrebatárselo a su equipo. 70 de los 197 están en este caso.
-- **Libre** → su **valor de mercado**. Los otros 127.
+**Barlow Condensed** para nombres y titulares (condensada: caben los nombres
+largos de equipo y tiene aire de marcador), **Manrope** para el texto y
+**IBM Plex Mono** con cifras tabulares para todo lo que sea dinero, para que
+las columnas de números cuadren.
 
-El contador de cada fila usa ese precio efectivo. En los jugadores ajenos dice
-`x/8` (cuántos equipos llegan a pagarlo); en los propios dice **`x/7` rivales
-pueden pagarla**, que es la pregunta que importa cuando el jugador ya es tuyo.
+Los dorsales de color marcan la posición: azul portero, verde defensa, ámbar
+medio, rojo delantero.
 
-Ejemplo: Aubameyang vale 5.614.000 € pero su cláusula es **12.342.000 €** —más
-del doble—, porque Mister la fija en el doble de lo que se pagó por él.
+Tres temas, como debe ser: `:root` define la paleta clara completa,
+`@media (prefers-color-scheme: dark)` la redefine con guarda
+`:root:not([data-theme=light])`, y `:root[data-theme=dark]` otra vez para que
+una elección explícita gane en las dos direcciones.
 
 ## Lo que el módulo NO sabe
 
-- **Conoce 197 jugadores, no todo LaLiga.** No hay catálogo completo accesible:
-  `/search` redirige al mercado y no se encontró ningún endpoint que lo sirva.
-- **No sabe cuánto cuesta subir una cláusula.** 🔒 dice qué jugadores están
-  expuestos, no lo que cuesta blindarlos.
-- **Los datos son una foto fija** del 3 de septiembre. Regenerarlo solo es el
-  trabajo de la Fase 3, que necesita las credenciales de sesión en disco.
+- **No conoce a todo LaLiga.** Conoce 197 jugadores: los que han pasado por la
+  liga y los que están hoy en el mercado. `/search` redirige a `/market` y no
+  se encontró ningún endpoint que sirva el catálogo.
+- **12 de esos 197 no tienen posición**, porque vienen de la captura manual y
+  no del feed. Salen con un dorsal gris.
+- **No sabe cuánto cuesta subir una cláusula.** 🔒 dice quién está expuesto.
+- **El nombre de la liga y el equipo propio están escritos en el generador**
+  (`MI_EQUIPO`, `NOMBRE_LIGA`). Para que otro de la liga lo use tal cual habría
+  que sacarlos a configuración.
 
-## Cómo se generó
+## Cómo se genera
 
 `modulo/generar.cjs` monta `modulo/plantilla.html` con los datos de
-`modulo/datos/`. De ahí:
+`modulo/datos/`:
 
-- `datos-liga.json` — movimientos por equipo y por jugador, del histórico.
-- `plantillas.json` — quién tiene a quién hoy.
-- `clausulas.json` — la cláusula de los 70 jugadores con dueño.
-- `jugadores-calc.json` — puntos, media, partidos y evolución de valor.
-- `reparto.json` — el reparto inicial de cada equipo.
+| Fichero | Qué lleva |
+|---|---|
+| `equipos.json` | Saldo, plantilla, puntos y puesto de los 8 |
+| `plantillas.json` | Quién tiene a quién hoy |
+| `clausulas.json` | La cláusula de los 70 con dueño |
+| `jugadores-calc.json` | Puntos, media, partidos, posición y evolución |
+| `datos-liga.json` | Movimientos por equipo y por jugador |
+| `liga.json` | Las constantes del reinicio (no cambian nunca) |
 
-Los saldos, valores de plantilla y topes de puja están escritos en el propio
-generador, tal como los calculó el motor contable. La captura de esos datos es
-hoy manual; automatizarla es la Fase 3.
+Todos los rehace `npm run actualizar` — ver [actualizar.md](actualizar.md).
 
 ### Un jugador solo puede estar en una plantilla
 
 La captura de plantillas dejó a **Roger Brugué (27907) en dos equipos a la vez**.
-El feed lo resuelve sin ambigüedad: el traspaso `543447069`, de tipo `clause` y
-fechado el 30 de agosto de 2026, lo llevó de Los tocahuevos a Niutin FC por
-1.000.000 €. Se corrigió en `plantillas.json`.
+El feed lo resuelve: traspaso `543447069`, tipo `clause`, 30 de agosto de 2026,
+de Los tocahuevos a Niutin FC por 1.000.000 €.
 
-El generador ahora **falla en voz alta** si un jugador aparece en dos plantillas,
-en vez de quedarse con la última y seguir. También falla si un jugador que sigue
-en plantilla no tiene valor de hoy conocido, porque entonces su balance saldría
-mal sin avisar.
+El generador **falla en voz alta** si un jugador aparece en dos plantillas, en
+vez de quedarse con el último que lea; y también si un jugador que sigue en
+plantilla no tiene valor de hoy, porque entonces su balance saldría mal sin
+avisar.
