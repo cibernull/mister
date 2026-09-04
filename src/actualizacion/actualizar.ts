@@ -27,6 +27,7 @@ import {
 import type { JugadorMister } from '../recoleccion/parseadorUniverso.js'
 import { verificar, verificarLiga } from './verificar.js'
 import { podar, subidasDelMes, type Historico } from './historicoValores.js'
+import type { FichaGuardada } from './fichas.js'
 
 const RAIZ = process.cwd()
 const VOLCADO = join(RAIZ, 'datos', 'volcado-feed.json')
@@ -34,9 +35,13 @@ const DATOS = join(RAIZ, 'modulo', 'datos')
 const CACHE_VALORES = join(DATOS, 'valores-ficha.json')
 const CACHE_SLUGS = join(DATOS, 'slugs.json')
 const HISTORICO = join(DATOS, 'historico-valores.json')
+const FICHAS = join(DATOS, 'fichas.json')
 
 const paso = (t: string) => process.stderr.write(`${t}\n`)
-const leerJson = <T>(ruta: string): T => JSON.parse(readFileSync(ruta, 'utf8')) as T
+function leerJson<T>(ruta: string, sino?: T): T {
+  if (sino !== undefined && !existsSync(ruta)) return sino
+  return JSON.parse(readFileSync(ruta, 'utf8')) as T
+}
 const escribirJson = (ruta: string, x: unknown) => writeFileSync(ruta, `${JSON.stringify(x, null, 1)}\n`)
 
 export type Resultado = {
@@ -119,12 +124,31 @@ async function main(): Promise<Resultado> {
   const enVenta = await recolectarMercado(cliente)
   paso(`${enVenta.length} a la venta.`)
 
+  // ── Quién tiene a quién ────────────────────────────────────────────────────
+  // Manda el censo, no la página del equipo. Las dos son de Mister, pero la
+  // página va retrasada: al vender a Fer Niño el censo y la clasificación
+  // decían 18 jugadores y 75.323.000 €, y su página del equipo seguía
+  // enseñando 19 y 77.674.000 €. Con la página al mando la pasada no cuadraba
+  // y no escribía nada, que es lo correcto pero deja la app congelada hasta que
+  // Mister se pone de acuerdo consigo mismo.
+  //
+  // La página sigue haciendo falta para una cosa: los que ya no juegan en
+  // LaLiga desaparecen del censo pero siguen en la plantilla, y Mister los
+  // cuenta.
+  const enCenso = new Set(universo.map((j) => j.id))
+  const plantillas = new Map<string, string[]>()
+  for (const e of constantes.equipos) {
+    const delCenso = universo.filter((j) => j.duenio === e.nombre).map((j) => j.id)
+    const soloEnLaPagina = (leidas.plantillas.get(e.nombre) ?? []).filter((id) => !enCenso.has(id))
+    plantillas.set(e.nombre, [...delCenso, ...soloEnLaPagina])
+  }
+
   const valoresUniverso = new Map(universo.map((j) => [j.id, j.valor]))
   // El censo pisa a la caché de fichas: es de hoy y cubre a todo el mundo. La
   // caché solo se queda con los que el censo ya no lista.
   const conUniverso = () => new Map([...soloValores(), ...valoresUniverso])
 
-  let cuentas = reconstruir(hechos, constantes, conUniverso(), leidas.plantillas)
+  let cuentas = reconstruir(hechos, constantes, conUniverso(), plantillas)
 
   // ── 3 ter. El histórico de valores ─────────────────────────────────────────
   // Lo que sube o baja un jugador EN UN MES no lo publica Mister en ningún
@@ -137,6 +161,11 @@ async function main(): Promise<Resultado> {
   podar(historico)
   escribirJson(HISTORICO, historico)
   const delMes = subidasDelMes(historico, hoy)
+  // Lo que solo está en la ficha de cada jugador —goles, tarjetas, media en
+  // casa y fuera, titularidades, y si Mister lo da por titular el domingo—. Lo
+  // rellena `npm run fichas`, que tarda nueve minutos y va aparte para que el
+  // botón de Actualizar siga costando veinticinco segundos.
+  const detalle = leerJson<Record<string, FichaGuardada>>(FICHAS, {})
   paso(`Histórico: ${Object.keys(historico).length} días, ${delMes.size} jugadores con tendencia del mes.`)
 
   // Qué fichas hay que pedir.
@@ -169,18 +198,9 @@ async function main(): Promise<Resultado> {
       cache.set(id, { valor: v.valor, dia: hoy, nombre: v.nombre, posicion: v.posicion, subeDia: v.dia, subeMes: v.mes })
     escribirJson(CACHE_VALORES, Object.fromEntries(cache))
     if (fallidos.length > 0) paso(`No pude con ${fallidos.length}: ${fallidos.map((f) => `${f.id} (${f.motivo})`).join(', ')}`)
-    cuentas = reconstruir(hechos, constantes, conUniverso(), leidas.plantillas)
+    cuentas = reconstruir(hechos, constantes, conUniverso(), plantillas)
   }
 
-  // El censo también dice de quién es cada jugador, así que sirve de contraste
-  // con la página del equipo. Discrepar no tumba la pasada: los que se han ido
-  // de LaLiga siguen en la plantilla y el censo ya no los lista. Pero se dice.
-  for (const [equipo, ids] of Object.entries(cuentas.plantillas)) {
-    const ajenos = ids.filter((id) => porId.has(id) && porId.get(id)!.duenio !== equipo)
-    if (ajenos.length > 0) {
-      cuentas.avisos.push(`${equipo}: Mister no da por suyos a ${ajenos.map((id) => porId.get(id)!.nombre).join(', ')}`)
-    }
-  }
   if (fueraDelCenso.length > 0) {
     const n = fueraDelCenso.length
     cuentas.avisos.push(
@@ -197,7 +217,7 @@ async function main(): Promise<Resultado> {
 
   // Dos contrastes, no uno. `_FG_user` solo habla de mí; la clasificación
   // publica los jugadores, el valor de plantilla y los puntos de los ocho.
-  const clasificacion = await recolectarClasificacion(cliente)
+  const { clasificacion, clubes } = await recolectarClasificacion(cliente)
   const veredicto = verificar(mio, mister)
   const dLiga = verificarLiga(cuentas.equipos, clasificacion)
   if (!veredicto.cuadra || dLiga.length > 0) {
@@ -222,6 +242,7 @@ async function main(): Promise<Resultado> {
   // ── 5. Escribir y regenerar ────────────────────────────────────────────────
   // Solo a partir de aquí, con el veredicto en la mano, se toca nada en disco.
   escribirJson(VOLCADO, fundido)
+  escribirJson(join(DATOS, 'clubes.json'), Object.fromEntries(clubes))
   escribirJson(join(DATOS, 'equipos.json'), cuentas.equipos)
   escribirJson(join(DATOS, 'plantillas.json'), cuentas.plantillas)
   escribirJson(join(DATOS, 'datos-liga.json'), construirDatosLiga(hechos, cuentas.valores))
@@ -233,7 +254,7 @@ async function main(): Promise<Resultado> {
   // las trae todas y al día.
   const clausulas = universo.filter((j) => j.clausula !== null)
   escribirJson(join(DATOS, 'clausulas.json'), clausulas.map((j) => [Number(j.id), j.clausula! / 1000]))
-  escribirJson(join(DATOS, 'jugadores-calc.json'), construirJugadores(universo, enVenta, cuentas, cache, delMes))
+  escribirJson(join(DATOS, 'jugadores-calc.json'), construirJugadores(universo, enVenta, cuentas, cache, delMes, detalle))
   escribirJson(
     join(DATOS, 'jornadas.json'),
     hechos.jornadas.map((j) => ({
@@ -298,6 +319,33 @@ function construirDatosLiga(
 }
 
 /**
+ * Lo que aporta la ficha, o huecos si esa ficha aún no se ha leído.
+ *
+ * Se devuelven las claves siempre, con `null` dentro, y no un objeto vacío: así
+ * el generador puede preguntar por ellas sin distinguir «no lo sé» de «no
+ * existe el campo», que es de donde salen los `undefined` en la página.
+ */
+function detalleDe(f: FichaGuardada | undefined): {
+  gol: number | null
+  tar: number | null
+  mc: number | null
+  mf: number | null
+  tit: number | null
+  sup: number | null
+  once: 1 | 0 | null
+} {
+  return {
+    gol: f?.goles ?? null,
+    tar: f?.tarjetas ?? null,
+    mc: f?.mediaCasa ?? null,
+    mf: f?.mediaFuera ?? null,
+    tit: f?.titularidades ?? null,
+    sup: f?.suplencias ?? null,
+    once: f === undefined || f.titular === null ? null : f.titular ? 1 : 0,
+  }
+}
+
+/**
  * Los jugadores con sus estadísticas y los dos criterios de siempre.
  *
  * La lista es el censo entero de la competición, no solo los que han pasado
@@ -312,6 +360,7 @@ function construirJugadores(
   cuentas: ReturnType<typeof reconstruir>,
   fichas: Map<string, { valor: number; nombre?: string; posicion?: number; subeDia?: number; subeMes?: number; dia?: string }>,
   delMes: Map<string, number>,
+  detalle: Record<string, FichaGuardada>,
 ): unknown[] {
   // El histórico manda en cuanto tiene recorrido; hasta entonces, la ficha, y
   // solo si se pidió hoy. Una cifra vieja del mes pasado no se enseña: era así
@@ -339,6 +388,10 @@ function construirJugadores(
     est: j.estado,
     /** Su cláusula está blindada: no se le puede pagar. */
     bl: j.blindado ? 1 : 0,
+    /** El club contra el que juega la próxima jornada, y si es en casa. */
+    riv: j.rival,
+    casa: j.enCasa === null ? null : j.enCasa ? 1 : 0,
+    ...detalleDe(detalle[j.id]),
   }))
 
   // Los que siguen en una plantilla y ya no están en LaLiga. No los lista el
@@ -363,6 +416,9 @@ function construirJugadores(
       pos: f.posicion ?? 0,
       est: 'out',
       bl: 0,
+      riv: null,
+      casa: null,
+      ...detalleDe(detalle[id]),
     })
   }
 

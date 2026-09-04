@@ -101,39 +101,46 @@ plantilla = la que publica la página de cada equipo
 tope      = saldo + 25 % del valor de la plantilla
 ```
 
-Los **valores** vienen del censo, que los da al día para los 523. Las
-plantillas siguen leyéndose de la página de cada equipo, no del feed: hay altas
-que Mister no publica como traspaso, y reconstruirlas sumando traspasos deja
-jugadores fuera.
+Los **valores** y las **plantillas** vienen del censo. Del feed no pueden
+salir: hay altas que Mister no publica como traspaso. Y de la página de cada
+equipo tampoco, aunque durante un tiempo fue así: **va retrasada**. Al vender a
+Fer Niño, el censo y la clasificación decían 18 jugadores y 75.323.000 €, y su
+página de equipo seguía enseñando 19 y 77.674.000 €.
 
-El censo también dice de quién es cada jugador, así que sirve de contraste con
-la página del equipo. Los cinco que discrepan son jugadores que **se han ido de
-LaLiga** y siguen en la plantilla: el censo ya no los lista y su valor residual
-solo lo tiene su ficha. Se avisa por su nombre en vez de dejarlos fuera.
+La página sigue haciendo falta para una cosa: los que **se han ido de LaLiga**
+desaparecen del censo pero siguen en la plantilla, y Mister los cuenta. Su valor
+residual solo lo tiene su ficha. Se avisa por su nombre en vez de dejarlos
+fuera.
 
-### 3 bis. El histórico de valores
+### 3 bis. La pasada larga: las fichas
 
 Lo que sube o baja un jugador **en un mes** no lo publica Mister en ningún
 sitio: solo está en la gráfica de su ficha, y las fichas se piden de una en una.
 Por eso el módulo tenía esa cifra para unos pocos y en el resto callaba.
 
 Pero una ficha no trae un punto: trae la **serie diaria entera**, más de un año.
-Con una pasada —una petición por jugador— queda el histórico completo:
+Y de paso trae cosas que no están en ningún otro sitio:
+
+- los **goles** y las **tarjetas**;
+- la **media en casa** y la **media fuera**, que suelen no parecerse en nada
+  —Oyarzabal hace 6,0 en casa y 3,5 fuera, Mbappé 15,0 y 3,0—;
+- cuántas veces ha salido **de inicio** y cuántas del banquillo;
+- si Mister lo da por **titular en el próximo partido**, que es su propia
+  predicción.
 
 ```bash
-npm run historico
+npm run fichas
 ```
 
-Tarda unos nueve minutos y se hace **una vez**. A partir de ahí la cifra del mes
-sale de `modulo/datos/historico-valores.json` para los 523 y sin pedir nada, y
-cada actualización añade su foto del día. Se guardan cuarenta días.
+Son 523 peticiones, unos nueve minutos, y va **aparte de la actualización
+normal**: el botón de Actualizar no puede quedarse esperando eso. Deja
+`modulo/datos/historico-valores.json` (cuarenta días de valores) y
+`modulo/datos/fichas.json`, y la pasada normal los lee de disco.
 
 El slug del enlace, por cierto, es decorativo: `/players/{id}/x` devuelve la
 ficha igual. Lo que no vale es el id a secas, que redirige a las noticias.
 
-Las fichas sueltas solo quedan para los huecos: los míos de los que el histórico
-aún no sabe, y los que siguen en una plantilla pero ya no están en LaLiga. Con
-el histórico lleno son cero, y una pasada entera baja de 2,5 min a unos 25 s.
+Con eso, la pasada normal no pide ninguna ficha y tarda unos 25 s.
 
 ### 4. Comprueba antes de escribir
 
@@ -193,10 +200,15 @@ su sitio se lee de cuándo son los datos.
 Se publica **siempre sobre la misma dirección**, así que el enlace no cambia
 nunca: quien lo tenga guardado ve lo último cada vez que entra.
 
-De republicar se encarga una tarea programada, `liga-de-mister-actualizar`, que
-cada dos horas entre las 9:00 y las 23:00 hace la pasada y vuelve a subir la
-página. Necesita el Mac encendido y con la app abierta; si estaba cerrado, la
-tarea se ejecuta al abrirla.
+De republicar se encargan dos tareas programadas:
+
+| Tarea | Cuándo | Qué hace |
+|---|---|---|
+| `liga-de-mister-fichas` | 8:40, a diario | La pasada larga: las 523 fichas |
+| `liga-de-mister-actualizar` | cada 2 h, de 9:15 a 23:15 | Actualiza y republica |
+
+Necesitan el Mac encendido y con la app abierta; si estaba cerrado, la tarea se
+ejecuta al abrirla.
 
 ## Comandos
 
@@ -207,4 +219,4 @@ tarea se ejecuta al abrirla.
 | `npm run actualizar` | Una pasada desde el Terminal, sin la app |
 | `npm run generar` | Solo rehace el HTML con los datos que ya hay |
 | `npm run publicar` | Prepara `datos/publicada.html` para subirla a la web |
-| `npm run historico` | Rellena el histórico de valores desde las fichas (una vez, ~9 min) |
+| `npm run fichas` | La pasada larga: lee las 523 fichas (~9 min, una vez al día) |

@@ -934,9 +934,34 @@
    "id": "71639",
    "nombre": "Beñat Gerenabarrena",
    "valor": 896000
+  },
+  {
+   "id": "20449",
+   "nombre": "Fer Niño",
+   "valor": 2351000
   }
  ],
  "movimientos": [
+  {
+   "id": "20449",
+   "nombre": "Fer Niño",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 2445040,
+   "tipo": "normal",
+   "fecha": "2026-09-04 18:17:15",
+   "pos": 4
+  },
+  {
+   "id": "64382",
+   "nombre": "Gabriel Suazo",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 2709930,
+   "tipo": "normal",
+   "fecha": "2026-09-04 18:17:01",
+   "pos": 2
+  },
   {
    "id": "71639",
    "nombre": "Beñat Gerenabarrena",
@@ -4318,6 +4343,22 @@
      "op": "normal"
     },
     {
+     "j": "Gabriel Suazo",
+     "id": "64382",
+     "tipo": "venta",
+     "importe": 2709930,
+     "fecha": "2026-09-04",
+     "op": "normal"
+    },
+    {
+     "j": "Fer Niño",
+     "id": "20449",
+     "tipo": "venta",
+     "importe": 2445040,
+     "fecha": "2026-09-04",
+     "op": "normal"
+    },
+    {
      "j": "Jorge Herrando",
      "id": "52377",
      "tipo": "venta",
@@ -4871,6 +4912,12 @@
      "ventas": 5107000,
      "ops": 2
     },
+    "20449": {
+     "nombre": "Fer Niño",
+     "compras": 0,
+     "ventas": 2445040,
+     "ops": 1
+    },
     "22527": {
      "nombre": "Aimar Oroz",
      "compras": 4764360,
@@ -5018,8 +5065,8 @@
     "64382": {
      "nombre": "Gabriel Suazo",
      "compras": 2327010,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 2709930,
+     "ops": 2
     },
     "64468": {
      "nombre": "Tyrhys Dolan",

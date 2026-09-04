@@ -158,7 +158,7 @@ body{
 .ops button.on{border-color:var(--oro);background:var(--oro-fondo);color:var(--oro)}
 #a1:checked~.env label[for=a1],#a2:checked~.env label[for=a2],#a3:checked~.env label[for=a3],
 #f1:checked~.env label[for=f1],#f2:checked~.env label[for=f2],#f3:checked~.env label[for=f3],
-#f4:checked~.env label[for=f4],#f5:checked~.env label[for=f5],
+#f4:checked~.env label[for=f4],#f5:checked~.env label[for=f5],#f6:checked~.env label[for=f6],
 #d1:checked~.env label[for=d1],#d2:checked~.env label[for=d2],#d3:checked~.env label[for=d3],#d4:checked~.env label[for=d4],
 #s1:checked~.env label[for=s1],#s2:checked~.env label[for=s2],#s3:checked~.env label[for=s3],
 #s4:checked~.env label[for=s4],#s5:checked~.env label[for=s5],
@@ -174,6 +174,7 @@ body{
 #f3:checked~.env .fj:not(.tp){display:none}
 #f4:checked~.env .fj:not(.td){display:none}
 #f5:checked~.env .fj:not(.ta){display:none}
+#f6:checked~.env .fj:not(.once){display:none}
 #d2:checked~.env .fj:not(.tl){display:none}
 #d3:checked~.env .fj:not(.triv){display:none}
 #d4:checked~.env .fj:not(.tmio){display:none}
@@ -205,7 +206,7 @@ body{
 .js .sep{color:var(--raya)}
 
 /* Quién puede ficharlo: la pregunta original del módulo, ahora con nombres. */
-.quien{grid-column:2/-1;grid-row:3;margin-top:5px}
+.quien{grid-column:2/-1;grid-row:4;margin-top:5px}
 .quien summary{display:inline-flex;align-items:center;gap:8px;cursor:pointer;list-style:none;padding:3px 9px 3px 5px;border-radius:99px;border:1px solid transparent}
 .quien summary::-webkit-details-marker{display:none}
 .quien summary:hover{border-color:var(--oro-raya);background:var(--oro-fondo)}
@@ -215,6 +216,11 @@ body{
 .quien .txt{font-size:11.5px;color:var(--tenue);font-family:"IBM Plex Mono",monospace}
 .quien .txt b{color:var(--tinta)}
 .quien[open] summary{border-color:var(--oro-raya);background:var(--oro-fondo)}
+.jx{grid-column:2/-1;grid-row:3;display:flex;flex-wrap:wrap;align-items:center;gap:0 7px;font-size:12px;color:var(--tenue);margin-top:3px}
+.jx b{color:var(--gris);font-weight:600}
+.jx .prox{color:var(--gris)}
+.jx .prox i{font-style:normal;color:var(--tenue)}
+.et-once{color:var(--sube);background:var(--sube-fondo);border:1px solid currentColor}
 .jl{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
 .jl:hover,.jl:focus-visible{color:var(--oro);border-bottom-color:var(--oro-raya)}
 .nota-fuera{font-size:12px;color:var(--gris);background:var(--hueco);border:1px solid var(--raya);border-radius:8px;padding:8px 11px;margin:10px 0 0}
@@ -391,6 +397,7 @@ a{color:var(--oro)}
 <input class="ctrl" type="radio" name="filtro" id="f3">
 <input class="ctrl" type="radio" name="filtro" id="f4">
 <input class="ctrl" type="radio" name="filtro" id="f5">
+<input class="ctrl" type="radio" name="filtro" id="f6">
 <input class="ctrl" type="radio" name="sitio" id="s1" checked>
 <input class="ctrl" type="radio" name="sitio" id="s2">
 <input class="ctrl" type="radio" name="sitio" id="s3">
@@ -455,6 +462,8 @@ a{color:var(--oro)}
             <button type="button" data-orden="sube">Suben este mes</button>
             <button type="button" data-orden="precio-asc">Más baratos</button>
             <button type="button" data-orden="precio-desc">Más caros</button>
+            <button type="button" data-orden="proxima">Mejor esta jornada</button>
+            <button type="button" data-orden="goles">Más goles</button>
             <button type="button" data-orden="recomendado">Recomendados</button>
           </div>
         </div>
@@ -479,7 +488,7 @@ a{color:var(--oro)}
         <div class="grupo">
           <span>Qué destaca</span>
           <div class="ops">
-            <label for="f1">Todo</label><label for="f3">⭐ Puntos</label><label for="f4">💵 Dinero</label><label for="f2">Los dos</label><label for="f5">Puedo pagarlo</label>
+            <label for="f1">Todo</label><label for="f6">👕 Titulares</label><label for="f3">⭐ Puntos</label><label for="f4">💵 Dinero</label><label for="f2">Los dos</label><label for="f5">Puedo pagarlo</label>
           </div>
         </div>
       </div>
@@ -560,7 +569,9 @@ a{color:var(--oro)}
       media: function (a, b) { return num(b, 'media') - num(a, 'media') },
       puntos: function (a, b) { return num(b, 'puntos') - num(a, 'puntos') },
       hoy: function (a, b) { return num(b, 'hoy') - num(a, 'hoy') },
-      sube: function (a, b) { return num(b, 'sube') - num(a, 'sube') }
+      sube: function (a, b) { return num(b, 'sube') - num(a, 'sube') },
+      proxima: function (a, b) { return num(b, 'prox') - num(a, 'prox') },
+      goles: function (a, b) { return num(b, 'gol') - num(a, 'gol') || num(b, 'media') - num(a, 'media') }
     }
     function ordenar (clave) {
       var cmp = criterios[clave] || criterios.puntos

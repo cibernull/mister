@@ -61,3 +61,32 @@ export function parsearClasificacion(html: string): PuestoClasificacion[] {
   if (salida.length === 0) throw new ClasificacionIlegibleError('el panel no trae ningún equipo')
   return salida
 }
+
+/**
+ * El diccionario de clubes reales, que la página de clasificación lleva dentro.
+ *
+ * El censo dice contra quién juega cada jugador la próxima jornada, pero por
+ * `id_team`. Sin esto la página tendría que enseñar «rival 19» en vez de
+ * «Sevilla», y para eso mejor no enseñar nada.
+ */
+export function parsearClubes(html: string): Map<number, string> {
+  const m = /"teams"\s*:\s*(\{.*?\})\s*,\s*"sentry"/s.exec(html)
+  if (!m) return new Map()
+
+  let bruto: Record<string, { name?: unknown }>
+  try {
+    bruto = JSON.parse(m[1]!) as Record<string, { name?: unknown }>
+  } catch {
+    return new Map()
+  }
+
+  const clubes = new Map<number, string>()
+  for (const [id, club] of Object.entries(bruto)) {
+    // El id 0 es el hueco que Mister usa para «sin equipo», y viene con el
+    // nombre «void». Meterlo daría partidos contra un rival llamado void.
+    const n = Number(id)
+    if (!Number.isFinite(n) || n === 0) continue
+    if (typeof club.name === 'string' && club.name !== '' && club.name !== 'void') clubes.set(n, club.name)
+  }
+  return clubes
+}

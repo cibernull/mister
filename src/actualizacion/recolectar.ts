@@ -12,7 +12,7 @@ import { parsearPlantilla } from '../recoleccion/parseadorPlantilla.js'
 import { parsearFicha } from '../recoleccion/parseadorFicha.js'
 import { parsearJugadores, type JugadorMister } from '../recoleccion/parseadorUniverso.js'
 import { parsearMercado, MercadoVacioError, type EnVenta } from '../recoleccion/parseadorMercado.js'
-import { parsearClasificacion, type PuestoClasificacion } from '../recoleccion/parseadorClasificacion.js'
+import { parsearClasificacion, parsearClubes, type PuestoClasificacion } from '../recoleccion/parseadorClasificacion.js'
 import type { PaginaCruda, Volcado } from './feed.js'
 
 /** Límite de páginas por pasada: una red de seguridad, no un objetivo. */
@@ -245,7 +245,15 @@ export async function recolectarMercado(cliente: Cliente): Promise<EnVenta[]> {
   }
 }
 
-/** La clasificación oficial, que es contra lo que se contrastan las cuentas. */
-export async function recolectarClasificacion(cliente: Cliente): Promise<PuestoClasificacion[]> {
-  return parsearClasificacion(await cliente.pedirPagina('/standings'))
+/**
+ * La clasificación oficial, que es contra lo que se contrastan las cuentas.
+ *
+ * La misma página lleva dentro el diccionario de clubes reales, así que se
+ * aprovecha el viaje: sin él la página enseñaría «rival 19» en vez de «Sevilla».
+ */
+export async function recolectarClasificacion(
+  cliente: Cliente,
+): Promise<{ clasificacion: PuestoClasificacion[]; clubes: Map<number, string> }> {
+  const html = await cliente.pedirPagina('/standings')
+  return { clasificacion: parsearClasificacion(html), clubes: parsearClubes(html) }
 }

@@ -54,6 +54,8 @@ describe('parsearJugadores', () => {
         clausula: 25529000,
         blindado: false,
         estado: null,
+        rival: null,
+        enCasa: null,
       },
     ])
   })
@@ -106,5 +108,20 @@ describe('parsearJugadores', () => {
 
   it('lo que no es JSON se dice claramente', () => {
     expect(() => parsearJugadores('<html>caducado</html>')).toThrow(/no es JSON válido/)
+  })
+})
+
+describe('parsearJugadores · próximo partido', () => {
+  it('recoge contra quién juega y si es en casa', () => {
+    const con = { ...raphinha, match_info: { is_home: false, rival_team_id: 19 } }
+    const [j] = parsearJugadores(respuesta(con))
+    expect(j!.rival).toBe(19)
+    expect(j!.enCasa).toBe(false)
+  })
+
+  it('sin próximo partido no se inventa uno', () => {
+    const [j] = parsearJugadores(respuesta({ ...raphinha, match_info: null }))
+    expect(j!.rival).toBeNull()
+    expect(j!.enCasa).toBeNull()
   })
 })

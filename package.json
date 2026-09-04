@@ -16,10 +16,10 @@
     "generar": "node modulo/generar.cjs",
     "publicar": "node modulo/publicar.cjs",
     "actualizar": "tsx src/actualizacion/actualizar.ts",
-    "historico": "tsx src/actualizacion/historico.ts",
     "credenciales": "tsx src/sesion/importar.ts",
     "instalar-app": "bash aplicacion/construir.sh",
-    "icono": "python3 aplicacion/icono.py"
+    "icono": "python3 aplicacion/icono.py",
+    "fichas": "tsx src/actualizacion/fichas.ts"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.11",

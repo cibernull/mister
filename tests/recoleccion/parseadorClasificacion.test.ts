@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { parsearClasificacion, ClasificacionIlegibleError } from '../../src/recoleccion/parseadorClasificacion.js'
+import { parsearClasificacion, parsearClubes, ClasificacionIlegibleError } from '../../src/recoleccion/parseadorClasificacion.js'
 
 const fila = (puesto: number, equipo: string, jugadores: number, valor: string, puntos: string, mio = false) => `
   <li>
@@ -46,5 +46,24 @@ describe('parsearClasificacion', () => {
 
   it('sin panel general es error', () => {
     expect(() => parsearClasificacion('<html><body>nada</body></html>')).toThrow(/panel de la clasificación/)
+  })
+})
+
+describe('parsearClubes', () => {
+  const conTeams = (json: string) => `<script>x = {"teams":${json},"sentry":true};</script>`
+
+  it('saca el diccionario de clubes', () => {
+    const html = conTeams('{"1":{"name":"Athletic Club"},"3":{"name":"Barcelona"}}')
+    expect([...parsearClubes(html)]).toEqual([[1, 'Athletic Club'], [3, 'Barcelona']])
+  })
+
+  it('descarta el hueco «void», que es el id 0 de Mister', () => {
+    // Si no, saldrían partidos contra un rival llamado void.
+    expect(parsearClubes(conTeams('{"0":{"name":"void"},"2":{"name":"Atlético"}}')).has(0)).toBe(false)
+  })
+
+  it('sin diccionario devuelve vacío: es un adorno, no una cuenta', () => {
+    expect(parsearClubes('<html></html>').size).toBe(0)
+    expect(parsearClubes(conTeams('{roto')).size).toBe(0)
   })
 })

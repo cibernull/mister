@@ -40,6 +40,10 @@ export type JugadorMister = {
   blindado: boolean
   /** `null` si está sano; si no, lo que dice Mister: `injury`, `doubt`… */
   estado: string | null
+  /** El club contra el que juega la próxima jornada. `null` si no hay partido. */
+  rival: number | null
+  /** Si ese partido lo juega en casa. */
+  enCasa: boolean | null
 }
 
 const num = (x: unknown, campo: string, de: string): number => {
@@ -88,6 +92,7 @@ export function parsearJugadores(cuerpo: string): JugadorMister[] {
 
     const idUc = j['id_uc']
     const duenio = idUc == null ? null : texto(j['uc_name'], 'uc_name', de)
+    const partido = j['match_info'] as Record<string, unknown> | null | undefined
     const valor = num(j['value'], 'value', de)
 
     return {
@@ -110,6 +115,11 @@ export function parsearJugadores(cuerpo: string): JugadorMister[] {
       clausula: duenio === null ? null : num(j['clause'], 'clause', de),
       blindado: num(j['shield'] ?? 0, 'shield', de) > 0,
       estado: typeof j['status'] === 'string' && j['status'] !== '' ? j['status'] : null,
+      // El próximo partido viene gratis en el censo. Jugar en casa o fuera
+      // cambia la media de un jugador más de lo que parece: Oyarzabal hace 6,0
+      // en casa y 3,5 fuera.
+      rival: partido && typeof partido['rival_team_id'] === 'number' ? partido['rival_team_id'] : null,
+      enCasa: partido && typeof partido['is_home'] === 'boolean' ? partido['is_home'] : null,
     }
   })
 }

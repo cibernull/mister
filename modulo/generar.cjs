@@ -26,6 +26,15 @@ const D = leer('datos-liga.json')
 const PL = leer('plantillas.json')
 const EQ = leer('equipos.json')
 const JOR = leer('jornadas.json')
+// Los clubes reales, para poder decir «Sevilla» y no «rival 19». Es un
+// adorno: si el fichero no está, la línea del próximo partido no se pinta.
+const CLUBES = (() => {
+  try {
+    return new Map(Object.entries(leer('clubes.json')))
+  } catch {
+    return new Map()
+  }
+})()
 
 // Dueño actual de cada jugador. Un jugador solo puede estar en una plantilla:
 // si aparece en dos, la captura está mal y prefiero enterarme a taparlo.
@@ -128,6 +137,14 @@ for (const j of J) {
   j.rivalesQuePueden = j.compradores.filter((e) => !e.mio).length
   j.subeMes = j.mes != null && j.valor ? j.mes / j.valor : null
   j.puesto = j.pos ?? 0
+  // Lo que cabe esperar de él en su próximo partido: su media jugando donde le
+  // toca jugar. Oyarzabal hace 6,0 en casa y 3,5 fuera, así que promediarlo
+  // todo en una sola cifra esconde justo lo que hay que mirar.
+  j.rival = j.riv != null ? CLUBES.get(String(j.riv)) ?? null : null
+  const mediaSegunDonde = j.casa === 1 ? j.mc : j.casa === 0 ? j.mf : null
+  j.mediaProxima = mediaSegunDonde != null ? mediaSegunDonde : j.media
+  // Sin partido, o sin saber si es titular, no se le pone por delante de nadie.
+  j.esperado = j.once === 1 ? j.mediaProxima : j.once === 0 ? 0 : j.mediaProxima * 0.5
 }
 
 // ── Recomendaciones sobre mi plantilla ───────────────────────────────────────
@@ -222,6 +239,24 @@ const ESTADOS = {
   out: '<span class="et et-mal" title="ya no juega en LaLiga">✈️ fuera de LaLiga</span>',
 }
 
+/** La línea de detalle: lo que solo está en la ficha de cada jugador. */
+const detalleDe = (j) => {
+  const trozos = []
+  if (j.gol) trozos.push(`<span title="goles esta temporada">⚽ ${j.gol}</span>`)
+  if (j.tar) trozos.push(`<span title="tarjetas">🟨 ${j.tar}</span>`)
+  if (j.mc != null && j.mf != null && j.mc !== j.mf) {
+    // Solo cuando difieren: repetir dos veces la misma cifra no dice nada.
+    trozos.push(`<span title="media jugando en casa y fuera">casa <b>${dec(j.mc)}</b> · fuera <b>${dec(j.mf)}</b></span>`)
+  }
+  if (j.tit != null && j.tit + j.sup > 0) {
+    trozos.push(`<span title="veces que ha salido de inicio">${j.tit}/${j.tit + j.sup} de inicio</span>`)
+  }
+  if (j.rival) {
+    trozos.push(`<span class="prox">→ ${esc(j.rival)} <i>${j.casa === 1 ? 'en casa' : 'fuera'}</i></span>`)
+  }
+  return trozos.length ? `<div class="jx">${trozos.join('<span class="sep">·</span>')}</div>` : ''
+}
+
 /** Qué es la cifra grande de la derecha, que no siempre es lo mismo. */
 const etiquetaPrecio = (j) => (j.mk ? 'lo piden' : j.clausula ? 'cláusula' : 'valor')
 
@@ -230,6 +265,7 @@ const filaJugador = (j) => {
     'fj',
     j.mk ? 'mk' : 'nomk',
     j.fichable ? 'fich' : 'nofich',
+    j.once === 1 ? 'once' : '',
     j.p ? 'tp' : '',
     j.d ? 'td' : '',
     j.a ? 'ta' : '',
@@ -249,13 +285,13 @@ const filaJugador = (j) => {
         ? `<span class="${clase(j.semana)}">${firmaCorta(j.semana)} hoy</span>`
         : ''
   const rec = (j.p + j.d) * 1000 + j.media
-  return `<div class="${cls}" data-busca="${esc(j.nombre)} ${esc(j.duenioCorto ?? 'libre')} ${PUESTOS_LARGO[j.puesto]}" data-rec="${rec.toFixed(2)}" data-precio="${j.precio}" data-media="${j.media}" data-puntos="${j.puntos}" data-sube="${(j.subeMes ?? -9).toFixed(4)}" data-hoy="${j.semana ?? -9e9}">
+  return `<div class="${cls}" data-busca="${esc(j.nombre)} ${esc(j.duenioCorto ?? 'libre')} ${PUESTOS_LARGO[j.puesto]}" data-rec="${rec.toFixed(2)}" data-precio="${j.precio}" data-media="${j.media}" data-puntos="${j.puntos}" data-sube="${(j.subeMes ?? -9).toFixed(4)}" data-hoy="${j.semana ?? -9e9}" data-prox="${j.esperado.toFixed(2)}" data-gol="${j.gol ?? 0}">
       ${dorsal(j.puesto)}
       <div class="jn">${nombreEnlazado(j)}${j.mk ? '<span class="et et-mk">en el mercado</span>' : ''}${
         j.duenio
           ? `<span class="et et-eq${j.mio ? ' et-mio' : ''}">${esc(j.duenioCorto)}</span>`
           : '<span class="et et-libre">libre</span>'
-      }${ESTADOS[j.est] ?? ''}</div>
+      }${j.once === 1 ? '<span class="et et-once" title="Mister lo da por titular en el próximo partido">👕 titular</span>' : ''}${ESTADOS[j.est] ?? ''}</div>
       <div class="jp"><b class="${etiquetaPrecio(j) === 'cláusula' ? 'cl' : ''}">${eur(j.precio)}</b><i>${etiquetaPrecio(j)}</i><span class="ico">${iconos(j)}</span></div>
       <div class="js">
         <span>media <b>${dec(j.media)}</b></span><span class="sep">·</span>
@@ -263,6 +299,7 @@ const filaJugador = (j) => {
           tendencia ? `<span class="sep">·</span>${tendencia}` : ''
         }${j.precio !== j.valor ? `<span class="sep">·</span><span>vale ${corto(j.valor)}</span>` : ''}
       </div>
+      ${detalleDe(j)}
       ${quienPuede(j)}
     </div>`
 }
