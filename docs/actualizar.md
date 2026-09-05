@@ -299,15 +299,37 @@ o Cloudflare) y que ese servidor tuviera autenticación, porque expondría
 Se publica **siempre sobre la misma dirección**, así que el enlace no cambia
 nunca: quien lo tenga guardado ve lo último cada vez que entra.
 
-De republicar se encargan dos tareas programadas:
+De mantenerlo al día se encargan tres cosas, y el reparto importa:
 
-| Tarea | Cuándo | Qué hace |
-|---|---|---|
-| `liga-de-mister-fichas` | 8:40, a diario | La pasada larga: las 523 fichas |
-| `liga-de-mister-actualizar` | cada hora, de 9:05 a 23:05 | Actualiza y republica |
+| Quién | Cuándo | Qué hace | ¿Necesita la app? |
+|---|---|---|---|
+| **launchd** `…ligademister.refresco` | cada hora en punto, 9–23 | Actualiza los datos y deja la página lista | **No** |
+| Tarea `liga-de-mister-actualizar` | y diez, 9–23 | Sube esa página al enlace | Sí |
+| Tarea `liga-de-mister-fichas` | 8:40 | La pasada larga de las 523 fichas | Sí |
 
-Necesitan el Mac encendido y con la app abierta; si estaba cerrado, la tarea se
-ejecuta al abrirla.
+El refresco lo hace **launchd**, el programador del propio macOS, y no la app.
+El motivo es que el de la app no dispara si la sesión está ocupada: una mañana
+estuvo diez horas sin publicar con el Mac encendido, y al forzar una ejecución
+única de prueba tampoco saltó en siete minutos. Los datos son lo que no puede
+fallar, así que salen de ahí. Publicar sí necesita a Claude —es su herramienta—,
+pero si esa parte se retrasa, lo único que se retrasa es la copia de la web: los
+datos del Mac siguen al día y la siguiente subida los lleva.
+
+### Dónde vive el guion, y por qué no en el proyecto
+
+`npm run instalar-refresco` deja el ejecutable en `~/Library/Application
+Support/liga-de-mister/refrescar.sh`, **no** dentro del proyecto. Tiene que ser
+así: el proyecto está bajo `~/Documents`, que macOS protege, y launchd no puede
+ejecutar nada de ahí — sale con código 126 y «Operation not permitted», sin
+escribir una línea en ningún log, porque el guion no llega ni a arrancar. Desde
+fuera sí puede luego leer y escribir dentro del proyecto; lo que se bloquea es
+arrancar el ejecutable.
+
+Para quitarlo:
+
+```bash
+launchctl bootout gui/$(id -u)/com.cibernull.ligademister.refresco
+```
 
 La actualización y la publicación van en **un solo comando** (`npm run
 refrescar`) a propósito. Cuando eran dos pasos separados, una mañana el primero
@@ -324,6 +346,7 @@ permiso, y o se hace entero o no se hace.
 | `npm run actualizar` | Una pasada desde el Terminal, sin la app |
 | `npm run generar` | Solo rehace el HTML con los datos que ya hay |
 | `npm run publicar` | Prepara `datos/publicada.html` para subirla a la web |
-| `npm run refrescar` | Las dos de arriba de una vez. Es lo que corre la tarea |
+| `npm run refrescar` | Las dos de arriba de una vez. Es lo que corre launchd |
+| `npm run instalar-refresco` | Registra el refresco horario en launchd |
 | `npm run fichas` | La pasada larga: lee las 523 fichas (~9 min, una vez al día) |
 | `python3 modulo/escudos.py` | Baja los escudos de los clubes. Una vez y ya |

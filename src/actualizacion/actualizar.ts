@@ -298,7 +298,8 @@ async function main(): Promise<Resultado> {
   if (invisible !== 0) {
     cuentas.avisos.push(
       `Llevas ${eur(-invisible)} en penalizaciones por subir cláusulas, que el feed no publica. ` +
-        `Tu saldo sale del libro de caja de Mister, así que es exacto; el de los rivales es un techo.`,
+        `Tu saldo sale del libro de caja de Mister, así que es exacto; el de los rivales lleva un margen, ` +
+        `porque subir una cláusula les resta y bajarla les suma, y ninguna de las dos cosas sale en el feed.`,
     )
   }
   if (Math.abs(reconstruido - libro.saldo) > 1000) {
