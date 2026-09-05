@@ -235,6 +235,19 @@ tumbar la pasada.
 Con el veredicto en la mano se escriben los datos y se lanza `modulo/generar.cjs`.
 El navegador recarga y aparece un aviso con lo que ha cambiado.
 
+## Lo que guarda en disco
+
+Además de lo que enseña la página, cada pasada deja tres cosas que solo sirven
+para comparar con mañana:
+
+| Fichero | Para qué |
+|---|---|
+| `historico-valores.json` | 40 días de valores. De ahí sale el «% este mes» |
+| `historico-clausulas.json` | 40 días de cláusulas. De ahí salen las subidas de los rivales |
+| `foto.json` | La última foto de valor, cláusula, dueño, estado y mercado de los 522 |
+| `novedades.json` | Los cambios ya interpretados de la última semana |
+| `subidas-clausula.json` | Las subidas detectadas, con lo que costaron |
+
 ## Lo que queda pendiente
 
 - **El «% este mes» le falta a 71 de los 523**, los que llevan menos de un mes

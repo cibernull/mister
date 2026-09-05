@@ -29,6 +29,7 @@ const JOR = leer('jornadas.json')
 const opcional = (n, sino) => { try { return leer(n) } catch { return sino } }
 const YO = opcional('yo.json', { formacion: '', tope: 0, generado: new Date().toISOString() })
 const NOV = opcional('novedades.json', [])
+const MOVS = D.movimientos ?? []
 // Los clubes reales, para poder decir «Sevilla» y no «rival 19». Es un
 // adorno: si el fichero no está, la línea del próximo partido no se pinta.
 // Los escudos van dentro del HTML como data URI: la página publicada no puede
@@ -173,6 +174,7 @@ for (const j of J) {
   j.vender = 0
   j.blindar = 0
   j.razon = null
+  j.remate = null
   if (!j.mio) continue
 
   const parado = j.subeMes != null && j.subeMes < 0.25
@@ -196,9 +198,30 @@ for (const j of J) {
   const sinBlindar = ratio != null && ratio <= RATIO_MINIMO
   if (rinde && j.rivalesQuePueden >= 5 && (barato || sinBlindar)) {
     j.blindar = 1
+    // No basta con decir «súbela»: lo que hace falta saber es cuánto cuesta y
+    // qué se consigue. Mister cobra el 20 % del valor por escalón, y cada
+    // escalón sube el multiplicador medio punto — comprobado contra el libro de
+    // caja propio, siete de siete al 20,00 %.
     j.razon = barato
       ? `su cláusula sale a ${eur(porPunto)} por punto de media, una ganga para lo que rinde`
       : 'su cláusula está en el mínimo: nunca la has subido'
+
+    const coste = Math.round(j.valor * 0.2)
+    const nueva = Math.round(j.valor * (1.5 + 0.5 * ((j.sub ?? 0) + 1)))
+    // A un jugador comprado pagando su cláusula se le queda congelada por
+    // encima de su escalón, y entonces no se puede decir dónde quedaría: la
+    // cuenta daría una cláusula más baja que la de ahora. En ese caso solo se
+    // dice el precio, que ese sí se sabe.
+    if (nueva <= j.precio) {
+      j.remate = ` Subirla te cuesta <b>${eur(coste)}</b>.`
+    } else {
+      const seCaen = RIVALES.filter((e) => e.tope >= j.precio && e.tope < nueva).length
+      j.remate =
+        ` Subirla te cuesta <b>${eur(coste)}</b> y la deja en <b>${eur(nueva)}</b>: ` +
+        (seCaen > 0
+          ? `${seCaen === 1 ? 'un rival dejaría' : `${seCaen} rivales dejarían`} de poder pagarla, y quedarían ${j.rivalesQuePueden - seCaen}.`
+          : `los ${j.rivalesQuePueden} que llegan hoy seguirían llegando, así que haría falta más de un escalón.`)
+    }
   }
 }
 
@@ -542,7 +565,7 @@ const filaMia = (j, modo) => {
     : 'del reparto'
   return `<div class="fj">
       ${dorsal(j.puesto)}
-      <div class="jn">${nombreEnlazado(j)}${j.mk ? '<span class="et et-mk">en venta</span>' : ''}${marcaBlindaje(j)}${j.eq ? club(j.eq) : ''}</div>
+      <div class="jn">${nombreEnlazado(j)}${j.mk ? '<span class="et et-mk">en venta</span>' : ''}${marcaBlindaje(j)}${j.eq ? club(j.eq) : ''}<label class="sel" title="Simular que lo vendes"><input type="checkbox" class="vender" data-valor="${j.valor}" data-nombre="${esc(j.nombre)}"><span>vender</span></label></div>
       <div class="jp"><b class="${modo === 'clausula' ? 'cl' : ''}">${eur(grande)}</b><i>${rotulo}</i><span class="ico">${iconos(j)}</span></div>
       <div class="js">
         <span>media <b>${dec(j.media)}</b></span><span class="sep">·</span>
@@ -555,7 +578,7 @@ const filaMia = (j, modo) => {
           ? `<div class="jr">${
               j.vender
                 ? `📤 <b>Véndelo:</b> ${esc(j.razon)}. Solo con él, tu tope de puja pasaría a ${eur(topeTrasVender(j.valor))}.`
-                : `🔒 <b>Súbele la cláusula:</b> ${esc(j.razon)}.`
+                : `🔒 <b>Súbele la cláusula:</b> ${esc(j.razon)}.${j.remate ?? ''}`
             }</div>`
           : ''
       }
@@ -578,7 +601,137 @@ const aBlindar = MIOS.filter((j) => j.blindar).sort((a, b) => a.clausula / a.med
 const resto = MIOS.filter((j) => !j.vender && !j.blindar).sort((a, b) => a.puesto - b.puesto || b.valor - a.valor)
 const sumaVenta = aVender.reduce((s, j) => s + j.valor, 0)
 
-const miEquipo = `${bloque(
+// ── Qué ha cambiado desde ayer ───────────────────────────────────────────────
+// El módulo enseña una foto, pero las decisiones se toman cuando algo cambia.
+// Los fichajes salen del feed, que los da con su precio exacto; el resto —quién
+// ha subido una cláusula, quién se ha lesionado, quién ha entrado al mercado—
+// de comparar la foto de hoy con la de ayer.
+const DOS_DIAS = (() => {
+  const d = new Date()
+  d.setDate(d.getDate() - 2)
+  return d.toISOString().slice(0, 10)
+})()
+
+const nombreDe = (id) => PORID_PRE.get(String(id))?.nombre ?? `jugador ${id}`
+const esMio = (equipo) => equipo === MI_EQUIPO
+
+const lineaNov = (icono, texto, tono) =>
+  `        <li class="nov${tono ? ` ${tono}` : ''}"><span class="ni">${icono}</span><span>${texto}</span></li>`
+
+const novedades = (() => {
+  const filas = []
+
+  for (const m of MOVS.filter((x) => x.fecha.slice(0, 10) >= DOS_DIAS).reverse()) {
+    const de = m.de ? POR_NOMBRE.get(m.de)?.corto ?? m.de : 'mercado'
+    const a = m.a ? POR_NOMBRE.get(m.a)?.corto ?? m.a : 'mercado'
+    const mio = esMio(m.de) || esMio(m.a)
+    filas.push(
+      lineaNov(
+        m.a ? '📥' : '📤',
+        `${escudoDe(m.id)}<b>${esc(m.nombre)}</b> ${m.de ? 'de' : 'del'} ${esc(de)} ${m.a ? 'a' : 'al'} ${esc(a)} por ${eur(m.importe)}`,
+        mio ? 'mio' : '',
+      ),
+    )
+  }
+
+  for (const n of NOV) {
+    if (n.tipo === 'clausula') {
+      filas.push(
+        lineaNov(
+          '🛡',
+          `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b>: ${esc(POR_NOMBRE.get(n.equipo)?.corto ?? n.equipo)} le subió la cláusula a ${eur(n.clausula)}, y le costó ${eur(n.coste)}`,
+          esMio(n.equipo) ? 'mio' : '',
+        ),
+      )
+    } else if (n.tipo === 'lesion') {
+      filas.push(lineaNov('🏥', `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b> se ha lesionado`, esMio(n.equipo) ? 'malo' : ''))
+    } else if (n.tipo === 'alta') {
+      filas.push(lineaNov('✅', `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b> ya está disponible`, ''))
+    } else if (n.tipo === 'mercado' && n.entra) {
+      filas.push(lineaNov('🏷', `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b> ha salido al mercado`, ''))
+    }
+  }
+
+  if (filas.length === 0) return ''
+  return `    <section class="sec">
+      <h2 class="sh"><span class="se">🔔</span>Desde ayer <em>${filas.length}</em></h2>
+      <ul class="novs">
+${filas.slice(0, 25).join(NL)}
+      </ul>
+      ${filas.length > 25 ? `<p class="pie">Y ${filas.length - 25} más.</p>` : ''}
+    </section>
+`
+})()
+
+// ── El once de la jornada ────────────────────────────────────────────────────
+// Mister publica la formación elegida —«1-3-6-1»: un portero, tres defensas,
+// seis medios y un delantero— y, de cada jugador, si lo da por titular en su
+// próximo partido y cuánto promedia jugando en casa y fuera. Con eso se puede
+// proponer un once en vez de dejar que lo elija uno a ojo el domingo por la
+// mañana.
+//
+// Lo que se ordena no es la media general: es la media **donde le toca jugar**.
+// Mbappé hace 15,0 en casa y 3,0 fuera; promediarlo esconde justo lo que hay
+// que mirar.
+const FORMACION = (YO.formacion || '').split('-').map(Number).filter((n) => Number.isFinite(n))
+const esperadoDe = (j) => {
+  const donde = j.casa === 1 ? j.mc : j.casa === 0 ? j.mf : null
+  return donde != null ? donde : j.media
+}
+const once = (() => {
+  if (FORMACION.length !== 4) return null
+  const elegidos = []
+  const banquillo = []
+  FORMACION.forEach((cuantos, i) => {
+    const puesto = i + 1
+    const candidatos = MIOS.filter((j) => j.puesto === puesto)
+      // Primero los que Mister da por titulares; entre ellos, el que más rinda
+      // donde juega. Un lesionado no entra aunque sea el mejor.
+      .sort(
+        (a, b) =>
+          (b.est === 'injury' ? -1 : 1) - (a.est === 'injury' ? -1 : 1) ||
+          (b.once === 1 ? 1 : 0) - (a.once === 1 ? 1 : 0) ||
+          esperadoDe(b) - esperadoDe(a),
+      )
+    elegidos.push(...candidatos.slice(0, cuantos).map((j) => ({ ...j, hueco: cuantos > candidatos.length })))
+    banquillo.push(...candidatos.slice(cuantos))
+  })
+  return { elegidos, banquillo: banquillo.sort((a, b) => esperadoDe(b) - esperadoDe(a)) }
+})()
+
+const filaOnce = (j) => `        <div class="mj">${dorsal(j.puesto)}${escudoDe(j.id)}<span class="n">${nombreEnlazado(j)}</span>
+          <span class="v">${dec(esperadoDe(j))}</span><span class="c">${
+            j.riv ? `${j.casa === 1 ? 'en casa' : 'fuera'} · ${esc(CLUBES.get(String(j.riv)) ?? '?')}` : 'sin partido'
+          }</span><span class="m">${
+            j.est === 'injury' ? '🏥 lesionado' : j.once === 1 ? '👕 titular' : j.once === 0 ? 'suplente' : '—'
+          }</span></div>`
+
+const bloqueOnce = once === null || once.elegidos.length === 0
+  ? ''
+  : `    <section class="sec">
+      <h2 class="sh"><span class="se">👕</span>El once del domingo <em>${YO.formacion}</em></h2>
+      <p class="sd">Los que más deberían darte según Mister: su media <strong>donde les toca jugar</strong> esta jornada, y solo contando a los que da por titulares. La cifra grande es lo que cabe esperar de cada uno.${
+        once.elegidos.filter((j) => j.est === 'injury').length
+          ? ' <strong>Ojo:</strong> hay lesionados en el once porque no tienes recambio en su puesto.'
+          : ''
+      }</p>
+      <div class="mini">
+${once.elegidos.map(filaOnce).join(NL)}
+      </div>
+      ${
+        once.banquillo.length
+          ? `<details class="quien" style="grid-column:auto;grid-row:auto;margin-top:11px">
+        <summary><span class="txt">Los ${once.banquillo.length} que se quedan fuera</span></summary>
+        <div class="mini" style="margin-top:9px">
+${once.banquillo.map(filaOnce).join(NL)}
+        </div>
+      </details>`
+          : ''
+      }
+    </section>
+`
+
+const miEquipo = `${novedades}${bloqueOnce}${bloque(
   '📤',
   'Deberías vender',
   aVender.length
@@ -627,7 +780,6 @@ ${[...EQ]
   .join(NL)}`
 
 // ── 3. Movimientos ───────────────────────────────────────────────────────────
-const MOVS = D.movimientos ?? []
 const OPS = { normal: '', clause: 'cláusula', rescind: 'rescisión' }
 
 const filaMov = (m) => {
@@ -894,11 +1046,11 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
     <div class="tarjeta">
       <h2 class="sh">Dónde está cada cosa</h2>
       <div class="defs">
-        ${def('🛡️', '', 'Mi equipo', 'Tus cifras, tu plantilla partida en los que deberías vender, los que deberías blindar y el resto, y tus cuentas completas.')}
+        ${def('🛡️', '', 'Mi equipo', 'Lo que ha cambiado desde ayer, el once que deberías poner el domingo, y tu plantilla partida en los que deberías vender, los que deberías blindar y el resto. Marca <strong>vender</strong> en cualquiera y abajo te dice hasta dónde llegarías.')}
         ${def('🔎', '', 'Fichar', 'Los ' + J.length + ' jugadores que conozco, con buscador y filtros. Despliega el <strong>x de y pueden pagar</strong> de cualquiera para ver qué equipos concretos llegan a su precio y con cuánto margen.')}
         ${def('👥', '', 'Rivales', 'Los ocho equipos por capacidad de compra. Al abrir uno: su plantilla entera, sus cuentas y qué ha ganado o perdido con cada jugador.')}
         ${def('⇄', '', 'Movimientos', 'Los ' + MOVS.length + ' fichajes y ventas de la liga en orden, filtrables por compras, ventas o solo los tuyos.')}
-        ${def('📊', '', 'Números', 'Clasificación, quién es más rico, quién comercia mejor, récords y los mejores por media, puntos, subida y valor.')}
+        ${def('📊', '', 'Estadísticas', 'Clasificación, quién es más rico, quién blinda a los suyos, quién comercia mejor, récords y los mejores por media, puntos, subida y valor.')}
       </div>
     </div>
 
@@ -950,6 +1102,10 @@ const huecos = {
   // así se ve de un vistazo si lo que estás mirando es de ahora.
   '<!--__FECHA__-->': new Date().toLocaleString('es-ES', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }),
   '<!--__GENERADO__-->': YO.generado,
+  '<!--__SALDO__-->': String(MIO.saldo),
+  '<!--__PLANTILLA__-->': String(MIO.pl),
+  '<!--__MIS_JUGADORES__-->': String(MIOS.length),
+  '<!--__LIMITE__-->': String(YO.tope || 0),
 }
 let html = plantilla
 for (const [hueco, valor] of Object.entries(huecos)) {

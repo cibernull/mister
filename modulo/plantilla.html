@@ -241,6 +241,12 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
    es el dinero. Esto es otra cosa —lo blindado— y se distingue de un vistazo. */
 .et-sub{color:var(--blinda);background:var(--blinda-fondo);border:1px solid var(--blinda-raya);font-variant-numeric:tabular-nums}
 .cx{color:var(--blinda);background:var(--blinda-fondo);border:1px solid var(--blinda-raya);border-radius:5px;padding:0 4px;margin-left:5px;font-size:10px;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.novs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--raya);border:1px solid var(--raya);border-radius:9px;overflow:hidden}
+.nov{display:flex;align-items:flex-start;gap:9px;background:var(--tabla);padding:9px 12px;font-size:13.5px;line-height:1.45}
+.nov .ni{flex:none;width:19px;text-align:center}
+.nov b{font-weight:700}
+.nov.mio{background:var(--oro-fondo)}
+.nov.malo b{color:var(--baja)}
 .nota-cl{font-size:12px;color:var(--gris);background:var(--hueco);border:1px solid var(--raya);border-radius:8px;padding:8px 11px;margin:8px 0 0}
 .nota-cl b{color:var(--tinta)}
 .nota-fuera{font-size:12px;color:var(--gris);background:var(--hueco);border:1px solid var(--raya);border-radius:8px;padding:8px 11px;margin:10px 0 0}
@@ -413,6 +419,17 @@ ol.top .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-num
 .parte code{font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:var(--hueco);border:1px solid var(--raya);padding:2px 6px;border-radius:5px}
 .parte .arreglo{display:inline-block;margin-top:10px;font-size:14px;font-weight:700;color:var(--suelo);background:var(--tinta);border-radius:9px;padding:8px 16px;text-decoration:none}
 
+/* Simulador de ventas: marcas jugadores tuyos y dice hasta dónde llegarías.
+   Va fijo abajo, como un carrito, porque lo que se compara está arriba. */
+.sel{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:var(--tenue);border:1px solid var(--raya);border-radius:99px;padding:1px 8px 1px 5px;cursor:pointer;user-select:none}
+.sel:hover{border-color:var(--oro);color:var(--oro)}
+.sel input{width:12px;height:12px;margin:0;accent-color:var(--oro)}
+.sel:has(input:checked){border-color:var(--oro);background:var(--oro-fondo);color:var(--oro)}
+.simu{position:fixed;left:12px;right:12px;bottom:12px;z-index:9;display:flex;align-items:center;gap:12px;max-width:936px;margin:0 auto;background:var(--tinta);color:var(--suelo);border-radius:12px;padding:12px 15px;box-shadow:0 10px 30px -8px rgba(0,0,0,.55)}
+.simu-txt{flex:1;min-width:0;font-size:13px;line-height:1.45}
+.simu-txt b{display:block;font-size:14.5px}
+.simu-txt span{opacity:.75}
+.simu button{font:inherit;font-size:13px;font-weight:700;color:var(--tinta);background:var(--suelo);border:0;border-radius:8px;padding:7px 13px;cursor:pointer;flex:none}
 .cierre{font-size:12px;color:var(--tenue);text-align:center;max-width:62ch;margin:26px auto 0;line-height:1.65}
 .cierre strong{color:var(--gris)}
 a{color:var(--oro)}
@@ -556,6 +573,13 @@ a{color:var(--oro)}
 
   <div class="panel" id="p6">
 <!--__GUIA__-->
+  </div>
+
+  <div class="simu" id="simu" hidden
+       data-saldo="<!--__SALDO__-->" data-plantilla="<!--__PLANTILLA__-->"
+       data-jugadores="<!--__MIS_JUGADORES__-->" data-limite="<!--__LIMITE__-->">
+    <div class="simu-txt"><b id="simu-cabeza"></b><span id="simu-cuerpo"></span></div>
+    <button type="button" id="simu-quitar">Quitar</button>
   </div>
 
   <p class="cierre">Reconstruido movimiento a movimiento desde el reinicio de la liga del 3 de agosto. El tope de puja calculado coincide <strong>al euro</strong> con el que muestra Mister.<br><!--__SELLO__--></p>
@@ -747,6 +771,53 @@ a{color:var(--oro)}
   latir()
   setInterval(latir, 20000)
   document.addEventListener('visibilitychange', function () { if (!document.hidden) latir() })
+
+  // Simulador: vender libera el valor entero a caja y quita el 25 % que esa
+  // plantilla te fiaba, así que el tope no sube por el valor completo.
+  var simu = document.getElementById('simu')
+  if (simu) {
+    var saldo0 = Number(simu.getAttribute('data-saldo'))
+    var pl0 = Number(simu.getAttribute('data-plantilla'))
+    var tengo = Number(simu.getAttribute('data-jugadores'))
+    var limite = Number(simu.getAttribute('data-limite'))
+    var tope = function (s, p) { return s + 0.25 * p }
+    var eur = function (n) { return Math.round(n).toLocaleString('es-ES') + ' \u20ac' }
+    var cajas = [].slice.call(document.querySelectorAll('input.vender'))
+    var precios = [].slice.call(document.querySelectorAll('#lista-jug .fj.fich'))
+      .map(function (f) { return Number(f.getAttribute('data-precio')) })
+    function recalcular () {
+      var marcadas = cajas.filter(function (c) { return c.checked })
+      if (marcadas.length === 0) { simu.hidden = true; return }
+      var suma = marcadas.reduce(function (t, c) { return t + Number(c.getAttribute('data-valor')) }, 0)
+      var t0 = tope(saldo0, pl0)
+      var t1 = tope(saldo0 + suma, pl0 - suma)
+      var antes = precios.filter(function (p) { return p <= t0 }).length
+      var ahora = precios.filter(function (p) { return p <= t1 }).length
+      document.getElementById('simu-cabeza').textContent =
+        'Vendiendo ' + marcadas.length + (marcadas.length === 1 ? ' jugador' : ' jugadores') +
+        ': tope ' + eur(t1)
+      // Con el dinero suele bastar; lo que casi siempre falta son huecos, que
+      // Mister limita a 20. Decir solo el tope escondía el cuello de botella.
+      var huecos = limite - (tengo - marcadas.length)
+      var partes = ['Entrarían ' + eur(suma) + ' en caja.']
+      partes.push(
+        ahora > antes
+          ? 'Te pondrías a tiro de ' + (ahora - antes) + (ahora - antes === 1 ? ' jugador' : ' jugadores') + ' más, ' + ahora + ' en total.'
+          : 'Ya llegabas a los ' + ahora + ' que se pueden fichar, así que el dinero no era el problema.'
+      )
+      if (limite > 0) {
+        partes.push('Quedarías con ' + (tengo - marcadas.length) + ' de ' + limite + ': ' +
+          (huecos > 0 ? 'sitio para ' + huecos + (huecos === 1 ? ' fichaje' : ' fichajes') + '.' : 'sin sitio para nadie.'))
+      }
+      document.getElementById('simu-cuerpo').textContent = partes.join(' ')
+      simu.hidden = false
+    }
+    cajas.forEach(function (c) { c.addEventListener('change', recalcular) })
+    document.getElementById('simu-quitar').addEventListener('click', function () {
+      cajas.forEach(function (c) { c.checked = false })
+      recalcular()
+    })
+  }
 
   var guardado = sessionStorage.getItem('parte-act')
   if (guardado) {
