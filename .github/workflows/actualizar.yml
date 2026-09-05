@@ -12,8 +12,12 @@ name: Actualizar la liga
 
 on:
   schedule:
-    # Cada hora en punto, de 7:00 a 21:00 UTC (9:00 a 23:00 en España).
-    - cron: '0 7-21 * * *'
+    # Cada media hora, de 7:00 a 21:59 UTC (9:00 a 23:00 en España). Así los
+    # datos nunca tienen más de media hora y casi nunca hace falta forzar nada.
+    # Cada pasada son unas veinticinco peticiones a Mister; media hora es un
+    # ritmo razonable para su servidor, y el mercado de la liga rota cada dos
+    # horas, así que va más fino que el propio juego.
+    - cron: '0,30 7-21 * * *'
   workflow_dispatch:
 
 # Un solo trabajo a la vez: dos a la vez se pisarían los datos.
