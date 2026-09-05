@@ -33,7 +33,7 @@
   "mediaCasa": 0,
   "mediaFuera": 1,
   "edad": 32,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
   "dia": "2026-09-05"
@@ -254,7 +254,7 @@
   "mediaCasa": -9,
   "mediaFuera": 5,
   "edad": 36,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 0,
   "dia": "2026-09-05"

@@ -18,6 +18,8 @@ const path = require('path')
 
 const ENTRADA = path.join(__dirname, '..', 'datos', 'mercado.html')
 const SALIDA = process.argv[2] || path.join(__dirname, '..', 'datos', 'publicada.html')
+/** La misma página, pero como documento entero, para servirla en un sitio web. */
+const SITIO = path.join(__dirname, '..', 'datos', 'sitio', 'index.html')
 
 const doc = fs.readFileSync(ENTRADA, 'utf8')
 
@@ -43,5 +45,11 @@ fs.writeFileSync(
   [trozo('title'), fuentes ? fuentes[0] : '', trozo('style'), marca, cuerpo[1]].join('\n'),
 )
 
+// Y la versión para GitHub Pages, que sí necesita el documento completo. Se
+// le mete la misma marca `window.PUBLICADO`: allí tampoco hay servidor local
+// al que pedirle nada, así que el botón tiene que ser Recargar y no Actualizar.
+fs.mkdirSync(path.dirname(SITIO), { recursive: true })
+fs.writeFileSync(SITIO, doc.replace('</head>', `${marca}\n</head>`))
+
 const kb = Math.round(fs.statSync(SALIDA).size / 1024)
-process.stdout.write(`${SALIDA}\n${kb} KB · datos del ${cuando}\n`)
+process.stdout.write(`${SALIDA}\n${SITIO}\n${kb} KB · datos del ${cuando}\n`)

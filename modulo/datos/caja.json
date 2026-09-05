@@ -1,6 +1,22 @@
 {
- "saldo": 11929000,
+ "saldo": 15791260,
  "apuntes": [
+  {
+   "cuando": 1788641332,
+   "fecha": "2026-09-05 22:48",
+   "motivo": "Modificación de cláusula (150%) de Pierre-Emerick Aubameyang",
+   "tipo": "Penalización",
+   "importe": -1234200,
+   "saldo": 15791260
+  },
+  {
+   "cuando": 1788633701,
+   "fecha": "2026-09-05 20:41",
+   "motivo": "Jorge Salinas a Mister",
+   "tipo": "Venta",
+   "importe": 5096460,
+   "saldo": 17025460
+  },
   {
    "cuando": 1788560011,
    "fecha": "2026-09-05 00:13",
@@ -464,22 +480,6 @@
    "tipo": "Compra",
    "importe": -2689960,
    "saldo": 4380774
-  },
-  {
-   "cuando": 1786158000,
-   "fecha": "2026-08-08 05:00",
-   "motivo": "Carlos Álvarez a Mister",
-   "tipo": "Compra",
-   "importe": -3011780,
-   "saldo": 7070734
-  },
-  {
-   "cuando": 1786149534,
-   "fecha": "2026-08-08 02:38",
-   "motivo": "Diego Conde a Mister",
-   "tipo": "Venta",
-   "importe": 500650,
-   "saldo": 10082514
   }
  ]
 }

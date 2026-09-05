@@ -1,0 +1,93 @@
+# Mantiene la liga al día sin depender de que el Mac esté encendido.
+#
+# Cada hora: baja lo nuevo de Mister, rehace las cuentas, genera la página y la
+# publica en GitHub Pages. Es lo mismo que hace `npm run refrescar` en local.
+#
+# Necesita dos secretos del repositorio, que son la sesión de Mister:
+#   MISTER_COOKIE   la cookie de sesión
+#   MISTER_AUTH     el token X-Auth
+# Caducan cada cierto tiempo. Cuando pase, esto falla y GitHub avisa por correo;
+# se arregla pegando los nuevos en Settings → Secrets and variables → Actions.
+name: Actualizar la liga
+
+on:
+  schedule:
+    # Cada hora en punto, de 7:00 a 21:00 UTC (9:00 a 23:00 en España).
+    - cron: '0 7-21 * * *'
+  workflow_dispatch:
+
+# Un solo trabajo a la vez: dos a la vez se pisarían los datos.
+concurrency:
+  group: actualizar
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      # El volcado del feed vive aquí y NO en el repositorio: son 13 MB y, sobre
+      # todo, lleva dentro los correos de los rivales. La caché de Actions es
+      # privada aunque el repositorio sea público.
+      - name: Recuperar el volcado del feed
+        uses: actions/cache@v4
+        with:
+          path: datos
+          key: volcado-${{ github.run_id }}
+          restore-keys: volcado-
+
+      - name: Poner la sesión de Mister
+        env:
+          COOKIE: ${{ secrets.MISTER_COOKIE }}
+          AUTH: ${{ secrets.MISTER_AUTH }}
+        run: |
+          if [ -z "$COOKIE" ] || [ -z "$AUTH" ]; then
+            echo "::error::Faltan los secretos MISTER_COOKIE y MISTER_AUTH."
+            exit 1
+          fi
+          mkdir -p .sesion
+          printf '%s' "$COOKIE" > .sesion/cookie
+          printf '%s' "$AUTH" > .sesion/auth
+          chmod 600 .sesion/cookie .sesion/auth
+
+      # Si las cuentas no cuadran con las de Mister, esto sale con error y no
+      # escribe nada. Es lo correcto: mejor los datos de la hora pasada que unos
+      # malos sin avisar.
+      - name: Actualizar y generar
+        run: npm run refrescar
+
+      - name: Guardar los datos nuevos en el repositorio
+        run: |
+          git config user.name  'Actualización automática'
+          git config user.email 'actions@github.com'
+          git add modulo/datos
+          if git diff --cached --quiet; then
+            echo "Nada que guardar: no ha cambiado ningún dato."
+          else
+            git commit -m "Datos de Mister al $(date -u '+%Y-%m-%d %H:%M') UTC"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: datos/sitio
+      - id: despliegue
+        uses: actions/deploy-pages@v4
+
+      - name: Borrar la sesión
+        if: always()
+        run: rm -rf .sesion

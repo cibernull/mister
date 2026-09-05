@@ -958,6 +958,16 @@
  ],
  "movimientos": [
   {
+   "id": "70935",
+   "nombre": "Jorge Salinas",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 5096460,
+   "tipo": "normal",
+   "fecha": "2026-09-05 20:41:41",
+   "pos": 2
+  },
+  {
    "id": "70932",
    "nombre": "Sergio Martinez",
    "de": "Cacaculopedopis",
@@ -4416,6 +4426,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Jorge Salinas",
+     "id": "70935",
+     "tipo": "venta",
+     "importe": 5096460,
+     "fecha": "2026-09-05",
+     "op": "normal"
+    },
+    {
      "j": "Oriol Rey",
      "id": "25579",
      "tipo": "compra",
@@ -5178,8 +5196,8 @@
     "70935": {
      "nombre": "Jorge Salinas",
      "compras": 3163520,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5096460,
+     "ops": 2
     },
     "70938": {
      "nombre": "Álvaro Mantilla",

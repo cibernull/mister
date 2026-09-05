@@ -256,5 +256,72 @@
   "dia": "2026-09-05",
   "id": "2720265",
   "entra": false
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "23369",
+  "estado": "injury",
+  "equipo": "Niutin FC (Isaac)"
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "55743",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-05",
+  "id": "70935",
+  "de": "Niutin FC (Isaac)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "70935",
+  "entra": false
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "70949",
+  "estado": "other",
+  "equipo": "Legalize F.C (Victor)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "71139",
+  "entra": true
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "71505",
+  "estado": "other",
+  "equipo": "Betico1993"
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "71506",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "71509",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "4886",
+  "entra": true
  }
 ]
