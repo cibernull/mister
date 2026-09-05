@@ -92,14 +92,29 @@ jugadores cuando había treinta y tres.
 
 **El saldo propio no se calcula: se lee.** `POST /ajax/sw/balance` es el libro
 de caja de Mister —1255 apuntes, cada euro con su motivo y el balance que
-dejó—, y ahí están categorías enteras que el feed no publica nunca:
+dejó—. Estas son **todas** las formas en que mueve dinero, contadas una a una:
 
-| Tipo | Qué es |
-|---|---|
-| `Penalización` | Lo que cuesta subirle la cláusula a un jugador. **5.263.619 € en un mes** |
-| `Bonificación` | Los premios de cada jornada |
-| `Ajuste de balance por reinicio de liga` | El punto de partida real de la temporada |
-| `Compra/Venta por cláusula`, `por cesión`, `por rescisión`, `por trueque` | |
+| Tipo · motivo | n | Lo publica el feed |
+|---|---|---|
+| Compra / Venta | 808 | Sí (`normal`) |
+| Modificación de cláusula (Penalización) | 173 | **No** |
+| Jornada N (Bonificación) | 115 | Sí (`gameweek_end`) |
+| Modificación de cláusula (Bonificación) | 67 | **No** |
+| Compra / Venta por cláusula | 69 | Sí (`clause`) |
+| Venta por rescisión | 8 | Sí (`rescind`) |
+| Venta / Compra por cesión | 7 | **No** |
+| Ajuste por reinicio de liga o temporada | 5 | **No** |
+| Venta por trueque | 1 | **No** (y no mueve dinero: 0 €) |
+| Saldo inicial | 1 | **No** |
+
+El feed solo publica tres tipos de traspaso —`normal`, `clause` y `rescind`—,
+así que las **cesiones** y los **trueques** son invisibles en él. Esta temporada
+todavía no ha habido ninguna; cuando la haya, la app la detecta igual, porque el
+jugador cambia de dueño en el censo sin que aparezca un traspaso, y lo dice en
+las novedades. El importe, ese no hay forma de saberlo.
+
+Los ajustes por reinicio y el saldo inicial son de una vez y están dentro de las
+constantes de `liga.json`.
 
 Reconstruir el saldo sumando el feed obligaba a llevar una constante fabricada
 a mano por equipo para que cuadrase, y volvía a descuadrar en cuanto alguien

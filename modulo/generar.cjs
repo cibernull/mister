@@ -635,7 +635,25 @@ const novedades = (() => {
     )
   }
 
+  // Un cambio de dueño que el feed no publicó como traspaso: una cesión, un
+  // trueque, o algo que Mister se guardó. En el libro de caja propio hay 5
+  // ventas por cesión, 2 compras y 1 trueque, y ninguna sale en el feed —solo
+  // publica `normal`, `clause` y `rescind`—. Esta temporada aún no ha pasado,
+  // pero cuando pase habrá movido dinero que nadie va a ver.
+  const conTraspaso = new Set(MOVS.filter((m) => m.fecha.slice(0, 10) >= DOS_DIAS).map((m) => String(m.id)))
+
   for (const n of NOV) {
+    if (n.tipo === 'duenio' && !conTraspaso.has(String(n.id))) {
+      const de = n.de ? POR_NOMBRE.get(n.de)?.corto ?? n.de : 'el mercado'
+      const a = n.a ? POR_NOMBRE.get(n.a)?.corto ?? n.a : 'el mercado'
+      filas.push(
+        lineaNov(
+          '❓',
+          `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b> ha pasado de ${esc(de)} a ${esc(a)} sin traspaso en el feed: puede ser una cesión o un trueque, y entonces habrá movido un dinero que no se ve`,
+          'malo',
+        ),
+      )
+    }
     if (n.tipo === 'clausula') {
       const quien = esc(POR_NOMBRE.get(n.equipo)?.corto ?? n.equipo)
       filas.push(
