@@ -1,6 +1,22 @@
 {
- "saldo": 15791260,
+ "saldo": 15580760,
  "apuntes": [
+  {
+   "cuando": 1788647080,
+   "fecha": "2026-09-06 00:24",
+   "motivo": "Modificación de cláusula (100%) de Ramón Terrats",
+   "tipo": "Penalización",
+   "importe": -783800,
+   "saldo": 15580760
+  },
+  {
+   "cuando": 1788646993,
+   "fecha": "2026-09-06 00:23",
+   "motivo": "Modificación de cláusula (50%) de Alfonso Herrero",
+   "tipo": "Bonificación",
+   "importe": 573300,
+   "saldo": 16364560
+  },
   {
    "cuando": 1788641332,
    "fecha": "2026-09-05 22:48",
@@ -464,22 +480,6 @@
    "tipo": "Venta",
    "importe": 1476960,
    "saldo": -4212276
-  },
-  {
-   "cuando": 1786158000,
-   "fecha": "2026-08-08 05:00",
-   "motivo": "Karim Adeyemi a Mister",
-   "tipo": "Compra",
-   "importe": -10070010,
-   "saldo": -5689236
-  },
-  {
-   "cuando": 1786158000,
-   "fecha": "2026-08-08 05:00",
-   "motivo": "Fran García a Mister",
-   "tipo": "Compra",
-   "importe": -2689960,
-   "saldo": 4380774
   }
  ]
 }

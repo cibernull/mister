@@ -365,5 +365,23 @@
   "id": "3368896",
   "estado": "other",
   "equipo": null
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-09-05",
+  "id": "48203",
+  "equipo": "Niutin FC (Isaac)",
+  "escalones": 1,
+  "coste": 783800,
+  "clausula": 7838000
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-09-05",
+  "id": "71011",
+  "equipo": "Niutin FC (Isaac)",
+  "escalones": -1,
+  "coste": -1146600,
+  "clausula": 8599500
  }
 ]

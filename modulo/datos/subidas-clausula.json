@@ -1,1 +1,20 @@
-[]
+[
+ {
+  "idJugador": "71011",
+  "equipo": "Niutin FC (Isaac)",
+  "dia": "2026-09-05",
+  "coste": -1146600,
+  "escalones": -1,
+  "antes": 2,
+  "despues": 1.5
+ },
+ {
+  "idJugador": "48203",
+  "equipo": "Niutin FC (Isaac)",
+  "dia": "2026-09-05",
+  "coste": 783800,
+  "escalones": 1,
+  "antes": 1.5,
+  "despues": 2
+ }
+]
