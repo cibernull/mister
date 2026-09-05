@@ -7,9 +7,9 @@
  * Escribe el progreso en stderr, línea a línea, y un JSON con el resultado en
  * stdout. El servidor lo lanza y le enseña ese JSON al botón.
  */
-import { readFileSync, writeFileSync, existsSync } from 'node:fs'
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs'
 import { spawnSync } from 'node:child_process'
-import { join } from 'node:path'
+import { join, dirname } from 'node:path'
 import { crearCliente } from '../recoleccion/cliente.js'
 import { obtenerCredenciales } from '../sesion/credenciales.js'
 import { parsearFgUser } from '../recoleccion/parseadorFgUser.js'
@@ -53,7 +53,13 @@ function leerJson<T>(ruta: string, sino?: T): T {
   if (sino !== undefined && !existsSync(ruta)) return sino
   return JSON.parse(readFileSync(ruta, 'utf8')) as T
 }
-const escribirJson = (ruta: string, x: unknown) => writeFileSync(ruta, `${JSON.stringify(x, null, 1)}\n`)
+// Se crea la carpeta si no está: en una máquina limpia —un runner de CI— no
+// existe `datos/`, y la pasada moría al final, después de haber hecho todo el
+// trabajo y de haber comprobado que cuadraba.
+const escribirJson = (ruta: string, x: unknown) => {
+  mkdirSync(dirname(ruta), { recursive: true })
+  writeFileSync(ruta, `${JSON.stringify(x, null, 1)}\n`)
+}
 
 export type Resultado = {
   ok: boolean
