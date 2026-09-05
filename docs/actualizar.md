@@ -274,10 +274,16 @@ De republicar se encargan dos tareas programadas:
 | Tarea | Cuándo | Qué hace |
 |---|---|---|
 | `liga-de-mister-fichas` | 8:40, a diario | La pasada larga: las 523 fichas |
-| `liga-de-mister-actualizar` | cada 20 min, de 9:00 a 23:59 | Actualiza y republica |
+| `liga-de-mister-actualizar` | cada hora, de 9:05 a 23:05 | Actualiza y republica |
 
 Necesitan el Mac encendido y con la app abierta; si estaba cerrado, la tarea se
 ejecuta al abrirla.
+
+La actualización y la publicación van en **un solo comando** (`npm run
+refrescar`) a propósito. Cuando eran dos pasos separados, una mañana el primero
+corrió y el segundo no: los datos se actualizaron a las 9:05 y la página
+publicada se quedó en la de las 0:42 de la madrugada. Un solo comando es un solo
+permiso, y o se hace entero o no se hace.
 
 ## Comandos
 
@@ -288,5 +294,6 @@ ejecuta al abrirla.
 | `npm run actualizar` | Una pasada desde el Terminal, sin la app |
 | `npm run generar` | Solo rehace el HTML con los datos que ya hay |
 | `npm run publicar` | Prepara `datos/publicada.html` para subirla a la web |
+| `npm run refrescar` | Las dos de arriba de una vez. Es lo que corre la tarea |
 | `npm run fichas` | La pasada larga: lee las 523 fichas (~9 min, una vez al día) |
 | `python3 modulo/escudos.py` | Baja los escudos de los clubes. Una vez y ya |

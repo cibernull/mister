@@ -1,1 +1,106 @@
-[]
+[
+ {
+  "idJugador": "60888",
+  "equipo": "Neky F.C. (Sergio)",
+  "dia": "2026-09-05",
+  "coste": 1583000,
+  "clausulaAntes": 15504000,
+  "clausulaDespues": 15830000
+ },
+ {
+  "idJugador": "66706",
+  "equipo": "Neky F.C. (Sergio)",
+  "dia": "2026-09-05",
+  "coste": 285400,
+  "clausulaAntes": 4113000,
+  "clausulaDespues": 4281000
+ },
+ {
+  "idJugador": "71011",
+  "equipo": "Niutin FC (Isaac)",
+  "dia": "2026-09-05",
+  "coste": 1146600,
+  "clausulaAntes": 11322000,
+  "clausulaDespues": 11466000
+ },
+ {
+  "idJugador": "71061",
+  "equipo": "Mario80",
+  "dia": "2026-09-05",
+  "coste": 1144200,
+  "clausulaAntes": 14135000,
+  "clausulaDespues": 14302500
+ },
+ {
+  "idJugador": "64468",
+  "equipo": "Mario80",
+  "dia": "2026-09-05",
+  "coste": 791200,
+  "clausulaAntes": 7722000,
+  "clausulaDespues": 7912000
+ },
+ {
+  "idJugador": "6044",
+  "equipo": "Saiyans FC (Fran)",
+  "dia": "2026-09-05",
+  "coste": 746200,
+  "clausulaAntes": 8972500,
+  "clausulaDespues": 9327500
+ },
+ {
+  "idJugador": "71008",
+  "equipo": "Niutin FC (Isaac)",
+  "dia": "2026-09-05",
+  "coste": 373600,
+  "clausulaAntes": 3618000,
+  "clausulaDespues": 3736000
+ },
+ {
+  "idJugador": "27520",
+  "equipo": "Niutin FC (Isaac)",
+  "dia": "2026-09-05",
+  "coste": 1067800,
+  "clausulaAntes": 10494000,
+  "clausulaDespues": 10678000
+ },
+ {
+  "idJugador": "23369",
+  "equipo": "Niutin FC (Isaac)",
+  "dia": "2026-09-05",
+  "coste": 659000,
+  "clausulaAntes": 9642000,
+  "clausulaDespues": 9885000
+ },
+ {
+  "idJugador": "28774",
+  "equipo": "Saiyans FC (Fran)",
+  "dia": "2026-09-05",
+  "coste": 634200,
+  "clausulaAntes": 6114000,
+  "clausulaDespues": 6342000
+ },
+ {
+  "idJugador": "25579",
+  "equipo": "Niutin FC (Isaac)",
+  "dia": "2026-09-05",
+  "coste": 208600,
+  "clausulaAntes": 2038000,
+  "clausulaDespues": 2086000
+ },
+ {
+  "idJugador": "308",
+  "equipo": "Mario80",
+  "dia": "2026-09-05",
+  "coste": 512200,
+  "clausulaAntes": 4962000,
+  "clausulaDespues": 5122000
+ },
+ {
+  "idJugador": "71139",
+  "equipo": "Mario80",
+  "dia": "2026-09-05",
+  "coste": 313800,
+  "clausulaAntes": 4653000,
+  "clausulaDespues": 4707000
+ }
+]
