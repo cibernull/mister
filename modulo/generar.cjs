@@ -18,6 +18,10 @@ const DAT = path.join(AQUI, 'datos')
 const SALIDA = process.argv[2] || path.join(AQUI, '..', 'datos', 'mercado.html')
 const MI_EQUIPO = 'Niutin FC (Isaac)'
 const NOMBRE_LIGA = 'La Liga de Mister'
+// Dónde se lanza a mano la actualización. Es la página del workflow de GitHub:
+// desde el móvil son dos toques y tarda un minuto. Un botón que la dispare de
+// verdad desde aquí necesitaría un token, y esta página es pública.
+const LANZAR = 'https://github.com/cibernull/mister/actions/workflows/actualizar.yml'
 
 const leer = (n) => JSON.parse(fs.readFileSync(path.join(DAT, n), 'utf8'))
 const J = leer('jugadores-calc.json')
@@ -1124,6 +1128,7 @@ const huecos = {
   // así se ve de un vistazo si lo que estás mirando es de ahora.
   '<!--__FECHA__-->': new Date().toLocaleString('es-ES', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }),
   '<!--__GENERADO__-->': YO.generado,
+  '<!--__LANZAR__-->': LANZAR,
   '<!--__SALDO__-->': String(MIO.saldo),
   '<!--__PLANTILLA__-->': String(MIO.pl),
   '<!--__MIS_JUGADORES__-->': String(MIOS.length),

@@ -400,6 +400,10 @@ ol.top .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-num
 .acc button svg{width:14px;height:14px}
 .acc button:hover{opacity:.88}
 .acc button:disabled{opacity:.5;cursor:progress}
+.btn-lanzar{font-size:14px;font-weight:700;color:var(--suelo);background:var(--tinta);border-radius:9px;padding:9px 16px;display:flex;align-items:center;gap:7px;text-decoration:none}
+.btn-lanzar svg{width:14px;height:14px}
+.btn-lanzar:hover{opacity:.88}
+.acc button.flojo{color:var(--tinta);background:var(--hueco);border:1px solid var(--raya);font-weight:600}
 .giro{display:inline-block;width:12px;height:12px;border:2px solid rgba(128,128,128,.35);border-top-color:currentColor;border-radius:50%;animation:gira .7s linear infinite}
 @keyframes gira{to{transform:rotate(360deg)}}
 .sello{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--tenue);border:1px solid var(--raya);border-radius:99px;padding:5px 11px;white-space:nowrap}
@@ -480,6 +484,7 @@ a{color:var(--oro)}
     </div>
     <div class="sello" id="sello" data-generado="<!--__GENERADO__-->" title="Cuándo se leyeron estos datos de Mister">Datos del <b><!--__FECHA__--></b></div>
       <div class="acc">
+      <a class="btn-lanzar" id="btn-lanzar" href="<!--__LANZAR__-->" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>Actualizar ahora</a>
       <button id="btn-act" type="button" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>Actualizar</button>
       <span class="est" id="est-act"></span>
     </div>
@@ -714,15 +719,21 @@ a{color:var(--oro)}
   var svgRecargar = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>'
 
   if (window.PUBLICADO) {
+    // Dos botones y hacen cosas distintas, así que conviene no confundirlos:
+    // «Actualizar ahora» va a GitHub a lanzar la descarga —tarda un minuto— y
+    // «Recargar» solo trae lo último que ya esté publicado.
+    var lanzar = document.getElementById('btn-lanzar')
+    if (lanzar && lanzar.getAttribute('href').indexOf('http') === 0) lanzar.hidden = false
     btn.hidden = false
     btn.innerHTML = svgRecargar + 'Recargar'
-    btn.title = 'Traer la última versión que haya subido el Mac'
+    btn.title = 'Traer la última versión publicada'
+    btn.classList.add('flojo')
     btn.addEventListener('click', function () {
       btn.disabled = true
       btn.innerHTML = '<span class="giro"></span>Recargando'
       location.reload()
     })
-    est.textContent = 'Se sube solo cada hora'
+    est.textContent = 'Se actualiza solo cada hora'
     return
   }
 
