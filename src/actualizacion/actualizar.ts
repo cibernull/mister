@@ -62,10 +62,12 @@ export type Resultado = {
   detalle?: string[]
   /** Ruta a la que mandar al usuario para arreglarlo, si la hay. */
   irA?: string
+  /** Si el fallo parece pasajero y vale la pena volver a intentarlo. */
+  reintentable?: boolean
   cambios?: { lotesNuevos: number; traspasosNuevos: number; fichasPedidas: number }
 }
 
-async function main(): Promise<Resultado> {
+async function intentar(): Promise<Resultado> {
   const cuando = new Date().toISOString()
 
   // ── 1. Credenciales ────────────────────────────────────────────────────────
@@ -283,6 +285,10 @@ async function main(): Promise<Resultado> {
       ok: false,
       cuando,
       mensaje: 'Las cuentas no cuadran con las de Mister, así que no he tocado nada.',
+      // Que solo discrepen los rivales suele ser Mister desfasado consigo
+      // mismo, y se arregla esperando: merece la pena reintentar antes de dar
+      // la pasada por perdida.
+      reintentable: veredicto.cuadra,
       detalle: [
         ...veredicto.motivos,
         ...dLiga.motivos,
@@ -577,6 +583,34 @@ function construirJugadores(
   })
 }
 
+
+/**
+ * Reintenta cuando Mister se contradice consigo mismo.
+ *
+ * Su censo de jugadores y su clasificación no se actualizan a la vez. Un rival
+ * ficha, la clasificación lo sabe y el censo todavía no, y entonces la
+ * comprobación —que existe para cazar errores de cuenta de verdad— se planta
+ * por algo que se arregla solo en un minuto. Pasó un 5 de septiembre a las
+ * 16:00: el censo daba 18 jugadores a Neky F.C. y la clasificación 19, la
+ * pasada se negó a escribir, y los datos se quedaron congelados hora y media
+ * hasta que alguien miró.
+ *
+ * Solo se reintenta cuando lo único que falla son los rivales. Si el saldo
+ * propio no cuadra contra `_FG_user`, eso no lo arregla esperar: es un error de
+ * cálculo y hay que verlo.
+ */
+const ESPERA_ENTRE_INTENTOS_MS = 45_000
+const INTENTOS = 3
+
+async function main(): Promise<Resultado> {
+  let ultimo = await intentar()
+  for (let i = 1; i < INTENTOS && !ultimo.ok && ultimo.reintentable; i += 1) {
+    paso(`Mister no se pone de acuerdo consigo mismo. Espero y lo intento otra vez (${i} de ${INTENTOS - 1})…`)
+    await new Promise((r) => setTimeout(r, ESPERA_ENTRE_INTENTOS_MS))
+    ultimo = await intentar()
+  }
+  return ultimo
+}
 
 main()
   .then((r) => {

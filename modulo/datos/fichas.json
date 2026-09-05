@@ -7,7 +7,7 @@
   "mediaCasa": 3,
   "mediaFuera": 3.5,
   "edad": 32,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "dia": "2026-09-05"
@@ -46,7 +46,7 @@
   "mediaCasa": 6,
   "mediaFuera": 5,
   "edad": 33,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
   "dia": "2026-09-05"
@@ -345,7 +345,7 @@
   "mediaCasa": 4.5,
   "mediaFuera": 5,
   "edad": 31,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 2,
   "dia": "2026-09-05"
@@ -475,7 +475,7 @@
   "mediaCasa": 2,
   "mediaFuera": 7.5,
   "edad": 31,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "dia": "2026-09-05"
@@ -1060,7 +1060,7 @@
   "mediaCasa": 1,
   "mediaFuera": 3,
   "edad": 26,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
   "dia": "2026-09-05"
@@ -1086,7 +1086,7 @@
   "mediaCasa": -3,
   "mediaFuera": 8.5,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
   "dia": "2026-09-05"
@@ -1199,11 +1199,11 @@
   "nombre": "Kang-In Lee",
   "posicion": 3,
   "goles": 1,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 9,
   "mediaFuera": 6,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "dia": "2026-09-05"
@@ -1606,7 +1606,7 @@
   "mediaCasa": 7.5,
   "mediaFuera": 18,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 2,
   "dia": "2026-09-05"
@@ -1801,7 +1801,7 @@
   "mediaCasa": 0,
   "mediaFuera": 6.5,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 1,
   "dia": "2026-09-05"
@@ -1931,7 +1931,7 @@
   "mediaCasa": 2,
   "mediaFuera": 8,
   "edad": 33,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 1,
   "dia": "2026-09-05"
@@ -2035,7 +2035,7 @@
   "mediaCasa": 0,
   "mediaFuera": 6,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 0,
   "dia": "2026-09-05"
@@ -2165,7 +2165,7 @@
   "mediaCasa": 9,
   "mediaFuera": 4,
   "edad": 26,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 0,
   "dia": "2026-09-05"
@@ -2334,7 +2334,7 @@
   "mediaCasa": 6.5,
   "mediaFuera": 3,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "dia": "2026-09-05"
@@ -2568,7 +2568,7 @@
   "mediaCasa": 12,
   "mediaFuera": 5,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 0,
   "dia": "2026-09-05"
@@ -2893,7 +2893,7 @@
   "mediaCasa": 6,
   "mediaFuera": 9,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "dia": "2026-09-05"
@@ -3112,7 +3112,7 @@
   "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 9,
-  "mediaFuera": 7.5,
+  "mediaFuera": 8,
   "edad": 21,
   "titular": null,
   "titularidades": 3,
@@ -4414,7 +4414,7 @@
   "mediaCasa": 5,
   "mediaFuera": 4,
   "edad": 28,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
   "dia": "2026-09-05"
@@ -4947,7 +4947,7 @@
   "mediaCasa": 2,
   "mediaFuera": 10,
   "edad": 28,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
   "dia": "2026-09-05"
@@ -5701,7 +5701,7 @@
   "mediaCasa": 3,
   "mediaFuera": 2,
   "edad": 30,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 0,
   "dia": "2026-09-05"
@@ -5883,7 +5883,7 @@
   "mediaCasa": 3,
   "mediaFuera": 5,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "dia": "2026-09-05"
@@ -6091,7 +6091,7 @@
   "mediaCasa": 5,
   "mediaFuera": 5,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "dia": "2026-09-05"

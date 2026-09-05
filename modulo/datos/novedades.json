@@ -19,5 +19,242 @@
   "id": "58992",
   "estado": "injury",
   "equipo": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "213",
+  "entra": true
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "12902",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-05",
+  "id": "13420",
+  "de": "Cacaculopedopis",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "14911",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "15653",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "20346",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "28619",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "29163",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "29169",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "31226",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "31496",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "33726",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "40089",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "48620",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "49382",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "51137",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-05",
+  "id": "59382",
+  "de": null,
+  "a": "Neky F.C. (Sergio)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "59382",
+  "entra": false
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "59532",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "59633",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "59641",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "59642",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-05",
+  "id": "59789",
+  "de": null,
+  "a": "Cacaculopedopis"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "59789",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-05",
+  "id": "60271",
+  "de": "Cacaculopedopis",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "64151",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "65179",
+  "entra": true
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "67580",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "68259",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-05",
+  "id": "68835",
+  "de": "Cacaculopedopis",
+  "a": null
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-05",
+  "id": "70932",
+  "de": "Cacaculopedopis",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "70945",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "70950",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "70953",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "71002",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "71795",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "1256139",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-05",
+  "id": "2720265",
+  "entra": false
  }
 ]

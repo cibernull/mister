@@ -939,9 +939,84 @@
    "id": "20449",
    "nombre": "Fer Niño",
    "valor": 2346000
+  },
+  {
+   "id": "59789",
+   "nombre": "Orri Óskarsson",
+   "valor": 5563000
+  },
+  {
+   "id": "59382",
+   "nombre": "Nicolas Pépé",
+   "valor": 15054000
+  },
+  {
+   "id": "13420",
+   "nombre": "Mouctar Diakhaby",
+   "valor": 1319000
   }
  ],
  "movimientos": [
+  {
+   "id": "70932",
+   "nombre": "Sergio Martinez",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 1207440,
+   "tipo": "normal",
+   "fecha": "2026-09-05 17:08:39",
+   "pos": 3
+  },
+  {
+   "id": "68835",
+   "nombre": "Job Ochieng",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 192400,
+   "tipo": "normal",
+   "fecha": "2026-09-05 17:08:30",
+   "pos": 3
+  },
+  {
+   "id": "60271",
+   "nombre": "Rafa Bauza",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 638520,
+   "tipo": "normal",
+   "fecha": "2026-09-05 17:08:22",
+   "pos": 3
+  },
+  {
+   "id": "13420",
+   "nombre": "Mouctar Diakhaby",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 1305810,
+   "tipo": "normal",
+   "fecha": "2026-09-05 17:08:11",
+   "pos": 2
+  },
+  {
+   "id": "59382",
+   "nombre": "Nicolas Pépé",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 15054000,
+   "tipo": "normal",
+   "fecha": "2026-09-05 17:00:19",
+   "pos": 4
+  },
+  {
+   "id": "59789",
+   "nombre": "Orri Óskarsson",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 6126970,
+   "tipo": "normal",
+   "fecha": "2026-09-05 17:00:19",
+   "pos": 4
+  },
   {
    "id": "20449",
    "nombre": "Fer Niño",
@@ -3547,6 +3622,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Nicolas Pépé",
+     "id": "59382",
+     "tipo": "compra",
+     "importe": 15054000,
+     "fecha": "2026-09-05",
+     "op": "normal"
+    },
+    {
      "j": "Javi Rodríguez",
      "id": "59506",
      "tipo": "venta",
@@ -4188,6 +4271,12 @@
      "nombre": "Endrick",
      "compras": 0,
      "ventas": 1974000,
+     "ops": 1
+    },
+    "59382": {
+     "nombre": "Nicolas Pépé",
+     "compras": 15054000,
+     "ventas": 0,
      "ops": 1
     },
     "59484": {
@@ -5163,6 +5252,46 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Orri Óskarsson",
+     "id": "59789",
+     "tipo": "compra",
+     "importe": 6126970,
+     "fecha": "2026-09-05",
+     "op": "normal"
+    },
+    {
+     "j": "Mouctar Diakhaby",
+     "id": "13420",
+     "tipo": "venta",
+     "importe": 1305810,
+     "fecha": "2026-09-05",
+     "op": "normal"
+    },
+    {
+     "j": "Rafa Bauza",
+     "id": "60271",
+     "tipo": "venta",
+     "importe": 638520,
+     "fecha": "2026-09-05",
+     "op": "normal"
+    },
+    {
+     "j": "Job Ochieng",
+     "id": "68835",
+     "tipo": "venta",
+     "importe": 192400,
+     "fecha": "2026-09-05",
+     "op": "normal"
+    },
+    {
+     "j": "Sergio Martinez",
+     "id": "70932",
+     "tipo": "venta",
+     "importe": 1207440,
+     "fecha": "2026-09-05",
+     "op": "normal"
+    },
+    {
      "j": "Sergio Carreira",
      "id": "23664",
      "tipo": "venta",
@@ -5602,6 +5731,12 @@
      "ventas": 0,
      "ops": 1
     },
+    "13420": {
+     "nombre": "Mouctar Diakhaby",
+     "compras": 0,
+     "ventas": 1305810,
+     "ops": 1
+    },
     "17568": {
      "nombre": "Pol Lozano",
      "compras": 1608920,
@@ -5698,11 +5833,17 @@
      "ventas": 2042370,
      "ops": 1
     },
+    "59789": {
+     "nombre": "Orri Óskarsson",
+     "compras": 6126970,
+     "ventas": 0,
+     "ops": 1
+    },
     "60271": {
      "nombre": "Rafa Bauza",
      "compras": 436710,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 638520,
+     "ops": 2
     },
     "61093": {
      "nombre": "Maroan Sannadi",
@@ -5743,8 +5884,8 @@
     "68835": {
      "nombre": "Job Ochieng",
      "compras": 172870,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 192400,
+     "ops": 2
     },
     "70927": {
      "nombre": "Giorgi Guliashvili",
@@ -5761,8 +5902,8 @@
     "70932": {
      "nombre": "Sergio Martinez",
      "compras": 1164000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1207440,
+     "ops": 2
     },
     "70941": {
      "nombre": "Bil Nsongo",
