@@ -57,7 +57,15 @@ PLI
 launchctl bootout "gui/$(id -u)/$ETIQUETA" 2>/dev/null || true
 launchctl bootstrap "gui/$(id -u)" "$PLIST"
 
-echo "Instalado: $ETIQUETA"
+# Comprobar que ha quedado registrado de verdad. `bootstrap` puede salir con
+# cero y no dejar el servicio puesto, y entonces el instalador dice «Instalado»
+# mientras el refresco no corre nunca — que es lo que pasó la primera vez.
+if ! launchctl list | grep -q "$ETIQUETA"; then
+  echo "El agente no ha quedado registrado. Prueba a cerrar sesión y volver a entrar." >&2
+  exit 1
+fi
+
+echo "Instalado y comprobado: $ETIQUETA"
 echo "  guion:  $GUION"
 echo "  plist:  $PLIST"
 echo "  diario: ${TMPDIR:-/tmp}liga-de-mister-refresco.log"
