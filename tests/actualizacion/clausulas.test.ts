@@ -41,7 +41,7 @@ describe('detectarSubidas', () => {
       '2026-09-05',
     )
     expect(r).toEqual([
-      { idJugador: '1', equipo: 'Betico1993', dia: '2026-09-05', coste: 400_000, antes: 1.5, despues: 2 },
+      { idJugador: '1', equipo: 'Betico1993', dia: '2026-09-05', coste: 400_000, escalones: 1, antes: 1.5, despues: 2 },
     ])
   })
 
@@ -70,8 +70,26 @@ describe('detectarSubidas', () => {
     expect(r[0]!.despues).toBe(3)
   })
 
-  it('bajar el multiplicador tampoco es una subida', () => {
-    expect(detectarSubidas([jugador({ clausula: 1_500_000 })], { '1': 2_000_000 }, { '1': 1_000_000 }, 'x')).toEqual([])
+  it('bajar el multiplicador devuelve dinero, y se anota en negativo', () => {
+    // Bajar una cláusula la cobra Mister al revés: el libro propio tiene 67
+    // «Bonificación» por esto. Lamine Yamal bajó cinco escalones y le
+    // devolvieron 13.855.490 €, su valor entero. Ignorarlo dejaba el dinero de
+    // un rival por DEBAJO del real, que es el error peligroso.
+    const r = detectarSubidas([jugador({ clausula: 1_500_000 })], { '1': 2_000_000 }, { '1': 1_000_000 }, 'x')
+    expect(r).toHaveLength(1)
+    expect(r[0]!.coste).toBe(-200_000)
+    expect(r[0]!.escalones).toBe(-1)
+  })
+
+  it('cinco escalones abajo devuelven el valor entero', () => {
+    // Es el caso de Lamine Yamal: de ×4,0 a ×1,5.
+    const r = detectarSubidas(
+      [jugador({ valor: 13_855_490, clausula: Math.round(13_855_490 * 1.5) })],
+      { '1': Math.round(13_855_490 * 4) },
+      { '1': 13_855_490 },
+      'x',
+    )
+    expect(r[0]!.coste).toBe(-13_855_490)
   })
 
   it('sin foto de ayer no se deduce nada', () => {
@@ -89,7 +107,7 @@ describe('detectarSubidas', () => {
 
 describe('gastoPorEquipo', () => {
   it('suma lo de cada uno', () => {
-    const s = (equipo: string, coste: number) => ({ idJugador: 'x', equipo, dia: 'd', coste, antes: 1.5, despues: 2 })
+    const s = (equipo: string, coste: number) => ({ idJugador: 'x', equipo, dia: 'd', coste, escalones: 1, antes: 1.5, despues: 2 })
     expect([...gastoPorEquipo([s('A', 100), s('B', 50), s('A', 25)])]).toEqual([['A', 125], ['B', 50]])
   })
 })

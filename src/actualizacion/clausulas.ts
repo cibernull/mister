@@ -77,15 +77,27 @@ export function subidasVivas(valor: number, clausula: number): number {
   return Math.abs(clausula - esperado) <= esperado * 0.02 ? escalones : 0
 }
 
-/** Lo que cuesta cada modificación, sobre el valor del jugador. */
+/**
+ * Lo que cuesta cada escalón, sobre el valor del jugador.
+ *
+ * Es simétrico: subirlo cuesta ese 20 % y bajarlo lo devuelve. Comprobado en el
+ * libro de caja propio en los dos sentidos — siete penalizaciones al 20,00 %
+ * exacto, y sesenta y siete bonificaciones que encajan con el mismo 20 % por
+ * escalón sobre el valor del día en que se bajó.
+ */
 export const COSTE_MODIFICACION = 0.2
 
 export type Subida = {
   idJugador: string
   equipo: string
   dia: string
-  /** Lo que Mister le habrá cobrado: el 20 % del valor, por cada escalón. */
+  /**
+   * Lo que le habrá supuesto: **positivo si lo pagó, negativo si se lo
+   * devolvieron**. Bajar una cláusula también mueve dinero.
+   */
   coste: number
+  /** Escalones que se ha movido: positivo hacia arriba, negativo hacia abajo. */
+  escalones: number
   /** En qué multiplicador estaba y en cuál está. */
   antes: number
   despues: number
@@ -99,13 +111,20 @@ export type Jugador = {
 }
 
 /**
- * Compara el multiplicador de hoy con el de ayer.
+ * Compara el multiplicador de hoy con el de ayer, en los dos sentidos.
  *
  * **El multiplicador, no la cláusula.** La cláusula se recalcula sola cada día
  * sobre el valor, así que a un jugador que se revaloriza le sube sin que nadie
  * pague: Alfonso Herrero pasó de 11.322.000 € a 11.466.000 € de un día para
  * otro y siguió en ×2,00 clavado. Comparar importes daba trece subidas
  * inventadas en una sola noche y le quitaba diez millones a los rivales.
+ *
+ * Y se mira también hacia abajo, porque **bajar la cláusula devuelve dinero**.
+ * El libro de caja propio lo llama `Bonificación` y lo cobra al mismo precio:
+ * Lamine Yamal bajó de ×4,0 a ×1,5 —cinco escalones— y devolvió 13.855.490 €,
+ * que es exactamente el 20 % de su valor cinco veces. Sesenta y siete apuntes
+ * así hay en el libro. Ignorarlo dejaba el dinero de un rival por debajo de lo
+ * que tiene, no por encima, que es el error peligroso.
  *
  * Hace falta el valor de ayer además de la cláusula de ayer: sin él no se puede
  * saber en qué multiplicador estaba.
@@ -116,7 +135,7 @@ export function detectarSubidas(
   valoresAyer: Record<string, number>,
   dia: string,
 ): Subida[] {
-  const subidas: Subida[] = []
+  const cambios: Subida[] = []
 
   for (const j of hoy) {
     if (j.duenio === null || j.clausula === null) continue
@@ -124,33 +143,40 @@ export function detectarSubidas(
     const vAyer = valoresAyer[j.id]
     if (cAyer === undefined || vAyer === undefined) continue
 
-    // Una subida sube la cláusula, siempre. Si no ha subido —o ha subido lo que
-    // le tocaba por el valor— no hay nada que cobrar. Sin esta guarda, un
-    // jugador con la cláusula congelada al comprarlo y el valor moviéndose
-    // cruzaba un escalón por casualidad: José Giménez pasó de ×2,653 a ×2,549
-    // con la cláusula clavada en 3.051.354 € y salía como subida de 478.800 €.
-    // Un escalón real multiplica la cláusula por 1,2 como poco; el vaivén
-    // diario de un valor no llega al 5 %.
-    if (j.clausula < cAyer * 1.1) continue
+    // La cláusula tiene que haberse movido de verdad, y en el mismo sentido.
+    // Un escalón la cambia un 20 % largo; el vaivén diario de un valor no llega
+    // al 5 %. Sin esta guarda, un jugador con la cláusula congelada al
+    // comprarlo y el valor moviéndose cruzaba escalones por casualidad: José
+    // Giménez pasó de ×2,653 a ×2,549 con la cláusula clavada en 3.051.354 € y
+    // salía como una subida de 478.800 € que nunca pagó.
+    const proporcion = j.clausula / cAyer
+    if (proporcion > 0.91 && proporcion < 1.1) continue
 
     const antes = subidasVivas(vAyer, cAyer)
     const despues = subidasVivas(j.valor, j.clausula)
-    if (despues <= antes) continue
+    const escalones = despues - antes
+    if (escalones === 0) continue
+    if (Math.sign(escalones) !== Math.sign(proporcion - 1)) continue
 
-    subidas.push({
+    cambios.push({
       idJugador: j.id,
       equipo: j.duenio,
       dia,
-      coste: Math.round(j.valor * COSTE_MODIFICACION) * (despues - antes),
+      coste: Math.round(j.valor * COSTE_MODIFICACION) * escalones,
+      escalones,
       antes: CLAUSULA_BASE + ESCALON * antes,
       despues: CLAUSULA_BASE + ESCALON * despues,
     })
   }
 
-  return subidas
+  return cambios
 }
 
-/** Lo que lleva gastado cada equipo en subir cláusulas, de lo que hemos visto. */
+/**
+ * Lo que le ha supuesto a cada equipo mover cláusulas, de lo que hemos visto.
+ *
+ * Positivo es dinero que salió de su caja; negativo, dinero que entró.
+ */
 export function gastoPorEquipo(subidas: Subida[]): Map<string, number> {
   const por = new Map<string, number>()
   for (const s of subidas) por.set(s.equipo, (por.get(s.equipo) ?? 0) + s.coste)

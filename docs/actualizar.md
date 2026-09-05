@@ -107,10 +107,10 @@ tocaba una cláusula: una noche de septiembre la app se quedó sin poder
 actualizarse por 416.619 € que eran dos subidas de cláusula de la misma tarde.
 
 Los saldos de los rivales sí hay que seguir reconstruyéndolos —Mister los oculta
-(`show_balances: 0`)—, y lo que les falta son justamente esas penalizaciones,
-que solo restan. Así que **el dinero de un rival es un techo**: tiene eso o
-menos. Para la pregunta que hace esta app —«¿puede pagarme la cláusula?»— errar
-por arriba es el lado seguro.
+(`show_balances: 0`)—, y lo que les falta es justamente el dinero de las
+cláusulas. **No es un techo**: subir una cláusula resta, pero bajarla suma, así
+que el error puede caer a los dos lados. La ficha de cada equipo dice de cuánto
+es ese margen.
 
 ### Deducir lo que un rival paga por blindar
 
@@ -120,11 +120,13 @@ comprobadas contra el libro propio:
 - La cláusula base es **1,5 × el valor** (con un suelo de **1.000.000 €**), y se
   recalcula sola cada día. 61 jugadores con dueño están clavados en ese ×1,50, y
   21 en el suelo del millón.
-- Mister ofrece subirla al 100 %, 150 %, 200 % y 250 %, y el multiplicador
-  resultante es `1 + porcentaje/100`: ×2, ×2,5, ×3, ×3,5. **Cada escalón de
-  medio punto cuesta el 20 % del valor**, dé igual a qué nivel se suba. Siete de
-  siete penalizaciones propias con valor conocido dan 20,00 % exacto, y Juan
-  Foyth —que pagó tres veces, al 100 %, al 150 % y al 200 %— está hoy en ×3,000.
+- Mister ofrece moverla al 50 % (la base), 100 %, 150 %, 200 %, 250 % y 300 %, y
+  el multiplicador resultante es `1 + porcentaje/100`: ×1,5, ×2, ×2,5, ×3, ×3,5,
+  ×4. **Cada escalón de medio punto vale el 20 % del valor**, y es simétrico:
+  subirlo cuesta y **bajarlo devuelve**. Siete de siete penalizaciones propias
+  con valor conocido dan 20,00 % exacto; Juan Foyth —que pagó tres veces— está
+  hoy en ×3,000; y de las 67 bonificaciones del libro, Lamine Yamal bajó cinco
+  escalones y le devolvieron 13.855.490 €, su valor entero.
 
 Con eso:
 

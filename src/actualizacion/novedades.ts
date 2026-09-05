@@ -64,16 +64,20 @@ export function compararFotos(antes: Foto, ahora: Foto, dia: string): Novedad[] 
     if (hoy.d !== null && hoy.c !== null && ayer.c !== null && ayer.d === hoy.d) {
       const antes = subidasVivas(ayer.v, ayer.c)
       const ahoraN = subidasVivas(hoy.v, hoy.c)
-      // La cláusula tiene que haber subido de verdad: con el valor moviéndose,
-      // el ratio cruza escalones sin que nadie pague.
-      if (ahoraN > antes && hoy.c >= ayer.c * 1.1) {
+      const escalones = ahoraN - antes
+      // La cláusula tiene que haberse movido de verdad y en el mismo sentido:
+      // con el valor bailando, el ratio cruza escalones sin que nadie pague.
+      // Bajarla cuenta igual, pero devuelve dinero en vez de costarlo.
+      const proporcion = ayer.c === 0 ? 1 : hoy.c / ayer.c
+      const deVerdad = proporcion <= 0.91 || proporcion >= 1.1
+      if (escalones !== 0 && deVerdad && Math.sign(escalones) === Math.sign(proporcion - 1)) {
         novedades.push({
           tipo: 'clausula',
           dia,
           id,
           equipo: hoy.d,
-          escalones: ahoraN - antes,
-          coste: Math.round(hoy.v * COSTE_MODIFICACION) * (ahoraN - antes),
+          escalones,
+          coste: Math.round(hoy.v * COSTE_MODIFICACION) * escalones,
           clausula: hoy.c,
         })
       }

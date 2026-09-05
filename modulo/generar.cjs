@@ -436,12 +436,13 @@ const avisoFuera = (e) => {
  * los 5.263.619 € reales.
  */
 /**
- * Hasta cuánto puede estar inflada la caja de un rival.
+ * Cuánto puede bailar la caja de un rival.
  *
  * Su saldo se reconstruye sumando el feed, y el feed no publica lo que Mister
- * cobra por subir una cláusula. De las subidas que tiene vivas sabemos lo que
- * costarían hoy; lo que no sabemos es cuánto de eso ya estaba descontado. Así
- * que su dinero es un techo, y esto dice de cuánto.
+ * cobra por mover una cláusula. De las subidas que tiene vivas sabemos lo que
+ * costarían hoy, pero no cuánto de eso ya estaba descontado — ni si además ha
+ * bajado alguna, que devuelve dinero. Así que no es un techo: es un margen, y
+ * puede caer a los dos lados.
  */
 const margenDe = (e) => (e.mio ? 0 : Math.max(0, (e.costeSubidas ?? 0) - (e.gastoVisto ?? 0)))
 
@@ -460,7 +461,7 @@ const cuentasDe = (e) => `<div class="cuenta">
         <div class="l"><span>Ha fichado por</span><span class="menos">−${eur(e.com)}</span></div>
         <div class="l tot caja"><span>Le queda en caja</span><span>${eur(e.saldo)}</span></div>${
           margenDe(e) > 0
-            ? `<div class="l sub-caja"><span>…o hasta ${eur(margenDe(e))} menos</span><span>lo que haya pagado por blindar</span></div>`
+            ? `<div class="l sub-caja"><span>±${eur(margenDe(e))} de margen</span><span>lo que haya movido en cláusulas</span></div>`
             : ''
         }
         <div class="l"><span>Más su plantilla, que vale</span><span>${eur(e.pl)}</span></div>
@@ -636,10 +637,13 @@ const novedades = (() => {
 
   for (const n of NOV) {
     if (n.tipo === 'clausula') {
+      const quien = esc(POR_NOMBRE.get(n.equipo)?.corto ?? n.equipo)
       filas.push(
         lineaNov(
-          '🛡',
-          `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b>: ${esc(POR_NOMBRE.get(n.equipo)?.corto ?? n.equipo)} le subió la cláusula a ${eur(n.clausula)}, y le costó ${eur(n.coste)}`,
+          n.escalones > 0 ? '🛡' : '🔓',
+          n.escalones > 0
+            ? `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b>: ${quien} le subió la cláusula a ${eur(n.clausula)}, y le costó ${eur(n.coste)}`
+            : `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b>: ${quien} le bajó la cláusula a ${eur(n.clausula)}, y le devolvieron ${eur(-n.coste)}`,
           esMio(n.equipo) ? 'mio' : '',
         ),
       )
