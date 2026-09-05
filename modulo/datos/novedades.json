@@ -323,5 +323,47 @@
   "dia": "2026-09-05",
   "id": "4886",
   "entra": true
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "27333",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "48620",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "60872",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "65724",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "71792",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-05",
+  "id": "3368896",
+  "estado": "other",
+  "equipo": null
  }
 ]
