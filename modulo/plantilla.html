@@ -398,6 +398,10 @@ ol.top .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-num
 @keyframes gira{to{transform:rotate(360deg)}}
 .sello{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--tenue);border:1px solid var(--raya);border-radius:99px;padding:5px 11px;white-space:nowrap}
 .sello b{color:var(--gris);font-weight:600}
+.sello.viejo{color:var(--oro);border-color:var(--oro-raya);background:var(--oro-fondo)}
+.sello.viejo b{color:var(--oro)}
+.cuenta .l.sub-caja > span:first-child{color:var(--tenue);font-size:12.5px}
+.cuenta .l.sub-caja > span:last-child{color:var(--tenue);font-size:11px;font-family:Manrope,sans-serif}
 .acc{flex-wrap:wrap;justify-content:flex-end}
 .acc .est{font-size:12px;color:var(--tenue);font-variant-numeric:tabular-nums;text-align:right;line-height:1.45}
 .acc .est b{color:var(--gris);font-weight:600}
@@ -457,7 +461,7 @@ a{color:var(--oro)}
         <p>Quién tiene dinero, quién puede fichar a quién, y a qué precio.</p>
       </div>
     </div>
-    <div class="sello" title="Cuándo se leyeron estos datos de Mister">Datos del <b><!--__FECHA__--></b></div>
+    <div class="sello" id="sello" data-generado="<!--__GENERADO__-->" title="Cuándo se leyeron estos datos de Mister">Datos del <b><!--__FECHA__--></b></div>
       <div class="acc">
       <button id="btn-act" type="button" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>Actualizar</button>
       <span class="est" id="est-act"></span>
@@ -660,6 +664,29 @@ a{color:var(--oro)}
   // Mac. Lo que sí sirve es volver a pedir la página, que es como llega la
   // versión que el Mac haya subido mientras tanto — y eso es lo que hace falta
   // el 99 % de las veces, porque el Mac la sube solo cada veinte minutos.
+  // Un dato viejo no se distingue de uno fresco leyendo una fecha: hay que
+  // hacer la resta mental. Que la haga la página, y que cambie de color cuando
+  // lleve demasiado, porque la tarea que actualiza puede caerse en silencio.
+  var sello = document.getElementById('sello')
+  if (sello && sello.getAttribute('data-generado')) {
+    var nacido = Date.parse(sello.getAttribute('data-generado'))
+    var refrescar = function () {
+      var mins = Math.round((Date.now() - nacido) / 60000)
+      if (isNaN(mins) || mins < 0) return
+      var cuanto = mins < 2 ? 'ahora mismo'
+        : mins < 60 ? 'hace ' + mins + ' min'
+        : mins < 60 * 36 ? 'hace ' + Math.round(mins / 60) + ' h'
+        : 'hace ' + Math.round(mins / 1440) + ' días'
+      sello.innerHTML = 'Datos de <b>' + cuanto + '</b>'
+      sello.title = 'Leídos de Mister el ' + new Date(nacido).toLocaleString('es-ES')
+      // Dos horas: la tarea corre cada hora, así que a las dos ya falló una.
+      sello.classList.toggle('viejo', mins >= 120)
+    }
+    refrescar()
+    setInterval(refrescar, 60000)
+    document.addEventListener('visibilitychange', function () { if (!document.hidden) refrescar() })
+  }
+
   var svgRecargar = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>'
 
   if (window.PUBLICADO) {

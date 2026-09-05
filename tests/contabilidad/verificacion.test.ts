@@ -11,7 +11,7 @@ const estado = (idUc: number, saldo: number, topePuja = 0): EstadoEquipo => ({
 
 const usuario = (saldo: number, topePuja: number): DatosUsuario => ({
   idUsuario: 1, idUc: 1, idComunidad: 1, equipo: 'E', saldo,
-  saldoFuturo: saldo, topePuja, creditos: 0,
+  saldoFuturo: saldo, topePuja, creditos: 0, formacion: '', tope: 0,
 })
 
 const cierre = (idUc: number, jornada: number, fecha: string, negativo: boolean): Evento => ({

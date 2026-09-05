@@ -84,10 +84,11 @@ export type Subida = {
   idJugador: string
   equipo: string
   dia: string
-  /** Lo que Mister le habrá cobrado: el 20 % del valor. */
+  /** Lo que Mister le habrá cobrado: el 20 % del valor, por cada escalón. */
   coste: number
-  clausulaAntes: number
-  clausulaDespues: number
+  /** En qué multiplicador estaba y en cuál está. */
+  antes: number
+  despues: number
 }
 
 export type Jugador = {
@@ -98,35 +99,51 @@ export type Jugador = {
 }
 
 /**
- * Compara las cláusulas de hoy con las de la foto anterior.
+ * Compara el multiplicador de hoy con el de ayer.
  *
- * Una cláusula sube sola cuando sube el valor, hasta el ×1,5. Solo cuenta como
- * modificación lo que pase de ahí **y** de donde estaba ayer: sin las dos
- * condiciones, un jugador que se revaloriza fuerte parecería blindado.
+ * **El multiplicador, no la cláusula.** La cláusula se recalcula sola cada día
+ * sobre el valor, así que a un jugador que se revaloriza le sube sin que nadie
+ * pague: Alfonso Herrero pasó de 11.322.000 € a 11.466.000 € de un día para
+ * otro y siguió en ×2,00 clavado. Comparar importes daba trece subidas
+ * inventadas en una sola noche y le quitaba diez millones a los rivales.
+ *
+ * Hace falta el valor de ayer además de la cláusula de ayer: sin él no se puede
+ * saber en qué multiplicador estaba.
  */
 export function detectarSubidas(
   hoy: Jugador[],
   clausulasAyer: Record<string, number>,
+  valoresAyer: Record<string, number>,
   dia: string,
 ): Subida[] {
   const subidas: Subida[] = []
 
   for (const j of hoy) {
     if (j.duenio === null || j.clausula === null) continue
-    const antes = clausulasAyer[j.id]
-    if (antes === undefined) continue
+    const cAyer = clausulasAyer[j.id]
+    const vAyer = valoresAyer[j.id]
+    if (cAyer === undefined || vAyer === undefined) continue
 
-    // El techo al que la cláusula puede llegar sin que nadie pague nada.
-    const solo = Math.max(antes, clausulaBase(j.valor))
-    if (j.clausula <= solo * (1 + MARGEN)) continue
+    // Una subida sube la cláusula, siempre. Si no ha subido —o ha subido lo que
+    // le tocaba por el valor— no hay nada que cobrar. Sin esta guarda, un
+    // jugador con la cláusula congelada al comprarlo y el valor moviéndose
+    // cruzaba un escalón por casualidad: José Giménez pasó de ×2,653 a ×2,549
+    // con la cláusula clavada en 3.051.354 € y salía como subida de 478.800 €.
+    // Un escalón real multiplica la cláusula por 1,2 como poco; el vaivén
+    // diario de un valor no llega al 5 %.
+    if (j.clausula < cAyer * 1.1) continue
+
+    const antes = subidasVivas(vAyer, cAyer)
+    const despues = subidasVivas(j.valor, j.clausula)
+    if (despues <= antes) continue
 
     subidas.push({
       idJugador: j.id,
       equipo: j.duenio,
       dia,
-      coste: Math.round(j.valor * COSTE_MODIFICACION),
-      clausulaAntes: antes,
-      clausulaDespues: j.clausula,
+      coste: Math.round(j.valor * COSTE_MODIFICACION) * (despues - antes),
+      antes: CLAUSULA_BASE + ESCALON * antes,
+      despues: CLAUSULA_BASE + ESCALON * despues,
     })
   }
 

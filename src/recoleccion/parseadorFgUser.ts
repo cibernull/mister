@@ -8,6 +8,10 @@ export type DatosUsuario = {
   /** `maxDebt`: saldo + 25 % del valor de plantilla. */
   topePuja: number
   creditos: number
+  /** La formación elegida, como «1-3-6-1»: portero, defensas, medios, delanteros. */
+  formacion: string
+  /** Cuántos jugadores caben en la plantilla. */
+  tope: number
 }
 
 export class FgUserNoEncontradoError extends Error {
@@ -92,6 +96,11 @@ export function parsearFgUser(html: string): DatosUsuario {
     saldoFuturo: entero(b['future'], 'balance.future'),
     topePuja: entero(b['maxDebt'], 'balance.maxDebt'),
     creditos: entero(datos['credits'], 'credits'),
+    // Los dos últimos no entran en ninguna cuenta, así que si faltan no se
+    // rompe la pasada: se usan para proponer el once y para avisar de que la
+    // plantilla está llena.
+    formacion: typeof datos['formation'] === 'string' ? datos['formation'] : '',
+    tope: Number.isInteger(datos['team_limit']) ? (datos['team_limit'] as number) : 0,
   }
 }
 

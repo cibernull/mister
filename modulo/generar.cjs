@@ -26,6 +26,9 @@ const D = leer('datos-liga.json')
 const PL = leer('plantillas.json')
 const EQ = leer('equipos.json')
 const JOR = leer('jornadas.json')
+const opcional = (n, sino) => { try { return leer(n) } catch { return sino } }
+const YO = opcional('yo.json', { formacion: '', tope: 0, generado: new Date().toISOString() })
+const NOV = opcional('novedades.json', [])
 // Los clubes reales, para poder decir «Sevilla» y no «rival 19». Es un
 // adorno: si el fichero no está, la línea del próximo partido no se pinta.
 // Los escudos van dentro del HTML como data URI: la página publicada no puede
@@ -409,6 +412,16 @@ const avisoFuera = (e) => {
  * pagó pero se le acerca: en el equipo propio esa cuenta da 6.018.400 € contra
  * los 5.263.619 € reales.
  */
+/**
+ * Hasta cuánto puede estar inflada la caja de un rival.
+ *
+ * Su saldo se reconstruye sumando el feed, y el feed no publica lo que Mister
+ * cobra por subir una cláusula. De las subidas que tiene vivas sabemos lo que
+ * costarían hoy; lo que no sabemos es cuánto de eso ya estaba descontado. Así
+ * que su dinero es un techo, y esto dice de cuánto.
+ */
+const margenDe = (e) => (e.mio ? 0 : Math.max(0, (e.costeSubidas ?? 0) - (e.gastoVisto ?? 0)))
+
 const avisoClausulas = (e) => {
   if (!e.subidas) return ''
   const cuantos = `${e.subidas} subida${e.subidas === 1 ? '' : 's'} de cláusula en ${e.blindados} jugador${e.blindados === 1 ? '' : 'es'}`
@@ -422,7 +435,11 @@ const cuentasDe = (e) => `<div class="cuenta">
         <div class="l"><span>Premios de las jornadas</span><span class="mas">+${eur(e.pre)}</span></div>
         <div class="l"><span>Ha vendido por</span><span class="mas">+${eur(e.ven)}</span></div>
         <div class="l"><span>Ha fichado por</span><span class="menos">−${eur(e.com)}</span></div>
-        <div class="l tot caja"><span>Le queda en caja</span><span>${eur(e.saldo)}</span></div>
+        <div class="l tot caja"><span>Le queda en caja</span><span>${eur(e.saldo)}</span></div>${
+          margenDe(e) > 0
+            ? `<div class="l sub-caja"><span>…o hasta ${eur(margenDe(e))} menos</span><span>lo que haya pagado por blindar</span></div>`
+            : ''
+        }
         <div class="l"><span>Más su plantilla, que vale</span><span>${eur(e.pl)}</span></div>
         <div class="l tot"><span>Patrimonio hoy</span><span>${eur(e.patrimonio)}</span></div>
         <div class="l"><span>Sobre los 50.000.000 € de salida</span><span class="${clase(e.sobre50)}">${firma(e.sobre50)}</span></div>
@@ -932,6 +949,7 @@ const huecos = {
   // navegador restaura enseña cifras plausibles y de hace días sin decirlo:
   // así se ve de un vistazo si lo que estás mirando es de ahora.
   '<!--__FECHA__-->': new Date().toLocaleString('es-ES', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }),
+  '<!--__GENERADO__-->': YO.generado,
 }
 let html = plantilla
 for (const [hueco, valor] of Object.entries(huecos)) {

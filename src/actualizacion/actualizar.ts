@@ -31,6 +31,7 @@ import { podar, subidasDelMes, type Historico } from './historicoValores.js'
 import type { FichaGuardada } from './fichas.js'
 import { reinicioDeLiga } from '../recoleccion/parseadorSaldo.js'
 import { detectarSubidas, gastoPorEquipo, subidasVivas, type Subida } from './clausulas.js'
+import { compararFotos, acumular, type Foto, type Novedad } from './novedades.js'
 
 const RAIZ = process.cwd()
 const VOLCADO = join(RAIZ, 'datos', 'volcado-feed.json')
@@ -42,6 +43,9 @@ const FICHAS = join(DATOS, 'fichas.json')
 const CAJA = join(DATOS, 'caja.json')
 const HISTORICO_CL = join(DATOS, 'historico-clausulas.json')
 const SUBIDAS = join(DATOS, 'subidas-clausula.json')
+const FOTO = join(DATOS, 'foto.json')
+const NOVEDADES = join(DATOS, 'novedades.json')
+const YO = join(DATOS, 'yo.json')
 
 const paso = (t: string) => process.stderr.write(`${t}\n`)
 const eur = (n: number) => `${Math.round(n).toLocaleString('es-ES')} €`
@@ -150,6 +154,7 @@ async function main(): Promise<Resultado> {
     plantillas.set(e.nombre, [...delCenso, ...soloEnLaPagina])
   }
 
+  const seVendeHoy = new Set(enVenta.map((v) => v.id))
   const valoresUniverso = new Map(universo.map((j) => [j.id, j.valor]))
   // El censo pisa a la caché de fichas: es de hoy y cubre a todo el mundo. La
   // caché solo se queda con los que el censo ya no lista.
@@ -257,6 +262,7 @@ async function main(): Promise<Resultado> {
       : detectarSubidas(
           universo.map((j) => ({ id: j.id, duenio: j.duenio, valor: j.valor, clausula: j.clausula })),
           histCl[ayer] ?? {},
+          historico[ayer] ?? {},
           hoy,
         )
   histCl[hoy] = clausulasDeHoy
@@ -322,6 +328,28 @@ async function main(): Promise<Resultado> {
   // ── 5. Escribir y regenerar ────────────────────────────────────────────────
   // Solo a partir de aquí, con el veredicto en la mano, se toca nada en disco.
   escribirJson(VOLCADO, fundido)
+  // ── Qué ha cambiado desde ayer ─────────────────────────────────────────────
+  // Una foto de lo que importa, comparada con la de la pasada anterior. Los
+  // fichajes no salen de aquí: el feed los da con su precio y su fecha.
+  const foto: Foto = {
+    dia: hoy,
+    jugadores: Object.fromEntries(
+      universo.map((j) => [
+        j.id,
+        { v: j.valor, c: j.clausula, d: j.duenio, e: j.estado, m: seVendeHoy.has(j.id) ? (1 as const) : (0 as const) },
+      ]),
+    ),
+  }
+  const anterior = existsSync(FOTO) ? leerJson<Foto>(FOTO) : null
+  const novedades = acumular(
+    existsSync(NOVEDADES) ? leerJson<Novedad[]>(NOVEDADES) : [],
+    anterior === null ? [] : compararFotos(anterior, foto, hoy),
+    hoy,
+  )
+  escribirJson(FOTO, foto)
+  escribirJson(NOVEDADES, novedades)
+  escribirJson(YO, { formacion: mister.formacion, tope: mister.tope, generado: new Date().toISOString() })
+
   escribirJson(join(DATOS, 'clubes.json'), Object.fromEntries(clubes))
   // El libro entero no: la página solo enseña lo reciente, y son 1255 apuntes.
   escribirJson(join(DATOS, 'caja.json'), { saldo: libro.saldo, apuntes: desdeElReinicio.slice(0, 60) })

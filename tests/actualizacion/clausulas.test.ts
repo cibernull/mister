@@ -29,40 +29,94 @@ describe('subidasVivas', () => {
 
 describe('detectarSubidas', () => {
   const jugador = (o: Partial<{ id: string; duenio: string | null; valor: number; clausula: number | null }> = {}) => ({
-    id: '1', duenio: 'Betico1993', valor: 1_000_000, clausula: 1_500_000, ...o,
+    id: '1', duenio: 'Betico1993', valor: 1_000_000, clausula: 2_000_000, ...o,
   })
 
-  it('ve la subida y le pone precio: el 20 % del valor', () => {
-    const r = detectarSubidas([jugador({ clausula: 2_000_000 })], { '1': 1_500_000 }, '2026-09-05')
+  it('ve el salto de multiplicador y le pone precio: el 20 % del valor', () => {
+    // De ×1,5 a ×2,0 sobre un jugador de 2 M: un escalón, 400.000 €.
+    const r = detectarSubidas(
+      [jugador({ valor: 2_000_000, clausula: 4_000_000 })],
+      { '1': 3_000_000 },
+      { '1': 2_000_000 },
+      '2026-09-05',
+    )
     expect(r).toEqual([
-      { idJugador: '1', equipo: 'Betico1993', dia: '2026-09-05', coste: 200_000, clausulaAntes: 1_500_000, clausulaDespues: 2_000_000 },
+      { idJugador: '1', equipo: 'Betico1993', dia: '2026-09-05', coste: 400_000, antes: 1.5, despues: 2 },
     ])
   })
 
-  it('una cláusula que sube porque sube el valor no es una subida', () => {
-    // La base se recalcula sola cada día. Confundirlo cobraría a un rival por
-    // revalorizarse, que es lo contrario de lo que pasa.
-    expect(detectarSubidas([jugador({ valor: 2_000_000, clausula: 3_000_000 })], { '1': 1_500_000 }, 'x')).toEqual([])
+  it('una cláusula que sube porque sube el valor NO es una subida', () => {
+    // Éste es el fallo que hubo: Alfonso Herrero pasó de 11.322.000 € a
+    // 11.466.000 € en una noche y siguió en ×2,00. Comparando importes salieron
+    // trece subidas inventadas y diez millones de menos en los rivales.
+    expect(
+      detectarSubidas(
+        [jugador({ valor: 5_733_000, clausula: 11_466_000 })],
+        { '1': 11_322_000 },
+        { '1': 5_661_000 },
+        'x',
+      ),
+    ).toEqual([])
+  })
+
+  it('dos escalones de golpe se cobran dos veces', () => {
+    const r = detectarSubidas(
+      [jugador({ valor: 1_000_000, clausula: 3_000_000 })],
+      { '1': 2_000_000 },
+      { '1': 1_000_000 },
+      'x',
+    )
+    expect(r[0]!.coste).toBe(400_000)
+    expect(r[0]!.despues).toBe(3)
+  })
+
+  it('bajar el multiplicador tampoco es una subida', () => {
+    expect(detectarSubidas([jugador({ clausula: 1_500_000 })], { '1': 2_000_000 }, { '1': 1_000_000 }, 'x')).toEqual([])
   })
 
   it('sin foto de ayer no se deduce nada', () => {
     // El primer día no hay con qué comparar. Inventar una subida ahí le
     // restaría dinero a un rival por haberla subido vete a saber cuándo.
-    expect(detectarSubidas([jugador({ clausula: 9_000_000 })], {}, 'x')).toEqual([])
+    expect(detectarSubidas([jugador({ clausula: 9_000_000 })], {}, {}, 'x')).toEqual([])
   })
 
   it('los jugadores libres no tienen a quién cobrarle', () => {
-    expect(detectarSubidas([jugador({ duenio: null, clausula: 9_000_000 })], { '1': 1_500_000 }, 'x')).toEqual([])
-  })
-
-  it('el redondeo a millares no cuenta como subida', () => {
-    expect(detectarSubidas([jugador({ clausula: 1_505_000 })], { '1': 1_500_000 }, 'x')).toEqual([])
+    expect(
+      detectarSubidas([jugador({ duenio: null, clausula: 9_000_000 })], { '1': 1_500_000 }, { '1': 1_000_000 }, 'x'),
+    ).toEqual([])
   })
 })
 
 describe('gastoPorEquipo', () => {
   it('suma lo de cada uno', () => {
-    const s = (equipo: string, coste: number) => ({ idJugador: 'x', equipo, dia: 'd', coste, clausulaAntes: 0, clausulaDespues: 0 })
+    const s = (equipo: string, coste: number) => ({ idJugador: 'x', equipo, dia: 'd', coste, antes: 1.5, despues: 2 })
     expect([...gastoPorEquipo([s('A', 100), s('B', 50), s('A', 25)])]).toEqual([['A', 125], ['B', 50]])
+  })
+})
+
+describe('detectarSubidas · la cláusula tiene que subir de verdad', () => {
+  it('con la cláusula clavada no hay subida, aunque el ratio cruce un escalón', () => {
+    // José Giménez: 3.051.354 € los dos días. Lo que se movió fue su valor
+    // —1.150.000 → 1.197.000—, y el ratio pasó de ×2,653 a ×2,549, que sí cae
+    // en un escalón limpio. Salía como una subida de 478.800 € que nunca pagó,
+    // y se vio porque el libro de caja propio no la tenía.
+    const r = detectarSubidas(
+      [{ id: '34', duenio: 'Niutin FC (Isaac)', valor: 1_197_000, clausula: 3_051_354 }],
+      { '34': 3_051_354 },
+      { '34': 1_150_000 },
+      '2026-09-05',
+    )
+    expect(r).toEqual([])
+  })
+
+  it('una subida de verdad sí pasa la guarda', () => {
+    // De ×1,5 a ×2,0 la cláusula crece un tercio, muy por encima del vaivén.
+    const r = detectarSubidas(
+      [{ id: '1', duenio: 'A', valor: 2_000_000, clausula: 4_000_000 }],
+      { '1': 3_000_000 },
+      { '1': 2_000_000 },
+      'x',
+    )
+    expect(r).toHaveLength(1)
   })
 })

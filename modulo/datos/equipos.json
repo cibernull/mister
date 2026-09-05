@@ -52,7 +52,7 @@
   "subidas": 10,
   "blindados": 7,
   "costeSubidas": 6261600,
-  "gastoVisto": 3455600,
+  "gastoVisto": 0,
   "costeReal": 5263619
  },
  {
@@ -95,7 +95,7 @@
   "n": "Neky F.C. (Sergio)",
   "pos": 1,
   "pts": 146,
-  "saldo": 1014005,
+  "saldo": 2882405,
   "pl": 95989000,
   "rep": 31142000,
   "ini": 18858000,
@@ -107,13 +107,13 @@
   "subidas": 4,
   "blindados": 2,
   "costeSubidas": 2439200,
-  "gastoVisto": 1868400
+  "gastoVisto": 0
  },
  {
   "n": "Mario80",
   "pos": 3,
   "pts": 124,
-  "saldo": 1184750,
+  "saldo": 3946150,
   "pl": 76027000,
   "rep": 28838000,
   "ini": 21162000,
@@ -125,13 +125,13 @@
   "subidas": 9,
   "blindados": 5,
   "costeSubidas": 6033200,
-  "gastoVisto": 2761400
+  "gastoVisto": 0
  },
  {
   "n": "Saiyans FC (Fran)",
   "pos": 5,
   "pts": 78,
-  "saldo": 849800,
+  "saldo": 2230200,
   "pl": 78304000,
   "rep": 21730000,
   "ini": 28270000,
@@ -143,6 +143,6 @@
   "subidas": 3,
   "blindados": 2,
   "costeSubidas": 2126600,
-  "gastoVisto": 1380400
+  "gastoVisto": 0
  }
 ]
