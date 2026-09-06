@@ -266,6 +266,21 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 /* El desglose de la cifra esperada. Va debajo y en pequeño: la decisión se
    toma con el número grande, pero tiene que poder auditarse sin abrir nada. */
 .mj .desg{display:block;font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:400;color:var(--tenue);line-height:1.3;white-space:normal;margin-top:2px}
+/* El veredicto del clausulazo. Envuelve en varias líneas a propósito: en el
+   móvil no cabe de otra forma y los nombres no se pueden cortar. */
+.clz{grid-column:1/-1;margin-top:8px;padding:9px 11px;border-radius:8px;border:1px solid var(--raya);background:var(--tabla);display:flex;flex-direction:column;gap:4px;font-size:12px;line-height:1.4}
+.clz>b{font-size:12.5px}
+.clz.bueno{border-color:var(--sube);background:var(--sube-fondo,rgba(74,222,128,.09))}
+.clz.bueno>b{color:var(--sube)}
+.clz.regular{border-color:var(--oro-raya);background:var(--oro-fondo)}
+.clz.regular>b{color:var(--oro)}
+.clz.flojo>b{color:var(--tenue)}
+.clz .cifra{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--gris)}
+.clz .cifra b{color:var(--texto,#fff)}
+.clz .tres{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:11.5px}
+.clz .tres .si{color:var(--sube)}
+.clz .tres .no{color:var(--tenue)}
+.clz .def{font-size:11px;color:var(--tenue)}
 /* La diferencia entre la suma de las jornadas publicadas y el total de hoy.
    No es un error: Mister revisa los puntos, y hay jornadas que no publica. */
 .jornadas .tenue{color:var(--tenue)}

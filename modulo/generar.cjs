@@ -180,6 +180,45 @@ const pintarRacha = (j) => {
     .join('')}</span>`
 }
 
+/** Su media donde le toca jugar esta jornada. El punto de partida, sin retocar. */
+const esperadoDe = (j) => {
+  const donde = j.casa === 1 ? j.mc : j.casa === 0 ? j.mf : null
+  return donde != null ? donde : j.media
+}
+
+// Cuánto pesan la forma y el rival sobre esa media. Son dos decisiones de
+// criterio, no cifras de Mister, y por eso están aquí con nombre y a la vista
+// en vez de repartidas por una fórmula:
+//
+//   forma   la mitad de lo que ha subido o bajado respecto a su media. La
+//           mitad y no todo, porque la forma ya ES un promedio de jornadas
+//           recientes: contarla entera sería contar dos veces lo mismo.
+//   rival   cuatro décimas por escalón de dureza, con el rival medio (3) como
+//           punto neutro. De un extremo a otro son 1,6 puntos, que mueve un
+//           empate pero no le gana a medio punto de diferencia real.
+const PESO_FORMA = 0.5
+const PESO_RIVAL = 0.4
+
+/**
+ * Lo que cabe esperar de él el domingo, desglosado.
+ *
+ * Se devuelve por partes y no como un número suelto para poder enseñar en la
+ * propia fila de dónde sale cada décima. Un criterio que no se puede auditar
+ * de un vistazo no sirve para decidir una alineación.
+ */
+const esperadoConAjustes = (j) => {
+  const base = esperadoDe(j)
+  const f = formaDe(j)
+  const d = durezaDe(j)
+  const porForma = f === null ? 0 : f * PESO_FORMA
+  const porRival = d === null ? 0 : (3 - d) * PESO_RIVAL
+  return { base, porForma, porRival, total: base + porForma + porRival }
+}
+const esperadoTotal = (j) => esperadoConAjustes(j).total
+
+/** No va a puntuar: o está lesionado, o su club no juega esta jornada. */
+const noJuega = (j) => j.est === 'injury' || !j.riv
+
 const eur = (n) => `${Math.round(n).toLocaleString('es-ES')} €`
 const corto = (n) => {
   const m = Math.round(n)
@@ -338,6 +377,82 @@ const iconos = (j) => `${j.p ? '⭐' : ''}${j.d ? '💵' : ''}${j.vender ? '📤
  * podría ficharlo»— y hasta ahora solo salía el recuento. Aquí están los
  * nombres y con cuánto margen se lo pueden permitir.
  */
+/**
+ * ¿Merece la pena pagarle la cláusula?
+ *
+ * Lo primero es dejar de mirar la cláusula como el precio, porque no lo es: el
+ * jugador entra en tu plantilla y, si lo revendes, recuperas su valor. Lo que
+ * no vuelve nunca es la diferencia, y esa es la cifra sobre la que hay que
+ * decidir. Con la base de Mister —cláusula = 1,5 × valor— la prima es medio
+ * valor; con la cláusula subida, mucho más.
+ *
+ * Luego, tres condiciones, y hacen falta las tres. Una sola engaña: un suplente
+ * con buena media es una casualidad esperando a deshacerse, y una prima barata
+ * por un jugador que no juega sigue siendo dinero tirado.
+ *
+ * La cuarta no es del jugador sino de la partida, y por eso se dice aparte: si
+ * su dueño le ha subido la cláusula, es que le importa; si está en la base, no
+ * lo está defendiendo nadie.
+ */
+const primaPorPuntoDe = (j) =>
+  j.clausula && j.media > 0 ? (j.clausula - j.valor) / j.media : null
+
+// El listón de «prima barata» es la mediana de la liga, no una cifra puesta a
+// dedo: lo que es caro depende de cómo esté el mercado ese día.
+const MEDIANA_PRIMA = (() => {
+  const l = J.map(primaPorPuntoDe).filter((x) => x !== null && x > 0).sort((a, b) => a - b)
+  return l.length ? l[Math.floor(l.length / 2)] : null
+})()
+
+const clausulazo = (j) => {
+  if (!j.clausula || !j.duenio || j.mio) return null
+  const prima = j.clausula - j.valor
+  const porPunto = primaPorPuntoDe(j)
+  const jugados = (j.tit ?? 0) + (j.sup ?? 0)
+  // Titular de verdad: no basta con haber salido. Dos de inicio y más veces de
+  // inicio que desde el banquillo.
+  const titular = (j.tit ?? 0) >= 2 && (j.tit ?? 0) > (j.sup ?? 0)
+  const barata = porPunto !== null && MEDIANA_PRIMA !== null && porPunto <= MEDIANA_PRIMA
+  // El partido, y solo el partido: dónde juega y contra quién. Aquí NO entra la
+  // forma, aunque la cifra del once sí la lleve — si entrara, un jugador en
+  // racha aparecería con «le viene bien el partido» aunque le tocara su peor
+  // escenario, que es justo lo contrario de lo que dice el rótulo.
+  const d = durezaDe(j)
+  const delPartido = esperadoDe(j) + (d === null ? 0 : (3 - d) * PESO_RIVAL)
+  const calendario = j.riv ? delPartido >= j.media : false
+  const cumple = [titular, barata, calendario].filter(Boolean).length
+  return {
+    prima,
+    porPunto,
+    titular,
+    barata,
+    calendario,
+    cumple,
+    jugados,
+    // ×1,5 es la base de Mister. Por encima, alguien ha pagado por protegerlo.
+    defendido: j.clausula > j.valor * 1.55,
+    dTope: -j.clausula + 0.25 * j.valor,
+  }
+}
+
+const bloqueClausulazo = (j) => {
+  const c = clausulazo(j)
+  if (c === null) return ''
+  const veredicto = c.cumple === 3 ? 'bueno' : c.cumple === 2 ? 'regular' : 'flojo'
+  const rotulo = { bueno: 'Buen clausulazo', regular: 'Clausulazo dudoso', flojo: 'Mal clausulazo' }[veredicto]
+  const marca = (bien, si, no) => `<span class="${bien ? 'si' : 'no'}">${bien ? '✓' : '✗'} ${bien ? si : no}</span>`
+  return `<div class="clz ${veredicto}" title="Pagas la cláusula, pero si lo revendes recuperas su valor: lo que no vuelve es la prima. Hacen falta las tres condiciones.">
+        <b>${rotulo}</b>
+        <span class="cifra">prima real <b>${corto(c.prima)}</b>${c.porPunto !== null ? ` · ${corto(c.porPunto)} por punto` : ''} · tu tope ${corto(c.dTope)}</span>
+        <span class="tres">${marca(c.titular, `titular (${c.jugados ? `${j.tit} de ${c.jugados}` : 'sí'})`, c.jugados ? `no es titular (${j.tit} de ${c.jugados})` : 'no ha jugado')}${marca(
+          c.barata,
+          'prima barata para lo que da',
+          'prima cara para lo que da',
+        )}${marca(c.calendario, 'le viene bien el partido', 'le viene mal el partido')}</span>
+        <span class="def">${c.defendido ? '🛡 su dueño le ha subido la cláusula: lo está defendiendo' : 'cláusula sin subir: nadie lo está defendiendo'}</span>
+      </div>`
+}
+
 const quienPuede = (j) => {
   // A un libre que no está en el mercado no se le puede pagar nada hoy, así
   // que la barra de «quién puede» sobra: lo que hace falta es decir por qué.
@@ -492,7 +607,7 @@ const filaJugador = (j) => {
         }${j.precio !== j.valor ? `<span class="sep">·</span><span>vale ${corto(j.valor)}</span>` : ''}
       </div>
       ${detalleDe(j)}
-      ${quienPuede(j)}
+      ${quienPuede(j)}${bloqueClausulazo(j)}
     </div>`
 }
 
@@ -677,7 +792,7 @@ const filaMia = (j, modo) => {
           pct != null ? `<span class="sep">·</span><span class="${clase(pct)}">${pct > 0 ? '+' : ''}${pct} %</span>` : ''
         }<span class="sep">·</span><span>${trato}</span>
       </div>
-      ${modo === 'clausula' ? quienPuede(j) : ''}${
+      ${modo === 'clausula' ? quienPuede(j) + bloqueClausulazo(j) : ''}${
         j.razon
           ? `<div class="jr">${
               j.vender
@@ -824,45 +939,6 @@ ${deAyer.join(NL)}
 // Mbappé hace 15,0 en casa y 3,0 fuera; promediarlo esconde justo lo que hay
 // que mirar.
 const FORMACION = (YO.formacion || '').split('-').map(Number).filter((n) => Number.isFinite(n))
-/** Su media donde le toca jugar esta jornada. El punto de partida, sin retocar. */
-const esperadoDe = (j) => {
-  const donde = j.casa === 1 ? j.mc : j.casa === 0 ? j.mf : null
-  return donde != null ? donde : j.media
-}
-
-// Cuánto pesan la forma y el rival sobre esa media. Son dos decisiones de
-// criterio, no cifras de Mister, y por eso están aquí con nombre y a la vista
-// en vez de repartidas por una fórmula:
-//
-//   forma   la mitad de lo que ha subido o bajado respecto a su media. La
-//           mitad y no todo, porque la forma ya ES un promedio de jornadas
-//           recientes: contarla entera sería contar dos veces lo mismo.
-//   rival   cuatro décimas por escalón de dureza, con el rival medio (3) como
-//           punto neutro. De un extremo a otro son 1,6 puntos, que mueve un
-//           empate pero no le gana a medio punto de diferencia real.
-const PESO_FORMA = 0.5
-const PESO_RIVAL = 0.4
-
-/**
- * Lo que cabe esperar de él el domingo, desglosado.
- *
- * Se devuelve por partes y no como un número suelto para poder enseñar en la
- * propia fila de dónde sale cada décima. Un criterio que no se puede auditar
- * de un vistazo no sirve para decidir una alineación.
- */
-const esperadoConAjustes = (j) => {
-  const base = esperadoDe(j)
-  const f = formaDe(j)
-  const d = durezaDe(j)
-  const porForma = f === null ? 0 : f * PESO_FORMA
-  const porRival = d === null ? 0 : (3 - d) * PESO_RIVAL
-  return { base, porForma, porRival, total: base + porForma + porRival }
-}
-const esperadoTotal = (j) => esperadoConAjustes(j).total
-
-/** No va a puntuar: o está lesionado, o su club no juega esta jornada. */
-const noJuega = (j) => j.est === 'injury' || !j.riv
-
 const once = (() => {
   if (FORMACION.length !== 4) return null
   const elegidos = []
@@ -1306,6 +1382,7 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
       <h2 class="sh">Las palabras</h2>
       <div class="defs">
         ${def('↗', 'txt', 'Llega en forma', `Calculado aquí. Sus últimas ${JORNADAS_DE_FORMA} jornadas frente a <strong>su propia</strong> media, no la de la liga: la pregunta no es si es bueno, sino si está mejor o peor que de costumbre. Hacen falta dos jornadas jugadas.`)}
+        ${def('🎯', 'txt', 'Buen clausulazo', 'Calculado aquí. Lo primero es dejar de mirar la cláusula como el precio: el jugador entra en tu plantilla y, si lo revendes, recuperas su valor. Lo que no vuelve nunca es la diferencia, y esa <strong>prima real</strong> es la cifra sobre la que hay que decidir. Luego hacen falta <strong>las tres</strong> condiciones, porque una sola engaña: que sea titular de verdad (dos partidos de inicio y más de inicio que desde el banquillo), que la prima por punto de media esté por debajo de la mediana de la liga, y que el próximo partido le venga bien —dónde juega y contra quién, sin contar la forma—. Con las tres, «buen clausulazo»; con dos, dudoso; con menos, malo. Aparte se dice si su dueño le ha subido la cláusula: si lo ha hecho, es que le importa.')}
         ${def('±', 'txt', 'De fiar', 'Calculado aquí. Cuánto se aparta de su media jornada a jornada. Dos jugadores de media 6 no valen lo mismo: uno hace 6, 6, 6 y el otro 0, 0, 18. Cuanto más bajo, más de fiar. Solo se listan los que promedian 4 o más, porque al que hace un punto siempre le sobra regularidad.')}
         ${def('€', '', 'Valor y cláusula', 'El <strong>valor</strong> es lo que Mister dice que vale un jugador, y lo que cobras si lo vendes al mercado. La <strong>cláusula</strong> es lo que un rival paga para quitártelo sin tu permiso, y siempre es mayor. La cifra grande de cada fila es <strong>lo que costaría ficharlo de verdad</strong>.')}
         ${def('POR', 'txt', 'Los dorsales de color', 'La posición: <strong>POR</strong> portero, <strong>DEF</strong> defensa, <strong>MED</strong> centrocampista, <strong>DEL</strong> delantero.')}
