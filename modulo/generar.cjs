@@ -486,7 +486,7 @@ const filaJugador = (j) => {
       }${marcaBlindaje(j)}${j.once === 1 ? '<span class="et et-once" title="Mister lo da por titular en el próximo partido">👕 titular</span>' : ''}${ESTADOS[j.est] ?? ''}</div>
       <div class="jp"><b class="${etiquetaPrecio(j) === 'cláusula' ? 'cl' : ''}">${eur(j.precio)}</b><i>${etiquetaPrecio(j)}</i><span class="ico">${iconos(j)}</span></div>
       <div class="js">
-        <span>media <b>${dec(j.media)}</b></span><span class="sep">·</span>
+        <span>media <b>${dec(j.media)}</b></span>${pintarRacha(j)}<span class="sep">·</span>
         <span>${j.puntos} pts en ${j.partidos} part.</span>${
           tendencia ? `<span class="sep">·</span>${tendencia}` : ''
         }${j.precio !== j.valor ? `<span class="sep">·</span><span>vale ${corto(j.valor)}</span>` : ''}
