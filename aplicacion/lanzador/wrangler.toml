@@ -1,0 +1,12 @@
+name = "liga-de-mister"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# El reloj de verdad. Cada media hora de día, cada hora de madrugada, igual que
+# el cron de GitHub — pero este sí es puntual.
+[triggers]
+crons = ["7,37 5-22 * * *", "7 23,0-4 * * *"]
+
+# El token NO va aquí. Va como secreto, que no se guarda en el repositorio:
+#   npx wrangler secret put GITHUB_TOKEN
+# o en el panel: Workers → liga-de-mister → Settings → Variables → Secrets.
