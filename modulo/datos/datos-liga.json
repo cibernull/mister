@@ -859,9 +859,24 @@
    "id": "4886",
    "nombre": "Asier Villalibre",
    "valor": 3639000
+  },
+  {
+   "id": "19727",
+   "nombre": "Rodrigo Riquelme",
+   "valor": 3787000
   }
  ],
  "movimientos": [
+  {
+   "id": "19727",
+   "nombre": "Rodrigo Riquelme",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 4076927,
+   "tipo": "normal",
+   "fecha": "2026-09-06 17:00:18",
+   "pos": 3
+  },
   {
    "id": "29223",
    "nombre": "Mario Soriano",
@@ -5603,6 +5618,14 @@
      "op": "normal"
     },
     {
+     "j": "Rodrigo Riquelme",
+     "id": "19727",
+     "tipo": "compra",
+     "importe": 4076927,
+     "fecha": "2026-09-06",
+     "op": "normal"
+    },
+    {
      "j": "Orri Óskarsson",
      "id": "59789",
      "tipo": "compra",
@@ -6045,6 +6068,12 @@
      "compras": 1608920,
      "ventas": 1366050,
      "ops": 2
+    },
+    "19727": {
+     "nombre": "Rodrigo Riquelme",
+     "compras": 4076927,
+     "ventas": 0,
+     "ops": 1
     },
     "22471": {
      "nombre": "Jon Pacheco",

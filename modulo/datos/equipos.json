@@ -20,7 +20,7 @@
  {
   "n": "Los tocahuevos C.F ( juanito)",
   "pos": 6,
-  "pts": 63,
+  "pts": 61,
   "saldo": 21818000,
   "pl": 32520000,
   "rep": 31407000,
@@ -38,7 +38,7 @@
  {
   "n": "Niutin FC (Isaac)",
   "pos": 1,
-  "pts": 169,
+  "pts": 171,
   "saldo": 21071960,
   "pl": 67822000,
   "rep": 33800000,
@@ -54,7 +54,7 @@
   "costeSubidas": 4741400,
   "gastoVisto": -362800,
   "costeReal": 7281619,
-  "comprometido": 3787020
+  "comprometido": 0
  },
  {
   "n": "Legalize F.C (Victor)",
@@ -78,14 +78,14 @@
   "n": "Cacaculopedopis",
   "pos": 4,
   "pts": 105,
-  "saldo": 9185926,
-  "pl": 41081000,
+  "saldo": 5108999,
+  "pl": 44868000,
   "rep": 19942000,
   "ini": 30058000,
-  "com": 67398854,
+  "com": 71475781,
   "ven": 44151780,
   "pre": 2375000,
-  "plantilla": 12,
+  "plantilla": 13,
   "sinValorar": [],
   "subidas": 0,
   "blindados": 0,
@@ -95,7 +95,7 @@
  {
   "n": "Neky F.C. (Sergio)",
   "pos": 2,
-  "pts": 168,
+  "pts": 166,
   "saldo": 5524494,
   "pl": 112408000,
   "rep": 31142000,
@@ -131,7 +131,7 @@
  {
   "n": "Saiyans FC (Fran)",
   "pos": 5,
-  "pts": 97,
+  "pts": 98,
   "saldo": 8527300,
   "pl": 79483000,
   "rep": 21730000,

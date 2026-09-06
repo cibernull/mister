@@ -238,6 +238,146 @@
   "equipo": null
  },
  {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "213",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "3046",
+  "entra": true
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-06",
+  "id": "11092",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-06",
+  "id": "19727",
+  "de": null,
+  "a": "Cacaculopedopis"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "22471",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "28619",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "31226",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "33726",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "48554",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "51137",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "55454",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "58958",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "59633",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "59642",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "64160",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "64491",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "64562",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "65179",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "65724",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "69744",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "70945",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "70953",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "71002",
+  "entra": false
+ },
+ {
   "tipo": "lesion",
   "dia": "2026-09-05",
   "id": "27852",
