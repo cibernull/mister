@@ -1,0 +1,21 @@
+# TEMPORAL. Solo sirve para averiguar si el cron de GitHub funciona en este
+# repositorio: no toca Mister ni publica nada, únicamente escribe la hora.
+#
+# Existe porque la tarea de verdad se saltó tres turnos seguidos sin dar
+# ninguna señal, y había dos explicaciones posibles —una expresión de cron que
+# GitHub no traga, o su planificador, que es «cuando pueda»— y no se pueden
+# distinguir mirando. Esta usa la expresión más simple que existe.
+#
+# Bórrala en cuanto se sepa la respuesta.
+name: Prueba de cron
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  latir:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Latido a las $(date -u '+%H:%M:%S') UTC, lanzado por ${{ github.event_name }}"
