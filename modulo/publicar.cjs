@@ -51,5 +51,14 @@ fs.writeFileSync(
 fs.mkdirSync(path.dirname(SITIO), { recursive: true })
 fs.writeFileSync(SITIO, doc.replace('</head>', `${marca}\n</head>`))
 
+// Un fichero de veinte bytes con la misma fecha que lleva la página dentro.
+// Existe para que, tras pulsar «Actualizar», el móvil pueda preguntar «¿ya?»
+// cada diez segundos sin bajarse el mega y pico de la página entera cada vez.
+// Se saca del documento ya construido, no de otro `new Date()`, para que las
+// dos fechas no puedan discrepar ni por un segundo.
+const generado = /data-generado="([^"]*)"/.exec(doc)
+if (!generado) throw new Error('la página no lleva data-generado')
+fs.writeFileSync(path.join(path.dirname(SITIO), 'cuando.txt'), generado[1])
+
 const kb = Math.round(fs.statSync(SALIDA).size / 1024)
 process.stdout.write(`${SALIDA}\n${SITIO}\n${kb} KB · datos del ${cuando}\n`)

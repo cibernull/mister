@@ -485,7 +485,7 @@ a{color:var(--oro)}
     </div>
     <div class="sello" id="sello" data-generado="<!--__GENERADO__-->" title="Cuándo se leyeron estos datos de Mister">Datos del <b><!--__FECHA__--></b></div>
       <div class="acc">
-      <a class="btn-lanzar" id="btn-lanzar" href="<!--__LANZAR__-->" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>Forzar ahora <span class="fuera">↗</span></a>
+      <a class="btn-lanzar" id="btn-lanzar" href="<!--__LANZAR__-->" data-lanzador="<!--__LANZADOR__-->" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>Forzar ahora <span class="fuera">↗</span></a>
       <button id="btn-act" type="button" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>Actualizar</button>
       <span class="est" id="est-act"></span>
     </div>
@@ -741,11 +741,14 @@ a{color:var(--oro)}
   var svgRecargar = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>'
 
   if (window.PUBLICADO) {
-    // Dos botones y hacen cosas distintas, así que conviene no confundirlos:
-    // «Actualizar ahora» va a GitHub a lanzar la descarga —tarda un minuto— y
-    // «Recargar» solo trae lo último que ya esté publicado.
+    // Dos botones que hacen cosas distintas, y conviene no confundirlos:
+    // «Actualizar» va a leer Mister otra vez —tarda un minuto— y «Recargar»
+    // solo trae lo último que ya esté publicado.
     var lanzar = document.getElementById('btn-lanzar')
-    if (lanzar && lanzar.getAttribute('href').indexOf('http') === 0) lanzar.hidden = false
+    var lanzador = lanzar ? (lanzar.getAttribute('data-lanzador') || '') : ''
+    // Con lanzador el botón actúa; sin él, lo único honrado es abrir GitHub.
+    var directo = lanzador.indexOf('http') === 0
+
     btn.hidden = false
     btn.innerHTML = svgRecargar + 'Recargar'
     btn.title = 'Traer la última versión publicada'
@@ -755,14 +758,81 @@ a{color:var(--oro)}
       btn.innerHTML = '<span class="giro"></span>Recargando'
       location.reload()
     })
-    var decirCuando = function () {
+
+    var reloj = null
+    var decirCuando = function (enSuLugar) {
+      if (enSuLugar) { est.innerHTML = enSuLugar; return }
       var p = proximaPasada()
       est.innerHTML = 'Se actualiza sola cada media hora' +
-        (p ? '; la próxima, sobre las <b>' + aLaHora(p) + '</b>' : '') + '.<br>' +
-        '«Forzar ahora» abre GitHub para adelantarla: allí, <b>Run workflow</b>.'
+        (p ? '; la próxima, sobre las <b>' + aLaHora(p) + '</b>' : '') + '.' +
+        (directo ? '' : '<br>«Forzar ahora» abre GitHub para adelantarla: allí, <b>Run workflow</b>.')
     }
     decirCuando()
-    setInterval(decirCuando, 60000)
+    reloj = setInterval(decirCuando, 60000)
+
+    if (lanzar) lanzar.hidden = !(directo || lanzar.getAttribute('href').indexOf('http') === 0)
+
+    if (lanzar && directo) {
+      lanzar.removeAttribute('target')
+      lanzar.removeAttribute('rel')
+      lanzar.setAttribute('href', '#')
+      lanzar.innerHTML = svgRecargar + 'Actualizar ahora'
+      lanzar.title = 'Volver a leer Mister ahora mismo'
+
+      var rendirse = function (motivo) {
+        lanzar.classList.remove('ocupado')
+        lanzar.innerHTML = svgRecargar + 'Actualizar ahora'
+        decirCuando(motivo)
+        // Al minuto vuelve a contar cuándo toca la próxima: un error de hace
+        // un rato dejado fijo en pantalla despista más que informa.
+        setTimeout(function () { reloj = setInterval(decirCuando, 60000); decirCuando() }, 20000)
+      }
+
+      // Terminar no es que el lanzador conteste: es que la página publicada
+      // cambie. Se pregunta por `cuando.txt`, veinte bytes, en vez de por la
+      // página entera, que pasa del mega y se pediría cada diez segundos.
+      var esperar = function (previa) {
+        var limite = Date.now() + 5 * 60 * 1000
+        var mirar = function () {
+          fetch('cuando.txt?_=' + Date.now(), { cache: 'no-store' })
+            .then(function (r) { return r.ok ? r.text() : '' })
+            .then(function (t) {
+              if (t && t.trim() && t.trim() !== previa) { location.reload(); return }
+              if (Date.now() < limite) setTimeout(mirar, 10000)
+              else rendirse('Está tardando más de la cuenta. Prueba a recargar en un minuto.')
+            })
+            .catch(function () {
+              if (Date.now() < limite) setTimeout(mirar, 10000)
+              else rendirse('He perdido el hilo. Prueba a recargar en un minuto.')
+            })
+        }
+        setTimeout(mirar, 15000)
+      }
+
+      lanzar.addEventListener('click', function (e) {
+        e.preventDefault()
+        if (lanzar.classList.contains('ocupado')) return
+        lanzar.classList.add('ocupado')
+        clearInterval(reloj)
+
+        var previa = sello ? (sello.getAttribute('data-generado') || '') : ''
+        lanzar.innerHTML = '<span class="giro"></span>Pidiendo'
+        decirCuando('Avisando a GitHub…')
+
+        fetch(lanzador, { method: 'POST' })
+          .then(function (r) { return r.json() })
+          .then(function (r) {
+            if (r.estado === 'lanzada' || r.estado === 'en-marcha') {
+              lanzar.innerHTML = '<span class="giro"></span>Actualizando'
+              decirCuando(r.mensaje + ' Al terminar, la página se recarga sola.')
+              esperar(previa)
+            } else {
+              rendirse(r.mensaje || 'No ha podido lanzarse.')
+            }
+          })
+          .catch(function () { rendirse('No he podido hablar con el lanzador.') })
+      })
+    }
     return
   }
 

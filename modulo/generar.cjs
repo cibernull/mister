@@ -23,6 +23,14 @@ const NOMBRE_LIGA = 'La Liga de Mister'
 // verdad desde aquí necesitaría un token, y esta página es pública.
 const LANZAR = 'https://github.com/cibernull/mister/actions/workflows/actualizar.yml'
 
+// La dirección del lanzador de Cloudflare, el único que tiene el token con el
+// que se le puede pedir a GitHub que actualice. Mientras esté vacía, el botón
+// se conforma con abrir GitHub —que es lo que hacía— y hay que rematar la
+// pasada a mano; en cuanto tenga valor, el botón actualiza de un toque.
+// Aquí no hay nada secreto: quien abra la página verá esta dirección, y da
+// igual, porque lo único que sabe hacer el lanzador es refrescar estos datos.
+const LANZADOR = ''
+
 const leer = (n) => JSON.parse(fs.readFileSync(path.join(DAT, n), 'utf8'))
 const J = leer('jugadores-calc.json')
 const CL = new Map(leer('clausulas.json').map(([id, k]) => [String(id), k * 1000]))
@@ -1129,6 +1137,7 @@ const huecos = {
   '<!--__FECHA__-->': new Date().toLocaleString('es-ES', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }),
   '<!--__GENERADO__-->': YO.generado,
   '<!--__LANZAR__-->': LANZAR,
+  '<!--__LANZADOR__-->': LANZADOR,
   '<!--__SALDO__-->': String(MIO.saldo),
   '<!--__PLANTILLA__-->': String(MIO.pl),
   '<!--__MIS_JUGADORES__-->': String(MIOS.length),
