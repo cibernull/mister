@@ -250,6 +250,16 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .nov b{font-weight:700}
 .nov.mio{background:var(--oro-fondo)}
 .nov.malo b{color:var(--baja)}
+/* La hora del traspaso, delante del nombre: sin ella no se distingue lo de
+   hace diez minutos de lo de esta mañana, y esa era justo la queja. */
+.nov .hnov{flex:none;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--tenue);margin-right:7px}
+.ndia{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--tenue);margin:0 0 7px;display:flex;align-items:center;gap:7px}
+.ndia em,.nayer summary em{font-style:normal;color:var(--gris);font-weight:600}
+/* Lo de ayer va plegado, pero entero: nada de «y 42 más» sin forma de abrirlo. */
+.nayer{margin-top:11px}
+.nayer summary{cursor:pointer;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--tenue);padding:7px 0;display:flex;align-items:center;gap:7px}
+.nayer summary::marker{color:var(--tenue)}
+.nayer[open] summary{margin-bottom:7px}
 .nota-cl{font-size:12px;color:var(--gris);background:var(--hueco);border:1px solid var(--raya);border-radius:8px;padding:8px 11px;margin:8px 0 0}
 .nota-cl b{color:var(--tinta)}
 .nota-fuera{font-size:12px;color:var(--gris);background:var(--hueco);border:1px solid var(--raya);border-radius:8px;padding:8px 11px;margin:10px 0 0}

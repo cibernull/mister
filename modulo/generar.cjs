@@ -621,11 +621,12 @@ const sumaVenta = aVender.reduce((s, j) => s + j.valor, 0)
 // Los fichajes salen del feed, que los da con su precio exacto; el resto —quién
 // ha subido una cláusula, quién se ha lesionado, quién ha entrado al mercado—
 // de comparar la foto de hoy con la de ayer.
-const DOS_DIAS = (() => {
-  const d = new Date()
-  d.setDate(d.getDate() - 2)
-  return d.toISOString().slice(0, 10)
-})()
+// La ventana es hoy y ayer, y se calcula en hora de Madrid porque es la que
+// usan las fechas de Mister: hacerlo en UTC movía el corte dos horas y metía
+// en «ayer» cosas de anteayer.
+const diaEn = (d) => new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Madrid' }).format(d)
+const HOY = diaEn(new Date())
+const AYER = diaEn(new Date(Date.now() - 86400000))
 
 const nombreDe = (id) => PORID_PRE.get(String(id))?.nombre ?? `jugador ${id}`
 const esMio = (equipo) => equipo === MI_EQUIPO
@@ -634,17 +635,28 @@ const lineaNov = (icono, texto, tono) =>
   `        <li class="nov${tono ? ` ${tono}` : ''}"><span class="ni">${icono}</span><span>${texto}</span></li>`
 
 const novedades = (() => {
-  const filas = []
+  // Una bolsa por día, en vez de una lista única. Antes era una sola lista con
+  // tres ventanas distintas dentro —los traspasos de tres días, el resto de
+  // hasta siete— bajo un título que decía «desde ayer», y encima ordenada del
+  // revés: lo más viejo arriba. Con el corte en la fila 25, lo de hoy no
+  // llegaba a verse nunca.
+  const dias = new Map([[HOY, []], [AYER, []]])
+  const enVentana = (dia) => dias.has(dia)
 
-  for (const m of MOVS.filter((x) => x.fecha.slice(0, 10) >= DOS_DIAS).reverse()) {
+  // Los traspasos, del más reciente al más antiguo. `MOVS` ya viene así, pero
+  // se ordena aquí explícitamente para no depender de eso.
+  const traspasos = MOVS.filter((m) => enVentana(m.fecha.slice(0, 10)))
+    .slice()
+    .sort((a, b) => b.fecha.localeCompare(a.fecha))
+
+  for (const m of traspasos) {
     const de = m.de ? POR_NOMBRE.get(m.de)?.corto ?? m.de : 'mercado'
     const a = m.a ? POR_NOMBRE.get(m.a)?.corto ?? m.a : 'mercado'
-    const mio = esMio(m.de) || esMio(m.a)
-    filas.push(
+    dias.get(m.fecha.slice(0, 10)).push(
       lineaNov(
         m.a ? '📥' : '📤',
-        `${escudoDe(m.id)}<b>${esc(m.nombre)}</b> ${m.de ? 'de' : 'del'} ${esc(de)} ${m.a ? 'a' : 'al'} ${esc(a)} por ${eur(m.importe)}`,
-        mio ? 'mio' : '',
+        `<span class="hnov">${m.fecha.slice(11, 16)}</span>${escudoDe(m.id)}<b>${esc(m.nombre)}</b> ${m.de ? 'de' : 'del'} ${esc(de)} ${m.a ? 'a' : 'al'} ${esc(a)} por ${eur(m.importe)}`,
+        esMio(m.de) || esMio(m.a) ? 'mio' : '',
       ),
     )
   }
@@ -652,15 +664,17 @@ const novedades = (() => {
   // Un cambio de dueño que el feed no publicó como traspaso: una cesión, un
   // trueque, o algo que Mister se guardó. En el libro de caja propio hay 5
   // ventas por cesión, 2 compras y 1 trueque, y ninguna sale en el feed —solo
-  // publica `normal`, `clause` y `rescind`—. Esta temporada aún no ha pasado,
-  // pero cuando pase habrá movido dinero que nadie va a ver.
-  const conTraspaso = new Set(MOVS.filter((m) => m.fecha.slice(0, 10) >= DOS_DIAS).map((m) => String(m.id)))
+  // publica `normal`, `clause` y `rescind`—, así que habrá movido dinero que
+  // nadie va a ver.
+  const conTraspaso = new Set(traspasos.map((m) => String(m.id)))
 
   for (const n of NOV) {
+    if (!enVentana(n.dia)) continue
+    const bolsa = dias.get(n.dia)
     if (n.tipo === 'duenio' && !conTraspaso.has(String(n.id))) {
       const de = n.de ? POR_NOMBRE.get(n.de)?.corto ?? n.de : 'el mercado'
       const a = n.a ? POR_NOMBRE.get(n.a)?.corto ?? n.a : 'el mercado'
-      filas.push(
+      bolsa.push(
         lineaNov(
           '❓',
           `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b> ha pasado de ${esc(de)} a ${esc(a)} sin traspaso en el feed: puede ser una cesión o un trueque, y entonces habrá movido un dinero que no se ve`,
@@ -670,7 +684,7 @@ const novedades = (() => {
     }
     if (n.tipo === 'clausula') {
       const quien = esc(POR_NOMBRE.get(n.equipo)?.corto ?? n.equipo)
-      filas.push(
+      bolsa.push(
         lineaNov(
           n.escalones > 0 ? '🛡' : '🔓',
           n.escalones > 0
@@ -680,21 +694,32 @@ const novedades = (() => {
         ),
       )
     } else if (n.tipo === 'lesion') {
-      filas.push(lineaNov('🏥', `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b> se ha lesionado`, esMio(n.equipo) ? 'malo' : ''))
+      bolsa.push(lineaNov('🏥', `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b> se ha lesionado`, esMio(n.equipo) ? 'malo' : ''))
     } else if (n.tipo === 'alta') {
-      filas.push(lineaNov('✅', `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b> ya está disponible`, ''))
+      bolsa.push(lineaNov('✅', `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b> ya está disponible`, ''))
     } else if (n.tipo === 'mercado' && n.entra) {
-      filas.push(lineaNov('🏷', `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b> ha salido al mercado`, ''))
+      bolsa.push(lineaNov('🏷', `${escudoDe(n.id)}<b>${esc(nombreDe(n.id))}</b> ha salido al mercado`, ''))
     }
   }
 
-  if (filas.length === 0) return ''
+  const deHoy = dias.get(HOY)
+  const deAyer = dias.get(AYER)
+  if (deHoy.length === 0 && deAyer.length === 0) return ''
+
+  // Nada se esconde detrás de un «y 42 más» que no se puede abrir. Lo de hoy va
+  // desplegado; lo de ayer, plegado pero completo y a un toque.
   return `    <section class="sec">
-      <h2 class="sh"><span class="se">🔔</span>Desde ayer <em>${filas.length}</em></h2>
+      <h2 class="sh"><span class="se">🔔</span>Lo que ha cambiado <em>${deHoy.length + deAyer.length}</em></h2>
+${deHoy.length ? `      <h3 class="ndia">Hoy <em>${deHoy.length}</em></h3>
       <ul class="novs">
-${filas.slice(0, 25).join(NL)}
-      </ul>
-      ${filas.length > 25 ? `<p class="pie">Y ${filas.length - 25} más.</p>` : ''}
+${deHoy.join(NL)}
+      </ul>` : '      <p class="pie">Hoy todavía no se ha movido nada.</p>'}
+${deAyer.length ? `      <details class="nayer">
+        <summary>Ayer <em>${deAyer.length}</em></summary>
+        <ul class="novs">
+${deAyer.join(NL)}
+        </ul>
+      </details>` : ''}
     </section>
 `
 })()
