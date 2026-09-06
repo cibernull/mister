@@ -689,14 +689,34 @@ a{color:var(--oro)}
       (r.irA ? '<a class="arreglo" href="' + r.irA + '">Conectar con Mister &rarr;</a>' : '') + '</div>'
   }
 
-  // Publicada en la web. Aquí no hay servidor local al que pedirle nada: el
-  // botón de Actualizar no puede funcionar, porque quien habla con Mister es el
-  // Mac. Lo que sí sirve es volver a pedir la página, que es como llega la
-  // versión que el Mac haya subido mientras tanto — y eso es lo que hace falta
-  // el 99 % de las veces, porque el Mac la sube solo cada veinte minutos.
-  // Un dato viejo no se distingue de uno fresco leyendo una fecha: hay que
-  // hacer la resta mental. Que la haga la página, y que cambie de color cuando
-  // lleve demasiado, porque la tarea que actualiza puede caerse en silencio.
+  // Publicada en la web. Aquí no hay servidor al que pedirle nada: quien habla
+  // con Mister es GitHub, cada media hora. Lo que sí sirve es volver a pedir la
+  // página, que es como llega la versión que GitHub haya subido mientras tanto.
+  //
+  // Un dato viejo no se distingue de uno fresco leyendo una fecha: hay que hacer
+  // la resta mental. Que la haga la página, y que cambie de color cuando lleve
+  // demasiado, porque la tarea puede caerse en silencio.
+
+  // A qué hora toca la próxima pasada, con la misma regla que el cron de GitHub:
+  // minuto 7 de cada hora, y también el 37 entre las 5 y las 22 UTC. Sin esto,
+  // «hace 1 h» no informa de nada — no se distingue una tarea rota de una a la
+  // que aún no le toca, y eso ya despistó una vez. Repetir aquí el horario es
+  // feo, pero leerlo del workflow exigiría un servidor.
+  function proximaPasada () {
+    var t = new Date(Date.now() + 60000)
+    t.setSeconds(0, 0)
+    for (var i = 0; i < 1500; i += 1) {
+      var h = t.getUTCHours()
+      var m = t.getUTCMinutes()
+      if (m === 7 || (m === 37 && h >= 5 && h <= 22)) return t
+      t = new Date(t.getTime() + 60000)
+    }
+    return null
+  }
+
+  function aLaHora (fecha) {
+    return fecha.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' })
+  }
   var sello = document.getElementById('sello')
   if (sello && sello.getAttribute('data-generado')) {
     var nacido = Date.parse(sello.getAttribute('data-generado'))
@@ -705,11 +725,12 @@ a{color:var(--oro)}
       if (isNaN(mins) || mins < 0) return
       var cuanto = mins < 2 ? 'ahora mismo'
         : mins < 60 ? 'hace ' + mins + ' min'
-        : mins < 60 * 36 ? 'hace ' + Math.round(mins / 60) + ' h'
+        : mins < 60 * 36 ? 'hace ' + Math.floor(mins / 60) + ' h ' + (mins % 60) + ' min'
         : 'hace ' + Math.round(mins / 1440) + ' días'
       sello.innerHTML = 'Datos de <b>' + cuanto + '</b>'
       sello.title = 'Leídos de Mister el ' + new Date(nacido).toLocaleString('es-ES')
-      // Dos horas: la tarea corre cada hora, así que a las dos ya falló una.
+      // Dos horas: la tarea corre cada media hora, así que a las dos ya falló
+      // tres o cuatro veces seguidas y eso ya no es un retraso de GitHub.
       sello.classList.toggle('viejo', mins >= 120)
     }
     refrescar()
@@ -734,7 +755,14 @@ a{color:var(--oro)}
       btn.innerHTML = '<span class="giro"></span>Recargando'
       location.reload()
     })
-    est.innerHTML = 'Se actualiza solo cada media hora.<br>«Forzar» abre GitHub: allí, <b>Run workflow</b>.'
+    var decirCuando = function () {
+      var p = proximaPasada()
+      est.innerHTML = 'Se actualiza sola cada media hora' +
+        (p ? '; la próxima, sobre las <b>' + aLaHora(p) + '</b>' : '') + '.<br>' +
+        '«Forzar ahora» abre GitHub para adelantarla: allí, <b>Run workflow</b>.'
+    }
+    decirCuando()
+    setInterval(decirCuando, 60000)
     return
   }
 

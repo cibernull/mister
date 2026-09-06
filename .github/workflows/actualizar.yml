@@ -1,7 +1,7 @@
 # Mantiene la liga al día sin depender de que el Mac esté encendido.
 #
-# Cada hora: baja lo nuevo de Mister, rehace las cuentas, genera la página y la
-# publica en GitHub Pages. Es lo mismo que hace `npm run refrescar` en local.
+# Cada media hora: baja lo nuevo de Mister, rehace las cuentas, genera la página
+# y la publica en GitHub Pages. Es lo mismo que hace `npm run refrescar` en local.
 #
 # Necesita dos secretos del repositorio, que son la sesión de Mister:
 #   MISTER_COOKIE   la cookie de sesión
@@ -12,12 +12,19 @@ name: Actualizar la liga
 
 on:
   schedule:
-    # Cada media hora, de 7:00 a 21:59 UTC (9:00 a 23:00 en España). Así los
-    # datos nunca tienen más de media hora y casi nunca hace falta forzar nada.
-    # Cada pasada son unas veinticinco peticiones a Mister; media hora es un
-    # ritmo razonable para su servidor, y el mercado de la liga rota cada dos
-    # horas, así que va más fino que el propio juego.
-    - cron: '0,30 7-21 * * *'
+    # Las veinticuatro horas, no solo de día: la primera versión solo cubría de
+    # 7 a 21 UTC y se publicó pasada esa hora, así que en toda la noche no llegó
+    # a saltar ni una vez y la página se quedó envejeciendo sin que nada fallara.
+    # Cubrir el día entero también quita el desfase del horario de verano, que
+    # movía la ventana una hora en octubre.
+    #
+    # Y a los minutos 7 y 37, no a en punto: GitHub encola en el minuto 0 el cron
+    # de medio mundo y las tareas programadas se retrasan justo ahí. Media hora
+    # de día (unas veinticinco peticiones por pasada, y el mercado de la liga
+    # rota cada dos horas, así que va de sobra) y una hora de madrugada, cuando
+    # casi nunca se mueve nada.
+    - cron: '7,37 5-22 * * *'   # 07:07 – 00:37 en España
+    - cron: '7 23,0-4 * * *'    # 01:07 – 06:07 en España
   workflow_dispatch:
 
 # Un solo trabajo a la vez: dos a la vez se pisarían los datos.
@@ -68,7 +75,7 @@ jobs:
           chmod 600 .sesion/cookie .sesion/auth
 
       # Si las cuentas no cuadran con las de Mister, esto sale con error y no
-      # escribe nada. Es lo correcto: mejor los datos de la hora pasada que unos
+      # escribe nada. Es lo correcto: mejor los datos de la pasada anterior que unos
       # malos sin avisar.
       - name: Actualizar y generar
         run: npm run refrescar
