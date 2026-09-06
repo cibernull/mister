@@ -250,6 +250,19 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .nov b{font-weight:700}
 .nov.mio{background:var(--oro-fondo)}
 .nov.malo b{color:var(--baja)}
+/* La racha: una casilla por jornada, con el color de lo que sacó. Es el dato
+   más denso que da Mister y hasta ahora no se enseñaba en ninguna parte. */
+.racha{display:inline-flex;gap:2px;margin-left:7px;vertical-align:middle}
+.rj{display:inline-flex;align-items:center;justify-content:center;min-width:15px;height:15px;padding:0 2px;border-radius:3px;font-family:"IBM Plex Mono",monospace;font-size:9px;font-style:normal;font-weight:600;line-height:1}
+.rj.alta{background:var(--sube-fondo,rgba(74,222,128,.16));color:var(--sube)}
+.rj.media{background:var(--tabla);color:var(--gris);border:1px solid var(--raya)}
+.rj.baja{background:var(--tabla);color:var(--tenue);border:1px solid var(--raya)}
+.rj.cero{background:var(--baja-fondo,rgba(248,113,113,.13));color:var(--baja)}
+.rj.vacia{background:none;color:var(--tenue);border:1px dashed var(--raya)}
+/* Lo duro que es el próximo rival, de uno a cinco. */
+.dur{margin-left:6px;letter-spacing:-1px;font-size:8px;color:var(--tenue)}
+.dur.d4,.dur.d5{color:var(--baja)}
+.dur.d1,.dur.d2{color:var(--sube)}
 /* La diferencia entre la suma de las jornadas publicadas y el total de hoy.
    No es un error: Mister revisa los puntos, y hay jornadas que no publica. */
 .jornadas .tenue{color:var(--tenue)}

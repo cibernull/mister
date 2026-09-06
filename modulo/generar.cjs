@@ -91,6 +91,95 @@ if (!MIO) throw new Error('No encuentro mi equipo en la tabla de equipos')
 const RIVALES = EQ.filter((e) => !e.mio)
 const POR_NOMBRE = new Map(EQ.map((e) => [e.n, e]))
 
+// ── Lo que Mister ya sabe y no se estaba usando ──────────────────────────────
+// Nada de esto viene de fuera: sale de la racha —la puntuación jornada a
+// jornada, que el censo trae y hasta ahora solo servía para contar partidos— y
+// del propio censo. Son indicadores calculados, no cifras de Mister, y la Guía
+// dice cómo se calculan para que nadie los confunda con un dato suyo.
+
+/** Las jornadas que jugó, sin los huecos. */
+const jugadas = (j) => (Array.isArray(j.racha) ? j.racha : []).filter((p) => p !== null)
+
+const JORNADAS_DE_FORMA = 3
+
+/**
+ * Forma: lo que saca últimamente frente a lo que saca de normal.
+ *
+ * Se compara con su propia media, no con la de la liga: la pregunta es si está
+ * mejor o peor **que él mismo**, que es lo que decide si alinearlo. Hacen falta
+ * al menos dos jornadas jugadas; con una, «la forma» sería la propia jornada.
+ */
+const formaDe = (j) => {
+  const l = jugadas(j)
+  if (l.length < 2) return null
+  const ult = l.slice(-JORNADAS_DE_FORMA)
+  const reciente = ult.reduce((a, b) => a + b, 0) / ult.length
+  return reciente - j.media
+}
+
+/**
+ * Regularidad: cuánto se aparta de su media, jornada a jornada.
+ *
+ * Dos jugadores de media 6 no valen lo mismo si uno hace 6, 6, 6 y el otro 0,
+ * 0, 18. Cuanto más bajo, más de fiar. Se necesita más de una jornada.
+ */
+const regularidadDe = (j) => {
+  const l = jugadas(j)
+  if (l.length < 2) return null
+  const m = l.reduce((a, b) => a + b, 0) / l.length
+  return Math.sqrt(l.reduce((t, x) => t + (x - m) ** 2, 0) / l.length)
+}
+
+/**
+ * Cómo de duro es el próximo rival, para su puesto.
+ *
+ * A un defensa le importa lo que ataca el rival; a un delantero, lo que
+ * defiende. Y en Mister eso se puede medir sin salir de aquí: la media de los
+ * atacantes de un club **es** lo peligroso que es, y la de sus defensas y
+ * portero, lo sólido que es, porque puntúan por dejar la portería a cero.
+ *
+ * Se pondera por partidos jugados para que un suplente con una buena tarde no
+ * pese lo mismo que un titular con cinco jornadas, y se ignora a quien no ha
+ * jugado: su media es cero y hundiría el promedio de su club sin motivo.
+ */
+const fuerzaClubes = (() => {
+  const acumular = (puestos) => {
+    const m = new Map()
+    for (const j of J) {
+      if (!j.eq || !puestos.includes(j.pos) || !j.partidos) continue
+      const a = m.get(j.eq) ?? { suma: 0, peso: 0 }
+      a.suma += j.media * j.partidos
+      a.peso += j.partidos
+      m.set(j.eq, a)
+    }
+    return new Map([...m].map(([k, v]) => [k, v.suma / v.peso]))
+  }
+  return { ataque: acumular([3, 4]), defensa: acumular([1, 2]) }
+})()
+
+/** De 1 (rival blando) a 5 (rival duro), por quintiles entre los clubes. */
+const durezaDe = (j) => {
+  if (!j.riv) return null
+  const tabla = j.pos <= 2 ? fuerzaClubes.ataque : fuerzaClubes.defensa
+  const suyo = tabla.get(j.riv)
+  if (suyo === undefined) return null
+  const todos = [...tabla.values()].sort((a, b) => a - b)
+  const pos = todos.filter((x) => x < suyo).length
+  return Math.min(5, Math.floor((pos / todos.length) * 5) + 1)
+}
+
+const pintarRacha = (j) => {
+  const l = Array.isArray(j.racha) ? j.racha.slice(-5) : []
+  if (l.length === 0) return ''
+  return `<span class="racha" title="Sus últimas jornadas; el hueco es que no jugó">${l
+    .map((p) =>
+      p === null
+        ? '<i class="rj vacia">·</i>'
+        : `<i class="rj ${p >= 8 ? 'alta' : p >= 4 ? 'media' : p > 0 ? 'baja' : 'cero'}">${p}</i>`,
+    )
+    .join('')}</span>`
+}
+
 const eur = (n) => `${Math.round(n).toLocaleString('es-ES')} €`
 const corto = (n) => {
   const m = Math.round(n)
@@ -764,9 +853,12 @@ const once = (() => {
   return { elegidos, banquillo: banquillo.sort((a, b) => esperadoDe(b) - esperadoDe(a)) }
 })()
 
-const filaOnce = (j) => `        <div class="mj">${dorsal(j.puesto)}${escudoDe(j.id)}<span class="n">${nombreEnlazado(j)}</span>
+const pintarDureza = (n) =>
+  n === null ? '' : `<span class="dur d${n}" title="Lo duro que es ese rival para su puesto, de 1 (blando) a 5 (duro)">${'●'.repeat(n)}${'○'.repeat(5 - n)}</span>`
+
+const filaOnce = (j) => `        <div class="mj">${dorsal(j.puesto)}${escudoDe(j.id)}<span class="n">${nombreEnlazado(j)}${pintarRacha(j)}</span>
           <span class="v">${dec(esperadoDe(j))}</span><span class="c">${
-            j.riv ? `${j.casa === 1 ? 'en casa' : 'fuera'} · ${esc(CLUBES.get(String(j.riv)) ?? '?')}` : 'sin partido'
+            j.riv ? `${j.casa === 1 ? 'en casa' : 'fuera'} · ${esc(CLUBES.get(String(j.riv)) ?? '?')}${pintarDureza(durezaDe(j))}` : 'sin partido'
           }</span><span class="m">${
             j.est === 'injury' ? '🏥 lesionado' : j.once === 1 ? '👕 titular' : j.once === 0 ? 'suplente' : '—'
           }</span></div>`
@@ -970,6 +1062,11 @@ const lineaTop = (j, valor) =>
   `          <li><span class="d">${dorsal(j.puesto)}</span><span class="n">${escudoDe(j.id)}${esc(j.nombre)}</span><span class="e">${esc(j.duenioCorto ?? 'libre')}</span><span class="v">${valor}</span></li>`
 
 const conPartidos = J.filter((j) => j.partidos >= 2)
+const conForma = J.map((j) => ({ ...j, forma: formaDe(j), regul: regularidadDe(j) })).filter((j) => j.forma !== null)
+const topForma = [...conForma].sort((a, b) => b.forma - a.forma).slice(0, 8)
+// Entre los que rinden: al que promedia 1 punto le sobra regularidad y no
+// interesa a nadie.
+const topFiar = [...conForma].filter((j) => j.media >= 4).sort((a, b) => a.regul - b.regul).slice(0, 8)
 const topMedia = [...conPartidos].sort((a, b) => b.media - a.media).slice(0, 8)
 const topPuntos = [...J].sort((a, b) => b.puntos - a.puntos).slice(0, 8)
 const topSube = [...J].filter((j) => j.subeMes != null).sort((a, b) => b.subeMes - a.subeMes).slice(0, 8)
@@ -1078,6 +1175,8 @@ ${tablaTop('Los que más suben', 'Crecimiento del valor en el último mes.', top
 ${tablaTop('Los más valiosos', '', topCaros.map((j) => lineaTop(j, corto(j.valor))))}
 ${tablaTop('Los que más suben hoy', 'Lo que ha cambiado su valor desde ayer.', topHoy.map((j) => lineaTop(j, firmaCorta(j.semana))))}
 ${tablaTop('Gangas', 'Los más baratos por punto de media, con dos partidos o más.', topGanga.map((j) => lineaTop(j, `${corto(j.precio / j.media)}/pt`)))}
+${tablaTop('Llegan en forma', `Sus últimas ${JORNADAS_DE_FORMA} jornadas comparadas con su propia media. Con dos jornadas o más.`, topForma.map((j) => lineaTop(j, `${j.forma > 0 ? '+' : '−'}${dec(Math.abs(j.forma))}`)))}
+${tablaTop('Los más de fiar', 'Los que menos se apartan de su media jornada a jornada, entre los que promedian 4 o más. Un 6, 6, 6 vale más que un 0, 0, 18.', topFiar.map((j) => lineaTop(j, `±${dec(j.regul)}`)))}
     </div>
 
     <div class="tarjeta">
@@ -1150,6 +1249,8 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
         ${def('💵', '', 'Va a darte dinero', 'Su valor sube esta semana y está entre los que más han crecido en el último mes: comprarlo y revenderlo debería dejar beneficio.')}
         ${def('📤', '', 'Véndelo', 'Ni puntúa ni le sube el valor. Es dinero parado, y en caja te subiría el tope de puja.')}
         ${def('🔒', '', 'Súbele la cláusula', 'Rinde y su cláusula es barata para lo que produce, así que cualquier rival puede llevárselo pagándola.')}
+        ${def('7 5 4', 'txt', 'La racha', 'Lo que sacó en cada una de sus últimas jornadas, la más reciente a la derecha. Verde si hizo 8 o más, rojo si hizo cero, y un hueco si no jugó. Es dato de Mister, tal cual.')}
+        ${def('●●●●○', 'txt', 'Lo duro que es el rival', 'Calculado aquí, no es cifra de Mister. A un defensa le importa lo que ataca el rival y a un delantero lo que defiende, así que se mide la media de los atacantes del rival —o la de sus defensas y portero, que puntúan por dejar la portería a cero— y se compara con la de los otros diecinueve clubes. Cinco puntos negros es de los más duros.')}
         ${def('🛡', '', 'Ya tiene la cláusula subida', 'La marca morada <b class="cx">×3,0</b> dice a cuántas veces su valor está la cláusula. La base es ×1,5, y cada escalón de medio punto le costó a su dueño el 20 % del valor del jugador. Cuanto más alta, más difícil quitárselo.')}
       </div>
     </div>
@@ -1157,6 +1258,8 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
     <div class="tarjeta">
       <h2 class="sh">Las palabras</h2>
       <div class="defs">
+        ${def('↗', 'txt', 'Llega en forma', `Calculado aquí. Sus últimas ${JORNADAS_DE_FORMA} jornadas frente a <strong>su propia</strong> media, no la de la liga: la pregunta no es si es bueno, sino si está mejor o peor que de costumbre. Hacen falta dos jornadas jugadas.`)}
+        ${def('±', 'txt', 'De fiar', 'Calculado aquí. Cuánto se aparta de su media jornada a jornada. Dos jugadores de media 6 no valen lo mismo: uno hace 6, 6, 6 y el otro 0, 0, 18. Cuanto más bajo, más de fiar. Solo se listan los que promedian 4 o más, porque al que hace un punto siempre le sobra regularidad.')}
         ${def('€', '', 'Valor y cláusula', 'El <strong>valor</strong> es lo que Mister dice que vale un jugador, y lo que cobras si lo vendes al mercado. La <strong>cláusula</strong> es lo que un rival paga para quitártelo sin tu permiso, y siempre es mayor. La cifra grande de cada fila es <strong>lo que costaría ficharlo de verdad</strong>.')}
         ${def('POR', 'txt', 'Los dorsales de color', 'La posición: <strong>POR</strong> portero, <strong>DEF</strong> defensa, <strong>MED</strong> centrocampista, <strong>DEL</strong> delantero.')}
         ${def('▐', '', 'Las barras de los equipos', 'La parte sólida es dinero en caja; la rayada, el crédito que le da su plantilla. Juntas, lo que puede gastar.')}

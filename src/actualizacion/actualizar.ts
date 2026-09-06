@@ -541,6 +541,14 @@ function construirJugadores(
     bl: j.blindado ? 1 : 0,
     /** Veces que le han subido la cláusula, y sigue subida. */
     sub: j.clausula === null ? 0 : subidasVivas(j.valor, j.clausula),
+    /**
+     * Lo que sacó en cada jornada, con un hueco donde no jugó.
+     *
+     * Se leía del censo desde el principio pero solo para contar partidos, y
+     * se tiraba lo demás. Es la única fuente de la forma reciente y de la
+     * regularidad, y no hay que pedirle nada nuevo a Mister para tenerla.
+     */
+    racha: j.racha,
     /** Su club de verdad, para poder pintar el escudo. */
     eq: j.idClub,
     /** El club contra el que juega la próxima jornada, y si es en casa. */
@@ -564,6 +572,9 @@ function construirJugadores(
       puntos: 0,
       media: 0,
       partidos: 0,
+      // Ya no juega en LaLiga: no hay jornadas que enseñar, y una racha vacía
+      // dice justo eso. Poner ceros fingiría que jugó y sacó cero.
+      racha: [],
       semana: f.subeDia ?? 0,
       mes: mesDe(id),
       mk: 0,
