@@ -78,7 +78,9 @@ for (const j of D.jugadores) VALOR.set(String(j.id), j.valor)
 for (const j of J) VALOR.set(String(j.id), j.valor)
 
 EQ.forEach((e) => {
-  e.tope = e.saldo + 0.25 * e.pl
+  // Lo comprometido en pujas está en la caja pero ya no se puede gastar, y
+  // Mister lo descuenta del tope. Solo se conoce el propio.
+  e.tope = e.saldo - (e.comprometido || 0) + 0.25 * e.pl
   e.corto = e.n.replace(/\s*\(.*\)\s*/, '').trim()
   e.patrimonio = e.saldo + e.pl
   e.sobre50 = e.patrimonio - 50000000
@@ -413,7 +415,7 @@ const ico = (d) =>
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`
 const marcador = `  <div class="marcador">
     <div><dt>${ico('<path d="M8 21h8M12 17v4M6 4h12v5a6 6 0 0 1-12 0V4Z"/><path d="M6 6H3v2a3 3 0 0 0 3 3M18 6h3v2a3 3 0 0 1-3 3"/>')} Tu puesto</dt><dd>${MIO.pos}º<small>de ${EQ.length} · ${MIO.pts} pts</small></dd></div>
-    <div><dt>${ico('<rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/>')} En caja</dt><dd class="oro">${eur(MIO.saldo)}</dd></div>
+    <div><dt>${ico('<rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/>')} En caja</dt><dd class="oro">${eur(MIO.saldo)}</dd>${MIO.comprometido > 0 ? `<small class="retenido" title="Mister te reserva ese dinero mientras la puja siga puesta: no cuenta para el tope">${eur(MIO.comprometido)} retenidos en pujas</small>` : ''}</div>
     <div><dt>${ico('<path d="M3 17l6-6 4 4 7-7"/><path d="M14 8h6v6"/>')} Tope de puja</dt><dd>${eur(MIO.tope)}</dd></div>
     <div><dt>${ico('<path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>')} Sobre los 50 M</dt><dd class="${clase(MIO.sobre50)}">${firma(MIO.sobre50)}</dd></div>
   </div>`

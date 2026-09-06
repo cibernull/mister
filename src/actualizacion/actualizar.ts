@@ -382,7 +382,14 @@ async function intentar(): Promise<Resultado> {
     if (!e.mio && e.gastoVisto > 0) e.saldo -= e.gastoVisto
   }
   const mioExacto = cuentas.equipos.find((e) => e.mio)
-  if (mioExacto) mioExacto.costeReal = -desdeElReinicio.filter((a) => a.tipo === 'Penalización').reduce((s, a) => s + a.importe, 0)
+  if (mioExacto) {
+    mioExacto.costeReal = -desdeElReinicio.filter((a) => a.tipo === 'Penalización').reduce((s, a) => s + a.importe, 0)
+    // El dinero retenido por las pujas que has dejado puestas. Está en el saldo
+    // pero ya no puedes gastarlo, y Mister lo descuenta del tope de puja: sin
+    // esto la página enseñaba un tope mayor que el suyo. De los rivales no se
+    // sabe —Mister solo publica el propio—, así que el suyo sigue con margen.
+    mioExacto.comprometido = veredicto.comprometido
+  }
 
   escribirJson(join(DATOS, 'equipos.json'), cuentas.equipos)
   escribirJson(join(DATOS, 'plantillas.json'), cuentas.plantillas)

@@ -77,6 +77,9 @@ body{
 .marcador dt{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--tenue);margin:0 0 3px;display:flex;align-items:center;gap:5px}
 .marcador dt svg{width:11px;height:11px;flex:none;opacity:.8}
 .marcador dd{margin:0;white-space:nowrap;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;font-size:19px;line-height:1.15}
+/* El dinero retenido por una puja viva: está en la caja, pero no se puede
+   gastar. Va bajo la cifra y no dentro, para no competir con ella. */
+.marcador .retenido{display:block;margin-top:4px;font-family:"IBM Plex Mono",monospace;font-size:10px;line-height:1.3;color:var(--oro);white-space:normal}
 .marcador dd small{font-size:12px;font-weight:500;color:var(--gris);margin-left:4px}
 .marcador dd.oro{color:var(--oro)}
 @media(max-width:660px){.marcador > div{border-right:0;border-bottom:1px solid var(--raya)}}

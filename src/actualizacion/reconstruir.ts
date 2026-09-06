@@ -52,6 +52,12 @@ export type Equipo = {
   gastoVisto?: number
   /** Solo el equipo propio: lo que dice su libro de caja. Exacto. */
   costeReal?: number
+  /**
+   * Dinero retenido por pujas vivas. Está en el saldo pero ya no se puede
+   * gastar, y Mister lo descuenta del tope de puja. Solo se conoce el propio:
+   * de los rivales no publica nada, así que en los suyos es siempre `undefined`.
+   */
+  comprometido?: number
   mio?: 1
   /** Jugadores de la plantilla sin valor conocido: `pl` se queda corto. */
   sinValorar: string[]
