@@ -415,6 +415,18 @@
   "clausula": 2657500
  },
  {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "118",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "364",
+  "entra": false
+ },
+ {
   "tipo": "lesion",
   "dia": "2026-09-05",
   "id": "27852",
