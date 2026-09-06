@@ -368,3 +368,29 @@ permiso, y o se hace entero o no se hace.
 | `npm run refrescar` | Las dos de arriba de una vez. Es lo que corre GitHub |
 | `npm run fichas` | La pasada larga: lee las 523 fichas (~9 min, una vez al día) |
 | `python3 modulo/escudos.py` | Baja los escudos de los clubes. Una vez y ya |
+
+## Fuentes externas de estadísticas: por qué no hay ninguna
+
+Probadas el 6 de septiembre de 2026, buscando xG, tiros y pases clave para
+completar lo que da Mister. Ninguna sirve, y conviene dejar escrito por qué
+para no repetir el recorrido:
+
+| Fuente | Qué contesta |
+|---|---|
+| **FBref** | Desafío interactivo de Cloudflare, hasta en `robots.txt` |
+| **Understat** | `User-agent: * / Disallow: /` |
+| **FotMob** | 404 en su API pública y protección antibot |
+| **API-Football** | El plan gratuito llega hasta 2024: «Free plans do not have access to this season» |
+| **football-data.org** | Necesita clave y su plan gratuito da poco más que goleadores |
+| **openfootball** | Solo resultados de partidos, nada por jugador |
+
+Las tres primeras dicen que no a los robots de forma explícita. Saltárselo no
+es una opción, y tampoco funcionaría: el mismo bloqueo lo encontraría GitHub
+Actions y la actualización automática fallaría a diario, que es justo de lo
+que se salió al quitar el Mac de en medio.
+
+Así que las estadísticas que no publica Mister se calculan desde las que sí
+publica —forma, regularidad, dureza del rival, veredicto de clausulazo—, y
+cada una dice en la Guía que está calculada aquí y cómo. Lo que de verdad
+falta y no se puede suplir es el xG: sin él no se sabe si un delantero con
+cuatro goles los ha merecido o ha tenido una racha de suerte.
