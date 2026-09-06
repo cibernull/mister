@@ -291,45 +291,64 @@ desde fuera —ni las capacidades que da el visor— llega a un servidor que
 escucha en `127.0.0.1` de otra máquina. Recargar trae la última versión que el
 Mac haya subido, que es lo que hace falta casi siempre.
 
-Para un botón que de verdad actualice desde el móvil harían falta dos cosas que
-hoy no están: que el Mac fuera accesible desde internet (un túnel tipo Tailscale
-o Cloudflare) y que ese servidor tuviera autenticación, porque expondría
-`/actualizar` y `/credenciales`.
+El botón de la copia publicada sí actualiza de verdad, y desde el móvil. Lo
+hace posible un intermediario en Cloudflare —`aplicacion/lanzador/`—, porque la
+página no puede hacerlo sola: pedirle a GitHub que actualice exige un token con
+permiso de escritura, y la página es pública, así que el token se leería con
+ver el código fuente. El intermediario lo guarda él, y lo único que sabe hacer
+es lanzar esta actualización.
+
+No lleva contraseña a propósito. Lo peor que puede hacer un desconocido que
+encuentre la dirección es refrescar unos datos que ya son públicos en la propia
+página. Lo que sí lleva es un freno de cuatro minutos, y lo resuelve
+preguntándole a GitHub por la última pasada en vez de recordarla: un Worker no
+tiene memoria entre peticiones, así que un contador propio sería mentira.
 
 Se publica **siempre sobre la misma dirección**, así que el enlace no cambia
 nunca: quien lo tenga guardado ve lo último cada vez que entra.
 
-De mantenerlo al día se encargan tres cosas, y el reparto importa:
+De mantenerlo al día se encargan dos relojes, y **ninguno necesita el Mac**:
 
-| Quién | Cuándo | Qué hace | ¿Necesita la app? |
-|---|---|---|---|
-| **launchd** `…ligademister.refresco` | cada hora en punto, 9–23 | Actualiza los datos y deja la página lista | **No** |
-| Tarea `liga-de-mister-actualizar` | y diez, 9–23 | Sube esa página al enlace | Sí |
-| Tarea `liga-de-mister-fichas` | 8:40 | La pasada larga de las 523 fichas | Sí |
+| Quién | Cuándo | Qué hace |
+|---|---|---|
+| **Cron de Cloudflare** | :07 y :37 de cada hora, las 24 h | Le pide a GitHub que actualice |
+| Cron de GitHub Actions | los mismos horarios | Lo mismo, por si el otro cae |
 
-El refresco lo hace **launchd**, el programador del propio macOS, y no la app.
-El motivo es que el de la app no dispara si la sesión está ocupada: una mañana
-estuvo diez horas sin publicar con el Mac encendido, y al forzar una ejecución
-única de prueba tampoco saltó en siete minutos. Los datos son lo que no puede
-fallar, así que salen de ahí. Publicar sí necesita a Claude —es su herramienta—,
-pero si esa parte se retrasa, lo único que se retrasa es la copia de la web: los
-datos del Mac siguen al día y la siguiente subida los lleva.
+Que hagan lo mismo no es descuido: **el que cumple es el de Cloudflare**. El de
+GitHub Actions es «cuando pueda» y su documentación lo admite. Medido en este
+repositorio el 6 de septiembre de 2026, con datos y no con impresiones:
 
-### Dónde vive el guion, y por qué no en el proyecto
+- Un workflow de prueba con `*/5 * * * *` —la expresión más simple que existe—
+  estuvo **dos horas sin disparar una sola vez**: cero de veinticuatro turnos.
+  Eso descarta que fuera un problema de la expresión.
+- En diez horas, el workflow de verdad disparó **dos veces de las quince que le
+  tocaban**, con retrasos de 10 y 23 minutos.
+- El cron de Cloudflare, en su primer turno, disparó a los **55 segundos** del
+  minuto en punto.
 
-`npm run instalar-refresco` deja el ejecutable en `~/Library/Application
-Support/liga-de-mister/refrescar.sh`, **no** dentro del proyecto. Tiene que ser
-así: el proyecto está bajo `~/Documents`, que macOS protege, y launchd no puede
-ejecutar nada de ahí — sale con código 126 y «Operation not permitted», sin
-escribir una línea en ningún log, porque el guion no llega ni a arrancar. Desde
-fuera sí puede luego leer y escribir dentro del proyecto; lo que se bloquea es
-arrancar el ejecutable.
+Por eso el reloj bueno está fuera de GitHub. El de GitHub se deja puesto porque
+no cuesta nada y cubre el caso de que Cloudflare falle; si disparan los dos, el
+`concurrency` del workflow impide que se pisen y la segunda pasada no encuentra
+nada nuevo que guardar.
 
-Para quitarlo:
+La pasada larga de las 523 fichas va dentro del mismo workflow, no en una tarea
+aparte. No se ata a una hora concreta —«si son las 7, hazla»— porque eso depende
+de que exista una pasada justo a esa hora, y perderla cuesta un día entero de
+goles, tarjetas y titularidades. Se mira cuánto hace de la última con una marca
+guardada en la caché, así que la hace la primera pasada que se encuentre con las
+veinte horas cumplidas.
 
-```bash
-launchctl bootout gui/$(id -u)/com.cibernull.ligademister.refresco
-```
+### Lo que se probó antes, y por qué se descartó
+
+Vale la pena dejarlo escrito para no repetirlo:
+
+- **El programador de la propia app** no dispara si la sesión está ocupada. Una
+  mañana estuvo diez horas sin publicar con el Mac encendido.
+- **launchd**, el de macOS, sí es puntual, pero **no puede ejecutar nada que viva
+  bajo `~/Documents`**: sale con código 126 y «Operation not permitted», sin
+  escribir una línea en ningún log, porque el guion no llega ni a arrancar. Había
+  que instalar el ejecutable en `~/Library/Application Support/`. Funcionaba,
+  pero exigía el Mac encendido, que era justo lo que había que quitar.
 
 La actualización y la publicación van en **un solo comando** (`npm run
 refrescar`) a propósito. Cuando eran dos pasos separados, una mañana el primero
@@ -346,7 +365,6 @@ permiso, y o se hace entero o no se hace.
 | `npm run actualizar` | Una pasada desde el Terminal, sin la app |
 | `npm run generar` | Solo rehace el HTML con los datos que ya hay |
 | `npm run publicar` | Prepara `datos/publicada.html` para subirla a la web |
-| `npm run refrescar` | Las dos de arriba de una vez. Es lo que corre launchd |
-| `npm run instalar-refresco` | Registra el refresco horario en launchd |
+| `npm run refrescar` | Las dos de arriba de una vez. Es lo que corre GitHub |
 | `npm run fichas` | La pasada larga: lee las 523 fichas (~9 min, una vez al día) |
 | `python3 modulo/escudos.py` | Baja los escudos de los clubes. Una vez y ya |
