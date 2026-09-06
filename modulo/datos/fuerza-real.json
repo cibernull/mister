@@ -1,0 +1,225 @@
+{
+ "partidos": 31,
+ "clubes": {
+  "1": {
+   "partidos": 3,
+   "xgAFavor": 1.3800000000000001,
+   "xgEnContra": 1.6300000000000001,
+   "tirosAFavor": 13.333333333333334,
+   "tirosEnContra": 12.333333333333334,
+   "aPuertaAFavor": 5,
+   "aPuertaEnContra": 5.333333333333333,
+   "golesAFavor": 1,
+   "golesEnContra": 1.6666666666666667
+  },
+  "2": {
+   "partidos": 3,
+   "xgAFavor": 0.88,
+   "xgEnContra": 1.5466666666666666,
+   "tirosAFavor": 15.333333333333334,
+   "tirosEnContra": 12.666666666666666,
+   "aPuertaAFavor": 5,
+   "aPuertaEnContra": 4,
+   "golesAFavor": 2.3333333333333335,
+   "golesEnContra": 1
+  },
+  "3": {
+   "partidos": 3,
+   "xgAFavor": 3.7066666666666666,
+   "xgEnContra": 0.68,
+   "tirosAFavor": 19.666666666666668,
+   "tirosEnContra": 7.666666666666667,
+   "aPuertaAFavor": 8.666666666666666,
+   "aPuertaEnContra": 2.3333333333333335,
+   "golesAFavor": 4,
+   "golesEnContra": 0.6666666666666666
+  },
+  "4": {
+   "partidos": 3,
+   "xgAFavor": 1.29,
+   "xgEnContra": 1.7466666666666668,
+   "tirosAFavor": 17.666666666666668,
+   "tirosEnContra": 14.666666666666666,
+   "aPuertaAFavor": 5.333333333333333,
+   "aPuertaEnContra": 5.333333333333333,
+   "golesAFavor": 1.3333333333333333,
+   "golesEnContra": 1.6666666666666667
+  },
+  "5": {
+   "partidos": 4,
+   "xgAFavor": 0.42999999999999994,
+   "xgEnContra": 1.7175,
+   "tirosAFavor": 6.5,
+   "tirosEnContra": 13.5,
+   "aPuertaAFavor": 2.25,
+   "aPuertaEnContra": 4.75,
+   "golesAFavor": 0.25,
+   "golesEnContra": 1
+  },
+  "6": {
+   "partidos": 3,
+   "xgAFavor": 0.9566666666666667,
+   "xgEnContra": 1.57,
+   "tirosAFavor": 8.333333333333334,
+   "tirosEnContra": 12,
+   "aPuertaAFavor": 3.6666666666666665,
+   "aPuertaEnContra": 4,
+   "golesAFavor": 1.6666666666666667,
+   "golesEnContra": 1
+  },
+  "8": {
+   "partidos": 3,
+   "xgAFavor": 1.1233333333333333,
+   "xgEnContra": 1.5466666666666669,
+   "tirosAFavor": 11.666666666666666,
+   "tirosEnContra": 14,
+   "aPuertaAFavor": 4,
+   "aPuertaEnContra": 6,
+   "golesAFavor": 1.6666666666666667,
+   "golesEnContra": 1.3333333333333333
+  },
+  "9": {
+   "partidos": 3,
+   "xgAFavor": 0.71,
+   "xgEnContra": 1.6333333333333335,
+   "tirosAFavor": 9.666666666666666,
+   "tirosEnContra": 11.333333333333334,
+   "aPuertaAFavor": 1.3333333333333333,
+   "aPuertaEnContra": 4.333333333333333,
+   "golesAFavor": 0.3333333333333333,
+   "golesEnContra": 1.3333333333333333
+  },
+  "12": {
+   "partidos": 3,
+   "xgAFavor": 1.45,
+   "xgEnContra": 1.3833333333333335,
+   "tirosAFavor": 11.333333333333334,
+   "tirosEnContra": 16,
+   "aPuertaAFavor": 3.6666666666666665,
+   "aPuertaEnContra": 6.333333333333333,
+   "golesAFavor": 1.6666666666666667,
+   "golesEnContra": 1.6666666666666667
+  },
+  "13": {
+   "partidos": 3,
+   "xgAFavor": 0.9466666666666667,
+   "xgEnContra": 1.4799999999999998,
+   "tirosAFavor": 10.666666666666666,
+   "tirosEnContra": 13.333333333333334,
+   "aPuertaAFavor": 1.3333333333333333,
+   "aPuertaEnContra": 6,
+   "golesAFavor": 0.3333333333333333,
+   "golesEnContra": 2.3333333333333335
+  },
+  "14": {
+   "partidos": 3,
+   "xgAFavor": 1.1333333333333335,
+   "xgEnContra": 2.34,
+   "tirosAFavor": 8.333333333333334,
+   "tirosEnContra": 18,
+   "aPuertaAFavor": 3.6666666666666665,
+   "aPuertaEnContra": 5.333333333333333,
+   "golesAFavor": 1.3333333333333333,
+   "golesEnContra": 2.6666666666666665
+  },
+  "15": {
+   "partidos": 3,
+   "xgAFavor": 2.7466666666666666,
+   "xgEnContra": 0.7766666666666667,
+   "tirosAFavor": 20,
+   "tirosEnContra": 10.666666666666666,
+   "aPuertaAFavor": 9,
+   "aPuertaEnContra": 2.3333333333333335,
+   "golesAFavor": 3.3333333333333335,
+   "golesEnContra": 0.6666666666666666
+  },
+  "16": {
+   "partidos": 4,
+   "xgAFavor": 1.1375,
+   "xgEnContra": 1.375,
+   "tirosAFavor": 13,
+   "tirosEnContra": 14,
+   "aPuertaAFavor": 5.25,
+   "aPuertaEnContra": 5.75,
+   "golesAFavor": 0.75,
+   "golesEnContra": 1.5
+  },
+  "17": {
+   "partidos": 3,
+   "xgAFavor": 1.1633333333333333,
+   "xgEnContra": 1.3566666666666665,
+   "tirosAFavor": 13.333333333333334,
+   "tirosEnContra": 12,
+   "aPuertaAFavor": 4.333333333333333,
+   "aPuertaEnContra": 5.333333333333333,
+   "golesAFavor": 2,
+   "golesEnContra": 1.6666666666666667
+  },
+  "19": {
+   "partidos": 3,
+   "xgAFavor": 1.01,
+   "xgEnContra": 0.93,
+   "tirosAFavor": 12,
+   "tirosEnContra": 11,
+   "aPuertaAFavor": 3,
+   "aPuertaEnContra": 3.3333333333333335,
+   "golesAFavor": 0.3333333333333333,
+   "golesEnContra": 1.3333333333333333
+  },
+  "20": {
+   "partidos": 3,
+   "xgAFavor": 1.8866666666666667,
+   "xgEnContra": 1.1533333333333335,
+   "tirosAFavor": 14.666666666666666,
+   "tirosEnContra": 15,
+   "aPuertaAFavor": 6.333333333333333,
+   "aPuertaEnContra": 3,
+   "golesAFavor": 1.3333333333333333,
+   "golesEnContra": 1.6666666666666667
+  },
+  "23": {
+   "partidos": 3,
+   "xgAFavor": 1.05,
+   "xgEnContra": 2.1466666666666665,
+   "tirosAFavor": 12,
+   "tirosEnContra": 10.666666666666666,
+   "aPuertaAFavor": 5,
+   "aPuertaEnContra": 5.333333333333333,
+   "golesAFavor": 1,
+   "golesEnContra": 3
+  },
+  "48": {
+   "partidos": 3,
+   "xgAFavor": 1.58,
+   "xgEnContra": 0.6866666666666665,
+   "tirosAFavor": 14,
+   "tirosEnContra": 11,
+   "aPuertaAFavor": 4.333333333333333,
+   "aPuertaEnContra": 3.6666666666666665,
+   "golesAFavor": 1.6666666666666667,
+   "golesEnContra": 0.3333333333333333
+  },
+  "50": {
+   "partidos": 3,
+   "xgAFavor": 1.6733333333333331,
+   "xgEnContra": 0.6966666666666667,
+   "tirosAFavor": 11.666666666666666,
+   "tirosEnContra": 8.666666666666666,
+   "aPuertaAFavor": 4.666666666666667,
+   "aPuertaEnContra": 1.3333333333333333,
+   "golesAFavor": 1,
+   "golesEnContra": 0.3333333333333333
+  },
+  "1490": {
+   "partidos": 3,
+   "xgAFavor": 1.63,
+   "xgEnContra": 0.98,
+   "tirosAFavor": 12,
+   "tirosEnContra": 14,
+   "aPuertaAFavor": 4,
+   "aPuertaEnContra": 5,
+   "golesAFavor": 1.6666666666666667,
+   "golesEnContra": 1.6666666666666667
+  }
+ }
+}
