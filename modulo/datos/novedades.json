@@ -134,6 +134,82 @@
   "entra": true
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-09-06",
+  "id": "4886",
+  "de": "Mario80",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "4886",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "14911",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "22502",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "29163",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "29169",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-06",
+  "id": "29223",
+  "de": "Niutin FC (Isaac)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "29223",
+  "entra": false
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-06",
+  "id": "56924",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-06",
+  "id": "71139",
+  "de": "Mario80",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "71139",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "71795",
+  "entra": true
+ },
+ {
   "tipo": "lesion",
   "dia": "2026-09-05",
   "id": "27852",

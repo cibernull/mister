@@ -29,11 +29,24 @@ export type Veredicto = {
   saldoDeMister: number
   topeCalculado: number
   topeDeMister: number
+  /** Dinero retenido por pujas vivas: está en el saldo pero ya no es tuyo. */
+  comprometido: number
   motivos: string[]
 }
 
 export function verificar(mio: Equipo, mister: DatosUsuario, saldoDelLibro: number): Veredicto {
-  const topeCalculado = mio.saldo + 0.25 * mio.pl
+  // Mister publica tres cifras de dinero, no dos: `current` es lo que tienes,
+  // `future` es lo que te quedará cuando se resuelvan las pujas que has dejado
+  // puestas, y `maxDebt` se construye sobre `future`. Usar `current` aquí
+  // funcionó durante semanas porque no había ninguna puja viva a la hora de
+  // actualizar; en cuanto la hubo, esta comprobación empezó a rechazar cada
+  // pasada por la diferencia exacta de lo comprometido.
+  //
+  // Lo comprometido se toma de Mister porque el libro de caja no lo publica —
+  // una puja no es un apunte hasta que se resuelve—, pero el saldo base sigue
+  // siendo el calculado, para no perder la comparación independiente.
+  const comprometido = mister.saldo - mister.saldoFuturo
+  const topeCalculado = mio.saldo - comprometido + 0.25 * mio.pl
   const motivos: string[] = []
 
   // El saldo ya no se calcula: se lee del libro de caja. Compararlo con el que
@@ -46,8 +59,8 @@ export function verificar(mio: Equipo, mister: DatosUsuario, saldoDelLibro: numb
   }
 
   // Lo que sí se calcula aquí es el valor de la plantilla, y el tope de puja lo
-  // delata: Mister publica `maxDebt`, que es el saldo más el 25 % de la
-  // plantilla. Si sobra o falta un jugador, o su valor está viejo, se ve aquí.
+  // delata: `maxDebt` es el saldo disponible más el 25 % de la plantilla. Si
+  // sobra o falta un jugador, o su valor está viejo, se ve aquí.
   const dTope = topeCalculado - mister.topePuja
   if (Math.abs(dTope) > MARGEN_REDONDEO) {
     motivos.push(
@@ -67,6 +80,7 @@ export function verificar(mio: Equipo, mister: DatosUsuario, saldoDelLibro: numb
     saldoDeMister: mister.saldo,
     topeCalculado,
     topeDeMister: mister.topePuja,
+    comprometido,
     motivos,
   }
 }

@@ -29,7 +29,7 @@ const LANZAR = 'https://github.com/cibernull/mister/actions/workflows/actualizar
 // pasada a mano; en cuanto tenga valor, el botón actualiza de un toque.
 // Aquí no hay nada secreto: quien abra la página verá esta dirección, y da
 // igual, porque lo único que sabe hacer el lanzador es refrescar estos datos.
-const LANZADOR = ''
+const LANZADOR = 'https://liga-de-mister.mmrb2mrvgm.workers.dev'
 
 const leer = (n) => JSON.parse(fs.readFileSync(path.join(DAT, n), 'utf8'))
 const J = leer('jugadores-calc.json')

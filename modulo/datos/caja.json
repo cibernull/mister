@@ -1,6 +1,14 @@
 {
- "saldo": 15580760,
+ "saldo": 21071960,
  "apuntes": [
+  {
+   "cuando": 1788685255,
+   "fecha": "2026-09-06 11:00",
+   "motivo": "Mario Soriano a Mister",
+   "tipo": "Venta",
+   "importe": 5491200,
+   "saldo": 21071960
+  },
   {
    "cuando": 1788647080,
    "fecha": "2026-09-06 00:24",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -4038280,
    "saldo": -8250556
-  },
-  {
-   "cuando": 1786203725,
-   "fecha": "2026-08-08 17:42",
-   "motivo": "Tyrhys Dolan a Mister",
-   "tipo": "Venta",
-   "importe": 1476960,
-   "saldo": -4212276
   }
  ]
 }
