@@ -74,6 +74,30 @@ jobs:
           printf '%s' "$AUTH" > .sesion/auth
           chmod 600 .sesion/cookie .sesion/auth
 
+      # La pasada larga: la ficha de los 523 jugadores, una por una, de donde
+      # salen goles, tarjetas, titularidades y la serie de valores. Son unos
+      # nueve minutos, así que va una vez al día y no en cada pasada.
+      #
+      # No se ata a una hora concreta —«si son las 7, hazla»— porque entonces
+      # depende de que exista una pasada justo a esa hora, y perderla significa
+      # un día entero sin fichas. Se mira cuánto hace de la última, con una
+      # marca que viaja en la caché junto al volcado: así la hace la primera
+      # pasada que se encuentre con el plazo cumplido, sea la que sea.
+      - name: Las fichas, si toca
+        run: |
+          marca=datos/.ultima-pasada-de-fichas
+          ahora=$(date -u +%s)
+          ultima=0
+          [ -f "$marca" ] && ultima=$(cat "$marca")
+          horas=$(( (ahora - ultima) / 3600 ))
+          if [ $(( ahora - ultima )) -ge 72000 ]; then
+            echo "La última fue hace ${horas} h: toca."
+            npm run fichas
+            echo "$ahora" > "$marca"
+          else
+            echo "La última fue hace ${horas} h: todavía no toca."
+          fi
+
       # Si las cuentas no cuadran con las de Mister, esto sale con error y no
       # escribe nada. Es lo correcto: mejor los datos de la pasada anterior que unos
       # malos sin avisar.
