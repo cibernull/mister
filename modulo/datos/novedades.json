@@ -379,6 +379,34 @@
  },
  {
   "tipo": "lesion",
+  "dia": "2026-09-06",
+  "id": "13011",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-06",
+  "id": "60927",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-06",
+  "id": "70993",
+  "estado": "other",
+  "equipo": "Cacaculopedopis"
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-06",
+  "id": "71511",
+  "estado": "injury",
+  "equipo": "Los tocahuevos C.F ( juanito)"
+ },
+ {
+  "tipo": "lesion",
   "dia": "2026-09-05",
   "id": "27852",
   "estado": "injury",
