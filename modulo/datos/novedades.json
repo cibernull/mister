@@ -427,6 +427,18 @@
   "entra": false
  },
  {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "208",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "70993",
+  "entra": true
+ },
+ {
   "tipo": "lesion",
   "dia": "2026-09-05",
   "id": "27852",
