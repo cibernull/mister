@@ -796,6 +796,11 @@
    "valor": 14378000
   },
   {
+   "id": "34",
+   "nombre": "José Giménez",
+   "valor": 1197000
+  },
+  {
    "id": "36334",
    "nombre": "Adama Traoré",
    "valor": 1824000
@@ -1020,6 +1025,16 @@
    "importe": 3423720,
    "tipo": "normal",
    "fecha": "2026-09-03 16:54:18",
+   "pos": 2
+  },
+  {
+   "id": "34",
+   "nombre": "José Giménez",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 2034236,
+   "tipo": "normal",
+   "fecha": "2026-09-03 05:00:31",
    "pos": 2
   },
   {
@@ -4773,6 +4788,14 @@
      "op": "normal"
     },
     {
+     "j": "José Giménez",
+     "id": "34",
+     "tipo": "compra",
+     "importe": 2034236,
+     "fecha": "2026-09-03",
+     "op": "normal"
+    },
+    {
      "j": "Ryunosuke Sato",
      "id": "71138",
      "tipo": "venta",
@@ -5182,6 +5205,12 @@
     }
    ],
    "porJugador": {
+    "34": {
+     "nombre": "José Giménez",
+     "compras": 2034236,
+     "ventas": 0,
+     "ops": 1
+    },
     "118": {
      "nombre": "Jonny Otto",
      "compras": 1801050,

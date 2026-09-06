@@ -1,5 +1,85 @@
 [
  {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "14791",
+  "entra": false
+ },
+ {
+  "tipo": "alta",
+  "dia": "2026-09-06",
+  "id": "27333",
+  "equipo": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "59415",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "64382",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "64410",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-06",
+  "id": "68259",
+  "de": null,
+  "a": "Cacaculopedopis"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "68259",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "70255",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-06",
+  "id": "70950",
+  "de": null,
+  "a": "Mario80"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "70950",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "71509",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "925296",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-06",
+  "id": "1385821",
+  "entra": false
+ },
+ {
   "tipo": "lesion",
   "dia": "2026-09-05",
   "id": "27852",
