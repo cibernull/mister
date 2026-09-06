@@ -1,191 +1,6 @@
 {
  "jugadores": [
   {
-   "id": "15756",
-   "nombre": "Alejandro Catena",
-   "valor": 8642000
-  },
-  {
-   "id": "19527",
-   "nombre": "Jon Moncayola",
-   "valor": 5004000
-  },
-  {
-   "id": "71038",
-   "nombre": "Justin De Haas",
-   "valor": 2673000
-  },
-  {
-   "id": "130",
-   "nombre": "Iago Aspas",
-   "valor": 5440000
-  },
-  {
-   "id": "64151",
-   "nombre": "Davinchi",
-   "valor": 886000
-  },
-  {
-   "id": "58820",
-   "nombre": "Marc Casadó",
-   "valor": 754000
-  },
-  {
-   "id": "48937",
-   "nombre": "Jon Karrikaburu",
-   "valor": 166000
-  },
-  {
-   "id": "65476",
-   "nombre": "Clemens Riedel",
-   "valor": 1747000
-  },
-  {
-   "id": "63788",
-   "nombre": "Dean Huijsen",
-   "valor": 10316000
-  },
-  {
-   "id": "52404",
-   "nombre": "Manu Bueno",
-   "valor": 315000
-  },
-  {
-   "id": "59581",
-   "nombre": "Luiz Júnior",
-   "valor": 5212000
-  },
-  {
-   "id": "67580",
-   "nombre": "Samu Becerra",
-   "valor": 205000
-  },
-  {
-   "id": "61093",
-   "nombre": "Maroan Sannadi",
-   "valor": 209000
-  },
-  {
-   "id": "70997",
-   "nombre": "Aarón Ochoa",
-   "valor": 160000
-  },
-  {
-   "id": "22668",
-   "nombre": "Lucas Torró",
-   "valor": 1214000
-  },
-  {
-   "id": "59088",
-   "nombre": "Willy Kambwala",
-   "valor": 166000
-  },
-  {
-   "id": "55666",
-   "nombre": "Álvaro Carreras",
-   "valor": 2785000
-  },
-  {
-   "id": "60859",
-   "nombre": "Facundo Garcés",
-   "valor": 160000
-  },
-  {
-   "id": "68835",
-   "nombre": "Job Ochieng",
-   "valor": 186000
-  },
-  {
-   "id": "27518",
-   "nombre": "Óscar Valentín",
-   "valor": 1981000
-  },
-  {
-   "id": "28780",
-   "nombre": "Luismi Cruz",
-   "valor": 2619000
-  },
-  {
-   "id": "59484",
-   "nombre": "Marc Bernal",
-   "valor": 10013000
-  },
-  {
-   "id": "14911",
-   "nombre": "Álvaro García",
-   "valor": 7875000
-  },
-  {
-   "id": "20131",
-   "nombre": "Manu Sánchez",
-   "valor": 2193000
-  },
-  {
-   "id": "1034",
-   "nombre": "Juanmi Jiménez",
-   "valor": 162000
-  },
-  {
-   "id": "67942",
-   "nombre": "Íñigo Arguibide",
-   "valor": 1250000
-  },
-  {
-   "id": "15344",
-   "nombre": "Brahim Díaz",
-   "valor": 3779000
-  },
-  {
-   "id": "29403",
-   "nombre": "Pathé Ciss",
-   "valor": 3710000
-  },
-  {
-   "id": "53111",
-   "nombre": "Álvaro Valles",
-   "valor": 8720000
-  },
-  {
-   "id": "70952",
-   "nombre": "Germán Parreño",
-   "valor": 207000
-  },
-  {
-   "id": "70928",
-   "nombre": "Suleiman Camara",
-   "valor": 380000
-  },
-  {
-   "id": "18109",
-   "nombre": "Luis Rioja",
-   "valor": 3411000
-  },
-  {
-   "id": "60888",
-   "nombre": "Roberto Fernández",
-   "valor": 8089000
-  },
-  {
-   "id": "12946",
-   "nombre": "Santi Comesaña",
-   "valor": 6889000
-  },
-  {
-   "id": "52117",
-   "nombre": "Jon Ander Olasagasti",
-   "valor": 3378000
-  },
-  {
-   "id": "56925",
-   "nombre": "Jon Aramburu",
-   "valor": 5135000
-  },
-  {
-   "id": "17452",
-   "nombre": "Éder Militão",
-   "valor": 1802000
-  },
-  {
    "id": "3060",
    "nombre": "Mariano Díaz",
    "valor": 2102000
@@ -466,6 +281,16 @@
    "valor": 160000
   },
   {
+   "id": "59484",
+   "nombre": "Marc Bernal",
+   "valor": 10013000
+  },
+  {
+   "id": "15756",
+   "nombre": "Alejandro Catena",
+   "valor": 8642000
+  },
+  {
    "id": "31",
    "nombre": "Jan Oblak",
    "valor": 10045000
@@ -484,6 +309,11 @@
    "id": "22527",
    "nombre": "Aimar Oroz",
    "valor": 4492000
+  },
+  {
+   "id": "17452",
+   "nombre": "Éder Militão",
+   "valor": 1802000
   },
   {
    "id": "40147",
@@ -544,6 +374,11 @@
    "id": "60227",
    "nombre": "Wojciech Szczęsny",
    "valor": 183000
+  },
+  {
+   "id": "18109",
+   "nombre": "Luis Rioja",
+   "valor": 3411000
   },
   {
    "id": "118",
@@ -656,6 +491,11 @@
    "valor": 3884000
   },
   {
+   "id": "12946",
+   "nombre": "Santi Comesaña",
+   "valor": 6889000
+  },
+  {
    "id": "51060",
    "nombre": "Juan Cruz",
    "valor": 2543000
@@ -664,6 +504,11 @@
    "id": "27517",
    "nombre": "Isi Palazón",
    "valor": 4961000
+  },
+  {
+   "id": "52117",
+   "nombre": "Jon Ander Olasagasti",
+   "valor": 3378000
   },
   {
    "id": "64459",
@@ -711,6 +556,11 @@
    "valor": 9335000
   },
   {
+   "id": "28780",
+   "nombre": "Luismi Cruz",
+   "valor": 2619000
+  },
+  {
    "id": "308",
    "nombre": "Johan Mojica",
    "valor": 2646000
@@ -726,6 +576,16 @@
    "valor": 4078000
   },
   {
+   "id": "64151",
+   "nombre": "Davinchi",
+   "valor": 886000
+  },
+  {
+   "id": "130",
+   "nombre": "Iago Aspas",
+   "valor": 5440000
+  },
+  {
    "id": "71138",
    "nombre": "Ryunosuke Sato",
    "valor": 3623000
@@ -734,6 +594,11 @@
    "id": "56583",
    "nombre": "Augusto Batalla",
    "valor": 5253000
+  },
+  {
+   "id": "53111",
+   "nombre": "Álvaro Valles",
+   "valor": 8720000
   },
   {
    "id": "54900",
@@ -786,6 +651,11 @@
    "valor": 1932000
   },
   {
+   "id": "71038",
+   "nombre": "Justin De Haas",
+   "valor": 2673000
+  },
+  {
    "id": "24792",
    "nombre": "Juan Iglesias",
    "valor": 5829000
@@ -794,6 +664,16 @@
    "id": "52377",
    "nombre": "Jorge Herrando",
    "valor": 567000
+  },
+  {
+   "id": "29403",
+   "nombre": "Pathé Ciss",
+   "valor": 3710000
+  },
+  {
+   "id": "68835",
+   "nombre": "Job Ochieng",
+   "valor": 186000
   },
   {
    "id": "15566",
@@ -841,6 +721,11 @@
    "valor": 3978000
   },
   {
+   "id": "56925",
+   "nombre": "Jon Aramburu",
+   "valor": 5135000
+  },
+  {
    "id": "564",
    "nombre": "Mikel Oyarzabal",
    "valor": 16625000
@@ -874,6 +759,11 @@
    "id": "70999",
    "nombre": "Dani Lorenzo",
    "valor": 4148000
+  },
+  {
+   "id": "19527",
+   "nombre": "Jon Moncayola",
+   "valor": 5004000
   },
   {
    "id": "56971",
@@ -3321,379 +3211,369 @@
    "tipo": "normal",
    "fecha": "2026-08-05 17:00:15",
    "pos": 4
-  },
-  {
-   "id": "17452",
-   "nombre": "Éder Militão",
-   "de": null,
-   "a": "Mario80",
-   "importe": 3217020,
-   "tipo": "normal",
-   "fecha": "2026-08-05 05:00:23",
-   "pos": 2
-  },
-  {
-   "id": "56925",
-   "nombre": "Jon Aramburu",
-   "de": null,
-   "a": "Mario80",
-   "importe": 2595040,
-   "tipo": "normal",
-   "fecha": "2026-08-05 05:00:23",
-   "pos": 2
-  },
-  {
-   "id": "52117",
-   "nombre": "Jon Ander Olasagasti",
-   "de": null,
-   "a": "Neky F.C. (Sergio)",
-   "importe": 1446850,
-   "tipo": "normal",
-   "fecha": "2026-08-05 05:00:23",
-   "pos": 3
-  },
-  {
-   "id": "12946",
-   "nombre": "Santi Comesaña",
-   "de": null,
-   "a": "Neky F.C. (Sergio)",
-   "importe": 8349980,
-   "tipo": "normal",
-   "fecha": "2026-08-05 05:00:23",
-   "pos": 3
-  },
-  {
-   "id": "60888",
-   "nombre": "Roberto Fernández",
-   "de": null,
-   "a": "Neky F.C. (Sergio)",
-   "importe": 4001323,
-   "tipo": "normal",
-   "fecha": "2026-08-05 05:00:23",
-   "pos": 4
-  },
-  {
-   "id": "18109",
-   "nombre": "Luis Rioja",
-   "de": null,
-   "a": "Niutin FC (Isaac)",
-   "importe": 6159290,
-   "tipo": "normal",
-   "fecha": "2026-08-05 05:00:23",
-   "pos": 3
-  },
-  {
-   "id": "70928",
-   "nombre": "Suleiman Camara",
-   "de": "Mario80",
-   "a": null,
-   "importe": 376200,
-   "tipo": "normal",
-   "fecha": "2026-08-04 20:20:45",
-   "pos": 3
-  },
-  {
-   "id": "70952",
-   "nombre": "Germán Parreño",
-   "de": "Neky F.C. (Sergio)",
-   "a": null,
-   "importe": 253760,
-   "tipo": "normal",
-   "fecha": "2026-08-04 19:03:05",
-   "pos": 1
-  },
-  {
-   "id": "53111",
-   "nombre": "Álvaro Valles",
-   "de": null,
-   "a": "Niutin FC (Isaac)",
-   "importe": 5342000,
-   "tipo": "normal",
-   "fecha": "2026-08-04 17:00:10",
-   "pos": 1
-  },
-  {
-   "id": "29403",
-   "nombre": "Pathé Ciss",
-   "de": null,
-   "a": "Niutin FC (Isaac)",
-   "importe": 2701648,
-   "tipo": "normal",
-   "fecha": "2026-08-04 17:00:10",
-   "pos": 3
-  },
-  {
-   "id": "15344",
-   "nombre": "Brahim Díaz",
-   "de": "Niutin FC (Isaac)",
-   "a": null,
-   "importe": 4981320,
-   "tipo": "normal",
-   "fecha": "2026-08-04 10:52:11",
-   "pos": 3
-  },
-  {
-   "id": "67942",
-   "nombre": "Íñigo Arguibide",
-   "de": "Cacaculopedopis",
-   "a": null,
-   "importe": 212000,
-   "tipo": "normal",
-   "fecha": "2026-08-04 08:28:18",
-   "pos": 2
-  },
-  {
-   "id": "1034",
-   "nombre": "Juanmi Jiménez",
-   "de": "Neky F.C. (Sergio)",
-   "a": null,
-   "importe": 187150,
-   "tipo": "normal",
-   "fecha": "2026-08-04 06:52:45",
-   "pos": 4
-  },
-  {
-   "id": "20131",
-   "nombre": "Manu Sánchez",
-   "de": null,
-   "a": "Saiyans FC (Fran)",
-   "importe": 850000,
-   "tipo": "normal",
-   "fecha": "2026-08-04 05:00:20",
-   "pos": 2
-  },
-  {
-   "id": "14911",
-   "nombre": "Álvaro García",
-   "de": null,
-   "a": "Saiyans FC (Fran)",
-   "importe": 5805000,
-   "tipo": "normal",
-   "fecha": "2026-08-04 05:00:20",
-   "pos": 3
-  },
-  {
-   "id": "59484",
-   "nombre": "Marc Bernal",
-   "de": null,
-   "a": "Neky F.C. (Sergio)",
-   "importe": 7577310,
-   "tipo": "normal",
-   "fecha": "2026-08-04 05:00:20",
-   "pos": 3
-  },
-  {
-   "id": "28780",
-   "nombre": "Luismi Cruz",
-   "de": null,
-   "a": "Niutin FC (Isaac)",
-   "importe": 1188370,
-   "tipo": "normal",
-   "fecha": "2026-08-04 05:00:20",
-   "pos": 3
-  },
-  {
-   "id": "27518",
-   "nombre": "Óscar Valentín",
-   "de": null,
-   "a": "Mario80",
-   "importe": 1109020,
-   "tipo": "normal",
-   "fecha": "2026-08-04 05:00:20",
-   "pos": 3
-  },
-  {
-   "id": "68835",
-   "nombre": "Job Ochieng",
-   "de": "Saiyans FC (Fran)",
-   "a": null,
-   "importe": 199500,
-   "tipo": "normal",
-   "fecha": "2026-08-04 00:23:49",
-   "pos": 3
-  },
-  {
-   "id": "60859",
-   "nombre": "Facundo Garcés",
-   "de": "Saiyans FC (Fran)",
-   "a": null,
-   "importe": 158400,
-   "tipo": "normal",
-   "fecha": "2026-08-04 00:23:46",
-   "pos": 2
-  },
-  {
-   "id": "55666",
-   "nombre": "Álvaro Carreras",
-   "de": "Mario80",
-   "a": null,
-   "importe": 5106400,
-   "tipo": "normal",
-   "fecha": "2026-08-03 19:20:42",
-   "pos": 2
-  },
-  {
-   "id": "59088",
-   "nombre": "Willy Kambwala",
-   "de": "Niutin FC (Isaac)",
-   "a": null,
-   "importe": 175350,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:34:38",
-   "pos": 2
-  },
-  {
-   "id": "22668",
-   "nombre": "Lucas Torró",
-   "de": "Niutin FC (Isaac)",
-   "a": null,
-   "importe": 1104160,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:34:21",
-   "pos": 3
-  },
-  {
-   "id": "70997",
-   "nombre": "Aarón Ochoa",
-   "de": "Neky F.C. (Sergio)",
-   "a": null,
-   "importe": 221000,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:02:37",
-   "pos": 3
-  },
-  {
-   "id": "61093",
-   "nombre": "Maroan Sannadi",
-   "de": "Cacaculopedopis",
-   "a": null,
-   "importe": 395200,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:02:35",
-   "pos": 4
-  },
-  {
-   "id": "67580",
-   "nombre": "Samu Becerra",
-   "de": "Neky F.C. (Sergio)",
-   "a": null,
-   "importe": 153600,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:02:34",
-   "pos": 3
-  },
-  {
-   "id": "59581",
-   "nombre": "Luiz Júnior",
-   "de": "Cacaculopedopis",
-   "a": null,
-   "importe": 2042370,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:02:31",
-   "pos": 1
-  },
-  {
-   "id": "52404",
-   "nombre": "Manu Bueno",
-   "de": "Neky F.C. (Sergio)",
-   "a": null,
-   "importe": 195520,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:02:30",
-   "pos": 3
-  },
-  {
-   "id": "63788",
-   "nombre": "Dean Huijsen",
-   "de": "Neky F.C. (Sergio)",
-   "a": null,
-   "importe": 10468500,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:02:27",
-   "pos": 2
-  },
-  {
-   "id": "65476",
-   "nombre": "Clemens Riedel",
-   "de": "Cacaculopedopis",
-   "a": null,
-   "importe": 1061180,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:02:26",
-   "pos": 2
-  },
-  {
-   "id": "48937",
-   "nombre": "Jon Karrikaburu",
-   "de": "Neky F.C. (Sergio)",
-   "a": null,
-   "importe": 187460,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:02:24",
-   "pos": 4
-  },
-  {
-   "id": "58820",
-   "nombre": "Marc Casadó",
-   "de": "Cacaculopedopis",
-   "a": null,
-   "importe": 1076130,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:02:20",
-   "pos": 3
-  },
-  {
-   "id": "64151",
-   "nombre": "Davinchi",
-   "de": null,
-   "a": "Cacaculopedopis",
-   "importe": 914960,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:00:10",
-   "pos": 2
-  },
-  {
-   "id": "130",
-   "nombre": "Iago Aspas",
-   "de": null,
-   "a": "Niutin FC (Isaac)",
-   "importe": 2131720,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:00:10",
-   "pos": 4
-  },
-  {
-   "id": "71038",
-   "nombre": "Justin De Haas",
-   "de": null,
-   "a": "Niutin FC (Isaac)",
-   "importe": 2832890,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:00:10",
-   "pos": 2
-  },
-  {
-   "id": "19527",
-   "nombre": "Jon Moncayola",
-   "de": null,
-   "a": "Niutin FC (Isaac)",
-   "importe": 2314570,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:00:10",
-   "pos": 3
-  },
-  {
-   "id": "15756",
-   "nombre": "Alejandro Catena",
-   "de": null,
-   "a": "Neky F.C. (Sergio)",
-   "importe": 7987616,
-   "tipo": "normal",
-   "fecha": "2026-08-03 17:00:10",
-   "pos": 2
   }
  ],
  "porEquipo": {
+  "Mario80": {
+   "movimientos": [
+    {
+     "j": "Giacomo Quagliata",
+     "id": "70950",
+     "tipo": "compra",
+     "importe": 2919470,
+     "fecha": "2026-09-06",
+     "op": "normal"
+    },
+    {
+     "j": "Asier Villalibre",
+     "id": "4886",
+     "tipo": "venta",
+     "importe": 3787500,
+     "fecha": "2026-09-06",
+     "op": "normal"
+    },
+    {
+     "j": "Bright Ede",
+     "id": "71139",
+     "tipo": "venta",
+     "importe": 1490550,
+     "fecha": "2026-09-06",
+     "op": "normal"
+    },
+    {
+     "j": "Ademola Lookman",
+     "id": "68676",
+     "tipo": "venta",
+     "importe": 11155970,
+     "fecha": "2026-09-02",
+     "op": "normal"
+    },
+    {
+     "j": "Gabriel Jesus",
+     "id": "4764213",
+     "tipo": "compra",
+     "importe": 4437640,
+     "fecha": "2026-09-02",
+     "op": "normal"
+    },
+    {
+     "j": "Jon Aramburu",
+     "id": "56925",
+     "tipo": "venta",
+     "importe": 4861320,
+     "fecha": "2026-08-30",
+     "op": "normal"
+    },
+    {
+     "j": "Mikel Oyarzabal",
+     "id": "564",
+     "tipo": "compra",
+     "importe": 17019470,
+     "fecha": "2026-08-30",
+     "op": "normal"
+    },
+    {
+     "j": "Marc Bartra",
+     "id": "63",
+     "tipo": "compra",
+     "importe": 2697740,
+     "fecha": "2026-08-29",
+     "op": "normal"
+    },
+    {
+     "j": "Mariano Díaz",
+     "id": "3060",
+     "tipo": "venta",
+     "importe": 4686500,
+     "fecha": "2026-08-27",
+     "op": "clause"
+    },
+    {
+     "j": "Johan Mojica",
+     "id": "308",
+     "tipo": "compra",
+     "importe": 1403590,
+     "fecha": "2026-08-20",
+     "op": "normal"
+    },
+    {
+     "j": "Peio Canales",
+     "id": "60218",
+     "tipo": "venta",
+     "importe": 1785050,
+     "fecha": "2026-08-20",
+     "op": "normal"
+    },
+    {
+     "j": "Miguel Loureiro",
+     "id": "70953",
+     "tipo": "venta",
+     "importe": 1775820,
+     "fecha": "2026-08-19",
+     "op": "normal"
+    },
+    {
+     "j": "Fede Redondo",
+     "id": "65136",
+     "tipo": "compra",
+     "importe": 557020,
+     "fecha": "2026-08-18",
+     "op": "normal"
+    },
+    {
+     "j": "Raúl de Tomás",
+     "id": "12902",
+     "tipo": "venta",
+     "importe": 556500,
+     "fecha": "2026-08-16",
+     "op": "normal"
+    },
+    {
+     "j": "Bright Ede",
+     "id": "71139",
+     "tipo": "compra",
+     "importe": 663010,
+     "fecha": "2026-08-15",
+     "op": "normal"
+    },
+    {
+     "j": "Tyrhys Dolan",
+     "id": "64468",
+     "tipo": "compra",
+     "importe": 1653060,
+     "fecha": "2026-08-13",
+     "op": "normal"
+    },
+    {
+     "j": "Carlos Puga",
+     "id": "71004",
+     "tipo": "compra",
+     "importe": 1376110,
+     "fecha": "2026-08-13",
+     "op": "normal"
+    },
+    {
+     "j": "Junior Firpo",
+     "id": "11761",
+     "tipo": "venta",
+     "importe": 548800,
+     "fecha": "2026-08-13",
+     "op": "normal"
+    },
+    {
+     "j": "Éder Militão",
+     "id": "17452",
+     "tipo": "venta",
+     "importe": 3439440,
+     "fecha": "2026-08-11",
+     "op": "normal"
+    },
+    {
+     "j": "Antonio Rüdiger",
+     "id": "40147",
+     "tipo": "venta",
+     "importe": 8980080,
+     "fecha": "2026-08-11",
+     "op": "normal"
+    },
+    {
+     "j": "Miguel Loureiro",
+     "id": "70953",
+     "tipo": "compra",
+     "importe": 1460040,
+     "fecha": "2026-08-09",
+     "op": "normal"
+    },
+    {
+     "j": "Jiri Letacek",
+     "id": "59064",
+     "tipo": "venta",
+     "importe": 263000,
+     "fecha": "2026-08-08",
+     "op": "normal"
+    },
+    {
+     "j": "Álvaro Djaló",
+     "id": "58992",
+     "tipo": "venta",
+     "importe": 274510,
+     "fecha": "2026-08-07",
+     "op": "normal"
+    },
+    {
+     "j": "Ademola Lookman",
+     "id": "68676",
+     "tipo": "compra",
+     "importe": 10837160,
+     "fecha": "2026-08-07",
+     "op": "normal"
+    },
+    {
+     "j": "Antony Santos",
+     "id": "61013",
+     "tipo": "compra",
+     "importe": 14976070,
+     "fecha": "2026-08-06",
+     "op": "normal"
+    },
+    {
+     "j": "Mariano Díaz",
+     "id": "3060",
+     "tipo": "compra",
+     "importe": 302050,
+     "fecha": "2026-08-05",
+     "op": "normal"
+    },
+    {
+     "j": "Rafa Bauza",
+     "id": "60271",
+     "tipo": "venta",
+     "importe": 153600,
+     "fecha": "2026-08-05",
+     "op": "normal"
+    }
+   ],
+   "porJugador": {
+    "63": {
+     "nombre": "Marc Bartra",
+     "compras": 2697740,
+     "ventas": 0,
+     "ops": 1
+    },
+    "308": {
+     "nombre": "Johan Mojica",
+     "compras": 1403590,
+     "ventas": 0,
+     "ops": 1
+    },
+    "564": {
+     "nombre": "Mikel Oyarzabal",
+     "compras": 17019470,
+     "ventas": 0,
+     "ops": 1
+    },
+    "3060": {
+     "nombre": "Mariano Díaz",
+     "compras": 302050,
+     "ventas": 4686500,
+     "ops": 2
+    },
+    "4886": {
+     "nombre": "Asier Villalibre",
+     "compras": 0,
+     "ventas": 3787500,
+     "ops": 1
+    },
+    "11761": {
+     "nombre": "Junior Firpo",
+     "compras": 0,
+     "ventas": 548800,
+     "ops": 1
+    },
+    "12902": {
+     "nombre": "Raúl de Tomás",
+     "compras": 0,
+     "ventas": 556500,
+     "ops": 1
+    },
+    "17452": {
+     "nombre": "Éder Militão",
+     "compras": 0,
+     "ventas": 3439440,
+     "ops": 1
+    },
+    "40147": {
+     "nombre": "Antonio Rüdiger",
+     "compras": 0,
+     "ventas": 8980080,
+     "ops": 1
+    },
+    "56925": {
+     "nombre": "Jon Aramburu",
+     "compras": 0,
+     "ventas": 4861320,
+     "ops": 1
+    },
+    "58992": {
+     "nombre": "Álvaro Djaló",
+     "compras": 0,
+     "ventas": 274510,
+     "ops": 1
+    },
+    "59064": {
+     "nombre": "Jiri Letacek",
+     "compras": 0,
+     "ventas": 263000,
+     "ops": 1
+    },
+    "60218": {
+     "nombre": "Peio Canales",
+     "compras": 0,
+     "ventas": 1785050,
+     "ops": 1
+    },
+    "60271": {
+     "nombre": "Rafa Bauza",
+     "compras": 0,
+     "ventas": 153600,
+     "ops": 1
+    },
+    "61013": {
+     "nombre": "Antony Santos",
+     "compras": 14976070,
+     "ventas": 0,
+     "ops": 1
+    },
+    "64468": {
+     "nombre": "Tyrhys Dolan",
+     "compras": 1653060,
+     "ventas": 0,
+     "ops": 1
+    },
+    "65136": {
+     "nombre": "Fede Redondo",
+     "compras": 557020,
+     "ventas": 0,
+     "ops": 1
+    },
+    "68676": {
+     "nombre": "Ademola Lookman",
+     "compras": 10837160,
+     "ventas": 11155970,
+     "ops": 2
+    },
+    "70950": {
+     "nombre": "Giacomo Quagliata",
+     "compras": 2919470,
+     "ventas": 0,
+     "ops": 1
+    },
+    "70953": {
+     "nombre": "Miguel Loureiro",
+     "compras": 1460040,
+     "ventas": 1775820,
+     "ops": 2
+    },
+    "71004": {
+     "nombre": "Carlos Puga",
+     "compras": 1376110,
+     "ventas": 0,
+     "ops": 1
+    },
+    "71139": {
+     "nombre": "Bright Ede",
+     "compras": 663010,
+     "ventas": 1490550,
+     "ops": 2
+    },
+    "4764213": {
+     "nombre": "Gabriel Jesus",
+     "compras": 4437640,
+     "ventas": 0,
+     "ops": 1
+    }
+   }
+  },
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
@@ -4097,30 +3977,6 @@
      "op": "normal"
     },
     {
-     "j": "Roberto Fernández",
-     "id": "60888",
-     "tipo": "compra",
-     "importe": 4001323,
-     "fecha": "2026-08-05",
-     "op": "normal"
-    },
-    {
-     "j": "Santi Comesaña",
-     "id": "12946",
-     "tipo": "compra",
-     "importe": 8349980,
-     "fecha": "2026-08-05",
-     "op": "normal"
-    },
-    {
-     "j": "Jon Ander Olasagasti",
-     "id": "52117",
-     "tipo": "compra",
-     "importe": 1446850,
-     "fecha": "2026-08-05",
-     "op": "normal"
-    },
-    {
      "j": "Iñigo Vicente",
      "id": "22604",
      "tipo": "compra",
@@ -4135,78 +3991,6 @@
      "importe": 1303000,
      "fecha": "2026-08-05",
      "op": "normal"
-    },
-    {
-     "j": "Marc Bernal",
-     "id": "59484",
-     "tipo": "compra",
-     "importe": 7577310,
-     "fecha": "2026-08-04",
-     "op": "normal"
-    },
-    {
-     "j": "Juanmi Jiménez",
-     "id": "1034",
-     "tipo": "venta",
-     "importe": 187150,
-     "fecha": "2026-08-04",
-     "op": "normal"
-    },
-    {
-     "j": "Germán Parreño",
-     "id": "70952",
-     "tipo": "venta",
-     "importe": 253760,
-     "fecha": "2026-08-04",
-     "op": "normal"
-    },
-    {
-     "j": "Alejandro Catena",
-     "id": "15756",
-     "tipo": "compra",
-     "importe": 7987616,
-     "fecha": "2026-08-03",
-     "op": "normal"
-    },
-    {
-     "j": "Jon Karrikaburu",
-     "id": "48937",
-     "tipo": "venta",
-     "importe": 187460,
-     "fecha": "2026-08-03",
-     "op": "normal"
-    },
-    {
-     "j": "Dean Huijsen",
-     "id": "63788",
-     "tipo": "venta",
-     "importe": 10468500,
-     "fecha": "2026-08-03",
-     "op": "normal"
-    },
-    {
-     "j": "Manu Bueno",
-     "id": "52404",
-     "tipo": "venta",
-     "importe": 195520,
-     "fecha": "2026-08-03",
-     "op": "normal"
-    },
-    {
-     "j": "Samu Becerra",
-     "id": "67580",
-     "tipo": "venta",
-     "importe": 153600,
-     "fecha": "2026-08-03",
-     "op": "normal"
-    },
-    {
-     "j": "Aarón Ochoa",
-     "id": "70997",
-     "tipo": "venta",
-     "importe": 221000,
-     "fecha": "2026-08-03",
-     "op": "normal"
     }
    ],
    "porJugador": {
@@ -4214,12 +3998,6 @@
      "nombre": "Jan Oblak",
      "compras": 6850000,
      "ventas": 0,
-     "ops": 1
-    },
-    "1034": {
-     "nombre": "Juanmi Jiménez",
-     "compras": 0,
-     "ventas": 187150,
      "ops": 1
     },
     "8953": {
@@ -4230,9 +4008,9 @@
     },
     "12946": {
      "nombre": "Santi Comesaña",
-     "compras": 8349980,
+     "compras": 0,
      "ventas": 9845040,
-     "ops": 2
+     "ops": 1
     },
     "15566": {
      "nombre": "Yangel Herrera",
@@ -4248,9 +4026,9 @@
     },
     "15756": {
      "nombre": "Alejandro Catena",
-     "compras": 7987616,
+     "compras": 0,
      "ventas": 8896650,
-     "ops": 2
+     "ops": 1
     },
     "19562": {
      "nombre": "Takefusa Kubo",
@@ -4300,12 +4078,6 @@
      "ventas": 0,
      "ops": 1
     },
-    "48937": {
-     "nombre": "Jon Karrikaburu",
-     "compras": 0,
-     "ventas": 187460,
-     "ops": 1
-    },
     "51060": {
      "nombre": "Juan Cruz",
      "compras": 2429000,
@@ -4314,15 +4086,9 @@
     },
     "52117": {
      "nombre": "Jon Ander Olasagasti",
-     "compras": 3935850,
+     "compras": 2489000,
      "ventas": 2375360,
-     "ops": 3
-    },
-    "52404": {
-     "nombre": "Manu Bueno",
-     "compras": 0,
-     "ventas": 195520,
-     "ops": 1
+     "ops": 2
     },
     "54900": {
      "nombre": "Carlos Dotor",
@@ -4356,9 +4122,9 @@
     },
     "59484": {
      "nombre": "Marc Bernal",
-     "compras": 7577310,
+     "compras": 0,
      "ventas": 8742300,
-     "ops": 2
+     "ops": 1
     },
     "59499": {
      "nombre": "Natan Souza",
@@ -4384,18 +4150,6 @@
      "ventas": 7455140,
      "ops": 1
     },
-    "60888": {
-     "nombre": "Roberto Fernández",
-     "compras": 4001323,
-     "ventas": 0,
-     "ops": 1
-    },
-    "63788": {
-     "nombre": "Dean Huijsen",
-     "compras": 0,
-     "ventas": 10468500,
-     "ops": 1
-    },
     "63866": {
      "nombre": "Álvaro Núñez",
      "compras": 0,
@@ -4418,12 +4172,6 @@
      "nombre": "Javi Hernandez",
      "compras": 1054500,
      "ventas": 0,
-     "ops": 1
-    },
-    "67580": {
-     "nombre": "Samu Becerra",
-     "compras": 0,
-     "ventas": 153600,
      "ops": 1
     },
     "68495": {
@@ -4456,23 +4204,11 @@
      "ventas": 312900,
      "ops": 1
     },
-    "70952": {
-     "nombre": "Germán Parreño",
-     "compras": 0,
-     "ventas": 253760,
-     "ops": 1
-    },
     "70996": {
      "nombre": "David Larrubia",
      "compras": 4128810,
      "ventas": 5651100,
      "ops": 2
-    },
-    "70997": {
-     "nombre": "Aarón Ochoa",
-     "compras": 0,
-     "ventas": 221000,
-     "ops": 1
     },
     "71132": {
      "nombre": "Facundo Bernal",
@@ -4483,6 +4219,620 @@
     "71616": {
      "nombre": "Yassir Zabiri",
      "compras": 2940142,
+     "ventas": 0,
+     "ops": 1
+    }
+   }
+  },
+  "Saiyans FC (Fran)": {
+   "movimientos": [
+    {
+     "j": "Adama Traoré",
+     "id": "36334",
+     "tipo": "compra",
+     "importe": 3500000,
+     "fecha": "2026-09-03",
+     "op": "normal"
+    },
+    {
+     "j": "Lorenzo Amatucci",
+     "id": "71154",
+     "tipo": "compra",
+     "importe": 6500000,
+     "fecha": "2026-09-03",
+     "op": "normal"
+    },
+    {
+     "j": "Marc Roca",
+     "id": "3728",
+     "tipo": "venta",
+     "importe": 5489000,
+     "fecha": "2026-09-03",
+     "op": "normal"
+    },
+    {
+     "j": "Ayoze Pérez",
+     "id": "52189",
+     "tipo": "venta",
+     "importe": 5625900,
+     "fecha": "2026-09-03",
+     "op": "normal"
+    },
+    {
+     "j": "Rubén García",
+     "id": "270",
+     "tipo": "venta",
+     "importe": 5280000,
+     "fecha": "2026-09-02",
+     "op": "normal"
+    },
+    {
+     "j": "Arnaut Danjuma",
+     "id": "31226",
+     "tipo": "venta",
+     "importe": 3149180,
+     "fecha": "2026-09-02",
+     "op": "normal"
+    },
+    {
+     "j": "Arda Güler",
+     "id": "54817",
+     "tipo": "compra",
+     "importe": 13110000,
+     "fecha": "2026-09-01",
+     "op": "normal"
+    },
+    {
+     "j": "Péter Gulácsi",
+     "id": "71649",
+     "tipo": "venta",
+     "importe": 1093860,
+     "fecha": "2026-09-01",
+     "op": "normal"
+    },
+    {
+     "j": "Pere Milla",
+     "id": "6065",
+     "tipo": "venta",
+     "importe": 3238000,
+     "fecha": "2026-08-30",
+     "op": "normal"
+    },
+    {
+     "j": "Gorka Guruzeta",
+     "id": "14791",
+     "tipo": "venta",
+     "importe": 6934000,
+     "fecha": "2026-08-28",
+     "op": "normal"
+    },
+    {
+     "j": "Hugo González",
+     "id": "55439",
+     "tipo": "venta",
+     "importe": 963340,
+     "fecha": "2026-08-28",
+     "op": "normal"
+    },
+    {
+     "j": "Anthony Gordon",
+     "id": "70638",
+     "tipo": "compra",
+     "importe": 14500000,
+     "fecha": "2026-08-28",
+     "op": "normal"
+    },
+    {
+     "j": "Angeliño",
+     "id": "71795",
+     "tipo": "compra",
+     "importe": 2300000,
+     "fecha": "2026-08-28",
+     "op": "normal"
+    },
+    {
+     "j": "Oihan Sancet",
+     "id": "14789",
+     "tipo": "venta",
+     "importe": 6642240,
+     "fecha": "2026-08-28",
+     "op": "normal"
+    },
+    {
+     "j": "Diego Rico",
+     "id": "3117",
+     "tipo": "venta",
+     "importe": 704550,
+     "fecha": "2026-08-28",
+     "op": "normal"
+    },
+    {
+     "j": "Pierre-Emerick Aubameyang",
+     "id": "36410",
+     "tipo": "venta",
+     "importe": 6171000,
+     "fecha": "2026-08-26",
+     "op": "clause"
+    },
+    {
+     "j": "Borja Mayoral",
+     "id": "607",
+     "tipo": "compra",
+     "importe": 2110000,
+     "fecha": "2026-08-24",
+     "op": "normal"
+    },
+    {
+     "j": "Alex Baena",
+     "id": "22502",
+     "tipo": "compra",
+     "importe": 11100000,
+     "fecha": "2026-08-24",
+     "op": "normal"
+    },
+    {
+     "j": "Antonio Sivera",
+     "id": "7893",
+     "tipo": "venta",
+     "importe": 8458320,
+     "fecha": "2026-08-20",
+     "op": "normal"
+    },
+    {
+     "j": "Dávid Hancko",
+     "id": "64459",
+     "tipo": "venta",
+     "importe": 6686160,
+     "fecha": "2026-08-19",
+     "op": "normal"
+    },
+    {
+     "j": "Diego Rico",
+     "id": "3117",
+     "tipo": "compra",
+     "importe": 500000,
+     "fecha": "2026-08-19",
+     "op": "normal"
+    },
+    {
+     "j": "Pierre-Emerick Aubameyang",
+     "id": "36410",
+     "tipo": "compra",
+     "importe": 4029000,
+     "fecha": "2026-08-18",
+     "op": "clause"
+    },
+    {
+     "j": "Enes Ünal",
+     "id": "6044",
+     "tipo": "compra",
+     "importe": 2100000,
+     "fecha": "2026-08-18",
+     "op": "normal"
+    },
+    {
+     "j": "Omar El Hilali",
+     "id": "29163",
+     "tipo": "compra",
+     "importe": 2227000,
+     "fecha": "2026-08-17",
+     "op": "normal"
+    },
+    {
+     "j": "Julen Agirrezabala",
+     "id": "28774",
+     "tipo": "compra",
+     "importe": 2500000,
+     "fecha": "2026-08-15",
+     "op": "normal"
+    },
+    {
+     "j": "Péter Gulácsi",
+     "id": "71649",
+     "tipo": "compra",
+     "importe": 1200000,
+     "fecha": "2026-08-15",
+     "op": "normal"
+    },
+    {
+     "j": "Filip Ugrinic",
+     "id": "65090",
+     "tipo": "venta",
+     "importe": 1059000,
+     "fecha": "2026-08-15",
+     "op": "normal"
+    },
+    {
+     "j": "Igor Zubeldia",
+     "id": "5917",
+     "tipo": "venta",
+     "importe": 1493400,
+     "fecha": "2026-08-15",
+     "op": "normal"
+    },
+    {
+     "j": "Urko González",
+     "id": "23172",
+     "tipo": "venta",
+     "importe": 1679040,
+     "fecha": "2026-08-15",
+     "op": "normal"
+    },
+    {
+     "j": "Pedro Bigas",
+     "id": "239",
+     "tipo": "venta",
+     "importe": 1725840,
+     "fecha": "2026-08-14",
+     "op": "normal"
+    },
+    {
+     "j": "Antonio Sivera",
+     "id": "7893",
+     "tipo": "compra",
+     "importe": 7730000,
+     "fecha": "2026-08-13",
+     "op": "normal"
+    },
+    {
+     "j": "Hugo Duro",
+     "id": "11866",
+     "tipo": "venta",
+     "importe": 5948800,
+     "fecha": "2026-08-13",
+     "op": "normal"
+    },
+    {
+     "j": "Wojciech Szczęsny",
+     "id": "60227",
+     "tipo": "venta",
+     "importe": 589560,
+     "fecha": "2026-08-13",
+     "op": "normal"
+    },
+    {
+     "j": "Valentin Rosier",
+     "id": "58980",
+     "tipo": "venta",
+     "importe": 3946460,
+     "fecha": "2026-08-11",
+     "op": "normal"
+    },
+    {
+     "j": "Marc Roca",
+     "id": "3728",
+     "tipo": "compra",
+     "importe": 3250000,
+     "fecha": "2026-08-10",
+     "op": "normal"
+    },
+    {
+     "j": "Iván Villar",
+     "id": "6035",
+     "tipo": "venta",
+     "importe": 372690,
+     "fecha": "2026-08-10",
+     "op": "normal"
+    },
+    {
+     "j": "Pere Milla",
+     "id": "6065",
+     "tipo": "compra",
+     "importe": 2946000,
+     "fecha": "2026-08-10",
+     "op": "clause"
+    },
+    {
+     "j": "Martim Neto",
+     "id": "64524",
+     "tipo": "venta",
+     "importe": 767350,
+     "fecha": "2026-08-09",
+     "op": "normal"
+    },
+    {
+     "j": "Rubén García",
+     "id": "270",
+     "tipo": "compra",
+     "importe": 3200000,
+     "fecha": "2026-08-09",
+     "op": "normal"
+    },
+    {
+     "j": "Ayoze Pérez",
+     "id": "52189",
+     "tipo": "compra",
+     "importe": 3200000,
+     "fecha": "2026-08-08",
+     "op": "normal"
+    },
+    {
+     "j": "Pablo Ibáñez",
+     "id": "29169",
+     "tipo": "compra",
+     "importe": 1400000,
+     "fecha": "2026-08-06",
+     "op": "normal"
+    },
+    {
+     "j": "Hugo González",
+     "id": "55439",
+     "tipo": "compra",
+     "importe": 400000,
+     "fecha": "2026-08-06",
+     "op": "normal"
+    },
+    {
+     "j": "Juanpe Jiménez",
+     "id": "71001",
+     "tipo": "venta",
+     "importe": 200550,
+     "fecha": "2026-08-06",
+     "op": "normal"
+    },
+    {
+     "j": "Oihan Sancet",
+     "id": "14789",
+     "tipo": "compra",
+     "importe": 5601000,
+     "fecha": "2026-08-06",
+     "op": "normal"
+    },
+    {
+     "j": "Pedro Bigas",
+     "id": "239",
+     "tipo": "compra",
+     "importe": 1301000,
+     "fecha": "2026-08-05",
+     "op": "normal"
+    },
+    {
+     "j": "Igor Zubeldia",
+     "id": "5917",
+     "tipo": "compra",
+     "importe": 1195000,
+     "fecha": "2026-08-05",
+     "op": "normal"
+    },
+    {
+     "j": "Hugo Duro",
+     "id": "11866",
+     "tipo": "compra",
+     "importe": 5505000,
+     "fecha": "2026-08-05",
+     "op": "normal"
+    },
+    {
+     "j": "Rafa Mir",
+     "id": "22591",
+     "tipo": "venta",
+     "importe": 1261260,
+     "fecha": "2026-08-05",
+     "op": "normal"
+    },
+    {
+     "j": "Iker Luque",
+     "id": "70255",
+     "tipo": "venta",
+     "importe": 231800,
+     "fecha": "2026-08-05",
+     "op": "normal"
+    }
+   ],
+   "porJugador": {
+    "239": {
+     "nombre": "Pedro Bigas",
+     "compras": 1301000,
+     "ventas": 1725840,
+     "ops": 2
+    },
+    "270": {
+     "nombre": "Rubén García",
+     "compras": 3200000,
+     "ventas": 5280000,
+     "ops": 2
+    },
+    "607": {
+     "nombre": "Borja Mayoral",
+     "compras": 2110000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "3117": {
+     "nombre": "Diego Rico",
+     "compras": 500000,
+     "ventas": 704550,
+     "ops": 2
+    },
+    "3728": {
+     "nombre": "Marc Roca",
+     "compras": 3250000,
+     "ventas": 5489000,
+     "ops": 2
+    },
+    "5917": {
+     "nombre": "Igor Zubeldia",
+     "compras": 1195000,
+     "ventas": 1493400,
+     "ops": 2
+    },
+    "6035": {
+     "nombre": "Iván Villar",
+     "compras": 0,
+     "ventas": 372690,
+     "ops": 1
+    },
+    "6044": {
+     "nombre": "Enes Ünal",
+     "compras": 2100000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "6065": {
+     "nombre": "Pere Milla",
+     "compras": 2946000,
+     "ventas": 3238000,
+     "ops": 2
+    },
+    "7893": {
+     "nombre": "Antonio Sivera",
+     "compras": 7730000,
+     "ventas": 8458320,
+     "ops": 2
+    },
+    "11866": {
+     "nombre": "Hugo Duro",
+     "compras": 5505000,
+     "ventas": 5948800,
+     "ops": 2
+    },
+    "14789": {
+     "nombre": "Oihan Sancet",
+     "compras": 5601000,
+     "ventas": 6642240,
+     "ops": 2
+    },
+    "14791": {
+     "nombre": "Gorka Guruzeta",
+     "compras": 0,
+     "ventas": 6934000,
+     "ops": 1
+    },
+    "22502": {
+     "nombre": "Alex Baena",
+     "compras": 11100000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "22591": {
+     "nombre": "Rafa Mir",
+     "compras": 0,
+     "ventas": 1261260,
+     "ops": 1
+    },
+    "23172": {
+     "nombre": "Urko González",
+     "compras": 0,
+     "ventas": 1679040,
+     "ops": 1
+    },
+    "28774": {
+     "nombre": "Julen Agirrezabala",
+     "compras": 2500000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "29163": {
+     "nombre": "Omar El Hilali",
+     "compras": 2227000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "29169": {
+     "nombre": "Pablo Ibáñez",
+     "compras": 1400000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "31226": {
+     "nombre": "Arnaut Danjuma",
+     "compras": 0,
+     "ventas": 3149180,
+     "ops": 1
+    },
+    "36334": {
+     "nombre": "Adama Traoré",
+     "compras": 3500000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "36410": {
+     "nombre": "Pierre-Emerick Aubameyang",
+     "compras": 4029000,
+     "ventas": 6171000,
+     "ops": 2
+    },
+    "52189": {
+     "nombre": "Ayoze Pérez",
+     "compras": 3200000,
+     "ventas": 5625900,
+     "ops": 2
+    },
+    "54817": {
+     "nombre": "Arda Güler",
+     "compras": 13110000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "55439": {
+     "nombre": "Hugo González",
+     "compras": 400000,
+     "ventas": 963340,
+     "ops": 2
+    },
+    "58980": {
+     "nombre": "Valentin Rosier",
+     "compras": 0,
+     "ventas": 3946460,
+     "ops": 1
+    },
+    "60227": {
+     "nombre": "Wojciech Szczęsny",
+     "compras": 0,
+     "ventas": 589560,
+     "ops": 1
+    },
+    "64459": {
+     "nombre": "Dávid Hancko",
+     "compras": 0,
+     "ventas": 6686160,
+     "ops": 1
+    },
+    "64524": {
+     "nombre": "Martim Neto",
+     "compras": 0,
+     "ventas": 767350,
+     "ops": 1
+    },
+    "65090": {
+     "nombre": "Filip Ugrinic",
+     "compras": 0,
+     "ventas": 1059000,
+     "ops": 1
+    },
+    "70255": {
+     "nombre": "Iker Luque",
+     "compras": 0,
+     "ventas": 231800,
+     "ops": 1
+    },
+    "70638": {
+     "nombre": "Anthony Gordon",
+     "compras": 14500000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "71001": {
+     "nombre": "Juanpe Jiménez",
+     "compras": 0,
+     "ventas": 200550,
+     "ops": 1
+    },
+    "71154": {
+     "nombre": "Lorenzo Amatucci",
+     "compras": 6500000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "71649": {
+     "nombre": "Péter Gulácsi",
+     "compras": 1200000,
+     "ventas": 1093860,
+     "ops": 2
+    },
+    "71795": {
+     "nombre": "Angeliño",
+     "compras": 2300000,
      "ventas": 0,
      "ops": 1
     }
@@ -4939,14 +5289,6 @@
      "op": "normal"
     },
     {
-     "j": "Luis Rioja",
-     "id": "18109",
-     "tipo": "compra",
-     "importe": 6159290,
-     "fecha": "2026-08-05",
-     "op": "normal"
-    },
-    {
      "j": "John Donald",
      "id": "24860",
      "tipo": "venta",
@@ -4969,78 +5311,6 @@
      "importe": 1789840,
      "fecha": "2026-08-05",
      "op": "normal"
-    },
-    {
-     "j": "Luismi Cruz",
-     "id": "28780",
-     "tipo": "compra",
-     "importe": 1188370,
-     "fecha": "2026-08-04",
-     "op": "normal"
-    },
-    {
-     "j": "Brahim Díaz",
-     "id": "15344",
-     "tipo": "venta",
-     "importe": 4981320,
-     "fecha": "2026-08-04",
-     "op": "normal"
-    },
-    {
-     "j": "Pathé Ciss",
-     "id": "29403",
-     "tipo": "compra",
-     "importe": 2701648,
-     "fecha": "2026-08-04",
-     "op": "normal"
-    },
-    {
-     "j": "Álvaro Valles",
-     "id": "53111",
-     "tipo": "compra",
-     "importe": 5342000,
-     "fecha": "2026-08-04",
-     "op": "normal"
-    },
-    {
-     "j": "Jon Moncayola",
-     "id": "19527",
-     "tipo": "compra",
-     "importe": 2314570,
-     "fecha": "2026-08-03",
-     "op": "normal"
-    },
-    {
-     "j": "Justin De Haas",
-     "id": "71038",
-     "tipo": "compra",
-     "importe": 2832890,
-     "fecha": "2026-08-03",
-     "op": "normal"
-    },
-    {
-     "j": "Iago Aspas",
-     "id": "130",
-     "tipo": "compra",
-     "importe": 2131720,
-     "fecha": "2026-08-03",
-     "op": "normal"
-    },
-    {
-     "j": "Lucas Torró",
-     "id": "22668",
-     "tipo": "venta",
-     "importe": 1104160,
-     "fecha": "2026-08-03",
-     "op": "normal"
-    },
-    {
-     "j": "Willy Kambwala",
-     "id": "59088",
-     "tipo": "venta",
-     "importe": 175350,
-     "fecha": "2026-08-03",
-     "op": "normal"
     }
    ],
    "porJugador": {
@@ -5058,9 +5328,9 @@
     },
     "130": {
      "nombre": "Iago Aspas",
-     "compras": 2131720,
+     "compras": 0,
      "ventas": 3915450,
-     "ops": 2
+     "ops": 1
     },
     "364": {
      "nombre": "Sergio Canales",
@@ -5074,23 +5344,17 @@
      "ventas": 0,
      "ops": 1
     },
-    "15344": {
-     "nombre": "Brahim Díaz",
-     "compras": 0,
-     "ventas": 4981320,
-     "ops": 1
-    },
     "18109": {
      "nombre": "Luis Rioja",
-     "compras": 6159290,
+     "compras": 0,
      "ventas": 5467280,
-     "ops": 2
+     "ops": 1
     },
     "19527": {
      "nombre": "Jon Moncayola",
-     "compras": 2314570,
+     "compras": 0,
      "ventas": 5107000,
-     "ops": 2
+     "ops": 1
     },
     "20449": {
      "nombre": "Fer Niño",
@@ -5103,12 +5367,6 @@
      "compras": 4764360,
      "ventas": 5403960,
      "ops": 2
-    },
-    "22668": {
-     "nombre": "Lucas Torró",
-     "compras": 0,
-     "ventas": 1104160,
-     "ops": 1
     },
     "23369": {
      "nombre": "Juan Foyth",
@@ -5166,9 +5424,9 @@
     },
     "28780": {
      "nombre": "Luismi Cruz",
-     "compras": 1188370,
+     "compras": 0,
      "ventas": 1816000,
-     "ops": 2
+     "ops": 1
     },
     "29223": {
      "nombre": "Mario Soriano",
@@ -5184,9 +5442,9 @@
     },
     "29403": {
      "nombre": "Pathé Ciss",
-     "compras": 2701648,
+     "compras": 0,
      "ventas": 4811040,
-     "ops": 2
+     "ops": 1
     },
     "36410": {
      "nombre": "Pierre-Emerick Aubameyang",
@@ -5208,9 +5466,9 @@
     },
     "53111": {
      "nombre": "Álvaro Valles",
-     "compras": 13155750,
+     "compras": 7813750,
      "ventas": 6910050,
-     "ops": 3
+     "ops": 2
     },
     "55057": {
      "nombre": "Djibril Sow",
@@ -5228,12 +5486,6 @@
      "nombre": "Hector Fort",
      "compras": 878010,
      "ventas": 0,
-     "ops": 1
-    },
-    "59088": {
-     "nombre": "Willy Kambwala",
-     "compras": 0,
-     "ventas": 175350,
      "ops": 1
     },
     "59395": {
@@ -5316,9 +5568,9 @@
     },
     "71038": {
      "nombre": "Justin De Haas",
-     "compras": 2832890,
+     "compras": 0,
      "ventas": 4831000,
-     "ops": 2
+     "ops": 1
     },
     "71138": {
      "nombre": "Ryunosuke Sato",
@@ -5749,54 +6001,6 @@
      "importe": 5739051,
      "fecha": "2026-08-06",
      "op": "normal"
-    },
-    {
-     "j": "Íñigo Arguibide",
-     "id": "67942",
-     "tipo": "venta",
-     "importe": 212000,
-     "fecha": "2026-08-04",
-     "op": "normal"
-    },
-    {
-     "j": "Davinchi",
-     "id": "64151",
-     "tipo": "compra",
-     "importe": 914960,
-     "fecha": "2026-08-03",
-     "op": "normal"
-    },
-    {
-     "j": "Marc Casadó",
-     "id": "58820",
-     "tipo": "venta",
-     "importe": 1076130,
-     "fecha": "2026-08-03",
-     "op": "normal"
-    },
-    {
-     "j": "Clemens Riedel",
-     "id": "65476",
-     "tipo": "venta",
-     "importe": 1061180,
-     "fecha": "2026-08-03",
-     "op": "normal"
-    },
-    {
-     "j": "Luiz Júnior",
-     "id": "59581",
-     "tipo": "venta",
-     "importe": 2042370,
-     "fecha": "2026-08-03",
-     "op": "normal"
-    },
-    {
-     "j": "Maroan Sannadi",
-     "id": "61093",
-     "tipo": "venta",
-     "importe": 395200,
-     "fecha": "2026-08-03",
-     "op": "normal"
     }
    ],
    "porJugador": {
@@ -5914,23 +6118,11 @@
      "ventas": 7666910,
      "ops": 1
     },
-    "58820": {
-     "nombre": "Marc Casadó",
-     "compras": 0,
-     "ventas": 1076130,
-     "ops": 1
-    },
     "59395": {
      "nombre": "Pedro Díaz",
      "compras": 1204000,
      "ventas": 1103000,
      "ops": 2
-    },
-    "59581": {
-     "nombre": "Luiz Júnior",
-     "compras": 0,
-     "ventas": 2042370,
-     "ops": 1
     },
     "59789": {
      "nombre": "Orri Óskarsson",
@@ -5944,28 +6136,10 @@
      "ventas": 638520,
      "ops": 2
     },
-    "61093": {
-     "nombre": "Maroan Sannadi",
-     "compras": 0,
-     "ventas": 395200,
-     "ops": 1
-    },
     "64151": {
      "nombre": "Davinchi",
-     "compras": 914960,
+     "compras": 0,
      "ventas": 1605760,
-     "ops": 2
-    },
-    "65476": {
-     "nombre": "Clemens Riedel",
-     "compras": 0,
-     "ventas": 1061180,
-     "ops": 1
-    },
-    "67942": {
-     "nombre": "Íñigo Arguibide",
-     "compras": 0,
-     "ventas": 212000,
      "ops": 1
     },
     "68259": {
@@ -6049,1094 +6223,6 @@
     "71623": {
      "nombre": "Roger Hinojo",
      "compras": 937200,
-     "ventas": 0,
-     "ops": 1
-    }
-   }
-  },
-  "Mario80": {
-   "movimientos": [
-    {
-     "j": "Giacomo Quagliata",
-     "id": "70950",
-     "tipo": "compra",
-     "importe": 2919470,
-     "fecha": "2026-09-06",
-     "op": "normal"
-    },
-    {
-     "j": "Asier Villalibre",
-     "id": "4886",
-     "tipo": "venta",
-     "importe": 3787500,
-     "fecha": "2026-09-06",
-     "op": "normal"
-    },
-    {
-     "j": "Bright Ede",
-     "id": "71139",
-     "tipo": "venta",
-     "importe": 1490550,
-     "fecha": "2026-09-06",
-     "op": "normal"
-    },
-    {
-     "j": "Ademola Lookman",
-     "id": "68676",
-     "tipo": "venta",
-     "importe": 11155970,
-     "fecha": "2026-09-02",
-     "op": "normal"
-    },
-    {
-     "j": "Gabriel Jesus",
-     "id": "4764213",
-     "tipo": "compra",
-     "importe": 4437640,
-     "fecha": "2026-09-02",
-     "op": "normal"
-    },
-    {
-     "j": "Jon Aramburu",
-     "id": "56925",
-     "tipo": "venta",
-     "importe": 4861320,
-     "fecha": "2026-08-30",
-     "op": "normal"
-    },
-    {
-     "j": "Mikel Oyarzabal",
-     "id": "564",
-     "tipo": "compra",
-     "importe": 17019470,
-     "fecha": "2026-08-30",
-     "op": "normal"
-    },
-    {
-     "j": "Marc Bartra",
-     "id": "63",
-     "tipo": "compra",
-     "importe": 2697740,
-     "fecha": "2026-08-29",
-     "op": "normal"
-    },
-    {
-     "j": "Mariano Díaz",
-     "id": "3060",
-     "tipo": "venta",
-     "importe": 4686500,
-     "fecha": "2026-08-27",
-     "op": "clause"
-    },
-    {
-     "j": "Johan Mojica",
-     "id": "308",
-     "tipo": "compra",
-     "importe": 1403590,
-     "fecha": "2026-08-20",
-     "op": "normal"
-    },
-    {
-     "j": "Peio Canales",
-     "id": "60218",
-     "tipo": "venta",
-     "importe": 1785050,
-     "fecha": "2026-08-20",
-     "op": "normal"
-    },
-    {
-     "j": "Miguel Loureiro",
-     "id": "70953",
-     "tipo": "venta",
-     "importe": 1775820,
-     "fecha": "2026-08-19",
-     "op": "normal"
-    },
-    {
-     "j": "Fede Redondo",
-     "id": "65136",
-     "tipo": "compra",
-     "importe": 557020,
-     "fecha": "2026-08-18",
-     "op": "normal"
-    },
-    {
-     "j": "Raúl de Tomás",
-     "id": "12902",
-     "tipo": "venta",
-     "importe": 556500,
-     "fecha": "2026-08-16",
-     "op": "normal"
-    },
-    {
-     "j": "Bright Ede",
-     "id": "71139",
-     "tipo": "compra",
-     "importe": 663010,
-     "fecha": "2026-08-15",
-     "op": "normal"
-    },
-    {
-     "j": "Tyrhys Dolan",
-     "id": "64468",
-     "tipo": "compra",
-     "importe": 1653060,
-     "fecha": "2026-08-13",
-     "op": "normal"
-    },
-    {
-     "j": "Carlos Puga",
-     "id": "71004",
-     "tipo": "compra",
-     "importe": 1376110,
-     "fecha": "2026-08-13",
-     "op": "normal"
-    },
-    {
-     "j": "Junior Firpo",
-     "id": "11761",
-     "tipo": "venta",
-     "importe": 548800,
-     "fecha": "2026-08-13",
-     "op": "normal"
-    },
-    {
-     "j": "Éder Militão",
-     "id": "17452",
-     "tipo": "venta",
-     "importe": 3439440,
-     "fecha": "2026-08-11",
-     "op": "normal"
-    },
-    {
-     "j": "Antonio Rüdiger",
-     "id": "40147",
-     "tipo": "venta",
-     "importe": 8980080,
-     "fecha": "2026-08-11",
-     "op": "normal"
-    },
-    {
-     "j": "Miguel Loureiro",
-     "id": "70953",
-     "tipo": "compra",
-     "importe": 1460040,
-     "fecha": "2026-08-09",
-     "op": "normal"
-    },
-    {
-     "j": "Jiri Letacek",
-     "id": "59064",
-     "tipo": "venta",
-     "importe": 263000,
-     "fecha": "2026-08-08",
-     "op": "normal"
-    },
-    {
-     "j": "Álvaro Djaló",
-     "id": "58992",
-     "tipo": "venta",
-     "importe": 274510,
-     "fecha": "2026-08-07",
-     "op": "normal"
-    },
-    {
-     "j": "Ademola Lookman",
-     "id": "68676",
-     "tipo": "compra",
-     "importe": 10837160,
-     "fecha": "2026-08-07",
-     "op": "normal"
-    },
-    {
-     "j": "Antony Santos",
-     "id": "61013",
-     "tipo": "compra",
-     "importe": 14976070,
-     "fecha": "2026-08-06",
-     "op": "normal"
-    },
-    {
-     "j": "Jon Aramburu",
-     "id": "56925",
-     "tipo": "compra",
-     "importe": 2595040,
-     "fecha": "2026-08-05",
-     "op": "normal"
-    },
-    {
-     "j": "Éder Militão",
-     "id": "17452",
-     "tipo": "compra",
-     "importe": 3217020,
-     "fecha": "2026-08-05",
-     "op": "normal"
-    },
-    {
-     "j": "Mariano Díaz",
-     "id": "3060",
-     "tipo": "compra",
-     "importe": 302050,
-     "fecha": "2026-08-05",
-     "op": "normal"
-    },
-    {
-     "j": "Rafa Bauza",
-     "id": "60271",
-     "tipo": "venta",
-     "importe": 153600,
-     "fecha": "2026-08-05",
-     "op": "normal"
-    },
-    {
-     "j": "Óscar Valentín",
-     "id": "27518",
-     "tipo": "compra",
-     "importe": 1109020,
-     "fecha": "2026-08-04",
-     "op": "normal"
-    },
-    {
-     "j": "Suleiman Camara",
-     "id": "70928",
-     "tipo": "venta",
-     "importe": 376200,
-     "fecha": "2026-08-04",
-     "op": "normal"
-    },
-    {
-     "j": "Álvaro Carreras",
-     "id": "55666",
-     "tipo": "venta",
-     "importe": 5106400,
-     "fecha": "2026-08-03",
-     "op": "normal"
-    }
-   ],
-   "porJugador": {
-    "63": {
-     "nombre": "Marc Bartra",
-     "compras": 2697740,
-     "ventas": 0,
-     "ops": 1
-    },
-    "308": {
-     "nombre": "Johan Mojica",
-     "compras": 1403590,
-     "ventas": 0,
-     "ops": 1
-    },
-    "564": {
-     "nombre": "Mikel Oyarzabal",
-     "compras": 17019470,
-     "ventas": 0,
-     "ops": 1
-    },
-    "3060": {
-     "nombre": "Mariano Díaz",
-     "compras": 302050,
-     "ventas": 4686500,
-     "ops": 2
-    },
-    "4886": {
-     "nombre": "Asier Villalibre",
-     "compras": 0,
-     "ventas": 3787500,
-     "ops": 1
-    },
-    "11761": {
-     "nombre": "Junior Firpo",
-     "compras": 0,
-     "ventas": 548800,
-     "ops": 1
-    },
-    "12902": {
-     "nombre": "Raúl de Tomás",
-     "compras": 0,
-     "ventas": 556500,
-     "ops": 1
-    },
-    "17452": {
-     "nombre": "Éder Militão",
-     "compras": 3217020,
-     "ventas": 3439440,
-     "ops": 2
-    },
-    "27518": {
-     "nombre": "Óscar Valentín",
-     "compras": 1109020,
-     "ventas": 0,
-     "ops": 1
-    },
-    "40147": {
-     "nombre": "Antonio Rüdiger",
-     "compras": 0,
-     "ventas": 8980080,
-     "ops": 1
-    },
-    "55666": {
-     "nombre": "Álvaro Carreras",
-     "compras": 0,
-     "ventas": 5106400,
-     "ops": 1
-    },
-    "56925": {
-     "nombre": "Jon Aramburu",
-     "compras": 2595040,
-     "ventas": 4861320,
-     "ops": 2
-    },
-    "58992": {
-     "nombre": "Álvaro Djaló",
-     "compras": 0,
-     "ventas": 274510,
-     "ops": 1
-    },
-    "59064": {
-     "nombre": "Jiri Letacek",
-     "compras": 0,
-     "ventas": 263000,
-     "ops": 1
-    },
-    "60218": {
-     "nombre": "Peio Canales",
-     "compras": 0,
-     "ventas": 1785050,
-     "ops": 1
-    },
-    "60271": {
-     "nombre": "Rafa Bauza",
-     "compras": 0,
-     "ventas": 153600,
-     "ops": 1
-    },
-    "61013": {
-     "nombre": "Antony Santos",
-     "compras": 14976070,
-     "ventas": 0,
-     "ops": 1
-    },
-    "64468": {
-     "nombre": "Tyrhys Dolan",
-     "compras": 1653060,
-     "ventas": 0,
-     "ops": 1
-    },
-    "65136": {
-     "nombre": "Fede Redondo",
-     "compras": 557020,
-     "ventas": 0,
-     "ops": 1
-    },
-    "68676": {
-     "nombre": "Ademola Lookman",
-     "compras": 10837160,
-     "ventas": 11155970,
-     "ops": 2
-    },
-    "70928": {
-     "nombre": "Suleiman Camara",
-     "compras": 0,
-     "ventas": 376200,
-     "ops": 1
-    },
-    "70950": {
-     "nombre": "Giacomo Quagliata",
-     "compras": 2919470,
-     "ventas": 0,
-     "ops": 1
-    },
-    "70953": {
-     "nombre": "Miguel Loureiro",
-     "compras": 1460040,
-     "ventas": 1775820,
-     "ops": 2
-    },
-    "71004": {
-     "nombre": "Carlos Puga",
-     "compras": 1376110,
-     "ventas": 0,
-     "ops": 1
-    },
-    "71139": {
-     "nombre": "Bright Ede",
-     "compras": 663010,
-     "ventas": 1490550,
-     "ops": 2
-    },
-    "4764213": {
-     "nombre": "Gabriel Jesus",
-     "compras": 4437640,
-     "ventas": 0,
-     "ops": 1
-    }
-   }
-  },
-  "Saiyans FC (Fran)": {
-   "movimientos": [
-    {
-     "j": "Adama Traoré",
-     "id": "36334",
-     "tipo": "compra",
-     "importe": 3500000,
-     "fecha": "2026-09-03",
-     "op": "normal"
-    },
-    {
-     "j": "Lorenzo Amatucci",
-     "id": "71154",
-     "tipo": "compra",
-     "importe": 6500000,
-     "fecha": "2026-09-03",
-     "op": "normal"
-    },
-    {
-     "j": "Marc Roca",
-     "id": "3728",
-     "tipo": "venta",
-     "importe": 5489000,
-     "fecha": "2026-09-03",
-     "op": "normal"
-    },
-    {
-     "j": "Ayoze Pérez",
-     "id": "52189",
-     "tipo": "venta",
-     "importe": 5625900,
-     "fecha": "2026-09-03",
-     "op": "normal"
-    },
-    {
-     "j": "Rubén García",
-     "id": "270",
-     "tipo": "venta",
-     "importe": 5280000,
-     "fecha": "2026-09-02",
-     "op": "normal"
-    },
-    {
-     "j": "Arnaut Danjuma",
-     "id": "31226",
-     "tipo": "venta",
-     "importe": 3149180,
-     "fecha": "2026-09-02",
-     "op": "normal"
-    },
-    {
-     "j": "Arda Güler",
-     "id": "54817",
-     "tipo": "compra",
-     "importe": 13110000,
-     "fecha": "2026-09-01",
-     "op": "normal"
-    },
-    {
-     "j": "Péter Gulácsi",
-     "id": "71649",
-     "tipo": "venta",
-     "importe": 1093860,
-     "fecha": "2026-09-01",
-     "op": "normal"
-    },
-    {
-     "j": "Pere Milla",
-     "id": "6065",
-     "tipo": "venta",
-     "importe": 3238000,
-     "fecha": "2026-08-30",
-     "op": "normal"
-    },
-    {
-     "j": "Gorka Guruzeta",
-     "id": "14791",
-     "tipo": "venta",
-     "importe": 6934000,
-     "fecha": "2026-08-28",
-     "op": "normal"
-    },
-    {
-     "j": "Hugo González",
-     "id": "55439",
-     "tipo": "venta",
-     "importe": 963340,
-     "fecha": "2026-08-28",
-     "op": "normal"
-    },
-    {
-     "j": "Anthony Gordon",
-     "id": "70638",
-     "tipo": "compra",
-     "importe": 14500000,
-     "fecha": "2026-08-28",
-     "op": "normal"
-    },
-    {
-     "j": "Angeliño",
-     "id": "71795",
-     "tipo": "compra",
-     "importe": 2300000,
-     "fecha": "2026-08-28",
-     "op": "normal"
-    },
-    {
-     "j": "Oihan Sancet",
-     "id": "14789",
-     "tipo": "venta",
-     "importe": 6642240,
-     "fecha": "2026-08-28",
-     "op": "normal"
-    },
-    {
-     "j": "Diego Rico",
-     "id": "3117",
-     "tipo": "venta",
-     "importe": 704550,
-     "fecha": "2026-08-28",
-     "op": "normal"
-    },
-    {
-     "j": "Pierre-Emerick Aubameyang",
-     "id": "36410",
-     "tipo": "venta",
-     "importe": 6171000,
-     "fecha": "2026-08-26",
-     "op": "clause"
-    },
-    {
-     "j": "Borja Mayoral",
-     "id": "607",
-     "tipo": "compra",
-     "importe": 2110000,
-     "fecha": "2026-08-24",
-     "op": "normal"
-    },
-    {
-     "j": "Alex Baena",
-     "id": "22502",
-     "tipo": "compra",
-     "importe": 11100000,
-     "fecha": "2026-08-24",
-     "op": "normal"
-    },
-    {
-     "j": "Antonio Sivera",
-     "id": "7893",
-     "tipo": "venta",
-     "importe": 8458320,
-     "fecha": "2026-08-20",
-     "op": "normal"
-    },
-    {
-     "j": "Dávid Hancko",
-     "id": "64459",
-     "tipo": "venta",
-     "importe": 6686160,
-     "fecha": "2026-08-19",
-     "op": "normal"
-    },
-    {
-     "j": "Diego Rico",
-     "id": "3117",
-     "tipo": "compra",
-     "importe": 500000,
-     "fecha": "2026-08-19",
-     "op": "normal"
-    },
-    {
-     "j": "Pierre-Emerick Aubameyang",
-     "id": "36410",
-     "tipo": "compra",
-     "importe": 4029000,
-     "fecha": "2026-08-18",
-     "op": "clause"
-    },
-    {
-     "j": "Enes Ünal",
-     "id": "6044",
-     "tipo": "compra",
-     "importe": 2100000,
-     "fecha": "2026-08-18",
-     "op": "normal"
-    },
-    {
-     "j": "Omar El Hilali",
-     "id": "29163",
-     "tipo": "compra",
-     "importe": 2227000,
-     "fecha": "2026-08-17",
-     "op": "normal"
-    },
-    {
-     "j": "Julen Agirrezabala",
-     "id": "28774",
-     "tipo": "compra",
-     "importe": 2500000,
-     "fecha": "2026-08-15",
-     "op": "normal"
-    },
-    {
-     "j": "Péter Gulácsi",
-     "id": "71649",
-     "tipo": "compra",
-     "importe": 1200000,
-     "fecha": "2026-08-15",
-     "op": "normal"
-    },
-    {
-     "j": "Filip Ugrinic",
-     "id": "65090",
-     "tipo": "venta",
-     "importe": 1059000,
-     "fecha": "2026-08-15",
-     "op": "normal"
-    },
-    {
-     "j": "Igor Zubeldia",
-     "id": "5917",
-     "tipo": "venta",
-     "importe": 1493400,
-     "fecha": "2026-08-15",
-     "op": "normal"
-    },
-    {
-     "j": "Urko González",
-     "id": "23172",
-     "tipo": "venta",
-     "importe": 1679040,
-     "fecha": "2026-08-15",
-     "op": "normal"
-    },
-    {
-     "j": "Pedro Bigas",
-     "id": "239",
-     "tipo": "venta",
-     "importe": 1725840,
-     "fecha": "2026-08-14",
-     "op": "normal"
-    },
-    {
-     "j": "Antonio Sivera",
-     "id": "7893",
-     "tipo": "compra",
-     "importe": 7730000,
-     "fecha": "2026-08-13",
-     "op": "normal"
-    },
-    {
-     "j": "Hugo Duro",
-     "id": "11866",
-     "tipo": "venta",
-     "importe": 5948800,
-     "fecha": "2026-08-13",
-     "op": "normal"
-    },
-    {
-     "j": "Wojciech Szczęsny",
-     "id": "60227",
-     "tipo": "venta",
-     "importe": 589560,
-     "fecha": "2026-08-13",
-     "op": "normal"
-    },
-    {
-     "j": "Valentin Rosier",
-     "id": "58980",
-     "tipo": "venta",
-     "importe": 3946460,
-     "fecha": "2026-08-11",
-     "op": "normal"
-    },
-    {
-     "j": "Marc Roca",
-     "id": "3728",
-     "tipo": "compra",
-     "importe": 3250000,
-     "fecha": "2026-08-10",
-     "op": "normal"
-    },
-    {
-     "j": "Iván Villar",
-     "id": "6035",
-     "tipo": "venta",
-     "importe": 372690,
-     "fecha": "2026-08-10",
-     "op": "normal"
-    },
-    {
-     "j": "Pere Milla",
-     "id": "6065",
-     "tipo": "compra",
-     "importe": 2946000,
-     "fecha": "2026-08-10",
-     "op": "clause"
-    },
-    {
-     "j": "Martim Neto",
-     "id": "64524",
-     "tipo": "venta",
-     "importe": 767350,
-     "fecha": "2026-08-09",
-     "op": "normal"
-    },
-    {
-     "j": "Rubén García",
-     "id": "270",
-     "tipo": "compra",
-     "importe": 3200000,
-     "fecha": "2026-08-09",
-     "op": "normal"
-    },
-    {
-     "j": "Ayoze Pérez",
-     "id": "52189",
-     "tipo": "compra",
-     "importe": 3200000,
-     "fecha": "2026-08-08",
-     "op": "normal"
-    },
-    {
-     "j": "Pablo Ibáñez",
-     "id": "29169",
-     "tipo": "compra",
-     "importe": 1400000,
-     "fecha": "2026-08-06",
-     "op": "normal"
-    },
-    {
-     "j": "Hugo González",
-     "id": "55439",
-     "tipo": "compra",
-     "importe": 400000,
-     "fecha": "2026-08-06",
-     "op": "normal"
-    },
-    {
-     "j": "Juanpe Jiménez",
-     "id": "71001",
-     "tipo": "venta",
-     "importe": 200550,
-     "fecha": "2026-08-06",
-     "op": "normal"
-    },
-    {
-     "j": "Oihan Sancet",
-     "id": "14789",
-     "tipo": "compra",
-     "importe": 5601000,
-     "fecha": "2026-08-06",
-     "op": "normal"
-    },
-    {
-     "j": "Pedro Bigas",
-     "id": "239",
-     "tipo": "compra",
-     "importe": 1301000,
-     "fecha": "2026-08-05",
-     "op": "normal"
-    },
-    {
-     "j": "Igor Zubeldia",
-     "id": "5917",
-     "tipo": "compra",
-     "importe": 1195000,
-     "fecha": "2026-08-05",
-     "op": "normal"
-    },
-    {
-     "j": "Hugo Duro",
-     "id": "11866",
-     "tipo": "compra",
-     "importe": 5505000,
-     "fecha": "2026-08-05",
-     "op": "normal"
-    },
-    {
-     "j": "Rafa Mir",
-     "id": "22591",
-     "tipo": "venta",
-     "importe": 1261260,
-     "fecha": "2026-08-05",
-     "op": "normal"
-    },
-    {
-     "j": "Iker Luque",
-     "id": "70255",
-     "tipo": "venta",
-     "importe": 231800,
-     "fecha": "2026-08-05",
-     "op": "normal"
-    },
-    {
-     "j": "Facundo Garcés",
-     "id": "60859",
-     "tipo": "venta",
-     "importe": 158400,
-     "fecha": "2026-08-04",
-     "op": "normal"
-    },
-    {
-     "j": "Job Ochieng",
-     "id": "68835",
-     "tipo": "venta",
-     "importe": 199500,
-     "fecha": "2026-08-04",
-     "op": "normal"
-    },
-    {
-     "j": "Álvaro García",
-     "id": "14911",
-     "tipo": "compra",
-     "importe": 5805000,
-     "fecha": "2026-08-04",
-     "op": "normal"
-    },
-    {
-     "j": "Manu Sánchez",
-     "id": "20131",
-     "tipo": "compra",
-     "importe": 850000,
-     "fecha": "2026-08-04",
-     "op": "normal"
-    }
-   ],
-   "porJugador": {
-    "239": {
-     "nombre": "Pedro Bigas",
-     "compras": 1301000,
-     "ventas": 1725840,
-     "ops": 2
-    },
-    "270": {
-     "nombre": "Rubén García",
-     "compras": 3200000,
-     "ventas": 5280000,
-     "ops": 2
-    },
-    "607": {
-     "nombre": "Borja Mayoral",
-     "compras": 2110000,
-     "ventas": 0,
-     "ops": 1
-    },
-    "3117": {
-     "nombre": "Diego Rico",
-     "compras": 500000,
-     "ventas": 704550,
-     "ops": 2
-    },
-    "3728": {
-     "nombre": "Marc Roca",
-     "compras": 3250000,
-     "ventas": 5489000,
-     "ops": 2
-    },
-    "5917": {
-     "nombre": "Igor Zubeldia",
-     "compras": 1195000,
-     "ventas": 1493400,
-     "ops": 2
-    },
-    "6035": {
-     "nombre": "Iván Villar",
-     "compras": 0,
-     "ventas": 372690,
-     "ops": 1
-    },
-    "6044": {
-     "nombre": "Enes Ünal",
-     "compras": 2100000,
-     "ventas": 0,
-     "ops": 1
-    },
-    "6065": {
-     "nombre": "Pere Milla",
-     "compras": 2946000,
-     "ventas": 3238000,
-     "ops": 2
-    },
-    "7893": {
-     "nombre": "Antonio Sivera",
-     "compras": 7730000,
-     "ventas": 8458320,
-     "ops": 2
-    },
-    "11866": {
-     "nombre": "Hugo Duro",
-     "compras": 5505000,
-     "ventas": 5948800,
-     "ops": 2
-    },
-    "14789": {
-     "nombre": "Oihan Sancet",
-     "compras": 5601000,
-     "ventas": 6642240,
-     "ops": 2
-    },
-    "14791": {
-     "nombre": "Gorka Guruzeta",
-     "compras": 0,
-     "ventas": 6934000,
-     "ops": 1
-    },
-    "14911": {
-     "nombre": "Álvaro García",
-     "compras": 5805000,
-     "ventas": 0,
-     "ops": 1
-    },
-    "20131": {
-     "nombre": "Manu Sánchez",
-     "compras": 850000,
-     "ventas": 0,
-     "ops": 1
-    },
-    "22502": {
-     "nombre": "Alex Baena",
-     "compras": 11100000,
-     "ventas": 0,
-     "ops": 1
-    },
-    "22591": {
-     "nombre": "Rafa Mir",
-     "compras": 0,
-     "ventas": 1261260,
-     "ops": 1
-    },
-    "23172": {
-     "nombre": "Urko González",
-     "compras": 0,
-     "ventas": 1679040,
-     "ops": 1
-    },
-    "28774": {
-     "nombre": "Julen Agirrezabala",
-     "compras": 2500000,
-     "ventas": 0,
-     "ops": 1
-    },
-    "29163": {
-     "nombre": "Omar El Hilali",
-     "compras": 2227000,
-     "ventas": 0,
-     "ops": 1
-    },
-    "29169": {
-     "nombre": "Pablo Ibáñez",
-     "compras": 1400000,
-     "ventas": 0,
-     "ops": 1
-    },
-    "31226": {
-     "nombre": "Arnaut Danjuma",
-     "compras": 0,
-     "ventas": 3149180,
-     "ops": 1
-    },
-    "36334": {
-     "nombre": "Adama Traoré",
-     "compras": 3500000,
-     "ventas": 0,
-     "ops": 1
-    },
-    "36410": {
-     "nombre": "Pierre-Emerick Aubameyang",
-     "compras": 4029000,
-     "ventas": 6171000,
-     "ops": 2
-    },
-    "52189": {
-     "nombre": "Ayoze Pérez",
-     "compras": 3200000,
-     "ventas": 5625900,
-     "ops": 2
-    },
-    "54817": {
-     "nombre": "Arda Güler",
-     "compras": 13110000,
-     "ventas": 0,
-     "ops": 1
-    },
-    "55439": {
-     "nombre": "Hugo González",
-     "compras": 400000,
-     "ventas": 963340,
-     "ops": 2
-    },
-    "58980": {
-     "nombre": "Valentin Rosier",
-     "compras": 0,
-     "ventas": 3946460,
-     "ops": 1
-    },
-    "60227": {
-     "nombre": "Wojciech Szczęsny",
-     "compras": 0,
-     "ventas": 589560,
-     "ops": 1
-    },
-    "60859": {
-     "nombre": "Facundo Garcés",
-     "compras": 0,
-     "ventas": 158400,
-     "ops": 1
-    },
-    "64459": {
-     "nombre": "Dávid Hancko",
-     "compras": 0,
-     "ventas": 6686160,
-     "ops": 1
-    },
-    "64524": {
-     "nombre": "Martim Neto",
-     "compras": 0,
-     "ventas": 767350,
-     "ops": 1
-    },
-    "65090": {
-     "nombre": "Filip Ugrinic",
-     "compras": 0,
-     "ventas": 1059000,
-     "ops": 1
-    },
-    "68835": {
-     "nombre": "Job Ochieng",
-     "compras": 0,
-     "ventas": 199500,
-     "ops": 1
-    },
-    "70255": {
-     "nombre": "Iker Luque",
-     "compras": 0,
-     "ventas": 231800,
-     "ops": 1
-    },
-    "70638": {
-     "nombre": "Anthony Gordon",
-     "compras": 14500000,
-     "ventas": 0,
-     "ops": 1
-    },
-    "71001": {
-     "nombre": "Juanpe Jiménez",
-     "compras": 0,
-     "ventas": 200550,
-     "ops": 1
-    },
-    "71154": {
-     "nombre": "Lorenzo Amatucci",
-     "compras": 6500000,
-     "ventas": 0,
-     "ops": 1
-    },
-    "71649": {
-     "nombre": "Péter Gulácsi",
-     "compras": 1200000,
-     "ventas": 1093860,
-     "ops": 2
-    },
-    "71795": {
-     "nombre": "Angeliño",
-     "compras": 2300000,
      "ventas": 0,
      "ops": 1
     }
