@@ -13,6 +13,7 @@ import { join, dirname } from 'node:path'
 import { crearCliente } from '../recoleccion/cliente.js'
 import { obtenerCredenciales } from '../sesion/credenciales.js'
 import { parsearFgUser } from '../recoleccion/parseadorFgUser.js'
+import { descargar as descargarResultados, fuerzaPorClub, parsearCsv } from '../externo/resultadosReales.js'
 import { extraerHechos, type Volcado } from './feed.js'
 import { reconstruir, type Constantes } from './reconstruir.js'
 import {
@@ -403,6 +404,27 @@ async function intentar(): Promise<Resultado> {
   const clausulas = universo.filter((j) => j.clausula !== null)
   escribirJson(join(DATOS, 'clausulas.json'), clausulas.map((j) => [Number(j.id), j.clausula! / 1000]))
   escribirJson(join(DATOS, 'jugadores-calc.json'), construirJugadores(universo, enVenta, cuentas, cache, delMes, detalle))
+
+  // Lo que ha pasado de verdad en el campo, de Football-Data. Sirve para medir
+  // lo duro que es cada rival con lo que hacen los equipos y no con lo que
+  // Mister les paga.
+  //
+  // Va en un try aparte y a propósito: es la única pieza de este módulo que
+  // depende de un servidor ajeno, y su servidor ya se ha caído una vez. Que
+  // una fuente de apoyo se caiga no puede dejarte sin actualizar el saldo, las
+  // cláusulas ni el mercado, así que si falla se avisa y se sigue con el
+  // fichero de la última vez.
+  try {
+    const partidos = parsearCsv(await descargarResultados())
+    const fuerza = Object.fromEntries(fuerzaPorClub(partidos))
+    escribirJson(join(DATOS, 'fuerza-real.json'), { partidos: partidos.length, clubes: fuerza })
+    paso(`Resultados reales: ${partidos.length} partidos de LaLiga.`)
+  } catch (e) {
+    cuentas.avisos.push(
+      `no he podido bajar los resultados reales (${e instanceof Error ? e.message : 'error'}): ` +
+        'la dureza de los rivales se queda con los del último día que sí bajaron',
+    )
+  }
   escribirJson(
     join(DATOS, 'jornadas.json'),
     hechos.jornadas.map((j) => ({

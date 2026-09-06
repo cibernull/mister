@@ -134,15 +134,18 @@ const regularidadDe = (j) => {
  * Cómo de duro es el próximo rival, para su puesto.
  *
  * A un defensa le importa lo que ataca el rival; a un delantero, lo que
- * defiende. Y en Mister eso se puede medir sin salir de aquí: la media de los
- * atacantes de un club **es** lo peligroso que es, y la de sus defensas y
- * portero, lo sólido que es, porque puntúan por dejar la portería a cero.
+ * defiende. La pregunta es de dónde se saca eso.
  *
- * Se pondera por partidos jugados para que un suplente con una buena tarde no
- * pese lo mismo que un titular con cinco jornadas, y se ignora a quien no ha
- * jugado: su media es cero y hundiría el promedio de su club sin motivo.
+ * Se sacaba de las medias fantasy de Mister: si los delanteros de un club
+ * puntúan mucho, ese club ataca bien. Era un apaño defendible, pero medía lo
+ * que Mister paga y no lo que el equipo hace. Ahora, cuando hay resultados
+ * reales de Football-Data, se mide con **xG**: los goles que ha merecido y los
+ * que ha concedido por partido. Si esos resultados faltan —su servidor se cae
+ * a veces— se vuelve al apaño, que sigue siendo mejor que nada.
  */
-const fuerzaClubes = (() => {
+const FUERZA_REAL = opcional('fuerza-real.json', null)
+
+const fuerzaFantasy = (() => {
   const acumular = (puestos) => {
     const m = new Map()
     for (const j of J) {
@@ -157,15 +160,52 @@ const fuerzaClubes = (() => {
   return { ataque: acumular([3, 4]), defensa: acumular([1, 2]) }
 })()
 
+/**
+ * La tabla de amenaza por puesto, y de dónde sale.
+ *
+ * Para portero y defensa, «amenaza» es lo que el rival genera: más xG a favor,
+ * peor. Para medio y delantero es lo cerrado que está el rival, así que se
+ * invierte el xG que concede — conceder poco es ser duro.
+ */
+const amenazaDe = (() => {
+  const reales = FUERZA_REAL && FUERZA_REAL.clubes ? Object.entries(FUERZA_REAL.clubes) : []
+  const conXg = reales.filter(([, f]) => f.xgAFavor !== null && f.xgEnContra !== null)
+  if (conXg.length >= 15) {
+    return {
+      fuente: 'real',
+      atras: new Map(conXg.map(([id, f]) => [Number(id), f.xgAFavor])),
+      // Se niega para que «más alto = más duro» valga igual en las dos tablas.
+      delante: new Map(conXg.map(([id, f]) => [Number(id), -f.xgEnContra])),
+      detalle: new Map(conXg.map(([id, f]) => [Number(id), f])),
+    }
+  }
+  return {
+    fuente: 'fantasy',
+    atras: fuerzaFantasy.ataque,
+    delante: fuerzaFantasy.defensa,
+    detalle: new Map(),
+  }
+})()
+
 /** De 1 (rival blando) a 5 (rival duro), por quintiles entre los clubes. */
 const durezaDe = (j) => {
   if (!j.riv) return null
-  const tabla = j.pos <= 2 ? fuerzaClubes.ataque : fuerzaClubes.defensa
+  const tabla = j.pos <= 2 ? amenazaDe.atras : amenazaDe.delante
   const suyo = tabla.get(j.riv)
   if (suyo === undefined) return null
   const todos = [...tabla.values()].sort((a, b) => a - b)
   const pos = todos.filter((x) => x < suyo).length
   return Math.min(5, Math.floor((pos / todos.length) * 5) + 1)
+}
+
+/** Por qué ese rival es duro o blando, con la cifra delante. */
+const porQueDuro = (j) => {
+  const f = amenazaDe.detalle.get(j.riv)
+  const club = esc(CLUBES.get(String(j.riv)) ?? 'el rival')
+  if (!f) return 'Calculado con las medias de sus jugadores en Mister: aún no hay resultados reales.'
+  return j.pos <= 2
+    ? `${club} genera ${dec(f.xgAFavor)} goles esperados por partido (xG real, no fantasy).`
+    : `${club} concede ${dec(f.xgEnContra)} goles esperados por partido (xG real, no fantasy).`
 }
 
 const pintarRacha = (j) => {
@@ -965,8 +1005,8 @@ const once = (() => {
   return { elegidos, banquillo: banquillo.sort((a, b) => esperadoTotal(b) - esperadoTotal(a)) }
 })()
 
-const pintarDureza = (n) =>
-  n === null ? '' : `<span class="dur d${n}" title="Lo duro que es ese rival para su puesto, de 1 (blando) a 5 (duro)">${'●'.repeat(n)}${'○'.repeat(5 - n)}</span>`
+const pintarDureza = (n, j) =>
+  n === null ? '' : `<span class="dur d${n}" title="Lo duro que es ese rival para su puesto, de 1 (blando) a 5 (duro). ${j ? porQueDuro(j) : ''}">${'●'.repeat(n)}${'○'.repeat(5 - n)}</span>`
 
 const filaOnce = (j) => `        <div class="mj">${dorsal(j.puesto)}${escudoDe(j.id)}<span class="n">${nombreEnlazado(j)}${pintarRacha(j)}</span>
           <span class="v">${dec(esperadoConAjustes(j).total)}${(() => {
@@ -980,7 +1020,7 @@ const filaOnce = (j) => `        <div class="mj">${dorsal(j.puesto)}${escudoDe(j
             ].filter(Boolean)
             return partes.length > 1 ? `<small class="desg" title="De dónde sale la cifra">${partes.join(' · ')}</small>` : ''
           })()}</span><span class="c">${
-            j.riv ? `${j.casa === 1 ? 'en casa' : 'fuera'} · ${esc(CLUBES.get(String(j.riv)) ?? '?')}${pintarDureza(durezaDe(j))}` : 'sin partido'
+            j.riv ? `${j.casa === 1 ? 'en casa' : 'fuera'} · ${esc(CLUBES.get(String(j.riv)) ?? '?')}${pintarDureza(durezaDe(j), j)}` : 'sin partido'
           }</span><span class="m">${
             j.est === 'injury' ? '🏥 lesionado' : j.once === 1 ? '👕 titular' : j.once === 0 ? 'suplente' : '—'
           }</span></div>`
@@ -1373,7 +1413,7 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
         ${def('🔒', '', 'Súbele la cláusula', 'Rinde y su cláusula es barata para lo que produce, así que cualquier rival puede llevárselo pagándola.')}
         ${def('7 5 4', 'txt', 'La racha', 'Lo que sacó en cada una de sus últimas jornadas, la más reciente a la derecha. Verde si hizo 8 o más, rojo si hizo cero, y un hueco si no jugó. Es dato de Mister, tal cual.')}
         ${def('5,4', 'txt', 'La cifra grande del once', `Calculada aquí. Se parte de su media <strong>donde le toca jugar</strong> —Mister la publica separada en casa y fuera— y se le suma la mitad de lo que ha mejorado o empeorado de forma, más cuatro décimas por escalón de dureza del rival, con el rival medio como punto neutro. La mitad de la forma y no toda, porque la forma ya es un promedio de jornadas recientes y contarla entera sería contar dos veces lo mismo. Debajo de cada cifra está el desglose.`)}
-        ${def('●●●●○', 'txt', 'Lo duro que es el rival', 'Calculado aquí, no es cifra de Mister. A un defensa le importa lo que ataca el rival y a un delantero lo que defiende, así que se mide la media de los atacantes del rival —o la de sus defensas y portero, que puntúan por dejar la portería a cero— y se compara con la de los otros diecinueve clubes. Cinco puntos negros es de los más duros.')}
+        ${def('●●●●○', 'txt', 'Lo duro que es el rival', `Sale de los <strong>goles esperados (xG) reales</strong> de cada club esta temporada, no de sus medias en Mister. A un defensa o un portero le importa lo que genera el rival; a un medio o un delantero, lo poco que concede. Se compara con los otros diecinueve y se reparte de uno a cinco: cinco puntos negros es de los más duros para su puesto. Pasa el dedo por encima y te dice la cifra. Los resultados salen de Football-Data.co.uk, que publica cada partido de LaLiga con su xG; si algún día no se pueden bajar, se vuelve a calcular con las medias de Mister y sigue funcionando.`)}
         ${def('🛡', '', 'Ya tiene la cláusula subida', 'La marca morada <b class="cx">×3,0</b> dice a cuántas veces su valor está la cláusula. La base es ×1,5, y cada escalón de medio punto le costó a su dueño el 20 % del valor del jugador. Cuanto más alta, más difícil quitárselo.')}
       </div>
     </div>
