@@ -751,7 +751,11 @@ const once = (() => {
       .sort(
         (a, b) =>
           (b.est === 'injury' ? -1 : 1) - (a.est === 'injury' ? -1 : 1) ||
-          (b.once === 1 ? 1 : 0) - (a.once === 1 ? 1 : 0) ||
+          // Tres escalones, no dos: titular anunciado (2), sin pronóstico (1) y
+          // suplente anunciado (0). Antes «suplente» y «no se sabe» empataban a
+          // cero, y entonces el desempate lo decidía la media — que a un
+          // suplente anunciado le sobra, porque no va a jugar.
+          (b.once === 1 ? 2 : b.once === 0 ? 0 : 1) - (a.once === 1 ? 2 : a.once === 0 ? 0 : 1) ||
           esperadoDe(b) - esperadoDe(a),
       )
     elegidos.push(...candidatos.slice(0, cuantos).map((j) => ({ ...j, hueco: cuantos > candidatos.length })))
@@ -1078,12 +1082,35 @@ ${tablaTop('Gangas', 'Los más baratos por punto de media, con dos partidos o m�
 
     <div class="tarjeta">
       <h2 class="sh">Jornada a jornada</h2>
-      <div class="tabla-scroll"><table class="jt jornadas"><thead><tr><th>Equipo</th>${JOR.map((j) => `<th>J${j.jornada}</th>`).join('')}<th>Total</th><th>Premios</th></tr></thead><tbody>
+${(() => {
+  // Las columnas y el total NO salen del mismo sitio, y ponerlos juntos sin
+  // decirlo hacía que pareciera una suma que no cuadra. Las columnas son lo que
+  // Mister publicó al cerrar cada jornada; el total es lo que dice hoy, y lo
+  // revisa cuando llegan las estadísticas oficiales —a Niutin lo movió de 119 a
+  // 166 en una tarde—. Encima, su feed solo publica cuatro cierres: J1, J2, J3
+  // y J6. La J4 y la J5 no están ahí, así que no se inventan: se dice que
+  // faltan.
+  const numeros = JOR.map((j) => j.jornada)
+  const ultima = Math.max(...numeros, 0)
+  const ausentes = []
+  for (let n = 1; n <= ultima; n += 1) if (!numeros.includes(n)) ausentes.push(n)
+  const listar = (l) => (l.length === 1 ? `la J${l[0]}` : `las J${l.slice(0, -1).join(', J')} y J${l[l.length - 1]}`)
+  return `      <p class="sd">Cada columna es lo que Mister publicó <strong>al cerrar</strong> esa jornada. El total es lo que dice <strong>hoy</strong>, y no tiene por qué ser la suma: lo revisa cuando llegan las estadísticas oficiales.${
+    ausentes.length
+      ? ` Además, de ${listar(ausentes)} no publicó cierre en su feed, así que ${ausentes.length === 1 ? 'esa jornada no está' : 'esas jornadas no están'} — y no se rellena a ojo.`
+      : ''
+  }</p>`
+})()}
+      <div class="tabla-scroll"><table class="jt jornadas"><thead><tr><th>Equipo</th>${JOR.map((j) => `<th>J${j.jornada}</th>`).join('')}<th>Suma</th><th>Total</th><th>Premios</th></tr></thead><tbody>
 ${[...EQ]
   .sort((a, b) => b.pts - a.pts)
   .map((e) => {
     const suyas = JOR.map((j) => j.equipos.find((x) => x.equipo === e.n))
-    return `<tr class="${e.mio ? 'mio' : ''}"><td>${esc(e.corto)}</td>${suyas.map((s) => `<td>${s ? s.puntos : '—'}</td>`).join('')}<td><b>${e.pts}</b></td><td class="mas">+${corto(e.pre)}</td></tr>`
+    const suma = suyas.reduce((t, s) => t + (s ? s.puntos : 0), 0)
+    const dif = e.pts - suma
+    return `<tr class="${e.mio ? 'mio' : ''}"><td>${esc(e.corto)}</td>${suyas.map((s) => `<td>${s ? s.puntos : '—'}</td>`).join('')}<td class="tenue">${suma}</td><td><b>${e.pts}</b>${
+      dif !== 0 ? `<small class="revis" title="Lo que Mister ha añadido o quitado al revisar, o lo que aportan las jornadas que no publicó">${dif > 0 ? '+' : '−'}${Math.abs(dif)}</small>` : ''
+    }</td><td class="mas">+${corto(e.pre)}</td></tr>`
   })
   .join(NL)}
 </tbody></table></div>
