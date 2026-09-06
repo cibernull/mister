@@ -4,39 +4,39 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 3,
+  "mediaCasa": 5,
   "mediaFuera": 3.5,
   "edad": 32,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "24": {
   "nombre": "Unai López",
   "posicion": 3,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 5,
+  "mediaCasa": 5.5,
   "mediaFuera": 3,
   "edad": 30,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "29": {
   "nombre": "Iñaki Williams",
   "posicion": 4,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 2,
   "mediaFuera": 1,
   "edad": 32,
   "titular": null,
-  "titularidades": 3,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "31": {
   "nombre": "Jan Oblak",
@@ -44,12 +44,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 6,
-  "mediaFuera": 5,
+  "mediaFuera": 3,
   "edad": 33,
   "titular": null,
-  "titularidades": 3,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "34": {
   "nombre": "José Giménez",
@@ -57,12 +57,12 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 3,
-  "mediaFuera": 2,
+  "mediaFuera": 4,
   "edad": 31,
   "titular": null,
-  "titularidades": 0,
+  "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "42": {
   "nombre": "Koke",
@@ -74,8 +74,8 @@
   "edad": 34,
   "titular": null,
   "titularidades": 2,
-  "suplencias": 1,
-  "dia": "2026-09-05"
+  "suplencias": 2,
+  "dia": "2026-09-06"
  },
  "63": {
   "nombre": "Marc Bartra",
@@ -88,7 +88,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "96": {
   "nombre": "Dani Ceballos",
@@ -101,7 +101,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "118": {
   "nombre": "Jonny Otto",
@@ -114,7 +114,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "128": {
   "nombre": "Borja Iglesias",
@@ -127,7 +127,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "130": {
   "nombre": "Iago Aspas",
@@ -140,7 +140,7 @@
   "titular": true,
   "titularidades": 1,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "208": {
   "nombre": "Moi Gómez",
@@ -153,7 +153,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "213": {
   "nombre": "Stole Dimitrievski",
@@ -166,7 +166,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "217": {
   "nombre": "Dimitri Foulquier",
@@ -179,7 +179,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "239": {
   "nombre": "Pedro Bigas",
@@ -192,7 +192,7 @@
   "titular": true,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "270": {
   "nombre": "Rubén García",
@@ -205,7 +205,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "306": {
   "nombre": "Diego Llorente",
@@ -218,7 +218,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "308": {
   "nombre": "Johan Mojica",
@@ -231,7 +231,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "340": {
   "nombre": "Isco",
@@ -244,33 +244,33 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "361": {
   "nombre": "Yuri Berchiche",
   "posicion": 2,
   "goles": 0,
   "tarjetas": 2,
-  "mediaCasa": -9,
+  "mediaCasa": -2.5,
   "mediaFuera": 5,
   "edad": 36,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "364": {
   "nombre": "Sergio Canales",
   "posicion": 3,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 4,
-  "mediaFuera": 3,
+  "mediaFuera": 6,
   "edad": 35,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "392": {
   "nombre": "Denis Suárez",
@@ -283,7 +283,7 @@
   "titular": true,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "431": {
   "nombre": "João Cancelo",
@@ -296,7 +296,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "432": {
   "nombre": "José Luis Gayà",
@@ -309,20 +309,20 @@
   "titular": true,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "476": {
   "nombre": "Gerard Moreno",
   "posicion": 4,
   "goles": 1,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 7,
   "mediaFuera": 5.3,
   "edad": 34,
-  "titular": true,
-  "titularidades": 1,
+  "titular": null,
+  "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "557": {
   "nombre": "Pablo Fornals",
@@ -335,7 +335,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "561": {
   "nombre": "Marcos Llorente",
@@ -343,12 +343,12 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 4.5,
-  "mediaFuera": 5,
+  "mediaFuera": 3.5,
   "edad": 31,
   "titular": null,
-  "titularidades": 1,
+  "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "564": {
   "nombre": "Mikel Oyarzabal",
@@ -361,7 +361,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "607": {
   "nombre": "Borja Mayoral",
@@ -374,7 +374,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "609": {
   "nombre": "David Soria",
@@ -387,7 +387,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "616": {
   "nombre": "Rodri Hernández",
@@ -400,7 +400,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "1034": {
   "nombre": "Juanmi Jiménez",
@@ -413,7 +413,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "1684": {
   "nombre": "Kike García",
@@ -426,20 +426,20 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "1713": {
   "nombre": "Florian Lejeune",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
-  "mediaCasa": 4,
+  "tarjetas": 1,
+  "mediaCasa": 5,
   "mediaFuera": 1,
   "edad": 35,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "1719": {
   "nombre": "Aïssa Mandi",
@@ -452,7 +452,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "1737": {
   "nombre": "Einar Galilea",
@@ -465,7 +465,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "1762": {
   "nombre": "Álex Berenguer",
@@ -477,8 +477,8 @@
   "edad": 31,
   "titular": null,
   "titularidades": 2,
-  "suplencias": 1,
-  "dia": "2026-09-05"
+  "suplencias": 2,
+  "dia": "2026-09-06"
  },
  "3046": {
   "nombre": "Ezequiel Ponce",
@@ -491,7 +491,7 @@
   "titular": true,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "3060": {
   "nombre": "Mariano Díaz",
@@ -504,7 +504,7 @@
   "titular": true,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "3117": {
   "nombre": "Diego Rico",
@@ -517,7 +517,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "3728": {
   "nombre": "Marc Roca",
@@ -530,20 +530,20 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4753": {
   "nombre": "Yeray Álvarez",
   "posicion": 2,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 3,
+  "mediaCasa": 3.5,
   "mediaFuera": 2,
   "edad": 31,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4774": {
   "nombre": "Álvaro Fernández",
@@ -556,7 +556,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4775": {
   "nombre": "Aarón Martín",
@@ -564,12 +564,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 0,
+  "mediaFuera": 1,
   "edad": 29,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 0,
-  "dia": "2026-09-05"
+  "suplencias": 1,
+  "dia": "2026-09-06"
  },
  "4886": {
   "nombre": "Asier Villalibre",
@@ -582,7 +582,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4888": {
   "nombre": "Carlos Soler",
@@ -595,7 +595,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "5691": {
   "nombre": "Álvaro Odriozola",
@@ -608,7 +608,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "5916": {
   "nombre": "Jon Guridi",
@@ -621,7 +621,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "5917": {
   "nombre": "Igor Zubeldia",
@@ -634,7 +634,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "5920": {
   "nombre": "Carles Aleñá",
@@ -647,7 +647,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "6032": {
   "nombre": "Alex Remiro",
@@ -660,7 +660,7 @@
   "titular": true,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "6034": {
   "nombre": "Edu Expósito",
@@ -673,7 +673,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "6035": {
   "nombre": "Iván Villar",
@@ -686,7 +686,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "6044": {
   "nombre": "Enes Ünal",
@@ -699,7 +699,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "6065": {
   "nombre": "Pere Milla",
@@ -712,7 +712,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "7011": {
   "nombre": "Ximo Navarro",
@@ -720,12 +720,12 @@
   "goles": 0,
   "tarjetas": 2,
   "mediaCasa": 2.5,
-  "mediaFuera": 2,
+  "mediaFuera": 3.5,
   "edad": 36,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "7024": {
   "nombre": "Fede Valverde",
@@ -738,7 +738,7 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "7025": {
   "nombre": "Marko Dmitrović",
@@ -751,7 +751,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "7784": {
   "nombre": "Unai Núñez",
@@ -764,7 +764,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "7893": {
   "nombre": "Antonio Sivera",
@@ -777,7 +777,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "8171": {
   "nombre": "Dakonam Djené",
@@ -790,7 +790,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "8953": {
   "nombre": "Pablo Maffeo",
@@ -803,7 +803,7 @@
   "titular": true,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "10967": {
   "nombre": "Gonçalo Guedes",
@@ -816,7 +816,7 @@
   "titular": true,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "11092": {
   "nombre": "Andoni Gorosabel",
@@ -829,7 +829,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "11186": {
   "nombre": "Dani Raba",
@@ -842,7 +842,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "11472": {
   "nombre": "Leandro Cabrera",
@@ -855,7 +855,7 @@
   "titular": true,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "11697": {
   "nombre": "Lucas Boyé",
@@ -868,7 +868,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "11761": {
   "nombre": "Junior Firpo",
@@ -881,7 +881,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "11866": {
   "nombre": "Hugo Duro",
@@ -894,7 +894,7 @@
   "titular": true,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "12900": {
   "nombre": "Vinícius Júnior",
@@ -902,12 +902,12 @@
   "goles": 1,
   "tarjetas": 2,
   "mediaCasa": 6.5,
-  "mediaFuera": 2.5,
+  "mediaFuera": 3,
   "edad": 26,
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "12902": {
   "nombre": "Raúl de Tomás",
@@ -920,7 +920,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "12915": {
   "nombre": "Cucho Hernández",
@@ -933,20 +933,20 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "12946": {
   "nombre": "Santi Comesaña",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
-  "mediaCasa": 0,
+  "tarjetas": 1,
+  "mediaCasa": 2,
   "mediaFuera": 2,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
-  "suplencias": 0,
-  "dia": "2026-09-05"
+  "suplencias": 1,
+  "dia": "2026-09-06"
  },
  "12949": {
   "nombre": "Thomas Lemar",
@@ -959,7 +959,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "13005": {
   "nombre": "Andriy Lunin",
@@ -972,7 +972,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "13011": {
   "nombre": "Fernando Calero",
@@ -985,7 +985,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "13420": {
   "nombre": "Mouctar Diakhaby",
@@ -998,7 +998,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "14379": {
   "nombre": "Aitor Fernández",
@@ -1011,7 +1011,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "14432": {
   "nombre": "Javi Puado",
@@ -1024,7 +1024,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "14670": {
   "nombre": "Thibaut Courtois",
@@ -1037,72 +1037,72 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "14691": {
   "nombre": "Adrià Pedrosa",
   "posicion": 2,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 0,
+  "mediaCasa": 4,
   "mediaFuera": 2,
   "edad": 28,
-  "titular": true,
-  "titularidades": 0,
+  "titular": null,
+  "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "14789": {
   "nombre": "Oihan Sancet",
   "posicion": 3,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
-  "mediaCasa": 1,
+  "mediaCasa": 6.5,
   "mediaFuera": 3,
   "edad": 26,
   "titular": null,
-  "titularidades": 3,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "14791": {
   "nombre": "Gorka Guruzeta",
   "posicion": 4,
   "goles": 0,
   "tarjetas": 2,
-  "mediaCasa": 0,
+  "mediaCasa": 1,
   "mediaFuera": 1,
   "edad": 29,
   "titular": null,
   "titularidades": 2,
-  "suplencias": 1,
-  "dia": "2026-09-05"
+  "suplencias": 2,
+  "dia": "2026-09-06"
  },
  "14811": {
   "nombre": "Unai Simón",
   "posicion": 1,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": -3,
+  "mediaCasa": 1.5,
   "mediaFuera": 8.5,
   "edad": 29,
   "titular": null,
-  "titularidades": 3,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "14911": {
   "nombre": "Álvaro García",
   "posicion": 3,
   "goles": 1,
   "tarjetas": 1,
-  "mediaCasa": 2,
+  "mediaCasa": 3,
   "mediaFuera": 7.5,
   "edad": 33,
-  "titular": true,
-  "titularidades": 2,
+  "titular": null,
+  "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "15107": {
   "nombre": "Marc Cucurella",
@@ -1115,7 +1115,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "15109": {
   "nombre": "Giovani Lo Celso",
@@ -1128,7 +1128,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "15338": {
   "nombre": "Robin Le Normand",
@@ -1141,7 +1141,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "15342": {
   "nombre": "Ander Barrenetxea",
@@ -1154,7 +1154,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "15344": {
   "nombre": "Brahim Díaz",
@@ -1167,7 +1167,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "15345": {
   "nombre": "Aihen Muñoz",
@@ -1180,7 +1180,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "15566": {
   "nombre": "Yangel Herrera",
@@ -1193,7 +1193,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "15653": {
   "nombre": "Kang-In Lee",
@@ -1201,12 +1201,12 @@
   "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 9,
-  "mediaFuera": 6,
+  "mediaFuera": 4.5,
   "edad": 25,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "15693": {
   "nombre": "Javi Galán",
@@ -1219,7 +1219,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "15756": {
   "nombre": "Alejandro Catena",
@@ -1232,7 +1232,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "16868": {
   "nombre": "Ander Guevara",
@@ -1245,20 +1245,20 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "17290": {
   "nombre": "Sergio Camello",
   "posicion": 4,
-  "goles": 3,
-  "tarjetas": 1,
-  "mediaCasa": 11,
+  "goles": 5,
+  "tarjetas": 2,
+  "mediaCasa": 14,
   "mediaFuera": 9,
   "edad": 25,
-  "titular": true,
-  "titularidades": 2,
+  "titular": null,
+  "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "17450": {
   "nombre": "Aitor Ruibal",
@@ -1271,7 +1271,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "17452": {
   "nombre": "Éder Militão",
@@ -1284,7 +1284,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "17453": {
   "nombre": "Frenkie De Jong",
@@ -1297,7 +1297,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "17459": {
   "nombre": "Rodrygo",
@@ -1310,7 +1310,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "17568": {
   "nombre": "Pol Lozano",
@@ -1323,7 +1323,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "17614": {
   "nombre": "Kike Barja",
@@ -1336,7 +1336,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "17615": {
   "nombre": "Sergio Herrera",
@@ -1349,7 +1349,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "17623": {
   "nombre": "Ferland Mendy",
@@ -1362,20 +1362,20 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "17989": {
   "nombre": "Jorge de Frutos",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
-  "mediaCasa": 3,
+  "tarjetas": 1,
+  "mediaCasa": -0.5,
   "mediaFuera": 1,
   "edad": 29,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "18004": {
   "nombre": "Ante Budimir",
@@ -1388,7 +1388,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "18109": {
   "nombre": "Luis Rioja",
@@ -1401,7 +1401,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "18186": {
   "nombre": "Jules Koundé",
@@ -1414,7 +1414,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "18531": {
   "nombre": "Aleix Febas",
@@ -1427,7 +1427,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "19168": {
   "nombre": "Nemanja Gudelj",
@@ -1440,7 +1440,7 @@
   "titular": true,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "19524": {
   "nombre": "Iker Losada",
@@ -1453,7 +1453,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "19527": {
   "nombre": "Jon Moncayola",
@@ -1466,7 +1466,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "19562": {
   "nombre": "Takefusa Kubo",
@@ -1479,7 +1479,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "19727": {
   "nombre": "Rodrigo Riquelme",
@@ -1492,7 +1492,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "19927": {
   "nombre": "Raúl García de Haro",
@@ -1505,7 +1505,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "20131": {
   "nombre": "Manu Sánchez",
@@ -1518,7 +1518,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "20141": {
   "nombre": "Germán Valera",
@@ -1531,7 +1531,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "20346": {
   "nombre": "Guido Rodríguez",
@@ -1544,7 +1544,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "20449": {
   "nombre": "Fer Niño",
@@ -1557,7 +1557,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "22471": {
   "nombre": "Jon Pacheco",
@@ -1570,7 +1570,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "22486": {
   "nombre": "Víctor García",
@@ -1583,7 +1583,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "22495": {
   "nombre": "Giorgi Kochorashvili",
@@ -1596,7 +1596,7 @@
   "titular": true,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "22502": {
   "nombre": "Alex Baena",
@@ -1604,12 +1604,12 @@
   "goles": 3,
   "tarjetas": 1,
   "mediaCasa": 7.5,
-  "mediaFuera": 18,
+  "mediaFuera": 10,
   "edad": 25,
   "titular": null,
-  "titularidades": 1,
+  "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "22527": {
   "nombre": "Aimar Oroz",
@@ -1622,7 +1622,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "22547": {
   "nombre": "Pedri",
@@ -1635,7 +1635,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "22595": {
   "nombre": "Joaquín Muñoz",
@@ -1648,7 +1648,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "22601": {
   "nombre": "Pepelu",
@@ -1661,20 +1661,20 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "22604": {
   "nombre": "Iñigo Vicente",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 6.5,
   "mediaFuera": 5,
   "edad": 28,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "22668": {
   "nombre": "Lucas Torró",
@@ -1687,7 +1687,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "22885": {
   "nombre": "Josan Ferrández",
@@ -1700,7 +1700,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "22956": {
   "nombre": "Sergio Gómez",
@@ -1713,7 +1713,7 @@
   "titular": true,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "23147": {
   "nombre": "Tete Morente",
@@ -1726,7 +1726,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "23172": {
   "nombre": "Urko González",
@@ -1739,7 +1739,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "23369": {
   "nombre": "Juan Foyth",
@@ -1752,7 +1752,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "23664": {
   "nombre": "Sergio Carreira",
@@ -1765,7 +1765,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "24691": {
   "nombre": "Miguel Rodríguez",
@@ -1778,46 +1778,46 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "24742": {
   "nombre": "Dani Cárdenas",
   "posicion": 1,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 3,
+  "mediaCasa": 2.5,
   "mediaFuera": 2,
   "edad": 29,
-  "titular": true,
-  "titularidades": 1,
+  "titular": null,
+  "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "24778": {
   "nombre": "Robert Navarro",
   "posicion": 3,
-  "goles": 1,
+  "goles": 2,
   "tarjetas": 1,
-  "mediaCasa": 0,
+  "mediaCasa": 11,
   "mediaFuera": 6.5,
   "edad": 24,
   "titular": null,
-  "titularidades": 1,
+  "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "24789": {
   "nombre": "Nico Williams",
   "posicion": 4,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
-  "mediaCasa": 4,
+  "mediaCasa": 7.5,
   "mediaFuera": 2,
   "edad": 24,
   "titular": null,
-  "titularidades": 1,
+  "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "24792": {
   "nombre": "Juan Iglesias",
@@ -1830,7 +1830,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "25579": {
   "nombre": "Oriol Rey",
@@ -1843,20 +1843,20 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "25621": {
   "nombre": "Andrei Rațiu",
   "posicion": 2,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
-  "mediaCasa": 1,
+  "mediaCasa": 6.5,
   "mediaFuera": 2,
   "edad": 28,
-  "titular": true,
-  "titularidades": 2,
+  "titular": null,
+  "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "25630": {
   "nombre": "Victor Chust",
@@ -1869,7 +1869,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "25631": {
   "nombre": "Ilaix Moriba",
@@ -1882,7 +1882,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "25867": {
   "nombre": "Antonio Blanco",
@@ -1895,7 +1895,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "27333": {
   "nombre": "Eric García",
@@ -1905,10 +1905,10 @@
   "mediaCasa": 5,
   "mediaFuera": 8,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "27422": {
   "nombre": "Cristian Rivero",
@@ -1921,20 +1921,20 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "27425": {
   "nombre": "Iñigo Ruiz De Galarreta",
   "posicion": 3,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 2,
+  "mediaCasa": 3,
   "mediaFuera": 8,
   "edad": 33,
   "titular": null,
-  "titularidades": 1,
+  "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "27516": {
   "nombre": "Andrés Martín",
@@ -1947,7 +1947,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "27517": {
   "nombre": "Isi Palazón",
@@ -1960,20 +1960,20 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "27518": {
   "nombre": "Óscar Valentín",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 3,
   "mediaFuera": 2,
   "edad": 32,
-  "titular": true,
-  "titularidades": 2,
+  "titular": null,
+  "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "27520": {
   "nombre": "Fran García",
@@ -1986,7 +1986,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "27852": {
   "nombre": "Daniel Vivian",
@@ -1999,7 +1999,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "27855": {
   "nombre": "Diego Conde",
@@ -2012,7 +2012,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "27861": {
   "nombre": "Pablo Martínez",
@@ -2025,20 +2025,20 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "27865": {
   "nombre": "Jesús Areso",
   "posicion": 2,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 2.5,
   "mediaFuera": 6,
   "edad": 27,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "27869": {
   "nombre": "Juan Berrocal",
@@ -2051,7 +2051,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "27874": {
   "nombre": "Iván Martín",
@@ -2059,12 +2059,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 6,
-  "mediaFuera": 3,
+  "mediaFuera": 4.5,
   "edad": 27,
-  "titular": true,
-  "titularidades": 1,
+  "titular": null,
+  "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "27907": {
   "nombre": "Roger Brugué",
@@ -2077,7 +2077,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "28395": {
   "nombre": "Matías Dituro",
@@ -2090,7 +2090,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "28612": {
   "nombre": "Mathew Ryan",
@@ -2103,20 +2103,20 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "28619": {
   "nombre": "Iván Balliu",
   "posicion": 2,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 3,
   "mediaFuera": 2,
   "edad": 34,
   "titular": null,
   "titularidades": 2,
-  "suplencias": 0,
-  "dia": "2026-09-05"
+  "suplencias": 1,
+  "dia": "2026-09-06"
  },
  "28621": {
   "nombre": "Abdel Abqar",
@@ -2129,7 +2129,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "28677": {
   "nombre": "Beñat Prados",
@@ -2142,7 +2142,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "28772": {
   "nombre": "Nico Serrano",
@@ -2155,20 +2155,20 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "28773": {
   "nombre": "Aitor Paredes",
   "posicion": 2,
   "goles": 1,
   "tarjetas": 0,
-  "mediaCasa": 9,
+  "mediaCasa": 6,
   "mediaFuera": 4,
   "edad": 26,
   "titular": null,
   "titularidades": 2,
-  "suplencias": 0,
-  "dia": "2026-09-05"
+  "suplencias": 1,
+  "dia": "2026-09-06"
  },
  "28774": {
   "nombre": "Julen Agirrezabala",
@@ -2176,12 +2176,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 4,
-  "mediaFuera": 3,
+  "mediaFuera": 3.5,
   "edad": 25,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "28776": {
   "nombre": "Beñat Turrientes",
@@ -2194,7 +2194,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "28779": {
   "nombre": "Iván Romero",
@@ -2207,20 +2207,20 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "28780": {
   "nombre": "Luismi Cruz",
   "posicion": 3,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 3,
-  "mediaFuera": 6,
+  "mediaFuera": 9,
   "edad": 25,
-  "titular": true,
-  "titularidades": 2,
+  "titular": null,
+  "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "28784": {
   "nombre": "José Ángel Carmona",
@@ -2233,7 +2233,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "28787": {
   "nombre": "Diego López",
@@ -2246,7 +2246,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "28791": {
   "nombre": "Jesús Vázquez",
@@ -2259,7 +2259,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "29163": {
   "nombre": "Omar El Hilali",
@@ -2272,7 +2272,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "29166": {
   "nombre": "Joan Garcia",
@@ -2285,7 +2285,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "29167": {
   "nombre": "Ángel Fortuño",
@@ -2298,7 +2298,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "29169": {
   "nombre": "Pablo Ibáñez",
@@ -2311,7 +2311,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "29205": {
   "nombre": "Alejandro Balde",
@@ -2324,7 +2324,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "29222": {
   "nombre": "Giuliano Simeone",
@@ -2332,12 +2332,12 @@
   "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 6.5,
-  "mediaFuera": 3,
+  "mediaFuera": 1.5,
   "edad": 23,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "29223": {
   "nombre": "Mario Soriano",
@@ -2345,12 +2345,12 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 5.5,
-  "mediaFuera": 3,
+  "mediaFuera": 3.5,
   "edad": 24,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "29235": {
   "nombre": "Gavi",
@@ -2363,7 +2363,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "29238": {
   "nombre": "Arnau Comas",
@@ -2376,7 +2376,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "29402": {
   "nombre": "Randy Nteka",
@@ -2389,20 +2389,20 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "29403": {
   "nombre": "Pathé Ciss",
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 3,
+  "mediaCasa": 3.5,
   "mediaFuera": 2,
   "edad": 32,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "30444": {
   "nombre": "Leo Román",
@@ -2410,12 +2410,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 5.5,
-  "mediaFuera": 5,
+  "mediaFuera": 4,
   "edad": 26,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "31128": {
   "nombre": "Julen Lobete",
@@ -2428,7 +2428,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "31226": {
   "nombre": "Arnaut Danjuma",
@@ -2441,7 +2441,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "31355": {
   "nombre": "Alexander Sørloth",
@@ -2454,7 +2454,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "31484": {
   "nombre": "Eduardo Camavinga",
@@ -2467,7 +2467,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "31496": {
   "nombre": "Héctor Bellerín",
@@ -2480,7 +2480,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "33053": {
   "nombre": "Adrián de la Fuente",
@@ -2493,7 +2493,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "33717": {
   "nombre": "Rubén Sánchez",
@@ -2506,7 +2506,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "33726": {
   "nombre": "Hugo Álvarez",
@@ -2519,7 +2519,7 @@
   "titular": true,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "33734": {
   "nombre": "Abde Ezzalzouli",
@@ -2532,20 +2532,20 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "33896": {
   "nombre": "Ilias Akhomach",
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 1,
   "mediaFuera": 2,
   "edad": 22,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 3,
-  "dia": "2026-09-05"
+  "suplencias": 4,
+  "dia": "2026-09-06"
  },
  "35059": {
   "nombre": "Ferran Jutglà",
@@ -2558,7 +2558,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "35434": {
   "nombre": "Marc Pubill",
@@ -2566,12 +2566,12 @@
   "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 12,
-  "mediaFuera": 5,
+  "mediaFuera": 3.5,
   "edad": 23,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "35922": {
   "nombre": "Jofre Carreras",
@@ -2584,7 +2584,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "36046": {
   "nombre": "Gonzalo Villar",
@@ -2597,7 +2597,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "36048": {
   "nombre": "Nahuel Tenaglia",
@@ -2610,7 +2610,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "36334": {
   "nombre": "Adama Traoré",
@@ -2618,25 +2618,25 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 0,
+  "mediaFuera": 1,
   "edad": 30,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 0,
-  "dia": "2026-09-05"
+  "suplencias": 1,
+  "dia": "2026-09-06"
  },
  "36410": {
   "nombre": "Pierre-Emerick Aubameyang",
   "posicion": 4,
-  "goles": 3,
+  "goles": 4,
   "tarjetas": 0,
   "mediaCasa": 12,
-  "mediaFuera": 10,
+  "mediaFuera": 11.5,
   "edad": 37,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "40089": {
   "nombre": "Umar Sadiq",
@@ -2649,7 +2649,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "40147": {
   "nombre": "Antonio Rüdiger",
@@ -2662,7 +2662,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "40166": {
   "nombre": "Aurélien Tchouaméni",
@@ -2675,7 +2675,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "48194": {
   "nombre": "Williot Swedberg",
@@ -2688,7 +2688,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "48203": {
   "nombre": "Ramón Terrats",
@@ -2701,7 +2701,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "48205": {
   "nombre": "Arnau Martínez",
@@ -2714,7 +2714,7 @@
   "titular": true,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "48210": {
   "nombre": "Jonathan Dubasin",
@@ -2727,7 +2727,7 @@
   "titular": true,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "48486": {
   "nombre": "José Copete",
@@ -2740,7 +2740,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "48554": {
   "nombre": "Luiz Felipe",
@@ -2753,7 +2753,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "48556": {
   "nombre": "Andreas Christensen",
@@ -2766,7 +2766,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "48620": {
   "nombre": "Marcão",
@@ -2779,7 +2779,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "48657": {
   "nombre": "Raphinha",
@@ -2792,7 +2792,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "48960": {
   "nombre": "Kiko Femenía",
@@ -2805,7 +2805,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "49275": {
   "nombre": "André Almeida",
@@ -2813,25 +2813,25 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 0,
+  "mediaFuera": 4,
   "edad": 26,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 0,
-  "dia": "2026-09-05"
+  "suplencias": 1,
+  "dia": "2026-09-06"
  },
  "49296": {
   "nombre": "Fran Pérez",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 1,
-  "mediaCasa": 2,
+  "tarjetas": 2,
+  "mediaCasa": -2,
   "mediaFuera": 3,
   "edad": 23,
   "titular": null,
   "titularidades": 1,
-  "suplencias": 2,
-  "dia": "2026-09-05"
+  "suplencias": 3,
+  "dia": "2026-09-06"
  },
  "49382": {
   "nombre": "Marcos Alonso",
@@ -2844,7 +2844,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "49424": {
   "nombre": "Kike Salas",
@@ -2857,7 +2857,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "51060": {
   "nombre": "Juan Cruz",
@@ -2870,7 +2870,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "51134": {
   "nombre": "Pablo Durán",
@@ -2883,7 +2883,7 @@
   "titular": true,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "51135": {
   "nombre": "Pablo Barrios",
@@ -2891,12 +2891,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 6,
-  "mediaFuera": 9,
+  "mediaFuera": 7,
   "edad": 23,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "51137": {
   "nombre": "Pablo Marín",
@@ -2909,7 +2909,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "52117": {
   "nombre": "Jon Ander Olasagasti",
@@ -2922,33 +2922,33 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "52162": {
   "nombre": "Pape Gueye",
   "posicion": 3,
   "goles": 1,
   "tarjetas": 1,
-  "mediaCasa": 0,
+  "mediaCasa": 3,
   "mediaFuera": 6.7,
   "edad": 27,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "52189": {
   "nombre": "Ayoze Pérez",
   "posicion": 4,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 3,
   "mediaFuera": 3,
   "edad": 33,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "52371": {
   "nombre": "Iker Muñoz",
@@ -2961,7 +2961,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "52372": {
   "nombre": "Javi Guerra",
@@ -2974,7 +2974,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "52375": {
   "nombre": "Lamine Yamal",
@@ -2987,7 +2987,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "52377": {
   "nombre": "Jorge Herrando",
@@ -3000,7 +3000,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "52404": {
   "nombre": "Manu Bueno",
@@ -3013,7 +3013,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "53095": {
   "nombre": "Bryan Zaragoza",
@@ -3026,33 +3026,33 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "53098": {
   "nombre": "Alberto Moleiro",
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 3,
   "mediaFuera": 2.7,
   "edad": 22,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "53107": {
   "nombre": "Sergi Cardona",
   "posicion": 2,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": -1,
   "mediaFuera": 0,
   "edad": 27,
   "titular": null,
-  "titularidades": 0,
+  "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "53111": {
   "nombre": "Álvaro Valles",
@@ -3065,7 +3065,7 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "53114": {
   "nombre": "Jude Bellingham",
@@ -3073,12 +3073,12 @@
   "goles": 2,
   "tarjetas": 0,
   "mediaCasa": 11.5,
-  "mediaFuera": 6.5,
+  "mediaFuera": 7,
   "edad": 23,
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "53143": {
   "nombre": "Abde Rebbach",
@@ -3091,7 +3091,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "53144": {
   "nombre": "Carlos Benavídez",
@@ -3104,7 +3104,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "54817": {
   "nombre": "Arda Güler",
@@ -3117,7 +3117,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "54832": {
   "nombre": "Santiago Mouriño",
@@ -3127,10 +3127,10 @@
   "mediaCasa": 0,
   "mediaFuera": 2.7,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "54900": {
   "nombre": "Carlos Dotor",
@@ -3143,7 +3143,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "55009": {
   "nombre": "Fermín López",
@@ -3156,7 +3156,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "55045": {
   "nombre": "Hugo Sotelo",
@@ -3169,7 +3169,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "55088": {
   "nombre": "Carl Starfelt",
@@ -3182,7 +3182,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "55439": {
   "nombre": "Hugo González",
@@ -3195,7 +3195,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "55452": {
   "nombre": "Sergi Canós",
@@ -3208,7 +3208,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "55454": {
   "nombre": "Arsen Zakharyan",
@@ -3221,7 +3221,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "55664": {
   "nombre": "Unai Marrero",
@@ -3234,7 +3234,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "55666": {
   "nombre": "Álvaro Carreras",
@@ -3247,7 +3247,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "55738": {
   "nombre": "César Tárrega",
@@ -3260,7 +3260,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "55743": {
   "nombre": "Carlos Romero",
@@ -3270,10 +3270,10 @@
   "mediaCasa": 0,
   "mediaFuera": 3,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "55966": {
   "nombre": "Adrià Altimira",
@@ -3286,20 +3286,20 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "56502": {
   "nombre": "Mikel Jauregizar",
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 3,
   "mediaFuera": 2.5,
   "edad": 22,
   "titular": null,
   "titularidades": 1,
-  "suplencias": 1,
-  "dia": "2026-09-05"
+  "suplencias": 2,
+  "dia": "2026-09-06"
  },
  "56578": {
   "nombre": "Johnny Cardoso",
@@ -3311,8 +3311,8 @@
   "edad": 24,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 1,
-  "dia": "2026-09-05"
+  "suplencias": 2,
+  "dia": "2026-09-06"
  },
  "56583": {
   "nombre": "Augusto Batalla",
@@ -3325,7 +3325,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "56628": {
   "nombre": "Lucien Agoumé",
@@ -3338,7 +3338,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "56632": {
   "nombre": "Isaac Romero",
@@ -3351,7 +3351,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "56924": {
   "nombre": "Etta Eyong",
@@ -3364,7 +3364,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "56925": {
   "nombre": "Jon Aramburu",
@@ -3377,7 +3377,7 @@
   "titular": true,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "56926": {
   "nombre": "Pau Cubarsi",
@@ -3390,7 +3390,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "56971": {
   "nombre": "Hector Fort",
@@ -3403,7 +3403,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "58125": {
   "nombre": "Mario Martín",
@@ -3416,7 +3416,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "58383": {
   "nombre": "Christantus Uche",
@@ -3429,7 +3429,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "58436": {
   "nombre": "Raúl Moro",
@@ -3442,7 +3442,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "58438": {
   "nombre": "Flavien Boyomo",
@@ -3455,7 +3455,7 @@
   "titular": true,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "58467": {
   "nombre": "Chidera Ejuke",
@@ -3468,7 +3468,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "58820": {
   "nombre": "Marc Casadó",
@@ -3476,12 +3476,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 0,
+  "mediaFuera": 3,
   "edad": 22,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 0,
-  "dia": "2026-09-05"
+  "suplencias": 1,
+  "dia": "2026-09-06"
  },
  "58951": {
   "nombre": "Endrick",
@@ -3494,7 +3494,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "58954": {
   "nombre": "Kylian Mbappé",
@@ -3502,12 +3502,12 @@
   "goles": 4,
   "tarjetas": 0,
   "mediaCasa": 15,
-  "mediaFuera": 1,
+  "mediaFuera": 2,
   "edad": 27,
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "58958": {
   "nombre": "Pelayo Fernández",
@@ -3520,7 +3520,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "58980": {
   "nombre": "Valentin Rosier",
@@ -3533,7 +3533,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "58986": {
   "nombre": "Abel Bretones",
@@ -3546,7 +3546,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "58992": {
   "nombre": "Álvaro Djaló",
@@ -3559,7 +3559,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59042": {
   "nombre": "Peque Fernández",
@@ -3572,7 +3572,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59064": {
   "nombre": "Jiri Letacek",
@@ -3585,7 +3585,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59089": {
   "nombre": "Alex Padilla",
@@ -3598,7 +3598,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59126": {
   "nombre": "Hugo Novoa",
@@ -3611,7 +3611,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59371": {
   "nombre": "Luka Sučić",
@@ -3624,33 +3624,33 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59382": {
   "nombre": "Nicolas Pépé",
   "posicion": 4,
-  "goles": 1,
+  "goles": 2,
   "tarjetas": 1,
-  "mediaCasa": 0,
+  "mediaCasa": 10,
   "mediaFuera": 7.3,
   "edad": 31,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59395": {
   "nombre": "Pedro Díaz",
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 4,
   "mediaFuera": 2,
   "edad": 28,
   "titular": null,
-  "titularidades": 0,
+  "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59415": {
   "nombre": "Dani Olmo",
@@ -3663,7 +3663,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59476": {
   "nombre": "Julián Álvarez",
@@ -3671,12 +3671,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 1,
-  "mediaFuera": 0,
+  "mediaFuera": 2,
   "edad": 26,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 1,
-  "dia": "2026-09-05"
+  "suplencias": 2,
+  "dia": "2026-09-06"
  },
  "59484": {
   "nombre": "Marc Bernal",
@@ -3689,7 +3689,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59499": {
   "nombre": "Natan Souza",
@@ -3702,7 +3702,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59506": {
   "nombre": "Javi Rodríguez",
@@ -3715,7 +3715,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59532": {
   "nombre": "Marash Kumbulla",
@@ -3728,7 +3728,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59533": {
   "nombre": "Gerard Martín",
@@ -3741,33 +3741,33 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59581": {
   "nombre": "Luiz Júnior",
   "posicion": 1,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": -1,
   "mediaFuera": 1.7,
   "edad": 25,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59593": {
   "nombre": "Logan Costa",
   "posicion": 2,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 2,
   "mediaFuera": 0,
   "edad": 25,
   "titular": null,
-  "titularidades": 0,
+  "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59623": {
   "nombre": "Jon Martin",
@@ -3780,7 +3780,7 @@
   "titular": true,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59633": {
   "nombre": "Alfon González",
@@ -3793,7 +3793,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59641": {
   "nombre": "Toni Martínez",
@@ -3806,7 +3806,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59642": {
   "nombre": "Juan Musso",
@@ -3819,7 +3819,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "59789": {
   "nombre": "Orri Óskarsson",
@@ -3832,7 +3832,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "60210": {
   "nombre": "Pau Navarro",
@@ -3842,10 +3842,10 @@
   "mediaCasa": 0,
   "mediaFuera": 0,
   "edad": 21,
-  "titular": true,
+  "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "60218": {
   "nombre": "Peio Canales",
@@ -3858,7 +3858,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "60227": {
   "nombre": "Wojciech Szczęsny",
@@ -3871,7 +3871,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "60271": {
   "nombre": "Rafa Bauza",
@@ -3884,7 +3884,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "60290": {
   "nombre": "Raúl Asencio",
@@ -3897,7 +3897,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "60858": {
   "nombre": "Pablo Ramón",
@@ -3905,12 +3905,12 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 3,
-  "mediaFuera": 6,
+  "mediaFuera": 4.5,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
-  "suplencias": 0,
-  "dia": "2026-09-05"
+  "suplencias": 1,
+  "dia": "2026-09-06"
  },
  "60859": {
   "nombre": "Facundo Garcés",
@@ -3923,7 +3923,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "60861": {
   "nombre": "Jones El-Abdellaoui",
@@ -3936,7 +3936,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "60872": {
   "nombre": "Rubén Vargas",
@@ -3949,7 +3949,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "60888": {
   "nombre": "Roberto Fernández",
@@ -3962,7 +3962,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "60919": {
   "nombre": "Yoel Lago",
@@ -3975,7 +3975,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "60927": {
   "nombre": "Adrián Niño",
@@ -3988,7 +3988,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "61009": {
   "nombre": "Ángel Ortiz",
@@ -4001,20 +4001,20 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "61012": {
   "nombre": "Pablo García",
   "posicion": 4,
-  "goles": 1,
+  "goles": 2,
   "tarjetas": 1,
   "mediaCasa": 2,
-  "mediaFuera": 6,
+  "mediaFuera": 7.3,
   "edad": 20,
-  "titular": true,
-  "titularidades": 0,
+  "titular": null,
+  "titularidades": 1,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "61013": {
   "nombre": "Antony Santos",
@@ -4027,20 +4027,20 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "61092": {
   "nombre": "Tajon Buchanan",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
-  "mediaCasa": 0,
+  "tarjetas": 1,
+  "mediaCasa": 2,
   "mediaFuera": 3.7,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
-  "suplencias": 2,
-  "dia": "2026-09-05"
+  "suplencias": 3,
+  "dia": "2026-09-06"
  },
  "61093": {
   "nombre": "Maroan Sannadi",
@@ -4053,7 +4053,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "61167": {
   "nombre": "Adam Aznou",
@@ -4066,7 +4066,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "61297": {
   "nombre": "Luken Beitia",
@@ -4079,7 +4079,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "61410": {
   "nombre": "Adrián Rodríguez",
@@ -4092,7 +4092,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "62904": {
   "nombre": "Yan Diomande",
@@ -4105,7 +4105,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 4,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "62910": {
   "nombre": "Fran González",
@@ -4118,7 +4118,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "63406": {
   "nombre": "Trent Alexander-Arnold",
@@ -4131,7 +4131,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "63705": {
   "nombre": "Ionuț Radu",
@@ -4144,7 +4144,7 @@
   "titular": true,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "63727": {
   "nombre": "Marcos Fernández",
@@ -4157,7 +4157,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "63780": {
   "nombre": "Carlos Espí",
@@ -4170,7 +4170,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "63784": {
   "nombre": "Jorge Cabello",
@@ -4183,7 +4183,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "63788": {
   "nombre": "Dean Huijsen",
@@ -4196,7 +4196,7 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "63866": {
   "nombre": "Álvaro Núñez",
@@ -4209,7 +4209,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "63867": {
   "nombre": "Yago Santiago",
@@ -4222,7 +4222,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "63868": {
   "nombre": "Rodrigo Mendoza",
@@ -4235,7 +4235,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "63869": {
   "nombre": "Bambo Diaby",
@@ -4248,7 +4248,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "63871": {
   "nombre": "Marc Aguado",
@@ -4261,7 +4261,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64031": {
   "nombre": "Hugo Rincón",
@@ -4274,7 +4274,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64033": {
   "nombre": "Jon Gorrotxategi",
@@ -4287,7 +4287,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64038": {
   "nombre": "José Salinas",
@@ -4300,7 +4300,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64151": {
   "nombre": "Davinchi",
@@ -4313,7 +4313,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64160": {
   "nombre": "Javi Rueda",
@@ -4326,7 +4326,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64199": {
   "nombre": "Unai Egiluz",
@@ -4339,7 +4339,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64200": {
   "nombre": "Jeremy Toljan",
@@ -4352,7 +4352,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64382": {
   "nombre": "Gabriel Suazo",
@@ -4365,7 +4365,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64410": {
   "nombre": "Alejandro Iturbe",
@@ -4378,7 +4378,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64411": {
   "nombre": "Youssef Enríquez",
@@ -4391,7 +4391,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64458": {
   "nombre": "Pablo Campos",
@@ -4404,7 +4404,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64459": {
   "nombre": "Dávid Hancko",
@@ -4412,12 +4412,12 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 5,
-  "mediaFuera": 4,
+  "mediaFuera": 3,
   "edad": 28,
   "titular": null,
-  "titularidades": 3,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64468": {
   "nombre": "Tyrhys Dolan",
@@ -4430,7 +4430,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64491": {
   "nombre": "Valentín Gómez",
@@ -4443,7 +4443,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64496": {
   "nombre": "Roony Bardghji",
@@ -4456,7 +4456,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64524": {
   "nombre": "Martim Neto",
@@ -4469,7 +4469,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "64562": {
   "nombre": "Nelson Deossa",
@@ -4482,7 +4482,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65090": {
   "nombre": "Filip Ugrinic",
@@ -4495,7 +4495,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65104": {
   "nombre": "Jozhua Vertrouwd",
@@ -4508,7 +4508,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65111": {
   "nombre": "Odysseas Vlachodimos",
@@ -4521,7 +4521,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65136": {
   "nombre": "Fede Redondo",
@@ -4534,7 +4534,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65179": {
   "nombre": "Andrés Castrín",
@@ -4547,7 +4547,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65187": {
   "nombre": "Alejandro Rego",
@@ -4560,7 +4560,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65188": {
   "nombre": "Thiago Pitarch",
@@ -4573,7 +4573,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65269": {
   "nombre": "Ali Houary",
@@ -4586,20 +4586,20 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65347": {
   "nombre": "Renato Veiga",
   "posicion": 2,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 2,
   "mediaFuera": 3.7,
   "edad": 23,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65475": {
   "nombre": "Asier Osambela",
@@ -4612,7 +4612,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65476": {
   "nombre": "Clemens Riedel",
@@ -4625,20 +4625,20 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65625": {
   "nombre": "Tani Oluwaseyi",
   "posicion": 4,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 2,
   "mediaFuera": 1.5,
   "edad": 26,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 2,
-  "dia": "2026-09-05"
+  "suplencias": 3,
+  "dia": "2026-09-06"
  },
  "65669": {
   "nombre": "Grady Diangana",
@@ -4651,7 +4651,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65674": {
   "nombre": "Miguel Román",
@@ -4664,20 +4664,20 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65704": {
   "nombre": "Georges Mikautadze",
   "posicion": 4,
   "goles": 1,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 2,
   "mediaFuera": 5.7,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
-  "suplencias": 0,
-  "dia": "2026-09-05"
+  "suplencias": 1,
+  "dia": "2026-09-06"
  },
  "65721": {
   "nombre": "Dominik Livakovic",
@@ -4690,7 +4690,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65724": {
   "nombre": "Fábio Cardoso",
@@ -4703,20 +4703,20 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "65727": {
   "nombre": "Alemão",
   "posicion": 4,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 0,
+  "mediaCasa": 2,
   "mediaFuera": 3,
   "edad": 28,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 2,
-  "dia": "2026-09-05"
+  "suplencias": 3,
+  "dia": "2026-09-06"
  },
  "66706": {
   "nombre": "Javi Hernandez",
@@ -4729,7 +4729,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "67580": {
   "nombre": "Samu Becerra",
@@ -4742,7 +4742,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "67870": {
   "nombre": "Adam Boayar",
@@ -4755,7 +4755,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "67931": {
   "nombre": "Selton Sánchez",
@@ -4768,7 +4768,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "67942": {
   "nombre": "Íñigo Arguibide",
@@ -4781,7 +4781,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68259": {
   "nombre": "Carlos Macia",
@@ -4794,7 +4794,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68361": {
   "nombre": "Aitor Mañas",
@@ -4807,7 +4807,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68383": {
   "nombre": "Thiago Fernández",
@@ -4820,7 +4820,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68446": {
   "nombre": "Paco Cortés",
@@ -4833,7 +4833,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68465": {
   "nombre": "Abiel Osorio",
@@ -4846,7 +4846,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68495": {
   "nombre": "Martín Satriano",
@@ -4859,7 +4859,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68497": {
   "nombre": "Sebastián Boselli",
@@ -4872,7 +4872,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68498": {
   "nombre": "Zaid Romero",
@@ -4885,7 +4885,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68593": {
   "nombre": "Lucas Cepeda",
@@ -4898,7 +4898,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68606": {
   "nombre": "Ángel Pérez",
@@ -4911,20 +4911,20 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68640": {
   "nombre": "Alex Freeman",
   "posicion": 2,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 3,
   "mediaFuera": 2,
   "edad": 22,
   "titular": null,
-  "titularidades": 0,
+  "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68652": {
   "nombre": "Ville Koski",
@@ -4937,7 +4937,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68676": {
   "nombre": "Ademola Lookman",
@@ -4945,12 +4945,12 @@
   "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 2,
-  "mediaFuera": 10,
+  "mediaFuera": 4.5,
   "edad": 28,
   "titular": null,
-  "titularidades": 3,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68677": {
   "nombre": "Álvaro Fidalgo",
@@ -4963,7 +4963,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68711": {
   "nombre": "Obed Vargas",
@@ -4976,7 +4976,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68716": {
   "nombre": "Buba Sangaré",
@@ -4989,7 +4989,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "68835": {
   "nombre": "Job Ochieng",
@@ -5002,7 +5002,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "69281": {
   "nombre": "Nacho Pérez",
@@ -5015,7 +5015,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "69744": {
   "nombre": "Julio Díaz",
@@ -5028,7 +5028,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "69889": {
   "nombre": "Xavi Espart",
@@ -5041,7 +5041,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70150": {
   "nombre": "Javi Morcillo",
@@ -5054,7 +5054,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70181": {
   "nombre": "Dani Martínez",
@@ -5067,7 +5067,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70183": {
   "nombre": "Rayane Belaid",
@@ -5080,7 +5080,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70189": {
   "nombre": "Andrés Antañón",
@@ -5093,7 +5093,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70255": {
   "nombre": "Iker Luque",
@@ -5106,7 +5106,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70496": {
   "nombre": "Alassane Diatta",
@@ -5119,7 +5119,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70499": {
   "nombre": "Iñaki Rupérez",
@@ -5132,7 +5132,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70638": {
   "nombre": "Anthony Gordon",
@@ -5145,7 +5145,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70917": {
   "nombre": "Arouna Sangante",
@@ -5158,7 +5158,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70918": {
   "nombre": "Bernardo Silva",
@@ -5171,7 +5171,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70922": {
   "nombre": "Ibrahima Konaté",
@@ -5184,7 +5184,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70923": {
   "nombre": "Enzo Bardeli",
@@ -5197,7 +5197,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70925": {
   "nombre": "Simon Eriksson",
@@ -5210,7 +5210,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70927": {
   "nombre": "Giorgi Guliashvili",
@@ -5223,7 +5223,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70929": {
   "nombre": "Juan Carlos Arana",
@@ -5231,12 +5231,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 1,
+  "mediaFuera": 0.5,
   "edad": 26,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 1,
-  "dia": "2026-09-05"
+  "suplencias": 2,
+  "dia": "2026-09-06"
  },
  "70931": {
   "nombre": "Maguette Gueye",
@@ -5249,7 +5249,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70932": {
   "nombre": "Sergio Martinez",
@@ -5262,7 +5262,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70934": {
   "nombre": "Íñigo Sáinz-Maza",
@@ -5275,7 +5275,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70935": {
   "nombre": "Jorge Salinas",
@@ -5283,12 +5283,12 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 4,
-  "mediaFuera": 3,
+  "mediaFuera": 2,
   "edad": 19,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70936": {
   "nombre": "Manu Hernando",
@@ -5296,12 +5296,12 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 4,
-  "mediaFuera": 2,
+  "mediaFuera": 1.5,
   "edad": 28,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70938": {
   "nombre": "Álvaro Mantilla",
@@ -5309,38 +5309,38 @@
   "goles": 0,
   "tarjetas": 2,
   "mediaCasa": 3,
-  "mediaFuera": 2,
+  "mediaFuera": 1.5,
   "edad": 26,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70939": {
   "nombre": "Yeremay Hernández",
   "posicion": 4,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 3,
-  "mediaFuera": 2,
+  "mediaFuera": 3,
   "edad": 23,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 2,
-  "dia": "2026-09-05"
+  "suplencias": 3,
+  "dia": "2026-09-06"
  },
  "70940": {
   "nombre": "Zakaria Eddahchouri",
   "posicion": 4,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 2,
-  "mediaFuera": 0,
+  "mediaFuera": 9,
   "edad": 26,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 1,
-  "dia": "2026-09-05"
+  "suplencias": 2,
+  "dia": "2026-09-06"
  },
  "70941": {
   "nombre": "Bil Nsongo",
@@ -5348,12 +5348,12 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 6,
-  "mediaFuera": 2,
+  "mediaFuera": 3.5,
   "edad": 21,
-  "titular": true,
-  "titularidades": 2,
+  "titular": null,
+  "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70943": {
   "nombre": "David Mella",
@@ -5366,7 +5366,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70944": {
   "nombre": "Riki Rodríguez",
@@ -5374,12 +5374,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 4,
-  "mediaFuera": 0,
+  "mediaFuera": 3,
   "edad": 28,
-  "titular": true,
-  "titularidades": 1,
+  "titular": null,
+  "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70945": {
   "nombre": "Diego Villares",
@@ -5392,7 +5392,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70947": {
   "nombre": "Noé Carrillo",
@@ -5405,7 +5405,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70948": {
   "nombre": "Lucas Noubi",
@@ -5413,12 +5413,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 3.5,
-  "mediaFuera": 1,
+  "mediaFuera": 2,
   "edad": 21,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70949": {
   "nombre": "Dani Barcia",
@@ -5431,7 +5431,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70950": {
   "nombre": "Giacomo Quagliata",
@@ -5439,12 +5439,12 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 4.5,
-  "mediaFuera": 4,
+  "mediaFuera": 3.5,
   "edad": 26,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70952": {
   "nombre": "Germán Parreño",
@@ -5457,7 +5457,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70953": {
   "nombre": "Miguel Loureiro",
@@ -5465,12 +5465,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 2,
-  "mediaFuera": 2,
+  "mediaFuera": 2.5,
   "edad": 29,
   "titular": null,
   "titularidades": 1,
-  "suplencias": 1,
-  "dia": "2026-09-05"
+  "suplencias": 2,
+  "dia": "2026-09-06"
  },
  "70992": {
   "nombre": "Chupete",
@@ -5483,7 +5483,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70993": {
   "nombre": "Haitam Abaida",
@@ -5496,7 +5496,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70994": {
   "nombre": "Eneko Jauregi",
@@ -5509,7 +5509,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70996": {
   "nombre": "David Larrubia",
@@ -5522,7 +5522,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70997": {
   "nombre": "Aarón Ochoa",
@@ -5535,7 +5535,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70998": {
   "nombre": "Izan Merino",
@@ -5548,7 +5548,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "70999": {
   "nombre": "Dani Lorenzo",
@@ -5561,7 +5561,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71000": {
   "nombre": "Rafa Rodriguez",
@@ -5574,7 +5574,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71002": {
   "nombre": "Ramón Enríquez",
@@ -5587,7 +5587,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71003": {
   "nombre": "Diego Murillo",
@@ -5600,7 +5600,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71004": {
   "nombre": "Carlos Puga",
@@ -5613,7 +5613,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71006": {
   "nombre": "Álex Pastor",
@@ -5626,7 +5626,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71008": {
   "nombre": "Rafita Garrido",
@@ -5639,7 +5639,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71010": {
   "nombre": "Ángel Recio",
@@ -5652,7 +5652,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71011": {
   "nombre": "Alfonso Herrero",
@@ -5665,7 +5665,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71012": {
   "nombre": "Carlos López",
@@ -5678,7 +5678,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71019": {
   "nombre": "Kazunari Kita",
@@ -5691,7 +5691,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71021": {
   "nombre": "Alejandro Grimaldo",
@@ -5699,12 +5699,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 3,
-  "mediaFuera": 2,
+  "mediaFuera": 0.5,
   "edad": 30,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71022": {
   "nombre": "Teun Gijselhart",
@@ -5717,7 +5717,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71037": {
   "nombre": "Facundo González",
@@ -5728,9 +5728,9 @@
   "mediaFuera": 1,
   "edad": 23,
   "titular": null,
-  "titularidades": 1,
+  "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71038": {
   "nombre": "Justin De Haas",
@@ -5743,7 +5743,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71061": {
   "nombre": "Álex Calatrava",
@@ -5756,7 +5756,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71124": {
   "nombre": "Denzel Dumfries",
@@ -5769,7 +5769,7 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71132": {
   "nombre": "Facundo Bernal",
@@ -5782,7 +5782,7 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71138": {
   "nombre": "Ryunosuke Sato",
@@ -5795,7 +5795,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71139": {
   "nombre": "Bright Ede",
@@ -5805,10 +5805,10 @@
   "mediaCasa": 2.5,
   "mediaFuera": 3,
   "edad": 19,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71140": {
   "nombre": "Quilindschy Hartman",
@@ -5821,7 +5821,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71141": {
   "nombre": "Jean Ives Valou",
@@ -5834,7 +5834,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71142": {
   "nombre": "Aliou Dieng",
@@ -5847,7 +5847,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71149": {
   "nombre": "Gabriel Moscardo",
@@ -5860,20 +5860,20 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71154": {
   "nombre": "Lorenzo Amatucci",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 5.5,
-  "mediaFuera": 4,
+  "mediaFuera": 5,
   "edad": 22,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71176": {
   "nombre": "Morten Hjulmand",
@@ -5881,12 +5881,12 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 3,
-  "mediaFuera": 5,
+  "mediaFuera": 4,
   "edad": 27,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71179": {
   "nombre": "Hamza Abdelkarim",
@@ -5899,7 +5899,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71343": {
   "nombre": "Jonathan Asp Jensen",
@@ -5912,7 +5912,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71502": {
   "nombre": "Andrés García",
@@ -5925,7 +5925,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71503": {
   "nombre": "Mikel Rodriguez",
@@ -5938,7 +5938,7 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71505": {
   "nombre": "Jairo Noriega",
@@ -5951,7 +5951,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71506": {
   "nombre": "Rubén López",
@@ -5964,7 +5964,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71509": {
   "nombre": "Kevin Sánchez",
@@ -5977,7 +5977,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71511": {
   "nombre": "Moussa Diarra",
@@ -5990,7 +5990,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71530": {
   "nombre": "Daniel Requena",
@@ -6003,7 +6003,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71574": {
   "nombre": "Karim Adeyemi",
@@ -6016,20 +6016,20 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71616": {
   "nombre": "Yassir Zabiri",
   "posicion": 4,
   "goles": 3,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 11,
-  "mediaFuera": 2,
+  "mediaFuera": 1,
   "edad": 21,
-  "titular": true,
-  "titularidades": 1,
+  "titular": null,
+  "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71622": {
   "nombre": "Jesse Bisiwu",
@@ -6042,7 +6042,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71623": {
   "nombre": "Roger Hinojo",
@@ -6055,7 +6055,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71633": {
   "nombre": "Yanis Musuayi",
@@ -6068,7 +6068,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71638": {
   "nombre": "Laro Gómez",
@@ -6081,7 +6081,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71639": {
   "nombre": "Beñat Gerenabarrena",
@@ -6092,9 +6092,9 @@
   "mediaFuera": 5,
   "edad": 23,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71640": {
   "nombre": "Miguel Sierra",
@@ -6107,7 +6107,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71642": {
   "nombre": "Abdoulaye Faye",
@@ -6120,7 +6120,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71649": {
   "nombre": "Péter Gulácsi",
@@ -6133,7 +6133,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71790": {
   "nombre": "Saba Sazonov",
@@ -6146,7 +6146,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71791": {
   "nombre": "Pedro Felipe",
@@ -6156,10 +6156,10 @@
   "mediaCasa": 2,
   "mediaFuera": 0,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71792": {
   "nombre": "Nico Guillén",
@@ -6172,7 +6172,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "71795": {
   "nombre": "Angeliño",
@@ -6185,7 +6185,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "78393": {
   "nombre": "Altay Bayındır",
@@ -6198,7 +6198,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "78394": {
   "nombre": "Nicolás Valentini",
@@ -6211,7 +6211,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "78750": {
   "nombre": "Orel Mangala",
@@ -6224,7 +6224,7 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "78751": {
   "nombre": "Facundo Buonanotte",
@@ -6237,7 +6237,7 @@
   "titular": true,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "523868": {
   "nombre": "Robbie Ure",
@@ -6250,7 +6250,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "822248": {
   "nombre": "Rockson Yeboah",
@@ -6263,20 +6263,20 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "925296": {
   "nombre": "Giorgi Tsitaishvili",
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 2,
   "mediaFuera": 0,
   "edad": 25,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 0,
-  "dia": "2026-09-05"
+  "suplencias": 1,
+  "dia": "2026-09-06"
  },
  "1153038": {
   "nombre": "Rodrigo Gamón",
@@ -6289,7 +6289,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "1255969": {
   "nombre": "Jorge Domínguez",
@@ -6302,7 +6302,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "1256139": {
   "nombre": "Vanja Drkušić",
@@ -6315,7 +6315,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "1385821": {
   "nombre": "Cristian Romero",
@@ -6323,12 +6323,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 0,
+  "mediaFuera": 2,
   "edad": 28,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 0,
-  "dia": "2026-09-05"
+  "suplencias": 1,
+  "dia": "2026-09-06"
  },
  "1396108": {
   "nombre": "Arnau Ortiz",
@@ -6336,12 +6336,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 4,
-  "mediaFuera": 3,
+  "mediaFuera": 2,
   "edad": 24,
   "titular": null,
   "titularidades": 1,
-  "suplencias": 1,
-  "dia": "2026-09-05"
+  "suplencias": 2,
+  "dia": "2026-09-06"
  },
  "1751425": {
   "nombre": "Marc Santos",
@@ -6354,7 +6354,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "2196106": {
   "nombre": "Francho Serrano",
@@ -6367,7 +6367,7 @@
   "titular": true,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "2586746": {
   "nombre": "Álvaro Padilla",
@@ -6380,7 +6380,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "2720265": {
   "nombre": "Troy Parrott",
@@ -6393,7 +6393,7 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 2,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "3317698": {
   "nombre": "Ifeanyi Ndukwe",
@@ -6406,7 +6406,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "3368896": {
   "nombre": "Jordi Pesquer",
@@ -6419,7 +6419,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "3688394": {
   "nombre": "Kayne van Oevelen",
@@ -6432,7 +6432,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "3844425": {
   "nombre": "Couhaib Driouech",
@@ -6445,20 +6445,20 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "3845074": {
   "nombre": "Nathan Saliba",
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 5,
   "mediaFuera": 0,
   "edad": 22,
   "titular": null,
-  "titularidades": 0,
+  "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "3848674": {
   "nombre": "Matteo Prati",
@@ -6466,12 +6466,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 1,
-  "mediaFuera": 0,
+  "mediaFuera": 3,
   "edad": 22,
-  "titular": true,
-  "titularidades": 0,
+  "titular": null,
+  "titularidades": 1,
   "suplencias": 1,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "3848684": {
   "nombre": "Alex Marchal",
@@ -6484,33 +6484,33 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "3848779": {
   "nombre": "Gnangoro Bouare",
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 4,
   "mediaFuera": 1,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
-  "suplencias": 0,
-  "dia": "2026-09-05"
+  "suplencias": 1,
+  "dia": "2026-09-06"
  },
  "3848780": {
   "nombre": "Johaneko Louis-Jean",
   "posicion": 2,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 0,
+  "mediaCasa": 3,
   "mediaFuera": 3,
   "edad": 22,
   "titular": null,
   "titularidades": 1,
-  "suplencias": 1,
-  "dia": "2026-09-05"
+  "suplencias": 2,
+  "dia": "2026-09-06"
  },
  "3849388": {
   "nombre": "Mamadou Sarr",
@@ -6523,7 +6523,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4478035": {
   "nombre": "Axel Tape",
@@ -6536,7 +6536,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4733614": {
   "nombre": "Romain Del Castillo",
@@ -6549,7 +6549,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4764213": {
   "nombre": "Gabriel Jesus",
@@ -6562,7 +6562,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4774441": {
   "nombre": "Matia Barzic",
@@ -6575,7 +6575,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4836153": {
   "nombre": "Jonathan David",
@@ -6588,7 +6588,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4836165": {
   "nombre": "Roy Revivo",
@@ -6601,7 +6601,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4836172": {
   "nombre": "Lucas Stassin",
@@ -6614,7 +6614,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4836173": {
   "nombre": "Félix Correia",
@@ -6627,7 +6627,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4836181": {
   "nombre": "Iván Azón",
@@ -6640,7 +6640,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4836184": {
   "nombre": "Jeanuël Belocian",
@@ -6648,12 +6648,12 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 0,
+  "mediaFuera": 3,
   "edad": 21,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 0,
-  "dia": "2026-09-05"
+  "suplencias": 1,
+  "dia": "2026-09-06"
  },
  "4836189": {
   "nombre": "Harvey Elliott",
@@ -6666,7 +6666,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4836242": {
   "nombre": "Sebastián Cáceres",
@@ -6679,7 +6679,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4947925": {
   "nombre": "Brian Fariñas",
@@ -6692,7 +6692,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4947926": {
   "nombre": "Kevin Lomónaco",
@@ -6705,7 +6705,7 @@
   "titular": true,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4947927": {
   "nombre": "Youssouf Fofana",
@@ -6718,7 +6718,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4947928": {
   "nombre": "Salvi Esquivel",
@@ -6731,7 +6731,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4947929": {
   "nombre": "Emil Audero",
@@ -6744,7 +6744,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4947930": {
   "nombre": "Jens-Lys Cajuste",
@@ -6757,7 +6757,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4947931": {
   "nombre": "Petar Ratkov",
@@ -6770,7 +6770,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  },
  "4947932": {
   "nombre": "Mujaid Sadick",
@@ -6783,6 +6783,6 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-05"
+  "dia": "2026-09-06"
  }
 }
