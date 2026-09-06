@@ -1,6 +1,14 @@
 {
- "saldo": 21071960,
+ "saldo": 20859360,
  "apuntes": [
+  {
+   "cuando": 1788721361,
+   "fecha": "2026-09-06 21:02",
+   "motivo": "Modificación de cláusula (150%) de Beñat Gerenabarrena",
+   "tipo": "Penalización",
+   "importe": -212600,
+   "saldo": 20859360
+  },
   {
    "cuando": 1788685255,
    "fecha": "2026-09-06 11:00",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 1205400,
    "saldo": -7045156
-  },
-  {
-   "cuando": 1786244400,
-   "fecha": "2026-08-09 05:00",
-   "motivo": "Sergio Canales a Mister",
-   "tipo": "Compra",
-   "importe": -4038280,
-   "saldo": -8250556
   }
  ]
 }

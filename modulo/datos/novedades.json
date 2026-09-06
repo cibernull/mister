@@ -406,6 +406,15 @@
   "equipo": "Los tocahuevos C.F ( juanito)"
  },
  {
+  "tipo": "clausula",
+  "dia": "2026-09-06",
+  "id": "71639",
+  "equipo": "Niutin FC (Isaac)",
+  "escalones": 1,
+  "coste": 212600,
+  "clausula": 2657500
+ },
+ {
   "tipo": "lesion",
   "dia": "2026-09-05",
   "id": "27852",
