@@ -824,10 +824,45 @@ ${deAyer.join(NL)}
 // Mbappé hace 15,0 en casa y 3,0 fuera; promediarlo esconde justo lo que hay
 // que mirar.
 const FORMACION = (YO.formacion || '').split('-').map(Number).filter((n) => Number.isFinite(n))
+/** Su media donde le toca jugar esta jornada. El punto de partida, sin retocar. */
 const esperadoDe = (j) => {
   const donde = j.casa === 1 ? j.mc : j.casa === 0 ? j.mf : null
   return donde != null ? donde : j.media
 }
+
+// Cuánto pesan la forma y el rival sobre esa media. Son dos decisiones de
+// criterio, no cifras de Mister, y por eso están aquí con nombre y a la vista
+// en vez de repartidas por una fórmula:
+//
+//   forma   la mitad de lo que ha subido o bajado respecto a su media. La
+//           mitad y no todo, porque la forma ya ES un promedio de jornadas
+//           recientes: contarla entera sería contar dos veces lo mismo.
+//   rival   cuatro décimas por escalón de dureza, con el rival medio (3) como
+//           punto neutro. De un extremo a otro son 1,6 puntos, que mueve un
+//           empate pero no le gana a medio punto de diferencia real.
+const PESO_FORMA = 0.5
+const PESO_RIVAL = 0.4
+
+/**
+ * Lo que cabe esperar de él el domingo, desglosado.
+ *
+ * Se devuelve por partes y no como un número suelto para poder enseñar en la
+ * propia fila de dónde sale cada décima. Un criterio que no se puede auditar
+ * de un vistazo no sirve para decidir una alineación.
+ */
+const esperadoConAjustes = (j) => {
+  const base = esperadoDe(j)
+  const f = formaDe(j)
+  const d = durezaDe(j)
+  const porForma = f === null ? 0 : f * PESO_FORMA
+  const porRival = d === null ? 0 : (3 - d) * PESO_RIVAL
+  return { base, porForma, porRival, total: base + porForma + porRival }
+}
+const esperadoTotal = (j) => esperadoConAjustes(j).total
+
+/** No va a puntuar: o está lesionado, o su club no juega esta jornada. */
+const noJuega = (j) => j.est === 'injury' || !j.riv
+
 const once = (() => {
   if (FORMACION.length !== 4) return null
   const elegidos = []
@@ -835,29 +870,40 @@ const once = (() => {
   FORMACION.forEach((cuantos, i) => {
     const puesto = i + 1
     const candidatos = MIOS.filter((j) => j.puesto === puesto)
-      // Primero los que Mister da por titulares; entre ellos, el que más rinda
-      // donde juega. Un lesionado no entra aunque sea el mejor.
       .sort(
         (a, b) =>
-          (b.est === 'injury' ? -1 : 1) - (a.est === 'injury' ? -1 : 1) ||
+          // Abajo del todo, quien no va a jugar: lesionado, o con su club sin
+          // partido esta jornada. Antes solo bajaba el lesionado, y a quien no
+          // tenía partido se le contaba su media como si fuera a jugarlo.
+          (noJuega(b) ? -1 : 1) - (noJuega(a) ? -1 : 1) ||
           // Tres escalones, no dos: titular anunciado (2), sin pronóstico (1) y
           // suplente anunciado (0). Antes «suplente» y «no se sabe» empataban a
           // cero, y entonces el desempate lo decidía la media — que a un
           // suplente anunciado le sobra, porque no va a jugar.
           (b.once === 1 ? 2 : b.once === 0 ? 0 : 1) - (a.once === 1 ? 2 : a.once === 0 ? 0 : 1) ||
-          esperadoDe(b) - esperadoDe(a),
+          esperadoTotal(b) - esperadoTotal(a),
       )
     elegidos.push(...candidatos.slice(0, cuantos).map((j) => ({ ...j, hueco: cuantos > candidatos.length })))
     banquillo.push(...candidatos.slice(cuantos))
   })
-  return { elegidos, banquillo: banquillo.sort((a, b) => esperadoDe(b) - esperadoDe(a)) }
+  return { elegidos, banquillo: banquillo.sort((a, b) => esperadoTotal(b) - esperadoTotal(a)) }
 })()
 
 const pintarDureza = (n) =>
   n === null ? '' : `<span class="dur d${n}" title="Lo duro que es ese rival para su puesto, de 1 (blando) a 5 (duro)">${'●'.repeat(n)}${'○'.repeat(5 - n)}</span>`
 
 const filaOnce = (j) => `        <div class="mj">${dorsal(j.puesto)}${escudoDe(j.id)}<span class="n">${nombreEnlazado(j)}${pintarRacha(j)}</span>
-          <span class="v">${dec(esperadoDe(j))}</span><span class="c">${
+          <span class="v">${dec(esperadoConAjustes(j).total)}${(() => {
+            const a = esperadoConAjustes(j)
+            const partes = [
+              `su media ${j.casa === 1 ? 'en casa' : j.casa === 0 ? 'fuera' : ''} ${dec(a.base)}`,
+              // Solo si mueve algo visible: un «+0,0» no informa, y con once
+              // filas llenas de él la línea deja de leerse.
+              Math.abs(a.porForma) >= 0.05 ? `forma ${a.porForma > 0 ? '+' : '−'}${dec(Math.abs(a.porForma))}` : null,
+              Math.abs(a.porRival) >= 0.05 ? `rival ${a.porRival > 0 ? '+' : '−'}${dec(Math.abs(a.porRival))}` : null,
+            ].filter(Boolean)
+            return partes.length > 1 ? `<small class="desg" title="De dónde sale la cifra">${partes.join(' · ')}</small>` : ''
+          })()}</span><span class="c">${
             j.riv ? `${j.casa === 1 ? 'en casa' : 'fuera'} · ${esc(CLUBES.get(String(j.riv)) ?? '?')}${pintarDureza(durezaDe(j))}` : 'sin partido'
           }</span><span class="m">${
             j.est === 'injury' ? '🏥 lesionado' : j.once === 1 ? '👕 titular' : j.once === 0 ? 'suplente' : '—'
@@ -1250,6 +1296,7 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
         ${def('📤', '', 'Véndelo', 'Ni puntúa ni le sube el valor. Es dinero parado, y en caja te subiría el tope de puja.')}
         ${def('🔒', '', 'Súbele la cláusula', 'Rinde y su cláusula es barata para lo que produce, así que cualquier rival puede llevárselo pagándola.')}
         ${def('7 5 4', 'txt', 'La racha', 'Lo que sacó en cada una de sus últimas jornadas, la más reciente a la derecha. Verde si hizo 8 o más, rojo si hizo cero, y un hueco si no jugó. Es dato de Mister, tal cual.')}
+        ${def('5,4', 'txt', 'La cifra grande del once', `Calculada aquí. Se parte de su media <strong>donde le toca jugar</strong> —Mister la publica separada en casa y fuera— y se le suma la mitad de lo que ha mejorado o empeorado de forma, más cuatro décimas por escalón de dureza del rival, con el rival medio como punto neutro. La mitad de la forma y no toda, porque la forma ya es un promedio de jornadas recientes y contarla entera sería contar dos veces lo mismo. Debajo de cada cifra está el desglose.`)}
         ${def('●●●●○', 'txt', 'Lo duro que es el rival', 'Calculado aquí, no es cifra de Mister. A un defensa le importa lo que ataca el rival y a un delantero lo que defiende, así que se mide la media de los atacantes del rival —o la de sus defensas y portero, que puntúan por dejar la portería a cero— y se compara con la de los otros diecinueve clubes. Cinco puntos negros es de los más duros.')}
         ${def('🛡', '', 'Ya tiene la cláusula subida', 'La marca morada <b class="cx">×3,0</b> dice a cuántas veces su valor está la cláusula. La base es ×1,5, y cada escalón de medio punto le costó a su dueño el 20 % del valor del jugador. Cuanto más alta, más difícil quitárselo.')}
       </div>
