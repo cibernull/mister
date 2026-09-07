@@ -341,7 +341,15 @@ ol.top .n .cara,.mejores .n .cara,.mj .cara,.mn .cara,.novs .cara,table.jt .cara
 .campo-lineas{position:absolute;inset:0;z-index:0;width:100%;height:100%;fill:none;stroke:rgba(255,255,255,.17);stroke-width:2;vector-effect:non-scaling-stroke}
 .campo-centro{position:absolute;left:50%;top:50%;z-index:0;width:92px;height:92px;margin:-46px 0 0 -46px;border:2px solid rgba(255,255,255,.17);border-radius:50%}
 
-.campo-linea{position:relative;z-index:1;flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:space-around;gap:4px}
+.campo-linea{position:relative;z-index:1;flex:1 1 0;min-width:0;display:flex;align-items:stretch;justify-content:center;gap:0}
+.campo-banda{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:space-around;gap:4px}
+/* La segunda banda va un poco adelantada y desplazada: una línea de seis en dos
+   columnas rectas sigue pareciendo una tabla, y escalonada parece un equipo. */
+.campo-banda:nth-child(2){padding-top:26px}
+/* Con dos bandas cada ficha dispone de la mitad de ancho: se estrecha para que
+   el nombre no se coma al vecino. */
+.campo-linea:has(.campo-banda:nth-child(2)) .cj{max-width:60px}
+.campo-linea:has(.campo-banda:nth-child(2)) .cj-n{font-size:8.5px;padding:2px 3px}
 
 .cj{display:flex;flex-direction:column;align-items:center;gap:3px;width:100%;max-width:72px;padding:0;border:0;background:none;color:#fff;cursor:pointer;font:inherit}
 .cj:hover .cj-cara .cara{border-color:rgba(255,255,255,.75)}
@@ -401,20 +409,23 @@ ol.top .n .cara,.mejores .n .cara,.mj .cara,.mn .cara,.novs .cara,table.jt .cara
 .bc b{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--oro)}
 
 /* Una columna con cinco o seis necesita menos alto por ficha. */
-.campo-linea[data-n="5"] .cj-cara .cara,.campo-linea[data-n="6"] .cj-cara .cara{width:38px;height:38px}
-.campo-linea[data-n="6"] .cj-n{font-size:8.5px}
+.campo-banda[data-n="4"] .cj-cara .cara,.campo-banda[data-n="5"] .cj-cara .cara,.campo-banda[data-n="6"] .cj-cara .cara{width:38px;height:38px}
 
 @media (min-width:700px){
   .campo{min-height:390px;padding:18px 16px}
   .cj-cara .cara{width:54px;height:54px}
-  .campo-linea[data-n="5"] .cj-cara .cara,.campo-linea[data-n="6"] .cj-cara .cara{width:46px;height:46px}
+  .campo-banda[data-n="4"] .cj-cara .cara,.campo-banda[data-n="5"] .cj-cara .cara,.campo-banda[data-n="6"] .cj-cara .cara{width:46px;height:46px}
   .cj-n{font-size:11px}
   .campo-centro{width:124px;height:124px;margin:-62px 0 0 -62px}
 }
 @media (max-width:520px){
   .campo{min-height:330px;padding:10px 3px;gap:0}
   .cj-cara .cara{width:34px;height:34px}
-  .campo-linea[data-n="5"] .cj-cara .cara,.campo-linea[data-n="6"] .cj-cara .cara{width:29px;height:29px}
+  .campo-banda[data-n="4"] .cj-cara .cara,.campo-banda[data-n="5"] .cj-cara .cara,.campo-banda[data-n="6"] .cj-cara .cara{width:29px;height:29px}
+  .campo-banda:nth-child(2){padding-top:18px}
+  .campo-linea:has(.campo-banda:nth-child(2)) .cj{max-width:46px}
+  .campo-linea:has(.campo-banda:nth-child(2)) .cj-n{font-size:7.5px;padding:1px 2px}
+  .campo-linea:has(.campo-banda:nth-child(2)) .cj-cara .cara{width:30px;height:30px}
   .cj-n{font-size:8px;padding:1px 3px}
   .cj-p{font-size:9px;min-width:22px;padding:1px 4px}
   .campo-centro{width:64px;height:64px;margin:-32px 0 0 -32px}

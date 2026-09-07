@@ -1619,6 +1619,25 @@ const fichaEnCampo = (j) => {
         </button>`
 }
 
+/**
+ * Cómo se reparte una línea sobre el campo.
+ *
+ * Seis medios en una sola columna se leen como una lista, no como una
+ * alineación: quedan pegados unos a otros mientras la línea de tres de al lado
+ * respira. A partir de cuatro se parte en dos bandas escalonadas, que es como
+ * se dibuja un centro del campo poblado —los de dentro un poco más atrás—.
+ */
+const bandasDe = (l) => {
+  if (l.length < 4) return [l]
+  const atras = Math.ceil(l.length / 2)
+  return [l.slice(0, atras), l.slice(atras)]
+}
+
+const pintarLinea = (l, ficha) =>
+  `        <div class="campo-linea" data-n="${l.length}">${bandasDe(l)
+    .map((b) => `<div class="campo-banda" data-n="${b.length}">${b.map(ficha).join('')}</div>`)
+    .join('')}</div>`
+
 const campoOnce = (o, formacion) => {
   if (!o || formacion.length !== 4) return ''
   const lineas = []
@@ -1644,7 +1663,7 @@ const campoOnce = (o, formacion) => {
         <span class="campo-centro"></span>
 ${lineas
   .filter((l) => l.length)
-  .map((l) => `        <div class="campo-linea" data-n="${l.length}">${l.map(fichaEnCampo).join('')}</div>`)
+  .map((l) => pintarLinea(l, fichaEnCampo))
   .join('\n')}
       </div>`
 }
@@ -1733,7 +1752,7 @@ const campoDeJornada = (a) => {
         <span class="campo-centro"></span>
 ${lineas
   .filter(Boolean)
-  .map((l) => `        <div class="campo-linea" data-n="${l.length}">${l.map(fichaDeJornada).join('')}</div>`)
+  .map((l) => pintarLinea(l, fichaDeJornada))
   .join('\n')}
       </div>`
 }
