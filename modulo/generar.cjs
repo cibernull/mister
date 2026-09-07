@@ -1379,13 +1379,34 @@ const clasificacion = [...EQ]
   )
   .join(NL)
 
+/**
+ * La barra de patrimonio, con la deuda a la vista.
+ *
+ * Se pintaba `width: saldo / máximo`, y con la caja en negativo eso sale
+ * negativo: el navegador lo recorta a cero y un equipo endeudado se veía igual
+ * que uno sin un euro. El total sí lo restaba —Neky marcaba 99 M teniendo una
+ * plantilla de 113— pero la deuda no aparecía por ningún lado, que es
+ * justamente lo que más dice de cómo va alguien.
+ *
+ * Ahora la barra mide el patrimonio, que es la cifra de al lado, y lo que debe
+ * se dibuja detrás en rojo: lo que tendría de más si no debiera nada. Las dos
+ * piezas juntas suman lo que vale su plantilla.
+ */
+const barraRiqueza = (e) => {
+  const ancho = (n) => `${((n / maxPatrimonio) * 100).toFixed(1)}%`
+  if (e.saldo >= 0) {
+    return `<i class="caja" style="width:${ancho(e.saldo)}" title="caja ${eur(e.saldo)}"></i><i class="plant" style="width:${ancho(e.pl)}" title="plantilla ${eur(e.pl)}"></i>`
+  }
+  return `<i class="plant" style="width:${ancho(Math.max(0, e.patrimonio))}" title="plantilla ${eur(e.pl)} menos lo que debe"></i><i class="deuda" style="width:${ancho(-e.saldo)}" title="debe ${eur(-e.saldo)}"></i>`
+}
+
 const riqueza = [...EQ]
   .sort((a, b) => b.patrimonio - a.patrimonio)
   .map(
     (e) => `        <div class="ranking${e.mio ? ' mio' : ''}">
           <span class="pos">${e.pos}º</span><span class="nom">${esc(e.corto)}</span>
-          <span class="bar doble"><i class="caja" style="width:${((e.saldo / maxPatrimonio) * 100).toFixed(1)}%" title="caja ${eur(e.saldo)}"></i><i class="plant" style="width:${((e.pl / maxPatrimonio) * 100).toFixed(1)}%" title="plantilla ${eur(e.pl)}"></i></span>
-          <span class="val">${corto(e.patrimonio)}</span>
+          <span class="bar doble">${barraRiqueza(e)}</span>
+          <span class="val">${corto(e.patrimonio)}${e.saldo < 0 ? `<em class="debe" title="Debe ${eur(-e.saldo)}: Mister deja quedarse en números rojos, y eso ya está restado de su patrimonio">debe ${corto(-e.saldo)}</em>` : ''}</span>
         </div>`,
   )
   .join(NL)
@@ -1479,7 +1500,7 @@ ${riqueza}
 
     <div class="tarjeta">
       <h2 class="sh">Quién blinda a los suyos</h2>
-      <p class="sd">Subir una cláusula cuesta el <b>20 % del valor</b> del jugador. La tuya sale de tu libro de caja y es exacta. La de los rivales se estima sumando dos cosas: lo que les hemos <b>visto</b> subir o bajar desde que se vigila —eso queda apuntado el día que pasa, así que no se pierde aunque luego vendan al jugador— y las subidas que ya estaban puestas antes, valoradas a día de hoy. Lo que no se puede ver: lo que pagaron por blindar a alguien y vendieron <b>antes</b> de que empezáramos a mirar. Así que estas cifras son un suelo, no un techo.<strong>20 % del valor</strong> del jugador. Son las subidas que siguen vivas hoy. Tu cifra sale de tu libro de caja y es exacta; la de los rivales es una estimación al valor de hoy, porque Mister no publica sus saldos.</p>
+      <p class="sd">Subir una cláusula cuesta el <b>20 % del valor</b> del jugador. La tuya sale de tu libro de caja y es exacta. La de los rivales se estima sumando dos cosas: lo que les hemos <b>visto</b> subir o bajar desde que se vigila —eso queda apuntado el día que pasa, así que no se pierde aunque luego vendan al jugador— y las subidas que ya estaban puestas antes, valoradas a día de hoy. Lo que no se puede ver: lo que pagaron por blindar a alguien y vendieron <b>antes</b> de que empezáramos a mirar. Así que estas cifras son un suelo, no un techo.</p>
       <div class="rankings">
 ${filasBlindaje || '        <p class="vacio2">Nadie ha tocado ninguna cláusula.</p>'}
       </div>

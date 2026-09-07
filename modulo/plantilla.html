@@ -295,6 +295,11 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .nov b{font-weight:700}
 .nov.mio{background:var(--oro-fondo)}
 .nov.malo b{color:var(--baja)}
+/* Lo que debe un equipo: se dibuja detrás de su patrimonio, en rojo rayado.
+   Antes no se veía —un ancho negativo el navegador lo recorta a cero— y quien
+   estaba en números rojos parecía simplemente sin dinero. */
+.bar .deuda{background:repeating-linear-gradient(45deg,var(--baja),var(--baja) 3px,transparent 3px,transparent 6px);opacity:.85}
+.val .debe{display:block;font-style:normal;font-size:9.5px;color:var(--baja);font-family:"IBM Plex Mono",monospace;line-height:1.2}
 /* Una advertencia sobre una cifra, junto a la cifra. */
 .sd.aviso{border-left:3px solid var(--oro-raya);background:var(--oro-fondo);border-radius:0 6px 6px 0;padding:7px 11px;margin-top:8px;font-size:12px;line-height:1.55}
 .sd.aviso b{color:var(--oro)}
