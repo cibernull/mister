@@ -20,6 +20,7 @@ const ENTRADA = path.join(__dirname, '..', 'datos', 'mercado.html')
 const SALIDA = process.argv[2] || path.join(__dirname, '..', 'datos', 'publicada.html')
 /** La misma página, pero como documento entero, para servirla en un sitio web. */
 const SITIO = path.join(__dirname, '..', 'datos', 'sitio', 'index.html')
+const ARCHIVOS_APP = ['manifest.webmanifest', 'sw.js']
 
 const doc = fs.readFileSync(ENTRADA, 'utf8')
 
@@ -55,6 +56,8 @@ fs.writeFileSync(
 // al que pedirle nada, así que el botón tiene que ser Recargar y no Actualizar.
 fs.mkdirSync(path.dirname(SITIO), { recursive: true })
 fs.writeFileSync(SITIO, doc.replace('</head>', `${marca}\n</head>`))
+for (const nombre of ARCHIVOS_APP) fs.copyFileSync(path.join(__dirname, nombre), path.join(path.dirname(SITIO), nombre))
+fs.copyFileSync(path.join(__dirname, '..', 'aplicacion', 'icono-1024.png'), path.join(path.dirname(SITIO), 'icono-1024.png'))
 
 // Las caras van al lado de la página, no dentro: son 529 y sumarían 1,4 MB de
 // base64 a un documento que hoy pesa 320 KB comprimido. Se copian junto al

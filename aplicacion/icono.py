@@ -11,28 +11,25 @@ sino una superelipse —la esquina entra en la curva mucho antes—. Aproximarla
 con `rounded_rectangle` se nota al lado de los iconos del sistema, así que se
 calcula punto a punto.
 
-Los colores son los de la propia app: verde de césped casi negro y el ámbar del
-dinero, que es de lo que va todo esto.
+Los colores son los de la propia app: obsidiana, azul medianoche y champán.
 """
 from __future__ import annotations
 
 import math
-import subprocess
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageFilter
 
 AQUI = Path(__file__).resolve().parent
 MAESTRO = 1024
 ESCALA = 4
 L = MAESTRO * ESCALA  # lienzo de trabajo
 
-VERDE_ALTO = (28, 60, 40)
-VERDE_BAJO = (8, 12, 10)
-AMBAR_ALTO = (250, 214, 126)
-AMBAR_BAJO = (196, 124, 16)
-FUENTE = "/System/Library/Fonts/Avenir Next.ttc"
+VERDE_ALTO = (42, 45, 72)
+VERDE_BAJO = (9, 10, 16)
+AMBAR_ALTO = (240, 207, 135)
+AMBAR_BAJO = (169, 112, 39)
 
 
 def superelipse(lado: int, margen: int, n: float = 5.0, pasos: int = 2048):
@@ -120,7 +117,7 @@ def construir() -> Image.Image:
     cx, cy, r = L * 0.34, L * 0.24, L * 0.42
     d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=90)
     luz = luz.filter(ImageFilter.GaussianBlur(L * 0.13))
-    fondo = Image.composite(Image.new("RGB", (L, L), (74, 122, 88)), fondo, luz)
+    fondo = Image.composite(Image.new("RGB", (L, L), (88, 90, 142)), fondo, luz)
 
     lienzo = Image.new("RGBA", (L, L), (0, 0, 0, 0))
     lienzo.paste(fondo, (0, 0), mascara)
@@ -165,27 +162,19 @@ def construir() -> Image.Image:
     capa = Image.alpha_composite(capa, rim)
 
     # ── El símbolo, recortado del escudo ─────────────────────────────────────
-    # Recortado y no encima: así el escudo se lee como una pieza sólida con un
-    # hueco, que tiene más cuerpo que un símbolo pegado.
-    fuente = ImageFont.truetype(FUENTE, int(L * 0.26), index=0)
-    for i in range(12):
-        try:
-            f = ImageFont.truetype(FUENTE, int(L * 0.26), index=i)
-            if "Heavy" in (f.getname()[1] or "") or "Bold" in (f.getname()[1] or ""):
-                fuente = f
-                break
-        except Exception:
-            break
-
+    # Tres columnas ascendentes dicen «estadísticas» incluso a 16 px. Se
+    # recortan de la pieza dorada para conservar el lenguaje del logo original.
     texto = Image.new("L", (L, L), 0)
     dt = ImageDraw.Draw(texto)
-    caja = dt.textbbox((0, 0), "€", font=fuente)
-    dt.text(
-        ((L - (caja[2] - caja[0])) / 2 - caja[0], (L - (caja[3] - caja[1])) / 2 - caja[1] - L * 0.028),
-        "€",
-        font=fuente,
-        fill=255,
-    )
+    ancho = int(L * 0.055)
+    hueco_barras = int(L * 0.038)
+    base = int(L * 0.585)
+    alturas = (int(L * 0.11), int(L * 0.19), int(L * 0.28))
+    inicio = int(L / 2 - (3 * ancho + 2 * hueco_barras) / 2)
+    radio = int(L * 0.015)
+    for i, alto in enumerate(alturas):
+        x = inicio + i * (ancho + hueco_barras)
+        dt.rounded_rectangle((x, base - alto, x + ancho, base), radius=radio, fill=255)
     hueco = capa.getchannel("A").point(lambda v: v)
     capa.putalpha(Image.composite(Image.new("L", (L, L), 0), hueco, texto))
 
@@ -209,10 +198,10 @@ def main() -> int:
     maestro.save(AQUI / "icono-1024.png")
 
     icns = AQUI / "icono.icns"
-    r = subprocess.run(["iconutil", "-c", "icns", str(iconset), "-o", str(icns)], capture_output=True, text=True)
-    if r.returncode != 0:
-        print("iconutil falló:", r.stderr, file=sys.stderr)
-        return 1
+    # Pillow empaqueta las resoluciones necesarias directamente. Es más
+    # reproducible que iconutil, que rechaza algunos iconset válidos según la
+    # versión de macOS y sus metadatos extendidos.
+    maestro.save(icns, format="ICNS")
     print("Listo:", icns, f"({icns.stat().st_size // 1024} KB)")
     return 0
 

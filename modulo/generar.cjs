@@ -41,6 +41,7 @@ const JOR = leer('jornadas.json')
 const opcional = (n, sino) => { try { return leer(n) } catch { return sino } }
 const YO = opcional('yo.json', { formacion: '', tope: 0, generado: new Date().toISOString() })
 const NOV = opcional('novedades.json', [])
+const IDS_CAMBIADOS = new Set(NOV.map((n) => String(n.id)).filter(Boolean))
 const MOVS = D.movimientos ?? []
 // Los clubes reales, para poder decir «Sevilla» y no «rival 19». Es un
 // adorno: si el fichero no está, la línea del próximo partido no se pinta.
@@ -858,6 +859,7 @@ const filaJugador = (j) => {
     j.a ? 'ta' : '',
     j.duenio ? (j.mio ? 'tmio' : 'triv') : 'tl',
     j.ced ? 'tced' : '',
+    IDS_CAMBIADOS.has(String(j.id)) ? 'reciente' : '',
     `z${j.puesto}`,
   ]
     .filter(Boolean)
@@ -1006,8 +1008,52 @@ const islaFichas = JSON.stringify(
   ),
 )
 
-const filasJugadores = J.map(filaJugador).join(NL)
 const PORID_PRE = new Map(J.map((j) => [String(j.id), j]))
+const filasJugadores = J.map(filaJugador).join(NL)
+
+// ── Escaparate del mercado ──────────────────────────────────────────────────
+// La lista completa sirve para investigar; estas tarjetas sirven para decidir.
+// Solo entran jugadores que el usuario puede pagar hoy, ordenados por señales
+// deportivas, margen de precio, próximo partido y tendencia de valor.
+const candidatosEscaparate = J.filter((j) => j.a && !j.mio)
+  .map((j) => ({ j, renta: hastaCuanto(j), forma: formaDe(j) }))
+  .sort((a, b) =>
+    (b.j.p + b.j.d) - (a.j.p + a.j.d) ||
+    ((b.renta?.margen ?? -Infinity) - (a.renta?.margen ?? -Infinity)) ||
+    b.j.esperado - a.j.esperado ||
+    (b.forma ?? -Infinity) - (a.forma ?? -Infinity),
+  )
+  .slice(0, 4)
+
+const tarjetaOportunidad = ({ j, renta, forma }, i) => {
+  const etiqueta = i === 0 ? 'Mejor oportunidad' : renta && renta.margen >= 0 ? 'Precio con margen' : forma > 0 ? 'Llega en forma' : 'Para esta jornada'
+  const motivo = renta && renta.margen >= 0
+    ? `${corto(renta.margen)} por debajo de su techo estimado`
+    : j.riv
+      ? `${dec(j.esperado)} puntos esperados en su próximo partido`
+      : `${dec(j.media)} puntos de media`
+  return `      <article class="oportunidad" data-op-id="${j.id}" data-op-puntos="${j.esperado}" data-op-valor="${j.subeMes ?? -9}" data-op-equilibrio="${(j.p + j.d) * 1000 + j.media}">
+        <div class="op-foto">${caraDe(j.id, j.nombre)}<span class="dorsal p${j.puesto}">${PUESTOS[j.puesto]}</span></div>
+        <div class="op-cuerpo">
+          <span class="op-etiqueta">${etiqueta}</span>
+          <button type="button" class="op-nombre" data-ficha="${j.id}">${esc(j.nombre)}</button>
+          <div class="op-club">${escudoDe(j.id)}${esc(j.duenioCorto ?? 'Libre')}${j.once === 1 ? '<span>· titular</span>' : ''}</div>
+          <div class="op-metricas"><span><b>${dec(j.media)}</b> media</span><span><b>${corto(j.precio)}</b> precio</span><span class="${clase(j.subeMes ?? 0)}"><b>${j.subeMes == null ? '—' : `${j.subeMes > 0 ? '+' : ''}${Math.round(j.subeMes * 100)} %`}</b> mes</span></div>
+          <p>${motivo}</p>
+          <button type="button" class="op-cta" data-ficha="${j.id}">Analizar fichaje <span>→</span></button>
+        </div>
+      </article>`
+}
+
+const oportunidades = candidatosEscaparate.length
+  ? `    <section class="escaparate">
+      <div class="escaparate-cab"><div><span class="eyebrow">Selección inteligente</span><h2>Oportunidades para ti</h2><p>Jugadores que puedes pagar hoy, priorizados según tu objetivo.</p></div><span class="op-contador">${candidatosEscaparate.length} destacados</span></div>
+      <div class="objetivos" aria-label="Objetivo de las recomendaciones"><span>Mi objetivo</span><button type="button" data-objetivo="equilibrio">Equilibrado</button><button type="button" data-objetivo="puntos">Ganar puntos</button><button type="button" data-objetivo="valor">Generar dinero</button></div>
+      <div class="op-grid">
+${candidatosEscaparate.map(tarjetaOportunidad).join(NL)}
+      </div>
+    </section>`
+  : ''
 
 // ── Marcador ─────────────────────────────────────────────────────────────────
 const ico = (d) =>
@@ -2107,6 +2153,7 @@ const huecos = {
   __LIGA__: esc(NOMBRE_LIGA),
   '<!--__MARCADOR__-->': marcador,
   '<!--__MIEQUIPO__-->': miEquipo,
+  '<!--__OPORTUNIDADES__-->': oportunidades,
   '<!--__JUGADORES__-->': filasJugadores,
   '<!--__RIVALES__-->': rivales,
   '<!--__MOVIMIENTOS__-->': movimientos,

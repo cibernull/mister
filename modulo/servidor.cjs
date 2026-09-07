@@ -20,6 +20,10 @@ const { spawn } = require('node:child_process')
 const RAIZ = path.join(__dirname, '..')
 const PAGINA = path.join(RAIZ, 'datos', 'mercado.html')
 const ALTA = path.join(__dirname, 'credenciales.html')
+const MANIFEST = path.join(__dirname, 'manifest.webmanifest')
+const SERVICE_WORKER = path.join(__dirname, 'sw.js')
+const ICONO = path.join(RAIZ, 'aplicacion', 'icono-1024.png')
+const FOTOS = path.join(__dirname, 'fotos')
 const PUERTO = Number(process.env.PUERTO ?? 4788)
 /** Un pegado de cURL ronda los 3 KB; 256 KB es holgura de sobra. */
 const MAX_CUERPO = 256 * 1024
@@ -116,7 +120,7 @@ const json = (res, codigo, cuerpo) => {
   res.end(texto)
 }
 
-const archivo = (res, ruta, sino) => {
+const archivo = (res, ruta, sino, tipo = 'text/html; charset=utf-8', cache = 'no-store') => {
   let cuerpo
   try {
     cuerpo = fs.readFileSync(ruta)
@@ -125,7 +129,7 @@ const archivo = (res, ruta, sino) => {
     res.end(sino)
     return
   }
-  res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' })
+  res.writeHead(200, { 'content-type': tipo, 'cache-control': cache })
   res.end(cuerpo)
 }
 
@@ -190,6 +194,27 @@ const servidor = http.createServer((req, res) => {
       return
     }
     archivo(res, PAGINA, 'Todavía no hay página generada. Ejecuta:  npm run generar')
+    return
+  }
+
+  if (req.method === 'GET' && ruta === '/manifest.webmanifest') {
+    archivo(res, MANIFEST, 'Falta el manifiesto', 'application/manifest+json; charset=utf-8')
+    return
+  }
+
+  if (req.method === 'GET' && ruta === '/sw.js') {
+    archivo(res, SERVICE_WORKER, 'Falta el service worker', 'text/javascript; charset=utf-8')
+    return
+  }
+
+  if (req.method === 'GET' && ruta === '/icono-1024.png') {
+    archivo(res, ICONO, 'Falta el icono', 'image/png', 'public, max-age=86400')
+    return
+  }
+
+  const foto = /^\/fotos\/(\d+)\.webp$/.exec(ruta)
+  if (req.method === 'GET' && foto) {
+    archivo(res, path.join(FOTOS, `${foto[1]}.webp`), 'No existe esa foto', 'image/webp', 'public, max-age=31536000, immutable')
     return
   }
 
