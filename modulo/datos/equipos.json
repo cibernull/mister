@@ -15,7 +15,8 @@
   "subidas": 0,
   "blindados": 0,
   "costeSubidas": 0,
-  "gastoVisto": 0
+  "gastoVisto": 0,
+  "gastoOculto": 0
  },
  {
   "n": "Los tocahuevos C.F ( juanito)",
@@ -33,7 +34,8 @@
   "subidas": 0,
   "blindados": 0,
   "costeSubidas": 0,
-  "gastoVisto": 0
+  "gastoVisto": 0,
+  "gastoOculto": 0
  },
  {
   "n": "Niutin FC (Isaac)",
@@ -53,6 +55,15 @@
   "blindados": 8,
   "costeSubidas": 7753200,
   "gastoVisto": 62400,
+  "gastoOculto": 7753200,
+  "libro": {
+   "ventas": 113475880,
+   "compras": -110224641,
+   "premios": 3275000,
+   "devueltoPorClausulas": 573300,
+   "pagadoPorClausulas": -7494219,
+   "inicio": 21047000
+  },
   "costeReal": 7494219,
   "comprometido": 6526680
  },
@@ -72,7 +83,8 @@
   "subidas": 0,
   "blindados": 0,
   "costeSubidas": 0,
-  "gastoVisto": 0
+  "gastoVisto": 0,
+  "gastoOculto": 0
  },
  {
   "n": "Cacaculopedopis",
@@ -90,13 +102,14 @@
   "subidas": 0,
   "blindados": 0,
   "costeSubidas": 0,
-  "gastoVisto": 0
+  "gastoVisto": 0,
+  "gastoOculto": 0
  },
  {
   "n": "Neky F.C. (Sergio)",
   "pos": 1,
   "pts": 184,
-  "saldo": 5524494,
+  "saldo": 2941494,
   "pl": 113672000,
   "rep": 31142000,
   "ini": 18858000,
@@ -108,13 +121,14 @@
   "subidas": 4,
   "blindados": 2,
   "costeSubidas": 2583000,
-  "gastoVisto": 0
+  "gastoVisto": 0,
+  "gastoOculto": 2583000
  },
  {
   "n": "Mario80",
   "pos": 3,
   "pts": 140,
-  "saldo": 7743210,
+  "saldo": 4019610,
   "pl": 74829000,
   "rep": 28838000,
   "ini": 21162000,
@@ -126,13 +140,14 @@
   "subidas": 4,
   "blindados": 3,
   "costeSubidas": 3723600,
-  "gastoVisto": 0
+  "gastoVisto": 0,
+  "gastoOculto": 3723600
  },
  {
   "n": "Saiyans FC (Fran)",
   "pos": 5,
   "pts": 120,
-  "saldo": 8527300,
+  "saldo": 6220700,
   "pl": 80766000,
   "rep": 21730000,
   "ini": 28270000,
@@ -144,6 +159,7 @@
   "subidas": 3,
   "blindados": 2,
   "costeSubidas": 2306600,
-  "gastoVisto": 0
+  "gastoVisto": 0,
+  "gastoOculto": 2306600
  }
 ]
