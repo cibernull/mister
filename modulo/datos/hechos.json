@@ -640,7 +640,7 @@
    "importe": 302050,
    "tipo": "normal",
    "cuando": "2026-08-05 17:00:15",
-   "valor": 1847000,
+   "valor": 2010000,
    "posicion": 4,
    "puntos": 25,
    "media": 8.3,
@@ -657,11 +657,11 @@
    "importe": 4121087,
    "tipo": "normal",
    "cuando": "2026-08-05 17:00:15",
-   "valor": 6847000,
+   "valor": 7054000,
    "posicion": 3,
-   "puntos": 18,
-   "media": 6,
-   "racha": "4,5,9"
+   "puntos": 23,
+   "media": 5.8,
+   "racha": "4,5,9,5"
   },
   {
    "idTransfer": 536639917,
@@ -674,7 +674,7 @@
    "importe": 1301000,
    "tipo": "normal",
    "cuando": "2026-08-05 17:00:15",
-   "valor": 1058000,
+   "valor": 1051000,
    "posicion": 2,
    "puntos": 3,
    "media": 1.5,
@@ -691,11 +691,11 @@
    "importe": 1195000,
    "tipo": "normal",
    "cuando": "2026-08-05 17:00:15",
-   "valor": 2464000,
+   "valor": 2622000,
    "posicion": 2,
-   "puntos": 9,
-   "media": 3,
-   "racha": "1,2,6"
+   "puntos": 14,
+   "media": 3.5,
+   "racha": "1,2,6,5"
   },
   {
    "idTransfer": 536639985,
@@ -708,7 +708,7 @@
    "importe": 5505000,
    "tipo": "normal",
    "cuando": "2026-08-05 17:00:15",
-   "valor": 5494000,
+   "valor": 5325000,
    "posicion": 4,
    "puntos": 5,
    "media": 1.7,
@@ -725,7 +725,7 @@
    "importe": 1303000,
    "tipo": "normal",
    "cuando": "2026-08-05 17:00:15",
-   "valor": 3468000,
+   "valor": 3573000,
    "posicion": 4,
    "puntos": 14,
    "media": 4.7,
@@ -759,11 +759,11 @@
    "importe": 231800,
    "tipo": "normal",
    "cuando": "2026-08-05 17:12:51",
-   "valor": 228000,
+   "valor": 194000,
    "posicion": 3,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-"
+   "racha": "-,-,-,-"
   },
   {
    "idTransfer": 536666637,
@@ -776,7 +776,7 @@
    "importe": 153600,
    "tipo": "normal",
    "cuando": "2026-08-05 18:29:07",
-   "valor": 614000,
+   "valor": 626000,
    "posicion": 3,
    "puntos": 7,
    "media": 2.3,
@@ -810,11 +810,11 @@
    "importe": 1137150,
    "tipo": "normal",
    "cuando": "2026-08-05 20:57:13",
-   "valor": 607000,
+   "valor": 523000,
    "posicion": 4,
    "puntos": 1,
-   "media": 1,
-   "racha": "-,1,-"
+   "media": 0.5,
+   "racha": "-,1,-,0"
   },
   {
    "idTransfer": 536675453,
@@ -827,11 +827,11 @@
    "importe": 1789840,
    "tipo": "normal",
    "cuando": "2026-08-05 20:57:16",
-   "valor": 1570000,
+   "valor": 1448000,
    "posicion": 3,
    "puntos": 4,
    "media": 2,
-   "racha": "2,2,-"
+   "racha": "2,2,-,-"
   },
   {
    "idTransfer": 536747227,
@@ -861,11 +861,11 @@
    "importe": 1060800,
    "tipo": "normal",
    "cuando": "2026-08-06 05:00:23",
-   "valor": 2002000,
+   "valor": 2030000,
    "posicion": 2,
-   "puntos": 8,
-   "media": 2.7,
-   "racha": "2,2,4"
+   "puntos": 10,
+   "media": 2.5,
+   "racha": "2,2,4,2"
   },
   {
    "idTransfer": 536758379,
@@ -878,7 +878,7 @@
    "importe": 1400000,
    "tipo": "normal",
    "cuando": "2026-08-06 05:00:23",
-   "valor": 3037000,
+   "valor": 3138000,
    "posicion": 3,
    "puntos": 10,
    "media": 3.3,
@@ -895,11 +895,11 @@
    "importe": 400000,
    "tipo": "normal",
    "cuando": "2026-08-06 05:00:23",
-   "valor": 635000,
+   "valor": 552000,
    "posicion": 3,
    "puntos": 1,
    "media": 1,
-   "racha": "-,-,1"
+   "racha": "-,-,1,-"
   },
   {
    "idTransfer": 536808044,
@@ -929,11 +929,11 @@
    "importe": 14976070,
    "tipo": "normal",
    "cuando": "2026-08-06 17:00:14",
-   "valor": 15021000,
+   "valor": 14993000,
    "posicion": 4,
-   "puntos": 15,
+   "puntos": 20,
    "media": 5,
-   "racha": "6,6,3"
+   "racha": "6,6,3,5"
   },
   {
    "idTransfer": 536862712,
@@ -963,11 +963,11 @@
    "importe": 5601000,
    "tipo": "normal",
    "cuando": "2026-08-06 17:00:14",
-   "valor": 6833000,
+   "valor": 6831000,
    "posicion": 3,
-   "puntos": 7,
-   "media": 2.3,
-   "racha": "2,1,4"
+   "puntos": 19,
+   "media": 4.8,
+   "racha": "2,1,4,12"
   },
   {
    "idTransfer": 536964647,
@@ -4346,7 +4346,7 @@
    "importe": 5625900,
    "tipo": "normal",
    "cuando": "2026-09-03 18:26:54",
-   "valor": 5463000,
+   "valor": 5491000,
    "posicion": 4,
    "puntos": 12,
    "media": 3,
