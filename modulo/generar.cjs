@@ -731,7 +731,7 @@ const datosDe = (j) => {
         dato('fuera', dec(j.mf), 'Puntos de media jugando fuera')
       : ''
   const trozos = [
-    dato('media', dec(j.media), 'Puntos que saca de media por partido'),
+    dato('media', dec(j.media), 'Puntos que saca de media por partido', 'clave'),
     dato('pts', `${j.puntos} en ${j.partidos}`, 'Puntos totales y partidos que ha jugado'),
     j.gol ? dato('goles', j.gol, 'Goles esta temporada') : '',
     j.tar ? dato('tarjetas', j.tar, 'Tarjetas esta temporada') : '',

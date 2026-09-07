@@ -199,7 +199,7 @@ body{
 #d4:checked~.env .aviso{display:block}
 
 /* ── Fila de jugador ──────────────────────────────────────────────────── */
-.fj{display:grid;grid-template-columns:34px 1fr auto;gap:2px 12px;align-items:start;padding:11px 15px;border-bottom:1px solid var(--raya)}
+.fj{display:grid;grid-template-columns:34px 1fr auto;gap:2px 12px;align-items:start;padding:14px 15px;border-bottom:1px solid var(--raya)}
 .fj:last-of-type{border-bottom:0}
 .fj:hover{background:var(--suelo)}
 .fj > .dorsal{grid-column:1;grid-row:1;align-self:start;margin-top:2px}
@@ -209,21 +209,32 @@ body{
 /* Identidad: de qué club es y contra quién juega. Va aparte del rendimiento
    porque responde a otra pregunta, y mezclarlo todo en una tira de puntos era
    lo que hacía la ficha ilegible. */
-.jc{grid-column:2/-1;grid-row:2;display:flex;flex-wrap:wrap;align-items:center;gap:2px 14px;margin-top:3px;font-size:12.5px;color:var(--gris)}
+.jc{grid-column:2/-1;grid-row:2;display:flex;flex-wrap:wrap;align-items:center;gap:2px 16px;margin-top:5px;font-size:13px;color:var(--gris)}
 .jc .prox{color:var(--tenue)}
 .jc .prox b{color:var(--gris);font-weight:600}
 
 /* Cada cifra con su rótulo encima. Antes era «casa 14,0 · fuera 9,0 · 3/4 de
    inicio» y había que adivinar de qué. */
-.jv{grid-column:2/-1;grid-row:3;display:flex;flex-wrap:wrap;align-items:center;gap:0 7px;margin-top:4px;font-size:11.5px;color:var(--tenue)}
+.jv{grid-column:2/-1;grid-row:3;display:flex;flex-wrap:wrap;align-items:baseline;gap:1px 9px;margin-top:6px;font-size:11.5px;color:var(--tenue)}
 .jv i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:8px;letter-spacing:.09em;text-transform:uppercase;margin-right:2px}
 .jv .sep{color:var(--raya)}
 .jv .par{white-space:nowrap}
-.jd{grid-column:2/-1;grid-row:4;display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
-.dato{display:inline-flex;flex-direction:column;gap:0;padding:3px 7px;border-radius:6px;background:var(--tabla);border:1px solid var(--raya);min-width:0}
-.dato i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:8px;letter-spacing:.09em;text-transform:uppercase;color:var(--tenue);white-space:nowrap}
-.dato b{font-size:12px;color:var(--tinta);font-weight:600;white-space:nowrap;line-height:1.3}
-.dato.ancha b{display:flex;align-items:center}
+/* Los datos: sin marco y con una separación limpia entre ellos. Ocho cajas con
+   borde a la vez eran ocho rectángulos compitiendo, y la vista no sabía dónde
+   posarse; con solo el fondo se leen como una tabla y no como una rejilla. */
+.jd{grid-column:2/-1;grid-row:4;display:flex;flex-wrap:wrap;gap:3px;margin-top:8px}
+.dato{display:inline-flex;flex-direction:column;gap:1px;padding:5px 10px;border-radius:7px;background:var(--suelo);min-width:0;transition:background .12s}
+.fj:hover .dato{background:var(--tabla)}
+.dato i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue);white-space:nowrap}
+.dato b{font-size:13px;color:var(--tinta);font-weight:600;white-space:nowrap;line-height:1.25;font-variant-numeric:tabular-nums}
+/* La media manda: es la cifra con la que se compara todo lo demás. */
+.dato.clave{background:var(--oro-fondo);box-shadow:inset 0 0 0 1px var(--oro-raya)}
+.dato.clave i{color:var(--oro)}
+.dato.clave b{font-size:15px;color:var(--oro)}
+/* La racha ya trae sus propias casillas: meterla en otra caja era anidar dos
+   marcos para el mismo dato. */
+.dato.ancha{background:none;padding-left:4px;padding-right:4px}
+.dato.ancha b{display:flex;align-items:center;gap:0}
 .dato .sube b{color:var(--sube)} .dato .baja b{color:var(--baja)}
 .racha.pegada{margin-left:0}
 .jp b{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;font-size:15px}
@@ -307,12 +318,16 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .clz .tres .no{color:var(--tenue)}
 .clz .def{font-size:11px;color:var(--tenue)}
 /* Hasta cuánto sale a cuenta. Una línea, que la ficha ya va cargada. */
-.rent{grid-column:2/-1;margin-top:7px;font-size:11.5px;line-height:1.45;color:var(--gris)}
-.rent b{font-family:"IBM Plex Mono",monospace;font-size:12px}
+/* El veredicto es la conclusión de la ficha, no un dato más: se le da una
+   barra de color a la izquierda para que la vista lo encuentre sola. */
+.rent{grid-column:2/-1;margin-top:9px;padding:6px 11px;border-left:3px solid var(--raya);border-radius:0 7px 7px 0;background:var(--suelo);font-size:12px;line-height:1.5;color:var(--gris)}
+.rent b{font-family:"IBM Plex Mono",monospace;font-size:12.5px}
 .rent i{font-style:normal;color:var(--tenue)}
+.rent.buena{border-left-color:var(--sube);background:var(--sube-fondo,rgba(74,222,128,.07))}
+.rent.mala{border-left-color:var(--baja);background:var(--baja-fondo,rgba(248,113,113,.06))}
 .rent.buena b,.rent.buena span{color:var(--sube)}
 .rent.mala b,.rent.mala span{color:var(--baja)}
-.rent.nada{color:var(--tenue)}
+.rent.nada{color:var(--tenue);font-size:11.5px}
 /* La diferencia entre la suma de las jornadas publicadas y el total de hoy.
    No es un error: Mister revisa los puntos, y hay jornadas que no publica. */
 .jornadas .tenue{color:var(--tenue)}
