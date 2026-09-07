@@ -270,6 +270,9 @@ body{
 .jp .ico{font-size:14px;letter-spacing:1px;line-height:1.2;margin-top:2px;min-height:17px}
 .js{grid-column:2;grid-row:2;font-size:12.5px;color:var(--gris);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .js b{color:var(--tinta);font-weight:600}
+/* El ± de «pagaste» va en <b> con su clase, y la regla de arriba se la comía
+   por especificidad: salía en blanco tanto si ganabas como si perdías. */
+.js b.sube{color:var(--sube)} .js b.baja{color:var(--baja)}
 .js .sep{color:var(--raya)}
 
 /* Quién puede ficharlo: la pregunta original del módulo, ahora con nombres. */
@@ -313,6 +316,9 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 /* Las caras. El círculo con fondo propio porque el PNG viene recortado sobre
    transparente: sin fondo, un pelo oscuro desaparece contra el suelo. Si una
    falta, el `onerror` la quita y todo queda como antes de haberla. */
+/* «Igual hoy»: ni verde ni rojo. Un jugador que no se ha movido no es una
+   buena ni una mala noticia, y pintarlo de color lo convertiría en una. */
+.quieto{color:var(--tenue)}
 .cara{border-radius:50%;background:var(--tabla);object-fit:cover;flex:none;vertical-align:middle}
 .cara.grande{width:64px;height:64px;border:1px solid var(--raya)}
 ol.top .n .cara,.mejores .n .cara,.mj .cara,.mn .cara,.novs .cara,table.jt .cara,.record .cara{width:22px;height:22px;margin-right:5px}
@@ -725,7 +731,7 @@ a{color:var(--oro)}
   --suelo:#090A0F;--tabla:#12141C;--hueco:#1A1C27;--raya:#2B2E3B;
   --tinta:#F6F2EA;--gris:#ACA9B2;--tenue:#737581;
   --oro:#DDB96F;--oro-vivo:#F0CC7D;--oro-fondo:#292316;--oro-raya:#5B4B2C;
-  --sube:#78A9FF;--sube-fondo:#17243B;
+  --sube:#4FD08A;--sube-fondo:#12271C;
   --baja:#FF7890;--baja-fondo:#341A24;
   --por:#4B9AD4;--def:#8176D9;--med:#D5A64F;--del:#D86B5E;
   --blinda:#B695E8;--blinda-fondo:#271E38;--blinda-raya:#493762;
@@ -736,7 +742,7 @@ a{color:var(--oro)}
   --suelo:#090A0F;--tabla:#12141C;--hueco:#1A1C27;--raya:#2B2E3B;
   --tinta:#F6F2EA;--gris:#ACA9B2;--tenue:#737581;
   --oro:#DDB96F;--oro-vivo:#F0CC7D;--oro-fondo:#292316;--oro-raya:#5B4B2C;
-  --sube:#78A9FF;--sube-fondo:#17243B;
+  --sube:#4FD08A;--sube-fondo:#12271C;
   --baja:#FF7890;--baja-fondo:#341A24;
   --por:#4B9AD4;--def:#8176D9;--med:#D5A64F;--del:#D86B5E;
   --blinda:#B695E8;--blinda-fondo:#271E38;--blinda-raya:#493762;

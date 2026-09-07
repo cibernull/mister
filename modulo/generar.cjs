@@ -312,6 +312,30 @@ const NL = '\n'
 const clase = (n) => (n > 0 ? 'sube' : n < 0 ? 'baja' : '')
 
 /**
+ * Lo que le ha cambiado el valor: hoy siempre, y el mes cuando se sabe.
+ *
+ * El diario iba escondido —solo salía si faltaba el del mes—, y es el que dice
+ * si algo se está moviendo ahora mismo. Mister lo publica para los 529, así que
+ * no hay razón para ocultarlo: 227 suben hoy, 280 bajan y 22 están quietos.
+ *
+ * Los 22 quietos se dicen, no se callan. Un hueco donde los demás llevan cifra
+ * se lee como «no se sabe», y aquí sí se sabe: es que no se ha movido.
+ */
+const tendenciaDe = (j) => {
+  const pct = j.subeMes != null ? Math.round(j.subeMes * 100) : null
+  const trozos = []
+  if (j.semana != null) {
+    trozos.push(
+      j.semana === 0
+        ? '<span class="quieto" title="Su valor no ha cambiado desde ayer">igual hoy</span>'
+        : `<span class="${clase(j.semana)}" title="Lo que le ha cambiado el valor desde ayer">${firmaCorta(j.semana)} hoy</span>`,
+    )
+  }
+  if (pct != null) trozos.push(`<span class="${clase(pct)}">${pct > 0 ? '+' : ''}${pct} % este mes</span>`)
+  return trozos.join(' ')
+}
+
+/**
  * Enlace a la ficha del jugador en Mister.
  *
  * El slug del enlace es decorativo —`/players/{id}/x` devuelve la misma ficha—
@@ -782,7 +806,13 @@ const valorDe = (j) => {
   const par = (importe, texto, formato) =>
     `<span class="par"><span class="${clase(importe)}">${formato}</span> ${texto}</span>`
   const l = [
-    j.semana ? par(j.semana, 'hoy', firmaCorta(j.semana)) : '',
+    // El cero se dice. Callarlo dejaba a veintidós jugadores sin la cifra que
+    // todos los demás llevan, y un hueco ahí se lee como «no se sabe».
+    j.semana == null
+      ? ''
+      : j.semana === 0
+        ? '<span class="par"><span class="quieto">igual</span> hoy</span>'
+        : par(j.semana, 'hoy', firmaCorta(j.semana)),
     j.sem7 ? par(j.sem7, 'en 7 días', firmaCorta(j.sem7)) : '',
     j.subeMes != null
       ? par(j.subeMes, 'este mes', `${j.subeMes > 0 ? '+' : ''}${Math.round(j.subeMes * 100)} %`)
@@ -864,16 +894,8 @@ const filaJugador = (j) => {
   ]
     .filter(Boolean)
     .join(' ')
-  const pct = j.subeMes != null ? Math.round(j.subeMes * 100) : null
-  // Sin la cifra del mes se enseña la del día, que Mister sí da para todos.
-  // Antes esta línea se quedaba muda, y un jugador sin tendencia parecía un
-  // jugador plano.
-  const tendencia =
-    pct != null
-      ? `<span class="${clase(pct)}">${pct > 0 ? '+' : ''}${pct} % este mes</span>`
-      : j.semana
-        ? `<span class="${clase(j.semana)}">${firmaCorta(j.semana)} hoy</span>`
-        : ''
+  // Aquí no hace falta `tendenciaDe`: esta fila enseña el valor con valorDe(),
+  // que ya trae hoy, siete días y el mes.
   const rec = (j.p + j.d) * 1000 + j.media
   return `<div class="${cls}" data-busca="${esc(j.nombre)} ${esc(j.duenioCorto ?? 'libre')} ${PUESTOS_LARGO[j.puesto]}" data-rec="${rec.toFixed(2)}" data-precio="${j.precio}" data-media="${j.media}" data-puntos="${j.puntos}" data-sube="${(j.subeMes ?? -9).toFixed(4)}" data-hoy="${j.semana ?? -9e9}" data-prox="${j.esperado.toFixed(2)}" data-gol="${j.gol ?? 0}">
       ${jugadorVisual(j)}
@@ -1038,7 +1060,7 @@ const tarjetaOportunidad = ({ j, renta, forma }, i) => {
           <span class="op-etiqueta">${etiqueta}</span>
           <button type="button" class="op-nombre" data-ficha="${j.id}">${esc(j.nombre)}</button>
           <div class="op-club">${escudoDe(j.id)}${esc(j.duenioCorto ?? 'Libre')}${j.once === 1 ? '<span>· titular</span>' : ''}</div>
-          <div class="op-metricas"><span><b>${dec(j.media)}</b> media</span><span><b>${corto(j.precio)}</b> precio</span><span class="${clase(j.subeMes ?? 0)}"><b>${j.subeMes == null ? '—' : `${j.subeMes > 0 ? '+' : ''}${Math.round(j.subeMes * 100)} %`}</b> mes</span></div>
+          <div class="op-metricas"><span><b>${dec(j.media)}</b> media</span><span><b>${corto(j.precio)}</b> precio</span><span class="${j.semana === 0 ? 'quieto' : clase(j.semana ?? 0)}"><b>${j.semana == null ? '—' : j.semana === 0 ? '=' : firmaCorta(j.semana)}</b> hoy</span><span class="${clase(j.subeMes ?? 0)}"><b>${j.subeMes == null ? '—' : `${j.subeMes > 0 ? '+' : ''}${Math.round(j.subeMes * 100)} %`}</b> mes</span></div>
           <p>${motivo}</p>
           <button type="button" class="op-cta" data-ficha="${j.id}">Analizar fichaje <span>→</span></button>
         </div>
@@ -1235,16 +1257,7 @@ const MIS_MOVS = (D.porEquipo[MI_EQUIPO] || { porJugador: {} }).porJugador
 const topeTrasVender = (v) => MIO.saldo + v + 0.25 * (MIO.pl - v)
 
 const filaMia = (j, modo) => {
-  const pct = j.subeMes != null ? Math.round(j.subeMes * 100) : null
-  // Sin la cifra del mes se enseña la del día, que Mister sí da para todos.
-  // Antes esta línea se quedaba muda, y un jugador sin tendencia parecía un
-  // jugador plano.
-  const tendencia =
-    pct != null
-      ? `<span class="${clase(pct)}">${pct > 0 ? '+' : ''}${pct} % este mes</span>`
-      : j.semana
-        ? `<span class="${clase(j.semana)}">${firmaCorta(j.semana)} hoy</span>`
-        : ''
+  const tendencia = tendenciaDe(j)
   const pago = MIS_MOVS[String(j.id)] ? MIS_MOVS[String(j.id)].compras : 0
   const grande = modo === 'clausula' ? j.clausula : j.valor
   const rotulo = modo === 'clausula' ? 'te lo quitan por' : modo === 'venta' ? 'te darían' : 'vale'
@@ -1258,7 +1271,7 @@ const filaMia = (j, modo) => {
       <div class="js">
         <span>media <b>${dec(j.media)}</b></span><span class="sep">·</span>
         <span>${j.puntos} pts en ${j.partidos} part.</span>${
-          pct != null ? `<span class="sep">·</span><span class="${clase(pct)}">${pct > 0 ? '+' : ''}${pct} %</span>` : ''
+          tendencia ? `<span class="sep">·</span>${tendencia}` : ''
         }<span class="sep">·</span><span>${trato}</span>
       </div>
       ${modo === 'clausula' ? quienPuede(j) + bloqueClausulazo(j) : ''}${
