@@ -417,6 +417,69 @@ const iconos = (j) => `${j.p ? '⭐' : ''}${j.d ? '💵' : ''}${j.vender ? '📤
  * podría ficharlo»— y hasta ahora solo salía el recuento. Aquí están los
  * nombres y con cuánto margen se lo pueden permitir.
  */
+// ── Hasta cuánto sale a cuenta pagar por alguien ────────────────────────────
+//
+// No es «lo que vale» según Mister: su precio lleva dentro reputación y
+// temporadas pasadas, y contra eso no se puede decidir. Es lo que cuesta el
+// mismo rendimiento **en otro sitio hoy**, que es la alternativa de verdad: si
+// un punto de media se compra a un millón en el mercado, pagar dos por el
+// mismo punto es perder uno.
+
+/** Peso de la media de la liga mientras un jugador lleva pocos partidos. */
+const PARTIDOS_DE_CONFIANZA = 3
+
+const JUGADOS = J.filter((j) => j.partidos >= 2 && j.media > 0)
+const MEDIA_LIGA = JUGADOS.length
+  ? JUGADOS.reduce((t, j) => t + j.media * j.partidos, 0) / JUGADOS.reduce((t, j) => t + j.partidos, 0)
+  : 0
+
+/**
+ * Su media, corregida por lo poco que ha jugado.
+ *
+ * Cuatro partidos no sostienen una media de 11: puede ser el jugador del año o
+ * una racha. Se le da a la media de la liga el peso de tres partidos, así que
+ * cuantos más juegue, menos pesa la corrección y más manda lo suyo. Sin esto,
+ * cualquiera con dos buenas tardes salía valorado como un crack.
+ */
+const mediaFiable = (j) =>
+  (j.media * j.partidos + MEDIA_LIGA * PARTIDOS_DE_CONFIANZA) / (j.partidos + PARTIDOS_DE_CONFIANZA)
+
+/**
+ * Lo que cuesta hoy un punto de media, entre los que puedes fichar de verdad.
+ *
+ * Solo entran los que están en el mercado con precio y han jugado dos partidos
+ * o más. Lo segundo no es un detalle: a quien no ha jugado la corrección le
+ * regala la media de la liga, y como suelen ser baratos salían como los
+ * chollos del año. Alguien con cero partidos no es una ganga, es una incógnita.
+ */
+const TARIFA = (() => {
+  const alt = J.filter((j) => !j.mio && j.mk && j.pv && j.partidos >= 2).map((j) => j.pv / mediaFiable(j))
+  if (alt.length < 5) return null
+  const o = alt.sort((a, b) => a - b)
+  return { euros: o[Math.floor(o.length / 2)], sobre: o.length }
+})()
+
+const hastaCuanto = (j) => {
+  if (TARIFA === null || j.partidos < 2 || !j.precio) return null
+  const aCuenta = TARIFA.euros * mediaFiable(j)
+  // Tu tope manda: de nada sirve que salga a cuenta algo que no puedes pagar.
+  const techo = Math.min(aCuenta, MIO.tope)
+  return { aCuenta, techo, loLimitaTuTope: MIO.tope < aCuenta, margen: techo - j.precio, media: mediaFiable(j) }
+}
+
+const bloqueRentable = (j) => {
+  const r = hastaCuanto(j)
+  if (r === null) {
+    return j.partidos < 2 && j.precio
+      ? '<div class="rent nada">Sin dos partidos jugados no hay con qué comparar: lo que valga es una apuesta.</div>'
+      : ''
+  }
+  const sale = r.margen >= 0
+  return `<div class="rent ${sale ? 'buena' : 'mala'}" title="Lo que cuesta hoy un punto de media entre los ${TARIFA.sobre} del mercado que han jugado dos partidos o más (${eur(TARIFA.euros)} por punto), aplicado a su media corregida por los pocos partidos que lleva (${dec(r.media)}).">
+        <b>Hasta ${corto(r.techo)}</b> sale a cuenta${r.loLimitaTuTope ? ' <i>(te lo limita tu tope)</i>' : ''} · piden ${corto(j.precio)} · <span>${sale ? `te sobran ${corto(r.margen)}` : `te pasas ${corto(-r.margen)}`}</span>
+      </div>`
+}
+
 /**
  * ¿Merece la pena pagarle la cláusula?
  *
@@ -647,7 +710,7 @@ const filaJugador = (j) => {
         }${j.precio !== j.valor ? `<span class="sep">·</span><span>vale ${corto(j.valor)}</span>` : ''}
       </div>
       ${detalleDe(j)}
-      ${quienPuede(j)}${bloqueClausulazo(j)}
+      ${bloqueRentable(j)}${quienPuede(j)}${bloqueClausulazo(j)}
     </div>`
 }
 
@@ -1422,6 +1485,7 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
       <h2 class="sh">Las palabras</h2>
       <div class="defs">
         ${def('↗', 'txt', 'Llega en forma', `Calculado aquí. Sus últimas ${JORNADAS_DE_FORMA} jornadas frente a <strong>su propia</strong> media, no la de la liga: la pregunta no es si es bueno, sino si está mejor o peor que de costumbre. Hacen falta dos jornadas jugadas.`)}
+        ${def('12 M', 'txt', 'Hasta cuánto sale a cuenta', `Calculado aquí. No es lo que vale según Mister —su precio lleva dentro reputación y temporadas pasadas—, sino <strong>lo que cuesta el mismo rendimiento en otro sitio hoy</strong>: se mira lo que se paga por punto de media entre los que están en el mercado y han jugado dos partidos o más, y se aplica a su media. Si un punto se compra a millón y medio en el mercado, pagar el doble por el mismo punto es perder dinero. Su media va corregida por los partidos que lleva: cuatro partidos no sostienen una media de 11, así que hasta que juegue más tira hacia la media de la liga. Y con menos de dos partidos no sale ninguna cifra, porque no hay con qué comparar. El techo nunca pasa de tu tope de puja.`)}
         ${def('🎯', 'txt', 'Buen clausulazo', 'Calculado aquí. Lo primero es dejar de mirar la cláusula como el precio: el jugador entra en tu plantilla y, si lo revendes, recuperas su valor. Lo que no vuelve nunca es la diferencia, y esa <strong>prima real</strong> es la cifra sobre la que hay que decidir. Luego hacen falta <strong>las tres</strong> condiciones, porque una sola engaña: que sea titular de verdad (dos partidos de inicio y más de inicio que desde el banquillo), que la prima por punto de media esté por debajo de la mediana de la liga, y que el próximo partido le venga bien —dónde juega y contra quién, sin contar la forma—. Con las tres, «buen clausulazo»; con dos, dudoso; con menos, malo. Aparte se dice si su dueño le ha subido la cláusula: si lo ha hecho, es que le importa.')}
         ${def('±', 'txt', 'De fiar', 'Calculado aquí. Cuánto se aparta de su media jornada a jornada. Dos jugadores de media 6 no valen lo mismo: uno hace 6, 6, 6 y el otro 0, 0, 18. Cuanto más bajo, más de fiar. Solo se listan los que promedian 4 o más, porque al que hace un punto siempre le sobra regularidad.')}
         ${def('€', '', 'Valor y cláusula', 'El <strong>valor</strong> es lo que Mister dice que vale un jugador, y lo que cobras si lo vendes al mercado. La <strong>cláusula</strong> es lo que un rival paga para quitártelo sin tu permiso, y siempre es mayor. La cifra grande de cada fila es <strong>lo que costaría ficharlo de verdad</strong>.')}

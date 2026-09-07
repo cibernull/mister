@@ -281,6 +281,13 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .clz .tres .si{color:var(--sube)}
 .clz .tres .no{color:var(--tenue)}
 .clz .def{font-size:11px;color:var(--tenue)}
+/* Hasta cuánto sale a cuenta. Una línea, que la ficha ya va cargada. */
+.rent{grid-column:1/-1;margin-top:7px;font-size:11.5px;line-height:1.45;color:var(--gris)}
+.rent b{font-family:"IBM Plex Mono",monospace;font-size:12px}
+.rent i{font-style:normal;color:var(--tenue)}
+.rent.buena b,.rent.buena span{color:var(--sube)}
+.rent.mala b,.rent.mala span{color:var(--baja)}
+.rent.nada{color:var(--tenue)}
 /* La diferencia entre la suma de las jornadas publicadas y el total de hoy.
    No es un error: Mister revisa los puntos, y hay jornadas que no publica. */
 .jornadas .tenue{color:var(--tenue)}
