@@ -1479,6 +1479,32 @@ const topSube = [...J].filter((j) => j.subeMes != null).sort((a, b) => b.subeMes
 const topCaros = [...J].sort((a, b) => b.valor - a.valor).slice(0, CUANTOS_EN_CADA_TOP)
 const topHoy = [...J].filter((j) => j.semana != null && j.semana !== 0).sort((a, b) => b.semana - a.semana).slice(0, CUANTOS_EN_CADA_TOP)
 // Lo que cuesta cada punto de media: la forma más directa de ver qué sale a cuenta.
+/**
+ * Los mejores clausulazos y las mejores compras del mercado.
+ *
+ * No son dos formas de decir lo mismo. Fichar del mercado es pagar lo que pide
+ * su dueño —o su valor, si está libre—; clausular es pagar la cláusula, que es
+ * más cara, sin que el otro pueda negarse. La pregunta buena no es cuál es más
+ * barato sino cuál compensa, y cada uno se mide con su propio rasero.
+ */
+
+// Para clausular: solo los que cumplen las tres condiciones —titular de
+// verdad, prima barata para lo que rinde y partido favorable—, y solo si
+// llegas a pagarla. Ordenados por lo que cuesta la prima por punto de media,
+// que es lo que de verdad se paga por llevárselo.
+const topClausulazo = J.map((j) => ({ j, c: clausulazo(j) }))
+  .filter((x) => x.c !== null && x.c.cumple === 3 && x.c.porPunto !== null && x.j.pagable && x.j.precio <= MIO.tope)
+  .sort((a, b) => a.c.porPunto - b.c.porPunto)
+  .slice(0, CUANTOS_EN_CADA_TOP)
+
+// Para el mercado: los que están en venta hoy y a los que llegas, ordenados
+// por lo que te sobra sobre lo que vale alguien de su rendimiento.
+const topMercado = J.filter((j) => !j.mio && j.mk && j.pv && j.precio <= MIO.tope)
+  .map((j) => ({ j, r: hastaCuanto(j) }))
+  .filter((x) => x.r !== null && x.r.margen > 0)
+  .sort((a, b) => b.r.margen - a.r.margen)
+  .slice(0, CUANTOS_EN_CADA_TOP)
+
 const topGanga = [...conPartidos].filter((j) => j.media > 0).sort((a, b) => a.precio / a.media - b.precio / b.media).slice(0, CUANTOS_EN_CADA_TOP)
 
 // Récords del mercado, sacados del histórico completo.
@@ -1588,6 +1614,8 @@ ${tablaTop('Los que más suben', 'Crecimiento del valor en el último mes.', top
 ${tablaTop('Los más valiosos', '', topCaros.map((j) => lineaTop(j, corto(j.valor))))}
 ${tablaTop('Los que más suben hoy', 'Lo que ha cambiado su valor desde ayer.', topHoy.map((j) => lineaTop(j, firmaCorta(j.semana))))}
 ${tablaTop('Gangas', 'Los más baratos por punto de media, con dos partidos o más.', topGanga.map((j) => lineaTop(j, `${corto(j.precio / j.media)}/pt`)))}
+${topClausulazo.length ? tablaTop('Los mejores para clausular', 'Cumplen las tres condiciones —es titular, la prima es barata para lo que rinde y le viene bien el partido— y llegas a pagar su cláusula. Ordenados por lo que cuesta la prima por punto de media.', topClausulazo.map((x) => lineaTop(x.j, `${corto(x.c.porPunto)}/pt`))) : ''}
+${topMercado.length ? tablaTop('Los mejores del mercado de hoy', 'De los que están en venta ahora y puedes pagar, los que más lejos quedan de lo que vale alguien que rinde como ellos.', topMercado.map((x) => lineaTop(x.j, `+${corto(x.r.margen)}`))) : ''}
       <h2 class="sh" style="grid-column:1/-1">Los mejores por puesto</h2>
       <p class="sd" style="grid-column:1/-1">Los diez con más media de cada línea, con dos partidos o más. La tira de la derecha es lo que sacó en cada jornada, la más reciente a la derecha. Los balones son los goles de <strong>toda la temporada</strong>: Mister publica el total, no en qué jornada los metió, y ponerlos encima de una jornada sería inventármelo.</p>
 ${(() => {
