@@ -381,7 +381,21 @@ async function intentar(): Promise<Resultado> {
       0,
     )
     e.gastoVisto = gastoVisto.get(e.n) ?? 0
-    if (!e.mio && e.gastoVisto > 0) e.saldo -= e.gastoVisto
+    // Lo que el feed no publica y sí mueve dinero: subir una cláusula cuesta
+    // el 20 % del valor por escalón, y de eso no hay ni rastro en el feed.
+    // Medido contra el libro de caja propio, ignorarlo dejaba la caja
+    // reconstruida casi diez millones por encima de la real.
+    //
+    // Se descuenta el mayor de los dos, no la suma: `costeSubidas` estima las
+    // subidas que siguen vivas —vengan de cuando vengan— y `gastoVisto` las
+    // que hemos visto hacer desde que vigilamos. Sumarlos contaría dos veces
+    // la misma subida cuando cae en los dos sitios.
+    //
+    // Sigue quedándose corto, y siempre en la misma dirección: no ve lo que
+    // pagaron por subirle la cláusula a alguien que luego vendieron. Así que
+    // la caja de un rival es un techo, no una cifra.
+    e.gastoOculto = Math.max(e.costeSubidas ?? 0, e.gastoVisto)
+    if (!e.mio && e.gastoOculto > 0) e.saldo -= e.gastoOculto
   }
   const mioExacto = cuentas.equipos.find((e) => e.mio)
   if (mioExacto) {

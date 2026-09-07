@@ -1437,6 +1437,13 @@ ${clasificacion}
     <div class="tarjeta">
       <h2 class="sh">Quién es más rico</h2>
       <p class="sd">Patrimonio = caja + plantilla. La parte <span class="clave caja">llena</span> es dinero disponible; la <span class="clave plant">clara</span>, jugadores. Todos empezasteis en 50 M.</p>
+      <p class="sd aviso">${(() => {
+        // La caja de un rival es un techo, no una cifra, y conviene decirlo
+        // donde se le pone el número al lado. El valor de plantilla sí está
+        // verificado contra la clasificación; lo que se estima es el dinero.
+        const oculto = MIO.gastoOculto ?? 0
+        return `Tu plantilla y la de todos está verificada contra la clasificación de Mister, al euro. <b>La caja de los rivales es una estimación</b>, y siempre por arriba: Mister no publica lo que cuesta subir una cláusula —el 20 % del valor por escalón— y eso solo se puede estimar. Se descuenta lo estimado${oculto ? `, que en tu caso son ${eur(oculto)}` : ''}, pero contra tu libro de caja este cálculo se queda corto en un par de millones. Léelo como «no más de esto».`
+      })()}</p>
       <div class="rankings">
 ${riqueza}
       </div>

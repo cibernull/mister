@@ -58,6 +58,8 @@ export type Equipo = {
    * de los rivales no publica nada, así que en los suyos es siempre `undefined`.
    */
   comprometido?: number
+  /** Lo que se le estima gastado en cláusulas y el feed no publica. */
+  gastoOculto?: number
   mio?: 1
   /** Jugadores de la plantilla sin valor conocido: `pl` se queda corto. */
   sinValorar: string[]
