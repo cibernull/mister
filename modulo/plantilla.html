@@ -327,6 +327,8 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .cf-j .b.alta{background:var(--sube)} .cf-j .b.media{background:var(--oro)}
 .cf-j .b.baja{background:var(--raya);color:var(--gris)} .cf-j .b.cero{background:var(--baja);color:#fff}
 .cf-j .ev{display:flex;flex-wrap:wrap;justify-content:center;gap:1px;font-size:9px;min-height:12px;line-height:1}
+.cf-j .ev .pen{position:relative}
+.cf-j .ev .pen::after{content:"";position:absolute;left:50%;bottom:-1px;width:2px;height:2px;margin-left:-1px;border-radius:50%;background:var(--tenue)}
 .cf-j .esc{display:flex;align-items:center;justify-content:center;height:16px}
 .cf-j .n{font-family:"IBM Plex Mono",monospace;font-size:8.5px;color:var(--tenue)}
 .cf-j.nojugo .col{opacity:.35}
@@ -377,6 +379,12 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .rj.media{background:var(--tabla);color:var(--gris);border:1px solid var(--raya)}
 .rj.baja{background:var(--tabla);color:var(--tenue);border:1px solid var(--raya)}
 .rj.cero{background:var(--baja-fondo,rgba(248,113,113,.13));color:var(--baja)}
+/* La tira con goles: los balones se apoyan encima de su jornada. El hueco se
+   reserva siempre, para que las casillas de todos queden a la misma altura. */
+.racha.golea{align-items:flex-end}
+.rjg{display:inline-flex;flex-direction:column;align-items:center;gap:1px;font-style:normal}
+.rjg u{text-decoration:none;font-size:7px;letter-spacing:-2px;line-height:1;height:8px;white-space:nowrap}
+.rjg b{font-weight:600}
 .rj.vacia{background:none;color:var(--tenue);border:1px dashed var(--raya)}
 /* Lo duro que es el próximo rival, de uno a cinco. */
 .dur{margin-left:6px;letter-spacing:-1px;font-size:8px;color:var(--tenue)}
@@ -1185,8 +1193,12 @@ a{color:var(--oro)}
 
     // Los eventos, con el icono que usa Mister. Una letra por evento, que es
     // como vienen guardados para no repetir palabras quinientas veces.
-    var ICONO = { g: '⚽', a: '🅰', y: '🟨', p: '🎯', s: '🧤', i: '⬆', o: '⬇' }
-    var NOMBRE_EV = { g: 'gol', a: 'asistencia', y: 'tarjeta amarilla', p: 'penalti', s: 'penalti parado', i: 'entró desde el banquillo', o: 'fue sustituido' }
+    // El penalti marcado lleva balón como cualquier otro gol: en la ficha de
+    // Mister viene como evento aparte, pero suma en el total de goles, y sin
+    // balón la tira desmentía al «GOLES» de arriba —Budimir, 4 goles, 1 balón.
+    // Se distingue con un punto debajo, que es el del penalti.
+    var ICONO = { g: '⚽', a: '🅰', y: '🟨', p: '⚽', s: '🧤', i: '⬆', o: '⬇' }
+    var NOMBRE_EV = { g: 'gol', a: 'asistencia', y: 'tarjeta amarilla', p: 'gol de penalti', s: 'penalti parado', i: 'entró desde el banquillo', o: 'fue sustituido' }
 
     function jornadas (f) {
       if (!f.js || !f.js.length) return '<p class="vacio2">Todavía no ha jugado ninguna jornada.</p>'
@@ -1198,7 +1210,7 @@ a{color:var(--oro)}
         var clase = !jugo ? 'baja' : pts >= 8 ? 'alta' : pts >= 4 ? 'media' : pts > 0 ? 'baja' : 'cero'
         var alto = jugo ? Math.max(16, Math.round((Math.max(pts, 0) / max) * 86)) : 6
         var iconos = ev.split('').map(function (c) {
-          return ICONO[c] ? '<span title="' + esc(NOMBRE_EV[c] || c) + '">' + ICONO[c] + '</span>' : ''
+          return ICONO[c] ? '<span' + (c === 'p' ? ' class="pen"' : '') + ' title="' + esc(NOMBRE_EV[c] || c) + '">' + ICONO[c] + '</span>' : ''
         }).join('')
         return '<div class="cf-j' + (jugo ? '' : ' nojugo') + '">' +
           '<div class="col"><div class="b ' + clase + '" style="height:' + alto + 'px" title="' +

@@ -211,15 +211,45 @@ const porQueDuro = (j) => {
 const pintarDureza = (n, j) =>
   n === null ? '' : `<span class="dur d${n}" title="Lo duro que es ese rival para su puesto, de 1 (blando) a 5 (duro). ${j ? porQueDuro(j) : ''}">${'●'.repeat(n)}${'○'.repeat(5 - n)}</span>`
 
+const claseRacha = (p) => (p >= 8 ? 'alta' : p >= 4 ? 'media' : p > 0 ? 'baja' : 'cero')
+
 const pintarRacha = (j, dentro) => {
   const l = Array.isArray(j.racha) ? j.racha.slice(-5) : []
   if (l.length === 0) return ''
   return `<span class="racha${dentro ? ' pegada' : ''}" title="Sus últimas jornadas; el hueco es que no jugó">${l
-    .map((p) =>
-      p === null
-        ? '<i class="rj vacia">·</i>'
-        : `<i class="rj ${p >= 8 ? 'alta' : p >= 4 ? 'media' : p > 0 ? 'baja' : 'cero'}">${p}</i>`,
-    )
+    .map((p) => (p === null ? '<i class="rj vacia">·</i>' : `<i class="rj ${claseRacha(p)}">${p}</i>`))
+    .join('')}</span>`
+}
+
+/**
+ * Los goles de una jornada, leyendo los eventos de su ficha.
+ *
+ * Cuenta la `g` y también la `p`: en la ficha de Mister un penalti marcado va
+ * como evento aparte, pero suma en el total de goles. Sin contarlo, a Budimir
+ * le salían cuatro goles arriba y un solo balón abajo.
+ */
+const golesDeJornada = (ev) => (ev || '').split('').filter((c) => c === 'g' || c === 'p').length
+
+/**
+ * La misma tira, con los balones encima de la jornada en que marcó.
+ *
+ * Antes los balones iban junto al nombre y eran los de toda la temporada,
+ * porque yo daba por hecho que Mister no publicaba en qué jornada los metió.
+ * Sí lo publica: están en los iconos de cada casilla de su ficha, que es de
+ * donde salen los de la ventana del jugador.
+ */
+const rachaConGoles = (j) => {
+  const l = Array.isArray(j.js) ? j.js.slice(-5) : []
+  if (l.length === 0) return ''
+  return `<span class="racha pegada golea" title="Sus últimas jornadas y los goles de cada una">${l
+    .map(([n, pts, , , ev]) => {
+      const g = golesDeJornada(ev)
+      const bolas = g === 0 ? '' : g <= 3 ? '⚽'.repeat(g) : `⚽×${g}`
+      const cuenta = pts == null ? 'no jugó' : `J${n}: ${pts} puntos${g ? ` y ${g} ${g === 1 ? 'gol' : 'goles'}` : ''}`
+      return `<i class="rjg" title="${esc(cuenta)}"><u>${bolas}</u>${
+        pts == null ? '<b class="rj vacia">·</b>' : `<b class="rj ${claseRacha(pts)}">${pts}</b>`
+      }</i>`
+    })
     .join('')}</span>`
 }
 
@@ -1827,23 +1857,29 @@ ${tablaTop('Gangas', 'Los más baratos por punto de media, con dos partidos o m�
 ${topClausulazo.length ? tablaTop('Los mejores para clausular', 'Cumplen las tres condiciones —es titular, la prima es barata para lo que rinde y le viene bien el partido— y llegas a pagar su cláusula. Ordenados por lo que cuesta la prima por punto de media.', topClausulazo.map((x) => lineaTop(x.j, `${corto(x.c.porPunto)}/pt`))) : ''}
 ${topMercado.length ? tablaTop('Los mejores del mercado de hoy', 'De los que están en venta ahora y puedes pagar, los que más lejos quedan de lo que vale alguien que rinde como ellos.', topMercado.map((x) => lineaTop(x.j, `+${corto(x.r.margen)}`))) : ''}
       <h2 class="sh" style="grid-column:1/-1">Los mejores por puesto</h2>
-      <p class="sd" style="grid-column:1/-1">Los diez con más media de cada línea, con dos partidos o más. La tira de la derecha es lo que sacó en cada jornada, la más reciente a la derecha. Los balones son los goles de <strong>toda la temporada</strong>: Mister publica el total, no en qué jornada los metió, y ponerlos encima de una jornada sería inventármelo.</p>
+      <p class="sd" style="grid-column:1/-1">Los doce con más media de cada línea, con dos partidos o más. La tira de la derecha es lo que sacó en cada una de sus últimas cinco jornadas, la más reciente a la derecha, con un balón encima por cada gol que marcó ese día. Los penaltis marcados cuentan como gol, que es como los cuenta Mister.</p>
 ${(() => {
-  // Los diez mejores de cada puesto, con lo que sacó cada jornada.
+  // Los doce mejores de cada puesto, con lo que sacó cada jornada y los goles
+  // de ese día encima.
   //
-  // Los balones son los goles de **toda la temporada**, no los de esa jornada:
-  // la ficha de Mister pinta una casilla por jornada con los puntos y unos
-  // iconos, pero esos iconos solo dicen si entró o salió del banquillo —
-  // comprobado en los cinco máximos goleadores, ni uno solo trae gol— y el
-  // total es lo único que publica. Poner un balón encima de una jornada sería
-  // inventarme en cuál marcó.
+  // Aquí ponía que Mister solo publica el total de goles y no en qué jornada
+  // los metió. Era falso: la casilla de cada jornada trae sus iconos, y de ahí
+  // salen los balones de la ventana del jugador. Lo escribí cuando mi lectura
+  // de la ficha cortaba el bloque antes de los iconos, y me lo creí.
   const PUESTOS = [
     [1, 'Porteros'],
     [2, 'Defensas'],
     [3, 'Medios'],
     [4, 'Delanteros'],
   ]
-  const balones = (n) => (!n ? '' : n <= 6 ? `<span class="goles">${'⚽'.repeat(n)}</span>` : `<span class="goles">⚽<b>×${n}</b></span>`)
+  // Junto al nombre va el total de la temporada, que puede ser mayor que los
+  // balones de la tira: la tira solo enseña las cinco últimas jornadas.
+  const balones = (n) =>
+    !n
+      ? ''
+      : `<span class="goles" title="${n} ${n === 1 ? 'gol' : 'goles'} en toda la temporada">${
+          n <= 6 ? '⚽'.repeat(n) : `⚽<b>×${n}</b>`
+        }</span>`
 
   const grupo = ([puesto, titulo]) => {
     const l = J.filter((j) => j.pos === puesto && j.partidos >= 2)
@@ -1860,7 +1896,7 @@ ${l
             <span class="n">${escudoDe(j.id)}${nombreEnlazado(j)}${balones(j.gol ?? 0)}</span>
             <span class="e">${esc(j.duenioCorto ?? 'libre')}</span>
             <span class="m" title="Puntos de media por partido">${dec(j.media)}</span>
-            ${pintarRacha(j, true)}
+            ${rachaConGoles(j) || pintarRacha(j, true)}
           </li>`,
   )
   .join(NL)}
