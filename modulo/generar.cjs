@@ -887,16 +887,44 @@ const avisoClausulas = (e) => {
     : `<p class="nota-cl">${cuantos}. Le habrán costado <b>unos ${eur(e.costeSubidas)}</b>: Mister cobra el 20 % del valor por cada una. Es una estimación al valor de hoy, porque su saldo no lo publica.</p>`
 }
 
-const cuentasDe = (e) => `<div class="cuenta">
+/**
+ * Las cuentas de un equipo.
+ *
+ * Las propias salen del libro de caja y cuadran al euro por construcción: el
+ * inicio no se modela, se despeja restando del saldo de hoy todo lo apuntado
+ * desde el reinicio. Enseñadas desde el feed no cuadraban —salían 22.726.239 €
+ * donde el libro dice 20.652.320 €— porque faltaban las cláusulas y porque el
+ * inicio calculado como «50 M menos el reparto» se equivocaba en cinco
+ * millones. De los rivales no hay libro, así que siguen con el modelo y con su
+ * margen, dicho al lado.
+ */
+const cuentasDe = (e) => e.libro
+  ? `<div class="cuenta">
+        <div class="l"><span>Le dejó el reinicio</span><span>${eur(e.libro.inicio)}</span></div>
+        <div class="l"><span>Premios de las jornadas</span><span class="mas">+${eur(e.libro.premios)}</span></div>
+        <div class="l"><span>Ha vendido por</span><span class="mas">+${eur(e.libro.ventas)}</span></div>
+        <div class="l"><span>Ha fichado por</span><span class="menos">−${eur(-e.libro.compras)}</span></div>
+        <div class="l"><span>Pagado por subir cláusulas</span><span class="menos">−${eur(-e.libro.pagadoPorClausulas)}</span></div>${
+          e.libro.devueltoPorClausulas
+            ? `<div class="l"><span>Devuelto por bajarlas</span><span class="mas">+${eur(e.libro.devueltoPorClausulas)}</span></div>`
+            : ''
+        }
+        <div class="l tot caja"><span>Le queda en caja</span><span>${eur(e.saldo)}</span></div>
+        <div class="l sub-caja"><span>Sale del libro de caja de Mister</span><span>cuadra al euro</span></div>
+        <div class="l"><span>Más su plantilla, que vale</span><span>${eur(e.pl)}</span></div>
+        <div class="l tot"><span>Patrimonio hoy</span><span>${eur(e.patrimonio)}</span></div>
+        <div class="l"><span>Sobre los 50.000.000 € de salida</span><span class="${clase(e.sobre50)}">${firma(e.sobre50)}</span></div>
+      </div>
+      ${avisoFuera(e)}${avisoClausulas(e)}`
+  : `<div class="cuenta">
         <div class="l"><span>Empezó con</span><span>${eur(e.ini)}</span></div>
         <div class="l"><span>Premios de las jornadas</span><span class="mas">+${eur(e.pre)}</span></div>
         <div class="l"><span>Ha vendido por</span><span class="mas">+${eur(e.ven)}</span></div>
-        <div class="l"><span>Ha fichado por</span><span class="menos">−${eur(e.com)}</span></div>
-        <div class="l tot caja"><span>Le queda en caja</span><span>${eur(e.saldo)}</span></div>${
-          margenDe(e) > 0
-            ? `<div class="l sub-caja"><span>±${eur(margenDe(e))} de margen</span><span>lo que haya movido en cláusulas</span></div>`
-            : ''
+        <div class="l"><span>Ha fichado por</span><span class="menos">−${eur(e.com)}</span></div>${
+          e.gastoOculto ? `<div class="l"><span>Estimado en subir cláusulas</span><span class="menos">−${eur(e.gastoOculto)}</span></div>` : ''
         }
+        <div class="l tot caja"><span>Le queda en caja</span><span>${eur(e.saldo)}</span></div>
+        <div class="l sub-caja"><span>Estimado: de él no hay libro de caja</span><span>léelo como «no más de esto»</span></div>
         <div class="l"><span>Más su plantilla, que vale</span><span>${eur(e.pl)}</span></div>
         <div class="l tot"><span>Patrimonio hoy</span><span>${eur(e.patrimonio)}</span></div>
         <div class="l"><span>Sobre los 50.000.000 € de salida</span><span class="${clase(e.sobre50)}">${firma(e.sobre50)}</span></div>

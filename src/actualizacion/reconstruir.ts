@@ -60,6 +60,15 @@ export type Equipo = {
   comprometido?: number
   /** Lo que se le estima gastado en cláusulas y el feed no publica. */
   gastoOculto?: number
+  /** Las cuentas propias tal como las cuenta el libro de caja de Mister. */
+  libro?: {
+    inicio: number
+    premios: number
+    ventas: number
+    compras: number
+    pagadoPorClausulas: number
+    devueltoPorClausulas: number
+  }
   mio?: 1
   /** Jugadores de la plantilla sin valor conocido: `pl` se queda corto. */
   sinValorar: string[]

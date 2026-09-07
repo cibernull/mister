@@ -397,8 +397,34 @@ async function intentar(): Promise<Resultado> {
     e.gastoOculto = Math.max(e.costeSubidas ?? 0, e.gastoVisto)
     if (!e.mio && e.gastoOculto > 0) e.saldo -= e.gastoOculto
   }
+  // Las cuentas propias, sacadas del libro y no del feed.
+  //
+  // Enseñadas desde el feed no cuadraban: salían 22.726.239 € y el libro decía
+  // 20.652.320 €. Faltaban dos líneas —lo pagado por subir cláusulas y lo
+  // devuelto por bajarlas, que el feed no publica— y sobre todo el inicio
+  // estaba mal: la aplicación lo calculaba como 50 M menos el valor del
+  // reparto, 16.200.000 €, y el reinicio del 3 de agosto dejó la caja en
+  // 21.047.000 €. Casi cinco millones de diferencia.
+  //
+  // Aquí el inicio no se modela: se despeja. Se restan del saldo de hoy todos
+  // los apuntes posteriores al reinicio y lo que queda es con lo que se empezó,
+  // exacto por construcción. De los rivales no hay libro y siguen con el
+  // modelo, que es lo único que hay.
+  const suma = (cumple: (a: (typeof desdeElReinicio)[number]) => boolean) =>
+    desdeElReinicio.filter(cumple).reduce((t, a) => t + a.importe, 0)
+  const cuentasDelLibro = {
+    ventas: suma((a) => /venta/i.test(a.tipo)),
+    compras: suma((a) => /compra/i.test(a.tipo)),
+    premios: suma((a) => /bonificaci/i.test(a.tipo) && /jornada/i.test(a.motivo)),
+    devueltoPorClausulas: suma((a) => /bonificaci/i.test(a.tipo) && !/jornada/i.test(a.motivo)),
+    pagadoPorClausulas: suma((a) => /penalizaci/i.test(a.tipo)),
+  }
+  const inicioReal =
+    libro.saldo - Object.values(cuentasDelLibro).reduce((t, v) => t + v, 0)
+
   const mioExacto = cuentas.equipos.find((e) => e.mio)
   if (mioExacto) {
+    mioExacto.libro = { ...cuentasDelLibro, inicio: inicioReal }
     mioExacto.costeReal = -desdeElReinicio.filter((a) => a.tipo === 'Penalización').reduce((s, a) => s + a.importe, 0)
     // El dinero retenido por las pujas que has dejado puestas. Está en el saldo
     // pero ya no puedes gastarlo, y Mister lo descuenta del tope de puja: sin
