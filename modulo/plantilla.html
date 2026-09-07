@@ -46,6 +46,7 @@
 }
 
 *{box-sizing:border-box}
+html{max-width:100%;overflow-x:hidden}
 [hidden]{display:none!important}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 body{
@@ -655,6 +656,85 @@ ol.top .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-num
 .cierre strong{color:var(--gris)}
 a{color:var(--oro)}
 :focus-visible{outline:2px solid var(--oro);outline-offset:2px;border-radius:4px}
+
+/* ── Capa de producto 2026 ──────────────────────────────────────────────
+   La información sigue siendo la misma; cambia la jerarquía. La portada
+   responde primero qué hacer, y deja la auditoría detallada para después. */
+:root{
+  --suelo:#F1F4EE; --tabla:#FFFFFF; --hueco:#E8ECE5; --raya:#D9E0D5;
+  --tinta:#101712; --gris:#536057; --tenue:#7C8A80;
+  --oro:#B16C00; --oro-vivo:#F5B83D; --oro-fondo:#FFF4DD; --oro-raya:#EBCB8C;
+  --sombra:0 1px 2px rgba(16,23,18,.04),0 16px 42px -25px rgba(16,23,18,.34);
+  --sombra-alta:0 24px 70px -32px rgba(5,20,10,.45);
+  --radio:16px;
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --suelo:#07100A;--tabla:#101A13;--hueco:#17231A;--raya:#263429;
+  --tinta:#F2F6F1;--gris:#A4B0A7;--tenue:#718078;
+  --oro:#F6B93B;--oro-vivo:#FFC857;--oro-fondo:#2B2210;--oro-raya:#584319;
+  --sombra:0 1px 2px rgba(0,0,0,.55),0 18px 50px -25px rgba(0,0,0,.95);
+  --sombra-alta:0 30px 80px -34px rgba(0,0,0,.95);
+}}
+:root[data-theme=dark]{
+  --suelo:#07100A;--tabla:#101A13;--hueco:#17231A;--raya:#263429;
+  --tinta:#F2F6F1;--gris:#A4B0A7;--tenue:#718078;
+  --oro:#F6B93B;--oro-vivo:#FFC857;--oro-fondo:#2B2210;--oro-raya:#584319;
+  --sombra:0 1px 2px rgba(0,0,0,.55),0 18px 50px -25px rgba(0,0,0,.95);
+  --sombra-alta:0 30px 80px -34px rgba(0,0,0,.95);
+}
+body{padding:0 24px 96px;background:
+  radial-gradient(circle at 14% -10%,color-mix(in srgb,var(--oro) 10%,transparent),transparent 27rem),var(--suelo)}
+.env{max-width:1160px;width:100%}
+.cab{padding:26px 2px 18px;flex-wrap:nowrap}
+.marca{margin-right:auto}.escudo{width:42px;height:42px;border-radius:13px;background:linear-gradient(145deg,var(--oro-vivo),var(--oro));box-shadow:0 9px 24px -12px var(--oro)}
+.marca h1{font-size:32px;letter-spacing:.015em}.marca p{font-size:12px}
+.sello{margin-left:0}.acc{flex:none}
+.marcador{border-radius:18px;margin-bottom:14px;box-shadow:var(--sombra)}
+.marcador>div{padding:16px 20px}.marcador dd{font-size:21px}
+.pest{position:sticky;top:10px;z-index:30;padding:5px;border:1px solid var(--raya);box-shadow:0 14px 40px -30px rgba(0,0,0,.7);backdrop-filter:blur(18px);background:color-mix(in srgb,var(--hueco) 88%,transparent)}
+.pest label{min-height:42px}.panel{gap:22px}
+.tarjeta,.mando,.lista,.ficha,.eq{box-shadow:var(--sombra)}
+.sh{font-size:24px}.sd{font-size:13px}
+
+/* Centro de mando */
+.centro-mando{position:relative;overflow:hidden;border-radius:22px;padding:28px;background:
+  radial-gradient(circle at 86% 15%,rgba(245,184,61,.22),transparent 17rem),
+  linear-gradient(135deg,#0B2515,#102E1B 55%,#173923);color:#F5F7F4;box-shadow:var(--sombra-alta)}
+.centro-mando:after{content:"";position:absolute;right:-70px;bottom:-145px;width:390px;height:390px;border:1px solid rgba(255,255,255,.08);border-radius:50%;box-shadow:inset 0 0 0 70px rgba(255,255,255,.018)}
+.cm-arriba{position:relative;z-index:1;display:flex;justify-content:space-between;gap:24px;align-items:flex-start}
+.cm-kicker{margin:0 0 7px;font-family:"IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.14em;font-size:10px;color:#F5B83D}
+.centro-mando h2{margin:0;font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;font-size:36px;line-height:1}
+.cm-bajada{max-width:60ch;margin:8px 0 0;color:rgba(245,247,244,.68);font-size:13px}
+.cm-proyeccion{flex:none;text-align:right}.cm-proyeccion b{display:block;color:#F5B83D;font-family:"IBM Plex Mono",monospace;font-size:32px;line-height:1}.cm-proyeccion span{display:block;margin-top:5px;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:rgba(245,247,244,.55)}
+.cm-acciones{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+.cm-accion{min-width:0;text-align:left;color:#F5F7F4;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;align-items:center;text-decoration:none;font:inherit;cursor:pointer;transition:.18s ease}
+.cm-accion:hover{transform:translateY(-2px);background:rgba(255,255,255,.12);border-color:rgba(245,184,61,.4)}
+.cm-accion .cm-ico{grid-row:1/3;width:32px;height:32px;display:grid;place-items:center;border-radius:10px;background:rgba(245,184,61,.14);color:#F5B83D;font-size:15px}
+.cm-accion b{font-size:13px}.cm-accion small{min-width:0;color:rgba(245,247,244,.58);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Identidad del jugador */
+.fj{grid-template-columns:58px minmax(0,1fr) auto;column-gap:14px;padding:16px 18px;transition:background .15s,transform .15s}
+.fj:hover{background:color-mix(in srgb,var(--oro-fondo) 38%,var(--tabla))}
+.fj>.jugador-visual{grid-column:1;grid-row:1/5;position:relative;width:56px;height:56px;align-self:start}
+.jugador-visual .cara{display:block;width:56px;height:56px;border-radius:15px;object-fit:cover;background:var(--hueco);border:1px solid var(--raya)}
+.jugador-visual .dorsal{position:absolute;right:-5px;bottom:-5px;width:28px;height:20px;border-radius:6px;font-size:9px;border:2px solid var(--tabla);box-shadow:0 3px 8px rgba(0,0,0,.18)}
+.jn{font-size:20px}.jp b{font-size:16px}.dato{border-radius:9px}
+.jl{font-weight:inherit}.jl:hover{color:var(--oro)}
+.nov span:last-child{min-width:0;overflow-wrap:anywhere}
+.novedades-extra{margin-top:8px}.novedades-extra>summary{cursor:pointer;color:var(--oro);font-weight:700;font-size:12px;padding:7px 4px}
+
+@media(max-width:760px){
+  body{width:100%;max-width:100%;padding:0 12px 88px;overflow-x:hidden}.env,.env>*{min-width:0;max-width:100%}.cab{padding-top:16px;flex-wrap:wrap;gap:10px}.marca{width:100%;min-width:0}.marca h1{font-size:28px}.marca p{white-space:normal;max-width:280px}.sello{order:3;max-width:100%;overflow:hidden;text-overflow:ellipsis}.acc{order:2;margin-left:auto;min-width:0}
+  .marcador{grid-template-columns:repeat(2,minmax(0,1fr))}.marcador>div{min-width:0;padding:13px 12px;border-right:0;border-bottom:1px solid var(--raya)}.marcador>div:nth-child(odd){border-right:1px solid var(--raya)}.marcador dd{font-size:15px;white-space:normal;overflow-wrap:anywhere}.marcador dd small{font-size:9px}.marcador .retenido{font-size:8.5px}
+  .pest{position:fixed;left:8px;right:8px;bottom:8px;top:auto;margin:0;grid-template-columns:repeat(6,minmax(0,1fr));border-radius:15px;background:color-mix(in srgb,var(--tabla) 94%,transparent)}
+  .pest label{flex-direction:column;gap:2px;padding:6px 2px;min-width:0;font-size:9px}.pest label span{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis}.pest label svg{width:17px;height:17px}
+  .centro-mando{width:100%;min-width:0;padding:22px 18px;border-radius:18px}.cm-arriba{display:block;min-width:0}.centro-mando h2{max-width:100%;font-size:31px;overflow-wrap:anywhere}.cm-bajada{max-width:100%}.cm-proyeccion{text-align:left;margin-top:20px}.cm-proyeccion b{font-size:27px}.cm-acciones{grid-template-columns:minmax(0,1fr);margin-top:18px}.cm-accion{width:100%;padding:11px 12px}
+  .fj{grid-template-columns:48px minmax(0,1fr);padding:14px 12px;gap:3px 11px}.fj>.jugador-visual{width:46px;height:46px}.jugador-visual .cara{width:46px;height:46px;border-radius:12px}.jugador-visual .dorsal{width:25px;height:18px}.fj>.jp{grid-column:2;grid-row:auto;align-items:flex-start;text-align:left;margin-top:7px}.jp .cifras{flex-direction:row;justify-content:flex-start}.jp .cif{align-items:flex-start}.jp .ico{display:none}.jc,.jv,.jd,.quien,.clz,.rent,.jr{grid-column:2/-1}.js{grid-column:2/-1;grid-row:auto}
+  .nov{padding:9px;font-size:12px}.nov .hnov{display:block;margin:0}.sh{font-size:21px}.sd{font-size:12.5px}.tarjeta{padding:16px}.parte{overflow-wrap:anywhere}.parte code{white-space:normal}
+  .buscar{flex-wrap:wrap}.buscar input{width:calc(100% - 30px)}.cuenta-res{margin-left:26px}
+  .sello{font-size:9px}.acc .est{display:none}
+}
+@media(max-width:390px){.pest label{font-size:8px}.marcador dd{font-size:15px}.centro-mando h2{font-size:28px}}
 </style>
 </head>
 <body>
@@ -815,6 +895,26 @@ a{color:var(--oro)}
   function normal (s) {
     return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
   }
+
+  // Atajos del centro de mando: mantienen la aplicación en una sola página,
+  // pero llevan directamente de la recomendación a la decisión.
+  document.addEventListener('click', function (e) {
+    var tab = e.target.closest('[data-tab]')
+    if (tab) {
+      var radio = document.getElementById(tab.getAttribute('data-tab'))
+      if (radio) {
+        radio.checked = true
+        radio.dispatchEvent(new Event('change', { bubbles: true }))
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+      return
+    }
+    var atajo = e.target.closest('[data-scroll]')
+    if (atajo) {
+      var destino = document.getElementById(atajo.getAttribute('data-scroll'))
+      if (destino) destino.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  })
 
   // Buscador + orden sobre una lista cualquiera.
   function conectar (opciones) {

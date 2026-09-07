@@ -702,6 +702,10 @@ const club = (idClub) => {
 const caraDe = (id, nombre) =>
   `<img class="cara" loading="lazy" decoding="async" width="96" height="96" alt="" src="fotos/${id}.webp" onerror="this.remove()" title="${esc(nombre ?? '')}">`
 
+/** Retrato y posición como una sola pieza visual en las tarjetas principales. */
+const jugadorVisual = (j) =>
+  `<div class="jugador-visual">${caraDe(j.id, j.nombre)}${dorsal(j.puesto)}</div>`
+
 const escudoDe = (idJugador) => {
   const j = PORID_PRE.get(String(idJugador))
   const id = j && j.eq
@@ -870,7 +874,7 @@ const filaJugador = (j) => {
         : ''
   const rec = (j.p + j.d) * 1000 + j.media
   return `<div class="${cls}" data-busca="${esc(j.nombre)} ${esc(j.duenioCorto ?? 'libre')} ${PUESTOS_LARGO[j.puesto]}" data-rec="${rec.toFixed(2)}" data-precio="${j.precio}" data-media="${j.media}" data-puntos="${j.puntos}" data-sube="${(j.subeMes ?? -9).toFixed(4)}" data-hoy="${j.semana ?? -9e9}" data-prox="${j.esperado.toFixed(2)}" data-gol="${j.gol ?? 0}">
-      ${dorsal(j.puesto)}
+      ${jugadorVisual(j)}
       <div class="jn">${nombreEnlazado(j)}${j.mk ? `<span class="et et-mk">${j.ced ? 'se cede' : 'en el mercado'}</span>` : ''}${
         j.duenio
           ? `<span class="et et-eq${j.mio ? ' et-mio' : ''}">${esc(j.duenioCorto)}</span>`
@@ -1202,7 +1206,7 @@ const filaMia = (j, modo) => {
     ? `pagaste ${corto(pago)}, <b class="${clase(j.valor - pago)}">${firmaCorta(j.valor - pago)}</b>`
     : 'del reparto'
   return `<div class="fj">
-      ${dorsal(j.puesto)}
+      ${jugadorVisual(j)}
       <div class="jn">${nombreEnlazado(j)}${j.mk ? '<span class="et et-mk">en venta</span>' : ''}${marcaBlindaje(j)}${j.eq ? club(j.eq) : ''}<label class="sel" title="Simular que lo vendes"><input type="checkbox" class="vender" data-valor="${j.valor}" data-nombre="${esc(j.nombre)}"><span>vender</span></label></div>
       <div class="jp"><b class="${modo === 'clausula' ? 'cl' : ''}">${eur(grande)}</b><i>${rotulo}</i><span class="ico">${iconos(j)}</span></div>
       <div class="js">
@@ -1225,7 +1229,7 @@ const filaMia = (j, modo) => {
 
 const bloque = (icono, titulo, desc, lista, modo) =>
   lista.length
-    ? `    <section class="sec">
+    ? `    <section class="sec" id="bloque-${modo}">
       <h2 class="sh">${icono ? `<span class="se">${icono}</span>` : ''}${titulo} <em>${lista.length}</em></h2>
       ${desc ? `<p class="sd">${desc}</p>` : ''}
       <div class="lista">
@@ -1329,14 +1333,20 @@ const novedades = (() => {
   const deAyer = dias.get(AYER)
   if (deHoy.length === 0 && deAyer.length === 0) return ''
 
+  // La portada enseña solo lo que cabe escanear. El historial completo sigue
+  // disponible, pero ya no empuja el once y las decisiones fuera de pantalla.
+  const visiblesHoy = deHoy.slice(0, 5)
+  const restoHoy = deHoy.slice(5)
+
   // Nada se esconde detrás de un «y 42 más» que no se puede abrir. Lo de hoy va
   // desplegado; lo de ayer, plegado pero completo y a un toque.
   return `    <section class="sec">
       <h2 class="sh"><span class="se">🔔</span>Lo que ha cambiado <em>${deHoy.length + deAyer.length}</em></h2>
 ${deHoy.length ? `      <h3 class="ndia">Hoy <em>${deHoy.length}</em></h3>
       <ul class="novs">
-${deHoy.join(NL)}
-      </ul>` : '      <p class="pie">Hoy todavía no se ha movido nada.</p>'}
+${visiblesHoy.join(NL)}
+      </ul>
+      ${restoHoy.length ? `<details class="novedades-extra"><summary>Ver ${restoHoy.length} cambios más de hoy</summary><ul class="novs">${restoHoy.join(NL)}</ul></details>` : ''}` : '      <p class="pie">Hoy todavía no se ha movido nada.</p>'}
 ${deAyer.length ? `      <details class="nayer">
         <summary>Ayer <em>${deAyer.length}</em></summary>
         <ul class="novs">
@@ -1447,7 +1457,7 @@ const filaOnce = (j) => `        <div class="mj">${dorsal(j.puesto)}${caraDe(j.i
 
 const bloqueOnce = once === null || once.elegidos.length === 0
   ? ''
-  : `    <section class="sec">
+  : `    <section class="sec" id="once-jornada">
       <h2 class="sh"><span class="se">👕</span>El once del domingo <em>${YO.formacion}</em></h2>
       <p class="sd">Los que más deberían darte según Mister: su media <strong>donde les toca jugar</strong> esta jornada, y solo contando a los que da por titulares. La cifra grande es lo que cabe esperar de cada uno.${
         once.elegidos.filter((j) => j.est === 'injury').length
@@ -1502,7 +1512,27 @@ ${once.banquillo.map(filaOnce).join(NL)}
     </section>
 `
 
-const miEquipo = `${novedades}${bloqueOnce}${bloque(
+const oportunidad = J.filter((j) => j.a && !j.mio)
+  .sort((a, b) => (b.p + b.d) - (a.p + a.d) || b.media - a.media || (b.subeMes ?? -9) - (a.subeMes ?? -9))[0]
+
+const centroMando = `    <section class="centro-mando" aria-labelledby="cm-titulo">
+      <div class="cm-arriba">
+        <div>
+          <p class="cm-kicker">Centro de mando · jornada</p>
+          <h2 id="cm-titulo">Hoy tienes ${aVender.length + aBlindar.length} decisiones claras</h2>
+          <p class="cm-bajada">Tu ventaja no está en mirar más datos, sino en actuar antes: ajusta el once, libera caja y vigila la mejor oportunidad disponible.</p>
+        </div>
+        <div class="cm-proyeccion"><b>${once ? dec(once.total) : '—'} pts</b><span>proyección del mejor once</span></div>
+      </div>
+      <div class="cm-acciones">
+        <button class="cm-accion" type="button" data-scroll="once-jornada"><span class="cm-ico">↗</span><b>Optimiza tu once</b><small>${YO.formacion || 'Formación'} · ${once ? `${once.elegidos.length} jugadores elegidos` : 'sin datos suficientes'}</small></button>
+        <button class="cm-accion" type="button" data-scroll="${aVender.length ? 'bloque-venta' : 'bloque-clausula'}"><span class="cm-ico">${aVender.length ? '€' : '◆'}</span><b>${aVender.length ? `Vende ${aVender.length}` : `Blinda ${aBlindar.length}`}</b><small>${aVender.length ? `liberarías ${corto(sumaVenta)} para competir` : 'protege el valor de tu plantilla'}</small></button>
+        <button class="cm-accion" type="button" data-tab="t2"><span class="cm-ico">＋</span><b>${oportunidad ? `Ficha a ${esc(oportunidad.nombre)}` : 'Explora el mercado'}</b><small>${oportunidad ? `${dec(oportunidad.media)} de media · ${corto(oportunidad.precio)}` : 'ordena por recomendaciones'}</small></button>
+      </div>
+    </section>
+`
+
+const miEquipo = `${centroMando}${bloqueOnce}${novedades}${bloque(
   '📤',
   'Deberías vender',
   aVender.length
