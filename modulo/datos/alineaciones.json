@@ -595,7 +595,7 @@
  {
   "jornada": 4,
   "idJornada": 4045,
-  "puntos": 64,
+  "puntos": 66,
   "puesto": 1,
   "formacion": "1-3-6-1",
   "once": [
@@ -667,8 +667,8 @@
     "id": "48203",
     "nombre": "Ramón Terrats",
     "puesto": 3,
-    "puntos": null,
-    "jugo": false,
+    "puntos": 3,
+    "jugo": true,
     "capitan": false
    },
    {
