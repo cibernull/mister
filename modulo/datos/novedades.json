@@ -1,6 +1,103 @@
 [
  {
   "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "11761",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "14911",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "15338",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "22502",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "23172",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "27855",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "29163",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "29169",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "33717",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-07",
+  "id": "48554",
+  "de": null,
+  "a": "Niutin FC (Isaac)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "48554",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "58436",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "64410",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "68495",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "70935",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "71795",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-06",
   "id": "14791",
   "entra": false
