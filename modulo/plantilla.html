@@ -307,6 +307,13 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .capa-x{position:sticky;top:0;float:right;margin:-6px -4px 0 0;width:32px;height:32px;border-radius:50%;border:1px solid var(--raya);background:var(--suelo);color:var(--gris);font-size:13px;cursor:pointer;z-index:2}
 .capa-x:hover{color:var(--tinta);border-color:var(--oro-raya)}
 
+/* Las caras. El círculo con fondo propio porque el PNG viene recortado sobre
+   transparente: sin fondo, un pelo oscuro desaparece contra el suelo. Si una
+   falta, el `onerror` la quita y todo queda como antes de haberla. */
+.cara{border-radius:50%;background:var(--tabla);object-fit:cover;flex:none;vertical-align:middle}
+.cara.grande{width:64px;height:64px;border:1px solid var(--raya)}
+ol.top .n .cara,.mejores .n .cara,.mj .cara,.mn .cara{width:22px;height:22px;margin-right:5px}
+
 .cf-cab{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
 .cf-cab h3{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:26px;line-height:1.1;margin:0}
 .cf-club{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--gris);margin-top:2px}
@@ -1185,7 +1192,22 @@ a{color:var(--oro)}
     var dec = function (n) { return n == null ? '—' : Number(n).toFixed(1).replace('.', ',') }
     var firma = function (n) { return (n > 0 ? '+' : n < 0 ? '−' : '') + corto(Math.abs(n)) }
     var PUESTO = { 0: '—', 1: 'POR', 2: 'DEF', 3: 'MED', 4: 'DEL' }
+    // De dónde cuelgan las caras. En el sitio van al lado de la página; en la
+    // versión de un solo fichero no hay «al lado», así que quien publica la
+    // reescribe con la dirección completa. Ver modulo/publicar.cjs.
+    var RUTA_FOTOS = window.RUTA_FOTOS || 'fotos/'
+
     var escudo = function (id) { return id ? '<i class="ec e' + id + '" title="' + esc(CLUB[id] || '') + '"></i>' : '' }
+
+    // La cara del jugador. Se sirve desde el propio sitio, no desde el CDN de
+    // Mister: allí pesa 25 KB y aquí 2,7. `loading=lazy` es lo que hace que
+    // una lista de doce caras no cueste nada hasta que se llega a ella.
+    var cara = function (id, nombre, clase) {
+      if (!id) return ''
+      return '<img class="cara' + (clase ? ' ' + clase : '') + '" loading="lazy" decoding="async"' +
+        ' width="96" height="96" alt="" src="' + RUTA_FOTOS + id + '.webp"' +
+        ' onerror="this.remove()" title="' + esc(nombre || '') + '">'
+    }
     var dato = function (et, v, tit) {
       return v == null || v === '' ? '' :
         '<span class="dato"' + (tit ? ' title="' + esc(tit) + '"' : '') + '><i>' + et + '</i><b>' + v + '</b></span>'
@@ -1319,7 +1341,8 @@ a{color:var(--oro)}
       if (f.fin != null) valor.push('<span class="par proy">~' + corto(f.fin) + ' en un mes</span>')
 
       cuerpo.innerHTML =
-        '<div class="cf-cab"><span class="dorsal p' + f.p + '">' + PUESTO[f.p] + '</span>' +
+        '<div class="cf-cab">' + cara(id, f.n, 'grande') +
+        '<span class="dorsal p' + f.p + '">' + PUESTO[f.p] + '</span>' +
         '<div style="min-width:0"><h3 id="capa-nombre">' + esc(f.n) + '</h3>' +
         '<div class="cf-club">' + escudo(f.eq) + esc(CLUB[f.eq] || '') + (f.ed ? ' · ' + f.ed + ' años' : '') + '</div>' +
         '<div class="cf-ets">' + ets.join('') + '</div></div></div>' +

@@ -40,9 +40,14 @@ const cuando = new Date().toLocaleString('es-ES', { dateStyle: 'long', timeStyle
 const marca =
   `<script>window.PUBLICADO=true;window.PUBLICADO_CUANDO=${JSON.stringify(cuando)}</script>`
 
+// La versión de un solo fichero no tiene un «al lado» del que colgar las
+// caras, así que se las apunta al sitio publicado. Si no hay red, el `onerror`
+// de cada una la quita y la página queda como antes de tenerlas.
+const FOTOS_FUERA = '<script>window.RUTA_FOTOS="https://cibernull.github.io/mister/fotos/"</script>'
+
 fs.writeFileSync(
   SALIDA,
-  [trozo('title'), fuentes ? fuentes[0] : '', trozo('style'), marca, cuerpo[1]].join('\n'),
+  [trozo('title'), fuentes ? fuentes[0] : '', trozo('style'), marca, FOTOS_FUERA, cuerpo[1]].join('\n'),
 )
 
 // Y la versión para GitHub Pages, que sí necesita el documento completo. Se
@@ -50,6 +55,22 @@ fs.writeFileSync(
 // al que pedirle nada, así que el botón tiene que ser Recargar y no Actualizar.
 fs.mkdirSync(path.dirname(SITIO), { recursive: true })
 fs.writeFileSync(SITIO, doc.replace('</head>', `${marca}\n</head>`))
+
+// Las caras van al lado de la página, no dentro: son 529 y sumarían 1,4 MB de
+// base64 a un documento que hoy pesa 320 KB comprimido. Se copian junto al
+// index.html y el navegador se baja solo las que enseñe, con caché de un año.
+const FOTOS_DE = path.join(__dirname, 'fotos')
+const FOTOS_A = path.join(path.dirname(SITIO), 'fotos')
+if (fs.existsSync(FOTOS_DE)) {
+  fs.mkdirSync(FOTOS_A, { recursive: true })
+  let copiadas = 0
+  for (const f of fs.readdirSync(FOTOS_DE)) {
+    if (!f.endsWith('.webp')) continue
+    fs.copyFileSync(path.join(FOTOS_DE, f), path.join(FOTOS_A, f))
+    copiadas += 1
+  }
+  console.log(`${copiadas} caras copiadas`)
+}
 
 // Un fichero de veinte bytes con la misma fecha que lleva la página dentro.
 // Existe para que, tras pulsar «Actualizar», el móvil pueda preguntar «¿ya?»

@@ -691,6 +691,17 @@ const club = (idClub) => {
  * cambia lo que significa todo lo demás —quién juega el domingo, contra quién,
  * si va a rotar— y con el escudo se sabe sin leer.
  */
+/**
+ * La cara del jugador, para las listas.
+ *
+ * Sale del propio sitio (`fotos/{id}.webp`, 2,7 KB) y no del CDN de Mister,
+ * donde el mismo PNG pesa 25 KB. `loading="lazy"` es lo que evita que doce
+ * caras cuesten algo antes de que se llegue a ellas; `onerror` la quita si a
+ * alguien le falta, y la lista queda como estaba.
+ */
+const caraDe = (id, nombre) =>
+  `<img class="cara" loading="lazy" decoding="async" width="96" height="96" alt="" src="fotos/${id}.webp" onerror="this.remove()" title="${esc(nombre ?? '')}">`
+
 const escudoDe = (idJugador) => {
   const j = PORID_PRE.get(String(idJugador))
   const id = j && j.eq
@@ -1417,7 +1428,7 @@ const formacionesProbadas = FORMACIONES.map((f) => ({ ...f, nombre: f.l.join('-'
   .filter((f) => f.once !== null && f.once.completo)
   .sort((a, b) => b.once.total - a.once.total)
 
-const filaOnce = (j) => `        <div class="mj">${dorsal(j.puesto)}${escudoDe(j.id)}<span class="n">${nombreEnlazado(j)}${pintarRacha(j)}</span>
+const filaOnce = (j) => `        <div class="mj">${dorsal(j.puesto)}${caraDe(j.id, j.nombre)}${escudoDe(j.id)}<span class="n">${nombreEnlazado(j)}${pintarRacha(j)}</span>
           <span class="v">${dec(esperadoConAjustes(j).total)}${(() => {
             const a = esperadoConAjustes(j)
             const partes = [
@@ -1696,7 +1707,7 @@ ${filas.join(NL)}
       </div>`
 
 const lineaTop = (j, valor) =>
-  `          <li><span class="d">${dorsal(j.puesto)}</span><span class="n">${escudoDe(j.id)}${esc(j.nombre)}</span><span class="e">${esc(j.duenioCorto ?? 'libre')}</span><span class="v">${valor}</span></li>`
+  `          <li><span class="d">${dorsal(j.puesto)}</span><span class="n">${caraDe(j.id, j.nombre)}${escudoDe(j.id)}${esc(j.nombre)}</span><span class="e">${esc(j.duenioCorto ?? 'libre')}</span><span class="v">${valor}</span></li>`
 
 /**
  * Cuántos entran en cada lista de Estadísticas.
@@ -1893,7 +1904,7 @@ ${l
   .map(
     (j, n) => `          <li>
             <span class="p">${n + 1}</span>
-            <span class="n">${escudoDe(j.id)}${nombreEnlazado(j)}${balones(j.gol ?? 0)}</span>
+            <span class="n">${caraDe(j.id, j.nombre)}${escudoDe(j.id)}${nombreEnlazado(j)}${balones(j.gol ?? 0)}</span>
             <span class="e">${esc(j.duenioCorto ?? 'libre')}</span>
             <span class="m" title="Puntos de media por partido">${dec(j.media)}</span>
             ${rachaConGoles(j) || pintarRacha(j, true)}
