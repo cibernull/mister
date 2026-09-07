@@ -1049,8 +1049,13 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       return b ? b.textContent.trim() : ''
     }).filter(Boolean)
     var libres = casan.filter(function (f) { return f.classList.contains('tl') && f.classList.contains('nomk') }).length
+    // «No se puede fichar» sonaba a definitivo y no lo es: Mister va sacando a
+    // los libres al mercado por turnos —hoy 20 de los 409 que hay—, así que a
+    // cualquiera de ellos le llega su día.
     var motivo = libres === casan.length
-      ? (casan.length === 1 ? ' Es libre y no está en el mercado, así que hoy no hay forma de ficharlo: ni pagando ni por cláusula.' : ' Son libres y no están en el mercado, así que hoy no hay forma de ficharlos.')
+      ? (casan.length === 1
+          ? ' Es libre, pero hoy no sale en el mercado y sin estar ahí no se puede pujar. Mister va sacando a los libres por turnos, así que puede aparecer otro día.'
+          : ' Son libres, pero hoy no salen en el mercado y sin estar ahí no se puede pujar. Mister los va sacando por turnos, así que pueden aparecer otro día.')
       : ' Los filtros de ahora mismo los esconden.'
     return '<b>' + (nombres.join(', ') || casan.length + ' jugadores') + '</b> ' +
       (casan.length === 1 ? 'sí está' : 'sí están') + ' en LaLiga.' + motivo +
