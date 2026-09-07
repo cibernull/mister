@@ -979,9 +979,64 @@
    "id": "48554",
    "nombre": "Luiz Felipe",
    "valor": 188000
+  },
+  {
+   "id": "213",
+   "nombre": "Stole Dimitrievski",
+   "valor": 6905000
+  },
+  {
+   "id": "1762",
+   "nombre": "Álex Berenguer",
+   "valor": 3315000
+  },
+  {
+   "id": "17290",
+   "nombre": "Sergio Camello",
+   "valor": 6408000
   }
  ],
  "movimientos": [
+  {
+   "id": "8953",
+   "nombre": "Pablo Maffeo",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 3574480,
+   "tipo": "normal",
+   "fecha": "2026-09-07 17:06:52",
+   "pos": 2
+  },
+  {
+   "id": "17290",
+   "nombre": "Sergio Camello",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 7900000,
+   "tipo": "normal",
+   "fecha": "2026-09-07 17:00:19",
+   "pos": 4
+  },
+  {
+   "id": "1762",
+   "nombre": "Álex Berenguer",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 4074130,
+   "tipo": "normal",
+   "fecha": "2026-09-07 17:00:19",
+   "pos": 3
+  },
+  {
+   "id": "213",
+   "nombre": "Stole Dimitrievski",
+   "de": null,
+   "a": "Mario80",
+   "importe": 6905210,
+   "tipo": "normal",
+   "fecha": "2026-09-07 17:00:19",
+   "pos": 1
+  },
   {
    "id": "70993",
    "nombre": "Haitam Abaida",
@@ -3737,6 +3792,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Pablo Maffeo",
+     "id": "8953",
+     "tipo": "venta",
+     "importe": 3574480,
+     "fecha": "2026-09-07",
+     "op": "normal"
+    },
+    {
      "j": "Nicolas Pépé",
      "id": "59382",
      "tipo": "compra",
@@ -4265,8 +4328,8 @@
     "8953": {
      "nombre": "Pablo Maffeo",
      "compras": 4196000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 3574480,
+     "ops": 2
     },
     "12946": {
      "nombre": "Santi Comesaña",
@@ -5405,6 +5468,14 @@
      "op": "normal"
     },
     {
+     "j": "Álex Berenguer",
+     "id": "1762",
+     "tipo": "compra",
+     "importe": 4074130,
+     "fecha": "2026-09-07",
+     "op": "normal"
+    },
+    {
      "j": "Carlos Macia",
      "id": "68259",
      "tipo": "compra",
@@ -5888,6 +5959,12 @@
      "ventas": 2563000,
      "ops": 2
     },
+    "1762": {
+     "nombre": "Álex Berenguer",
+     "compras": 4074130,
+     "ventas": 0,
+     "ops": 1
+    },
     "3060": {
      "nombre": "Mariano Díaz",
      "compras": 4686500,
@@ -6132,6 +6209,14 @@
   },
   "Mario80": {
    "movimientos": [
+    {
+     "j": "Stole Dimitrievski",
+     "id": "213",
+     "tipo": "compra",
+     "importe": 6905210,
+     "fecha": "2026-09-07",
+     "op": "normal"
+    },
     {
      "j": "Giacomo Quagliata",
      "id": "70950",
@@ -6396,6 +6481,12 @@
      "ventas": 0,
      "ops": 1
     },
+    "213": {
+     "nombre": "Stole Dimitrievski",
+     "compras": 6905210,
+     "ventas": 0,
+     "ops": 1
+    },
     "308": {
      "nombre": "Johan Mojica",
      "compras": 1403590,
@@ -6550,6 +6641,14 @@
   },
   "Saiyans FC (Fran)": {
    "movimientos": [
+    {
+     "j": "Sergio Camello",
+     "id": "17290",
+     "tipo": "compra",
+     "importe": 7900000,
+     "fecha": "2026-09-07",
+     "op": "normal"
+    },
     {
      "j": "Adama Traoré",
      "id": "36334",
@@ -7057,6 +7156,12 @@
     "14911": {
      "nombre": "Álvaro García",
      "compras": 5805000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "17290": {
+     "nombre": "Sergio Camello",
+     "compras": 7900000,
      "ventas": 0,
      "ops": 1
     },
