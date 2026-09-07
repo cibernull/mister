@@ -14,7 +14,7 @@ import { crearCliente } from '../recoleccion/cliente.js'
 import { obtenerCredenciales } from '../sesion/credenciales.js'
 import { parsearFgUser } from '../recoleccion/parseadorFgUser.js'
 import { descargar as descargarResultados, fuerzaPorClub, parsearCsv } from '../externo/resultadosReales.js'
-import { extraerHechos, type Volcado } from './feed.js'
+import { extraerHechos, type Volcado, fundirHechos, paraGuardar, type Guardados } from './feed.js'
 import { reconstruir, type Constantes } from './reconstruir.js'
 import {
   recolectarFeed,
@@ -119,7 +119,12 @@ async function intentar(): Promise<Resultado> {
   paso(faltaFondo ? 'Bajando el feed entero…' : 'Bajando lo publicado desde entonces…')
   const bajada = await recolectarFeed(cliente, antes.hasta, undefined, faltaFondo)
   const fundido = fundir(volcado, bajada.nuevas)
-  const hechos = extraerHechos(fundido)
+  // Los hechos guardados mandan sobre lo que el feed ya no sirve: su ventana es
+  // de unos diez días y la liga lleva más de un mes.
+  const HECHOS = join(DATOS, 'hechos.json')
+  const guardados = existsSync(HECHOS) ? leerJson<Guardados>(HECHOS) : null
+  const hechos = fundirHechos(guardados, extraerHechos(fundido))
+  escribirJson(HECHOS, paraGuardar(hechos))
   const traspasosNuevos = hechos.traspasos.length - antes.traspasos.length
   paso(`${bajada.lotes} lotes, ${traspasosNuevos} traspasos nuevos.`)
 

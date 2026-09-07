@@ -222,3 +222,48 @@ export function extraerHechos(volcado: Volcado): Hechos {
 export function traspasosConocidos(volcado: Volcado): Set<number> {
   return new Set(extraerHechos(volcado).traspasos.map((t) => t.idTransfer))
 }
+
+/**
+ * Junta los hechos guardados en disco con los que acaban de salir del feed.
+ *
+ * Existe porque **el feed de Mister solo sirve unos diez días**: medido el 7 de
+ * septiembre de 2026, se agotaba en 266 eventos y el más antiguo era de hace
+ * diez días, con la liga empezada el 3 de agosto. El volcado local tenía la
+ * historia entera solo porque se había ido acumulando pasada tras pasada; el
+ * runner de GitHub, que arrancó más tarde, se quedó con 238 traspasos de 275 y
+ * no había forma de que los recuperara: ya no existían en el origen.
+ *
+ * Así que la historia deja de vivir en la caché del feed y pasa a vivir en el
+ * repositorio. Son 37 KB, no llevan ni un correo —los objetos `user` del feed,
+ * que sí los llevan, se quedan fuera— y sobreviven a que la caché se pierda.
+ *
+ * Lo nuevo pisa a lo viejo a propósito: los hechos de un traspaso no cambian,
+ * pero el valor del jugador que viaja con él sí, y el feed lo reescribe con el
+ * de hoy cada vez que se pide.
+ */
+export function fundirHechos(guardados: Guardados | null, recien: Hechos): Hechos {
+  if (guardados === null) return recien
+
+  const porClave = <T>(viejos: T[], nuevos: T[], clave: (x: T) => string | number): T[] => {
+    const m = new Map<string | number, T>()
+    for (const x of viejos) m.set(clave(x), x)
+    for (const x of nuevos) m.set(clave(x), x)
+    return [...m.values()]
+  }
+
+  return {
+    ...recien,
+    traspasos: porClave(guardados.traspasos, recien.traspasos, (t) => t.idTransfer).sort((a, b) =>
+      a.cuando.localeCompare(b.cuando),
+    ),
+    salidas: porClave(guardados.salidas, recien.salidas, (s) => `${s.idJugador}|${s.cuando}`),
+    jornadas: porClave(guardados.jornadas, recien.jornadas, (j) => j.idJornada),
+  }
+}
+
+/** Lo que se guarda entre pasadas: solo lo que no vuelve a servir el feed. */
+export type Guardados = Pick<Hechos, 'traspasos' | 'salidas' | 'jornadas'>
+
+export function paraGuardar(h: Hechos): Guardados {
+  return { traspasos: h.traspasos, salidas: h.salidas, jornadas: h.jornadas }
+}
