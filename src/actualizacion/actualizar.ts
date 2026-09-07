@@ -28,7 +28,7 @@ import {
 } from './recolectar.js'
 import type { JugadorMister } from '../recoleccion/parseadorUniverso.js'
 import { verificar, verificarLiga } from './verificar.js'
-import { podar, subidasDelMes, type Historico } from './historicoValores.js'
+import { podar, subidasDeLaSemana, subidasDelMes, type Historico } from './historicoValores.js'
 import type { FichaGuardada } from './fichas.js'
 import { reinicioDeLiga } from '../recoleccion/parseadorSaldo.js'
 import { detectarSubidas, gastoPorEquipo, subidasVivas, type Subida } from './clausulas.js'
@@ -182,6 +182,7 @@ async function intentar(): Promise<Resultado> {
   podar(historico)
   escribirJson(HISTORICO, historico)
   const delMes = subidasDelMes(historico, hoy)
+  const deLaSemana = subidasDeLaSemana(historico, hoy)
   // Lo que solo está en la ficha de cada jugador —goles, tarjetas, media en
   // casa y fuera, titularidades, y si Mister lo da por titular el domingo—. Lo
   // rellena `npm run fichas`, que tarda nueve minutos y va aparte para que el
@@ -403,7 +404,7 @@ async function intentar(): Promise<Resultado> {
   // las trae todas y al día.
   const clausulas = universo.filter((j) => j.clausula !== null)
   escribirJson(join(DATOS, 'clausulas.json'), clausulas.map((j) => [Number(j.id), j.clausula! / 1000]))
-  escribirJson(join(DATOS, 'jugadores-calc.json'), construirJugadores(universo, enVenta, cuentas, cache, delMes, detalle))
+  escribirJson(join(DATOS, 'jugadores-calc.json'), construirJugadores(universo, enVenta, cuentas, cache, delMes, detalle, deLaSemana))
 
   // Lo que ha pasado de verdad en el campo, de Football-Data. Sirve para medir
   // lo duro que es cada rival con lo que hacen los equipos y no con lo que
@@ -531,6 +532,7 @@ function construirJugadores(
   fichas: Map<string, { valor: number; nombre?: string; posicion?: number; subeDia?: number; subeMes?: number; dia?: string }>,
   delMes: Map<string, number>,
   detalle: Record<string, FichaGuardada>,
+  deLaSemana: Map<string, number> = new Map(),
 ): unknown[] {
   // El histórico manda en cuanto tiene recorrido; hasta entonces, la ficha, y
   // solo si se pidió hoy. Una cifra vieja del mes pasado no se enseña: era así
@@ -550,6 +552,8 @@ function construirJugadores(
     partidos: j.partidos,
     /** Lo que ha cambiado su valor desde ayer. */
     semana: j.sube,
+    /** Y lo que ha cambiado en los últimos siete días. */
+    sem7: deLaSemana.get(j.id) ?? null,
     mes: mesDe(j.id),
     mk: seVende.has(j.id) ? 1 : 0,
     /** Lo que pide quien lo vende. Solo si está en el mercado. */
@@ -594,6 +598,7 @@ function construirJugadores(
       puntos: 0,
       media: 0,
       partidos: 0,
+      sem7: null,
       // Ya no juega en LaLiga: no hay jornadas que enseñar, y una racha vacía
       // dice justo eso. Poner ceros fingiría que jugó y sacó cero.
       racha: [],

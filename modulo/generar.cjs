@@ -208,10 +208,13 @@ const porQueDuro = (j) => {
     : `${club} concede ${dec(f.xgEnContra)} goles esperados por partido (xG real, no fantasy).`
 }
 
-const pintarRacha = (j) => {
+const pintarDureza = (n, j) =>
+  n === null ? '' : `<span class="dur d${n}" title="Lo duro que es ese rival para su puesto, de 1 (blando) a 5 (duro). ${j ? porQueDuro(j) : ''}">${'●'.repeat(n)}${'○'.repeat(5 - n)}</span>`
+
+const pintarRacha = (j, dentro) => {
   const l = Array.isArray(j.racha) ? j.racha.slice(-5) : []
   if (l.length === 0) return ''
-  return `<span class="racha" title="Sus últimas jornadas; el hueco es que no jugó">${l
+  return `<span class="racha${dentro ? ' pegada' : ''}" title="Sus últimas jornadas; el hueco es que no jugó">${l
     .map((p) =>
       p === null
         ? '<i class="rj vacia">·</i>'
@@ -555,16 +558,22 @@ const bloqueClausulazo = (j) => {
   const veredicto = c.cumple === 3 ? 'bueno' : c.cumple === 2 ? 'regular' : 'flojo'
   const rotulo = { bueno: 'Buen clausulazo', regular: 'Clausulazo dudoso', flojo: 'Mal clausulazo' }[veredicto]
   const marca = (bien, si, no) => `<span class="${bien ? 'si' : 'no'}">${bien ? '✓' : '✗'} ${bien ? si : no}</span>`
-  return `<div class="clz ${veredicto}" title="Pagas la cláusula, pero si lo revendes recuperas su valor: lo que no vuelve es la prima. Hacen falta las tres condiciones.">
-        <b>${rotulo}</b>
-        <span class="cifra">prima real <b>${corto(c.prima)}</b>${c.porPunto !== null ? ` · ${corto(c.porPunto)} por punto` : ''} · tu tope ${corto(c.dTope)}</span>
-        <span class="tres">${marca(c.titular, `titular (${c.jugados ? `${j.tit} de ${c.jugados}` : 'sí'})`, c.jugados ? `no es titular (${j.tit} de ${c.jugados})` : 'no ha jugado')}${marca(
-          c.barata,
-          'prima barata para lo que da',
-          'prima cara para lo que da',
-        )}${marca(c.calendario, 'le viene bien el partido', 'le viene mal el partido')}</span>
-        <span class="def">${c.defendido ? '🛡 su dueño le ha subido la cláusula: lo está defendiendo' : 'cláusula sin subir: nadie lo está defendiendo'}</span>
-      </div>`
+  // Plegado, con el veredicto y la prima en el resumen. Desplegado se llevaba
+  // cien píxeles de cada ficha y dejaba una por pantalla en el móvil; lo que
+  // hace falta para decidir de un vistazo es el veredicto, y el porqué está a
+  // un toque para quien quiera comprobarlo.
+  return `<details class="clz ${veredicto}">
+        <summary title="Pagas la cláusula, pero si lo revendes recuperas su valor: lo que no vuelve es la prima."><b>${rotulo}</b><span class="cifra">prima real ${corto(c.prima)}${c.porPunto !== null ? ` · ${corto(c.porPunto)} por punto` : ''}</span></summary>
+        <div class="pormenor">
+          <span class="cifra">tu tope de puja quedaría en ${corto(MIO.tope + c.dTope)}</span>
+          <span class="tres">${marca(c.titular, `titular (${c.jugados ? `${j.tit} de ${c.jugados}` : 'sí'})`, c.jugados ? `no es titular (${j.tit} de ${c.jugados})` : 'no ha jugado')}${marca(
+            c.barata,
+            'prima barata para lo que da',
+            'prima cara para lo que da',
+          )}${marca(c.calendario, 'le viene bien el partido', 'le viene mal el partido')}</span>
+          <span class="def">${c.defendido ? '🛡 su dueño le ha subido la cláusula: lo está defendiendo' : 'cláusula sin subir: nadie lo está defendiendo'}</span>
+        </div>
+      </details>`
 }
 
 const quienPuede = (j) => {
@@ -659,22 +668,86 @@ const marcaBlindaje = (j, compacta) => {
 }
 
 /** La línea de detalle: lo que solo está en la ficha de cada jugador. */
-const detalleDe = (j) => {
+/**
+ * Un dato con su rótulo encima.
+ *
+ * Antes la ficha era una tira de fragmentos separados por puntos —«⚽ 5 · 🟨 2
+ * · casa 14,0 · fuera 9,0 · 3/4 de inicio»— y había que adivinar qué era cada
+ * cifra. Media ¿de qué? ¿Tres de cuatro qué? Con el rótulo delante no hay nada
+ * que adivinar, y ocupa casi lo mismo porque va en dos líneas diminutas.
+ */
+const dato = (etiqueta, valor, titulo, clase) =>
+  valor === null || valor === undefined || valor === ''
+    ? ''
+    : `<span class="dato${clase ? ` ${clase}` : ''}"${titulo ? ` title="${esc(titulo)}"` : ''}><i>${etiqueta}</i><b>${valor}</b></span>`
+
+/** Un plazo del valor: verde si sube, rojo si baja, y nada si no se sabe. */
+const plazo = (etiqueta, importe, titulo) =>
+  importe === null || importe === undefined || importe === 0
+    ? ''
+    : dato(etiqueta, `<span class="${clase(importe)}">${firmaCorta(importe)}</span>`, titulo)
+
+/** Quién es y contra quién juega: identidad, no rendimiento. */
+const identidadDe = (j) => {
   const trozos = []
   if (j.eq) trozos.push(club(j.eq))
-  if (j.gol) trozos.push(`<span title="goles esta temporada">⚽ ${j.gol}</span>`)
-  if (j.tar) trozos.push(`<span title="tarjetas">🟨 ${j.tar}</span>`)
-  if (j.mc != null && j.mf != null && j.mc !== j.mf) {
-    // Solo cuando difieren: repetir dos veces la misma cifra no dice nada.
-    trozos.push(`<span title="media jugando en casa y fuera">casa <b>${dec(j.mc)}</b> · fuera <b>${dec(j.mf)}</b></span>`)
-  }
-  if (j.tit != null && j.tit + j.sup > 0) {
-    trozos.push(`<span title="veces que ha salido de inicio">${j.tit}/${j.tit + j.sup} de inicio</span>`)
-  }
   if (j.rival) {
-    trozos.push(`<span class="prox">→ ${esc(j.rival)} <i>${j.casa === 1 ? 'en casa' : 'fuera'}</i></span>`)
+    trozos.push(
+      `<span class="prox">${j.casa === 1 ? 'en casa' : 'fuera'} contra <b>${esc(j.rival)}</b>${pintarDureza(durezaDe(j), j)}</span>`,
+    )
   }
-  return trozos.length ? `<div class="jx">${trozos.join('<span class="sep">·</span>')}</div>` : ''
+  return trozos.length ? `<div class="jc">${trozos.join('')}</div>` : ''
+}
+
+/**
+ * Cómo va su valor, en los tres plazos y de un vistazo.
+ *
+ * Va en línea suelta y no en un dato con caja: los tres juntos son anchos, se
+ * llevaban una fila entera de chips y hacían la ficha más alta que el diseño
+ * viejo, que era justo lo que había que arreglar. Y juntos se leen mejor que
+ * separados, porque lo que dice algo es compararlos: sube hoy pero baja en el
+ * mes es una historia distinta de sube en los tres.
+ */
+const valorDe = (j) => {
+  // Cada cifra va pegada a su plazo: al saltar de línea se separaban y quedaba
+  // un «este mes» huérfano debajo, sin número.
+  const par = (importe, texto, formato) =>
+    `<span class="par"><span class="${clase(importe)}">${formato}</span> ${texto}</span>`
+  const l = [
+    j.semana ? par(j.semana, 'hoy', firmaCorta(j.semana)) : '',
+    j.sem7 ? par(j.sem7, 'en 7 días', firmaCorta(j.sem7)) : '',
+    j.subeMes != null
+      ? par(j.subeMes, 'este mes', `${j.subeMes > 0 ? '+' : ''}${Math.round(j.subeMes * 100)} %`)
+      : '',
+  ].filter(Boolean)
+  return l.length ? `<div class="jv"><i>su valor</i>${l.join('<span class="sep">·</span>')}</div>` : ''
+}
+
+/** Cómo rinde, cada cifra con su nombre. */
+const datosDe = (j) => {
+  const casaYFuera =
+    j.mc != null && j.mf != null && j.mc !== j.mf
+      ? dato('en casa', dec(j.mc), 'Puntos de media jugando en casa') +
+        dato('fuera', dec(j.mf), 'Puntos de media jugando fuera')
+      : ''
+  const trozos = [
+    dato('media', dec(j.media), 'Puntos que saca de media por partido'),
+    dato('pts', `${j.puntos} en ${j.partidos}`, 'Puntos totales y partidos que ha jugado'),
+    j.gol ? dato('goles', j.gol, 'Goles esta temporada') : '',
+    j.tar ? dato('tarjetas', j.tar, 'Tarjetas esta temporada') : '',
+    j.tit != null && j.tit + j.sup > 0
+      ? dato('inicio', `${j.tit} de ${j.tit + j.sup}`, 'Veces que ha salido de titular, de las que ha jugado')
+      : '',
+    casaYFuera,
+    j.precio !== j.valor ? dato('lo vale', corto(j.valor), 'Lo que dice Mister que vale, que es lo que recuperarías al venderlo') : '',
+    // Los tres plazos del valor, cada uno con su nombre y su color. Antes solo
+    // salía uno —el del mes si lo había y si no el del día— y no se decía cuál,
+    // así que un «+58 %» podía ser de hoy o de hace un mes.
+    Array.isArray(j.racha) && j.racha.length
+      ? dato('últimas', pintarRacha(j, true), 'Lo que sacó en cada una de sus últimas jornadas', 'ancha')
+      : '',
+  ]
+  return `<div class="jd">${trozos.join('')}</div>`
 }
 
 /** Qué es la cifra grande de la derecha, que no siempre es lo mismo. */
@@ -714,13 +787,9 @@ const filaJugador = (j) => {
           : '<span class="et et-libre">libre</span>'
       }${marcaBlindaje(j)}${j.once === 1 ? '<span class="et et-once" title="Mister lo da por titular en el próximo partido">👕 titular</span>' : ''}${ESTADOS[j.est] ?? ''}</div>
       <div class="jp"><b class="${etiquetaPrecio(j) === 'cláusula' ? 'cl' : ''}">${eur(j.precio)}</b><i>${etiquetaPrecio(j)}</i><span class="ico">${iconos(j)}</span></div>
-      <div class="js">
-        <span>media <b>${dec(j.media)}</b></span>${pintarRacha(j)}<span class="sep">·</span>
-        <span>${j.puntos} pts en ${j.partidos} part.</span>${
-          tendencia ? `<span class="sep">·</span>${tendencia}` : ''
-        }${j.precio !== j.valor ? `<span class="sep">·</span><span>vale ${corto(j.valor)}</span>` : ''}
-      </div>
-      ${detalleDe(j)}
+      ${identidadDe(j)}
+      ${valorDe(j)}
+      ${datosDe(j)}
       ${bloqueRentable(j)}${quienPuede(j)}${bloqueClausulazo(j)}
     </div>`
 }
@@ -1079,8 +1148,6 @@ const once = (() => {
   return { elegidos, banquillo: banquillo.sort((a, b) => esperadoTotal(b) - esperadoTotal(a)) }
 })()
 
-const pintarDureza = (n, j) =>
-  n === null ? '' : `<span class="dur d${n}" title="Lo duro que es ese rival para su puesto, de 1 (blando) a 5 (duro). ${j ? porQueDuro(j) : ''}">${'●'.repeat(n)}${'○'.repeat(5 - n)}</span>`
 
 const filaOnce = (j) => `        <div class="mj">${dorsal(j.puesto)}${escudoDe(j.id)}<span class="n">${nombreEnlazado(j)}${pintarRacha(j)}</span>
           <span class="v">${dec(esperadoConAjustes(j).total)}${(() => {

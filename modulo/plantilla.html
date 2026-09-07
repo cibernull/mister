@@ -199,12 +199,33 @@ body{
 #d4:checked~.env .aviso{display:block}
 
 /* ── Fila de jugador ──────────────────────────────────────────────────── */
-.fj{display:grid;grid-template-columns:34px 1fr auto;gap:2px 12px;align-items:center;padding:11px 15px;border-bottom:1px solid var(--raya)}
+.fj{display:grid;grid-template-columns:34px 1fr auto;gap:2px 12px;align-items:start;padding:11px 15px;border-bottom:1px solid var(--raya)}
 .fj:last-of-type{border-bottom:0}
 .fj:hover{background:var(--suelo)}
-.fj > .dorsal{grid-column:1;grid-row:1/3;align-self:start;margin-top:2px}
+.fj > .dorsal{grid-column:1;grid-row:1;align-self:start;margin-top:2px}
 .jn{grid-column:2;grid-row:1;font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:19px;line-height:1.15;display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-width:0}
-.jp{grid-column:3;grid-row:1/3;text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:1px;white-space:nowrap}
+.jp{grid-column:3;grid-row:1;text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:1px;white-space:nowrap}
+
+/* Identidad: de qué club es y contra quién juega. Va aparte del rendimiento
+   porque responde a otra pregunta, y mezclarlo todo en una tira de puntos era
+   lo que hacía la ficha ilegible. */
+.jc{grid-column:2/-1;grid-row:2;display:flex;flex-wrap:wrap;align-items:center;gap:2px 14px;margin-top:3px;font-size:12.5px;color:var(--gris)}
+.jc .prox{color:var(--tenue)}
+.jc .prox b{color:var(--gris);font-weight:600}
+
+/* Cada cifra con su rótulo encima. Antes era «casa 14,0 · fuera 9,0 · 3/4 de
+   inicio» y había que adivinar de qué. */
+.jv{grid-column:2/-1;grid-row:3;display:flex;flex-wrap:wrap;align-items:center;gap:0 7px;margin-top:4px;font-size:11.5px;color:var(--tenue)}
+.jv i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:8px;letter-spacing:.09em;text-transform:uppercase;margin-right:2px}
+.jv .sep{color:var(--raya)}
+.jv .par{white-space:nowrap}
+.jd{grid-column:2/-1;grid-row:4;display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.dato{display:inline-flex;flex-direction:column;gap:0;padding:3px 7px;border-radius:6px;background:var(--tabla);border:1px solid var(--raya);min-width:0}
+.dato i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:8px;letter-spacing:.09em;text-transform:uppercase;color:var(--tenue);white-space:nowrap}
+.dato b{font-size:12px;color:var(--tinta);font-weight:600;white-space:nowrap;line-height:1.3}
+.dato.ancha b{display:flex;align-items:center}
+.dato .sube b{color:var(--sube)} .dato .baja b{color:var(--baja)}
+.racha.pegada{margin-left:0}
 .jp b{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;font-size:15px}
 .jp b.cl{color:var(--oro)}
 .jp i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue)}
@@ -214,7 +235,7 @@ body{
 .js .sep{color:var(--raya)}
 
 /* Quién puede ficharlo: la pregunta original del módulo, ahora con nombres. */
-.quien{grid-column:2/-1;grid-row:4;margin-top:5px}
+.quien{grid-column:2/-1;margin-top:6px}
 .quien summary{display:inline-flex;align-items:center;gap:8px;cursor:pointer;list-style:none;padding:3px 9px 3px 5px;border-radius:99px;border:1px solid transparent}
 .quien summary::-webkit-details-marker{display:none}
 .quien summary:hover{border-color:var(--oro-raya);background:var(--oro-fondo)}
@@ -268,13 +289,17 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .mj .desg{display:block;font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:400;color:var(--tenue);line-height:1.3;white-space:normal;margin-top:2px}
 /* El veredicto del clausulazo. Envuelve en varias líneas a propósito: en el
    móvil no cabe de otra forma y los nombres no se pueden cortar. */
-.clz{grid-column:1/-1;margin-top:8px;padding:9px 11px;border-radius:8px;border:1px solid var(--raya);background:var(--tabla);display:flex;flex-direction:column;gap:4px;font-size:12px;line-height:1.4}
-.clz>b{font-size:12.5px}
+.clz{grid-column:2/-1;margin-top:7px;border-radius:8px;border:1px solid var(--raya);background:var(--tabla);font-size:12px;line-height:1.4}
+.clz summary{cursor:pointer;list-style:none;padding:7px 11px;display:flex;flex-wrap:wrap;align-items:baseline;gap:3px 9px}
+.clz summary::-webkit-details-marker{display:none}
+.clz summary b{font-size:12.5px}
+.clz[open] summary{padding-bottom:2px}
+.clz .pormenor{display:flex;flex-direction:column;gap:4px;padding:0 11px 9px}
 .clz.bueno{border-color:var(--sube);background:var(--sube-fondo,rgba(74,222,128,.09))}
-.clz.bueno>b{color:var(--sube)}
+.clz.bueno summary b{color:var(--sube)}
 .clz.regular{border-color:var(--oro-raya);background:var(--oro-fondo)}
-.clz.regular>b{color:var(--oro)}
-.clz.flojo>b{color:var(--tenue)}
+.clz.regular summary b{color:var(--oro)}
+.clz.flojo summary b{color:var(--tenue)}
 .clz .cifra{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--gris)}
 .clz .cifra b{color:var(--texto,#fff)}
 .clz .tres{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:11.5px}
@@ -282,7 +307,7 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .clz .tres .no{color:var(--tenue)}
 .clz .def{font-size:11px;color:var(--tenue)}
 /* Hasta cuánto sale a cuenta. Una línea, que la ficha ya va cargada. */
-.rent{grid-column:1/-1;margin-top:7px;font-size:11.5px;line-height:1.45;color:var(--gris)}
+.rent{grid-column:2/-1;margin-top:7px;font-size:11.5px;line-height:1.45;color:var(--gris)}
 .rent b{font-family:"IBM Plex Mono",monospace;font-size:12px}
 .rent i{font-style:normal;color:var(--tenue)}
 .rent.buena b,.rent.buena span{color:var(--sube)}
@@ -313,7 +338,7 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .chip.mio em{color:var(--oro)}
 .chip.nadie{color:var(--tenue);font-weight:500}
 
-.jr{grid-column:2/-1;grid-row:4;font-size:12.5px;line-height:1.5;color:var(--tinta);background:var(--oro-fondo);border-left:3px solid var(--oro);border-radius:0 6px 6px 0;padding:7px 11px;margin-top:6px}
+.jr{grid-column:2/-1;font-size:12.5px;line-height:1.5;color:var(--tinta);background:var(--oro-fondo);border-left:3px solid var(--oro);border-radius:0 6px 6px 0;padding:7px 11px;margin-top:6px}
 .jr b{color:var(--oro)}
 
 /* ── Equipos ──────────────────────────────────────────────────────────── */

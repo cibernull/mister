@@ -30,27 +30,45 @@ export function podar(historico: Historico, dias = DIAS_DE_HISTORICO): void {
  * otra cosa, y presentarla como «este mes» sería mentir por omisión. Hasta que
  * el histórico crezca se devuelve vacío, y quien llama tira de la ficha.
  */
-export function subidasDelMes(historico: Historico, hoy: string): Map<string, number> {
-  const dias = Object.keys(historico).sort()
-  const haceUnMes = new Date(`${hoy}T00:00:00Z`)
-  haceUnMes.setUTCDate(haceUnMes.getUTCDate() - 30)
-  const objetivo = haceUnMes.toISOString().slice(0, 10)
+/** Días que hacen falta de recorrido para poder hablar de una semana. */
+export const DIAS_PARA_LLAMARLO_SEMANA = 5
 
-  // El primer día que llegue al mes; si no hay ninguno, el más antiguo que haya.
-  const referencia = dias.find((d) => d >= objetivo) ?? dias[0]
+/**
+ * Lo que ha subido el valor de cada jugador en los últimos `dias`.
+ *
+ * Se pide un mínimo de recorrido —`minimo`— porque comparar con el día de
+ * antes y llamarlo «el mes» es mentir: al principio de la temporada el
+ * histórico solo tiene unos días y la cifra no significaría nada.
+ */
+export function subidasEn(historico: Historico, hoy: string, dias: number, minimo: number): Map<string, number> {
+  const todos = Object.keys(historico).sort()
+  const desde = new Date(`${hoy}T00:00:00Z`)
+  desde.setUTCDate(desde.getUTCDate() - dias)
+  const objetivo = desde.toISOString().slice(0, 10)
+
+  // El primer día que llegue al plazo; si no hay ninguno, el más antiguo.
+  const referencia = todos.find((d) => d >= objetivo) ?? todos[0]
   const antes = referencia === undefined ? undefined : historico[referencia]
   if (referencia === undefined || antes === undefined) return new Map()
 
   const dist = Math.round((Date.parse(`${hoy}T00:00:00Z`) - Date.parse(`${referencia}T00:00:00Z`)) / 86400000)
-  if (dist < DIAS_PARA_LLAMARLO_MES) return new Map()
+  if (dist < minimo) return new Map()
 
   const ahora = historico[hoy] ?? {}
   const subidas = new Map<string, number>()
   for (const [id, v] of Object.entries(ahora)) {
     const previo = antes[id]
-    // Un jugador que no estaba hace un mes no tiene subida del mes. Contarlo
-    // como si hubiera subido su valor entero lo pondría el primero de la lista.
+    // Un jugador que no estaba entonces no tiene subida. Contarlo como si
+    // hubiera subido su valor entero lo pondría el primero de la lista.
     if (previo !== undefined) subidas.set(id, v - previo)
   }
   return subidas
+}
+
+export function subidasDelMes(historico: Historico, hoy: string): Map<string, number> {
+  return subidasEn(historico, hoy, 30, DIAS_PARA_LLAMARLO_MES)
+}
+
+export function subidasDeLaSemana(historico: Historico, hoy: string): Map<string, number> {
+  return subidasEn(historico, hoy, 7, DIAS_PARA_LLAMARLO_SEMANA)
 }
