@@ -157,6 +157,19 @@
   "entra": true
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-09-07",
+  "id": "70993",
+  "de": "Cacaculopedopis",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "70993",
+  "entra": false
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-06",
   "id": "14791",

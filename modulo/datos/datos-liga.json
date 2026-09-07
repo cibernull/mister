@@ -873,6 +873,16 @@
  ],
  "movimientos": [
   {
+   "id": "70993",
+   "nombre": "Haitam Abaida",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 650430,
+   "tipo": "normal",
+   "fecha": "2026-09-07 09:45:27",
+   "pos": 4
+  },
+  {
    "id": "48554",
    "nombre": "Luiz Felipe",
    "de": null,
@@ -5639,6 +5649,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Haitam Abaida",
+     "id": "70993",
+     "tipo": "venta",
+     "importe": 650430,
+     "fecha": "2026-09-07",
+     "op": "normal"
+    },
+    {
      "j": "Carlos Macia",
      "id": "68259",
      "tipo": "compra",
@@ -6257,8 +6275,8 @@
     "70993": {
      "nombre": "Haitam Abaida",
      "compras": 192000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 650430,
+     "ops": 2
     },
     "71000": {
      "nombre": "Rafa Rodriguez",
