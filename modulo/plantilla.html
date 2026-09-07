@@ -238,6 +238,17 @@ body{
 .dato.ancha b{display:flex;align-items:center;gap:0}
 .dato .sube b{color:var(--sube)} .dato .baja b{color:var(--baja)}
 .racha.pegada{margin-left:0}
+/* Los mejores por puesto: una fila por jugador, con su racha a la derecha. */
+.mejores{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+.mejores li{display:grid;grid-template-columns:20px 1fr auto auto;align-items:center;gap:4px 8px;padding:5px 2px;border-bottom:1px solid var(--raya);font-size:13px}
+.mejores li:last-child{border-bottom:0}
+.mejores .p{font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--tenue);text-align:right}
+.mejores .n{display:flex;align-items:center;gap:5px;flex-wrap:wrap;min-width:0}
+.mejores .e{font-size:10.5px;color:var(--tenue);font-family:"IBM Plex Mono",monospace;white-space:nowrap}
+.mejores .m{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--oro);font-variant-numeric:tabular-nums}
+.mejores .racha{grid-column:2/-1;margin-left:0}
+.mejores .goles{font-size:10px;letter-spacing:-1px;white-space:nowrap}
+.mejores .goles b{font-size:10px;letter-spacing:0;color:var(--gris);font-weight:600}
 /* Dos cifras que responden a cosas distintas: lo que vale —lo que recuperas si
    lo vendes— y lo que cuesta llevárselo. Juntas y con su rótulo se comparan de
    un vistazo; antes solo salía una y no siempre la misma. */

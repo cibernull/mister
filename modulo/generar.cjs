@@ -1458,19 +1458,28 @@ ${filas.join(NL)}
 const lineaTop = (j, valor) =>
   `          <li><span class="d">${dorsal(j.puesto)}</span><span class="n">${escudoDe(j.id)}${esc(j.nombre)}</span><span class="e">${esc(j.duenioCorto ?? 'libre')}</span><span class="v">${valor}</span></li>`
 
+/**
+ * Cuántos entran en cada lista de Estadísticas.
+ *
+ * Estaban en ocho, y en una liga de ocho equipos con quinientos jugadores eso
+ * deja fuera a gente que interesa: la lista se acaba justo donde empieza a
+ * haber opciones asequibles. Doce caben igual de bien en la tarjeta.
+ */
+const CUANTOS_EN_CADA_TOP = 12
+
 const conPartidos = J.filter((j) => j.partidos >= 2)
 const conForma = J.map((j) => ({ ...j, forma: formaDe(j), regul: regularidadDe(j) })).filter((j) => j.forma !== null)
-const topForma = [...conForma].sort((a, b) => b.forma - a.forma).slice(0, 8)
+const topForma = [...conForma].sort((a, b) => b.forma - a.forma).slice(0, CUANTOS_EN_CADA_TOP)
 // Entre los que rinden: al que promedia 1 punto le sobra regularidad y no
 // interesa a nadie.
-const topFiar = [...conForma].filter((j) => j.media >= 4).sort((a, b) => a.regul - b.regul).slice(0, 8)
-const topMedia = [...conPartidos].sort((a, b) => b.media - a.media).slice(0, 8)
-const topPuntos = [...J].sort((a, b) => b.puntos - a.puntos).slice(0, 8)
-const topSube = [...J].filter((j) => j.subeMes != null).sort((a, b) => b.subeMes - a.subeMes).slice(0, 8)
-const topCaros = [...J].sort((a, b) => b.valor - a.valor).slice(0, 8)
-const topHoy = [...J].filter((j) => j.semana != null && j.semana !== 0).sort((a, b) => b.semana - a.semana).slice(0, 8)
+const topFiar = [...conForma].filter((j) => j.media >= 4).sort((a, b) => a.regul - b.regul).slice(0, CUANTOS_EN_CADA_TOP)
+const topMedia = [...conPartidos].sort((a, b) => b.media - a.media).slice(0, CUANTOS_EN_CADA_TOP)
+const topPuntos = [...J].sort((a, b) => b.puntos - a.puntos).slice(0, CUANTOS_EN_CADA_TOP)
+const topSube = [...J].filter((j) => j.subeMes != null).sort((a, b) => b.subeMes - a.subeMes).slice(0, CUANTOS_EN_CADA_TOP)
+const topCaros = [...J].sort((a, b) => b.valor - a.valor).slice(0, CUANTOS_EN_CADA_TOP)
+const topHoy = [...J].filter((j) => j.semana != null && j.semana !== 0).sort((a, b) => b.semana - a.semana).slice(0, CUANTOS_EN_CADA_TOP)
 // Lo que cuesta cada punto de media: la forma más directa de ver qué sale a cuenta.
-const topGanga = [...conPartidos].filter((j) => j.media > 0).sort((a, b) => a.precio / a.media - b.precio / b.media).slice(0, 8)
+const topGanga = [...conPartidos].filter((j) => j.media > 0).sort((a, b) => a.precio / a.media - b.precio / b.media).slice(0, CUANTOS_EN_CADA_TOP)
 
 // Récords del mercado, sacados del histórico completo.
 const masCaro = [...MOVS].sort((a, b) => b.importe - a.importe)[0]
@@ -1579,6 +1588,49 @@ ${tablaTop('Los que más suben', 'Crecimiento del valor en el último mes.', top
 ${tablaTop('Los más valiosos', '', topCaros.map((j) => lineaTop(j, corto(j.valor))))}
 ${tablaTop('Los que más suben hoy', 'Lo que ha cambiado su valor desde ayer.', topHoy.map((j) => lineaTop(j, firmaCorta(j.semana))))}
 ${tablaTop('Gangas', 'Los más baratos por punto de media, con dos partidos o más.', topGanga.map((j) => lineaTop(j, `${corto(j.precio / j.media)}/pt`)))}
+      <h2 class="sh" style="grid-column:1/-1">Los mejores por puesto</h2>
+      <p class="sd" style="grid-column:1/-1">Los diez con más media de cada línea, con dos partidos o más. La tira de la derecha es lo que sacó en cada jornada, la más reciente a la derecha. Los balones son los goles de <strong>toda la temporada</strong>: Mister publica el total, no en qué jornada los metió, y ponerlos encima de una jornada sería inventármelo.</p>
+${(() => {
+  // Los diez mejores de cada puesto, con lo que sacó cada jornada.
+  //
+  // Los balones son los goles de **toda la temporada**, no los de esa jornada:
+  // la ficha de Mister pinta una casilla por jornada con los puntos y unos
+  // iconos, pero esos iconos solo dicen si entró o salió del banquillo —
+  // comprobado en los cinco máximos goleadores, ni uno solo trae gol— y el
+  // total es lo único que publica. Poner un balón encima de una jornada sería
+  // inventarme en cuál marcó.
+  const PUESTOS = [
+    [1, 'Porteros'],
+    [2, 'Defensas'],
+    [3, 'Medios'],
+    [4, 'Delanteros'],
+  ]
+  const balones = (n) => (!n ? '' : n <= 6 ? `<span class="goles">${'⚽'.repeat(n)}</span>` : `<span class="goles">⚽<b>×${n}</b></span>`)
+
+  const grupo = ([puesto, titulo]) => {
+    const l = J.filter((j) => j.pos === puesto && j.partidos >= 2)
+      .sort((a, b) => b.media - a.media || b.puntos - a.puntos)
+      .slice(0, CUANTOS_EN_CADA_TOP)
+    if (l.length === 0) return ''
+    return `      <div class="tarjeta">
+        <h3 class="sub2">${titulo}</h3>
+        <ol class="mejores">
+${l
+  .map(
+    (j, n) => `          <li>
+            <span class="p">${n + 1}</span>
+            <span class="n">${escudoDe(j.id)}${nombreEnlazado(j)}${balones(j.gol ?? 0)}</span>
+            <span class="e">${esc(j.duenioCorto ?? 'libre')}</span>
+            <span class="m" title="Puntos de media por partido">${dec(j.media)}</span>
+            ${pintarRacha(j, true)}
+          </li>`,
+  )
+  .join(NL)}
+        </ol>
+      </div>`
+  }
+  return PUESTOS.map(grupo).filter(Boolean).join(NL)
+})()}
 ${tablaTop('Llegan en forma', `Sus últimas ${JORNADAS_DE_FORMA} jornadas comparadas con su propia media. Con dos jornadas o más.`, topForma.map((j) => lineaTop(j, `${j.forma > 0 ? '+' : '−'}${dec(Math.abs(j.forma))}`)))}
 ${tablaTop('Los más de fiar', 'Los que menos se apartan de su media jornada a jornada, entre los que promedian 4 o más. Un 6, 6, 6 vale más que un 0, 0, 18.', topFiar.map((j) => lineaTop(j, `±${dec(j.regul)}`)))}
     </div>
