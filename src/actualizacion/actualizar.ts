@@ -93,20 +93,37 @@ async function intentar(): Promise<Resultado> {
 
   const cliente = crearCliente({ credenciales })
 
+  const constantes = leerJson<Constantes>(join(DATOS, 'liga.json'))
+
   // ── 2. Feed, solo lo nuevo ─────────────────────────────────────────────────
   const volcado = existsSync(VOLCADO) ? leerJson<Volcado>(VOLCADO) : { paginas: [] }
   const antes = extraerHechos(volcado)
   paso(`Tengo ${antes.traspasos.length} traspasos, hasta ${antes.hasta ?? 'el principio'}.`)
 
-  paso('Bajando lo publicado desde entonces…')
-  const bajada = await recolectarFeed(cliente, antes.hasta)
+  // ¿Llega lo guardado hasta el principio de la liga? Si el traspaso más
+  // antiguo es posterior al reinicio, falta historia por debajo y hay que ir a
+  // por ella: sin ella las cuentas de los rivales salen mal y nada avisa.
+  const masViejo = antes.traspasos.reduce<string | null>(
+    (v, t) => (v === null || t.cuando < v ? t.cuando : v),
+    null,
+  )
+  // El día del reinicio lo aprende del libro de caja y se guarda en liga.json,
+  // así que la primera pasada de una instalación nueva no lo tiene y no
+  // comprueba nada. En cuanto lo sabe, ya no se le escapa el hueco.
+  const inicioDeLiga = constantes.inicioDeLiga ?? null
+  const faltaFondo =
+    inicioDeLiga !== null && antes.traspasos.length > 0 && masViejo !== null && masViejo > inicioDeLiga
+  if (faltaFondo) {
+    paso(`El traspaso más antiguo que tengo es del ${masViejo!.slice(0, 10)} y la liga empezó el ${inicioDeLiga!.slice(0, 10)}: falta historia por debajo.`)
+  }
+  paso(faltaFondo ? 'Bajando el feed entero…' : 'Bajando lo publicado desde entonces…')
+  const bajada = await recolectarFeed(cliente, antes.hasta, undefined, faltaFondo)
   const fundido = fundir(volcado, bajada.nuevas)
   const hechos = extraerHechos(fundido)
   const traspasosNuevos = hechos.traspasos.length - antes.traspasos.length
   paso(`${bajada.lotes} lotes, ${traspasosNuevos} traspasos nuevos.`)
 
   // ── 3. Rehacer las cuentas ─────────────────────────────────────────────────
-  const constantes = leerJson<Constantes>(join(DATOS, 'liga.json'))
   type EnCache = { valor: number; dia: string; nombre?: string; posicion?: number; subeDia?: number; subeMes?: number }
   const cache = existsSync(CACHE_VALORES)
     ? new Map(Object.entries(leerJson<Record<string, EnCache>>(CACHE_VALORES)))
@@ -432,6 +449,15 @@ async function intentar(): Promise<Resultado> {
   }
   const inicioReal =
     libro.saldo - Object.values(cuentasDelLibro).reduce((t, v) => t + v, 0)
+
+  // El día del reinicio solo lo sabe el libro de caja. Se guarda para que la
+  // próxima pasada pueda comprobar, antes de bajar nada, si le falta historia.
+  if (reinicio !== null) {
+    const dia = new Date(reinicio.cuando * (reinicio.cuando > 1e12 ? 1 : 1000)).toISOString().slice(0, 19).replace('T', ' ')
+    if (constantes.inicioDeLiga !== dia) {
+      escribirJson(join(DATOS, 'liga.json'), { ...constantes, inicioDeLiga: dia })
+    }
+  }
 
   const mioExacto = cuentas.equipos.find((e) => e.mio)
   if (mioExacto) {

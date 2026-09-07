@@ -18,6 +18,15 @@ import type { PaginaCruda, Volcado } from './feed.js'
 
 /** Límite de páginas por pasada: una red de seguridad, no un objetivo. */
 const MAX_LOTES = 200
+/**
+ * El tope cuando toca rellenar el hueco del principio.
+ *
+ * El feed entero de esta liga son unas doscientas cinco páginas, así que con el
+ * tope normal el relleno se quedaría siempre a una página del final y volvería
+ * a empezar desde cero en la pasada siguiente, sin terminar nunca. Es una
+ * operación de una vez: unos minutos.
+ */
+const MAX_LOTES_COMPLETANDO = 500
 
 export type ResultadoFeed = {
   nuevas: PaginaCruda[]
@@ -36,17 +45,35 @@ const cuandoEsHoy = () => new Date().toISOString()
  * propósito: el feed reordena y agrupa eventos, y cortar en el primer solape
  * podría dejar fuera algo publicado con retraso.
  */
+/**
+ * Baja del feed lo que falte.
+ *
+ * Normalmente para en cuanto toca terreno conocido: dos páginas enteras más
+ * viejas que lo guardado y ya está, que son tres peticiones cada media hora.
+ *
+ * `completar` desactiva ese freno, y existe por un fallo real. El feed se pagina
+ * de lo nuevo a lo viejo, así que parar al primer solape solo funciona si lo
+ * guardado llega hasta el principio. Si tiene un hueco al fondo —porque la
+ * caché se perdió, porque se empezó a medias— ese hueco no se rellena jamás:
+ * cada pasada toca terreno conocido enseguida y se da por satisfecha. Así
+ * estuvo el runner de GitHub con 238 traspasos donde había 275, y las cuentas
+ * de los rivales salían con casi veinte millones de diferencia sin que nada
+ * chirriara.
+ */
 export async function recolectarFeed(
   cliente: Cliente,
   hasta: string | null,
   ahora: () => string = cuandoEsHoy,
+  completar = false,
 ): Promise<ResultadoFeed> {
   const nuevas: PaginaCruda[] = []
   let offset = 0
   let lotes = 0
   let solapadas = 0
 
-  while (lotes < MAX_LOTES) {
+  const tope = completar ? MAX_LOTES_COMPLETANDO : MAX_LOTES
+
+  while (lotes < tope) {
     const cuerpo = await cliente.pedirLote(offset)
     lotes += 1
 
@@ -62,13 +89,17 @@ export async function recolectarFeed(
     // inservible al recolector en la Fase 1.
     offset += n
 
-    if (hasta !== null && paginaEnteraAnteriorA(cuerpo, hasta)) {
+    if (!completar && hasta !== null && paginaEnteraAnteriorA(cuerpo, hasta)) {
       solapadas += 1
       if (solapadas >= 2) return { nuevas, lotes, agotado: false }
     }
   }
 
-  throw new Error(`me planté en ${MAX_LOTES} lotes sin alcanzar lo ya guardado; algo va mal`)
+  // Rellenando el hueco es normal llegar al tope sin agotar el feed: se para y
+  // la pasada siguiente sigue donde esta lo dejó. Solo es un error cuando se
+  // suponía que quedaba poco por bajar.
+  if (completar) return { nuevas, lotes, agotado: false }
+  throw new Error(`me planté en ${tope} lotes sin alcanzar lo ya guardado; algo va mal`)
 }
 
 /** true si ningún evento de la página es posterior a `hasta`. */

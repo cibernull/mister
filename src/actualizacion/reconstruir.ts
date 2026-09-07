@@ -25,6 +25,8 @@ export type ConstantesEquipo = {
 }
 
 export type Constantes = {
+  /** Cuándo se reinició la liga, según el libro de caja. */
+  inicioDeLiga?: string
   saldoInicialLiga: number
   equipos: ConstantesEquipo[]
 }
