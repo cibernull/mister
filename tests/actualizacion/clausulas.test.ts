@@ -143,7 +143,7 @@ describe('detectarSubidas · la cláusula tiene que subir de verdad', () => {
 
 describe('gastoEnClausulas', () => {
   const sub = (idJugador: string, escalones: number, coste: number) =>
-    ({ idJugador, equipo: 'Mario80', dia: '2026-09-05', coste, escalones })
+    ({ idJugador, equipo: 'Mario80', dia: '2026-09-05', coste, escalones, antes: 1.5, despues: 1.5 + 0.5 * escalones })
 
   it('suma lo visto y lo heredado, no coge el mayor', () => {
     // El fallo real: un equipo que subió cláusulas antes de que empezáramos a
