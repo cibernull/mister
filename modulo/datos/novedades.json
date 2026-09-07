@@ -234,6 +234,105 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "208",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-07",
+  "id": "213",
+  "de": null,
+  "a": "Mario80"
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-07",
+  "id": "1762",
+  "de": null,
+  "a": "Cacaculopedopis"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "3046",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-07",
+  "id": "17290",
+  "de": null,
+  "a": "Saiyans FC (Fran)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "20131",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "22471",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "31226",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "55454",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "58958",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "64160",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "64491",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "64562",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "65724",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "69744",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-07",
+  "id": "70638",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-06",
   "id": "14791",
   "entra": false
