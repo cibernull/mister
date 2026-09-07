@@ -720,6 +720,15 @@ const valorDe = (j) => {
       ? par(j.subeMes, 'este mes', `${j.subeMes > 0 ? '+' : ''}${Math.round(j.subeMes * 100)} %`)
       : '',
   ].filter(Boolean)
+  // La proyección va aquí y no arriba con los precios: sale de esta misma
+  // línea —del ritmo de los últimos siete días— y allí hacía el bloque de
+  // precios tan alto que dejaba un hueco muerto a su izquierda.
+  const fin = enUnMes(j)
+  if (fin !== null) {
+    l.push(
+      `<span class="par proy" title="Proyección, no dato de Mister: a cuánto llegaría si siguiera subiendo al ritmo de los últimos siete días.">~${corto(fin)} en un mes</span>`,
+    )
+  }
   return l.length ? `<div class="jv"><i>su valor</i>${l.join('<span class="sep">·</span>')}</div>` : ''
 }
 
@@ -739,7 +748,6 @@ const datosDe = (j) => {
       ? dato('inicio', `${j.tit} de ${j.tit + j.sup}`, 'Veces que ha salido de titular, de las que ha jugado')
       : '',
     casaYFuera,
-    j.precio !== j.valor ? dato('lo vale', corto(j.valor), 'Lo que dice Mister que vale, que es lo que recuperarías al venderlo') : '',
     // Los tres plazos del valor, cada uno con su nombre y su color. Antes solo
     // salía uno —el del mes si lo había y si no el del día— y no se decía cuál,
     // así que un «+58 %» podía ser de hoy o de hace un mes.
@@ -748,6 +756,25 @@ const datosDe = (j) => {
       : '',
   ]
   return `<div class="jd">${trozos.join('')}</div>`
+}
+
+/**
+ * A cuánto llegaría en un mes si siguiera al ritmo de la última semana.
+ *
+ * Es una **proyección**, no una cifra de Mister, y por eso lleva la tilde
+ * delante y lo dice al pasar por encima. Se hace sobre los últimos siete días
+ * y no sobre el mes entero porque lo que interesa es el ritmo al que va ahora:
+ * un jugador que se disparó hace tres semanas y lleva diez días plano no va a
+ * repetir aquella subida.
+ *
+ * No se enseña si no mueve al menos un 2 %: una proyección que dice lo mismo
+ * que el valor de hoy es ruido con pinta de dato.
+ */
+const enUnMes = (j) => {
+  if (j.sem7 === null || j.sem7 === undefined || !j.valor) return null
+  const fin = j.valor + j.sem7 * (30 / 7)
+  if (fin <= 0 || Math.abs(fin - j.valor) / j.valor < 0.02) return null
+  return fin
 }
 
 /** Qué es la cifra grande de la derecha, que no siempre es lo mismo. */
@@ -786,7 +813,12 @@ const filaJugador = (j) => {
           ? `<span class="et et-eq${j.mio ? ' et-mio' : ''}">${esc(j.duenioCorto)}</span>`
           : '<span class="et et-libre">libre</span>'
       }${marcaBlindaje(j)}${j.once === 1 ? '<span class="et et-once" title="Mister lo da por titular en el próximo partido">👕 titular</span>' : ''}${ESTADOS[j.est] ?? ''}</div>
-      <div class="jp"><b class="${etiquetaPrecio(j) === 'cláusula' ? 'cl' : ''}">${eur(j.precio)}</b><i>${etiquetaPrecio(j)}</i><span class="ico">${iconos(j)}</span></div>
+      <div class="jp">
+        <div class="cifras">${
+          j.precio !== j.valor
+            ? `<span class="cif"><b>${eur(j.valor)}</b><i>vale hoy</i></span>`
+            : ''
+        }<span class="cif"><b class="${etiquetaPrecio(j) === 'cláusula' ? 'cl' : ''}">${eur(j.precio)}</b><i>${etiquetaPrecio(j)}</i></span></div><span class="ico">${iconos(j)}</span></div>
       ${identidadDe(j)}
       ${valorDe(j)}
       ${datosDe(j)}

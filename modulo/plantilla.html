@@ -204,7 +204,7 @@ body{
 .fj:hover{background:var(--suelo)}
 .fj > .dorsal{grid-column:1;grid-row:1;align-self:start;margin-top:2px}
 .jn{grid-column:2;grid-row:1;font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:19px;line-height:1.15;display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-width:0}
-.jp{grid-column:3;grid-row:1;text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:1px;white-space:nowrap}
+.jp{grid-column:3;grid-row:1;text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:2px}
 
 /* Identidad: de qué club es y contra quién juega. Va aparte del rendimiento
    porque responde a otra pregunta, y mezclarlo todo en una tira de puntos era
@@ -219,6 +219,7 @@ body{
 .jv i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:8px;letter-spacing:.09em;text-transform:uppercase;margin-right:2px}
 .jv .sep{color:var(--raya)}
 .jv .par{white-space:nowrap}
+.jv .proy{font-style:italic;color:var(--tenue)}
 /* Los datos: sin marco y con una separación limpia entre ellos. Ocho cajas con
    borde a la vez eran ocho rectángulos compitiendo, y la vista no sabía dónde
    posarse; con solo el fondo se leen como una tabla y no como una rejilla. */
@@ -237,7 +238,19 @@ body{
 .dato.ancha b{display:flex;align-items:center;gap:0}
 .dato .sube b{color:var(--sube)} .dato .baja b{color:var(--baja)}
 .racha.pegada{margin-left:0}
-.jp b{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;font-size:15px}
+/* Dos cifras que responden a cosas distintas: lo que vale —lo que recuperas si
+   lo vendes— y lo que cuesta llevárselo. Juntas y con su rótulo se comparan de
+   un vistazo; antes solo salía una y no siempre la misma. */
+.jp .cifras{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:2px 16px}
+/* En el móvil, una debajo de otra. Lado a lado ensanchaban la columna de la
+   derecha y el nombre se quedaba sin sitio: salía «Mariano2.206.000 €» pegado.
+   El ancho es de la pantalla, no del diseño, y aquí manda el nombre. */
+@media (max-width:600px){.jp .cifras{flex-direction:column;gap:3px}}
+.jp .cif{display:flex;flex-direction:column;align-items:flex-end;gap:1px;white-space:nowrap}
+/* La proyección va en cursiva y con tilde delante: no es un dato, es un «si
+   sigue a este ritmo». */
+.jp .proy{font-family:"IBM Plex Mono",monospace;font-size:9.5px;color:var(--tenue);font-style:italic;white-space:nowrap;margin-top:1px}
+.jp b{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;font-size:15px;color:var(--tinta)}
 .jp b.cl{color:var(--oro)}
 .jp i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue)}
 .jp .ico{font-size:14px;letter-spacing:1px;line-height:1.2;margin-top:2px;min-height:17px}
