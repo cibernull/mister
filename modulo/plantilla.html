@@ -123,6 +123,9 @@ body{
 .sub2{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:17px;text-transform:uppercase;letter-spacing:.02em;margin:0 0 3px}
 .sec{display:flex;flex-direction:column;gap:9px}
 .vacio{padding:34px 20px;text-align:center;color:var(--tenue);font-size:14px;margin:0}
+.vacio b{color:var(--tinta)}
+.ver-todo{display:inline-block;margin-top:12px;padding:8px 14px;border-radius:10px;border:1px solid var(--oro-raya);background:var(--oro-fondo);color:var(--oro);font:inherit;font-size:13px;cursor:pointer}
+.ver-todo:hover{border-color:var(--oro)}
 .vacio2{color:var(--tenue);font-size:14px;margin:0}
 .rejilla{display:grid;grid-template-columns:1fr;gap:12px}
 @media(min-width:660px){.rejilla{grid-template-columns:1fr 1fr}}
@@ -1036,6 +1039,31 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
   })
 
   // Buscador + orden sobre una lista cualquiera.
+  /** Por qué no sale nadie, cuando el jugador buscado sí está en LaLiga. */
+  function explicar (texto) {
+    var todas = [].slice.call(document.querySelectorAll('#lista-jug .fj'))
+    var casan = todas.filter(function (f) { return (f._busca || '').indexOf(texto) !== -1 })
+    if (!casan.length) return 'Ningún jugador se llama así. Puede que no esté en LaLiga o que Mister lo escriba de otra manera.'
+    var nombres = casan.slice(0, 3).map(function (f) {
+      var b = f.querySelector('[data-ficha]')
+      return b ? b.textContent.trim() : ''
+    }).filter(Boolean)
+    var libres = casan.filter(function (f) { return f.classList.contains('tl') && f.classList.contains('nomk') }).length
+    var motivo = libres === casan.length
+      ? (casan.length === 1 ? ' Es libre y no está en el mercado, así que hoy no hay forma de ficharlo: ni pagando ni por cláusula.' : ' Son libres y no están en el mercado, así que hoy no hay forma de ficharlos.')
+      : ' Los filtros de ahora mismo los esconden.'
+    return '<b>' + (nombres.join(', ') || casan.length + ' jugadores') + '</b> ' +
+      (casan.length === 1 ? 'sí está' : 'sí están') + ' en LaLiga.' + motivo +
+      ' <button type="button" class="ver-todo" data-ver-toda-liga>Buscar en toda LaLiga</button>'
+  }
+
+  document.addEventListener('click', function (e) {
+    var b = e.target && e.target.closest && e.target.closest('[data-ver-toda-liga]')
+    if (!b) return
+    var todo = document.getElementById('a2')
+    if (todo) { todo.checked = true; todo.dispatchEvent(new Event('change', { bubbles: true })) }
+  })
+
   function conectar (opciones) {
     var lista = document.getElementById(opciones.lista)
     if (!lista) return null
@@ -1055,7 +1083,16 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
         if (pasa && f.offsetParent !== null) vistos++
       })
       cuenta.textContent = vistos + ' ' + (vistos === 1 ? opciones.singular : opciones.plural)
-      if (vacio) vacio.hidden = vistos !== 0
+      if (vacio) {
+        vacio.hidden = vistos !== 0
+        // Cuando no sale nada pero el jugador existe, decirlo. Buscar «kon» y
+        // leer «ningún jugador cumple eso» hace pensar que faltan jugadores en
+        // los datos, y lo que pasa es que el filtro de entrada —«los que puedo
+        // fichar»— esconde a los libres que no están en el mercado: hoy no hay
+        // manera de ficharlos, ni pagando ni por cláusula.
+        if (vistos === 0 && texto !== '' && opciones.explicar) vacio.innerHTML = explicar(texto)
+        else if (vistos === 0) vacio.textContent = 'Ningún jugador cumple eso. Prueba a quitar algún filtro.'
+      }
       return vistos
     }
     q.addEventListener('input', repasar)
@@ -1069,7 +1106,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     return { filas: filas, lista: lista, repasar: repasar, vacio: vacio }
   }
 
-  var jug = conectar({ lista: 'lista-jug', fila: '.fj', caja: 'q', cuenta: 'cuenta-res', vacio: 'sin-res', singular: 'jugador', plural: 'jugadores' })
+  var jug = conectar({ lista: 'lista-jug', fila: '.fj', caja: 'q', cuenta: 'cuenta-res', vacio: 'sin-res', singular: 'jugador', plural: 'jugadores', explicar: true })
   var mov = conectar({ lista: 'lista-mov', fila: '.mv', caja: 'qm', cuenta: 'cuenta-mov', vacio: 'sin-mov', singular: 'movimiento', plural: 'movimientos' })
 
   if (jug) {
