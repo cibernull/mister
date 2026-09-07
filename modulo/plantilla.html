@@ -1366,6 +1366,8 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       if (cual === 'proxima') {
         campo.outerHTML = original
         if (aviso) { aviso.hidden = true; aviso.innerHTML = '' }
+        var pie0 = document.getElementById('pie-campo')
+        if (pie0) pie0.innerHTML = 'La cifra de cada ficha <strong>no es su media</strong>: es lo que cabe esperar de él <strong>este domingo</strong>, con su media donde le toca jugar, su forma y el rival que le viene. Un jugador de más media puede salir por debajo si juega fuera y le toca un rival duro.'
         if (jbanca) { jbanca.hidden = true; jbanca.innerHTML = '' }
         if (formaciones) formaciones.hidden = false
         return
@@ -1382,6 +1384,8 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
         aviso.innerHTML = 'Jornada ' + cual + ': alineaste un <b>' + d.form + '</b> e hiciste <b>' + d.pts +
           '</b> puntos' + (d.puesto ? ', ' + d.puesto + 'º de la liga esa jornada' : '') + '. Es lo que pusiste de verdad, según Mister.'
       }
+      var pie = document.getElementById('pie-campo')
+      if (pie) pie.innerHTML = 'La cifra de cada ficha son los <strong>puntos que hizo</strong> ese día.'
       if (jbanca) {
         jbanca.hidden = !d.banca
         jbanca.innerHTML = d.banca ? '<i>en el banquillo</i>' + d.banca : ''

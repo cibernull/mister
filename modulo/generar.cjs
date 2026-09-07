@@ -255,9 +255,27 @@ const rachaConGoles = (j) => {
 }
 
 /** Su media donde le toca jugar esta jornada. El punto de partida, sin retocar. */
+/**
+ * Cuántos partidos hacen falta para fiarse de una media.
+ *
+ * Se usa dos veces y las dos por lo mismo: acercar una media flaca a una
+ * referencia más sólida. Aquí arriba porque `esperadoDe` la necesita.
+ */
+const PARTIDOS_DE_CONFIANZA = 3
+
 const esperadoDe = (j) => {
   const donde = j.casa === 1 ? j.mc : j.casa === 0 ? j.mf : null
-  return donde != null ? donde : j.media
+  if (donde == null) return j.media
+  // La media de casa y la de fuera se reparten los partidos jugados: con
+  // cuatro, cada una se apoya en dos. Tomarla tal cual hacía que medio punto
+  // sacado de dos partidos decidiera quién juega —Valles promedia 7,0 y Herrero
+  // 6,0, pero como Valles saca casi todo en casa y ese domingo jugaban los dos
+  // fuera, salía elegido Herrero por su 5,5 contra 5,0—. Así que se acerca a su
+  // propia media general en la proporción en que la muestra es floja, igual que
+  // se hace al valorar a quien ha jugado poco.
+  const n = Math.max(0, (j.partidos ?? 0) / 2)
+  const peso = n / (n + PARTIDOS_DE_CONFIANZA)
+  return peso * donde + (1 - peso) * j.media
 }
 
 // Cuánto pesan la forma y el rival sobre esa media. Son dos decisiones de
@@ -510,7 +528,6 @@ const iconos = (j) => `${j.p ? '⭐' : ''}${j.d ? '💵' : ''}${j.vender ? '📤
 // media 11 porque no puedes alinear seis suplentes en su lugar.
 
 /** Peso de la media de la liga mientras un jugador lleva pocos partidos. */
-const PARTIDOS_DE_CONFIANZA = 3
 /** Cuántos parecidos hacen falta para que la referencia signifique algo. */
 const COMPARABLES_MINIMOS = 8
 
@@ -1744,6 +1761,7 @@ ${ALINEACIONES.filter((a) => a.once && a.once.length)
       </div>`
         : ''}
       <p class="sd" id="once-que-ves" hidden></p>
+      <p class="pie" id="pie-campo">La cifra de cada ficha <strong>no es su media</strong>: es lo que cabe esperar de él <strong>este domingo</strong>, con su media donde le toca jugar, su forma y el rival que le viene. Un jugador de más media puede salir por debajo si juega fuera y le toca un rival duro.</p>
       ${campoOnce(once, FORMACION)}
       <div class="jbanca" id="jbanca" hidden></div>
       <details class="mano">
