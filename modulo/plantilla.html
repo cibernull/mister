@@ -122,6 +122,10 @@ body{
 .sub{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.07em;color:var(--tenue);margin:16px 0 0}
 .sub2{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:17px;text-transform:uppercase;letter-spacing:.02em;margin:0 0 3px}
 .sec{display:flex;flex-direction:column;gap:9px}
+/* Los dos bloques de la pestaña Jugadores: el mercado y el resto de LaLiga. */
+.bloque-jug + .bloque-jug{margin-top:26px;padding-top:22px;border-top:1px solid var(--raya)}
+.bloque-jug > .sd{margin-bottom:12px}
+
 .vacio{padding:34px 20px;text-align:center;color:var(--tenue);font-size:14px;margin:0}
 .vacio b{color:var(--tinta)}
 .ver-todo{display:inline-block;margin-top:12px;padding:8px 14px;border-radius:10px;border:1px solid var(--oro-raya);background:var(--oro-fondo);color:var(--oro);font:inherit;font-size:13px;cursor:pointer}
@@ -168,7 +172,6 @@ body{
 .ops button{font:inherit;font-size:13px;font-weight:600;padding:5px 11px;border-radius:7px;border:1px solid var(--raya);background:var(--suelo);color:var(--gris);cursor:pointer;white-space:nowrap;transition:border-color .12s,color .12s}
 .ops button:hover{border-color:var(--oro);color:var(--oro)}
 .ops button.on{border-color:var(--oro);background:var(--oro-fondo);color:var(--oro)}
-#a1:checked~.env label[for=a1],#a2:checked~.env label[for=a2],#a3:checked~.env label[for=a3],
 #f1:checked~.env label[for=f1],#f2:checked~.env label[for=f2],#f3:checked~.env label[for=f3],
 #f4:checked~.env label[for=f4],#f5:checked~.env label[for=f5],#f6:checked~.env label[for=f6],
 #d1:checked~.env label[for=d1],#d2:checked~.env label[for=d2],#d3:checked~.env label[for=d3],
@@ -181,8 +184,6 @@ body{
 
 /* Filtros en cascada. «Míos» se salta el «dónde» a propósito: enseñar solo los
    tuyos que están en venta deja la lista casi vacía sin explicar por qué. */
-#a1:checked~#d4:not(:checked)~#d5:not(:checked)~.env .fj.nomk{display:none}
-#a3:checked~#d4:not(:checked)~#d5:not(:checked)~.env .fj.nofich{display:none}
 #f2:checked~.env .fj:not(.tp),#f2:checked~.env .fj:not(.td){display:none}
 #f3:checked~.env .fj:not(.tp){display:none}
 #f4:checked~.env .fj:not(.td){display:none}
@@ -916,7 +917,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
 
   <nav class="pest">
     <label for="t1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/></svg><span>Inicio</span></label>
-    <label for="t2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Mercado</span></label>
+    <label for="t2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Jugadores</span></label>
     <label for="t3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/><path d="M3 21v-1.5a3 3 0 0 1 3-3M21 21v-1.5a3 3 0 0 0-3-3"/></svg><span>Mi liga</span></label>
     <label for="t4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13M13 4l4 4-4 4"/><path d="M20 16H7M11 12l-4 4 4 4"/></svg><span>Actividad</span></label>
     <label for="t5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg><span>Más</span></label>
@@ -963,12 +964,6 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
           </div>
         </div>
         <div class="grupo">
-          <span>Dónde busco</span>
-          <div class="ops">
-            <label for="a3">Los que puedo fichar</label><label for="a1">Solo el mercado de hoy</label><label for="a2">Toda LaLiga</label>
-          </div>
-        </div>
-        <div class="grupo">
           <span>Qué destaca</span>
           <div class="ops">
             <label for="f1">Todo</label><label for="f6">👕 Titulares</label><label for="f3">⭐ Puntos</label><label for="f4">💵 Dinero</label><label for="f2">Los dos</label><label for="f5">Puedo pagarlo</label>
@@ -979,9 +974,23 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
 
     <p class="aviso">Esto mira <strong>toda tu plantilla</strong>, esté o no en venta. Los consejos de vender y blindar están en <strong>Mi equipo</strong>.</p>
 
-    <div class="lista" id="lista-jug">
-<!--__JUGADORES__-->
-      <p class="vacio" id="sin-res" hidden>Ningún jugador cumple eso. Prueba a quitar algún filtro.</p>
+    <div id="lista-jug">
+      <section class="bloque-jug">
+        <h2 class="sh"><span class="se">🛒</span>En el mercado <em><!--__CUANTOS_MERCADO__--></em></h2>
+        <p class="sd">Los únicos a los que puedes pujar hoy: los que han puesto en venta los managers, y los libres que Mister ha sacado esta vez. La lista cambia sola.</p>
+        <div class="lista" id="lista-mercado">
+<!--__MERCADO__-->
+          <p class="vacio" id="sin-mercado" hidden>Ninguno del mercado cumple eso.</p>
+        </div>
+      </section>
+
+      <section class="bloque-jug" id="bloque-resto">
+        <h2 class="sh"><span class="se">🔎</span>El resto de LaLiga <em><!--__CUANTOS_RESTO__--></em></h2>
+        <p class="sd" id="pista-resto">Escribe arriba para buscar entre ellos. No se pueden fichar hoy —no están en el mercado—, pero sí mirar su ficha, sus cláusulas y su forma.</p>
+        <div class="lista" id="lista-resto" hidden>
+<!--__RESTO__-->
+        </div>
+      </section>
     </div>
   </div>
 
@@ -1039,36 +1048,6 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
   })
 
   // Buscador + orden sobre una lista cualquiera.
-  /** Por qué no sale nadie, cuando el jugador buscado sí está en LaLiga. */
-  function explicar (texto) {
-    var todas = [].slice.call(document.querySelectorAll('#lista-jug .fj'))
-    var casan = todas.filter(function (f) { return (f._busca || '').indexOf(texto) !== -1 })
-    if (!casan.length) return 'Ningún jugador se llama así. Puede que no esté en LaLiga o que Mister lo escriba de otra manera.'
-    var nombres = casan.slice(0, 3).map(function (f) {
-      var b = f.querySelector('[data-ficha]')
-      return b ? b.textContent.trim() : ''
-    }).filter(Boolean)
-    var libres = casan.filter(function (f) { return f.classList.contains('tl') && f.classList.contains('nomk') }).length
-    // «No se puede fichar» sonaba a definitivo y no lo es: Mister va sacando a
-    // los libres al mercado por turnos —hoy 20 de los 409 que hay—, así que a
-    // cualquiera de ellos le llega su día.
-    var motivo = libres === casan.length
-      ? (casan.length === 1
-          ? ' Es libre, pero hoy no sale en el mercado y sin estar ahí no se puede pujar. Mister va sacando a los libres por turnos, así que puede aparecer otro día.'
-          : ' Son libres, pero hoy no salen en el mercado y sin estar ahí no se puede pujar. Mister los va sacando por turnos, así que pueden aparecer otro día.')
-      : ' Los filtros de ahora mismo los esconden.'
-    return '<b>' + (nombres.join(', ') || casan.length + ' jugadores') + '</b> ' +
-      (casan.length === 1 ? 'sí está' : 'sí están') + ' en LaLiga.' + motivo +
-      ' <button type="button" class="ver-todo" data-ver-toda-liga>Buscar en toda LaLiga</button>'
-  }
-
-  document.addEventListener('click', function (e) {
-    var b = e.target && e.target.closest && e.target.closest('[data-ver-toda-liga]')
-    if (!b) return
-    var todo = document.getElementById('a2')
-    if (todo) { todo.checked = true; todo.dispatchEvent(new Event('change', { bubbles: true })) }
-  })
-
   function conectar (opciones) {
     var lista = document.getElementById(opciones.lista)
     if (!lista) return null
@@ -1078,26 +1057,49 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     var vacio = document.getElementById(opciones.vacio)
     filas.forEach(function (f) { f._busca = normal(f.getAttribute('data-busca') || '') })
 
+    // La pestaña de jugadores va en dos bloques: el mercado, siempre a la
+    // vista, y el resto de LaLiga, que solo se enseña cuando hay algo escrito.
+    // Quinientas filas sin pedirlas no son una lista, son un muro.
+    var listaMercado = document.getElementById('lista-mercado')
+    var listaResto = document.getElementById('lista-resto')
+    var vacioMercado = document.getElementById('sin-mercado')
+    var pistaResto = document.getElementById('pista-resto')
+
+    function contar (donde, texto) {
+      var n = 0
+      filas.forEach(function (f) {
+        if (donde && !donde.contains(f)) return
+        if (!f.classList.contains('oculto') && f.offsetParent !== null) n++
+      })
+      return n
+    }
+
     function repasar () {
       var texto = normal(q.value.trim())
-      var vistos = 0
+      var buscando = texto !== ''
+      // El resto se despliega al escribir. Antes de eso ni siquiera se mide:
+      // está oculto y `offsetParent` daría null en todas sus filas.
+      if (listaResto) listaResto.hidden = !buscando
       filas.forEach(function (f) {
-        var pasa = texto === '' || f._busca.indexOf(texto) !== -1
+        var pasa = !buscando || f._busca.indexOf(texto) !== -1
         f.classList.toggle('oculto', !pasa)
-        // offsetParent descarta las que ya esconde el CSS de los filtros.
-        if (pasa && f.offsetParent !== null) vistos++
       })
+
+      var enMercado = listaMercado ? contar(listaMercado, texto) : 0
+      var enResto = listaResto && buscando ? contar(listaResto, texto) : 0
+      var vistos = listaMercado ? enMercado + enResto : contar(null, texto)
       cuenta.textContent = vistos + ' ' + (vistos === 1 ? opciones.singular : opciones.plural)
-      if (vacio) {
-        vacio.hidden = vistos !== 0
-        // Cuando no sale nada pero el jugador existe, decirlo. Buscar «kon» y
-        // leer «ningún jugador cumple eso» hace pensar que faltan jugadores en
-        // los datos, y lo que pasa es que el filtro de entrada —«los que puedo
-        // fichar»— esconde a los libres que no están en el mercado: hoy no hay
-        // manera de ficharlos, ni pagando ni por cláusula.
-        if (vistos === 0 && texto !== '' && opciones.explicar) vacio.innerHTML = explicar(texto)
-        else if (vistos === 0) vacio.textContent = 'Ningún jugador cumple eso. Prueba a quitar algún filtro.'
+
+      if (vacioMercado) vacioMercado.hidden = !(buscando && enMercado === 0)
+      if (pistaResto) {
+        pistaResto.textContent = buscando
+          ? (enResto === 0 ? 'Ninguno de los que no están en el mercado se llama así.' : enResto + (enResto === 1 ? ' jugador fuera del mercado. No se puede fichar hoy, pero sí verle la ficha.' : ' jugadores fuera del mercado. No se pueden fichar hoy, pero sí verles la ficha.'))
+          : 'Escribe arriba para buscar entre ellos. No se pueden fichar hoy —no están en el mercado—, pero sí mirar su ficha, sus cláusulas y su forma.'
       }
+
+      // La lista de movimientos sigue con su párrafo único; la de jugadores no
+      // lo usa, porque cada uno de sus dos bloques dice lo suyo por separado.
+      if (vacio && !listaMercado) vacio.hidden = vistos !== 0
       return vistos
     }
     q.addEventListener('input', repasar)
@@ -1111,7 +1113,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     return { filas: filas, lista: lista, repasar: repasar, vacio: vacio }
   }
 
-  var jug = conectar({ lista: 'lista-jug', fila: '.fj', caja: 'q', cuenta: 'cuenta-res', vacio: 'sin-res', singular: 'jugador', plural: 'jugadores', explicar: true })
+  var jug = conectar({ lista: 'lista-jug', fila: '.fj', caja: 'q', cuenta: 'cuenta-res', singular: 'jugador', plural: 'jugadores' })
   var mov = conectar({ lista: 'lista-mov', fila: '.mv', caja: 'qm', cuenta: 'cuenta-mov', vacio: 'sin-mov', singular: 'movimiento', plural: 'movimientos' })
 
   if (jug) {
@@ -1129,7 +1131,14 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     }
     function ordenar (clave) {
       var cmp = criterios[clave] || criterios.puntos
-      jug.filas.slice().sort(cmp).forEach(function (f) { jug.lista.insertBefore(f, jug.vacio) })
+      // Cada fila vuelve a su propio bloque: si se insertaran todas en el
+      // contenedor de arriba, el mercado y el resto se mezclarían al ordenar.
+      jug.filas.slice().sort(cmp).forEach(function (f) {
+        var caja = f._caja || (f._caja = f.parentNode)
+        var cola = caja.querySelector('.vacio')
+        if (cola) caja.insertBefore(f, cola)
+        else caja.appendChild(f)
+      })
       jug.repasar()
     }
     var botones = [].slice.call(document.querySelectorAll('#ordenar button'))

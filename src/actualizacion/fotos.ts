@@ -46,21 +46,33 @@ const paso = (t: string) => process.stderr.write(`${t}\n`)
 async function main(): Promise<void> {
   mkdirSync(FOTOS, { recursive: true })
 
+  // El censo no basta. La página también enseña la cara de quien aparece en el
+  // historial de movimientos, y ahí hay jugadores que ya no están en LaLiga
+  // —Carlos Álvarez y nueve más daban 404 y se quedaban sin foto—.
   const censo = JSON.parse(readFileSync(join(DATOS, 'jugadores-calc.json'), 'utf8')) as { id: string }[]
+  const ids = new Set(censo.map((j) => String(j.id)))
+  const HECHOS = join(DATOS, 'hechos.json')
+  if (existsSync(HECHOS)) {
+    const h = JSON.parse(readFileSync(HECHOS, 'utf8')) as Record<string, { idJugador?: string }[]>
+    for (const lista of Object.values(h)) {
+      if (!Array.isArray(lista)) continue
+      for (const x of lista) if (x && x.idJugador) ids.add(String(x.idJugador))
+    }
+  }
   const tengo = new Set(
     readdirSync(FOTOS)
       .filter((f) => f.endsWith('.webp'))
       .map((f) => f.replace('.webp', '')),
   )
-  const faltan = aQuienFaltaFoto(censo.map((j) => String(j.id)), tengo)
+  const faltan = aQuienFaltaFoto([...ids], tengo)
 
   if (faltan.length === 0) {
-    paso(`${censo.length} jugadores y ninguna cara que bajar: todas están.`)
+    paso(`${ids.size} jugadores (censo e historial) y ninguna cara que bajar: todas están.`)
     return
   }
-  const total = censo.filter((j) => !tengo.has(String(j.id))).length
+  const total = [...ids].filter((id) => !tengo.has(id)).length
   paso(
-    `${censo.length} jugadores · ${total} sin cara · bajo ${faltan.length} en esta pasada` +
+    `${ids.size} jugadores · ${total} sin cara · bajo ${faltan.length} en esta pasada` +
       (total > faltan.length ? `, las ${total - faltan.length} restantes en las siguientes` : ''),
   )
 

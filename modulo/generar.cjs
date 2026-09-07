@@ -1031,7 +1031,19 @@ const islaFichas = JSON.stringify(
 )
 
 const PORID_PRE = new Map(J.map((j) => [String(j.id), j]))
-const filasJugadores = J.map(filaJugador).join(NL)
+/**
+ * La pestaña de jugadores, en dos mitades.
+ *
+ * El mercado es una lista corta y viva —hoy 32— que se mira entera; el resto
+ * de LaLiga son quinientos, y enseñarlos todos de golpe convertía la pestaña
+ * en un muro por el que había que filtrar antes de poder leer nada. Ahora el
+ * mercado sale siempre y los demás aparecen solo cuando los buscas, que es
+ * cuando se sabe a quién se busca.
+ */
+const enMercado = J.filter((j) => j.mk === 1)
+const fueraDelMercado = J.filter((j) => j.mk !== 1)
+const filasMercado = enMercado.map(filaJugador).join(NL)
+const filasResto = fueraDelMercado.map(filaJugador).join(NL)
 
 // ── Escaparate del mercado ──────────────────────────────────────────────────
 // La lista completa sirve para investigar; estas tarjetas sirven para decidir.
@@ -2167,7 +2179,10 @@ const huecos = {
   '<!--__MARCADOR__-->': marcador,
   '<!--__MIEQUIPO__-->': miEquipo,
   '<!--__OPORTUNIDADES__-->': oportunidades,
-  '<!--__JUGADORES__-->': filasJugadores,
+  '<!--__MERCADO__-->': filasMercado,
+  '<!--__RESTO__-->': filasResto,
+  '<!--__CUANTOS_MERCADO__-->': String(enMercado.length),
+  '<!--__CUANTOS_RESTO__-->': String(fueraDelMercado.length),
   '<!--__RIVALES__-->': rivales,
   '<!--__MOVIMIENTOS__-->': movimientos,
   '<!--__NUMEROS__-->': numeros,
