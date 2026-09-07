@@ -261,6 +261,45 @@ const rachaConGoles = (j) => {
  * Se usa dos veces y las dos por lo mismo: acercar una media flaca a una
  * referencia más sólida. Aquí arriba porque `esperadoDe` la necesita.
  */
+/**
+ * La probabilidad de salir de titular, de FútbolFantasy.
+ *
+ * Mister publica un pronóstico de titularidad que es un sí/no y que viene vacío
+ * casi siempre: de mis diecisiete jugadores solo sabía el de uno. FútbolFantasy
+ * da un porcentaje para todos, y eso cambia decisiones —Rodri Hernández estaba
+ * en el once con un 50 % de salir y la página no lo decía—.
+ *
+ * No se usa para retocar los puntos esperados. Multiplicar por la probabilidad
+ * daría una cifra que parece un dato y es un modelo mío, y además un suplente
+ * puede entrar y puntuar. Se usa para ordenar por tramos y, sobre todo, para
+ * enseñarlo: la decisión sigue siendo tuya, pero con el dato delante.
+ */
+const PROBABLES = opcional('probables.json', { jugadores: {} }).jugadores || {}
+const probabilidadDe = (j) => {
+  const p = PROBABLES[String(j.id)]
+  return p && typeof p.prob === 'number' ? p.prob : null
+}
+
+/** A partir de aquí se le da por titular y no se avisa de nada. */
+const TRAMO_TITULAR = 70
+
+/**
+ * Para ordenar el once: lo que cabe esperar, por lo probable que es que juegue.
+ *
+ * Primero lo hice por tramos —titular, duda, improbable— y el once empeoró:
+ * sacaba a Rodri Hernández, con 7,0 esperados y un 50 % de salir, para meter a
+ * Oriol Rey, con 3,8 y un 70 %. En valor esperado eso es cambiar 3,5 por 2,7.
+ * Multiplicar no es inventarse nada: es la definición de valor esperado, y un
+ * tramo también es un modelo, solo que más tosco y que decide peor.
+ *
+ * La cifra que se enseña sigue siendo la de siempre —lo que haría si juega—,
+ * porque es la que se puede comprobar. Esto solo ordena.
+ */
+const conProbabilidad = (j) => {
+  const p = probabilidadDe(j)
+  return esperadoTotal(j) * (p === null ? 1 : p / 100)
+}
+
 const PARTIDOS_DE_CONFIANZA = 3
 
 const esperadoDe = (j) => {
@@ -1018,6 +1057,8 @@ const islaFichas = JSON.stringify(
           ti: j.tit ?? null,
           su: j.sup ?? null,
           on: j.once,
+          // El porcentaje de salir de titular; null si no lo publican de él.
+          pr: probabilidadDe(j),
           riv: j.riv ?? null,
           ca: j.casa,
           du: durezaDe(j),
@@ -1500,10 +1541,7 @@ const onceCon = (formacion) => {
   formacion.forEach((cuantos, i) => {
     const puesto = i + 1
     const candidatos = MIOS.filter((j) => j.puesto === puesto).sort(
-      (a, b) =>
-        (noJuega(b) ? -1 : 1) - (noJuega(a) ? -1 : 1) ||
-        (b.once === 1 ? 2 : b.once === 0 ? 0 : 1) - (a.once === 1 ? 2 : a.once === 0 ? 0 : 1) ||
-        esperadoTotal(b) - esperadoTotal(a),
+      (a, b) => (noJuega(b) ? -1 : 1) - (noJuega(a) ? -1 : 1) || conProbabilidad(b) - conProbabilidad(a),
     )
     if (candidatos.length < cuantos) completo = false
     elegidos.push(...candidatos.slice(0, cuantos).map((j) => ({ ...j, hueco: cuantos > candidatos.length })))
@@ -1562,13 +1600,20 @@ const fichaEnCampo = (j) => {
   // y Mister hace lo mismo. Si es de una sola palabra, se queda como está.
   const partes = j.nombre.trim().split(/\s+/)
   const mote = partes.length > 1 ? `${partes[0][0]}. ${partes.slice(1).join(' ')}` : j.nombre
+  const prob = probabilidadDe(j)
   const porQue = fuera
     ? j.est === 'injury'
       ? 'lesionado'
       : 'su equipo no juega esta jornada'
-    : `${dec(pts)} puntos que cabe esperar · ${j.riv ?? ''}`
+    : `${dec(pts)} puntos que cabe esperar${prob === null ? '' : ` · ${prob} % de salir de titular`}`
   return `<button type="button" class="cj${fuera ? ' fuera' : ''}" data-ficha="${j.id}" title="${esc(`${j.nombre} · ${porQue}`)}">
-          <span class="cj-cara">${caraDe(j.id, j.nombre)}${escudoDe(j.id)}${j.once === 1 ? '<i class="cj-tit" title="Mister lo da titular">👕</i>' : ''}</span>
+          <span class="cj-cara">${caraDe(j.id, j.nombre)}${escudoDe(j.id)}${
+    prob !== null && prob < TRAMO_TITULAR
+      ? `<i class="cj-duda" title="${prob} % de salir de titular, según FútbolFantasy">${prob}%</i>`
+      : j.once === 1
+        ? '<i class="cj-tit" title="Mister lo da titular">👕</i>'
+        : ''
+  }</span>
           <span class="cj-n">${esc(mote)}</span>
           <span class="cj-p ${fuera ? 'no' : claseRacha(pts)}">${fuera ? (j.est === 'injury' ? '🏥' : '—') : dec(pts)}</span>
         </button>`

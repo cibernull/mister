@@ -349,6 +349,12 @@ ol.top .n .cara,.mejores .n .cara,.mj .cara,.mn .cara,.novs .cara,table.jt .cara
 .cj-cara .cara{width:44px;height:44px;border:2px solid rgba(255,255,255,.35);background:rgba(0,0,0,.28)}
 .cj-cara .ec{position:absolute;left:-2px;bottom:-1px;width:16px;height:16px}
 .cj-tit{position:absolute;right:-4px;top:-3px;font-size:10px;font-style:normal;line-height:1}
+/* El aviso de duda: quien no llega al 70 % de salir lleva su porcentaje encima,
+   que es la diferencia entre alinear a alguien y alinear a alguien que no juega. */
+.et-prob.bien{color:var(--sube);border-color:var(--sube)}
+.et-prob.duda{color:var(--oro);border-color:var(--oro-raya)}
+.et-prob.mal{color:var(--baja);border-color:var(--baja)}
+.cj-duda{position:absolute;right:-6px;top:-5px;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:8px;font-weight:700;line-height:1;padding:2px 3px;border-radius:5px;background:var(--baja);color:#fff}
 .cj-n{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:2px 5px;border-radius:4px;background:rgba(0,0,0,.55);font-size:9.5px;font-weight:600;letter-spacing:.01em}
 .cj-p{min-width:26px;padding:1px 5px;border-radius:4px;font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:700;color:#0d0d0d;background:#fff}
 .cj-p.alta{background:var(--sube)} .cj-p.media{background:var(--oro)}
@@ -1904,7 +1910,11 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       if (f.mk) ets.push('<span class="et et-mk">' + (f.ced ? 'se cede' : 'en el mercado') + '</span>')
       ets.push(f.d ? '<span class="et et-eq' + (f.mio ? ' et-mio' : '') + '">' + esc(f.d) + '</span>' : '<span class="et et-libre">libre</span>')
       if (f.sub) ets.push('<span class="et et-sub">🛡 ×' + (1.5 + 0.5 * f.sub).toFixed(1).replace('.', ',') + '</span>')
-      if (f.on === 1) ets.push('<span class="et et-once">👕 titular</span>')
+      // El porcentaje manda sobre el sí/no de Mister: es más fino y lo tiene
+      // casi todo el mundo, mientras que el de Mister viene vacío casi siempre.
+      if (f.pr != null) {
+        ets.push('<span class="et et-prob' + (f.pr >= 70 ? ' bien' : f.pr >= 30 ? ' duda' : ' mal') + '" title="Probabilidad de salir de titular, según FútbolFantasy">' + f.pr + ' % titular</span>')
+      } else if (f.on === 1) ets.push('<span class="et et-once">👕 titular</span>')
       if (f.est === 'injury') ets.push('<span class="et et-mal">🏥 lesionado</span>')
       else if (f.est) ets.push('<span class="et et-mal">' + esc(f.est) + '</span>')
 

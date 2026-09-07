@@ -99,6 +99,14 @@ jobs:
       # El tope de tiempo y el `continue-on-error` se quedan de red: el 7 de
       # septiembre de 2026 una de estas se colgó cuarenta y nueve minutos y
       # congeló detrás el saldo, las cláusulas y el mercado.
+      # Las alineaciones probables no cambian cada media hora y cada pasada son
+      # 5,4 MB: con una vez al día basta y sobra.
+      - name: Alineaciones probables de FútbolFantasy
+        if: ${{ github.event.schedule == '7 23,0-4 * * *' || github.event_name == 'workflow_dispatch' }}
+        timeout-minutes: 6
+        continue-on-error: true
+        run: npm run probables
+
       - name: Guardar la alineación de las jornadas jugadas
         timeout-minutes: 3
         continue-on-error: true
