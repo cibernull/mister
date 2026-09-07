@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>La Liga de Mister</title>
+<title>Estadísticas Mister</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap">
@@ -313,7 +313,53 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
    falta, el `onerror` la quita y todo queda como antes de haberla. */
 .cara{border-radius:50%;background:var(--tabla);object-fit:cover;flex:none;vertical-align:middle}
 .cara.grande{width:64px;height:64px;border:1px solid var(--raya)}
-ol.top .n .cara,.mejores .n .cara,.mj .cara,.mn .cara{width:22px;height:22px;margin-right:5px}
+ol.top .n .cara,.mejores .n .cara,.mj .cara,.mn .cara,.novs .cara,table.jt .cara,.record .cara{width:22px;height:22px;margin-right:5px}
+.novs .cara{width:20px;height:20px;vertical-align:-6px}
+
+/* El once sobre una pizarra táctica premium. Es CSS: las bandas,
+   el círculo y las dos áreas. Nada de imagen de fondo, que habría
+   que servir y pesaría más que todo esto junto. */
+.campo{position:relative;display:flex;flex-direction:column;justify-content:space-around;gap:6px;padding:16px 8px;margin:14px 0 4px;border-radius:14px;overflow:hidden;min-height:330px;border:1px solid rgba(255,255,255,.07)}
+.campo-hierba{position:absolute;inset:0;background:
+  radial-gradient(90% 70% at 50% 40%,rgba(129,118,217,.22),transparent 62%),
+  repeating-linear-gradient(180deg,#272D52 0 34px,#202542 34px 68px);
+  z-index:0}
+/* Las líneas del campo. El círculo central y las áreas, en blanco muy tenue. */
+.campo-hierba::before{content:"";position:absolute;left:50%;top:50%;width:104px;height:104px;margin:-52px 0 0 -52px;border:2px solid rgba(255,255,255,.16);border-radius:50%}
+.campo-hierba::after{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:rgba(255,255,255,.16)}
+/* Una línea nunca se parte: seis medios en dos filas caen sobre el círculo
+   central y dejan de leerse como una alineación. Se encoge la ficha según
+   cuántos haya, que es lo que hace el propio juego. */
+.campo-linea{position:relative;z-index:1;display:flex;justify-content:center;flex-wrap:nowrap;gap:4px}
+.campo-linea[data-n="5"] .cj{width:56px}
+.campo-linea[data-n="5"] .cj-n{max-width:56px}
+.campo-linea[data-n="6"] .cj{width:50px}
+.campo-linea[data-n="6"] .cj-n{max-width:50px;font-size:8.5px}
+.campo-linea[data-n="6"] .cj-cara .cara{width:40px;height:40px}
+
+.cj{display:flex;flex-direction:column;align-items:center;gap:3px;width:62px;padding:0;border:0;background:none;color:#fff;cursor:pointer;font:inherit}
+.cj:hover .cj-cara .cara{border-color:rgba(255,255,255,.75)}
+.cj-cara{position:relative;display:block;line-height:0}
+.cj-cara .cara{width:46px;height:46px;border:2px solid rgba(255,255,255,.35);background:rgba(0,0,0,.28)}
+.cj-cara .ec{position:absolute;left:-2px;bottom:-1px;width:16px;height:16px}
+.cj-tit{position:absolute;right:-4px;top:-3px;font-size:10px;font-style:normal;line-height:1}
+.cj-n{max-width:62px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:2px 5px;border-radius:4px;background:rgba(0,0,0,.55);font-size:9.5px;font-weight:600;letter-spacing:.01em}
+.cj-p{min-width:26px;padding:1px 5px;border-radius:4px;font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:700;color:#0d0d0d;background:#fff}
+.cj-p.alta{background:var(--sube)} .cj-p.media{background:var(--oro)}
+.cj-p.baja{background:#d9d9d9} .cj-p.cero,.cj-p.no{background:var(--baja);color:#fff}
+.cj.fuera .cj-cara .cara{filter:grayscale(1);opacity:.55}
+
+@media (max-width:520px){
+  .campo{min-height:300px;padding:12px 4px}
+  .cj{width:52px}
+  .cj-cara .cara{width:38px;height:38px}
+  .cj-n{max-width:52px;font-size:8.5px}
+  .campo-linea[data-n="5"] .cj{width:48px}
+  .campo-linea[data-n="5"] .cj-n{max-width:48px}
+  .campo-linea[data-n="6"] .cj{width:44px}
+  .campo-linea[data-n="6"] .cj-n{max-width:44px;font-size:8px}
+  .campo-linea[data-n="6"] .cj-cara .cara{width:34px;height:34px}
+}
 
 .cf-cab{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
 .cf-cab h3{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:26px;line-height:1.1;margin:0}
@@ -661,24 +707,36 @@ a{color:var(--oro)}
    La información sigue siendo la misma; cambia la jerarquía. La portada
    responde primero qué hacer, y deja la auditoría detallada para después. */
 :root{
-  --suelo:#F1F4EE; --tabla:#FFFFFF; --hueco:#E8ECE5; --raya:#D9E0D5;
-  --tinta:#101712; --gris:#536057; --tenue:#7C8A80;
-  --oro:#B16C00; --oro-vivo:#F5B83D; --oro-fondo:#FFF4DD; --oro-raya:#EBCB8C;
-  --sombra:0 1px 2px rgba(16,23,18,.04),0 16px 42px -25px rgba(16,23,18,.34);
-  --sombra-alta:0 24px 70px -32px rgba(5,20,10,.45);
+  --suelo:#F4F2EF; --tabla:#FFFFFF; --hueco:#ECE9E5; --raya:#DDD8D1;
+  --tinta:#171821; --gris:#5E606C; --tenue:#8B8B94;
+  --oro:#A9782E; --oro-vivo:#DDB96F; --oro-fondo:#FBF4E7; --oro-raya:#DFC897;
+  --sube:#376BC5; --sube-fondo:#E8EFFB;
+  --baja:#BE4057; --baja-fondo:#FBEAEC;
+  --por:#397FC0; --def:#6257B8; --med:#B17A27; --del:#BE5549;
+  --blinda:#7352A8; --blinda-fondo:#F1EBFA; --blinda-raya:#D8C7EC;
+  --sombra:0 1px 2px rgba(23,24,33,.04),0 16px 42px -25px rgba(23,24,33,.3);
+  --sombra-alta:0 24px 70px -32px rgba(12,13,22,.5);
   --radio:16px;
 }
 @media(prefers-color-scheme:dark){:root:not([data-theme=light]){
-  --suelo:#07100A;--tabla:#101A13;--hueco:#17231A;--raya:#263429;
-  --tinta:#F2F6F1;--gris:#A4B0A7;--tenue:#718078;
-  --oro:#F6B93B;--oro-vivo:#FFC857;--oro-fondo:#2B2210;--oro-raya:#584319;
+  --suelo:#090A0F;--tabla:#12141C;--hueco:#1A1C27;--raya:#2B2E3B;
+  --tinta:#F6F2EA;--gris:#ACA9B2;--tenue:#737581;
+  --oro:#DDB96F;--oro-vivo:#F0CC7D;--oro-fondo:#292316;--oro-raya:#5B4B2C;
+  --sube:#78A9FF;--sube-fondo:#17243B;
+  --baja:#FF7890;--baja-fondo:#341A24;
+  --por:#4B9AD4;--def:#8176D9;--med:#D5A64F;--del:#D86B5E;
+  --blinda:#B695E8;--blinda-fondo:#271E38;--blinda-raya:#493762;
   --sombra:0 1px 2px rgba(0,0,0,.55),0 18px 50px -25px rgba(0,0,0,.95);
   --sombra-alta:0 30px 80px -34px rgba(0,0,0,.95);
 }}
 :root[data-theme=dark]{
-  --suelo:#07100A;--tabla:#101A13;--hueco:#17231A;--raya:#263429;
-  --tinta:#F2F6F1;--gris:#A4B0A7;--tenue:#718078;
-  --oro:#F6B93B;--oro-vivo:#FFC857;--oro-fondo:#2B2210;--oro-raya:#584319;
+  --suelo:#090A0F;--tabla:#12141C;--hueco:#1A1C27;--raya:#2B2E3B;
+  --tinta:#F6F2EA;--gris:#ACA9B2;--tenue:#737581;
+  --oro:#DDB96F;--oro-vivo:#F0CC7D;--oro-fondo:#292316;--oro-raya:#5B4B2C;
+  --sube:#78A9FF;--sube-fondo:#17243B;
+  --baja:#FF7890;--baja-fondo:#341A24;
+  --por:#4B9AD4;--def:#8176D9;--med:#D5A64F;--del:#D86B5E;
+  --blinda:#B695E8;--blinda-fondo:#271E38;--blinda-raya:#493762;
   --sombra:0 1px 2px rgba(0,0,0,.55),0 18px 50px -25px rgba(0,0,0,.95);
   --sombra-alta:0 30px 80px -34px rgba(0,0,0,.95);
 }
@@ -698,18 +756,18 @@ body{padding:0 24px 96px;background:
 
 /* Centro de mando */
 .centro-mando{position:relative;overflow:hidden;border-radius:22px;padding:28px;background:
-  radial-gradient(circle at 86% 15%,rgba(245,184,61,.22),transparent 17rem),
-  linear-gradient(135deg,#0B2515,#102E1B 55%,#173923);color:#F5F7F4;box-shadow:var(--sombra-alta)}
+  radial-gradient(circle at 86% 15%,rgba(221,185,111,.2),transparent 17rem),
+  linear-gradient(135deg,#151724,#20243A 56%,#342B43);color:#F8F4EC;box-shadow:var(--sombra-alta)}
 .centro-mando:after{content:"";position:absolute;right:-70px;bottom:-145px;width:390px;height:390px;border:1px solid rgba(255,255,255,.08);border-radius:50%;box-shadow:inset 0 0 0 70px rgba(255,255,255,.018)}
 .cm-arriba{position:relative;z-index:1;display:flex;justify-content:space-between;gap:24px;align-items:flex-start}
-.cm-kicker{margin:0 0 7px;font-family:"IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.14em;font-size:10px;color:#F5B83D}
+.cm-kicker{margin:0 0 7px;font-family:"IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.14em;font-size:10px;color:#DDB96F}
 .centro-mando h2{margin:0;font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;font-size:36px;line-height:1}
 .cm-bajada{max-width:60ch;margin:8px 0 0;color:rgba(245,247,244,.68);font-size:13px}
-.cm-proyeccion{flex:none;text-align:right}.cm-proyeccion b{display:block;color:#F5B83D;font-family:"IBM Plex Mono",monospace;font-size:32px;line-height:1}.cm-proyeccion span{display:block;margin-top:5px;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:rgba(245,247,244,.55)}
+.cm-proyeccion{flex:none;text-align:right}.cm-proyeccion b{display:block;color:#E4C277;font-family:"IBM Plex Mono",monospace;font-size:32px;line-height:1}.cm-proyeccion span{display:block;margin-top:5px;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:rgba(248,244,236,.55)}
 .cm-acciones{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
 .cm-accion{min-width:0;text-align:left;color:#F5F7F4;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;align-items:center;text-decoration:none;font:inherit;cursor:pointer;transition:.18s ease}
-.cm-accion:hover{transform:translateY(-2px);background:rgba(255,255,255,.12);border-color:rgba(245,184,61,.4)}
-.cm-accion .cm-ico{grid-row:1/3;width:32px;height:32px;display:grid;place-items:center;border-radius:10px;background:rgba(245,184,61,.14);color:#F5B83D;font-size:15px}
+.cm-accion:hover{transform:translateY(-2px);background:rgba(255,255,255,.12);border-color:rgba(221,185,111,.45)}
+.cm-accion .cm-ico{grid-row:1/3;width:32px;height:32px;display:grid;place-items:center;border-radius:10px;background:rgba(221,185,111,.14);color:#E4C277;font-size:15px}
 .cm-accion b{font-size:13px}.cm-accion small{min-width:0;color:rgba(245,247,244,.58);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 /* Identidad del jugador */
@@ -773,10 +831,10 @@ body{padding:0 24px 96px;background:
 
   <header class="cab">
     <div class="marca">
-      <span class="escudo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg></span>
+      <span class="escudo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/><path d="M8 15v-2M12 15V9M16 15v-4"/></svg></span>
       <div>
         <h1>__LIGA__</h1>
-        <p>Quién tiene dinero, quién puede fichar a quién, y a qué precio.</p>
+        <p>Datos, mercado y decisiones para ganar tu liga.</p>
       </div>
     </div>
     <div class="sello" id="sello" data-generado="<!--__GENERADO__-->" title="Cuándo se leyeron estos datos de Mister">Datos del <b><!--__FECHA__--></b></div>

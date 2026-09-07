@@ -17,7 +17,7 @@ const AQUI = __dirname
 const DAT = path.join(AQUI, 'datos')
 const SALIDA = process.argv[2] || path.join(AQUI, '..', 'datos', 'mercado.html')
 const MI_EQUIPO = 'Niutin FC (Isaac)'
-const NOMBRE_LIGA = 'La Liga de Mister'
+const NOMBRE_LIGA = 'Estadísticas Mister'
 // Dónde se lanza a mano la actualización. Es la página del workflow de GitHub:
 // desde el móvil son dos toques y tarda un minuto. Un botón que la dispare de
 // verdad desde aquí necesitaría un token, y esta página es pública.
@@ -1121,7 +1121,7 @@ const plantillaDe = (e) => {
   return `<div class="mini">
 ${suyos
   .map(
-    (j) => `        <div class="mj">${dorsal(j.puesto)}${escudoDe(j.id)}<span class="n">${j.nombre ? nombreEnlazado(j) : `<a class="jl" href="${fichaEn(j.id, j.id)}" target="_blank" rel="noopener"><em class="desc">jugador ${esc(j.id)}</em></a>`}</span>
+    (j) => `        <div class="mj">${dorsal(j.puesto)}${caraDe(j.id, j.nombre ?? '')}${escudoDe(j.id)}<span class="n">${j.nombre ? nombreEnlazado(j) : `<a class="jl" href="${fichaEn(j.id, j.id)}" target="_blank" rel="noopener"><em class="desc">jugador ${esc(j.id)}</em></a>`}</span>
           <span class="v">${j.valor != null ? eur(j.valor) : '—'}</span>${
             j.clausula ? `<span class="c">cláusula ${corto(j.clausula)}${marcaBlindaje(j, true)}</span>` : '<span class="c">—</span>'
           }<span class="m">${j.media != null ? `media ${dec(j.media)}` : 'sin datos'}</span></div>`,
@@ -1171,7 +1171,7 @@ const tablaMovimientos = (e) => {
 ${js
   .map(
     (j) =>
-      `<tr><td>${escudoDe(j.id)}${esc(j.nombre)}${j.delReparto ? '<span class="et-rep">del reparto</span>' : ''}</td><td>${cel(j.compras)}</td><td>${cel(j.ventas)}</td><td>${cel(j.valeHoy)}</td><td class="${j.balance > 0 ? 'mas' : j.balance < 0 ? 'menos' : ''}">${firma(j.balance)}</td></tr>`,
+      `<tr><td>${caraDe(j.id, j.nombre)}${escudoDe(j.id)}${esc(j.nombre)}${j.delReparto ? '<span class="et-rep">del reparto</span>' : ''}</td><td>${cel(j.compras)}</td><td>${cel(j.ventas)}</td><td>${cel(j.valeHoy)}</td><td class="${j.balance > 0 ? 'mas' : j.balance < 0 ? 'menos' : ''}">${firma(j.balance)}</td></tr>`,
   )
   .join(NL)}
 <tr class="sum"><td>${js.length} jugador${js.length === 1 ? '' : 'es'}</td><td>${cel(tot.compras)}</td><td>${cel(tot.ventas)}</td><td>${cel(tot.valeHoy)}</td><td class="${tot.balance > 0 ? 'mas' : 'menos'}">${firma(tot.balance)}</td></tr>
@@ -1282,7 +1282,7 @@ const novedades = (() => {
     dias.get(m.fecha.slice(0, 10)).push(
       lineaNov(
         m.a ? '📥' : '📤',
-        `<span class="hnov">${m.fecha.slice(11, 16)}</span>${escudoDe(m.id)}<b>${esc(m.nombre)}</b> ${m.de ? 'de' : 'del'} ${esc(de)} ${m.a ? 'a' : 'al'} ${esc(a)} por ${eur(m.importe)}`,
+        `<span class="hnov">${m.fecha.slice(11, 16)}</span>${caraDe(m.id, m.nombre)}${escudoDe(m.id)}<b>${esc(m.nombre)}</b> ${m.de ? 'de' : 'del'} ${esc(de)} ${m.a ? 'a' : 'al'} ${esc(a)} por ${eur(m.importe)}`,
         esMio(m.de) || esMio(m.a) ? 'mio' : '',
       ),
     )
@@ -1455,6 +1455,57 @@ const filaOnce = (j) => `        <div class="mj">${dorsal(j.puesto)}${caraDe(j.i
             j.est === 'injury' ? '🏥 lesionado' : j.once === 1 ? '👕 titular' : j.once === 0 ? 'suplente' : '—'
           }</span></div>`
 
+/**
+ * El once sobre el césped, como lo pinta Mister.
+ *
+ * Las mismas once fichas que la lista de debajo, pero colocadas por líneas:
+ * el portero abajo y los delanteros arriba, que es como se mira una alineación
+ * y como la enseña el juego. La lista sigue debajo porque es la que explica el
+ * porqué de cada uno —su media donde le toca jugar, la forma, el rival—, y eso
+ * en el campo no cabe.
+ *
+ * `once.elegidos` ya viene ordenado por puesto, así que las líneas se cortan
+ * con la propia formación en vez de volver a agrupar por tu cuenta.
+ */
+const fichaEnCampo = (j) => {
+  const fuera = noJuega(j)
+  const pts = fuera ? null : esperadoTotal(j)
+  // El apellido solo: en una ficha de sesenta píxeles el nombre entero no cabe
+  // y Mister hace lo mismo. Si es de una sola palabra, se queda como está.
+  const partes = j.nombre.trim().split(/\s+/)
+  const mote = partes.length > 1 ? `${partes[0][0]}. ${partes.slice(1).join(' ')}` : j.nombre
+  const porQue = fuera
+    ? j.est === 'injury'
+      ? 'lesionado'
+      : 'su equipo no juega esta jornada'
+    : `${dec(pts)} puntos que cabe esperar · ${j.riv ?? ''}`
+  return `<button type="button" class="cj${fuera ? ' fuera' : ''}" data-ficha="${j.id}" title="${esc(`${j.nombre} · ${porQue}`)}">
+          <span class="cj-cara">${caraDe(j.id, j.nombre)}${escudoDe(j.id)}${j.once === 1 ? '<i class="cj-tit" title="Mister lo da titular">👕</i>' : ''}</span>
+          <span class="cj-n">${esc(mote)}</span>
+          <span class="cj-p ${fuera ? 'no' : claseRacha(pts)}">${fuera ? (j.est === 'injury' ? '🏥' : '—') : dec(pts)}</span>
+        </button>`
+}
+
+const campoOnce = (o, formacion) => {
+  if (!o || formacion.length !== 4) return ''
+  const lineas = []
+  let i = 0
+  for (const cuantos of formacion) {
+    lineas.push(o.elegidos.slice(i, i + cuantos))
+    i += cuantos
+  }
+  // De arriba abajo se mira al revés que se cuenta: delanteros primero.
+  return `<div class="campo" role="img" aria-label="El once del domingo en el campo">
+        <div class="campo-hierba"></div>
+${lineas
+  .slice()
+  .reverse()
+  .filter((l) => l.length)
+  .map((l) => `        <div class="campo-linea" data-n="${l.length}">${l.map(fichaEnCampo).join('')}</div>`)
+  .join('\n')}
+      </div>`
+}
+
 const bloqueOnce = once === null || once.elegidos.length === 0
   ? ''
   : `    <section class="sec" id="once-jornada">
@@ -1496,6 +1547,7 @@ const bloqueOnce = once === null || once.elegidos.length === 0
           .join('')}</span>
       </div>`
       })()}
+      ${campoOnce(once, FORMACION)}
       <div class="mini">
 ${once.elegidos.map(filaOnce).join(NL)}
       </div>
@@ -1591,7 +1643,7 @@ const filaMov = (m) => {
   return `<div class="mv ${tipo}${mio}" data-busca="${esc(m.nombre)} ${esc(eqDe ? eqDe.corto : 'mercado')} ${esc(eqA ? eqA.corto : 'mercado')}">
       <span class="fecha">${dia(m.fecha)}</span>
       ${dorsal(m.pos ?? 0)}
-      <div class="mn">${escudoDe(m.id)}${nombreEnlazado(m)}${OPS[m.tipo] ? `<span class="et et-op">${OPS[m.tipo]}</span>` : ''}</div>
+      <div class="mn">${caraDe(m.id, m.nombre)}${escudoDe(m.id)}${nombreEnlazado(m)}${OPS[m.tipo] ? `<span class="et et-op">${OPS[m.tipo]}</span>` : ''}</div>
       <div class="mr"><span class="${eqDe && eqDe.mio ? 'yo' : eqDe ? '' : 'mercado'}">${esc(eqDe ? eqDe.corto : 'Mercado')}</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg><span class="${eqA && eqA.mio ? 'yo' : eqA ? '' : 'mercado'}">${esc(eqA ? eqA.corto : 'Mercado')}</span></div>
       <div class="mi">${eur(m.importe)}</div>
     </div>`
@@ -1855,9 +1907,9 @@ ${comercio
     <div class="tarjeta">
       <h2 class="sh">Récords de la liga</h2>
       <div class="records">
-${record('Fichaje más caro', `${escudoDe(masCaro.id)}${esc(masCaro.nombre)} · ${eur(masCaro.importe)}`, `Lo fichó ${esc(POR_NOMBRE.get(masCaro.a)?.corto ?? masCaro.a ?? 'el mercado')} el ${dia(masCaro.fecha)}.`, '')}
-${record('El mejor negocio', `${escudoDe(mejorNegocio.id)}${esc(mejorNegocio.nombre)} · ${firma(mejorNegocio.bal)}`, `De ${esc(mejorNegocio.equipo?.corto ?? '—')}, contando lo que vale hoy.`, 'bien')}
-${record('El peor negocio', `${escudoDe(peorNegocio.id)}${esc(peorNegocio.nombre)} · ${firma(peorNegocio.bal)}`, `De ${esc(peorNegocio.equipo?.corto ?? '—')}, contando lo que vale hoy.`, 'mal')}
+${record('Fichaje más caro', `${caraDe(masCaro.id, masCaro.nombre)}${escudoDe(masCaro.id)}${esc(masCaro.nombre)} · ${eur(masCaro.importe)}`, `Lo fichó ${esc(POR_NOMBRE.get(masCaro.a)?.corto ?? masCaro.a ?? 'el mercado')} el ${dia(masCaro.fecha)}.`, '')}
+${record('El mejor negocio', `${caraDe(mejorNegocio.id, mejorNegocio.nombre)}${escudoDe(mejorNegocio.id)}${esc(mejorNegocio.nombre)} · ${firma(mejorNegocio.bal)}`, `De ${esc(mejorNegocio.equipo?.corto ?? '—')}, contando lo que vale hoy.`, 'bien')}
+${record('El peor negocio', `${caraDe(peorNegocio.id, peorNegocio.nombre)}${escudoDe(peorNegocio.id)}${esc(peorNegocio.nombre)} · ${firma(peorNegocio.bal)}`, `De ${esc(peorNegocio.equipo?.corto ?? '—')}, contando lo que vale hoy.`, 'mal')}
 ${record('Movimientos', `${MOVS.length} en ${dias.length} días`, `${eur(totalGastado)} han cambiado de manos desde el reinicio.`, '')}
       </div>
     </div>
