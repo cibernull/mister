@@ -1565,17 +1565,47 @@ const campoOnce = (o, formacion) => {
     lineas.push(o.elegidos.slice(i, i + cuantos))
     i += cuantos
   }
-  // De arriba abajo se mira al revés que se cuenta: delanteros primero.
+  // El campo va tumbado, como se ve un partido: el portero a la izquierda y los
+  // delanteros atacando hacia la derecha. En vertical las cuatro líneas se
+  // apretaban unas contra otras y sobraba campo a los lados; así cada línea es
+  // una columna y ocupan el ancho entero.
   return `<div class="campo" role="img" aria-label="El once del domingo en el campo">
         <div class="campo-hierba"></div>
+        <svg class="campo-lineas" viewBox="0 0 300 190" preserveAspectRatio="none" aria-hidden="true">
+          <rect x="3" y="3" width="294" height="184" rx="2"/>
+          <line x1="150" y1="3" x2="150" y2="187"/>
+          <rect x="3" y="47" width="42" height="96"/>
+          <rect x="3" y="72" width="16" height="46"/>
+          <rect x="255" y="47" width="42" height="96"/>
+          <rect x="281" y="72" width="16" height="46"/>
+        </svg>
+        <span class="campo-centro"></span>
 ${lineas
-  .slice()
-  .reverse()
   .filter((l) => l.length)
   .map((l) => `        <div class="campo-linea" data-n="${l.length}">${l.map(fichaEnCampo).join('')}</div>`)
   .join('\n')}
       </div>`
 }
+
+/**
+ * El once ya pintado de cada formación, para poder cambiarlo de un toque.
+ *
+ * Las fichas de formación decían cuántos puntos daría cada una pero el campo
+ * se quedaba siempre en la tuya: enseñaban un número sin poder ver de dónde
+ * salía. Aquí va el campo de cada una, y el navegador solo cambia el bloque.
+ *
+ * Se manda el HTML hecho y no los datos: pintar la ficha de un jugador tiene
+ * escudo, cara, eventos y colores, y tener esa misma lógica escrita dos veces
+ * —aquí y en el navegador— es como se separan con el tiempo.
+ */
+const islaOnces = JSON.stringify(
+  Object.fromEntries(
+    formacionesProbadas.map((f) => [
+      f.nombre,
+      { t: Number(f.once.total.toFixed(2)), pago: f.pago ? 1 : 0, html: campoOnce(f.once, f.l) },
+    ]),
+  ),
+)
 
 const bloqueOnce = once === null || once.elegidos.length === 0
   ? ''
@@ -1614,10 +1644,11 @@ const bloqueOnce = once === null || once.elegidos.length === 0
         }</span>
         <span class="alt">${formacionesProbadas
           .slice(0, 6)
-          .map((f) => `<i class="${f.nombre === mia.nombre ? 'tuya' : ''}${f.pago ? ' pago' : ''}" title="${f.pago ? 'De pago en Mister' : 'De serie'}">${f.nombre} <b>${dec(f.once.total)}</b></i>`)
+          .map((f) => `<button type="button" data-formacion="${f.nombre}" class="${f.nombre === mia.nombre ? 'tuya' : ''}${f.pago ? ' pago' : ''}" title="${f.pago ? 'De pago en Mister · pincha para ver ese once' : 'De serie · pincha para ver ese once'}">${f.nombre} <b>${dec(f.once.total)}</b></button>`)
           .join('')}</span>
       </div>`
       })()}
+      <p class="sd" id="once-que-ves" hidden></p>
       ${campoOnce(once, FORMACION)}
       <div class="mini">
 ${once.elegidos.map(filaOnce).join(NL)}
@@ -2179,6 +2210,7 @@ const huecos = {
   '<!--__MARCADOR__-->': marcador,
   '<!--__MIEQUIPO__-->': miEquipo,
   '<!--__OPORTUNIDADES__-->': oportunidades,
+  '/*__ISLA_ONCES__*/{}': islaOnces,
   '<!--__MERCADO__-->': filasMercado,
   '<!--__RESTO__-->': filasResto,
   '<!--__CUANTOS_MERCADO__-->': String(enMercado.length),

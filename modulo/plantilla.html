@@ -328,49 +328,51 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 ol.top .n .cara,.mejores .n .cara,.mj .cara,.mn .cara,.novs .cara,table.jt .cara,.record .cara{width:22px;height:22px;margin-right:5px}
 .novs .cara{width:20px;height:20px;vertical-align:-6px}
 
-/* El once sobre una pizarra táctica premium. Es CSS: las bandas,
-   el círculo y las dos áreas. Nada de imagen de fondo, que habría
-   que servir y pesaría más que todo esto junto. */
-.campo{position:relative;display:flex;flex-direction:column;justify-content:space-around;gap:6px;padding:16px 8px;margin:14px 0 4px;border-radius:14px;overflow:hidden;min-height:330px;border:1px solid rgba(255,255,255,.07)}
-.campo-hierba{position:absolute;inset:0;background:
+/* El once sobre el césped, tumbado como se ve un partido: el portero a la
+   izquierda y los delanteros atacando hacia la derecha. En vertical las cuatro
+   líneas quedaban apretadas unas contra otras y sobraba campo a los lados.
+   El color es el de la paleta. Las líneas del campo van en un SVG estirado
+   —rectángulos y rectas no se deforman al estirarlos— y el círculo central en
+   CSS con tamaño fijo, que estirado sí quedaría ovalado. */
+.campo{position:relative;display:flex;align-items:stretch;gap:2px;padding:14px 10px;margin:14px 0 4px;border-radius:14px;overflow:hidden;min-height:300px;border:1px solid rgba(255,255,255,.07)}
+.campo-hierba{position:absolute;inset:0;z-index:0;background:
   radial-gradient(90% 70% at 50% 40%,rgba(129,118,217,.22),transparent 62%),
-  repeating-linear-gradient(180deg,#272D52 0 34px,#202542 34px 68px);
-  z-index:0}
-/* Las líneas del campo. El círculo central y las áreas, en blanco muy tenue. */
-.campo-hierba::before{content:"";position:absolute;left:50%;top:50%;width:104px;height:104px;margin:-52px 0 0 -52px;border:2px solid rgba(255,255,255,.16);border-radius:50%}
-.campo-hierba::after{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:rgba(255,255,255,.16)}
-/* Una línea nunca se parte: seis medios en dos filas caen sobre el círculo
-   central y dejan de leerse como una alineación. Se encoge la ficha según
-   cuántos haya, que es lo que hace el propio juego. */
-.campo-linea{position:relative;z-index:1;display:flex;justify-content:center;flex-wrap:nowrap;gap:4px}
-.campo-linea[data-n="5"] .cj{width:56px}
-.campo-linea[data-n="5"] .cj-n{max-width:56px}
-.campo-linea[data-n="6"] .cj{width:50px}
-.campo-linea[data-n="6"] .cj-n{max-width:50px;font-size:8.5px}
-.campo-linea[data-n="6"] .cj-cara .cara{width:40px;height:40px}
+  repeating-linear-gradient(90deg,#272D52 0 46px,#202542 46px 92px)}
+.campo-lineas{position:absolute;inset:0;z-index:0;width:100%;height:100%;fill:none;stroke:rgba(255,255,255,.17);stroke-width:2;vector-effect:non-scaling-stroke}
+.campo-centro{position:absolute;left:50%;top:50%;z-index:0;width:92px;height:92px;margin:-46px 0 0 -46px;border:2px solid rgba(255,255,255,.17);border-radius:50%}
 
-.cj{display:flex;flex-direction:column;align-items:center;gap:3px;width:62px;padding:0;border:0;background:none;color:#fff;cursor:pointer;font:inherit}
+.campo-linea{position:relative;z-index:1;flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:space-around;gap:4px}
+
+.cj{display:flex;flex-direction:column;align-items:center;gap:3px;width:100%;max-width:72px;padding:0;border:0;background:none;color:#fff;cursor:pointer;font:inherit}
 .cj:hover .cj-cara .cara{border-color:rgba(255,255,255,.75)}
 .cj-cara{position:relative;display:block;line-height:0}
-.cj-cara .cara{width:46px;height:46px;border:2px solid rgba(255,255,255,.35);background:rgba(0,0,0,.28)}
+.cj-cara .cara{width:44px;height:44px;border:2px solid rgba(255,255,255,.35);background:rgba(0,0,0,.28)}
 .cj-cara .ec{position:absolute;left:-2px;bottom:-1px;width:16px;height:16px}
 .cj-tit{position:absolute;right:-4px;top:-3px;font-size:10px;font-style:normal;line-height:1}
-.cj-n{max-width:62px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:2px 5px;border-radius:4px;background:rgba(0,0,0,.55);font-size:9.5px;font-weight:600;letter-spacing:.01em}
+.cj-n{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:2px 5px;border-radius:4px;background:rgba(0,0,0,.55);font-size:9.5px;font-weight:600;letter-spacing:.01em}
 .cj-p{min-width:26px;padding:1px 5px;border-radius:4px;font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:700;color:#0d0d0d;background:#fff}
 .cj-p.alta{background:var(--sube)} .cj-p.media{background:var(--oro)}
 .cj-p.baja{background:#d9d9d9} .cj-p.cero,.cj-p.no{background:var(--baja);color:#fff}
 .cj.fuera .cj-cara .cara{filter:grayscale(1);opacity:.55}
 
+/* Una columna con cinco o seis necesita menos alto por ficha. */
+.campo-linea[data-n="5"] .cj-cara .cara,.campo-linea[data-n="6"] .cj-cara .cara{width:38px;height:38px}
+.campo-linea[data-n="6"] .cj-n{font-size:8.5px}
+
+@media (min-width:700px){
+  .campo{min-height:390px;padding:18px 16px}
+  .cj-cara .cara{width:54px;height:54px}
+  .campo-linea[data-n="5"] .cj-cara .cara,.campo-linea[data-n="6"] .cj-cara .cara{width:46px;height:46px}
+  .cj-n{font-size:11px}
+  .campo-centro{width:124px;height:124px;margin:-62px 0 0 -62px}
+}
 @media (max-width:520px){
-  .campo{min-height:300px;padding:12px 4px}
-  .cj{width:52px}
-  .cj-cara .cara{width:38px;height:38px}
-  .cj-n{max-width:52px;font-size:8.5px}
-  .campo-linea[data-n="5"] .cj{width:48px}
-  .campo-linea[data-n="5"] .cj-n{max-width:48px}
-  .campo-linea[data-n="6"] .cj{width:44px}
-  .campo-linea[data-n="6"] .cj-n{max-width:44px;font-size:8px}
-  .campo-linea[data-n="6"] .cj-cara .cara{width:34px;height:34px}
+  .campo{min-height:330px;padding:10px 3px;gap:0}
+  .cj-cara .cara{width:34px;height:34px}
+  .campo-linea[data-n="5"] .cj-cara .cara,.campo-linea[data-n="6"] .cj-cara .cara{width:29px;height:29px}
+  .cj-n{font-size:8px;padding:1px 3px}
+  .cj-p{font-size:9px;min-width:22px;padding:1px 4px}
+  .campo-centro{width:64px;height:64px;margin:-32px 0 0 -32px}
 }
 
 .cf-cab{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
@@ -464,6 +466,12 @@ ol.top .n .cara,.mejores .n .cara,.mj .cara,.mn .cara,.novs .cara,table.jt .cara
 .otraform.bien{border-left-color:var(--raya);background:var(--suelo)}
 .otraform.bien>b{color:var(--tinta)}
 .otraform>b{font-size:13px;color:var(--sube)}
+/* Las formaciones son botones: pinchar en una enseña ese once en el campo. */
+.otraform .alt button{font:inherit;font-family:"IBM Plex Mono",monospace;font-size:11px;cursor:pointer;color:var(--gris);background:var(--tabla);border:1px solid var(--raya);border-radius:7px;padding:3px 8px}
+.otraform .alt button:hover{border-color:var(--oro-raya);color:var(--tinta)}
+.otraform .alt button.tuya{border-color:var(--oro-raya);color:var(--oro)}
+.otraform .alt button.viendo{border-color:var(--tinta);color:var(--tinta);background:var(--hueco)}
+#once-que-ves button{margin-left:6px;font:inherit;font-size:12px;cursor:pointer;color:var(--oro);background:none;border:0;text-decoration:underline;padding:0}
 .otraform.depago>b{color:var(--oro)}
 .otraform>span{color:var(--gris)}
 .otraform .alt{display:flex;flex-wrap:wrap;gap:4px;margin-top:2px}
@@ -1048,6 +1056,52 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
   })
 
   // Buscador + orden sobre una lista cualquiera.
+  /**
+   * Cambiar de formación cambia el once que se ve.
+   *
+   * Las fichas decían cuántos puntos daría cada una, pero el campo se quedaba
+   * en la tuya: un número sin poder ver de dónde salía. Cada formación trae su
+   * campo ya pintado, así que aquí solo se cambia el bloque y se marca cuál
+   * está puesta.
+   */
+  ;(function () {
+    var caja = document.querySelector('.otraform .alt')
+    if (!caja) return
+    var campo = document.querySelector('#once-jornada .campo')
+    if (!campo) return
+    var suya = caja.querySelector('.tuya')
+    var tuya = suya ? suya.getAttribute('data-formacion') : null
+    var aviso = document.getElementById('once-que-ves')
+
+    // `window.ONCES` se lee al pulsar, no aquí: la isla de datos va al final de
+    // la página y en este momento todavía no existe. Comprobarla al arrancar
+    // dejaba el botón mudo, sin error y sin pista de por qué.
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest ? e.target.closest('[data-formacion]') : null
+      if (!b) return
+      var nombre = b.getAttribute('data-formacion')
+      var datos = (window.ONCES || {})[nombre]
+      if (!datos) return
+      var nuevo = document.createElement('div')
+      nuevo.innerHTML = datos.html
+      var dentro = nuevo.firstElementChild
+      if (!dentro) return
+      campo.parentNode.replaceChild(dentro, campo)
+      campo = dentro
+      caja.querySelectorAll('[data-formacion]').forEach(function (x) {
+        x.classList.toggle('viendo', x.getAttribute('data-formacion') === nombre)
+      })
+      if (aviso) {
+        aviso.hidden = nombre === tuya
+        aviso.innerHTML = nombre === tuya
+          ? ''
+          : 'Estás viendo el <b>' + nombre + '</b>, que daría <b>' + datos.t.toFixed(1).replace('.', ',') + '</b> puntos.' +
+            (datos.pago ? ' Mister vende esa formación por monedas: puede que no la tengas.' : '') +
+            ' <button type="button" data-formacion="' + tuya + '">Volver a tu ' + tuya + '</button>'
+      }
+    })
+  })()
+
   function conectar (opciones) {
     var lista = document.getElementById(opciones.lista)
     if (!lista) return null
@@ -1784,7 +1838,8 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
 </div>
 <script>window.CLUBES = /*__ISLA_CLUBES__*/{}
 window.LIGA = /*__ISLA_LIGA__*/{}
-window.FICHAS = /*__ISLA_FICHAS__*/{}</script>
+window.FICHAS = /*__ISLA_FICHAS__*/{}
+window.ONCES = /*__ISLA_ONCES__*/{}</script>
 <script>if ('serviceWorker' in navigator && location.protocol.indexOf('http') === 0) window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}) })</script>
 </body>
 </html>
