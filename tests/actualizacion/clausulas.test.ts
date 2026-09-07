@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { subidasVivas, detectarSubidas, gastoPorEquipo, clausulaBase } from '../../src/actualizacion/clausulas.js'
+import { gastoEnClausulas, subidasVivas, detectarSubidas, gastoPorEquipo, clausulaBase } from '../../src/actualizacion/clausulas.js'
 
 describe('subidasVivas', () => {
   it('una cláusula en su base no es ninguna subida', () => {
@@ -136,5 +136,47 @@ describe('detectarSubidas · la cláusula tiene que subir de verdad', () => {
       'x',
     )
     expect(r).toHaveLength(1)
+  })
+})
+
+// ── gastoEnClausulas ─────────────────────────────────────────────────────────
+
+describe('gastoEnClausulas', () => {
+  const sub = (idJugador: string, escalones: number, coste: number) =>
+    ({ idJugador, equipo: 'Mario80', dia: '2026-09-05', coste, escalones })
+
+  it('suma lo visto y lo heredado, no coge el mayor', () => {
+    // El fallo real: un equipo que subió cláusulas antes de que empezáramos a
+    // mirar y también después salía con la mayor de las dos cifras en vez de
+    // con la suma, y se le contaba de menos.
+    const r = gastoEnClausulas(
+      [sub('1', 1, 500_000)],
+      [
+        { id: '1', valor: 2_500_000, clausula: 5_000_000 }, // ×2, un escalón, ya visto
+        { id: '2', valor: 1_000_000, clausula: 2_000_000 }, // ×2, un escalón, heredado
+      ],
+    )
+    expect(r.visto).toBe(500_000)
+    expect(r.heredado).toBe(200_000)
+    expect(r.escalonesHeredados).toBe(1)
+    expect(r.total).toBe(700_000)
+  })
+
+  it('no cobra dos veces la subida que ya se vio', () => {
+    const r = gastoEnClausulas([sub('1', 1, 500_000)], [{ id: '1', valor: 2_500_000, clausula: 5_000_000 }])
+    expect(r.heredado).toBe(0)
+    expect(r.total).toBe(500_000)
+  })
+
+  it('lo que se vio subir cuenta aunque el jugador ya no esté en la plantilla', () => {
+    // Es justo el punto ciego que tenía: pagar por blindar a alguien y luego
+    // venderlo dejaba el gasto sin rastro. Visto una vez, queda apuntado.
+    const r = gastoEnClausulas([sub('9', 2, 900_000)], [])
+    expect(r.total).toBe(900_000)
+  })
+
+  it('una bajada resta, porque devuelve dinero', () => {
+    const r = gastoEnClausulas([sub('1', -1, -400_000)], [])
+    expect(r.total).toBe(-400_000)
   })
 })

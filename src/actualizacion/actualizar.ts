@@ -31,7 +31,7 @@ import { verificar, verificarLiga } from './verificar.js'
 import { podar, subidasDeLaSemana, subidasDelMes, type Historico } from './historicoValores.js'
 import type { FichaGuardada } from './fichas.js'
 import { reinicioDeLiga } from '../recoleccion/parseadorSaldo.js'
-import { detectarSubidas, gastoPorEquipo, subidasVivas, type Subida } from './clausulas.js'
+import { detectarSubidas, gastoEnClausulas, gastoPorEquipo, subidasVivas, type Subida } from './clausulas.js'
 import { compararFotos, acumular, type Foto, type Novedad } from './novedades.js'
 
 const RAIZ = process.cwd()
@@ -394,7 +394,18 @@ async function intentar(): Promise<Resultado> {
     // Sigue quedándose corto, y siempre en la misma dirección: no ve lo que
     // pagaron por subirle la cláusula a alguien que luego vendieron. Así que
     // la caja de un rival es un techo, no una cifra.
-    e.gastoOculto = Math.max(e.costeSubidas ?? 0, e.gastoVisto)
+    // Lo visto más lo heredado, no el mayor de los dos: quien subió cláusulas
+    // antes de que empezáramos a mirar y también después tenía las dos cosas y
+    // solo se le contaba una.
+    const paraClausulas = (cuentas.plantillas[e.n] ?? [])
+      .map((id) => universo.find((u) => u.id === id))
+      .filter((u): u is (typeof universo)[number] => u !== undefined)
+      .map((u) => ({ id: u.id, valor: u.valor, clausula: u.clausula }))
+    const gasto = gastoEnClausulas(
+      subidasVistas.filter((s) => s.equipo === e.n),
+      paraClausulas,
+    )
+    e.gastoOculto = gasto.total
     if (!e.mio && e.gastoOculto > 0) e.saldo -= e.gastoOculto
   }
   // Las cuentas propias, sacadas del libro y no del feed.

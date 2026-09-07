@@ -182,3 +182,47 @@ export function gastoPorEquipo(subidas: Subida[]): Map<string, number> {
   for (const s of subidas) por.set(s.equipo, (por.get(s.equipo) ?? 0) + s.coste)
   return por
 }
+
+/**
+ * Lo que le ha costado a cada equipo mover cláusulas, lo mejor que se puede
+ * saber sin su libro de caja.
+ *
+ * Son dos piezas que se complementan y no se pisan:
+ *
+ *   · Lo **visto**: cada subida y cada bajada que hemos pillado comparando un
+ *     día con el siguiente, costada al valor de aquel día. Es exacto, y sobre
+ *     todo **no se pierde cuando venden al jugador**: la subida quedó apuntada
+ *     el día que pasó.
+ *   · Lo **heredado**: los escalones que ya estaban puestos antes de que
+ *     empezáramos a mirar. De esos no hay fecha, así que se estiman al valor de
+ *     hoy, que es lo único disponible.
+ *
+ * Coger el mayor de los dos, como se hacía, se quedaba corto: un equipo que
+ * subió tres cláusulas antes de que vigiláramos y una después salía con la
+ * mayor de las dos cifras en vez de con la suma.
+ */
+export function gastoEnClausulas(
+  vistas: Subida[],
+  suyos: { id: string; valor: number; clausula: number | null }[],
+): { total: number; visto: number; heredado: number; escalonesHeredados: number } {
+  const visto = vistas.reduce((t, s) => t + s.coste, 0)
+
+  const escalonesVistos = new Map<string, number>()
+  for (const s of vistas) {
+    escalonesVistos.set(s.idJugador, (escalonesVistos.get(s.idJugador) ?? 0) + s.escalones)
+  }
+
+  let heredado = 0
+  let escalonesHeredados = 0
+  for (const j of suyos) {
+    if (j.clausula === null) continue
+    const vivos = subidasVivas(j.valor, j.clausula)
+    // Solo los que no hemos visto subir: los vistos ya están contados arriba, y
+    // contarlos otra vez sería cobrarle dos veces la misma subida.
+    const sinVer = Math.max(0, vivos - (escalonesVistos.get(j.id) ?? 0))
+    escalonesHeredados += sinVer
+    heredado += sinVer * j.valor * COSTE_MODIFICACION
+  }
+
+  return { total: visto + heredado, visto, heredado, escalonesHeredados }
+}

@@ -1479,7 +1479,7 @@ ${riqueza}
 
     <div class="tarjeta">
       <h2 class="sh">Quién blinda a los suyos</h2>
-      <p class="sd">Subir una cláusula cuesta el <strong>20 % del valor</strong> del jugador. Son las subidas que siguen vivas hoy. Tu cifra sale de tu libro de caja y es exacta; la de los rivales es una estimación al valor de hoy, porque Mister no publica sus saldos.</p>
+      <p class="sd">Subir una cláusula cuesta el <b>20 % del valor</b> del jugador. La tuya sale de tu libro de caja y es exacta. La de los rivales se estima sumando dos cosas: lo que les hemos <b>visto</b> subir o bajar desde que se vigila —eso queda apuntado el día que pasa, así que no se pierde aunque luego vendan al jugador— y las subidas que ya estaban puestas antes, valoradas a día de hoy. Lo que no se puede ver: lo que pagaron por blindar a alguien y vendieron <b>antes</b> de que empezáramos a mirar. Así que estas cifras son un suelo, no un techo.<strong>20 % del valor</strong> del jugador. Son las subidas que siguen vivas hoy. Tu cifra sale de tu libro de caja y es exacta; la de los rivales es una estimación al valor de hoy, porque Mister no publica sus saldos.</p>
       <div class="rankings">
 ${filasBlindaje || '        <p class="vacio2">Nadie ha tocado ninguna cláusula.</p>'}
       </div>
