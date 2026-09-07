@@ -235,30 +235,57 @@ export async function recolectarValores(
  * en una que costaba antes saber solo los valores. Y a cambio se sabe de los
  * 523, no de los 238 que habían pasado alguna vez por el feed.
  *
- * Se para al recibir una página corta, que es como el buscador dice que ya no
- * queda nada. El tope de páginas es una red por si eso deja de cumplirse: sin
- * él, un cambio en el servidor se convertiría en un bucle infinito.
+ * Se recorre varias veces, y esto no es prudencia: es que **una sola pasada no
+ * trae a todos**. El buscador de Mister reordena su lista entre peticiones, así
+ * que al paginar hay quien sale dos veces —y se descarta— y quien no sale
+ * ninguna. Tres pasadas seguidas, medidas el 7 de septiembre de 2026, dieron
+ * 522, 495 y 523 jugadores sobre el mismo censo. Los que faltaban se perdían en
+ * silencio: la página enseñaba menos jugadores de los que hay, y las plantillas
+ * de los rivales salían cortas contra las cifras del propio Mister.
+ *
+ * La cura es unir pasadas hasta que una entera no aporte a nadie nuevo. Con eso
+ * converge en dos o tres —cuesta unos segundos más y quita el azar de en medio—.
+ *
+ * Dentro de cada pasada se para al recibir una página corta, que es como el
+ * buscador dice que ya no queda nada. El tope de páginas es una red por si eso
+ * deja de cumplirse: sin él, un cambio en el servidor sería un bucle infinito.
  */
 const MAX_PAGINAS_JUGADORES = 60
 const JUGADORES_POR_PAGINA = 50
+
+/**
+ * Cuántas veces se recorre el censo como mucho.
+ *
+ * Converge en dos o tres. Cuatro deja margen para un día malo sin convertir la
+ * actualización en algo que tarda un minuto.
+ */
+export const PASADAS_MAXIMAS = 4
 
 export async function recolectarUniverso(cliente: Cliente): Promise<JugadorMister[]> {
   const todos: JugadorMister[] = []
   const vistos = new Set<string>()
 
-  for (let pagina = 0; pagina < MAX_PAGINAS_JUGADORES; pagina += 1) {
-    const leidos = parsearJugadores(await cliente.pedirJugadores(pagina * JUGADORES_POR_PAGINA))
-    for (const j of leidos) {
-      // Paginar sobre una lista que el servidor reordena podría repetir a
-      // alguien; quedarse con la primera lectura es estable y no infla nada.
-      if (vistos.has(j.id)) continue
-      vistos.add(j.id)
-      todos.push(j)
+  for (let pasada = 1; pasada <= PASADAS_MAXIMAS; pasada += 1) {
+    const antes = vistos.size
+    let acabo = false
+
+    for (let pagina = 0; pagina < MAX_PAGINAS_JUGADORES; pagina += 1) {
+      const leidos = parsearJugadores(await cliente.pedirJugadores(pagina * JUGADORES_POR_PAGINA))
+      for (const j of leidos) {
+        // El mismo jugador puede venir en dos pasadas; la primera lectura vale.
+        if (vistos.has(j.id)) continue
+        vistos.add(j.id)
+        todos.push(j)
+      }
+      if (leidos.length < JUGADORES_POR_PAGINA) { acabo = true; break }
     }
-    if (leidos.length < JUGADORES_POR_PAGINA) return todos
+
+    if (!acabo) throw new Error(`el buscador no se acabó en ${MAX_PAGINAS_JUGADORES} páginas; algo va mal`)
+    // Una pasada entera sin nadie nuevo: ya están todos.
+    if (vistos.size === antes) break
   }
 
-  throw new Error(`el buscador no se acabó en ${MAX_PAGINAS_JUGADORES} páginas; algo va mal`)
+  return todos
 }
 
 /**
