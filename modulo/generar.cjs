@@ -361,7 +361,20 @@ for (const j of J) {
 // 🔒 Blindar: te lo pueden quitar barato. Rinde, media liga puede pagar su
 //    cláusula, y esa cláusula es barata para lo que produce — o está en el
 //    mínimo porque nunca la subiste.
-const UMBRAL_POR_PUNTO = 1100000 // ≈ el cuartil bajo de la liga en €/punto de media
+/**
+ * A partir de qué precio por punto una cláusula deja de ser barata.
+ *
+ * Era un 1.100.000 fijo con el comentario «≈ el cuartil bajo de la liga»: se
+ * midió una vez y se escribió a mano. Si la liga se encarece —y se encarece
+ * cada semana— deja de significar lo que dice, y con él el consejo de a quién
+ * blindar. Ahora se calcula: el cuartil bajo de verdad, hoy.
+ */
+const UMBRAL_POR_PUNTO = (() => {
+  const l = J.filter((j) => j.clausula && j.media > 0 && j.partidos >= 2)
+    .map((j) => j.clausula / j.media)
+    .sort((a, b) => a - b)
+  return l.length >= 20 ? l[Math.floor(l.length * 0.25)] : 1_100_000
+})()
 const RATIO_MINIMO = 1.55 // cláusula = 1,5 × valor es el suelo de Mister
 
 for (const j of J) {
@@ -846,6 +859,20 @@ const filaJugador = (j) => {
 // en cada jugador.
 const islaClubes = JSON.stringify(Object.fromEntries(CLUBES))
 
+/**
+ * Las referencias de la liga, para que un número se pueda leer.
+ *
+ * «De fiar: ±3,8» no dice nada si no se sabe cuánto se aparta la gente
+ * normalmente. Con la mediana al lado, sí.
+ */
+const islaLiga = JSON.stringify({
+  media: MEDIA_LIGA,
+  regular: (() => {
+    const l = J.map(regularidadDe).filter((x) => x !== null).sort((a, b) => a - b)
+    return l.length ? l[Math.floor(l.length / 2)] : null
+  })(),
+})
+
 const islaFichas = JSON.stringify(
   Object.fromEntries(
     J.map((j) => {
@@ -890,6 +917,8 @@ const islaFichas = JSON.stringify(
           fo: formaDe(j),
           re: regularidadDe(j),
           esp: j.riv ? esperadoConAjustes(j).total : null,
+          // Desglosado: un «3,5» a secas no dice de dónde sale ni si es bueno.
+          espb: j.riv ? esperadoConAjustes(j) : null,
           js: j.js ?? [],
           // Lo nuestro, ya calculado: repetir la fórmula en el navegador sería
           // tener dos sitios donde puede dejar de cuadrar.
@@ -1259,32 +1288,75 @@ ${deAyer.join(NL)}
 // Mbappé hace 15,0 en casa y 3,0 fuera; promediarlo esconde justo lo que hay
 // que mirar.
 const FORMACION = (YO.formacion || '').split('-').map(Number).filter((n) => Number.isFinite(n))
-const once = (() => {
-  if (FORMACION.length !== 4) return null
+/**
+ * Las formaciones que se pueden alinear en Mister.
+ *
+ * Las siete de siempre más las cinco que el juego vende por monedas, y esas
+ * cinco no me las he inventado: aparecen en su propio HTML como
+ * `add_formation_4_2_4`, `add_formation_4_6_0`, `add_formation_3_3_4`,
+ * `add_formation_3_6_1` y `add_formation_5_5_0`. La tuya, 1-3-6-1, es una de
+ * ellas, así que la tienes.
+ *
+ * De las otras cuatro de pago no hay forma de saber si las tienes, así que se
+ * enseñan marcadas: mejor decirte que existe una alineación mejor y que cuesta
+ * monedas, que ocultártela.
+ */
+const FORMACIONES = [
+  { l: [1, 3, 4, 3], pago: false },
+  { l: [1, 3, 5, 2], pago: false },
+  { l: [1, 4, 3, 3], pago: false },
+  { l: [1, 4, 4, 2], pago: false },
+  { l: [1, 4, 5, 1], pago: false },
+  { l: [1, 5, 3, 2], pago: false },
+  { l: [1, 5, 4, 1], pago: false },
+  { l: [1, 4, 2, 4], pago: true },
+  { l: [1, 4, 6, 0], pago: true },
+  { l: [1, 3, 3, 4], pago: true },
+  { l: [1, 3, 6, 1], pago: true },
+  { l: [1, 5, 5, 0], pago: true },
+]
+
+/**
+ * El mejor once posible con una formación dada.
+ *
+ * Antes esto solo sabía rellenar la formación que tuvieras puesta, y por eso
+ * nunca podía decirte que con otra sacarías más. El criterio de a quién elegir
+ * no cambia: primero quien va a jugar, luego el pronóstico de titularidad, y
+ * entre iguales el que más rinda en su partido.
+ */
+const onceCon = (formacion) => {
+  if (formacion.length !== 4) return null
   const elegidos = []
   const banquillo = []
-  FORMACION.forEach((cuantos, i) => {
+  let completo = true
+  formacion.forEach((cuantos, i) => {
     const puesto = i + 1
-    const candidatos = MIOS.filter((j) => j.puesto === puesto)
-      .sort(
-        (a, b) =>
-          // Abajo del todo, quien no va a jugar: lesionado, o con su club sin
-          // partido esta jornada. Antes solo bajaba el lesionado, y a quien no
-          // tenía partido se le contaba su media como si fuera a jugarlo.
-          (noJuega(b) ? -1 : 1) - (noJuega(a) ? -1 : 1) ||
-          // Tres escalones, no dos: titular anunciado (2), sin pronóstico (1) y
-          // suplente anunciado (0). Antes «suplente» y «no se sabe» empataban a
-          // cero, y entonces el desempate lo decidía la media — que a un
-          // suplente anunciado le sobra, porque no va a jugar.
-          (b.once === 1 ? 2 : b.once === 0 ? 0 : 1) - (a.once === 1 ? 2 : a.once === 0 ? 0 : 1) ||
-          esperadoTotal(b) - esperadoTotal(a),
-      )
+    const candidatos = MIOS.filter((j) => j.puesto === puesto).sort(
+      (a, b) =>
+        (noJuega(b) ? -1 : 1) - (noJuega(a) ? -1 : 1) ||
+        (b.once === 1 ? 2 : b.once === 0 ? 0 : 1) - (a.once === 1 ? 2 : a.once === 0 ? 0 : 1) ||
+        esperadoTotal(b) - esperadoTotal(a),
+    )
+    if (candidatos.length < cuantos) completo = false
     elegidos.push(...candidatos.slice(0, cuantos).map((j) => ({ ...j, hueco: cuantos > candidatos.length })))
     banquillo.push(...candidatos.slice(cuantos))
   })
-  return { elegidos, banquillo: banquillo.sort((a, b) => esperadoTotal(b) - esperadoTotal(a)) }
-})()
+  return {
+    elegidos,
+    banquillo: banquillo.sort((a, b) => esperadoTotal(b) - esperadoTotal(a)),
+    completo,
+    // Lo que cabe esperar del once entero. Quien no juega suma cero: contar su
+    // media sería premiar una formación por llenarla con lesionados.
+    total: elegidos.reduce((t, j) => t + (noJuega(j) ? 0 : esperadoTotal(j)), 0),
+  }
+}
 
+const once = onceCon(FORMACION)
+
+/** Todas las formaciones, ordenadas por lo que darían. */
+const formacionesProbadas = FORMACIONES.map((f) => ({ ...f, nombre: f.l.join('-'), once: onceCon(f.l) }))
+  .filter((f) => f.once !== null && f.once.completo)
+  .sort((a, b) => b.once.total - a.once.total)
 
 const filaOnce = (j) => `        <div class="mj">${dorsal(j.puesto)}${escudoDe(j.id)}<span class="n">${nombreEnlazado(j)}${pintarRacha(j)}</span>
           <span class="v">${dec(esperadoConAjustes(j).total)}${(() => {
@@ -1312,6 +1384,38 @@ const bloqueOnce = once === null || once.elegidos.length === 0
           ? ' <strong>Ojo:</strong> hay lesionados en el once porque no tienes recambio en su puesto.'
           : ''
       }</p>
+      ${(() => {
+        // Si otra formación da más, se dice. Era el punto ciego del once:
+        // rellenaba la que tuvieras puesta y nunca podía decirte que con otra
+        // sacarías más, aunque tuvieras tres delanteros de sobra.
+        const mia = formacionesProbadas.find((f) => f.nombre === YO.formacion)
+        const mejor = formacionesProbadas[0]
+        if (!mejor || !mia) return ''
+        const gana = mejor.once.total - mia.once.total
+        // Callar cuando aciertas es desaprovecharlo: si tu formación ya es la
+        // mejor, lo que hace falta saber es por cuánto y cuál sería la
+        // siguiente, no que no aparezca nada.
+        const acierta = mejor.nombre === mia.nombre || gana < 0.5
+        const segunda = formacionesProbadas.find((f) => f.nombre !== mia.nombre)
+        return `<div class="otraform${acierta ? ' bien' : mejor.pago ? ' depago' : ''}">
+        <b>${
+          acierta
+            ? `Tu ${mia.nombre} es la que más te da`
+            : `Con ${mejor.nombre} sacarías ${dec(gana)} puntos más`
+        }</b>
+        <span>${
+          acierta
+            ? `Probadas las doce formaciones con tus jugadores, ninguna la mejora${segunda ? `: la siguiente, ${segunda.nombre}, daría ${dec(mia.once.total - segunda.once.total)} puntos menos` : ''}.`
+            : `Tu ${mia.nombre} da ${dec(mia.once.total)} y ${mejor.nombre} daría ${dec(mejor.once.total)}, con los mismos jugadores.${
+                mejor.pago ? ' Esa formación Mister la vende por monedas: puede que no la tengas.' : ''
+              }`
+        }</span>
+        <span class="alt">${formacionesProbadas
+          .slice(0, 6)
+          .map((f) => `<i class="${f.nombre === mia.nombre ? 'tuya' : ''}${f.pago ? ' pago' : ''}" title="${f.pago ? 'De pago en Mister' : 'De serie'}">${f.nombre} <b>${dec(f.once.total)}</b></i>`)
+          .join('')}</span>
+      </div>`
+      })()}
       <div class="mini">
 ${once.elegidos.map(filaOnce).join(NL)}
       </div>
@@ -1861,6 +1965,7 @@ const huecos = {
   '<!--__LANZADOR__-->': LANZADOR,
   '/*__ISLA_FICHAS__*/{}': islaFichas,
   '/*__ISLA_CLUBES__*/{}': islaClubes,
+  '/*__ISLA_LIGA__*/{}': islaLiga,
   '<!--__SALDO__-->': String(MIO.saldo),
   '<!--__PLANTILLA__-->': String(MIO.pl),
   '<!--__MIS_JUGADORES__-->': String(MIOS.length),

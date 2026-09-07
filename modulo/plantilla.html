@@ -334,6 +334,10 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .cf-lineas{display:flex;flex-direction:column;gap:5px;font-size:12.5px;line-height:1.5}
 .cf-lineas .l{display:flex;justify-content:space-between;gap:12px;color:var(--gris)}
 .cf-lineas .l b{color:var(--tinta);font-family:"IBM Plex Mono",monospace;font-weight:600}
+/* La explicación de cada cifra, debajo y en pequeño: sin ella el número decora. */
+.cf-lineas .pista{display:block;font-style:normal;font-size:10.5px;color:var(--tenue);line-height:1.35;margin-top:1px}
+.cf-lineas .l>span:last-child{text-align:right;white-space:nowrap}
+.cf-lineas .l>span:last-child .pista{white-space:normal}
 .cf-pie{margin-top:18px;padding-top:12px;border-top:1px solid var(--raya);font-size:11px;color:var(--tenue);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .cf-pie a{color:var(--tenue)}
 .cf-pie a:hover{color:var(--oro)}
@@ -377,6 +381,19 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .dur.d1,.dur.d2{color:var(--sube)}
 /* El desglose de la cifra esperada. Va debajo y en pequeño: la decisión se
    toma con el número grande, pero tiene que poder auditarse sin abrir nada. */
+/* Si otra formación da más puntos con los mismos jugadores, se dice aquí. */
+.otraform{margin-bottom:11px;padding:9px 12px;border-radius:8px;border-left:3px solid var(--sube);background:var(--sube-fondo,rgba(74,222,128,.07));display:flex;flex-direction:column;gap:4px;font-size:12px;line-height:1.5}
+.otraform.depago{border-left-color:var(--oro);background:var(--oro-fondo)}
+.otraform.bien{border-left-color:var(--raya);background:var(--suelo)}
+.otraform.bien>b{color:var(--tinta)}
+.otraform>b{font-size:13px;color:var(--sube)}
+.otraform.depago>b{color:var(--oro)}
+.otraform>span{color:var(--gris)}
+.otraform .alt{display:flex;flex-wrap:wrap;gap:4px;margin-top:2px}
+.otraform .alt i{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--tenue);background:var(--tabla);border:1px solid var(--raya);border-radius:5px;padding:2px 7px}
+.otraform .alt i b{color:var(--tinta)}
+.otraform .alt i.tuya{border-color:var(--oro-raya);color:var(--oro)}
+.otraform .alt i.pago::after{content:" ·"}
 .mj .desg{display:block;font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:400;color:var(--tenue);line-height:1.3;white-space:normal;margin-top:2px}
 /* El veredicto del clausulazo. Envuelve en varias líneas a propósito: en el
    móvil no cabe de otra forma y los nombres no se pueden cortar. */
@@ -1206,10 +1223,37 @@ a{color:var(--oro)}
           (f.du ? ' <span class="dur d' + f.du + '">' + '●'.repeat(f.du) + '○'.repeat(5 - f.du) + '</span>' : '')
         : 'sin partido esta jornada'
 
+      // Cada línea dice la unidad y con qué se compara. Antes ponía «3,5» y
+      // «±3,8» a secas, y no había forma de saber si eso era bueno ni de dónde
+      // salía: un número sin referencia no informa, decora.
+      var L = window.LIGA || {}
       var lineas = []
-      if (f.esp != null) lineas.push(['Lo que cabe esperar el domingo', '<b>' + dec(f.esp) + '</b>'])
-      if (f.fo != null) lineas.push(['Forma: sus últimas jornadas frente a su media', '<b class="' + (f.fo >= 0 ? 'sube' : 'baja') + '">' + (f.fo > 0 ? '+' : '') + dec(f.fo) + '</b>'])
-      if (f.re != null) lineas.push(['De fiar: cuánto se aparta de su media', '<b>±' + dec(f.re) + '</b>'])
+      if (f.esp != null) {
+        var b = f.espb || {}
+        var de = []
+        if (b.base != null) de.push('su media ' + (f.ca === 1 ? 'en casa' : 'fuera') + ' ' + dec(b.base))
+        if (b.porForma) de.push('forma ' + (b.porForma > 0 ? '+' : '−') + dec(Math.abs(b.porForma)))
+        if (b.porRival) de.push('rival ' + (b.porRival > 0 ? '+' : '−') + dec(Math.abs(b.porRival)))
+        lineas.push([
+          'Puntos que cabe esperar el domingo<em class="pista">' + de.join(' · ') + '</em>',
+          '<b>' + dec(f.esp) + '</b> pts',
+        ])
+      }
+      if (f.fo != null) {
+        lineas.push([
+          'Forma<em class="pista">sus últimas 3 jornadas frente a su propia media de ' + dec(f.me) + '</em>',
+          '<b class="' + (f.fo >= 0 ? 'sube' : 'baja') + '">' + dec(Math.abs(f.fo)) + ' pts</b> ' + (f.fo >= 0 ? 'por encima' : 'por debajo'),
+        ])
+      }
+      if (f.re != null) {
+        var comp = L.regular != null
+          ? (f.re < L.regular ? 'más regular que la mitad de la liga' : 'menos regular que la mitad de la liga')
+          : ''
+        lineas.push([
+          'Regularidad<em class="pista">cuánto se aparta de su media cada jornada' + (L.regular != null ? '; la liga, ±' + dec(L.regular) : '') + '</em>',
+          '<b>±' + dec(f.re) + ' pts</b>' + (comp ? '<em class="pista">' + comp + '</em>' : ''),
+        ])
+      }
       if (f.hc) lineas.push(['Hasta cuánto sale a cuenta pagarlo', '<b>' + corto(f.hc.t) + '</b> · ' + (f.hc.m >= 0 ? 'te sobran ' : 'te pasas ') + corto(Math.abs(f.hc.m))])
       if (f.cz) {
         var vered = f.cz.v === 3 ? 'Buen clausulazo' : f.cz.v === 2 ? 'Clausulazo dudoso' : 'Mal clausulazo'
@@ -1290,6 +1334,7 @@ a{color:var(--oro)}
   </div>
 </div>
 <script>window.CLUBES = /*__ISLA_CLUBES__*/{}
+window.LIGA = /*__ISLA_LIGA__*/{}
 window.FICHAS = /*__ISLA_FICHAS__*/{}</script>
 </body>
 </html>
