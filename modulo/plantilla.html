@@ -298,7 +298,6 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 /* Lo que debe un equipo: se dibuja detrás de su patrimonio, en rojo rayado.
    Antes no se veía —un ancho negativo el navegador lo recorta a cero— y quien
    estaba en números rojos parecía simplemente sin dinero. */
-.bar .deuda{background:repeating-linear-gradient(45deg,var(--baja),var(--baja) 3px,transparent 3px,transparent 6px);opacity:.85}
 .val .debe{display:block;font-style:normal;font-size:9.5px;color:var(--baja);font-family:"IBM Plex Mono",monospace;line-height:1.2}
 /* Una advertencia sobre una cifra, junto a la cifra. */
 .sd.aviso{border-left:3px solid var(--oro-raya);background:var(--oro-fondo);border-radius:0 6px 6px 0;padding:7px 11px;margin-top:8px;font-size:12px;line-height:1.55}
@@ -473,6 +472,12 @@ table.jt.jornadas tr:last-child td{border-bottom:0}
 .ranking.mio .nom,.ranking.mio .pos{color:var(--oro)}
 .ranking .bar{position:relative;height:12px;border-radius:4px;background:var(--hueco);overflow:hidden;display:flex}
 .ranking .bar i{display:block;height:100%;background:var(--oro);border-radius:3px}
+/* Lo que debe, al final de la barra y separado por un corte: la barra entera es
+   lo que vale su plantilla, y solo el trozo de antes del corte es suyo. Iba en
+   dorado —la regla de arriba gana en especificidad— y parecía dinero que se
+   suma en vez de deuda que ya está restada. */
+.clave.debe{color:var(--baja)}
+.ranking .bar i.deuda{background:repeating-linear-gradient(45deg,var(--baja) 0 3px,transparent 3px 6px);opacity:.5;border-radius:0 3px 3px 0;box-shadow:inset 2px 0 0 var(--fondo,#0d0d0d)}
 .ranking .bar .caja{background:var(--oro)}
 .ranking .bar .plant{background:var(--oro-raya)}
 .ranking .bar.centro{background:linear-gradient(90deg,var(--hueco) 0 calc(50% - 1px),var(--raya) calc(50% - 1px) calc(50% + 1px),var(--hueco) calc(50% + 1px) 100%)}

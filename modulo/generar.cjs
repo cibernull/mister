@@ -1485,7 +1485,7 @@ ${clasificacion}
 
     <div class="tarjeta">
       <h2 class="sh">Quién es más rico</h2>
-      <p class="sd">Patrimonio = caja + plantilla. La parte <span class="clave caja">llena</span> es dinero disponible; la <span class="clave plant">clara</span>, jugadores. Todos empezasteis en 50 M.</p>
+      <p class="sd">Patrimonio = caja + plantilla. La parte <span class="clave caja">llena</span> es dinero disponible; la <span class="clave plant">clara</span>, jugadores. Todos empezasteis en 50 M. Quien debe dinero lleva la deuda <b class="clave debe">rayada en rojo</b> al final de su barra: la barra entera es lo que vale su plantilla, y solo lo de antes del corte es suyo. <b>Esa deuda ya está restada de la cifra</b>, no hay que volver a restarla.</p>
       <p class="sd aviso">${(() => {
         // La caja de un rival es un techo, no una cifra, y conviene decirlo
         // donde se le pone el número al lado. El valor de plantilla sí está
