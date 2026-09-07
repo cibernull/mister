@@ -48,7 +48,7 @@ const FICHAS = join(DATOS, 'fichas.json')
  * que llevaba entonces. Los partidos son la clave de todo: mientras no suban,
  * la ficha guardada sigue valiendo.
  */
-export type FichaGuardada = Ficha & { dia: string; partidos?: number }
+export type FichaGuardada = Omit<Ficha, 'jornadas'> & { dia: string; partidos?: number; jornadas?: Ficha['jornadas'] }
 
 /**
  * Cuántas fichas se piden como mucho en una pasada.
@@ -85,6 +85,10 @@ export function aQuienPedir(
     const f = fichas[j.id]
     if (f === undefined) return 0                          // nunca leída
     if (f.partidos === undefined) return 1                 // guardada antes de saber esto
+    // Guardada antes de que se leyeran las jornadas. Sin esto, una ficha que no
+    // ha cambiado de partidos no se vuelve a pedir nunca y el dato nuevo no
+    // llega jamás a los jugadores que ya estaban.
+    if (f.jornadas === undefined) return 1
     if (f.partidos !== j.partidos) return 2                // ha jugado
     if (dias(f.dia) >= DIAS_ANTES_DE_REFRESCAR) return 3   // lleva una semana
     return null
@@ -141,7 +145,16 @@ async function main(): Promise<void> {
       // igual. Lo que no vale es el id a secas, que redirige a las noticias.
       const html = await cliente.pedirPagina(`/players/${j.id}/x`)
       for (const p of parsearSerieValores(html)) (historico[p.fecha] ??= {})[j.id] = p.valor
-      fichas[j.id] = { ...parsearFicha(html), dia: hoy, partidos: j.partidos }
+      const f = parsearFicha(html)
+      // Solo las jornadas jugadas: las 38 de la temporada, para 522 jugadores,
+      // engordan el fichero y la página sin decir nada —las que no se han
+      // disputado solo traen el rival, y eso ya está en el censo.
+      fichas[j.id] = {
+        ...f,
+        jornadas: f.jornadas.filter((x) => x.puntos !== null || x.como !== null),
+        dia: hoy,
+        partidos: j.partidos,
+      }
       hechos += 1
     } catch (e) {
       fallidos.push(`${j.nombre} (${j.id}): ${e instanceof Error ? e.message : String(e)}`)

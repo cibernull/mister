@@ -305,8 +305,17 @@ const aSlug = (nombre) =>
 const fichaEn = (id, nombre) =>
   `https://mister.mundodeportivo.com/players/${encodeURIComponent(id)}/${SLUGS.get(String(id)) ?? aSlug(nombre)}`
 /** El nombre, enlazado a su ficha. Abre fuera para no perder el sitio. */
+/**
+ * El nombre abre su ficha **aquí dentro**, no en Mister.
+ *
+ * Era un enlace externo y sacaba de la aplicación cada vez que querías mirar a
+ * alguien: perdías los filtros, la posición del scroll y lo que estuvieras
+ * comparando. Ahora es un botón que abre una capa con todo lo suyo —lo de
+ * Mister y lo nuestro— y se cierra donde estabas. El enlace a Mister sigue
+ * estando, pequeño, dentro de la capa.
+ */
 const nombreEnlazado = (j) =>
-  `<a class="jl" href="${fichaEn(j.id, j.nombre)}" target="_blank" rel="noopener" title="Ver su ficha en Mister">${esc(j.nombre)}</a>`
+  `<button type="button" class="jl" data-ficha="${j.id}" title="Ver su ficha completa">${esc(j.nombre)}</button>`
 
 const PUESTOS = { 0: '—', 1: 'POR', 2: 'DEF', 3: 'MED', 4: 'DEL' }
 const PUESTOS_LARGO = { 0: 'sin posición', 1: 'portero', 2: 'defensa', 3: 'centrocampista', 4: 'delantero' }
@@ -825,6 +834,74 @@ const filaJugador = (j) => {
       ${bloqueRentable(j)}${quienPuede(j)}${bloqueClausulazo(j)}
     </div>`
 }
+
+/**
+ * Los datos de la capa, en una isla JSON y no repetidos en cada fila.
+ *
+ * Pintar la ficha entera de los quinientos treinta jugadores en el HTML serían
+ * varios megas para enseñar una cada vez. Así va una sola vez, en claves de una
+ * o dos letras, y la capa se construye al pulsar.
+ */
+// Los nombres de los clubes, para que la capa pueda escribirlos sin repetirlos
+// en cada jugador.
+const islaClubes = JSON.stringify(Object.fromEntries(CLUBES))
+
+const islaFichas = JSON.stringify(
+  Object.fromEntries(
+    J.map((j) => {
+      const c = clausulazo(j)
+      const r = hastaCuanto(j)
+      return [
+        j.id,
+        {
+          n: j.nombre,
+          p: j.puesto,
+          eq: j.eq ?? null,
+          d: j.duenioCorto ?? null,
+          mio: j.mio ? 1 : 0,
+          v: j.valor,
+          cl: j.clausula ?? null,
+          pr: j.precio ?? null,
+          et: etiquetaPrecio(j),
+          mk: j.mk ? 1 : 0,
+          ced: j.ced ? 1 : 0,
+          bl: j.bl ? 1 : 0,
+          sub: j.sub ?? 0,
+          est: j.est ?? null,
+          pt: j.puntos,
+          me: j.media,
+          pj: j.partidos,
+          g: j.gol ?? null,
+          as: j.asis ?? null,
+          t: j.tar ?? null,
+          mc: j.mc ?? null,
+          mf: j.mf ?? null,
+          ed: j.edad ?? null,
+          ti: j.tit ?? null,
+          su: j.sup ?? null,
+          on: j.once,
+          riv: j.riv ?? null,
+          ca: j.casa,
+          du: durezaDe(j),
+          se: j.semana ?? null,
+          s7: j.sem7 ?? null,
+          mes: j.subeMes ?? null,
+          fin: enUnMes(j),
+          fo: formaDe(j),
+          re: regularidadDe(j),
+          esp: j.riv ? esperadoConAjustes(j).total : null,
+          js: j.js ?? [],
+          // Lo nuestro, ya calculado: repetir la fórmula en el navegador sería
+          // tener dos sitios donde puede dejar de cuadrar.
+          hc: r === null ? null : { t: r.techo, m: r.margen, c: r.cuantos },
+          cz: c === null ? null : { v: c.cumple, pr: c.prima, pp: c.porPunto, ti: c.titular, ba: c.barata, ca: c.calendario, de: c.defendido, ju: c.jugados },
+          qp: (j.compradores ?? []).filter((e) => !e.mio).length,
+          qt: EQ.length - (j.duenio ? 1 : 0),
+        },
+      ]
+    }),
+  ),
+)
 
 const filasJugadores = J.map(filaJugador).join(NL)
 const PORID_PRE = new Map(J.map((j) => [String(j.id), j]))
@@ -1782,6 +1859,8 @@ const huecos = {
   '<!--__GENERADO__-->': YO.generado,
   '<!--__LANZAR__-->': LANZAR,
   '<!--__LANZADOR__-->': LANZADOR,
+  '/*__ISLA_FICHAS__*/{}': islaFichas,
+  '/*__ISLA_CLUBES__*/{}': islaClubes,
   '<!--__SALDO__-->': String(MIO.saldo),
   '<!--__PLANTILLA__-->': String(MIO.pl),
   '<!--__MIS_JUGADORES__-->': String(MIOS.length),

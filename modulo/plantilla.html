@@ -294,7 +294,49 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .jx .prox{color:var(--gris)}
 .jx .prox i{font-style:normal;color:var(--tenue)}
 .et-once{color:var(--sube);background:var(--sube-fondo);border:1px solid currentColor}
-.jl{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+/* El nombre es un botón, no un enlace: abre la ficha aquí dentro. Se disfraza
+   de texto para no llenar las listas de botones. */
+.jl{color:inherit;text-decoration:none;border-bottom:1px solid transparent;background:none;border-top:0;border-left:0;border-right:0;padding:0;font:inherit;cursor:pointer;text-align:left}
+
+/* ── La ficha del jugador, en una capa ──────────────────────────────────── */
+.capa{position:fixed;inset:0;z-index:60;display:flex;align-items:flex-end;justify-content:center}
+.capa-fondo{position:absolute;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(2px)}
+.capa-hoja{position:relative;width:100%;max-width:640px;max-height:92vh;overflow-y:auto;overscroll-behavior:contain;background:var(--tabla);border:1px solid var(--raya);border-radius:16px 16px 0 0;padding:18px 16px 26px;animation:sube .18s ease-out}
+@media (min-width:700px){.capa{align-items:center}.capa-hoja{border-radius:16px;max-height:88vh}}
+@keyframes sube{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
+.capa-x{position:sticky;top:0;float:right;margin:-6px -4px 0 0;width:32px;height:32px;border-radius:50%;border:1px solid var(--raya);background:var(--suelo);color:var(--gris);font-size:13px;cursor:pointer;z-index:2}
+.capa-x:hover{color:var(--tinta);border-color:var(--oro-raya)}
+
+.cf-cab{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.cf-cab h3{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:26px;line-height:1.1;margin:0}
+.cf-club{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--gris);margin-top:2px}
+.cf-ets{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+
+.cf-cifras{display:grid;grid-template-columns:repeat(auto-fit,minmax(76px,1fr));gap:5px;margin-top:14px}
+.cf-cifras .dato{align-items:flex-start}
+
+.cf-sec{margin-top:18px}
+.cf-sec>h4{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--tenue);margin:0 0 8px}
+
+/* Las jornadas como las pinta Mister: barra de puntos, eventos debajo y el
+   escudo del rival. Es su forma de contarlo y se lee de un vistazo. */
+.cf-jor{display:flex;gap:4px;overflow-x:auto;padding-bottom:4px}
+.cf-j{flex:none;width:40px;display:flex;flex-direction:column;align-items:center;gap:3px}
+.cf-j .col{height:86px;width:100%;display:flex;flex-direction:column;justify-content:flex-end}
+.cf-j .b{border-radius:5px 5px 0 0;display:flex;align-items:flex-start;justify-content:center;padding-top:3px;font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;color:#0d0d0d;min-height:16px}
+.cf-j .b.alta{background:var(--sube)} .cf-j .b.media{background:var(--oro)}
+.cf-j .b.baja{background:var(--raya);color:var(--gris)} .cf-j .b.cero{background:var(--baja);color:#fff}
+.cf-j .ev{display:flex;flex-wrap:wrap;justify-content:center;gap:1px;font-size:9px;min-height:12px;line-height:1}
+.cf-j .esc{display:flex;align-items:center;justify-content:center;height:16px}
+.cf-j .n{font-family:"IBM Plex Mono",monospace;font-size:8.5px;color:var(--tenue)}
+.cf-j.nojugo .col{opacity:.35}
+
+.cf-lineas{display:flex;flex-direction:column;gap:5px;font-size:12.5px;line-height:1.5}
+.cf-lineas .l{display:flex;justify-content:space-between;gap:12px;color:var(--gris)}
+.cf-lineas .l b{color:var(--tinta);font-family:"IBM Plex Mono",monospace;font-weight:600}
+.cf-pie{margin-top:18px;padding-top:12px;border-top:1px solid var(--raya);font-size:11px;color:var(--tenue);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.cf-pie a{color:var(--tenue)}
+.cf-pie a:hover{color:var(--oro)}
 .jl:hover,.jl:focus-visible{color:var(--oro);border-bottom-color:var(--oro-raya)}
 /* Cláusula subida. Color propio: verde y rosa son ganar y perder, y el oro
    es el dinero. Esto es otra cosa —lo blindado— y se distingue de un vistazo. */
@@ -1073,7 +1115,181 @@ a{color:var(--oro)}
     sessionStorage.removeItem('parte-act')
     try { parte(JSON.parse(guardado)) } catch (e) {}
   }
+
+
 })()
+
+  // ── La ficha de un jugador, en una capa ──────────────────────────────────
+  //
+  // Antes el nombre era un enlace a Mister y cada consulta te sacaba de la
+  // aplicación: perdías los filtros, el scroll y lo que estuvieras comparando.
+  // Ahora se abre aquí, con lo de Mister y lo nuestro junto, y al cerrar sigues
+  // donde estabas. La capa se construye al pulsar desde una isla de datos, no
+  // se pinta quinientas veces en el HTML.
+  ;(function () {
+    // La capa y su isla de datos van al final del body, después de este script:
+    // buscarlas ahora daría null y esto se saldría en silencio, que es
+    // exactamente lo que pasaba. Se espera a que el documento esté montado.
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', arrancarCapa)
+    } else {
+      arrancarCapa()
+    }
+
+    function arrancarCapa () {
+    var capa = document.getElementById('capa')
+    var cuerpo = document.getElementById('capa-cuerpo')
+    if (!capa || !cuerpo || !window.FICHAS) return
+
+    var CLUB = window.CLUBES || {}
+    var esc = function (x) {
+      return String(x == null ? '' : x).replace(/[&<>"]/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]
+      })
+    }
+    var eur = function (n) { return Math.round(n).toLocaleString('es-ES') + ' €' }
+    var corto = function (n) {
+      var m = Math.round(n)
+      if (Math.abs(m) >= 1e6) return (m / 1e6).toFixed(Math.abs(m) >= 1e7 ? 0 : 1).replace('.', ',') + ' M'
+      if (Math.abs(m) >= 1000) return Math.round(m / 1000) + ' K'
+      return String(m)
+    }
+    var dec = function (n) { return n == null ? '—' : Number(n).toFixed(1).replace('.', ',') }
+    var firma = function (n) { return (n > 0 ? '+' : n < 0 ? '−' : '') + corto(Math.abs(n)) }
+    var PUESTO = { 0: '—', 1: 'POR', 2: 'DEF', 3: 'MED', 4: 'DEL' }
+    var escudo = function (id) { return id ? '<i class="ec e' + id + '" title="' + esc(CLUB[id] || '') + '"></i>' : '' }
+    var dato = function (et, v, tit) {
+      return v == null || v === '' ? '' :
+        '<span class="dato"' + (tit ? ' title="' + esc(tit) + '"' : '') + '><i>' + et + '</i><b>' + v + '</b></span>'
+    }
+
+    // Los eventos, con el icono que usa Mister. Una letra por evento, que es
+    // como vienen guardados para no repetir palabras quinientas veces.
+    var ICONO = { g: '⚽', a: '🅰', y: '🟨', p: '🎯', s: '🧤', i: '⬆', o: '⬇' }
+    var NOMBRE_EV = { g: 'gol', a: 'asistencia', y: 'tarjeta amarilla', p: 'penalti', s: 'penalti parado', i: 'entró desde el banquillo', o: 'fue sustituido' }
+
+    function jornadas (f) {
+      if (!f.js || !f.js.length) return '<p class="vacio2">Todavía no ha jugado ninguna jornada.</p>'
+      var max = 1
+      f.js.forEach(function (j) { if (j[1] != null && j[1] > max) max = j[1] })
+      return '<div class="cf-jor">' + f.js.map(function (j) {
+        var n = j[0], pts = j[1], riv = j[2], inicio = j[3], ev = j[4] || ''
+        var jugo = pts != null
+        var clase = !jugo ? 'baja' : pts >= 8 ? 'alta' : pts >= 4 ? 'media' : pts > 0 ? 'baja' : 'cero'
+        var alto = jugo ? Math.max(16, Math.round((Math.max(pts, 0) / max) * 86)) : 6
+        var iconos = ev.split('').map(function (c) {
+          return ICONO[c] ? '<span title="' + esc(NOMBRE_EV[c] || c) + '">' + ICONO[c] + '</span>' : ''
+        }).join('')
+        return '<div class="cf-j' + (jugo ? '' : ' nojugo') + '">' +
+          '<div class="col"><div class="b ' + clase + '" style="height:' + alto + 'px" title="' +
+          (jugo ? pts + ' puntos' : 'no jugó') + (inicio ? ', de inicio' : '') + '">' + (jugo ? pts : '') + '</div></div>' +
+          '<div class="ev">' + iconos + '</div>' +
+          '<div class="esc">' + escudo(riv) + '</div>' +
+          '<div class="n">J' + n + '</div>' +
+          '</div>'
+      }).join('') + '</div>'
+    }
+
+    function pintar (id) {
+      var f = window.FICHAS[id]
+      if (!f) return
+      var ets = []
+      if (f.mk) ets.push('<span class="et et-mk">' + (f.ced ? 'se cede' : 'en el mercado') + '</span>')
+      ets.push(f.d ? '<span class="et et-eq' + (f.mio ? ' et-mio' : '') + '">' + esc(f.d) + '</span>' : '<span class="et et-libre">libre</span>')
+      if (f.sub) ets.push('<span class="et et-sub">🛡 ×' + (1.5 + 0.5 * f.sub).toFixed(1).replace('.', ',') + '</span>')
+      if (f.on === 1) ets.push('<span class="et et-once">👕 titular</span>')
+      if (f.est === 'injury') ets.push('<span class="et et-mal">🏥 lesionado</span>')
+      else if (f.est) ets.push('<span class="et et-mal">' + esc(f.est) + '</span>')
+
+      var partido = f.riv
+        ? (f.ca === 1 ? 'en casa' : 'fuera') + ' contra <b>' + esc(CLUB[f.riv] || '?') + '</b>' +
+          (f.du ? ' <span class="dur d' + f.du + '">' + '●'.repeat(f.du) + '○'.repeat(5 - f.du) + '</span>' : '')
+        : 'sin partido esta jornada'
+
+      var lineas = []
+      if (f.esp != null) lineas.push(['Lo que cabe esperar el domingo', '<b>' + dec(f.esp) + '</b>'])
+      if (f.fo != null) lineas.push(['Forma: sus últimas jornadas frente a su media', '<b class="' + (f.fo >= 0 ? 'sube' : 'baja') + '">' + (f.fo > 0 ? '+' : '') + dec(f.fo) + '</b>'])
+      if (f.re != null) lineas.push(['De fiar: cuánto se aparta de su media', '<b>±' + dec(f.re) + '</b>'])
+      if (f.hc) lineas.push(['Hasta cuánto sale a cuenta pagarlo', '<b>' + corto(f.hc.t) + '</b> · ' + (f.hc.m >= 0 ? 'te sobran ' : 'te pasas ') + corto(Math.abs(f.hc.m))])
+      if (f.cz) {
+        var vered = f.cz.v === 3 ? 'Buen clausulazo' : f.cz.v === 2 ? 'Clausulazo dudoso' : 'Mal clausulazo'
+        lineas.push(['Clausulazo: prima real ' + corto(f.cz.pr) + (f.cz.pp != null ? ' · ' + corto(f.cz.pp) + ' por punto' : ''), '<b>' + vered + '</b>'])
+        lineas.push([
+          (f.cz.ti ? '✓' : '✗') + ' titular · ' + (f.cz.ba ? '✓' : '✗') + ' prima barata · ' + (f.cz.ca ? '✓' : '✗') + ' buen partido',
+          f.cz.de ? '🛡 lo defienden' : 'sin blindar',
+        ])
+      }
+      // «Rivales que pueden pagar su lo piden» era lo que salía al pegar la
+      // etiqueta del precio detrás de un posesivo. Cada precio pide su frase.
+      var comoSeLlama = f.et === 'cláusula' ? 'pagar su cláusula' : f.et === 'lo piden' ? 'pagar lo que piden por él' : 'pagar su valor'
+      lineas.push(['Rivales que pueden ' + comoSeLlama, '<b>' + f.qp + '</b> de ' + (f.qt - 1)])
+
+      var valor = []
+      if (f.se) valor.push('<span class="par"><span class="' + (f.se > 0 ? 'sube' : 'baja') + '">' + firma(f.se) + '</span> hoy</span>')
+      if (f.s7) valor.push('<span class="par"><span class="' + (f.s7 > 0 ? 'sube' : 'baja') + '">' + firma(f.s7) + '</span> en 7 días</span>')
+      if (f.mes != null) valor.push('<span class="par"><span class="' + (f.mes > 0 ? 'sube' : 'baja') + '">' + (f.mes > 0 ? '+' : '') + Math.round(f.mes * 100) + ' %</span> este mes</span>')
+      if (f.fin != null) valor.push('<span class="par proy">~' + corto(f.fin) + ' en un mes</span>')
+
+      cuerpo.innerHTML =
+        '<div class="cf-cab"><span class="dorsal p' + f.p + '">' + PUESTO[f.p] + '</span>' +
+        '<div style="min-width:0"><h3 id="capa-nombre">' + esc(f.n) + '</h3>' +
+        '<div class="cf-club">' + escudo(f.eq) + esc(CLUB[f.eq] || '') + (f.ed ? ' · ' + f.ed + ' años' : '') + '</div>' +
+        '<div class="cf-ets">' + ets.join('') + '</div></div></div>' +
+
+        '<div class="cf-cifras">' +
+          dato('puntos', f.pt) + dato('media', dec(f.me), 'Puntos de media por partido') +
+          dato('partidos', f.pj) + dato('goles', f.g) + dato('asistencias', f.as) + dato('tarjetas', f.t) +
+          dato('de inicio', f.ti != null && f.ti + f.su > 0 ? f.ti + ' de ' + (f.ti + f.su) : null) +
+          dato('en casa', dec(f.mc), 'Media jugando en casa') + dato('fuera', dec(f.mf), 'Media jugando fuera') +
+          dato(f.et, corto(f.pr)) + (f.pr !== f.v ? dato('lo vale', corto(f.v)) : '') +
+          (f.cl && f.cl !== f.pr ? dato('cláusula', corto(f.cl)) : '') +
+        '</div>' +
+
+        '<div class="cf-sec"><h4>Próximo partido</h4><div class="cf-lineas"><div class="l"><span>' + partido + '</span></div></div></div>' +
+        (valor.length ? '<div class="cf-sec"><h4>Su valor</h4><div class="jv" style="margin:0">' + valor.join('<span class="sep">·</span>') + '</div></div>' : '') +
+        '<div class="cf-sec"><h4>Jornada a jornada</h4>' + jornadas(f) + '</div>' +
+        (lineas.length ? '<div class="cf-sec"><h4>Lo que decimos nosotros</h4><div class="cf-lineas">' +
+          lineas.map(function (l) { return '<div class="l"><span>' + l[0] + '</span><span>' + l[1] + '</span></div>' }).join('') +
+          '</div></div>' : '') +
+        '<div class="cf-pie"><span>Las cifras de arriba son de Mister; las de «lo que decimos nosotros», calculadas aquí.</span>' +
+        '<a href="https://mister.mundodeportivo.com/players/' + encodeURIComponent(id) + '/x" target="_blank" rel="noopener">Abrir en Mister ↗</a></div>'
+    }
+
+    function abrir (id) {
+      pintar(id)
+      capa.hidden = false
+      document.body.style.overflow = 'hidden'
+      var x = capa.querySelector('.capa-x')
+      if (x) x.focus()
+      // Una entrada en el historial para que el botón «atrás» del móvil cierre
+      // la capa en vez de sacarte de la página, que es lo que espera cualquiera.
+      try { history.pushState({ ficha: id }, '') } catch (e) {}
+    }
+    function cerrar (porHistorial) {
+      if (capa.hidden) return
+      capa.hidden = true
+      document.body.style.overflow = ''
+      if (!porHistorial && history.state && history.state.ficha) { try { history.back() } catch (e) {} }
+    }
+
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest ? e.target.closest('[data-ficha]') : null
+      if (b) { e.preventDefault(); abrir(b.getAttribute('data-ficha')); return }
+      if (e.target.closest && e.target.closest('[data-cerrar]')) cerrar()
+    })
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') cerrar() })
+    window.addEventListener('popstate', function () { cerrar(true) })
+    }
+  })()
 </script>
+<div class="capa" id="capa" hidden>
+  <div class="capa-fondo" data-cerrar></div>
+  <div class="capa-hoja" role="dialog" aria-modal="true" aria-labelledby="capa-nombre">
+    <button type="button" class="capa-x" data-cerrar aria-label="Cerrar">✕</button>
+    <div class="capa-cuerpo" id="capa-cuerpo"></div>
+  </div>
+</div>
+<script>window.CLUBES = /*__ISLA_CLUBES__*/{}
+window.FICHAS = /*__ISLA_FICHAS__*/{}</script>
 </body>
 </html>

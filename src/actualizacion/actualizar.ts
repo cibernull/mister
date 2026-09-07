@@ -586,7 +586,24 @@ function detalleDe(f: FichaGuardada | undefined): {
   tit: number | null
   sup: number | null
   once: 1 | 0 | null
+  asis: number | null
+  edad: number | null
+  /** Cada jornada jugada, en compacto: [jornada, puntos, rival, deInicio, eventos]. */
+  js: [number, number | null, number | null, 0 | 1, string][]
 } {
+  // Las jornadas van en tuplas y no en objetos porque son 522 jugadores por 38
+  // jornadas y las claves repetidas quinientas veces pesan más que los datos.
+  // Los eventos se abrevian a una letra: g gol, a asistencia, y tarjeta,
+  // p penalti, s penalti parado, i entra, o sale.
+  const LETRA: Record<string, string> = {
+    goal: 'g',
+    assist: 'a',
+    yellow: 'y',
+    penalty: 'p',
+    saved_penalty: 's',
+    sub_in: 'i',
+    sub_out: 'o',
+  }
   return {
     gol: f?.goles ?? null,
     tar: f?.tarjetas ?? null,
@@ -595,6 +612,15 @@ function detalleDe(f: FichaGuardada | undefined): {
     tit: f?.titularidades ?? null,
     sup: f?.suplencias ?? null,
     once: f === undefined || f.titular === null ? null : f.titular ? 1 : 0,
+    asis: f?.asistencias ?? null,
+    edad: f?.edad ?? null,
+    js: (f?.jornadas ?? []).map((j) => [
+      j.jornada,
+      j.puntos,
+      j.rival,
+      j.como === 'inicio' ? 1 : 0,
+      j.eventos.map((e) => LETRA[e] ?? '').join(''),
+    ]),
   }
 }
 
