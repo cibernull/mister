@@ -335,6 +335,9 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 .cf-lineas .l{display:flex;justify-content:space-between;gap:12px;color:var(--gris)}
 .cf-lineas .l b{color:var(--tinta);font-family:"IBM Plex Mono",monospace;font-weight:600}
 /* La explicación de cada cifra, debajo y en pequeño: sin ella el número decora. */
+.cf-graf{margin-top:8px}
+.cf-graf svg{display:block;width:100%;height:54px}
+.cf-graf .ejes{display:flex;justify-content:space-between;font-family:"IBM Plex Mono",monospace;font-size:9px;color:var(--tenue);margin-top:2px}
 .cf-lineas .pista{display:block;font-style:normal;font-size:10.5px;color:var(--tenue);line-height:1.35;margin-top:1px}
 .cf-lineas .l>span:last-child{text-align:right;white-space:nowrap}
 .cf-lineas .l>span:last-child .pista{white-space:normal}
@@ -1207,6 +1210,32 @@ a{color:var(--oro)}
       }).join('') + '</div>'
     }
 
+    /**
+     * La curva de su valor, con los días que haya.
+     *
+     * Es lo que Mister pinta en su ficha y aquí faltaba: un «+58 % este mes»
+     * no distingue una subida sostenida de un pico seguido de diez días
+     * plano, y eso cambia si compras hoy o esperas.
+     */
+    function grafico (f) {
+      var l = f.hv
+      if (!l || l.length < 3) return ''
+      var min = Math.min.apply(null, l), max = Math.max.apply(null, l)
+      var W = 300, H = 54
+      var paso = W / (l.length - 1)
+      var alto = function (v) { return max === min ? H / 2 : H - 4 - ((v - min) / (max - min)) * (H - 8) }
+      var puntos = l.map(function (v, i) { return (i * paso).toFixed(1) + ',' + alto(v).toFixed(1) }).join(' ')
+      var sube = l[l.length - 1] >= l[0]
+      var color = sube ? 'var(--sube)' : 'var(--baja)'
+      return '<div class="cf-graf">' +
+        '<svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" aria-hidden="true">' +
+        '<polyline points="' + puntos + ' ' + W + ',' + H + ' 0,' + H + '" fill="' + color + '" opacity=".10"></polyline>' +
+        '<polyline points="' + puntos + '" fill="none" stroke="' + color + '" stroke-width="1.6" stroke-linejoin="round"></polyline>' +
+        '</svg>' +
+        '<div class="ejes"><span>' + corto(min * 1000) + '</span><span>' + l.length + ' días</span><span>' + corto(max * 1000) + '</span></div>' +
+        '</div>'
+    }
+
     function pintar (id) {
       var f = window.FICHAS[id]
       if (!f) return
@@ -1246,13 +1275,16 @@ a{color:var(--oro)}
         ])
       }
       if (f.re != null) {
-        var comp = L.regular != null
-          ? (f.re < L.regular ? 'más regular que la mitad de la liga' : 'menos regular que la mitad de la liga')
-          : ''
-        lineas.push([
-          'Regularidad<em class="pista">cuánto se aparta de su media cada jornada' + (L.regular != null ? '; la liga, ±' + dec(L.regular) : '') + '</em>',
-          '<b>±' + dec(f.re) + ' pts</b>' + (comp ? '<em class="pista">' + comp + '</em>' : ''),
-        ])
+        // «Menos regular que la mitad de la liga» no se entendía, y con razón:
+        // no decía respecto a qué. Ahora se dice el número de la liga y qué
+        // significa para alinearlo, que es para lo que sirve.
+        var pista = 'Cada jornada se aparta ±' + dec(f.re) + ' puntos de su media de ' + dec(f.me) + '.'
+        if (L.regular != null) {
+          pista += f.re < L.regular
+            ? ' Entre los que rinden (media 4 o más), la mitad se aparta más de ±' + dec(L.regular) + ': es de los constantes, da parecido cada semana.'
+            : ' Entre los que rinden (media 4 o más), la mitad se aparta menos de ±' + dec(L.regular) + ': es de los irregulares, lo mismo te hace 0 que 18.'
+        }
+        lineas.push(['Regularidad<em class="pista">' + pista + '</em>', '<b>±' + dec(f.re) + ' pts</b>'])
       }
       if (f.hc) lineas.push(['Hasta cuánto sale a cuenta pagarlo', '<b>' + corto(f.hc.t) + '</b> · ' + (f.hc.m >= 0 ? 'te sobran ' : 'te pasas ') + corto(Math.abs(f.hc.m))])
       if (f.cz) {
@@ -1290,7 +1322,9 @@ a{color:var(--oro)}
         '</div>' +
 
         '<div class="cf-sec"><h4>Próximo partido</h4><div class="cf-lineas"><div class="l"><span>' + partido + '</span></div></div></div>' +
-        (valor.length ? '<div class="cf-sec"><h4>Su valor</h4><div class="jv" style="margin:0">' + valor.join('<span class="sep">·</span>') + '</div></div>' : '') +
+        (valor.length || f.hv ? '<div class="cf-sec"><h4>Su valor</h4>' +
+          (valor.length ? '<div class="jv" style="margin:0">' + valor.join('<span class="sep">·</span>') + '</div>' : '') +
+          grafico(f) + '</div>' : '') +
         '<div class="cf-sec"><h4>Jornada a jornada</h4>' + jornadas(f) + '</div>' +
         (lineas.length ? '<div class="cf-sec"><h4>Lo que decimos nosotros</h4><div class="cf-lineas">' +
           lineas.map(function (l) { return '<div class="l"><span>' + l[0] + '</span><span>' + l[1] + '</span></div>' }).join('') +

@@ -3,7 +3,7 @@ import { aQuienPedir, DIAS_ANTES_DE_REFRESCAR, type FichaGuardada } from '../../
 
 const HOY = '2026-09-07'
 const ficha = (partidos: number | undefined, dia = HOY) =>
-  ({ nombre: 'x', posicion: 3, goles: 0, tarjetas: 0, mediaCasa: null, mediaFuera: null, edad: 20, titular: null, titularidades: 0, suplencias: 0, dia, partidos }) as unknown as FichaGuardada
+  ({ nombre: 'x', posicion: 3, goles: 0, tarjetas: 0, mediaCasa: null, mediaFuera: null, edad: 20, titular: null, titularidades: 0, suplencias: 0, dia, partidos, jornadas: [] }) as unknown as FichaGuardada
 const j = (id: string, partidos: number) => ({ id, partidos })
 
 describe('aQuienPedir', () => {
@@ -43,5 +43,13 @@ describe('aQuienPedir', () => {
 
   it('una ficha guardada antes de que se supieran los partidos se refresca una vez', () => {
     expect(aQuienPedir([j('1', 4)], { 1: ficha(undefined) }, HOY)).toEqual(['1'])
+  })
+
+  it('y una guardada antes de que se leyeran las jornadas, también', () => {
+    // Sin esto, a quien ya estuviera guardado y no volviera a jugar no se le
+    // pediría la ficha nunca, y el desglose por jornadas no le llegaría jamás.
+    const sinJornadas = { ...ficha(4) } as Record<string, unknown>
+    delete sinJornadas.jornadas
+    expect(aQuienPedir([j('1', 4)], { 1: sinJornadas as unknown as FichaGuardada }, HOY)).toEqual(['1'])
   })
 })

@@ -857,6 +857,22 @@ const filaJugador = (j) => {
  */
 // Los nombres de los clubes, para que la capa pueda escribirlos sin repetirlos
 // en cada jugador.
+/** La serie de valores de cada jugador, en miles y por orden de día. */
+const HIST = opcional('historico-valores.json', {})
+
+const SERIES = (() => {
+  const dias = Object.keys(HIST).sort()
+  const m = new Map()
+  for (const d of dias) {
+    for (const [id, v] of Object.entries(HIST[d])) {
+      if (!m.has(id)) m.set(id, [])
+      m.get(id).push(Math.round(v / 1000))
+    }
+  }
+  // Menos de tres días no dibuja una línea, dibuja una raya.
+  return new Map([...m].filter(([, l]) => l.length >= 3))
+})()
+
 const islaClubes = JSON.stringify(Object.fromEntries(CLUBES))
 
 /**
@@ -867,9 +883,18 @@ const islaClubes = JSON.stringify(Object.fromEntries(CLUBES))
  */
 const islaLiga = JSON.stringify({
   media: MEDIA_LIGA,
+  // La mediana de regularidad, pero solo entre los que rinden.
+  //
+  // Con la liga entera salía ±1,3, y no porque sean constantes: es que
+  // cuatrocientos suplentes hacen 0, 1, 2 todas las semanas y se apartan poco
+  // de casi nada. Comparar contra eso decía que un delantero de media 11 es
+  // «de los irregulares» por el simple hecho de puntuar.
   regular: (() => {
-    const l = J.map(regularidadDe).filter((x) => x !== null).sort((a, b) => a - b)
-    return l.length ? l[Math.floor(l.length / 2)] : null
+    const l = J.filter((j) => j.media >= 4)
+      .map(regularidadDe)
+      .filter((x) => x !== null)
+      .sort((a, b) => a - b)
+    return l.length >= 10 ? l[Math.floor(l.length / 2)] : null
   })(),
 })
 
@@ -920,6 +945,10 @@ const islaFichas = JSON.stringify(
           // Desglosado: un «3,5» a secas no dice de dónde sale ni si es bueno.
           espb: j.riv ? esperadoConAjustes(j) : null,
           js: j.js ?? [],
+          // Su valor día a día, en miles para no arrastrar tres ceros por dato
+          // quinientas veces. Es lo que Mister pinta en su ficha y aquí faltaba:
+          // un «+58 % este mes» no distingue una subida sostenida de un pico.
+          hv: SERIES.get(String(j.id)) ?? null,
           // Lo nuestro, ya calculado: repetir la fórmula en el navegador sería
           // tener dos sitios donde puede dejar de cuadrar.
           hc: r === null ? null : { t: r.techo, m: r.margen, c: r.cuantos },
