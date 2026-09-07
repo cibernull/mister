@@ -25890,73 +25890,6 @@
   "d": 0
  },
  {
-  "id": "61297",
-  "nombre": "Luken Beitia",
-  "valor": 160000,
-  "puntos": 1,
-  "media": 1,
-  "partidos": 1,
-  "semana": 0,
-  "sem7": -32000,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "other",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   1,
-   null,
-   null
-  ],
-  "eq": 16,
-  "riv": 23,
-  "casa": 0,
-  "gol": 0,
-  "tar": 1,
-  "mc": 0,
-  "mf": 1,
-  "tit": 1,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 22,
-  "js": [
-   [
-    1,
-    1,
-    15,
-    1,
-    "y"
-   ],
-   [
-    2,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    5,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "822248",
   "nombre": "Rockson Yeboah",
   "valor": 160000,
@@ -26019,6 +25952,73 @@
     48,
     0,
     "yi"
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "61297",
+  "nombre": "Luken Beitia",
+  "valor": 160000,
+  "puntos": 1,
+  "media": 1,
+  "partidos": 1,
+  "semana": 0,
+  "sem7": -32000,
+  "mes": null,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "other",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   1,
+   null,
+   null
+  ],
+  "eq": 16,
+  "riv": 23,
+  "casa": 0,
+  "gol": 0,
+  "tar": 1,
+  "mc": 0,
+  "mf": 1,
+  "tit": 1,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 22,
+  "js": [
+   [
+    1,
+    1,
+    15,
+    1,
+    "y"
+   ],
+   [
+    2,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    5,
+    0,
+    ""
    ]
   ],
   "p": 0,
@@ -32901,54 +32901,6 @@
   "d": 0
  },
  {
-  "id": "59532",
-  "nombre": "Marash Kumbulla",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -17000,
-  "mes": -100000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 14,
-  "riv": 15,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 26,
-  "js": [
-   [
-    1,
-    null,
-    17,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "67870",
   "nombre": "Adam Boayar",
   "valor": 160000,
@@ -33214,6 +33166,54 @@
     6,
     null,
     5,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "59532",
+  "nombre": "Marash Kumbulla",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -17000,
+  "mes": -100000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 14,
+  "riv": 15,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 26,
+  "js": [
+   [
+    1,
+    null,
+    17,
     0,
     ""
    ]
