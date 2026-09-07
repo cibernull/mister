@@ -83,34 +83,26 @@ jobs:
       # un día entero sin fichas. Se mira cuánto hace de la última, con una
       # marca que viaja en la caché junto al volcado: así la hace la primera
       # pasada que se encuentre con el plazo cumplido, sea la que sea.
-      # Con tope de tiempo y sin poder tumbar la pasada, y las dos cosas por lo
-      # mismo: son 522 peticiones a Mister y el día que vaya lento —el 7 de
-      # septiembre se pasó de nueve minutos a más de treinta y siete— bloquea
-      # todo lo demás. El `concurrency` deja las siguientes pasadas en cola y
-      # el freno del lanzador se salta sus turnos, así que una fuente lenta
-      # acababa congelando el saldo, las cláusulas y el mercado.
+      # Las fichas, en cada pasada y no una vez al día.
       #
-      # La marca se escribe ANTES de empezar, no después. Si se escribiera al
-      # final, una pasada que se pasa de tiempo no la dejaría puesta y volvería
-      # a intentarlo en la siguiente, y en la siguiente: veinte minutos
-      # perdidos cada media hora. Mejor quedarse sin fichas un día que sin
-      # actualizar ninguna.
-      - name: Las fichas, si toca
-        timeout-minutes: 20
+      # Antes se pedían las 523 todos los días porque también servían para la
+      # serie de valores; pero esa serie la rellena la pasada normal desde el
+      # censo, en once peticiones. Los demás campos —goles, tarjetas, medias,
+      # titularidades— solo cambian cuando el jugador juega, y eso se sabe
+      # mirando si le han subido los partidos.
+      #
+      # Así que ahora se pide solo a quien le ha pasado algo, con tope de 120
+      # por pasada: dos minutos en vez de cincuenta. Después de una jornada
+      # cambian trescientas y se reparten entre las pasadas siguientes, que van
+      # cada media hora.
+      #
+      # El tope de tiempo y el `continue-on-error` se quedan de red: el 7 de
+      # septiembre de 2026 una de estas se colgó cuarenta y nueve minutos y
+      # congeló detrás el saldo, las cláusulas y el mercado.
+      - name: Refrescar las fichas que hayan cambiado
+        timeout-minutes: 8
         continue-on-error: true
-        run: |
-          marca=datos/.ultima-pasada-de-fichas
-          ahora=$(date -u +%s)
-          ultima=0
-          [ -f "$marca" ] && ultima=$(cat "$marca")
-          horas=$(( (ahora - ultima) / 3600 ))
-          if [ $(( ahora - ultima )) -ge 72000 ]; then
-            echo "La última fue hace ${horas} h: toca."
-            echo "$ahora" > "$marca"
-            npm run fichas
-          else
-            echo "La última fue hace ${horas} h: todavía no toca."
-          fi
+        run: npm run fichas
 
       # Si las cuentas no cuadran con las de Mister, esto sale con error y no
       # escribe nada. Es lo correcto: mejor los datos de la pasada anterior que unos
