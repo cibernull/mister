@@ -10,7 +10,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "24": {
   "nombre": "Unai López",
@@ -23,7 +24,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "29": {
   "nombre": "Iñaki Williams",
@@ -50,7 +52,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "34": {
   "nombre": "José Giménez",
@@ -77,7 +80,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "63": {
   "nombre": "Marc Bartra",
@@ -90,7 +94,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "96": {
   "nombre": "Dani Ceballos",
@@ -145,7 +150,8 @@
   "titular": true,
   "titularidades": 1,
   "suplencias": 3,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "208": {
   "nombre": "Moi Gómez",
@@ -332,7 +338,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "557": {
   "nombre": "Pablo Fornals",
@@ -358,7 +365,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "564": {
   "nombre": "Mikel Oyarzabal",
@@ -371,7 +379,8 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "607": {
   "nombre": "Borja Mayoral",
@@ -398,7 +407,8 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "616": {
   "nombre": "Rodri Hernández",
@@ -425,7 +435,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "1684": {
   "nombre": "Kike García",
@@ -465,7 +476,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "1737": {
   "nombre": "Einar Galilea",
@@ -478,7 +490,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "1762": {
   "nombre": "Álex Berenguer",
@@ -491,7 +504,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "3046": {
   "nombre": "Ezequiel Ponce",
@@ -517,7 +531,8 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 3,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "3117": {
   "nombre": "Diego Rico",
@@ -638,7 +653,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "5917": {
   "nombre": "Igor Zubeldia",
@@ -678,7 +694,8 @@
   "titular": true,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "6034": {
   "nombre": "Edu Expósito",
@@ -691,7 +708,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "6035": {
   "nombre": "Iván Villar",
@@ -771,7 +789,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "7784": {
   "nombre": "Unai Núñez",
@@ -797,7 +816,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "8171": {
   "nombre": "Dakonam Djené",
@@ -893,7 +913,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "11761": {
   "nombre": "Junior Firpo",
@@ -933,7 +954,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "12902": {
   "nombre": "Raúl de Tomás",
@@ -1096,7 +1118,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "14791": {
   "nombre": "Gorka Guruzeta",
@@ -1123,7 +1146,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "14911": {
   "nombre": "Álvaro García",
@@ -1136,7 +1160,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "15107": {
   "nombre": "Marc Cucurella",
@@ -1149,7 +1174,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "15109": {
   "nombre": "Giovani Lo Celso",
@@ -1176,7 +1202,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 2
  },
  "15342": {
   "nombre": "Ander Barrenetxea",
@@ -1189,7 +1216,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "15344": {
   "nombre": "Brahim Díaz",
@@ -1242,7 +1270,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "15693": {
   "nombre": "Javi Galán",
@@ -1295,7 +1324,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "17450": {
   "nombre": "Aitor Ruibal",
@@ -1308,7 +1338,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "17452": {
   "nombre": "Éder Militão",
@@ -1431,7 +1462,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "18109": {
   "nombre": "Luis Rioja",
@@ -1538,7 +1570,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "19927": {
   "nombre": "Raúl García de Haro",
@@ -1616,7 +1649,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "22486": {
   "nombre": "Víctor García",
@@ -1656,7 +1690,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "22527": {
   "nombre": "Aimar Oroz",
@@ -1682,7 +1717,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "22595": {
   "nombre": "Joaquín Muñoz",
@@ -1721,7 +1757,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "22668": {
   "nombre": "Lucas Torró",
@@ -1762,7 +1799,8 @@
   "titular": true,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "23147": {
   "nombre": "Tete Morente",
@@ -1855,7 +1893,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "24789": {
   "nombre": "Nico Williams",
@@ -1868,7 +1907,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "24792": {
   "nombre": "Juan Iglesias",
@@ -1908,7 +1948,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "25630": {
   "nombre": "Victor Chust",
@@ -1947,7 +1988,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "27333": {
   "nombre": "Eric García",
@@ -1960,7 +2002,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "27422": {
   "nombre": "Cristian Rivero",
@@ -2122,7 +2165,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "27907": {
   "nombre": "Roger Brugué",
@@ -2163,7 +2207,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "28619": {
   "nombre": "Iván Balliu",
@@ -2231,7 +2276,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "28774": {
   "nombre": "Julen Agirrezabala",
@@ -2244,7 +2290,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "28776": {
   "nombre": "Beñat Turrientes",
@@ -2283,7 +2330,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "28784": {
   "nombre": "José Ángel Carmona",
@@ -2350,7 +2398,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "29167": {
   "nombre": "Ángel Fortuño",
@@ -2377,7 +2426,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "29205": {
   "nombre": "Alejandro Balde",
@@ -2404,7 +2454,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "29223": {
   "nombre": "Mario Soriano",
@@ -2417,7 +2468,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "29235": {
   "nombre": "Gavi",
@@ -2484,7 +2536,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "31128": {
   "nombre": "Julen Lobete",
@@ -2565,7 +2618,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "33717": {
   "nombre": "Rubén Sánchez",
@@ -2646,7 +2700,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "35922": {
   "nombre": "Jofre Carreras",
@@ -2686,7 +2741,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "36334": {
   "nombre": "Adama Traoré",
@@ -2863,7 +2919,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "48657": {
   "nombre": "Raphinha",
@@ -2876,7 +2933,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "48960": {
   "nombre": "Kiko Femenía",
@@ -2889,7 +2947,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 2
  },
  "49275": {
   "nombre": "André Almeida",
@@ -2984,7 +3043,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "51137": {
   "nombre": "Pablo Marín",
@@ -3011,7 +3071,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "52162": {
   "nombre": "Pape Gueye",
@@ -3024,7 +3085,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "52189": {
   "nombre": "Ayoze Pérez",
@@ -3076,7 +3138,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "52377": {
   "nombre": "Jorge Herrando",
@@ -3142,7 +3205,8 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 1
  },
  "53111": {
   "nombre": "Álvaro Valles",
@@ -3169,7 +3233,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "53143": {
   "nombre": "Abde Rebbach",
@@ -3209,7 +3274,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "54832": {
   "nombre": "Santiago Mouriño",
@@ -3248,7 +3314,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "55045": {
   "nombre": "Hugo Sotelo",
@@ -3438,7 +3505,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "56632": {
   "nombre": "Isaac Romero",
@@ -3478,7 +3546,8 @@
   "titular": true,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "56926": {
   "nombre": "Pau Cubarsi",
@@ -3491,7 +3560,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "56971": {
   "nombre": "Hector Fort",
@@ -3573,7 +3643,8 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 3,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "58820": {
   "nombre": "Marc Casadó",
@@ -3614,7 +3685,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "58958": {
   "nombre": "Pelayo Fernández",
@@ -3682,7 +3754,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "59064": {
   "nombre": "Jiri Letacek",
@@ -3737,7 +3810,8 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "59382": {
   "nombre": "Nicolas Pépé",
@@ -3750,7 +3824,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "59395": {
   "nombre": "Pedro Díaz",
@@ -3776,7 +3851,8 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 3,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "59476": {
   "nombre": "Julián Álvarez",
@@ -3803,7 +3879,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "59499": {
   "nombre": "Natan Souza",
@@ -3842,7 +3919,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "59533": {
   "nombre": "Gerard Martín",
@@ -3855,7 +3933,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "59534": {
   "nombre": "David Otorbi",
@@ -3964,7 +4043,8 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "60210": {
   "nombre": "Pau Navarro",
@@ -4031,7 +4111,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "60858": {
   "nombre": "Pablo Ramón",
@@ -4099,7 +4180,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "60919": {
   "nombre": "Yoel Lago",
@@ -4125,7 +4207,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "61009": {
   "nombre": "Ángel Ortiz",
@@ -4152,7 +4235,8 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 3,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 1
  },
  "61013": {
   "nombre": "Antony Santos",
@@ -4165,7 +4249,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "61092": {
   "nombre": "Tajon Buchanan",
@@ -4260,7 +4345,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "63406": {
   "nombre": "Trent Alexander-Arnold",
@@ -4286,7 +4372,8 @@
   "titular": true,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "63727": {
   "nombre": "Marcos Fernández",
@@ -4312,7 +4399,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 3,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "63784": {
   "nombre": "Jorge Cabello",
@@ -4325,7 +4413,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "63788": {
   "nombre": "Dean Huijsen",
@@ -4338,7 +4427,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "63866": {
   "nombre": "Álvaro Núñez",
@@ -4405,7 +4495,8 @@
   "titular": true,
   "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "64031": {
   "nombre": "Hugo Rincón",
@@ -4567,7 +4658,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "64468": {
   "nombre": "Tyrhys Dolan",
@@ -4580,7 +4672,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "64491": {
   "nombre": "Valentín Gómez",
@@ -4838,7 +4931,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "65721": {
   "nombre": "Dominik Livakovic",
@@ -4892,7 +4986,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "67580": {
   "nombre": "Samu Becerra",
@@ -4919,7 +5014,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "67931": {
   "nombre": "Selton Sánchez",
@@ -5014,7 +5110,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "68495": {
   "nombre": "Martín Satriano",
@@ -5080,7 +5177,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "68640": {
   "nombre": "Alex Freeman",
@@ -5214,7 +5312,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "70150": {
   "nombre": "Javi Morcillo",
@@ -5255,7 +5354,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "70189": {
   "nombre": "Andrés Antañón",
@@ -5324,20 +5424,22 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "70917": {
   "nombre": "Arouna Sangante",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 0,
-  "mediaFuera": 3,
+  "mediaFuera": -2,
   "edad": 24,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "70918": {
   "nombre": "Bernardo Silva",
@@ -5376,7 +5478,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "70925": {
   "nombre": "Simon Eriksson",
@@ -5445,7 +5548,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "70934": {
   "nombre": "Íñigo Sáinz-Maza",
@@ -5537,7 +5641,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "70943": {
   "nombre": "David Mella",
@@ -5632,7 +5737,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "70952": {
   "nombre": "Germán Parreño",
@@ -5712,7 +5818,8 @@
   "titular": null,
   "titularidades": 3,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "70997": {
   "nombre": "Aarón Ochoa",
@@ -5794,7 +5901,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "71004": {
   "nombre": "Carlos Puga",
@@ -5958,7 +6066,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "71124": {
   "nombre": "Denzel Dumfries",
@@ -6077,7 +6186,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "71176": {
   "nombre": "Morten Hjulmand",
@@ -6144,7 +6254,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 1,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 3
  },
  "71505": {
   "nombre": "Jairo Noriega",
@@ -6171,7 +6282,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "71509": {
   "nombre": "Kevin Sánchez",
@@ -6226,7 +6338,8 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 3,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "71616": {
   "nombre": "Yassir Zabiri",
@@ -6239,7 +6352,8 @@
   "titular": null,
   "titularidades": 2,
   "suplencias": 2,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "71622": {
   "nombre": "Jesse Bisiwu",
@@ -6293,7 +6407,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "71639": {
   "nombre": "Beñat Gerenabarrena",
@@ -6320,7 +6435,8 @@
   "titular": null,
   "titularidades": 4,
   "suplencias": 0,
-  "dia": "2026-09-07"
+  "dia": "2026-09-07",
+  "partidos": 4
  },
  "71642": {
   "nombre": "Abdoulaye Faye",
@@ -6333,7 +6449,8 @@
   "titular": null,
   "titularidades": 1,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 1
  },
  "71649": {
   "nombre": "Péter Gulácsi",
@@ -6511,7 +6628,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "1255969": {
   "nombre": "Jorge Domínguez",
@@ -6634,7 +6752,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "3368896": {
   "nombre": "Jordi Pesquer",
@@ -6647,7 +6766,8 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "dia": "2026-09-06"
+  "dia": "2026-09-07",
+  "partidos": 0
  },
  "3688394": {
   "nombre": "Kayne van Oevelen",
