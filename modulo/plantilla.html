@@ -355,6 +355,45 @@ ol.top .n .cara,.mejores .n .cara,.mj .cara,.mn .cara,.novs .cara,table.jt .cara
 .cj-p.baja{background:#d9d9d9} .cj-p.cero,.cj-p.no{background:var(--baja);color:#fff}
 .cj.fuera .cj-cara .cara{filter:grayscale(1);opacity:.55}
 
+/* El once a mano: mismo campo, con huecos que se pueden llenar. */
+.mano{margin-top:14px;border:1px solid var(--raya);border-radius:12px;padding:10px 12px;background:var(--tabla)}
+.mano>summary{cursor:pointer;font-weight:600;font-size:13px;list-style:none}
+.mano>summary::-webkit-details-marker{display:none}
+.mano>summary .txt{border-bottom:1px dashed var(--raya)}
+.mano-cab{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:10px 0}
+.mano-cab label{font-size:12px;color:var(--gris);display:flex;align-items:center;gap:6px}
+.mano-cab select{font:inherit;font-size:12px;background:var(--hueco);color:var(--tinta);border:1px solid var(--raya);border-radius:7px;padding:4px 7px}
+.mano-cab button{font:inherit;font-size:12px;cursor:pointer;background:var(--hueco);color:var(--gris);border:1px solid var(--raya);border-radius:7px;padding:4px 9px}
+.mano-cab button:hover{color:var(--tinta);border-color:var(--oro-raya)}
+.mano-total{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--gris)}
+.mano-total b{font-size:17px;color:var(--oro)}
+.mano-total i{font-style:normal;margin-left:6px;color:var(--tenue)}
+
+.hueco{display:flex;align-items:center;justify-content:center;width:100%;max-width:72px;min-height:58px}
+.hueco-vacio{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:2px dashed rgba(255,255,255,.3);font-family:"IBM Plex Mono",monospace;font-size:8px;color:rgba(255,255,255,.5)}
+.hueco.lleno{cursor:pointer}
+
+/* Las pestañas de jornada, encima del campo. */
+.jtabs{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0 4px}
+.jtabs button{font:inherit;font-family:"IBM Plex Mono",monospace;font-size:11px;cursor:pointer;color:var(--gris);background:var(--tabla);border:1px solid var(--raya);border-radius:8px;padding:5px 10px;display:flex;align-items:center;gap:5px}
+.jtabs button b{color:var(--oro);font-size:12px}
+.jtabs button:hover{border-color:var(--oro-raya);color:var(--tinta)}
+.jtabs button.on{border-color:var(--tinta);color:var(--tinta);background:var(--hueco)}
+.jbanca{display:flex;flex-wrap:wrap;align-items:center;gap:5px;margin-top:8px;font-size:11px}
+.jbanca>i{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue);margin-right:3px}
+.jb{background:var(--tabla);border:1px solid var(--raya);border-radius:7px;padding:3px 7px;color:var(--gris)}
+.jb b{font-family:"IBM Plex Mono",monospace;color:var(--tinta)}
+.jb.no b{color:var(--tenue)}
+
+.mano-banca{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.bc{display:flex;align-items:center;gap:6px;font:inherit;font-size:11.5px;cursor:grab;background:var(--hueco);color:var(--tinta);border:1px solid var(--raya);border-radius:8px;padding:4px 8px}
+.bc:hover{border-color:var(--oro-raya)}
+.bc.dentro{opacity:.4}
+.bc.fuera{color:var(--tenue)}
+.bc .d{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:8px;padding:1px 4px;border-radius:4px;background:var(--raya)}
+.bc .d.p1{background:var(--por)}.bc .d.p2{background:var(--def)}.bc .d.p3{background:var(--med)}.bc .d.p4{background:var(--del)}
+.bc b{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--oro)}
+
 /* Una columna con cinco o seis necesita menos alto por ficha. */
 .campo-linea[data-n="5"] .cj-cara .cara,.campo-linea[data-n="6"] .cj-cara .cara{width:38px;height:38px}
 .campo-linea[data-n="6"] .cj-n{font-size:8.5px}
@@ -1102,6 +1141,254 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     })
   })()
 
+  /**
+   * El once a mano: armar tu propia alineación y ver lo que daría.
+   *
+   * Se puede arrastrar —como en Mister— y también tocar, porque arrastrar en un
+   * móvil con un campo de once huecos es un ejercicio de puntería. Tocar a uno
+   * de la banca lo pone en el primer hueco libre de su puesto; tocarlo en el
+   * campo lo devuelve.
+   *
+   * La cifra es la misma que usa el once de arriba: lo que cabe esperar de cada
+   * uno en su próximo partido. Quien no juega suma cero, no su media: contarla
+   * sería premiar una alineación por llenarse de lesionados.
+   */
+  ;(function () {
+    var campo = document.getElementById('mano-campo')
+    if (!campo) return
+    var selForm = document.getElementById('mano-formacion')
+    var banca = document.getElementById('mano-banca')
+    var elPunto = document.getElementById('mano-puntos')
+    var elCuantos = document.getElementById('mano-cuantos')
+    var elAviso = document.getElementById('mano-aviso')
+    var PUESTO = { 1: 'POR', 2: 'DEF', 3: 'MED', 4: 'DEL' }
+    var puestos = []      // el puesto que toca en cada hueco
+    var elegidos = []     // el id puesto en cada hueco, o null
+    var arrastrado = null
+    var arrancado = false
+
+    // `esc` vive en otro ámbito; aquí hace falta el suyo.
+    var lim = function (t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] }) }
+    function plantilla () { return window.MIPLANTILLA || [] }
+    function porId (id) { return plantilla().filter(function (x) { return x.id === id })[0] }
+
+    function armar (linea) {
+      puestos = []
+      linea.forEach(function (cuantos, i) {
+        for (var k = 0; k < cuantos; k++) puestos.push(i + 1)
+      })
+      elegidos = puestos.map(function () { return null })
+    }
+
+    function pintar () {
+      // El campo, hueco a hueco, agrupado por líneas como el de arriba.
+      var html = '<div class="campo-hierba"></div>' +
+        '<svg class="campo-lineas" viewBox="0 0 300 190" preserveAspectRatio="none" aria-hidden="true">' +
+        '<rect x="3" y="3" width="294" height="184" rx="2"/><line x1="150" y1="3" x2="150" y2="187"/>' +
+        '<rect x="3" y="47" width="42" height="96"/><rect x="3" y="72" width="16" height="46"/>' +
+        '<rect x="255" y="47" width="42" height="96"/><rect x="281" y="72" width="16" height="46"/></svg>' +
+        '<span class="campo-centro"></span>'
+      var i = 0
+      var lineas = {}
+      puestos.forEach(function (pu, idx) { (lineas[pu] = lineas[pu] || []).push(idx) })
+      ;[1, 2, 3, 4].forEach(function (pu) {
+        if (!lineas[pu]) return
+        html += '<div class="campo-linea" data-n="' + lineas[pu].length + '">'
+        lineas[pu].forEach(function (idx) {
+          var id = elegidos[idx]
+          var j = id ? porId(id) : null
+          html += '<div class="hueco' + (j ? ' lleno' : '') + '" data-hueco="' + idx + '" data-puesto="' + pu + '">' +
+            (j ? j.html : '<span class="hueco-vacio">' + PUESTO[pu] + '</span>') + '</div>'
+        })
+        html += '</div>'
+        i += 1
+      })
+      campo.innerHTML = html
+
+      // La banca: los que no están puestos.
+      var puestosIds = elegidos.filter(Boolean)
+      banca.innerHTML = plantilla().map(function (j) {
+        var dentro = puestosIds.indexOf(j.id) !== -1
+        return '<button type="button" class="bc' + (dentro ? ' dentro' : '') + (j.fuera ? ' fuera' : '') +
+          '" data-jugador="' + j.id + '" draggable="true" title="' + (j.fuera ? 'No juega esta jornada' : j.e.toFixed(1).replace('.', ',') + ' puntos que cabe esperar') + '">' +
+          '<i class="d p' + j.p + '">' + PUESTO[j.p] + '</i>' + lim(j.n) +
+          '<b>' + (j.fuera ? '—' : j.e.toFixed(1).replace('.', ',')) + '</b></button>'
+      }).join('')
+
+      var total = elegidos.reduce(function (t, id) { var j = id ? porId(id) : null; return t + (j ? j.e : 0) }, 0)
+      var llenos = puestosIds.length
+      elPunto.textContent = total.toFixed(1).replace('.', ',')
+      elCuantos.textContent = llenos + ' de ' + puestos.length
+      var mejor = window.ONCES && window.ONCES[selForm.value]
+      elAviso.textContent = llenos < puestos.length
+        ? 'Te faltan ' + (puestos.length - llenos) + ' por poner.'
+        : mejor
+          ? (Math.abs(total - mejor.t) < 0.05
+              ? 'Es el mismo once que yo propongo con esta formación.'
+              : total > mejor.t
+                ? 'Tu once da ' + (total - mejor.t).toFixed(1).replace('.', ',') + ' puntos más que el que yo propongo con esta formación.'
+                : 'El que yo propongo con esta formación daría ' + (mejor.t - total).toFixed(1).replace('.', ',') + ' puntos más.')
+          : ''
+    }
+
+    function meter (id, hueco) {
+      var j = porId(id)
+      if (!j) return
+      if (puestos[hueco] !== j.p) {
+        elAviso.textContent = 'Ahí va un ' + PUESTO[puestos[hueco]].toLowerCase() + ' y ' + j.n + ' es ' + PUESTO[j.p].toLowerCase() + '.'
+        return
+      }
+      var antes = elegidos.indexOf(id)
+      if (antes !== -1) elegidos[antes] = null
+      elegidos[hueco] = id
+      pintar()
+    }
+
+    function llenarPrimero (id) {
+      var j = porId(id)
+      if (!j) return
+      if (elegidos.indexOf(id) !== -1) { elegidos[elegidos.indexOf(id)] = null; pintar(); return }
+      for (var k = 0; k < puestos.length; k++) {
+        if (puestos[k] === j.p && !elegidos[k]) { elegidos[k] = id; pintar(); return }
+      }
+      elAviso.textContent = 'No queda hueco de ' + PUESTO[j.p].toLowerCase() + ' en esta formación.'
+    }
+
+    function arrancar () {
+      if (arrancado) return
+      var forms = window.FORMACIONES || []
+      if (!forms.length || !plantilla().length) return
+      arrancado = true
+      selForm.innerHTML = forms.map(function (f) {
+        return '<option value="' + f.n + '">' + f.n + (f.pago ? ' (de pago)' : '') + '</option>'
+      }).join('')
+      var mia = document.querySelector('.otraform .alt .tuya')
+      if (mia) selForm.value = mia.getAttribute('data-formacion')
+      var elegida = forms.filter(function (f) { return f.n === selForm.value })[0] || forms[0]
+      armar(elegida.l)
+      ponerElMio()
+    }
+
+    /** Rellena con el once que yo propongo para esa formación, si encaja. */
+    function ponerElMio () {
+      var datos = (window.ONCES || {})[selForm.value]
+      if (!datos) { pintar(); return }
+      var ids = []
+      var re = /data-ficha="(\d+)"/g
+      var m
+      while ((m = re.exec(datos.html))) ids.push(m[1])
+      elegidos = puestos.map(function () { return null })
+      ids.forEach(function (id) {
+        var j = porId(id)
+        if (!j) return
+        for (var k = 0; k < puestos.length; k++) {
+          if (puestos[k] === j.p && !elegidos[k]) { elegidos[k] = id; return }
+        }
+      })
+      pintar()
+    }
+
+    // Se arranca al abrir el desplegable: las islas van al final de la página y
+    // aquí todavía no existen.
+    var caja = campo.closest('details')
+    if (caja) caja.addEventListener('toggle', function () { if (caja.open) arrancar() })
+
+    selForm.addEventListener('change', function () {
+      var f = (window.FORMACIONES || []).filter(function (x) { return x.n === selForm.value })[0]
+      if (!f) return
+      armar(f.l)
+      ponerElMio()
+    })
+    document.getElementById('mano-mio').addEventListener('click', ponerElMio)
+    document.getElementById('mano-limpiar').addEventListener('click', function () {
+      elegidos = puestos.map(function () { return null })
+      pintar()
+    })
+
+    banca.addEventListener('click', function (e) {
+      var b = e.target.closest ? e.target.closest('[data-jugador]') : null
+      if (b) llenarPrimero(b.getAttribute('data-jugador'))
+    })
+    campo.addEventListener('click', function (e) {
+      var h = e.target.closest ? e.target.closest('[data-hueco]') : null
+      if (!h) return
+      var idx = Number(h.getAttribute('data-hueco'))
+      if (elegidos[idx]) { elegidos[idx] = null; pintar() }
+    })
+
+    // Arrastrar, para quien esté en el ordenador.
+    banca.addEventListener('dragstart', function (e) {
+      var b = e.target.closest ? e.target.closest('[data-jugador]') : null
+      if (b) { arrastrado = b.getAttribute('data-jugador'); e.dataTransfer.effectAllowed = 'move' }
+    })
+    campo.addEventListener('dragover', function (e) {
+      if (arrastrado && e.target.closest && e.target.closest('[data-hueco]')) e.preventDefault()
+    })
+    campo.addEventListener('drop', function (e) {
+      var h = e.target.closest ? e.target.closest('[data-hueco]') : null
+      if (!h || !arrastrado) return
+      e.preventDefault()
+      meter(arrastrado, Number(h.getAttribute('data-hueco')))
+      arrastrado = null
+    })
+  })()
+
+  /**
+   * Las jornadas jugadas: cambiar de pestaña enseña el once que pusiste ese día
+   * y lo que hizo cada uno.
+   *
+   * «Próxima» vuelve a la recomendación de esta jornada, que es lo que hay
+   * cuando se abre la página. Lo de las jornadas pasadas viene de Mister —es lo
+   * único que sabe lo que alineaste—, no de ningún cálculo mío.
+   */
+  ;(function () {
+    var tabs = document.getElementById('jtabs')
+    if (!tabs) return
+    var seccion = document.getElementById('once-jornada')
+    if (!seccion) return
+    var aviso = document.getElementById('once-que-ves')
+    var jbanca = document.getElementById('jbanca')
+    var formaciones = seccion.querySelector('.otraform')
+    var original = null
+
+    function campoActual () { return seccion.querySelector('.campo:not(.mano-campo)') }
+
+    tabs.addEventListener('click', function (e) {
+      var b = e.target.closest ? e.target.closest('[data-jornada]') : null
+      if (!b) return
+      var cual = b.getAttribute('data-jornada')
+      var campo = campoActual()
+      if (!campo) return
+      if (original === null) original = campo.outerHTML
+
+      tabs.querySelectorAll('[data-jornada]').forEach(function (x) { x.classList.toggle('on', x === b) })
+
+      if (cual === 'proxima') {
+        campo.outerHTML = original
+        if (aviso) { aviso.hidden = true; aviso.innerHTML = '' }
+        if (jbanca) { jbanca.hidden = true; jbanca.innerHTML = '' }
+        if (formaciones) formaciones.hidden = false
+        return
+      }
+
+      var d = (window.JORNADAS || {})[cual]
+      if (!d) return
+      var caja = document.createElement('div')
+      caja.innerHTML = d.html
+      campo.parentNode.replaceChild(caja.firstElementChild, campo)
+      if (formaciones) formaciones.hidden = true
+      if (aviso) {
+        aviso.hidden = false
+        aviso.innerHTML = 'Jornada ' + cual + ': alineaste un <b>' + d.form + '</b> e hiciste <b>' + d.pts +
+          '</b> puntos' + (d.puesto ? ', ' + d.puesto + 'º de la liga esa jornada' : '') + '. Es lo que pusiste de verdad, según Mister.'
+      }
+      if (jbanca) {
+        jbanca.hidden = !d.banca
+        jbanca.innerHTML = d.banca ? '<i>en el banquillo</i>' + d.banca : ''
+      }
+    })
+  })()
+
   function conectar (opciones) {
     var lista = document.getElementById(opciones.lista)
     if (!lista) return null
@@ -1839,7 +2126,10 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
 <script>window.CLUBES = /*__ISLA_CLUBES__*/{}
 window.LIGA = /*__ISLA_LIGA__*/{}
 window.FICHAS = /*__ISLA_FICHAS__*/{}
-window.ONCES = /*__ISLA_ONCES__*/{}</script>
+window.ONCES = /*__ISLA_ONCES__*/{}
+window.JORNADAS = /*__ISLA_JORNADAS__*/{}
+window.MIPLANTILLA = /*__ISLA_PLANTILLA__*/[]
+window.FORMACIONES = /*__ISLA_FORMACIONES__*/[]</script>
 <script>if ('serviceWorker' in navigator && location.protocol.indexOf('http') === 0) window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}) })</script>
 </body>
 </html>

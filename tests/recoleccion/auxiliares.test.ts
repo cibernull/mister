@@ -18,6 +18,7 @@ function clienteFalso(): Cliente & { pedidas: string[] } {
     },
     async pedirJugadores() { throw new Error('no usado') },
     async pedirSaldo() { throw new Error('no usado') },
+    async pedirJornada() { throw new Error('no usado') },
   } as Cliente & { pedidas: string[] }
 }
 

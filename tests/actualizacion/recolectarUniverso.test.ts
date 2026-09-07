@@ -43,6 +43,7 @@ function buscadorQueReordena(total: number, porPagina = 50): Cliente & { peticio
     async pedirPagina() { throw new Error('no usado') },
     async pedirFeed() { throw new Error('no usado') },
     async pedirSaldo() { throw new Error('no usado') },
+    async pedirJornada() { throw new Error('no usado') },
   } as unknown as Cliente & { peticiones: number; pasadas: number }
   return cliente
 }

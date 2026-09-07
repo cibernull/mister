@@ -1,0 +1,913 @@
+[
+ {
+  "jornada": 1,
+  "idJornada": 3968,
+  "puntos": 38,
+  "puesto": 3,
+  "formacion": "1-4-5-1",
+  "once": [
+   {
+    "id": "53111",
+    "nombre": "Álvaro Valles",
+    "puesto": 1,
+    "puntos": 8,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "27520",
+    "nombre": "Fran García",
+    "puesto": 2,
+    "puntos": 5,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "71021",
+    "nombre": "Alejandro Grimaldo",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "71038",
+    "nombre": "Justin De Haas",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "70935",
+    "nombre": "Jorge Salinas",
+    "puesto": 2,
+    "puntos": 4,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "364",
+    "nombre": "Sergio Canales",
+    "puesto": 3,
+    "puntos": 4,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "19527",
+    "nombre": "Jon Moncayola",
+    "puesto": 3,
+    "puntos": 2,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "22527",
+    "nombre": "Aimar Oroz",
+    "puesto": 3,
+    "puntos": 1,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "28780",
+    "nombre": "Luismi Cruz",
+    "puesto": 3,
+    "puntos": 2,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "29223",
+    "nombre": "Mario Soriano",
+    "puesto": 3,
+    "puntos": 3,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "130",
+    "nombre": "Iago Aspas",
+    "puesto": 4,
+    "puntos": 9,
+    "jugo": true,
+    "capitan": false
+   }
+  ],
+  "banquillo": [
+   {
+    "id": "36410",
+    "nombre": "Pierre-Emerick Aubameyang",
+    "puesto": 4,
+    "puntos": 11,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "71639",
+    "nombre": "Beñat Gerenabarrena",
+    "puesto": 3,
+    "puntos": 3,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "70999",
+    "nombre": "Dani Lorenzo",
+    "puesto": 3,
+    "puntos": 6,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "25579",
+    "nombre": "Oriol Rey",
+    "puesto": 3,
+    "puntos": 2,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "48203",
+    "nombre": "Ramón Terrats",
+    "puesto": 3,
+    "puntos": 4,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "616",
+    "nombre": "Rodri Hernández",
+    "puesto": 3,
+    "puntos": 5,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "27907",
+    "nombre": "Roger Brugué",
+    "puesto": 3,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "56971",
+    "nombre": "Hector Fort",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "118",
+    "nombre": "Jonny Otto",
+    "puesto": 2,
+    "puntos": 4,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "34",
+    "nombre": "José Giménez",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "23369",
+    "nombre": "Juan Foyth",
+    "puesto": 2,
+    "puntos": 3,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "48554",
+    "nombre": "Luiz Felipe",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "71008",
+    "nombre": "Rafita Garrido",
+    "puesto": 2,
+    "puntos": 5,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "71011",
+    "nombre": "Alfonso Herrero",
+    "puesto": 1,
+    "puntos": 7,
+    "jugo": true,
+    "capitan": false
+   }
+  ]
+ },
+ {
+  "jornada": 2,
+  "idJornada": 4043,
+  "puntos": 29,
+  "puesto": 4,
+  "formacion": "1-4-4-2",
+  "once": [
+   {
+    "id": "71011",
+    "nombre": "Alfonso Herrero",
+    "puesto": 1,
+    "puntos": 5,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "23369",
+    "nombre": "Juan Foyth",
+    "puesto": 2,
+    "puntos": 5,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "27520",
+    "nombre": "Fran García",
+    "puesto": 2,
+    "puntos": 5,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "70935",
+    "nombre": "Jorge Salinas",
+    "puesto": 2,
+    "puntos": 3,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "71038",
+    "nombre": "Justin De Haas",
+    "puesto": 2,
+    "puntos": 1,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "364",
+    "nombre": "Sergio Canales",
+    "puesto": 3,
+    "puntos": 3,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "29223",
+    "nombre": "Mario Soriano",
+    "puesto": 3,
+    "puntos": 3,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "19527",
+    "nombre": "Jon Moncayola",
+    "puesto": 3,
+    "puntos": 3,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "28777",
+    "nombre": "Carlos Álvarez",
+    "puesto": 3,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "20449",
+    "nombre": "Fer Niño",
+    "puesto": 4,
+    "puntos": 1,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "56924",
+    "nombre": "Etta Eyong",
+    "puesto": 4,
+    "puntos": 0,
+    "jugo": true,
+    "capitan": false
+   }
+  ],
+  "banquillo": [
+   {
+    "id": "36410",
+    "nombre": "Pierre-Emerick Aubameyang",
+    "puesto": 4,
+    "puntos": 10,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "71639",
+    "nombre": "Beñat Gerenabarrena",
+    "puesto": 3,
+    "puntos": 5,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "70999",
+    "nombre": "Dani Lorenzo",
+    "puesto": 3,
+    "puntos": 5,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "25579",
+    "nombre": "Oriol Rey",
+    "puesto": 3,
+    "puntos": 2,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "48203",
+    "nombre": "Ramón Terrats",
+    "puesto": 3,
+    "puntos": 6,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "616",
+    "nombre": "Rodri Hernández",
+    "puesto": 3,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "27907",
+    "nombre": "Roger Brugué",
+    "puesto": 3,
+    "puntos": 4,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "56971",
+    "nombre": "Hector Fort",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "118",
+    "nombre": "Jonny Otto",
+    "puesto": 2,
+    "puntos": 3,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "34",
+    "nombre": "José Giménez",
+    "puesto": 2,
+    "puntos": 3,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "48554",
+    "nombre": "Luiz Felipe",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "71008",
+    "nombre": "Rafita Garrido",
+    "puesto": 2,
+    "puntos": 6,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "53111",
+    "nombre": "Álvaro Valles",
+    "puesto": 1,
+    "puntos": 6,
+    "jugo": true,
+    "capitan": false
+   }
+  ]
+ },
+ {
+  "jornada": 3,
+  "idJornada": 4044,
+  "puntos": 52,
+  "puesto": 1,
+  "formacion": "1-3-5-2",
+  "once": [
+   {
+    "id": "53111",
+    "nombre": "Álvaro Valles",
+    "puesto": 1,
+    "puntos": 2,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "23369",
+    "nombre": "Juan Foyth",
+    "puesto": 2,
+    "puntos": 4,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "27520",
+    "nombre": "Fran García",
+    "puesto": 2,
+    "puntos": 0,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "64382",
+    "nombre": "Gabriel Suazo",
+    "puesto": 2,
+    "puntos": 1,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "364",
+    "nombre": "Sergio Canales",
+    "puesto": 3,
+    "puntos": 4,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "616",
+    "nombre": "Rodri Hernández",
+    "puesto": 3,
+    "puntos": 4,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "48203",
+    "nombre": "Ramón Terrats",
+    "puesto": 3,
+    "puntos": 5,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "71138",
+    "nombre": "Ryunosuke Sato",
+    "puesto": 3,
+    "puntos": 2,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "29223",
+    "nombre": "Mario Soriano",
+    "puesto": 3,
+    "puntos": 8,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "20449",
+    "nombre": "Fer Niño",
+    "puesto": 4,
+    "puntos": 9,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "36410",
+    "nombre": "Pierre-Emerick Aubameyang",
+    "puesto": 4,
+    "puntos": 13,
+    "jugo": true,
+    "capitan": false
+   }
+  ],
+  "banquillo": [
+   {
+    "id": "71639",
+    "nombre": "Beñat Gerenabarrena",
+    "puesto": 3,
+    "puntos": 7,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "70999",
+    "nombre": "Dani Lorenzo",
+    "puesto": 3,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "25579",
+    "nombre": "Oriol Rey",
+    "puesto": 3,
+    "puntos": 6,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "27907",
+    "nombre": "Roger Brugué",
+    "puesto": 3,
+    "puntos": 19,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "56971",
+    "nombre": "Hector Fort",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "118",
+    "nombre": "Jonny Otto",
+    "puesto": 2,
+    "puntos": 5,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "34",
+    "nombre": "José Giménez",
+    "puesto": 2,
+    "puntos": 2,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "48554",
+    "nombre": "Luiz Felipe",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "71008",
+    "nombre": "Rafita Garrido",
+    "puesto": 2,
+    "puntos": 2,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "71011",
+    "nombre": "Alfonso Herrero",
+    "puesto": 1,
+    "puntos": 4,
+    "jugo": true,
+    "capitan": false
+   }
+  ]
+ },
+ {
+  "jornada": 4,
+  "idJornada": 4045,
+  "puntos": 64,
+  "puesto": 1,
+  "formacion": "1-3-6-1",
+  "once": [
+   {
+    "id": "53111",
+    "nombre": "Álvaro Valles",
+    "puesto": 1,
+    "puntos": 12,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "34",
+    "nombre": "José Giménez",
+    "puesto": 2,
+    "puntos": 6,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "118",
+    "nombre": "Jonny Otto",
+    "puesto": 2,
+    "puntos": 2,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "27520",
+    "nombre": "Fran García",
+    "puesto": 2,
+    "puntos": 3,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "364",
+    "nombre": "Sergio Canales",
+    "puesto": 3,
+    "puntos": 9,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "616",
+    "nombre": "Rodri Hernández",
+    "puesto": 3,
+    "puntos": 9,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "27907",
+    "nombre": "Roger Brugué",
+    "puesto": 3,
+    "puntos": 1,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "29223",
+    "nombre": "Mario Soriano",
+    "puesto": 3,
+    "puntos": 4,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "48203",
+    "nombre": "Ramón Terrats",
+    "puesto": 3,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "70999",
+    "nombre": "Dani Lorenzo",
+    "puesto": 3,
+    "puntos": 4,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "36410",
+    "nombre": "Pierre-Emerick Aubameyang",
+    "puesto": 4,
+    "puntos": 13,
+    "jugo": true,
+    "capitan": false
+   }
+  ],
+  "banquillo": [
+   {
+    "id": "71639",
+    "nombre": "Beñat Gerenabarrena",
+    "puesto": 3,
+    "puntos": 5,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "25579",
+    "nombre": "Oriol Rey",
+    "puesto": 3,
+    "puntos": 3,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "56971",
+    "nombre": "Hector Fort",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "23369",
+    "nombre": "Juan Foyth",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "48554",
+    "nombre": "Luiz Felipe",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "71008",
+    "nombre": "Rafita Garrido",
+    "puesto": 2,
+    "puntos": 3,
+    "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "71011",
+    "nombre": "Alfonso Herrero",
+    "puesto": 1,
+    "puntos": 8,
+    "jugo": true,
+    "capitan": false
+   }
+  ]
+ },
+ {
+  "jornada": 6,
+  "idJornada": 4047,
+  "puntos": 0,
+  "puesto": 6,
+  "formacion": "1-3-5-2",
+  "once": [
+   {
+    "id": "53111",
+    "nombre": "Álvaro Valles",
+    "puesto": 1,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "118",
+    "nombre": "Jonny Otto",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "27520",
+    "nombre": "Fran García",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "34",
+    "nombre": "José Giménez",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "364",
+    "nombre": "Sergio Canales",
+    "puesto": 3,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "616",
+    "nombre": "Rodri Hernández",
+    "puesto": 3,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "27907",
+    "nombre": "Roger Brugué",
+    "puesto": 3,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "29223",
+    "nombre": "Mario Soriano",
+    "puesto": 3,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "48203",
+    "nombre": "Ramón Terrats",
+    "puesto": 3,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "36410",
+    "nombre": "Pierre-Emerick Aubameyang",
+    "puesto": 4,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "20449",
+    "nombre": "Fer Niño",
+    "puesto": 4,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   }
+  ],
+  "banquillo": [
+   {
+    "id": "71639",
+    "nombre": "Beñat Gerenabarrena",
+    "puesto": 3,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "70999",
+    "nombre": "Dani Lorenzo",
+    "puesto": 3,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "25579",
+    "nombre": "Oriol Rey",
+    "puesto": 3,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "56971",
+    "nombre": "Hector Fort",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "23369",
+    "nombre": "Juan Foyth",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "48554",
+    "nombre": "Luiz Felipe",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "71008",
+    "nombre": "Rafita Garrido",
+    "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "71011",
+    "nombre": "Alfonso Herrero",
+    "puesto": 1,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   }
+  ]
+ }
+]

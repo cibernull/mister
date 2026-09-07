@@ -21,7 +21,8 @@
     "instalar-app": "bash aplicacion/construir.sh",
     "icono": "python3 aplicacion/icono.py",
     "fichas": "tsx src/actualizacion/fichas.ts",
-    "fotos": "tsx src/actualizacion/fotos.ts"
+    "fotos": "tsx src/actualizacion/fotos.ts",
+    "alineaciones": "tsx src/actualizacion/alineaciones.ts"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.11",

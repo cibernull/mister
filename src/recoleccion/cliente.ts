@@ -19,6 +19,8 @@ export type Cliente = {
   pedirPagina(ruta: string): Promise<string>
   /** Una página del buscador de jugadores: cincuenta desde `offset`. */
   pedirJugadores(offset: number): Promise<string>
+  /** Una jornada concreta: la alineación que se puso y lo que sacó cada uno. */
+  pedirJornada(idJornada?: number | string | null): Promise<string>
   /** El libro de caja propio: saldo de hoy y todos los movimientos. */
   pedirSaldo(): Promise<string>
 }
@@ -127,6 +129,34 @@ export function crearCliente(opciones: OpcionesCliente): Cliente {
           Accept: 'text/html',
         },
       }, ruta)
+    },
+
+    /**
+     * Una jornada: el once que se alineó, el banquillo y los puntos de cada uno.
+     *
+     * La jornada se pide por `id`, que es el identificador interno de Mister
+     * —3968 es la primera de 26/27—, no por su número. Con `gameweek: 1` o con
+     * el id en cualquier otro campo contesta siempre la jornada en curso, sin
+     * error, que es la forma más fácil de creerse que se tienen cinco jornadas
+     * cuando en realidad se tiene cinco veces la misma.
+     */
+    async pedirJornada(idJornada?: number | string | null): Promise<string> {
+      // Sin `id` contesta la jornada en curso y, con ella, la lista entera de
+      // jornadas con sus identificadores. Es la única forma de saber qué pedir:
+      // con `id=0` responde un 500.
+      const cuerpo: Record<string, string> = { post: 'gameweek' }
+      if (idJornada !== undefined && idJornada !== null && idJornada !== '') cuerpo['id'] = String(idJornada)
+      return pedir(idJornada == null ? 'la lista de jornadas' : `la jornada ${idJornada}`, {
+        method: 'POST',
+        headers: {
+          Cookie: opciones.credenciales.cookie,
+          'X-Auth': opciones.credenciales.auth,
+          'X-Requested-With': 'XMLHttpRequest',
+          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+          Accept: 'application/json',
+        },
+        body: new URLSearchParams(cuerpo).toString(),
+      }, '/ajax/sw/gameweek')
     },
 
     /**

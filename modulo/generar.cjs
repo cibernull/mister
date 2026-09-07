@@ -1607,6 +1607,93 @@ const islaOnces = JSON.stringify(
   ),
 )
 
+/**
+ * Tu plantilla entera, para armar el once a mano.
+ *
+ * El once que calculo es una opinión: elige por pronóstico de titularidad y por
+ * lo que rinde cada uno en su partido. Pero el que sabe si alguien viene tocado
+ * o si el rival se le da bien eres tú, y hasta ahora no había forma de decirlo:
+ * o te tragabas mi once o hacías las cuentas en la cabeza.
+ *
+ * Va la ficha ya pintada, la misma que usa el campo, para que arrastrar a un
+ * jugador no lo enseñe distinto de como sale en el once de arriba.
+ */
+const islaPlantilla = JSON.stringify(
+  MIOS.map((j) => ({
+    id: String(j.id),
+    n: j.nombre,
+    p: j.puesto,
+    e: noJuega(j) ? 0 : Number(esperadoTotal(j).toFixed(2)),
+    fuera: noJuega(j) ? 1 : 0,
+    html: fichaEnCampo(j),
+  })),
+)
+
+/** Las formaciones que se pueden armar, con su reparto por líneas. */
+const islaFormaciones = JSON.stringify(FORMACIONES.map((f) => ({ n: f.l.join('-'), l: f.l, pago: f.pago ? 1 : 0 })))
+
+/**
+ * Las jornadas ya jugadas: qué once pusiste y qué hizo cada uno.
+ *
+ * Sale de Mister, no de un cálculo: es lo único que dice lo que alineaste de
+ * verdad. El once de arriba es una recomendación de hoy y no sabe nada de lo
+ * que hiciste hace tres semanas.
+ */
+const ALINEACIONES = opcional('alineaciones.json', [])
+
+const fichaDeJornada = (j) => {
+  const cara = caraDe(j.id, j.nombre)
+  const pts = j.puntos
+  const partes = String(j.nombre || '').trim().split(/\s+/)
+  const mote = partes.length > 1 ? `${partes[0][0]}. ${partes.slice(1).join(' ')}` : j.nombre
+  const clase = pts == null ? 'no' : claseRacha(pts)
+  return `<button type="button" class="cj${j.jugo ? '' : ' fuera'}" data-ficha="${j.id}" title="${esc(`${j.nombre}: ${pts == null ? 'no jugó' : `${pts} puntos`}`)}">
+          <span class="cj-cara">${cara}${escudoDe(j.id)}${j.capitan ? '<i class="cj-tit" title="Capitán">©</i>' : ''}</span>
+          <span class="cj-n">${esc(mote)}</span>
+          <span class="cj-p ${clase}">${pts == null ? '—' : pts}</span>
+        </button>`
+}
+
+const campoDeJornada = (a) => {
+  const lineas = []
+  for (const j of a.once) {
+    const i = j.puesto - 1
+    ;(lineas[i] ??= []).push(j)
+  }
+  return `<div class="campo" role="img" aria-label="Tu once de la jornada ${a.jornada}">
+        <div class="campo-hierba"></div>
+        <svg class="campo-lineas" viewBox="0 0 300 190" preserveAspectRatio="none" aria-hidden="true">
+          <rect x="3" y="3" width="294" height="184" rx="2"/>
+          <line x1="150" y1="3" x2="150" y2="187"/>
+          <rect x="3" y="47" width="42" height="96"/><rect x="3" y="72" width="16" height="46"/>
+          <rect x="255" y="47" width="42" height="96"/><rect x="281" y="72" width="16" height="46"/>
+        </svg>
+        <span class="campo-centro"></span>
+${lineas
+  .filter(Boolean)
+  .map((l) => `        <div class="campo-linea" data-n="${l.length}">${l.map(fichaDeJornada).join('')}</div>`)
+  .join('\n')}
+      </div>`
+}
+
+/** El campo de cada jornada jugada, listo para cambiarlo de un toque. */
+const islaJornadas = JSON.stringify(
+  Object.fromEntries(
+    ALINEACIONES.filter((a) => a.once && a.once.length).map((a) => [
+      String(a.jornada),
+      {
+        pts: a.puntos,
+        puesto: a.puesto,
+        form: a.formacion,
+        html: campoDeJornada(a),
+        banca: a.banquillo
+          .map((j) => `<span class="jb${j.puntos == null ? ' no' : ''}">${esc(j.nombre)} <b>${j.puntos == null ? '—' : j.puntos}</b></span>`)
+          .join(''),
+      },
+    ]),
+  ),
+)
+
 const bloqueOnce = once === null || once.elegidos.length === 0
   ? ''
   : `    <section class="sec" id="once-jornada">
@@ -1648,8 +1735,30 @@ const bloqueOnce = once === null || once.elegidos.length === 0
           .join('')}</span>
       </div>`
       })()}
+      ${ALINEACIONES.filter((a) => a.once && a.once.length).length
+        ? `<div class="jtabs" id="jtabs">
+        <button type="button" class="on" data-jornada="proxima">Próxima</button>
+${ALINEACIONES.filter((a) => a.once && a.once.length)
+  .map((a) => `        <button type="button" data-jornada="${a.jornada}">J${a.jornada}<b>${a.puntos ?? 0}</b></button>`)
+  .join(NL)}
+      </div>`
+        : ''}
       <p class="sd" id="once-que-ves" hidden></p>
       ${campoOnce(once, FORMACION)}
+      <div class="jbanca" id="jbanca" hidden></div>
+      <details class="mano">
+        <summary><span class="txt">Probar un once a mano</span></summary>
+        <p class="sd">Mi once es una opinión: elige por el pronóstico de titularidad de Mister y por lo que rinde cada uno en su partido. Tú sabes cosas que yo no —quién viene tocado, a quién se le da bien el rival—. Arrastra o toca para armar el tuyo y ver cuánto daría.</p>
+        <div class="mano-cab">
+          <label>Formación <select id="mano-formacion"></select></label>
+          <span class="mano-total"><b id="mano-puntos">0,0</b> pts <i id="mano-cuantos">0 de 11</i></span>
+          <button type="button" id="mano-mio">Poner el mío</button>
+          <button type="button" id="mano-limpiar">Vaciar</button>
+        </div>
+        <div class="campo mano-campo" id="mano-campo"></div>
+        <p class="sd" id="mano-aviso"></p>
+        <div class="mano-banca" id="mano-banca"></div>
+      </details>
       <div class="mini">
 ${once.elegidos.map(filaOnce).join(NL)}
       </div>
@@ -2211,6 +2320,9 @@ const huecos = {
   '<!--__MIEQUIPO__-->': miEquipo,
   '<!--__OPORTUNIDADES__-->': oportunidades,
   '/*__ISLA_ONCES__*/{}': islaOnces,
+  '/*__ISLA_JORNADAS__*/{}': islaJornadas,
+  '/*__ISLA_PLANTILLA__*/[]': islaPlantilla,
+  '/*__ISLA_FORMACIONES__*/[]': islaFormaciones,
   '<!--__MERCADO__-->': filasMercado,
   '<!--__RESTO__-->': filasResto,
   '<!--__CUANTOS_MERCADO__-->': String(enMercado.length),
