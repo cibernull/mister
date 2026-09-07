@@ -21277,66 +21277,6 @@
   "d": 0
  },
  {
-  "id": "58125",
-  "nombre": "Mario Martín",
-  "valor": 1325000,
-  "puntos": 4,
-  "media": 2,
-  "partidos": 1,
-  "semana": -48000,
-  "sem7": -410000,
-  "mes": -32000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   3,
-   null,
-   null
-  ],
-  "eq": 9,
-  "riv": 6,
-  "casa": 1,
-  "gol": 0,
-  "tar": 1,
-  "mc": 0,
-  "mf": 3,
-  "tit": 1,
-  "sup": 0,
-  "once": 1,
-  "asis": 0,
-  "edad": 22,
-  "js": [
-   [
-    1,
-    3,
-    48,
-    1,
-    "yo"
-   ],
-   [
-    2,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    50,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71021",
   "nombre": "Alejandro Grimaldo",
   "valor": 9149000,
@@ -22708,6 +22648,66 @@
     3,
     1,
     "y"
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "58125",
+  "nombre": "Mario Martín",
+  "valor": 1325000,
+  "puntos": 3,
+  "media": 1.5,
+  "partidos": 1,
+  "semana": -48000,
+  "sem7": -410000,
+  "mes": -32000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   3,
+   null,
+   null
+  ],
+  "eq": 9,
+  "riv": 6,
+  "casa": 1,
+  "gol": 0,
+  "tar": 1,
+  "mc": 0,
+  "mf": 3,
+  "tit": 1,
+  "sup": 0,
+  "once": 1,
+  "asis": 0,
+  "edad": 22,
+  "js": [
+   [
+    1,
+    3,
+    48,
+    1,
+    "yo"
+   ],
+   [
+    2,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    50,
+    0,
+    ""
    ]
   ],
   "p": 0,
