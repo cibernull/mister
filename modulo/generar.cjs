@@ -1406,7 +1406,20 @@ const riqueza = [...EQ]
     (e) => `        <div class="ranking${e.mio ? ' mio' : ''}">
           <span class="pos">${e.pos}º</span><span class="nom">${esc(e.corto)}</span>
           <span class="bar doble">${barraRiqueza(e)}</span>
-          <span class="val">${corto(e.patrimonio)}${e.saldo < 0 ? `<em class="debe" title="Debe ${eur(-e.saldo)}: Mister deja quedarse en números rojos, y eso ya está restado de su patrimonio">debe ${corto(-e.saldo)}</em>` : ''}</span>
+          ${(() => {
+            // La cuenta solo si mueve la cifra: a Saiyans, que debe 76 K sobre
+            // 81 M, le salía «81 M − 76 K que debe → 81 M», que es escribir una
+            // resta para no restar nada.
+            const cambia = e.saldo < 0 && corto(e.pl) !== corto(e.patrimonio)
+            return `<span class="val${cambia ? ' conDeuda' : ''}">${
+            cambia
+              // La resta escrita, que es como se entiende sin pensar. Con solo
+              // el total y la deuda al lado, lo natural es preguntarse si hay
+              // que volver a restarla — y eso preguntó Isaac.
+              ? `<em class="cuentita" title="Su plantilla vale ${eur(e.pl)} y debe ${eur(-e.saldo)}. Mister deja quedarse en números rojos."><span>${corto(e.pl)}</span><span class="menos">− ${corto(-e.saldo)} que debe</span></em><b>${corto(e.patrimonio)}</b>`
+              : `${corto(e.patrimonio)}${e.saldo < 0 ? `<em class="debechico" title="Debe ${eur(-e.saldo)}, ya restado">debe ${corto(-e.saldo)}</em>` : ''}`
+          }</span>`
+          })()}
         </div>`,
   )
   .join(NL)

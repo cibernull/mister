@@ -298,7 +298,14 @@ table.jt td .ec{width:15px;height:15px;vertical-align:-3px;margin-right:6px}
 /* Lo que debe un equipo: se dibuja detrás de su patrimonio, en rojo rayado.
    Antes no se veía —un ancho negativo el navegador lo recorta a cero— y quien
    estaba en números rojos parecía simplemente sin dinero. */
-.val .debe{display:block;font-style:normal;font-size:9.5px;color:var(--baja);font-family:"IBM Plex Mono",monospace;line-height:1.2}
+/* La resta escrita para quien debe dinero: plantilla, menos la deuda, total.
+   Solo con el total y la deuda al lado, lo natural es preguntarse si hay que
+   volver a restarla. */
+.val.conDeuda{display:flex;flex-direction:column;align-items:flex-end;gap:0;line-height:1.25}
+.val .debechico{display:block;font-style:normal;font-size:9.5px;color:var(--baja);font-family:"IBM Plex Mono",monospace;line-height:1.2}
+.val .cuentita{display:flex;flex-direction:column;align-items:flex-end;font-style:normal;font-size:10px;color:var(--tenue);font-family:"IBM Plex Mono",monospace}
+.val .cuentita .menos{color:var(--baja)}
+.val.conDeuda b{font-weight:600;border-top:1px solid var(--raya);padding-top:1px;margin-top:1px}
 /* Una advertencia sobre una cifra, junto a la cifra. */
 .sd.aviso{border-left:3px solid var(--oro-raya);background:var(--oro-fondo);border-radius:0 6px 6px 0;padding:7px 11px;margin-top:8px;font-size:12px;line-height:1.55}
 .sd.aviso b{color:var(--oro)}
