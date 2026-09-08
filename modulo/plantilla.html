@@ -396,6 +396,10 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
 .jtabs button b{color:var(--oro);font-size:12px}
 .jtabs button:hover{border-color:var(--oro-raya);color:var(--tinta)}
 .jtabs button.on{border-color:var(--tinta);color:var(--tinta);background:var(--hueco)}
+/* «A mano» no es una jornada más: se separa y se marca en dorado. */
+.jtabs .mano-tab{margin-left:auto;border-color:var(--oro-raya);color:var(--oro)}
+.jtabs .mano-tab.on{background:var(--oro-fondo);border-color:var(--oro);color:var(--oro-vivo)}
+.mano{margin-top:4px;border:0;padding:0;background:none}
 .jbanca{display:flex;flex-wrap:wrap;align-items:center;gap:5px;margin-top:8px;font-size:11px}
 .jbanca>i{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue);margin-right:3px}
 .jb{background:var(--tabla);border:1px solid var(--raya);border-radius:7px;padding:3px 7px;color:var(--gris)}
@@ -1354,8 +1358,10 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
 
     // Se arranca al abrir el desplegable: las islas van al final de la página y
     // aquí todavía no existen.
-    var caja = campo.closest('details')
-    if (caja) caja.addEventListener('toggle', function () { if (caja.open) arrancar() })
+    // Se arranca cuando se enciende el modo, no al cargar: las islas de datos
+    // van al final de la página y aquí todavía no existen.
+    var caja = document.getElementById('zona-mano')
+    if (caja) caja.addEventListener('encender', arrancar)
 
     selForm.addEventListener('change', function () {
       var f = (window.FORMACIONES || []).filter(function (x) { return x.n === selForm.value })[0]
@@ -1415,7 +1421,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     var formaciones = seccion.querySelector('.otraform')
     var original = null
 
-    function campoActual () { return seccion.querySelector('.campo:not(.mano-campo)') }
+    function campoActual () { return seccion.querySelector('#zona-campo .campo') }
 
     tabs.addEventListener('click', function (e) {
       var b = e.target.closest ? e.target.closest('[data-jornada]') : null
@@ -1426,6 +1432,29 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       if (original === null) original = campo.outerHTML
 
       tabs.querySelectorAll('[data-jornada]').forEach(function (x) { x.classList.toggle('on', x === b) })
+
+      var zonaMano = document.getElementById('zona-mano')
+      var zonaCampo = document.getElementById('zona-campo')
+      var pieC = document.getElementById('pie-campo')
+      var formas = seccion.querySelector('.otraform')
+
+      // «A mano» es un modo del mismo campo, no otra sección: se apaga el campo
+      // de arriba y se enciende el editable, en su sitio.
+      if (cual === 'mano') {
+        if (zonaCampo) zonaCampo.hidden = true
+        if (pieC) pieC.hidden = true
+        if (formas) formas.hidden = true
+        if (aviso) { aviso.hidden = true; aviso.innerHTML = '' }
+        if (jbanca) { jbanca.hidden = true; jbanca.innerHTML = '' }
+        if (zonaMano) {
+          zonaMano.hidden = false
+          zonaMano.dispatchEvent(new Event('encender'))
+        }
+        return
+      }
+      if (zonaMano) zonaMano.hidden = true
+      if (zonaCampo) zonaCampo.hidden = false
+      if (pieC) pieC.hidden = false
 
       if (cual === 'proxima') {
         campo.outerHTML = original

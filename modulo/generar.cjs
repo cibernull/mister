@@ -1830,15 +1830,15 @@ const bloqueOnce = once === null || once.elegidos.length === 0
 ${ALINEACIONES.filter((a) => a.once && a.once.length)
   .map((a) => `        <button type="button" data-jornada="${a.jornada}">J${a.jornada}<b>${a.puntos ?? 0}</b></button>`)
   .join(NL)}
+        <button type="button" class="mano-tab" data-jornada="mano">✏️ A mano</button>
       </div>`
         : ''}
       <p class="sd" id="once-que-ves" hidden></p>
       <p class="pie" id="pie-campo">La cifra de cada ficha <strong>no es su media</strong>: es lo que cabe esperar de él <strong>este domingo</strong>, con su media donde le toca jugar, su forma y el rival que le viene. Un jugador de más media puede salir por debajo si juega fuera y le toca un rival duro.</p>
-      ${campoOnce(once, FORMACION)}
+      <div id="zona-campo">${campoOnce(once, FORMACION)}</div>
       <div class="jbanca" id="jbanca" hidden></div>
-      <details class="mano">
-        <summary><span class="txt">Probar un once a mano</span></summary>
-        <p class="sd">Mi once es una opinión: elige por el pronóstico de titularidad de Mister y por lo que rinde cada uno en su partido. Tú sabes cosas que yo no —quién viene tocado, a quién se le da bien el rival—. Arrastra o toca para armar el tuyo y ver cuánto daría.</p>
+      <div class="mano" id="zona-mano" hidden>
+        <p class="sd">Mi once es una opinión: elige por el pronóstico de titularidad y por lo que rinde cada uno en su partido. Tú sabes cosas que yo no —quién viene tocado, a quién se le da bien el rival—. Arrastra o toca para armar el tuyo y ver cuánto daría.</p>
         <div class="mano-cab">
           <label>Formación <select id="mano-formacion"></select></label>
           <span class="mano-total"><b id="mano-puntos">0,0</b> pts <i id="mano-cuantos">0 de 11</i></span>
@@ -1848,7 +1848,7 @@ ${ALINEACIONES.filter((a) => a.once && a.once.length)
         <div class="campo mano-campo" id="mano-campo"></div>
         <p class="sd" id="mano-aviso"></p>
         <div class="mano-banca" id="mano-banca"></div>
-      </details>
+      </div>
       <div class="mini">
 ${once.elegidos.map(filaOnce).join(NL)}
       </div>
