@@ -1142,7 +1142,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     <label for="t2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Jugadores</span></label>
     <label for="t3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/><path d="M3 21v-1.5a3 3 0 0 1 3-3M21 21v-1.5a3 3 0 0 0-3-3"/></svg><span>Mi liga</span></label>
     <label for="t4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13M13 4l4 4-4 4"/><path d="M20 16H7M11 12l-4 4 4 4"/></svg><span>Actualidad</span></label>
-    <label for="t5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg><span>Más</span></label>
+    <label for="t5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="4" width="3" height="14"/></svg><span>Estadísticas</span></label>
   </nav>
 
   <div class="panel" id="p1">
@@ -1920,7 +1920,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
   }
 
   // Publicada en la web. Aquí no hay servidor al que pedirle nada: quien habla
-  // con Mister es GitHub, cada media hora. Lo que sí sirve es volver a pedir la
+  // con Mister es GitHub, cada hora. Lo que sí sirve es volver a pedir la
   // página, que es como llega la versión que GitHub haya subido mientras tanto.
   //
   // Un dato viejo no se distingue de uno fresco leyendo una fecha: hay que hacer
@@ -1932,13 +1932,15 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
   // «hace 1 h» no informa de nada — no se distingue una tarea rota de una a la
   // que aún no le toca, y eso ya despistó una vez. Repetir aquí el horario es
   // feo, pero leerlo del workflow exigiría un servidor.
+  // La tarea corre al minuto 17 de cada hora, en UTC. Va en minuto 17 y no en
+  // punto porque GitHub encola en el minuto 0 el cron de medio mundo.
+  var MINUTO_DE_LA_PASADA = 17
+
   function proximaPasada () {
     var t = new Date(Date.now() + 60000)
     t.setSeconds(0, 0)
-    for (var i = 0; i < 1500; i += 1) {
-      var h = t.getUTCHours()
-      var m = t.getUTCMinutes()
-      if (m === 7 || (m === 37 && h >= 5 && h <= 22)) return t
+    for (var i = 0; i < 130; i += 1) {
+      if (t.getUTCMinutes() === MINUTO_DE_LA_PASADA) return t
       t = new Date(t.getTime() + 60000)
     }
     return null
@@ -1959,7 +1961,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
         : 'hace ' + Math.round(mins / 1440) + ' días'
       sello.innerHTML = 'Datos de <b>' + cuanto + '</b>'
       sello.title = 'Leídos de Mister el ' + new Date(nacido).toLocaleString('es-ES')
-      // Dos horas: la tarea corre cada media hora, así que a las dos ya falló
+      // Dos horas: la tarea corre cada hora, así que a las dos ya falló
       // tres o cuatro veces seguidas y eso ya no es un retraso de GitHub.
       sello.classList.toggle('viejo', mins >= 120)
     }
@@ -1994,7 +1996,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     var decirCuando = function (enSuLugar) {
       if (enSuLugar) { est.innerHTML = enSuLugar; return }
       var p = proximaPasada()
-      est.innerHTML = 'Se actualiza sola cada media hora' +
+      est.innerHTML = 'Se actualiza sola cada hora' +
         (p ? '; la próxima, sobre las <b>' + aLaHora(p) + '</b>' : '') + '.' +
         (directo ? '' : '<br>«Forzar ahora» abre GitHub para adelantarla: allí, <b>Run workflow</b>.')
     }
