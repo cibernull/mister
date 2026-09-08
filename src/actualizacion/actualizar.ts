@@ -631,10 +631,14 @@ function detalleDe(f: FichaGuardada | undefined, minutos: EventosDeUnJugador = {
     saved_penalty: 's',
     sub_in: 'i',
     sub_out: 'o',
-    // Estas tres solo llegan por el detalle de jornada: la ficha no las separa.
+    // Estas cuatro solo llegan por el detalle de jornada: la ficha no las separa.
     red: 'r',
     own_goal: 'c',
     missed_penalty: 'f',
+    // `double` es la segunda amarilla: las dos veces que aparece viene con su
+    // amarilla al lado —Altimira en el 93, Zaid Romero en el 67— y el jugador
+    // se va expulsado.
+    double: 'd',
   }
   return {
     gol: f?.goles ?? null,
@@ -648,8 +652,11 @@ function detalleDe(f: FichaGuardada | undefined, minutos: EventosDeUnJugador = {
     edad: f?.edad ?? null,
     js: (f?.jornadas ?? []).map((j) => {
       const conMinuto = minutos[String(j.jornada)]
+      // Una categoría que no conozco se descarta entera. Antes se quedaba sin
+      // letra pero conservaba el minuto, así que colaba un «93» suelto que no
+      // se pintaba pero viajaba hasta el navegador.
       const trozos = conMinuto
-        ? conMinuto.map((e) => `${LETRA[e.categoria] ?? ''}${e.minuto}`).filter((t) => t.length > 1)
+        ? conMinuto.filter((e) => LETRA[e.categoria] !== undefined).map((e) => `${LETRA[e.categoria]}${e.minuto}`)
         : j.eventos.map((e) => LETRA[e] ?? '').filter(Boolean)
       return [j.jornada, j.puntos, j.rival, j.como === 'inicio' ? 1 : 0, trozos.join(',')] as [
         number,

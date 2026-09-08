@@ -456,6 +456,10 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
 /* El minuto, pegado a su icono: sin él la tira dice qué pasó pero no cuándo. */
 .cf-j .ev span{display:inline-flex;align-items:center;gap:1px}
 .cf-j .ev .min{font-family:"IBM Plex Mono",monospace;font-size:8px;font-weight:600;color:var(--tenue);letter-spacing:-.03em}
+/* Un gol en propia y un penalti fallado también son balones, pero restan: el
+   balón va sobre rojo para que no se confundan con un gol de un vistazo. */
+.cf-j .ev .malo{border-radius:50%;background:var(--baja);box-shadow:0 0 0 1px var(--baja);padding:0 1px}
+.cf-j .ev .malo .min{color:#fff}
 .cf-j .ev .pen{position:relative}
 .cf-j .ev .pen::after{content:"";position:absolute;left:50%;bottom:-1px;width:2px;height:2px;margin-left:-1px;border-radius:50%;background:var(--tenue)}
 .cf-j .esc{display:flex;align-items:center;justify-content:center;height:16px}
@@ -1868,8 +1872,11 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     // Mister viene como evento aparte, pero suma en el total de goles, y sin
     // balón la tira desmentía al «GOLES» de arriba —Budimir, 4 goles, 1 balón.
     // Se distingue con un punto debajo, que es el del penalti.
-    var ICONO = { g: '⚽', a: '🅰', y: '🟨', p: '⚽', s: '🧤', i: '⬆', o: '⬇', r: '🟥', c: '🥅', f: '❌' }
-    var NOMBRE_EV = { g: 'gol', a: 'asistencia', y: 'tarjeta amarilla', p: 'gol de penalti', s: 'penalti parado', i: 'entró desde el banquillo', o: 'fue sustituido', r: 'tarjeta roja', c: 'gol en propia puerta', f: 'penalti fallado' }
+    var ICONO = { g: '⚽', a: '🅰', y: '🟨', p: '⚽', s: '🧤', i: '⬆', o: '⬇', r: '🟥', c: '⚽', f: '⚽', d: '🟥' }
+    var NOMBRE_EV = { g: 'gol', a: 'asistencia', y: 'tarjeta amarilla', p: 'gol de penalti', s: 'penalti parado', i: 'entró desde el banquillo', o: 'fue sustituido', r: 'tarjeta roja', c: 'gol en propia puerta', f: 'penalti fallado', d: 'doble amarilla, expulsado' }
+    // Lo que sale caro va en rojo: el balón de un gol en propia y el de un
+    // penalti fallado son balones, pero no cuentan lo mismo que un gol.
+    var MALO = { c: 1, f: 1 }
 
     function jornadas (f) {
       if (!f.js || !f.js.length) return '<p class="vacio2">Todavía no ha jugado ninguna jornada.</p>'
@@ -1889,7 +1896,8 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
           var min = t.slice(1)
           if (!ICONO[c]) return ''
           var titulo = (NOMBRE_EV[c] || c) + (min ? ', minuto ' + min : '')
-          return '<span' + (c === 'p' ? ' class="pen"' : '') + ' title="' + esc(titulo) + '">' + ICONO[c] +
+          var clase = MALO[c] ? 'malo' : c === 'p' ? 'pen' : ''
+          return '<span' + (clase ? ' class="' + clase + '"' : '') + ' title="' + esc(titulo) + '">' + ICONO[c] +
             (min ? "<b class='min'>" + min + "'</b>" : '') + '</span>'
         }).join('')
         return '<div class="cf-j' + (jugo ? '' : ' nojugo') + '">' +
