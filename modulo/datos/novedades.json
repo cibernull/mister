@@ -1,5 +1,136 @@
 [
  {
+  "tipo": "duenio",
+  "dia": "2026-09-08",
+  "id": "63",
+  "de": "Mario80",
+  "a": "Niutin FC (Isaac)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "607",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-08",
+  "id": "14911",
+  "de": "Saiyans FC (Fran)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "14911",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "19168",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "22502",
+  "entra": false
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-09-08",
+  "id": "27520",
+  "equipo": "Niutin FC (Isaac)",
+  "escalones": -1,
+  "coste": -1123600,
+  "clausula": 8427000
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "28677",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "29222",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "31496",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "33734",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "35434",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "52375",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "56502",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "56578",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "65727",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "70496",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "70638",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "70940",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "71503",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "1751425",
+  "entra": true
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-07",
   "id": "11761",

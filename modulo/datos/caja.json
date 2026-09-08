@@ -1,6 +1,22 @@
 {
- "saldo": 20652320,
+ "saldo": 14677120,
  "apuntes": [
+  {
+   "cuando": 1788848797,
+   "fecha": "2026-09-08 08:26",
+   "motivo": "Modificación de cláusula (50%) de Fran García",
+   "tipo": "Bonificación",
+   "importe": 561800,
+   "saldo": 14677120
+  },
+  {
+   "cuando": 1788848497,
+   "fecha": "2026-09-08 08:21",
+   "motivo": "Marc Bartra a Mario80",
+   "tipo": "Compra por cláusula",
+   "importe": -6537000,
+   "saldo": 14115320
+  },
   {
    "cuando": 1788750000,
    "fecha": "2026-09-07 05:00",
@@ -464,22 +480,6 @@
    "tipo": "Compra",
    "importe": -4764360,
    "saldo": -13557326
-  },
-  {
-   "cuando": 1786440378,
-   "fecha": "2026-08-11 11:26",
-   "motivo": "Carlos Dominguez a Mister",
-   "tipo": "Venta por rescisión",
-   "importe": 559200,
-   "saldo": -8792966
-  },
-  {
-   "cuando": 1786330800,
-   "fecha": "2026-08-10 05:00",
-   "motivo": "Mario Soriano a Mister",
-   "tipo": "Compra",
-   "importe": -2307010,
-   "saldo": -9352166
   }
  ]
 }
