@@ -363,6 +363,7 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
 .et-prob.bien{color:var(--sube);border-color:var(--sube)}
 .et-prob.duda{color:var(--oro);border-color:var(--oro-raya)}
 .et-prob.mal{color:var(--baja);border-color:var(--baja)}
+.et-baja{color:var(--baja);border-color:var(--baja);max-width:100%;white-space:normal;text-align:left}
 .cj-duda{position:absolute;right:-6px;top:-5px;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:8px;font-weight:700;line-height:1;padding:2px 3px;border-radius:5px;background:var(--baja);color:#fff}
 .cj-n{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:2px 6px;border-radius:5px;background:rgba(0,0,0,.6);font-size:11px;font-weight:600;letter-spacing:.01em}
 .cj-p{min-width:30px;padding:2px 6px;border-radius:5px;font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:700;color:#0d0d0d;background:#fff}
@@ -452,6 +453,9 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
 .cf-j .b.alta{background:var(--sube)} .cf-j .b.media{background:var(--oro)}
 .cf-j .b.baja{background:var(--raya);color:var(--gris)} .cf-j .b.cero{background:var(--baja);color:#fff}
 .cf-j .ev{display:flex;flex-wrap:wrap;justify-content:center;gap:1px;font-size:10.5px;min-height:12px;line-height:1}
+/* El minuto, pegado a su icono: sin él la tira dice qué pasó pero no cuándo. */
+.cf-j .ev span{display:inline-flex;align-items:center;gap:1px}
+.cf-j .ev .min{font-family:"IBM Plex Mono",monospace;font-size:8px;font-weight:600;color:var(--tenue);letter-spacing:-.03em}
 .cf-j .ev .pen{position:relative}
 .cf-j .ev .pen::after{content:"";position:absolute;left:50%;bottom:-1px;width:2px;height:2px;margin-left:-1px;border-radius:50%;background:var(--tenue)}
 .cf-j .esc{display:flex;align-items:center;justify-content:center;height:16px}
@@ -1864,8 +1868,8 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     // Mister viene como evento aparte, pero suma en el total de goles, y sin
     // balón la tira desmentía al «GOLES» de arriba —Budimir, 4 goles, 1 balón.
     // Se distingue con un punto debajo, que es el del penalti.
-    var ICONO = { g: '⚽', a: '🅰', y: '🟨', p: '⚽', s: '🧤', i: '⬆', o: '⬇' }
-    var NOMBRE_EV = { g: 'gol', a: 'asistencia', y: 'tarjeta amarilla', p: 'gol de penalti', s: 'penalti parado', i: 'entró desde el banquillo', o: 'fue sustituido' }
+    var ICONO = { g: '⚽', a: '🅰', y: '🟨', p: '⚽', s: '🧤', i: '⬆', o: '⬇', r: '🟥', c: '🥅', f: '❌' }
+    var NOMBRE_EV = { g: 'gol', a: 'asistencia', y: 'tarjeta amarilla', p: 'gol de penalti', s: 'penalti parado', i: 'entró desde el banquillo', o: 'fue sustituido', r: 'tarjeta roja', c: 'gol en propia puerta', f: 'penalti fallado' }
 
     function jornadas (f) {
       if (!f.js || !f.js.length) return '<p class="vacio2">Todavía no ha jugado ninguna jornada.</p>'
@@ -1876,8 +1880,17 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
         var jugo = pts != null
         var clase = !jugo ? 'baja' : pts >= 8 ? 'alta' : pts >= 4 ? 'media' : pts > 0 ? 'baja' : 'cero'
         var alto = jugo ? Math.max(16, Math.round((Math.max(pts, 0) / max) * 86)) : 6
-        var iconos = ev.split('').map(function (c) {
-          return ICONO[c] ? '<span' + (c === 'p' ? ' class="pen"' : '') + ' title="' + esc(NOMBRE_EV[c] || c) + '">' + ICONO[c] + '</span>' : ''
+        // Cada evento es su letra y, detrás, el minuto: «g12», «o46». Los de
+        // antes venían sin minuto y pegados —«og»—, así que si no hay comas ni
+        // números se leen como se leían.
+        var trozos = ev.indexOf(',') !== -1 || /\d/.test(ev) ? ev.split(',') : ev.split('')
+        var iconos = trozos.map(function (t) {
+          var c = t.charAt(0)
+          var min = t.slice(1)
+          if (!ICONO[c]) return ''
+          var titulo = (NOMBRE_EV[c] || c) + (min ? ', minuto ' + min : '')
+          return '<span' + (c === 'p' ? ' class="pen"' : '') + ' title="' + esc(titulo) + '">' + ICONO[c] +
+            (min ? "<b class='min'>" + min + "'</b>" : '') + '</span>'
         }).join('')
         return '<div class="cf-j' + (jugo ? '' : ' nojugo') + '">' +
           '<div class="col"><div class="b ' + clase + '" style="height:' + alto + 'px" title="' +
@@ -1924,10 +1937,18 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       if (f.sub) ets.push('<span class="et et-sub">🛡 ×' + (1.5 + 0.5 * f.sub).toFixed(1).replace('.', ',') + '</span>')
       // El porcentaje manda sobre el sí/no de Mister: es más fino y lo tiene
       // casi todo el mundo, mientras que el de Mister viene vacío casi siempre.
+      // La baja, con su plazo. Es lo que decide entre vender a alguien y
+      // esperarle, y hasta ahora la ficha solo sabía decir «lesionado».
+      if (f.bj) {
+        ets.push('<span class="et et-baja" title="' + esc(f.bj.que + (f.bj.desde ? ' · desde ' + f.bj.desde : '')) + '">🏥 ' + esc(f.bj.que) +
+          (f.bj.hasta ? ' · vuelve ' + esc(f.bj.hasta) : '') + '</span>')
+      }
       if (f.pr != null) {
         ets.push('<span class="et et-prob' + (f.pr >= 70 ? ' bien' : f.pr >= 30 ? ' duda' : ' mal') + '" title="Probabilidad de salir de titular, según FútbolFantasy">' + f.pr + ' % titular</span>')
       } else if (f.on === 1) ets.push('<span class="et et-once">👕 titular</span>')
-      if (f.est === 'injury') ets.push('<span class="et et-mal">🏥 lesionado</span>')
+      // Solo el «lesionado» a secas de Mister cuando no hay algo mejor que decir:
+      // con la etiqueta de arriba se repetiría la misma noticia dos veces.
+      if (f.est === 'injury' && !f.bj) ets.push('<span class="et et-mal">🏥 lesionado</span>')
       else if (f.est) ets.push('<span class="et et-mal">' + esc(f.est) + '</span>')
 
       var partido = f.riv

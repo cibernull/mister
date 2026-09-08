@@ -578,7 +578,33 @@ function construirDatosLiga(
  * el generador puede preguntar por ellas sin distinguir «no lo sé» de «no
  * existe el campo», que es de donde salen los `undefined` en la página.
  */
-function detalleDe(f: FichaGuardada | undefined): {
+/** Los eventos con minuto de un jugador, por jornada. */
+type EventosDeUnJugador = Record<string, { categoria: string; minuto: number }[]>
+
+/**
+ * Los minutos de cada evento, que recoge `npm run alineaciones` del detalle de
+ * jornada. Se lee una sola vez: son 932 jugadores y se consulta 529 veces.
+ *
+ * Si el fichero no está —la primera vez, o si esa pasada falló—, los eventos
+ * salen sin minuto, que es como estaban antes. Un hueco, no un cero.
+ */
+let cacheEventos: Record<string, Record<string, { categoria: string; minuto: number }[]>> | null = null
+function minutosDe(id: string | number): EventosDeUnJugador {
+  if (cacheEventos === null) {
+    const ruta = join(DATOS, 'eventos-jornada.json')
+    cacheEventos = existsSync(ruta)
+      ? leerJson<Record<string, Record<string, { categoria: string; minuto: number }[]>>>(ruta)
+      : {}
+  }
+  const salida: EventosDeUnJugador = {}
+  for (const [jornada, jugadores] of Object.entries(cacheEventos)) {
+    const suyos = jugadores[String(id)]
+    if (suyos !== undefined) salida[jornada] = suyos
+  }
+  return salida
+}
+
+function detalleDe(f: FichaGuardada | undefined, minutos: EventosDeUnJugador = {}): {
   gol: number | null
   tar: number | null
   mc: number | null
@@ -593,8 +619,10 @@ function detalleDe(f: FichaGuardada | undefined): {
 } {
   // Las jornadas van en tuplas y no en objetos porque son 522 jugadores por 38
   // jornadas y las claves repetidas quinientas veces pesan más que los datos.
-  // Los eventos se abrevian a una letra: g gol, a asistencia, y tarjeta,
-  // p penalti, s penalti parado, i entra, o sale.
+  // Los eventos se abrevian a una letra y llevan su minuto detrás: «g12» es un
+  // gol al 12, «o46» salir del campo al descanso. El minuto sale del detalle de
+  // la jornada, no de la ficha —la ficha pinta los iconos y calla el cuándo—.
+  // Cuando no lo tenemos, la letra va sola: es lo que había hasta ahora.
   const LETRA: Record<string, string> = {
     goal: 'g',
     assist: 'a',
@@ -603,6 +631,10 @@ function detalleDe(f: FichaGuardada | undefined): {
     saved_penalty: 's',
     sub_in: 'i',
     sub_out: 'o',
+    // Estas tres solo llegan por el detalle de jornada: la ficha no las separa.
+    red: 'r',
+    own_goal: 'c',
+    missed_penalty: 'f',
   }
   return {
     gol: f?.goles ?? null,
@@ -614,13 +646,19 @@ function detalleDe(f: FichaGuardada | undefined): {
     once: f === undefined || f.titular === null ? null : f.titular ? 1 : 0,
     asis: f?.asistencias ?? null,
     edad: f?.edad ?? null,
-    js: (f?.jornadas ?? []).map((j) => [
-      j.jornada,
-      j.puntos,
-      j.rival,
-      j.como === 'inicio' ? 1 : 0,
-      j.eventos.map((e) => LETRA[e] ?? '').join(''),
-    ]),
+    js: (f?.jornadas ?? []).map((j) => {
+      const conMinuto = minutos[String(j.jornada)]
+      const trozos = conMinuto
+        ? conMinuto.map((e) => `${LETRA[e.categoria] ?? ''}${e.minuto}`).filter((t) => t.length > 1)
+        : j.eventos.map((e) => LETRA[e] ?? '').filter(Boolean)
+      return [j.jornada, j.puntos, j.rival, j.como === 'inicio' ? 1 : 0, trozos.join(',')] as [
+        number,
+        number | null,
+        number | null,
+        0 | 1,
+        string,
+      ]
+    }),
   }
 }
 
@@ -688,7 +726,7 @@ function construirJugadores(
     /** El club contra el que juega la próxima jornada, y si es en casa. */
     riv: j.rival,
     casa: j.enCasa === null ? null : j.enCasa ? 1 : 0,
-    ...detalleDe(detalle[j.id]),
+    ...detalleDe(detalle[j.id], minutosDe(j.id)),
   }))
 
   // Los que siguen en una plantilla y ya no están en LaLiga. No los lista el
@@ -722,7 +760,7 @@ function construirJugadores(
       eq: 0,
       riv: null,
       casa: null,
-      ...detalleDe(detalle[id]),
+      ...detalleDe(detalle[id], minutosDe(id)),
     })
   }
 

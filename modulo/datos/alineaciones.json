@@ -709,8 +709,8 @@
     "id": "56971",
     "nombre": "Hector Fort",
     "puesto": 2,
-    "puntos": null,
-    "jugo": false,
+    "puntos": 2,
+    "jugo": true,
     "capitan": false
    },
    {

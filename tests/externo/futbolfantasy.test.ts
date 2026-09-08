@@ -80,4 +80,27 @@ describe('emparejar', () => {
   it('a quien no aparece no se le inventa nada', () => {
     expect(emparejar([{ id: '99', nombre: 'Nadie Conocido', eq: 4 }], suyos).size).toBe(0)
   })
+
+  it('compartir el nombre de pila no basta: hace falta el apellido', () => {
+    // Sin esto, a Unai Simón —que está sano— se le colgaba la rotura de
+    // cruzado de Unai Egiluz. Los dos del Athletic y los dos «Unai».
+    const athletic = [
+      { nombre: 'Unai Egiluz', idClub: 1, probabilidad: 0, sancionado: false, disponible: false, minutos: 0 },
+    ]
+    expect(emparejar([{ id: '14811', nombre: 'Unai Simón', eq: 1 }], athletic).size).toBe(0)
+    expect(emparejar([{ id: '1', nombre: 'Unai Egiluz', eq: 1 }], athletic).size).toBe(1)
+  })
+
+  it('cada uno de ellos se reparte una sola vez, al que más se le parece', () => {
+    const uno = [{ nombre: 'Joan Garcia', idClub: 3, probabilidad: 80, sancionado: false, disponible: true, minutos: 90 }]
+    const m = emparejar(
+      [
+        { id: 'eric', nombre: 'Eric García', eq: 3 },
+        { id: 'joan', nombre: 'Joan Garcia', eq: 3 },
+      ],
+      uno,
+    )
+    expect(m.get('joan')?.nombre).toBe('Joan Garcia')
+    expect(m.has('eric')).toBe(false)
+  })
 })

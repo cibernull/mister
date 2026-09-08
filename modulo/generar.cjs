@@ -280,6 +280,12 @@ const probabilidadDe = (j) => {
   return p && typeof p.prob === 'number' ? p.prob : null
 }
 
+/** Su baja, con las palabras de FútbolFantasy, o null si no está lesionado. */
+const bajaDe = (j) => {
+  const p = PROBABLES[String(j.id)]
+  return p && p.lesion ? { que: p.lesion, desde: p.desde ?? null, hasta: p.hasta ?? null } : null
+}
+
 /** A partir de aquí se le da por titular y no se avisa de nada. */
 const TRAMO_TITULAR = 70
 
@@ -1059,6 +1065,8 @@ const islaFichas = JSON.stringify(
           on: j.once,
           // El porcentaje de salir de titular; null si no lo publican de él.
           pr: probabilidadDe(j),
+          // Y la baja, si la tiene: qué es y hasta cuándo, en sus palabras.
+          bj: bajaDe(j),
           riv: j.riv ?? null,
           ca: j.casa,
           du: durezaDe(j),

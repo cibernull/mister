@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { parsearAlineacion, parsearJornadasConocidas } from '../../src/recoleccion/parseadorJornada.js'
+import { parsearAlineacion, parsearEventosDeJornada, parsearJornadasConocidas } from '../../src/recoleccion/parseadorJornada.js'
 
 const jugador = (id: number, nombre: string, position: number, points: number | null, played = 1) =>
   ({ id, name: nombre, position, points, played, captain: 0 })
@@ -68,5 +68,51 @@ describe('parsearAlineacion', () => {
     const b = parsearAlineacion(conCero, 2, 3969)
     expect(b.once[0]).toMatchObject({ puntos: 0, jugo: true })
     expect(b.once[1]).toMatchObject({ puntos: null, jugo: false })
+  })
+})
+
+describe('parsearEventosDeJornada', () => {
+  const conEventos = JSON.stringify({
+    data: {
+      players: {
+        37967: {
+          all: {
+            1: [{ id: 100, name: 'Un portero', events: [{ category: 'saved_penalty', minute: 9 }] }],
+            3: [
+              { id: 200, name: 'Un medio', events: [{ category: 'sub_out', minute: 46 }, { category: 'goal', minute: 12 }] },
+              { id: 300, name: 'Otro medio', events: false },
+              { id: 400, name: 'Sin eventos' },
+            ],
+          },
+        },
+      },
+    },
+  })
+  const m = parsearEventosDeJornada(conEventos)
+
+  it('saca el minuto de cada evento, que es lo que la ficha no da', () => {
+    expect(m.get('100')).toEqual([{ categoria: 'saved_penalty', minuto: 9 }])
+  })
+
+  it('los ordena por minuto: un gol antes del cambio se lee en ese orden', () => {
+    expect(m.get('200')).toEqual([
+      { categoria: 'goal', minuto: 12 },
+      { categoria: 'sub_out', minuto: 46 },
+    ])
+  })
+
+  it('se salta a quien no tiene eventos en vez de guardarle una lista vacia', () => {
+    expect(m.has('300')).toBe(false)
+    expect(m.has('400')).toBe(false)
+  })
+
+  it('no traduce las categorias: si Mister anade una nueva, no se pierde', () => {
+    const rara = JSON.stringify({ data: { players: { 1: { all: { 4: [{ id: 9, events: [{ category: 'algo_nuevo', minute: 70 }] }] } } } } })
+    expect(parsearEventosDeJornada(rara).get('9')).toEqual([{ categoria: 'algo_nuevo', minuto: 70 }])
+  })
+
+  it('un evento sin minuto se descarta, que media verdad no sirve', () => {
+    const cojo = JSON.stringify({ data: { players: { 1: { all: { 4: [{ id: 9, events: [{ category: 'goal' }] }] } } } } })
+    expect(parsearEventosDeJornada(cojo).has('9')).toBe(false)
   })
 })

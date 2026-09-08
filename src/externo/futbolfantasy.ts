@@ -34,6 +34,17 @@ export const CLUBES: Record<string, number> = {
   'real-sociedad': 16, sevilla: 17, valencia: 19, villarreal: 20,
 }
 
+/**
+ * En la lista de lesionados los equipos no vienen por su nombre en la URL sino
+ * por el número de su escudo, que es otro. Comprobados los veinte contra la
+ * cabecera de cada bloque de esa página.
+ */
+export const ESCUDOS_FF: Record<string, number> = {
+  '28': 48, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '21': 23, '7': 8, '8': 9,
+  '10': 12, '11': 13, '13': 50, '42': 1490, '14': 14, '15': 15, '16': 16, '17': 17,
+  '18': 19, '22': 20,
+}
+
 /** Un jugador tal y como lo publica FútbolFantasy. */
 export type Probable = {
   nombre: string
@@ -44,6 +55,25 @@ export type Probable = {
   disponible: boolean
   /** Minutos jugados en la temporada, que Mister no publica. */
   minutos: number | null
+}
+
+/**
+ * Una baja: qué tiene y hasta cuándo, tal y como lo escribe FútbolFantasy.
+ *
+ * El «hasta» se guarda como texto —«finales de septiembre», «2 semanas»— y no
+ * se convierte en fecha. Ellos lo publican así porque así de exacto es: un
+ * plazo médico aproximado. Traducirlo a un día concreto sería darle una
+ * precisión que nadie tiene.
+ */
+export type Baja = {
+  nombre: string
+  idClub: number
+  /** La lesión, con sus palabras: «Rotura en los isquiotibiales». */
+  lesion: string
+  /** Desde cuándo, si lo dicen: «16/04 (144 días)». */
+  desde: string | null
+  /** Cuándo se espera que vuelva: «finales de septiembre». */
+  hasta: string | null
 }
 
 /** Un club desconocido rompe la pasada en vez de dejar un hueco silencioso. */
@@ -108,10 +138,15 @@ export function palabras(nombre: string): string[] {
 /**
  * A qué jugador de Mister corresponde cada uno.
  *
- * Solo se compara dentro del mismo club, que es lo que hace fiable un cruce por
- * apellido: «Martínez» a secas no dice nada en LaLiga, pero sí dentro de una
- * plantilla de veinticinco. Si no hay un ganador claro, no se empareja: media
- * probabilidad mal asignada es peor que ninguna.
+ * Solo se compara dentro del mismo club, y **el apellido tiene que coincidir**.
+ * Sin esa segunda condición, compartir el nombre de pila bastaba: a Unai Simón,
+ * que está sano, se le colgaba la rotura de cruzado de Unai Egiluz, y a Nico
+ * Williams la baja de Nico Serrano. Los dos del Athletic, los dos «Unai» y
+ * «Nico». Una lesión atribuida a quien no la tiene es peor que no decir nada.
+ *
+ * Y cada jugador de FútbolFantasy se reparte una sola vez: se van asignando de
+ * mejor a peor parecido, así que si dos podrían llevárselo se lo queda el que
+ * más se parece y el otro se queda sin nada. Ante un empate exacto, ninguno.
  */
 export function emparejar(
   mios: { id: string; nombre: string; eq: number }[],
@@ -124,21 +159,37 @@ export function emparejar(
     porClub.set(p.idClub, l)
   }
 
-  const salida = new Map<string, Probable>()
+  // Todas las parejas posibles con su parecido, para poder repartir por orden.
+  type Pareja = { id: string; suyo: Probable; punto: number }
+  const parejas: Pareja[] = []
   for (const j of mios) {
-    const candidatos = porClub.get(j.eq) ?? []
-    const mias = new Set(palabras(j.nombre))
-    let mejor: Probable | null = null
-    let punto = 0
-    let empate = false
-    for (const c of candidatos) {
-      const suyas = new Set(palabras(c.nombre))
-      const comunes = [...mias].filter((t) => suyas.has(t)).length
-      if (comunes === 0) continue
-      const p = comunes / Math.min(mias.size, suyas.size)
-      if (p > punto) { mejor = c; punto = p; empate = false } else if (p === punto) empate = true
+    const mias = palabras(j.nombre)
+    if (mias.length === 0) continue
+    const miApellido = mias[mias.length - 1]
+    for (const c of porClub.get(j.eq) ?? []) {
+      const suyas = palabras(c.nombre)
+      if (suyas.length === 0) continue
+      // El apellido manda: sin él no hay pareja, por mucho que coincida el resto.
+      if (suyas[suyas.length - 1] !== miApellido) continue
+      const comunes = mias.filter((t) => suyas.includes(t)).length
+      parejas.push({ id: j.id, suyo: c, punto: comunes / Math.max(mias.length, suyas.length) })
     }
-    if (mejor !== null && punto >= 0.5 && !empate) salida.set(j.id, mejor)
+  }
+
+  parejas.sort((a, b) => b.punto - a.punto)
+  const salida = new Map<string, Probable>()
+  const pillados = new Set<Probable>()
+  for (let k = 0; k < parejas.length; k += 1) {
+    const par = parejas[k]!
+    if (salida.has(par.id) || pillados.has(par.suyo)) continue
+    // Empate exacto entre dos candidatos distintos: mejor ninguno que el que no es.
+    const siguiente = parejas[k + 1]
+    if (siguiente !== undefined && siguiente.punto === par.punto && siguiente.id === par.id) {
+      k += 1
+      continue
+    }
+    salida.set(par.id, par.suyo)
+    pillados.add(par.suyo)
   }
   return salida
 }
@@ -171,15 +222,46 @@ async function main(): Promise<void> {
   const cruce = emparejar(mios, suyos)
   paso(`cruzan ${cruce.size} de ${mios.length} (${((100 * cruce.size) / mios.length).toFixed(1)} %)`)
 
+  // Las bajas van en su propia página: la de cada equipo dice que alguien está
+  // lesionado, pero no cuánto le queda, que es lo que decide si venderle o
+  // esperarle.
+  let bajas: Baja[] = []
+  try {
+    const res = await fetch('https://www.futbolfantasy.com/laliga/lesionados', {
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; liga-de-mister/1.0)' },
+    })
+    if (res.ok) bajas = parsearLesionados(await res.text())
+    else paso(`no pude con los lesionados: HTTP ${res.status}`)
+  } catch (e) {
+    paso(`no pude con los lesionados: ${e instanceof Error ? e.message : 'error'}`)
+  }
+  const cruceBajas = emparejar(
+    mios,
+    bajas.map((b) => ({ nombre: b.nombre, idClub: b.idClub, probabilidad: 0, sancionado: false, disponible: false, minutos: null })),
+  )
+  const porNombre = new Map(bajas.map((b) => [`${b.idClub}|${b.nombre}`, b]))
+  paso(`${bajas.length} lesionados en LaLiga, ${cruceBajas.size} de los tuyos o de tus rivales`)
+
   const salida = {
     cuando: new Date().toISOString(),
     fuente: 'futbolfantasy.com',
     leidos: suyos.length,
     jugadores: Object.fromEntries(
-      [...cruce].map(([id, p]) => [
-        id,
-        { prob: p.probabilidad, sancionado: p.sancionado ? 1 : 0, fuera: p.disponible ? 0 : 1, min: p.minutos },
-      ]),
+      [...cruce].map(([id, p]) => {
+        const b = cruceBajas.has(id) ? porNombre.get(`${cruceBajas.get(id)!.idClub}|${cruceBajas.get(id)!.nombre}`) : undefined
+        return [
+          id,
+          {
+            prob: p.probabilidad,
+            sancionado: p.sancionado ? 1 : 0,
+            fuera: p.disponible ? 0 : 1,
+            min: p.minutos,
+            // La baja, con las palabras de FútbolFantasy. `hasta` es un plazo
+            // médico aproximado —«finales de septiembre»—, no una fecha.
+            ...(b === undefined ? {} : { lesion: b.lesion, desde: b.desde, hasta: b.hasta }),
+          },
+        ]
+      }),
     ),
   }
   writeFileSync(SALIDA, `${JSON.stringify(salida, null, 1)}\n`)
@@ -194,3 +276,50 @@ if (process.argv[1]?.endsWith('futbolfantasy.ts')) {
   })
 }
 
+
+/** Quita las etiquetas de un trozo de HTML y deja el texto limpio. */
+const soloTexto = (h: string): string =>
+  h
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+
+/**
+ * Los lesionados de LaLiga, con hasta cuándo son baja.
+ *
+ * La página de cada equipo dice que alguien está lesionado, pero no cuánto le
+ * queda: eso solo está en la lista de lesionados. Y es justo lo que hace falta
+ * para decidir si vender a alguien o esperarle.
+ */
+export function parsearLesionados(html: string): Baja[] {
+  const salida: Baja[] = []
+  let club: number | null = null
+
+  // Las filas van agrupadas bajo la cabecera de cada equipo, así que se recorre
+  // en orden y se recuerda de quién es el bloque en el que se está.
+  for (const m of html.matchAll(
+    /<header class="title[^"]*">.*?cabecera\/hd\/(\d+)\.png[^>]*>\s*([^<]*)<\/header>|<div class="elemento lesionado[^"]*">([\s\S]*?)<div class="links/g,
+  )) {
+    if (m[1] !== undefined) {
+      club = ESCUDOS_FF[m[1]] ?? null
+      continue
+    }
+    const bloque = m[3]
+    if (bloque === undefined || club === null) continue
+    const nombre = /class="jugador"[^>]*>([^<]+)</.exec(bloque)?.[1]?.trim()
+    if (nombre === undefined || nombre === '') continue
+    const comentario = /<div class="comentario">([\s\S]*?)<\/div>/.exec(bloque)?.[1] ?? ''
+    const partes = [...comentario.matchAll(/<span[^>]*>([\s\S]*?)<\/span>/g)].map((x) => soloTexto(x[1] ?? ''))
+    const hasta = partes.find((t) => /^baja hasta/i.test(t))
+    const desde = partes.find((t) => /^desde/i.test(t))
+    salida.push({
+      nombre,
+      idClub: club,
+      lesion: partes[0] ?? '',
+      desde: desde === undefined ? null : desde.replace(/^desde\s*/i, ''),
+      hasta: hasta === undefined ? null : hasta.replace(/^baja hasta\s*/i, ''),
+    })
+  }
+  return salida
+}

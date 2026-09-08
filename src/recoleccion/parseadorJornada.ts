@@ -32,6 +32,15 @@ export type AlineacionJornada = {
 /** Las jornadas que Mister conoce, con su id interno y en qué estado están. */
 export type JornadaConocida = { jornada: number; id: number; estado: string }
 
+/**
+ * Lo que le pasó a un jugador en un partido, con el minuto.
+ *
+ * `categoria` viene tal cual de Mister: `goal`, `assist`, `yellow`, `red`,
+ * `penalty`, `missed_penalty`, `saved_penalty`, `own_goal`, `sub_in`, `sub_out`.
+ * No se traduce aquí para que si aparece una nueva no se pierda por el camino.
+ */
+export type EventoConMinuto = { categoria: string; minuto: number }
+
 const texto = (v: unknown): string => (typeof v === 'string' ? v : '')
 const entero = (v: unknown): number | null => (typeof v === 'number' && Number.isFinite(v) ? v : null)
 
@@ -105,4 +114,49 @@ export function parsearAlineacion(json: string, jornada: number, idJornada: numb
     once,
     banquillo,
   }
+}
+
+/**
+ * Los eventos de todos los jugadores en una jornada, con su minuto.
+ *
+ * La ficha de un jugador pinta los iconos de cada jornada pero **no dice el
+ * minuto**: ni cuándo entró, ni cuándo salió, ni cuándo marcó. Aquí sí está, y
+ * además con categorías que la ficha no distingue —roja, gol en propia,
+ * penalti fallado—. De 251 eventos leídos, los 251 traían minuto.
+ *
+ * Vienen dentro de `players`, agrupados por partido y luego por posición, así
+ * que hay que bajar dos niveles antes de encontrar a nadie.
+ */
+export function parsearEventosDeJornada(json: string): Map<string, EventoConMinuto[]> {
+  const d = (JSON.parse(json) as { data?: { players?: Record<string, unknown> } }).data
+  const salida = new Map<string, EventoConMinuto[]>()
+  const partidos = d?.players
+  if (partidos === undefined || partidos === null) return salida
+
+  for (const partido of Object.values(partidos)) {
+    const todos = (partido as { all?: unknown }).all
+    if (todos === undefined || todos === null) continue
+    const grupos = Array.isArray(todos) ? [todos] : Object.values(todos as Record<string, unknown>)
+    for (const grupo of grupos) {
+      if (!Array.isArray(grupo)) continue
+      for (const x of grupo) {
+        const j = x as Record<string, unknown>
+        const id = entero(j['id'])
+        if (id === null) continue
+        const brutos = j['events']
+        if (!Array.isArray(brutos)) continue
+        const eventos: EventoConMinuto[] = []
+        for (const e of brutos) {
+          if (e === null || typeof e !== 'object') continue
+          const ev = e as Record<string, unknown>
+          const categoria = texto(ev['category'])
+          const minuto = entero(ev['minute'])
+          if (categoria === '' || minuto === null) continue
+          eventos.push({ categoria, minuto })
+        }
+        if (eventos.length > 0) salida.set(String(id), eventos.sort((a, b) => a.minuto - b.minuto))
+      }
+    }
+  }
+  return salida
 }
