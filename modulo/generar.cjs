@@ -1199,6 +1199,16 @@ const filasResto = fueraDelMercado.map(filaJugador).join(NL)
 const PROBABILIDAD_MINIMA_ESCAPARATE = 50
 const PARTIDOS_MINIMOS_ESCAPARATE = 2
 
+/**
+ * Cuántas oportunidades se preparan, aunque solo se enseñen cuatro de golpe.
+ *
+ * El resto va en la página, oculto, y el botón «ver más» las va destapando de
+ * cuatro en cuatro. Rotarlas —cambiar las cuatro en cada pulsación— pierde de
+ * vista la que acabas de mirar y no deja compararlas; así se acumulan.
+ */
+const MAXIMO_ESCAPARATE = 24
+const DE_GOLPE_ESCAPARATE = 4
+
 const candidatosEscaparate = J.filter((j) => {
   if (!j.a || j.mio) return false
   if ((j.partidos ?? 0) < PARTIDOS_MINIMOS_ESCAPARATE) return false
@@ -1212,7 +1222,7 @@ const candidatosEscaparate = J.filter((j) => {
     b.j.esperado - a.j.esperado ||
     (b.forma ?? -Infinity) - (a.forma ?? -Infinity),
   )
-  .slice(0, 4)
+  .slice(0, MAXIMO_ESCAPARATE)
 
 const tarjetaOportunidad = ({ j, renta, forma }, i) => {
   // La etiqueta de «mejor» la pone el navegador a la que quede primera: aquí no
@@ -1239,11 +1249,16 @@ const tarjetaOportunidad = ({ j, renta, forma }, i) => {
 
 const oportunidades = candidatosEscaparate.length
   ? `    <section class="escaparate">
-      <div class="escaparate-cab"><div><span class="eyebrow">Selección inteligente</span><h2>Oportunidades para ti</h2><p>Jugadores que puedes pagar hoy, priorizados según tu objetivo.</p></div><span class="op-contador">${candidatosEscaparate.length} destacados</span></div>
+      <div class="escaparate-cab"><div><span class="eyebrow">Selección inteligente</span><h2>Oportunidades para ti</h2><p>Jugadores que puedes pagar hoy, priorizados según tu objetivo.</p></div><span class="op-contador" id="op-cuenta">${Math.min(DE_GOLPE_ESCAPARATE, candidatosEscaparate.length)} de ${candidatosEscaparate.length}</span></div>
       <div class="objetivos" aria-label="Objetivo de las recomendaciones"><span>Mi objetivo</span><button type="button" data-objetivo="equilibrio">Equilibrado</button><button type="button" data-objetivo="puntos">Ganar puntos</button><button type="button" data-objetivo="valor">Generar dinero</button></div>
-      <div class="op-grid">
+      <div class="op-grid" data-de-golpe="${DE_GOLPE_ESCAPARATE}">
 ${candidatosEscaparate.map(tarjetaOportunidad).join(NL)}
       </div>
+      ${
+        candidatosEscaparate.length > DE_GOLPE_ESCAPARATE
+          ? `<button type="button" class="op-mas" id="op-mas">Ver ${DE_GOLPE_ESCAPARATE} más</button>`
+          : ''
+      }
     </section>`
   : ''
 

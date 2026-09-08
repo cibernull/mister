@@ -907,6 +907,8 @@ body{padding:0 24px 96px;background:
 .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--oro)}
 .op-contador{flex:none;font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--tenue);border:1px solid var(--raya);border-radius:99px;padding:6px 10px}
 .op-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
+.op-mas{display:block;margin:14px auto 0;font:inherit;font-size:13px;cursor:pointer;color:var(--oro);background:var(--oro-fondo);border:1px solid var(--oro-raya);border-radius:10px;padding:9px 20px}
+.op-mas:hover{border-color:var(--oro);color:var(--oro-vivo)}
 .oportunidad{min-width:0;overflow:hidden;border:1px solid var(--raya);border-radius:18px;background:var(--tabla);box-shadow:var(--sombra);transition:transform .18s,border-color .18s,box-shadow .18s}
 .oportunidad:hover{transform:translateY(-3px);border-color:var(--oro-raya);box-shadow:var(--sombra-alta)}
 .op-foto{position:relative;height:132px;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;background:radial-gradient(circle at 50% 78%,rgba(221,185,111,.2),transparent 44%),linear-gradient(145deg,#1B1E31,#302C43)}
@@ -2224,6 +2226,40 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       document.body.style.overflow = 'hidden'
     }
 
+    /**
+     * Cuántas oportunidades se ven. El resto está en la página, escondido.
+     *
+     * Se añaden, no se rotan: cambiar las cuatro en cada pulsación pierde de
+     * vista la que acabas de mirar y no deja compararlas.
+     */
+    function verHasta (n) {
+      var grid = document.querySelector('.op-grid')
+      if (!grid) return
+      var cartas = [].slice.call(grid.querySelectorAll('.oportunidad'))
+      cartas.forEach(function (x, i) { x.hidden = i >= n })
+      var cuenta = document.getElementById('op-cuenta')
+      if (cuenta) cuenta.textContent = Math.min(n, cartas.length) + ' de ' + cartas.length
+      var mas = document.getElementById('op-mas')
+      if (mas) {
+        var quedan = cartas.length - n
+        mas.hidden = quedan <= 0
+        var golpe = Number(grid.getAttribute('data-de-golpe')) || 4
+        mas.textContent = 'Ver ' + Math.min(golpe, quedan) + ' más'
+      }
+      grid.setAttribute('data-viendo', String(n))
+    }
+
+    function configurarVerMas () {
+      var mas = document.getElementById('op-mas')
+      var grid = document.querySelector('.op-grid')
+      if (!mas || !grid) return
+      var golpe = Number(grid.getAttribute('data-de-golpe')) || 4
+      verHasta(golpe)
+      mas.addEventListener('click', function () {
+        verHasta((Number(grid.getAttribute('data-viendo')) || golpe) + golpe)
+      })
+    }
+
     function configurarObjetivo () {
       var botones = [].slice.call(document.querySelectorAll('[data-objetivo]'))
       if (!botones.length) return
@@ -2238,6 +2274,9 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
           var cartas = [].slice.call(grid.querySelectorAll('.oportunidad'))
             .sort(function (a, b) { return Number(b.getAttribute('data-op-' + clave)) - Number(a.getAttribute('data-op-' + clave)) })
           cartas.forEach(function (x) { grid.appendChild(x) })
+          // Al cambiar de objetivo se vuelve a las primeras: si no, seguirías
+          // viendo las de antes, que ya no son las mejores para lo que pides.
+          verHasta(Number(grid.getAttribute('data-de-golpe')) || 4)
           // «Mejor oportunidad» va a la que quede primera, no a la que lo fuera
           // al construir la página: al reordenar acababa en la segunda.
           cartas.forEach(function (x, i) {
@@ -2301,6 +2340,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') cerrar() })
     window.addEventListener('popstate', function () { cerrar(true) })
     actualizarHerramientas()
+    configurarVerMas()
     configurarObjetivo()
     }
   })()
