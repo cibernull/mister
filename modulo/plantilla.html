@@ -385,7 +385,8 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
 .mano-total b{font-size:17px;color:var(--oro)}
 .mano-total i{font-style:normal;margin-left:6px;color:var(--tenue)}
 
-.hueco{display:flex;align-items:center;justify-content:center;width:100%;max-width:72px;min-height:58px}
+.hueco{display:flex;align-items:center;justify-content:center;width:100%;max-width:88px;min-height:64px}
+.campo-linea:has(.campo-banda:nth-child(2)) .hueco{max-width:74px}
 .hueco-vacio{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:2px dashed rgba(255,255,255,.3);font-family:"IBM Plex Mono",monospace;font-size:8px;color:rgba(255,255,255,.5)}
 .hueco.lleno{cursor:pointer}
 
@@ -1214,26 +1215,37 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
         '<rect x="3" y="47" width="42" height="96"/><rect x="3" y="72" width="16" height="46"/>' +
         '<rect x="255" y="47" width="42" height="96"/><rect x="281" y="72" width="16" height="46"/></svg>' +
         '<span class="campo-centro"></span>'
-      var i = 0
       var lineas = {}
       puestos.forEach(function (pu, idx) { (lineas[pu] = lineas[pu] || []).push(idx) })
+      var hueco = function (idx, pu) {
+        var id = elegidos[idx]
+        var j = id ? porId(id) : null
+        return '<div class="hueco' + (j ? ' lleno' : '') + '" data-hueco="' + idx + '" data-puesto="' + pu + '">' +
+          (j ? j.html : '<span class="hueco-vacio">' + PUESTO[pu] + '</span>') + '</div>'
+      }
+      // La misma estructura que el campo de arriba: línea, y dentro una o dos
+      // bandas. Sin las bandas los huecos se apilaban en fila y se pisaban unos
+      // a otros, porque la línea es un flex horizontal desde que el campo se
+      // tumbó.
       ;[1, 2, 3, 4].forEach(function (pu) {
-        if (!lineas[pu]) return
-        html += '<div class="campo-linea" data-n="' + lineas[pu].length + '">'
-        lineas[pu].forEach(function (idx) {
-          var id = elegidos[idx]
-          var j = id ? porId(id) : null
-          html += '<div class="hueco' + (j ? ' lleno' : '') + '" data-hueco="' + idx + '" data-puesto="' + pu + '">' +
-            (j ? j.html : '<span class="hueco-vacio">' + PUESTO[pu] + '</span>') + '</div>'
-        })
-        html += '</div>'
-        i += 1
+        var l = lineas[pu]
+        if (!l) return
+        var bandas = l.length < 4 ? [l] : [l.slice(0, Math.ceil(l.length / 2)), l.slice(Math.ceil(l.length / 2))]
+        html += '<div class="campo-linea" data-n="' + l.length + '">' + bandas.map(function (b) {
+          return '<div class="campo-banda" data-n="' + b.length + '">' + b.map(function (idx) { return hueco(idx, pu) }).join('') + '</div>'
+        }).join('') + '</div>'
       })
       campo.innerHTML = html
 
       // La banca: los que no están puestos.
       var puestosIds = elegidos.filter(Boolean)
-      banca.innerHTML = plantilla().map(function (j) {
+      // Por puesto —portero, defensas, medios, delanteros— y dentro de cada uno
+      // por lo que cabe esperar. Antes salían en el orden en que vienen, que no
+      // es ninguno, y había que buscar al defensa entre los medios.
+      var ordenada = plantilla().slice().sort(function (a, b) {
+        return a.p - b.p || (a.fuera - b.fuera) || (b.e - a.e)
+      })
+      banca.innerHTML = ordenada.map(function (j) {
         var dentro = puestosIds.indexOf(j.id) !== -1
         return '<button type="button" class="bc' + (dentro ? ' dentro' : '') + (j.fuera ? ' fuera' : '') +
           '" data-jugador="' + j.id + '" draggable="true" title="' + (j.fuera ? 'No juega esta jornada' : j.e.toFixed(1).replace('.', ',') + ' puntos que cabe esperar') + '">' +
@@ -1246,8 +1258,18 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       elPunto.textContent = total.toFixed(1).replace('.', ',')
       elCuantos.textContent = llenos + ' de ' + puestos.length
       var mejor = window.ONCES && window.ONCES[selForm.value]
+      var sinGente = []
+      ;[1, 2, 3, 4].forEach(function (pu) {
+        var pide = puestos.filter(function (x) { return x === pu }).length
+        var tengo = plantilla().length ? plantilla().filter(function (j) { return j.p === pu }).length : pide
+        var LARGO = { 1: ['portero', 'porteros'], 2: ['defensa', 'defensas'], 3: ['centrocampista', 'centrocampistas'], 4: ['delantero', 'delanteros'] }
+        var n = pide - tengo
+        if (n > 0) sinGente.push(n + ' ' + LARGO[pu][n === 1 ? 0 : 1])
+      })
       elAviso.textContent = llenos < puestos.length
-        ? 'Te faltan ' + (puestos.length - llenos) + ' por poner.'
+        ? (sinGente.length
+            ? 'Esta formación pide más de los que tienes: te ' + (sinGente.length === 1 && /^1 /.test(sinGente[0]) ? 'falta ' : 'faltan ') + sinGente.join(' y ') + '.'
+            : 'Te faltan ' + (puestos.length - llenos) + ' por poner.')
         : mejor
           ? (Math.abs(total - mejor.t) < 0.05
               ? 'Es el mismo once que yo propongo con esta formación.'
@@ -1295,15 +1317,31 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       ponerElMio()
     }
 
-    /** Rellena con el once que yo propongo para esa formación, si encaja. */
+    /**
+     * Rellena con el mejor once para esa formación.
+     *
+     * Si la formación es una de las que puedo completar, se copia tal cual el
+     * once que propongo arriba. Si no —siete de las doce piden más gente de la
+     * que tienes en algún puesto—, se rellena con los mejores de cada línea y
+     * los huecos que sobren se quedan vacíos, que es la respuesta honesta.
+     * Antes, en esas siete, el campo se quedaba en blanco y «Poner el mío» no
+     * hacía nada: parecía roto.
+     */
     function ponerElMio () {
-      var datos = (window.ONCES || {})[selForm.value]
-      if (!datos) { pintar(); return }
-      var ids = []
-      var re = /data-ficha="(\d+)"/g
-      var m
-      while ((m = re.exec(datos.html))) ids.push(m[1])
       elegidos = puestos.map(function () { return null })
+      var datos = (window.ONCES || {})[selForm.value]
+      var ids = []
+      if (datos) {
+        var re = /data-ficha="(\d+)"/g
+        var m
+        while ((m = re.exec(datos.html))) ids.push(m[1])
+      } else {
+        // Los mejores de cada puesto por lo que cabe esperar de ellos; los que
+        // no juegan, al final.
+        ids = plantilla().slice().sort(function (a, b) {
+          return (a.fuera - b.fuera) || (b.e - a.e)
+        }).map(function (j) { return j.id })
+      }
       ids.forEach(function (id) {
         var j = porId(id)
         if (!j) return
