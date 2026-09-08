@@ -1630,22 +1630,57 @@ const formacionesProbadas = FORMACIONES.map((f) => ({ ...f, nombre: f.l.join('-'
   .filter((f) => f.once !== null && f.once.completo)
   .sort((a, b) => b.once.total - a.once.total)
 
-const filaOnce = (j) => `        <div class="mj">${dorsal(j.puesto)}${caraDe(j.id, j.nombre)}${escudoDe(j.id)}<span class="n">${nombreEnlazado(j)}${pintarRacha(j)}</span>
-          <span class="v">${dec(esperadoConAjustes(j).total)}${(() => {
-            const a = esperadoConAjustes(j)
-            const partes = [
-              `su media ${j.casa === 1 ? 'en casa' : j.casa === 0 ? 'fuera' : ''} ${dec(a.base)}`,
-              // Solo si mueve algo visible: un «+0,0» no informa, y con once
-              // filas llenas de él la línea deja de leerse.
-              Math.abs(a.porForma) >= 0.05 ? `forma ${a.porForma > 0 ? '+' : '−'}${dec(Math.abs(a.porForma))}` : null,
-              Math.abs(a.porRival) >= 0.05 ? `rival ${a.porRival > 0 ? '+' : '−'}${dec(Math.abs(a.porRival))}` : null,
-            ].filter(Boolean)
-            return partes.length > 1 ? `<small class="desg" title="De dónde sale la cifra">${partes.join(' · ')}</small>` : ''
-          })()}</span><span class="c">${
-            j.riv ? `${j.casa === 1 ? 'en casa' : 'fuera'} · ${esc(CLUBES.get(String(j.riv)) ?? '?')}${pintarDureza(durezaDe(j), j)}` : 'sin partido'
-          }</span><span class="m">${
-            j.est === 'injury' ? '🏥 lesionado' : j.once === 1 ? '👕 titular' : j.once === 0 ? 'suplente' : '—'
-          }</span></div>`
+/**
+ * Una fila del once: quién es, qué se espera de él y por qué.
+ *
+ * Era un renglón plano donde el nombre, la cifra, la racha, el rival y el
+ * desglose competían por el mismo sitio y saltaban de línea sin criterio: la
+ * cifra quedaba enterrada en medio y el desglose partido en dos. Ahora es una
+ * rejilla con orden de lectura —quién, cuánto, contra quién, y de dónde sale—.
+ */
+const filaOnce = (j) => {
+  const a = esperadoConAjustes(j)
+  const partes = [
+    `su media ${j.casa === 1 ? 'en casa' : j.casa === 0 ? 'fuera' : ''} ${dec(a.base)}`,
+    // Solo si mueve algo visible: un «+0,0» no informa, y con once filas llenas
+    // de él la línea deja de leerse.
+    Math.abs(a.porForma) >= 0.05 ? `forma ${a.porForma > 0 ? '+' : '−'}${dec(Math.abs(a.porForma))}` : null,
+    Math.abs(a.porRival) >= 0.05 ? `rival ${a.porRival > 0 ? '+' : '−'}${dec(Math.abs(a.porRival))}` : null,
+  ].filter(Boolean)
+
+  const rival = j.riv
+    ? `<span class="mj-riv" title="${esc(`${j.casa === 1 ? 'En casa' : 'Fuera'} contra ${CLUBES.get(String(j.riv)) ?? '?'}`)}">${
+        j.casa === 1 ? '🏠' : '✈️'
+      }${ESCUDOS.has(String(j.riv)) ? `<i class="ec e${j.riv}"></i>` : ''}${esc(CLUBES.get(String(j.riv)) ?? '?')}${pintarDureza(durezaDe(j), j)}</span>`
+    : '<span class="mj-riv sin">sin partido</span>'
+
+  const estado =
+    j.est === 'injury'
+      ? '<span class="mj-est mal">🏥 lesionado</span>'
+      : j.once === 1
+        ? '<span class="mj-est bien">👕 titular</span>'
+        : j.once === 0
+          ? '<span class="mj-est">suplente</span>'
+          : ''
+
+  return `        <div class="mj">
+          ${dorsal(j.puesto)}${caraDe(j.id, j.nombre)}
+          <div class="mj-txt">
+            <div class="mj-nom">${escudoDe(j.id)}${nombreEnlazado(j)}</div>
+            <div class="mj-ctx">${pintarRacha(j, true)}${rival}${estado}</div>
+            ${
+              // Cada trozo va en su propia caja: al saltar de línea se separaba
+              // el número de lo que nombra —«forma» arriba y «−0,2» abajo—.
+              partes.length > 1
+                ? `<div class="desg" title="De dónde sale la cifra">${partes
+                    .map((t) => `<span>${t}</span>`)
+                    .join('<i class="sep">·</i>')}</div>`
+                : ''
+            }
+          </div>
+          <div class="mj-num"><b>${dec(a.total)}</b><i>pts</i></div>
+        </div>`
+}
 
 /**
  * El once sobre el césped, como lo pinta Mister.

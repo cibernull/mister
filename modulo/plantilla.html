@@ -646,22 +646,37 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
 /* Plantilla compacta dentro de la ficha de un equipo. */
 .mini{display:grid;grid-template-columns:1fr;gap:1px;background:var(--raya);border:1px solid var(--raya);border-radius:9px;overflow:hidden}
 @media(min-width:620px){.mini{grid-template-columns:1fr 1fr}}
-.mj{display:flex;align-items:center;gap:9px;background:var(--tabla);padding:9px 11px;font-size:15px}
-.mj .v{white-space:nowrap}
-.mj .dorsal{width:32px;height:24px;font-size:11px;border-radius:5px}
-.mj .n{flex:1 1 auto;min-width:0;font-weight:600;overflow-wrap:anywhere}
-.mj .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:15px;white-space:nowrap}
+/* Una fila del once, en rejilla y no en renglón: dorsal y cara a la izquierda,
+   el bloque de texto en el centro y la cifra a la derecha, siempre en el mismo
+   sitio. Antes todo iba en una línea plana y saltaba donde le cabía: la cifra
+   quedaba enterrada entre el nombre y la racha, y el desglose se partía. */
+.mj{display:grid;grid-template-columns:auto auto minmax(0,1fr) auto;align-items:start;gap:2px 10px;background:var(--tabla);padding:11px 12px}
+.mj .dorsal{width:34px;height:24px;font-size:11px;border-radius:5px;margin-top:2px}
+.mj > .cara{margin:0}
+.mj-txt{min-width:0;display:flex;flex-direction:column;gap:5px}
+.mj-nom{display:flex;align-items:center;gap:6px;font-size:15px;font-weight:600;line-height:1.2;overflow-wrap:anywhere}
+.mj-nom .ec{flex:none}
+.mj-nom .jl{font:inherit}
+.mj-ctx{display:flex;align-items:center;flex-wrap:wrap;gap:4px 9px;font-size:12.5px;color:var(--gris);font-family:"IBM Plex Mono",monospace}
+.mj-riv{display:inline-flex;align-items:center;gap:4px}
+.mj-riv .ec{width:15px;height:15px}
+.mj-riv.sin{color:var(--tenue)}
+.mj-est{font-size:11.5px;color:var(--tenue)}
+.mj-est.bien{color:var(--sube)} .mj-est.mal{color:var(--baja)}
+.mj .desg{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 5px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--tenue);line-height:1.45}
+.mj .desg > span{white-space:nowrap}
+.mj .desg .sep{font-style:normal;opacity:.5}
+/* La cifra manda: es lo que se compara de una fila a otra. */
+.mj-num{display:flex;flex-direction:column;align-items:flex-end;line-height:1;margin-top:1px}
+.mj-num b{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:20px;font-weight:600;color:var(--tinta)}
+.mj-num i{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue);margin-top:3px}
 .mj .n .desc{font-style:italic;color:var(--tenue);font-weight:500}
-.mj .c,.mj .m{font-size:12.5px;color:var(--gris);white-space:nowrap;font-family:"IBM Plex Mono",monospace}
-/* En el móvil la cláusula no cabe en la misma línea, pero esconderla —que es
-   lo que se hacía— se llevaba por delante la marca de blindaje, que es
-   justamente lo que hay que ver de un vistazo. Se pasa a un segundo renglón,
-   alineado bajo el nombre. */
+
 @media(max-width:520px){
-  .mj{flex-wrap:wrap;row-gap:3px;padding-bottom:9px;align-items:flex-start}
-  .mj .dorsal,.mj > .ec{margin-top:1px}
-  .mj .v{margin-left:auto;align-self:flex-start}
-  .mj .c{margin-left:55px}
+  .mj{gap:2px 8px;padding:10px}
+  .mj-nom{font-size:14px}
+  .mj-num b{font-size:18px}
+  .mj-ctx{font-size:11.5px;gap:3px 7px}
 }
 
 table.jt{width:100%;border-collapse:collapse;font-size:13px}
