@@ -280,6 +280,14 @@ const probabilidadDe = (j) => {
   return p && typeof p.prob === 'number' ? p.prob : null
 }
 
+/**
+ * Lo que le sube el valor en un día, en porcentaje.
+ *
+ * En euros no se pueden comparar: +56 K en alguien de 2,4 M es un 2,3 % y en
+ * alguien de 20 M es un 0,3 %. El porcentaje dice cuál está subiendo de verdad.
+ */
+const subeDiaDe = (j) => (j.semana != null && j.valor ? j.semana / j.valor : null)
+
 /** Su baja, con las palabras de FútbolFantasy, o null si no está lesionado. */
 const bajaDe = (j) => {
   const p = PROBABLES[String(j.id)]
@@ -932,7 +940,10 @@ const valorDe = (j) => {
       ? ''
       : j.semana === 0
         ? '<span class="par"><span class="quieto">igual</span> hoy</span>'
-        : par(j.semana, 'hoy', firmaCorta(j.semana)),
+        : par(j.semana, 'hoy', `${firmaCorta(j.semana)}${(() => {
+            const d = subeDiaDe(j)
+            return d == null || Math.abs(d) < 0.0005 ? '' : ` (${d > 0 ? '+' : '−'}${dec(Math.abs(d) * 100)} %)`
+          })()}`),
     j.sem7 ? par(j.sem7, 'en 7 días', firmaCorta(j.sem7)) : '',
     j.subeMes != null
       ? par(j.subeMes, 'este mes', `${j.subeMes > 0 ? '+' : ''}${Math.round(j.subeMes * 100)} %`)
@@ -1134,6 +1145,8 @@ const islaFichas = JSON.stringify(
           ca: j.casa,
           du: durezaDe(j),
           se: j.semana ?? null,
+          // Lo que sube al día en porcentaje: en euros no se pueden comparar.
+          sd: subeDiaDe(j),
           s7: j.sem7 ?? null,
           mes: j.subeMes ?? null,
           fin: enUnMes(j),
@@ -1240,7 +1253,10 @@ const tarjetaOportunidad = ({ j, renta, forma }, i) => {
           <span class="op-etiqueta">${etiqueta}</span>
           <button type="button" class="op-nombre" data-ficha="${j.id}">${esc(j.nombre)}</button>
           <div class="op-club">${escudoDe(j.id)}${esc(j.duenioCorto ?? 'Libre')}${j.once === 1 ? '<span>· titular</span>' : ''}</div>
-          <div class="op-metricas"><span><b>${dec(j.media)}</b> media</span><span><b>${corto(j.precio)}</b> precio</span><span class="${j.semana === 0 ? 'quieto' : clase(j.semana ?? 0)}"><b>${j.semana == null ? '—' : j.semana === 0 ? '=' : firmaCorta(j.semana)}</b> hoy</span><span class="${clase(j.subeMes ?? 0)}"><b>${j.subeMes == null ? '—' : `${j.subeMes > 0 ? '+' : ''}${Math.round(j.subeMes * 100)} %`}</b> mes</span></div>
+          <div class="op-metricas"><span><b>${dec(j.media)}</b> media</span><span><b>${corto(j.precio)}</b> precio</span><span class="${j.semana === 0 ? 'quieto' : clase(j.semana ?? 0)}"><b>${j.semana == null ? '—' : j.semana === 0 ? '=' : firmaCorta(j.semana)}</b> hoy${(() => {
+            const d = subeDiaDe(j)
+            return d == null || Math.abs(d) < 0.0005 ? '' : `<em>${d > 0 ? '+' : '−'}${dec(Math.abs(d) * 100)} %</em>`
+          })()}</span><span class="${clase(j.subeMes ?? 0)}"><b>${j.subeMes == null ? '—' : `${j.subeMes > 0 ? '+' : ''}${Math.round(j.subeMes * 100)} %`}</b> mes</span></div>
           <p>${motivo}</p>
           <button type="button" class="op-cta" data-ficha="${j.id}">Analizar fichaje <span>→</span></button>
         </div>

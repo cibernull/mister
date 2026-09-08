@@ -919,7 +919,10 @@ body{padding:0 24px 96px;background:
 .op-cuerpo{padding:14px}.op-etiqueta{display:block;margin-bottom:5px;font-family:"IBM Plex Mono",monospace;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--oro)}
 .op-nombre{display:block;width:100%;padding:0;border:0;background:none;color:var(--tinta);font-family:"Barlow Condensed",sans-serif;font-size:22px;font-weight:700;line-height:1.05;text-align:left;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .op-nombre:hover{color:var(--oro)}.op-club{display:flex;align-items:center;gap:5px;min-height:22px;margin-top:4px;color:var(--tenue);font-size:10.5px}.op-club span{color:var(--sube)}
-.op-metricas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-top:11px}.op-metricas span{min-width:0;font-size:8.5px;color:var(--tenue);text-transform:uppercase}.op-metricas b{display:block;color:var(--tinta);font-family:"IBM Plex Mono",monospace;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.op-metricas .sube b{color:var(--sube)}.op-metricas .baja b{color:var(--baja)}
+.op-metricas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-top:11px}.op-metricas span{min-width:0;font-size:8.5px;color:var(--tenue);text-transform:uppercase}.op-metricas b{display:block;color:var(--tinta);font-family:"IBM Plex Mono",monospace;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* El porcentaje del día, debajo de los euros: +56 K en alguien de 2,4 M no es
+   lo mismo que en alguien de 20 M, y es lo que dice cuál sube de verdad. */
+.op-metricas em{display:block;margin-top:2px;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:9.5px;opacity:.85}.op-metricas .sube b{color:var(--sube)}.op-metricas .baja b{color:var(--baja)}
 .op-cuerpo p{min-height:31px;margin:10px 0;color:var(--gris);font-size:10.5px;line-height:1.45}
 .op-cta{width:100%;display:flex;align-items:center;justify-content:space-between;border:1px solid var(--raya);border-radius:9px;padding:8px 10px;background:var(--hueco);color:var(--tinta);font:inherit;font-size:11px;font-weight:700;cursor:pointer}.op-cta:hover{border-color:var(--oro-raya);color:var(--oro);background:var(--oro-fondo)}
 
@@ -2136,7 +2139,14 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       lineas.push(['Rivales que pueden ' + comoSeLlama, '<b>' + f.qp + '</b> de ' + f.qt])
 
       var valor = []
-      if (f.se) valor.push('<span class="par"><span class="' + (f.se > 0 ? 'sube' : 'baja') + '">' + firma(f.se) + '</span> hoy</span>')
+      if (f.se) {
+        // Los euros y el porcentaje juntos: +149 K dice cuánto, +2,3 % dice si
+        // eso es mucho para lo que vale.
+        var pct = f.sd != null && Math.abs(f.sd) >= 0.0005
+          ? ' <i>(' + (f.sd > 0 ? '+' : '−') + dec(Math.abs(f.sd) * 100) + ' %)</i>'
+          : ''
+        valor.push('<span class="par"><span class="' + (f.se > 0 ? 'sube' : 'baja') + '">' + firma(f.se) + pct + '</span> hoy</span>')
+      }
       if (f.s7) valor.push('<span class="par"><span class="' + (f.s7 > 0 ? 'sube' : 'baja') + '">' + firma(f.s7) + '</span> en 7 días</span>')
       if (f.mes != null) valor.push('<span class="par"><span class="' + (f.mes > 0 ? 'sube' : 'baja') + '">' + (f.mes > 0 ? '+' : '') + Math.round(f.mes * 100) + ' %</span> este mes</span>')
       if (f.fin != null) valor.push('<span class="par proy">~' + corto(f.fin) + ' en un mes</span>')
