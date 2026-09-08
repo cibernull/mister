@@ -573,6 +573,44 @@ const iconos = (j) => `${j.p ? '⭐' : ''}${j.d ? '💵' : ''}${j.vender ? '📤
  * podría ficharlo»— y hasta ahora solo salía el recuento. Aquí están los
  * nombres y con cuánto margen se lo pueden permitir.
  */
+/**
+ * Por qué hoy no conviene ficharlo, si es que hay razón.
+ *
+ * Nació de una contradicción en pantalla: la fila del mercado decía en verde
+ * «te sobran 4,9 M» de Mikel Rodríguez mientras su ficha decía «no es momento
+ * de ficharlo: rotura de ligamento cruzado, vuelve en abril». Las dos miraban
+ * cosas distintas —la fila solo el precio, la ficha solo la etiqueta de Mister—
+ * y ninguna las dos a la vez.
+ *
+ * Ahora la razón se calcula una sola vez y la usan las dos, así que no pueden
+ * discrepar. Va de más grave a menos: una baja larga pesa más que una duda.
+ *
+ * Lo que NO hace: bajarle el precio ni tocarle la valoración. Un lesionado
+ * puede ser una buena compra a futuro; lo que no puede es salir en verde como
+ * si fuera a jugar el domingo.
+ */
+const vetoDe = (j) => {
+  const p = PROBABLES[String(j.id)]
+  const baja = p && p.lesion ? p : null
+  if (baja) {
+    return {
+      grave: true,
+      que: 'lesionado',
+      detalle: `${baja.lesion}${baja.hasta ? `, vuelve ${baja.hasta}` : ''}`,
+    }
+  }
+  if (j.est === 'injury') return { grave: true, que: 'lesionado', detalle: 'Mister lo da lesionado' }
+  if (p && p.sancionado) return { grave: true, que: 'sancionado', detalle: 'no puede jugar esta jornada' }
+  if (p && p.fuera) return { grave: true, que: 'no disponible', detalle: 'su club no cuenta con él' }
+  if (!j.riv) return { grave: true, que: 'sin partido', detalle: 'su equipo no juega esta jornada' }
+  const prob = probabilidadDe(j)
+  if (prob !== null && prob === 0) return { grave: true, que: 'no va a jugar', detalle: '0 % de salir de titular' }
+  if (prob !== null && prob < TRAMO_TITULAR) {
+    return { grave: false, que: 'duda', detalle: `${prob} % de salir de titular` }
+  }
+  return null
+}
+
 // ── Hasta cuánto sale a cuenta pagar por alguien ────────────────────────────
 //
 // La pregunta es qué se paga en esta liga por alguien que rinde como él, y la
@@ -641,8 +679,15 @@ const bloqueRentable = (j) => {
       : '<div class="rent nada">No hay bastantes jugadores que rindan como él para ponerle precio comparando.</div>'
   }
   const sale = r.margen >= 0
-  return `<div class="rent ${sale ? 'buena' : 'mala'}" title="Lo que vale en esta liga alguien que rinde como él: la mediana de los ${r.cuantos} jugadores con media parecida a la suya (${dec(r.media)}, corregida por los partidos que lleva). Él no cuenta en esa mediana.">
-        <b>Hasta ${corto(r.techo)}</b> sale a cuenta${r.loLimitaTuTope ? ' <i>(te lo limita tu tope)</i>' : ''} · piden ${corto(j.precio)} · <span>${sale ? `te sobran ${corto(r.margen)}` : `te pasas ${corto(-r.margen)}`}</span>
+  const veto = vetoDe(j)
+  // El precio puede ser bueno y el fichaje malo. Con una baja seria la línea
+  // deja de ir en verde: decir «te sobran 4,9 M» de alguien que vuelve en abril
+  // es cierto y engañoso a la vez.
+  const tono = veto && veto.grave ? 'veta' : sale ? 'buena' : 'mala'
+  return `<div class="rent ${tono}" title="Lo que vale en esta liga alguien que rinde como él: la mediana de los ${r.cuantos} jugadores con media parecida a la suya (${dec(r.media)}, corregida por los partidos que lleva). Él no cuenta en esa mediana.">
+        <b>Hasta ${corto(r.techo)}</b> sale a cuenta${r.loLimitaTuTope ? ' <i>(te lo limita tu tope)</i>' : ''} · piden ${corto(j.precio)} · <span>${sale ? `te sobran ${corto(r.margen)}` : `te pasas ${corto(-r.margen)}`}</span>${
+    veto ? `<em class="veta-por">${veto.grave ? '⛔' : '⚠'} ${esc(veto.que)}: ${esc(veto.detalle)}</em>` : ''
+  }
       </div>`
 }
 
@@ -1082,6 +1127,9 @@ const islaFichas = JSON.stringify(
           prob: probabilidadDe(j),
           // Y la baja, si la tiene: qué es y hasta cuándo, en sus palabras.
           bj: bajaDe(j),
+          // La razón por la que hoy no conviene ficharlo, la misma que usa la
+          // fila del mercado. Se calcula una vez para que no puedan discrepar.
+          vt: vetoDe(j),
           riv: j.riv ?? null,
           ca: j.casa,
           du: durezaDe(j),

@@ -583,6 +583,12 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
 .rent i{font-style:normal;color:var(--tenue)}
 .rent.buena{border-left-color:var(--sube);background:var(--sube-fondo,rgba(74,222,128,.07))}
 .rent.mala{border-left-color:var(--baja);background:var(--baja-fondo,rgba(248,113,113,.06))}
+/* Precio bueno y fichaje malo no son lo mismo: con una baja seria la línea deja
+   de ir en verde y dice por qué. */
+.rent.veta{border-left-color:var(--baja);background:var(--baja-fondo,rgba(248,113,113,.08))}
+.veta-por{display:block;margin-top:4px;font-style:normal;font-size:11.5px;color:var(--baja)}
+.cf-veredicto.duda{border-color:var(--oro-raya);background:var(--oro-fondo)}
+.cf-veredicto.duda i{background:var(--oro-fondo);color:var(--oro)}
 .rent.buena b,.rent.buena span{color:var(--sube)}
 .rent.mala b,.rent.mala span{color:var(--baja)}
 .rent.nada{color:var(--tenue);font-size:11.5px}
@@ -2113,6 +2119,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
         lineas.push(['Regularidad<em class="pista">' + pista + '</em>', '<b>±' + dec(f.re) + ' pts</b>'])
       }
       if (f.hc) lineas.push(['Hasta cuánto sale a cuenta pagarlo', '<b>' + corto(f.hc.t) + '</b> · ' + (f.hc.m >= 0 ? 'te sobran ' : 'te pasas ') + corto(Math.abs(f.hc.m))])
+      if (f.vt) lineas.push(['Por qué hoy no cuenta', '<b class="baja">' + esc(f.vt.que) + '</b> · ' + esc(f.vt.detalle)])
       if (f.cz) {
         var vered = f.cz.v === 3 ? 'Buen clausulazo' : f.cz.v === 2 ? 'Clausulazo dudoso' : 'Mal clausulazo'
         lineas.push(['Clausulazo: prima real ' + corto(f.cz.pr) + (f.cz.pp != null ? ' · ' + corto(f.cz.pp) + ' por punto' : ''), '<b>' + vered + '</b>'])
@@ -2137,8 +2144,14 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       var veredicto = { clase: '', icono: '◆', titulo: 'Jugador para seguir', detalle: 'Revisa su rendimiento, precio y próximo partido antes de decidir.' }
       if (f.mio) {
         veredicto = { clase: '', icono: '✓', titulo: 'Ya está en tu plantilla', detalle: 'Valora su titularidad y exposición antes de venderlo o blindarlo.' }
-      } else if (f.est === 'injury') {
-        veredicto = { clase: 'malo', icono: '!', titulo: 'No es momento de ficharlo', detalle: 'Está lesionado; el precio puede ser atractivo, pero hoy añade riesgo deportivo.' }
+      } else if (f.vt && f.vt.grave) {
+        // La misma razón que enseña la fila del mercado: se calcula una sola vez
+        // para que las dos no puedan decir cosas distintas del mismo jugador.
+        veredicto = { clase: 'malo', icono: '!', titulo: 'No es momento de ficharlo',
+          detalle: 'Está ' + f.vt.que + ' — ' + f.vt.detalle + '. El precio puede ser bueno, pero hoy no te suma.' }
+      } else if (f.vt) {
+        veredicto = { clase: 'duda', icono: '?', titulo: 'Con riesgo de que no juegue',
+          detalle: f.vt.detalle.charAt(0).toUpperCase() + f.vt.detalle.slice(1) + '. Si sale, lo que rinde justifica el precio.' }
       } else if (f.hc && f.hc.m >= 0) {
         veredicto = { clase: 'bueno', icono: '↗', titulo: 'Encaja en tu presupuesto', detalle: 'Su precio deja ' + corto(f.hc.m) + ' de margen frente al techo estimado por rendimiento.' }
       } else if (f.hc && f.hc.m < 0) {
