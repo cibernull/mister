@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-08T22:08:10.439Z",
+ "cuando": "2026-09-08T22:38:09.942Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -28,8 +28,20 @@
    "categoria": "mercado"
   },
   {
+   "fecha": "09/09",
+   "titulo": "Íñigo Pérez analiza la derrota, destaca a Gulácsi y explica el trivote",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150850-inigo-perez-analiza-la-derrota-destaca-a-gulacsi-y-explica-el-trivote",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Pellegrini celebra el triunfo y habla de Parrott, Bartra, Ceballos, Lo Celso y Abde",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150849-pellegrini-celebra-el-triunfo-y-habla-de-parrott-bartra-ceballos-lo-celso-y-abde",
+   "categoria": "rueda de prensa"
+  },
+  {
    "fecha": "08/09",
-   "titulo": "Mourinho valora el triunfo y habla de Brahim, Diomande, Vinicius, Trent y el Inter",
+   "titulo": "Mourinho valora el triunfo y habla de Brahim, Diomande, Vinicius, Trent, Tchouaméni y el Inter",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150848-mourinho-valora-el-triunfo-y-habla-de-brahim-diomande-vinicius-trent-y-el-inter",
    "categoria": "rueda de prensa"
   },
@@ -470,18 +482,6 @@
    "titulo": "Marc Casadó inició su rodaje en el caos de La Cerámica",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150778-marc-casado-inicio-su-rodaje-en-el-caos-de-la-ceramica",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Zaid Romero se perderá el partido ante el Deportivo tras su expulsión",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150777-zaid-romero-se-perdera-el-partido-ante-el-deportivo-tras-su-expulsion",
-   "categoria": "sanción"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Satriano fue sustituido por calambres en los isquios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150776-satriano-fue-sustituido-por-calambres-en-los-isquios",
-   "categoria": "lesión"
   }
  ]
 }
