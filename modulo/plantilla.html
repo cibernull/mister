@@ -1948,8 +1948,18 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       } else if (f.on === 1) ets.push('<span class="et et-once">👕 titular</span>')
       // Solo el «lesionado» a secas de Mister cuando no hay algo mejor que decir:
       // con la etiqueta de arriba se repetiría la misma noticia dos veces.
-      if (f.est === 'injury' && !f.bj) ets.push('<span class="et et-mal">🏥 lesionado</span>')
-      else if (f.est) ets.push('<span class="et et-mal">' + esc(f.est) + '</span>')
+      // Los cuatro estados que publica Mister, en cristiano. Antes el que no
+      // fuera «injury» se enseñaba tal cual —«other», «double»— y el que sí lo
+      // era, al tener ya su baja detallada arriba, caía aquí y salía «injury».
+      var ESTADO = {
+        injury: '🏥 lesionado',
+        other: '⚠ duda',
+        double: '⚠ duda seria',
+        out: '🚫 fuera de LaLiga',
+      }
+      if (f.est && !(f.est === 'injury' && f.bj)) {
+        ets.push('<span class="et et-mal">' + (ESTADO[f.est] || esc(f.est)) + '</span>')
+      }
 
       var partido = f.riv
         ? (f.ca === 1 ? 'en casa' : 'fuera') + ' contra <b>' + esc(CLUB[f.riv] || '?') + '</b>' +
