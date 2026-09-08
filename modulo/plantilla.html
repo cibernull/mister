@@ -370,6 +370,9 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
 .cj-p.alta{background:var(--sube)} .cj-p.media{background:var(--oro)}
 .cj-p.baja{background:#d9d9d9} .cj-p.cero,.cj-p.no{background:var(--baja);color:#fff}
 .cj.fuera .cj-cara .cara{filter:grayscale(1);opacity:.55}
+/* Contra quién y dónde: la otra mitad de por qué se espera lo que se espera. */
+.cj-riv{display:inline-flex;align-items:center;gap:2px;font-size:9px;line-height:1;opacity:.85}
+.cj-riv .ec{width:13px;height:13px}
 
 /* El once a mano: mismo campo, con huecos que se pueden llenar. */
 .mano{margin-top:14px;border:1px solid var(--raya);border-radius:12px;padding:10px 12px;background:var(--tabla)}
@@ -894,20 +897,34 @@ body{padding:0 24px 96px;background:
 .op-cuerpo p{min-height:31px;margin:10px 0;color:var(--gris);font-size:10.5px;line-height:1.45}
 .op-cta{width:100%;display:flex;align-items:center;justify-content:space-between;border:1px solid var(--raya);border-radius:9px;padding:8px 10px;background:var(--hueco);color:var(--tinta);font:inherit;font-size:11px;font-weight:700;cursor:pointer}.op-cta:hover{border-color:var(--oro-raya);color:var(--oro);background:var(--oro-fondo)}
 
-/* Ficha premium del jugador */
-.capa-hoja{max-width:820px;padding:0 22px 26px;border-radius:22px;box-shadow:0 35px 100px -30px rgba(0,0,0,.8)}
-.capa-x{top:14px;margin:14px -8px 0 0;background:rgba(18,20,28,.78);color:#F6F2EA;border-color:rgba(255,255,255,.15);backdrop-filter:blur(10px)}
-.cf-cab{margin:0 -22px;padding:34px 26px 25px;min-height:158px;align-items:center;gap:18px;background:radial-gradient(circle at 12% 90%,rgba(221,185,111,.19),transparent 26%),linear-gradient(130deg,#171A2A,#272B45 58%,#3B3048);border-radius:22px 22px 0 0;color:#F8F4EC}
-.cf-cab .cara.grande{width:94px;height:94px;object-fit:contain;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.06);box-shadow:0 15px 35px -16px rgba(0,0,0,.65)}
-.cf-cab>.dorsal{align-self:flex-end;margin-left:-36px;margin-bottom:1px;border:2px solid #20243A;box-shadow:0 4px 12px rgba(0,0,0,.3)}
-.cf-cab h3{font-size:34px}.cf-cab .cf-club{color:rgba(248,244,236,.65)}
-.cf-veredicto{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:18px 0 0;padding:14px 16px;border-radius:13px;border:1px solid var(--raya);background:var(--hueco)}
+/* Ficha premium del jugador. En escritorio se comporta como un dashboard:
+   identidad y decisión arriba; datos y análisis aprovechan el ancho. Así se
+   conserva todo sin obligar a recorrer una columna innecesariamente larga. */
+.capa{align-items:center;padding:10px}
+.capa-hoja{width:min(1080px,100%);max-width:none;max-height:calc(100dvh - 20px);padding:0 18px 16px;border-radius:22px;box-shadow:0 35px 100px -30px rgba(0,0,0,.8)}
+.capa-x{position:absolute;top:12px;right:12px;float:none;margin:0;background:rgba(18,20,28,.78);color:#F6F2EA;border-color:rgba(255,255,255,.15);backdrop-filter:blur(10px)}
+.cf-cab{margin:0 -18px;padding:17px 58px 17px 20px;min-height:112px;display:flex;align-items:center;justify-content:space-between;flex-wrap:nowrap;gap:22px;background:radial-gradient(circle at 9% 100%,rgba(221,185,111,.2),transparent 23%),linear-gradient(130deg,#171A2A,#272B45 58%,#3B3048);border-radius:22px 22px 0 0;color:#F8F4EC}
+.cf-identidad{min-width:0;display:flex;align-items:center;gap:16px}
+.cf-retrato{position:relative;flex:none;display:flex}
+.cf-cab .cara.grande{width:76px;height:76px;object-fit:contain;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.06);box-shadow:0 15px 35px -16px rgba(0,0,0,.65)}
+.cf-cab .cf-retrato>.dorsal{position:absolute;right:-5px;bottom:-4px;width:31px;height:25px;border:2px solid #20243A;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.cf-cab h3{font-size:32px}.cf-cab .cf-club{color:rgba(248,244,236,.65)}
+.cf-veredicto{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:0;min-width:300px;max-width:430px;padding:12px 14px;border-radius:13px;border:1px solid rgba(255,255,255,.11);background:rgba(255,255,255,.065)}
 .cf-veredicto>div{min-width:0}.cf-veredicto b{display:block;font-size:14px}.cf-veredicto span{display:block;margin-top:2px;color:var(--gris);font-size:11.5px}.cf-veredicto i{flex:none;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;font-style:normal;font-size:15px}
 .cf-veredicto.bueno{border-color:color-mix(in srgb,var(--sube) 45%,var(--raya));background:var(--sube-fondo)}.cf-veredicto.bueno b{color:var(--sube)}.cf-veredicto.bueno i{color:var(--sube);background:color-mix(in srgb,var(--sube) 14%,transparent)}
 .cf-veredicto.malo{border-color:color-mix(in srgb,var(--baja) 45%,var(--raya));background:var(--baja-fondo)}.cf-veredicto.malo b{color:var(--baja)}.cf-veredicto.malo i{color:var(--baja);background:color-mix(in srgb,var(--baja) 14%,transparent)}
-.cf-cifras{grid-template-columns:repeat(5,minmax(90px,1fr));gap:7px}.cf-cifras .dato{padding:9px 11px}
-.cf-sec{padding-top:16px;border-top:1px solid var(--raya)}
-.cf-acciones{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:9px}.cf-acciones button{border:1px solid var(--raya);border-radius:10px;padding:9px 10px;background:var(--tabla);color:var(--tinta);font:inherit;font-size:11.5px;font-weight:700;cursor:pointer}.cf-acciones button:hover,.cf-acciones button.on{border-color:var(--oro-raya);color:var(--oro);background:var(--oro-fondo)}
+.cf-cab .cf-veredicto:not(.bueno):not(.malo) b{color:#F8F4EC}.cf-cab .cf-veredicto:not(.bueno):not(.malo) span{color:rgba(248,244,236,.58)}.cf-cab .cf-veredicto:not(.bueno):not(.malo) i{color:#E4C277;background:rgba(221,185,111,.13)}
+.cf-cifras{grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;margin-top:8px}.cf-cifras .dato{padding:7px 9px;background:var(--hueco);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--raya) 74%,transparent)}
+.cf-cifras .dato:nth-child(2){background:var(--oro-fondo);box-shadow:inset 0 0 0 1px var(--oro-raya)}.cf-cifras .dato:nth-child(2) i,.cf-cifras .dato:nth-child(2) b{color:var(--oro)}
+.cf-detalle-grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:8px;margin-top:8px;align-items:start}
+.cf-columna{min-width:0;display:flex;flex-direction:column;gap:8px}
+.cf-sec{min-width:0;margin:0;padding:10px 11px;border:1px solid var(--raya);border-radius:12px;background:color-mix(in srgb,var(--hueco) 42%,var(--tabla))}
+.cf-sec>h4{margin-bottom:6px}
+.cf-graf{margin-top:5px}.cf-graf svg{height:40px}.cf-graf .ejes{font-size:9px;margin-top:0}
+.cf-jor{gap:3px;padding-bottom:0}.cf-j{width:34px;gap:2px}.cf-j .col{height:58px}.cf-j .b{font-size:10px}.cf-j .n{font-size:9px}.cf-j .ev{font-size:9px}
+.cf-lineas{gap:3px;font-size:11.5px;line-height:1.35}.cf-lineas .pista{font-size:9.5px;line-height:1.25}
+.cf-pie{margin-top:8px;padding-top:8px;font-size:9.5px}
+.cf-acciones{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:8px}.cf-acciones button{border:1px solid var(--raya);border-radius:9px;padding:7px 9px;background:var(--tabla);color:var(--tinta);font:inherit;font-size:10.5px;font-weight:700;cursor:pointer}.cf-acciones button:hover,.cf-acciones button.on{border-color:var(--oro-raya);color:var(--oro);background:var(--oro-fondo)}
 .cf-simulacion{margin-top:8px;padding:11px 13px;border-radius:10px;background:var(--oro-fondo);border:1px solid var(--oro-raya);font-size:11.5px;color:var(--gris);line-height:1.5}.cf-simulacion b{color:var(--oro)}
 
 /* Preferencias y herramientas de decisión */
@@ -934,7 +951,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
   .buscar{flex-wrap:wrap}.buscar input{width:calc(100% - 30px)}.cuenta-res{margin-left:26px}
   .sello{font-size:9px}.acc .est{display:none}
   .escaparate-cab{align-items:flex-start}.op-contador{display:none}.op-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -12px;padding:0 12px 8px;scrollbar-width:none}.op-grid::-webkit-scrollbar{display:none}.oportunidad{flex:0 0 78vw;scroll-snap-align:start}.op-foto{height:142px}
-  .capa-hoja{padding:0 14px 22px;border-radius:18px 18px 0 0}.cf-cab{margin:0 -14px;padding:28px 18px 20px;border-radius:18px 18px 0 0}.cf-cab .cara.grande{width:76px;height:76px}.cf-cab h3{font-size:28px}.cf-cifras{grid-template-columns:repeat(3,minmax(0,1fr))}.cf-veredicto{align-items:flex-start}
+  .capa{align-items:flex-end;padding:0}.capa-hoja{width:100%;max-height:94dvh;padding:0 12px 18px;border-radius:18px 18px 0 0}.capa-x{top:10px;right:10px}.cf-cab{margin:0 -12px;padding:18px 46px 16px 15px;min-height:0;display:block;border-radius:18px 18px 0 0}.cf-identidad{gap:12px}.cf-cab .cara.grande{width:66px;height:66px}.cf-cab h3{font-size:27px}.cf-cab .cf-veredicto{min-width:0;max-width:none;margin-top:13px;padding:10px 12px}.cf-cifras{grid-template-columns:repeat(3,minmax(0,1fr))}.cf-detalle-grid{grid-template-columns:1fr}.cf-veredicto{align-items:flex-start}
   .cf-acciones{grid-template-columns:1fr}.decision-bar{bottom:72px}.comparador{align-items:end;padding:0}.comparador-hoja{max-height:88vh;border-radius:18px 18px 0 0;padding:16px}.comparador-tabla{overflow-x:auto;grid-template-columns:90px repeat(var(--n),150px)}
 }
 @media(max-width:390px){.pest label{font-size:8px}.marcador dd{font-size:15px}.centro-mando h2{font-size:28px}}
@@ -2111,13 +2128,12 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       }
 
       cuerpo.innerHTML =
-        '<div class="cf-cab">' + cara(id, f.n, 'grande') +
-        '<span class="dorsal p' + f.p + '">' + PUESTO[f.p] + '</span>' +
+        '<div class="cf-cab"><div class="cf-identidad"><div class="cf-retrato">' + cara(id, f.n, 'grande') +
+        '<span class="dorsal p' + f.p + '">' + PUESTO[f.p] + '</span></div>' +
         '<div style="min-width:0"><h3 id="capa-nombre">' + esc(f.n) + '</h3>' +
         '<div class="cf-club">' + escudo(f.eq) + esc(CLUB[f.eq] || '') + (f.ed ? ' · ' + f.ed + ' años' : '') + '</div>' +
         '<div class="cf-ets">' + ets.join('') + '</div></div></div>' +
-
-        '<div class="cf-veredicto ' + veredicto.clase + '"><div><b>' + veredicto.titulo + '</b><span>' + veredicto.detalle + '</span></div><i>' + veredicto.icono + '</i></div>' +
+        '<div class="cf-veredicto ' + veredicto.clase + '"><div><b>' + veredicto.titulo + '</b><span>' + veredicto.detalle + '</span></div><i>' + veredicto.icono + '</i></div></div>' +
 
         '<div class="cf-acciones"><button type="button" data-vigilar="' + id + '">Vigilar jugador</button><button type="button" data-comparar="' + id + '">Añadir al comparador</button><button type="button" data-simular-fichaje="' + id + '">Simular fichaje</button></div><div class="cf-simulacion" id="cf-simulacion" hidden></div>' +
 
@@ -2130,14 +2146,17 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
           (f.cl && f.cl !== f.pr ? dato('cláusula', corto(f.cl)) : '') +
         '</div>' +
 
-        '<div class="cf-sec"><h4>Próximo partido</h4><div class="cf-lineas"><div class="l"><span>' + partido + '</span></div></div></div>' +
-        (valor.length || f.hv ? '<div class="cf-sec"><h4>Su valor</h4>' +
-          (valor.length ? '<div class="jv" style="margin:0">' + valor.join('<span class="sep">·</span>') + '</div>' : '') +
-          grafico(f) + '</div>' : '') +
-        '<div class="cf-sec"><h4>Jornada a jornada</h4>' + jornadas(f) + '</div>' +
-        (lineas.length ? '<div class="cf-sec"><h4>Lo que decimos nosotros</h4><div class="cf-lineas">' +
-          lineas.map(function (l) { return '<div class="l"><span>' + l[0] + '</span><span>' + l[1] + '</span></div>' }).join('') +
-          '</div></div>' : '') +
+        '<div class="cf-detalle-grid"><div class="cf-columna">' +
+          '<div class="cf-sec"><h4>Próximo partido</h4><div class="cf-lineas"><div class="l"><span>' + partido + '</span></div></div></div>' +
+          (valor.length || f.hv ? '<div class="cf-sec"><h4>Su valor</h4>' +
+            (valor.length ? '<div class="jv" style="margin:0">' + valor.join('<span class="sep">·</span>') + '</div>' : '') +
+            grafico(f) + '</div>' : '') +
+        '</div><div class="cf-columna">' +
+          '<div class="cf-sec"><h4>Jornada a jornada</h4>' + jornadas(f) + '</div>' +
+          (lineas.length ? '<div class="cf-sec"><h4>Lo que decimos nosotros</h4><div class="cf-lineas">' +
+            lineas.map(function (l) { return '<div class="l"><span>' + l[0] + '</span><span>' + l[1] + '</span></div>' }).join('') +
+            '</div></div>' : '') +
+        '</div></div>' +
         '<div class="cf-pie"><span>Las cifras de arriba son de Mister; las de «lo que decimos nosotros», calculadas aquí.</span>' +
         '<a href="https://mister.mundodeportivo.com/players/' + encodeURIComponent(id) + '/x" target="_blank" rel="noopener">Abrir en Mister ↗</a></div>'
       actualizarHerramientas(id)

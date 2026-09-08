@@ -1330,13 +1330,36 @@ if (MIOS.length !== PL[MI_EQUIPO].length) {
   throw new Error(`Tengo ${PL[MI_EQUIPO].length} jugadores en plantilla pero solo ${MIOS.length} con datos`)
 }
 const MIS_MOVS = (D.porEquipo[MI_EQUIPO] || { porJugador: {} }).porJugador
+
+/**
+ * Lo que pagaste por él **la última vez que lo ficharon**, no la suma de todas.
+ *
+ * Antes se usaba el total de compras del equipo por ese jugador, que suma cada
+ * vez que ha entrado. A Álvaro Valles lo fichaste el 4 de agosto por 5.342.000,
+ * lo vendiste el 22 por 6.910.050 y lo volviste a fichar el 28 por 7.813.750:
+ * la ficha decía «pagaste 13 M» —las dos compras juntas— e ignoraba la venta de
+ * en medio. Y de ahí salía un «−4,1 M» cuando en realidad ganabas 1,3 M.
+ *
+ * Lo que cuenta es la compra que abre la etapa actual: la última entrada, sin
+ * una salida posterior. Si no hay ninguna, es que llegó en el reparto inicial.
+ */
+const pagadoPorEtapaActual = (() => {
+  const porJugador = new Map()
+  // De más antiguo a más nuevo, para que la última compra sea la que manda.
+  for (const m of [...MOVS].sort((a, b) => String(a.fecha).localeCompare(String(b.fecha)))) {
+    const id = String(m.id)
+    if (m.a === MI_EQUIPO) porJugador.set(id, m.importe)
+    else if (m.de === MI_EQUIPO) porJugador.delete(id)
+  }
+  return porJugador
+})()
 // Vender sube el tope: la caja crece con el valor entero y la plantilla pierde
 // ese valor, del que solo contaba el 25 %. Neto: +0,75 × valor.
 const topeTrasVender = (v) => MIO.saldo + v + 0.25 * (MIO.pl - v)
 
 const filaMia = (j, modo) => {
   const tendencia = tendenciaDe(j)
-  const pago = MIS_MOVS[String(j.id)] ? MIS_MOVS[String(j.id)].compras : 0
+  const pago = pagadoPorEtapaActual.get(String(j.id)) ?? 0
   const grande = modo === 'clausula' ? j.clausula : j.valor
   const rotulo = modo === 'clausula' ? 'te lo quitan por' : modo === 'venta' ? 'te darían' : 'vale'
   const trato = pago
@@ -1601,6 +1624,22 @@ const filaOnce = (j) => `        <div class="mj">${dorsal(j.puesto)}${caraDe(j.i
  * `once.elegidos` ya viene ordenado por puesto, así que las líneas se cortan
  * con la propia formación en vez de volver a agrupar por tu cuenta.
  */
+/**
+ * Contra quién juega y dónde, debajo de su ficha en el campo.
+ *
+ * Es la mitad de la decisión y estaba escondida: la cifra de puntos ya lleva
+ * dentro el sitio y el rival, pero sin verlos no se entiende por qué uno de
+ * más media sale por debajo de otro. Casa o fuera con un icono, y el escudo de
+ * quien le toca.
+ */
+const proximoDe = (j) => {
+  if (!j.riv) return ''
+  const donde = j.casa === 1 ? ['🏠', 'en casa'] : j.casa === 0 ? ['✈️', 'fuera'] : ['', '']
+  const rival = CLUBES.get(String(j.riv))
+  const escudo = ESCUDOS.has(String(j.riv)) ? `<i class="ec e${j.riv}"></i>` : ''
+  return `<span class="cj-riv" title="${esc(`${donde[1]} contra ${rival ?? 'el rival'}`)}">${donde[0]}${escudo}</span>`
+}
+
 const fichaEnCampo = (j) => {
   const fuera = noJuega(j)
   const pts = fuera ? null : esperadoTotal(j)
@@ -1624,6 +1663,7 @@ const fichaEnCampo = (j) => {
   }</span>
           <span class="cj-n">${esc(mote)}</span>
           <span class="cj-p ${fuera ? 'no' : claseRacha(pts)}">${fuera ? (j.est === 'injury' ? '🏥' : '—') : dec(pts)}</span>
+          ${proximoDe(j)}
         </button>`
 }
 
