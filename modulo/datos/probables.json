@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-08T08:44:57.932Z",
+ "cuando": "2026-09-08T09:03:43.110Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -1903,7 +1903,10 @@
    "prob": 0,
    "sancionado": 0,
    "fuera": 1,
-   "min": 0
+   "min": 0,
+   "lesion": "Rotura de lig. cruzado anterior",
+   "desde": "08/09 (1 día)",
+   "hasta": "marzo"
   },
   "60861": {
    "prob": 30,
