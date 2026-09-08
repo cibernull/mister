@@ -618,25 +618,64 @@ const DIAS_PROTEGIDO_TRAS_FICHAJE = 7
  * de conseguirlo.
  */
 const AHORA = Date.now()
+
+/**
+ * Las horas de Mister vienen en su hora, la de España, sin decir cuál es.
+ *
+ * Leerlas como hora local del ordenador funciona en mi Mac y falla en el
+ * servidor, que va en UTC: un fichaje de las 16:00 se leería como las 18:00 de
+ * España y la cuenta atrás saldría dos horas corrida. Se resuelve preguntando
+ * cuánto se aparta Madrid de UTC ese día concreto, que en verano son dos horas
+ * y en invierno una.
+ */
+const instanteDeMister = (fecha) => {
+  const suelto = Date.parse(String(fecha).replace(' ', 'T') + 'Z')
+  if (!Number.isFinite(suelto)) return null
+  // Qué hora marca Madrid en ese instante: la diferencia es el desfase.
+  const enMadrid = new Date(suelto).toLocaleString('sv-SE', { timeZone: 'Europe/Madrid' })
+  const desfase = Date.parse(enMadrid.replace(' ', 'T') + 'Z') - suelto
+  return suelto - desfase
+}
+
 const ultimoFichajeDe = (() => {
   const m = new Map()
   for (const x of MOVS) {
     if (!x.a) continue
     const id = String(x.id)
-    const t = Date.parse(String(x.fecha).replace(' ', 'T'))
-    if (!Number.isFinite(t)) continue
+    const t = instanteDeMister(x.fecha)
+    if (t === null) continue
     if (!m.has(id) || t > m.get(id)) m.set(id, t)
   }
   return m
 })()
 
+/** «6 d 4 h», o «3 h 20 min» cuando ya queda menos de un día. */
+const cuantoQueda = (ms) => {
+  const min = Math.max(0, Math.round(ms / 60000))
+  const d = Math.floor(min / 1440)
+  const h = Math.floor((min % 1440) / 60)
+  const m = min % 60
+  if (d > 0) return `${d} d ${h} h`
+  if (h > 0) return `${h} h ${m} min`
+  return `${m} min`
+}
+
+/** Cuándo se abre, en hora de España: «el 14 de septiembre a las 18:00». */
+const cuandoSeAbre = (t) => {
+  const f = new Date(t)
+  const dia = f.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', timeZone: 'Europe/Madrid' })
+  const hora = f.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' })
+  return `el ${dia} a las ${hora}`
+}
+
 const recienFichado = (j) => {
   if (j.mk === 1 || j.mio) return null
   const t = ultimoFichajeDe.get(String(j.id))
   if (t === undefined) return null
-  const dias = (AHORA - t) / 86400000
-  if (dias >= DIAS_PROTEGIDO_TRAS_FICHAJE) return null
-  return { dias, faltan: Math.max(1, Math.ceil(DIAS_PROTEGIDO_TRAS_FICHAJE - dias)) }
+  const seAbre = t + DIAS_PROTEGIDO_TRAS_FICHAJE * 86400000
+  const restante = seAbre - AHORA
+  if (restante <= 0) return null
+  return { restante, seAbre, queda: cuantoQueda(restante), cuando: cuandoSeAbre(seAbre) }
 }
 
 const vetoDe = (j) => {
@@ -646,7 +685,7 @@ const vetoDe = (j) => {
     return {
       grave: true,
       que: 'recién fichado',
-      detalle: `lo ficharon hace ${nuevo.dias < 1 ? 'menos de un día' : `${Math.floor(nuevo.dias)} ${Math.floor(nuevo.dias) === 1 ? 'día' : 'días'}`} y no se le puede clausular hasta dentro de ${nuevo.faltan} ${nuevo.faltan === 1 ? 'día' : 'días'}`,
+      detalle: `no se le puede pagar la cláusula hasta ${nuevo.cuando} · quedan ${nuevo.queda}`,
     }
   }
   const p = PROBABLES[String(j.id)]
@@ -1110,18 +1149,51 @@ const filaJugador = (j) => {
 // en cada jugador.
 /** La serie de valores de cada jugador, en miles y por orden de día. */
 const HIST = opcional('historico-valores.json', {})
+const HIST_ANTERIOR = opcional('historico-valores-anterior.json', {})
+
+/**
+ * Los ficheros ya guardados pueden incluir junio y julio, que pertenecen a la
+ * pretemporada nueva. Se recortan al calendario competitivo antes de enviarlos
+ * al navegador; si no quedan tres días, no existe comparación honesta.
+ */
+const anteriorComparable = (serie) => {
+  if (!serie || !Array.isArray(serie.valores) || !/^\d{4}\/\d{2}$/.test(serie.temporada ?? '')) return null
+  const anioInicio = Number(serie.temporada.slice(0, 4))
+  const desdeCompeticion = `${anioInicio}-08-01`
+  const hastaCompeticion = `${anioInicio + 1}-05-31`
+  const sumarDias = (iso, dias) => {
+    const d = new Date(`${iso}T00:00:00Z`)
+    d.setUTCDate(d.getUTCDate() + dias)
+    return d.toISOString().slice(0, 10)
+  }
+  const puntos = serie.valores
+    .map((valor, i) => ({ fecha: sumarDias(serie.desde, i), valor }))
+    .filter((p) => p.fecha >= desdeCompeticion && p.fecha <= hastaCompeticion)
+  if (puntos.length < 3) return null
+  return {
+    temporada: serie.temporada,
+    desde: puntos[0].fecha,
+    hasta: puntos.at(-1).fecha,
+    valores: puntos.map((p) => p.valor),
+  }
+}
+
+const HIST_ANTERIOR_COMPARABLE = new Map(
+  Object.entries(HIST_ANTERIOR).map(([id, serie]) => [id, anteriorComparable(serie)]).filter(([, serie]) => serie),
+)
 
 const SERIES = (() => {
   const dias = Object.keys(HIST).sort()
   const m = new Map()
   for (const d of dias) {
     for (const [id, v] of Object.entries(HIST[d])) {
-      if (!m.has(id)) m.set(id, [])
-      m.get(id).push(Math.round(v / 1000))
+      if (!m.has(id)) m.set(id, { valores: [], fechas: [] })
+      m.get(id).valores.push(Math.round(v / 1000))
+      m.get(id).fechas.push(d)
     }
   }
   // Menos de tres días no dibuja una línea, dibuja una raya.
-  return new Map([...m].filter(([, l]) => l.length >= 3))
+  return new Map([...m].filter(([, s]) => s.valores.length >= 3))
 })()
 
 const islaClubes = JSON.stringify(Object.fromEntries(CLUBES))
@@ -1154,6 +1226,11 @@ const islaFichas = JSON.stringify(
     J.map((j) => {
       const c = clausulazo(j)
       const r = hastaCuanto(j)
+      const serie = SERIES.get(String(j.id))
+      const fechas = serie?.fechas ?? []
+      const diasDelRango = fechas.length
+        ? Math.round((Date.parse(fechas.at(-1)) - Date.parse(fechas[0])) / 86400000) + 1
+        : 0
       return [
         j.id,
         {
@@ -1210,7 +1287,26 @@ const islaFichas = JSON.stringify(
           // Su valor día a día, en miles para no arrastrar tres ceros por dato
           // quinientas veces. Es lo que Mister pinta en su ficha y aquí faltaba:
           // un «+58 % este mes» no distingue una subida sostenida de un pico.
-          hv: SERIES.get(String(j.id)) ?? null,
+          hv: serie?.valores ?? null,
+          hd: serie
+            ? {
+                d: fechas[0],
+                h: fechas.at(-1),
+                // En la serie normal las fechas son consecutivas y basta con
+                // guardar los extremos. Solo se envía la lista si hay huecos.
+                x: diasDelRango === fechas.length ? null : fechas,
+              }
+            : null,
+          // Curva de la campaña anterior, separada de la actual y comprimida
+          // también en miles. Conserva el rango real que devolvió Mister.
+          ha: HIST_ANTERIOR_COMPARABLE.get(String(j.id))
+            ? {
+                t: HIST_ANTERIOR_COMPARABLE.get(String(j.id)).temporada,
+                d: HIST_ANTERIOR_COMPARABLE.get(String(j.id)).desde,
+                h: HIST_ANTERIOR_COMPARABLE.get(String(j.id)).hasta,
+                v: HIST_ANTERIOR_COMPARABLE.get(String(j.id)).valores.map((v) => Math.round(v / 1000)),
+              }
+            : null,
           // Lo nuestro, ya calculado: repetir la fórmula en el navegador sería
           // tener dos sitios donde puede dejar de cuadrar.
           hc: r === null ? null : { t: r.techo, m: r.margen, c: r.cuantos },
@@ -2000,6 +2096,11 @@ const islaPlantilla = JSON.stringify(
     p: j.puesto,
     e: noJuega(j) ? 0 : Number(esperadoTotal(j).toFixed(2)),
     fuera: noJuega(j) ? 1 : 0,
+    est: j.est ?? null,
+    prob: probabilidadDe(j),
+    eq: j.eq ? String(j.eq) : null,
+    club: CLUBES.get(String(j.eq)) ?? null,
+    foto: `fotos/${j.id}.webp`,
     html: fichaEnCampo(j),
   })),
 )
@@ -2124,7 +2225,7 @@ ${ALINEACIONES.filter((a) => a.once && a.once.length)
       <div id="zona-campo">${campoOnce(once, FORMACION)}</div>
       <div class="jbanca" id="jbanca" hidden></div>
       <div class="mano" id="zona-mano" hidden>
-        <p class="sd">Mi once es una opinión: elige por el pronóstico de titularidad y por lo que rinde cada uno en su partido. Tú sabes cosas que yo no —quién viene tocado, a quién se le da bien el rival—. Arrastra o toca para armar el tuyo y ver cuánto daría.</p>
+        <p class="sd">Mi once es una opinión: elige por el pronóstico de titularidad y por lo que rinde cada uno en su partido. Tú sabes cosas que yo no —quién viene tocado, a quién se le da bien el rival—. Toca cualquier puesto para elegir quién juega; también puedes arrastrar desde la banca.</p>
         <div class="mano-cab">
           <label>Formación <select id="mano-formacion"></select></label>
           <span class="mano-total"><b id="mano-puntos">0,0</b> pts <i id="mano-cuantos">0 de 11</i></span>
