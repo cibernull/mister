@@ -469,8 +469,21 @@ for (const j of J) {
   j.rival = j.riv != null ? CLUBES.get(String(j.riv)) ?? null : null
   const mediaSegunDonde = j.casa === 1 ? j.mc : j.casa === 0 ? j.mf : null
   j.mediaProxima = mediaSegunDonde != null ? mediaSegunDonde : j.media
-  // Sin partido, o sin saber si es titular, no se le pone por delante de nadie.
-  j.esperado = j.once === 1 ? j.mediaProxima : j.once === 0 ? 0 : j.mediaProxima * 0.5
+  // Y por lo probable que sea que juegue. El porcentaje de FútbolFantasy es el
+  // dato bueno: Mister publica un sí/no que viene vacío para casi todos, así
+  // que el `× 0,5` de «no lo sé» se le aplicaba a media liga —a Camello, con un
+  // 90 % de salir, le dejaba la cifra en 4,5 en vez de 8,1— y eso desordenaba
+  // el mercado entero. Cuando no hay porcentaje se mantiene lo de antes, que
+  // era lo único que había.
+  const prob = probabilidadDe(j)
+  j.esperado =
+    prob !== null
+      ? j.mediaProxima * (prob / 100)
+      : j.once === 1
+        ? j.mediaProxima
+        : j.once === 0
+          ? 0
+          : j.mediaProxima * 0.5
 }
 
 // ── Recomendaciones sobre mi plantilla ───────────────────────────────────────
@@ -1117,24 +1130,53 @@ const filasResto = fueraDelMercado.map(filaJugador).join(NL)
 // La lista completa sirve para investigar; estas tarjetas sirven para decidir.
 // Solo entran jugadores que el usuario puede pagar hoy, ordenados por señales
 // deportivas, margen de precio, próximo partido y tendencia de valor.
-const candidatosEscaparate = J.filter((j) => j.a && !j.mio)
+/**
+ * Las cuatro oportunidades de hoy.
+ *
+ * Ordenaba primero por `p + d` —dos banderas de 0/1: media en el tercio alto y
+ * valor subiendo—, así que solo había tres escalones y las cuatro tarjetas
+ * salían siempre del mismo cajón. De ahí que fueran casi fijas. Y dejaba fuera
+ * al mejor: Fermín López, con la media más alta de todo lo que puedes pagar
+ * (12,3), no aparecía porque su bandera valía 1 en vez de 2.
+ *
+ * Ahora manda lo que la propia tarjeta dice: cuánto por debajo de su techo
+ * estimado está. Es el número que ya se enseña y el que justifica la palabra
+ * «oportunidad».
+ *
+ * Con dos coladores, porque una ganga que no juega no es una ganga:
+ *   · al menos dos partidos, para que la media signifique algo;
+ *   · y que vaya a salir de titular, cuando sabemos su probabilidad. Sin esto
+ *     el ranking se llenaba de gente al 0 % y al 20 %.
+ */
+const PROBABILIDAD_MINIMA_ESCAPARATE = 50
+const PARTIDOS_MINIMOS_ESCAPARATE = 2
+
+const candidatosEscaparate = J.filter((j) => {
+  if (!j.a || j.mio) return false
+  if ((j.partidos ?? 0) < PARTIDOS_MINIMOS_ESCAPARATE) return false
+  const pr = probabilidadDe(j)
+  return pr === null || pr >= PROBABILIDAD_MINIMA_ESCAPARATE
+})
   .map((j) => ({ j, renta: hastaCuanto(j), forma: formaDe(j) }))
+  .filter((x) => x.renta && x.renta.margen > 0)
   .sort((a, b) =>
-    (b.j.p + b.j.d) - (a.j.p + a.j.d) ||
-    ((b.renta?.margen ?? -Infinity) - (a.renta?.margen ?? -Infinity)) ||
+    (b.renta?.margen ?? -Infinity) - (a.renta?.margen ?? -Infinity) ||
     b.j.esperado - a.j.esperado ||
     (b.forma ?? -Infinity) - (a.forma ?? -Infinity),
   )
   .slice(0, 4)
 
 const tarjetaOportunidad = ({ j, renta, forma }, i) => {
-  const etiqueta = i === 0 ? 'Mejor oportunidad' : renta && renta.margen >= 0 ? 'Precio con margen' : forma > 0 ? 'Llega en forma' : 'Para esta jornada'
+  // La etiqueta de «mejor» la pone el navegador a la que quede primera: aquí no
+  // se sabe, porque el botón de objetivo reordena las tarjetas al cargar y la
+  // etiqueta cosida a la primera acababa en la segunda.
+  const etiqueta = renta && renta.margen >= 0 ? 'Precio con margen' : forma > 0 ? 'Llega en forma' : 'Para esta jornada'
   const motivo = renta && renta.margen >= 0
     ? `${corto(renta.margen)} por debajo de su techo estimado`
     : j.riv
       ? `${dec(j.esperado)} puntos esperados en su próximo partido`
       : `${dec(j.media)} puntos de media`
-  return `      <article class="oportunidad" data-op-id="${j.id}" data-op-puntos="${j.esperado}" data-op-valor="${j.subeMes ?? -9}" data-op-equilibrio="${(j.p + j.d) * 1000 + j.media}">
+  return `      <article class="oportunidad" data-op-id="${j.id}" data-op-puntos="${j.esperado}" data-op-valor="${j.subeMes ?? -9}" data-op-equilibrio="${Math.round(renta?.margen ?? -1e9)}">
         <div class="op-foto">${caraDe(j.id, j.nombre)}<span class="dorsal p${j.puesto}">${PUESTOS[j.puesto]}</span></div>
         <div class="op-cuerpo">
           <span class="op-etiqueta">${etiqueta}</span>

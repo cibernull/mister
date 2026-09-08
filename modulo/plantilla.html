@@ -2221,7 +2221,19 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
         try { localStorage.setItem('em-objetivo', clave) } catch (e) {}
         botones.forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-objetivo') === clave) })
         var grid = document.querySelector('.op-grid')
-        if (grid) [].slice.call(grid.querySelectorAll('.oportunidad')).sort(function (a, b) { return Number(b.getAttribute('data-op-' + clave)) - Number(a.getAttribute('data-op-' + clave)) }).forEach(function (x) { grid.appendChild(x) })
+        if (grid) {
+          var cartas = [].slice.call(grid.querySelectorAll('.oportunidad'))
+            .sort(function (a, b) { return Number(b.getAttribute('data-op-' + clave)) - Number(a.getAttribute('data-op-' + clave)) })
+          cartas.forEach(function (x) { grid.appendChild(x) })
+          // «Mejor oportunidad» va a la que quede primera, no a la que lo fuera
+          // al construir la página: al reordenar acababa en la segunda.
+          cartas.forEach(function (x, i) {
+            var et = x.querySelector('.op-etiqueta')
+            if (!et) return
+            if (i === 0) { et.dataset.suya = et.dataset.suya || et.textContent; et.textContent = 'Mejor oportunidad' }
+            else if (et.dataset.suya) et.textContent = et.dataset.suya
+          })
+        }
         var orden = document.querySelector('#ordenar [data-orden="' + (clave === 'puntos' ? 'proxima' : clave === 'valor' ? 'sube' : 'recomendado') + '"]')
         if (orden) orden.click()
       }
