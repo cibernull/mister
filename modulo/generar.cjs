@@ -597,7 +597,58 @@ const iconos = (j) => `${j.p ? '⭐' : ''}${j.d ? '💵' : ''}${j.vender ? '📤
  * puede ser una buena compra a futuro; lo que no puede es salir en verde como
  * si fuera a jugar el domingo.
  */
+/**
+ * Cuántos días está protegido un recién fichado.
+ *
+ * Mister lo llama, con sus palabras, «impedir fichar por cláusula a recién
+ * fichados durante las primeras…»: es un ajuste de la liga, así que el plazo
+ * cambia de una a otra. En esta son siete días, y ese dato no lo publica su
+ * API en ningún sitio que haya encontrado —lo sé porque lo dice quien juega—,
+ * de modo que va escrito aquí y no leído. Si algún día cambia el ajuste, hay
+ * que cambiarlo aquí.
+ */
+const DIAS_PROTEGIDO_TRAS_FICHAJE = 7
+
+/**
+ * Si acaba de fichar por otro equipo y todavía no se le puede clausular.
+ *
+ * Solo cuenta para la cláusula: a un jugador que esté en el mercado se le puede
+ * pujar aunque acabe de cambiar de manos. La página recomendaba fichar a Sergio
+ * Camello el día siguiente de que se lo llevara Saiyans, cuando no había forma
+ * de conseguirlo.
+ */
+const AHORA = Date.now()
+const ultimoFichajeDe = (() => {
+  const m = new Map()
+  for (const x of MOVS) {
+    if (!x.a) continue
+    const id = String(x.id)
+    const t = Date.parse(String(x.fecha).replace(' ', 'T'))
+    if (!Number.isFinite(t)) continue
+    if (!m.has(id) || t > m.get(id)) m.set(id, t)
+  }
+  return m
+})()
+
+const recienFichado = (j) => {
+  if (j.mk === 1 || j.mio) return null
+  const t = ultimoFichajeDe.get(String(j.id))
+  if (t === undefined) return null
+  const dias = (AHORA - t) / 86400000
+  if (dias >= DIAS_PROTEGIDO_TRAS_FICHAJE) return null
+  return { dias, faltan: Math.max(1, Math.ceil(DIAS_PROTEGIDO_TRAS_FICHAJE - dias)) }
+}
+
 const vetoDe = (j) => {
+  // Lo primero, porque no es una opinión sobre si conviene: es que no se puede.
+  const nuevo = recienFichado(j)
+  if (nuevo !== null) {
+    return {
+      grave: true,
+      que: 'recién fichado',
+      detalle: `lo ficharon hace ${nuevo.dias < 1 ? 'menos de un día' : `${Math.floor(nuevo.dias)} ${Math.floor(nuevo.dias) === 1 ? 'día' : 'días'}`} y no se le puede clausular hasta dentro de ${nuevo.faltan} ${nuevo.faltan === 1 ? 'día' : 'días'}`,
+    }
+  }
   const p = PROBABLES[String(j.id)]
   const baja = p && p.lesion ? p : null
   if (baja) {
@@ -1225,6 +1276,10 @@ const DE_GOLPE_ESCAPARATE = 4
 const candidatosEscaparate = J.filter((j) => {
   if (!j.a || j.mio) return false
   if ((j.partidos ?? 0) < PARTIDOS_MINIMOS_ESCAPARATE) return false
+  // Ni a quien no se puede fichar hoy: recomendar a un recién fichado es
+  // mandarte a una puerta cerrada.
+  const veto = vetoDe(j)
+  if (veto && veto.grave) return false
   const pr = probabilidadDe(j)
   return pr === null || pr >= PROBABILIDAD_MINIMA_ESCAPARATE
 })
@@ -2096,7 +2151,7 @@ ${once.banquillo.map(filaOnce).join(NL)}
     </section>
 `
 
-const oportunidad = J.filter((j) => j.a && !j.mio)
+const oportunidad = J.filter((j) => j.a && !j.mio && !(vetoDe(j)?.grave))
   .sort((a, b) => (b.p + b.d) - (a.p + a.d) || b.media - a.media || (b.subeMes ?? -9) - (a.subeMes ?? -9))[0]
 
 const centroMando = `    <section class="centro-mando" aria-labelledby="cm-titulo">
