@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-08T21:15:00.142Z",
+ "cuando": "2026-09-08T21:38:29.659Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "08/09",
+   "titulo": "Gulácsi no detiene la hemorragia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150846-gulacsi-no-detiene-la-hemorragia",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "08/09",
+   "titulo": "El Real Madrid gana con el arte de complicarse",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150845-el-real-madrid-gana-con-el-arte-de-complicarse",
+   "categoria": "análisis"
   },
   {
    "fecha": "08/09",
@@ -469,18 +481,6 @@
    "fecha": "07/09",
    "titulo": "Pellegrini habla de Ceballos, Isco, Abde, Conde, Cucho, Parrott, Manu González y Valles",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150772-manuel-pellegrini-habla-ceballos-isco-ez-abde-diego-conde-cucho-parrott-manu-gonzalez",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "El mejor XI de la jornada 4 de Liga, por Huugo_21",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150771-el-mejor-xi-de-la-jornada-4-de-liga-por-huugo-21",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Giráldez explicó la elección del tridente ofensivo y habló de los minutos que puede jugar Borja Iglesias",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150770-giraldez-explico-la-eleccion-del-tridente-ofensivo-y-hablo-de-los-minutos-que-puede-jugar-bor",
    "categoria": "rueda de prensa"
   }
  ]
