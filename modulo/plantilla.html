@@ -70,6 +70,7 @@ body{
 .marca p{margin:1px 0 0;font-size:12.5px;color:var(--gris);line-height:1.3}
 
 /* ── Marcador ─────────────────────────────────────────────────────────── */
+.marcador small.carrera{display:block;margin-top:3px;font-family:"IBM Plex Mono",monospace;font-size:11px}
 .marcador{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));
   background:var(--tabla);border:1px solid var(--raya);border-radius:var(--radio);
@@ -902,6 +903,8 @@ body{padding:0 24px 96px;background:
    conserva todo sin obligar a recorrer una columna innecesariamente larga. */
 .capa{align-items:center;padding:10px}
 .capa-hoja{width:min(1080px,100%);max-width:none;max-height:calc(100dvh - 20px);padding:0 18px 16px;border-radius:22px;box-shadow:0 35px 100px -30px rgba(0,0,0,.8)}
+.capa-hoja{scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--tenue) 55%,transparent) transparent}
+.capa-hoja::-webkit-scrollbar{width:7px}.capa-hoja::-webkit-scrollbar-track{background:transparent}.capa-hoja::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--tenue) 48%,transparent);border-radius:99px}
 .capa-x{position:absolute;top:12px;right:12px;float:none;margin:0;background:rgba(18,20,28,.78);color:#F6F2EA;border-color:rgba(255,255,255,.15);backdrop-filter:blur(10px)}
 .cf-cab{margin:0 -18px;padding:17px 58px 17px 20px;min-height:112px;display:flex;align-items:center;justify-content:space-between;flex-wrap:nowrap;gap:22px;background:radial-gradient(circle at 9% 100%,rgba(221,185,111,.2),transparent 23%),linear-gradient(130deg,#171A2A,#272B45 58%,#3B3048);border-radius:22px 22px 0 0;color:#F8F4EC}
 .cf-identidad{min-width:0;display:flex;align-items:center;gap:16px}
@@ -2035,8 +2038,8 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
         ets.push('<span class="et et-baja" title="' + esc(f.bj.que + (f.bj.desde ? ' · desde ' + f.bj.desde : '')) + '">🏥 ' + esc(f.bj.que) +
           (f.bj.hasta ? ' · vuelve ' + esc(f.bj.hasta) : '') + '</span>')
       }
-      if (f.pr != null) {
-        ets.push('<span class="et et-prob' + (f.pr >= 70 ? ' bien' : f.pr >= 30 ? ' duda' : ' mal') + '" title="Probabilidad de salir de titular, según FútbolFantasy">' + f.pr + ' % titular</span>')
+      if (f.prob != null) {
+        ets.push('<span class="et et-prob' + (f.prob >= 70 ? ' bien' : f.prob >= 30 ? ' duda' : ' mal') + '" title="Probabilidad de salir de titular, según FútbolFantasy">' + f.prob + ' % titular</span>')
       } else if (f.on === 1) ets.push('<span class="et et-once">👕 titular</span>')
       // Solo el «lesionado» a secas de Mister cuando no hay algo mejor que decir:
       // con la etiqueta de arriba se repetiría la misma noticia dos veces.
@@ -2104,7 +2107,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       // «Rivales que pueden pagar su lo piden» era lo que salía al pegar la
       // etiqueta del precio detrás de un posesivo. Cada precio pide su frase.
       var comoSeLlama = f.et === 'cláusula' ? 'pagar su cláusula' : f.et === 'lo piden' ? 'pagar lo que piden por él' : 'pagar su valor'
-      lineas.push(['Rivales que pueden ' + comoSeLlama, '<b>' + f.qp + '</b> de ' + (f.qt - 1)])
+      lineas.push(['Rivales que pueden ' + comoSeLlama, '<b>' + f.qp + '</b> de ' + f.qt])
 
       var valor = []
       if (f.se) valor.push('<span class="par"><span class="' + (f.se > 0 ? 'sube' : 'baja') + '">' + firma(f.se) + '</span> hoy</span>')
@@ -2186,7 +2189,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       var fs = comparados.map(function (id) { return window.FICHAS[id] }).filter(Boolean)
       var fila = function (nombre, valor) { return '<div class="ct-label">' + nombre + '</div>' + fs.map(function (f) { return '<div><b>' + valor(f) + '</b></div>' }).join('') }
       comparadorCuerpo.innerHTML = '<div class="comparador-tabla" style="--n:' + fs.length + '"><div></div>' + fs.map(function (f) { return '<div class="ct-nombre">' + esc(f.n) + '</div>' }).join('') +
-        fila('Precio', function (f) { return corto(f.pr) }) + fila('Media', function (f) { return dec(f.me) }) + fila('Próxima jornada', function (f) { return f.esp == null ? '—' : dec(f.esp) + ' pts' }) + fila('Forma', function (f) { return f.fo == null ? '—' : (f.fo >= 0 ? '+' : '−') + dec(Math.abs(f.fo)) }) + fila('Regularidad', function (f) { return f.re == null ? '—' : '±' + dec(f.re) }) + fila('Valor mensual', function (f) { return f.mes == null ? '—' : (f.mes > 0 ? '+' : '') + Math.round(f.mes * 100) + ' %' }) + fila('Titularidad', function (f) { return f.on === 1 ? 'Titular' : f.on === 0 ? 'Suplente' : 'Duda' }) + '</div>'
+        fila('Precio', function (f) { return corto(f.pr) }) + fila('Media', function (f) { return dec(f.me) }) + fila('Próxima jornada', function (f) { return f.esp == null ? '—' : dec(f.esp) + ' pts' }) + fila('Forma', function (f) { return f.fo == null ? '—' : (f.fo >= 0 ? '+' : '−') + dec(Math.abs(f.fo)) }) + fila('Regularidad', function (f) { return f.re == null ? '—' : '±' + dec(f.re) }) + fila('Valor mensual', function (f) { return f.mes == null ? '—' : (f.mes > 0 ? '+' : '') + Math.round(f.mes * 100) + ' %' }) + fila('Titularidad', function (f) { return f.prob != null ? f.prob + ' %' : f.on === 1 ? 'Titular' : f.on === 0 ? 'Suplente' : 'Duda' }) + '</div>'
       comparador.hidden = false
       document.body.style.overflow = 'hidden'
     }

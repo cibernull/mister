@@ -1064,7 +1064,9 @@ const islaFichas = JSON.stringify(
           su: j.sup ?? null,
           on: j.once,
           // El porcentaje de salir de titular; null si no lo publican de él.
-          pr: probabilidadDe(j),
+          // `pr` ya es el precio: mantener claves distintas evita que el
+          // porcentaje lo sobrescriba y acabe mostrándose como dinero.
+          prob: probabilidadDe(j),
           // Y la baja, si la tiene: qué es y hasta cuándo, en sus palabras.
           bj: bajaDe(j),
           riv: j.riv ?? null,
@@ -1156,13 +1158,46 @@ ${candidatosEscaparate.map(tarjetaOportunidad).join(NL)}
   : ''
 
 // ── Marcador ─────────────────────────────────────────────────────────────────
+/**
+ * Lo que se te mueve la plantilla en un día.
+ *
+ * Sustituye al «sobre los 50 M», que era tu patrimonio menos los cincuenta de
+ * salida: cuenta cómo lo has hecho desde agosto, pero no cambia de un día para
+ * otro ni te dice qué hacer, y ya salía en Rivales y en los récords. El valor
+ * de la plantilla sí se mueve todos los días, y es dinero que ganas o pierdes
+ * sin tocar nada.
+ *
+ * Suma la variación de hoy de los tuyos. Los seis que siguen en plantillas pero
+ * ya no están en LaLiga no tienen variación: cuentan cero, que es lo que se
+ * sabe de ellos.
+ */
+const MI_PLANTILLA_HOY = J.filter((j) => j.mio).reduce((t, j) => t + (j.semana ?? 0), 0)
+
+/**
+ * Cuánto te separa del de arriba, o del segundo si vas primero.
+ *
+ * El puesto solo decía «1º de 8». Ir primero por un punto y por cuarenta no es
+ * lo mismo, y es lo que dice si el domingo te juegas algo.
+ */
+const CARRERA = (() => {
+  const orden = [...EQ].sort((a, b) => b.pts - a.pts)
+  const yo = orden.findIndex((e) => e.n === MI_EQUIPO)
+  if (yo < 0 || orden.length < 2) return null
+  return yo === 0
+    ? { texto: 'sobre el 2º', dif: orden[0].pts - orden[1].pts, bien: true }
+    : { texto: `del ${yo}º`, dif: orden[yo - 1].pts - orden[yo].pts, bien: false }
+})()
 const ico = (d) =>
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`
 const marcador = `  <div class="marcador">
-    <div><dt>${ico('<path d="M8 21h8M12 17v4M6 4h12v5a6 6 0 0 1-12 0V4Z"/><path d="M6 6H3v2a3 3 0 0 0 3 3M18 6h3v2a3 3 0 0 1-3 3"/>')} Tu puesto</dt><dd>${MIO.pos}º<small>de ${EQ.length} · ${MIO.pts} pts</small></dd></div>
+    <div><dt>${ico('<path d="M8 21h8M12 17v4M6 4h12v5a6 6 0 0 1-12 0V4Z"/><path d="M6 6H3v2a3 3 0 0 0 3 3M18 6h3v2a3 3 0 0 1-3 3"/>')} Tu puesto</dt><dd>${MIO.pos}º<small>de ${EQ.length} · ${MIO.pts} pts</small></dd>${
+      CARRERA
+        ? `<small class="carrera ${CARRERA.bien ? 'sube' : 'baja'}" title="Diferencia de puntos con ${CARRERA.bien ? 'el segundo clasificado' : 'quien tienes justo por delante'}">${CARRERA.bien ? '+' : '−'}${CARRERA.dif} ${CARRERA.dif === 1 ? 'punto' : 'puntos'} ${CARRERA.texto}</small>`
+        : ''
+    }</div>
     <div><dt>${ico('<rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/>')} En caja</dt><dd class="oro">${eur(MIO.saldo)}</dd>${MIO.comprometido > 0 ? `<small class="retenido" title="Mister te reserva ese dinero mientras la puja siga puesta: no cuenta para el tope">${eur(MIO.comprometido)} retenidos en pujas</small>` : ''}</div>
     <div><dt>${ico('<path d="M3 17l6-6 4 4 7-7"/><path d="M14 8h6v6"/>')} Tope de puja</dt><dd>${eur(MIO.tope)}</dd></div>
-    <div><dt>${ico('<path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>')} Sobre los 50 M</dt><dd class="${clase(MIO.sobre50)}">${firma(MIO.sobre50)}</dd></div>
+    <div><dt>${ico('<path d="M16 3h5v5"/><path d="M21 3l-8 8-4-4-6 6"/><path d="M3 21h18"/>')} Tu plantilla</dt><dd>${eur(MIO.pl)}</dd><small class="${clase(MI_PLANTILLA_HOY)}" title="Lo que ha cambiado el valor de tus jugadores desde ayer: dinero que ganas o pierdes sin tocar nada">${firma(MI_PLANTILLA_HOY)} hoy</small></div>
   </div>`
 
 // ── Cuentas de un equipo ─────────────────────────────────────────────────────
