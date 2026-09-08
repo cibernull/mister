@@ -479,6 +479,19 @@
   "equipo": null
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-09-08",
+  "id": "17615",
+  "de": "Mario80",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-08",
+  "id": "17615",
+  "entra": false
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-07",
   "id": "11761",

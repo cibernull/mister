@@ -994,9 +994,24 @@
    "id": "17290",
    "nombre": "Sergio Camello",
    "valor": 6557000
+  },
+  {
+   "id": "17615",
+   "nombre": "Sergio Herrera",
+   "valor": 8034000
   }
  ],
  "movimientos": [
+  {
+   "id": "17615",
+   "nombre": "Sergio Herrera",
+   "de": "Mario80",
+   "a": null,
+   "importe": 8377200,
+   "tipo": "normal",
+   "fecha": "2026-09-08 13:21:53",
+   "pos": 1
+  },
   {
    "id": "63",
    "nombre": "Marc Bartra",
@@ -6252,6 +6267,14 @@
      "op": "clause"
     },
     {
+     "j": "Sergio Herrera",
+     "id": "17615",
+     "tipo": "venta",
+     "importe": 8377200,
+     "fecha": "2026-09-08",
+     "op": "normal"
+    },
+    {
      "j": "Stole Dimitrievski",
      "id": "213",
      "tipo": "compra",
@@ -6570,6 +6593,12 @@
      "compras": 3217020,
      "ventas": 3439440,
      "ops": 2
+    },
+    "17615": {
+     "nombre": "Sergio Herrera",
+     "compras": 0,
+     "ventas": 8377200,
+     "ops": 1
     },
     "27518": {
      "nombre": "Óscar Valentín",

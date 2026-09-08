@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-08T11:18:54.032Z",
+ "cuando": "2026-09-08T11:45:10.612Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -58,13 +58,13 @@
    "min": 214
   },
   "208": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 238,
-   "lesion": "Lesión muscular en el muslo",
+   "lesion": "Lesión en el bíceps femoral",
    "desde": "06/09 (2 días)",
-   "hasta": null
+   "hasta": "finales de septiembre"
   },
   "213": {
    "prob": 95,
@@ -631,7 +631,7 @@
    "min": 35
   },
   "17614": {
-   "prob": 10,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 91
