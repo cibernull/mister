@@ -492,6 +492,27 @@
   "entra": false
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-09-08",
+  "id": "208",
+  "estado": "injury",
+  "equipo": "Cacaculopedopis"
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-08",
+  "id": "28621",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-08",
+  "id": "48960",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-07",
   "id": "11761",
