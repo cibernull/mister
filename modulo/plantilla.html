@@ -365,6 +365,9 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
 .et-prob.bien{color:var(--sube);border-color:var(--sube)}
 .et-prob.duda{color:var(--oro);border-color:var(--oro-raya)}
 .et-prob.mal{color:var(--baja);border-color:var(--baja)}
+.et-prob i{font-style:normal;opacity:.7;font-weight:400}
+.cf-lineas .l i.baja,.cf-lineas .l i.duda{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:10.5px;margin-top:2px}
+.cf-lineas .l i.baja{color:var(--baja)} .cf-lineas .l i.duda{color:var(--oro)}
 .et-baja{color:var(--baja);border-color:var(--baja);max-width:100%;white-space:normal;text-align:left}
 .cj-duda{position:absolute;right:-6px;top:-5px;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:8px;font-weight:700;line-height:1;padding:2px 3px;border-radius:5px;background:var(--baja);color:#fff}
 .cj-n{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:2px 6px;border-radius:5px;background:rgba(0,0,0,.6);font-size:11px;font-weight:600;letter-spacing:.01em}
@@ -2404,6 +2407,16 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       })
     }
 
+    function haceCuanto (iso) {
+      if (!iso) return ''
+      var ms = Date.now() - Date.parse(iso)
+      if (!(ms >= 0)) return ''
+      var min = Math.round(ms / 60000)
+      if (min < 60) return 'hace ' + min + ' min'
+      var h = Math.floor(min / 60)
+      return 'hace ' + h + ' h' + (min % 60 >= 30 ? ' y media' : '')
+    }
+
     function pintar (id) {
       var f = window.FICHAS[id]
       if (!f) return
@@ -2420,7 +2433,10 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
           (f.bj.hasta ? ' · vuelve ' + esc(f.bj.hasta) : '') + '</span>')
       }
       if (f.prob != null) {
-        ets.push('<span class="et et-prob' + (f.prob >= 70 ? ' bien' : f.prob >= 30 ? ' duda' : ' mal') + '" title="Probabilidad de salir de titular, según FútbolFantasy">' + f.prob + ' % titular</span>')
+        // Con la hora de lectura: las probabilidades llegan cada tres horas y un
+        // porcentaje sin fecha parece de ahora mismo cuando puede no serlo.
+        var lectura = haceCuanto((window.LIGA || {}).probablesCuando)
+        ets.push('<span class="et et-prob' + (f.prob >= 70 ? ' bien' : f.prob >= 30 ? ' duda' : ' mal') + '" title="Probabilidad de salir de titular, según FútbolFantasy' + (lectura ? ', leída ' + lectura : '') + '">' + f.prob + ' % titular' + (lectura ? '<i> · ' + lectura + '</i>' : '') + '</span>')
       } else if (f.on === 1) ets.push('<span class="et et-once">👕 titular</span>')
       // Solo el «lesionado» a secas de Mister cuando no hay algo mejor que decir:
       // con la etiqueta de arriba se repetiría la misma noticia dos veces.
@@ -2453,10 +2469,28 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
         if (b.base != null) de.push('su media ' + (f.ca === 1 ? 'en casa' : 'fuera') + ' ' + dec(b.base))
         if (b.porForma) de.push('forma ' + (b.porForma > 0 ? '+' : '−') + dec(Math.abs(b.porForma)))
         if (b.porRival) de.push('rival ' + (b.porRival > 0 ? '+' : '−') + dec(Math.abs(b.porRival)))
-        lineas.push([
-          'Puntos que cabe esperar el domingo<em class="pista">' + de.join(' · ') + '</em>',
-          '<b>' + dec(f.esp) + '</b> pts',
-        ])
+        // El mismo jugador tenía dos cifras: el mercado ya multiplica por la
+        // probabilidad y la ficha no, así que a Mikel Rodríguez —rotura de
+        // cruzado, vuelve en abril— le salían «4,4 puntos el domingo». La
+        // cifra se queda, que es la comprobable, pero se dice para qué vale.
+        var vt = f.vt
+        if (vt && vt.grave) {
+          lineas.push([
+            'Puntos que haría <b>si jugara</b><em class="pista">' + de.join(' · ') + '</em>',
+            '<b>' + dec(f.esp) + '</b> pts <i class="baja">hoy no cuenta: ' + esc(vt.que) + '</i>',
+          ])
+        } else if (f.prob != null && f.prob < 70) {
+          var pond = f.esp * f.prob / 100
+          lineas.push([
+            'Puntos que cabe esperar el domingo, <b>si sale</b><em class="pista">' + de.join(' · ') + ' · ' + f.prob + ' % de salir</em>',
+            '<b>' + dec(f.esp) + '</b> pts <i class="duda">× ' + f.prob + ' % = ' + dec(pond) + '</i>',
+          ])
+        } else {
+          lineas.push([
+            'Puntos que cabe esperar el domingo<em class="pista">' + de.join(' · ') + '</em>',
+            '<b>' + dec(f.esp) + '</b> pts',
+          ])
+        }
       }
       if (f.fo != null) {
         lineas.push([

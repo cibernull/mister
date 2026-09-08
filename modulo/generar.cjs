@@ -1208,6 +1208,10 @@ const islaClubes = JSON.stringify(Object.fromEntries(CLUBES))
  */
 const islaLiga = JSON.stringify({
   media: MEDIA_LIGA,
+  // Cuándo se leyeron las probabilidades de FútbolFantasy. Van cada tres
+  // horas, así que un «90 %» puede llevar hasta tres encima, y eso hay que
+  // decirlo al lado del número: media hora antes del partido importa.
+  probablesCuando: DATOS_PROBABLES.cuando ?? null,
   // La mediana de regularidad, pero solo entre los que rinden.
   //
   // Con la liga entera salía ±1,3, y no porque sean constantes: es que
