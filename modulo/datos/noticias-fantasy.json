@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-08T21:08:27.585Z",
+ "cuando": "2026-09-08T21:15:00.142Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,24 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "08/09",
+   "titulo": "Champions League: Lille 2-3 Betis. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24114-lille-betis",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "08/09",
+   "titulo": "Champions League: B. Dortmund 3-2 Villarreal. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24112-b-dortmund-villarreal",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "08/09",
+   "titulo": "Champions League: Real Madrid 2-1 Inter. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24115-real-madrid-inter",
+   "categoria": "partido"
   },
   {
    "fecha": "08/09",
@@ -463,24 +481,6 @@
    "fecha": "07/09",
    "titulo": "Giráldez explicó la elección del tridente ofensivo y habló de los minutos que puede jugar Borja Iglesias",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150770-giraldez-explico-la-eleccion-del-tridente-ofensivo-y-hablo-de-los-minutos-que-puede-jugar-bor",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Kiko Femenía se retira con problemas físicos del partido contra el Celta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150769-kiko-femenia-se-retira-con-problemas-fisicos-del-partido-contra-el-celta",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Predicted11 inicia la Champions 26/27 con una camiseta en juego",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150767-predicted11-inicia-la-champions-26-27-con-una-camiseta-en-juego",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Chema Aragón analiza en profundidad el fichaje de André Almeida por el Racing",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150766-chema-aragon-analiza-en-profundidad-el-fichaje-de-andre-almeida-por-el-racing",
    "categoria": "rueda de prensa"
   }
  ]
