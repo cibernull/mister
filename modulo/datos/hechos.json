@@ -4414,11 +4414,11 @@
    "importe": 2445040,
    "tipo": "normal",
    "cuando": "2026-09-04 18:17:15",
-   "valor": 2330000,
+   "valor": 2422000,
    "posicion": 4,
    "puntos": 20,
-   "media": 4.8,
-   "racha": "2,1,9,7"
+   "media": 5,
+   "racha": "2,1,9,8"
   },
   {
    "idTransfer": 545479545,
@@ -5109,6 +5109,69 @@
      "puntos": -8,
      "puesto": 8,
      "valorPlantilla": 6539000,
+     "premio": 0
+    }
+   ]
+  },
+  {
+   "idJornada": 4045,
+   "jornada": 4,
+   "cuando": "2026-09-08 12:51:52",
+   "posiciones": [
+    {
+     "idUc": 12493763,
+     "puntos": 66,
+     "puesto": 1,
+     "valorPlantilla": 61152000,
+     "premio": 2100000
+    },
+    {
+     "idUc": 12493752,
+     "puntos": 53,
+     "puesto": 2,
+     "valorPlantilla": 76518000,
+     "premio": 1425000
+    },
+    {
+     "idUc": 15435600,
+     "puntos": 51,
+     "puesto": 3,
+     "valorPlantilla": 35620000,
+     "premio": 1725000
+    },
+    {
+     "idUc": 12493688,
+     "puntos": 38,
+     "puesto": 4,
+     "valorPlantilla": 84798000,
+     "premio": 1050000
+    },
+    {
+     "idUc": 13435216,
+     "puntos": 35,
+     "puesto": 5,
+     "valorPlantilla": 67428000,
+     "premio": 875000
+    },
+    {
+     "idUc": 12493758,
+     "puntos": 17,
+     "puesto": 6,
+     "valorPlantilla": 21399000,
+     "premio": 775000
+    },
+    {
+     "idUc": 13428410,
+     "puntos": 2,
+     "puesto": 7,
+     "valorPlantilla": 27365000,
+     "premio": 50000
+    },
+    {
+     "idUc": 13491767,
+     "puntos": -3,
+     "puesto": 8,
+     "valorPlantilla": 6253000,
      "premio": 0
     }
    ]

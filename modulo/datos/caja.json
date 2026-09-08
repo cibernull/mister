@@ -1,6 +1,14 @@
 {
- "saldo": 14677120,
+ "saldo": 16777120,
  "apuntes": [
+  {
+   "cuando": 1788864661,
+   "fecha": "2026-09-08 12:51",
+   "motivo": "Jornada 4",
+   "tipo": "Bonificación",
+   "importe": 2100000,
+   "saldo": 16777120
+  },
   {
    "cuando": 1788848797,
    "fecha": "2026-09-08 08:26",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 1862700,
    "saldo": -11694626
-  },
-  {
-   "cuando": 1786460400,
-   "fecha": "2026-08-11 17:00",
-   "motivo": "Aimar Oroz a Mister",
-   "tipo": "Compra",
-   "importe": -4764360,
-   "saldo": -13557326
   }
  ]
 }
