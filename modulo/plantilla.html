@@ -50,6 +50,7 @@
 *{box-sizing:border-box}
 html{max-width:100%;overflow-x:hidden}
 [hidden]{display:none!important}
+html.selector-puesto-abierto{overflow:hidden}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 body{
   background:var(--suelo); color:var(--tinta);
@@ -391,10 +392,55 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
 .mano-total b{font-size:17px;color:var(--oro)}
 .mano-total i{font-style:normal;margin-left:6px;color:var(--tenue)}
 
-.hueco{display:flex;align-items:center;justify-content:center;width:100%;max-width:88px;min-height:64px}
+.hueco{display:flex;align-items:center;justify-content:center;width:100%;max-width:88px;min-height:64px;border-radius:12px;cursor:pointer;transition:background .16s ease,box-shadow .16s ease,transform .16s ease}
 .campo-linea:has(.campo-banda:nth-child(2)) .hueco{max-width:74px}
-.hueco-vacio{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:2px dashed rgba(255,255,255,.3);font-family:"IBM Plex Mono",monospace;font-size:8px;color:rgba(255,255,255,.5)}
-.hueco.lleno{cursor:pointer}
+.hueco-vacio{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:2px dashed rgba(255,255,255,.3);font-family:"IBM Plex Mono",monospace;font-size:8px;color:rgba(255,255,255,.5);transition:border-color .16s ease,color .16s ease,transform .16s ease}
+.hueco:hover,.hueco.eligiendo{background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.16)}
+.hueco:hover .hueco-vacio,.hueco.eligiendo .hueco-vacio{border-color:var(--oro);color:#fff;transform:scale(1.08)}
+.hueco:focus-visible{outline:2px solid var(--oro);outline-offset:3px}
+
+/* Selector contextual al tocar un puesto del once. En móvil se convierte en
+   una hoja inferior: queda cerca del pulgar y deja contexto del campo detrás. */
+.puesto-selector{position:fixed;inset:0;z-index:95;display:grid;place-items:center;padding:18px}
+.puesto-selector-fondo{position:absolute;inset:0;border:0;background:rgba(3,5,9,.72);backdrop-filter:blur(8px);cursor:pointer}
+.puesto-selector-panel{position:relative;width:min(100%,480px);max-height:min(680px,calc(100dvh - 36px));display:flex;flex-direction:column;overflow:hidden;border:1px solid color-mix(in srgb,var(--oro) 32%,var(--raya));border-radius:20px;background:color-mix(in srgb,var(--tabla) 96%,#111827);box-shadow:0 28px 80px rgba(0,0,0,.5)}
+.puesto-selector-cab{display:flex;align-items:flex-start;gap:14px;padding:19px 20px 15px;border-bottom:1px solid var(--raya)}
+.puesto-selector-cab>div{min-width:0;flex:1}
+.puesto-selector-kicker{display:block;margin-bottom:3px;font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--oro)}
+.puesto-selector-cab h3{margin:0;font-family:"Barlow Condensed",sans-serif;font-size:27px;line-height:1.05}
+.puesto-selector-cab p{margin:5px 0 0;color:var(--gris);font-size:12px;line-height:1.4}
+.puesto-selector-cerrar{flex:none;width:34px;height:34px;border:1px solid var(--raya);border-radius:50%;background:var(--hueco);color:var(--tinta);font:20px/1 Manrope,sans-serif;cursor:pointer}
+.puesto-selector-lista{display:grid;gap:7px;overflow:auto;padding:10px;scrollbar-width:thin;scrollbar-color:var(--raya) transparent}
+.puesto-selector-lista::-webkit-scrollbar{width:6px}
+.puesto-selector-lista::-webkit-scrollbar-track{background:transparent}
+.puesto-selector-lista::-webkit-scrollbar-thumb{border-radius:999px;background:var(--raya)}
+.puesto-opcion{width:100%;display:grid;grid-template-columns:46px minmax(0,1fr) auto;align-items:center;gap:11px;padding:8px 10px;border:1px solid transparent;border-radius:13px;background:transparent;color:var(--tinta);font:inherit;text-align:left;cursor:pointer;transition:border-color .16s ease,background .16s ease,transform .16s ease}
+.puesto-opcion:hover,.puesto-opcion:focus-visible{outline:0;border-color:var(--oro-raya);background:var(--oro-fondo);transform:translateY(-1px)}
+.puesto-opcion.actual{border-color:var(--oro-raya);background:var(--oro-fondo)}
+.puesto-opcion.ocupado:not(.actual){opacity:.72}
+.puesto-opcion-cara{position:relative;width:46px;height:46px;border-radius:50%;overflow:hidden;background:var(--hueco);box-shadow:inset 0 0 0 1px var(--raya)}
+.puesto-opcion-cara img{width:100%;height:100%;display:block;object-fit:cover}
+.puesto-opcion-cara .d{position:absolute;right:0;bottom:0;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:7px;font-weight:700;line-height:1;padding:4px;border-radius:5px;color:#fff;background:var(--med)}
+.puesto-opcion-cara .d.p1{background:var(--por)}.puesto-opcion-cara .d.p2{background:var(--def)}.puesto-opcion-cara .d.p3{background:var(--med)}.puesto-opcion-cara .d.p4{background:var(--del)}
+.puesto-opcion-txt{min-width:0}
+.puesto-opcion-nombre{display:flex;align-items:center;gap:6px;min-width:0;font-size:13px;font-weight:700}
+.puesto-opcion-nombre span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.puesto-opcion-nombre .ec{flex:none}
+.puesto-opcion-meta{display:flex;flex-wrap:wrap;gap:4px 8px;margin-top:2px;font-size:10.5px;color:var(--gris)}
+.puesto-opcion-meta .en-once{color:var(--oro);font-weight:600}
+.puesto-opcion-meta .no-juega{color:var(--baja)}
+.puesto-opcion-pts{min-width:50px;text-align:right;font-family:"IBM Plex Mono",monospace}
+.puesto-opcion-pts b{display:block;font-size:16px;color:var(--oro)}
+.puesto-opcion-pts small{display:block;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--tenue)}
+.puesto-selector-pie{padding:10px;border-top:1px solid var(--raya)}
+.puesto-selector-vaciar{width:100%;padding:9px 12px;border:1px solid var(--raya);border-radius:10px;background:transparent;color:var(--gris);font:inherit;font-size:12px;cursor:pointer}
+.puesto-selector-vaciar:hover{border-color:var(--baja);color:var(--baja)}
+@media(max-width:520px){
+  .puesto-selector{place-items:end center;padding:0}
+  .puesto-selector-panel{width:100%;max-height:min(78dvh,650px);border-radius:20px 20px 0 0;border-bottom:0}
+  .puesto-selector-cab{padding:16px 16px 13px}
+  .puesto-selector-lista{padding:8px}
+}
 
 /* Las pestañas de jornada, encima del campo. */
 .jtabs{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0 4px}
@@ -466,6 +512,8 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
 .cf-j .ev{display:flex;flex-wrap:wrap;justify-content:center;gap:1px;font-size:10.5px;min-height:12px;line-height:1}
 /* El minuto, pegado a su icono: sin él la tira dice qué pasó pero no cuándo. */
 .cf-j .ev span{display:inline-flex;align-items:center;gap:1px}
+.cf-j .ev .ev-ico{width:14px;height:14px;display:grid;place-items:center;flex:none;font-style:normal;font-size:12px;line-height:1}
+.cf-j .ev .ev-bota{display:block;width:15px;height:15px;color:var(--oro-vivo)}
 .cf-j .ev .min{font-family:"IBM Plex Mono",monospace;font-size:8px;font-weight:600;color:var(--tenue);letter-spacing:-.03em}
 /* Un gol en propia y un penalti fallado también son balones, pero restan: el
    balón va sobre rojo para que no se confundan con un gol de un vistazo. */
@@ -555,6 +603,7 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
 .otraform .alt i b{color:var(--tinta)}
 .otraform .alt i.tuya{border-color:var(--oro-raya);color:var(--oro)}
 .otraform .alt i.pago::after{content:" ·"}
+.perfiles-once{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin:5px 0 2px;padding-top:7px;border-top:1px solid var(--raya)}.perfiles-once>span{margin-right:3px;font-family:"IBM Plex Mono",monospace;font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue)}.perfiles-once button{display:flex;align-items:center;gap:6px;padding:4px 8px;border:1px solid var(--raya);border-radius:99px;background:var(--tabla);color:var(--gris);font:inherit;font-size:9px;cursor:pointer}.perfiles-once button b{font-family:"IBM Plex Mono",monospace;color:var(--tinta)}.perfiles-once button:hover,.perfiles-once button.on{border-color:var(--oro-raya);background:var(--oro-fondo);color:var(--oro)}
 .mj .desg{display:block;font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:400;color:var(--gris);line-height:1.45;white-space:normal;margin-top:3px}
 /* El veredicto del clausulazo. Envuelve en varias líneas a propósito: en el
    móvil no cabe de otra forma y los nombres no se pueden cortar. */
@@ -888,6 +937,28 @@ body{padding:0 24px 96px;background:
 .cm-accion .cm-ico{grid-row:1/3;width:32px;height:32px;display:grid;place-items:center;border-radius:10px;background:rgba(221,185,111,.14);color:#E4C277;font-size:15px}
 .cm-accion b{font-size:13px}.cm-accion small{min-width:0;color:rgba(245,247,244,.58);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
+/* Intelligence OS: prioridades, preparación, precisión y trazabilidad. */
+.inteligencia{overflow:hidden;border:1px solid rgba(221,185,111,.2);border-radius:24px;background:linear-gradient(145deg,#10121C,#171A28 62%,#201C2B);color:#F8F4EC;box-shadow:var(--sombra-alta)}
+.intel-cab{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:25px 26px 21px;border-bottom:1px solid rgba(255,255,255,.08);background:radial-gradient(circle at 86% 0,rgba(221,185,111,.13),transparent 18rem)}
+.intel-kicker{font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#DDB96F}
+.intel-cab h2{margin:5px 0 4px;font-family:"Barlow Condensed",sans-serif;font-size:34px;line-height:1;text-transform:uppercase}.intel-cab p{margin:0;max-width:62ch;color:rgba(248,244,236,.57);font-size:12px}
+.intel-estado{flex:none;display:flex;align-items:center;gap:10px;padding:9px 12px;border:1px solid rgba(79,208,138,.2);border-radius:12px;background:rgba(79,208,138,.07)}.intel-estado>i{width:9px;height:9px;border-radius:50%;background:#4FD08A;box-shadow:0 0 0 5px rgba(79,208,138,.1)}.intel-estado span{display:block}.intel-estado b,.intel-estado small{display:block}.intel-estado b{font-size:11px}.intel-estado small{margin-top:2px;color:rgba(248,244,236,.48);font-size:9px}
+.intel-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,.8fr);min-height:400px}.intel-decisiones{padding:20px 22px 22px;border-right:1px solid rgba(255,255,255,.08)}.intel-lateral{display:flex;flex-direction:column;gap:1px;background:rgba(255,255,255,.06)}.intel-lateral>*{background:#141722;padding:17px 18px}
+.intel-subcab{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;font-family:"IBM Plex Mono",monospace;font-size:8.5px;letter-spacing:.11em;text-transform:uppercase;color:rgba(248,244,236,.45)}.intel-subcab b{color:#DDB96F;font-weight:600}
+.decision{position:relative;display:grid;grid-template-columns:38px minmax(0,1fr) auto;align-items:center;gap:11px;padding:13px 12px;border:1px solid rgba(255,255,255,.08);border-radius:13px;background:rgba(255,255,255,.035)}.decision+.decision{margin-top:7px}.decision-ico{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:rgba(221,185,111,.1);color:#E4C277;font-family:"IBM Plex Mono",monospace;font-weight:700}.decision>div{min-width:0}.decision small{display:block;margin-bottom:2px;color:rgba(248,244,236,.38);font-family:"IBM Plex Mono",monospace;font-size:7.5px;letter-spacing:.11em;text-transform:uppercase}.decision b{display:block;font-size:12.5px}.decision p{margin:2px 0 0;color:rgba(248,244,236,.52);font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.decision button{display:flex;align-items:center;gap:8px;border:1px solid rgba(221,185,111,.25);border-radius:8px;padding:7px 9px;background:rgba(221,185,111,.08);color:#E4C277;font:inherit;font-size:9.5px;font-weight:700;cursor:pointer}.decision button:hover{background:rgba(221,185,111,.16)}.decision.urgente{border-color:rgba(255,120,144,.24)}.decision.urgente .decision-ico{color:#FF7890;background:rgba(255,120,144,.1)}.decision.bien .decision-ico{color:#4FD08A;background:rgba(79,208,138,.1)}.decision.oportunidad .decision-ico{color:#B695E8;background:rgba(182,149,232,.1)}
+.jornada-ready{display:flex;align-items:center;gap:14px}.ready-ring{--avance:0;flex:none;width:65px;height:65px;display:grid;place-items:center;border-radius:50%;background:conic-gradient(#DDB96F var(--avance),rgba(255,255,255,.08) 0);position:relative}.ready-ring:after{content:"";position:absolute;inset:5px;border-radius:50%;background:#141722}.ready-ring span{position:relative;z-index:1;font-family:"IBM Plex Mono",monospace;font-size:9px;color:rgba(248,244,236,.48)}.ready-ring b{color:#F8F4EC;font-size:17px}.jornada-ready>div:last-child{min-width:0}.jornada-ready small{display:block;color:rgba(248,244,236,.4);font-size:8px;text-transform:uppercase;letter-spacing:.1em}.jornada-ready b{display:block;margin-top:3px;font-size:12px}.jornada-ready p{margin:3px 0 0;color:rgba(248,244,236,.48);font-size:9.5px}
+.precision-card>span{display:flex;align-items:end;justify-content:space-between;gap:8px}.precision-card>span small{color:rgba(248,244,236,.43);font-size:8px;text-transform:uppercase;letter-spacing:.09em}.precision-card>span b{font-family:"IBM Plex Mono",monospace;font-size:21px;color:#E4C277}.precision-card p{margin:5px 0;color:rgba(248,244,236,.55);font-size:9.5px}.precision-barras{height:27px;display:flex;align-items:end;gap:4px;margin:8px 0 5px;border-bottom:1px solid rgba(255,255,255,.08)}.precision-barras i{flex:1;height:var(--p);max-height:100%;min-height:2px;border-radius:3px 3px 0 0;background:linear-gradient(#DDB96F,#876429)}.precision-card .metodo{display:block;color:rgba(248,244,236,.3);font-size:7.5px;line-height:1.35}
+.fuentes-card{flex:1}.fuente{display:grid;grid-template-columns:7px minmax(0,1fr) auto;align-items:center;gap:8px;padding:6px 0}.fuente>i{width:6px;height:6px;border-radius:50%;background:#4FD08A;box-shadow:0 0 0 3px rgba(79,208,138,.08)}.fuente.dia>i{background:#DDB96F}.fuente.vieja>i{background:#FF7890}.fuente span b,.fuente span small{display:block}.fuente span b{font-size:9.5px}.fuente span small{color:rgba(248,244,236,.35);font-size:7.5px}.fuente em{font-style:normal;color:rgba(248,244,236,.43);font-family:"IBM Plex Mono",monospace;font-size:7.5px}.fuentes-card>p{margin:7px 0 0;color:rgba(248,244,236,.3);font-size:7.5px;line-height:1.35}
+
+/* Actualidad editorial, con retratos locales y enlace a la fuente. */
+.actualidad{display:flex;flex-direction:column;gap:16px}.actualidad-cab{display:flex;align-items:end;justify-content:space-between;gap:22px}.actualidad-cab h2{margin:4px 0;font-family:"Barlow Condensed",sans-serif;font-size:31px;text-transform:uppercase;line-height:1}.actualidad-cab p{margin:0;color:var(--gris);font-size:12px}.actualidad-cab>a{flex:none;padding:8px 11px;border:1px solid var(--raya);border-radius:9px;color:var(--oro);font-size:10.5px;font-weight:700;text-decoration:none}
+.noticias-filtros{display:flex;align-items:center;gap:5px;flex-wrap:wrap}.noticias-filtros button{padding:6px 10px;border:1px solid var(--raya);border-radius:99px;background:var(--tabla);color:var(--gris);font:inherit;font-size:9px;cursor:pointer}.noticias-filtros button:hover,.noticias-filtros button.on{border-color:var(--oro-raya);background:var(--oro-fondo);color:var(--oro)}.noticias-filtros>span{margin-left:auto;color:var(--tenue);font-family:"IBM Plex Mono",monospace;font-size:8px}
+.noticias-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.noticia-card{min-width:0;height:104px;overflow:hidden;display:grid;grid-template-columns:108px minmax(0,1fr);border:1px solid var(--raya);border-radius:14px;background:var(--tabla);color:var(--tinta);text-decoration:none;box-shadow:var(--sombra);transition:transform .18s,border-color .18s}.noticia-card:hover{transform:translateY(-2px);border-color:var(--oro-raya)}.noticia-visual{position:relative;overflow:hidden;display:grid;place-items:center;background:radial-gradient(circle at 50% 85%,rgba(221,185,111,.22),transparent 42%),linear-gradient(145deg,#191C2B,#2D2940)}.noticia-visual:after{content:"";position:absolute;inset:auto 0 0;height:58%;background:linear-gradient(transparent,rgba(8,9,15,.68))}.noticia-visual>.cara{width:106px;height:104px;object-fit:contain;object-position:center bottom;align-self:end;filter:drop-shadow(0 7px 10px rgba(0,0,0,.35))}.noticia-club{position:absolute!important;z-index:4;left:7px;top:7px;width:26px!important;height:26px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.14);border-radius:8px;background:rgba(12,14,22,.78);box-shadow:0 5px 12px rgba(0,0,0,.3);backdrop-filter:blur(8px)}.noticia-club .ec{width:19px;height:19px}.noticia-visual>span:not(.noticia-club){font-family:"Barlow Condensed",sans-serif;font-size:32px;font-weight:700;color:rgba(221,185,111,.38)}.noticia-visual>i{position:absolute;z-index:3;left:7px;bottom:7px;max-width:94px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:2px 5px;border:1px solid rgba(255,255,255,.14);border-radius:99px;background:rgba(12,14,22,.76);color:#F8F4EC;font-style:normal;font-size:6.5px;text-transform:uppercase;letter-spacing:.06em;backdrop-filter:blur(7px)}.noticia-contenido{min-width:0;display:flex;flex-direction:column;padding:10px 11px}.noticia-contenido>small{color:var(--oro);font-family:"IBM Plex Mono",monospace;font-size:6.8px;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.noticia-contenido>b{display:-webkit-box;margin-top:5px;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:11.5px;line-height:1.35}.noticia-contenido>span{margin-top:auto;color:var(--tenue);font-size:7.8px}.noticia-contenido>span i{color:var(--oro);font-style:normal}.noticia-card.mia{border-color:color-mix(in srgb,var(--oro) 48%,var(--raya));box-shadow:inset 2px 0 0 var(--oro),var(--sombra)}.noticia-card.mercado{border-color:color-mix(in srgb,var(--blinda) 35%,var(--raya))}.actualidad-pie{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:9px 11px;border:1px solid var(--raya);border-radius:10px;background:var(--hueco);color:var(--tenue);font-size:8.5px}.actualidad-pie span{display:flex;align-items:center;gap:6px}.actualidad-pie i{width:6px;height:6px;border-radius:50%;background:var(--sube)}.actualidad-pie p{margin:0;text-align:right}
+.noticias-todas{margin-top:0}.noticias-todas>summary{width:max-content;margin:0 auto;list-style:none;padding:9px 15px;border:1px solid var(--oro-raya);border-radius:10px;background:var(--oro-fondo);color:var(--oro);font-size:10.5px;font-weight:700;cursor:pointer}.noticias-todas>summary::-webkit-details-marker{display:none}.noticias-todas>summary span{margin-left:8px}.noticias-todas[open]>summary{margin-bottom:14px}.noticias-todas[open]>summary span{display:inline-block;transform:rotate(45deg)}.noticias-todas.filtrando>summary{display:none}.noticias-todas.filtrando>.noticias-grid{margin-top:-8px}
+
+/* Lectura competitiva dentro de cada rival. */
+.rival-radar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:13px 0;padding:9px;border:1px solid var(--raya);border-radius:12px;background:var(--hueco)}.rival-radar>div{min-width:0;padding:8px 9px;border-radius:8px;background:var(--tabla)}.rival-radar small,.rival-radar b,.rival-radar span{display:block}.rival-radar small{color:var(--tenue);font-family:"IBM Plex Mono",monospace;font-size:7.5px;letter-spacing:.08em;text-transform:uppercase}.rival-radar b{margin-top:3px;font-size:12px;text-transform:capitalize}.rival-radar span{margin-top:2px;color:var(--gris);font-size:8.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rival-radar .alerta b{color:var(--baja)}
+
 /* Identidad del jugador */
 .fj{grid-template-columns:58px minmax(0,1fr) auto;column-gap:14px;padding:16px 18px;transition:background .15s,transform .15s}
 .fj:hover{background:color-mix(in srgb,var(--oro-fondo) 38%,var(--tabla))}
@@ -929,8 +1000,8 @@ body{padding:0 24px 96px;background:
 /* Ficha premium del jugador. En escritorio se comporta como un dashboard:
    identidad y decisión arriba; datos y análisis aprovechan el ancho. Así se
    conserva todo sin obligar a recorrer una columna innecesariamente larga. */
-.capa{align-items:center;padding:10px}
-.capa-hoja{width:min(1080px,100%);max-width:none;max-height:calc(100dvh - 20px);padding:0 18px 16px;border-radius:22px;box-shadow:0 35px 100px -30px rgba(0,0,0,.8)}
+.capa{align-items:center;padding:4px}
+.capa-hoja{width:min(1080px,100%);max-width:none;max-height:calc(100dvh - 8px);padding:0 18px 12px;border-radius:22px;box-shadow:0 35px 100px -30px rgba(0,0,0,.8)}
 .capa-hoja{scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--tenue) 55%,transparent) transparent}
 .capa-hoja::-webkit-scrollbar{width:7px}.capa-hoja::-webkit-scrollbar-track{background:transparent}.capa-hoja::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--tenue) 48%,transparent);border-radius:99px}
 .capa-x{position:absolute;top:12px;right:12px;float:none;margin:0;background:rgba(18,20,28,.78);color:#F6F2EA;border-color:rgba(255,255,255,.15);backdrop-filter:blur(10px)}
@@ -940,6 +1011,7 @@ body{padding:0 24px 96px;background:
 .cf-cab .cara.grande{width:76px;height:76px;object-fit:contain;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.06);box-shadow:0 15px 35px -16px rgba(0,0,0,.65)}
 .cf-cab .cf-retrato>.dorsal{position:absolute;right:-5px;bottom:-4px;width:31px;height:25px;border:2px solid #20243A;box-shadow:0 4px 12px rgba(0,0,0,.3)}
 .cf-cab h3{font-size:32px}.cf-cab .cf-club{color:rgba(248,244,236,.65)}
+.cf-cab .et-pos{color:#F8F4EC;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.16)}
 .cf-veredicto{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:0;min-width:300px;max-width:430px;padding:12px 14px;border-radius:13px;border:1px solid rgba(255,255,255,.11);background:rgba(255,255,255,.065)}
 .cf-veredicto>div{min-width:0}.cf-veredicto b{display:block;font-size:14px}.cf-veredicto span{display:block;margin-top:2px;color:var(--gris);font-size:11.5px}.cf-veredicto i{flex:none;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;font-style:normal;font-size:15px}
 .cf-veredicto.bueno{border-color:color-mix(in srgb,var(--sube) 45%,var(--raya));background:var(--sube-fondo)}.cf-veredicto.bueno b{color:var(--sube)}.cf-veredicto.bueno i{color:var(--sube);background:color-mix(in srgb,var(--sube) 14%,transparent)}
@@ -951,8 +1023,31 @@ body{padding:0 24px 96px;background:
 .cf-columna{min-width:0;display:flex;flex-direction:column;gap:8px}
 .cf-sec{min-width:0;margin:0;padding:10px 11px;border:1px solid var(--raya);border-radius:12px;background:color-mix(in srgb,var(--hueco) 42%,var(--tabla))}
 .cf-sec>h4{margin-bottom:6px}
-.cf-graf{margin-top:5px}.cf-graf svg{height:40px}.cf-graf .ejes{font-size:9px;margin-top:0}
-.cf-jor{gap:3px;padding-bottom:0}.cf-j{width:34px;gap:2px}.cf-j .col{height:58px}.cf-j .b{font-size:10px}.cf-j .n{font-size:9px}.cf-j .ev{font-size:9px}
+.cf-graf{position:relative;margin-top:5px;isolation:isolate}.cf-graf svg{display:block;width:100%;height:40px;cursor:crosshair;outline:0;touch-action:pan-y}.cf-graf svg:focus-visible{border-radius:5px;box-shadow:0 0 0 2px color-mix(in srgb,var(--graf-color) 55%,transparent)}.cf-graf .ejes{font-size:9px;margin-top:0}
+.cf-graf-cursor,.cf-graf-punto{opacity:0;pointer-events:none;transition:opacity .12s ease}.cf-graf-cursor{stroke:color-mix(in srgb,var(--graf-color) 58%,var(--tinta));stroke-width:.65;stroke-dasharray:2 2}.cf-graf-punto{fill:var(--graf-color);stroke:var(--tabla);stroke-width:2;filter:drop-shadow(0 2px 3px rgba(0,0,0,.45))}.cf-graf.activo .cf-graf-cursor,.cf-graf.activo .cf-graf-punto{opacity:1}
+.cf-graf-tooltip{position:absolute;z-index:4;top:1px;left:0;min-width:142px;padding:6px 8px;border:1px solid color-mix(in srgb,var(--graf-color) 45%,var(--raya));border-radius:8px;background:color-mix(in srgb,var(--tabla) 91%,transparent);box-shadow:0 9px 28px -12px rgba(0,0,0,.75);backdrop-filter:blur(12px);pointer-events:none;opacity:0;transform:translateX(8px);transition:opacity .1s ease,color .1s;white-space:nowrap}.cf-graf-tooltip.derecha{transform:translateX(calc(-100% - 8px))}.cf-graf.activo .cf-graf-tooltip{opacity:1}.cf-graf-tooltip b{display:block;color:var(--tinta);font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-variant-numeric:tabular-nums}.cf-graf-tooltip span{display:block;margin-top:1px;color:var(--tenue);font-size:8.5px}.cf-graf-tooltip .sube{color:var(--sube)}.cf-graf-tooltip .baja{color:var(--baja)}
+.cf-graf-anterior{margin-top:8px;padding-top:7px;border-top:1px solid var(--raya)}
+.cf-graf-anterior .cf-graf-titulo{display:flex;align-items:center;justify-content:space-between;margin-bottom:1px;font-family:"IBM Plex Mono",monospace;font-size:8.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--tenue)}
+.cf-graf-anterior .cf-graf-titulo b{font-weight:600;color:var(--blinda)}
+.cf-graf-anterior svg{height:32px}.cf-graf-anterior .ejes{color:color-mix(in srgb,var(--tenue) 78%,transparent)}
+.cf-graf-sin-datos{min-height:48px;overflow:hidden;border:1px solid color-mix(in srgb,var(--blinda) 18%,var(--raya));border-radius:9px;background:color-mix(in srgb,var(--blinda-fondo) 32%,transparent)}
+.cf-graf-sin-datos svg{height:48px;opacity:.22;filter:saturate(.35)}
+.cf-graf-sin-datos .ejes{padding:0 7px 4px;opacity:.55}
+.cf-graf-mensaje{position:absolute;inset:0;z-index:2;display:grid;place-content:center;text-align:center;pointer-events:none;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--tabla) 82%,transparent) 23% 77%,transparent)}
+.cf-graf-mensaje b{justify-self:center;padding:2px 8px;border:1px solid color-mix(in srgb,var(--blinda) 44%,var(--raya));border-radius:999px;background:color-mix(in srgb,var(--blinda-fondo) 84%,var(--tabla));color:var(--blinda);font-family:"IBM Plex Mono",monospace;font-size:8px;letter-spacing:.16em}
+.cf-graf-mensaje span{margin-top:3px;color:var(--gris);font-size:8.5px;font-weight:600}
+.cf-jor{gap:7px;padding:1px 1px 3px;scrollbar-width:thin;scrollbar-color:var(--raya) transparent}
+.cf-j{width:66px;display:grid;grid-template-rows:66px 54px 22px 13px;justify-items:stretch;align-items:center;gap:2px}
+.cf-j .col{height:66px;width:100%}
+.cf-j .b{min-height:18px;padding-top:3px;border-radius:7px 7px 2px 2px;font-size:11px;box-shadow:inset 0 1px 0 rgba(255,255,255,.22)}
+.cf-j .ev{width:100%;height:54px;min-height:54px;display:flex;flex-wrap:wrap;align-content:center;align-items:center;justify-content:center;gap:2px 3px;font-size:12px;overflow:hidden}
+.cf-j .ev span{min-width:30px;display:grid;grid-template-columns:15px auto;align-items:center;justify-content:center;column-gap:3px}
+.cf-j .ev .ev-ico{width:15px;height:15px;font-size:13px}
+.cf-j .ev .ev-bota{width:16px;height:16px}
+.cf-j .ev .min{font-size:8.5px;color:#F8F4EC;text-shadow:0 1px 3px rgba(0,0,0,.95);letter-spacing:0}
+.cf-j .esc{width:100%;height:22px;display:grid;place-items:center}
+.cf-j .esc .ec{display:block;width:20px;height:20px;vertical-align:0}
+.cf-j .n{height:13px;font-size:9.5px;line-height:13px;text-align:center}
 .cf-lineas{gap:3px;font-size:11.5px;line-height:1.35}.cf-lineas .pista{font-size:9.5px;line-height:1.25}
 .cf-pie{margin-top:8px;padding-top:8px;font-size:9.5px}
 .cf-acciones{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:8px}.cf-acciones button{border:1px solid var(--raya);border-radius:9px;padding:7px 9px;background:var(--tabla);color:var(--tinta);font:inherit;font-size:10.5px;font-weight:700;cursor:pointer}.cf-acciones button:hover,.cf-acciones button.on{border-color:var(--oro-raya);color:var(--oro);background:var(--oro-fondo)}
@@ -969,7 +1064,7 @@ body{padding:0 24px 96px;background:
 .fj.reciente{box-shadow:inset 3px 0 0 var(--oro)}.fj.reciente:before{content:"nuevo";position:absolute;right:8px;bottom:5px;font-family:"IBM Plex Mono",monospace;font-size:7px;text-transform:uppercase;color:var(--oro)}.fj{position:relative}
 body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after{content:"Actualizando datos…";position:fixed;left:50%;top:22px;z-index:100;transform:translateX(-50%);padding:9px 14px;border:1px solid var(--oro-raya);border-radius:99px;background:var(--oro-fondo);color:var(--oro);font-size:11px;font-weight:700;box-shadow:var(--sombra)}
 
-@media(max-width:980px){.op-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:980px){.op-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.intel-grid{grid-template-columns:1fr}.intel-decisiones{border-right:0;border-bottom:1px solid rgba(255,255,255,.08)}.intel-lateral{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.intel-lateral>*{min-width:0}}
 
 @media(max-width:760px){
   body{width:100%;max-width:100%;padding:0 12px 88px;overflow-x:hidden}.env,.env>*{min-width:0;max-width:100%}.cab{padding-top:16px;flex-wrap:wrap;gap:10px}.marca{width:100%;min-width:0}.marca h1{font-size:28px}.marca p{white-space:normal;max-width:280px}.sello{order:3;max-width:100%;overflow:hidden;text-overflow:ellipsis}.acc{order:2;margin-left:auto;min-width:0}
@@ -977,6 +1072,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
   .pest{position:fixed;left:8px;right:8px;bottom:8px;top:auto;margin:0;grid-template-columns:repeat(5,minmax(0,1fr));border-radius:15px;background:color-mix(in srgb,var(--tabla) 94%,transparent)}
   .pest label{flex-direction:column;gap:2px;padding:6px 2px;min-width:0;font-size:9px}.pest label span{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis}.pest label svg{width:17px;height:17px}
   .centro-mando{width:100%;min-width:0;padding:22px 18px;border-radius:18px}.cm-arriba{display:block;min-width:0}.centro-mando h2{max-width:100%;font-size:31px;overflow-wrap:anywhere}.cm-bajada{max-width:100%}.cm-proyeccion{text-align:left;margin-top:20px}.cm-proyeccion b{font-size:27px}.cm-acciones{grid-template-columns:minmax(0,1fr);margin-top:18px}.cm-accion{width:100%;padding:11px 12px}
+  .inteligencia{border-radius:18px}.intel-cab{display:block;padding:20px 17px}.intel-cab h2{font-size:29px}.intel-estado{margin-top:14px;width:max-content}.intel-decisiones{padding:15px 12px}.decision{grid-template-columns:34px minmax(0,1fr);padding:11px 9px}.decision button{grid-column:2;width:max-content}.decision p{white-space:normal}.intel-lateral{display:flex}.intel-lateral>*{padding:15px}.noticias-grid{grid-template-columns:1fr;gap:7px}.noticia-card{height:88px;grid-template-columns:86px minmax(0,1fr)}.noticia-visual>.cara{width:86px;height:88px}.noticia-contenido{padding:8px 9px}.noticia-contenido>b{font-size:10.5px}.actualidad-cab{align-items:flex-start}.actualidad-cab>a{display:none}.actualidad-pie{display:block}.actualidad-pie p{margin-top:4px;text-align:left}.rival-radar{grid-template-columns:1fr}
   .fj{grid-template-columns:48px minmax(0,1fr);padding:14px 12px;gap:3px 11px}.fj>.jugador-visual{width:46px;height:46px}.jugador-visual .cara{width:46px;height:46px;border-radius:12px}.jugador-visual .dorsal{width:25px;height:18px}.fj>.jp{grid-column:2;grid-row:auto;align-items:flex-start;text-align:left;margin-top:7px}.jp .cifras{flex-direction:row;justify-content:flex-start}.jp .cif{align-items:flex-start}.jp .ico{display:none}.jc,.jv,.jd,.quien,.clz,.rent,.jr{grid-column:2/-1}.js{grid-column:2/-1;grid-row:auto}
   .nov{padding:9px;font-size:12px}.nov .hnov{display:block;margin:0}.sh{font-size:21px}.sd{font-size:12.5px}.tarjeta{padding:16px}.parte{overflow-wrap:anywhere}.parte code{white-space:normal}.parte.compacta{flex-wrap:wrap}.parte.compacta span{flex-basis:calc(100% - 110px)}
   .buscar{flex-wrap:wrap}.buscar input{width:calc(100% - 30px)}.cuenta-res{margin-left:26px}
@@ -1045,7 +1141,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     <label for="t1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/></svg><span>Inicio</span></label>
     <label for="t2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Jugadores</span></label>
     <label for="t3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/><path d="M3 21v-1.5a3 3 0 0 1 3-3M21 21v-1.5a3 3 0 0 0-3-3"/></svg><span>Mi liga</span></label>
-    <label for="t4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13M13 4l4 4-4 4"/><path d="M20 16H7M11 12l-4 4 4 4"/></svg><span>Actividad</span></label>
+    <label for="t4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13M13 4l4 4-4 4"/><path d="M20 16H7M11 12l-4 4 4 4"/></svg><span>Actualidad</span></label>
     <label for="t5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg><span>Más</span></label>
   </nav>
 
@@ -1125,6 +1221,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
   </div>
 
   <div class="panel" id="p4">
+<!--__NOTICIAS__-->
 <!--__MOVIMIENTOS__-->
   </div>
 
@@ -1173,6 +1270,39 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     }
   })
 
+  // Actualidad: el filtro solo cambia qué tarjetas se ven; nunca reescribe el
+  // titular ni deduce su efecto. Al filtrar se abre el archivo completo para
+  // que entren también las noticias que no estaban entre las doce destacadas.
+  ;(function () {
+    var filtros = document.querySelector('.noticias-filtros')
+    if (!filtros) return
+    var archivo = document.querySelector('.noticias-todas')
+    var cuenta = document.getElementById('noticias-cuenta')
+    filtros.addEventListener('click', function (e) {
+      var b = e.target.closest ? e.target.closest('[data-noticia-filtro]') : null
+      if (!b) return
+      var filtro = b.getAttribute('data-noticia-filtro')
+      filtros.querySelectorAll('[data-noticia-filtro]').forEach(function (x) { x.classList.toggle('on', x === b) })
+      if (archivo) {
+        archivo.open = filtro !== 'todas'
+        archivo.classList.toggle('filtrando', filtro !== 'todas')
+      }
+      var visibles = 0
+      document.querySelectorAll('.noticia-card').forEach(function (card, i) {
+        var ver = filtro === 'todas'
+          ? i < 12 || (archivo && archivo.open)
+          : filtro === 'mias'
+            ? card.getAttribute('data-noticia-mia') === '1'
+            : filtro === 'mercado'
+              ? card.getAttribute('data-noticia-mercado') === '1'
+              : card.getAttribute('data-noticia-cat') === filtro
+        card.hidden = !ver
+        if (ver) visibles += 1
+      })
+      if (cuenta) cuenta.textContent = filtro === 'todas' ? '12 destacadas' : visibles + (visibles === 1 ? ' noticia' : ' noticias')
+    })
+  })()
+
   // Buscador + orden sobre una lista cualquiera.
   /**
    * Cambiar de formación cambia el once que se ve.
@@ -1198,7 +1328,8 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       var b = e.target.closest ? e.target.closest('[data-formacion]') : null
       if (!b) return
       var nombre = b.getAttribute('data-formacion')
-      var datos = (window.ONCES || {})[nombre]
+      var clave = b.getAttribute('data-once-key') || nombre
+      var datos = (window.ONCES || {})[clave]
       if (!datos) return
       var nuevo = document.createElement('div')
       nuevo.innerHTML = datos.html
@@ -1209,11 +1340,14 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       caja.querySelectorAll('[data-formacion]').forEach(function (x) {
         x.classList.toggle('viendo', x.getAttribute('data-formacion') === nombre)
       })
+      document.querySelectorAll('[data-perfil-once],.perfiles-once [data-once-key]').forEach(function (x) {
+        x.classList.toggle('on', x === b)
+      })
       if (aviso) {
-        aviso.hidden = nombre === tuya
-        aviso.innerHTML = nombre === tuya
+        aviso.hidden = nombre === tuya && !b.hasAttribute('data-once-key')
+        aviso.innerHTML = nombre === tuya && !b.hasAttribute('data-once-key')
           ? ''
-          : 'Estás viendo el <b>' + nombre + '</b>, que daría <b>' + datos.t.toFixed(1).replace('.', ',') + '</b> puntos.' +
+          : 'Estás viendo el <b>' + nombre + '</b>' + (datos.perfil ? ' en modo <b>' + datos.perfil + '</b>' : '') + ', que daría <b>' + datos.t.toFixed(1).replace('.', ',') + '</b> puntos.' +
             (datos.pago ? ' Mister vende esa formación por monedas: puede que no la tengas.' : '') +
             ' <button type="button" data-formacion="' + tuya + '">Volver a tu ' + tuya + '</button>'
       }
@@ -1225,8 +1359,8 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
    *
    * Se puede arrastrar —como en Mister— y también tocar, porque arrastrar en un
    * móvil con un campo de once huecos es un ejercicio de puntería. Tocar a uno
-   * de la banca lo pone en el primer hueco libre de su puesto; tocarlo en el
-   * campo lo devuelve.
+   * de la banca lo pone en el primer hueco libre de su puesto; tocar un puesto
+   * del campo abre una lista filtrada para elegir o sustituir a quien juega.
    *
    * La cifra es la misma que usa el once de arriba: lo que cabe esperar de cada
    * uno en su próximo partido. Quien no juega suma cero, no su media: contarla
@@ -1241,10 +1375,27 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     var elCuantos = document.getElementById('mano-cuantos')
     var elAviso = document.getElementById('mano-aviso')
     var PUESTO = { 1: 'POR', 2: 'DEF', 3: 'MED', 4: 'DEL' }
+    var PUESTO_LARGO = { 1: 'portero', 2: 'defensa', 3: 'centrocampista', 4: 'delantero' }
     var puestos = []      // el puesto que toca en cada hueco
     var elegidos = []     // el id puesto en cada hueco, o null
     var arrastrado = null
     var arrancado = false
+    var huecoAbierto = null
+    var origenSelector = null
+
+    var selector = document.createElement('div')
+    selector.className = 'puesto-selector'
+    selector.id = 'puesto-selector'
+    selector.hidden = true
+    selector.innerHTML = '<button type="button" class="puesto-selector-fondo" data-selector-cerrar aria-label="Cerrar selector"></button>' +
+      '<section class="puesto-selector-panel" role="dialog" aria-modal="true" aria-labelledby="puesto-selector-titulo">' +
+        '<header class="puesto-selector-cab"><div><span class="puesto-selector-kicker">Cambiar alineación</span>' +
+          '<h3 id="puesto-selector-titulo"></h3><p id="puesto-selector-ayuda"></p></div>' +
+          '<button type="button" class="puesto-selector-cerrar" data-selector-cerrar aria-label="Cerrar">×</button></header>' +
+        '<div class="puesto-selector-lista" id="puesto-selector-lista"></div>' +
+        '<footer class="puesto-selector-pie" id="puesto-selector-pie"><button type="button" class="puesto-selector-vaciar" data-selector-vaciar>Dejar este puesto vacío</button></footer>' +
+      '</section>'
+    document.body.appendChild(selector)
 
     // `esc` vive en otro ámbito; aquí hace falta el suyo.
     var lim = function (t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] }) }
@@ -1272,8 +1423,12 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       var hueco = function (idx, pu) {
         var id = elegidos[idx]
         var j = id ? porId(id) : null
-        return '<div class="hueco' + (j ? ' lleno' : '') + '" data-hueco="' + idx + '" data-puesto="' + pu + '">' +
-          (j ? j.html : '<span class="hueco-vacio">' + PUESTO[pu] + '</span>') + '</div>'
+        var etiqueta = j ? 'Cambiar ' + PUESTO_LARGO[pu] + ': ' + j.n : 'Elegir ' + PUESTO_LARGO[pu]
+        // La ficha normal es un botón que abre el detalle; aquí todo el hueco
+        // es el botón, así que se convierte en una pieza visual no interactiva.
+        var ficha = j ? j.html.replace('<button type="button"', '<span').replace('</button>', '</span>') : ''
+        return '<div class="hueco' + (j ? ' lleno' : '') + '" data-hueco="' + idx + '" data-puesto="' + pu + '" role="button" tabindex="0" aria-label="' + lim(etiqueta) + '">' +
+          (j ? ficha : '<span class="hueco-vacio">' + PUESTO[pu] + '</span>') + '</div>'
       }
       // La misma estructura que el campo de arriba: línea, y dentro una o dos
       // bandas. Sin las bandas los huecos se apilaban en fila y se pisaban unos
@@ -1339,9 +1494,69 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
         return
       }
       var antes = elegidos.indexOf(id)
-      if (antes !== -1) elegidos[antes] = null
+      var reemplazado = elegidos[hueco]
+      // Si el elegido ya estaba en otro hueco del mismo puesto, intercambia
+      // ambos: cambiar dos defensas no debe dejar el once con diez jugadores.
+      if (antes !== -1 && antes !== hueco) elegidos[antes] = reemplazado || null
       elegidos[hueco] = id
       pintar()
+    }
+
+    function cerrarSelector (devolverFoco) {
+      if (selector.hidden) return
+      selector.hidden = true
+      document.documentElement.classList.remove('selector-puesto-abierto')
+      var activo = campo.querySelector('.hueco.eligiendo')
+      if (activo) activo.classList.remove('eligiendo')
+      huecoAbierto = null
+      if (devolverFoco && origenSelector && document.contains(origenSelector)) origenSelector.focus()
+      origenSelector = null
+    }
+
+    function abrirSelector (idx, origen) {
+      var pu = puestos[idx]
+      if (!pu) return
+      huecoAbierto = idx
+      origenSelector = origen
+      campo.querySelectorAll('.hueco.eligiendo').forEach(function (x) { x.classList.remove('eligiendo') })
+      origen.classList.add('eligiendo')
+      var actual = elegidos[idx]
+      var titulo = selector.querySelector('#puesto-selector-titulo')
+      var ayuda = selector.querySelector('#puesto-selector-ayuda')
+      var lista = selector.querySelector('#puesto-selector-lista')
+      var pie = selector.querySelector('#puesto-selector-pie')
+      titulo.textContent = 'Elige ' + PUESTO_LARGO[pu]
+      ayuda.textContent = actual ? 'Sustituye al jugador actual o deja libre el puesto.' : 'Solo aparecen jugadores que pueden ocupar este puesto.'
+      var candidatos = plantilla().filter(function (j) { return j.p === pu }).sort(function (a, b) {
+        if (a.id === actual) return -1
+        if (b.id === actual) return 1
+        var aOnce = elegidos.indexOf(a.id) !== -1 ? 1 : 0
+        var bOnce = elegidos.indexOf(b.id) !== -1 ? 1 : 0
+        return aOnce - bOnce || (a.fuera - b.fuera) || (b.e - a.e)
+      })
+      lista.innerHTML = candidatos.map(function (j) {
+        var donde = elegidos.indexOf(j.id)
+        var esActual = j.id === actual
+        var meta = j.fuera
+          ? '<span class="no-juega">' + (j.est === 'injury' ? 'Lesionado' : 'No juega esta jornada') + '</span>'
+          : j.prob !== null && j.prob !== undefined
+            ? '<span>' + j.prob + '% titular</span>'
+            : '<span>Disponible</span>'
+        if (donde !== -1 && !esActual) meta += '<span class="en-once">Ya está en el once</span>'
+        if (esActual) meta += '<span class="en-once">Puesto actual</span>'
+        return '<button type="button" class="puesto-opcion' + (esActual ? ' actual' : '') + (donde !== -1 && !esActual ? ' ocupado' : '') + '" data-selector-jugador="' + j.id + '">' +
+          '<span class="puesto-opcion-cara"><img src="' + lim(j.foto || '') + '" alt="" onerror="this.remove()"><i class="d p' + j.p + '">' + PUESTO[j.p] + '</i></span>' +
+          '<span class="puesto-opcion-txt"><span class="puesto-opcion-nombre">' + (j.eq ? '<i class="ec e' + lim(j.eq) + '"></i>' : '') + '<span>' + lim(j.n) + '</span></span>' +
+          '<span class="puesto-opcion-meta">' + (j.club ? '<span>' + lim(j.club) + '</span>' : '') + meta + '</span></span>' +
+          '<span class="puesto-opcion-pts"><b>' + (j.fuera ? '—' : j.e.toFixed(1).replace('.', ',')) + '</b><small>pts</small></span></button>'
+      }).join('')
+      pie.hidden = !actual
+      selector.hidden = false
+      document.documentElement.classList.add('selector-puesto-abierto')
+      window.requestAnimationFrame(function () {
+        var foco = lista.querySelector('.puesto-opcion.actual') || lista.querySelector('.puesto-opcion')
+        if (foco) foco.focus()
+      })
     }
 
     function llenarPrimero (id) {
@@ -1412,13 +1627,15 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     if (caja) caja.addEventListener('encender', arrancar)
 
     selForm.addEventListener('change', function () {
+      cerrarSelector(false)
       var f = (window.FORMACIONES || []).filter(function (x) { return x.n === selForm.value })[0]
       if (!f) return
       armar(f.l)
       ponerElMio()
     })
-    document.getElementById('mano-mio').addEventListener('click', ponerElMio)
+    document.getElementById('mano-mio').addEventListener('click', function () { cerrarSelector(false); ponerElMio() })
     document.getElementById('mano-limpiar').addEventListener('click', function () {
+      cerrarSelector(false)
       elegidos = puestos.map(function () { return null })
       pintar()
     })
@@ -1430,9 +1647,50 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     campo.addEventListener('click', function (e) {
       var h = e.target.closest ? e.target.closest('[data-hueco]') : null
       if (!h) return
+      e.preventDefault()
+      e.stopPropagation()
       var idx = Number(h.getAttribute('data-hueco'))
-      if (elegidos[idx]) { elegidos[idx] = null; pintar() }
+      abrirSelector(idx, h)
     })
+    campo.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' && e.key !== ' ') return
+      var h = e.target.closest ? e.target.closest('[data-hueco]') : null
+      if (!h) return
+      e.preventDefault()
+      e.stopPropagation()
+      abrirSelector(Number(h.getAttribute('data-hueco')), h)
+    })
+    selector.addEventListener('click', function (e) {
+      var jugador = e.target.closest ? e.target.closest('[data-selector-jugador]') : null
+      if (jugador && huecoAbierto !== null) {
+        var idx = huecoAbierto
+        cerrarSelector(false)
+        meter(jugador.getAttribute('data-selector-jugador'), idx)
+        var nuevo = campo.querySelector('[data-hueco="' + idx + '"]')
+        if (nuevo) nuevo.focus()
+        return
+      }
+      if (e.target.closest && e.target.closest('[data-selector-vaciar]') && huecoAbierto !== null) {
+        var vacio = huecoAbierto
+        cerrarSelector(false)
+        elegidos[vacio] = null
+        pintar()
+        var libre = campo.querySelector('[data-hueco="' + vacio + '"]')
+        if (libre) libre.focus()
+        return
+      }
+      if (e.target.closest && e.target.closest('[data-selector-cerrar]')) cerrarSelector(true)
+    })
+    selector.addEventListener('keydown', function (e) {
+      if (e.key !== 'Tab') return
+      var focos = Array.from(selector.querySelectorAll('button:not([hidden])')).filter(function (x) { return x.offsetParent !== null })
+      if (!focos.length) return
+      var primero = focos[0]
+      var ultimo = focos[focos.length - 1]
+      if (e.shiftKey && document.activeElement === primero) { e.preventDefault(); ultimo.focus() }
+      else if (!e.shiftKey && document.activeElement === ultimo) { e.preventDefault(); primero.focus() }
+    })
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !selector.hidden) cerrarSelector(true) })
 
     // Arrastrar, para quien esté en el ordenador.
     banca.addEventListener('dragstart', function (e) {
@@ -1960,6 +2218,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     var dec = function (n) { return n == null ? '—' : Number(n).toFixed(1).replace('.', ',') }
     var firma = function (n) { return (n > 0 ? '+' : n < 0 ? '−' : '') + corto(Math.abs(n)) }
     var PUESTO = { 0: '—', 1: 'POR', 2: 'DEF', 3: 'MED', 4: 'DEL' }
+    var PUESTO_NOMBRE = { 0: 'Sin posición', 1: 'Portero', 2: 'Defensa', 3: 'Centrocampista', 4: 'Delantero' }
     // De dónde cuelgan las caras. En el sitio van al lado de la página; en la
     // versión de un solo fichero no hay «al lado», así que quien publica la
     // reescribe con la dirección completa. Ver modulo/publicar.cjs.
@@ -1987,7 +2246,8 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     // Mister viene como evento aparte, pero suma en el total de goles, y sin
     // balón la tira desmentía al «GOLES» de arriba —Budimir, 4 goles, 1 balón.
     // Se distingue con un punto debajo, que es el del penalti.
-    var ICONO = { g: '⚽', a: '🅰', y: '🟨', p: '⚽', s: '🧤', i: '⬆', o: '⬇', r: '🟥', c: '⚽', f: '⚽', d: '🟥' }
+    var BOTA_ASISTENCIA = '<svg class="ev-bota" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 2h7v6.4c0 1.4.8 2.7 2.1 3.3l6.2 2.8c1.7.8 2.2 2.8 1.1 4.3l-.6.8H7.5A5.5 5.5 0 0 1 2 14.1V5a3 3 0 0 1 3-3Zm.2 11.1v1c0 1.8 1.1 2.3 2.7 2.3h10.4l-5.5-2.5a7 7 0 0 1-1.7-.9H5.2ZM7 20h3v2H7v-2Zm8 0h3v2h-3v-2Z"/></svg>'
+    var ICONO = { g: '⚽', a: BOTA_ASISTENCIA, y: '🟨', p: '⚽', s: '🧤', i: '⬆', o: '⬇', r: '🟥', c: '⚽', f: '⚽', d: '🟥' }
     var NOMBRE_EV = { g: 'gol', a: 'asistencia', y: 'tarjeta amarilla', p: 'gol de penalti', s: 'penalti parado', i: 'entró desde el banquillo', o: 'fue sustituido', r: 'tarjeta roja', c: 'gol en propia puerta', f: 'penalti fallado', d: 'doble amarilla, expulsado' }
     // Lo que sale caro va en rojo: el balón de un gol en propia y el de un
     // penalti fallado son balones, pero no cuentan lo mismo que un gol.
@@ -2001,7 +2261,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
         var n = j[0], pts = j[1], riv = j[2], inicio = j[3], ev = j[4] || ''
         var jugo = pts != null
         var clase = !jugo ? 'baja' : pts >= 8 ? 'alta' : pts >= 4 ? 'media' : pts > 0 ? 'baja' : 'cero'
-        var alto = jugo ? Math.max(16, Math.round((Math.max(pts, 0) / max) * 86)) : 6
+        var alto = jugo ? Math.max(18, Math.round((Math.max(pts, 0) / max) * 62)) : 7
         // Cada evento es su letra y, detrás, el minuto: «g12», «o46». Los de
         // antes venían sin minuto y pegados —«og»—, así que si no hay comas ni
         // números se leen como se leían.
@@ -2011,8 +2271,8 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
           var min = t.slice(1)
           if (!ICONO[c]) return ''
           var titulo = (NOMBRE_EV[c] || c) + (min ? ', minuto ' + min : '')
-          var clase = MALO[c] ? 'malo' : c === 'p' ? 'pen' : ''
-          return '<span' + (clase ? ' class="' + clase + '"' : '') + ' title="' + esc(titulo) + '">' + ICONO[c] +
+          var clase = 'ev-' + c + (MALO[c] ? ' malo' : c === 'p' ? ' pen' : '')
+          return '<span class="' + clase + '" title="' + esc(titulo) + '"><i class="ev-ico">' + ICONO[c] + '</i>' +
             (min ? "<b class='min'>" + min + "'</b>" : '') + '</span>'
         }).join('')
         return '<div class="cf-j' + (jugo ? '' : ' nojugo') + '">' +
@@ -2032,29 +2292,120 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
      * no distingue una subida sostenida de un pico seguido de diez días
      * plano, y eso cambia si compras hoy o esperas.
      */
-    function grafico (f) {
-      var l = f.hv
-      if (!l || l.length < 3) return ''
+    function grafico (f, anterior) {
+      var meta = anterior ? f.ha : null
+      var l = anterior ? (meta && meta.v) : f.hv
+      if (!l || l.length < 3) {
+        if (!anterior) return ''
+        var inicioActual = f.hd && f.hd.d ? Number(String(f.hd.d).slice(0, 4)) : new Date().getFullYear()
+        var temporada = Number.isFinite(inicioActual) ? (inicioActual - 1) + '/' + String(inicioActual).slice(-2) : 'anterior'
+        return '<div class="cf-graf-anterior sin-datos"><div class="cf-graf-titulo"><span>Temporada anterior</span><b>' + temporada + '</b></div>' +
+          '<div class="cf-graf cf-graf-sin-datos" aria-label="Sin datos comparables de LaLiga en la temporada ' + temporada + '">' +
+            '<svg viewBox="0 0 300 54" preserveAspectRatio="none" aria-hidden="true">' +
+              '<path d="M0 42 C38 35 49 18 85 25 S133 44 165 33 S218 14 245 27 S275 35 300 17" fill="none" stroke="var(--blinda)" stroke-width="1.4" stroke-dasharray="4 5"></path>' +
+            '</svg>' +
+            '<div class="cf-graf-mensaje" role="status"><b>SIN DATOS</b><span>No disputó LaLiga ' + temporada + '</span></div>' +
+            '<div class="ejes"><span>—</span><span>Sin histórico comparable</span><span>—</span></div>' +
+          '</div></div>'
+      }
       var min = Math.min.apply(null, l), max = Math.max.apply(null, l)
       var W = 300, H = 54
       var paso = W / (l.length - 1)
       var alto = function (v) { return max === min ? H / 2 : H - 4 - ((v - min) / (max - min)) * (H - 8) }
       var puntos = l.map(function (v, i) { return (i * paso).toFixed(1) + ',' + alto(v).toFixed(1) }).join(' ')
       var sube = l[l.length - 1] >= l[0]
-      var color = sube ? 'var(--sube)' : 'var(--baja)'
-      return '<div class="cf-graf">' +
-        '<svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" aria-hidden="true">' +
+      var color = anterior ? 'var(--blinda)' : sube ? 'var(--sube)' : 'var(--baja)'
+      var MESES_CORTOS = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic']
+      var fechaCorta = function (iso) {
+        var p = String(iso || '').split('-')
+        return p.length === 3 ? Number(p[2]) + ' ' + (MESES_CORTOS[Number(p[1]) - 1] || '') : ''
+      }
+      return (anterior ? '<div class="cf-graf-anterior"><div class="cf-graf-titulo"><span>Temporada anterior</span><b>' + esc(meta.t) + '</b></div>' : '') +
+        '<div class="cf-graf" data-serie="' + (anterior ? 'anterior' : 'actual') + '" style="--graf-color:' + color + '">' +
+        '<svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" role="img" tabindex="0" aria-label="Evolución del valor, ' + (anterior ? 'temporada anterior' : 'temporada actual') + '. Usa las flechas para consultar cada día.">' +
         '<polyline points="' + puntos + ' ' + W + ',' + H + ' 0,' + H + '" fill="' + color + '" opacity=".10"></polyline>' +
         '<polyline points="' + puntos + '" fill="none" stroke="' + color + '" stroke-width="1.6" stroke-linejoin="round"></polyline>' +
+        '<line class="cf-graf-cursor" x1="0" y1="2" x2="0" y2="' + H + '"></line>' +
+        '<circle class="cf-graf-punto" cx="0" cy="0" r="3.2"></circle>' +
         '</svg>' +
-        '<div class="ejes"><span>' + corto(min * 1000) + '</span><span>' + l.length + ' días</span><span>' + corto(max * 1000) + '</span></div>' +
-        '</div>'
+        '<div class="cf-graf-tooltip" role="status" aria-live="polite"><b></b><span></span></div>' +
+        '<div class="ejes"><span>' + corto(min * 1000) + '</span><span>' + (anterior ? fechaCorta(meta.d) + ' – ' + fechaCorta(meta.h) : l.length + ' días') + '</span><span>' + corto(max * 1000) + '</span></div>' +
+        '</div>' + (anterior ? '</div>' : '')
+    }
+
+    /** Interacción magnética: cualquier posición elige el día más cercano. */
+    function activarGraficos (f) {
+      var MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre']
+      var fechaExacta = function (iso) {
+        var p = String(iso || '').split('-')
+        return p.length === 3 ? Number(p[2]) + ' de ' + MESES[Number(p[1]) - 1] + ' de ' + p[0] : ''
+      }
+      var sumarDias = function (iso, dias) {
+        var d = new Date(iso + 'T00:00:00Z')
+        d.setUTCDate(d.getUTCDate() + dias)
+        return d.toISOString().slice(0, 10)
+      }
+
+      ;[].slice.call(cuerpo.querySelectorAll('.cf-graf[data-serie]')).forEach(function (graf) {
+        var anterior = graf.getAttribute('data-serie') === 'anterior'
+        var meta = anterior ? f.ha : f.hd
+        var valores = anterior ? (f.ha && f.ha.v) : f.hv
+        if (!meta || !valores || valores.length < 3) return
+        var svg = graf.querySelector('svg')
+        var linea = graf.querySelector('.cf-graf-cursor')
+        var punto = graf.querySelector('.cf-graf-punto')
+        var tip = graf.querySelector('.cf-graf-tooltip')
+        var tipValor = tip.querySelector('b')
+        var tipFecha = tip.querySelector('span')
+        var min = Math.min.apply(null, valores), max = Math.max.apply(null, valores)
+        var W = 300, H = 54
+        var y = function (v) { return max === min ? H / 2 : H - 4 - ((v - min) / (max - min)) * (H - 8) }
+        var fechaDe = function (i) { return meta.x && meta.x[i] ? meta.x[i] : sumarDias(meta.d, i) }
+
+        var mostrar = function (indice) {
+          var i = Math.max(0, Math.min(valores.length - 1, indice))
+          var x = i * W / (valores.length - 1)
+          var valor = valores[i] * 1000
+          var cambio = i > 0 ? (valores[i] - valores[i - 1]) * 1000 : null
+          linea.setAttribute('x1', x); linea.setAttribute('x2', x)
+          punto.setAttribute('cx', x); punto.setAttribute('cy', y(valores[i]))
+          tip.style.left = (x / W * 100) + '%'
+          tip.classList.toggle('derecha', x > W * .62)
+          tipValor.textContent = eur(valor)
+          tipFecha.innerHTML = esc(fechaExacta(fechaDe(i))) + (cambio === null ? '' : ' · <em class="' + (cambio >= 0 ? 'sube' : 'baja') + '">' + firma(cambio) + '</em>')
+          graf.classList.add('activo')
+          graf.setAttribute('data-indice', i)
+          svg.setAttribute('aria-valuetext', fechaExacta(fechaDe(i)) + ', ' + eur(valor) + (cambio === null ? '' : ', cambio ' + firma(cambio)))
+        }
+        var ocultar = function () { graf.classList.remove('activo') }
+        var porPuntero = function (e) {
+          var r = svg.getBoundingClientRect()
+          var proporcion = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width))
+          mostrar(Math.round(proporcion * (valores.length - 1)))
+        }
+        svg.addEventListener('pointerenter', porPuntero)
+        svg.addEventListener('pointermove', porPuntero)
+        svg.addEventListener('pointerdown', porPuntero)
+        svg.addEventListener('pointerleave', function (e) { if (e.pointerType !== 'touch') ocultar() })
+        svg.addEventListener('focus', function () { mostrar(Number(graf.getAttribute('data-indice') || valores.length - 1)) })
+        svg.addEventListener('blur', ocultar)
+        svg.addEventListener('keydown', function (e) {
+          var i = Number(graf.getAttribute('data-indice') || valores.length - 1)
+          if (e.key === 'ArrowLeft') i -= 1
+          else if (e.key === 'ArrowRight') i += 1
+          else if (e.key === 'Home') i = 0
+          else if (e.key === 'End') i = valores.length - 1
+          else if (e.key === 'Escape') { ocultar(); return }
+          else return
+          e.preventDefault(); mostrar(i)
+        })
+      })
     }
 
     function pintar (id) {
       var f = window.FICHAS[id]
       if (!f) return
-      var ets = []
+      var ets = ['<span class="et et-pos">' + PUESTO_NOMBRE[f.p] + '</span>']
       if (f.mk) ets.push('<span class="et et-mk">' + (f.ced ? 'se cede' : 'en el mercado') + '</span>')
       ets.push(f.d ? '<span class="et et-eq' + (f.mio ? ' et-mio' : '') + '">' + esc(f.d) + '</span>' : '<span class="et et-libre">libre</span>')
       if (f.sub) ets.push('<span class="et et-sub">🛡 ×' + (1.5 + 0.5 * f.sub).toFixed(1).replace('.', ',') + '</span>')
@@ -2195,7 +2546,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
           '<div class="cf-sec"><h4>Próximo partido</h4><div class="cf-lineas"><div class="l"><span>' + partido + '</span></div></div></div>' +
           (valor.length || f.hv ? '<div class="cf-sec"><h4>Su valor</h4>' +
             (valor.length ? '<div class="jv" style="margin:0">' + valor.join('<span class="sep">·</span>') + '</div>' : '') +
-            grafico(f) + '</div>' : '') +
+            grafico(f) + grafico(f, true) + '</div>' : '') +
         '</div><div class="cf-columna">' +
           '<div class="cf-sec"><h4>Jornada a jornada</h4>' + jornadas(f) + '</div>' +
           (lineas.length ? '<div class="cf-sec"><h4>Lo que decimos nosotros</h4><div class="cf-lineas">' +
@@ -2204,6 +2555,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
         '</div></div>' +
         '<div class="cf-pie"><span>Las cifras de arriba son de Mister; las de «lo que decimos nosotros», calculadas aquí.</span>' +
         '<a href="https://mister.mundodeportivo.com/players/' + encodeURIComponent(id) + '/x" target="_blank" rel="noopener">Abrir en Mister ↗</a></div>'
+      activarGraficos(f)
       actualizarHerramientas(id)
     }
 

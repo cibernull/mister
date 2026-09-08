@@ -41,6 +41,7 @@ const JOR = leer('jornadas.json')
 const opcional = (n, sino) => { try { return leer(n) } catch { return sino } }
 const YO = opcional('yo.json', { formacion: '', tope: 0, generado: new Date().toISOString() })
 const NOV = opcional('novedades.json', [])
+const NOTICIAS_FANTASY = opcional('noticias-fantasy.json', { cuando: null, fuente: 'futbolfantasy.com', noticias: [] })
 const IDS_CAMBIADOS = new Set(NOV.map((n) => String(n.id)).filter(Boolean))
 const MOVS = D.movimientos ?? []
 // Los clubes reales, para poder decir «Sevilla» y no «rival 19». Es un
@@ -274,7 +275,8 @@ const rachaConGoles = (j) => {
  * puede entrar y puntuar. Se usa para ordenar por tramos y, sobre todo, para
  * enseñarlo: la decisión sigue siendo tuya, pero con el dato delante.
  */
-const PROBABLES = opcional('probables.json', { jugadores: {} }).jugadores || {}
+const DATOS_PROBABLES = opcional('probables.json', { cuando: null, fuente: 'futbolfantasy.com', jugadores: {} })
+const PROBABLES = DATOS_PROBABLES.jugadores || {}
 const probabilidadDe = (j) => {
   const p = PROBABLES[String(j.id)]
   return p && typeof p.prob === 'number' ? p.prob : null
@@ -1871,7 +1873,16 @@ const FORMACIONES = [
  * no cambia: primero quien va a jugar, luego el pronóstico de titularidad, y
  * entre iguales el que más rinda en su partido.
  */
-const onceCon = (formacion) => {
+const puntuacionPorPerfil = (j, perfil) => {
+  const esperado = esperadoTotal(j)
+  const prob = probabilidadDe(j)
+  const p = prob === null ? 0.7 : prob / 100
+  if (perfil === 'seguro') return esperado * p * p
+  if (perfil === 'ambicioso') return esperado
+  return esperado * p
+}
+
+const onceCon = (formacion, perfil = 'equilibrado') => {
   if (formacion.length !== 4) return null
   const elegidos = []
   const banquillo = []
@@ -1879,7 +1890,7 @@ const onceCon = (formacion) => {
   formacion.forEach((cuantos, i) => {
     const puesto = i + 1
     const candidatos = MIOS.filter((j) => j.puesto === puesto).sort(
-      (a, b) => (noJuega(b) ? -1 : 1) - (noJuega(a) ? -1 : 1) || conProbabilidad(b) - conProbabilidad(a),
+      (a, b) => (noJuega(b) ? -1 : 1) - (noJuega(a) ? -1 : 1) || puntuacionPorPerfil(b, perfil) - puntuacionPorPerfil(a, perfil),
     )
     if (candidatos.length < cuantos) completo = false
     elegidos.push(...candidatos.slice(0, cuantos).map((j) => ({ ...j, hueco: cuantos > candidatos.length })))
@@ -1901,6 +1912,13 @@ const once = onceCon(FORMACION)
 const formacionesProbadas = FORMACIONES.map((f) => ({ ...f, nombre: f.l.join('-'), once: onceCon(f.l) }))
   .filter((f) => f.once !== null && f.once.completo)
   .sort((a, b) => b.once.total - a.once.total)
+
+const formacionesPorPerfil = Object.fromEntries(['seguro', 'equilibrado', 'ambicioso'].map((perfil) => [
+  perfil,
+  FORMACIONES.map((f) => ({ ...f, nombre: f.l.join('-'), once: onceCon(f.l, perfil) }))
+    .filter((f) => f.once !== null && f.once.completo)
+    .sort((a, b) => b.once.total - a.once.total),
+]))
 
 /**
  * Una fila del once: quién es, qué se espera de él y por qué.
@@ -2069,14 +2087,18 @@ ${lineas
  * escudo, cara, eventos y colores, y tener esa misma lógica escrita dos veces
  * —aquí y en el navegador— es como se separan con el tiempo.
  */
-const islaOnces = JSON.stringify(
-  Object.fromEntries(
+const islaOnces = JSON.stringify({
+  ...Object.fromEntries(
     formacionesProbadas.map((f) => [
       f.nombre,
       { t: Number(f.once.total.toFixed(2)), pago: f.pago ? 1 : 0, html: campoOnce(f.once, f.l) },
     ]),
   ),
-)
+  ...Object.fromEntries(Object.entries(formacionesPorPerfil).flatMap(([perfil, lista]) => lista.map((f) => [
+    `${perfil}|${f.nombre}`,
+    { t: Number(f.once.total.toFixed(2)), pago: f.pago ? 1 : 0, perfil, nombre: f.nombre, html: campoOnce(f.once, f.l) },
+  ]))),
+})
 
 /**
  * Tu plantilla entera, para armar el once a mano.
@@ -2205,6 +2227,12 @@ const bloqueOnce = once === null || once.elegidos.length === 0
                 mejor.pago ? ' Esa formación Mister la vende por monedas: puede que no la tengas.' : ''
               }`
         }</span>
+        <div class="perfiles-once"><span>Plan de riesgo</span>${Object.entries(formacionesPorPerfil).map(([perfil, lista]) => {
+          const f = lista[0]
+          if (!f) return ''
+          const etiqueta = perfil === 'seguro' ? 'Seguro' : perfil === 'ambicioso' ? 'Ambicioso' : 'Equilibrado'
+          return `<button type="button" data-formacion="${f.nombre}" data-once-key="${perfil}|${f.nombre}" class="${perfil === 'equilibrado' ? 'on' : ''}" title="${perfil === 'seguro' ? 'Penaliza más el riesgo de suplencia' : perfil === 'ambicioso' ? 'Prioriza el techo de puntos si todos juegan' : 'Equilibra puntos y probabilidad de titularidad'}">${etiqueta}<b>${dec(f.once.total)}</b></button>`
+        }).join('')}</div>
         <span class="alt">${formacionesProbadas
           .slice(0, 6)
           .map((f) => `<button type="button" data-formacion="${f.nombre}" class="${f.nombre === mia.nombre ? 'tuya' : ''}${f.pago ? ' pago' : ''}" title="${f.pago ? 'De pago en Mister · pincha para ver ese once' : 'De serie · pincha para ver ese once'}">${f.nombre} <b>${dec(f.once.total)}</b></button>`)
@@ -2255,6 +2283,102 @@ ${once.banquillo.map(filaOnce).join(NL)}
 const oportunidad = J.filter((j) => j.a && !j.mio && !(vetoDe(j)?.grave))
   .sort((a, b) => (b.p + b.d) - (a.p + a.d) || b.media - a.media || (b.subeMes ?? -9) - (a.subeMes ?? -9))[0]
 
+// ── Inteligencia accionable ─────────────────────────────────────────────────
+// La portada no debe ser otro resumen de datos. Convierte las señales que ya
+// están verificadas en decisiones, y siempre conserva la ruta hacia el dato
+// que las sostiene. Ninguna cifra de este bloque nace sin una fuente o una
+// fórmula visible.
+const riesgosOnce = once
+  ? once.elegidos.filter((j) => noJuega(j) || (probabilidadDe(j) !== null && probabilidadDe(j) < TRAMO_TITULAR))
+  : []
+const titularesFiables = once
+  ? once.elegidos.filter((j) => !noJuega(j) && (probabilidadDe(j) === null || probabilidadDe(j) >= TRAMO_TITULAR)).length
+  : 0
+
+const ultimaAlineacion = ALINEACIONES.filter((a) => a.once && a.once.length).at(-1) ?? null
+const auditoriaJornadas = ALINEACIONES.filter((a) => a.once && a.once.length).map((a) => {
+  const cantidades = String(a.formacion || '').split('-').map(Number)
+  const todos = [...a.once, ...(a.banquillo || [])]
+  const mejor = cantidades.reduce((total, cuantos, i) => {
+    const puesto = i + 1
+    const candidatos = todos
+      .filter((j) => j.puesto === puesto)
+      .map((j) => (j.puntos == null ? 0 : j.puntos))
+      .sort((x, y) => y - x)
+    return total + candidatos.slice(0, cuantos).reduce((s, x) => s + x, 0)
+  }, 0)
+  const real = Number(a.puntos || 0)
+  return { jornada: a.jornada, real, mejor, perdida: Math.max(0, mejor - real), eficiencia: mejor > 0 ? Math.min(100, (100 * real) / mejor) : null }
+})
+const auditoriaReciente = auditoriaJornadas.slice(-5)
+const eficienciaMedia = auditoriaReciente.filter((x) => x.eficiencia !== null).length
+  ? auditoriaReciente.filter((x) => x.eficiencia !== null).reduce((s, x) => s + x.eficiencia, 0) / auditoriaReciente.filter((x) => x.eficiencia !== null).length
+  : null
+const puntosEnBanca = auditoriaReciente.reduce((s, x) => s + x.perdida, 0)
+
+const fechaFuente = (archivo, declarada) => {
+  if (declarada && Number.isFinite(Date.parse(declarada))) return declarada
+  try { return fs.statSync(path.join(DAT, archivo)).mtime.toISOString() } catch { return null }
+}
+const fuentes = [
+  { nombre: 'Mister', dato: 'mercado, puntos y liga', cuando: fechaFuente('yo.json', YO.generado), tipo: 'observado' },
+  { nombre: 'FútbolFantasy', dato: 'titularidad y bajas', cuando: fechaFuente('probables.json', DATOS_PROBABLES.cuando), tipo: 'externo' },
+  { nombre: 'FútbolFantasy News', dato: 'actualidad y partes', cuando: fechaFuente('noticias-fantasy.json', NOTICIAS_FANTASY.cuando), tipo: 'externo' },
+  { nombre: 'Football-Data', dato: 'resultados y xG', cuando: fechaFuente('fuerza-real.json', FUERZA_REAL?.cuando), tipo: 'externo' },
+]
+const edadFuente = (cuando) => cuando ? Math.max(0, Date.now() - Date.parse(cuando)) : Infinity
+const haceFuente = (cuando) => {
+  const ms = edadFuente(cuando)
+  if (!Number.isFinite(ms)) return 'sin fecha'
+  const min = Math.floor(ms / 60000)
+  if (min < 2) return 'ahora'
+  if (min < 60) return `hace ${min} min`
+  const h = Math.floor(min / 60)
+  return h < 24 ? `hace ${h} h` : `hace ${Math.floor(h / 24)} d`
+}
+
+const decisionItems = [
+  riesgosOnce.length
+    ? { tono: 'urgente', ico: '!', titulo: `Revisa ${riesgosOnce.length} puesto${riesgosOnce.length === 1 ? '' : 's'} del once`, texto: riesgosOnce.slice(0, 2).map((j) => `${j.nombre}${probabilidadDe(j) === null ? '' : ` (${probabilidadDe(j)} %)`}`).join(' · '), accion: 'Revisar once', atributo: 'data-scroll="once-jornada"' }
+    : { tono: 'bien', ico: '✓', titulo: 'Once sin alertas críticas', texto: `${titularesFiables} jugadores con partido y sin una señal grave conocida.`, accion: 'Ver análisis', atributo: 'data-scroll="once-jornada"' },
+  aBlindar.length
+    ? { tono: 'aviso', ico: '◆', titulo: `Protege a ${aBlindar[0].nombre}`, texto: `${aBlindar[0].rivalesQuePueden} rivales pueden pagar su cláusula actual.`, accion: 'Ver cláusulas', atributo: 'data-scroll="bloque-clausula"' }
+    : null,
+  aVender.length
+    ? { tono: 'aviso', ico: '€', titulo: `Libera ${corto(sumaVenta)} de caja`, texto: `${aVender.length} jugador${aVender.length === 1 ? '' : 'es'} con rendimiento o tendencia insuficiente.`, accion: 'Simular ventas', atributo: 'data-scroll="bloque-venta"' }
+    : null,
+  oportunidad
+    ? { tono: 'oportunidad', ico: '+', titulo: `Analiza a ${oportunidad.nombre}`, texto: `${dec(oportunidad.esperado)} pts esperados · cuesta ${corto(oportunidad.precio)}.`, accion: 'Abrir mercado', atributo: 'data-tab="t2"' }
+    : null,
+].filter(Boolean)
+
+const fuenteCard = fuentes.map((f) => {
+  const edad = edadFuente(f.cuando)
+  const estado = edad <= 2 * 3600000 ? 'viva' : edad <= 26 * 3600000 ? 'dia' : 'vieja'
+  return `<div class="fuente ${estado}"><i></i><span><b>${f.nombre}</b><small>${f.dato}</small></span><em>${haceFuente(f.cuando)}</em></div>`
+}).join('')
+
+const centroInteligencia = `    <section class="inteligencia" aria-labelledby="intel-titulo">
+      <header class="intel-cab">
+        <div><span class="intel-kicker">Director deportivo · datos trazables</span><h2 id="intel-titulo">Tu plan para ganar la jornada</h2><p>Prioridades calculadas con datos observados; cada predicción se identifica y se puede auditar.</p></div>
+        <div class="intel-estado"><i></i><span><b>${fuentes.filter((f) => edadFuente(f.cuando) <= 26 * 3600000).length}/${fuentes.length} fuentes al día</b><small>ciclo automático cada hora</small></span></div>
+      </header>
+      <div class="intel-grid">
+        <div class="intel-decisiones">
+          <div class="intel-subcab"><span>Decisiones prioritarias</span><b>${decisionItems.length} acciones</b></div>
+          ${decisionItems.map((d, i) => `<article class="decision ${d.tono}"><span class="decision-ico">${d.ico}</span><div><small>${i === 0 ? 'Ahora' : i === 1 ? 'Después' : 'Oportunidad'}</small><b>${esc(d.titulo)}</b><p>${esc(d.texto)}</p></div><button type="button" ${d.atributo}>${d.accion}<span>→</span></button></article>`).join('')}
+        </div>
+        <aside class="intel-lateral">
+          <div class="jornada-ready">
+            <div class="ready-ring" style="--avance:${Math.round((titularesFiables / 11) * 100)}"><span><b>${titularesFiables}</b>/11</span></div>
+            <div><small>Preparación del once</small><b>${riesgosOnce.length ? `${riesgosOnce.length} riesgo${riesgosOnce.length === 1 ? '' : 's'} por resolver` : 'Listo para competir'}</b><p>${once ? `${dec(once.total)} puntos proyectados con ${YO.formacion}` : 'Sin proyección disponible'}</p></div>
+          </div>
+          <div class="precision-card"><span><small>Rendimiento de tus decisiones</small><b>${eficienciaMedia === null ? 'Sin muestra' : `${Math.round(eficienciaMedia)} %`}</b></span><p>${auditoriaReciente.length ? `${puntosEnBanca} puntos potenciales quedaron fuera en las últimas ${auditoriaReciente.length} jornadas.` : 'Se activará cuando haya jornadas completas.'}</p>${ultimaAlineacion ? `<div class="precision-barras">${auditoriaReciente.map((x) => `<i style="--p:${Math.round(x.eficiencia ?? 0)}%" title="J${x.jornada}: ${Math.round(x.eficiencia ?? 0)} % de eficiencia"></i>`).join('')}</div>` : ''}<small class="metodo">Comparación retrospectiva con el mejor once posible usando los puntos reales.</small></div>
+          <div class="fuentes-card"><div class="intel-subcab"><span>Fuentes</span><b>verificadas</b></div>${fuenteCard}<p>Si una fuente falla, se conserva el último dato válido y se marca su antigüedad.</p></div>
+        </aside>
+      </div>
+    </section>\n`
+
 const centroMando = `    <section class="centro-mando" aria-labelledby="cm-titulo">
       <div class="cm-arriba">
         <div>
@@ -2272,7 +2396,7 @@ const centroMando = `    <section class="centro-mando" aria-labelledby="cm-titul
     </section>
 `
 
-const miEquipo = `${centroMando}${bloqueOnce}${novedades}${bloque(
+const miEquipo = `${centroInteligencia}${bloqueOnce}${novedades}${bloque(
   '📤',
   'Deberías vender',
   aVender.length
@@ -2296,6 +2420,22 @@ ${bloque('', 'El resto de tu plantilla', 'Ni urge venderlos ni están especialme
     </section>`
 
 // ── 2. Rivales ───────────────────────────────────────────────────────────────
+const inteligenciaDeRival = (e) => {
+  const suyos = J.filter((j) => j.duenio === e.n)
+  const porPuesto = [1, 2, 3, 4].map((p) => {
+    const l = suyos.filter((j) => j.puesto === p)
+    const disponibles = l.filter((j) => !noJuega(j))
+    return { p, n: l.length, disponibles: disponibles.length, media: disponibles.length ? disponibles.reduce((s, j) => s + esperadoTotal(j), 0) / disponibles.length : 0 }
+  })
+  const necesidad = [...porPuesto].sort((a, b) => a.disponibles - b.disponibles || a.media - b.media)[0]
+  const amenazados = MIOS.filter((j) => j.clausula && e.tope >= j.clausula).sort((a, b) => b.media - a.media)
+  const fuerte = [...suyos].filter((j) => !noJuega(j)).sort((a, b) => esperadoTotal(b) - esperadoTotal(a))[0]
+  return `<div class="rival-radar">
+    <div><small>Necesidad probable</small><b>${PUESTOS_LARGO[necesidad.p]}</b><span>${necesidad.disponibles} disponibles · ${dec(necesidad.media)} pts esperados de media</span></div>
+    <div><small>Mayor amenaza</small><b>${fuerte ? esc(fuerte.nombre) : 'Sin datos'}</b><span>${fuerte ? `${dec(esperadoTotal(fuerte))} pts esperados esta jornada` : 'No hay jugadores evaluables'}</span></div>
+    <div class="${amenazados.length ? 'alerta' : ''}"><small>Puede clausularte</small><b>${amenazados.length ? `${amenazados.length} jugador${amenazados.length === 1 ? '' : 'es'}` : 'Ninguno'}</b><span>${amenazados.length ? amenazados.slice(0, 2).map((j) => j.nombre).join(' · ') : 'Su tope no alcanza tus cláusulas'}</span></div>
+  </div>`
+}
 const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     <summary>
       <span class="puesto">${e.pos}º</span>
@@ -2305,6 +2445,7 @@ const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     </summary>
     <div class="cuerpo">
       <p class="frase">Va <strong>${e.pos}º con ${e.pts} puntos</strong>. Tiene <strong>${eur(e.saldo)}</strong> en caja y una plantilla de ${(PL[e.n] ?? []).length} jugadores que vale ${eur(e.pl)}.</p>
+      ${inteligenciaDeRival(e)}
       <h3 class="sub">Su plantilla</h3>
       ${plantillaDe(e)}
       <h3 class="sub">Sus cuentas</h3>
@@ -2319,6 +2460,60 @@ ${[...EQ]
   .sort((a, b) => b.tope - a.tope)
   .map(fichaEquipo)
   .join(NL)}`
+
+// ── Noticias relevantes ─────────────────────────────────────────────────────
+// El titular, fecha, categoría y enlace son de FútbolFantasy. La única capa
+// propia es el orden: primero aparecen las que nombran a alguien de tu plantilla
+// o del mercado. No se resume el artículo ni se inventa el efecto deportivo.
+const palabrasNormalizadas = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().match(/[a-z0-9]+/g) || []
+const jugadoresMencionados = (titulo) => {
+  const texto = new Set(palabrasNormalizadas(titulo))
+  const candidatos = J.map((j) => {
+    const ps = palabrasNormalizadas(j.nombre).filter((p) => p.length >= 3)
+    const apellido = ps.at(-1)
+    if (!apellido || apellido.length < 4 || !texto.has(apellido)) return null
+    return { j, apellido, puntos: ps.filter((p) => texto.has(p)).length }
+  }).filter(Boolean)
+  const porApellido = new Map()
+  candidatos.forEach((c) => {
+    const l = porApellido.get(c.apellido) || []
+    l.push(c)
+    porApellido.set(c.apellido, l)
+  })
+  return [...porApellido.values()].flatMap((l) => {
+    const max = Math.max(...l.map((x) => x.puntos))
+    const mejores = l.filter((x) => x.puntos === max)
+    // Un apellido común sin nombre no identifica a nadie. Es preferible una
+    // tarjeta sin retrato a adjudicar una noticia al futbolista equivocado.
+    return mejores.length === 1 && (max > 1 || l.length === 1) ? [mejores[0].j] : []
+  })
+}
+const noticiasPriorizadas = (NOTICIAS_FANTASY.noticias || []).map((n, orden) => {
+  const jugadores = jugadoresMencionados(n.titulo)
+  const mios = jugadores.filter((j) => j.mio)
+  const mercado = jugadores.filter((j) => j.mk === 1)
+  const critica = ['lesión', 'sanción', 'convocatoria', 'entrenamiento', 'rueda de prensa'].includes(n.categoria)
+  return { ...n, orden, mios, mercado, jugadores, prioridad: mios.length ? 3 : mercado.length ? 2 : critica ? 1 : 0 }
+}).sort((a, b) => b.prioridad - a.prioridad || a.orden - b.orden)
+
+const noticiaCard = (n, i) => {
+  const jugador = n.mios[0] || n.mercado[0] || n.jugadores[0]
+  const clubId = jugador?.eq ?? null
+  const club = clubId ? CLUBES.get(String(clubId)) : null
+  const relacionada = n.mios.length ? `Tu equipo · ${n.mios.slice(0, 2).map((j) => j.nombre).join(', ')}` : n.mercado.length ? `En mercado · ${n.mercado.slice(0, 2).map((j) => j.nombre).join(', ')}` : club || n.categoria
+  const logo = clubId && ESCUDOS.has(String(clubId)) ? `<span class="noticia-club" title="${esc(club || '')}"><i class="ec e${clubId}"></i></span>` : ''
+  return `<a class="noticia-card${n.mios.length ? ' mia' : n.mercado.length ? ' mercado' : ''}" data-noticia-cat="${esc(n.categoria)}" data-noticia-mia="${n.mios.length ? '1' : '0'}" data-noticia-mercado="${n.mercado.length ? '1' : '0'}" href="${esc(n.url)}" target="_blank" rel="noopener"><div class="noticia-visual">${jugador ? caraDe(jugador.id, jugador.nombre) : `<span>${String(i + 1).padStart(2, '0')}</span>`}${logo}<i>${esc(n.categoria)}</i></div><div class="noticia-contenido"><small>${esc(n.fecha)} · ${esc(relacionada)}</small><b>${esc(n.titulo)}</b><span>${club ? `${esc(club)} · ` : ''}FútbolFantasy <i>↗</i></span></div></a>`
+}
+
+const noticiasHtml = `    <section class="actualidad" aria-labelledby="actualidad-titulo">
+      <header class="actualidad-cab"><div><span class="eyebrow">Información que cambia decisiones</span><h2 id="actualidad-titulo">Actualidad Fantasy</h2><p>Titulares publicados por FútbolFantasy, priorizados por su relación con tu plantilla y el mercado.</p></div><a href="${esc(NOTICIAS_FANTASY.url || 'https://www.futbolfantasy.com/laliga/noticias')}" target="_blank" rel="noopener">Ver fuente <span>↗</span></a></header>
+      <div class="noticias-filtros" aria-label="Filtrar noticias"><button type="button" class="on" data-noticia-filtro="todas">Todas</button><button type="button" data-noticia-filtro="mias">Mi equipo</button><button type="button" data-noticia-filtro="mercado">En el mercado</button><button type="button" data-noticia-filtro="lesión">Lesiones</button><button type="button" data-noticia-filtro="sanción">Sanciones</button><button type="button" data-noticia-filtro="entrenamiento">Entrenamientos</button><button type="button" data-noticia-filtro="convocatoria">Convocatorias</button><span id="noticias-cuenta">12 destacadas</span></div>
+      <div class="noticias-grid">
+        ${noticiasPriorizadas.slice(0, 12).map(noticiaCard).join('')}
+      </div>
+      ${noticiasPriorizadas.length > 12 ? `<details class="noticias-todas"><summary>Ver las ${noticiasPriorizadas.length} noticias disponibles <span>＋</span></summary><div class="noticias-grid">${noticiasPriorizadas.slice(12).map((n, i) => noticiaCard(n, i + 12)).join('')}</div></details>` : ''}
+      <footer class="actualidad-pie"><span><i></i>Fuente consultada ${haceFuente(fechaFuente('noticias-fantasy.json', NOTICIAS_FANTASY.cuando))}</span><p>La prioridad es nuestra; el contenido y el titular pertenecen a la fuente original.</p></footer>
+    </section>`
 
 // ── 3. Movimientos ───────────────────────────────────────────────────────────
 const OPS = { normal: '', clause: 'cláusula', rescind: 'rescisión' }
@@ -2805,6 +3000,7 @@ const huecos = {
   '<!--__CUANTOS_MERCADO__-->': String(enMercado.length),
   '<!--__CUANTOS_RESTO__-->': String(fueraDelMercado.length),
   '<!--__RIVALES__-->': rivales,
+  '<!--__NOTICIAS__-->': noticiasHtml,
   '<!--__MOVIMIENTOS__-->': movimientos,
   '<!--__NUMEROS__-->': numeros,
   '<!--__GUIA__-->': guia,

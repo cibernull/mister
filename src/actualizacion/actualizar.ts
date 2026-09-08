@@ -500,7 +500,12 @@ async function intentar(): Promise<Resultado> {
   try {
     const partidos = parsearCsv(await descargarResultados())
     const fuerza = Object.fromEntries(fuerzaPorClub(partidos))
-    escribirJson(join(DATOS, 'fuerza-real.json'), { partidos: partidos.length, clubes: fuerza })
+    escribirJson(join(DATOS, 'fuerza-real.json'), {
+      cuando: new Date().toISOString(),
+      fuente: 'football-data.co.uk',
+      partidos: partidos.length,
+      clubes: fuerza,
+    })
     paso(`Resultados reales: ${partidos.length} partidos de LaLiga.`)
   } catch (e) {
     cuentas.avisos.push(

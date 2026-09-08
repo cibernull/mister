@@ -11,6 +11,38 @@
 /** `{ 'YYYY-MM-DD': { idJugador: valor } }`. */
 export type Historico = Record<string, Record<string, number>>
 
+/** Serie compacta de la campaña anterior para una ficha de jugador. */
+export type SerieTemporadaAnterior = {
+  temporada: string
+  desde: string
+  hasta: string
+  valores: number[]
+}
+
+/**
+ * Separa de la gráfica anual de Mister la temporada competitiva anterior.
+ * Mister entrega un año móvil que también incluye junio y julio: ese tramo ya
+ * es pretemporada de la campaña nueva y provocaba que jugadores recién
+ * llegados, como Canales, pareciesen haber disputado LaLiga el curso anterior.
+ */
+export function extraerTemporadaAnterior(
+  serie: { fecha: string; valor: number }[],
+  inicioTemporadaActual: string,
+): SerieTemporadaAnterior | null {
+  const anio = Number(inicioTemporadaActual.slice(0, 4))
+  if (!Number.isFinite(anio)) return null
+  const desdeTemporada = `${anio - 1}-08-01`
+  const hastaTemporada = `${anio}-05-31`
+  const anterior = serie.filter((p) => p.fecha >= desdeTemporada && p.fecha <= hastaTemporada)
+  if (anterior.length < 3) return null
+  return {
+    temporada: `${anio - 1}/${String(anio).slice(-2)}`,
+    desde: anterior[0]!.fecha,
+    hasta: anterior.at(-1)!.fecha,
+    valores: anterior.map((p) => p.valor),
+  }
+}
+
 /** Días que se guardan. Con 40 sobra para mirar un mes atrás con holgura. */
 export const DIAS_DE_HISTORICO = 40
 

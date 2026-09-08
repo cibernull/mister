@@ -23,7 +23,8 @@
     "fichas": "tsx src/actualizacion/fichas.ts",
     "fotos": "tsx src/actualizacion/fotos.ts",
     "alineaciones": "tsx src/actualizacion/alineaciones.ts",
-    "probables": "tsx src/externo/futbolfantasy.ts"
+    "probables": "tsx src/externo/futbolfantasy.ts",
+    "noticias": "tsx src/externo/noticiasFantasy.ts"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.11",

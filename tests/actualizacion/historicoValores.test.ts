@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { podar, subidasDelMes, type Historico } from '../../src/actualizacion/historicoValores.js'
+import { extraerTemporadaAnterior, podar, subidasDelMes, type Historico } from '../../src/actualizacion/historicoValores.js'
 
 /** Un histórico de `dias` días acabando en `hoy`, con un jugador que sube 1000 al día. */
 const serie = (hoy: string, dias: number): Historico => {
@@ -60,5 +60,38 @@ describe('podar', () => {
     const h = serie('2026-09-04', 5)
     podar(h, 40)
     expect(Object.keys(h)).toHaveLength(5)
+  })
+})
+
+describe('extraerTemporadaAnterior', () => {
+  const valores = [
+    { fecha: '2025-09-08', valor: 1_000_000 },
+    { fecha: '2026-01-15', valor: 2_000_000 },
+    { fecha: '2026-05-24', valor: 3_000_000 },
+    { fecha: '2026-08-02', valor: 2_500_000 },
+    { fecha: '2026-08-03', valor: 2_600_000 },
+    { fecha: '2026-08-04', valor: 2_700_000 },
+  ]
+
+  it('conserva solo el tramo competitivo de la temporada anterior', () => {
+    expect(extraerTemporadaAnterior(valores, '2026-08-03')).toEqual({
+      temporada: '2025/26',
+      desde: '2025-09-08',
+      hasta: '2026-05-24',
+      valores: [1_000_000, 2_000_000, 3_000_000],
+    })
+  })
+
+  it('no fabrica una gráfica con menos de tres puntos', () => {
+    expect(extraerTemporadaAnterior(valores.slice(-2), '2026-08-03')).toBeNull()
+  })
+
+  it('no confunde la pretemporada nueva con la campaña anterior', () => {
+    const pretemporada = [
+      { fecha: '2026-06-22', valor: 1_000_000 },
+      { fecha: '2026-07-10', valor: 1_400_000 },
+      { fecha: '2026-08-02', valor: 2_500_000 },
+    ]
+    expect(extraerTemporadaAnterior(pretemporada, '2026-08-03')).toBeNull()
   })
 })

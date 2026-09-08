@@ -311,8 +311,8 @@ De mantenerlo al día se encargan dos relojes, y **ninguno necesita el Mac**:
 
 | Quién | Cuándo | Qué hace |
 |---|---|---|
-| **Cron de Cloudflare** | :07 y :37 de cada hora, las 24 h | Le pide a GitHub que actualice |
-| Cron de GitHub Actions | los mismos horarios | Lo mismo, por si el otro cae |
+| **Cron de Cloudflare** | minuto 17 de cada hora, las 24 h | Le pide a GitHub que actualice |
+| Cron de GitHub Actions | el mismo horario | Lo mismo, por si el otro cae |
 
 Que hagan lo mismo no es descuido: **el que cumple es el de Cloudflare**. El de
 GitHub Actions es «cuando pueda» y su documentación lo admite. Medido en este
@@ -331,12 +331,9 @@ no cuesta nada y cubre el caso de que Cloudflare falle; si disparan los dos, el
 `concurrency` del workflow impide que se pisen y la segunda pasada no encuentra
 nada nuevo que guardar.
 
-La pasada larga de las 523 fichas va dentro del mismo workflow, no en una tarea
-aparte. No se ata a una hora concreta —«si son las 7, hazla»— porque eso depende
-de que exista una pasada justo a esa hora, y perderla cuesta un día entero de
-goles, tarjetas y titularidades. Se mira cuánto hace de la última con una marca
-guardada en la caché, así que la hace la primera pasada que se encuentre con las
-veinte horas cumplidas.
+Las fichas se refrescan de forma incremental: en cada ciclo se piden solo las
+que han cambiado. Después de una jornada se reparten entre varias pasadas para
+respetar los límites y no bloquear el mercado ni la publicación.
 
 ### Lo que se probó antes, y por qué se descartó
 
@@ -366,10 +363,28 @@ permiso, y o se hace entero o no se hace.
 | `npm run generar` | Solo rehace el HTML con los datos que ya hay |
 | `npm run publicar` | Prepara `datos/publicada.html` para subirla a la web |
 | `npm run refrescar` | Las dos de arriba de una vez. Es lo que corre GitHub |
-| `npm run fichas` | La pasada larga: lee las 523 fichas (~9 min, una vez al día) |
+| `npm run fichas` | Refresca las fichas que han cambiado |
+| `npm run probables` | Actualiza titularidades, sanciones y bajas |
+| `npm run noticias` | Actualiza la portada de noticias de FútbolFantasy |
 | `python3 modulo/escudos.py` | Baja los escudos de los clubes. Una vez y ya |
 
-## Fuentes externas de estadísticas: por qué no hay ninguna
+## Fuentes externas de estadísticas
+
+Cada ciclo horario conserva la procedencia y la fecha de lectura. Si una fuente
+auxiliar falla, se mantiene el último fichero válido y la interfaz marca su
+antigüedad en vez de sustituirlo por una cifra inventada.
+
+| Fuente | Uso |
+|---|---|
+| **Mister** | mercado, plantillas, puntos, movimientos, caja y cláusulas |
+| **FútbolFantasy** | probabilidad de titularidad, sanciones, bajas y noticias |
+| **Football-Data.co.uk** | resultados y xG por club |
+
+Las probabilidades son predicciones de FútbolFantasy. Forma, regularidad,
+proyección del once y recomendaciones son cálculos propios y se identifican
+como tales en la interfaz.
+
+### Fuentes descartadas
 
 Probadas el 6 de septiembre de 2026, buscando xG, tiros y pases clave para
 completar lo que da Mister. Ninguna sirve, y conviene dejar escrito por qué
@@ -389,8 +404,6 @@ es una opción, y tampoco funcionaría: el mismo bloqueo lo encontraría GitHub
 Actions y la actualización automática fallaría a diario, que es justo de lo
 que se salió al quitar el Mac de en medio.
 
-Así que las estadísticas que no publica Mister se calculan desde las que sí
-publica —forma, regularidad, dureza del rival, veredicto de clausulazo—, y
-cada una dice en la Guía que está calculada aquí y cómo. Lo que de verdad
-falta y no se puede suplir es el xG: sin él no se sabe si un delantero con
-cuatro goles los ha merecido o ha tenido una racha de suerte.
+Lo que ninguna fuente publica se muestra como cálculo propio —forma,
+regularidad, proyección y veredicto de clausulazo— con la fórmula disponible en
+la Guía. El xG no se estima: se usa únicamente cuando Football-Data lo publica.

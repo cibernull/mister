@@ -36,11 +36,17 @@ import { obtenerCredenciales } from '../sesion/credenciales.js'
 import { parsearSerieValores } from '../recoleccion/parseadorValores.js'
 import { parsearFicha, type Ficha } from '../recoleccion/parseadorFicha.js'
 import { recolectarUniverso } from './recolectar.js'
-import { podar, type Historico } from './historicoValores.js'
+import {
+  extraerTemporadaAnterior,
+  podar,
+  type Historico,
+  type SerieTemporadaAnterior,
+} from './historicoValores.js'
 
 const RAIZ = process.cwd()
 const DATOS = join(RAIZ, 'modulo', 'datos')
 const HISTORICO = join(DATOS, 'historico-valores.json')
+const HISTORICO_ANTERIOR = join(DATOS, 'historico-valores-anterior.json')
 const FICHAS = join(DATOS, 'fichas.json')
 
 /**
@@ -114,18 +120,31 @@ async function main(): Promise<void> {
   const universo = await recolectarUniverso(cliente)
 
   const historico = leer<Historico>(HISTORICO, {})
+  const anterior = leer<Record<string, SerieTemporadaAnterior>>(HISTORICO_ANTERIOR, {})
   const fichas = leer<Record<string, FichaGuardada>>(FICHAS, {})
   const hoy = new Date().toISOString().slice(0, 10)
 
   // Los míos van primero porque de ellos sale el once, y el pronóstico de
   // titularidad de la próxima jornada solo está en la ficha.
-  const liga = leer<{ equipos?: { nombre: string; mio?: boolean }[] }>(join(DATOS, 'liga.json'), {})
+  const liga = leer<{ equipos?: { nombre: string; mio?: boolean }[]; inicioDeLiga?: string }>(join(DATOS, 'liga.json'), {})
+  const inicioTemporada = liga.inicioDeLiga?.slice(0, 10) ?? `${hoy.slice(0, 4)}-08-01`
   const miEquipo = liga.equipos?.find((e) => e.mio)?.nombre
   const plantillas = leer<Record<string, (string | number)[]>>(join(DATOS, 'plantillas.json'), {})
   const mios = new Set((miEquipo ? (plantillas[miEquipo] ?? []) : []).map(String))
-  const pendientes = new Set(aQuienPedir(universo, fichas, hoy, mios))
+  const deFicha = aQuienPedir(universo, fichas, hoy, mios)
+  // La serie anterior se incorpora progresivamente en las mismas pasadas. Los
+  // jugadores propios van primero y nunca se vuelven a pedir si ya la tienen.
+  const sinAnterior = universo
+    .filter((j) => anterior[j.id] === undefined)
+    .sort((a, b) => Number(mios.has(b.id)) - Number(mios.has(a.id)))
+  const ids = [...new Set([...deFicha, ...sinAnterior.map((j) => j.id)])].slice(0, MAXIMO_POR_PASADA)
+  const pendientes = new Set(ids)
   const porHacer = universo.filter((j) => pendientes.has(j.id))
-  const totales = universo.filter((j) => aQuienPedir([j], fichas, hoy, mios, 1).length > 0).length
+  const totalesFicha = universo.filter((j) => aQuienPedir([j], fichas, hoy, mios, 1).length > 0).length
+  const totales = new Set([
+    ...universo.filter((j) => aQuienPedir([j], fichas, hoy, mios, 1).length > 0).map((j) => j.id),
+    ...sinAnterior.map((j) => j.id),
+  ]).size
 
   if (porHacer.length === 0) {
     paso(`${universo.length} jugadores y ninguna ficha que refrescar: todas al día.`)
@@ -144,7 +163,10 @@ async function main(): Promise<void> {
       // El slug del enlace es decorativo: `/players/{id}/x` devuelve la ficha
       // igual. Lo que no vale es el id a secas, que redirige a las noticias.
       const html = await cliente.pedirPagina(`/players/${j.id}/x`)
-      for (const p of parsearSerieValores(html)) (historico[p.fecha] ??= {})[j.id] = p.valor
+      const serie = parsearSerieValores(html)
+      for (const p of serie) (historico[p.fecha] ??= {})[j.id] = p.valor
+      const previa = extraerTemporadaAnterior(serie, inicioTemporada)
+      if (previa !== null) anterior[j.id] = previa
       const f = parsearFicha(html)
       // Solo las jornadas jugadas: las 38 de la temporada, para 522 jugadores,
       // engordan el fichero y la página sin decir nada —las que no se han
@@ -161,20 +183,25 @@ async function main(): Promise<void> {
     }
     // Se guarda sobre la marcha: si esto se corta a mitad, lo leído se queda.
     if (hechos % 25 === 0) {
-      guardar(historico, fichas)
+      guardar(historico, anterior, fichas)
       paso(`  ${hechos}/${porHacer.length}…`)
     }
   }
 
-  guardar(historico, fichas)
+  guardar(historico, anterior, fichas)
   const dias = Object.keys(historico).sort()
-  paso(`Listo: ${hechos} fichas refrescadas, ${dias.length} días de valores (${dias[0]} → ${dias[dias.length - 1]}).`)
+  paso(`Listo: ${hechos} fichas refrescadas (${totalesFicha} por datos actuales), ${dias.length} días actuales y ${Object.keys(anterior).length} series anteriores.`)
   if (fallidos.length > 0) paso(`No pude con ${fallidos.length}:\n  ${fallidos.join('\n  ')}`)
 }
 
-function guardar(historico: Historico, fichas: Record<string, FichaGuardada>): void {
+function guardar(
+  historico: Historico,
+  anterior: Record<string, SerieTemporadaAnterior>,
+  fichas: Record<string, FichaGuardada>,
+): void {
   podar(historico)
   escribir(HISTORICO, historico)
+  escribir(HISTORICO_ANTERIOR, anterior)
   escribir(FICHAS, fichas)
 }
 
