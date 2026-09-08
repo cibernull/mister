@@ -25383,6 +25383,74 @@
   "d": 0
  },
  {
+  "id": "71633",
+  "nombre": "Yanis Musuayi",
+  "valor": 160000,
+  "puntos": 2,
+  "media": 2,
+  "partidos": 1,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -389000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 4,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   2
+  ],
+  "eq": 12,
+  "riv": 3,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 2,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 19,
+  "js": [
+   [
+    1,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    4,
+    2,
+    13,
+    0,
+    "i60"
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "22471",
   "nombre": "Jon Pacheco",
   "valor": 160000,
@@ -25446,74 +25514,6 @@
     5,
     0,
     ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "71633",
-  "nombre": "Yanis Musuayi",
-  "valor": 160000,
-  "puntos": 2,
-  "media": 2,
-  "partidos": 1,
-  "semana": 0,
-  "sem7": 0,
-  "mes": -389000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   2
-  ],
-  "eq": 12,
-  "riv": 3,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 2,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 19,
-  "js": [
-   [
-    1,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    4,
-    2,
-    13,
-    0,
-    "i60"
    ]
   ],
   "p": 0,
@@ -26818,6 +26818,65 @@
   "d": 0
  },
  {
+  "id": "31128",
+  "nombre": "Julen Lobete",
+  "valor": 160000,
+  "puntos": 1,
+  "media": 1,
+  "partidos": 1,
+  "semana": -1000,
+  "sem7": 0,
+  "mes": -98000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 4,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   1
+  ],
+  "eq": 13,
+  "riv": 5,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 1,
+  "mf": 0,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    1,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    2,
+    1,
+    6,
+    0,
+    "i85"
+   ],
+   [
+    3,
+    null,
+    15,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "70927",
   "nombre": "Giorgi Guliashvili",
   "valor": 160000,
@@ -26885,57 +26944,72 @@
   "d": 0
  },
  {
-  "id": "31128",
-  "nombre": "Julen Lobete",
+  "id": "61297",
+  "nombre": "Luken Beitia",
   "valor": 160000,
   "puntos": 1,
   "media": 1,
   "partidos": 1,
-  "semana": -1000,
+  "semana": 0,
   "sem7": 0,
-  "mes": -98000,
+  "mes": null,
   "mk": 0,
   "pv": null,
   "ced": 0,
-  "pos": 4,
-  "est": "injury",
+  "pos": 2,
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
+   1,
    null,
-   1
+   null
   ],
-  "eq": 13,
-  "riv": 5,
-  "casa": 0,
+  "eq": 16,
+  "riv": 2,
+  "casa": 1,
   "gol": 0,
-  "tar": 0,
-  "mc": 1,
-  "mf": 0,
-  "tit": 0,
-  "sup": 1,
+  "tar": 1,
+  "mc": 0,
+  "mf": 1,
+  "tit": 1,
+  "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 25,
+  "edad": 22,
   "js": [
    [
     1,
-    null,
+    1,
+    15,
+    1,
+    "y71"
+   ],
+   [
     2,
+    null,
+    4,
     0,
     ""
    ],
    [
-    2,
-    1,
-    6,
-    0,
-    "i85"
-   ],
-   [
     3,
     null,
-    15,
+    8,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    5,
     0,
     ""
    ]
@@ -27070,80 +27144,6 @@
     4,
     null,
     20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "61297",
-  "nombre": "Luken Beitia",
-  "valor": 160000,
-  "puntos": 1,
-  "media": 1,
-  "partidos": 1,
-  "semana": 0,
-  "sem7": 0,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   1,
-   null,
-   null
-  ],
-  "eq": 16,
-  "riv": 2,
-  "casa": 1,
-  "gol": 0,
-  "tar": 1,
-  "mc": 0,
-  "mf": 1,
-  "tit": 1,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 22,
-  "js": [
-   [
-    1,
-    1,
-    15,
-    1,
-    "y71"
-   ],
-   [
-    2,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    5,
     0,
     ""
    ]
@@ -27893,7 +27893,7 @@
   "mf": 5,
   "tit": 3,
   "sup": 0,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 36,
   "js": [
@@ -28358,7 +28358,7 @@
   "mf": 0,
   "tit": 0,
   "sup": 0,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 24,
   "js": [
@@ -28380,6 +28380,13 @@
     3,
     null,
     1490,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    16,
     0,
     ""
    ]
@@ -32885,6 +32892,46 @@
   "d": 0
  },
  {
+  "id": "65188",
+  "nombre": "Thiago Pitarch",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -6000,
+  "sem7": -46000,
+  "mes": -202000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 15,
+  "riv": 14,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 19,
+  "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "27869",
   "nombre": "Juan Berrocal",
   "valor": 160000,
@@ -32950,46 +32997,6 @@
     ""
    ]
   ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "65188",
-  "nombre": "Thiago Pitarch",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -6000,
-  "sem7": -46000,
-  "mes": -202000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 15,
-  "riv": 14,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 19,
-  "js": [],
   "p": 0,
   "d": 0
  },
@@ -33147,75 +33154,6 @@
   "asis": 0,
   "edad": 23,
   "js": [],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "68711",
-  "nombre": "Obed Vargas",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -36000,
-  "sem7": -57000,
-  "mes": -14000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 2,
-  "riv": 16,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    1,
-    0,
-    ""
-   ]
-  ],
   "p": 0,
   "d": 0
  },
@@ -33453,6 +33391,75 @@
   "d": 0
  },
  {
+  "id": "68711",
+  "nombre": "Obed Vargas",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -36000,
+  "sem7": -57000,
+  "mes": -14000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 2,
+  "riv": 16,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    1,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "70496",
   "nombre": "Alassane Diatta",
   "valor": 160000,
@@ -33576,75 +33583,6 @@
     4,
     null,
     14,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "3368896",
-  "nombre": "Jordi Pesquer",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -37000,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 3,
-  "riv": 12,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 17,
-  "js": [
-   [
-    1,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    19,
     0,
     ""
    ]
@@ -34122,6 +34060,75 @@
     4,
     null,
     3,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "3368896",
+  "nombre": "Jordi Pesquer",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -37000,
+  "mes": null,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 3,
+  "riv": 12,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 17,
+  "js": [
+   [
+    1,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    19,
     0,
     ""
    ]
