@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-08T20:57:40.950Z",
+ "cuando": "2026-09-08T21:08:27.585Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "08/09",
+   "titulo": "Belocian, el quinto elemento",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150841-belocian-el-quinto-elemento",
+   "categoria": "análisis"
   },
   {
    "fecha": "08/09",
@@ -476,12 +482,6 @@
    "titulo": "Chema Aragón analiza en profundidad el fichaje de André Almeida por el Racing",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150766-chema-aragon-analiza-en-profundidad-el-fichaje-de-andre-almeida-por-el-racing",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Almeida, Iván Martín y Canales, sociedad creativa de emergencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150765-almeida-ivan-martin-y-canales-sociedad-creativa-de-emergencia",
-   "categoria": "análisis"
   }
  ]
 }
