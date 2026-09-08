@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-08T11:45:10.612Z",
+ "cuando": "2026-09-08T11:55:41.845Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -1081,7 +1081,10 @@
    "prob": 50,
    "sancionado": 0,
    "fuera": 0,
-   "min": 323
+   "min": 323,
+   "lesion": "Contusión en el tobillo",
+   "desde": "06/09 (2 días)",
+   "hasta": null
   },
   "29163": {
    "prob": 80,
