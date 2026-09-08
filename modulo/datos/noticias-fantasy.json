@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-08T17:38:15.392Z",
+ "cuando": "2026-09-08T18:08:29.721Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "08/09",
+   "titulo": "Simeone habla sobre la titularidad de Julián Álvarez, Jonathan David y Sorloth",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150831-simeone-habla-sobre-la-titularidad-de-julian-alvarez-jonathan-david-y-sorloth",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "08/09",
@@ -476,12 +482,6 @@
    "titulo": "Osasuna se ejercita en Tajonar sin los tres lesionados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150756-osasuna-se-ejercita-en-tajonar-sin-los-tres-lesionados",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Etta Eyong sufre una lesión en el recto anterior de la pierna derecha",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150755-etta-eyong-sufre-una-lesion-en-el-recto-anterior-de-la-pierna-derecha",
-   "categoria": "lesión"
   }
  ]
 }
