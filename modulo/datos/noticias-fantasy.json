@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-08T19:38:13.184Z",
+ "cuando": "2026-09-08T20:08:14.066Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -29,7 +29,13 @@
   },
   {
    "fecha": "08/09",
-   "titulo": "El Espanyol arranca la semana con Gorosabel integrado y Calatrava pendiente de su evolución",
+   "titulo": "El Rayo inicia la semana sin Isi, Kumbulla ni Vertrouwd, pero con De Frutos recuperado",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150836-rayo-inicia-semana-sin-isi-palazon-kumbulla-vertrouwd-batalla-luiz-felipe-de-frutos",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "08/09",
+   "titulo": "El Espanyol arranca la semana con Gorosabel y pendiente de Calatrava",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150835-espanyol-arranca-semana-gorosabel-integrado-calatrava-pendiente-evolucion",
    "categoria": "entrenamiento"
   },
@@ -476,12 +482,6 @@
    "titulo": "Adrián Niño sigue acumulando trabajo grupal en una sesión con cuatro bajas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150761-adrian-nino-sigue-acumulando-sesiones-de-trabajo-en-una-sesion-con-cuatro-bajas",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Stassin derriba la puerta... y el sistema",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150760-stassin-derriba-la-puerta-y-el-sistema",
-   "categoria": "análisis"
   }
  ]
 }
