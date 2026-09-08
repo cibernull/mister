@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-08T18:08:29.721Z",
+ "cuando": "2026-09-08T18:38:29.556Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "08/09",
+   "titulo": "El Atlético se ejercita en Anfield sin Sørloth ni Arnau Ortiz",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150832-atletico-ejercita-anfield-sin-sorloth-arnau-ortiz",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "08/09",
@@ -476,12 +482,6 @@
    "titulo": "Catalán pide calma con Ceballos y analiza la previa del Betis en Champions",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150757-catalan-pide-calma-con-ceballos-y-analiza-la-previa-del-betis-en-champions",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Osasuna se ejercita en Tajonar sin los tres lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150756-osasuna-se-ejercita-en-tajonar-sin-los-tres-lesionados",
-   "categoria": "entrenamiento"
   }
  ]
 }
