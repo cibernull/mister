@@ -4793,6 +4793,23 @@
    "puntos": 9,
    "media": 2.3,
    "racha": "2,3,6,-2"
+  },
+  {
+   "idTransfer": 546394274,
+   "idJugador": "55009",
+   "nombre": "Fermín López",
+   "de": "Mister",
+   "a": "Saiyans FC (Fran)",
+   "idUcDe": 0,
+   "idUcA": 12493752,
+   "importe": 17100000,
+   "tipo": "normal",
+   "cuando": "2026-09-08 17:00:19",
+   "valor": 17014000,
+   "posicion": 3,
+   "puntos": 49,
+   "media": 12.3,
+   "racha": "13,18,4,14"
   }
  ],
  "salidas": [

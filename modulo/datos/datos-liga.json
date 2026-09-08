@@ -999,9 +999,24 @@
    "id": "17615",
    "nombre": "Sergio Herrera",
    "valor": 8034000
+  },
+  {
+   "id": "55009",
+   "nombre": "Fermín López",
+   "valor": 17014000
   }
  ],
  "movimientos": [
+  {
+   "id": "55009",
+   "nombre": "Fermín López",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 17100000,
+   "tipo": "normal",
+   "fecha": "2026-09-08 17:00:19",
+   "pos": 3
+  },
   {
    "id": "17615",
    "nombre": "Sergio Herrera",
@@ -6721,6 +6736,14 @@
      "op": "normal"
     },
     {
+     "j": "Fermín López",
+     "id": "55009",
+     "tipo": "compra",
+     "importe": 17100000,
+     "fecha": "2026-09-08",
+     "op": "normal"
+    },
+    {
      "j": "Sergio Camello",
      "id": "17290",
      "tipo": "compra",
@@ -7313,6 +7336,12 @@
     "54817": {
      "nombre": "Arda Güler",
      "compras": 13110000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "55009": {
+     "nombre": "Fermín López",
+     "compras": 17100000,
      "ventas": 0,
      "ops": 1
     },
