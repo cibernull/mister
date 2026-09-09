@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T09:49:13.863Z",
+ "cuando": "2026-09-09T10:08:12.509Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,24 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Valverde entra en riesgo máximo de rotación",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150864-valverde-entra-en-riesgo-maximo-de-rotacion",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Las pruebas complementarias confirman la rotura de Kiko Femenía",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150863-las-pruebas-complementarias-confirman-la-rotura-de-kiko-femenia",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Gulácsi tiene argumentos para asentar el cambio",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150862-gulacsi-tiene-argumentos-para-asentar-el-cambio",
+   "categoria": "análisis"
   },
   {
    "fecha": "09/09",
@@ -464,24 +482,6 @@
    "titulo": "Moi Gómez se someterá a pruebas este martes y apunta a baja ante el Espanyol",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150788-moi-gomez-se-sometera-a-pruebas-este-martes-y-apunta-a-baja-ante-el-espanyol",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Fofana gana metros en la carrera por el once",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150787-fofana-gana-metros-en-la-carrera-por-el-once",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Íñigo Pérez confirma las bajas de Foyth y Romero en Dortmund y habla de la portería",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150786-inigo-perez-confirma-las-bajas-de-foyth-y-romero-en-dortmund-y-habla-de-la-porteria",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Bordalás analiza el empate, las expulsiones, el cansancio y confirma la lesión de Femenía",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150785-bordalas-analiza-el-empate-las-expulsiones-el-cansancio-y-confirma-la-lesion-de-femenia",
-   "categoria": "rueda de prensa"
   }
  ]
 }
