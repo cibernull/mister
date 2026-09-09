@@ -1,14 +1,8 @@
 {
- "cuando": "2026-09-09T20:38:12.626Z",
+ "cuando": "2026-09-09T21:08:27.350Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "09/09",
-   "titulo": "Sigue en directo el Liverpool - Atlético",
-   "url": "https://www.futbolfantasy.com/partidos/24118-liverpool-atletico",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 5 actualizadas",
@@ -32,6 +26,24 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "El Atleti inicia la Champions con un déjà vu",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150918-el-atleti-inicia-la-champions-con-deja-vu",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Champions League: Liverpool 2-1 Atlético. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24118-liverpool-atletico",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Bordalás llama a Boselli y Sazonov a su despacho",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150917-bordalas-cita-a-boselli-y-sazonov-al-despacho",
+   "categoria": "análisis"
   },
   {
    "fecha": "09/09",
@@ -469,18 +481,6 @@
    "fecha": "08/09",
    "titulo": "El Espanyol arranca la semana con Gorosabel y pendiente de Calatrava",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150835-espanyol-arranca-semana-gorosabel-integrado-calatrava-pendiente-evolucion",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "El Deportivo inicia la semana con Noé Carrillo como única baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150834-deportivo-inicia-semana-noe-carrillo-unica-baja",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "La Real Sociedad inicia la semana con Odriozola como única baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150833-real-sociedad-inicia-semana-odriozola-unica-baja",
    "categoria": "entrenamiento"
   }
  ]
