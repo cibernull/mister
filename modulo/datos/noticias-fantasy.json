@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T11:08:14.210Z",
+ "cuando": "2026-09-09T11:38:13.443Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,30 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "El Betis toma aire tras Lille pendiente de Abde, Ruibal y Llorente",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150872-el-betis-toma-aire-tras-lille-pendiente-de-abde-ruibal-y-llorente",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "El Comité sanciona con dos partidos a De Frutos y con uno a Fran Pérez",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150871-el-comite-sanciona-con-dos-partidos-a-de-frutos-y-con-uno-a-fran-perez",
+   "categoria": "sanción"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "El Real Madrid descansa tras la Champions con cuatro jugadores en la enfermería",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150870-el-real-madrid-descansa-tras-la-champions-con-cuatro-jugadores-en-la-enfermeria",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Kumbulla ya entrena con el grupo y se acerca al alta médica",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150869-kumbulla-ya-entrena-con-el-grupo-y-se-acerca-al-alta-medica",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "09/09",
@@ -203,7 +227,7 @@
   },
   {
    "fecha": "08/09",
-   "titulo": "El Rayo inicia la semana sin Isi, Kumbulla ni Vertrouwd, pero con De Frutos recuperado",
+   "titulo": "El Rayo inicia la semana sin Isi ni Vertrouwd, pero con De Frutos y Kumbulla recuperados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150836-rayo-inicia-semana-sin-isi-palazon-kumbulla-vertrouwd-batalla-luiz-felipe-de-frutos",
    "categoria": "entrenamiento"
   },
@@ -457,30 +481,6 @@
    "fecha": "07/09",
    "titulo": "El Levante se ejercitó este lunes con la baja de Etta Eyong",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150796-el-levante-se-ejercito-este-lunes-con-la-baja-de-etta-eyong",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "El Espanyol descansó pendiente del tobillo de Calatrava y la puesta a punto de Gorosabel",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150795-el-espanyol-descanso-pendientes-del-tobillo-de-calatrava-y-la-puesta-a-punto-de-gorosabel",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "El Alavés descansó este lunes pendiente de la evolución de Toni Martínez",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150794-el-alaves-descanso-este-lunes-pendiente-de-la-evolucion-de-toni-martinez",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Jon Martín es expulsado en el Martínez Valero y se pierde la jornada 5",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150793-jon-martin-es-expulsado-en-el-martinez-valero-y-se-pierde-la-jornada-5",
-   "categoria": "sanción"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "El Sevilla arranca la semana con Sangante de baja y Vargas pendiente de evolución",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150792-el-sevilla-arranca-la-semana-con-sangante-de-baja-y-vargas-pendiente-de-evolucion",
    "categoria": "entrenamiento"
   }
  ]
