@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-09T18:08:23.470Z",
+ "cuando": "2026-09-09T18:38:28.505Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "09/09",
-   "titulo": "Alineaciones confirmadas del Barcelona - Feyenoord",
+   "titulo": "Sigue en directo el Barcelona - Feyenoord",
    "url": "https://www.futbolfantasy.com/partidos/24116-barcelona-feyenoord",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -32,6 +32,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Dumfries llegará al partido del Rayo con más desgaste que Trent",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150906-dumfries-llegara-al-partido-del-rayo-con-mas-desgaste-que-trent",
+   "categoria": "análisis"
   },
   {
    "fecha": "09/09",
@@ -476,12 +482,6 @@
    "titulo": "El Levante descansa con Etta Eyong como único lesionado",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150823-el-levante-descansa-con-etta-eyong-como-unico-lesionado",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Osasuna descansa este martes con cuatro futbolistas en la enfermería",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150822-osasuna-descansa-este-martes-con-cuatro-futbolistas-en-la-enfermeria",
-   "categoria": "equipo"
   }
  ]
 }
