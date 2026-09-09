@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T10:38:08.360Z",
+ "cuando": "2026-09-09T11:08:14.210Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Santi Ovalle filtra el posible once de Flick para recibir al Feyenoord",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150868-santi-ovalle-filtra-el-posible-once-de-flick-para-recibir-al-feyenoord",
+   "categoria": "análisis"
   },
   {
    "fecha": "09/09",
@@ -476,12 +482,6 @@
    "titulo": "El Sevilla arranca la semana con Sangante de baja y Vargas pendiente de evolución",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150792-el-sevilla-arranca-la-semana-con-sangante-de-baja-y-vargas-pendiente-de-evolucion",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Parte médico oficial de Kiko Femenía, pendiente de pruebas complementarias",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150791-parte-medico-oficial-de-kiko-femenia-pendiente-de-pruebas-complementarias",
-   "categoria": "lesión"
   }
  ]
 }
