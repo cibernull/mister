@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T08:38:14.577Z",
+ "cuando": "2026-09-09T09:08:28.481Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Kike Salas gestiona las cargas mientras Vargas y Sangante siguen recuperándose",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150854-kike-salas-gestiona-las-cargas-mientras-vargas-y-sangante-siguen-recuperandose",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "09/09",
@@ -476,12 +482,6 @@
    "titulo": "El Coliseum premia la resistencia",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150779-el-coliseum-premia-la-resistencia",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Jornada 4: Getafe 1-1 Celta. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22457-getafe-celta",
-   "categoria": "partido"
   }
  ]
 }
