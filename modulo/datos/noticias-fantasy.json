@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T13:08:12.362Z",
+ "cuando": "2026-09-09T13:38:16.319Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,36 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "El Málaga retoma la actividad sin los cuatro lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150882-el-malaga-retoma-la-actividad-sin-los-cuatro-lesionados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Nacho Pérez resiste las primeras sacudidas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150881-nacho-perez-resiste-las-primeras-sacudidas",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Cerezo habla de Julián Alvarez, Llorente y sus sensaciones antes del Liverpool",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150880-cerezo-habla-de-julian-alvarez-llorente-y-sus-sensaciones-antes-del-liverpool",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Laporta define los objetivos de la temporada y habla de Yamal, Pedri, Raphinha y el Balón de Oro",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150879-laporta-define-los-objetivos-de-la-temporada-y-habla-de-yamal-pedri-raphinha-y-el-balon-de-or",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "El Villarreal recupera fuerzas pendiente de Juan Foyth y Carlos Romero",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150878-el-villarreal-recupera-fuerzas-pendiente-de-juan-foyth-y-carlos-romero",
+   "categoria": "equipo"
   },
   {
    "fecha": "09/09",
@@ -258,7 +288,7 @@
   {
    "fecha": "08/09",
    "titulo": "El Rayo inicia la semana sin Isi ni Vertrouwd, pero con De Frutos y Kumbulla recuperados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150836-rayo-inicia-semana-sin-isi-palazon-kumbulla-vertrouwd-batalla-luiz-felipe-de-frutos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150836-rayo-inicia-semana-sin-isi-palazon-vertrouwd-batalla-luiz-felipe-de-frutos",
    "categoria": "entrenamiento"
   },
   {
@@ -452,36 +482,6 @@
    "titulo": "Sangante se marcha tocado de la sesión y Vargas continúa al margen",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150804-sangante-se-marcha-tocado-de-la-sesion-y-vargas-continua-al-margen",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Parte médico oficial de Facundo Garcés: rotura de ligamento cruzado anterior",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150803-parte-medico-oficial-de-facundo-garces-rotura-de-ligamento-cruzado-anterior",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Alineaciones probables y previa fantasy del B. Dortmund - Villarreal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150802-alineaciones-probables-y-previa-fantasy-del-b-dortmund-villarreal",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Alineaciones probables y previa fantasy del Lille - Betis",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150801-alineaciones-probables-y-previa-fantasy-del-lille-betis",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Posibles alineaciones y previa fantasy del Real Madrid - Inter",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150800-posibles-alineaciones-y-previa-fantasy-del-real-madrid-inter",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Anselmi analiza la derrota, los errores individuales y habla de Lemar, Revivo, Dituro y la defensa de tres",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150799-anselmi-analiza-la-derrota-los-errores-individuales-y-habla-de-lemar-revivo-dituro-y-la-defen",
-   "categoria": "rueda de prensa"
   }
  ]
 }
