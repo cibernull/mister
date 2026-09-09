@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T17:38:09.380Z",
+ "cuando": "2026-09-09T18:08:23.470Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -32,6 +32,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Febas continúa trabajando parcialmente a la espera del alta médica",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150903-febas-incorpora-parcialmente-entrenamiento-celta",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "09/09",
@@ -476,12 +482,6 @@
    "titulo": "Osasuna descansa este martes con cuatro futbolistas en la enfermería",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150822-osasuna-descansa-este-martes-con-cuatro-futbolistas-en-la-enfermeria",
    "categoria": "equipo"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Jesús Vázquez recibe cuidados en el tobillo tras la sesión",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150821-jesus-vazquez-recibe-cuidados-en-el-tobillo-tras-la-sesion",
-   "categoria": "lesión"
   }
  ]
 }
