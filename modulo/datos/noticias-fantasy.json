@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T10:08:12.509Z",
+ "cuando": "2026-09-09T10:38:08.360Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,24 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Flick anuncia la lista para recibir al Feyenoord",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150867-flick-anuncia-la-lista-para-recibir-al-feyenoord",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Canales, Guruzeta y Vivian siguen al margen en Lezama",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150866-canales-guruzeta-y-vivian-siguen-al-margen-en-lezama",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Cucurella y Carreras, una alternancia necesaria antes del derbi",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150865-cucurella-y-carreras-una-alternancia-necesaria-antes-del-derbi",
+   "categoria": "análisis"
   },
   {
    "fecha": "09/09",
@@ -463,24 +481,6 @@
    "fecha": "07/09",
    "titulo": "Parte médico oficial de Kiko Femenía, pendiente de pruebas complementarias",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150791-parte-medico-oficial-de-kiko-femenia-pendiente-de-pruebas-complementarias",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Ceballos y Lo Celso se ejercitan con normalidad en Lille",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150790-ceballos-y-lo-celso-se-ejercitan-con-normalidad-en-lille",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Foulquier sufre una nueva lesión muscular y estará varias semanas de baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150789-foulquier-sufre-una-nueva-lesion-muscular-y-estara-varias-semanas-de-baja",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Moi Gómez se someterá a pruebas este martes y apunta a baja ante el Espanyol",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150788-moi-gomez-se-sometera-a-pruebas-este-martes-y-apunta-a-baja-ante-el-espanyol",
    "categoria": "lesión"
   }
  ]
