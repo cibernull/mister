@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T18:55:49.312Z",
+ "cuando": "2026-09-09T19:08:15.687Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -32,6 +32,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Cubarsí, Pedri y Rodri, en elevado riesgo de rotación contra el Levante",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150910-cubarsi-pedri-y-rodri-en-elevado-riesgo-de-rotacion-contra-el-levante",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "El Barça extiende la tormenta hacia Europa",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150909-el-barca-extiende-la-tormenta-hacia-europa",
+   "categoria": "análisis"
   },
   {
    "fecha": "09/09",
@@ -470,18 +482,6 @@
    "titulo": "El Málaga descansa pendiente de la evolución de Adrián Niño y Calero",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150827-el-malaga-descansa-pendiente-de-la-evolucion-de-adrian-nino-y-calero",
    "categoria": "equipo"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Parte médico post-operatorio de Aarón Ochoa y periodo estimado de baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150826-parte-medico-post-operatorio-de-aaron-ochoa-y-periodo-estimado-de-baja",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Revivo mete presión a Valera",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150825-revivo-mete-presion-a-valera",
-   "categoria": "análisis"
   }
  ]
 }
