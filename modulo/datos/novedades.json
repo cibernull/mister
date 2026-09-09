@@ -1,5 +1,23 @@
 [
  {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "22502",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "54817",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "70638",
+  "entra": true
+ },
+ {
   "tipo": "duenio",
   "dia": "2026-09-08",
   "id": "63",
