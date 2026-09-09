@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T02:08:11.684Z",
+ "cuando": "2026-09-09T03:08:29.834Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Alineaciones probables para la jornada 5 de LaLiga 26/27 en Youtube: VERSIÓN EXTENDIDA",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150851-alineaciones-probables-para-la-jornada-5-de-laliga-26-27-en-youtube-version-extendida",
+   "categoria": "análisis"
   },
   {
    "fecha": "09/09",
@@ -476,12 +482,6 @@
    "titulo": "Jornada 4: Getafe 1-1 Celta. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22457-getafe-celta",
    "categoria": "partido"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Marc Casadó inició su rodaje en el caos de La Cerámica",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150778-marc-casado-inicio-su-rodaje-en-el-caos-de-la-ceramica",
-   "categoria": "análisis"
   }
  ]
 }

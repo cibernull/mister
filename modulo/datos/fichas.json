@@ -14774,7 +14774,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-07",
+  "dia": "2026-09-09",
   "partidos": 0
  },
  "62904": {
@@ -24488,5 +24488,99 @@
   "asistencias": 0,
   "dia": "2026-09-09",
   "partidos": 0
+ },
+ "5235247": {
+  "nombre": "Xanet Olaiz",
+  "posicion": 2,
+  "goles": 0,
+  "tarjetas": 0,
+  "mediaCasa": 2,
+  "mediaFuera": 0,
+  "edad": 21,
+  "titular": null,
+  "titularidades": 0,
+  "suplencias": 1,
+  "jornadas": [
+   {
+    "jornada": 1,
+    "puntos": null,
+    "rival": 9,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 2,
+    "puntos": null,
+    "rival": 14,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 3,
+    "puntos": null,
+    "rival": 20,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 4,
+    "puntos": 2,
+    "rival": 50,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
+   }
+  ],
+  "asistencias": 0,
+  "dia": "2026-09-09",
+  "partidos": 1
+ },
+ "5235428": {
+  "nombre": "Óscar López",
+  "posicion": 3,
+  "goles": 0,
+  "tarjetas": 0,
+  "mediaCasa": 1,
+  "mediaFuera": 0,
+  "edad": 20,
+  "titular": null,
+  "titularidades": 0,
+  "suplencias": 1,
+  "jornadas": [
+   {
+    "jornada": 1,
+    "puntos": null,
+    "rival": 48,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 2,
+    "puntos": null,
+    "rival": 1490,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 3,
+    "puntos": null,
+    "rival": 50,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 4,
+    "puntos": 1,
+    "rival": 5,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
+   }
+  ],
+  "asistencias": 0,
+  "dia": "2026-09-09",
+  "partidos": 1
  }
 }
