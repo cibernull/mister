@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T21:08:27.350Z",
+ "cuando": "2026-09-09T21:38:21.777Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Simeone explica el bajón en la segunda parte y habla de Cuti Romero y Julián Alvarez",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150920-simeone-explica-el-bajon-en-la-segunda-parte-y-habla-de-cuti-romero-y-julian-alvarez",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Jonathan David camina solo en su debut",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150919-jonathan-david-camina-solo-en-su-debut",
+   "categoria": "análisis"
   },
   {
    "fecha": "09/09",
@@ -470,18 +482,6 @@
    "titulo": "TOP PICKS J5: Los mejores por posición en Biwenger, por Scouting BWG",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150837-top-picks-j5-los-mejores-por-posicion-en-biwenger-por-scouting-bwg",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "El Rayo inicia la semana sin Isi ni Vertrouwd, pero con De Frutos y Kumbulla recuperados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150836-rayo-inicia-semana-sin-isi-palazon-vertrouwd-batalla-luiz-felipe-de-frutos",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "El Espanyol arranca la semana con Gorosabel y pendiente de Calatrava",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150835-espanyol-arranca-semana-gorosabel-integrado-calatrava-pendiente-evolucion",
-   "categoria": "entrenamiento"
   }
  ]
 }
