@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T09:38:32.706Z",
+ "cuando": "2026-09-09T09:49:13.863Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "El Racing repite efectivos con Andrés Martín y Eriksson al margen",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150861-el-racing-repite-efectivos-con-andres-martin-y-eriksson-al-margen",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "09/09",
@@ -475,12 +481,6 @@
    "fecha": "07/09",
    "titulo": "Bordalás analiza el empate, las expulsiones, el cansancio y confirma la lesión de Femenía",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150785-bordalas-analiza-el-empate-las-expulsiones-el-cansancio-y-confirma-la-lesion-de-femenia",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Giráldez analiza el empate, la mala gestión de la superioridad numérica y el partido de Hugo González",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150784-giraldez-analiza-el-empate-la-mala-gestion-de-la-superioridad-numerica-y-el-partido-de-hugo-g",
    "categoria": "rueda de prensa"
   }
  ]
