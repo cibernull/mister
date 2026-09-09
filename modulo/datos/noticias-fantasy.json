@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-09T15:38:30.691Z",
+ "cuando": "2026-09-09T16:08:14.441Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "09/09",
+   "titulo": "Alineaciones confirmadas del Barcelona - Feyenoord",
+   "url": "https://www.futbolfantasy.com/partidos/24116-barcelona-feyenoord",
+   "categoria": "rueda de prensa"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 5 actualizadas",
@@ -26,6 +32,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "El once de Flick en Champions deja a varios futbolistas descansando para el Ciutat",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150897-el-once-de-flick-en-champions-deja-a-varios-futbolistas-descansando-para-el-ciutat",
+   "categoria": "análisis"
   },
   {
    "fecha": "09/09",
@@ -470,18 +482,6 @@
    "titulo": "El Celta descansa este martes pendiente de la evolución de Febas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150820-el-celta-descansa-este-martes-pendiente-de-la-evolucion-de-febas",
    "categoria": "equipo"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Flick habla de Lamine Yamal, Gordon, Bisiwu y De Jong antes del duelo europeo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150819-flick-habla-de-lamine-yamal-gordon-bisiwu-y-de-jong-antes-del-duelo-europeo",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Parte médico oficial de Moi Gómez y periodo estimado de baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150818-parte-medico-oficial-de-moi-gomez-y-periodo-estimado-de-baja",
-   "categoria": "lesión"
   }
  ]
 }
