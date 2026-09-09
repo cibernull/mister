@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-09T18:38:28.505Z",
+ "cuando": "2026-09-09T18:51:42.500Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "09/09",
-   "titulo": "Sigue en directo el Barcelona - Feyenoord",
-   "url": "https://www.futbolfantasy.com/partidos/24116-barcelona-feyenoord",
-   "categoria": "análisis"
+   "titulo": "Alineaciones confirmadas del Liverpool - Atlético",
+   "url": "https://www.futbolfantasy.com/partidos/24118-liverpool-atletico",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
@@ -32,6 +32,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Champions League: Barcelona 5-1 Feyenoord. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24116-barcelona-feyenoord",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Simeone explica el cambio de idea con Julian y destaca la importancia de controlar el partido",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150907-simeone-explica-el-cambio-de-idea-con-julian-y-destaca-la-importancia-de-controlar-el-partido",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "09/09",
@@ -470,18 +482,6 @@
    "titulo": "Revivo mete presión a Valera",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150825-revivo-mete-presion-a-valera",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "La FIFA deniega la apelación del Levante para el fichaje de Sergio Akieme",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150824-la-fifa-deniega-la-apelacion-del-levante-para-el-fichaje-de-sergio-akieme",
-   "categoria": "mercado"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "El Levante descansa con Etta Eyong como único lesionado",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150823-el-levante-descansa-con-etta-eyong-como-unico-lesionado",
-   "categoria": "entrenamiento"
   }
  ]
 }
