@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T11:38:13.443Z",
+ "cuando": "2026-09-09T12:08:37.235Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Otorbi asume responsabilidades entre los escombros",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150873-otorbi-asume-responsabilidades-entre-los-escombros",
+   "categoria": "análisis"
   },
   {
    "fecha": "09/09",
@@ -476,12 +482,6 @@
    "titulo": "Jornada 4: Elche 2-3 Real Sociedad. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22455-elche-real-sociedad",
    "categoria": "partido"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "El Levante se ejercitó este lunes con la baja de Etta Eyong",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150796-el-levante-se-ejercito-este-lunes-con-la-baja-de-etta-eyong",
-   "categoria": "entrenamiento"
   }
  ]
 }

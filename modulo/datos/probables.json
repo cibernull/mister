@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T09:49:12.933Z",
+ "cuando": "2026-09-09T12:08:35.946Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -523,7 +523,7 @@
    "min": 269
   },
   "15107": {
-   "prob": 60,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 249
@@ -1339,7 +1339,7 @@
    "min": 138,
    "lesion": "Lesión en los isquiotibiales",
    "desde": "07/09 (2 días)",
-   "hasta": null
+   "hasta": "octubre"
   },
   "49275": {
    "prob": 50,
@@ -1549,7 +1549,7 @@
    "min": 90
   },
   "55666": {
-   "prob": 40,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 111
