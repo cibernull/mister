@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T19:38:15.603Z",
+ "cuando": "2026-09-09T20:08:11.854Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -32,6 +32,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Pau Navarro toma ventaja sobre Logan Costa",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150913-pau-navarro-toma-ventaja-sobre-logan-costa",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Flick destaca las rotaciones y habla de Yamal, Olmo, Raphinha, Gabriel Jesús, Adeyemi y Pedri",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150912-flick-destaca-las-rotaciones-y-habla-de-yamal-olmo-raphinha-gabriel-jesus-adeyemi-y-pedri",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "09/09",
@@ -352,6 +364,12 @@
    "categoria": "rueda de prensa"
   },
   {
+   "fecha": "09/09",
+   "titulo": "Flick destaca las rotaciones y habla de Yamal, Olmo, Raphinha, Gabriel Jesús, Adeyemi y Pedri",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/flick-destaca-las-rotaciones-y-habla-de-yamal-olmo-raphinha-gabriel-jesus-adeyemi-y-pedri",
+   "categoria": "rueda de prensa"
+  },
+  {
    "fecha": "08/09",
    "titulo": "Mourinho valora el triunfo y habla de Brahim, Diomande, Vinicius, Trent, Tchouaméni y el Inter",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150848-mourinho-valora-el-triunfo-y-habla-de-brahim-diomande-vinicius-trent-y-el-inter",
@@ -464,24 +482,6 @@
    "titulo": "Sangante sufre un esguince en el tobillo derecho",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150830-sangante-sufre-esguince-tobillo-derecho",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "¡Sigue a las 16:30h en Twitch y Youtube la información fantasy para las alineaciones probables!",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150829-sigue-a-las-16-30h-en-twitch-y-youtube-la-informacion-fantasy-para-las-alineaciones-probables",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Yeremay, más cerca del once, pero todavía lejos del prime",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150828-yeremay-mas-cerca-del-once-pero-todavia-lejos-del-prime",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "El Málaga descansa pendiente de la evolución de Adrián Niño y Calero",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150827-el-malaga-descansa-pendiente-de-la-evolucion-de-adrian-nino-y-calero",
-   "categoria": "equipo"
   }
  ]
 }
