@@ -4912,6 +4912,23 @@
    "puntos": 7,
    "media": 3.5,
    "racha": "-,4,-,3"
+  },
+  {
+   "idTransfer": 546701830,
+   "idJugador": "22595",
+   "nombre": "Joaquín Muñoz",
+   "de": "Mario80",
+   "a": "Mister",
+   "idUcDe": 13435216,
+   "idUcA": 0,
+   "importe": 2173000,
+   "tipo": "normal",
+   "cuando": "2026-09-09 17:12:59",
+   "valor": 2173000,
+   "posicion": 3,
+   "puntos": 14,
+   "media": 3.5,
+   "racha": "4,4,2,4"
   }
  ],
  "salidas": [

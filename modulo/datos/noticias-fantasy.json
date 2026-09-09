@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T15:08:33.616Z",
+ "cuando": "2026-09-09T15:38:30.691Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Vivian seguirá de baja hasta después de la próxima ventana FIFA",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150896-vivian-seguira-de-baja-hasta-despues-de-la-proxima-ventana-fifa",
+   "categoria": "lesión"
   },
   {
    "fecha": "09/09",
@@ -476,12 +482,6 @@
    "titulo": "Parte médico oficial de Moi Gómez y periodo estimado de baja",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150818-parte-medico-oficial-de-moi-gomez-y-periodo-estimado-de-baja",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Del Nido Carrasco hace balance del mercado y habla de Fofana, Luis García y Juan Ignacio Navarro",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150817-del-nido-carrasco-hace-balance-del-mercado-y-habla-de-fofana-luis-garcia-y-juan-ignacio-navar",
-   "categoria": "rueda de prensa"
   }
  ]
 }

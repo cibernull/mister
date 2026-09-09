@@ -1014,9 +1014,24 @@
    "id": "63871",
    "nombre": "Marc Aguado",
    "valor": 3659000
+  },
+  {
+   "id": "22595",
+   "nombre": "Joaquín Muñoz",
+   "valor": 2173000
   }
  ],
  "movimientos": [
+  {
+   "id": "22595",
+   "nombre": "Joaquín Muñoz",
+   "de": "Mario80",
+   "a": null,
+   "importe": 2173000,
+   "tipo": "normal",
+   "fecha": "2026-09-09 17:12:59",
+   "pos": 3
+  },
   {
    "id": "432",
    "nombre": "José Luis Gayà",
@@ -6396,6 +6411,14 @@
      "op": "normal"
     },
     {
+     "j": "Joaquín Muñoz",
+     "id": "22595",
+     "tipo": "venta",
+     "importe": 2173000,
+     "fecha": "2026-09-09",
+     "op": "normal"
+    },
+    {
      "j": "Marc Bartra",
      "id": "63",
      "tipo": "venta",
@@ -6735,6 +6758,12 @@
      "nombre": "Sergio Herrera",
      "compras": 0,
      "ventas": 8377200,
+     "ops": 1
+    },
+    "22595": {
+     "nombre": "Joaquín Muñoz",
+     "compras": 0,
+     "ventas": 2173000,
      "ops": 1
     },
     "27518": {
