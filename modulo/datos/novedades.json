@@ -146,6 +146,202 @@
   "entra": true
  },
  {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "29",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "128",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-09",
+  "id": "208",
+  "de": "Cacaculopedopis",
+  "a": null
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-09",
+  "id": "432",
+  "de": "Cacaculopedopis",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "607",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "1684",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "14432",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-09",
+  "id": "14911",
+  "de": null,
+  "a": "Cacaculopedopis"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "14911",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "15109",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "17450",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "17989",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "22885",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "29205",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "56925",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "56971",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "58992",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "59042",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "59484",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "59532",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-09",
+  "id": "63871",
+  "de": "Neky F.C. (Sergio)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "63871",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "69889",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "70181",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "70934",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "71012",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "71140",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "71141",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "71149",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "71795",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "3317698",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "3845074",
+  "entra": true
+ },
+ {
   "tipo": "duenio",
   "dia": "2026-09-08",
   "id": "63",

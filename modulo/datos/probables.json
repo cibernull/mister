@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T12:38:30.509Z",
+ "cuando": "2026-09-09T15:08:32.313Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -16,7 +16,7 @@
    "min": 331
   },
   "29": {
-   "prob": 70,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 245
@@ -502,13 +502,13 @@
    "min": 334
   },
   "14791": {
-   "prob": 40,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 178,
-   "lesion": "Trabajo al margen",
+   "lesion": "Lesión en los isquiotibiales",
    "desde": "08/09 (1 día)",
-   "hasta": null
+   "hasta": "octubre"
   },
   "14811": {
    "prob": 95,
@@ -742,7 +742,7 @@
    "min": 316
   },
   "22471": {
-   "prob": 10,
+   "prob": 20,
    "sancionado": 0,
    "fuera": 0,
    "min": 21
@@ -3031,7 +3031,7 @@
    "min": 99
   },
   "3849388": {
-   "prob": 90,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 57

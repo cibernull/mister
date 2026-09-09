@@ -1009,9 +1009,54 @@
    "id": "52162",
    "nombre": "Pape Gueye",
    "valor": 11778000
+  },
+  {
+   "id": "63871",
+   "nombre": "Marc Aguado",
+   "valor": 3659000
   }
  ],
  "movimientos": [
+  {
+   "id": "432",
+   "nombre": "José Luis Gayà",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 2508800,
+   "tipo": "normal",
+   "fecha": "2026-09-09 17:05:15",
+   "pos": 2
+  },
+  {
+   "id": "208",
+   "nombre": "Moi Gómez",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 1304160,
+   "tipo": "normal",
+   "fecha": "2026-09-09 17:05:10",
+   "pos": 3
+  },
+  {
+   "id": "14911",
+   "nombre": "Álvaro García",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 9082371,
+   "tipo": "normal",
+   "fecha": "2026-09-09 17:00:18",
+   "pos": 3
+  },
+  {
+   "id": "63871",
+   "nombre": "Marc Aguado",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 3797040,
+   "tipo": "normal",
+   "fecha": "2026-09-09 16:53:26",
+   "pos": 3
+  },
   {
    "id": "70638",
    "nombre": "Anthony Gordon",
@@ -3867,6 +3912,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Marc Aguado",
+     "id": "63871",
+     "tipo": "venta",
+     "importe": 3797040,
+     "fecha": "2026-09-09",
+     "op": "normal"
+    },
+    {
      "j": "Pablo Maffeo",
      "id": "8953",
      "tipo": "venta",
@@ -4578,6 +4631,12 @@
      "nombre": "Álvaro Núñez",
      "compras": 0,
      "ventas": 690540,
+     "ops": 1
+    },
+    "63871": {
+     "nombre": "Marc Aguado",
+     "compras": 0,
+     "ventas": 3797040,
      "ops": 1
     },
     "65111": {
@@ -5549,6 +5608,30 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Álvaro García",
+     "id": "14911",
+     "tipo": "compra",
+     "importe": 9082371,
+     "fecha": "2026-09-09",
+     "op": "normal"
+    },
+    {
+     "j": "Moi Gómez",
+     "id": "208",
+     "tipo": "venta",
+     "importe": 1304160,
+     "fecha": "2026-09-09",
+     "op": "normal"
+    },
+    {
+     "j": "José Luis Gayà",
+     "id": "432",
+     "tipo": "venta",
+     "importe": 2508800,
+     "fecha": "2026-09-09",
+     "op": "normal"
+    },
+    {
      "j": "Haitam Abaida",
      "id": "70993",
      "tipo": "venta",
@@ -6033,14 +6116,14 @@
     "208": {
      "nombre": "Moi Gómez",
      "compras": 780000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1304160,
+     "ops": 2
     },
     "432": {
      "nombre": "José Luis Gayà",
      "compras": 3185420,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 2508800,
+     "ops": 2
     },
     "1719": {
      "nombre": "Aïssa Mandi",
@@ -6070,6 +6153,12 @@
      "nombre": "Mouctar Diakhaby",
      "compras": 0,
      "ventas": 1305810,
+     "ops": 1
+    },
+    "14911": {
+     "nombre": "Álvaro García",
+     "compras": 9082371,
+     "ventas": 0,
      "ops": 1
     },
     "17568": {
