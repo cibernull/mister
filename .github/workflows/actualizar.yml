@@ -38,7 +38,18 @@ jobs:
   actualizar:
     runs-on: ubuntu-latest
     steps:
+      # La punta de `main`, no el commit fijado al dispararse. Con dos disparos
+      # seguidos la segunda pasada espera en cola —eso está bien— pero al
+      # arrancar hacía el checkout del commit de cuando se lanzó, ya viejo,
+      # y GitHub le rechazaba el push por trabajar sobre datos anteriores.
+      # El 9 de septiembre de 2026, a las 18:37 y 18:38, la segunda falló así.
+      #
+      # El histórico entero (`fetch-depth: 0`) es para poder rebasar si aun así
+      # alguien guarda antes; pesa unos cientos de KB.
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -144,10 +155,23 @@ jobs:
           git add modulo/datos modulo/fotos
           if git diff --cached --quiet; then
             echo "Nada que guardar: no ha cambiado ningún dato."
-          else
-            git commit -m "Datos de Mister al $(date -u '+%Y-%m-%d %H:%M') UTC"
-            git push
+            exit 0
           fi
+          git commit -m "Datos de Mister al $(date -u '+%Y-%m-%d %H:%M') UTC"
+          # Si otra pasada —o una sesión desde el Mac— guardó antes, el push
+          # sale rechazado. En vez de fallar y mandar un correo, se pone al día
+          # y repite. Cuidado con el sentido de `-X theirs` en un rebase: ahí
+          # «theirs» es el commit que se está reaplicando, o sea ESTE, así que
+          # en un choque de datos gana la instantánea más nueva, que es la de
+          # esta pasada. Solo toca modulo/datos y modulo/fotos: nunca código.
+          for intento in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "Push rechazado (intento $intento): otra pasada guardó antes. Me pongo al día y repito."
+            git fetch origin main
+            git rebase -X theirs origin/main
+          done
+          echo "No pude guardar tras tres intentos."
+          exit 1
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
