@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T12:08:37.235Z",
+ "cuando": "2026-09-09T12:38:31.535Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,24 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "La Real recarga las pilas antes de preparar la visita del Atlético",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150876-la-real-recarga-las-pilas-antes-de-preparar-la-visita-del-atletico",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "El Levante retoma los entrenamientos sin Etta Eyong",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150875-el-levante-retoma-los-entrenamientos-sin-etta-eyong",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Álex Marchal, el revulsivo favorito",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150874-alex-marchal-el-revulsivo-favorito",
+   "categoria": "análisis"
   },
   {
    "fecha": "09/09",
@@ -464,24 +482,6 @@
    "titulo": "Alineaciones probables para la jornada 1 de la Champions League actualizadas",
    "url": "https://www.futbolfantasy.com/champions/posibles-alineaciones",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Matarazzo celebra el triunfo y habla de Marrero, Remiro, Sarr, Ochieng, Guedes y Héctor Fort",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150798-matarazzo-celebra-el-triunfo-y-habla-de-marrero-remiro-sarr-ochieng-guedes-y-hector-fort",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "La Real huele la sangre del Elche",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150797-la-real-huele-la-sangre-del-elche",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "07/09",
-   "titulo": "Jornada 4: Elche 2-3 Real Sociedad. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22455-elche-real-sociedad",
-   "categoria": "partido"
   }
  ]
 }
