@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-09T13:38:16.319Z",
+ "cuando": "2026-09-09T14:08:12.132Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,36 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Fernando Soriano explica la incorporación de Marc Casadó y cómo se cerró su fichaje",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150887-fernand-soriano-explica-la-incorporacion-de-marc-casado-y-como-se-cerro-su-fichaje",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Boyomo alimenta las dudas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150886-boyomo-alimenta-las-dudas",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Osasuna retoma el trabajo en Tajonar con cuatro bajas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150885-osasuna-retoma-el-trabajo-en-tajonar-con-cuatro-bajas",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Juan Cruz, solo en casa",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150884-juan-cruz-solo-en-casa",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/09",
+   "titulo": "Parte médico oficial de Gorka Guruzeta",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150883-parte-medico-oficial-de-gorka-guruzeta",
+   "categoria": "lesión"
   },
   {
    "fecha": "09/09",
@@ -452,36 +482,6 @@
    "titulo": "Ochieng se abre paso a toda velocidad",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150809-ochieng-se-abre-paso-a-toda-velocidad",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "La titularidad de Marrero, una cuestión europea",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150808-la-titularidad-de-marrero-una-cuestion-europea",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Djaló y Nico Serrano vuelven al grupo; Guruzeta, Vivian y Canales al margen y Yeray está OK",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150807-djalo-y-nico-serrano-vuelven-al-grupo-vivian-y-canales-siguen-al-margen-y-yeray-esta-ok",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Lemar espabila al Elche",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150806-lemar-espabila-al-elche",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Sorloth y Arnau Ortiz, únicas bajas en la lista para viajar a Anfield",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150805-sorloth-y-arnau-ortiz-unicas-bajas-en-la-lista-para-viajar-a-anfield",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "08/09",
-   "titulo": "Sangante se marcha tocado de la sesión y Vargas continúa al margen",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150804-sangante-se-marcha-tocado-de-la-sesion-y-vargas-continua-al-margen",
-   "categoria": "entrenamiento"
   }
  ]
 }
