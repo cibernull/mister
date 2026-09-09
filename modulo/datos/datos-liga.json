@@ -1013,6 +1013,16 @@
  ],
  "movimientos": [
   {
+   "id": "70638",
+   "nombre": "Anthony Gordon",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 15286350,
+   "tipo": "normal",
+   "fecha": "2026-09-09 09:31:22",
+   "pos": 4
+  },
+  {
    "id": "52162",
    "nombre": "Pape Gueye",
    "de": null,
@@ -6757,6 +6767,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Anthony Gordon",
+     "id": "70638",
+     "tipo": "venta",
+     "importe": 15286350,
+     "fecha": "2026-09-09",
+     "op": "normal"
+    },
+    {
      "j": "Álvaro García",
      "id": "14911",
      "tipo": "venta",
@@ -7431,8 +7449,8 @@
     "70638": {
      "nombre": "Anthony Gordon",
      "compras": 14500000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 15286350,
+     "ops": 2
     },
     "71001": {
      "nombre": "Juanpe Jiménez",
