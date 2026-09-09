@@ -363,6 +363,12 @@
   "equipo": null
  },
  {
+  "tipo": "mercado",
+  "dia": "2026-09-09",
+  "id": "55738",
+  "entra": true
+ },
+ {
   "tipo": "duenio",
   "dia": "2026-09-08",
   "id": "63",
