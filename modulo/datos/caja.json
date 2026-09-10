@@ -1,6 +1,14 @@
 {
- "saldo": 16777120,
+ "saldo": 11955530,
  "apuntes": [
+  {
+   "cuando": 1789009200,
+   "fecha": "2026-09-10 05:00",
+   "motivo": "Xavi Espart a Mister",
+   "tipo": "Compra",
+   "importe": -4821590,
+   "saldo": 11955530
+  },
   {
    "cuando": 1788864661,
    "fecha": "2026-09-08 12:51",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 1768000,
    "saldo": -9926626
-  },
-  {
-   "cuando": 1786609738,
-   "fecha": "2026-08-13 10:28",
-   "motivo": "Djibril Sow a Mister",
-   "tipo": "Venta",
-   "importe": 1862700,
-   "saldo": -11694626
   }
  ]
 }
