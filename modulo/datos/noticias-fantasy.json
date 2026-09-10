@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-10T17:38:10.232Z",
+ "cuando": "2026-09-10T18:08:32.203Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Noé Carrillo se reincorpora al grupo mientras Asp Jensen continúa al margen",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150968-noe-carrillo-reincorpora-grupo-mientras-asp-jensen-continua-margen",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Justin de Haas regresa a la lista de convocados para viajar a Sevilla",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150967-justin-de-haas-regresa-lista-de-convocados-viajar-sevilla",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "10/09",
@@ -470,18 +482,6 @@
    "titulo": "Fernando Soriano explica la incorporación de Marc Casadó y cómo se cerró su fichaje",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150887-fernand-soriano-explica-la-incorporacion-de-marc-casado-y-como-se-cerro-su-fichaje",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Boyomo alimenta las dudas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150886-boyomo-alimenta-las-dudas",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Osasuna retoma el trabajo en Tajonar con cuatro bajas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150885-osasuna-retoma-el-trabajo-en-tajonar-con-cuatro-bajas",
-   "categoria": "entrenamiento"
   }
  ]
 }
