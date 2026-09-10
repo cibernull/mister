@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-10T18:08:32.203Z",
+ "cuando": "2026-09-10T18:30:38.664Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Febas sigue con trabajo parcial en el Celta a la espera del alta médica",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150970-febas-sigue-trabajo-parcial-celta-espera-alta-medica",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Turrientes gana enteros para medirse al Atlético",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150969-turrientes-gana-enteros-para-medirse-al-atletico",
+   "categoria": "análisis"
   },
   {
    "fecha": "10/09",
@@ -469,18 +481,6 @@
    "fecha": "09/09",
    "titulo": "Sebastián Cáceres se presenta y explica su estado físico, perfil y adaptación al modelo de Giráldez",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150889-sebastian-caceres-se-presenta-y-explica-su-estado-fisico-perfil-y-adaptacion-al-modelo-de-gir",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Marc Casadó explica su fichaje por el Deportivo, su adaptación al estilo de Hidalgo y sensaciones tras el debut",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150888-marc-casado-explica-su-fichaje-por-el-deportivo-su-adaptacion-al-estilo-de-hidalgo-y-sensacio",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Fernando Soriano explica la incorporación de Marc Casadó y cómo se cerró su fichaje",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150887-fernand-soriano-explica-la-incorporacion-de-marc-casado-y-como-se-cerro-su-fichaje",
    "categoria": "rueda de prensa"
   }
  ]
