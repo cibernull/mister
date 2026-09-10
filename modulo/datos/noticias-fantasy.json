@@ -1,14 +1,8 @@
 {
- "cuando": "2026-09-10T11:08:14.278Z",
+ "cuando": "2026-09-10T11:38:09.453Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "10/09",
-   "titulo": "Luis García, sobre el sistema, Stassin, Marcao, Sangante, Kike Salas, Vargas, Agoumé, Fofana y el Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150943-luis-garcia-sobre-el-sistema-stassin-marcao-sangante-kike-salas-vargas-agoume-fofana-y-el-val",
-   "categoria": "rueda de prensa"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 5 actualizadas",
@@ -35,6 +29,36 @@
   },
   {
    "fecha": "10/09",
+   "titulo": "Nteka y Balliu se suman a la enfermería del Rayo antes del Bernabéu",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150952-nteka-y-balliu-se-suman-a-la-enfermeria-del-rayo-antes-del-bernabeu",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "El Atlético descansa tras Anfield pendiente de Sorloth",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150951-el-atletico-descansa-tras-anfield-pendiente-de-sorloth",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "El Barça descansa tras la Champions con rotaciones en mente",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150950-el-barca-descansa-tras-la-champions-con-rotaciones-en-mente",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Adrián Niño completa la sesión y Jauregui hace una parte",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150949-adrian-nino-completa-la-sesion-y-jauregui-hace-una-parte",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Noticias de Navarra apunta a Rockson y Del Castillo como principales novedades en el once de Osasuna",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150948-noticias-de-navarra-apunta-a-rockson-y-del-castillo-como-principales-novedades-en-el-once-de-",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "10/09",
    "titulo": "Luis García mantiene la paciencia con Rubén Vargas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150947-luis-garcia-mantiene-la-paciencia-con-ruben-vargas",
    "categoria": "lesión"
@@ -56,6 +80,12 @@
    "titulo": "Asencio vuelve al grupo y Mourinho solo tiene tres bajas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150944-asencio-vuelve-al-grupo-y-mourinho-solo-tiene-tres-bajas",
    "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Luis García, sobre el sistema, Stassin, Marcao, Sangante, Kike Salas, Vargas, Agoumé, Fofana y el Valencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150943-luis-garcia-sobre-el-sistema-stassin-marcao-sangante-kike-salas-vargas-agoume-fofana-y-el-val",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "10/09",
@@ -452,36 +482,6 @@
    "titulo": "El Comité sanciona con dos partidos a De Frutos y con uno a Fran Pérez",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150871-el-comite-sanciona-con-dos-partidos-a-de-frutos-y-con-uno-a-fran-perez",
    "categoria": "sanción"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "El Real Madrid descansa tras la Champions con cuatro jugadores en la enfermería",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150870-el-real-madrid-descansa-tras-la-champions-con-cuatro-jugadores-en-la-enfermeria",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Kumbulla ya entrena con el grupo y se acerca al alta médica",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150869-kumbulla-ya-entrena-con-el-grupo-y-se-acerca-al-alta-medica",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Santi Ovalle filtra el posible once de Flick para recibir al Feyenoord",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150868-santi-ovalle-filtra-el-posible-once-de-flick-para-recibir-al-feyenoord",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Flick anuncia la lista para recibir al Feyenoord",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150867-flick-anuncia-la-lista-para-recibir-al-feyenoord",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Canales, Guruzeta y Vivian siguen al margen en Lezama",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150866-canales-guruzeta-y-vivian-siguen-al-margen-en-lezama",
-   "categoria": "entrenamiento"
   }
  ]
 }
