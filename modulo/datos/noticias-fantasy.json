@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-10T21:42:40.533Z",
+ "cuando": "2026-09-10T22:08:13.987Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Pablo Ibáñez ya se sienta en la mesa de los imprescindibles",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150985-pablo-ibanez-ya-se-sienta-en-la-mesa-de-los-imprescindibles",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Saliba obliga a revisar las jerarquías de Comesaña y Pape Gueye",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150984-saliba-obliga-a-revisar-las-jerarquias-de-comesana-y-pape-gueye",
+   "categoria": "análisis"
   },
   {
    "fecha": "10/09",
@@ -470,18 +482,6 @@
    "titulo": "Cubarsí, Pedri y Rodri, en elevado riesgo de rotación contra el Levante",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150910-cubarsi-pedri-y-rodri-en-elevado-riesgo-de-rotacion-contra-el-levante",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "El Barça extiende la tormenta hacia Europa",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150909-el-barca-extiende-la-tormenta-hacia-europa",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Champions League: Barcelona 5-1 Feyenoord. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/24116-barcelona-feyenoord",
-   "categoria": "partido"
   }
  ]
 }
