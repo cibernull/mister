@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-10T20:38:09.412Z",
+ "cuando": "2026-09-10T21:08:34.898Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,30 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Radio Marca Málaga destaca el nivel de Aznou en los entrenamientos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150982-radio-marca-malaga-destaca-el-nivel-de-aznou-en-los-entrenamientos",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Vargas viaja a Madrid para buscar una segunda opinión sobre su rodilla",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150981-vargas-viaja-a-madrid-para-buscar-una-segunda-opinion-sobre-su-rodilla",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "El Correo de Andalucía apuesta por trivote y Félix Correia para el once contra el Valencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150980-el-correo-de-andalucia-apuesta-por-trivote-y-felix-correia-para-el-once-contra-el-valencia",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "La Real vuelve al trabajo en Zubieta sin secuelas y recupera a Marín",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150979-la-real-vuelve-al-trabajo-en-zubieta-sin-secuelas-y-recupera-a-marin",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "10/09",
@@ -458,30 +482,6 @@
    "titulo": "Simeone explica el cambio de idea con Julián y destaca la importancia de controlar el partido",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150907-simeone-explica-el-cambio-de-idea-con-julian-y-destaca-la-importancia-de-controlar-el-partido",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Dumfries llegará al partido del Rayo con más desgaste que Trent",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150906-dumfries-llegara-al-partido-del-rayo-con-mas-desgaste-que-trent",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Febas continúa trabajando parcialmente a la espera del alta médica",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150903-febas-incorpora-parcialmente-entrenamiento-celta",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Hansi Flick afirma que ganar la Champions es uno de sus objetivos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150902-hansi-flick-ganar-champions-nuestros-objetivos",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "El once de Flick en Champions deja a varios futbolistas descansando para el Ciutat",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150897-el-once-de-flick-en-champions-deja-a-varios-futbolistas-descansando-para-el-ciutat",
-   "categoria": "análisis"
   }
  ]
 }
