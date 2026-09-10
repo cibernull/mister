@@ -1,11 +1,11 @@
 {
- "cuando": "2026-09-10T13:38:27.740Z",
+ "cuando": "2026-09-10T14:08:14.718Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "10/09",
-   "titulo": "San José explica las bajas de Balliu y Nteka y habla de De Frutos, Fran Pérez, Camello, Kumbulla, Isi, RDT y el Real Madrid",
+   "titulo": "San José explica el estado de Balliu y Nteka y habla de De Frutos, Fran Pérez, Camello, Kumbulla, Isi, RDT y el Real Madrid",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150959-san-jose-explica-las-bajas-de-balliu-y-nteka-y-habla-de-de-frutos-fran-perez-camello-kumbulla",
    "categoria": "rueda de prensa"
   },
@@ -32,6 +32,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Gorosabel sigue sin estar al cien por cien y Calatrava mejora del tobillo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150964-gorosabel-sigue-sin-estar-al-cien-por-cien-y-calatrava-mejora-del-tobillo",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "10/09",
@@ -476,12 +482,6 @@
    "titulo": "Parte médico oficial de Gorka Guruzeta",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150883-parte-medico-oficial-de-gorka-guruzeta",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "El Málaga retoma la actividad sin los cuatro lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150882-el-malaga-retoma-la-actividad-sin-los-cuatro-lesionados",
-   "categoria": "entrenamiento"
   }
  ]
 }
