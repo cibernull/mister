@@ -1019,9 +1019,39 @@
    "id": "22595",
    "nombre": "Joaquín Muñoz",
    "valor": 2137000
+  },
+  {
+   "id": "69889",
+   "nombre": "Xavi Espart",
+   "valor": 2467000
+  },
+  {
+   "id": "59042",
+   "nombre": "Peque Fernández",
+   "valor": 2138000
   }
  ],
  "movimientos": [
+  {
+   "id": "59042",
+   "nombre": "Peque Fernández",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 2212870,
+   "tipo": "normal",
+   "fecha": "2026-09-10 05:00:28",
+   "pos": 3
+  },
+  {
+   "id": "69889",
+   "nombre": "Xavi Espart",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 4821590,
+   "tipo": "normal",
+   "fecha": "2026-09-10 05:00:28",
+   "pos": 2
+  },
   {
    "id": "22595",
    "nombre": "Joaquín Muñoz",
@@ -4743,6 +4773,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Xavi Espart",
+     "id": "69889",
+     "tipo": "compra",
+     "importe": 4821590,
+     "fecha": "2026-09-10",
+     "op": "normal"
+    },
+    {
      "j": "Marc Bartra",
      "id": "63",
      "tipo": "compra",
@@ -5534,6 +5572,12 @@
      "ventas": 1476960,
      "ops": 1
     },
+    "69889": {
+     "nombre": "Xavi Espart",
+     "compras": 4821590,
+     "ventas": 0,
+     "ops": 1
+    },
     "70917": {
      "nombre": "Arouna Sangante",
      "compras": 0,
@@ -5622,6 +5666,14 @@
   },
   "Cacaculopedopis": {
    "movimientos": [
+    {
+     "j": "Peque Fernández",
+     "id": "59042",
+     "tipo": "compra",
+     "importe": 2212870,
+     "fecha": "2026-09-10",
+     "op": "normal"
+    },
     {
      "j": "Álvaro García",
      "id": "14911",
@@ -6264,6 +6316,12 @@
      "nombre": "Marc Casadó",
      "compras": 0,
      "ventas": 1076130,
+     "ops": 1
+    },
+    "59042": {
+     "nombre": "Peque Fernández",
+     "compras": 2212870,
+     "ventas": 0,
      "ops": 1
     },
     "59395": {

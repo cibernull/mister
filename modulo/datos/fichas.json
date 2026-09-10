@@ -2547,6 +2547,13 @@
     "eventos": []
    },
    {
+    "jornada": 4,
+    "puntos": null,
+    "rival": 9,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
     "jornada": 6,
     "puntos": null,
     "rival": 16,
@@ -2555,7 +2562,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-07",
+  "dia": "2026-09-10",
   "partidos": 0
  },
  "6044": {

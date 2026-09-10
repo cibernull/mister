@@ -553,8 +553,8 @@
   "semana": -6000,
   "sem7": -129000,
   "mes": -1065000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 21934000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -2261,8 +2261,8 @@
   "semana": 71000,
   "sem7": 420000,
   "mes": 807000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1560000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -9605,8 +9605,8 @@
   "semana": -27000,
   "sem7": -12000,
   "mes": 576000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 11636000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -14990,8 +14990,8 @@
   "semana": 34000,
   "sem7": 162000,
   "mes": null,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 668000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -19474,8 +19474,8 @@
   "semana": -71000,
   "sem7": -250000,
   "mes": -436000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 850000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -25821,8 +25821,8 @@
   "semana": -25000,
   "sem7": -126000,
   "mes": -752000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 932000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -26143,8 +26143,8 @@
   "semana": -45000,
   "sem7": -319000,
   "mes": null,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1058000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -26936,6 +26936,80 @@
   "d": 0
  },
  {
+  "id": "61297",
+  "nombre": "Luken Beitia",
+  "valor": 160000,
+  "puntos": 1,
+  "media": 1,
+  "partidos": 1,
+  "semana": -25000,
+  "sem7": -10000,
+  "mes": null,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   1,
+   null,
+   null
+  ],
+  "eq": 16,
+  "riv": 2,
+  "casa": 1,
+  "gol": 0,
+  "tar": 1,
+  "mc": 0,
+  "mf": 1,
+  "tit": 1,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 22,
+  "js": [
+   [
+    1,
+    1,
+    15,
+    1,
+    "y71"
+   ],
+   [
+    2,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    5,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "5235428",
   "nombre": "Óscar López",
   "valor": 160000,
@@ -27080,8 +27154,8 @@
   "semana": -11000,
   "sem7": -51000,
   "mes": -79000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -27176,80 +27250,6 @@
     4,
     0,
     "i87"
-   ],
-   [
-    3,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    5,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "61297",
-  "nombre": "Luken Beitia",
-  "valor": 160000,
-  "puntos": 1,
-  "media": 1,
-  "partidos": 1,
-  "semana": -25000,
-  "sem7": -10000,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   1,
-   null,
-   null
-  ],
-  "eq": 16,
-  "riv": 2,
-  "casa": 1,
-  "gol": 0,
-  "tar": 1,
-  "mc": 0,
-  "mf": 1,
-  "tit": 1,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 22,
-  "js": [
-   [
-    1,
-    1,
-    15,
-    1,
-    "y71"
-   ],
-   [
-    2,
-    null,
-    4,
-    0,
-    ""
    ],
    [
     3,
@@ -30200,6 +30200,13 @@
     ""
    ],
    [
+    4,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
     6,
     null,
     16,
@@ -30677,75 +30684,6 @@
   "d": 0
  },
  {
-  "id": "70934",
-  "nombre": "Íñigo Sáinz-Maza",
-  "valor": 188000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 28000,
-  "sem7": 3000,
-  "mes": 28000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1490,
-  "riv": 48,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 28,
-  "js": [
-   [
-    1,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    14,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71506",
   "nombre": "Rubén López",
   "valor": 188000,
@@ -30807,6 +30745,75 @@
     4,
     null,
     20,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "70934",
+  "nombre": "Íñigo Sáinz-Maza",
+  "valor": 188000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 28000,
+  "sem7": 3000,
+  "mes": 28000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 1490,
+  "riv": 48,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 28,
+  "js": [
+   [
+    1,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    14,
     0,
     ""
    ]
@@ -31481,6 +31488,46 @@
   "d": 0
  },
  {
+  "id": "64199",
+  "nombre": "Unai Egiluz",
+  "valor": 176000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 16000,
+  "sem7": -3000,
+  "mes": 16000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 1,
+  "riv": 23,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 24,
+  "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "68711",
   "nombre": "Obed Vargas",
   "valor": 176000,
@@ -31550,46 +31597,6 @@
   "d": 0
  },
  {
-  "id": "64199",
-  "nombre": "Unai Egiluz",
-  "valor": 176000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 16000,
-  "sem7": -3000,
-  "mes": 16000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1,
-  "riv": 23,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 24,
-  "js": [],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "12902",
   "nombre": "Raúl de Tomás",
   "valor": 175000,
@@ -31599,8 +31606,8 @@
   "semana": 15000,
   "sem7": 7000,
   "mes": -357000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 175000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -32435,19 +32442,19 @@
   "d": 0
  },
  {
-  "id": "65188",
-  "nombre": "Thiago Pitarch",
+  "id": "17623",
+  "nombre": "Ferland Mendy",
   "valor": 162000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": 0,
-  "sem7": -18000,
-  "mes": -161000,
+  "semana": -32000,
+  "sem7": -42000,
+  "mes": 2000,
   "mk": 0,
   "pv": null,
   "ced": 0,
-  "pos": 3,
+  "pos": 2,
   "est": "injury",
   "bl": 0,
   "sub": 0,
@@ -32469,7 +32476,7 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 19,
+  "edad": 31,
   "js": [],
   "p": 0,
   "d": 0
@@ -32540,6 +32547,46 @@
     ""
    ]
   ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "65188",
+  "nombre": "Thiago Pitarch",
+  "valor": 162000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -18000,
+  "mes": -161000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 15,
+  "riv": 14,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 19,
+  "js": [],
   "p": 0,
   "d": 0
  },
@@ -32653,46 +32700,6 @@
     ""
    ]
   ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "17623",
-  "nombre": "Ferland Mendy",
-  "valor": 162000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -32000,
-  "sem7": -42000,
-  "mes": 2000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 15,
-  "riv": 14,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 31,
-  "js": [],
   "p": 0,
   "d": 0
  },
@@ -32827,68 +32834,6 @@
     4,
     null,
     15,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "70499",
-  "nombre": "Iñaki Rupérez",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -8000,
-  "sem7": 0,
-  "mes": -21000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 16,
-  "riv": 2,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    5,
     0,
     ""
    ]
@@ -33144,20 +33089,20 @@
   "d": 0
  },
  {
-  "id": "70997",
-  "nombre": "Aarón Ochoa",
+  "id": "70499",
+  "nombre": "Iñaki Rupérez",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": -20000,
+  "semana": -8000,
   "sem7": 0,
-  "mes": -9000,
+  "mes": -21000,
   "mk": 0,
   "pv": null,
   "ced": 0,
-  "pos": 3,
-  "est": "injury",
+  "pos": 2,
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -33167,9 +33112,9 @@
    null,
    null
   ],
-  "eq": 13,
-  "riv": 5,
-  "casa": 0,
+  "eq": 16,
+  "riv": 2,
+  "casa": 1,
   "gol": 0,
   "tar": 0,
   "mc": 0,
@@ -33178,12 +33123,26 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 19,
+  "edad": 23,
   "js": [
    [
     1,
     null,
+    15,
+    0,
+    ""
+   ],
+   [
     2,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    5,
     0,
     ""
    ]
@@ -33192,14 +33151,14 @@
   "d": 0
  },
  {
-  "id": "4774441",
-  "nombre": "Matia Barzic",
+  "id": "3368896",
+  "nombre": "Jordi Pesquer",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": -17000,
-  "sem7": -20000,
+  "semana": -7000,
+  "sem7": -26000,
   "mes": null,
   "mk": 0,
   "pv": null,
@@ -33215,8 +33174,8 @@
    null,
    null
   ],
-  "eq": 23,
-  "riv": 1,
+  "eq": 3,
+  "riv": 12,
   "casa": 0,
   "gol": 0,
   "tar": 0,
@@ -33226,26 +33185,33 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 22,
+  "edad": 17,
   "js": [
    [
     1,
     null,
-    6,
+    1,
     0,
     ""
    ],
    [
     2,
     null,
-    3,
+    23,
     0,
     ""
    ],
    [
     3,
     null,
-    1490,
+    14,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    19,
     0,
     ""
    ]
@@ -33521,75 +33487,6 @@
   "d": 0
  },
  {
-  "id": "27869",
-  "nombre": "Juan Berrocal",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -38000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 13,
-  "riv": 5,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    1,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    12,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "78393",
   "nombre": "Altay Bayındır",
   "valor": 160000,
@@ -33659,19 +33556,19 @@
   "d": 0
  },
  {
-  "id": "70183",
-  "nombre": "Rayane Belaid",
+  "id": "27869",
+  "nombre": "Juan Berrocal",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": -13000,
-  "sem7": -25000,
-  "mes": -31000,
+  "semana": 0,
+  "sem7": -38000,
+  "mes": 0,
   "mk": 0,
   "pv": null,
   "ced": 0,
-  "pos": 3,
+  "pos": 2,
   "est": null,
   "bl": 0,
   "sub": 0,
@@ -33682,8 +33579,8 @@
    null,
    null
   ],
-  "eq": 14,
-  "riv": 15,
+  "eq": 13,
+  "riv": 5,
   "casa": 0,
   "gol": 0,
   "tar": 0,
@@ -33693,33 +33590,33 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 20,
+  "edad": 27,
   "js": [
    [
     1,
     null,
-    17,
+    2,
     0,
     ""
    ],
    [
     2,
     null,
-    48,
+    6,
     0,
     ""
    ],
    [
     3,
     null,
-    3,
+    15,
     0,
     ""
    ],
    [
     4,
     null,
-    1490,
+    12,
     0,
     ""
    ]
@@ -34078,6 +33975,123 @@
   "d": 0
  },
  {
+  "id": "70183",
+  "nombre": "Rayane Belaid",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -13000,
+  "sem7": -25000,
+  "mes": -31000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 14,
+  "riv": 15,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [
+   [
+    1,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    1490,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "70997",
+  "nombre": "Aarón Ochoa",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -20000,
+  "sem7": 0,
+  "mes": -9000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 13,
+  "riv": 5,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 19,
+  "js": [
+   [
+    1,
+    null,
+    2,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "1153038",
   "nombre": "Rodrigo Gamón",
   "valor": 160000,
@@ -34147,75 +34161,6 @@
   "d": 0
  },
  {
-  "id": "3368896",
-  "nombre": "Jordi Pesquer",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -7000,
-  "sem7": -26000,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 3,
-  "riv": 12,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 17,
-  "js": [
-   [
-    1,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    19,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "3688394",
   "nombre": "Kayne van Oevelen",
   "valor": 160000,
@@ -34277,6 +34222,68 @@
     4,
     null,
     3,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "4774441",
+  "nombre": "Matia Barzic",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -17000,
+  "sem7": -20000,
+  "mes": null,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 23,
+  "riv": 1,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 22,
+  "js": [
+   [
+    1,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    1490,
     0,
     ""
    ]
@@ -34490,8 +34497,8 @@
   "semana": -75000,
   "sem7": -438000,
   "mes": 121000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 2501000,
   "ced": 0,
   "pos": 2,
   "est": null,
