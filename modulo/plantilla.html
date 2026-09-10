@@ -996,7 +996,8 @@ body{padding:0 24px 96px;background:
 .op-cuerpo{padding:14px}.op-etiqueta{display:block;margin-bottom:5px;font-family:"IBM Plex Mono",monospace;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--oro)}
 .op-nombre{display:block;width:100%;padding:0;border:0;background:none;color:var(--tinta);font-family:"Barlow Condensed",sans-serif;font-size:22px;font-weight:700;line-height:1.05;text-align:left;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .op-nombre:hover{color:var(--oro)}.op-club{display:flex;align-items:center;gap:5px;min-height:22px;margin-top:4px;color:var(--tenue);font-size:10.5px}.op-club span{color:var(--sube)}
-.op-metricas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-top:11px}.op-metricas span{min-width:0;font-size:8.5px;color:var(--tenue);text-transform:uppercase}.op-metricas b{display:block;color:var(--tinta);font-family:"IBM Plex Mono",monospace;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.op-metricas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-top:11px}
+@media(min-width:700px){.op-metricas{grid-template-columns:repeat(5,minmax(0,1fr))}}.op-metricas span{min-width:0;font-size:8.5px;color:var(--tenue);text-transform:uppercase}.op-metricas b{display:block;color:var(--tinta);font-family:"IBM Plex Mono",monospace;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 /* El porcentaje del día, debajo de los euros: +56 K en alguien de 2,4 M no es
    lo mismo que en alguien de 20 M, y es lo que dice cuál sube de verdad. */
 .op-metricas em{display:block;margin-top:2px;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:9.5px;opacity:.85}.op-metricas .sube b{color:var(--sube)}.op-metricas .baja b{color:var(--baja)}
@@ -2770,20 +2771,45 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
      * Se añaden, no se rotan: cambiar las cuatro en cada pulsación pierde de
      * vista la que acabas de mirar y no deja compararlas.
      */
+    var objetivoActual = 'equilibrio'
+    var capital = function (t) { return t.charAt(0).toUpperCase() + t.slice(1) }
+
+    /**
+     * Cuántas oportunidades se ven. El resto está en la página, escondido.
+     *
+     * Solo cuentan las aptas para el objetivo en curso: bajo «Generar dinero»
+     * una tarjeta que pierde dinero no es una oportunidad, se esconde. Y
+     * «Mejor oportunidad» va a la primera apta, no a la primera del DOM.
+     */
     function verHasta (n) {
       var grid = document.querySelector('.op-grid')
       if (!grid) return
-      var cartas = [].slice.call(grid.querySelectorAll('.oportunidad'))
-      cartas.forEach(function (x, i) { x.hidden = i >= n })
+      var todas = [].slice.call(grid.querySelectorAll('.oportunidad'))
+      var apto = 'apto' + capital(objetivoActual)
+      var motivo = 'motivo' + capital(objetivoActual)
+      var aptas = todas.filter(function (x) { return x.dataset[apto] !== '0' })
+      todas.forEach(function (x) { if (x.dataset[apto] === '0') x.hidden = true })
+      aptas.forEach(function (x, i) {
+        x.hidden = i >= n
+        var m = x.querySelector('.op-motivo')
+        if (m && x.dataset[motivo]) m.textContent = x.dataset[motivo]
+        var et = x.querySelector('.op-etiqueta')
+        if (et) {
+          if (i === 0) { et.dataset.suya = et.dataset.suya || et.textContent; et.textContent = 'Mejor oportunidad' }
+          else if (et.dataset.suya) et.textContent = et.dataset.suya
+        }
+      })
       var cuenta = document.getElementById('op-cuenta')
-      if (cuenta) cuenta.textContent = Math.min(n, cartas.length) + ' de ' + cartas.length
+      if (cuenta) cuenta.textContent = Math.min(n, aptas.length) + ' de ' + aptas.length
       var mas = document.getElementById('op-mas')
       if (mas) {
-        var quedan = cartas.length - n
+        var quedan = aptas.length - n
         mas.hidden = quedan <= 0
         var golpe = Number(grid.getAttribute('data-de-golpe')) || 4
         mas.textContent = 'Ver ' + Math.min(golpe, quedan) + ' más'
       }
+      var vacio = document.getElementById('op-vacio')
+      if (vacio) vacio.hidden = aptas.length > 0
       grid.setAttribute('data-viendo', String(n))
     }
 
@@ -2809,20 +2835,15 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
         botones.forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-objetivo') === clave) })
         var grid = document.querySelector('.op-grid')
         if (grid) {
-          var cartas = [].slice.call(grid.querySelectorAll('.oportunidad'))
+          objetivoActual = clave
+          // Con nombre y no como expresión suelta: una línea que empieza por
+          // `[` se pega a la anterior y se lee como `clave[...]`.
+          var ordenadas = [].slice.call(grid.querySelectorAll('.oportunidad'))
             .sort(function (a, b) { return Number(b.getAttribute('data-op-' + clave)) - Number(a.getAttribute('data-op-' + clave)) })
-          cartas.forEach(function (x) { grid.appendChild(x) })
-          // Al cambiar de objetivo se vuelve a las primeras: si no, seguirías
-          // viendo las de antes, que ya no son las mejores para lo que pides.
+          ordenadas.forEach(function (x) { grid.appendChild(x) })
+          // Al cambiar de objetivo se vuelve a las primeras, y verHasta esconde
+          // las que no son aptas para él y etiqueta a la mejor.
           verHasta(Number(grid.getAttribute('data-de-golpe')) || 4)
-          // «Mejor oportunidad» va a la que quede primera, no a la que lo fuera
-          // al construir la página: al reordenar acababa en la segunda.
-          cartas.forEach(function (x, i) {
-            var et = x.querySelector('.op-etiqueta')
-            if (!et) return
-            if (i === 0) { et.dataset.suya = et.dataset.suya || et.textContent; et.textContent = 'Mejor oportunidad' }
-            else if (et.dataset.suya) et.textContent = et.dataset.suya
-          })
         }
         var orden = document.querySelector('#ordenar [data-orden="' + (clave === 'puntos' ? 'proxima' : clave === 'valor' ? 'sube' : 'recomendado') + '"]')
         if (orden) orden.click()

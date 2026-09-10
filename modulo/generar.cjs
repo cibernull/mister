@@ -1375,7 +1375,33 @@ const PARTIDOS_MINIMOS_ESCAPARATE = 2
 const MAXIMO_ESCAPARATE = 24
 const DE_GOLPE_ESCAPARATE = 4
 
-const candidatosEscaparate = J.filter((j) => {
+/**
+ * Lo que ganarías en un mes si lo compras hoy: lo que valdrá menos lo que pagas.
+ *
+ * «Generar dinero» ordenaba por cuánto sube el valor, y eso ignora lo que se
+ * paga. A un jugador de otro equipo se le paga la cláusula, que es como poco
+ * 1,5 veces su valor: Mariano Díaz valía 2,4 M, costaba 7,0 M de cláusula y
+ * subía un 81 % al mes, y salía como oportunidad de dinero. Pagas 7,0 por algo
+ * que vale 2,4 —sales 4,6 M por debajo en el minuto uno— y aunque repita ese
+ * 81 %, al mes vale 4,4: sigues perdiendo 2,6 M. De 80 candidatos, 56 perdían
+ * dinero pese a subir.
+ *
+ * La proyección es la más simple posible y va dicha en la tarjeta: «si repite
+ * lo de este mes». Es valor + lo que subió el último mes, menos lo pagado.
+ */
+const gananciaMesDe = (j) =>
+  j.subeMes != null && j.valor && j.precio ? j.valor * (1 + j.subeMes) - j.precio : null
+
+/**
+ * Las oportunidades, elegidas por cada objetivo y no solo por rendimiento.
+ *
+ * Antes el lote eran las 24 mejores por margen sobre su techo, y los botones
+ * de objetivo solo las reordenaban. Así «Generar dinero» nunca podía enseñar a
+ * quien sí da dinero —los del mercado, donde pagas lo que valen— porque no
+ * estaban en el lote. Ahora cada objetivo aporta sus mejores y la tarjeta lleva
+ * las tres claves y si es apta para cada uno: el navegador ordena y esconde.
+ */
+const aptosEscaparate = J.filter((j) => {
   if (!j.a || j.mio) return false
   if ((j.partidos ?? 0) < PARTIDOS_MINIMOS_ESCAPARATE) return false
   // Ni a quien no se puede fichar hoy: recomendar a un recién fichado es
@@ -1384,17 +1410,31 @@ const candidatosEscaparate = J.filter((j) => {
   if (veto && veto.grave) return false
   const pr = probabilidadDe(j)
   return pr === null || pr >= PROBABILIDAD_MINIMA_ESCAPARATE
-})
-  .map((j) => ({ j, renta: hastaCuanto(j), forma: formaDe(j) }))
-  .filter((x) => x.renta && x.renta.margen > 0)
-  .sort((a, b) =>
-    (b.renta?.margen ?? -Infinity) - (a.renta?.margen ?? -Infinity) ||
-    b.j.esperado - a.j.esperado ||
-    (b.forma ?? -Infinity) - (a.forma ?? -Infinity),
-  )
-  .slice(0, MAXIMO_ESCAPARATE)
+}).map((j) => ({ j, renta: hastaCuanto(j), forma: formaDe(j), dinero: gananciaMesDe(j) }))
 
-const tarjetaOportunidad = ({ j, renta, forma }, i) => {
+const porMargen = aptosEscaparate
+  .filter((x) => x.renta && x.renta.margen > 0)
+  .sort((a, b) => b.renta.margen - a.renta.margen || b.j.esperado - a.j.esperado)
+const porPuntos = aptosEscaparate
+  .filter((x) => x.j.esperado > 0)
+  .sort((a, b) => b.j.esperado - a.j.esperado)
+const porDinero = aptosEscaparate
+  .filter((x) => x.dinero != null && x.dinero > 0)
+  .sort((a, b) => b.dinero - a.dinero)
+
+// La unión, en el orden de «Equilibrado», que es el que se ve al abrir.
+const candidatosEscaparate = (() => {
+  const vistos = new Set()
+  const l = []
+  for (const x of [...porMargen.slice(0, MAXIMO_ESCAPARATE), ...porPuntos.slice(0, MAXIMO_ESCAPARATE), ...porDinero.slice(0, MAXIMO_ESCAPARATE)]) {
+    if (vistos.has(x.j.id)) continue
+    vistos.add(x.j.id)
+    l.push(x)
+  }
+  return l
+})()
+
+const tarjetaOportunidad = ({ j, renta, forma, dinero }, i) => {
   // La etiqueta de «mejor» la pone el navegador a la que quede primera: aquí no
   // se sabe, porque el botón de objetivo reordena las tarjetas al cargar y la
   // etiqueta cosida a la primera acababa en la segunda.
@@ -1404,17 +1444,17 @@ const tarjetaOportunidad = ({ j, renta, forma }, i) => {
     : j.riv
       ? `${dec(j.esperado)} puntos esperados en su próximo partido`
       : `${dec(j.media)} puntos de media`
-  return `      <article class="oportunidad" data-op-id="${j.id}" data-op-puntos="${j.esperado}" data-op-valor="${j.subeMes ?? -9}" data-op-equilibrio="${Math.round(renta?.margen ?? -1e9)}">
+  return `      <article class="oportunidad" data-op-id="${j.id}" data-op-puntos="${j.esperado}" data-op-valor="${dinero == null ? -1e12 : Math.round(dinero)}" data-apto-equilibrio="${renta && renta.margen > 0 ? 1 : 0}" data-apto-puntos="${j.esperado > 0 ? 1 : 0}" data-apto-valor="${dinero != null && dinero > 0 ? 1 : 0}" data-motivo-equilibrio="${esc(renta && renta.margen >= 0 ? `${corto(renta.margen)} por debajo de su techo estimado por rendimiento` : `${corto(-(renta?.margen ?? 0))} por encima de su techo estimado`)}" data-motivo-puntos="${esc(j.riv ? `${dec(j.esperado)} puntos que cabe esperar en su próximo partido${probabilidadDe(j) != null ? ` · ${probabilidadDe(j)} % de salir` : ''}` : `${dec(j.media)} puntos de media`)}" data-motivo-valor="${esc(dinero == null ? 'Sin dato de cómo se mueve su valor' : `${j.mk ? 'Pagas lo que vale' : `Pagas ${corto(j.precio)} de cláusula por ${corto(j.valor)} de valor`}: si repite lo de este mes, dentro de un mes ${dinero >= 0 ? 'ganas' : 'pierdes'} ${corto(Math.abs(dinero))}`)}" data-op-equilibrio="${Math.round(renta?.margen ?? -1e9)}">
         <div class="op-foto">${caraDe(j.id, j.nombre)}<span class="dorsal p${j.puesto}">${PUESTOS[j.puesto]}</span></div>
         <div class="op-cuerpo">
           <span class="op-etiqueta">${etiqueta}</span>
           <button type="button" class="op-nombre" data-ficha="${j.id}">${esc(j.nombre)}</button>
           <div class="op-club">${escudoDe(j.id)}${esc(j.duenioCorto ?? 'Libre')}${j.once === 1 ? '<span>· titular</span>' : ''}</div>
-          <div class="op-metricas"><span><b>${dec(j.media)}</b> media</span><span><b>${corto(j.precio)}</b> precio</span><span class="${j.semana === 0 ? 'quieto' : clase(j.semana ?? 0)}"><b>${j.semana == null ? '—' : j.semana === 0 ? '=' : firmaCorta(j.semana)}</b> hoy${(() => {
+          <div class="op-metricas"><span><b>${dec(j.media)}</b> media</span><span title="${j.mk ? 'Lo que pide quien lo vende' : 'Su cláusula: lo que hay que pagar para quitárselo a su dueño'}"><b>${corto(j.precio)}</b> ${j.mk ? 'piden' : 'cláusula'}</span><span title="Lo que vale en Mister hoy: es lo que recuperas si lo vendes"><b>${corto(j.valor)}</b> vale</span><span class="${j.semana === 0 ? 'quieto' : clase(j.semana ?? 0)}"><b>${j.semana == null ? '—' : j.semana === 0 ? '=' : firmaCorta(j.semana)}</b> hoy${(() => {
             const d = subeDiaDe(j)
             return d == null || Math.abs(d) < 0.0005 ? '' : `<em>${d > 0 ? '+' : '−'}${dec(Math.abs(d) * 100)} %</em>`
           })()}</span><span class="${clase(j.subeMes ?? 0)}"><b>${j.subeMes == null ? '—' : `${j.subeMes > 0 ? '+' : ''}${Math.round(j.subeMes * 100)} %`}</b> mes</span></div>
-          <p>${motivo}</p>
+          <p class="op-motivo">${motivo}</p>
           <button type="button" class="op-cta" data-ficha="${j.id}">Analizar fichaje <span>→</span></button>
         </div>
       </article>`
@@ -1429,7 +1469,7 @@ ${candidatosEscaparate.map(tarjetaOportunidad).join(NL)}
       </div>
       ${
         candidatosEscaparate.length > DE_GOLPE_ESCAPARATE
-          ? `<button type="button" class="op-mas" id="op-mas">Ver ${DE_GOLPE_ESCAPARATE} más</button>`
+          ? `<button type="button" class="op-mas" id="op-mas">Ver ${DE_GOLPE_ESCAPARATE} más</button><p class="op-vacio sd" id="op-vacio" hidden>Con este objetivo no hay ninguna que salga a cuenta hoy.</p>`
           : ''
       }
     </section>`
