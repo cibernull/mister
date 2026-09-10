@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-10T11:38:09.453Z",
+ "cuando": "2026-09-10T12:08:25.820Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "10/09",
+   "titulo": "Deco hace un repaso a fondo: Gordon, Bernardo Silva, Rodri, Julián, Raphinha, Yamal, Cubarsí, Pedri, Balde, De Jong, Araujo, Casadó y Ferran",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150953-deco-hace-un-repaso-a-fondo-gordon-bernardo-silva-rodri-julian-raphinha-yamal-cubarsi-pedri-b",
+   "categoria": "rueda de prensa"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 5 actualizadas",
@@ -26,6 +32,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "De Haas recibe el alta médica a tiempo y viaja a Sevilla, pero Guido no",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150954-de-haas-recibe-el-alta-medica-a-tiempo-y-viaja-a-sevilla-pero-guido-no",
+   "categoria": "lesión"
   },
   {
    "fecha": "10/09",
@@ -470,18 +482,6 @@
    "titulo": "Otorbi asume responsabilidades entre los escombros",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150873-otorbi-asume-responsabilidades-entre-los-escombros",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "El Betis toma aire tras Lille pendiente de Abde, Ruibal y Llorente",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150872-el-betis-toma-aire-tras-lille-pendiente-de-abde-ruibal-y-llorente",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "El Comité sanciona con dos partidos a De Frutos y con uno a Fran Pérez",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150871-el-comite-sanciona-con-dos-partidos-a-de-frutos-y-con-uno-a-fran-perez",
-   "categoria": "sanción"
   }
  ]
 }

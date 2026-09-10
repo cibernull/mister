@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-10T09:47:18.864Z",
+ "cuando": "2026-09-10T12:08:24.794Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -451,10 +451,7 @@
    "prob": 5,
    "sancionado": 0,
    "fuera": 0,
-   "min": 0,
-   "lesion": "Fiebre",
-   "desde": "07/09 (3 días)",
-   "hasta": null
+   "min": 0
   },
   "13011": {
    "prob": 10,
@@ -634,7 +631,7 @@
    "min": 35
   },
   "17614": {
-   "prob": 50,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
    "min": 91
@@ -1006,10 +1003,13 @@
    "min": 360
   },
   "28619": {
-   "prob": 40,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 196
+   "min": 196,
+   "lesion": "Molestias sin determinar",
+   "desde": "05/09 (5 días)",
+   "hasta": null
   },
   "28621": {
    "prob": 0,
@@ -1138,10 +1138,13 @@
    "min": 0
   },
   "29402": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 154
+   "min": 154,
+   "lesion": "Molestias sin determinar",
+   "desde": "10/09 (1 día)",
+   "hasta": null
   },
   "29403": {
    "prob": 80,
@@ -1789,7 +1792,7 @@
    "min": 270
   },
   "59534": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 109
@@ -2314,10 +2317,7 @@
    "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 318,
-   "lesion": "Calambres en los isquiotibiales",
-   "desde": "07/09 (3 días)",
-   "hasta": null
+   "min": 318
   },
   "68497": {
    "prob": 50,
@@ -2608,7 +2608,10 @@
    "prob": 10,
    "sancionado": 0,
    "fuera": 0,
-   "min": 11
+   "min": 11,
+   "lesion": "Trabajo parcial",
+   "desde": "10/09 (1 día)",
+   "hasta": null
   },
   "70996": {
    "prob": 70,
@@ -2713,13 +2716,10 @@
    "min": 161
   },
   "71038": {
-   "prob": 10,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
-   "min": 45,
-   "lesion": "Esguince de tobillo",
-   "desde": "22/08 (19 días)",
-   "hasta": "mediados de septiembre"
+   "min": 45
   },
   "71061": {
    "prob": 60,
@@ -3046,7 +3046,7 @@
    "min": 0
   },
   "4733614": {
-   "prob": 40,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
