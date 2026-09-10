@@ -1,6 +1,14 @@
 {
- "saldo": 11955530,
+ "saldo": 10085640,
  "apuntes": [
+  {
+   "cuando": 1789052400,
+   "fecha": "2026-09-10 17:00",
+   "motivo": "Pablo García a Mister",
+   "tipo": "Compra",
+   "importe": -1869890,
+   "saldo": 10085640
+  },
   {
    "cuando": 1789009200,
    "fecha": "2026-09-10 05:00",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 5467280,
    "saldo": -4459346
-  },
-  {
-   "cuando": 1786633734,
-   "fecha": "2026-08-13 17:08",
-   "motivo": "Arouna Sangante a Mister",
-   "tipo": "Venta",
-   "importe": 1768000,
-   "saldo": -9926626
   }
  ]
 }

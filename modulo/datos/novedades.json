@@ -153,6 +153,165 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "29",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "128",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "607",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "1684",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "7024",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "11186",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "14432",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "17450",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "17989",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "20131",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-10",
+  "id": "22547",
+  "de": null,
+  "a": "Neky F.C. (Sergio)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "22885",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "27852",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "29223",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "33717",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "52189",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "52371",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "58958",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-10",
+  "id": "61012",
+  "de": null,
+  "a": "Niutin FC (Isaac)"
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-10",
+  "id": "65704",
+  "de": "Neky F.C. (Sergio)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "65727",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "68497",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "71140",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "71795",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "78393",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-10",
+  "id": "3845074",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-09",
   "id": "22502",
   "entra": true

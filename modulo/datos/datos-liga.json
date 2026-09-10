@@ -1029,9 +1029,49 @@
    "id": "59042",
    "nombre": "Peque Fernández",
    "valor": 2138000
+  },
+  {
+   "id": "61012",
+   "nombre": "Pablo García",
+   "valor": 1560000
+  },
+  {
+   "id": "22547",
+   "nombre": "Pedri",
+   "valor": 21934000
   }
  ],
  "movimientos": [
+  {
+   "id": "65704",
+   "nombre": "Georges Mikautadze",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 14600560,
+   "tipo": "normal",
+   "fecha": "2026-09-10 17:04:39",
+   "pos": 4
+  },
+  {
+   "id": "22547",
+   "nombre": "Pedri",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 21934000,
+   "tipo": "normal",
+   "fecha": "2026-09-10 17:00:18",
+   "pos": 3
+  },
+  {
+   "id": "61012",
+   "nombre": "Pablo García",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 1869890,
+   "tipo": "normal",
+   "fecha": "2026-09-10 17:00:18",
+   "pos": 4
+  },
   {
    "id": "59042",
    "nombre": "Peque Fernández",
@@ -3957,6 +3997,22 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Pedri",
+     "id": "22547",
+     "tipo": "compra",
+     "importe": 21934000,
+     "fecha": "2026-09-10",
+     "op": "normal"
+    },
+    {
+     "j": "Georges Mikautadze",
+     "id": "65704",
+     "tipo": "venta",
+     "importe": 14600560,
+     "fecha": "2026-09-10",
+     "op": "normal"
+    },
+    {
      "j": "Marc Aguado",
      "id": "63871",
      "tipo": "venta",
@@ -4534,6 +4590,12 @@
      "ventas": 10589250,
      "ops": 2
     },
+    "22547": {
+     "nombre": "Pedri",
+     "compras": 21934000,
+     "ventas": 0,
+     "ops": 1
+    },
     "22604": {
      "nombre": "Iñigo Vicente",
      "compras": 4121087,
@@ -4693,8 +4755,8 @@
     "65704": {
      "nombre": "Georges Mikautadze",
      "compras": 14372000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 14600560,
+     "ops": 2
     },
     "66706": {
      "nombre": "Javi Hernandez",
@@ -4777,6 +4839,14 @@
      "id": "69889",
      "tipo": "compra",
      "importe": 4821590,
+     "fecha": "2026-09-10",
+     "op": "normal"
+    },
+    {
+     "j": "Pablo García",
+     "id": "61012",
+     "tipo": "compra",
+     "importe": 1869890,
      "fecha": "2026-09-10",
      "op": "normal"
     },
@@ -5558,6 +5628,12 @@
      "nombre": "Pedro Díaz",
      "compras": 0,
      "ventas": 1205400,
+     "ops": 1
+    },
+    "61012": {
+     "nombre": "Pablo García",
+     "compras": 1869890,
+     "ventas": 0,
      "ops": 1
     },
     "64382": {

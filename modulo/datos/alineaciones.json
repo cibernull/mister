@@ -845,6 +845,14 @@
   ],
   "banquillo": [
    {
+    "id": "61012",
+    "nombre": "Pablo García",
+    "puesto": 4,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
     "id": "71639",
     "nombre": "Beñat Gerenabarrena",
     "puesto": 3,
