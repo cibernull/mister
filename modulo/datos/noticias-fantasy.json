@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-10T10:08:16.340Z",
+ "cuando": "2026-09-10T10:38:12.895Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "10/09",
-   "titulo": "Satriano entrena con normalidad dejando atrás los calambres",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150940-satriano-entrena-con-normalidad-dejando-atras-los-calambres",
-   "categoria": "entrenamiento"
+   "titulo": "Luis García, sobre el sistema, Stassin, Marcao, Sangante, Kike Salas, Vargas, Agoumé, Fofana y el Valencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150943-luis-garcia-sobre-el-sistema-stassin-marcao-sangante-kike-salas-vargas-agoume-fofana-y-el-val",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
@@ -35,9 +35,27 @@
   },
   {
    "fecha": "10/09",
+   "titulo": "Asencio vuelve al grupo y Mourinho solo tiene tres bajas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150944-asencio-vuelve-al-grupo-y-mourinho-solo-tiene-tres-bajas",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Guruzeta, Vivian y Canales siguen siendo bajas en Lezama",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150942-guruzeta-vivian-y-canales-siguen-siendo-bajas-en-lezama",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "10/09",
    "titulo": "Imanol Alguacil toma el relevo de Mendilibar en el Olympiacos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150941-imanol-alguacil-toma-el-relevo-de-mendilibar-en-el-olympiacos",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Satriano entrena con normalidad dejando atrás los calambres",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150940-satriano-entrena-con-normalidad-dejando-atras-los-calambres",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "10/09",
@@ -464,24 +482,6 @@
    "titulo": "Las pruebas complementarias confirman la rotura de Kiko Femenía",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150863-las-pruebas-complementarias-confirman-la-rotura-de-kiko-femenia",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Gulácsi tiene argumentos para asentar el cambio",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150862-gulacsi-tiene-argumentos-para-asentar-el-cambio",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "El Racing repite efectivos con Andrés Martín y Eriksson al margen",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150861-el-racing-repite-efectivos-con-andres-martin-y-eriksson-al-margen",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Guido y De Haas siguen al margen y Jesús Vázquez se recupera del tobillo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150860-guido-y-de-haas-siguen-al-margen-y-jesus-vazquez-se-recupera-del-tobillo",
-   "categoria": "entrenamiento"
   }
  ]
 }
