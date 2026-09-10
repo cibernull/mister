@@ -5225,8 +5225,8 @@
   "semana": 103000,
   "sem7": 434000,
   "mes": 1562000,
-  "mk": 1,
-  "pv": 7897203,
+  "mk": 0,
+  "pv": null,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -8330,8 +8330,8 @@
   "semana": 65000,
   "sem7": 410000,
   "mes": 1574000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1734000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -9945,8 +9945,8 @@
   "semana": 47000,
   "sem7": 684000,
   "mes": 2817000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 14517391,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -30367,6 +30367,68 @@
   "d": 0
  },
  {
+  "id": "59064",
+  "nombre": "Jiri Letacek",
+  "valor": 201000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 4000,
+  "sem7": 13000,
+  "mes": 24000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 9,
+  "riv": 6,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 27,
+  "js": [
+   [
+    1,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    50,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "29238",
   "nombre": "Arnau Comas",
   "valor": 201000,
@@ -30428,68 +30490,6 @@
     4,
     null,
     20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "59064",
-  "nombre": "Jiri Letacek",
-  "valor": 201000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 4000,
-  "sem7": 13000,
-  "mes": 24000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 9,
-  "riv": 6,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    1,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    50,
     0,
     ""
    ]
@@ -31659,46 +31659,6 @@
   "d": 0
  },
  {
-  "id": "17450",
-  "nombre": "Aitor Ruibal",
-  "valor": 174000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 8000,
-  "sem7": -7000,
-  "mes": -515000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 4,
-  "riv": 20,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 30,
-  "js": [],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71638",
   "nombre": "Laro Gómez",
   "valor": 174000,
@@ -31750,6 +31710,46 @@
     ""
    ]
   ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "17450",
+  "nombre": "Aitor Ruibal",
+  "valor": 174000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 8000,
+  "sem7": -7000,
+  "mes": -515000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 4,
+  "riv": 20,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 30,
+  "js": [],
   "p": 0,
   "d": 0
  },
@@ -32482,75 +32482,6 @@
   "d": 0
  },
  {
-  "id": "62910",
-  "nombre": "Fran González",
-  "valor": 162000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -2000,
-  "sem7": -49000,
-  "mes": -567000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 17,
-  "riv": 19,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    8,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "65188",
   "nombre": "Thiago Pitarch",
   "valor": 162000,
@@ -32631,6 +32562,75 @@
     1,
     null,
     19,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "62910",
+  "nombre": "Fran González",
+  "valor": 162000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -2000,
+  "sem7": -49000,
+  "mes": -567000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 17,
+  "riv": 19,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    8,
     0,
     ""
    ]
@@ -33275,6 +33275,75 @@
   "d": 0
  },
  {
+  "id": "70183",
+  "nombre": "Rayane Belaid",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -13000,
+  "sem7": -25000,
+  "mes": -31000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 14,
+  "riv": 15,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [
+   [
+    1,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    1490,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "64496",
   "nombre": "Roony Bardghji",
   "valor": 160000,
@@ -33548,6 +33617,75 @@
     6,
     null,
     16,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "3688394",
+  "nombre": "Kayne van Oevelen",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -79000,
+  "mes": null,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 19,
+  "riv": 17,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    3,
     0,
     ""
    ]
@@ -33975,75 +34113,6 @@
   "d": 0
  },
  {
-  "id": "70183",
-  "nombre": "Rayane Belaid",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -13000,
-  "sem7": -25000,
-  "mes": -31000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 14,
-  "riv": 15,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [
-   [
-    1,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    1490,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "70997",
   "nombre": "Aarón Ochoa",
   "valor": 160000,
@@ -34127,75 +34196,6 @@
   "once": null,
   "asis": 0,
   "edad": 19,
-  "js": [
-   [
-    1,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    3,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "3688394",
-  "nombre": "Kayne van Oevelen",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -79000,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 19,
-  "riv": 17,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
   "js": [
    [
     1,
