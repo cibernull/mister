@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-10T19:08:11.123Z",
+ "cuando": "2026-09-10T19:38:12.595Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "El motivo por el cual Mourinho todavía no ha rotado a Huijsen",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150973-el-motivo-por-el-cual-mourinho-todavia-no-ha-rotado-a-huijsen",
+   "categoria": "análisis"
   },
   {
    "fecha": "10/09",
@@ -476,12 +482,6 @@
    "titulo": "Fofana explica su fichaje por el Sevilla y habla de su estado físico y de lo que puede aportar",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150892-fofana-explica-su-fichaje-por-el-sevilla-y-habla-de-su-estado-fisico-y-de-lo-que-puede-aporta",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "El Alavés avanza en la semana con Toni Martínez con el grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150891-el-alaves-avanza-en-la-semana-con-toni-martinez-con-el-grupo",
-   "categoria": "entrenamiento"
   }
  ]
 }
