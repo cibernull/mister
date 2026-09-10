@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-10T09:38:27.927Z",
+ "cuando": "2026-09-10T09:47:18.864Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -193,7 +193,10 @@
    "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 0
+   "min": 0,
+   "lesion": "Rotura completa del tendón proximal del bíceps femoral",
+   "desde": "01/08 (40 días)",
+   "hasta": "diciembre"
   },
   "1713": {
    "prob": 95,
@@ -481,7 +484,10 @@
    "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 0
+   "min": 0,
+   "lesion": "Rotura de lig. cruzado anterior",
+   "desde": "11/01 (242 días)",
+   "hasta": "octubre"
   },
   "14670": {
    "prob": 95,
@@ -1198,10 +1204,7 @@
    "prob": 30,
    "sancionado": 0,
    "fuera": 0,
-   "min": 17,
-   "lesion": "Proceso viral",
-   "desde": "03/09 (7 días)",
-   "hasta": null
+   "min": 17
   },
   "33896": {
    "prob": 20,
@@ -1363,10 +1366,7 @@
    "prob": 90,
    "sancionado": 0,
    "fuera": 0,
-   "min": 267,
-   "lesion": "Trabajo al margen",
-   "desde": "09/09 (1 día)",
-   "hasta": null
+   "min": 267
   },
   "51060": {
    "prob": 50,
@@ -2272,10 +2272,7 @@
    "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 0,
-   "lesion": "Lesión en el cuádriceps",
-   "desde": "13/03 (181 días)",
-   "hasta": null
+   "min": 0
   },
   "67942": {
    "prob": 70,
@@ -2728,7 +2725,10 @@
    "prob": 60,
    "sancionado": 0,
    "fuera": 0,
-   "min": 284
+   "min": 284,
+   "lesion": "Molestias en el tobillo",
+   "desde": "06/09 (4 días)",
+   "hasta": null
   },
   "71124": {
    "prob": 50,

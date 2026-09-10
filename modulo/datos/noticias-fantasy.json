@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-10T09:38:29.068Z",
+ "cuando": "2026-09-10T09:47:20.006Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "10/09",
-   "titulo": "Kike Salas vuelve al grupo y Sangante y Vargas son las únicas bajas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150935-kike-salas-vuelve-al-grupo-y-sangante-y-vargas-son-las-unicas",
-   "categoria": "entrenamiento"
+   "titulo": "Corberán devuelve a Pepelu al centro del campo y da galones a Elliott",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150938-corberan-devuelve-a-pepelu-al-centro-del-campo-y-da-galones-a-elliott",
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -35,6 +35,12 @@
   },
   {
    "fecha": "10/09",
+   "titulo": "Guido y De Haas hacen parte de la sesión del jueves con el grupo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150939-guido-y-de-haas-hacen-parte-de-la-sesion-del-jueves-con-el-grupo",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "10/09",
    "titulo": "Eriksson y Andrés Martín siguen siendo las únicas bajas del Racing",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150937-eriksson-y-andres-martin-siguen-siendo-las-unicas-bajas-del-racing",
    "categoria": "entrenamiento"
@@ -43,6 +49,12 @@
    "fecha": "10/09",
    "titulo": "Osasuna se ejercita este jueves sin los cuatro lesionados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150936-osasuna-se-ejercita-este-jueves-sin-los-cuatro-lesionados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "Kike Salas vuelve al grupo y Sangante y Vargas son las únicas bajas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150935-kike-salas-vuelve-al-grupo-y-sangante-y-vargas-son-las-unicas",
    "categoria": "entrenamiento"
   },
   {
@@ -469,18 +481,6 @@
    "fecha": "09/09",
    "titulo": "Fran García y Marc Roca, más que descansados para La Cerámica",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150858-fran-garcia-y-marc-roca-mas-que-descansados-para-la-ceramica",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Anthony Martial se ofrece al Málaga y el club valora la propuesta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150857-anthony-martial-se-ofrece-al-malaga-y-el-club-valora-la-propuesta",
-   "categoria": "mercado"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Íñigo Pérez crea un precedente con trivote",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150856-inigo-perez-crea-un-precedente-con-trivote",
    "categoria": "análisis"
   }
  ]
