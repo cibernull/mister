@@ -1,14 +1,8 @@
 {
- "cuando": "2026-09-10T14:08:14.718Z",
+ "cuando": "2026-09-10T14:28:41.610Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "10/09",
-   "titulo": "San José explica el estado de Balliu y Nteka y habla de De Frutos, Fran Pérez, Camello, Kumbulla, Isi, RDT y el Real Madrid",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150959-san-jose-explica-las-bajas-de-balliu-y-nteka-y-habla-de-de-frutos-fran-perez-camello-kumbulla",
-   "categoria": "rueda de prensa"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 5 actualizadas",
@@ -35,9 +29,21 @@
   },
   {
    "fecha": "10/09",
+   "titulo": "¡Sigue a las 16:45h en Twitch y Youtube la información fantasy para la jornada 5!",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150965-sigue-a-las-16-45h-en-twitch-y-youtube-la-informacion-fantasy-para-la-jornada-5",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "10/09",
    "titulo": "Gorosabel sigue sin estar al cien por cien y Calatrava mejora del tobillo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150964-gorosabel-sigue-sin-estar-al-cien-por-cien-y-calatrava-mejora-del-tobillo",
    "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "10/09",
+   "titulo": "San José explica el estado de Balliu y Nteka y habla de De Frutos, Fran Pérez, Camello, Kumbulla, Isi, RDT y el Real Madrid",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150959-san-jose-explica-las-bajas-de-balliu-y-nteka-y-habla-de-de-frutos-fran-perez-camello-kumbulla",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "10/09",
@@ -476,12 +482,6 @@
    "titulo": "Juan Cruz, solo en casa",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150884-juan-cruz-solo-en-casa",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Parte médico oficial de Gorka Guruzeta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150883-parte-medico-oficial-de-gorka-guruzeta",
-   "categoria": "lesión"
   }
  ]
 }
