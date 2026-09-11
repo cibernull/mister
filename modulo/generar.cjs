@@ -2325,7 +2325,7 @@ const bloqueOnce = once === null || once.elegidos.length === 0
   ? ''
   : `    <section class="sec" id="once-jornada">
       <h2 class="sh"><span class="se">👕</span>El once del domingo <em>${YO.formacion}</em></h2>
-      <p class="sd">Los que más deberían darte según Mister: su media <strong>donde les toca jugar</strong> esta jornada, y solo contando a los que da por titulares. La cifra grande es lo que cabe esperar de cada uno.${
+      <p class="sd">Los <strong>${once.elegidos.length} titulares</strong> de tus ${MIOS.length} jugadores: su media <strong>donde les toca jugar</strong> esta jornada, y solo contando a los que da por titulares. El resto de la plantilla está justo debajo, en el banquillo. La cifra grande es lo que cabe esperar de cada uno.${
         once.elegidos.filter((j) => j.est === 'injury').length
           ? ' <strong>Ojo:</strong> hay lesionados en el once porque no tienes recambio en su puesto.'
           : ''
@@ -2398,8 +2398,8 @@ ${once.elegidos.map(filaOnce).join(NL)}
       </div>
       ${
         once.banquillo.length
-          ? `<details class="quien" style="grid-column:auto;grid-row:auto;margin-top:11px">
-        <summary><span class="txt">Los ${once.banquillo.length} que se quedan fuera</span></summary>
+          ? `<details class="quien" open style="grid-column:auto;grid-row:auto;margin-top:11px">
+        <summary><span class="txt">Tu banquillo: los ${once.banquillo.length} que no entran hoy</span></summary>
         <div class="mini" style="margin-top:9px">
 ${once.banquillo.map(filaOnce).join(NL)}
         </div>
