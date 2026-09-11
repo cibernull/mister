@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-11T21:08:13.228Z",
+ "cuando": "2026-09-11T21:38:19.938Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "11/09",
+   "titulo": "El Sevilla asesta un golpe letal a Corberán",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151052-el-sevilla-asesta-un-golpe-letal-a-corberan",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 5 actualizadas",
@@ -20,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Fofana marca su territorio",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151054-fofana-marca-territorio",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Apelación desestima el recurso del Rayo y mantiene las sanciones a De Frutos y Fran Pérez",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151053-apelacion-desestima-el-recurso-del-rayo-y-mantiene-las-sanciones-a-de-frutos-y-fran-perez",
+   "categoria": "sanción"
   },
   {
    "fecha": "11/09",
@@ -464,24 +482,6 @@
    "titulo": "Sin rastro de Carlos Romero y Foyth en la vuelta al trabajo del Villarreal",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150978-sin-rastro-de-carlos-romero-y-foyth-en-la-vuelta-al-trabajo-del-villarreal",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Los mejores chollos para la jornada. XI económico J5, por Huugo_21",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150977-los-mejores-chollos-para-la-jornada-xi-economico-j5-por-huugo-21",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Los mejores jugadores para la JORNADA 5 de LA LIGA FANTASY 26/27, por Carrasco",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150976-los-mejores-jugadores-para-la-jornada-5-de-la-liga-fantasy-26-27-por-carrasco",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "El físico al límite de Cuti, las dudas de Grimaldo y la ley del ex de Le Normand se juntan en Anoeta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150975-el-fisico-al-limite-de-cuti-las-dudas-de-grimaldo-y-la-ley-del-ex-de-le-normand-se-juntan-en-",
-   "categoria": "análisis"
   }
  ]
 }
