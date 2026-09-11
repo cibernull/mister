@@ -1,12 +1,12 @@
 {
- "cuando": "2026-09-11T11:37:28.290Z",
+ "cuando": "2026-09-11T12:07:37.625Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "11/09",
-   "titulo": "José Alberto, sobre Pedro Felipe, Íñigo Vicente, los cambios en el once y los nuevos fichajes",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151017-jose-alberto-sobre-pedro-felipe-inigo-vicente-los-cambios-en-el-once-y-los-nuevos-fichajes",
+   "titulo": "Terzic habla de Vivian, Guruzeta, Canales, Laporte, Unai Simón, Iñaki Williams y el Elche",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151022-terzic-habla-de-vivian-guruzeta-canales-laporte-unai-simon-inaki-williams-y-el-elche",
    "categoria": "rueda de prensa"
   },
   {
@@ -26,6 +26,36 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Toni Martínez completa la sesión del viernes y recibe el alta médica",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151021-toni-martinez-completa-la-sesion-del-viernes-y-recibe-el-alta-medica",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Quique habla de Toni Martínez, Mikel, Garcés, Denis Suárez, Aleñá, Mariano, Izei, Mañas y Olaiz antes del Racing",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151020-quique-habla-de-toni-martinez-mikel-garces-denis-suarez-alena-mariano-izei-manas-y-olaiz-ante",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Mourinho habla de Vinicius, Diomandé, Camavinga, Bernardo Silva, Güler, Cucurella, Mbappé, Tchouaméni, Valverde y el Rayo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151019-mourinho-habla-de-vinicius-diomande-camavinga-bernardo-silva-guler-cucurella-mbappe-tchouamen",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Manolo habla de Bryan Zaragoza, Gorosasbel, Riedel, Hartman, Budimir y el plan de partido contra Osasuna",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151018-manolo-habla-de-bryan-zaragoza-gorosasbel-riedel-hartman-budimir-y-el-plan-de-partido-contra-",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "José Alberto, sobre Pedro Felipe, Íñigo Vicente, los cambios en el once y los nuevos fichajes",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151017-jose-alberto-sobre-pedro-felipe-inigo-vicente-los-cambios-en-el-once-y-los-nuevos-fichajes",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "11/09",
@@ -452,36 +482,6 @@
    "titulo": "Luis García sigue viendo la utilización de dos puntas condicionada",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150946-luis-garcia-sigue-viendo-la-utilizacion-de-dos-puntas-condicionada",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Toni Martínez sigue quemando etapas con el grupo y espera recibir el alta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150945-toni-martinez-sigue-quemando-etapas-con-el-grupo-y-espera-recibir-el-alta",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Asencio vuelve al grupo y Mourinho solo tiene tres bajas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150944-asencio-vuelve-al-grupo-y-mourinho-solo-tiene-tres-bajas",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Luis García, sobre el sistema, Stassin, Marcao, Sangante, Kike Salas, Vargas, Agoumé, Fofana y el Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150943-luis-garcia-sobre-el-sistema-stassin-marcao-sangante-kike-salas-vargas-agoume-fofana-y-el-val",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Guruzeta, Vivian y Canales siguen siendo bajas en Lezama",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150942-guruzeta-vivian-y-canales-siguen-siendo-bajas-en-lezama",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Imanol Alguacil toma el relevo de Mendilibar en el Olympiacos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150941-imanol-alguacil-toma-el-relevo-de-mendilibar-en-el-olympiacos",
-   "categoria": "mercado"
   }
  ]
 }

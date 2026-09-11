@@ -1,13 +1,16 @@
 {
- "cuando": "2026-09-11T09:44:37.993Z",
+ "cuando": "2026-09-11T12:07:36.547Z",
  "fuente": "futbolfantasy.com",
  "leidos": 514,
  "jugadores": {
   "10": {
-   "prob": 90,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 303
+   "min": 303,
+   "lesion": "Trabajo al margen",
+   "desde": "10/09 (1 día)",
+   "hasta": null
   },
   "24": {
    "prob": 90,
@@ -436,7 +439,10 @@
    "prob": 60,
    "sancionado": 0,
    "fuera": 0,
-   "min": 250
+   "min": 250,
+   "lesion": "Trabajo al margen",
+   "desde": "11/09 (1 día)",
+   "hasta": null
   },
   "12946": {
    "prob": 50,
@@ -994,7 +1000,7 @@
    "min": 263
   },
   "28395": {
-   "prob": 60,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
@@ -1042,7 +1048,7 @@
    "min": 208
   },
   "28774": {
-   "prob": 90,
+   "prob": 95,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
@@ -1915,10 +1921,7 @@
    "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 0,
-   "lesion": "Lesión en el sóleo",
-   "desde": "12/08 (30 días)",
-   "hasta": "principios de septiembre"
+   "min": 0
   },
   "61009": {
    "prob": 30,
@@ -2095,7 +2098,7 @@
    "min": 360
   },
   "64410": {
-   "prob": 40,
+   "prob": 20,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -2458,7 +2461,7 @@
    "min": 270
   },
   "70925": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0,
@@ -2605,10 +2608,7 @@
    "prob": 10,
    "sancionado": 0,
    "fuera": 0,
-   "min": 11,
-   "lesion": "Sobrecarga muscular",
-   "desde": "10/09 (1 día)",
-   "hasta": null
+   "min": 11
   },
   "70996": {
    "prob": 70,
@@ -2854,7 +2854,7 @@
    "min": 31
   },
   "71638": {
-   "prob": 0,
+   "prob": 5,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
