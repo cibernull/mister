@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-11T09:44:39.233Z",
+ "cuando": "2026-09-11T10:07:25.003Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "11/09",
-   "titulo": "El Atlético retoma los entrenamientos sin Sørloth y con cuidados para Barrios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151002-el-atletico-retoma-los-entrenamientos-sin-sorloth",
-   "categoria": "entrenamiento"
+   "titulo": "Andrés García se adueña provisionalmente del carril",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151005-andres-garcia-se-aduena-provisionalmente-del-carril",
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -32,6 +32,24 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Jorge Salinas siente el aumento de presión atmosférica",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151003-jorge-salinas-siente-el-aumento-de-presion-atmosferica",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "El Rayo no volverá a Vallecas ante el Espanyol y Butarque apunta de nuevo como solución",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151004-el-rayo-no-volvera-a-vallecas-ante-el-espanyol-y-butarque-apunta-de-nuevo-como-solucion",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "El Atlético retoma los entrenamientos sin Sørloth y con cuidados para Barrios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151002-el-atletico-retoma-los-entrenamientos-sin-sorloth",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "11/09",
@@ -463,24 +481,6 @@
    "fecha": "10/09",
    "titulo": "Alineaciones probables y previa fantasy del Celta - Málaga",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150930-alineaciones-probables-y-previa-fantasy-del-celta-malaga",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Alineaciones probables y previa fantasy del Real Madrid - Rayo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150929-alineaciones-probables-y-previa-fantasy-del-real-madrid-rayo",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Posibles alineaciones y previa fantasy del Athletic - Elche",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150928-posibles-alineaciones-y-previa-fantasy-del-athletic-elche",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Posibles alineaciones y previa fantasy del Osasuna - Espanyol",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150927-posibles-alineaciones-y-previa-fantasy-del-osasuna-espanyol",
    "categoria": "análisis"
   }
  ]
