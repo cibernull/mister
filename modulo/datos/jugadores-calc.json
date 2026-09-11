@@ -7566,6 +7566,74 @@
   "d": 1
  },
  {
+  "id": "56632",
+  "nombre": "Isaac Romero",
+  "valor": 4002000,
+  "puntos": 16,
+  "media": 4,
+  "partidos": 3,
+  "semana": 45000,
+  "sem7": 495000,
+  "mes": 2257000,
+  "mk": 1,
+  "pv": 13729995,
+  "ced": 0,
+  "pos": 4,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   1,
+   11,
+   2,
+   null
+  ],
+  "eq": 17,
+  "riv": 6,
+  "casa": 0,
+  "gol": 1,
+  "tar": 2,
+  "mc": 1.5,
+  "mf": 11,
+  "tit": 1,
+  "sup": 2,
+  "once": null,
+  "asis": 1,
+  "edad": 26,
+  "js": [
+   [
+    1,
+    1,
+    14,
+    1,
+    "o46,y48"
+   ],
+   [
+    2,
+    11,
+    1,
+    0,
+    "i46,a50,g57"
+   ],
+   [
+    3,
+    2,
+    2,
+    0,
+    "i68,y89"
+   ],
+   [
+    4,
+    null,
+    8,
+    0,
+    ""
+   ]
+  ],
+  "p": 1,
+  "d": 1
+ },
+ {
   "id": "23664",
   "nombre": "Sergio Carreira",
   "valor": 5235000,
@@ -8390,74 +8458,6 @@
     17,
     1,
     "o86"
-   ]
-  ],
-  "p": 0,
-  "d": 1
- },
- {
-  "id": "56632",
-  "nombre": "Isaac Romero",
-  "valor": 4002000,
-  "puntos": 15,
-  "media": 3.8,
-  "partidos": 3,
-  "semana": 45000,
-  "sem7": 495000,
-  "mes": 2257000,
-  "mk": 1,
-  "pv": 13729995,
-  "ced": 0,
-  "pos": 4,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   1,
-   11,
-   2,
-   null
-  ],
-  "eq": 17,
-  "riv": 6,
-  "casa": 0,
-  "gol": 1,
-  "tar": 2,
-  "mc": 1.5,
-  "mf": 11,
-  "tit": 1,
-  "sup": 2,
-  "once": null,
-  "asis": 1,
-  "edad": 26,
-  "js": [
-   [
-    1,
-    1,
-    14,
-    1,
-    "o46,y48"
-   ],
-   [
-    2,
-    11,
-    1,
-    0,
-    "i46,a50,g57"
-   ],
-   [
-    3,
-    2,
-    2,
-    0,
-    "i68,y89"
-   ],
-   [
-    4,
-    null,
-    8,
-    0,
-    ""
    ]
   ],
   "p": 0,
@@ -12073,81 +12073,6 @@
   "d": 0
  },
  {
-  "id": "4836172",
-  "nombre": "Lucas Stassin",
-  "valor": 3910000,
-  "puntos": 11,
-  "media": 5.5,
-  "partidos": 1,
-  "semana": 147000,
-  "sem7": 805000,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   10
-  ],
-  "eq": 17,
-  "riv": 6,
-  "casa": 0,
-  "gol": 1,
-  "tar": 0,
-  "mc": 0,
-  "mf": 10,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    4,
-    10,
-    8,
-    0,
-    "i54,g85"
-   ],
-   [
-    5,
-    null,
-    19,
-    1,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "27865",
   "nombre": "Jesús Areso",
   "valor": 1708000,
@@ -13374,6 +13299,142 @@
     3,
     1,
     "o54"
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "64382",
+  "nombre": "Gabriel Suazo",
+  "valor": 2811000,
+  "puntos": 11,
+  "media": 2.2,
+  "partidos": 4,
+  "semana": 73000,
+  "sem7": 180000,
+  "mes": 1275000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   3,
+   2,
+   1,
+   3
+  ],
+  "eq": 17,
+  "riv": 6,
+  "casa": 0,
+  "gol": 0,
+  "tar": 2,
+  "mc": 2,
+  "mf": 2.5,
+  "tit": 4,
+  "sup": 0,
+  "once": 1,
+  "asis": 0,
+  "edad": 29,
+  "js": [
+   [
+    1,
+    3,
+    14,
+    1,
+    "y81"
+   ],
+   [
+    2,
+    2,
+    1,
+    1,
+    ""
+   ],
+   [
+    3,
+    1,
+    2,
+    1,
+    "y91"
+   ],
+   [
+    4,
+    3,
+    8,
+    1,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 1
+ },
+ {
+  "id": "4836172",
+  "nombre": "Lucas Stassin",
+  "valor": 3910000,
+  "puntos": 10,
+  "media": 5,
+  "partidos": 1,
+  "semana": 147000,
+  "sem7": 805000,
+  "mes": null,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 4,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   10
+  ],
+  "eq": 17,
+  "riv": 6,
+  "casa": 0,
+  "gol": 1,
+  "tar": 0,
+  "mc": 0,
+  "mf": 10,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    4,
+    10,
+    8,
+    0,
+    "i54,g85"
    ]
   ],
   "p": 0,
@@ -14745,74 +14806,6 @@
   ],
   "p": 0,
   "d": 0
- },
- {
-  "id": "64382",
-  "nombre": "Gabriel Suazo",
-  "valor": 2811000,
-  "puntos": 10,
-  "media": 2,
-  "partidos": 4,
-  "semana": 73000,
-  "sem7": 180000,
-  "mes": 1275000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   3,
-   2,
-   1,
-   3
-  ],
-  "eq": 17,
-  "riv": 6,
-  "casa": 0,
-  "gol": 0,
-  "tar": 2,
-  "mc": 2,
-  "mf": 2.5,
-  "tit": 4,
-  "sup": 0,
-  "once": 1,
-  "asis": 0,
-  "edad": 29,
-  "js": [
-   [
-    1,
-    3,
-    14,
-    1,
-    "y81"
-   ],
-   [
-    2,
-    2,
-    1,
-    1,
-    ""
-   ],
-   [
-    3,
-    1,
-    2,
-    1,
-    "y91"
-   ],
-   [
-    4,
-    3,
-    8,
-    1,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 1
  },
  {
   "id": "55743",
@@ -27355,6 +27348,81 @@
   "d": 0
  },
  {
+  "id": "4836173",
+  "nombre": "Félix Correia",
+  "valor": 1534000,
+  "puntos": 1,
+  "media": 1,
+  "partidos": 0,
+  "semana": -44000,
+  "sem7": -311000,
+  "mes": null,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 17,
+  "riv": 6,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    1,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    19,
+    1,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "607",
   "nombre": "Borja Mayoral",
   "valor": 1153000,
@@ -28389,74 +28457,6 @@
   "asis": 0,
   "edad": 28,
   "js": [],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "4836173",
-  "nombre": "Félix Correia",
-  "valor": 1534000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -44000,
-  "sem7": -311000,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 17,
-  "riv": 6,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    1,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    8,
-    0,
-    ""
-   ]
-  ],
   "p": 0,
   "d": 0
  },

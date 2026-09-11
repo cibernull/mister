@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-11T19:38:05.157Z",
+ "cuando": "2026-09-11T20:08:37.513Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "11/09",
-   "titulo": "Alineaciones confirmadas del Sevilla - Valencia",
+   "titulo": "Sigue en directo el Sevilla - Valencia",
    "url": "https://www.futbolfantasy.com/partidos/22471-sevilla-valencia",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -26,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Corberán habló del estado anímico, el planteamiento y su continuidad",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151050-corberan-hablo-del-estado-animico-el-planteamiento-y-su-continuidad",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Luis García explicó las decisiones con Stassin, Ure, Fofana, Kochorashvili, Guridi y Correia antes del partido",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151049-luis-garcia-explico-las-decisiones-con-stassin-ure-fofana-kochorashvili-guridi-y-correia-ante",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "11/09",
@@ -469,18 +481,6 @@
    "fecha": "10/09",
    "titulo": "LaLiga es un poco menos pobre: así quedan los nuevos límites salariales de los 20 equipos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150974-laliga-es-un-poco-menos-pobre-asi-queda-el-nuevo-limite-salarial-de-los-20-equipos",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "El motivo por el cual Mourinho todavía no ha rotado a Huijsen",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150973-el-motivo-por-el-cual-mourinho-todavia-no-ha-rotado-a-huijsen",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Jose Alberto ensaya con Belocian y Pablo Ramón en un partidillo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150972-jose-alberto-ensaya-con-belocian-y-pablo-ramon-en-un-partidillo",
    "categoria": "análisis"
   }
  ]
