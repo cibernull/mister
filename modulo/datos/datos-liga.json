@@ -1048,6 +1048,16 @@
  ],
  "movimientos": [
   {
+   "id": "71623",
+   "nombre": "Roger Hinojo",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 1681980,
+   "tipo": "normal",
+   "fecha": "2026-09-11 09:35:38",
+   "pos": 2
+  },
+  {
    "id": "3848780",
    "nombre": "Johaneko Louis-Jean",
    "de": null,
@@ -5766,6 +5776,14 @@
      "op": "normal"
     },
     {
+     "j": "Roger Hinojo",
+     "id": "71623",
+     "tipo": "venta",
+     "importe": 1681980,
+     "fecha": "2026-09-11",
+     "op": "normal"
+    },
+    {
      "j": "Peque Fernández",
      "id": "59042",
      "tipo": "compra",
@@ -6552,8 +6570,8 @@
     "71623": {
      "nombre": "Roger Hinojo",
      "compras": 937200,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1681980,
+     "ops": 2
     },
     "3848780": {
      "nombre": "Johaneko Louis-Jean",
