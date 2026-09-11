@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-11T10:37:24.494Z",
+ "cuando": "2026-09-11T11:07:20.924Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "11/09",
-   "titulo": "Dituro seguirá siendo titular en San Mamés",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151006-dituro-seguira-siendo-titular-en-san-mames",
-   "categoria": "análisis"
+   "titulo": "Bordalás esconde el parte de bajas y habla de Femenía, Romero, Gudelj, el arbitraje y los menos habituales",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151011-bordalas-esconde-el-parte-de-bajas-y-habla-de-femenia-romero-gudelj-el-arbitraje-y-los-menos-",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
@@ -29,6 +29,30 @@
   },
   {
    "fecha": "11/09",
+   "titulo": "José Alberto convoca a los disponibles para enfrentarse al Alavés",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151013-jose-alberto-convoca-a-los-disponibles-para-enfrentarse-al-alaves",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Anselmi explica cómo llega el equipo a San mamés y habla de Dituro, Lomónaco, Redondo, el sistema y el once",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151012-anselmi-explica-como-llega-el-equipo-a-san-mames-y-habla-de-dituro-lomonaco-redondo-el-sistem",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Eric García sigue entrenando con normalidad y Flick tiene dos bajas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151010-eric-garcia-sigue-entrenando-con-normalidad-y-flick-tiene-dos-bajas",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Jauregi vuelve al grupo y Funes tiene cuatro bajas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151009-jauregi-vuelve-al-grupo-y-funes-tiene-cuatro-bajas",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "11/09",
    "titulo": "Yago Santiago, única baja del Elche en la sesión del viernes",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151008-yago-santiago-unica-baja-del-elche-en-la-sesion-del-viernes",
    "categoria": "entrenamiento"
@@ -38,6 +62,12 @@
    "titulo": "Asencio repite con el grupo y Lunin está recuperado",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151007-asencio-repite-con-el-grupo-y-lunin-esta-recuperado",
    "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Dituro seguirá siendo titular en San Mamés",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151006-dituro-seguira-siendo-titular-en-san-mames",
+   "categoria": "análisis"
   },
   {
    "fecha": "11/09",
@@ -452,36 +482,6 @@
    "titulo": "Eriksson y Andrés Martín siguen siendo las únicas bajas del Racing",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150937-eriksson-y-andres-martin-siguen-siendo-las-unicas-bajas-del-racing",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Osasuna se ejercita este jueves sin los cuatro lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150936-osasuna-se-ejercita-este-jueves-sin-los-cuatro-lesionados",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Kike Salas vuelve al grupo y Sangante y Vargas son las únicas bajas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150935-kike-salas-vuelve-al-grupo-y-sangante-y-vargas-son-las-unicas",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Llorente y Abde entrenan con el grupo y Ruibal es la única baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150934-llorente-y-abde-entrenan-con-el-grupo-y-ruibal-es-la-unica-baja",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "El Elche prepara el partido de San Mamés con Yago de Santiago como única baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150933-el-elche-prepara-el-partido-de-san-mames-con-yago-de-santiago-como-unica-baja",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Alineaciones probables y previa fantasy del Villarreal - Betis",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150932-alineaciones-probables-y-previa-fantasy-del-villarreal-betis",
-   "categoria": "análisis"
   }
  ]
 }
