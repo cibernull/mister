@@ -4129,8 +4129,8 @@
   "semana": 61000,
   "sem7": 525000,
   "mes": 979000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 5780000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -6201,8 +6201,8 @@
   "semana": 52000,
   "sem7": 405000,
   "mes": 1443000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 10616000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -17564,8 +17564,8 @@
   "semana": -98000,
   "sem7": -800000,
   "mes": 823000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 3046000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -21649,8 +21649,8 @@
   "semana": -11000,
   "sem7": -160000,
   "mes": 39000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 244000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -22331,8 +22331,8 @@
   "semana": 0,
   "sem7": -254000,
   "mes": -128000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -25821,8 +25821,8 @@
   "semana": -20000,
   "sem7": -147000,
   "mes": -790000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 912000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -26678,8 +26678,8 @@
   "semana": -12000,
   "sem7": 10000,
   "mes": null,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 195000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -30303,6 +30303,13 @@
     50,
     0,
     ""
+   ],
+   [
+    4,
+    null,
+    5,
+    0,
+    ""
    ]
   ],
   "p": 0,
@@ -31792,8 +31799,8 @@
   "semana": -22000,
   "sem7": 19000,
   "mes": 19000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 179000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -32757,75 +32764,6 @@
   "d": 0
  },
  {
-  "id": "29167",
-  "nombre": "Ángel Fortuño",
-  "valor": 162000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -6000,
-  "sem7": -12000,
-  "mes": -91000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 8,
-  "riv": 50,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    1,
-    null,
-    12,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    17,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71012",
   "nombre": "Carlos López",
   "valor": 162000,
@@ -32887,6 +32825,75 @@
     4,
     null,
     12,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "29167",
+  "nombre": "Ángel Fortuño",
+  "valor": 162000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -6000,
+  "sem7": -12000,
+  "mes": -91000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 8,
+  "riv": 50,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    1,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    17,
     0,
     ""
    ]
@@ -33382,6 +33389,75 @@
   "d": 0
  },
  {
+  "id": "63784",
+  "nombre": "Jorge Cabello",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -24000,
+  "sem7": -48000,
+  "mes": -32000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 12,
+  "riv": 3,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 22,
+  "js": [
+   [
+    1,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    13,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "48486",
   "nombre": "José Copete",
   "valor": 160000,
@@ -33812,6 +33888,75 @@
   "d": 0
  },
  {
+  "id": "70934",
+  "nombre": "Íñigo Sáinz-Maza",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -28000,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 1490,
+  "riv": 48,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 28,
+  "js": [
+   [
+    1,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    14,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "62910",
   "nombre": "Fran González",
   "valor": 160000,
@@ -34023,75 +34168,6 @@
   "d": 0
  },
  {
-  "id": "63784",
-  "nombre": "Jorge Cabello",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -24000,
-  "sem7": -48000,
-  "mes": -32000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 12,
-  "riv": 3,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 22,
-  "js": [
-   [
-    1,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    13,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "67580",
   "nombre": "Samu Becerra",
   "valor": 160000,
@@ -34146,75 +34222,6 @@
     4,
     null,
     1490,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "70934",
-  "nombre": "Íñigo Sáinz-Maza",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -28000,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1490,
-  "riv": 48,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 28,
-  "js": [
-   [
-    1,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    14,
     0,
     ""
    ]
