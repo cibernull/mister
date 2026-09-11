@@ -1048,6 +1048,36 @@
  ],
  "movimientos": [
   {
+   "id": "71132",
+   "nombre": "Facundo Bernal",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 4929550,
+   "tipo": "normal",
+   "fecha": "2026-09-11 17:05:13",
+   "pos": 3
+  },
+  {
+   "id": "15653",
+   "nombre": "Kang-In Lee",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 10428480,
+   "tipo": "normal",
+   "fecha": "2026-09-11 17:05:10",
+   "pos": 3
+  },
+  {
+   "id": "56971",
+   "nombre": "Hector Fort",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 1418560,
+   "tipo": "normal",
+   "fecha": "2026-09-11 17:04:53",
+   "pos": 2
+  },
+  {
    "id": "71623",
    "nombre": "Roger Hinojo",
    "de": "Cacaculopedopis",
@@ -4022,6 +4052,22 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Kang-In Lee",
+     "id": "15653",
+     "tipo": "venta",
+     "importe": 10428480,
+     "fecha": "2026-09-11",
+     "op": "normal"
+    },
+    {
+     "j": "Facundo Bernal",
+     "id": "71132",
+     "tipo": "venta",
+     "importe": 4929550,
+     "fecha": "2026-09-11",
+     "op": "normal"
+    },
+    {
      "j": "Pedri",
      "id": "22547",
      "tipo": "compra",
@@ -4600,8 +4646,8 @@
     "15653": {
      "nombre": "Kang-In Lee",
      "compras": 8285000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 10428480,
+     "ops": 2
     },
     "15756": {
      "nombre": "Alejandro Catena",
@@ -4846,8 +4892,8 @@
     "71132": {
      "nombre": "Facundo Bernal",
      "compras": 2200010,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 4929550,
+     "ops": 2
     },
     "71616": {
      "nombre": "Yassir Zabiri",
@@ -4859,6 +4905,14 @@
   },
   "Niutin FC (Isaac)": {
    "movimientos": [
+    {
+     "j": "Hector Fort",
+     "id": "56971",
+     "tipo": "venta",
+     "importe": 1418560,
+     "fecha": "2026-09-11",
+     "op": "normal"
+    },
     {
      "j": "Xavi Espart",
      "id": "69889",
@@ -5640,8 +5694,8 @@
     "56971": {
      "nombre": "Hector Fort",
      "compras": 878010,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1418560,
+     "ops": 2
     },
     "59088": {
      "nombre": "Willy Kambwala",

@@ -1,6 +1,14 @@
 {
- "saldo": 10085640,
+ "saldo": 11504200,
  "apuntes": [
+  {
+   "cuando": 1789139093,
+   "fecha": "2026-09-11 17:04",
+   "motivo": "Hector Fort a Mister",
+   "tipo": "Venta",
+   "importe": 1418560,
+   "saldo": 11504200
+  },
   {
    "cuando": 1789052400,
    "fecha": "2026-09-10 17:00",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -1801050,
    "saldo": -6260396
-  },
-  {
-   "cuando": 1786695681,
-   "fecha": "2026-08-14 10:21",
-   "motivo": "Luis Rioja a Mister",
-   "tipo": "Venta",
-   "importe": 5467280,
-   "saldo": -4459346
   }
  ]
 }
