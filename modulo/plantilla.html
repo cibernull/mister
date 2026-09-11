@@ -1471,12 +1471,25 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     // `window.ONCES` se lee al pulsar, no aquí: la isla de datos va al final de
     // la página y en este momento todavía no existe. Comprobarla al arrancar
     // dejaba el botón mudo, sin error y sin pista de por qué.
+    //
+    // Las fichas de formación (fila de abajo) no llevan su propio plan de
+    // riesgo: solo dicen la formación, no si la quieres «segura» o
+    // «ambiciosa». Antes, tocarlas siempre buscaba la versión equilibrada y
+    // borraba en silencio el plan de riesgo que tuvieras elegido arriba,
+    // dejando encima ningún botón marcado como activo: parecía que la página
+    // no respondía. Ahora se recuerda qué plan estaba activo y las fichas de
+    // formación lo respetan.
+    var perfilActivo = 'equilibrado'
     document.addEventListener('click', function (e) {
       var b = e.target.closest ? e.target.closest('[data-formacion]') : null
       if (!b) return
       var nombre = b.getAttribute('data-formacion')
-      var clave = b.getAttribute('data-once-key') || nombre
-      var datos = (window.ONCES || {})[clave]
+      var propia = b.getAttribute('data-once-key')
+      var esTuya = nombre === tuya && !propia
+      if (propia) perfilActivo = propia.split('|')[0]
+      else if (esTuya) perfilActivo = 'equilibrado'
+      var clave = propia || (esTuya ? nombre : perfilActivo + '|' + nombre)
+      var datos = (window.ONCES || {})[clave] || (window.ONCES || {})[nombre]
       if (!datos) return
       var nuevo = document.createElement('div')
       nuevo.innerHTML = datos.html
@@ -1487,17 +1500,20 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
       caja.querySelectorAll('[data-formacion]').forEach(function (x) {
         x.classList.toggle('viendo', x.getAttribute('data-formacion') === nombre)
       })
-      document.querySelectorAll('[data-perfil-once],.perfiles-once [data-once-key]').forEach(function (x) {
-        x.classList.toggle('on', x === b)
+      document.querySelectorAll('.perfiles-once [data-once-key]').forEach(function (x) {
+        x.classList.toggle('on', (x.getAttribute('data-once-key') || '').split('|')[0] === perfilActivo)
       })
       if (aviso) {
-        aviso.hidden = nombre === tuya && !b.hasAttribute('data-once-key')
-        aviso.innerHTML = nombre === tuya && !b.hasAttribute('data-once-key')
+        aviso.hidden = esTuya
+        aviso.innerHTML = esTuya
           ? ''
           : 'Estás viendo el <b>' + nombre + '</b>' + (datos.perfil ? ' en modo <b>' + datos.perfil + '</b>' : '') + ', que daría <b>' + datos.t.toFixed(1).replace('.', ',') + '</b> puntos.' +
             (datos.pago ? ' Mister vende esa formación por monedas: puede que no la tengas.' : '') +
             ' <button type="button" data-formacion="' + tuya + '">Volver a tu ' + tuya + '</button>'
       }
+      // El campo está más abajo que las fichas: sin esto, tocar una ficha
+      // cambiaba algo fuera de la vista y parecía que no había pasado nada.
+      campo.scrollIntoView({ behavior: 'smooth', block: 'center' })
     })
   })()
 
