@@ -27,6 +27,13 @@ import {
 const RAIZ = process.cwd()
 const SALIDA = join(RAIZ, 'modulo', 'datos', 'alineaciones.json')
 const EVENTOS = join(RAIZ, 'modulo', 'datos', 'eventos-jornada.json')
+/**
+ * Las jornadas que Mister conoce, con su estado y sus fechas, para la página.
+ *
+ * Es lo que dice cuál es la que va a empezar —no siempre la siguiente en
+ * número— y desde cuándo está en juego la que lo esté.
+ */
+const JORNADAS = join(RAIZ, 'modulo', 'datos', 'jornadas-mister.json')
 
 /**
  * Lo que hizo cada jugador de la competición en cada jornada, con el minuto.
@@ -71,16 +78,39 @@ export function aQuePedir(
   })
 }
 
+/**
+ * Cada alineación lleva el estado y las fechas que Mister da **hoy** para su
+ * jornada, también las guardadas de antes y las que no se vuelven a pedir.
+ *
+ * Es lo que permite distinguir «en juego» de «jugada» sin adivinar: una
+ * terminada no cambia, pero la que está en juego pasa a terminada sin que
+ * haya que volver a bajarla entera. Lo que la alineación no traía —partidos,
+ * jugados— se deja en blanco de forma explícita, que un campo ausente y un
+ * campo vacío no son lo mismo.
+ */
+export function sellar(a: AlineacionJornada, g: JornadaConocida | undefined): AlineacionJornada {
+  return {
+    ...a,
+    estado: g?.estado ?? a.estado ?? '',
+    desde: g?.desde ?? a.desde ?? null,
+    hasta: g?.hasta ?? a.hasta ?? null,
+    partidos: a.partidos ?? null,
+    jugados: a.jugados ?? [],
+  }
+}
+
 /** Baja las alineaciones que falten y devuelve todas, ordenadas por jornada. */
 export async function recolectarAlineaciones(
   cliente: Cliente,
   guardadas: AlineacionJornada[],
   avisar: (t: string) => void = () => {},
   eventos: EventosPorJornada = {},
+  alConocer: (conocidas: JornadaConocida[]) => void = () => {},
 ): Promise<AlineacionJornada[]> {
   const tengo = new Map(guardadas.map((a) => [a.jornada, a]))
   // La primera llamada vale para cualquier id: solo se le miran las jornadas.
   const conocidas = parsearJornadasConocidas(await cliente.pedirJornada())
+  alConocer(conocidas)
   const pendientes = aQuePedir(conocidas, tengo, new Set(Object.keys(eventos).map(Number)))
 
   for (const g of pendientes) {
@@ -96,8 +126,14 @@ export async function recolectarAlineaciones(
   }
   // Solo salen las que se han jugado o se están jugando: si una vez se guardó
   // de más, no se arrastra.
-  const juegan = new Set(conocidas.filter((g) => g.estado === TERMINADA || g.estado === EN_JUEGO).map((g) => g.jornada))
-  return [...tengo.values()].filter((a) => juegan.has(a.jornada)).sort((a, b) => a.jornada - b.jornada)
+  const porJornada = new Map(conocidas.map((g) => [g.jornada, g]))
+  return [...tengo.values()]
+    .filter((a) => {
+      const g = porJornada.get(a.jornada)
+      return g !== undefined && (g.estado === TERMINADA || g.estado === EN_JUEGO)
+    })
+    .map((a) => sellar(a, porJornada.get(a.jornada)))
+    .sort((a, b) => a.jornada - b.jornada)
 }
 
 async function main(): Promise<void> {
@@ -106,7 +142,9 @@ async function main(): Promise<void> {
   const eventos = existsSync(EVENTOS) ? (JSON.parse(readFileSync(EVENTOS, 'utf8')) as EventosPorJornada) : {}
   const paso = (t: string) => process.stderr.write(`${t}\n`)
 
-  const todas = await recolectarAlineaciones(cliente, guardadas, paso, eventos)
+  const todas = await recolectarAlineaciones(cliente, guardadas, paso, eventos, (conocidas) => {
+    writeFileSync(JORNADAS, `${JSON.stringify(conocidas, null, 1)}\n`)
+  })
   writeFileSync(SALIDA, `${JSON.stringify(todas, null, 1)}\n`)
   writeFileSync(EVENTOS, `${JSON.stringify(eventos)}\n`)
   const cuantos = Object.values(eventos).reduce((t, j) => t + Object.keys(j).length, 0)

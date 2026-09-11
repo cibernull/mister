@@ -208,7 +208,12 @@
     "jugo": true,
     "capitan": false
    }
-  ]
+  ],
+  "estado": "finished",
+  "desde": "2026-08-15 19:30:00",
+  "hasta": "2026-08-27 21:00:00",
+  "partidos": null,
+  "jugados": []
  },
  {
   "jornada": 2,
@@ -411,7 +416,12 @@
     "jugo": true,
     "capitan": false
    }
-  ]
+  ],
+  "estado": "finished",
+  "desde": "2026-08-20 21:00:00",
+  "hasta": "2026-08-24 21:30:00",
+  "partidos": null,
+  "jugados": []
  },
  {
   "jornada": 3,
@@ -590,7 +600,12 @@
     "jugo": true,
     "capitan": false
    }
-  ]
+  ],
+  "estado": "finished",
+  "desde": "2026-08-28 19:00:00",
+  "hasta": "2026-08-31 21:30:00",
+  "partidos": null,
+  "jugados": []
  },
  {
   "jornada": 4,
@@ -745,11 +760,27 @@
     "jugo": true,
     "capitan": false
    }
-  ]
+  ],
+  "estado": "finished",
+  "desde": "2026-09-04 21:00:00",
+  "hasta": "2026-09-07 21:30:00",
+  "partidos": null,
+  "jugados": []
  },
  {
   "jornada": 6,
   "idJornada": 4047,
+  "estado": "ongoing",
+  "desde": "2026-09-03 21:00:00",
+  "hasta": "2026-09-17 21:30:00",
+  "partidos": 10,
+  "jugados": [
+   {
+    "cuando": "2026-09-03T19:00:00.000Z",
+    "local": 16,
+    "visitante": 5
+   }
+  ],
   "puntos": 0,
   "puesto": 6,
   "formacion": "1-3-5-2",

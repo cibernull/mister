@@ -8,9 +8,14 @@ const respuesta = JSON.stringify({
   status: 'ok',
   data: {
     gameweeks: [
-      { id: 3968, gameweek: 1, status: 'finished' },
+      { id: 3968, gameweek: 1, status: 'finished', firstMatchDate: '2026-08-15 19:30:00', lastMatchDate: '2026-08-27 21:00:00' },
       { id: 3969, gameweek: 2, status: 'finished' },
       { id: 3973, gameweek: 6, status: 'pending' },
+    ],
+    gameweekStatus: { id: 3968, gameweek: 1, status: 'finished', firstMatchDate: '2026-08-15 19:30:00', lastMatchDate: '2026-08-27 21:00:00' },
+    games: [
+      { id: 37996, status: 'played', date: { ts: 1788462000 }, id_home: 5, id_away: 7 },
+      { id: 37994, status: 'fixture', date: { ts: 1789491600 }, id_home: 9, id_away: 12 },
     ],
     gameweek_user: { points: 38, rank: 3 },
     lineup: {
@@ -30,9 +35,9 @@ describe('parsearJornadasConocidas', () => {
     // Pedirlas por su número devuelve siempre la jornada en curso, sin error:
     // así es como se tienen cinco veces la misma creyendo que son cinco.
     expect(parsearJornadasConocidas(respuesta)).toEqual([
-      { jornada: 1, id: 3968, estado: 'finished' },
-      { jornada: 2, id: 3969, estado: 'finished' },
-      { jornada: 6, id: 3973, estado: 'pending' },
+      { jornada: 1, id: 3968, estado: 'finished', desde: '2026-08-15 19:30:00', hasta: '2026-08-27 21:00:00' },
+      { jornada: 2, id: 3969, estado: 'finished', desde: null, hasta: null },
+      { jornada: 6, id: 3973, estado: 'pending', desde: null, hasta: null },
     ])
   })
 })
@@ -59,6 +64,25 @@ describe('parsearAlineacion', () => {
   it('y el banquillo, que también puntúa a la vista', () => {
     expect(a.banquillo).toHaveLength(1)
     expect(a.banquillo[0]!.puntos).toBe(11)
+  })
+
+  it('guarda el estado y las fechas de la jornada tal cual los da Mister', () => {
+    // Una jornada puede estar «en juego» con un solo partido adelantado y los
+    // otros nueve a dos semanas vista. Sin el estado, la página la pintaba como
+    // una jornada más, con 0 puntos y un once de hace días.
+    expect(a.estado).toBe('finished')
+    expect(a.desde).toBe('2026-08-15 19:30:00')
+    expect(a.hasta).toBe('2026-08-27 21:00:00')
+  })
+
+  it('cuenta los partidos y guarda los ya jugados, con su fecha y sus clubes', () => {
+    expect(a.partidos).toBe(2)
+    expect(a.jugados).toEqual([{ cuando: '2026-09-03T19:00:00.000Z', local: 5, visitante: 7 }])
+  })
+
+  it('sin estado ni partidos en la respuesta, lo deja vacío en vez de inventarlo', () => {
+    const b = parsearAlineacion(JSON.stringify({ data: { lineup: { positions: {} }, bench: [] } }), 2, 3969)
+    expect(b).toMatchObject({ estado: '', desde: null, hasta: null, partidos: null, jugados: [] })
   })
 
   it('distingue no haber jugado de haber hecho cero', () => {

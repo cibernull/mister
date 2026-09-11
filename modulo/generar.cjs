@@ -2183,14 +2183,29 @@ const islaFormaciones = JSON.stringify(FORMACIONES.map((f) => ({ n: f.l.join('-'
  */
 const ALINEACIONES = opcional('alineaciones.json', [])
 
-const fichaDeJornada = (j) => {
+const MIOS_IDS = new Set(MIOS.map((j) => String(j.id)))
+const EN_JUEGO = 'ongoing'
+const enJuego = (a) => a.estado === EN_JUEGO
+
+/**
+ * Un jugador del once de una jornada en juego que ya no está en tu plantilla.
+ *
+ * Pasa cuando Mister fija el once antes de que vendas: la J6 de 2026 se dio por
+ * empezada el 3 de septiembre por un partido adelantado, y Fer Niño y Mario
+ * Soriano —vendidos el 4 y el 6— siguieron en ella. Verlos en el campo sin
+ * ninguna marca hacía pensar que la página estaba desfasada.
+ */
+const yaNoEsMio = (j, a) => a !== undefined && enJuego(a) && !MIOS_IDS.has(String(j.id))
+
+const fichaDeJornada = (j, a) => {
   const cara = caraDe(j.id, j.nombre)
   const pts = j.puntos
   const partes = String(j.nombre || '').trim().split(/\s+/)
   const mote = partes.length > 1 ? `${partes[0][0]}. ${partes.slice(1).join(' ')}` : j.nombre
   const clase = pts == null ? 'no' : claseRacha(pts)
-  return `<button type="button" class="cj${j.jugo ? '' : ' fuera'}" data-ficha="${j.id}" title="${esc(`${j.nombre}: ${pts == null ? 'no jugó' : `${pts} puntos`}`)}">
-          <span class="cj-cara">${cara}${escudoDe(j.id)}${j.capitan ? '<i class="cj-tit" title="Capitán">©</i>' : ''}</span>
+  const exmio = yaNoEsMio(j, a)
+  return `<button type="button" class="cj${j.jugo ? '' : ' fuera'}${exmio ? ' exmio' : ''}" data-ficha="${j.id}" title="${esc(`${j.nombre}: ${pts == null ? 'no jugó' : `${pts} puntos`}${exmio ? ' · ya no está en tu plantilla' : ''}`)}">
+          <span class="cj-cara">${cara}${escudoDe(j.id)}${exmio ? '<i class="cj-ex" title="Ya no está en tu plantilla">✕</i>' : j.capitan ? '<i class="cj-tit" title="Capitán">©</i>' : ''}</span>
           <span class="cj-n">${esc(mote)}</span>
           <span class="cj-p ${clase}">${pts == null ? '—' : pts}</span>
         </button>`
@@ -2213,9 +2228,77 @@ const campoDeJornada = (a) => {
         <span class="campo-centro"></span>
 ${lineas
   .filter(Boolean)
-  .map((l) => pintarLinea(l, fichaDeJornada))
+  .map((l) => pintarLinea(l, (j) => fichaDeJornada(j, a)))
   .join('\n')}
       </div>`
+}
+
+/** «3 sept», en hora de Madrid, a partir de un instante en milisegundos. */
+const diaYMes = (instante) =>
+  instante == null || !Number.isFinite(instante)
+    ? null
+    : new Date(instante).toLocaleDateString('es-ES', { day: 'numeric', month: 'short', timeZone: 'Europe/Madrid' })
+
+/** Cuándo salió de tu plantilla por última vez, si consta en el histórico. */
+const ultimaVentaDe = (id) => {
+  const ventas = MOVS.filter((x) => String(x.id) === String(id) && x.de === MI_EQUIPO && x.fecha)
+    .map((x) => instanteDeMister(x.fecha))
+    .filter((t) => t !== null)
+  return ventas.length ? Math.max(...ventas) : null
+}
+
+/**
+ * La jornada que va a empezar, que no siempre es la siguiente en número: con
+ * la J6 en juego desde el 3 de septiembre por un partido adelantado, la que
+ * venía era la J5. Es la que corresponde al once recomendado, y ponerle el
+ * número evita leer «J6» al lado y creer que la página va una jornada por
+ * detrás.
+ */
+const JORNADAS_MISTER = opcional('jornadas-mister.json', [])
+const PROXIMA_JORNADA =
+  JORNADAS_MISTER.filter((g) => g.estado === 'unstarted' && g.desde)
+    .map((g) => ({ ...g, instante: instanteDeMister(g.desde) }))
+    .filter((g) => g.instante !== null)
+    .sort((a, b) => a.instante - b.instante)[0] ?? null
+
+/**
+ * Lo que hay que saber de una jornada en juego antes de mirar su once.
+ *
+ * Mister puede dar una jornada por empezada con un solo partido adelantado y
+ * el resto a dos semanas vista, y el once que enseña es el que quedó fijado en
+ * ese primer partido: con quien tenías entonces, aunque lo hayas vendido, y sin
+ * nadie de los que has fichado después. Sin decirlo, ese campo parecía un error
+ * de la página. Todo lo de aquí sale de la respuesta de Mister y del histórico
+ * de traspasos; lo que no consta, no se dice.
+ */
+const notaDeJornada = (a) => {
+  if (!enJuego(a)) return ''
+  const jugados = a.jugados ?? []
+  const desde = a.desde ? diaYMes(instanteDeMister(a.desde)) : null
+  const hasta = a.hasta ? diaYMes(instanteDeMister(a.hasta)) : null
+  const nombreClub = (id) => CLUBES.get(String(id)) ?? 'un club'
+  const partido = (p) => `${esc(nombreClub(p.local))}–${esc(nombreClub(p.visitante))}${p.cuando ? ` el ${diaYMes(Date.parse(p.cuando))}` : ''}`
+  const frases = [`Jornada ${a.jornada} <b>en juego</b>${desde ? ` desde el ${desde}` : ''}${hasta ? ` y hasta el ${hasta}` : ''}.`]
+  if (a.partidos) {
+    frases.push(
+      jugados.length === 0
+        ? `Ninguno de sus ${a.partidos} partidos se ha jugado aún.`
+        : `${jugados.length === 1 ? 'Se ha jugado' : 'Se han jugado'} ${jugados.length} de ${a.partidos} partidos: ${jugados.map(partido).join(', ')}.`,
+    )
+  }
+  frases.push('Este es el once que Mister te fijó al empezar la jornada.')
+  const exmios = a.once.filter((j) => yaNoEsMio(j, a))
+  if (exmios.length) {
+    const lista = exmios.map((j) => {
+      const venta = diaYMes(ultimaVentaDe(j.id))
+      return `<b>${esc(j.nombre)}</b>${venta ? ` (vendido el ${venta})` : ''}`
+    })
+    frases.push(
+      `${lista.join(' y ')} ya no ${exmios.length === 1 ? 'está' : 'están'} en tu plantilla, y en este once no hay nadie de los que has fichado después.`,
+    )
+  }
+  frases.push(`Llevas <b>${a.puntos ?? 0}</b> puntos${a.puesto ? `, ${a.puesto}º de la liga por ahora` : ''}.`)
+  return frases.join(' ')
 }
 
 /** El campo de cada jornada jugada, listo para cambiarlo de un toque. */
@@ -2227,6 +2310,8 @@ const islaJornadas = JSON.stringify(
         pts: a.puntos,
         puesto: a.puesto,
         form: a.formacion,
+        vivo: enJuego(a) ? 1 : 0,
+        nota: notaDeJornada(a),
         html: campoDeJornada(a),
         banca: a.banquillo
           .map((j) => `<span class="jb${j.puntos == null ? ' no' : ''}">${esc(j.nombre)} <b>${j.puntos == null ? '—' : j.puntos}</b></span>`)
@@ -2285,9 +2370,9 @@ const bloqueOnce = once === null || once.elegidos.length === 0
       })()}
       ${ALINEACIONES.filter((a) => a.once && a.once.length).length
         ? `<div class="jtabs" id="jtabs">
-        <button type="button" class="on" data-jornada="proxima">Próxima</button>
+        <button type="button" class="on" data-jornada="proxima">Próxima${PROXIMA_JORNADA ? ` · J${PROXIMA_JORNADA.jornada}` : ''}</button>
 ${ALINEACIONES.filter((a) => a.once && a.once.length)
-  .map((a) => `        <button type="button" data-jornada="${a.jornada}">J${a.jornada}<b>${a.puntos ?? 0}</b></button>`)
+  .map((a) => `        <button type="button" data-jornada="${a.jornada}">J${a.jornada}<b>${a.puntos ?? 0}</b>${enJuego(a) ? '<em>en juego</em>' : ''}</button>`)
   .join(NL)}
         <button type="button" class="mano-tab" data-jornada="mano">✏️ A mano</button>
       </div>`
@@ -2339,8 +2424,11 @@ const titularesFiables = once
   ? once.elegidos.filter((j) => !noJuega(j) && (probabilidadDe(j) === null || probabilidadDe(j) >= TRAMO_TITULAR)).length
   : 0
 
-const ultimaAlineacion = ALINEACIONES.filter((a) => a.once && a.once.length).at(-1) ?? null
-const auditoriaJornadas = ALINEACIONES.filter((a) => a.once && a.once.length).map((a) => {
+// Solo las terminadas: una jornada en juego tiene los puntos a medias y su
+// «eficiencia» sería un número que no significa nada todavía.
+const JORNADAS_TERMINADAS = ALINEACIONES.filter((a) => a.once && a.once.length && !enJuego(a))
+const ultimaAlineacion = JORNADAS_TERMINADAS.at(-1) ?? null
+const auditoriaJornadas = JORNADAS_TERMINADAS.map((a) => {
   const cantidades = String(a.formacion || '').split('-').map(Number)
   const todos = [...a.once, ...(a.banquillo || [])]
   const mejor = cantidades.reduce((total, cuantos, i) => {

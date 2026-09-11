@@ -18,10 +18,29 @@ export type JugadorAlineado = {
   capitan: boolean
 }
 
+/** Un partido de la jornada que ya se ha jugado: cuándo y entre qué clubes. */
+export type PartidoJugado = { cuando: string | null; local: number | null; visitante: number | null }
+
 /** Lo que se guarda de cada jornada disputada. */
 export type AlineacionJornada = {
   jornada: number
   idJornada: number
+  /**
+   * `finished`, `ongoing`… tal cual lo dice Mister, y vacío si no lo dijo.
+   *
+   * Hace falta porque «en juego» no significa «este fin de semana»: la J6 de
+   * 2026 estuvo en juego desde el 3 de septiembre por un partido adelantado,
+   * con los otros nueve a doce días vista y el once fijado el día 3. Sin el
+   * estado, la página la enseñaba como una jornada más, con 0 puntos y un once
+   * con dos jugadores ya vendidos.
+   */
+  estado: string
+  /** Primer y último partido, con la hora de Madrid tal cual la da Mister. */
+  desde: string | null
+  hasta: string | null
+  /** Cuántos partidos tiene la jornada y cuáles se han jugado ya. */
+  partidos: number | null
+  jugados: PartidoJugado[]
   puntos: number | null
   puesto: number | null
   formacion: string
@@ -29,8 +48,8 @@ export type AlineacionJornada = {
   banquillo: JugadorAlineado[]
 }
 
-/** Las jornadas que Mister conoce, con su id interno y en qué estado están. */
-export type JornadaConocida = { jornada: number; id: number; estado: string }
+/** Las jornadas que Mister conoce, con su id interno, en qué estado están y cuándo van. */
+export type JornadaConocida = { jornada: number; id: number; estado: string; desde: string | null; hasta: string | null }
 
 /**
  * Lo que le pasó a un jugador en un partido, con el minuto.
@@ -60,6 +79,21 @@ function leerJugador(x: unknown): JugadorAlineado | null {
   }
 }
 
+/**
+ * Un partido tal cual viene en `games`: la fecha es un `ts` en segundos y los
+ * clubes van por id. Se guarda la fecha en UTC, que no depende de nadie.
+ */
+function leerPartido(x: unknown): PartidoJugado {
+  const g = (x ?? {}) as Record<string, unknown>
+  const fecha = (g['date'] ?? {}) as Record<string, unknown>
+  const ts = entero(fecha['ts'])
+  return {
+    cuando: ts === null ? null : new Date(ts * 1000).toISOString(),
+    local: entero(g['id_home']),
+    visitante: entero(g['id_away']),
+  }
+}
+
 /** Las jornadas que existen, para saber qué id pedir de cada una. */
 export function parsearJornadasConocidas(json: string): JornadaConocida[] {
   const d = (JSON.parse(json) as { data?: { gameweeks?: unknown[] } }).data
@@ -69,7 +103,8 @@ export function parsearJornadasConocidas(json: string): JornadaConocida[] {
       const g = x as Record<string, unknown>
       const jornada = entero(g['gameweek'])
       const id = entero(g['id'])
-      return jornada === null || id === null ? null : { jornada, id, estado: texto(g['status']) }
+      if (jornada === null || id === null) return null
+      return { jornada, id, estado: texto(g['status']), desde: texto(g['firstMatchDate']) || null, hasta: texto(g['lastMatchDate']) || null }
     })
     .filter((x): x is JornadaConocida => x !== null)
 }
@@ -104,10 +139,17 @@ export function parsearAlineacion(json: string, jornada: number, idJornada: numb
     .filter((x): x is JugadorAlineado => x !== null)
 
   const usuario = d['gameweek_user'] as Record<string, unknown> | undefined
+  const estado = d['gameweekStatus'] as Record<string, unknown> | undefined
+  const partidos = Array.isArray(d['games']) ? d['games'] : null
 
   return {
     jornada,
     idJornada,
+    estado: texto(estado?.['status']),
+    desde: texto(estado?.['firstMatchDate']) || null,
+    hasta: texto(estado?.['lastMatchDate']) || null,
+    partidos: partidos === null ? null : partidos.length,
+    jugados: (partidos ?? []).filter((g) => (g as Record<string, unknown>)['status'] === 'played').map(leerPartido),
     puntos: entero(usuario?.['points']),
     puesto: entero(usuario?.['rank']),
     formacion: porLinea.join('-'),
