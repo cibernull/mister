@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-11T21:44:42.525Z",
+ "cuando": "2026-09-11T22:08:01.995Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Corberán responde sobre su futuro, la plaga de lesiones y el problema de Tárrega",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151055-corberan-responde-sobre-su-futuro-la-plaga-de-lesiones-y-el-problema-de-tarrega",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "11/09",
@@ -475,12 +481,6 @@
    "fecha": "10/09",
    "titulo": "La Real vuelve al trabajo en Zubieta sin secuelas y recupera a Marín",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150979-la-real-vuelve-al-trabajo-en-zubieta-sin-secuelas-y-recupera-a-marin",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Sin rastro de Carlos Romero y Foyth en la vuelta al trabajo del Villarreal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150978-sin-rastro-de-carlos-romero-y-foyth-en-la-vuelta-al-trabajo-del-villarreal",
    "categoria": "entrenamiento"
   }
  ]
