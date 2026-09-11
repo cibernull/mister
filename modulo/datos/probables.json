@@ -1,7 +1,7 @@
 {
- "cuando": "2026-09-11T18:35:35.575Z",
+ "cuando": "2026-09-11T18:39:47.043Z",
  "fuente": "futbolfantasy.com",
- "leidos": 544,
+ "leidos": 506,
  "jugadores": {
   "10": {
    "prob": 80,
@@ -71,15 +71,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 360
-  },
-  "217": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Lesión en el aductor",
-   "desde": "05/09 (6 días)",
-   "hasta": "octubre"
   },
   "239": {
    "prob": 50,
@@ -468,15 +459,6 @@
    "desde": "07/08 (35 días)",
    "hasta": null
   },
-  "13420": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 286,
-   "lesion": "Lesión en el aductor",
-   "desde": "06/09 (5 días)",
-   "hasta": "princpios de octubre"
-  },
   "14379": {
    "prob": 30,
    "sancionado": 0,
@@ -669,15 +651,6 @@
    "fuera": 0,
    "min": 292
   },
-  "18109": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 95,
-   "lesion": "Molestias en el tobillo",
-   "desde": "02/09 (9 días)",
-   "hasta": null
-  },
   "18186": {
    "prob": 50,
    "sancionado": 0,
@@ -734,15 +707,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 340
-  },
-  "20346": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 177,
-   "lesion": "Lesión en el cuádriceps",
-   "desde": "28/08 (14 días)",
-   "hasta": "mediados de septiembre"
   },
   "20449": {
    "prob": 70,
@@ -909,12 +873,6 @@
    "desde": "06/09 (5 días)",
    "hasta": null
   },
-  "27422": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0
-  },
   "27425": {
    "prob": 70,
    "sancionado": 0,
@@ -1073,15 +1031,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 43
-  },
-  "28787": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Rotura de lig. cruzado anterior",
-   "desde": "23/05 (111 días)",
-   "hasta": "diciembre"
   },
   "28791": {
    "prob": 0,
@@ -1263,15 +1212,6 @@
    "fuera": 0,
    "min": 354
   },
-  "40089": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 160,
-   "lesion": "Lesión en los isquiotibiales",
-   "desde": "30/08 (12 días)",
-   "hasta": "mediados de noviembre"
-  },
   "40147": {
    "prob": 50,
    "sancionado": 0,
@@ -1307,15 +1247,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 144
-  },
-  "48486": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Rotura de menisco",
-   "desde": "25/02 (198 días)",
-   "hasta": "octubre"
   },
   "48554": {
    "prob": 0,
@@ -1535,15 +1466,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 127
-  },
-  "55452": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Rotura de lig. cruzado anterior",
-   "desde": "13/05 (121 días)",
-   "hasta": "diciembre"
   },
   "55454": {
    "prob": 0,
@@ -1821,6 +1743,12 @@
    "fuera": 0,
    "min": 393
   },
+  "59633": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 11
+  },
   "59641": {
    "prob": 50,
    "sancionado": 0,
@@ -1892,15 +1820,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 152
-  },
-  "60872": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 21,
-   "lesion": "Parameniscitis en la rodilla",
-   "desde": "03/09 (8 días)",
-   "hasta": null
   },
   "60888": {
    "prob": 90,
@@ -2250,12 +2169,6 @@
    "fuera": 0,
    "min": 0
   },
-  "65724": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0
-  },
   "65727": {
    "prob": 30,
    "sancionado": 0,
@@ -2435,15 +2348,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 242
-  },
-  "70917": {
-   "prob": 0,
-   "sancionado": 1,
-   "fuera": 0,
-   "min": 212,
-   "lesion": "Esguince de tobillo",
-   "desde": "08/09 (3 días)",
-   "hasta": null
   },
   "70918": {
    "prob": 70,
@@ -2889,12 +2793,6 @@
    "fuera": 0,
    "min": 15
   },
-  "71792": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 90
-  },
   "71795": {
    "prob": 20,
    "sancionado": 0,
@@ -2936,12 +2834,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 16
-  },
-  "1153038": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0
   },
   "1256139": {
    "prob": 20,
