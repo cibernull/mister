@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-11T20:08:37.513Z",
+ "cuando": "2026-09-11T20:38:08.687Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -29,6 +29,18 @@
   },
   {
    "fecha": "11/09",
+   "titulo": "Sato termina con hielo en el tobillo tras ser sustituido",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151051-sato-termina-con-hielo-en-el-tobillo-tras-ser-sustituido",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "César Tàrrega pide el cambio por molestias en los isquiotibiales",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151048-cesar-tarrega-pide-el-cambio-por-molestias-en-los-isquiotibiales",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "11/09",
    "titulo": "Corberán habló del estado anímico, el planteamiento y su continuidad",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151050-corberan-hablo-del-estado-animico-el-planteamiento-y-su-continuidad",
    "categoria": "rueda de prensa"
@@ -38,12 +50,6 @@
    "titulo": "Luis García explicó las decisiones con Stassin, Ure, Fofana, Kochorashvili, Guridi y Correia antes del partido",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151049-luis-garcia-explico-las-decisiones-con-stassin-ure-fofana-kochorashvili-guridi-y-correia-ante",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "César Tàrrega pide el cambio por molestias en los isquiotibiales",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151048-cesar-tarrega-pide-el-cambio-por-molestias-en-los-isquiotibiales",
-   "categoria": "lesión"
   },
   {
    "fecha": "11/09",
@@ -475,12 +481,6 @@
    "fecha": "10/09",
    "titulo": "El físico al límite de Cuti, las dudas de Grimaldo y la ley del ex de Le Normand se juntan en Anoeta",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150975-el-fisico-al-limite-de-cuti-las-dudas-de-grimaldo-y-la-ley-del-ex-de-le-normand-se-juntan-en-",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "LaLiga es un poco menos pobre: así quedan los nuevos límites salariales de los 20 equipos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150974-laliga-es-un-poco-menos-pobre-asi-queda-el-nuevo-limite-salarial-de-los-20-equipos",
    "categoria": "análisis"
   }
  ]
