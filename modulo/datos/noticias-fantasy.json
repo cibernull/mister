@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-11T15:08:19.464Z",
+ "cuando": "2026-09-11T15:38:16.480Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -20,6 +20,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Las alineaciones probables y pronósticos para la jornada 5 de Carrasco con la última hora",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151046-las-alineaciones-probables-y-pronosticos-para-la-jornada-5-de-carrasco-con-la-ultima-hora",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Hartman sigue completando un necesario periodo de adaptación",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151045-hartman-sigue-completando-un-necesario-periodo-de-adaptacion",
+   "categoria": "análisis"
   },
   {
    "fecha": "11/09",
@@ -469,18 +481,6 @@
    "fecha": "10/09",
    "titulo": "Febas sigue con trabajo parcial en el Celta a la espera del alta médica",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150970-febas-sigue-trabajo-parcial-celta-espera-alta-medica",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Turrientes gana enteros para medirse al Atlético",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150969-turrientes-gana-enteros-para-medirse-al-atletico",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Noé Carrillo se reincorpora al grupo mientras Asp Jensen continúa al margen",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150968-noe-carrillo-reincorpora-grupo-mientras-asp-jensen-continua-margen",
    "categoria": "entrenamiento"
   }
  ]
