@@ -613,7 +613,7 @@
   "mediaCasa": 3.7,
   "mediaFuera": 3,
   "edad": 32,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -649,8 +649,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-11",
+  "partidos": 5
  },
  "217": {
   "nombre": "Dimitri Foulquier",
@@ -1180,8 +1180,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 2
+  "dia": "2026-09-11",
+  "partidos": 3
  },
  "476": {
   "nombre": "Gerard Moreno",
@@ -2303,8 +2303,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-07",
-  "partidos": 4
+  "dia": "2026-09-11",
+  "partidos": 5
  },
  "5917": {
   "nombre": "Igor Zubeldia",
@@ -2965,11 +2965,11 @@
   "nombre": "Pablo Maffeo",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 1.7,
   "mediaFuera": 0,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
@@ -3002,8 +3002,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 3
+  "dia": "2026-09-11",
+  "partidos": 4
  },
  "10967": {
   "nombre": "Gonçalo Guedes",
@@ -3320,8 +3320,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-11",
+  "partidos": 5
  },
  "12900": {
   "nombre": "Vinícius Júnior",
@@ -5758,9 +5758,9 @@
     ]
    }
   ],
-  "asistencias": 0,
+  "asistencias": 1,
   "dia": "2026-09-11",
-  "partidos": 2
+  "partidos": 3
  },
  "22502": {
   "nombre": "Alex Baena",
@@ -5980,7 +5980,7 @@
   "mediaCasa": 2.3,
   "mediaFuera": 3,
   "edad": 28,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -6020,8 +6020,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-11",
+  "partidos": 5
  },
  "22604": {
   "nombre": "Iñigo Vicente",
@@ -6641,12 +6641,12 @@
  "24792": {
   "nombre": "Juan Iglesias",
   "posicion": 2,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 2.5,
   "mediaFuera": 4,
   "edad": 28,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -6680,8 +6680,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-11",
+  "partidos": 5
  },
  "25579": {
   "nombre": "Oriol Rey",
@@ -8127,7 +8127,7 @@
   "mediaCasa": 2,
   "mediaFuera": -1,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -8163,8 +8163,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-11",
+  "partidos": 5
  },
  "29163": {
   "nombre": "Omar El Hilali",
@@ -8776,7 +8776,7 @@
   "mediaCasa": 1.7,
   "mediaFuera": 1,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 1,
   "jornadas": [
@@ -8816,8 +8816,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-11",
+  "partidos": 5
  },
  "31355": {
   "nombre": "Alexander Sørloth",
@@ -9763,7 +9763,7 @@
   "mediaCasa": 1,
   "mediaFuera": 2,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 0,
   "jornadas": [
@@ -9801,8 +9801,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 2
+  "dia": "2026-09-11",
+  "partidos": 3
  },
  "48210": {
   "nombre": "Jonathan Dubasin",
@@ -10251,7 +10251,7 @@
   "mediaCasa": 0,
   "mediaFuera": 3,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
   "jornadas": [
@@ -10280,8 +10280,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 3
+  "dia": "2026-09-11",
+  "partidos": 4
  },
  "51060": {
   "nombre": "Juan Cruz",
@@ -10689,7 +10689,7 @@
   "mediaCasa": 2.7,
   "mediaFuera": 1,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -10727,8 +10727,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-11",
+  "partidos": 5
  },
  "52375": {
   "nombre": "Lamine Yamal",
@@ -11819,8 +11819,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-11",
+  "partidos": 5
  },
  "55743": {
   "nombre": "Carlos Romero",
@@ -12092,8 +12092,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-07",
-  "partidos": 4
+  "dia": "2026-09-11",
+  "partidos": 5
  },
  "56632": {
   "nombre": "Isaac Romero",
@@ -12147,8 +12147,8 @@
    }
   ],
   "asistencias": 1,
-  "dia": "2026-09-08",
-  "partidos": 3
+  "dia": "2026-09-11",
+  "partidos": 4
  },
  "56924": {
   "nombre": "Etta Eyong",
@@ -12529,7 +12529,7 @@
   "nombre": "Chidera Ejuke",
   "posicion": 3,
   "goles": 1,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 4,
   "mediaFuera": 7,
   "edad": 28,
@@ -12576,8 +12576,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-07",
-  "partidos": 4
+  "dia": "2026-09-11",
+  "partidos": 5
  },
  "58820": {
   "nombre": "Marc Casadó",
@@ -13587,18 +13587,11 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-11",
-  "partidos": 3
+  "partidos": 4
  },
  "59581": {
   "nombre": "Luiz Júnior",
@@ -15736,7 +15729,7 @@
   "mediaCasa": 2,
   "mediaFuera": 2.5,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -15774,8 +15767,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-11",
+  "partidos": 5
  },
  "64410": {
   "nombre": "Alejandro Iturbe",
@@ -16187,7 +16180,7 @@
   "mediaCasa": 2.7,
   "mediaFuera": 3,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 1,
   "jornadas": [
@@ -16225,8 +16218,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-11",
+  "partidos": 5
  },
  "65104": {
   "nombre": "Jozhua Vertrouwd",
@@ -16276,7 +16269,7 @@
   "mediaCasa": 1.5,
   "mediaFuera": 4,
   "edad": 32,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -16310,8 +16303,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-11",
+  "partidos": 5
  },
  "65136": {
   "nombre": "Fede Redondo",
@@ -16370,7 +16363,7 @@
   "mediaCasa": 2,
   "mediaFuera": 3.5,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
@@ -16406,8 +16399,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 3
+  "dia": "2026-09-11",
+  "partidos": 4
  },
  "65187": {
   "nombre": "Alejandro Rego",
@@ -18166,8 +18159,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 2
+  "dia": "2026-09-11",
+  "partidos": 3
  },
  "69889": {
   "nombre": "Xavi Espart",
@@ -20723,13 +20716,6 @@
      "yellow",
      "sub_out"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -20943,7 +20929,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-11",
-  "partidos": 4
+  "partidos": 5
  },
  "71139": {
   "nombre": "Bright Ede",
@@ -21131,18 +21117,11 @@
     "rival": 3,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-11",
-  "partidos": 4
+  "partidos": 5
  },
  "71149": {
   "nombre": "Gabriel Moscardo",
@@ -22070,20 +22049,11 @@
      "yellow",
      "sub_out"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-11",
-  "partidos": 4
+  "partidos": 5
  },
  "71642": {
   "nombre": "Abdoulaye Faye",
@@ -22302,13 +22272,6 @@
     "puntos": null,
     "rival": 8,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -22603,20 +22566,11 @@
      "yellow",
      "sub_out"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 19,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 1,
   "dia": "2026-09-11",
-  "partidos": 4
+  "partidos": 5
  },
  "822248": {
   "nombre": "Rockson Yeboah",
@@ -23948,18 +23902,11 @@
      "sub_in",
      "goal"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-11",
-  "partidos": 1
+  "partidos": 2
  },
  "4836173": {
   "nombre": "Félix Correia",
@@ -24000,18 +23947,11 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-11",
-  "partidos": 0
+  "partidos": 1
  },
  "4836181": {
   "nombre": "Iván Azón",
@@ -24148,20 +24088,11 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 17,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-11",
-  "partidos": 1
+  "partidos": 2
  },
  "4836242": {
   "nombre": "Sebastián Cáceres",
@@ -24346,20 +24277,11 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-11",
-  "partidos": 1
+  "partidos": 2
  },
  "4947928": {
   "nombre": "Salvi Esquivel",

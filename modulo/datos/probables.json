@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-11T18:50:52.859Z",
+ "cuando": "2026-09-11T21:08:12.167Z",
  "fuente": "futbolfantasy.com",
  "leidos": 506,
  "jugadores": {
@@ -1489,7 +1489,10 @@
    "prob": 100,
    "sancionado": 0,
    "fuera": 0,
-   "min": 307
+   "min": 307,
+   "lesion": "Molestias en los isquiotibiales",
+   "desde": "11/09 (1 día)",
+   "hasta": null
   },
   "55743": {
    "prob": 40,
@@ -3047,6 +3050,12 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 11
+  },
+  "5298724": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 29
   }
  }
 }

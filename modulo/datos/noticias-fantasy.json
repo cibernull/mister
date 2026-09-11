@@ -1,14 +1,8 @@
 {
- "cuando": "2026-09-11T20:38:08.687Z",
+ "cuando": "2026-09-11T21:08:13.228Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "11/09",
-   "titulo": "Sigue en directo el Sevilla - Valencia",
-   "url": "https://www.futbolfantasy.com/partidos/22471-sevilla-valencia",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 5 actualizadas",
@@ -26,6 +20,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Jornada 5: Sevilla 1-0 Valencia. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22471-sevilla-valencia",
+   "categoria": "partido"
   },
   {
    "fecha": "11/09",
