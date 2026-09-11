@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-11T22:08:01.995Z",
+ "cuando": "2026-09-11T22:38:07.442Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -29,15 +29,21 @@
   },
   {
    "fecha": "11/09",
-   "titulo": "Corberán responde sobre su futuro, la plaga de lesiones y el problema de Tárrega",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151055-corberan-responde-sobre-su-futuro-la-plaga-de-lesiones-y-el-problema-de-tarrega",
+   "titulo": "Fofana marca su territorio",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151054-fofana-marca-territorio",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Luis García celebra el triunfo y habla de la aportación de los fichajes, Iglesias, Stassin, Correia, el sistema y las rotaciones",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151056-luis-garcia-celebra-el-triunfo-y-habla-de-la-aportacion-de-los-fichajes-iglesias-stassin-corr",
    "categoria": "rueda de prensa"
   },
   {
    "fecha": "11/09",
-   "titulo": "Fofana marca su territorio",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151054-fofana-marca-territorio",
-   "categoria": "análisis"
+   "titulo": "Corberán responde sobre su futuro, la plaga de lesiones y el problema de Tárrega",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151055-corberan-responde-sobre-su-futuro-la-plaga-de-lesiones-y-el-problema-de-tarrega",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "11/09",
@@ -476,12 +482,6 @@
    "titulo": "El Correo de Andalucía apuesta por trivote y Félix Correia para el once contra el Valencia",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150980-el-correo-de-andalucia-apuesta-por-trivote-y-felix-correia-para-el-once-contra-el-valencia",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "La Real vuelve al trabajo en Zubieta sin secuelas y recupera a Marín",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150979-la-real-vuelve-al-trabajo-en-zubieta-sin-secuelas-y-recupera-a-marin",
-   "categoria": "entrenamiento"
   }
  ]
 }
