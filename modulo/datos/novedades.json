@@ -25,6 +25,61 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-09-11",
+  "id": "239",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-11",
+  "id": "12902",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-11",
+  "id": "15338",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-11",
+  "id": "33726",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-11",
+  "id": "58992",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-11",
+  "id": "68676",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-11",
+  "id": "3848780",
+  "de": null,
+  "a": "Cacaculopedopis"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-11",
+  "id": "3848780",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-11",
+  "id": "4947930",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-10",
   "id": "71008",
   "entra": true
