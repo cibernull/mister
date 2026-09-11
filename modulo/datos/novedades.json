@@ -346,6 +346,19 @@
   "entra": true
  },
  {
+  "tipo": "alta",
+  "dia": "2026-09-11",
+  "id": "65188",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-11",
+  "id": "70932",
+  "estado": "other",
+  "equipo": null
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-10",
   "id": "71008",

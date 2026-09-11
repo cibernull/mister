@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-11T17:38:05.880Z",
+ "cuando": "2026-09-11T18:08:15.779Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "11/09",
+   "titulo": "Alineaciones confirmadas del Sevilla - Valencia",
+   "url": "https://www.futbolfantasy.com/partidos/22471-sevilla-valencia",
+   "categoria": "rueda de prensa"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 5 actualizadas",
@@ -476,12 +482,6 @@
    "titulo": "Bouaré, la llave que puede cambiar el plan de Beñat contra los grandes",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150971-bouare-la-llave-que-puede-cambiar-el-plan-de-benat-contralos-grandes",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Febas sigue con trabajo parcial en el Celta a la espera del alta médica",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150970-febas-sigue-trabajo-parcial-celta-espera-alta-medica",
-   "categoria": "entrenamiento"
   }
  ]
 }
