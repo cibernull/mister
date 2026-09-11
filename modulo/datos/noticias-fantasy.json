@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-11T08:07:24.478Z",
+ "cuando": "2026-09-11T08:37:22.726Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "11/09",
+   "titulo": "Hidalgo, sobre Asp Jensen, Casadó, Angeliño, Luismi, Yeremay, Giménez y el Getafe",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150995-hidalgo-sobre-asp-jensen-casado-angelino-luismi-yeremay-gimenez-y-el-getafe",
+   "categoria": "rueda de prensa"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 5 actualizadas",
@@ -26,6 +32,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "La defensa del Atlético, un ecosistema propicio para Oskarsson",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150994-la-defensa-del-atletico-un-ecosistema-propicio-para-oskarsson",
+   "categoria": "análisis"
   },
   {
    "fecha": "11/09",
@@ -469,18 +481,6 @@
    "fecha": "09/09",
    "titulo": "El Atleti inicia la Champions con un déjà vu",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150918-el-atleti-inicia-la-champions-con-deja-vu",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Simeone explica el bajón en la segunda parte y habla de Cuti Romero y Julián Alvarez",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150920-simeone-explica-el-bajon-en-la-segunda-parte-y-habla-de-cuti-romero-y-julian-alvarez",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Jonathan David camina solo en su debut",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150919-jonathan-david-camina-solo-en-su-debut",
    "categoria": "análisis"
   }
  ]
