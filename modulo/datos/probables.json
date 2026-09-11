@@ -1,7 +1,7 @@
 {
- "cuando": "2026-09-11T06:38:26.716Z",
+ "cuando": "2026-09-11T09:07:32.196Z",
  "fuente": "futbolfantasy.com",
- "leidos": 515,
+ "leidos": 514,
  "jugadores": {
   "10": {
    "prob": 90,
@@ -475,7 +475,7 @@
    "hasta": "princpios de octubre"
   },
   "14379": {
-   "prob": 10,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -640,7 +640,7 @@
    "min": 91
   },
   "17615": {
-   "prob": 90,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
@@ -682,7 +682,7 @@
    "min": 174
   },
   "18531": {
-   "prob": 40,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 166,
@@ -787,7 +787,7 @@
    "min": 230
   },
   "22601": {
-   "prob": 70,
+   "prob": 60,
    "sancionado": 0,
    "fuera": 0,
    "min": 295
@@ -1669,7 +1669,7 @@
    "min": 111
   },
   "58467": {
-   "prob": 50,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
    "min": 153
@@ -1736,12 +1736,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 0
-  },
-  "59371": {
-   "prob": 60,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 373
   },
   "59382": {
    "prob": 80,
@@ -1834,7 +1828,7 @@
    "min": 0
   },
   "59789": {
-   "prob": 40,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 270
@@ -2239,7 +2233,7 @@
    "min": 0
   },
   "65674": {
-   "prob": 60,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 405
@@ -2311,7 +2305,7 @@
    "min": 66
   },
   "68465": {
-   "prob": 40,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 36
@@ -2578,7 +2572,7 @@
    "min": 0
   },
   "70950": {
-   "prob": 70,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
@@ -2719,7 +2713,7 @@
    "min": 161
   },
   "71038": {
-   "prob": 40,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 45
@@ -2800,7 +2794,7 @@
    "min": 5
   },
   "71343": {
-   "prob": 30,
+   "prob": 20,
    "sancionado": 0,
    "fuera": 0,
    "min": 128,
@@ -2908,7 +2902,7 @@
    "min": 90
   },
   "71795": {
-   "prob": 30,
+   "prob": 20,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -2926,7 +2920,7 @@
    "min": 366
   },
   "78751": {
-   "prob": 50,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
    "min": 149
@@ -3085,7 +3079,7 @@
    "min": 37
   },
   "4836173": {
-   "prob": 40,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 0

@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-11T08:37:22.726Z",
+ "cuando": "2026-09-11T09:07:33.256Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "11/09",
-   "titulo": "Hidalgo, sobre Asp Jensen, Casadó, Angeliño, Luismi, Yeremay, Giménez y el Getafe",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150995-hidalgo-sobre-asp-jensen-casado-angelino-luismi-yeremay-gimenez-y-el-getafe",
-   "categoria": "rueda de prensa"
+   "titulo": "Antony y Cucho gestionan cargas al margen y Llorente estrena máscara",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150997-antony-y-cucho-gestionan-cargas-al-margen-y-llorente-estrena-mascara",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "02/09",
@@ -32,6 +32,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Gerard Moreno arranca en modo diésel",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150996-gerard-moreno-arranca-en-modo-diesel",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "Hidalgo, sobre Asp Jensen, Casadó, Angeliño, Luismi, Yeremay, Giménez y el Getafe",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/150995-hidalgo-sobre-asp-jensen-casado-angelino-luismi-yeremay-gimenez-y-el-getafe",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "11/09",
@@ -470,18 +482,6 @@
    "titulo": "Asp Jensen se perdió la sesión del miércoles por gestión de cargas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150922-asp-jensen-se-perdio-la-sesion-del-miercoles-por-gestion-de-cargas",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "Cuti cumple y vacía el depósito en su estreno como titular",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150921-cuti-cumple-y-vacia-el-deposito-en-su-estreno",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/09",
-   "titulo": "El Atleti inicia la Champions con un déjà vu",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150918-el-atleti-inicia-la-champions-con-deja-vu",
-   "categoria": "análisis"
   }
  ]
 }
