@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-11T19:04:15.885Z",
+ "cuando": "2026-09-11T19:38:05.157Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "César Tàrrega pide el cambio por molestias en los isquiotibiales",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151048-cesar-tarrega-pide-el-cambio-por-molestias-en-los-isquiotibiales",
+   "categoria": "lesión"
   },
   {
    "fecha": "11/09",
@@ -475,12 +481,6 @@
    "fecha": "10/09",
    "titulo": "Jose Alberto ensaya con Belocian y Pablo Ramón en un partidillo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150972-jose-alberto-ensaya-con-belocian-y-pablo-ramon-en-un-partidillo",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Bouaré, la llave que puede cambiar el plan de Beñat contra los grandes",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150971-bouare-la-llave-que-puede-cambiar-el-plan-de-benat-contralos-grandes",
    "categoria": "análisis"
   }
  ]
