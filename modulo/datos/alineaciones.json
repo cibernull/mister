@@ -786,7 +786,7 @@
     "visitante": 48
    }
   ],
-  "puntos": 3,
+  "puntos": 5,
   "puesto": 4,
   "formacion": "1-3-6-1",
   "once": [
@@ -826,7 +826,7 @@
     "id": "364",
     "nombre": "Sergio Canales",
     "puesto": 3,
-    "puntos": 3,
+    "puntos": 5,
     "jugo": true,
     "capitan": false
    },
@@ -884,7 +884,7 @@
     "id": "61012",
     "nombre": "Pablo García",
     "puesto": 4,
-    "puntos": 2,
+    "puntos": 3,
     "jugo": true,
     "capitan": false
    },
@@ -908,7 +908,7 @@
     "id": "118",
     "nombre": "Jonny Otto",
     "puesto": 2,
-    "puntos": 2,
+    "puntos": 3,
     "jugo": true,
     "capitan": false
    },

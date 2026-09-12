@@ -1,12 +1,12 @@
 {
- "cuando": "2026-09-12T14:12:08.263Z",
+ "cuando": "2026-09-12T14:38:11.916Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "12/09",
-   "titulo": "Zabiri adelanta al Racing",
-   "url": "https://www.futbolfantasy.com/partidos/22469-racing-alaves",
+   "titulo": "¡Omar anota el segundo!",
+   "url": "https://www.futbolfantasy.com/partidos/22467-osasuna-espanyol",
    "categoria": "análisis"
   },
   {
@@ -26,6 +26,30 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Almeida es expulsado en los minutos finales contra el Alavés",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151089-almeida-es-expulsado-en-los-minutos-finales-contra-el-alaves",
+   "categoria": "sanción"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Zabiri sale a la caza del zorro",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151088-zabiri-sale-a-la-caza-del-zorro",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Jornada 5: Racing 2-1 Alavés. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22469-racing-alaves",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Manolo, sobre los cambios en el once titular y los minutos para Bryan Zaragoza",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151087-manolo-sobre-los-cambios-en-el-once-titular-y-los-minutos-para-bryan-zaragoza",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "12/09",
@@ -50,12 +74,6 @@
    "titulo": "LaLiga anula injusta y provisionalmente la asistencia de Jorge Salinas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151083-laliga-anula-injusta-y-provisionalmente-la-asistencia-de-jorge-salinas",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Alineaciones confirmadas del Osasuna - Espanyol",
-   "url": "https://www.futbolfantasy.com/partidos/22467-osasuna-espanyol",
-   "categoria": "rueda de prensa"
   },
   {
    "fecha": "12/09",
@@ -464,24 +482,6 @@
    "titulo": "Bordalás esconde el parte de bajas y habla de Femenía, Romero, Gudelj, el arbitraje y los menos habituales",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151011-bordalas-esconde-el-parte-de-bajas-y-habla-de-femenia-romero-gudelj-el-arbitraje-y-los-menos-",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "José Alberto convoca a los disponibles para enfrentarse al Alavés",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151013-jose-alberto-convoca-a-los-disponibles-para-enfrentarse-al-alaves",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Anselmi explica cómo llega el equipo a San mamés y habla de Dituro, Lomónaco, Redondo, el sistema y el once",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151012-anselmi-explica-como-llega-el-equipo-a-san-mames-y-habla-de-dituro-lomonaco-redondo-el-sistem",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Eric García sigue entrenando con normalidad y Flick tiene dos bajas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151010-eric-garcia-sigue-entrenando-con-normalidad-y-flick-tiene-dos-bajas",
-   "categoria": "entrenamiento"
   }
  ]
 }
