@@ -1831,6 +1831,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 1,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -4159,6 +4166,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 14,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -12939,6 +12953,13 @@
     "rival": 1490,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 15,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -13064,7 +13085,7 @@
     "jornada": 5,
     "puntos": null,
     "rival": 23,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -15040,7 +15061,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 1.5,
   "edad": 19,
-  "titular": true,
+  "titular": null,
   "titularidades": 0,
   "suplencias": 4,
   "jornadas": [
@@ -18937,7 +18958,7 @@
   "mediaCasa": 3,
   "mediaFuera": 1.5,
   "edad": 32,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 2,
   "jornadas": [
@@ -18990,7 +19011,7 @@
   "mediaCasa": 4,
   "mediaFuera": 4,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
   "jornadas": [
@@ -19345,6 +19366,13 @@
     "puntos": null,
     "rival": 4,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 14,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -21160,7 +21188,7 @@
   "mediaCasa": 4,
   "mediaFuera": 3,
   "edad": 30,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
   "jornadas": [
@@ -22370,11 +22398,11 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 2,
-  "mediaCasa": 5,
+  "mediaCasa": 4.3,
   "mediaFuera": 5,
   "edad": 23,
   "titular": null,
-  "titularidades": 3,
+  "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
    {
@@ -22410,6 +22438,15 @@
     "rival": 2,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 3,
+    "rival": 23,
+    "como": "inicio",
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,
@@ -22918,10 +22955,10 @@
   "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 4,
-  "mediaFuera": 2,
+  "mediaFuera": 5,
   "edad": 21,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 1,
   "jornadas": [
    {
@@ -22957,6 +22994,16 @@
     "como": "inicio",
     "eventos": [
      "sub_out"
+    ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 8,
+    "rival": 1,
+    "como": "inicio",
+    "eventos": [
+     "sub_out",
+     "penalty"
     ]
    }
   ],
@@ -23088,7 +23135,7 @@
   "mediaCasa": 2,
   "mediaFuera": 0,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 0,
   "suplencias": 1,
   "jornadas": [
@@ -23507,7 +23554,7 @@
     "jornada": 5,
     "puntos": null,
     "rival": 1,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -23931,7 +23978,7 @@
   "mediaCasa": 4,
   "mediaFuera": 1,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 1,
   "jornadas": [
@@ -23982,7 +24029,7 @@
   "edad": 22,
   "titular": null,
   "titularidades": 1,
-  "suplencias": 2,
+  "suplencias": 3,
   "jornadas": [
    {
     "jornada": 1,
@@ -24014,6 +24061,15 @@
     "jornada": 4,
     "puntos": 3,
     "rival": 2,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 3,
+    "rival": 23,
     "como": "banquillo",
     "eventos": [
      "sub_in"
@@ -24313,10 +24369,10 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 1,
-  "mediaFuera": 0,
+  "mediaFuera": 2,
   "edad": 23,
   "titular": null,
-  "titularidades": 0,
+  "titularidades": 1,
   "suplencias": 1,
   "jornadas": [
    {
@@ -24348,6 +24404,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 2,
+    "rival": 1,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24763,7 +24826,7 @@
     "jornada": 5,
     "puntos": null,
     "rival": 1,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -24880,7 +24943,7 @@
   "mediaCasa": 0,
   "mediaFuera": 0,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 0,
   "suplencias": 0,
   "jornadas": [
@@ -25047,6 +25110,13 @@
     "puntos": null,
     "rival": 1490,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 15,
+    "como": "inicio",
     "eventos": []
    }
   ],
