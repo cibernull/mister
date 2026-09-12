@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-12T19:23:59.310Z",
+ "cuando": "2026-09-12T19:38:17.194Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Iñaki Williams acabó con un golpe sin importancia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151108-inaki-williams-acabo-con-un-golpe-sin-importancia",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Terzic analiza el empate y habla de Iñaki Williams y los aspectos a mejorar",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151107-terzic-analiza-el-empate-y-habla-de-inaki-williams-y-los-aspectos-a-mejorar",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "12/09",
@@ -470,18 +482,6 @@
    "titulo": "Francho sigue sin entrenar y mañana pasará una última prueba",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151032-francho-sigue-sin-entrenar-y-manana-pasara-una-ultima-prueba",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Osasuna completa la última sesión en Tajonar sin los cuatro lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151031-osasuna-completa-la-ultima-sesion-en-tajonar-sin-los-cuatro-lesionados",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Calatrava entra sin problemas en la lista y Gorosabel se queda fuera",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151030-calatrava-entra-sin-problemas-en-la-lista-y-gorosabel-se-queda-fuera",
-   "categoria": "convocatoria"
   }
  ]
 }
