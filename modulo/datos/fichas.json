@@ -15106,7 +15106,9 @@
     "puntos": null,
     "rival": 14,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -19010,7 +19012,9 @@
     "puntos": null,
     "rival": 14,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -24054,7 +24058,9 @@
     "puntos": null,
     "rival": 15,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -25159,13 +25165,6 @@
     "puntos": null,
     "rival": 1490,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 15,
-    "como": "inicio",
     "eventos": []
    }
   ],
