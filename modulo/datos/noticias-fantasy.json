@@ -1,11 +1,11 @@
 {
- "cuando": "2026-09-12T21:08:28.117Z",
+ "cuando": "2026-09-12T21:38:31.527Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "02/09",
-   "titulo": "Alineaciones probables para la jornada 5 actualizadas",
+   "titulo": "Alineaciones probables para la jornada 6 de los que han jugado la 5",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
   },
@@ -20,6 +20,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Diario de Sevilla apuesta por repetir la fórmula que tumbó al Real Madrid",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151111-diario-de-sevilla-apuesta-por-repetir-la-formula-que-tumbo-al-real-madrid",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "El Real Madrid sentencia al Rayo antes que Arda la noche",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151110-el-real-madrid-sentencia-al-rayo-antes-que-arda-la-noche",
+   "categoria": "análisis"
   },
   {
    "fecha": "12/09",
@@ -470,18 +482,6 @@
    "titulo": "Asp Jensen sigue fuera de la dinámica grupal por enfermedad",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151035-asp-jensen-sigue-fuera-de-la-dinamica-grupal-por-enfermedad",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Diario As ve a Casadó con muchas opciones de estrenarse como titular",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151034-diario-as-ve-a-casado-con-muchas-opciones-de-estrenarse-como-titular",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Marca apuesta por Óskarsson y Barrenetxea y deja abierta la duda de Kubo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151033-marca-apuesta-por-oskarsson-y-barrenetxea-y-deja-abierta-la-duda-de-kubo",
-   "categoria": "análisis"
   }
  ]
 }
