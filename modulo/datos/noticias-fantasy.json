@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-12T19:08:10.301Z",
+ "cuando": "2026-09-12T19:23:59.310Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Anselmi valora el empate, el cambio de sistema y habla de Dituro y Redondo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151106-anselmi-valora-el-empate-el-cambio-de-sistema-y-habla-de-dituro-y-redondo",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Julián Álvarez, muy difícil para Anoeta tras sufrir molestias en el entrenamiento",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151105-julian-alvarez-muy-dificil-para-anoeta-tras-sufrir-molestias-en-el-entrenamiento",
+   "categoria": "lesión"
   },
   {
    "fecha": "12/09",
@@ -470,18 +482,6 @@
    "titulo": "Calatrava entra sin problemas en la lista y Gorosabel se queda fuera",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151030-calatrava-entra-sin-problemas-en-la-lista-y-gorosabel-se-queda-fuera",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "La Real Sociedad completa la sesión del viernes con la única baja de Odriozola",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151029-la-real-sociedad-completa-la-sesion-del-viernes-con-la-unica-baja-de-odriozola",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Febas sigue sin completar la sesión del viernes y peligra para el domingo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151028-febas-sigue-sin-completar-la-sesion-del-viernes-y-peligra-para-el-domingo",
-   "categoria": "entrenamiento"
   }
  ]
 }
