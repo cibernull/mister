@@ -1,11 +1,11 @@
 {
- "cuando": "2026-09-12T12:09:06.912Z",
+ "cuando": "2026-09-12T12:38:22.823Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "12/09",
-   "titulo": "Sigue en directo el Racing - Alavés",
+   "titulo": "Koski adelanta al Alavés",
    "url": "https://www.futbolfantasy.com/partidos/22469-racing-alaves",
    "categoria": "análisis"
   },
@@ -26,6 +26,30 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Luken Beitia y Mamadou Sarr, una pareja inesperada",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151079-luken-beitia-y-mamadou-sarr-una-pareja-inesperada",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Giráldez habla de Febas, Iglesias, Antañón, El Abdellaoui, Dotor, Burcio, Jutglà, las rotaciones y el Málaga",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151078-giraldez-habla-de-febas-iglesias-antanon-el-abdellaoui-dotor-burcio-jutgla-las-rotaciones-y-e",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Quique pide mantener los pies en el suelo tras el buen arranque de temporada",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151077-quique-pide-mantener-los-pies-en-el-suelo-tras-el-buen-arranque-de-temporada",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "José Alberto destaca la importancia de hacerse fuertes en El Sardinero",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151076-jose-alberto-destaca-la-importancia-de-hacerse-fuerte-en-el-sardinero",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "12/09",
@@ -458,30 +482,6 @@
    "titulo": "El Rayo no volverá a Vallecas ante el Espanyol y Butarque apunta de nuevo como solución",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151004-el-rayo-no-volvera-a-vallecas-ante-el-espanyol-y-butarque-apunta-de-nuevo-como-solucion",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "El Atlético retoma los entrenamientos sin Sørloth y con cuidados para Barrios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151002-el-atletico-retoma-los-entrenamientos-sin-sorloth",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "El Racing completa la sesión del viernes sin los dos lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151001-el-racing-completa-la-sesion-del-viernes-sin-los-dos-lesionados",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Martial sobrepasa el presupuesto del Málaga y tendría que bajarse el sueldo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151000-martial-sobrepasa-el-presupuesto-del-malaga-y-tendria-que-bajarse-el-sueldo",
-   "categoria": "mercado"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "El Espanyol se encierra en el estadio sin Gorosabel",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150999-el-espanyol-se-encierra-en-el-estadio-sin-gorosabel",
-   "categoria": "entrenamiento"
   }
  ]
 }

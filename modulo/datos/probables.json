@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-12T12:09:05.749Z",
+ "cuando": "2026-09-12T12:38:21.807Z",
  "fuente": "futbolfantasy.com",
  "leidos": 511,
  "jugadores": {
@@ -757,7 +757,7 @@
    "min": 316
   },
   "22471": {
-   "prob": 20,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 21
@@ -1399,7 +1399,10 @@
    "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 0
+   "min": 0,
+   "lesion": "Lesión en los isquiotibiales",
+   "desde": "14/07 (60 días)",
+   "hasta": null
   },
   "52117": {
    "prob": 90,
