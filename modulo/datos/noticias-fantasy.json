@@ -1,11 +1,11 @@
 {
- "cuando": "2026-09-12T12:38:22.823Z",
+ "cuando": "2026-09-12T13:08:16.068Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "12/09",
-   "titulo": "Koski adelanta al Alavés",
+   "titulo": "Empate al descanso en El Sardinero",
    "url": "https://www.futbolfantasy.com/partidos/22469-racing-alaves",
    "categoria": "análisis"
   },
@@ -25,6 +25,24 @@
    "fecha": "02/09",
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
+   "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Alineaciones confirmadas del Osasuna - Espanyol",
+   "url": "https://www.futbolfantasy.com/partidos/22467-osasuna-espanyol",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "El Rayo exige el levantamiento inmediato de la cautelar para jugar ante el Espanyol en Vallecas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151081-el-rayo-exige-el-levantamiento-inmediato-de-la-cautelar-para-jugar-ante-el-espanyol-en-vallec",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "El finiquito convierte la destitución de Corberán en un riesgo económico",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151080-el-finiquito-convierte-la-destitucion-de-corberan-en-un-riesgo-economico",
    "categoria": "mercado"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Dituro seguirá siendo titular en San Mamés",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151006-dituro-seguira-siendo-titular-en-san-mames",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Andrés García se adueña provisionalmente del carril",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151005-andres-garcia-se-aduena-provisionalmente-del-carril",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Jorge Salinas siente el aumento de presión atmosférica",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151003-jorge-salinas-siente-el-aumento-de-presion-atmosferica",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "El Rayo no volverá a Vallecas ante el Espanyol y Butarque apunta de nuevo como solución",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151004-el-rayo-no-volvera-a-vallecas-ante-el-espanyol-y-butarque-apunta-de-nuevo-como-solucion",
-   "categoria": "rueda de prensa"
   }
  ]
 }

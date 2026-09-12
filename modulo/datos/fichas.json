@@ -22566,13 +22566,6 @@
     "rival": 50,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 1490,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -22751,7 +22744,7 @@
   "mediaCasa": 0,
   "mediaFuera": 1,
   "edad": 22,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 1,
   "jornadas": [

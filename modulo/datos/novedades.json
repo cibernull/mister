@@ -130,6 +130,15 @@
   "equipo": null
  },
  {
+  "tipo": "clausula",
+  "dia": "2026-09-12",
+  "id": "22604",
+  "equipo": "Neky F.C. (Sergio)",
+  "escalones": 1,
+  "coste": 1593200,
+  "clausula": 15932000
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-11",
   "id": "607",

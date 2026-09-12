@@ -40,7 +40,7 @@
  {
   "n": "Niutin FC (Isaac)",
   "pos": 2,
-  "pts": 187,
+  "pts": 188,
   "saldo": 11504200,
   "pl": 85291000,
   "rep": 33800000,
@@ -88,8 +88,8 @@
  },
  {
   "n": "Cacaculopedopis",
-  "pos": 3,
-  "pts": 151,
+  "pos": 4,
+  "pts": 150,
   "saldo": -402782,
   "pl": 56803000,
   "rep": 19942000,
@@ -108,8 +108,8 @@
  {
   "n": "Neky F.C. (Sergio)",
   "pos": 1,
-  "pts": 212,
-  "saldo": 5023535,
+  "pts": 215,
+  "saldo": 3430335,
   "pl": 101239000,
   "rep": 31142000,
   "ini": 18858000,
@@ -118,15 +118,15 @@
   "pre": 5600000,
   "plantilla": 14,
   "sinValorar": [],
-  "subidas": 4,
-  "blindados": 2,
-  "costeSubidas": 2954600,
-  "gastoVisto": 0,
-  "gastoOculto": 2954600
+  "subidas": 5,
+  "blindados": 3,
+  "costeSubidas": 4547800,
+  "gastoVisto": 1593200,
+  "gastoOculto": 4547800
  },
  {
   "n": "Mario80",
-  "pos": 4,
+  "pos": 3,
   "pts": 151,
   "saldo": -380130,
   "pl": 81249000,
@@ -146,7 +146,7 @@
  {
   "n": "Saiyans FC (Fran)",
   "pos": 5,
-  "pts": 133,
+  "pts": 134,
   "saldo": -916650,
   "pl": 87538000,
   "rep": 21730000,
