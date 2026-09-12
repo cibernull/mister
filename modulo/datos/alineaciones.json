@@ -779,10 +779,15 @@
     "cuando": "2026-09-11T19:00:00.000Z",
     "local": 17,
     "visitante": 19
+   },
+   {
+    "cuando": "2026-09-12T12:00:00.000Z",
+    "local": 1490,
+    "visitante": 48
    }
   ],
-  "puntos": 1,
-  "puesto": 4,
+  "puntos": 2,
+  "puesto": 5,
   "formacion": "1-3-6-1",
   "once": [
    {
@@ -821,8 +826,8 @@
     "id": "364",
     "nombre": "Sergio Canales",
     "puesto": 3,
-    "puntos": null,
-    "jugo": false,
+    "puntos": 2,
+    "jugo": true,
     "capitan": false
    },
    {
@@ -879,8 +884,8 @@
     "id": "61012",
     "nombre": "Pablo García",
     "puesto": 4,
-    "puntos": 0,
-    "jugo": false,
+    "puntos": 1,
+    "jugo": true,
     "capitan": false
    },
    {
@@ -903,8 +908,8 @@
     "id": "118",
     "nombre": "Jonny Otto",
     "puesto": 2,
-    "puntos": 1,
-    "jugo": false,
+    "puntos": 2,
+    "jugo": true,
     "capitan": false
    },
    {

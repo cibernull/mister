@@ -1,11 +1,11 @@
 {
- "cuando": "2026-09-12T13:08:16.068Z",
+ "cuando": "2026-09-12T14:08:13.982Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "12/09",
-   "titulo": "Empate al descanso en El Sardinero",
+   "titulo": "Zabiri adelanta al Racing",
    "url": "https://www.futbolfantasy.com/partidos/22469-racing-alaves",
    "categoria": "análisis"
   },
@@ -26,6 +26,30 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Ramis defiende la reacción de Osasuna y explica la pareja Budimir-Raúl",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151086-ramis-defiende-la-reaccion-de-osasuna-y-explica-la-pareja-budimir-raul",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "El Deportivo completa la última sesión con Asp Jensen de nuevo sobre el césped",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151085-el-deportivo-completa-la-ultima-sesion-con-asp-jensen-de-nuevo-sobre-el-cesped",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Aitor Mañas se retira en camilla tras golpearse la cabeza",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151084-aitor-manas-se-retira-en-camilla-tras-golpearse-la-cabeza",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "LaLiga anula injusta y provisionalmente la asistencia de Jorge Salinas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151083-laliga-anula-injusta-y-provisionalmente-la-asistencia-de-jorge-salinas",
+   "categoria": "análisis"
   },
   {
    "fecha": "12/09",
@@ -458,30 +482,6 @@
    "titulo": "Eric García sigue entrenando con normalidad y Flick tiene dos bajas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151010-eric-garcia-sigue-entrenando-con-normalidad-y-flick-tiene-dos-bajas",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Jauregi vuelve al grupo y Funes tiene cuatro bajas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151009-jauregi-vuelve-al-grupo-y-funes-tiene-cuatro-bajas",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Yago Santiago, única baja del Elche en la sesión del viernes",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151008-yago-santiago-unica-baja-del-elche-en-la-sesion-del-viernes",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Asencio repite con el grupo y Lunin está recuperado",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151007-asencio-repite-con-el-grupo-y-lunin-esta-recuperado",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Dituro seguirá siendo titular en San Mamés",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151006-dituro-seguira-siendo-titular-en-san-mames",
-   "categoria": "análisis"
   }
  ]
 }

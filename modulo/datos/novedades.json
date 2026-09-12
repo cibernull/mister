@@ -140,6 +140,45 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "607",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "22502",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "29169",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "71154",
+  "entra": true
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-09-12",
+  "id": "71616",
+  "equipo": "Neky F.C. (Sergio)",
+  "escalones": 2,
+  "coste": 1760400,
+  "clausula": 11002500
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "71795",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-11",
   "id": "607",
   "entra": true
