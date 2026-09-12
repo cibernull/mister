@@ -1,11 +1,11 @@
 {
- "cuando": "2026-09-12T16:38:15.158Z",
+ "cuando": "2026-09-12T17:08:13.326Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "12/09",
-   "titulo": "Arranca el partido en San Mamés",
+   "titulo": "Sigue el empate en San Mamés",
    "url": "https://www.futbolfantasy.com/partidos/22463-athletic-elche",
    "categoria": "análisis"
   },
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Manolo celebra el triunfo y habla de Marcos, Roberto, El Hilali, Riedel y el sistema",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151101-manolo-celebra-el-triunfo-y-habla-de-marcos-roberto-el-hilali-riedel-y-el-sistema",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "12/09",
@@ -476,12 +482,6 @@
    "titulo": "Matarazzo, sobre la baja de Jon Martín, la decisión con Marrero, Marín, Herrera, Fort, Sarr, Ochieng y Sucic",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151025-matarazzo-sobre-la-baja-de-jon-martin-la-decision-con-marrero-pablo-marin-yangel-herrera-ochi",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Carlos Romero y Juan Foyth siguen al margen y tienen complicado llegar al lunes",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151024-carlos-romero-y-juan-foyth-siguen-al-margen-y-tienen-complicado-llegar-al-lunes",
-   "categoria": "entrenamiento"
   }
  ]
 }
