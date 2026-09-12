@@ -1,11 +1,11 @@
 {
- "cuando": "2026-09-12T19:38:17.194Z",
+ "cuando": "2026-09-12T20:08:13.039Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "12/09",
-   "titulo": "Sigue en directo el Real Madrid - Rayo",
+   "titulo": "El Real Madrid anota el tercero",
    "url": "https://www.futbolfantasy.com/partidos/22468-real-madrid-rayo",
    "categoria": "análisis"
   },
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "San José hace balance de su primer mes como técnico del Rayo y habla de Mourinho y Camello",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151109-san-jose-hace-balance-de-su-primer-mes-como-tecnico-del-rayo-y-habla-de-mourinho-y-camello",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "12/09",
@@ -476,12 +482,6 @@
    "titulo": "Marca apuesta por Óskarsson y Barrenetxea y deja abierta la duda de Kubo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151033-marca-apuesta-por-oskarsson-y-barrenetxea-y-deja-abierta-la-duda-de-kubo",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Francho sigue sin entrenar y mañana pasará una última prueba",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151032-francho-sigue-sin-entrenar-y-manana-pasara-una-ultima-prueba",
-   "categoria": "entrenamiento"
   }
  ]
 }

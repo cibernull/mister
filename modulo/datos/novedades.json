@@ -392,6 +392,18 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "19727",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "28773",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-11",
   "id": "607",
   "entra": true
