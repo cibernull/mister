@@ -9887,13 +9887,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24058,7 +24051,7 @@
   "mediaCasa": 1,
   "mediaFuera": 0,
   "edad": 23,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 1,
   "jornadas": [
@@ -24470,7 +24463,7 @@
   "mediaCasa": 0,
   "mediaFuera": 0,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 0,
   "suplencias": 0,
   "jornadas": [

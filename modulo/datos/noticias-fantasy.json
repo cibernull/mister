@@ -1,11 +1,11 @@
 {
- "cuando": "2026-09-12T15:08:29.780Z",
+ "cuando": "2026-09-12T15:38:24.198Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "12/09",
-   "titulo": "¡Roberto anota el segundo!",
+   "titulo": "El Espanyol vence al descanso",
    "url": "https://www.futbolfantasy.com/partidos/22467-osasuna-espanyol",
    "categoria": "análisis"
   },
@@ -26,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Lomónaco se queda fuera de la convocatoria para San Mamés",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151094-lomonaco-se-queda-fuera-de-la-convocatoria-para-san-mames",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Alineaciones confirmadas del Athletic - Elche",
+   "url": "https://www.futbolfantasy.com/partidos/22463-athletic-elche",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "12/09",
@@ -470,18 +482,6 @@
    "titulo": "Manolo habla de Bryan Zaragoza, Gorosasbel, Riedel, Hartman, Budimir y el plan de partido contra Osasuna",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151018-manolo-habla-de-bryan-zaragoza-gorosasbel-riedel-hartman-budimir-y-el-plan-de-partido-contra-",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "José Alberto, sobre Pedro Felipe, Íñigo Vicente, los cambios en el once y los nuevos fichajes",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151017-jose-alberto-sobre-pedro-felipe-inigo-vicente-los-cambios-en-el-once-y-los-nuevos-fichajes",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Terzic evalúa este viernes el estado de Laporte a puerta cerrada",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151016-terzic-evalua-este-viernes-el-estado-de-laporte-a-puerta-cerrada",
-   "categoria": "entrenamiento"
   }
  ]
 }
