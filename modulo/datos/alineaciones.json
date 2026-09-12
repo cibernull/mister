@@ -789,6 +789,11 @@
     "cuando": "2026-09-12T14:15:00.000Z",
     "local": 50,
     "visitante": 8
+   },
+   {
+    "cuando": "2026-09-12T16:30:00.000Z",
+    "local": 1,
+    "visitante": 23
    }
   ],
   "puntos": 6,
@@ -855,8 +860,8 @@
     "id": "71639",
     "nombre": "Beñat Gerenabarrena",
     "puesto": 3,
-    "puntos": null,
-    "jugo": false,
+    "puntos": 1,
+    "jugo": true,
     "capitan": false
    },
    {

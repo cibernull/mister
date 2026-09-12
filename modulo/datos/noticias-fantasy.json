@@ -1,13 +1,19 @@
 {
- "cuando": "2026-09-12T18:08:31.801Z",
+ "cuando": "2026-09-12T18:38:24.106Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "12/09",
-   "titulo": "¡El Elche se adelanta de penalti!",
+   "titulo": "Alineaciones confirmadas del Real Madrid - Rayo",
+   "url": "https://www.futbolfantasy.com/partidos/22468-real-madrid-rayo",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Jornada 5: Athletic 1-1 Elche. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22463-athletic-elche",
-   "categoria": "análisis"
+   "categoria": "partido"
   },
   {
    "fecha": "02/09",
@@ -26,12 +32,6 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Alineaciones confirmadas del Real Madrid - Rayo",
-   "url": "https://www.futbolfantasy.com/partidos/22468-real-madrid-rayo",
-   "categoria": "rueda de prensa"
   },
   {
    "fecha": "12/09",
