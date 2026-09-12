@@ -1,6 +1,54 @@
 [
  {
   "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "239",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "4886",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "22956",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "29238",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "61009",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "63788",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "70945",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-12",
+  "id": "2586746",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-11",
   "id": "607",
   "entra": true
