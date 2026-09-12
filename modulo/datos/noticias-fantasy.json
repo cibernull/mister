@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-12T09:08:32.382Z",
+ "cuando": "2026-09-12T09:38:29.066Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
-   "fecha": "11/09",
-   "titulo": "El Sevilla asesta un golpe letal a Corberán",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151052-el-sevilla-asesta-un-golpe-letal-a-corberan",
-   "categoria": "análisis"
+   "fecha": "12/09",
+   "titulo": "Parte médico oficial de Pablo Barrios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151060-pablo-barrios-pendiente-de-pruebas-por-unas-molestias-en-el-soleo",
+   "categoria": "lesión"
   },
   {
    "fecha": "02/09",
@@ -29,9 +29,33 @@
   },
   {
    "fecha": "12/09",
-   "titulo": "Pablo Barrios, pendiente de pruebas por unas molestias en el sóleo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151060-pablo-barrios-pendiente-de-pruebas-por-unas-molestias-en-el-soleo",
-   "categoria": "lesión"
+   "titulo": "Vivian, Guruzeta y Canales, fuera de la lista para recibir al Elche",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151065-vivian-guruzeta-y-canales-fuera-de-la-lista-para-recibir-al-elche",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Toni Martínez, principal novedad en la lista para la visita a El Sardinero",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151064-toni-martinez-principal-novedad-en-la-lista-para-la-visita-a-el-sardinero",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Barrios y Sorloth, ausencias en la última sesión antes de viajar a San Sebastián",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151063-barrios-y-sorloth-ausencias-en-la-ultima-sesion-antes-de-viajar-a-san-sebastian",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Etta Eyong y Marc Santos, bajas en la sesión previa al partido",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151062-etta-eyong-y-marc-santos-bajas-en-la-sesion-previa-al-partido",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Osasuna cita a 23 jugadores para recibir al Espanyol en El Sadar",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151061-osasuna-cita-a-23-jugadores-para-recibir-al-espanyol-en-el-sadar",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "12/09",
@@ -74,6 +98,12 @@
    "titulo": "Apelación desestima el recurso del Rayo y mantiene las sanciones a De Frutos y Fran Pérez",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151053-apelacion-desestima-el-recurso-del-rayo-y-mantiene-las-sanciones-a-de-frutos-y-fran-perez",
    "categoria": "sanción"
+  },
+  {
+   "fecha": "11/09",
+   "titulo": "El Sevilla asesta un golpe letal a Corberán",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151052-el-sevilla-asesta-un-golpe-letal-a-corberan",
+   "categoria": "análisis"
   },
   {
    "fecha": "11/09",
@@ -451,36 +481,6 @@
    "fecha": "11/09",
    "titulo": "Las alineaciones probables del Valencia para la jornada 5 según la prensa especializada",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150989-las-alineaciones-probables-del-valencia-para-la-jornada-5-segun-la-prensa-especializada",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Las alineaciones probables del Sevilla para la jornada 5 según la prensa especializada",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150988-las-alineaciones-probables-del-sevilla-para-la-jornada-5segun-la-prensa-especializada",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Alineaciones probables y previa fantasy del Levante - Barcelona",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150987-alineaciones-probables-y-previa-fantasy-del-levante-barcelona",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Alineaciones probables y previa fantasy del Real Sociedad - Atlético",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150986-alineaciones-probables-y-previa-fantasy-del-real-sociedad-atletico",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Pablo Ibáñez ya se sienta en la mesa de los imprescindibles",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150985-pablo-ibanez-ya-se-sienta-en-la-mesa-de-los-imprescindibles",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Saliba obliga a revisar las jerarquías de Comesaña y Pape Gueye",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150984-saliba-obliga-a-revisar-las-jerarquias-de-comesana-y-pape-gueye",
    "categoria": "análisis"
   }
  ]
