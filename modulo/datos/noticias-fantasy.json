@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-12T10:38:10.118Z",
+ "cuando": "2026-09-12T10:50:04.731Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Luis Castro, sobre Etta Eyong, Primo, Bardeli, Thiago, las rotaciones y el Barcelona",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151069-luis-castro-sobre-etta-eyong-primo-bardeli-thiago-las-rotaciones-y-el-barcelona",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "12/09",
@@ -475,12 +481,6 @@
    "fecha": "11/09",
    "titulo": "Angeliño sigue pagando la falta de ritmo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150993-angelino-sigue-pagando-la-falta-de-ritmo",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Una nueva ración para alimentar a Rüdiger",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150992-una-nueva-racion-para-alimentar-a-rudiger",
    "categoria": "análisis"
   }
  ]
