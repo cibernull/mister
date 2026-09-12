@@ -1,12 +1,12 @@
 {
- "cuando": "2026-09-12T10:50:04.731Z",
+ "cuando": "2026-09-12T11:08:15.574Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "12/09",
-   "titulo": "Flick habla de Raphinha, Fermín, Olmo, las rotaciones y el sueño de la Champions",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151068-flick-habla-de-raphinha-fermin-olmo-las-rotaciones-y-el-sueno-de-la-champions",
+   "titulo": "Alineaciones confirmadas del Racing - Alavés",
+   "url": "https://www.futbolfantasy.com/partidos/22469-racing-alaves",
    "categoria": "rueda de prensa"
   },
   {
@@ -29,8 +29,20 @@
   },
   {
    "fecha": "12/09",
+   "titulo": "Simeone lamenta la lesión de Barrios y habla de Kang-In, Giuliano, Sorloth y el partido contra la Real",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151070-simeone-lamenta-la-lesion-de-barrios-y-habla-de-kang-in-giuliano-sorloth-y-el-partido-contra-",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/09",
    "titulo": "Luis Castro, sobre Etta Eyong, Primo, Bardeli, Thiago, las rotaciones y el Barcelona",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151069-luis-castro-sobre-etta-eyong-primo-bardeli-thiago-las-rotaciones-y-el-barcelona",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Flick habla de Raphinha, Fermín, Olmo, las rotaciones y el sueño de la Champions",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151068-flick-habla-de-raphinha-fermin-olmo-las-rotaciones-y-el-sueno-de-la-champions",
    "categoria": "rueda de prensa"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Hidalgo, sobre Asp Jensen, Casadó, Angeliño, Luismi, Yeremay, Giménez y el Getafe",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150995-hidalgo-sobre-asp-jensen-casado-angelino-luismi-yeremay-gimenez-y-el-getafe",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "La defensa del Atlético, un ecosistema propicio para Oskarsson",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150994-la-defensa-del-atletico-un-ecosistema-propicio-para-oskarsson",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Angeliño sigue pagando la falta de ritmo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150993-angelino-sigue-pagando-la-falta-de-ritmo",
-   "categoria": "análisis"
   }
  ]
 }

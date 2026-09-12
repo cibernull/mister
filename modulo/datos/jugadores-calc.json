@@ -1525,7 +1525,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": null,
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -11164,7 +11164,7 @@
   "mf": 4.5,
   "tit": 2,
   "sup": 1,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 25,
   "js": [
@@ -13009,7 +13009,7 @@
   "mf": 1.5,
   "tit": 3,
   "sup": 1,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 28,
   "js": [
@@ -17344,7 +17344,7 @@
   "mf": 1,
   "tit": 2,
   "sup": 2,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 23,
   "js": [
@@ -23504,7 +23504,7 @@
   "mf": 3,
   "tit": 0,
   "sup": 1,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 21,
   "js": [
