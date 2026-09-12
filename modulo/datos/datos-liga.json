@@ -1048,6 +1048,16 @@
  ],
  "movimientos": [
   {
+   "id": "55738",
+   "nombre": "César Tárrega",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 3703620,
+   "tipo": "normal",
+   "fecha": "2026-09-12 09:48:57",
+   "pos": 2
+  },
+  {
    "id": "71132",
    "nombre": "Facundo Bernal",
    "de": "Neky F.C. (Sergio)",
@@ -4052,6 +4062,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "César Tárrega",
+     "id": "55738",
+     "tipo": "venta",
+     "importe": 3703620,
+     "fecha": "2026-09-12",
+     "op": "normal"
+    },
+    {
      "j": "Kang-In Lee",
      "id": "15653",
      "tipo": "venta",
@@ -4742,8 +4760,8 @@
     "55738": {
      "nombre": "César Tárrega",
      "compras": 1394000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 3703620,
+     "ops": 2
     },
     "56632": {
      "nombre": "Isaac Romero",

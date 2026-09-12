@@ -2631,9 +2631,9 @@
    "cuando": "2026-08-19 16:56:11",
    "valor": 4058000,
    "posicion": 4,
-   "puntos": 17,
-   "media": 4.3,
-   "racha": "1,11,2,-,3"
+   "puntos": 16,
+   "media": 4,
+   "racha": "1,11,2,-,2"
   },
   {
    "idTransfer": 540276375,
@@ -3124,9 +3124,9 @@
    "cuando": "2026-08-24 05:00:29",
    "valor": 4058000,
    "posicion": 4,
-   "puntos": 17,
-   "media": 4.3,
-   "racha": "1,11,2,-,3"
+   "puntos": 16,
+   "media": 4,
+   "racha": "1,11,2,-,2"
   },
   {
    "idTransfer": 541547919,
@@ -4805,7 +4805,7 @@
    "importe": 17100000,
    "tipo": "normal",
    "cuando": "2026-09-08 17:00:19",
-   "valor": 17209000,
+   "valor": 17247000,
    "posicion": 3,
    "puntos": 49,
    "media": 12.3,
@@ -5099,6 +5099,23 @@
    "puntos": 13,
    "media": 3.3,
    "racha": "3,5,2,3"
+  },
+  {
+   "idTransfer": 547449527,
+   "idJugador": "55738",
+   "nombre": "César Tárrega",
+   "de": "Neky F.C. (Sergio)",
+   "a": "Mister",
+   "idUcDe": 12493688,
+   "idUcA": 0,
+   "importe": 3703620,
+   "tipo": "normal",
+   "cuando": "2026-09-12 09:48:57",
+   "valor": 3540000,
+   "posicion": 2,
+   "puntos": 11,
+   "media": 2.2,
+   "racha": "5,5,-2,1,2"
   }
  ],
  "salidas": [
