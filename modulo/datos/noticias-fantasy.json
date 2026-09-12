@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-12T10:08:18.165Z",
+ "cuando": "2026-09-12T10:38:10.118Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "12/09",
-   "titulo": "Parte médico oficial de Pablo Barrios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151060-pablo-barrios-pendiente-de-pruebas-por-unas-molestias-en-el-soleo",
-   "categoria": "lesión"
+   "titulo": "Flick habla de Raphinha, Fermín, Olmo, las rotaciones y el sueño de la Champions",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151068-flick-habla-de-raphinha-fermin-olmo-las-rotaciones-y-el-sueno-de-la-champions",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Luis García puede permitirse el lujo de rotar varias piezas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151067-luis-garcia-puede-permitirse-el-lujo-de-rotar-varias-piezas",
+   "categoria": "análisis"
   },
   {
    "fecha": "12/09",
@@ -56,6 +62,12 @@
    "titulo": "Etta Eyong y Marc Santos, bajas en la sesión previa al partido",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151062-etta-eyong-y-marc-santos-bajas-en-la-sesion-previa-al-partido",
    "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Parte médico oficial de Pablo Barrios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151060-pablo-barrios-pendiente-de-pruebas-por-unas-molestias-en-el-soleo",
+   "categoria": "lesión"
   },
   {
    "fecha": "12/09",
@@ -469,18 +481,6 @@
    "fecha": "11/09",
    "titulo": "Una nueva ración para alimentar a Rüdiger",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150992-una-nueva-racion-para-alimentar-a-rudiger",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "As asegura que Vinicius y Mbappé no rotarán ante el Rayo y volverán Bernardo Silva y Güler",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150991-as-asegura-que-vinicius-y-mbappe-no-rotaran-ante-el-rayo-y-volveran-bernardo-silva-y-guler",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "La sorprendente apuesta de la prensa con la titularidad de Félix Correia pese a las palabras de Luis García",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150990-la-sorprendente-apuesta-de-la-prensa-con-la-titularidad-de-felix-correia-pese-a-las-palabras-",
    "categoria": "análisis"
   }
  ]
