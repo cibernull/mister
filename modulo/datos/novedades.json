@@ -116,6 +116,20 @@
   "equipo": null
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-09-12",
+  "id": "58980",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-12",
+  "id": "67931",
+  "estado": "other",
+  "equipo": null
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-11",
   "id": "607",

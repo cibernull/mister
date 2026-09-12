@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-12T11:08:15.574Z",
+ "cuando": "2026-09-12T11:38:12.423Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Guido sigue al margen del grupo mientras Tàrrega se somete a pruebas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151072-guido-sigue-al-margen-del-grupo-mientras-tarrega-se-somete-a-pruebas",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "12/09",
@@ -476,12 +482,6 @@
    "titulo": "Gerard Moreno arranca en modo diésel",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150996-gerard-moreno-arranca-en-modo-diesel",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Hidalgo, sobre Asp Jensen, Casadó, Angeliño, Luismi, Yeremay, Giménez y el Getafe",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150995-hidalgo-sobre-asp-jensen-casado-angelino-luismi-yeremay-gimenez-y-el-getafe",
-   "categoria": "rueda de prensa"
   }
  ]
 }
