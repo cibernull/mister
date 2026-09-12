@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-11T23:08:02.339Z",
+ "cuando": "2026-09-12T00:08:17.177Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Félix Correia se presenta con la intención por delante",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151058-felix-correia-se-presenta-con-la-intencion-por-delante",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Dieng, lejos de lo que necesita el Valencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151057-dieng-lejos-de-lo-que-necesita-el-valencia",
+   "categoria": "análisis"
   },
   {
    "fecha": "11/09",
@@ -469,18 +481,6 @@
    "fecha": "10/09",
    "titulo": "Radio Marca Málaga destaca el nivel de Aznou en los entrenamientos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150982-radio-marca-malaga-destaca-el-nivel-de-aznou-en-los-entrenamientos",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "Vargas viaja a Madrid para buscar una segunda opinión sobre su rodilla",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150981-vargas-viaja-a-madrid-para-buscar-una-segunda-opinion-sobre-su-rodilla",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "10/09",
-   "titulo": "El Correo de Andalucía apuesta por trivote y Félix Correia para el once contra el Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150980-el-correo-de-andalucia-apuesta-por-trivote-y-felix-correia-para-el-once-contra-el-valencia",
    "categoria": "análisis"
   }
  ]
