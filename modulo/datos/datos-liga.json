@@ -1044,9 +1044,34 @@
    "id": "3848780",
    "nombre": "Johaneko Louis-Jean",
    "valor": 733000
+  },
+  {
+   "id": "24",
+   "nombre": "Unai López",
+   "valor": 4456000
   }
  ],
  "movimientos": [
+  {
+   "id": "27520",
+   "nombre": "Fran García",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 6312600,
+   "tipo": "normal",
+   "fecha": "2026-09-12 17:03:31",
+   "pos": 2
+  },
+  {
+   "id": "24",
+   "nombre": "Unai López",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 4330000,
+   "tipo": "normal",
+   "fecha": "2026-09-12 17:00:19",
+   "pos": 3
+  },
   {
    "id": "55738",
    "nombre": "César Tárrega",
@@ -4924,6 +4949,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Fran García",
+     "id": "27520",
+     "tipo": "venta",
+     "importe": 6312600,
+     "fecha": "2026-09-12",
+     "op": "normal"
+    },
+    {
      "j": "Hector Fort",
      "id": "56971",
      "tipo": "venta",
@@ -5616,8 +5649,8 @@
     "27520": {
      "nombre": "Fran García",
      "compras": 2689960,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 6312600,
+     "ops": 2
     },
     "27855": {
      "nombre": "Diego Conde",
@@ -7138,6 +7171,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Unai López",
+     "id": "24",
+     "tipo": "compra",
+     "importe": 4330000,
+     "fecha": "2026-09-12",
+     "op": "normal"
+    },
+    {
      "j": "Anthony Gordon",
      "id": "70638",
      "tipo": "venta",
@@ -7595,6 +7636,12 @@
     }
    ],
    "porJugador": {
+    "24": {
+     "nombre": "Unai López",
+     "compras": 4330000,
+     "ventas": 0,
+     "ops": 1
+    },
     "239": {
      "nombre": "Pedro Bigas",
      "compras": 1301000,

@@ -1,6 +1,14 @@
 {
- "saldo": 11504200,
+ "saldo": 17816800,
  "apuntes": [
+  {
+   "cuando": 1789225411,
+   "fecha": "2026-09-12 17:03",
+   "motivo": "Fran García a Mister",
+   "tipo": "Venta",
+   "importe": 6312600,
+   "saldo": 17816800
+  },
   {
    "cuando": 1789139093,
    "fecha": "2026-09-11 17:04",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 10210000,
    "saldo": 3949604
-  },
-  {
-   "cuando": 1786719600,
-   "fecha": "2026-08-14 17:00",
-   "motivo": "Jonny Otto a Mister",
-   "tipo": "Compra",
-   "importe": -1801050,
-   "saldo": -6260396
   }
  ]
 }

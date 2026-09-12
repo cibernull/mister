@@ -1,11 +1,11 @@
 {
- "cuando": "2026-09-12T14:38:11.916Z",
+ "cuando": "2026-09-12T15:08:29.780Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "12/09",
-   "titulo": "¡Omar anota el segundo!",
+   "titulo": "¡Roberto anota el segundo!",
    "url": "https://www.futbolfantasy.com/partidos/22467-osasuna-espanyol",
    "categoria": "análisis"
   },
@@ -26,6 +26,24 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "José Alberto celebra el triunfo y habla de Pablo García, Canales, Zabiri, Guliashvili, Maguette, Almeida, Pablo Ramón, Belocian e Iker Luque",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151092-jose-alberto-celebra-el-triunfo-y-habla-de-pablo-garcia-canales-zabiri-guliashvili-maguette-a",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Borja Iglesias, Febas, Antañón y El Abdellaoui, fuera de la convocatoria",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151091-borja-iglesias-febas-antanon-y-el-abdellaoui-fuera-de-la-convocatoria",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Quique explica el accidente de Mañas, valora la derrota y explica los cambios condicionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151090-quique-explica-el-accidente-de-manas-valora-la-derrota-y-explica-los-cambios-condicionados",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "12/09",
@@ -464,24 +482,6 @@
    "titulo": "Terzic evalúa este viernes el estado de Laporte a puerta cerrada",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151016-terzic-evalua-este-viernes-el-estado-de-laporte-a-puerta-cerrada",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Ramis confirma cambios en el once y habla de Del Castillo, Yeboah, Budimir, Moi, Dubasin, Moro y el Espanyol",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151015-ramis-confirma-cambios-en-el-once-y-habla-de-del-castillo-yeboah-budimir-moi-dubasin-moro-y-e",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Iñaki Williams anuncia su retirada de la selección de Ghana",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151014-inaki-williams-anuncia-su-retirada-de-la-seleccion-de-ghana",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Bordalás esconde el parte de bajas y habla de Femenía, Romero, Gudelj, el arbitraje y los menos habituales",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151011-bordalas-esconde-el-parte-de-bajas-y-habla-de-femenia-romero-gudelj-el-arbitraje-y-los-menos-",
-   "categoria": "rueda de prensa"
   }
  ]
 }
