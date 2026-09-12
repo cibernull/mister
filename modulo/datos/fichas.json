@@ -14136,13 +14136,6 @@
     "rival": 17,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -21155,13 +21148,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -21317,13 +21303,6 @@
      "yellow",
      "sub_out"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -21982,7 +21961,7 @@
   "nombre": "Roger Hinojo",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 3.7,
   "mediaFuera": 4,
   "edad": 21,
@@ -22021,13 +22000,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -22557,7 +22529,7 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 0,
-  "mediaFuera": 1.5,
+  "mediaFuera": 2.5,
   "edad": 25,
   "titular": null,
   "titularidades": 0,
@@ -22596,7 +22568,7 @@
    },
    {
     "jornada": 5,
-    "puntos": 1,
+    "puntos": 3,
     "rival": 1490,
     "como": "banquillo",
     "eventos": [
@@ -22814,13 +22786,6 @@
      "yellow",
      "sub_in"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23007,13 +22972,6 @@
     "puntos": null,
     "rival": 17,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -23900,13 +23858,6 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24253,7 +24204,7 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 4,
+  "mediaCasa": 5,
   "mediaFuera": 3,
   "edad": 21,
   "titular": null,
@@ -24292,7 +24243,7 @@
    },
    {
     "jornada": 5,
-    "puntos": 4,
+    "puntos": 5,
     "rival": 48,
     "como": "inicio",
     "eventos": []

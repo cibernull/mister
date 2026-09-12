@@ -784,6 +784,11 @@
     "cuando": "2026-09-12T12:00:00.000Z",
     "local": 1490,
     "visitante": 48
+   },
+   {
+    "cuando": "2026-09-12T14:15:00.000Z",
+    "local": 50,
+    "visitante": 8
    }
   ],
   "puntos": 5,
@@ -900,7 +905,7 @@
     "id": "118",
     "nombre": "Jonny Otto",
     "puesto": 2,
-    "puntos": 3,
+    "puntos": 4,
     "jugo": true,
     "capitan": false
    },

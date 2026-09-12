@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-12T15:38:24.198Z",
+ "cuando": "2026-09-12T16:08:16.374Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Flick convoca a los disponibles para desplazarse al Ciutat",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151095-flick-convoca-a-los-disponibles-para-desplazarse-al-ciutat",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "12/09",
@@ -475,12 +481,6 @@
    "fecha": "11/09",
    "titulo": "Mourinho habla de Vinicius, Diomandé, Camavinga, Bernardo Silva, Güler, Cucurella, Mbappé, Tchouaméni, Valverde y el Rayo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151019-mourinho-habla-de-vinicius-diomande-camavinga-bernardo-silva-guler-cucurella-mbappe-tchouamen",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Manolo habla de Bryan Zaragoza, Gorosasbel, Riedel, Hartman, Budimir y el plan de partido contra Osasuna",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151018-manolo-habla-de-bryan-zaragoza-gorosasbel-riedel-hartman-budimir-y-el-plan-de-partido-contra-",
    "categoria": "rueda de prensa"
   }
  ]
