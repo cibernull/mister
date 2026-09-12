@@ -4129,7 +4129,7 @@
   "mediaCasa": 4.5,
   "mediaFuera": 3,
   "edad": 28,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 2,
   "jornadas": [
@@ -15046,7 +15046,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 1.5,
   "edad": 19,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 4,
   "jornadas": [
@@ -22928,7 +22928,7 @@
  "78751": {
   "nombre": "Facundo Buonanotte",
   "posicion": 3,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 4,
   "mediaFuera": 2,
@@ -22977,7 +22977,10 @@
     "puntos": null,
     "rival": 1,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out",
+     "penalty"
+    ]
    }
   ],
   "asistencias": 0,
@@ -23108,7 +23111,7 @@
   "mediaCasa": 2,
   "mediaFuera": 0,
   "edad": 25,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 1,
   "jornadas": [
@@ -24043,8 +24046,10 @@
     "jornada": 5,
     "puntos": null,
     "rival": 23,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -24914,7 +24919,7 @@
   "mediaCasa": 0,
   "mediaFuera": 0,
   "edad": 29,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 0,
   "jornadas": [

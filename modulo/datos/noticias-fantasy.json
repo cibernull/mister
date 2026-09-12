@@ -1,11 +1,11 @@
 {
- "cuando": "2026-09-12T17:38:13.195Z",
+ "cuando": "2026-09-12T18:08:31.801Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "12/09",
-   "titulo": "Sigue el empate en San Mamés",
+   "titulo": "¡El Elche se adelanta de penalti!",
    "url": "https://www.futbolfantasy.com/partidos/22463-athletic-elche",
    "categoria": "análisis"
   },
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Alineaciones confirmadas del Real Madrid - Rayo",
+   "url": "https://www.futbolfantasy.com/partidos/22468-real-madrid-rayo",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "12/09",
@@ -476,12 +482,6 @@
    "titulo": "Funes, sobre Adrián Niño, el centro del campo, las rotaciones, el Celta y la posibilidad de fichar por Lobete",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151027-funes-sobre-adrian-nino-el-centro-del-campo-las-rotaciones-el-celta-y-la-posibilidad-de-ficha",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Asencio entra en la lista para recibir al Rayo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151026-asencio-entra-en-la-lista-para-recibir-al-rayo",
-   "categoria": "convocatoria"
   }
  ]
 }
