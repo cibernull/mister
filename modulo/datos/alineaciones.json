@@ -879,7 +879,7 @@
     "id": "61012",
     "nombre": "Pablo García",
     "puesto": 4,
-    "puntos": null,
+    "puntos": 0,
     "jugo": false,
     "capitan": false
    },
@@ -903,7 +903,7 @@
     "id": "118",
     "nombre": "Jonny Otto",
     "puesto": 2,
-    "puntos": null,
+    "puntos": 0,
     "jugo": false,
     "capitan": false
    },

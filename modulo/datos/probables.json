@@ -1,7 +1,7 @@
 {
- "cuando": "2026-09-12T09:38:28.058Z",
+ "cuando": "2026-09-12T12:09:05.749Z",
  "fuente": "futbolfantasy.com",
- "leidos": 514,
+ "leidos": 511,
  "jugadores": {
   "10": {
    "prob": 80,
@@ -49,7 +49,10 @@
    "prob": 10,
    "sancionado": 0,
    "fuera": 0,
-   "min": 22
+   "min": 22,
+   "lesion": "Molestias sin determinar",
+   "desde": "12/09 (1 día)",
+   "hasta": null
   },
   "130": {
    "prob": 30,
@@ -115,13 +118,13 @@
    "min": 190
   },
   "364": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 313
   },
   "392": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 125
@@ -229,7 +232,7 @@
    "min": 121
   },
   "3060": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 170
@@ -259,13 +262,13 @@
    "min": 0
   },
   "4775": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 1
   },
   "4886": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 153
@@ -292,13 +295,16 @@
    "min": 258
   },
   "5917": {
-   "prob": 90,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 394
+   "min": 394,
+   "lesion": "Molestias sin determinar",
+   "desde": "12/09 (1 día)",
+   "hasta": null
   },
   "5920": {
-   "prob": 60,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 81
@@ -358,7 +364,7 @@
    "min": 355
   },
   "7893": {
-   "prob": 95,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
@@ -403,7 +409,7 @@
    "min": 90
   },
   "11697": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 226
@@ -592,7 +598,7 @@
    "min": 360
   },
   "16868": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -796,7 +802,7 @@
    "min": 385
   },
   "22604": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 338
@@ -841,7 +847,7 @@
    "min": 323
   },
   "24691": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 6
@@ -895,7 +901,7 @@
    "min": 329
   },
   "25867": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 363
@@ -920,15 +926,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 131
-  },
-  "27516": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 238,
-   "lesion": "Esguince de rodilla",
-   "desde": "28/08 (15 días)",
-   "hasta": "mediados de octubre"
   },
   "27517": {
    "prob": 0,
@@ -985,7 +982,7 @@
    "min": 0
   },
   "27874": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 225
@@ -1045,7 +1042,7 @@
    "min": 208
   },
   "28774": {
-   "prob": 95,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
@@ -1108,7 +1105,7 @@
    "min": 0
   },
   "29169": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
@@ -1246,7 +1243,7 @@
    "min": 339
   },
   "36048": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
@@ -1354,7 +1351,7 @@
    "hasta": "octubre"
   },
   "49275": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 36
@@ -1394,7 +1391,7 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 295,
-   "lesion": "Molestias en el sóleo",
+   "lesion": "Lesión en el sóleo",
    "desde": "09/09 (3 días)",
    "hasta": null
   },
@@ -1486,13 +1483,13 @@
    "min": 332
   },
   "53143": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 323
   },
   "53144": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 20
@@ -1741,7 +1738,7 @@
    "min": 0
   },
   "59126": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -1828,7 +1825,7 @@
    "min": 393
   },
   "59641": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 233
@@ -1879,25 +1876,19 @@
    "min": 0
   },
   "60858": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 202
-  },
-  "60859": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 1,
-   "min": 0,
-   "lesion": "Rotura de lig. cruzado anterior",
-   "desde": "08/09 (4 días)",
-   "hasta": "abril"
   },
   "60861": {
    "prob": 30,
    "sancionado": 0,
    "fuera": 0,
-   "min": 152
+   "min": 152,
+   "lesion": "Molestias sin determinar",
+   "desde": "12/09 (1 día)",
+   "hasta": null
   },
   "60872": {
    "prob": 0,
@@ -1933,7 +1924,7 @@
    "min": 70
   },
   "61012": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 89
@@ -1957,13 +1948,13 @@
    "min": 0
   },
   "61297": {
-   "prob": 20,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 90
   },
   "61410": {
-   "prob": 5,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -2107,7 +2098,7 @@
    "min": 0
   },
   "64411": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 104
@@ -2293,7 +2284,7 @@
    "min": 47
   },
   "68361": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 85
@@ -2341,7 +2332,7 @@
    "min": 101
   },
   "68606": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 303
@@ -2353,7 +2344,7 @@
    "min": 122
   },
   "68652": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 349
@@ -2422,7 +2413,10 @@
    "prob": 30,
    "sancionado": 0,
    "fuera": 0,
-   "min": 62
+   "min": 62,
+   "lesion": "Molestias en el tobillo",
+   "desde": "12/09 (1 día)",
+   "hasta": null
   },
   "70255": {
    "prob": 0,
@@ -2463,29 +2457,20 @@
    "fuera": 0,
    "min": 270
   },
-  "70925": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Tendinopatía en el hombro",
-   "desde": "08/09 (4 días)",
-   "hasta": null
-  },
   "70927": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 22
   },
   "70929": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 4
   },
   "70931": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 55
@@ -2497,25 +2482,25 @@
    "min": 0
   },
   "70934": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
   },
   "70935": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
   },
   "70936": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 306
   },
   "70938": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 359
@@ -2710,7 +2695,7 @@
    "min": 27
   },
   "71037": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 161
@@ -2811,15 +2796,6 @@
    "fuera": 0,
    "min": 311
   },
-  "71503": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 148,
-   "lesion": "Rotura de lig. cruzado anterior",
-   "desde": "03/09 (9 días)",
-   "hasta": "abril"
-  },
   "71509": {
    "prob": 0,
    "sancionado": 0,
@@ -2839,7 +2815,7 @@
    "min": 118
   },
   "71616": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 207
@@ -2857,7 +2833,7 @@
    "min": 31
   },
   "71638": {
-   "prob": 5,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -2893,7 +2869,7 @@
    "min": 100
   },
   "71791": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 15
@@ -2911,7 +2887,7 @@
    "min": 0
   },
   "78394": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 11
@@ -3010,7 +2986,7 @@
    "min": 90
   },
   "3848674": {
-   "prob": 60,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 86
@@ -3094,7 +3070,7 @@
    "min": 18
   },
   "4836184": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 36

@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-12T11:38:12.423Z",
+ "cuando": "2026-09-12T12:09:06.912Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "12/09",
-   "titulo": "Alineaciones confirmadas del Racing - Alavés",
+   "titulo": "Sigue en directo el Racing - Alavés",
    "url": "https://www.futbolfantasy.com/partidos/22469-racing-alaves",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -26,6 +26,24 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Zubeldia sufre molestias de última hora y causa baja en la sesión y en la convocatoria",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151075-zubeldia-sufre-molestias-de-ultima-hora-y-causa-baja-en-la-sesion-y-en-la-convocatoria",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "El Sevilla retoma el trabajo sin Rubén Vargas ni Sangante",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151074-el-sevilla-retoma-el-trabajo-sin-ruben-vargas-ni-sangante",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Antañón, Borja Iglesias y El Abdellaoui arrastran molestias antes del partido",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151073-antanon-borja-iglesias-y-el-abdellaoui-arrastran-molestias-antes-del-partido",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "12/09",
@@ -464,24 +482,6 @@
    "titulo": "El Espanyol se encierra en el estadio sin Gorosabel",
    "url": "https://www.futbolfantasy.com/laliga/noticias/150999-el-espanyol-se-encierra-en-el-estadio-sin-gorosabel",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Laporta destaca el inicio de temporada, la madurez de Lamine Yamal y la ilusión por la Champions",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150998-laporta-destaca-el-inicio-de-temporada-la-madurez-de-lamine-yamal-y-la-ilusion-por-la-champio",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Antony y Cucho gestionan cargas al margen y Llorente estrena máscara",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150997-antony-y-cucho-gestionan-cargas-al-margen-y-llorente-estrena-mascara",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Gerard Moreno arranca en modo diésel",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/150996-gerard-moreno-arranca-en-modo-diesel",
-   "categoria": "análisis"
   }
  ]
 }
