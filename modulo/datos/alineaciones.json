@@ -804,9 +804,14 @@
     "cuando": "2026-09-13T12:00:00.000Z",
     "local": 5,
     "visitante": 13
+   },
+   {
+    "cuando": "2026-09-13T14:15:00.000Z",
+    "local": 12,
+    "visitante": 3
    }
   ],
-  "puntos": 23,
+  "puntos": 33,
   "puesto": 3,
   "formacion": "1-3-6-1",
   "once": [
@@ -830,8 +835,8 @@
     "id": "69889",
     "nombre": "Xavi Espart",
     "puesto": 2,
-    "puntos": null,
-    "jugo": false,
+    "puntos": 11,
+    "jugo": true,
     "capitan": false
    },
    {
@@ -854,16 +859,16 @@
     "id": "616",
     "nombre": "Rodri Hernández",
     "puesto": 3,
-    "puntos": null,
-    "jugo": false,
+    "puntos": 5,
+    "jugo": true,
     "capitan": false
    },
    {
     "id": "27907",
     "nombre": "Roger Brugué",
     "puesto": 3,
-    "puntos": null,
-    "jugo": false,
+    "puntos": 8,
+    "jugo": true,
     "capitan": false
    },
    {
@@ -913,7 +918,7 @@
     "nombre": "Oriol Rey",
     "puesto": 3,
     "puntos": 1,
-    "jugo": false,
+    "jugo": true,
     "capitan": false
    },
    {
