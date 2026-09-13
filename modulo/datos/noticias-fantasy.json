@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-13T15:38:29.514Z",
+ "cuando": "2026-09-13T16:08:12.025Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Hidalgo, sobre el buen inicio del equipo, Casadó y Bordalás",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151150-hidalgo-sobre-el-buen-inicio-del-equipo-casado-y-bordalas",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Un golpe en la nariz provocó el cambio de Gerard Martín en el descanso",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151149-un-golpe-en-la-nariz-provoco-el-cambio-de-gerard-martin-en-el-descanso",
+   "categoria": "lesión"
   },
   {
    "fecha": "13/09",
@@ -470,18 +482,6 @@
    "titulo": "Zubeldia sufre molestias de última hora y causa baja en la sesión y en la convocatoria",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151075-zubeldia-sufre-molestias-de-ultima-hora-y-causa-baja-en-la-sesion-y-en-la-convocatoria",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "El Sevilla retoma el trabajo sin Rubén Vargas ni Sangante",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151074-el-sevilla-retoma-el-trabajo-sin-ruben-vargas-ni-sangante",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Antañón, Borja Iglesias y El Abdellaoui arrastran molestias antes del partido",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151073-antanon-borja-iglesias-y-el-abdellaoui-arrastran-molestias-antes-del-partido",
-   "categoria": "entrenamiento"
   }
  ]
 }

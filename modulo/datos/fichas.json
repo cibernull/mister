@@ -24792,7 +24792,7 @@
   "mediaCasa": 1,
   "mediaFuera": 0,
   "edad": 23,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 1,
   "jornadas": [
@@ -25349,7 +25349,9 @@
     "puntos": null,
     "rival": 3,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
