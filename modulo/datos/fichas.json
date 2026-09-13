@@ -12673,15 +12673,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "jornadas": [
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 6,
-    "como": "inicio",
-    "eventos": []
-   }
-  ],
+  "jornadas": [],
   "asistencias": 0,
   "dia": "2026-09-13",
   "partidos": 0
@@ -15953,8 +15945,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 1
+  "dia": "2026-09-13",
+  "partidos": 2
  },
  "64160": {
   "nombre": "Javi Rueda",
@@ -21107,7 +21099,7 @@
   "mediaCasa": 3,
   "mediaFuera": 0.5,
   "edad": 30,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
   "jornadas": [
@@ -21669,13 +21661,6 @@
     "rival": 5,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 6,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -21857,7 +21842,7 @@
   "mediaCasa": 3,
   "mediaFuera": 4,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 1,
   "jornadas": [
@@ -22235,13 +22220,6 @@
     "puntos": null,
     "rival": 20,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 9,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -23008,13 +22986,6 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 9,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23507,6 +23478,13 @@
     "rival": 1,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 16,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23577,7 +23555,7 @@
   "mediaCasa": 0,
   "mediaFuera": 2,
   "edad": 28,
-  "titular": true,
+  "titular": null,
   "titularidades": 0,
   "suplencias": 1,
   "jornadas": [
@@ -23603,6 +23581,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 16,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23654,6 +23639,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 16,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24228,6 +24220,13 @@
     ]
    },
    {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 2,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
     "jornada": 6,
     "puntos": 2,
     "rival": 5,
@@ -24368,7 +24367,7 @@
   "mediaCasa": 0,
   "mediaFuera": 3,
   "edad": 21,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 0,
   "jornadas": [
@@ -24401,6 +24400,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 2,
+    "como": "inicio",
+    "eventos": []
    },
    {
     "jornada": 6,
@@ -24650,6 +24656,13 @@
     "puntos": null,
     "rival": 1,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 16,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -25545,13 +25558,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 6,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
