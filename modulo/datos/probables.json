@@ -1,7 +1,7 @@
 {
- "cuando": "2026-09-13T15:08:22.656Z",
+ "cuando": "2026-09-13T15:38:28.360Z",
  "fuente": "futbolfantasy.com",
- "leidos": 489,
+ "leidos": 505,
  "jugadores": {
   "10": {
    "prob": 100,
@@ -31,7 +31,7 @@
    "min": 360
   },
   "34": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 65
@@ -52,7 +52,10 @@
    "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 214
+   "min": 214,
+   "lesion": "Molestias en el aductor",
+   "desde": "13/09 (1 día)",
+   "hasta": null
   },
   "208": {
    "prob": 0,
@@ -100,7 +103,7 @@
    "hasta": null
   },
   "308": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 270
@@ -160,13 +163,13 @@
    "min": 338
   },
   "607": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 6
   },
   "609": {
-   "prob": 95,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
@@ -250,7 +253,7 @@
    "min": 315
   },
   "4774": {
-   "prob": 5,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -322,7 +325,7 @@
    "min": 0
   },
   "6044": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 315
@@ -334,7 +337,7 @@
    "min": 44
   },
   "7011": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 352
@@ -364,13 +367,13 @@
    "min": 450
   },
   "8171": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 350
   },
   "8953": {
-   "prob": 70,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 158
@@ -640,7 +643,7 @@
    "min": 382
   },
   "18109": {
-   "prob": 30,
+   "prob": 20,
    "sancionado": 0,
    "fuera": 0,
    "min": 95,
@@ -655,7 +658,7 @@
    "min": 174
   },
   "19168": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 105
@@ -1009,7 +1012,7 @@
    "min": 282
   },
   "28780": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 240
@@ -1072,7 +1075,7 @@
    "min": 272
   },
   "29223": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 291
@@ -1105,13 +1108,13 @@
    "min": 450
   },
   "30444": {
-   "prob": 95,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
   },
   "31226": {
-   "prob": 40,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 347
@@ -1189,13 +1192,13 @@
    "min": 405
   },
   "36334": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 25
   },
   "36410": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 354
@@ -1228,7 +1231,7 @@
    "min": 216
   },
   "48203": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 366
@@ -1519,7 +1522,7 @@
    "hasta": null
   },
   "55966": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 151
@@ -1576,7 +1579,7 @@
    "min": 10
   },
   "58125": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 155
@@ -1609,7 +1612,7 @@
    "min": 181
   },
   "58820": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 25
@@ -1654,7 +1657,7 @@
    "min": 10
   },
   "59064": {
-   "prob": 5,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -1729,7 +1732,7 @@
    "min": 270
   },
   "59534": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 199
@@ -1951,7 +1954,7 @@
    "min": 229
   },
   "64151": {
-   "prob": 40,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 45
@@ -2150,9 +2153,9 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 96,
-   "lesion": "Contusión en la cabeza",
+   "lesion": "Traumatismo craneoencefálico",
    "desde": "12/09 (1 día)",
-   "hasta": null
+   "hasta": "finales de septiembre"
   },
   "68383": {
    "prob": 0,
@@ -2173,13 +2176,13 @@
    "min": 58
   },
   "68495": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 318
   },
   "68497": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 16
@@ -2365,31 +2368,31 @@
    "min": 449
   },
   "70939": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 73
   },
   "70940": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 45
   },
   "70941": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 212
   },
   "70943": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 49
   },
   "70944": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 116
@@ -2410,7 +2413,7 @@
    "hasta": null
   },
   "70948": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
@@ -2422,7 +2425,7 @@
    "min": 0
   },
   "70950": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
@@ -2434,7 +2437,7 @@
    "min": 0
   },
   "70953": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 106
@@ -2518,7 +2521,7 @@
    "min": 270
   },
   "71022": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 27
@@ -2560,7 +2563,7 @@
    "min": 295
   },
   "71139": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 197
@@ -2572,7 +2575,7 @@
    "min": 5
   },
   "71141": {
-   "prob": 40,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 18
@@ -2590,7 +2593,7 @@
    "min": 128
   },
   "71154": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
@@ -2701,7 +2704,7 @@
    "min": 0
   },
   "71790": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 100
@@ -2719,7 +2722,7 @@
    "min": 90
   },
   "71795": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -2731,7 +2734,7 @@
    "min": 56
   },
   "78750": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 366
@@ -2785,7 +2788,7 @@
    "min": 27
   },
   "2196106": {
-   "prob": 70,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 165
@@ -2899,7 +2902,7 @@
    "min": 82
   },
   "4836181": {
-   "prob": 40,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 18
@@ -2957,6 +2960,12 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 11
+  },
+  "5235428": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 0
   },
   "5298724": {
    "prob": 50,

@@ -137,6 +137,74 @@
   "d": 1
  },
  {
+  "id": "52375",
+  "nombre": "Lamine Yamal",
+  "valor": 23514000,
+  "puntos": 54,
+  "media": 10.8,
+  "partidos": 4,
+  "semana": 7000,
+  "sem7": 101000,
+  "mes": -237000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 4,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   8,
+   3,
+   17,
+   17
+  ],
+  "eq": 3,
+  "riv": 1490,
+  "casa": 1,
+  "gol": 4,
+  "tar": 0,
+  "mc": 12.5,
+  "mf": 10,
+  "tit": 4,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 19,
+  "js": [
+   [
+    1,
+    8,
+    1,
+    1,
+    ""
+   ],
+   [
+    2,
+    3,
+    23,
+    1,
+    "o65"
+   ],
+   [
+    3,
+    17,
+    14,
+    1,
+    "g21,g90"
+   ],
+   [
+    4,
+    17,
+    19,
+    1,
+    "g6,g84"
+   ]
+  ],
+  "p": 1,
+  "d": 0
+ },
+ {
   "id": "55009",
   "nombre": "Fermín López",
   "valor": 17303000,
@@ -199,74 +267,6 @@
     19,
     1,
     "a6,g22,a50,y65,o75"
-   ]
-  ],
-  "p": 1,
-  "d": 0
- },
- {
-  "id": "52375",
-  "nombre": "Lamine Yamal",
-  "valor": 23514000,
-  "puntos": 50,
-  "media": 10,
-  "partidos": 4,
-  "semana": 7000,
-  "sem7": 101000,
-  "mes": -237000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   8,
-   3,
-   17,
-   17
-  ],
-  "eq": 3,
-  "riv": 1490,
-  "casa": 1,
-  "gol": 4,
-  "tar": 0,
-  "mc": 12.5,
-  "mf": 10,
-  "tit": 4,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 19,
-  "js": [
-   [
-    1,
-    8,
-    1,
-    1,
-    ""
-   ],
-   [
-    2,
-    3,
-    23,
-    1,
-    "o65"
-   ],
-   [
-    3,
-    17,
-    14,
-    1,
-    "g21,g90"
-   ],
-   [
-    4,
-    17,
-    19,
-    1,
-    "g6,g84"
    ]
   ],
   "p": 1,
@@ -1046,8 +1046,8 @@
   "id": "69889",
   "nombre": "Xavi Espart",
   "valor": 2831000,
-  "puntos": 33,
-  "media": 6.6,
+  "puntos": 34,
+  "media": 6.8,
   "partidos": 4,
   "semana": 126000,
   "sem7": 791000,
@@ -3492,74 +3492,6 @@
   "d": 1
  },
  {
-  "id": "28612",
-  "nombre": "Mathew Ryan",
-  "valor": 10030000,
-  "puntos": 23,
-  "media": 4.6,
-  "partidos": 4,
-  "semana": -10000,
-  "sem7": 348000,
-  "mes": 731000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   4,
-   9,
-   4,
-   6
-  ],
-  "eq": 12,
-  "riv": 1,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 4,
-  "mf": 6.3,
-  "tit": 4,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 34,
-  "js": [
-   [
-    1,
-    4,
-    8,
-    1,
-    ""
-   ],
-   [
-    2,
-    9,
-    50,
-    1,
-    ""
-   ],
-   [
-    3,
-    4,
-    4,
-    1,
-    ""
-   ],
-   [
-    4,
-    6,
-    13,
-    1,
-    "s9"
-   ]
-  ],
-  "p": 1,
-  "d": 0
- },
- {
   "id": "14911",
   "nombre": "Álvaro García",
   "valor": 8086000,
@@ -4191,6 +4123,74 @@
   ],
   "p": 1,
   "d": 1
+ },
+ {
+  "id": "28612",
+  "nombre": "Mathew Ryan",
+  "valor": 10030000,
+  "puntos": 22,
+  "media": 4.4,
+  "partidos": 4,
+  "semana": -10000,
+  "sem7": 348000,
+  "mes": 731000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   4,
+   9,
+   4,
+   6
+  ],
+  "eq": 12,
+  "riv": 1,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 4,
+  "mf": 6.3,
+  "tit": 4,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 34,
+  "js": [
+   [
+    1,
+    4,
+    8,
+    1,
+    ""
+   ],
+   [
+    2,
+    9,
+    50,
+    1,
+    ""
+   ],
+   [
+    3,
+    4,
+    4,
+    1,
+    ""
+   ],
+   [
+    4,
+    6,
+    13,
+    1,
+    "s9"
+   ]
+  ],
+  "p": 1,
+  "d": 0
  },
  {
   "id": "564",
@@ -11625,6 +11625,74 @@
   "d": 1
  },
  {
+  "id": "20131",
+  "nombre": "Manu Sánchez",
+  "valor": 2552000,
+  "puntos": 14,
+  "media": 2.8,
+  "partidos": 4,
+  "semana": 40000,
+  "sem7": 359000,
+  "mes": 1177000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   2,
+   3,
+   4,
+   4
+  ],
+  "eq": 12,
+  "riv": 1,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 4,
+  "mf": 3,
+  "tit": 4,
+  "sup": 0,
+  "once": 1,
+  "asis": 0,
+  "edad": 26,
+  "js": [
+   [
+    1,
+    2,
+    8,
+    1,
+    ""
+   ],
+   [
+    2,
+    3,
+    50,
+    1,
+    ""
+   ],
+   [
+    3,
+    4,
+    4,
+    1,
+    ""
+   ],
+   [
+    4,
+    4,
+    13,
+    1,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 1
+ },
+ {
   "id": "20346",
   "nombre": "Guido Rodríguez",
   "valor": 7116000,
@@ -12587,6 +12655,74 @@
   "d": 0
  },
  {
+  "id": "48556",
+  "nombre": "Andreas Christensen",
+  "valor": 2298000,
+  "puntos": 13,
+  "media": 3.3,
+  "partidos": 3,
+  "semana": 75000,
+  "sem7": 517000,
+  "mes": 1201000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   6,
+   2,
+   4
+  ],
+  "eq": 3,
+  "riv": 1490,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 2,
+  "mf": 5,
+  "tit": 2,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 30,
+  "js": [
+   [
+    1,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    2,
+    6,
+    23,
+    1,
+    ""
+   ],
+   [
+    3,
+    2,
+    14,
+    1,
+    ""
+   ],
+   [
+    4,
+    4,
+    19,
+    0,
+    "i62"
+   ]
+  ],
+  "p": 0,
+  "d": 1
+ },
+ {
   "id": "70918",
   "nombre": "Bernardo Silva",
   "valor": 9797000,
@@ -12737,74 +12873,6 @@
   ],
   "p": 0,
   "d": 0
- },
- {
-  "id": "20131",
-  "nombre": "Manu Sánchez",
-  "valor": 2552000,
-  "puntos": 13,
-  "media": 2.6,
-  "partidos": 4,
-  "semana": 40000,
-  "sem7": 359000,
-  "mes": 1177000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   2,
-   3,
-   4,
-   4
-  ],
-  "eq": 12,
-  "riv": 1,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 4,
-  "mf": 3,
-  "tit": 4,
-  "sup": 0,
-  "once": 1,
-  "asis": 0,
-  "edad": 26,
-  "js": [
-   [
-    1,
-    2,
-    8,
-    1,
-    ""
-   ],
-   [
-    2,
-    3,
-    50,
-    1,
-    ""
-   ],
-   [
-    3,
-    4,
-    4,
-    1,
-    ""
-   ],
-   [
-    4,
-    4,
-    13,
-    1,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 1
  },
  {
   "id": "27518",
@@ -12998,74 +13066,6 @@
     48,
     1,
     ""
-   ]
-  ],
-  "p": 1,
-  "d": 1
- },
- {
-  "id": "48556",
-  "nombre": "Andreas Christensen",
-  "valor": 2298000,
-  "puntos": 12,
-  "media": 4,
-  "partidos": 3,
-  "semana": 75000,
-  "sem7": 517000,
-  "mes": 1201000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   6,
-   2,
-   4
-  ],
-  "eq": 3,
-  "riv": 1490,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 2,
-  "mf": 5,
-  "tit": 2,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 30,
-  "js": [
-   [
-    1,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    2,
-    6,
-    23,
-    1,
-    ""
-   ],
-   [
-    3,
-    2,
-    14,
-    1,
-    ""
-   ],
-   [
-    4,
-    4,
-    19,
-    0,
-    "i62"
    ]
   ],
   "p": 1,
@@ -17768,74 +17768,6 @@
   "d": 1
  },
  {
-  "id": "22486",
-  "nombre": "Víctor García",
-  "valor": 302000,
-  "puntos": 9,
-  "media": 2.3,
-  "partidos": 3,
-  "semana": -53000,
-  "sem7": -227000,
-  "mes": 141000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   2,
-   2,
-   4,
-   null
-  ],
-  "eq": 12,
-  "riv": 1,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 4,
-  "mf": 2,
-  "tit": 1,
-  "sup": 2,
-  "once": null,
-  "asis": 0,
-  "edad": 29,
-  "js": [
-   [
-    1,
-    2,
-    8,
-    1,
-    "o76"
-   ],
-   [
-    2,
-    2,
-    50,
-    0,
-    "i78"
-   ],
-   [
-    3,
-    4,
-    4,
-    0,
-    "i72"
-   ],
-   [
-    4,
-    null,
-    13,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "11866",
   "nombre": "Hugo Duro",
   "valor": 4353000,
@@ -18911,6 +18843,74 @@
     3,
     17,
     1,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "22486",
+  "nombre": "Víctor García",
+  "valor": 302000,
+  "puntos": 8,
+  "media": 2,
+  "partidos": 3,
+  "semana": -53000,
+  "sem7": -227000,
+  "mes": 141000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   2,
+   2,
+   4,
+   null
+  ],
+  "eq": 12,
+  "riv": 1,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 4,
+  "mf": 2,
+  "tit": 1,
+  "sup": 2,
+  "once": null,
+  "asis": 0,
+  "edad": 29,
+  "js": [
+   [
+    1,
+    2,
+    8,
+    1,
+    "o76"
+   ],
+   [
+    2,
+    2,
+    50,
+    0,
+    "i78"
+   ],
+   [
+    3,
+    4,
+    4,
+    0,
+    "i72"
+   ],
+   [
+    4,
+    null,
+    13,
+    0,
     ""
    ]
   ],
@@ -33887,75 +33887,6 @@
   "d": 0
  },
  {
-  "id": "71505",
-  "nombre": "Jairo Noriega",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -36000,
-  "sem7": 0,
-  "mes": -21000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 6,
-  "riv": 9,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71511",
   "nombre": "Moussa Diarra",
   "valor": 160000,
@@ -34061,6 +33992,115 @@
     ""
    ]
   ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "71505",
+  "nombre": "Jairo Noriega",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -36000,
+  "sem7": 0,
+  "mes": -21000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 6,
+  "riv": 9,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    20,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "67870",
+  "nombre": "Adam Boayar",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -32000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 4,
+  "est": "other",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 23,
+  "riv": 15,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [],
   "p": 0,
   "d": 0
  },
@@ -35049,46 +35089,6 @@
     ""
    ]
   ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "67870",
-  "nombre": "Adam Boayar",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -32000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": "other",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 23,
-  "riv": 15,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [],
   "p": 0,
   "d": 0
  },
