@@ -23792,13 +23792,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24824,8 +24817,10 @@
     "jornada": 5,
     "puntos": null,
     "rival": 16,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
