@@ -1,11 +1,11 @@
 {
- "cuando": "2026-09-13T12:08:28.344Z",
+ "cuando": "2026-09-13T12:38:25.129Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "13/09",
-   "titulo": "Sigue en directo el Celta - Málaga",
+   "titulo": "Sigue el empate en Balaídos",
    "url": "https://www.futbolfantasy.com/partidos/22464-celta-malaga",
    "categoria": "análisis"
   },
@@ -26,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Berenguer pide protagonismo en la intersemanal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151132-berenguer-pide-protagonismo-en-la-intersemanal",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "El Bernabéu juzga la primera titularidad de Diomandé",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151131-el-bernabeu-juzga-la-primera-titularidad-de-diomande",
+   "categoria": "análisis"
   },
   {
    "fecha": "13/09",
@@ -470,18 +482,6 @@
    "titulo": "Fofana marca su territorio",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151054-fofana-marca-territorio",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Luis García celebra el triunfo y habla de la aportación de los fichajes, Iglesias, Stassin, Correia, el sistema y las rotaciones",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151056-luis-garcia-celebra-el-triunfo-y-habla-de-la-aportacion-de-los-fichajes-iglesias-stassin-corr",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Corberán responde sobre su futuro, la plaga de lesiones y el problema de Tárrega",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151055-corberan-responde-sobre-su-futuro-la-plaga-de-lesiones-y-el-problema-de-tarrega",
-   "categoria": "rueda de prensa"
   }
  ]
 }

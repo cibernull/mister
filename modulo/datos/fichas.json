@@ -6108,6 +6108,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -11807,6 +11814,13 @@
      "sub_out",
      "assist"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 13,
+    "como": "inicio",
+    "eventos": []
    },
    {
     "jornada": 6,
@@ -20268,6 +20282,13 @@
     "eventos": [
      "missed_penalty"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -20501,6 +20522,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -20885,6 +20913,13 @@
     "jornada": 4,
     "puntos": 4,
     "rival": 12,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 5,
     "como": "inicio",
     "eventos": []
    }
