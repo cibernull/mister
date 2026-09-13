@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-13T19:28:47.820Z",
+ "cuando": "2026-09-13T19:38:13.629Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Bordalás valora el empate y habla de Iván Azón, Ramón Terrats y las limitaciones de la plantilla",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151167-bordalas-valora-el-empate-y-habla-de-ivan-azon-ramon-terrats-y-las-limitaciones-de-la-plantil",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Hidalgo analiza el empate y habla de Casadó, Aubameyang, Yeremay y Gijselhart",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151166-hidalgo-analiza-el-empate-y-habla-de-casado-aubameyang-yeremay-y-gijselhart",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "13/09",
@@ -469,18 +481,6 @@
    "fecha": "12/09",
    "titulo": "José Alberto celebra el triunfo y habla de Pablo García, Canales, Zabiri, Guliashvili, Maguette, Almeida, Pablo Ramón, Belocian e Iker Luque",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151092-jose-alberto-celebra-el-triunfo-y-habla-de-pablo-garcia-canales-zabiri-guliashvili-maguette-a",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Borja Iglesias, Febas, Antañón y El Abdellaoui, fuera de la convocatoria",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151091-borja-iglesias-febas-antanon-y-el-abdellaoui-fuera-de-la-convocatoria",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Quique explica el accidente de Mañas, valora la derrota y explica los cambios condicionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151090-quique-explica-el-accidente-de-manas-valora-la-derrota-y-explica-los-cambios-condicionados",
    "categoria": "rueda de prensa"
   }
  ]
