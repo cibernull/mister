@@ -1,11 +1,17 @@
 {
- "cuando": "2026-09-13T13:08:14.539Z",
+ "cuando": "2026-09-13T13:38:16.315Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "13/09",
-   "titulo": "Sigue el empate en Balaídos",
+   "titulo": "El Valencia anuncia la destitución de Carlos Corberán y Ron Gourlay",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151137-el-valencia-anuncia-la-destitucion-de-carlos-corberan-y-ron-gourlay",
+   "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Sigue el partido en Balaídos",
    "url": "https://www.futbolfantasy.com/partidos/22464-celta-malaga",
    "categoria": "análisis"
   },
@@ -26,6 +32,30 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Aitor Mañas recibe el alta hospitalaria, pero será baja ante Valencia y Athletic",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151136-aitor-manas-recibe-el-alta-hospitalaria-pero-sera-baja-ante-valencia-y-athletic",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Luis Castro prioriza la intersemanal y dosifica piezas titulares contra el Barça",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151135-luis-castro-prioriza-la-intersemanal-y-dosifica-piezas-clave-contra-el-barca",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Diego Llorente se queda fuera de la lista por molestias de última hora",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151134-diego-llorente-se-queda-fuera-de-la-lista-por-molestias-de-ultima-hora",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Alineaciones confirmadas del Levante - Barcelona",
+   "url": "https://www.futbolfantasy.com/partidos/22466-levante-barcelona",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "13/09",
@@ -452,36 +482,6 @@
    "titulo": "Parte médico oficial de Pablo Barrios",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151060-pablo-barrios-pendiente-de-pruebas-por-unas-molestias-en-el-soleo",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Osasuna cita a 23 jugadores para recibir al Espanyol en El Sadar",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151061-osasuna-cita-a-23-jugadores-para-recibir-al-espanyol-en-el-sadar",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "El Barcelona completa la útima sesión con Eric García, pero sin De Jong ni Bisiwu",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151059-el-barcelona-completa-la-utima-sesion-con-eric-garcia-pero-sin-de-jong-ni-bisiwu",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Félix Correia se presenta con la intención por delante",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151058-felix-correia-se-presenta-con-la-intencion-por-delante",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Dieng, lejos de lo que necesita el Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151057-dieng-lejos-de-lo-que-necesita-el-valencia",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Fofana marca su territorio",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151054-fofana-marca-territorio",
-   "categoria": "análisis"
   }
  ]
 }
