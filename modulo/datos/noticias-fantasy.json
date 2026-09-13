@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-13T19:08:10.239Z",
+ "cuando": "2026-09-13T19:28:47.820Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "13/09",
-   "titulo": "Alineaciones confirmadas del Real Sociedad - Atlético",
+   "titulo": "Sigue en directo el Real Sociedad - Atlético",
    "url": "https://www.futbolfantasy.com/partidos/22470-real-sociedad-atletico",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Xavi Espart desafía la simetría",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151165-xavi-espart-desafia-la-simetria",
+   "categoria": "análisis"
   },
   {
    "fecha": "13/09",
@@ -476,12 +482,6 @@
    "titulo": "Quique explica el accidente de Mañas, valora la derrota y explica los cambios condicionados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151090-quique-explica-el-accidente-de-manas-valora-la-derrota-y-explica-los-cambios-condicionados",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Almeida es expulsado en los minutos finales contra el Alavés",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151089-almeida-es-expulsado-en-los-minutos-finales-contra-el-alaves",
-   "categoria": "sanción"
   }
  ]
 }
