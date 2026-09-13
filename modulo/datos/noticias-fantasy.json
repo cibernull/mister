@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-13T14:08:10.609Z",
+ "cuando": "2026-09-13T14:38:14.072Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "13/09",
-   "titulo": "El Valencia anuncia la destitución de Carlos Corberán y Ron Gourlay",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151137-el-valencia-anuncia-la-destitucion-de-carlos-corberan-y-ron-gourlay",
-   "categoria": "mercado"
+   "titulo": "Sigue en directo el Levante - Barcelona",
+   "url": "https://www.futbolfantasy.com/partidos/22466-levante-barcelona",
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -29,6 +29,30 @@
   },
   {
    "fecha": "13/09",
+   "titulo": "El Racing retoma los entrenamientos sin los dos lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151143-el-racing-retoma-los-entrenamientos-sin-los-dos-lesionados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "El Málaga deja al Celta girando en círculos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151142-el-malaga-deja-al-celta-girando-en-circulos",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Aspas termina el partido del Málaga tocado del aductor",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151141-aspas-termina-el-partido-del-malaga-tocado-del-aductor",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Flick, sorprendido por las novedades del Levante, deja claro qué quiere ver de su equipo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151140-flick-sorprendido-por-las-novedades-del-levante-deja-claro-que-quiere-ver-de-su-equipo",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "13/09",
    "titulo": "Luis Castro explica sus rotaciones contra el Barça y habla de Dela y el balón parado",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151139-luis-castro-explica-sus-rotaciones-contra-el-barca-y-habla-de-dela-y-el-balon-parado",
    "categoria": "rueda de prensa"
@@ -47,6 +71,12 @@
   },
   {
    "fecha": "13/09",
+   "titulo": "El Valencia anuncia la destitución de Carlos Corberán y Ron Gourlay",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151137-el-valencia-anuncia-la-destitucion-de-carlos-corberan-y-ron-gourlay",
+   "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
    "titulo": "Aitor Mañas recibe el alta hospitalaria, pero será baja ante Valencia y Athletic",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151136-aitor-manas-recibe-el-alta-hospitalaria-pero-sera-baja-ante-valencia-y-athletic",
    "categoria": "lesión"
@@ -62,12 +92,6 @@
    "titulo": "Diego Llorente se queda fuera de la lista por molestias de última hora",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151134-diego-llorente-se-queda-fuera-de-la-lista-por-molestias-de-ultima-hora",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Alineaciones confirmadas del Levante - Barcelona",
-   "url": "https://www.futbolfantasy.com/partidos/22466-levante-barcelona",
-   "categoria": "rueda de prensa"
   },
   {
    "fecha": "13/09",
@@ -458,30 +482,6 @@
    "titulo": "Luis García puede permitirse el lujo de rotar varias piezas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151067-luis-garcia-puede-permitirse-el-lujo-de-rotar-varias-piezas",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Iker Córdoba responde en la emergencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151066-iker-cordoba-responde-en-la-emergencia",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Vivian, Guruzeta y Canales, fuera de la lista para recibir al Elche",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151065-vivian-guruzeta-y-canales-fuera-de-la-lista-para-recibir-al-elche",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Toni Martínez, principal novedad en la lista para la visita a El Sardinero",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151064-toni-martinez-principal-novedad-en-la-lista-para-la-visita-a-el-sardinero",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Barrios y Sorloth, ausencias en la última sesión antes de viajar a San Sebastián",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151063-barrios-y-sorloth-ausencias-en-la-ultima-sesion-antes-de-viajar-a-san-sebastian",
-   "categoria": "entrenamiento"
   }
  ]
 }
