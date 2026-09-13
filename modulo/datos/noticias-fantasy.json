@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-13T13:38:16.315Z",
+ "cuando": "2026-09-13T14:08:10.609Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -8,12 +8,6 @@
    "titulo": "El Valencia anuncia la destitución de Carlos Corberán y Ron Gourlay",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151137-el-valencia-anuncia-la-destitucion-de-carlos-corberan-y-ron-gourlay",
    "categoria": "mercado"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Sigue el partido en Balaídos",
-   "url": "https://www.futbolfantasy.com/partidos/22464-celta-malaga",
-   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -32,6 +26,24 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Luis Castro explica sus rotaciones contra el Barça y habla de Dela y el balón parado",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151139-luis-castro-explica-sus-rotaciones-contra-el-barca-y-habla-de-dela-y-el-balon-parado",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Jornada 5: Celta 1-1 Málaga. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22464-celta-malaga",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "El Athletic descansa con Guruzeta y Peio Canales en el punto de mira",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151138-el-athletic-descansa-con-guruzeta-y-peio-canales-en-el-punto-de-mira",
+   "categoria": "equipo"
   },
   {
    "fecha": "13/09",
@@ -470,18 +482,6 @@
    "titulo": "Barrios y Sorloth, ausencias en la última sesión antes de viajar a San Sebastián",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151063-barrios-y-sorloth-ausencias-en-la-ultima-sesion-antes-de-viajar-a-san-sebastian",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Etta Eyong y Marc Santos, bajas en la sesión previa al partido",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151062-etta-eyong-y-marc-santos-bajas-en-la-sesion-previa-al-partido",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Parte médico oficial de Pablo Barrios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151060-pablo-barrios-pendiente-de-pruebas-por-unas-molestias-en-el-soleo",
-   "categoria": "lesión"
   }
  ]
 }
