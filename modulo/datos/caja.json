@@ -1,6 +1,14 @@
 {
- "saldo": 17816800,
+ "saldo": 17565200,
  "apuntes": [
+  {
+   "cuando": 1789319030,
+   "fecha": "2026-09-13 19:03",
+   "motivo": "Modificación de cláusula (150%) de Roger Brugué",
+   "tipo": "Penalización",
+   "importe": -251600,
+   "saldo": 17565200
+  },
   {
    "cuando": 1789225411,
    "fecha": "2026-09-12 17:03",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -3163520,
    "saldo": 786084
-  },
-  {
-   "cuando": 1786719792,
-   "fecha": "2026-08-14 17:03",
-   "motivo": "Karim Adeyemi a Mister",
-   "tipo": "Venta",
-   "importe": 10210000,
-   "saldo": 3949604
   }
  ]
 }

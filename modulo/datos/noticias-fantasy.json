@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-13T16:38:16.280Z",
+ "cuando": "2026-09-13T17:08:14.532Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "13/09",
-   "titulo": "Alineaciones confirmadas del Getafe - Deportivo",
+   "titulo": "Sigue en directo el Getafe - Deportivo",
    "url": "https://www.futbolfantasy.com/partidos/22465-getafe-deportivo",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -26,6 +26,36 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Primer parte médico oficial de Iago Aspas, pendiente de más pruebas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151141-aspas-termina-el-partido-del-malaga-tocado-del-aductor",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Flick valora el triunfo y habla de Adeyemi, Gordon y los lanzadores de penaltis",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151157-flick-valora-el-triunfo-y-habla-de-adeyemi-gordon-y-los-lanzadores-de-penaltis",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Tsitaishvili, sacrificio y recorrido en medio de la derrota",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151156-tsitaishvili-sacrificio-y-recorrido-en-medio-de-la-derrota",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Íñigo Pérez, sobre Carlos Romero, Foyth, Veiga, Costa, Navarro, el Betis y la dinámica del equipo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151155-inigo-perez-sobre-carlos-romero-foyth-veiga-costa-navarro-el-betis-y-la-dinamica-del-equipo",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "El Espanyol activa la preparación del Rayo con Gorosabel bajo vigilancia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151154-el-espanyol-activa-la-preparacion-del-rayo-con-gorosabel-bajo-vigilancia",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "13/09",
@@ -98,12 +128,6 @@
    "titulo": "El Málaga deja al Celta girando en círculos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151142-el-malaga-deja-al-celta-girando-en-circulos",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Aspas termina el partido del Málaga tocado del aductor",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151141-aspas-termina-el-partido-del-malaga-tocado-del-aductor",
-   "categoria": "lesión"
   },
   {
    "fecha": "13/09",
@@ -458,30 +482,6 @@
    "titulo": "LaLiga anula injusta y provisionalmente la asistencia de Jorge Salinas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151083-laliga-anula-injusta-y-provisionalmente-la-asistencia-de-jorge-salinas",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "El Rayo exige el levantamiento inmediato de la cautelar para jugar ante el Espanyol en Vallecas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151081-el-rayo-exige-el-levantamiento-inmediato-de-la-cautelar-para-jugar-ante-el-espanyol-en-vallec",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "El finiquito convierte la destitución de Corberán en un riesgo económico",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151080-el-finiquito-convierte-la-destitucion-de-corberan-en-un-riesgo-economico",
-   "categoria": "mercado"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Luken Beitia y Mamadou Sarr, una pareja inesperada",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151079-luken-beitia-y-mamadou-sarr-una-pareja-inesperada",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Giráldez habla de Febas, Iglesias, Antañón, El Abdellaoui, Dotor, Burcio, Jutglà, las rotaciones y el Málaga",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151078-giraldez-habla-de-febas-iglesias-antanon-el-abdellaoui-dotor-burcio-jutgla-las-rotaciones-y-e",
-   "categoria": "rueda de prensa"
   }
  ]
 }

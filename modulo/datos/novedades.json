@@ -486,6 +486,15 @@
   "equipo": null
  },
  {
+  "tipo": "clausula",
+  "dia": "2026-09-13",
+  "id": "27907",
+  "equipo": "Niutin FC (Isaac)",
+  "escalones": 1,
+  "coste": 251600,
+  "clausula": 3145000
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-12",
   "id": "239",
