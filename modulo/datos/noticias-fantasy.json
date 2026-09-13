@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-13T11:38:09.500Z",
+ "cuando": "2026-09-13T11:56:23.903Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,24 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Ibáñez y Tenaglia pagan el exceso de revoluciones",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151130-ibanez-y-tenaglia-pagan-el-exceso-de-revoluciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Fede Redondo regresa al eje con una versión mejorada",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151129-fede-redondo-regresa-al-eje-con-una-version-mejorada",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Funes analiza la previa del Celta y explica la baja de Dotor",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151128-funes-analiza-la-previa-del-celta-y-explica-la-baja-de-dotor",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "13/09",
@@ -464,24 +482,6 @@
    "titulo": "Corberán responde sobre su futuro, la plaga de lesiones y el problema de Tárrega",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151055-corberan-responde-sobre-su-futuro-la-plaga-de-lesiones-y-el-problema-de-tarrega",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Apelación desestima el recurso del Rayo y mantiene las sanciones a De Frutos y Fran Pérez",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151053-apelacion-desestima-el-recurso-del-rayo-y-mantiene-las-sanciones-a-de-frutos-y-fran-perez",
-   "categoria": "sanción"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "El Sevilla asesta un golpe letal a Corberán",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151052-el-sevilla-asesta-un-golpe-letal-a-corberan",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Jornada 5: Sevilla 1-0 Valencia. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22471-sevilla-valencia",
-   "categoria": "partido"
   }
  ]
 }
