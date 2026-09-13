@@ -115,6 +115,76 @@
   "entra": true
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-09-13",
+  "id": "128",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-13",
+  "id": "13011",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-13",
+  "id": "18531",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-13",
+  "id": "60861",
+  "estado": "other",
+  "equipo": "Legalize F.C (Victor)"
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-13",
+  "id": "61167",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-13",
+  "id": "70189",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-13",
+  "id": "70993",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-13",
+  "id": "71006",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-13",
+  "id": "71622",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-13",
+  "id": "3368896",
+  "estado": "other",
+  "equipo": null
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-12",
   "id": "239",
