@@ -5184,6 +5184,40 @@
    "puntos": 0,
    "media": 0,
    "racha": "-,-,-,-"
+  },
+  {
+   "idTransfer": 547699061,
+   "idJugador": "19727",
+   "nombre": "Rodrigo Riquelme",
+   "de": "Cacaculopedopis",
+   "a": "Mister",
+   "idUcDe": 15435600,
+   "idUcA": 0,
+   "importe": 5074650,
+   "tipo": "normal",
+   "cuando": "2026-09-13 10:27:01",
+   "valor": 5020000,
+   "posicion": 3,
+   "puntos": 22,
+   "media": 5.5,
+   "racha": "2,12,7,1"
+  },
+  {
+   "idTransfer": 547699075,
+   "idJugador": "28773",
+   "nombre": "Aitor Paredes",
+   "de": "Cacaculopedopis",
+   "a": "Mister",
+   "idUcDe": 15435600,
+   "idUcA": 0,
+   "importe": 3117900,
+   "tipo": "normal",
+   "cuando": "2026-09-13 10:27:07",
+   "valor": 3407000,
+   "posicion": 2,
+   "puntos": 16,
+   "media": 5.3,
+   "racha": "-,9,4,3,-"
   }
  ],
  "salidas": [

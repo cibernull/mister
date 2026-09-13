@@ -19466,7 +19466,7 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 2,
-  "mediaCasa": 4.7,
+  "mediaCasa": 4.3,
   "mediaFuera": 2,
   "edad": 19,
   "titular": null,
@@ -19505,15 +19505,16 @@
    },
    {
     "jornada": 5,
-    "puntos": 6,
+    "puntos": 5,
     "rival": 48,
     "como": "inicio",
     "eventos": [
-     "yellow"
+     "yellow",
+     "assist"
     ]
    }
   ],
-  "asistencias": 0,
+  "asistencias": 1,
   "dia": "2026-09-13",
   "partidos": 5
  },
@@ -24646,7 +24647,7 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 5,
+  "mediaCasa": 4,
   "mediaFuera": 3,
   "edad": 21,
   "titular": null,
@@ -24685,7 +24686,7 @@
    },
    {
     "jornada": 5,
-    "puntos": 5,
+    "puntos": 4,
     "rival": 48,
     "como": "inicio",
     "eventos": []

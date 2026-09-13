@@ -1053,6 +1053,26 @@
  ],
  "movimientos": [
   {
+   "id": "28773",
+   "nombre": "Aitor Paredes",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 3117900,
+   "tipo": "normal",
+   "fecha": "2026-09-13 10:27:07",
+   "pos": 2
+  },
+  {
+   "id": "19727",
+   "nombre": "Rodrigo Riquelme",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 5074650,
+   "tipo": "normal",
+   "fecha": "2026-09-13 10:27:01",
+   "pos": 3
+  },
+  {
    "id": "71795",
    "nombre": "Angeliño",
    "de": "Saiyans FC (Fran)",
@@ -5893,6 +5913,22 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Rodrigo Riquelme",
+     "id": "19727",
+     "tipo": "venta",
+     "importe": 5074650,
+     "fecha": "2026-09-13",
+     "op": "normal"
+    },
+    {
+     "j": "Aitor Paredes",
+     "id": "28773",
+     "tipo": "venta",
+     "importe": 3117900,
+     "fecha": "2026-09-13",
+     "op": "normal"
+    },
+    {
      "j": "Johaneko Louis-Jean",
      "id": "3848780",
      "tipo": "compra",
@@ -6479,8 +6515,8 @@
     "19727": {
      "nombre": "Rodrigo Riquelme",
      "compras": 4076927,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5074650,
+     "ops": 2
     },
     "22471": {
      "nombre": "Jon Pacheco",
@@ -6515,8 +6551,8 @@
     "28773": {
      "nombre": "Aitor Paredes",
      "compras": 2027690,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 3117900,
+     "ops": 2
     },
     "48556": {
      "nombre": "Andreas Christensen",
