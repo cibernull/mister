@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-13T10:08:11.243Z",
+ "cuando": "2026-09-13T10:38:10.115Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "13/09",
+   "titulo": "Francho entra en la lista a tiempo y Andrés García se cae a última hora",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151118-francho-entra-en-la-lista-a-tiempo-y-andres-garcia-se-cae-a-ultima-hora",
+   "categoria": "convocatoria"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 de los que han jugado la 5",
@@ -20,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Jorge Salinas recupera su asistencia tras una revisión",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151120-jorge-salinas-recupera-su-asistencia-tras-una-revision",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "El Real Madrid prepara la cita contra el Elche sin los tres lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151119-el-real-madrid-prepara-la-cita-contra-el-elche-sin-los-tres-lesionados",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "13/09",
@@ -463,24 +481,6 @@
    "fecha": "11/09",
    "titulo": "Bryan Zaragoza, con un extra para elevar sus minutos en Pamplona",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151044-bryan-zaragoza-con-un-extra-para-elevar-sus-minutos-en-pamplona",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "El Getafe negocia la incorporación de Renato Sanches",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151043-el-getafe-negocia-la-incorporacion-de-renato-sanches",
-   "categoria": "mercado"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Luismi resiste firme antes de que apriete la competencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151042-luismi-resiste-firme-antes-de-que-apriete-la-competencia",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Yeremay todavía debe esperar",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151041-yeremay-todavia-debe-esperar",
    "categoria": "análisis"
   }
  ]
