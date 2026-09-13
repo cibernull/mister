@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-13T18:08:31.178Z",
+ "cuando": "2026-09-13T18:38:22.749Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "13/09",
-   "titulo": "Sigue en directo el Getafe - Deportivo",
-   "url": "https://www.futbolfantasy.com/partidos/22465-getafe-deportivo",
-   "categoria": "análisis"
+   "titulo": "Alineaciones confirmadas del Real Sociedad - Atlético",
+   "url": "https://www.futbolfantasy.com/partidos/22470-real-sociedad-atletico",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
@@ -29,9 +29,15 @@
   },
   {
    "fecha": "13/09",
-   "titulo": "Alineaciones confirmadas del Real Sociedad - Atlético",
-   "url": "https://www.futbolfantasy.com/partidos/22470-real-sociedad-atletico",
-   "categoria": "rueda de prensa"
+   "titulo": "Jornada 5: Getafe 1-1 Deportivo. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22465-getafe-deportivo",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Osambela responde a la emergencia en el lateral",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151160-osambela-responde-a-la-emergencia-en-el-lateral",
+   "categoria": "análisis"
   },
   {
    "fecha": "13/09",
@@ -476,12 +482,6 @@
    "titulo": "Ramis defiende la reacción de Osasuna y explica la pareja Budimir-Raúl",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151086-ramis-defiende-la-reaccion-de-osasuna-y-explica-la-pareja-budimir-raul",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "El Deportivo completa la última sesión con Asp Jensen de nuevo sobre el césped",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151085-el-deportivo-completa-la-ultima-sesion-con-asp-jensen-de-nuevo-sobre-el-cesped",
-   "categoria": "entrenamiento"
   }
  ]
 }
