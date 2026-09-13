@@ -1987,7 +1987,7 @@
    "posicion": 1,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-,-"
+   "racha": "-,-,-,-,-"
   },
   {
    "idTransfer": 538868227,
@@ -2036,9 +2036,9 @@
    "cuando": "2026-08-14 17:03:12",
    "valor": 11102000,
    "posicion": 4,
-   "puntos": 29,
-   "media": 5.8,
-   "racha": "3,11,4,5"
+   "puntos": 34,
+   "media": 6.8,
+   "racha": "3,11,4,5,11"
   },
   {
    "idTransfer": 538953256,
@@ -2327,7 +2327,7 @@
    "posicion": 4,
    "puntos": 4,
    "media": 1.3,
-   "racha": "0,0,4,-"
+   "racha": "0,0,4,-,-"
   },
   {
    "idTransfer": 539686076,
@@ -2342,7 +2342,7 @@
    "cuando": "2026-08-17 07:45:06",
    "valor": 4718000,
    "posicion": 4,
-   "puntos": 19,
+   "puntos": 20,
    "media": 4.8,
    "racha": "4,2,8,5"
   },
@@ -2410,7 +2410,7 @@
    "cuando": "2026-08-18 00:30:46",
    "valor": 7116000,
    "posicion": 4,
-   "puntos": 47,
+   "puntos": 48,
    "media": 11.8,
    "racha": "11,10,13,13"
   },
@@ -2444,7 +2444,7 @@
    "cuando": "2026-08-18 05:00:30",
    "valor": 5067000,
    "posicion": 4,
-   "puntos": 17,
+   "puntos": 18,
    "media": 4.3,
    "racha": "2,10,2,3"
   },
@@ -2512,9 +2512,9 @@
    "cuando": "2026-08-18 17:04:49",
    "valor": 4471000,
    "posicion": 3,
-   "puntos": 24,
-   "media": 6,
-   "racha": "2,3,13,6"
+   "puntos": 27,
+   "media": 5.4,
+   "racha": "2,3,13,6,3"
   },
   {
    "idTransfer": 540025867,
@@ -2648,7 +2648,7 @@
    "cuando": "2026-08-19 17:00:16",
    "valor": 4718000,
    "posicion": 4,
-   "puntos": 19,
+   "puntos": 20,
    "media": 4.8,
    "racha": "4,2,8,5"
   },
@@ -2716,9 +2716,9 @@
    "cuando": "2026-08-20 05:00:33",
    "valor": 13244000,
    "posicion": 3,
-   "puntos": 20,
+   "puntos": 24,
    "media": 6,
-   "racha": "5,-,4,9"
+   "racha": "5,-,4,9,6"
   },
   {
    "idTransfer": 540417823,
@@ -2801,7 +2801,7 @@
    "cuando": "2026-08-20 10:10:35",
    "valor": 3474000,
    "posicion": 3,
-   "puntos": 24,
+   "puntos": 25,
    "media": 6,
    "racha": "2,6,4,12"
   },
@@ -2818,7 +2818,7 @@
    "cuando": "2026-08-20 17:00:21",
    "valor": 3438000,
    "posicion": 2,
-   "puntos": 13,
+   "puntos": 14,
    "media": 4.3,
    "racha": "-,5,3,5"
   },
@@ -2852,7 +2852,7 @@
    "cuando": "2026-08-21 05:00:31",
    "valor": 5074000,
    "posicion": 3,
-   "puntos": 18,
+   "puntos": 19,
    "media": 4.5,
    "racha": "4,6,5,3"
   },
@@ -3056,9 +3056,9 @@
    "cuando": "2026-08-23 09:47:13",
    "valor": 5134000,
    "posicion": 2,
-   "puntos": 19,
-   "media": 4.5,
-   "racha": "3,7,4,4"
+   "puntos": 20,
+   "media": 4,
+   "racha": "3,7,4,4,2"
   },
   {
    "idTransfer": 541364942,
@@ -3192,7 +3192,7 @@
    "cuando": "2026-08-24 16:25:26",
    "valor": 6370000,
    "posicion": 4,
-   "puntos": 18,
+   "puntos": 19,
    "media": 4.5,
    "racha": "2,4,2,10"
   },
@@ -3226,9 +3226,9 @@
    "cuando": "2026-08-25 05:00:30",
    "valor": 11102000,
    "posicion": 4,
-   "puntos": 29,
-   "media": 5.8,
-   "racha": "3,11,4,5"
+   "puntos": 34,
+   "media": 6.8,
+   "racha": "3,11,4,5,11"
   },
   {
    "idTransfer": 541840325,
@@ -3396,7 +3396,7 @@
    "cuando": "2026-08-26 09:04:06",
    "valor": 7116000,
    "posicion": 4,
-   "puntos": 47,
+   "puntos": 48,
    "media": 11.8,
    "racha": "11,10,13,13"
   },
@@ -3466,7 +3466,7 @@
    "posicion": 4,
    "puntos": 4,
    "media": 1.3,
-   "racha": "0,0,4,-"
+   "racha": "0,0,4,-,-"
   },
   {
    "idTransfer": 542483586,
@@ -3566,9 +3566,9 @@
    "cuando": "2026-08-28 05:00:34",
    "valor": 2298000,
    "posicion": 2,
-   "puntos": 13,
-   "media": 4,
-   "racha": "-,6,2,4"
+   "puntos": 14,
+   "media": 3.5,
+   "racha": "-,6,2,4,2"
   },
   {
    "idTransfer": 542851052,
@@ -3634,9 +3634,9 @@
    "cuando": "2026-08-28 17:00:18",
    "valor": 15299000,
    "posicion": 4,
-   "puntos": 30,
-   "media": 7.3,
-   "racha": "6,9,9,5"
+   "puntos": 31,
+   "media": 6.2,
+   "racha": "6,9,9,5,2"
   },
   {
    "idTransfer": 542945868,
@@ -3838,9 +3838,9 @@
    "cuando": "2026-08-30 12:42:40",
    "valor": 1258000,
    "posicion": 3,
-   "puntos": 29,
-   "media": 8,
-   "racha": "-,4,19,1"
+   "puntos": 35,
+   "media": 8.8,
+   "racha": "-,4,19,1,11"
   },
   {
    "idTransfer": 543481930,
@@ -3923,9 +3923,9 @@
    "cuando": "2026-08-30 17:00:21",
    "valor": 8437000,
    "posicion": 2,
-   "puntos": 25,
-   "media": 6.3,
-   "racha": "3,4,13,5"
+   "puntos": 26,
+   "media": 5.2,
+   "racha": "3,4,13,5,1"
   },
   {
    "idTransfer": 543497266,
@@ -3940,9 +3940,9 @@
    "cuando": "2026-08-30 17:00:21",
    "valor": 4471000,
    "posicion": 3,
-   "puntos": 24,
-   "media": 6,
-   "racha": "2,3,13,6"
+   "puntos": 27,
+   "media": 5.4,
+   "racha": "2,3,13,6,3"
   },
   {
    "idTransfer": 543673394,
@@ -4163,7 +4163,7 @@
    "posicion": 4,
    "puntos": 4,
    "media": 4,
-   "racha": "-,-,-,4"
+   "racha": "-,-,-,4,-"
   },
   {
    "idTransfer": 544577925,
@@ -4229,7 +4229,7 @@
    "cuando": "2026-09-03 05:00:31",
    "valor": 1708000,
    "posicion": 2,
-   "puntos": 11,
+   "puntos": 12,
    "media": 3.7,
    "racha": "-,3,2,6"
   },
@@ -4280,7 +4280,7 @@
    "cuando": "2026-09-03 17:00:21",
    "valor": 7499000,
    "posicion": 3,
-   "puntos": 21,
+   "puntos": 22,
    "media": 5.3,
    "racha": "6,4,5,6"
   },
@@ -4365,9 +4365,9 @@
    "cuando": "2026-09-04 05:00:25",
    "valor": 1183000,
    "posicion": 3,
-   "puntos": 14,
-   "media": 3.3,
-   "racha": "2,2,6,3"
+   "puntos": 16,
+   "media": 3.2,
+   "racha": "2,2,6,3,3"
   },
   {
    "idTransfer": 545126560,
@@ -4569,7 +4569,7 @@
    "cuando": "2026-09-06 05:00:31",
    "valor": 3717000,
    "posicion": 2,
-   "puntos": 16,
+   "puntos": 17,
    "media": 4,
    "racha": "3,4,6,3"
   },
@@ -4620,7 +4620,7 @@
    "cuando": "2026-09-06 11:00:55",
    "valor": 5541000,
    "posicion": 3,
-   "puntos": 18,
+   "puntos": 19,
    "media": 4.5,
    "racha": "3,3,8,4"
   },
@@ -4807,9 +4807,9 @@
    "cuando": "2026-09-08 17:00:19",
    "valor": 17303000,
    "posicion": 3,
-   "puntos": 50,
-   "media": 12.3,
-   "racha": "13,18,4,14"
+   "puntos": 53,
+   "media": 10.6,
+   "racha": "13,18,4,14,4"
   },
   {
    "idTransfer": 546553023,
@@ -4841,9 +4841,9 @@
    "cuando": "2026-09-09 09:31:22",
    "valor": 15299000,
    "posicion": 4,
-   "puntos": 30,
-   "media": 7.3,
-   "racha": "6,9,9,5"
+   "puntos": 31,
+   "media": 6.2,
+   "racha": "6,9,9,5,2"
   },
   {
    "idTransfer": 546689621,

@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-13T17:08:14.532Z",
+ "cuando": "2026-09-13T17:38:19.655Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Luis Castro analiza la derrota y habla de Ratkov, Ndukwe, Requena, Brugué, Sotelo y las rotaciones",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151158-luis-castro-analiza-la-derrota-y-habla-de-ratkov-ndukwe-requena-brugue-sotelo-y-las-rotacione",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "13/09",
@@ -476,12 +482,6 @@
    "titulo": "Aitor Mañas se retira en camilla tras golpearse la cabeza",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151084-aitor-manas-se-retira-en-camilla-tras-golpearse-la-cabeza",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "LaLiga anula injusta y provisionalmente la asistencia de Jorge Salinas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151083-laliga-anula-injusta-y-provisionalmente-la-asistencia-de-jorge-salinas",
-   "categoria": "análisis"
   }
  ]
 }

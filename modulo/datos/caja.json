@@ -1,6 +1,14 @@
 {
- "saldo": 17565200,
+ "saldo": 17313600,
  "apuntes": [
+  {
+   "cuando": 1789319747,
+   "fecha": "2026-09-13 19:15",
+   "motivo": "Modificación de cláusula (200%) de Roger Brugué",
+   "tipo": "Penalización",
+   "importe": -251600,
+   "saldo": 17313600
+  },
   {
    "cuando": 1789319030,
    "fecha": "2026-09-13 19:03",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -3289630,
    "saldo": -2503546
-  },
-  {
-   "cuando": 1786762800,
-   "fecha": "2026-08-15 05:00",
-   "motivo": "Jorge Salinas a Mister",
-   "tipo": "Compra",
-   "importe": -3163520,
-   "saldo": 786084
   }
  ]
 }
