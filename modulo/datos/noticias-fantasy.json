@@ -1,14 +1,8 @@
 {
- "cuando": "2026-09-13T20:38:14.002Z",
+ "cuando": "2026-09-13T21:08:27.473Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "13/09",
-   "titulo": "Sigue en directo el Real Sociedad - Atlético",
-   "url": "https://www.futbolfantasy.com/partidos/22470-real-sociedad-atletico",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 de los que han jugado la 5",
@@ -26,6 +20,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Jornada 5: Real Sociedad 0-3 Atlético. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22470-real-sociedad-atletico",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Casadó ya regula el ritmo del Deportivo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151169-casado-ya-regula-el-ritmo-del-deportivo",
+   "categoria": "análisis"
   },
   {
    "fecha": "13/09",
@@ -475,12 +481,6 @@
    "fecha": "12/09",
    "titulo": "Flick convoca a los disponibles para desplazarse al Ciutat",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151095-flick-convoca-a-los-disponibles-para-desplazarse-al-ciutat",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Lomónaco se queda fuera de la convocatoria para San Mamés",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151094-lomonaco-se-queda-fuera-de-la-convocatoria-para-san-mames",
    "categoria": "convocatoria"
   }
  ]
