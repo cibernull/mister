@@ -1053,6 +1053,16 @@
  ],
  "movimientos": [
   {
+   "id": "71795",
+   "nombre": "Angeliño",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 1980300,
+   "tipo": "normal",
+   "fecha": "2026-09-13 09:11:39",
+   "pos": 2
+  },
+  {
    "id": "71649",
    "nombre": "Péter Gulácsi",
    "de": null,
@@ -7189,6 +7199,14 @@
      "op": "normal"
     },
     {
+     "j": "Angeliño",
+     "id": "71795",
+     "tipo": "venta",
+     "importe": 1980300,
+     "fecha": "2026-09-13",
+     "op": "normal"
+    },
+    {
      "j": "Unai López",
      "id": "24",
      "tipo": "compra",
@@ -7909,8 +7927,8 @@
     "71795": {
      "nombre": "Angeliño",
      "compras": 2300000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1980300,
+     "ops": 2
     }
    }
   },

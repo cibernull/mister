@@ -206,6 +206,19 @@
   "equipo": null
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-09-13",
+  "id": "71795",
+  "de": "Saiyans FC (Fran)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-13",
+  "id": "71795",
+  "entra": false
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-12",
   "id": "239",
