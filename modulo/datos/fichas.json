@@ -9668,8 +9668,10 @@
     "jornada": 5,
     "puntos": null,
     "rival": 9,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -19765,13 +19767,6 @@
      "yellow",
      "sub_in"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 9,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -19822,13 +19817,6 @@
      "sub_in",
      "goal"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 9,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23654,7 +23642,7 @@
   "mediaCasa": 0,
   "mediaFuera": 2,
   "edad": 28,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 1,
   "jornadas": [
@@ -24949,7 +24937,7 @@
     ]
    }
   ],
-  "asistencias": 0,
+  "asistencias": 1,
   "dia": "2026-09-13",
   "partidos": 1
  },
