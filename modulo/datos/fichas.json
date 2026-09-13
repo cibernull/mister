@@ -11820,7 +11820,9 @@
     "puntos": null,
     "rival": 13,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "assist"
+    ]
    },
    {
     "jornada": 6,
@@ -11830,7 +11832,7 @@
     "eventos": []
    }
   ],
-  "asistencias": 1,
+  "asistencias": 2,
   "dia": "2026-09-13",
   "partidos": 2
  },
@@ -20694,13 +20696,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 5,
-    "puntos": null,
-    "rival": 5,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
