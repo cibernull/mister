@@ -1,6 +1,14 @@
 {
- "saldo": 17313600,
+ "saldo": 16349282,
  "apuntes": [
+  {
+   "cuando": 1789335553,
+   "fecha": "2026-09-13 23:39",
+   "motivo": "Modificación de cláusula (100%) de Xavi Espart",
+   "tipo": "Penalización",
+   "importe": -964318,
+   "saldo": 16349282
+  },
   {
    "cuando": 1789319747,
    "fecha": "2026-09-13 19:15",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 5403960,
    "saldo": 2900414
-  },
-  {
-   "cuando": 1786935600,
-   "fecha": "2026-08-17 05:00",
-   "motivo": "Etta Eyong a Mister",
-   "tipo": "Compra",
-   "importe": -3289630,
-   "saldo": -2503546
   }
  ]
 }

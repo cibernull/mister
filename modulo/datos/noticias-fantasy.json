@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-13T21:08:27.473Z",
+ "cuando": "2026-09-13T21:38:24.141Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -20,6 +20,12 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "El Atlético ahoga las penas en una ráfaga final",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151170-el-atletico-tapa-las-penas-con-una-rafaga-final",
+   "categoria": "análisis"
   },
   {
    "fecha": "13/09",
@@ -475,12 +481,6 @@
    "fecha": "12/09",
    "titulo": "Haitam, Pastor y Aznou, fuera de la convocatoria para viajar a Vigo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151096-haitam-pastor-y-aznou-fuera-de-la-convocatoria-para-viajar-a-vigo",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Flick convoca a los disponibles para desplazarse al Ciutat",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151095-flick-convoca-a-los-disponibles-para-desplazarse-al-ciutat",
    "categoria": "convocatoria"
   }
  ]
