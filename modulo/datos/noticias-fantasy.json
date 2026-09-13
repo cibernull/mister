@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-13T10:38:10.115Z",
+ "cuando": "2026-09-13T11:08:11.480Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "13/09",
-   "titulo": "Francho entra en la lista a tiempo y Andrés García se cae a última hora",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151118-francho-entra-en-la-lista-a-tiempo-y-andres-garcia-se-cae-a-ultima-hora",
-   "categoria": "convocatoria"
+   "titulo": "Alineaciones confirmadas del Celta - Málaga",
+   "url": "https://www.futbolfantasy.com/partidos/22464-celta-malaga",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
@@ -29,6 +29,30 @@
   },
   {
    "fecha": "13/09",
+   "titulo": "Dotor, baja de última hora por un virus gastrointestinal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151125-dotor-baja-de-ultima-hora-por-un-virus-gastrointestinal",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "El Sevilla intensifica la preparación para Riazor con Vargas y Sangante al margen",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151123-el-sevilla-intensifica-la-preparacion-para-riazor-con-vargas-y-sangante-al-margen",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Osasuna mantiene cuatro bajas en su regreso al trabajo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151122-osasuna-mantiene-cuatro-bajas-en-su-regreso-al-trabajo",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Iker Luque acelera sensaciones como revulsivo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151121-iker-luque-acelera-sensaciones-como-revulsivo",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/09",
    "titulo": "Jorge Salinas recupera su asistencia tras una revisión",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151120-jorge-salinas-recupera-su-asistencia-tras-una-revision",
    "categoria": "análisis"
@@ -38,6 +62,12 @@
    "titulo": "El Real Madrid prepara la cita contra el Elche sin los tres lesionados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151119-el-real-madrid-prepara-la-cita-contra-el-elche-sin-los-tres-lesionados",
    "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Francho entra en la lista a tiempo y Andrés García se cae a última hora",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151118-francho-entra-en-la-lista-a-tiempo-y-andres-garcia-se-cae-a-ultima-hora",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "13/09",
@@ -452,36 +482,6 @@
    "titulo": "César Tàrrega pide el cambio por molestias en los isquiotibiales",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151048-cesar-tarrega-pide-el-cambio-por-molestias-en-los-isquiotibiales",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Corberán habló del estado anímico, el planteamiento y su continuidad",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151050-corberan-hablo-del-estado-animico-el-planteamiento-y-su-continuidad",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Luis García explicó las decisiones con Stassin, Ure, Fofana, Kochorashvili, Guridi y Correia antes del partido",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151049-luis-garcia-explico-las-decisiones-con-stassin-ure-fofana-kochorashvili-guridi-y-correia-ante",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Las alineaciones probables y pronósticos para la jornada 5 de Carrasco con la última hora",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151046-las-alineaciones-probables-y-pronosticos-para-la-jornada-5-de-carrasco-con-la-ultima-hora",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Hartman sigue completando un necesario periodo de adaptación",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151045-hartman-sigue-completando-un-necesario-periodo-de-adaptacion",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/09",
-   "titulo": "Bryan Zaragoza, con un extra para elevar sus minutos en Pamplona",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151044-bryan-zaragoza-con-un-extra-para-elevar-sus-minutos-en-pamplona",
-   "categoria": "análisis"
   }
  ]
 }
