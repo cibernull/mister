@@ -1,6 +1,67 @@
 [
  {
   "tipo": "mercado",
+  "dia": "2026-09-13",
+  "id": "1034",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-13",
+  "id": "10967",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-13",
+  "id": "22495",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-13",
+  "id": "51137",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-13",
+  "id": "54832",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-13",
+  "id": "58986",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-13",
+  "id": "68495",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-13",
+  "id": "71649",
+  "de": null,
+  "a": "Saiyans FC (Fran)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-13",
+  "id": "71649",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-13",
+  "id": "4836181",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-12",
   "id": "239",
   "entra": false
