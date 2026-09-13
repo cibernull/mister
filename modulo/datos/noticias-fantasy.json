@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-13T21:38:24.141Z",
+ "cuando": "2026-09-13T22:08:16.509Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -20,6 +20,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Matarazzo valora el partido, el penalti y habla de Turrientes, Sarr y los cambios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151172-matarazzo-valora-el-partido-el-penalti-y-habla-de-turrientes-sarr-y-los-cambios",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Simeone analiza el triunfo, los cambios, el sistema y las actuaciones de Grimaldo y Jonathan David",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151171-simeone-analiza-el-triunfo-los-cambios-el-sistema-y-las-actuaciones-de-grimaldo-y-jonathan-da",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "13/09",
@@ -470,18 +482,6 @@
    "titulo": "Roberto toca el cielo de Pamplona",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151097-roberto-toca-el-cielo-de-pamplona",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Jornada 5: Osasuna 0-2 Espanyo. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22467-osasuna-espanyol",
-   "categoria": "partido"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Haitam, Pastor y Aznou, fuera de la convocatoria para viajar a Vigo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151096-haitam-pastor-y-aznou-fuera-de-la-convocatoria-para-viajar-a-vigo",
-   "categoria": "convocatoria"
   }
  ]
 }
