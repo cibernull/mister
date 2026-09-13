@@ -1049,9 +1049,39 @@
    "id": "24",
    "nombre": "Unai López",
    "valor": 4599000
+  },
+  {
+   "id": "60858",
+   "nombre": "Pablo Ramón",
+   "valor": 1951000
+  },
+  {
+   "id": "70936",
+   "nombre": "Manu Hernando",
+   "valor": 2811000
   }
  ],
  "movimientos": [
+  {
+   "id": "70936",
+   "nombre": "Manu Hernando",
+   "de": "Mario80",
+   "a": null,
+   "importe": 2895330,
+   "tipo": "normal",
+   "fecha": "2026-09-13 17:08:02",
+   "pos": 2
+  },
+  {
+   "id": "60858",
+   "nombre": "Pablo Ramón",
+   "de": null,
+   "a": "Mario80",
+   "importe": 1952070,
+   "tipo": "normal",
+   "fecha": "2026-09-13 17:00:19",
+   "pos": 2
+  },
   {
    "id": "28773",
    "nombre": "Aitor Paredes",
@@ -6745,6 +6775,22 @@
   "Mario80": {
    "movimientos": [
     {
+     "j": "Pablo Ramón",
+     "id": "60858",
+     "tipo": "compra",
+     "importe": 1952070,
+     "fecha": "2026-09-13",
+     "op": "normal"
+    },
+    {
+     "j": "Manu Hernando",
+     "id": "70936",
+     "tipo": "venta",
+     "importe": 2895330,
+     "fecha": "2026-09-13",
+     "op": "normal"
+    },
+    {
      "j": "Pape Gueye",
      "id": "52162",
      "tipo": "compra",
@@ -7162,6 +7208,12 @@
      "ventas": 153600,
      "ops": 1
     },
+    "60858": {
+     "nombre": "Pablo Ramón",
+     "compras": 1952070,
+     "ventas": 0,
+     "ops": 1
+    },
     "61013": {
      "nombre": "Antony Santos",
      "compras": 14976070,
@@ -7190,6 +7242,12 @@
      "nombre": "Suleiman Camara",
      "compras": 0,
      "ventas": 376200,
+     "ops": 1
+    },
+    "70936": {
+     "nombre": "Manu Hernando",
+     "compras": 0,
+     "ventas": 2895330,
      "ops": 1
     },
     "70950": {

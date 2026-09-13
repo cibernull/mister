@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-13T14:38:14.072Z",
+ "cuando": "2026-09-13T15:08:23.723Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
    "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Giráldez expresa sus sensciones y habla de Aspas, Borja Iglesias y la falta de acierto",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151145-giraldez-expresa-sus-sensciones-y-habla-de-aspas-borja-iglesias-y-la-falta-de-acierto",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "13/09",
+   "titulo": "Funes valora el empate y habla de Adrián Niño, los revulsivos, Dotor y el virus que afectó a la plantilla",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151144-funes-valora-el-empate-y-habla-de-adrian-nino-los-revulsivos-dotor-y-el-virus-que-afecto-a-la",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "13/09",
@@ -470,18 +482,6 @@
    "titulo": "Luis Castro, sobre Etta Eyong, Primo, Bardeli, Thiago, las rotaciones y el Barcelona",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151069-luis-castro-sobre-etta-eyong-primo-bardeli-thiago-las-rotaciones-y-el-barcelona",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Flick habla de Raphinha, Fermín, Olmo, las rotaciones y el sueño de la Champions",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151068-flick-habla-de-raphinha-fermin-olmo-las-rotaciones-y-el-sueno-de-la-champions",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Luis García puede permitirse el lujo de rotar varias piezas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151067-luis-garcia-puede-permitirse-el-lujo-de-rotar-varias-piezas",
-   "categoria": "análisis"
   }
  ]
 }
