@@ -1053,6 +1053,16 @@
  ],
  "movimientos": [
   {
+   "id": "71649",
+   "nombre": "Péter Gulácsi",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 1088000,
+   "tipo": "normal",
+   "fecha": "2026-09-13 05:00:27",
+   "pos": 1
+  },
+  {
    "id": "27520",
    "nombre": "Fran García",
    "de": "Niutin FC (Isaac)",
@@ -7171,6 +7181,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Péter Gulácsi",
+     "id": "71649",
+     "tipo": "compra",
+     "importe": 1088000,
+     "fecha": "2026-09-13",
+     "op": "normal"
+    },
+    {
      "j": "Unai López",
      "id": "24",
      "tipo": "compra",
@@ -7884,9 +7902,9 @@
     },
     "71649": {
      "nombre": "Péter Gulácsi",
-     "compras": 1200000,
+     "compras": 2288000,
      "ventas": 1093860,
-     "ops": 2
+     "ops": 3
     },
     "71795": {
      "nombre": "Angeliño",
