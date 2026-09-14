@@ -1,12 +1,18 @@
 {
- "cuando": "2026-09-14T22:08:17.478Z",
+ "cuando": "2026-09-14T22:38:19.591Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "02/09",
-   "titulo": "Alineaciones probables para la jornada 6 de los que han jugado la 5",
+   "titulo": "Alineaciones probables para la jornada 6 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Dani Ceballos: Tomo 2, página 1",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151232-dani-ceballos-tomo-2-pagina-1",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Tsitaishvili, sacrificio y recorrido en medio de la derrota",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151156-tsitaishvili-sacrificio-y-recorrido-en-medio-de-la-derrota",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Íñigo Pérez, sobre Carlos Romero, Foyth, Veiga, Costa, Navarro, el Betis y la dinámica del equipo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151155-inigo-perez-sobre-carlos-romero-foyth-veiga-costa-navarro-el-betis-y-la-dinamica-del-equipo",
-   "categoria": "rueda de prensa"
   }
  ]
 }
