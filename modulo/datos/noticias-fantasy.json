@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-14T17:08:12.267Z",
+ "cuando": "2026-09-14T17:38:24.349Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -8,6 +8,24 @@
    "titulo": "Alineaciones probables para la jornada 6 de los que han jugado la 5",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Andrés y Eriksson siguen al margen en los entrenamientos del Racing",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151208-andres-eriksson-siguen-margen-entrenamientos-racing",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Camello arrastra molestias, pero San José cuenta con él ante el Espanyol",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151207-camello-arrastra-molestias-san-jose-cuenta-el-espanyol",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Julián Alvarez trabaja el margen con el derbi como objetivo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151206-julian-alvarez-trabaja-derbi-como-objetivo",
+   "categoria": "lesión"
   },
   {
    "fecha": "14/09",
@@ -464,24 +482,6 @@
    "titulo": "El Bernabéu juzga la primera titularidad de Diomandé",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151131-el-bernabeu-juzga-la-primera-titularidad-de-diomande",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Ibáñez y Tenaglia pagan el exceso de revoluciones",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151130-ibanez-y-tenaglia-pagan-el-exceso-de-revoluciones",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Fede Redondo regresa al eje con una versión mejorada",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151129-fede-redondo-regresa-al-eje-con-una-version-mejorada",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Funes analiza la previa del Celta y explica la baja de Dotor",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151128-funes-analiza-la-previa-del-celta-y-explica-la-baja-de-dotor",
-   "categoria": "rueda de prensa"
   }
  ]
 }
