@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-14T12:08:23.712Z",
+ "cuando": "2026-09-14T12:38:25.380Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "14/09",
-   "titulo": "Quique afronta la intersemanal hablando del estado físico, las rotaciones, Guevara y el Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151194-quique-afronta-la-intersemanal-hablando-del-estado-fisico-las-rotaciones-guevara-y-el-valenci",
-   "categoria": "rueda de prensa"
+   "titulo": "Ndukwe se estrena y ya es una herramienta más para Luis Castro",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151198-ndukwe-se-estrena-y-ya-es-una-herramienta-mas-para-luis-castro",
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -23,9 +23,27 @@
   },
   {
    "fecha": "14/09",
+   "titulo": "Mourinho convoca a todos los disponibles para visitar el Martínez Valero",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151197-mourinho-convoca-a-todos-los-disponibles-para-visitar-el-martinez-valero",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Calero, Aznou, Dotor y Pastor empiezan la semana con el grupo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151196-calero-aznou-dotor-y-pastor-empiezan-la-semana-con-el-grupo",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "14/09",
    "titulo": "El Barcelona retoma el trabajo sin aparentes contratiempos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151195-el-barcelona-retoma-el-trabajo-sin-aparentes-contratiempos",
    "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Quique afronta la intersemanal hablando del estado físico, las rotaciones, Guevara y el Valencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151194-quique-afronta-la-intersemanal-hablando-del-estado-fisico-las-rotaciones-guevara-y-el-valenci",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "14/09",
@@ -464,24 +482,6 @@
    "titulo": "Iker Luque acelera sensaciones como revulsivo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151121-iker-luque-acelera-sensaciones-como-revulsivo",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Jorge Salinas recupera su asistencia tras una revisión",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151120-jorge-salinas-recupera-su-asistencia-tras-una-revision",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "El Real Madrid prepara la cita contra el Elche sin los tres lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151119-el-real-madrid-prepara-la-cita-contra-el-elche-sin-los-tres-lesionados",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Francho entra en la lista a tiempo y Andrés García se cae a última hora",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151118-francho-entra-en-la-lista-a-tiempo-y-andres-garcia-se-cae-a-ultima-hora",
-   "categoria": "convocatoria"
   }
  ]
 }

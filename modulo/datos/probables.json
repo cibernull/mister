@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-14T12:08:22.681Z",
+ "cuando": "2026-09-14T12:38:24.308Z",
  "fuente": "futbolfantasy.com",
  "leidos": 512,
  "jugadores": {
@@ -682,10 +682,7 @@
    "prob": 20,
    "sancionado": 0,
    "fuera": 0,
-   "min": 95,
-   "lesion": "Molestias en el tobillo",
-   "desde": "02/09 (12 días)",
-   "hasta": null
+   "min": 95
   },
   "18186": {
    "prob": 50,
@@ -748,10 +745,7 @@
    "prob": 50,
    "sancionado": 0,
    "fuera": 0,
-   "min": 177,
-   "lesion": "Lesión en el cuádriceps",
-   "desde": "28/08 (17 días)",
-   "hasta": "mediados de septiembre"
+   "min": 177
   },
   "20449": {
    "prob": 30,
@@ -1522,10 +1516,7 @@
    "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 313,
-   "lesion": "Gastroenteritis",
-   "desde": "13/09 (1 día)",
-   "hasta": null
+   "min": 313
   },
   "55009": {
    "prob": 40,
@@ -1966,10 +1957,7 @@
    "prob": 30,
    "sancionado": 0,
    "fuera": 0,
-   "min": 0,
-   "lesion": "Proceso viral",
-   "desde": "12/09 (2 días)",
-   "hasta": null
+   "min": 0
   },
   "61297": {
    "prob": 20,
@@ -2686,10 +2674,7 @@
    "prob": 30,
    "sancionado": 0,
    "fuera": 0,
-   "min": 0,
-   "lesion": "Proceso viral",
-   "desde": "12/09 (2 días)",
-   "hasta": null
+   "min": 0
   },
   "71008": {
    "prob": 50,
