@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-14T10:38:15.617Z",
+ "cuando": "2026-09-14T11:08:19.908Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "14/09",
-   "titulo": "Cáceres se presenta con carácter en Balaídos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151185-caceres-se-presenta-con-caracter-en-balaidos",
-   "categoria": "análisis"
+   "titulo": "Anselmi explica cómo llega el equipo y habla de Lomónaco, Buonanotte, Aguado, el sistema, el once y el Real Madrid",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151189-anselmi-explica-como-llega-el-equipo-y-habla-de-lomonaco-buonanotte-aguado-el-sistema-el-once",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
@@ -23,6 +23,12 @@
   },
   {
    "fecha": "14/09",
+   "titulo": "Jofre apunta a baja para mañana por problemas en el pubis",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151188-jofre-apunta-a-baja-para-manana-por-problemas-en-el-pubis",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "14/09",
    "titulo": "Osasuna inicia la semana sin recuperar efectivos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151187-osasuna-inicia-la-semana-sin-recuperar-efectivos",
    "categoria": "entrenamiento"
@@ -31,6 +37,12 @@
    "fecha": "14/09",
    "titulo": "Niño vuelve con gol y pone a Chupete sobre aviso",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151186-nino-vuelve-con-gol-y-pone-a-chupete-sobre-aviso",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Cáceres se presenta con carácter en Balaídos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151185-caceres-se-presenta-con-caracter-en-balaidos",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Beñat San José analiza la derrota y habla de Audero y Camello",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151112-benat-san-jose-analiza-la-derrota-y-habla-de-audero-y-camello",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Diario de Sevilla apuesta por repetir la fórmula que tumbó al Real Madrid",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151111-diario-de-sevilla-apuesta-por-repetir-la-formula-que-tumbo-al-real-madrid",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "El Real Madrid sentencia al Rayo antes que Arda la noche",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151110-el-real-madrid-sentencia-al-rayo-antes-que-arda-la-noche",
-   "categoria": "análisis"
   }
  ]
 }
