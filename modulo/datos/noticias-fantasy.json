@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-14T19:38:12.361Z",
+ "cuando": "2026-09-14T20:08:20.136Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -13,6 +13,18 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 de los que han jugado la 5",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Análisis y predicción de la jornada 6 de Liga, por Huugo_21",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151217-analisis-y-prediccion-de-la-jornada-6-de-liga-por-huugo-21",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "ANÁLISIS FANTASY JORNADA 6 | Alineaciones probables, lesionados y sancionados, por Carrasco",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151216-analisis-fantasy-jornada-6-alineaciones-probables-lesionados-y-sancionados-por-carrasco",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Flick, sorprendido por las novedades del Levante, deja claro qué quiere ver de su equipo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151140-flick-sorprendido-por-las-novedades-del-levante-deja-claro-que-quiere-ver-de-su-equipo",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Luis Castro explica sus rotaciones contra el Barça y habla de Dela y el balón parado",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151139-luis-castro-explica-sus-rotaciones-contra-el-barca-y-habla-de-dela-y-el-balon-parado",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Jornada 5: Celta 1-1 Málaga. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22464-celta-malaga",
-   "categoria": "partido"
   }
  ]
 }
