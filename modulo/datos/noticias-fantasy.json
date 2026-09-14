@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-14T22:38:19.591Z",
+ "cuando": "2026-09-14T23:08:12.015Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -7,6 +7,18 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Gulácsi consolida el relevo bajo palos desde la imperfección",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151234-gulacsi-consolida-el-relevo-bajo-palos-desde-la-imperfeccion",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Moleiro se encoge con Íñigo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151233-moleiro-se-encoge-con-inigo",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Primer parte médico oficial de Iago Aspas, pendiente de más pruebas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151141-aspas-termina-el-partido-del-malaga-tocado-del-aductor",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Flick valora el triunfo y habla de Adeyemi, Gordon y los lanzadores de penaltis",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151157-flick-valora-el-triunfo-y-habla-de-adeyemi-gordon-y-los-lanzadores-de-penaltis",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Tsitaishvili, sacrificio y recorrido en medio de la derrota",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151156-tsitaishvili-sacrificio-y-recorrido-en-medio-de-la-derrota",
-   "categoria": "análisis"
   }
  ]
 }
