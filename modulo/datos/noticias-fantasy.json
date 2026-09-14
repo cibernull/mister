@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-14T20:08:20.136Z",
+ "cuando": "2026-09-14T20:38:19.503Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -13,6 +13,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 de los que han jugado la 5",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Las alineaciones probables y pronósticos para la jornada 6 de Carrasco con la última hora",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151218-las-alineaciones-probables-y-pronosticos-para-la-jornada-6-de-carrasco-con-la-ultima-hora",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "El Málaga deja al Celta girando en círculos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151142-el-malaga-deja-al-celta-girando-en-circulos",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Flick, sorprendido por las novedades del Levante, deja claro qué quiere ver de su equipo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151140-flick-sorprendido-por-las-novedades-del-levante-deja-claro-que-quiere-ver-de-su-equipo",
-   "categoria": "rueda de prensa"
   }
  ]
 }

@@ -24743,8 +24743,10 @@
     "jornada": 5,
     "puntos": null,
     "rival": 4,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
