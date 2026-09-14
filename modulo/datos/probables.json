@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-14T09:38:31.860Z",
+ "cuando": "2026-09-14T12:08:22.681Z",
  "fuente": "futbolfantasy.com",
  "leidos": 512,
  "jugadores": {
@@ -214,7 +214,7 @@
    "min": 450
   },
   "1719": {
-   "prob": 70,
+   "prob": 60,
    "sancionado": 0,
    "fuera": 0,
    "min": 450
@@ -232,7 +232,7 @@
    "min": 255
   },
   "3046": {
-   "prob": 50,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 121
@@ -910,7 +910,7 @@
    "min": 429
   },
   "27333": {
-   "prob": 60,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 287
@@ -1066,7 +1066,7 @@
    "min": 313
   },
   "28780": {
-   "prob": 70,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 310
@@ -1129,7 +1129,7 @@
    "min": 362
   },
   "29223": {
-   "prob": 60,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 381
@@ -1237,13 +1237,16 @@
    "min": 335
   },
   "35922": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 20
+   "min": 20,
+   "lesion": "Molestias en el pubis",
+   "desde": "14/09 (1 día)",
+   "hasta": null
   },
   "36046": {
-   "prob": 50,
+   "prob": 60,
    "sancionado": 0,
    "fuera": 0,
    "min": 421
@@ -1255,7 +1258,7 @@
    "min": 405
   },
   "36334": {
-   "prob": 30,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 54
@@ -2056,7 +2059,7 @@
    "min": 0
   },
   "63871": {
-   "prob": 70,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 198
@@ -2101,7 +2104,7 @@
    "hasta": "enero 2027"
   },
   "64200": {
-   "prob": 30,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
    "min": 177
@@ -2326,7 +2329,7 @@
    "min": 66
   },
   "68465": {
-   "prob": 30,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 58
@@ -2422,7 +2425,7 @@
    "min": 439
   },
   "70150": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 219
@@ -2533,7 +2536,7 @@
    "min": 449
   },
   "70939": {
-   "prob": 40,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 93
@@ -2977,7 +2980,7 @@
    "min": 127
   },
   "1751425": {
-   "prob": 40,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 27
@@ -2995,7 +2998,7 @@
    "min": 99
   },
   "3317698": {
-   "prob": 30,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
    "min": 20
@@ -3061,7 +3064,7 @@
    "min": 20
   },
   "4764213": {
-   "prob": 10,
+   "prob": 20,
    "sancionado": 0,
    "fuera": 0,
    "min": 10
