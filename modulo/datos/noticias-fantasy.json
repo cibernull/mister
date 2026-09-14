@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-14T08:38:15.718Z",
+ "cuando": "2026-09-14T09:08:32.805Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "14/09",
+   "titulo": "Mourinho habla de Vinicius, Arda Güler, Tchouaméni, Valverde, Lamine Yamal, Yan Diomande y las rotaciones",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151173-mourinho-habla-de-vinicius-arda-guler-tchouameni-valverde-lamine-yamal-yan-diomande-y-las-rot",
+   "categoria": "rueda de prensa"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 de los que han jugado la 5",
@@ -14,6 +20,18 @@
    "titulo": "Recopilación de todos los análisis fantasy de jugadores 26/27",
    "url": "https://www.futbolfantasy.com/laliga/noticias/147949-recopilacion-de-todos-los-analisis-fantasy-de-jugadores-de-pretemporada",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Iván Azón descubre una nueva fórmula de Bordalás",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151175-ivan-azon-descubre-una-nueva-formula-de-bordalas",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "El Real Madrid termina de preparar el partido del Elche con tres bajas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151174-el-real-madrid-termina-de-preparar-el-partido-del-elche-con-tres-bajas",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "13/09",
@@ -464,24 +482,6 @@
    "titulo": "Anselmi explica la titularidad de Redondo y habla de la fragilidad defensiva",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151099-anselmi-explica-la-titularidad-de-redondo-y-habla-de-la-fragilidad-defensiva",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Kumbulla y Balliu se recuperan a tiempo y entran en la convocatoria",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151098-kumbulla-y-balliu-se-recuperan-a-tiempo-y-entran-en-la-convocatoria",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Roberto toca el cielo de Pamplona",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151097-roberto-toca-el-cielo-de-pamplona",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "12/09",
-   "titulo": "Jornada 5: Osasuna 0-2 Espanyo. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22467-osasuna-espanyol",
-   "categoria": "partido"
   }
  ]
 }
