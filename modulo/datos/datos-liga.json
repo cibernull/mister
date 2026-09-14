@@ -1063,6 +1063,16 @@
  ],
  "movimientos": [
   {
+   "id": "70999",
+   "nombre": "Dani Lorenzo",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 5276460,
+   "tipo": "normal",
+   "fecha": "2026-09-14 17:09:38",
+   "pos": 3
+  },
+  {
    "id": "27874",
    "nombre": "Iván Martín",
    "de": "Cacaculopedopis",
@@ -5029,6 +5039,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Dani Lorenzo",
+     "id": "70999",
+     "tipo": "venta",
+     "importe": 5276460,
+     "fecha": "2026-09-14",
+     "op": "normal"
+    },
+    {
      "j": "Fran García",
      "id": "27520",
      "tipo": "venta",
@@ -5897,8 +5915,8 @@
     "70999": {
      "nombre": "Dani Lorenzo",
      "compras": 3244010,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5276460,
+     "ops": 2
     },
     "71008": {
      "nombre": "Rafita Garrido",

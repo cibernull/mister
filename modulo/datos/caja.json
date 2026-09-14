@@ -1,6 +1,14 @@
 {
- "saldo": 16349282,
+ "saldo": 21625742,
  "apuntes": [
+  {
+   "cuando": 1789398578,
+   "fecha": "2026-09-14 17:09",
+   "motivo": "Dani Lorenzo a Mister",
+   "tipo": "Venta",
+   "importe": 5276460,
+   "saldo": 21625742
+  },
   {
    "cuando": 1789335553,
    "fecha": "2026-09-13 23:39",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 1604890,
    "saldo": 4505304
-  },
-  {
-   "cuando": 1787069986,
-   "fecha": "2026-08-18 18:19",
-   "motivo": "Aimar Oroz a Mister",
-   "tipo": "Venta",
-   "importe": 5403960,
-   "saldo": 2900414
   }
  ]
 }
