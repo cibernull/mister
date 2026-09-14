@@ -1,19 +1,31 @@
 {
- "cuando": "2026-09-14T18:38:30.807Z",
+ "cuando": "2026-09-14T19:08:21.542Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "14/09",
-   "titulo": "Alineaciones confirmadas del Villarreal - Betis",
+   "titulo": "Sigue en directo el Villarreal - Betis",
    "url": "https://www.futbolfantasy.com/partidos/22472-villarreal-betis",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 de los que han jugado la 5",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Manuel Pellegrini habla del estado de Ez Abde y Antony antes del partido en La Cerámica",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151213-manuel-pellegrini-habla-estado-ez-abde-antony-antes-partido-ceramica",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Iñigo Pérez habla de Gulacsi y de la necesidad de mejorar los resultados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151212-inigo-perez-habla-gulacsi-antes-partido-frente-betis",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "14/09",
@@ -470,18 +482,6 @@
    "titulo": "El Valencia anuncia la destitución de Carlos Corberán y Ron Gourlay",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151137-el-valencia-anuncia-la-destitucion-de-carlos-corberan-y-ron-gourlay",
    "categoria": "mercado"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Aitor Mañas recibe el alta hospitalaria, pero será baja ante Valencia y Athletic",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151136-aitor-manas-recibe-el-alta-hospitalaria-pero-sera-baja-ante-valencia-y-athletic",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Luis Castro prioriza la intersemanal y dosifica piezas titulares contra el Barça",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151135-luis-castro-prioriza-la-intersemanal-y-dosifica-piezas-clave-contra-el-barca",
-   "categoria": "análisis"
   }
  ]
 }

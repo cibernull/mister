@@ -21941,6 +21941,13 @@
      "yellow",
      "sub_out"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23337,7 +23344,7 @@
   "mediaCasa": 0,
   "mediaFuera": 0,
   "edad": 36,
-  "titular": true,
+  "titular": null,
   "titularidades": 0,
   "suplencias": 0,
   "jornadas": [
@@ -23367,6 +23374,13 @@
     "puntos": null,
     "rival": 6,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 4,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -24455,6 +24469,13 @@
      "sub_in",
      "goal"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24715,6 +24736,13 @@
     "jornada": 4,
     "puntos": 5,
     "rival": 6,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 4,
     "como": "inicio",
     "eventos": []
    }
