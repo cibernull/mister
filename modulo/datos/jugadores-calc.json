@@ -29391,6 +29391,80 @@
   "d": 0
  },
  {
+  "id": "71509",
+  "nombre": "Kevin Sánchez",
+  "valor": 160000,
+  "puntos": 1,
+  "media": 1,
+  "partidos": 1,
+  "semana": 0,
+  "sem7": -29000,
+  "mes": -109000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 4,
+  "est": "other",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   1,
+   null,
+   null
+  ],
+  "eq": 6,
+  "riv": 17,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 1,
+  "mf": 0,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    1,
+    23,
+    0,
+    "i85"
+   ],
+   [
+    2,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    9,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "16868",
   "nombre": "Ander Guevara",
   "valor": 160000,
@@ -29600,80 +29674,6 @@
     5,
     null,
     6,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "71509",
-  "nombre": "Kevin Sánchez",
-  "valor": 160000,
-  "puntos": 1,
-  "media": 1,
-  "partidos": 1,
-  "semana": 0,
-  "sem7": -29000,
-  "mes": -109000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": "other",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   1,
-   null,
-   null
-  ],
-  "eq": 6,
-  "riv": 17,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 1,
-  "mf": 0,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    1,
-    23,
-    0,
-    "i85"
-   ],
-   [
-    2,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    9,
     0,
     ""
    ]
@@ -34940,6 +34940,75 @@
   "d": 0
  },
  {
+  "id": "60227",
+  "nombre": "Wojciech Szczęsny",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -18000,
+  "sem7": -5000,
+  "mes": -408000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 3,
+  "riv": 1490,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 36,
+  "js": [
+   [
+    1,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    19,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "71012",
   "nombre": "Carlos López",
   "valor": 160000,
@@ -35054,75 +35123,6 @@
   "js": [
    [
     1,
-    null,
-    19,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "60227",
-  "nombre": "Wojciech Szczęsny",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -18000,
-  "sem7": -5000,
-  "mes": -408000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 3,
-  "riv": 1490,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 36,
-  "js": [
-   [
-    1,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    4,
     null,
     19,
     0,
