@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-14T02:08:16.261Z",
+ "cuando": "2026-09-14T03:08:32.444Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -14,12 +14,6 @@
    "titulo": "Recopilación de todos los análisis fantasy de jugadores 26/27",
    "url": "https://www.futbolfantasy.com/laliga/noticias/147949-recopilacion-de-todos-los-analisis-fantasy-de-jugadores-de-pretemporada",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "02/09",
-   "titulo": "Mercado de fichajes de LaLiga 2026/27. Altas, bajas, cesiones y cifras de traspasos",
-   "url": "https://www.futbolfantasy.com/mercado-de-fichajes-laliga-verano-2026",
-   "categoria": "mercado"
   },
   {
    "fecha": "13/09",
@@ -482,6 +476,12 @@
    "titulo": "Roberto toca el cielo de Pamplona",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151097-roberto-toca-el-cielo-de-pamplona",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "12/09",
+   "titulo": "Jornada 5: Osasuna 0-2 Espanyo. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22467-osasuna-espanyol",
+   "categoria": "partido"
   }
  ]
 }
