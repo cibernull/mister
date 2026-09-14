@@ -1531,7 +1531,7 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 4.5,
-  "mediaFuera": 7.5,
+  "mediaFuera": 8,
   "edad": 30,
   "titular": null,
   "titularidades": 2,
@@ -1574,7 +1574,7 @@
    },
    {
     "jornada": 5,
-    "puntos": 6,
+    "puntos": 7,
     "rival": 12,
     "como": "inicio",
     "eventos": []
