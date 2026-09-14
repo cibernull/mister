@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-14T21:08:27.576Z",
+ "cuando": "2026-09-14T21:38:34.725Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -7,6 +7,18 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 de los que han jugado la 5",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Pellegrini valora el triunfo y habla de Dani Ceballos, Lo Celso, Abde, Antony y el Villarreal de Íñigo Pérez",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151225-pellegrini-valora-el-triunfo-y-habla-de-dani-ceballos-lo-celso-abde-antony-y-el-villarreal-de",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "El Betis invoca al Villarreal de Lotina",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151224-el-betis-invoca-al-villarreal-de-lotina",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Hidalgo, sobre el buen inicio del equipo, Casadó y Bordalás",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151150-hidalgo-sobre-el-buen-inicio-del-equipo-casado-y-bordalas",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Un golpe en la nariz provocó el cambio de Gerard Martín en el descanso",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151149-un-golpe-en-la-nariz-provoco-el-cambio-de-gerard-martin-en-el-descanso",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Braulio Vázquez es oficialmente nuevo director deportivo del Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151147-braulio-vazquez-es-oficialmente-nuevo-director-deportivo-del-valencia",
-   "categoria": "mercado"
   }
  ]
 }
