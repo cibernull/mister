@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-14T19:08:21.542Z",
+ "cuando": "2026-09-14T19:23:52.657Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -13,6 +13,18 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 de los que han jugado la 5",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "El Rayo podrá volver a Vallecas en la jornada 8 ante el Athletic Club",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151215-el-rayo-podra-volver-a-vallecas-en-la-jornada-8-ante-el-athletic-club",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Ratkov debuta en un escenario incómodo sin margen para convencer",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151214-ratkov-debuta-en-un-escenario-incomodo-sin-margen-para-convencer",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Jornada 5: Celta 1-1 Málaga. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22464-celta-malaga",
    "categoria": "partido"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "El Athletic descansa con Guruzeta y Peio Canales en el punto de mira",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151138-el-athletic-descansa-con-guruzeta-y-peio-canales-en-el-punto-de-mira",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "El Valencia anuncia la destitución de Carlos Corberán y Ron Gourlay",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151137-el-valencia-anuncia-la-destitucion-de-carlos-corberan-y-ron-gourlay",
-   "categoria": "mercado"
   }
  ]
 }
