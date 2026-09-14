@@ -1,7 +1,7 @@
 {
- "cuando": "2026-09-14T18:38:29.661Z",
+ "cuando": "2026-09-14T21:08:26.530Z",
  "fuente": "futbolfantasy.com",
- "leidos": 540,
+ "leidos": 510,
  "jugadores": {
   "10": {
    "prob": 80,
@@ -101,15 +101,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 267
-  },
-  "306": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 128,
-   "lesion": "Fractura de nariz",
-   "desde": "04/09 (10 días)",
-   "hasta": null
   },
   "308": {
    "prob": 70,
@@ -469,7 +460,7 @@
    "min": 0
   },
   "13011": {
-   "prob": 0,
+   "prob": 10,
    "sancionado": 0,
    "fuera": 0,
    "min": 0,
@@ -613,15 +604,6 @@
    "min": 321,
    "lesion": "Molestias sin determinar",
    "desde": "14/09 (1 día)",
-   "hasta": null
-  },
-  "17450": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Operado del menisco",
-   "desde": "14/05 (123 días)",
    "hasta": null
   },
   "17452": {
@@ -831,15 +813,6 @@
    "fuera": 0,
    "min": 304
   },
-  "23369": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 270,
-   "lesion": "Molestias en el tendón de Aquiles",
-   "desde": "28/08 (17 días)",
-   "hasta": null
-  },
   "23664": {
    "prob": 70,
    "sancionado": 0,
@@ -962,12 +935,6 @@
    "lesion": "Lesión en el aductor",
    "desde": "16/07 (60 días)",
    "hasta": null
-  },
-  "27855": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0
   },
   "27861": {
    "prob": 50,
@@ -2308,7 +2275,7 @@
    "min": 47
   },
   "68361": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 96,

@@ -313,7 +313,7 @@
   "mediaCasa": 4.5,
   "mediaFuera": 8,
   "edad": 35,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
@@ -352,7 +352,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-14",
-  "partidos": 3
+  "partidos": 4
  },
  "96": {
   "nombre": "Dani Ceballos",
@@ -360,11 +360,11 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 0,
+  "mediaFuera": 2,
   "edad": 30,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 0,
+  "suplencias": 1,
   "jornadas": [
    {
     "jornada": 1,
@@ -386,11 +386,20 @@
     "rival": 12,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 2,
+    "rival": 20,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 0
+  "dia": "2026-09-14",
+  "partidos": 1
  },
  "118": {
   "nombre": "Jonny Otto",
@@ -898,10 +907,10 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 2.5,
-  "mediaFuera": 2.5,
+  "mediaFuera": 3,
   "edad": 34,
-  "titular": true,
-  "titularidades": 2,
+  "titular": null,
+  "titularidades": 3,
   "suplencias": 2,
   "jornadas": [
    {
@@ -939,11 +948,20 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 4,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-14",
+  "partidos": 5
  },
  "361": {
   "nombre": "Yuri Berchiche",
@@ -1204,12 +1222,12 @@
  "476": {
   "nombre": "Gerard Moreno",
   "posicion": 4,
-  "goles": 1,
+  "goles": 2,
   "tarjetas": 0,
   "mediaCasa": 7,
   "mediaFuera": 5.3,
   "edad": 34,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 2,
   "jornadas": [
@@ -1253,7 +1271,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-14",
-  "partidos": 4
+  "partidos": 5
  },
  "557": {
   "nombre": "Pablo Fornals",
@@ -1261,10 +1279,10 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 3.5,
-  "mediaFuera": 2,
+  "mediaFuera": 2.7,
   "edad": 30,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
    {
@@ -1298,11 +1316,20 @@
     "rival": 15,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 4,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-14",
+  "partidos": 5
  },
  "561": {
   "nombre": "Marcos Llorente",
@@ -1991,10 +2018,10 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 3.5,
-  "mediaFuera": 2,
+  "mediaFuera": 3,
   "edad": 29,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
    {
@@ -2029,11 +2056,18 @@
     "eventos": [
      "yellow"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 4,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
-  "dia": "2026-09-08",
-  "partidos": 3
+  "dia": "2026-09-14",
+  "partidos": 4
  },
  "4753": {
   "nombre": "Yeray Álvarez",
@@ -3569,13 +3603,13 @@
  "12915": {
   "nombre": "Cucho Hernández",
   "posicion": 4,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 3.5,
-  "mediaFuera": 1.5,
+  "mediaFuera": 3,
   "edad": 27,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
    {
@@ -3614,22 +3648,32 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 6,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": [
+     "sub_out",
+     "goal"
+    ]
    }
   ],
   "asistencias": 1,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-14",
+  "partidos": 5
  },
  "12946": {
   "nombre": "Santi Comesaña",
   "posicion": 3,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 2,
+  "mediaCasa": 2.5,
   "mediaFuera": 2,
   "edad": 29,
   "titular": null,
-  "titularidades": 3,
+  "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
    {
@@ -3668,11 +3712,18 @@
      "yellow",
      "sub_in"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 3,
+    "rival": 4,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-14",
+  "partidos": 5
  },
  "12949": {
   "nombre": "Thomas Lemar",
@@ -4264,11 +4315,11 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 0,
+  "mediaFuera": 1,
   "edad": 30,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 0,
+  "suplencias": 1,
   "jornadas": [
    {
     "jornada": 1,
@@ -4276,11 +4327,20 @@
     "rival": 19,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 1,
+    "rival": 20,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 0
+  "dia": "2026-09-14",
+  "partidos": 1
  },
  "15338": {
   "nombre": "Robin Le Normand",
@@ -5610,7 +5670,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-14",
-  "partidos": 4
+  "partidos": 5
  },
  "19927": {
   "nombre": "Raúl García de Haro",
@@ -7496,10 +7556,10 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 4,
-  "mediaFuera": 2.5,
+  "mediaFuera": 3,
   "edad": 27,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
    {
@@ -7534,11 +7594,18 @@
     "rival": 15,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 4,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
   "dia": "2026-09-14",
-  "partidos": 4
+  "partidos": 5
  },
  "27852": {
   "nombre": "Daniel Vivian",
@@ -9232,10 +9299,10 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 4,
-  "mediaFuera": 1,
+  "mediaFuera": 2.7,
   "edad": 31,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
    {
@@ -9269,11 +9336,18 @@
     "rival": 15,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 6,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-14",
+  "partidos": 5
  },
  "33053": {
   "nombre": "Adrián de la Fuente",
@@ -9426,10 +9500,10 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 2,
+  "mediaFuera": 3.5,
   "edad": 24,
   "titular": null,
-  "titularidades": 0,
+  "titularidades": 1,
   "suplencias": 1,
   "jornadas": [
    {
@@ -9447,11 +9521,20 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 5,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 1
+  "dia": "2026-09-14",
+  "partidos": 2
  },
  "33896": {
   "nombre": "Ilias Akhomach",
@@ -10935,7 +11018,7 @@
   "mediaCasa": 3,
   "mediaFuera": 6.7,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -10975,19 +11058,19 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-14",
-  "partidos": 4
+  "partidos": 5
  },
  "52189": {
   "nombre": "Ayoze Pérez",
   "posicion": 4,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 3,
+  "mediaCasa": 1.5,
   "mediaFuera": 3,
   "edad": 33,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -11025,11 +11108,20 @@
      "sub_out",
      "assist"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 0,
+    "rival": 4,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 1,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-14",
+  "partidos": 5
  },
  "52371": {
   "nombre": "Iker Muñoz",
@@ -11336,12 +11428,12 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 3,
+  "mediaCasa": 2.5,
   "mediaFuera": 2.7,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -11379,11 +11471,20 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 2,
+    "rival": 4,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 1,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-14",
+  "partidos": 5
  },
  "53107": {
   "nombre": "Sergi Cardona",
@@ -11438,7 +11539,7 @@
   "mediaCasa": 9,
   "mediaFuera": 5,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -11475,7 +11576,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-14",
-  "partidos": 4
+  "partidos": 5
  },
  "53114": {
   "nombre": "Jude Bellingham",
@@ -11694,11 +11795,11 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 2,
-  "mediaCasa": 0,
+  "mediaCasa": 2,
   "mediaFuera": 2.7,
   "edad": 24,
   "titular": null,
-  "titularidades": 3,
+  "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
    {
@@ -11735,11 +11836,20 @@
     "rival": 6,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 2,
+    "rival": 4,
+    "como": "inicio",
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 3
+  "dia": "2026-09-14",
+  "partidos": 4
  },
  "54900": {
   "nombre": "Carlos Dotor",
@@ -12267,11 +12377,11 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 0,
+  "mediaCasa": 3,
   "mediaFuera": 3,
   "edad": 24,
   "titular": null,
-  "titularidades": 3,
+  "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
    {
@@ -12303,11 +12413,18 @@
     "rival": 6,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 3,
+    "rival": 4,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 3
+  "dia": "2026-09-14",
+  "partidos": 4
  },
  "55966": {
   "nombre": "Adrià Altimira",
@@ -13636,7 +13753,7 @@
   "mediaCasa": 10,
   "mediaFuera": 7.3,
   "edad": 31,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -13680,7 +13797,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-14",
-  "partidos": 4
+  "partidos": 5
  },
  "59395": {
   "nombre": "Pedro Díaz",
@@ -13885,12 +14002,12 @@
  "59499": {
   "nombre": "Natan Souza",
   "posicion": 2,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 2,
   "mediaCasa": 5.5,
   "mediaFuera": -1,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
   "jornadas": [
@@ -13928,8 +14045,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 3
+  "dia": "2026-09-14",
+  "partidos": 4
  },
  "59506": {
   "nombre": "Javi Rodríguez",
@@ -14450,11 +14567,11 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 3,
   "mediaFuera": 0,
   "edad": 21,
   "titular": null,
-  "titularidades": 0,
+  "titularidades": 1,
   "suplencias": 0,
   "jornadas": [
    {
@@ -14484,11 +14601,18 @@
     "rival": 6,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 3,
+    "rival": 4,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 0
+  "dia": "2026-09-14",
+  "partidos": 1
  },
  "60218": {
   "nombre": "Peio Canales",
@@ -15088,7 +15212,7 @@
   "mediaCasa": 5.5,
   "mediaFuera": 4.5,
   "edad": 26,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -15125,18 +15249,18 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-14",
-  "partidos": 4
+  "partidos": 5
  },
  "61092": {
   "nombre": "Tajon Buchanan",
   "posicion": 3,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 2,
+  "mediaCasa": 2.5,
   "mediaFuera": 3.7,
   "edad": 27,
   "titular": null,
-  "titularidades": 1,
+  "titularidades": 2,
   "suplencias": 3,
   "jornadas": [
    {
@@ -15175,11 +15299,20 @@
      "yellow",
      "sub_in"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 3,
+    "rival": 4,
+    "como": "inicio",
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-14",
+  "partidos": 5
  },
  "61093": {
   "nombre": "Maroan Sannadi",
@@ -16806,11 +16939,11 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 2,
-  "mediaFuera": 2.5,
+  "mediaFuera": 2.7,
   "edad": 26,
   "titular": null,
   "titularidades": 1,
-  "suplencias": 3,
+  "suplencias": 4,
   "jornadas": [
    {
     "jornada": 1,
@@ -16845,11 +16978,20 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 3,
+    "rival": 20,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "dia": "2026-09-14",
+  "partidos": 5
  },
  "65090": {
   "nombre": "Filip Ugrinic",
@@ -17213,11 +17355,11 @@
   "nombre": "Renato Veiga",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 2,
   "mediaFuera": 3.7,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -17250,9 +17392,9 @@
     "eventos": []
    }
   ],
-  "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 4
+  "asistencias": 1,
+  "dia": "2026-09-14",
+  "partidos": 5
  },
  "65475": {
   "nombre": "Asier Osambela",
@@ -17379,7 +17521,7 @@
   "edad": 26,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 3,
+  "suplencias": 4,
   "jornadas": [
    {
     "jornada": 1,
@@ -17414,11 +17556,20 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 2,
+    "rival": 4,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 3
+  "dia": "2026-09-14",
+  "partidos": 4
  },
  "65669": {
   "nombre": "Grady Diangana",
@@ -17536,7 +17687,7 @@
   "mediaCasa": 2,
   "mediaFuera": 5.7,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 1,
   "jornadas": [
@@ -17580,7 +17731,7 @@
   ],
   "asistencias": 1,
   "dia": "2026-09-14",
-  "partidos": 4
+  "partidos": 5
  },
  "65721": {
   "nombre": "Dominik Livakovic",
@@ -18483,12 +18634,12 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 3,
+  "mediaCasa": 2.5,
   "mediaFuera": 2,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
-  "suplencias": 2,
+  "suplencias": 3,
   "jornadas": [
    {
     "jornada": 1,
@@ -18521,11 +18672,20 @@
     "rival": 6,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 2,
+    "rival": 4,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-08",
-  "partidos": 3
+  "dia": "2026-09-14",
+  "partidos": 4
  },
  "68652": {
   "nombre": "Ville Koski",
@@ -21901,11 +22061,11 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 4,
-  "mediaFuera": 2.5,
+  "mediaFuera": 1.7,
   "edad": 23,
   "titular": null,
   "titularidades": 4,
-  "suplencias": 0,
+  "suplencias": 1,
   "jornadas": [
    {
     "jornada": 1,
@@ -21944,15 +22104,17 @@
    },
    {
     "jornada": 5,
-    "puntos": null,
+    "puntos": 0,
     "rival": 20,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-14",
-  "partidos": 4
+  "partidos": 5
  },
  "71138": {
   "nombre": "Ryunosuke Sato",
@@ -23341,11 +23503,11 @@
   "posicion": 1,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 7,
   "mediaFuera": 0,
   "edad": 36,
   "titular": null,
-  "titularidades": 0,
+  "titularidades": 1,
   "suplencias": 0,
   "jornadas": [
    {
@@ -23378,7 +23540,7 @@
    },
    {
     "jornada": 5,
-    "puntos": null,
+    "puntos": 7,
     "rival": 4,
     "como": "inicio",
     "eventos": []
@@ -23386,7 +23548,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-14",
-  "partidos": 0
+  "partidos": 1
  },
  "71790": {
   "nombre": "Saba Sazonov",
@@ -24474,7 +24636,7 @@
     "jornada": 5,
     "puntos": null,
     "rival": 20,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -24704,12 +24866,12 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 5,
+  "mediaCasa": 3,
   "mediaFuera": 0,
   "edad": 22,
   "titular": null,
   "titularidades": 1,
-  "suplencias": 0,
+  "suplencias": 1,
   "jornadas": [
    {
     "jornada": 1,
@@ -24741,7 +24903,7 @@
    },
    {
     "jornada": 5,
-    "puntos": null,
+    "puntos": 1,
     "rival": 4,
     "como": "banquillo",
     "eventos": [
@@ -24751,7 +24913,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-14",
-  "partidos": 1
+  "partidos": 2
  },
  "3848674": {
   "nombre": "Matteo Prati",

@@ -1,19 +1,49 @@
 {
- "cuando": "2026-09-14T20:38:19.503Z",
+ "cuando": "2026-09-14T21:08:27.576Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "14/09",
-   "titulo": "Sigue en directo el Villarreal - Betis",
-   "url": "https://www.futbolfantasy.com/partidos/22472-villarreal-betis",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 de los que han jugado la 5",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Jornada 5: Villarreal 1-2 Betis. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22472-villarreal-betis",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "As apuesta por cuatro novedades en el once de Mourinho para Elche",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151223-as-apuesta-por-cuatro-novedades-en-el-once-de-mourinho-para-elche",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "As cree que Hidalgo rotará en la línea defensiva",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151222-as-cree-que-hidalgo-rotara-en-la-linea-defensiva",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "El Alavés se ejercitó este lunes sin los tres lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151221-el-alaves-se-ejercito-este-lunes-sin-los-tres-lesionados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "El Deportivo retoma los entrenamientos sin nuevos contratiempos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151220-el-deportivo-retoma-los-entrenamientos-sin-nuevos-contratiempos",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Jorfre y Gorosabel, fuera de la lista para viajar a Butarque",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151219-jorfre-y-gorosabel-fuera-de-la-lista-para-viajar-a-butarque",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "14/09",
@@ -452,36 +482,6 @@
    "titulo": "Braulio Vázquez es oficialmente nuevo director deportivo del Valencia",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151147-braulio-vazquez-es-oficialmente-nuevo-director-deportivo-del-valencia",
    "categoria": "mercado"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Análisis Fantasy de Óscar Sánchez: Un técnico provisional para sacar a flote al Valencia antes del parón",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151146-analisis-fantasy-de-oscar-sanchez-un-tecnico-provisional-para-sacar-a-flote-al-valencia-antes",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Giráldez expresa sus sensciones y habla de Aspas, Borja Iglesias y la falta de acierto",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151145-giraldez-expresa-sus-sensciones-y-habla-de-aspas-borja-iglesias-y-la-falta-de-acierto",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Funes valora el empate y habla de Adrián Niño, los revulsivos, Dotor y el virus que afectó a la plantilla",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151144-funes-valora-el-empate-y-habla-de-adrian-nino-los-revulsivos-dotor-y-el-virus-que-afecto-a-la",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "El Racing retoma los entrenamientos sin los dos lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151143-el-racing-retoma-los-entrenamientos-sin-los-dos-lesionados",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "El Málaga deja al Celta girando en círculos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151142-el-malaga-deja-al-celta-girando-en-circulos",
-   "categoria": "análisis"
   }
  ]
 }
