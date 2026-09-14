@@ -1,13 +1,31 @@
 {
- "cuando": "2026-09-14T17:38:24.349Z",
+ "cuando": "2026-09-14T18:08:24.183Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "14/09",
+   "titulo": "Alineaciones confirmadas del Villarreal - Betis",
+   "url": "https://www.futbolfantasy.com/partidos/22472-villarreal-betis",
+   "categoria": "rueda de prensa"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 de los que han jugado la 5",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "Zubeldia sigue al margen en el inicio de semana de la Real Sociedad",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151211-zubeldia-sigue-margen-inicio-semana-real-sociedad",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "14/09",
+   "titulo": "El Dépor declara cedible a Gijselhart antes de que cierren los mercados extranjeros",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151209-depor-declara-cedible-gijselhart-antes-cierren-mercados-extranjeros",
+   "categoria": "mercado"
   },
   {
    "fecha": "14/09",
@@ -463,24 +481,6 @@
    "fecha": "13/09",
    "titulo": "Luis Castro prioriza la intersemanal y dosifica piezas titulares contra el Barça",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151135-luis-castro-prioriza-la-intersemanal-y-dosifica-piezas-clave-contra-el-barca",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Diego Llorente se queda fuera de la lista por molestias de última hora",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151134-diego-llorente-se-queda-fuera-de-la-lista-por-molestias-de-ultima-hora",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Berenguer pide protagonismo en la intersemanal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151132-berenguer-pide-protagonismo-en-la-intersemanal",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "El Bernabéu juzga la primera titularidad de Diomandé",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151131-el-bernabeu-juzga-la-primera-titularidad-de-diomande",
    "categoria": "análisis"
   }
  ]
