@@ -1063,6 +1063,16 @@
  ],
  "movimientos": [
   {
+   "id": "27874",
+   "nombre": "Iván Martín",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 1453340,
+   "tipo": "normal",
+   "fecha": "2026-09-14 07:33:09",
+   "pos": 3
+  },
+  {
    "id": "70936",
    "nombre": "Manu Hernando",
    "de": "Mario80",
@@ -5943,6 +5953,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Iván Martín",
+     "id": "27874",
+     "tipo": "venta",
+     "importe": 1453340,
+     "fecha": "2026-09-14",
+     "op": "normal"
+    },
+    {
      "j": "Rodrigo Riquelme",
      "id": "19727",
      "tipo": "venta",
@@ -6569,8 +6587,8 @@
     "27874": {
      "nombre": "Iván Martín",
      "compras": 633120,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1453340,
+     "ops": 2
     },
     "28621": {
      "nombre": "Abdel Abqar",
