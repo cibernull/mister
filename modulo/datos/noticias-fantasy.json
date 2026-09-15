@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-15T13:08:19.665Z",
+ "cuando": "2026-09-15T13:35:43.642Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -20,6 +20,12 @@
    "titulo": "Alineaciones probables para la jornada 6 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Parte médico oficial de Andrés Antañón y periodo estimado de baja",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151284-parte-medico-oficial-de-andres-antanon-y-periodo-estimado-de-baja",
+   "categoria": "lesión"
   },
   {
    "fecha": "15/09",
@@ -476,12 +482,6 @@
    "titulo": "Julián Alvarez trabaja el margen con el derbi como objetivo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151206-julian-alvarez-trabaja-derbi-como-objetivo",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "El Atlético retoma el trabajo sin Julián, Sorloth, Barrios ni Koke",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151205-el-atletico-retoma-el-trabajo-sin-julian-sorloth-barrios-ni-koke",
-   "categoria": "entrenamiento"
   }
  ]
 }
