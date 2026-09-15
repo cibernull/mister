@@ -15910,7 +15910,7 @@
   "mediaCasa": 3,
   "mediaFuera": 1.5,
   "edad": 19,
-  "titular": null,
+  "titular": true,
   "titularidades": 1,
   "suplencias": 4,
   "jornadas": [
@@ -24665,7 +24665,7 @@
   "nombre": "Giorgi Tsitaishvili",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 2,
   "mediaFuera": 3,
   "edad": 25,
@@ -24715,7 +24715,10 @@
     "puntos": null,
     "rival": 8,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow",
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -25669,8 +25672,10 @@
     "jornada": 6,
     "puntos": null,
     "rival": 8,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -26891,7 +26896,9 @@
     "puntos": null,
     "rival": 8,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,

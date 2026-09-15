@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-15T18:14:07.490Z",
+ "cuando": "2026-09-15T18:38:38.084Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "15/09",
+   "titulo": "Sigue en directo el Alavés - Valencia",
+   "url": "https://www.futbolfantasy.com/partidos/22474-alaves-valencia",
+   "categoria": "análisis"
+  },
   {
    "fecha": "15/09",
    "titulo": "Sigue en directo el Rayo - Espanyol",
@@ -20,6 +26,24 @@
    "titulo": "¡Juega a la Europa League 26/27 en el Fantasy✨ y gana una camiseta!",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151259-juega-a-la-europa-league-26-27-en-el-fantasy-y-gana-una-camiseta",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Alineaciones confirmadas del Elche - Real Madrid",
+   "url": "https://www.futbolfantasy.com/partidos/22476-elche-real-madrid",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Giráldez habla de Miguel Román, Borja Iglesias, Jones, Febas y el partido contra el Omonia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151301-claudio-giraldez-habla-miguel-roman-borja-iglesias-jones-aleix-febas",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Simeone convoca a los disponibles menos Julián Alvarez, Barrios y Sorloth",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151300-simeone-convoca-a-los-disponibles-menos-julian-alvarez-barrios-y-sorloth",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "15/09",
@@ -56,12 +80,6 @@
    "titulo": "Hamza Abdelkarim renueva con el FC Barcelona hasta 2030",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151294-hamza-abdelkarim-renueva-con-el-fc-barcelona-hasta-2030",
    "categoria": "mercado"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Alineaciones confirmadas del Alavés - Valencia",
-   "url": "https://www.futbolfantasy.com/partidos/22474-alaves-valencia",
-   "categoria": "rueda de prensa"
   },
   {
    "fecha": "15/09",
@@ -463,24 +481,6 @@
    "fecha": "14/09",
    "titulo": "El Betis invoca al Villarreal de Lotina",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151224-el-betis-invoca-al-villarreal-de-lotina",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Jornada 5: Villarreal 1-2 Betis. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22472-villarreal-betis",
-   "categoria": "partido"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "As apuesta por cuatro novedades en el once de Mourinho para Elche",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151223-as-apuesta-por-cuatro-novedades-en-el-once-de-mourinho-para-elche",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "As cree que Hidalgo rotará en la línea defensiva",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151222-as-cree-que-hidalgo-rotara-en-la-linea-defensiva",
    "categoria": "análisis"
   }
  ]
