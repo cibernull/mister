@@ -10096,7 +10096,7 @@
   "mediaCasa": 0,
   "mediaFuera": 1.5,
   "edad": 30,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 2,
   "jornadas": [
@@ -10497,7 +10497,7 @@
   "mediaCasa": 2.3,
   "mediaFuera": 2,
   "edad": 26,
-  "titular": null,
+  "titular": true,
   "titularidades": 1,
   "suplencias": 4,
   "jornadas": [
@@ -10999,7 +10999,7 @@
   "mediaCasa": 3,
   "mediaFuera": 2.7,
   "edad": 26,
-  "titular": null,
+  "titular": true,
   "titularidades": 2,
   "suplencias": 3,
   "jornadas": [
@@ -20738,7 +20738,7 @@
   "mediaCasa": 3,
   "mediaFuera": 3.3,
   "edad": 23,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 4,
   "jornadas": [
@@ -21601,7 +21601,7 @@
   "mediaCasa": 3.5,
   "mediaFuera": 2.3,
   "edad": 20,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
@@ -21851,7 +21851,7 @@
   "mediaCasa": 3,
   "mediaFuera": 3,
   "edad": 25,
-  "titular": null,
+  "titular": true,
   "titularidades": 3,
   "suplencias": 2,
   "jornadas": [
@@ -22546,7 +22546,7 @@
   "mediaCasa": 4,
   "mediaFuera": 2,
   "edad": 23,
-  "titular": null,
+  "titular": true,
   "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
@@ -23450,7 +23450,7 @@
   "mediaCasa": 3,
   "mediaFuera": 1,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 1,
   "jornadas": [
@@ -24417,7 +24417,7 @@
   "mediaCasa": 4,
   "mediaFuera": 5,
   "edad": 21,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 1,
   "jornadas": [
@@ -24540,7 +24540,7 @@
   "mediaCasa": 1,
   "mediaFuera": 1,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 1,
   "jornadas": [
@@ -25352,7 +25352,7 @@
   "mediaCasa": 3,
   "mediaFuera": 0,
   "edad": 22,
-  "titular": null,
+  "titular": true,
   "titularidades": 1,
   "suplencias": 1,
   "jornadas": [
@@ -25924,7 +25924,7 @@
   "mediaCasa": 0,
   "mediaFuera": 10,
   "edad": 26,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 1,
   "jornadas": [
@@ -26256,7 +26256,7 @@
   "mediaCasa": 2,
   "mediaFuera": 2,
   "edad": 23,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 2,
   "jornadas": [
@@ -26682,7 +26682,7 @@
   "mediaCasa": 1,
   "mediaFuera": 0,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 0,
   "jornadas": [
@@ -26898,7 +26898,7 @@
   "mediaCasa": 0,
   "mediaFuera": 2,
   "edad": 20,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 1,
   "jornadas": [

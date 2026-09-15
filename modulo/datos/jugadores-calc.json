@@ -220,7 +220,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": null,
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -7391,7 +7391,7 @@
   "pv": 5165000,
   "ced": 0,
   "pos": 2,
-  "est": null,
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -8286,7 +8286,7 @@
   "mf": 5,
   "tit": 3,
   "sup": 1,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 21,
   "js": [
@@ -11791,7 +11791,7 @@
   "mf": 3,
   "tit": 3,
   "sup": 2,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 25,
   "js": [
@@ -12871,7 +12871,7 @@
   "mf": 2,
   "tit": 4,
   "sup": 1,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 23,
   "js": [
@@ -13313,7 +13313,7 @@
   "mf": 2.7,
   "tit": 2,
   "sup": 3,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 26,
   "js": [
@@ -13458,7 +13458,7 @@
   "mf": 2.3,
   "tit": 4,
   "sup": 1,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 20,
   "js": [
@@ -14029,7 +14029,7 @@
   "mf": 3.3,
   "tit": 0,
   "sup": 4,
-  "once": null,
+  "once": 1,
   "asis": 1,
   "edad": 23,
   "js": [
@@ -15999,7 +15999,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": null,
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -17320,7 +17320,7 @@
   "mf": 2,
   "tit": 1,
   "sup": 4,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 26,
   "js": [
@@ -17479,7 +17479,7 @@
   "mf": 10,
   "tit": 0,
   "sup": 1,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 26,
   "js": [
@@ -17825,7 +17825,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "doubt",
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -19090,7 +19090,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": null,
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -20853,7 +20853,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "doubt",
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -22464,7 +22464,7 @@
   "mf": 0,
   "tit": 1,
   "sup": 1,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 22,
   "js": [
@@ -25203,7 +25203,7 @@
   "mf": 2,
   "tit": 0,
   "sup": 2,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 23,
   "js": [
@@ -25427,7 +25427,7 @@
   "mf": 1,
   "tit": 1,
   "sup": 1,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 22,
   "js": [
@@ -27156,7 +27156,7 @@
   "mf": 1.5,
   "tit": 0,
   "sup": 2,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 30,
   "js": [
@@ -27667,7 +27667,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "doubt",
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -28124,7 +28124,7 @@
   "mf": 2,
   "tit": 0,
   "sup": 1,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 20,
   "js": [
@@ -28181,7 +28181,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": null,
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -29136,7 +29136,7 @@
   "mf": 1,
   "tit": 1,
   "sup": 1,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 22,
   "js": [
@@ -29406,7 +29406,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -29680,7 +29680,7 @@
   "mf": 0,
   "tit": 1,
   "sup": 0,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 23,
   "js": [
@@ -36813,7 +36813,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "doubt",
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -36941,7 +36941,7 @@
   "pv": 1106000,
   "ced": 0,
   "pos": 2,
-  "est": null,
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [

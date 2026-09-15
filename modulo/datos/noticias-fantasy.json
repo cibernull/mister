@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-15T13:35:43.642Z",
+ "cuando": "2026-09-15T14:08:17.062Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "15/09",
-   "titulo": "SER Catalunya sorprende pronosticando que Flick solo introducirá un cambio en el once",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151283-ser-catalunya-sorprende-pronosticando-que-flick-solo-introducira-un-cambio-en-el-once",
-   "categoria": "rueda de prensa"
+   "titulo": "Quique anuncia la lista de convocados para recibir al Valencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151285-quique-anuncia-la-lista-de-convocados-para-recibir-al-valencia",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "15/09",
@@ -23,9 +23,27 @@
   },
   {
    "fecha": "15/09",
+   "titulo": "Los mejores jugadores para la jornada 6 de LaLiga Fantasy 26/27, por Carrasco",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151287-los-mejores-jugadores-para-la-jornada-6-de-laliga-fantasy-26-27-por-carrasco",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "El mejor XI de la jornada 5 de Liga, por Huugo_21",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151286-el-mejor-xi-de-la-jornada-5-de-liga-por-huugo-21",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
    "titulo": "Parte médico oficial de Andrés Antañón y periodo estimado de baja",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151284-parte-medico-oficial-de-andres-antanon-y-periodo-estimado-de-baja",
    "categoria": "lesión"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "SER Catalunya sorprende pronosticando que Flick solo introducirá un cambio en el once",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151283-ser-catalunya-sorprende-pronosticando-que-flick-solo-introducira-un-cambio-en-el-once",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "15/09",
@@ -464,24 +482,6 @@
    "titulo": "El Dépor declara cedible a Gijselhart antes de que cierren los mercados extranjeros",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151209-depor-declara-cedible-gijselhart-antes-cierren-mercados-extranjeros",
    "categoria": "mercado"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Andrés y Eriksson siguen al margen en los entrenamientos del Racing",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151208-andres-eriksson-siguen-margen-entrenamientos-racing",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Camello arrastra molestias, pero San José cuenta con él ante el Espanyol",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151207-camello-arrastra-molestias-san-jose-cuenta-el-espanyol",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Julián Alvarez trabaja el margen con el derbi como objetivo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151206-julian-alvarez-trabaja-derbi-como-objetivo",
-   "categoria": "lesión"
   }
  ]
 }
