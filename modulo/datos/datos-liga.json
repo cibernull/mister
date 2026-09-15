@@ -1068,6 +1068,16 @@
  ],
  "movimientos": [
   {
+   "id": "64382",
+   "nombre": "Gabriel Suazo",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 3934360,
+   "tipo": "normal",
+   "fecha": "2026-09-15 17:06:26",
+   "pos": 2
+  },
+  {
    "id": "118",
    "nombre": "Jonny Otto",
    "de": "Niutin FC (Isaac)",
@@ -6018,6 +6028,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Gabriel Suazo",
+     "id": "64382",
+     "tipo": "compra",
+     "importe": 3934360,
+     "fecha": "2026-09-15",
+     "op": "normal"
+    },
+    {
      "j": "Iván Martín",
      "id": "27874",
      "tipo": "venta",
@@ -6750,6 +6768,12 @@
      "compras": 914960,
      "ventas": 1605760,
      "ops": 2
+    },
+    "64382": {
+     "nombre": "Gabriel Suazo",
+     "compras": 3934360,
+     "ventas": 0,
+     "ops": 1
     },
     "65476": {
      "nombre": "Clemens Riedel",
