@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-15T07:38:12.922Z",
+ "cuando": "2026-09-15T07:47:06.864Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -7,6 +7,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Valentini y Yusi se cuelan en los onces de las previas de la prensa de Álava",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151252-valentini-y-yusi-se-cuelan-en-los-onces-de-las-previas-de-la-prensa-de-alava",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "El Real Madrid termina de preparar el partido del Elche con tres bajas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151174-el-real-madrid-termina-de-preparar-el-partido-del-elche-con-tres-bajas",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Mourinho habla de Vinicius, Arda Güler, Tchouaméni, Valverde, Lamine Yamal, Yan Diomande y las rotaciones",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151173-mourinho-habla-de-vinicius-arda-guler-tchouameni-valverde-lamine-yamal-yan-diomande-y-las-rot",
-   "categoria": "rueda de prensa"
   }
  ]
 }
