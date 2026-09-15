@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-15T15:39:00.305Z",
+ "cuando": "2026-09-15T16:08:12.752Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "15/09",
+   "titulo": "Alineaciones confirmadas del Rayo - Espanyol",
+   "url": "https://www.futbolfantasy.com/partidos/22480-rayo-espanyol",
+   "categoria": "rueda de prensa"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 actualizadas",
@@ -14,6 +20,12 @@
    "titulo": "¡Juega a la Europa League 26/27 en el Fantasy✨ y gana una camiseta!",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151259-juega-a-la-europa-league-26-27-en-el-fantasy-y-gana-una-camiseta",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Diego Pablo Simeone confirma la baja de Julián Álvarez y habla de Jonathan David y Obed Vargas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151291-diego-pablo-simeone-confirma-baja-julian-alvarez-habla-jonathan-david-obed-vargas",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "15/09",
@@ -470,18 +482,6 @@
    "titulo": "Ratkov debuta en un escenario incómodo sin margen para convencer",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151214-ratkov-debuta-en-un-escenario-incomodo-sin-margen-para-convencer",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Manuel Pellegrini habla del estado de Ez Abde y Antony antes del partido en La Cerámica",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151213-manuel-pellegrini-habla-estado-ez-abde-antony-antes-partido-ceramica",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Iñigo Pérez habla de Gulacsi y de la necesidad de mejorar los resultados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151212-inigo-perez-habla-gulacsi-antes-partido-frente-betis",
-   "categoria": "rueda de prensa"
   }
  ]
 }
