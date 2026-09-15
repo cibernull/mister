@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-15T09:38:27.973Z",
+ "cuando": "2026-09-15T12:08:24.959Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -64,7 +64,7 @@
    "min": 221,
    "lesion": "Lesión en el recto anterior",
    "desde": "13/09 (2 días)",
-   "hasta": "principios de octubre"
+   "hasta": "mediados de octubre"
   },
   "208": {
    "prob": 0,
@@ -184,7 +184,7 @@
    "min": 450
   },
   "616": {
-   "prob": 50,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
    "min": 206
@@ -295,7 +295,7 @@
    "hasta": "octubre"
   },
   "5916": {
-   "prob": 70,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 258
@@ -694,13 +694,10 @@
    "min": 174
   },
   "18531": {
-   "prob": 30,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 166,
-   "lesion": "Contusión costal",
-   "desde": "30/08 (16 días)",
-   "hasta": null
+   "min": 166
   },
   "19168": {
    "prob": 70,
@@ -769,7 +766,7 @@
    "min": 197
   },
   "22495": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 109
@@ -871,7 +868,7 @@
    "min": 274
   },
   "24792": {
-   "prob": 60,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 450
@@ -895,7 +892,7 @@
    "min": 450
   },
   "25631": {
-   "prob": 70,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 402
@@ -979,10 +976,7 @@
    "prob": 50,
    "sancionado": 0,
    "fuera": 0,
-   "min": 296,
-   "lesion": "Trabajo al margen",
-   "desde": "14/09 (1 día)",
-   "hasta": null
+   "min": 296
   },
   "27869": {
    "prob": 30,
@@ -1072,7 +1066,7 @@
    "min": 310
   },
   "28784": {
-   "prob": 40,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 43
@@ -1135,7 +1129,7 @@
    "min": 381
   },
   "29235": {
-   "prob": 40,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 44
@@ -1531,10 +1525,13 @@
    "min": 371
   },
   "55045": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 100
+   "min": 100,
+   "lesion": "Esguince de rodilla",
+   "desde": "13/09 (2 días)",
+   "hasta": null
   },
   "55088": {
    "prob": 30,
@@ -1684,7 +1681,7 @@
    "min": 111
   },
   "58467": {
-   "prob": 70,
+   "prob": 60,
    "sancionado": 0,
    "fuera": 0,
    "min": 181
@@ -1933,7 +1930,10 @@
    "prob": 40,
    "sancionado": 0,
    "fuera": 0,
-   "min": 24
+   "min": 24,
+   "lesion": "Trabajo parcial",
+   "desde": "15/09 (1 día)",
+   "hasta": null
   },
   "61009": {
    "prob": 70,
@@ -2248,7 +2248,7 @@
    "min": 0
   },
   "65674": {
-   "prob": 70,
+   "prob": 60,
    "sancionado": 0,
    "fuera": 0,
    "min": 495
@@ -2875,7 +2875,7 @@
    "min": 373
   },
   "71640": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 325
@@ -2935,7 +2935,7 @@
    "min": 217
   },
   "523868": {
-   "prob": 70,
+   "prob": 60,
    "sancionado": 0,
    "fuera": 0,
    "min": 306
@@ -3079,7 +3079,7 @@
    "min": 100
   },
   "4836172": {
-   "prob": 30,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
    "min": 119
