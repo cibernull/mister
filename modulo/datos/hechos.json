@@ -2393,7 +2393,7 @@
    "cuando": "2026-08-17 17:00:16",
    "valor": 5392000,
    "posicion": 2,
-   "puntos": 22,
+   "puntos": 23,
    "media": 4.4,
    "racha": "2,4,5,3,8"
   },
@@ -2886,7 +2886,7 @@
    "cuando": "2026-08-21 08:42:40",
    "valor": 670000,
    "posicion": 3,
-   "puntos": 13,
+   "puntos": 14,
    "media": 3.3,
    "racha": "2,-,2,4,5"
   },
@@ -3107,7 +3107,7 @@
    "cuando": "2026-08-24 05:00:29",
    "valor": 2058000,
    "posicion": 2,
-   "puntos": 18,
+   "puntos": 19,
    "media": 3.6,
    "racha": "6,3,4,2,3"
   },
@@ -3328,7 +3328,7 @@
    "cuando": "2026-08-26 05:00:39",
    "valor": 235000,
    "posicion": 3,
-   "puntos": 7,
+   "puntos": 8,
    "media": 2.3,
    "racha": "3,2,2,-,-"
   },
@@ -3413,7 +3413,7 @@
    "cuando": "2026-08-26 09:04:52",
    "valor": 3135000,
    "posicion": 3,
-   "puntos": 14,
+   "puntos": 15,
    "media": 2.8,
    "racha": "3,3,1,4,3"
   },
@@ -4484,7 +4484,7 @@
    "cuando": "2026-09-05 17:08:22",
    "valor": 235000,
    "posicion": 3,
-   "puntos": 7,
+   "puntos": 8,
    "media": 2.3,
    "racha": "3,2,2,-,-"
   },
@@ -4722,7 +4722,7 @@
    "cuando": "2026-09-07 17:00:19",
    "valor": 7698000,
    "posicion": 4,
-   "puntos": 56,
+   "puntos": 57,
    "media": 11.2,
    "racha": "2,11,16,17,10"
   },
@@ -4756,7 +4756,7 @@
    "cuando": "2026-09-08 05:17:14",
    "valor": 7921000,
    "posicion": 3,
-   "puntos": 23,
+   "puntos": 30,
    "media": 4.6,
    "racha": "10,2,5,4,2"
   },
@@ -4875,7 +4875,7 @@
    "cuando": "2026-09-09 17:00:18",
    "valor": 7921000,
    "posicion": 3,
-   "puntos": 23,
+   "puntos": 30,
    "media": 4.6,
    "racha": "10,2,5,4,2"
   },
@@ -5045,7 +5045,7 @@
    "cuando": "2026-09-11 09:35:38",
    "valor": 2058000,
    "posicion": 2,
-   "puntos": 18,
+   "puntos": 19,
    "media": 3.6,
    "racha": "6,3,4,2,3"
   },
@@ -5618,23 +5618,23 @@
    "posiciones": [
     {
      "idUc": 12493752,
-     "puntos": 4,
+     "puntos": 8,
      "puesto": 1,
      "valorPlantilla": 71986000,
      "premio": 0
     },
     {
-     "idUc": 13435216,
-     "puntos": 3,
+     "idUc": 15435600,
+     "puntos": 5,
      "puesto": 2,
-     "valorPlantilla": 65327000,
+     "valorPlantilla": 35327000,
      "premio": 75000
     },
     {
-     "idUc": 15435600,
+     "idUc": 13435216,
      "puntos": 3,
      "puesto": 3,
-     "valorPlantilla": 35327000,
+     "valorPlantilla": 65327000,
      "premio": 75000
     },
     {
@@ -5646,7 +5646,7 @@
     },
     {
      "idUc": 12493688,
-     "puntos": 0,
+     "puntos": 1,
      "puesto": 5,
      "valorPlantilla": 70474000,
      "premio": 0

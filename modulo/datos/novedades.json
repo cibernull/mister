@@ -808,6 +808,48 @@
   "entra": true
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-09-15",
+  "id": "12902",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-15",
+  "id": "27422",
+  "estado": "other",
+  "equipo": "Betico1993"
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-15",
+  "id": "27517",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-15",
+  "id": "29402",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-15",
+  "id": "65104",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-15",
+  "id": "67580",
+  "estado": "other",
+  "equipo": null
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-14",
   "id": "607",
