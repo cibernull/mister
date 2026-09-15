@@ -1928,13 +1928,6 @@
     "rival": 1,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 15,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -3821,11 +3814,11 @@
   "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 11,
-  "mediaFuera": 0,
+  "mediaFuera": 2,
   "edad": 30,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -3858,11 +3851,20 @@
      "sub_in",
      "goal"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 2,
+    "rival": 1,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-12",
-  "partidos": 2
+  "dia": "2026-09-15",
+  "partidos": 3
  },
  "13005": {
   "nombre": "Andriy Lunin",
@@ -4416,13 +4418,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 23,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -6634,7 +6629,7 @@
   "nombre": "Josan Ferrández",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 2,
   "mediaFuera": 2,
   "edad": 36,
@@ -6682,9 +6677,9 @@
     "eventos": []
    }
   ],
-  "asistencias": 0,
+  "asistencias": 1,
   "dia": "2026-09-15",
-  "partidos": 2
+  "partidos": 3
  },
  "22956": {
   "nombre": "Sergio Gómez",
@@ -9658,11 +9653,11 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 0,
-  "mediaFuera": 0,
+  "mediaFuera": 2,
   "edad": 25,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 0,
+  "suplencias": 1,
   "jornadas": [
    {
     "jornada": 1,
@@ -9684,11 +9679,21 @@
     "rival": 16,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 2,
+    "rival": 1,
+    "como": "banquillo",
+    "eventos": [
+     "yellow",
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-12",
-  "partidos": 1
+  "dia": "2026-09-15",
+  "partidos": 2
  },
  "33726": {
   "nombre": "Hugo Álvarez",
@@ -10343,12 +10348,12 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 4,
   "mediaFuera": 0,
   "edad": 26,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 0,
+  "suplencias": 1,
   "jornadas": [
    {
     "jornada": 1,
@@ -10363,11 +10368,20 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 4,
+    "rival": 14,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-12",
-  "partidos": 1
+  "dia": "2026-09-15",
+  "partidos": 2
  },
  "48194": {
   "nombre": "Williot Swedberg",
@@ -13582,7 +13596,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-15",
-  "partidos": 0
+  "partidos": 1
  },
  "58954": {
   "nombre": "Kylian Mbappé",
@@ -16019,17 +16033,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 23,
-    "como": "inicio",
-    "eventos": [
-     "yellow",
-     "sub_out",
-     "assist"
-    ]
    }
   ],
   "asistencias": 1,
@@ -16144,7 +16147,7 @@
   ],
   "asistencias": 1,
   "dia": "2026-09-15",
-  "partidos": 3
+  "partidos": 4
  },
  "63705": {
   "nombre": "Ionuț Radu",
@@ -18878,14 +18881,14 @@
  "68465": {
   "nombre": "Abiel Osorio",
   "posicion": 4,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 4,
-  "mediaFuera": 0,
+  "mediaFuera": 2,
   "edad": 24,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -18916,11 +18919,21 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 2,
+    "rival": 1,
+    "como": "banquillo",
+    "eventos": [
+     "yellow",
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-12",
-  "partidos": 2
+  "dia": "2026-09-15",
+  "partidos": 3
  },
  "68495": {
   "nombre": "Martín Satriano",
@@ -20214,13 +20227,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 23,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -20277,15 +20283,6 @@
     "rival": 14,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 23,
-    "como": "inicio",
-    "eventos": [
-     "yellow"
-    ]
    }
   ],
   "asistencias": 0,
@@ -20606,13 +20603,6 @@
     "puntos": null,
     "rival": 4,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 23,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -24636,13 +24626,6 @@
      "sub_out",
      "penalty"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 15,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -25256,13 +25239,6 @@
     "puntos": null,
     "rival": 1,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 15,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -26235,7 +26211,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-15",
-  "partidos": 2
+  "partidos": 3
  },
  "4836172": {
   "nombre": "Lucas Stassin",
