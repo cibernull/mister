@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-15T09:38:29.268Z",
+ "cuando": "2026-09-15T10:08:12.530Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "15/09",
+   "titulo": "Málaga y Levante marcarán el futuro de Íñigo Pérez en el banquillo del Villarreal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151264-malaga-y-levante-marcaran-el-futuro-de-inigo-perez-en-el-banquillo-del-villarreal",
+   "categoria": "rueda de prensa"
+  },
   {
    "fecha": "15/09",
    "titulo": "¡Juega a la Europa League 26/27 en el Fantasy✨ y gana una camiseta!",
@@ -13,6 +19,18 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Marca y As ven a Konaté iniciando su cuarto partido en dos semanas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151263-marca-y-as-ven-a-konate-iniciar-su-cuarto-partido-en-dos-semanas",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Flick tiene una charla con Gavi y la prensa especula con una posible titularidad",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151262-flick-tiene-una-charla-con-gavi-y-la-prensa-especula-con-una-posible-titularidad",
    "categoria": "análisis"
   },
   {
@@ -463,24 +481,6 @@
    "fecha": "14/09",
    "titulo": "Niño vuelve con gol y pone a Chupete sobre aviso",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151186-nino-vuelve-con-gol-y-pone-a-chupete-sobre-aviso",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Cáceres se presenta con carácter en Balaídos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151185-caceres-se-presenta-con-caracter-en-balaidos",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Una intersemanal para que Yeremay complete su proceso",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151184-una-intersemanal-para-que-yeremay-complete-su-proceso",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Bernal espera recuperar protagonismo tras tres suplencias consecutivas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151183-bernal-espera-recuperar-protagonismo-tras-tres-suplencias-consecutivas",
    "categoria": "análisis"
   }
  ]
