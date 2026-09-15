@@ -34251,46 +34251,6 @@
   "d": 0
  },
  {
-  "id": "17623",
-  "nombre": "Ferland Mendy",
-  "valor": 162000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 1000,
-  "sem7": 2000,
-  "mes": 2000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 15,
-  "riv": 23,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 31,
-  "js": [],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "78393",
   "nombre": "Altay Bayındır",
   "valor": 162000,
@@ -34370,6 +34330,46 @@
     ""
    ]
   ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "17623",
+  "nombre": "Ferland Mendy",
+  "valor": 162000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 1000,
+  "sem7": 2000,
+  "mes": 2000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 15,
+  "riv": 23,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 31,
+  "js": [],
   "p": 0,
   "d": 0
  },
@@ -34959,20 +34959,20 @@
   "d": 0
  },
  {
-  "id": "71622",
-  "nombre": "Jesse Bisiwu",
+  "id": "59126",
+  "nombre": "Hugo Novoa",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": 0,
-  "sem7": -241000,
-  "mes": -580000,
-  "mk": 0,
-  "pv": null,
+  "semana": -12000,
+  "sem7": -3000,
+  "mes": 0,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
-  "pos": 3,
-  "est": "doubt",
+  "pos": 2,
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -34982,8 +34982,8 @@
    null,
    null
   ],
-  "eq": 3,
-  "riv": 1490,
+  "eq": 48,
+  "riv": 19,
   "casa": 1,
   "gol": 0,
   "tar": 0,
@@ -34993,26 +34993,40 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 18,
+  "edad": 23,
   "js": [
    [
     1,
     null,
-    1,
+    9,
     0,
     ""
    ],
    [
     2,
     null,
-    23,
+    14,
     0,
     ""
    ],
    [
     3,
     null,
-    14,
+    20,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    1490,
     0,
     ""
    ]
@@ -36299,82 +36313,6 @@
   "d": 0
  },
  {
-  "id": "59126",
-  "nombre": "Hugo Novoa",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -12000,
-  "sem7": -3000,
-  "mes": 0,
-  "mk": 1,
-  "pv": 160000,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 48,
-  "riv": 19,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    1490,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "63867",
   "nombre": "Yago Santiago",
   "valor": 160000,
@@ -36643,6 +36581,68 @@
     5,
     null,
     5,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "71622",
+  "nombre": "Jesse Bisiwu",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -241000,
+  "mes": -580000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": "doubt",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 3,
+  "riv": 1490,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 18,
+  "js": [
+   [
+    1,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    14,
     0,
     ""
    ]
