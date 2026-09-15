@@ -494,7 +494,7 @@
   "nombre": "Jude Bellingham",
   "valor": 20002000,
   "puntos": 47,
-  "media": 9.4,
+  "media": 7.8,
   "partidos": 5,
   "semana": 60000,
   "sem7": 371000,
@@ -5680,6 +5680,75 @@
   "d": 1
  },
  {
+  "id": "20449",
+  "nombre": "Fer Niño",
+  "valor": 3189000,
+  "puntos": 23,
+  "media": 3.8,
+  "partidos": 5,
+  "semana": 106000,
+  "sem7": 767000,
+  "mes": 1823000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 4,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   2,
+   1,
+   9,
+   8,
+   2
+  ],
+  "eq": 23,
+  "riv": 8,
+  "casa": 0,
+  "gol": 2,
+  "tar": 1,
+  "mc": 4.5,
+  "mf": 5.5,
+  "tit": 4,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    1,
+    2,
+    6,
+    1,
+    "o69"
+   ],
+   [
+    2,
+    1,
+    3,
+    1,
+    "o69"
+   ],
+   [
+    3,
+    9,
+    1490,
+    1,
+    "g79"
+   ],
+   [
+    4,
+    8,
+    16,
+    1,
+    "y57,g74"
+   ]
+  ],
+  "p": 0,
+  "d": 1
+ },
+ {
   "id": "213",
   "nombre": "Stole Dimitrievski",
   "valor": 6562000,
@@ -6330,75 +6399,6 @@
     14,
     1,
     ""
-   ]
-  ],
-  "p": 1,
-  "d": 1
- },
- {
-  "id": "20449",
-  "nombre": "Fer Niño",
-  "valor": 3189000,
-  "puntos": 22,
-  "media": 4.4,
-  "partidos": 5,
-  "semana": 106000,
-  "sem7": 767000,
-  "mes": 1823000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   2,
-   1,
-   9,
-   8,
-   2
-  ],
-  "eq": 23,
-  "riv": 8,
-  "casa": 0,
-  "gol": 2,
-  "tar": 1,
-  "mc": 4.5,
-  "mf": 5.5,
-  "tit": 4,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    1,
-    2,
-    6,
-    1,
-    "o69"
-   ],
-   [
-    2,
-    1,
-    3,
-    1,
-    "o69"
-   ],
-   [
-    3,
-    9,
-    1490,
-    1,
-    "g79"
-   ],
-   [
-    4,
-    8,
-    16,
-    1,
-    "y57,g74"
    ]
   ],
   "p": 1,
@@ -10586,6 +10586,75 @@
   "d": 1
  },
  {
+  "id": "68593",
+  "nombre": "Lucas Cepeda",
+  "valor": 1737000,
+  "puntos": 17,
+  "media": 2.8,
+  "partidos": 5,
+  "semana": -31000,
+  "sem7": 1000,
+  "mes": 230000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 4,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   3,
+   3,
+   3,
+   4,
+   2
+  ],
+  "eq": 23,
+  "riv": 8,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 3.5,
+  "mf": 3,
+  "tit": 0,
+  "sup": 4,
+  "once": null,
+  "asis": 1,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    3,
+    6,
+    0,
+    "i60"
+   ],
+   [
+    2,
+    3,
+    3,
+    0,
+    "i64"
+   ],
+   [
+    3,
+    3,
+    1490,
+    0,
+    "i69,a78"
+   ],
+   [
+    4,
+    4,
+    16,
+    0,
+    "i70"
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "53143",
   "nombre": "Abde Rebbach",
   "valor": 2124000,
@@ -11777,7 +11846,7 @@
   "riv": 2,
   "casa": 0,
   "gol": 0,
-  "tar": 2,
+  "tar": 3,
   "mc": 3.5,
   "mf": 4,
   "tit": 4,
@@ -11826,7 +11895,7 @@
     null,
     23,
     1,
-    ""
+    "y73"
    ]
   ],
   "p": 0,
@@ -12487,75 +12556,6 @@
   "d": 1
  },
  {
-  "id": "68593",
-  "nombre": "Lucas Cepeda",
-  "valor": 1737000,
-  "puntos": 15,
-  "media": 3,
-  "partidos": 5,
-  "semana": -31000,
-  "sem7": 1000,
-  "mes": 230000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   3,
-   3,
-   3,
-   4,
-   2
-  ],
-  "eq": 23,
-  "riv": 8,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 3.5,
-  "mf": 3,
-  "tit": 0,
-  "sup": 4,
-  "once": null,
-  "asis": 1,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    3,
-    6,
-    0,
-    "i60"
-   ],
-   [
-    2,
-    3,
-    3,
-    0,
-    "i64"
-   ],
-   [
-    3,
-    3,
-    1490,
-    0,
-    "i69,a78"
-   ],
-   [
-    4,
-    4,
-    16,
-    0,
-    "i70"
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "64562",
   "nombre": "Nelson Deossa",
   "valor": 1503000,
@@ -13116,6 +13116,75 @@
   ],
   "p": 1,
   "d": 0
+ },
+ {
+  "id": "12949",
+  "nombre": "Thomas Lemar",
+  "valor": 1012000,
+  "puntos": 14,
+  "media": 4.7,
+  "partidos": 2,
+  "semana": 72000,
+  "sem7": 438000,
+  "mes": 693000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   11,
+   2
+  ],
+  "eq": 23,
+  "riv": 8,
+  "casa": 0,
+  "gol": 1,
+  "tar": 1,
+  "mc": 11,
+  "mf": 0,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 30,
+  "js": [
+   [
+    1,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    4,
+    11,
+    16,
+    0,
+    "i55,g67,y97"
+   ]
+  ],
+  "p": 1,
+  "d": 1
  },
  {
   "id": "71021",
@@ -14596,75 +14665,6 @@
   "d": 0
  },
  {
-  "id": "12949",
-  "nombre": "Thomas Lemar",
-  "valor": 1012000,
-  "puntos": 13,
-  "media": 6.5,
-  "partidos": 2,
-  "semana": 72000,
-  "sem7": 438000,
-  "mes": 693000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   11,
-   2
-  ],
-  "eq": 23,
-  "riv": 8,
-  "casa": 0,
-  "gol": 1,
-  "tar": 1,
-  "mc": 11,
-  "mf": 0,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 30,
-  "js": [
-   [
-    1,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    4,
-    11,
-    16,
-    0,
-    "i55,g67,y97"
-   ]
-  ],
-  "p": 1,
-  "d": 1
- },
- {
   "id": "71124",
   "nombre": "Denzel Dumfries",
   "valor": 8338000,
@@ -15937,6 +15937,82 @@
   "d": 0
  },
  {
+  "id": "63406",
+  "nombre": "Trent Alexander-Arnold",
+  "valor": 6391000,
+  "puntos": 12,
+  "media": 3,
+  "partidos": 3,
+  "semana": -89000,
+  "sem7": -112000,
+  "mes": 41000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   2,
+   7,
+   1,
+   null
+  ],
+  "eq": 15,
+  "riv": 2,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 7,
+  "mf": 1.5,
+  "tit": 1,
+  "sup": 2,
+  "once": null,
+  "asis": 1,
+  "edad": 27,
+  "js": [
+   [
+    1,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    2,
+    2,
+    8,
+    0,
+    "i80"
+   ],
+   [
+    3,
+    7,
+    13,
+    1,
+    "a30"
+   ],
+   [
+    4,
+    1,
+    4,
+    0,
+    "i64"
+   ],
+   [
+    5,
+    null,
+    14,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "49382",
   "nombre": "Marcos Alonso",
   "valor": 8410000,
@@ -16759,6 +16835,75 @@
   "d": 0
  },
  {
+  "id": "25630",
+  "nombre": "Victor Chust",
+  "valor": 2695000,
+  "puntos": 12,
+  "media": 2,
+  "partidos": 5,
+  "semana": -71000,
+  "sem7": -384000,
+  "mes": 775000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   4,
+   0,
+   3,
+   1,
+   3
+  ],
+  "eq": 23,
+  "riv": 8,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0.5,
+  "mf": 3.5,
+  "tit": 4,
+  "sup": 0,
+  "once": null,
+  "asis": 1,
+  "edad": 26,
+  "js": [
+   [
+    1,
+    4,
+    6,
+    1,
+    ""
+   ],
+   [
+    2,
+    0,
+    3,
+    1,
+    ""
+   ],
+   [
+    3,
+    3,
+    1490,
+    1,
+    ""
+   ],
+   [
+    4,
+    1,
+    16,
+    1,
+    "a67"
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "60927",
   "nombre": "Adrián Niño",
   "valor": 315000,
@@ -16959,6 +17104,75 @@
     16,
     0,
     ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "68465",
+  "nombre": "Abiel Osorio",
+  "valor": 199000,
+  "puntos": 11,
+  "media": 3.7,
+  "partidos": 2,
+  "semana": 17000,
+  "sem7": 39000,
+  "mes": -391000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 4,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   4,
+   2
+  ],
+  "eq": 23,
+  "riv": 8,
+  "casa": 0,
+  "gol": 0,
+  "tar": 1,
+  "mc": 4,
+  "mf": 0,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 24,
+  "js": [
+   [
+    1,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    4,
+    4,
+    16,
+    0,
+    "i55"
    ]
   ],
   "p": 0,
@@ -17474,82 +17688,6 @@
     2,
     16,
     1,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "63406",
-  "nombre": "Trent Alexander-Arnold",
-  "valor": 6391000,
-  "puntos": 11,
-  "media": 2.8,
-  "partidos": 3,
-  "semana": -89000,
-  "sem7": -112000,
-  "mes": 41000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   2,
-   7,
-   1,
-   null
-  ],
-  "eq": 15,
-  "riv": 2,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 7,
-  "mf": 1.5,
-  "tit": 1,
-  "sup": 2,
-  "once": null,
-  "asis": 1,
-  "edad": 27,
-  "js": [
-   [
-    1,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    2,
-    2,
-    8,
-    0,
-    "i80"
-   ],
-   [
-    3,
-    7,
-    13,
-    1,
-    "a30"
-   ],
-   [
-    4,
-    1,
-    4,
-    0,
-    "i64"
-   ],
-   [
-    5,
-    null,
-    14,
-    0,
     ""
    ]
   ],
@@ -18083,75 +18221,6 @@
     16,
     0,
     "i84"
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "25630",
-  "nombre": "Victor Chust",
-  "valor": 2695000,
-  "puntos": 11,
-  "media": 1.8,
-  "partidos": 5,
-  "semana": -71000,
-  "sem7": -384000,
-  "mes": 775000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   4,
-   0,
-   3,
-   1,
-   3
-  ],
-  "eq": 23,
-  "riv": 8,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0.5,
-  "mf": 3.5,
-  "tit": 4,
-  "sup": 0,
-  "once": null,
-  "asis": 1,
-  "edad": 26,
-  "js": [
-   [
-    1,
-    4,
-    6,
-    1,
-    ""
-   ],
-   [
-    2,
-    0,
-    3,
-    1,
-    ""
-   ],
-   [
-    3,
-    3,
-    1490,
-    1,
-    ""
-   ],
-   [
-    4,
-    1,
-    16,
-    1,
-    "a67"
    ]
   ],
   "p": 0,
@@ -20849,6 +20918,75 @@
   "d": 0
  },
  {
+  "id": "65136",
+  "nombre": "Fede Redondo",
+  "valor": 265000,
+  "puntos": 8,
+  "media": 2,
+  "partidos": 3,
+  "semana": 28000,
+  "sem7": -13000,
+  "mes": -263000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   2,
+   0,
+   null,
+   null,
+   4
+  ],
+  "eq": 23,
+  "riv": 8,
+  "casa": 0,
+  "gol": 0,
+  "tar": 1,
+  "mc": 0,
+  "mf": 2,
+  "tit": 2,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    2,
+    6,
+    1,
+    "o60"
+   ],
+   [
+    2,
+    0,
+    3,
+    1,
+    "o81"
+   ],
+   [
+    3,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    16,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "5920",
   "nombre": "Carles Aleñá",
   "valor": 720000,
@@ -22104,69 +22242,76 @@
   "d": 0
  },
  {
-  "id": "68465",
-  "nombre": "Abiel Osorio",
-  "valor": 199000,
+  "id": "15344",
+  "nombre": "Brahim Díaz",
+  "valor": 3537000,
   "puntos": 7,
   "media": 2.3,
   "partidos": 2,
-  "semana": 17000,
-  "sem7": 39000,
-  "mes": -391000,
+  "semana": -33000,
+  "sem7": -7000,
+  "mes": -701000,
   "mk": 0,
   "pv": null,
   "ced": 0,
-  "pos": 4,
+  "pos": 3,
   "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
-   null,
-   null,
+   2,
    null,
    4,
-   2
+   null,
+   null
   ],
-  "eq": 23,
-  "riv": 8,
+  "eq": 15,
+  "riv": 2,
   "casa": 0,
   "gol": 0,
-  "tar": 1,
-  "mc": 4,
+  "tar": 0,
+  "mc": 3,
   "mf": 0,
-  "tit": 0,
+  "tit": 1,
   "sup": 1,
   "once": null,
   "asis": 0,
-  "edad": 24,
+  "edad": 27,
   "js": [
    [
     1,
-    null,
-    6,
+    2,
+    16,
     0,
-    ""
+    "i78"
    ],
    [
     2,
     null,
-    3,
+    8,
     0,
     ""
    ],
    [
     3,
+    4,
+    13,
+    1,
+    "o65"
+   ],
+   [
+    4,
     null,
-    1490,
+    4,
     0,
     ""
    ],
    [
-    4,
-    4,
-    16,
+    5,
+    null,
+    14,
     0,
-    "i55"
+    ""
    ]
   ],
   "p": 0,
@@ -22627,144 +22772,6 @@
   "d": 0
  },
  {
-  "id": "65136",
-  "nombre": "Fede Redondo",
-  "valor": 265000,
-  "puntos": 7,
-  "media": 1.8,
-  "partidos": 3,
-  "semana": 28000,
-  "sem7": -13000,
-  "mes": -263000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   2,
-   0,
-   null,
-   null,
-   4
-  ],
-  "eq": 23,
-  "riv": 8,
-  "casa": 0,
-  "gol": 0,
-  "tar": 1,
-  "mc": 0,
-  "mf": 2,
-  "tit": 2,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    2,
-    6,
-    1,
-    "o60"
-   ],
-   [
-    2,
-    0,
-    3,
-    1,
-    "o81"
-   ],
-   [
-    3,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    16,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "64524",
-  "nombre": "Martim Neto",
-  "valor": 163000,
-  "puntos": 7,
-  "media": 1.8,
-  "partidos": 3,
-  "semana": -12000,
-  "sem7": 3000,
-  "mes": -737000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   2,
-   2,
-   null,
-   null,
-   2
-  ],
-  "eq": 23,
-  "riv": 8,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 2,
-  "mf": 2,
-  "tit": 1,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    2,
-    6,
-    1,
-    "o60"
-   ],
-   [
-    2,
-    2,
-    3,
-    0,
-    "i64"
-   ],
-   [
-    3,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    16,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71002",
   "nombre": "Ramón Enríquez",
   "valor": 177000,
@@ -22894,80 +22901,6 @@
     1,
     1,
     1,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "15344",
-  "nombre": "Brahim Díaz",
-  "valor": 3537000,
-  "puntos": 6,
-  "media": 3,
-  "partidos": 2,
-  "semana": -33000,
-  "sem7": -7000,
-  "mes": -701000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   2,
-   null,
-   4
-  ],
-  "eq": 15,
-  "riv": 2,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 3,
-  "mf": 0,
-  "tit": 1,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    1,
-    2,
-    16,
-    0,
-    "i78"
-   ],
-   [
-    2,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    3,
-    4,
-    13,
-    1,
-    "o65"
-   ],
-   [
-    4,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    14,
-    0,
     ""
    ]
   ],
@@ -24160,6 +24093,75 @@
     5,
     0,
     "i61"
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "64524",
+  "nombre": "Martim Neto",
+  "valor": 163000,
+  "puntos": 6,
+  "media": 1.5,
+  "partidos": 3,
+  "semana": -12000,
+  "sem7": 3000,
+  "mes": -737000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   2,
+   2,
+   null,
+   null,
+   2
+  ],
+  "eq": 23,
+  "riv": 8,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 2,
+  "mf": 2,
+  "tit": 1,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    2,
+    6,
+    1,
+    "o60"
+   ],
+   [
+    2,
+    2,
+    3,
+    0,
+    "i64"
+   ],
+   [
+    3,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    16,
+    0,
+    ""
    ]
   ],
   "p": 0,
@@ -28200,6 +28202,68 @@
   "d": 0
  },
  {
+  "id": "33717",
+  "nombre": "Rubén Sánchez",
+  "valor": 195000,
+  "puntos": 3,
+  "media": 1.5,
+  "partidos": 1,
+  "semana": 35000,
+  "sem7": 35000,
+  "mes": -33000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   2
+  ],
+  "eq": 23,
+  "riv": 8,
+  "casa": 0,
+  "gol": 0,
+  "tar": 1,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    1,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    16,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "4836165",
   "nombre": "Roy Revivo",
   "valor": 314000,
@@ -28268,13 +28332,6 @@
     5,
     2,
     1,
-    1,
-    ""
-   ],
-   [
-    6,
-    null,
-    15,
     1,
     ""
    ]
@@ -28878,68 +28935,6 @@
     6,
     null,
     19,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "33717",
-  "nombre": "Rubén Sánchez",
-  "valor": 195000,
-  "puntos": 2,
-  "media": 2,
-  "partidos": 1,
-  "semana": 35000,
-  "sem7": 35000,
-  "mes": -33000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   2
-  ],
-  "eq": 23,
-  "riv": 8,
-  "casa": 0,
-  "gol": 0,
-  "tar": 1,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    1,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    16,
     0,
     ""
    ]

@@ -20230,7 +20230,7 @@
   "nombre": "Ibrahima Konaté",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 2,
+  "tarjetas": 3,
   "mediaCasa": 3.5,
   "mediaFuera": 4,
   "edad": 27,
@@ -20282,7 +20282,9 @@
     "puntos": null,
     "rival": 23,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,
@@ -26233,13 +26235,6 @@
     "jornada": 5,
     "puntos": 2,
     "rival": 1,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 15,
     "como": "inicio",
     "eventos": []
    }
