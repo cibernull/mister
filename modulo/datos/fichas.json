@@ -6983,6 +6983,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 19,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -14550,6 +14557,13 @@
     "rival": 17,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -15107,13 +15121,6 @@
     "puntos": null,
     "rival": 50,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -22399,7 +22406,7 @@
   "mediaCasa": 1,
   "mediaFuera": 0,
   "edad": 26,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 0,
   "jornadas": [
@@ -22670,6 +22677,13 @@
      "yellow",
      "sub_out"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -22897,6 +22911,13 @@
     "rival": 17,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -22962,7 +22983,9 @@
     "puntos": null,
     "rival": 14,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -23731,7 +23754,9 @@
     "puntos": null,
     "rival": 14,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -24337,7 +24362,7 @@
   "mediaCasa": 0,
   "mediaFuera": 2.5,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 0,
   "suplencias": 2,
   "jornadas": [
@@ -26354,6 +26379,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -26900,6 +26932,13 @@
     "rival": 1490,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 19,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -27008,6 +27047,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
