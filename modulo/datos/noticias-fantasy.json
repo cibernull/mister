@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-14T23:12:00.391Z",
+ "cuando": "2026-09-15T00:08:32.986Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -7,6 +7,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "La liberación de Dani Raba",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151236-la-liberacion-de-dani-raba",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Osambela responde a la emergencia en el lateral",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151160-osambela-responde-a-la-emergencia-en-el-lateral",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Luis Castro analiza la derrota y habla de Ratkov, Ndukwe, Requena, Brugué, Sotelo y las rotaciones",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151158-luis-castro-analiza-la-derrota-y-habla-de-ratkov-ndukwe-requena-brugue-sotelo-y-las-rotacione",
-   "categoria": "rueda de prensa"
   }
  ]
 }
