@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-15T09:08:22.166Z",
+ "cuando": "2026-09-15T09:38:27.973Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -1477,7 +1477,7 @@
    "min": 239
   },
   "53107": {
-   "prob": 70,
+   "prob": 60,
    "sancionado": 0,
    "fuera": 0,
    "min": 90
@@ -1585,7 +1585,7 @@
    "hasta": "principios de septiembre"
   },
   "55743": {
-   "prob": 30,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
    "min": 360
@@ -1807,10 +1807,7 @@
    "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 315,
-   "lesion": "Contusión en la nariz",
-   "desde": "13/09 (2 días)",
-   "hasta": null
+   "min": 315
   },
   "59534": {
    "prob": 70,
@@ -2164,7 +2161,7 @@
    "min": 94
   },
   "64562": {
-   "prob": 30,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 172
