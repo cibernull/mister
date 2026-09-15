@@ -2905,7 +2905,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -7391,7 +7391,7 @@
   "pv": 5165000,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -9707,7 +9707,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -11201,7 +11201,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -17825,7 +17825,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -18740,7 +18740,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -19756,7 +19756,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -20446,7 +20446,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -20779,7 +20779,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -20853,7 +20853,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -21132,7 +21132,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -22236,7 +22236,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -22370,7 +22370,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -23316,7 +23316,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -23733,7 +23733,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "red",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -24110,7 +24110,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -24629,7 +24629,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "double",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -25702,7 +25702,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -27069,7 +27069,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -27591,7 +27591,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -27667,7 +27667,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -28181,7 +28181,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -28983,7 +28983,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -29057,7 +29057,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -29480,7 +29480,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "red",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -30035,7 +30035,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -30311,7 +30311,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -30821,7 +30821,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -31016,7 +31016,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -31368,7 +31368,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -31444,7 +31444,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -31623,7 +31623,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -31699,7 +31699,7 @@
   "pv": null,
   "ced": 0,
   "pos": 1,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -32000,7 +32000,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -32357,7 +32357,7 @@
   "pv": null,
   "ced": 0,
   "pos": 1,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -32426,7 +32426,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -32535,7 +32535,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -32713,7 +32713,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -32858,7 +32858,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -32927,7 +32927,7 @@
   "pv": 191000,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -33043,7 +33043,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -33200,7 +33200,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -33280,7 +33280,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -33632,7 +33632,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -33933,7 +33933,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -34078,7 +34078,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -34648,7 +34648,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -34786,7 +34786,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -34924,7 +34924,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -34972,7 +34972,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -35150,7 +35150,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -35198,7 +35198,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -35267,7 +35267,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -35405,7 +35405,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -36160,7 +36160,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -36588,7 +36588,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -36813,7 +36813,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -36941,7 +36941,7 @@
   "pv": 1106000,
   "ced": 0,
   "pos": 2,
-  "est": "red",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -37009,7 +37009,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": null,
+  "est": "red",
   "bl": 0,
   "sub": 0,
   "racha": [

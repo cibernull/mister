@@ -1,6 +1,14 @@
 {
- "saldo": 21625742,
+ "saldo": 24700742,
  "apuntes": [
+  {
+   "cuando": 1789467758,
+   "fecha": "2026-09-15 12:22",
+   "motivo": "Jornada 5",
+   "tipo": "Bonificación",
+   "importe": 3075000,
+   "saldo": 24700742
+  },
   {
    "cuando": 1789398578,
    "fecha": "2026-09-14 17:09",
@@ -472,14 +480,6 @@
    "tipo": "Penalización",
    "importe": -677200,
    "saldo": 3828104
-  },
-  {
-   "cuando": 1787170335,
-   "fecha": "2026-08-19 22:12",
-   "motivo": "Álvaro Mantilla a Mister",
-   "tipo": "Venta",
-   "importe": 1604890,
-   "saldo": 4505304
   }
  ]
 }

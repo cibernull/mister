@@ -268,5 +268,59 @@
     "premio": 0
    }
   ]
+ },
+ {
+  "jornada": 5,
+  "cuando": "2026-09-15",
+  "equipos": [
+   {
+    "equipo": "Niutin FC (Isaac)",
+    "puntos": 77,
+    "puesto": 1,
+    "premio": 3075000
+   },
+   {
+    "equipo": "Neky F.C. (Sergio)",
+    "puntos": 76,
+    "puesto": 2,
+    "premio": 3150000
+   },
+   {
+    "equipo": "Saiyans FC (Fran)",
+    "puntos": 57,
+    "puesto": 3,
+    "premio": 1525000
+   },
+   {
+    "equipo": "Cacaculopedopis",
+    "puntos": 35,
+    "puesto": 4,
+    "premio": 975000
+   },
+   {
+    "equipo": "Mario80",
+    "puntos": 27,
+    "puesto": 5,
+    "premio": 675000
+   },
+   {
+    "equipo": "Los tocahuevos C.F ( juanito)",
+    "puntos": 9,
+    "puesto": 6,
+    "premio": 325000
+   },
+   {
+    "equipo": "Legalize F.C (Victor)",
+    "puntos": 3,
+    "puesto": 7,
+    "premio": 75000
+   },
+   {
+    "equipo": "Betico1993",
+    "puntos": -4,
+    "puesto": 8,
+    "premio": 0
+   }
+  ]
  }
 ]
