@@ -5617,32 +5617,32 @@
    "cuando": "2026-09-04 09:50:39",
    "posiciones": [
     {
+     "idUc": 12493752,
+     "puntos": 4,
+     "puesto": 1,
+     "valorPlantilla": 71986000,
+     "premio": 0
+    },
+    {
      "idUc": 13435216,
      "puntos": 3,
-     "puesto": 1,
+     "puesto": 2,
      "valorPlantilla": 65327000,
      "premio": 75000
     },
     {
      "idUc": 15435600,
      "puntos": 3,
-     "puesto": 2,
+     "puesto": 3,
      "valorPlantilla": 35327000,
      "premio": 75000
     },
     {
      "idUc": 12493758,
      "puntos": 2,
-     "puesto": 3,
+     "puesto": 4,
      "valorPlantilla": 28357000,
      "premio": 50000
-    },
-    {
-     "idUc": 12493752,
-     "puntos": 0,
-     "puesto": 4,
-     "valorPlantilla": 71986000,
-     "premio": 0
     },
     {
      "idUc": 12493688,

@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-15T16:38:14.501Z",
+ "cuando": "2026-09-15T17:08:50.298Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "15/09",
-   "titulo": "Alineaciones confirmadas del Rayo - Espanyol",
+   "titulo": "Sigue en directo el Rayo - Espanyol",
    "url": "https://www.futbolfantasy.com/partidos/22480-rayo-espanyol",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -20,6 +20,12 @@
    "titulo": "¡Juega a la Europa League 26/27 en el Fantasy✨ y gana una camiseta!",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151259-juega-a-la-europa-league-26-27-en-el-fantasy-y-gana-una-camiseta",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Alineaciones confirmadas del Alavés - Valencia",
+   "url": "https://www.futbolfantasy.com/partidos/22474-alaves-valencia",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "15/09",
@@ -476,12 +482,6 @@
    "titulo": "ANÁLISIS FANTASY JORNADA 6 | Alineaciones probables, lesionados y sancionados, por Carrasco",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151216-analisis-fantasy-jornada-6-alineaciones-probables-lesionados-y-sancionados-por-carrasco",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "El Rayo podrá volver a Vallecas en la jornada 8 ante el Athletic Club",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151215-el-rayo-podra-volver-a-vallecas-en-la-jornada-8-ante-el-athletic-club",
-   "categoria": "rueda de prensa"
   }
  ]
 }
