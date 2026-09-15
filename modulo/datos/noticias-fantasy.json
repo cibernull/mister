@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-15T19:08:12.077Z",
+ "cuando": "2026-09-15T19:38:08.866Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "15/09",
+   "titulo": "Sigue en directo el Elche - Real Madrid",
+   "url": "https://www.futbolfantasy.com/partidos/22476-elche-real-madrid",
+   "categoria": "análisis"
+  },
   {
    "fecha": "15/09",
    "titulo": "Sigue en directo el Alavés - Valencia",
@@ -23,6 +29,24 @@
   },
   {
    "fecha": "15/09",
+   "titulo": "Anselmi analiza la evolución de su sistema de juego y la adaptación de la plantilla",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151306-anselmi-analiza-la-evolucion-de-su-sistema-de-juego-y-la-adaptacion-de-la-plantilla",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Hidalgo habla de Casadó, Gijselhart, Mella y Yeremay antes de recibir al Sevilla",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151305-antonio-hidalgo-habla-marc-casado-teun-gijselhart-david-mella-yeremay-hernandez-antes-sevilla",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "El Rayo atraviesa el autobús de Manolo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151304-el-rayo-atraviesa-el-autobus-de-manolo",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
    "titulo": "Jornada 6: Rayo 2-1 Espanyol. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22480-rayo-espanyol",
    "categoria": "partido"
@@ -32,12 +56,6 @@
    "titulo": "Omar El Hilali es expulsado por cortar una jugada con la mano",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151303-omar-el-hilali-es-expulsado-por-cortar-una-jugada-con-la-mano",
    "categoria": "sanción"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Alineaciones confirmadas del Elche - Real Madrid",
-   "url": "https://www.futbolfantasy.com/partidos/22476-elche-real-madrid",
-   "categoria": "rueda de prensa"
   },
   {
    "fecha": "15/09",
@@ -464,24 +482,6 @@
    "titulo": "El parte médico oficial de César Tàrrega lo descarta hasta después del parón",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151229-el-parte-medico-oficial-de-cesar-tarrega-lo-descarta-hasta-despues-del-paron",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Rioja y Guido, novedades en la lista para viajar a Vitoria",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151227-rioja-y-guido-novedades-en-la-lista-para-viajar-a-vitoria",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Íñigo Pérez analiza la derrota, asume su responsabilidad y entiende el enfado de la afición",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151226-inigo-perez-analiza-la-derrota-asume-su-responsabilidad-y-entiende-el-enfado-de-la-aficion",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Pellegrini valora el triunfo y habla de Dani Ceballos, Lo Celso, Abde, Antony y el Villarreal de Íñigo Pérez",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151225-pellegrini-valora-el-triunfo-y-habla-de-dani-ceballos-lo-celso-abde-antony-y-el-villarreal-de",
-   "categoria": "rueda de prensa"
   }
  ]
 }

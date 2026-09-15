@@ -167,21 +167,21 @@
   "equipos": [
    {
     "equipo": "Neky F.C. (Sergio)",
-    "puntos": 6,
+    "puntos": 9,
     "puesto": 1,
     "premio": 0
    },
    {
-    "equipo": "Cacaculopedopis",
-    "puntos": 6,
+    "equipo": "Saiyans FC (Fran)",
+    "puntos": 7,
     "puesto": 2,
-    "premio": 75000
+    "premio": 0
    },
    {
-    "equipo": "Saiyans FC (Fran)",
-    "puntos": 5,
+    "equipo": "Cacaculopedopis",
+    "puntos": 7,
     "puesto": 3,
-    "premio": 0
+    "premio": 75000
    },
    {
     "equipo": "Mario80",
@@ -203,7 +203,7 @@
    },
    {
     "equipo": "Los tocahuevos C.F ( juanito)",
-    "puntos": -1,
+    "puntos": -2,
     "puesto": 7,
     "premio": 0
    },
