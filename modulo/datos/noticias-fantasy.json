@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-15T04:08:15.016Z",
+ "cuando": "2026-09-15T05:08:15.134Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -7,6 +7,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Alineaciones probables para la jornada 6 de LaLiga 26/27 en Youtube: VERSIÓN EXTENDIDA",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151251-alineaciones-probables-para-la-jornada-6-de-laliga-26-27-en-youtube-version-extendida",
    "categoria": "análisis"
   },
   {
@@ -475,12 +481,6 @@
    "fecha": "14/09",
    "titulo": "Mourinho habla de Vinicius, Arda Güler, Tchouaméni, Valverde, Lamine Yamal, Yan Diomande y las rotaciones",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151173-mourinho-habla-de-vinicius-arda-guler-tchouameni-valverde-lamine-yamal-yan-diomande-y-las-rot",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Matarazzo valora el partido, el penalti y habla de Turrientes, Sarr y los cambios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151172-matarazzo-valora-el-partido-el-penalti-y-habla-de-turrientes-sarr-y-los-cambios",
    "categoria": "rueda de prensa"
   }
  ]
