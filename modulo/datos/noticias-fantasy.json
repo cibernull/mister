@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-15T00:08:32.986Z",
+ "cuando": "2026-09-15T01:08:12.225Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -7,6 +7,24 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Posibles alineaciones y previa fantasy del Atlético - Osasuna",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151239-posibles-alineaciones-y-previa-fantasy-del-atletico-osasuna",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Alineaciones probables y previa fantasy del Elche - Real Madrid",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151238-alineaciones-probables-y-previa-fantasy-del-elche-real-madrid",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Alineaciones probables y previa fantasy del Alavés - Valencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151237-alineaciones-probables-y-previa-fantasy-del-alaves-valencia",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Simeone habla de Jonathan David y de los goles encajados en este arranque de curso",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151162-simeone-habla-de-jonathan-david-y-de-los-goles-encajados-en-este-arranque-de-curso",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Matarazzo analiza la pareja Sarr-Beitia y explica la vuelta de Remiro",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151161-matarazzo-analiza-la-pareja-sarr-beitia-y-explica-la-vuelta-de-remiro",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Jornada 5: Getafe 1-1 Deportivo. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22465-getafe-deportivo",
-   "categoria": "partido"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Osambela responde a la emergencia en el lateral",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151160-osambela-responde-a-la-emergencia-en-el-lateral",
-   "categoria": "análisis"
   }
  ]
 }
