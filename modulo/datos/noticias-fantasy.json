@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-15T01:08:12.225Z",
+ "cuando": "2026-09-15T01:30:08.198Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -7,6 +7,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Posibles alineaciones y previa fantasy del Deportivo - Sevilla",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151240-posibles-alineaciones-y-previa-fantasy-del-deportivo-sevilla",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "El Dépor sale invicto de tierra de gladiadores",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151163-el-depor-sale-invicto-de-tierra-de-gladiadores",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Simeone habla de Jonathan David y de los goles encajados en este arranque de curso",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151162-simeone-habla-de-jonathan-david-y-de-los-goles-encajados-en-este-arranque-de-curso",
-   "categoria": "rueda de prensa"
   }
  ]
 }
