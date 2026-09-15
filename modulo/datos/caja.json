@@ -1,6 +1,14 @@
 {
- "saldo": 24700742,
+ "saldo": 30006822,
  "apuntes": [
+  {
+   "cuando": 1789470385,
+   "fecha": "2026-09-15 13:06",
+   "motivo": "Jonny Otto a Mister",
+   "tipo": "Venta",
+   "importe": 5306080,
+   "saldo": 30006822
+  },
   {
    "cuando": 1789467758,
    "fecha": "2026-09-15 12:22",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -13057233,
    "saldo": -9229129
-  },
-  {
-   "cuando": 1787174439,
-   "fecha": "2026-08-19 23:20",
-   "motivo": "Modificación de cláusula (100%) de Alfonso Herrero",
-   "tipo": "Penalización",
-   "importe": -677200,
-   "saldo": 3828104
   }
  ]
 }

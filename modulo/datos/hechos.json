@@ -5303,6 +5303,23 @@
    "puntos": 27,
    "media": 5.4,
    "racha": "6,6,11,2,2"
+  },
+  {
+   "idTransfer": 548265561,
+   "idJugador": "118",
+   "nombre": "Jonny Otto",
+   "de": "Niutin FC (Isaac)",
+   "a": "Mister",
+   "idUcDe": 12493763,
+   "idUcA": 0,
+   "importe": 5306080,
+   "tipo": "normal",
+   "cuando": "2026-09-15 13:06:25",
+   "valor": 5149000,
+   "posicion": 2,
+   "puntos": 18,
+   "media": 3.6,
+   "racha": "4,3,5,2,4"
   }
  ],
  "salidas": [
