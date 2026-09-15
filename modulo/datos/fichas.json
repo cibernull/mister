@@ -16027,6 +16027,7 @@
     "como": "inicio",
     "eventos": [
      "yellow",
+     "sub_out",
      "assist"
     ]
    }
@@ -22654,13 +22655,6 @@
     "jornada": 5,
     "puntos": 3,
     "rival": 14,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 23,
     "como": "inicio",
     "eventos": []
    }
