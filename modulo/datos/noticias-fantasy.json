@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-15T07:47:06.864Z",
+ "cuando": "2026-09-15T08:08:45.904Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "15/09",
+   "titulo": "Lo Celso resucita a orillas de un parón por selecciones",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151253-lo-celso-resucita-a-orillas-de-un-paron-por-selecciones",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 disponibles",
@@ -476,12 +482,6 @@
    "titulo": "Iván Azón descubre una nueva fórmula de Bordalás",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151175-ivan-azon-descubre-una-nueva-formula-de-bordalas",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "El Real Madrid termina de preparar el partido del Elche con tres bajas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151174-el-real-madrid-termina-de-preparar-el-partido-del-elche-con-tres-bajas",
-   "categoria": "entrenamiento"
   }
  ]
 }
