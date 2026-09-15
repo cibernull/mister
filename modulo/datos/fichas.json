@@ -3408,8 +3408,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-12",
-  "partidos": 2
+  "dia": "2026-09-15",
+  "partidos": 3
  },
  "11697": {
   "nombre": "Lucas Boyé",
@@ -4079,13 +4079,13 @@
  "14691": {
   "nombre": "Adrià Pedrosa",
   "posicion": 2,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 4,
   "mediaFuera": 2,
   "edad": 28,
   "titular": null,
-  "titularidades": 1,
+  "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
    {
@@ -4120,11 +4120,20 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 2,
+    "rival": 15,
+    "como": "inicio",
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-12",
-  "partidos": 3
+  "dia": "2026-09-15",
+  "partidos": 4
  },
  "14789": {
   "nombre": "Oihan Sancet",
@@ -11696,8 +11705,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-12",
-  "partidos": 2
+  "dia": "2026-09-15",
+  "partidos": 3
  },
  "53098": {
   "nombre": "Alberto Moleiro",
@@ -13636,13 +13645,6 @@
     "puntos": null,
     "rival": 15,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -22799,18 +22801,11 @@
     "rival": 50,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-15",
-  "partidos": 1
+  "partidos": 2
  },
  "71141": {
   "nombre": "Jean Ives Valou",
@@ -22984,20 +22979,11 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-15",
-  "partidos": 3
+  "partidos": 4
  },
  "71154": {
   "nombre": "Lorenzo Amatucci",
@@ -23754,15 +23740,6 @@
     "como": "inicio",
     "eventos": [
      "yellow"
-    ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
     ]
    }
   ],
@@ -24709,21 +24686,11 @@
     "rival": 15,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": [
-     "yellow",
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-15",
-  "partidos": 2
+  "partidos": 3
  },
  "1153038": {
   "nombre": "Rodrigo Gamón",
@@ -24875,13 +24842,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -25619,7 +25579,7 @@
   "nombre": "Gnangoro Bouare",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 4,
   "mediaFuera": 1.5,
   "edad": 22,
@@ -25667,20 +25627,11 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 8,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-15",
-  "partidos": 3
+  "partidos": 4
  },
  "3848780": {
   "nombre": "Johaneko Louis-Jean",
@@ -26721,18 +26672,11 @@
     "rival": 15,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-15",
-  "partidos": 1
+  "partidos": 2
  },
  "4947930": {
   "nombre": "Jens-Lys Cajuste",
@@ -26890,20 +26834,11 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-15",
-  "partidos": 1
+  "partidos": 2
  },
  "5235247": {
   "nombre": "Xanet Olaiz",
