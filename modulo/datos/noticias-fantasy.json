@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-15T14:08:17.062Z",
+ "cuando": "2026-09-15T14:38:19.026Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
-   "fecha": "15/09",
-   "titulo": "Quique anuncia la lista de convocados para recibir al Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151285-quique-anuncia-la-lista-de-convocados-para-recibir-al-valencia",
-   "categoria": "convocatoria"
+   "fecha": "02/09",
+   "titulo": "Alineaciones probables para la jornada 6 actualizadas",
+   "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
   },
   {
    "fecha": "15/09",
@@ -16,10 +16,10 @@
    "categoria": "análisis"
   },
   {
-   "fecha": "02/09",
-   "titulo": "Alineaciones probables para la jornada 6 disponibles",
-   "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
-   "categoria": "análisis"
+   "fecha": "15/09",
+   "titulo": "À Punt filtra el posible once de Óscar Sánchez para enfrentarse al Alavés",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151288-a-punt-filtra-el-posible-once-de-oscar-sanchez-para-enfrentarse-al-alaves",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "15/09",
@@ -32,6 +32,12 @@
    "titulo": "El mejor XI de la jornada 5 de Liga, por Huugo_21",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151286-el-mejor-xi-de-la-jornada-5-de-liga-por-huugo-21",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Quique anuncia la lista de convocados para recibir al Valencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151285-quique-anuncia-la-lista-de-convocados-para-recibir-al-valencia",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "15/09",
@@ -476,12 +482,6 @@
    "titulo": "Zubeldia sigue al margen en el inicio de semana de la Real Sociedad",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151211-zubeldia-sigue-margen-inicio-semana-real-sociedad",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "El Dépor declara cedible a Gijselhart antes de que cierren los mercados extranjeros",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151209-depor-declara-cedible-gijselhart-antes-cierren-mercados-extranjeros",
-   "categoria": "mercado"
   }
  ]
 }
