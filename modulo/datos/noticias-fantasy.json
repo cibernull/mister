@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-15T01:30:08.198Z",
+ "cuando": "2026-09-15T02:08:12.385Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -7,6 +7,30 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Posibles alineaciones y previa fantasy del Málaga - Villarreal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151244-posibles-alineaciones-y-previa-fantasy-del-malaga-villarreal",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Posibles alineaciones y previa fantasy del Betis - Getafe",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151243-posibles-alineaciones-y-previa-fantasy-del-betis-getafe",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Alineaciones probables y previa fantasy del Levante - Athletic",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151242-alineaciones-probables-y-previa-fantasy-del-levante-athletic",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Posibles alineaciones y previa fantasy del Barcelona - Racing",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151241-posibles-alineaciones-y-previa-fantasy-del-barcelona-racing",
    "categoria": "análisis"
   },
   {
@@ -458,30 +482,6 @@
    "titulo": "Bordalás valora el empate y habla de Iván Azón, Ramón Terrats y las limitaciones de la plantilla",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151167-bordalas-valora-el-empate-y-habla-de-ivan-azon-ramon-terrats-y-las-limitaciones-de-la-plantil",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Hidalgo analiza el empate y habla de Casadó, Aubameyang, Yeremay y Gijselhart",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151166-hidalgo-analiza-el-empate-y-habla-de-casado-aubameyang-yeremay-y-gijselhart",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Xavi Espart desafía la simetría",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151165-xavi-espart-desafia-la-simetria",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "Adeyemi aprovecha los momentos y castiga los espacios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151164-adeyemi-aprovecha-momentos-espacios",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "13/09",
-   "titulo": "El Dépor sale invicto de tierra de gladiadores",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151163-el-depor-sale-invicto-de-tierra-de-gladiadores",
-   "categoria": "análisis"
   }
  ]
 }
