@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-15T12:38:27.340Z",
+ "cuando": "2026-09-15T13:08:19.665Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "15/09",
-   "titulo": "Diario de Sevilla apuesta por Guridi, Julio Díaz y Robbie Ure como novedades del once",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151281-diario-de-sevilla-apuesta-por-guridi-julio-diaz-y-robbie-ure-como-novedades-del-once",
-   "categoria": "análisis"
+   "titulo": "SER Catalunya sorprende pronosticando que Flick solo introducirá un cambio en el once",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151283-ser-catalunya-sorprende-pronosticando-que-flick-solo-introducira-un-cambio-en-el-once",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "15/09",
@@ -19,6 +19,18 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 6 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Zona Mixta espera la entrada de Robbie Ure y Kochorashvili como únicas novedades del once",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151282-zona-mixta-espera-la-entrada-de-robbie-ure-y-kochorashvili-como-unicas-novedades-del-once",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Diario de Sevilla apuesta por Guridi, Julio Díaz y Robbie Ure como novedades del once",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151281-diario-de-sevilla-apuesta-por-guridi-julio-diaz-y-robbie-ure-como-novedades-del-once",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "El Atlético retoma el trabajo sin Julián, Sorloth, Barrios ni Koke",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151205-el-atletico-retoma-el-trabajo-sin-julian-sorloth-barrios-ni-koke",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Beñat San José habla de Vallecas, Roberto, Camello, Cárdenas, Audero, Ratiu y el Espanyol",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151204-benat-san-jose-habla-de-vallecas-roberto-camello-cardenas-audero-ratiu-y-el-espanyol",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "¡Sigue a las 16:30h en Twitch y Youtube la información fantasy para las alineaciones probables!",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151203-sigue-a-las-16-30h-en-twitch-y-youtube-la-informacion-fantasy-para-las-alineaciones-probables",
-   "categoria": "análisis"
   }
  ]
 }
