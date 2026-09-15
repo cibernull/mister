@@ -5618,14 +5618,14 @@
    "posiciones": [
     {
      "idUc": 12493688,
-     "puntos": 9,
+     "puntos": 17,
      "puesto": 1,
      "valorPlantilla": 70474000,
      "premio": 0
     },
     {
      "idUc": 12493752,
-     "puntos": 7,
+     "puntos": 12,
      "puesto": 2,
      "valorPlantilla": 71986000,
      "premio": 0
@@ -5639,7 +5639,7 @@
     },
     {
      "idUc": 13435216,
-     "puntos": 4,
+     "puntos": 5,
      "puesto": 4,
      "valorPlantilla": 65327000,
      "premio": 75000
@@ -5652,22 +5652,22 @@
      "premio": 50000
     },
     {
-     "idUc": 12493763,
-     "puntos": 0,
-     "puesto": 6,
-     "valorPlantilla": 54979000,
-     "premio": 0
-    },
-    {
      "idUc": 13428410,
-     "puntos": -2,
-     "puesto": 7,
+     "puntos": 1,
+     "puesto": 6,
      "valorPlantilla": 28505000,
      "premio": 0
     },
     {
+     "idUc": 12493763,
+     "puntos": 0,
+     "puesto": 7,
+     "valorPlantilla": 54979000,
+     "premio": 0
+    },
+    {
      "idUc": 13491767,
-     "puntos": -8,
+     "puntos": -7,
      "puesto": 8,
      "valorPlantilla": 6539000,
      "premio": 0

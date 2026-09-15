@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-15T19:38:08.866Z",
+ "cuando": "2026-09-15T20:08:18.835Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -7,12 +7,6 @@
    "fecha": "15/09",
    "titulo": "Sigue en directo el Elche - Real Madrid",
    "url": "https://www.futbolfantasy.com/partidos/22476-elche-real-madrid",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Sigue en directo el Alavés - Valencia",
-   "url": "https://www.futbolfantasy.com/partidos/22474-alaves-valencia",
    "categoria": "análisis"
   },
   {
@@ -26,6 +20,36 @@
    "titulo": "¡Juega a la Europa League 26/27 en el Fantasy✨ y gana una camiseta!",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151259-juega-a-la-europa-league-26-27-en-el-fantasy-y-gana-una-camiseta",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Jornada 6: Alavés 0-1 Valencia. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22474-alaves-valencia",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "San José valora el triunfo y habla de Camello, Sadick, Pathé Ciss, Álvaro García y la vuelta a Vallecas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151310-san-jose-valora-el-triunfo-y-habla-de-camello-sadick-pathe-ciss-alvaro-garcia-y-la-vuelta-a-v",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Luis Rioja se retira con molestias tras anotar el gol en Vitoria",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151309-luis-rioja-se-retira-con-molestias-tras-anotar-el-gol-en-vitoria",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Manolo revela que Edu Expósito llegaba con algunas molestias",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151308-manolo-revela-que-edu-exposito-llegaba-con-algunas-molestias",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "15/09",
+   "titulo": "Manolo trata de explicar el once y habla de Dolan, Bauzà, Moscardo, Edu, Hartman, Roberto, Javi, Calatrava y Urko",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151307-manolo-trata-de-explicar-el-once-y-habla-de-dolan-bauza-moscardo-hartman-roberto-javi-calatra",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "15/09",
@@ -458,30 +482,6 @@
    "titulo": "Dani Ceballos: Tomo 2, página 1",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151232-dani-ceballos-tomo-2-pagina-1",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Íñigo Pérez tendrá dos motivos para rotar contra el Málaga",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151231-inigo-perez-tendra-dos-motivos-para-rotar-contra-el-malaga",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "Pellegrini, decidido a mover su once el jueves",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151230-pellegrini-decidido-a-mover-su-once-el-jueves",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "El Valencia inicia negociaciones con Javier Aguirre",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151228-el-valencia-inicia-negociaciones-con-javier-aguirre",
-   "categoria": "mercado"
-  },
-  {
-   "fecha": "14/09",
-   "titulo": "El parte médico oficial de César Tàrrega lo descarta hasta después del parón",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151229-el-parte-medico-oficial-de-cesar-tarrega-lo-descarta-hasta-despues-del-paron",
-   "categoria": "lesión"
   }
  ]
 }
