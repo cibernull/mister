@@ -5634,36 +5634,36 @@
    "cuando": "2026-09-04 09:50:39",
    "posiciones": [
     {
-     "idUc": 12493752,
-     "puntos": 19,
+     "idUc": 12493688,
+     "puntos": 23,
      "puesto": 1,
+     "valorPlantilla": 70474000,
+     "premio": 0
+    },
+    {
+     "idUc": 12493752,
+     "puntos": 21,
+     "puesto": 2,
      "valorPlantilla": 71986000,
      "premio": 0
     },
     {
-     "idUc": 12493688,
-     "puntos": 19,
-     "puesto": 2,
-     "valorPlantilla": 70474000,
+     "idUc": 12493763,
+     "puntos": 11,
+     "puesto": 3,
+     "valorPlantilla": 54979000,
      "premio": 0
     },
     {
      "idUc": 15435600,
      "puntos": 10,
-     "puesto": 3,
+     "puesto": 4,
      "valorPlantilla": 35327000,
      "premio": 75000
     },
     {
-     "idUc": 12493763,
-     "puntos": 9,
-     "puesto": 4,
-     "valorPlantilla": 54979000,
-     "premio": 0
-    },
-    {
      "idUc": 13428410,
-     "puntos": 7,
+     "puntos": 9,
      "puesto": 5,
      "valorPlantilla": 28505000,
      "premio": 0
@@ -5677,14 +5677,14 @@
     },
     {
      "idUc": 12493758,
-     "puntos": 2,
+     "puntos": 3,
      "puesto": 7,
      "valorPlantilla": 28357000,
      "premio": 50000
     },
     {
      "idUc": 13491767,
-     "puntos": -7,
+     "puntos": -6,
      "puesto": 8,
      "valorPlantilla": 6539000,
      "premio": 0

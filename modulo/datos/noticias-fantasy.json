@@ -1,8 +1,20 @@
 {
- "cuando": "2026-09-16T17:08:35.614Z",
+ "cuando": "2026-09-16T17:38:17.840Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "16/09",
+   "titulo": "Sigue en directo el Atlético - Osasuna",
+   "url": "https://www.futbolfantasy.com/partidos/22473-atletico-osasuna",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Sigue en directo el Deportivo - Sevilla",
+   "url": "https://www.futbolfantasy.com/partidos/22475-deportivo-sevilla",
+   "categoria": "análisis"
+  },
   {
    "fecha": "16/09",
    "titulo": "Sigue en directo el Omonia - Celta",
@@ -10,22 +22,34 @@
    "categoria": "análisis"
   },
   {
-   "fecha": "16/09",
-   "titulo": "Alineaciones confirmadas del Deportivo - Sevilla",
-   "url": "https://www.futbolfantasy.com/partidos/22475-deportivo-sevilla",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "Alineaciones confirmadas del Atlético - Osasuna",
-   "url": "https://www.futbolfantasy.com/partidos/22473-atletico-osasuna",
-   "categoria": "rueda de prensa"
-  },
-  {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 de los equipos que han jugado la 6",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Ramis habla de Budimir, Catena y Rubén García en la previa contra el Atlético de Madrid",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151367-luis-miguel-ramis-habla-budimir-catena-ruben-garcia-previa-contra-atletico-madrid",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Simeone habla de Jonathan David, Pubill, Hancko, Julián Álvarez y Sørloth antes de recibir a Osasuna",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151366-diego-pablo-simeone-habla-jonathan-david-pubill-hancko-julian-alvarez-sorloth-antes-osasuna",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Martial se acerca al Málaga tras avanzar las negociaciones",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151365-martial-se-acerca-al-malaga-tras-avanzar-las-negociaciones",
+   "categoria": "mercado"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Alemany, sobre la titularidad de Jonathan David, las molestias de Julián y las críticas al juego del equipo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151364-alemany-sobre-la-titularidad-de-jonathan-david-las-molestias-de-julian-y-las-criticas-al-jueg",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "16/09",
@@ -458,30 +482,6 @@
    "titulo": "¡Sigue a las 17:00h en Twitch y Youtube la información fantasy para la jornada 6!",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151289-sigue-a-las-17-00h-en-twitch-y-youtube-la-informacion-fantasy-para-la-jornada-6",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "À Punt filtra el posible once de Óscar Sánchez para enfrentarse al Alavés",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151288-a-punt-filtra-el-posible-once-de-oscar-sanchez-para-enfrentarse-al-alaves",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Los mejores jugadores para la jornada 6 de LaLiga Fantasy 26/27, por Carrasco",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151287-los-mejores-jugadores-para-la-jornada-6-de-laliga-fantasy-26-27-por-carrasco",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "El mejor XI de la jornada 5 de Liga, por Huugo_21",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151286-el-mejor-xi-de-la-jornada-5-de-liga-por-huugo-21",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Quique anuncia la lista de convocados para recibir al Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151285-quique-anuncia-la-lista-de-convocados-para-recibir-al-valencia",
-   "categoria": "convocatoria"
   }
  ]
 }

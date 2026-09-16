@@ -10652,6 +10652,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 2,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -22488,6 +22495,13 @@
      "penalty",
      "assist"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 50,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -24230,6 +24244,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 6,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -25218,6 +25239,13 @@
     "jornada": 5,
     "puntos": 7,
     "rival": 16,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 50,
     "como": "inicio",
     "eventos": []
    }
@@ -26332,7 +26360,7 @@
  "4836153": {
   "nombre": "Jonathan David",
   "posicion": 4,
-  "goles": 1,
+  "goles": 2,
   "tarjetas": 0,
   "mediaCasa": 0,
   "mediaFuera": 10,
@@ -26376,6 +26404,15 @@
     "como": "banquillo",
     "eventos": [
      "sub_in",
+     "goal"
+    ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 50,
+    "como": "inicio",
+    "eventos": [
      "goal"
     ]
    }
