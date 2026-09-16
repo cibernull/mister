@@ -1,6 +1,14 @@
 {
- "saldo": 27522272,
+ "saldo": 27115425,
  "apuntes": [
+  {
+   "cuando": 1789569008,
+   "fecha": "2026-09-16 16:30",
+   "motivo": "Modificación de cláusula (100%) de José Giménez",
+   "tipo": "Penalización",
+   "importe": -406847,
+   "saldo": 27115425
+  },
   {
    "cuando": 1789527600,
    "fecha": "2026-09-16 05:00",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 1816000,
    "saldo": 1522341
-  },
-  {
-   "cuando": 1787213425,
-   "fecha": "2026-08-20 10:10",
-   "motivo": "Alejandro Grimaldo a Mister",
-   "tipo": "Venta",
-   "importe": 8935470,
-   "saldo": -293659
   }
  ]
 }
