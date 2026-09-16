@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-16T13:08:19.344Z",
+ "cuando": "2026-09-16T13:38:12.325Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "16/09",
-   "titulo": "Las molestias de Diego Llorente son ajenas a la fractura de nariz",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151350-las-molestias-de-diego-llorente-son-ajenas-a-la-fractura-nariz",
-   "categoria": "lesión"
+   "titulo": "Roberto Fernández y Carlos Espí llaman a la puerta de Luis de la Fuente",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151353-roberto-fernandez-y-carlos-espi-llaman-a-la-puerta-de-luis-de-la-fuente",
+   "categoria": "análisis"
   },
   {
    "fecha": "15/09",
@@ -23,9 +23,27 @@
   },
   {
    "fecha": "16/09",
+   "titulo": "Óscar Sánchez se gana dirigir al Valencia contra la Real Sociedad",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151354-oscar-sanchez-se-gana-dirigir-al-valencia-contra-la-real-sociedad",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Teun Gijselhart sale cedido al Al Ain en busca de minutos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151352-teun-gijselhart-sale-cedido-al-al-ain-en-busca-de-minutos",
+   "categoria": "mercado"
+  },
+  {
+   "fecha": "16/09",
    "titulo": "Adrián Niño vuelve al grupo y Fernando Calero completa otra sesión",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151351-adrian-nino-vuelve-al-grupo-y-fernando-calero-completa-otra-sesion",
    "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Las molestias de Diego Llorente son ajenas a la fractura de nariz",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151350-las-molestias-de-diego-llorente-son-ajenas-a-la-fractura-nariz",
+   "categoria": "lesión"
   },
   {
    "fecha": "16/09",
@@ -464,24 +482,6 @@
    "titulo": "Calero avanza progresivamente y Adrián Niño solo hace una parte de la sesión",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151278-calero-avanza-progresivamente-y-adrian-nino-solo-hace-una-parte-de-la-sesion",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Iñaki Williams y Areso vuelven al grupo, con Peio Canales y Guruzeta parcialmente",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151276-inaki-williams-y-areso-vuelven-al-grupo-con-peio-canales-y-guruzeta-parcialmente",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Zubeldia se incorpora al grupo y apunta al duelo europeo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151275-zubeldia-se-incorpora-al-grupo-y-apunta-al-duelo-europeo",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Flick habla de Lamine Yamal, Gavi, Balde, Espart, Cancelo, el Balón de Oro y las rotaciones",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151272-flick-habla-de-lamine-yamal-gavi-balde-el-balon-de-oro-y-las-rotaciones",
-   "categoria": "rueda de prensa"
   }
  ]
 }
