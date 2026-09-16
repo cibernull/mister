@@ -29,6 +29,7 @@ import {
 import type { JugadorMister } from '../recoleccion/parseadorUniverso.js'
 import { verificar, verificarLiga } from './verificar.js'
 import { podar, subidasDeLaSemana, subidasDelMes, type Historico } from './historicoValores.js'
+import { actualizarHistoricoEquipos, type HistoricoEquipos } from './historicoEquipos.js'
 import type { FichaGuardada } from './fichas.js'
 import { reinicioDeLiga } from '../recoleccion/parseadorSaldo.js'
 import { detectarSubidas, gastoEnClausulas, gastoPorEquipo, subidasVivas, type Subida } from './clausulas.js'
@@ -43,6 +44,7 @@ const HISTORICO = join(DATOS, 'historico-valores.json')
 const FICHAS = join(DATOS, 'fichas.json')
 const CAJA = join(DATOS, 'caja.json')
 const HISTORICO_CL = join(DATOS, 'historico-clausulas.json')
+const HISTORICO_EQUIPOS = join(DATOS, 'historico-equipos.json')
 const SUBIDAS = join(DATOS, 'subidas-clausula.json')
 const FOTO = join(DATOS, 'foto.json')
 const NOVEDADES = join(DATOS, 'novedades.json')
@@ -476,6 +478,12 @@ async function intentar(): Promise<Resultado> {
   }
 
   escribirJson(join(DATOS, 'equipos.json'), cuentas.equipos)
+  // Mister no dice si un equipo ganó o perdió dinero de un día para otro: solo
+  // enseña la foto de hoy. Guardando esa foto, mañana se puede restar contra
+  // una foto real y decirlo con un dato exacto, no con una estimación.
+  const histEquiposPrevio = leerJson<HistoricoEquipos>(HISTORICO_EQUIPOS, {})
+  const hoyEquipos = new Date().toISOString().slice(0, 10)
+  escribirJson(HISTORICO_EQUIPOS, actualizarHistoricoEquipos(histEquiposPrevio, hoyEquipos, cuentas.equipos))
   escribirJson(join(DATOS, 'plantillas.json'), cuentas.plantillas)
   escribirJson(join(DATOS, 'datos-liga.json'), construirDatosLiga(hechos, cuentas.valores))
   // Las cláusulas se reescriben enteras, no se acumulan. Acumularlas era lo
