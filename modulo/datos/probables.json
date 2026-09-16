@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-16T12:05:02.867Z",
+ "cuando": "2026-09-16T12:38:22.629Z",
  "fuente": "futbolfantasy.com",
  "leidos": 516,
  "jugadores": {
@@ -101,8 +101,8 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 128,
-   "lesion": "Fractura de nariz",
-   "desde": "04/09 (12 días)",
+   "lesion": "Molestias sin determinar",
+   "desde": "12/09 (4 días)",
    "hasta": null
   },
   "308": {
@@ -961,7 +961,7 @@
    "min": 0
   },
   "27861": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 193
@@ -1396,10 +1396,7 @@
    "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 0,
-   "lesion": "Lesión en los isquiotibiales",
-   "desde": "14/07 (64 días)",
-   "hasta": null
+   "min": 0
   },
   "52117": {
    "prob": 70,
@@ -1951,10 +1948,13 @@
    "min": 43
   },
   "61167": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 0
+   "min": 0,
+   "lesion": "Sobrecarga en el aductor",
+   "desde": "16/09 (1 día)",
+   "hasta": null
   },
   "61297": {
    "prob": 20,
@@ -3136,10 +3136,13 @@
    "min": 180
   },
   "4947930": {
-   "prob": 40,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 5
+   "min": 5,
+   "lesion": "Lesión en el cuádriceps",
+   "desde": "16/09 (1 día)",
+   "hasta": null
   },
   "4947931": {
    "prob": 30,
