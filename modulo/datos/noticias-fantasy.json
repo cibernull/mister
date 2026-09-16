@@ -1,19 +1,37 @@
 {
- "cuando": "2026-09-16T21:08:26.853Z",
+ "cuando": "2026-09-16T21:38:23.610Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "16/09",
-   "titulo": "Sigue en directo el Barcelona - Racing",
-   "url": "https://www.futbolfantasy.com/partidos/22477-barcelona-racing",
-   "categoria": "análisis"
+   "titulo": "El Levante-Athletic podría encontrar hueco a mediados de octubre",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151385-el-levante-athletic-podria-encontrar-hueco-a-mediados-de-octubre",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 de los equipos que han jugado la 6",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Jornada 6: Barcelona 7-2 Racing. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22477-barcelona-racing",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Giráldez analiza la derrota en Chipre y habla de Álvaro Núñez y la mala dinámica del equipo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151384-giraldez-analiza-la-derrota-en-chipre-y-habla-de-alvaro-nunez-y-la-mala-dinamica-del-equipo",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Según As, Joan García sufre una torcedura leve y no peligra para el fin de semana",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151383-segun-as-joan-garcia-sufre-una-torcedura-leve-y-no-peligra-para-el-fin-de-semana",
+   "categoria": "lesión"
   },
   {
    "fecha": "16/09",
@@ -29,7 +47,7 @@
   },
   {
    "fecha": "16/09",
-   "titulo": "Szczesny sustituye a Joan García al descanso por un posbile resbalón",
+   "titulo": "Szczesny sustituye a Joan García al descanso por un resbalón",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151380-szczesny-sustituye-a-joan-garcia-al-descanso-por-un-posbile-resbalon",
    "categoria": "lesión"
   },
@@ -464,24 +482,6 @@
    "titulo": "Manolo revela que Edu Expósito llegaba con algunas molestias",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151308-manolo-revela-que-edu-exposito-llegaba-con-algunas-molestias",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Manolo trata de explicar el once y habla de Dolan, Bauzà, Moscardo, Edu, Hartman, Roberto, Javi, Calatrava y Urko",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151307-manolo-trata-de-explicar-el-once-y-habla-de-dolan-bauza-moscardo-hartman-roberto-javi-calatra",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Anselmi analiza la evolución de su sistema de juego y la adaptación de la plantilla",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151306-anselmi-analiza-la-evolucion-de-su-sistema-de-juego-y-la-adaptacion-de-la-plantilla",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Hidalgo habla de Casadó, Gijselhart, Mella y Yeremay antes de recibir al Sevilla",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151305-antonio-hidalgo-habla-marc-casado-teun-gijselhart-david-mella-yeremay-hernandez-antes-sevilla",
-   "categoria": "rueda de prensa"
   }
  ]
 }

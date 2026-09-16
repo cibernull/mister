@@ -1649,15 +1649,6 @@
     "rival": 12,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 1490,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
@@ -2278,18 +2269,11 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 1
+  "partidos": 2
  },
  "4886": {
   "nombre": "Asier Villalibre",
@@ -2344,17 +2328,6 @@
     "como": "banquillo",
     "eventos": [
      "sub_in"
-    ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": [
-     "sub_out",
-     "own_goal",
-     "assist"
     ]
    }
   ],
@@ -7742,13 +7715,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -9103,8 +9069,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 0
+  "dia": "2026-09-16",
+  "partidos": 1
  },
  "29222": {
   "nombre": "Giuliano Simeone",
@@ -9257,8 +9223,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 1
+  "dia": "2026-09-16",
+  "partidos": 2
  },
  "29238": {
   "nombre": "Arnau Comas",
@@ -10757,11 +10723,11 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 2,
-  "mediaFuera": 5,
+  "mediaFuera": 4,
   "edad": 30,
   "titular": null,
   "titularidades": 2,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -10792,11 +10758,20 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 2,
+    "rival": 12,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-13",
-  "partidos": 4
+  "dia": "2026-09-16",
+  "partidos": 5
  },
  "48620": {
   "nombre": "Marcão",
@@ -15234,11 +15209,18 @@
     "rival": 19,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 12,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-11",
-  "partidos": 0
+  "dia": "2026-09-16",
+  "partidos": 1
  },
  "60271": {
   "nombre": "Rafa Bauza",
@@ -15382,13 +15364,6 @@
     "jornada": 5,
     "puntos": 4,
     "rival": 48,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 3,
     "como": "inicio",
     "eventos": []
    }
@@ -20082,12 +20057,12 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 0,
+  "mediaCasa": 3,
   "mediaFuera": 0,
   "edad": 21,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 0,
+  "suplencias": 1,
   "jornadas": [
    {
     "jornada": 1,
@@ -20109,11 +20084,20 @@
     "rival": 23,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 3,
+    "rival": 48,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-12",
-  "partidos": 1
+  "dia": "2026-09-16",
+  "partidos": 2
  },
  "70496": {
   "nombre": "Alassane Diatta",
@@ -20594,18 +20578,11 @@
      "sub_out",
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 2
+  "partidos": 3
  },
  "70929": {
   "nombre": "Juan Carlos Arana",
@@ -20657,20 +20634,11 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 2
+  "partidos": 3
  },
  "70931": {
   "nombre": "Maguette Gueye",
@@ -20725,15 +20693,6 @@
     "como": "banquillo",
     "eventos": [
      "sub_in"
-    ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": [
-     "goal"
     ]
    }
   ],
@@ -20847,8 +20806,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-14",
-  "partidos": 0
+  "dia": "2026-09-16",
+  "partidos": 1
  },
  "70935": {
   "nombre": "Jorge Salinas",
@@ -20901,13 +20860,6 @@
      "yellow",
      "assist"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -20967,13 +20919,6 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -21030,13 +20975,6 @@
     "jornada": 5,
     "puntos": 2,
     "rival": 48,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 3,
     "como": "inicio",
     "eventos": []
    }
@@ -22757,13 +22695,6 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23555,13 +23486,6 @@
     "puntos": null,
     "rival": 12,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 1490,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -26045,18 +25969,11 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 3
+  "partidos": 4
  },
  "3848684": {
   "nombre": "Alex Marchal",
@@ -26434,7 +26351,7 @@
  "4764213": {
   "nombre": "Gabriel Jesus",
   "posicion": 4,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 0,
   "mediaFuera": 4,
@@ -26483,7 +26400,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 1
+  "partidos": 2
  },
  "4774441": {
   "nombre": "Matia Barzic",
@@ -26897,13 +26814,6 @@
     "jornada": 5,
     "puntos": 4,
     "rival": 48,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 3,
     "como": "inicio",
     "eventos": []
    }
