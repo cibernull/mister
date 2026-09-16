@@ -15882,7 +15882,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
+  "dia": "2026-09-16",
   "partidos": 0
  },
  "61297": {
@@ -27262,5 +27262,66 @@
   "asistencias": 0,
   "dia": "2026-09-16",
   "partidos": 2
+ },
+ "5340038": {
+  "nombre": "Aaron Mayol",
+  "posicion": 3,
+  "goles": 0,
+  "tarjetas": 1,
+  "mediaCasa": 0,
+  "mediaFuera": 5,
+  "edad": 18,
+  "titular": null,
+  "titularidades": 1,
+  "suplencias": 0,
+  "jornadas": [
+   {
+    "jornada": 1,
+    "puntos": null,
+    "rival": 4,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 2,
+    "puntos": null,
+    "rival": 5,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 3,
+    "puntos": null,
+    "rival": 6,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 4,
+    "puntos": null,
+    "rival": 3,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 17,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": 5,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": [
+     "yellow"
+    ]
+   }
+  ],
+  "asistencias": 0,
+  "dia": "2026-09-16",
+  "partidos": 1
  }
 }

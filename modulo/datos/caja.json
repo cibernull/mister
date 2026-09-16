@@ -1,6 +1,14 @@
 {
- "saldo": 30006822,
+ "saldo": 27522272,
  "apuntes": [
+  {
+   "cuando": 1789527600,
+   "fecha": "2026-09-16 05:00",
+   "motivo": "Nathan Saliba a Mister",
+   "tipo": "Compra",
+   "importe": -2484550,
+   "saldo": 27522272
+  },
   {
    "cuando": 1789470385,
    "fecha": "2026-09-15 13:06",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 8935470,
    "saldo": -293659
-  },
-  {
-   "cuando": 1787194800,
-   "fecha": "2026-08-20 05:00",
-   "motivo": "Rodri Hernández a Mister",
-   "tipo": "Compra",
-   "importe": -13057233,
-   "saldo": -9229129
   }
  ]
 }
