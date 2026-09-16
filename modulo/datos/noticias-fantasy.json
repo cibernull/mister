@@ -1,26 +1,8 @@
 {
- "cuando": "2026-09-16T16:38:11.129Z",
+ "cuando": "2026-09-16T16:59:47.149Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "15/09",
-   "titulo": "¡Juega a la Europa League 26/27 en el Fantasy✨ y gana una camiseta!",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151259-juega-a-la-europa-league-26-27-en-el-fantasy-y-gana-una-camiseta",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "02/09",
-   "titulo": "Alineaciones probables para la jornada 7 de los equipos que han jugado la 6",
-   "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "Claudio Giráldez habla de la ilusión por la Europa League, el Omonia y la ausencia de Iago Aspas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151359-claudio-giraldez-habla-ilusion-europa-league-omonia-ausencia-iago-aspas",
-   "categoria": "rueda de prensa"
-  },
   {
    "fecha": "16/09",
    "titulo": "Alineaciones confirmadas del Deportivo - Sevilla",
@@ -31,6 +13,42 @@
    "fecha": "16/09",
    "titulo": "Alineaciones confirmadas del Atlético - Osasuna",
    "url": "https://www.futbolfantasy.com/partidos/22473-atletico-osasuna",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "02/09",
+   "titulo": "Alineaciones probables para la jornada 7 de los equipos que han jugado la 6",
+   "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Luis Sabalza habla de la cantera y las opciones de Osasuna en la previa ante el Atlético de Madrid",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151363-luis-sabalza-habla-cantera-opciones-osasuna-previa-ante-atletico-madrid",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Alineaciones confirmadas del Omonia - Celta",
+   "url": "https://www.futbolfantasy.com/partidos/24258-omonia-celta",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Luis García reconoce margen de mejora y habla de Fofana y Aubameyang",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151361-luis-garcia-reconoce-margen-de-mejora-y-habla-de-fofana-y-aubameyang",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Hidalgo, sobre el buen arranque del equipo y las titularidades de Angeliño y Yeremay",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151360-hidalgo-sobre-el-buen-arranque-del-equipo-y-las-titularidades-de-angelino-y-yeremay",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Giráldez habla de la ilusión por la Europa League, el Omonia y la ausencia de Iago Aspas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151359-claudio-giraldez-habla-ilusion-europa-league-omonia-ausencia-iago-aspas",
    "categoria": "rueda de prensa"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Quique anuncia la lista de convocados para recibir al Valencia",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151285-quique-anuncia-la-lista-de-convocados-para-recibir-al-valencia",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Parte médico oficial de Andrés Antañón y periodo estimado de baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151284-parte-medico-oficial-de-andres-antanon-y-periodo-estimado-de-baja",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "SER Catalunya sorprende pronosticando que Flick solo introducirá un cambio en el once",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151283-ser-catalunya-sorprende-pronosticando-que-flick-solo-introducira-un-cambio-en-el-once",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Zona Mixta espera la entrada de Robbie Ure y Kochorashvili como únicas novedades del once",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151282-zona-mixta-espera-la-entrada-de-robbie-ure-y-kochorashvili-como-unicas-novedades-del-once",
-   "categoria": "análisis"
   }
  ]
 }
