@@ -2885,7 +2885,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 3,
   "edad": 36,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
@@ -10163,7 +10163,7 @@
   "mediaCasa": 0,
   "mediaFuera": 1.5,
   "edad": 30,
-  "titular": true,
+  "titular": null,
   "titularidades": 0,
   "suplencias": 2,
   "jornadas": [
@@ -21123,7 +21123,7 @@
   "mediaCasa": 4,
   "mediaFuera": 3,
   "edad": 28,
-  "titular": null,
+  "titular": true,
   "titularidades": 2,
   "suplencias": 0,
   "jornadas": [
@@ -21259,7 +21259,7 @@
   "mediaCasa": 3.5,
   "mediaFuera": 2.3,
   "edad": 21,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
@@ -21464,7 +21464,7 @@
   "mediaCasa": 2,
   "mediaFuera": 2.5,
   "edad": 29,
-  "titular": null,
+  "titular": true,
   "titularidades": 1,
   "suplencias": 2,
   "jornadas": [
@@ -23208,7 +23208,7 @@
   "mediaCasa": 3,
   "mediaFuera": 4.3,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
@@ -24409,7 +24409,7 @@
   "mediaCasa": 0,
   "mediaFuera": 0,
   "edad": 29,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 0,
   "jornadas": [
@@ -24772,7 +24772,7 @@
   "mediaCasa": 1,
   "mediaFuera": 1,
   "edad": 22,
-  "titular": null,
+  "titular": true,
   "titularidades": 1,
   "suplencias": 1,
   "jornadas": [
