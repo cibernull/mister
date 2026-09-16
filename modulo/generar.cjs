@@ -402,6 +402,18 @@ const corto = (n) => {
 }
 const firma = (n) => (n > 0 ? '+' : n < 0 ? '−' : '') + eur(Math.abs(n))
 const firmaCorta = (n) => (n > 0 ? '+' : n < 0 ? '−' : '') + corto(Math.abs(n))
+// Como `corto`, pero en millones con los decimales que se pidan en vez de
+// solo uno. Para la etiqueta de "ganó/perdió hoy" de cada equipo: «1,6 M»
+// redondeaba 1.586.000 € y se perdía casi todo el número; con tres decimales
+// «1,586 M» es la misma cifra, sin redondear. Por debajo del millón se deja
+// como `corto`: en K, «25,000 K» no aporta nada sobre «25 K» —el número ya
+// era exacto— y solo lo hace más largo de leer.
+const cortoConDecimales = (n, decimales) => {
+  const m = Math.round(n)
+  if (Math.abs(m) >= 1000000) return `${(m / 1000000).toFixed(decimales).replace('.', ',')} M`
+  return corto(m)
+}
+const firmaCortaConDecimales = (n, decimales) => (n > 0 ? '+' : n < 0 ? '−' : '') + cortoConDecimales(Math.abs(n), decimales)
 const dec = (n) => (n || 0).toFixed(1).replace('.', ',')
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]))
 const dia = (f) => {
@@ -2614,7 +2626,7 @@ const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
       <div class="eqn">${esc(e.corto)}${e.mio ? '<span class="et et-eq et-mio">tú</span>' : ''}</div>
       <div class="eqp"><b>${eur(e.tope)}</b><i>puede gastar</i><small class="cambio ${clase(e.cambioHoy)}" title="${
         e.cambioCajaHoy != null ? 'Caja + plantilla, hoy contra ayer' : 'Solo su plantilla: su caja de hoy aún no se puede comparar con la de ayer'
-      }">${firmaCorta(e.cambioHoy)} hoy</small></div>
+      }">${firmaCortaConDecimales(e.cambioHoy, 3)} hoy</small></div>
       ${barraPoder(e)}
     </summary>
     <div class="cuerpo">
