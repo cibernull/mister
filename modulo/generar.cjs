@@ -79,11 +79,25 @@ const VALOR = new Map()
 for (const j of D.jugadores) VALOR.set(String(j.id), j.valor)
 for (const j of J) VALOR.set(String(j.id), j.valor)
 
-// Mister no dice si un equipo ha ganado o perdido dinero de un día para otro:
-// la clasificación solo enseña la foto de hoy. `historico-equipos.json` guarda
-// esa foto cada día por nuestra cuenta, así que «ganó/perdió X hoy» sale de
-// restar dos fotos reales, no de una estimación. Hasta que haya una foto de
-// ayer para ese equipo —el fichero es nuevo—, no se dice nada.
+// Cuánto ha cambiado hoy el valor de la plantilla de cada equipo. Mister
+// publica el valor diario de cada jugador —es `j.semana`, exacto, viene de su
+// propia gráfica, no de un cálculo nuestro—, así que sumándolo por dueño se
+// sabe esto de cualquier equipo desde el primer día, sin esperar a que se
+// acumule ningún histórico propio. `MI_PLANTILLA_HOY`, más abajo, es este
+// mismo número para el propio equipo.
+const cambioPlantillaPorEquipo = new Map()
+for (const j of J) {
+  const dueno = DUENIO.get(String(j.id))
+  if (!dueno || j.semana == null) continue
+  cambioPlantillaPorEquipo.set(dueno, (cambioPlantillaPorEquipo.get(dueno) ?? 0) + j.semana)
+}
+
+// La caja, en cambio, Mister no la publica día a día: la clasificación solo
+// enseña la foto de hoy. `historico-equipos.json` guarda esa foto cada día por
+// nuestra cuenta, así que «ganó/perdió X en caja» sale de restar dos fotos
+// reales, no de una estimación. Hasta que haya una foto de ayer para un equipo
+// —el fichero es nuevo—, su caja no entra en la cuenta: se dice solo lo de la
+// plantilla, que sí se sabe desde hoy, en vez de fingir un total que no es.
 const HIST_EQUIPOS = opcional('historico-equipos.json', {})
 const AYER_EQUIPOS = new Date(Date.now() - 86400000).toISOString().slice(0, 10)
 const fotoAyerDe = (nombre) => HIST_EQUIPOS[AYER_EQUIPOS]?.[nombre] ?? null
@@ -95,10 +109,10 @@ EQ.forEach((e) => {
   e.corto = e.n.replace(/\s*\(.*\)\s*/, '').trim()
   e.patrimonio = e.saldo + e.pl
   e.sobre50 = e.patrimonio - 50000000
+  e.cambioPlantillaHoy = cambioPlantillaPorEquipo.get(e.n) ?? 0
   const ayer = fotoAyerDe(e.n)
   e.cambioCajaHoy = ayer ? e.saldo - ayer.saldo : null
-  e.cambioPlantillaHoy = ayer ? e.pl - ayer.pl : null
-  e.cambioHoy = ayer ? e.cambioCajaHoy + e.cambioPlantillaHoy : null
+  e.cambioHoy = e.cambioCajaHoy != null ? e.cambioCajaHoy + e.cambioPlantillaHoy : e.cambioPlantillaHoy
 })
 const maxTope = Math.max(...EQ.map((e) => e.tope))
 const MIO = EQ.find((e) => e.mio)
@@ -2598,22 +2612,18 @@ const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     <summary>
       <span class="puesto">${e.pos}º</span>
       <div class="eqn">${esc(e.corto)}${e.mio ? '<span class="et et-eq et-mio">tú</span>' : ''}</div>
-      <div class="eqp"><b>${eur(e.tope)}</b><i>puede gastar</i>${
-        e.cambioHoy != null
-          ? `<small class="cambio ${clase(e.cambioHoy)}" title="Caja + plantilla, hoy contra ayer">${firmaCorta(e.cambioHoy)} hoy</small>`
-          : ''
-      }</div>
+      <div class="eqp"><b>${eur(e.tope)}</b><i>puede gastar</i><small class="cambio ${clase(e.cambioHoy)}" title="${
+        e.cambioCajaHoy != null ? 'Caja + plantilla, hoy contra ayer' : 'Solo su plantilla: su caja de hoy aún no se puede comparar con la de ayer'
+      }">${firmaCorta(e.cambioHoy)} hoy</small></div>
       ${barraPoder(e)}
     </summary>
     <div class="cuerpo">
-      <p class="frase">Va <strong>${e.pos}º con ${e.pts} puntos</strong>. Tiene <strong>${eur(e.saldo)}</strong> en caja y una plantilla de ${(PL[e.n] ?? []).length} jugadores que vale ${eur(e.pl)}.${
-        e.cambioHoy != null
-          ? ` Hoy ${e.cambioHoy > 0 ? 'ha ganado' : e.cambioHoy < 0 ? 'ha perdido' : 'sigue con lo mismo,'} <strong class="${clase(e.cambioHoy)}">${e.cambioHoy === 0 ? '0 €' : eur(Math.abs(e.cambioHoy))}</strong> entre caja y plantilla, comparado con ayer${
-              e.cambioCajaHoy != null && e.cambioPlantillaHoy != null
-                ? ` (${firma(e.cambioCajaHoy)} en caja, ${firma(e.cambioPlantillaHoy)} en plantilla)`
-                : ''
-            }.`
-          : ''
+      <p class="frase">Va <strong>${e.pos}º con ${e.pts} puntos</strong>. Tiene <strong>${eur(e.saldo)}</strong> en caja y una plantilla de ${(PL[e.n] ?? []).length} jugadores que vale ${eur(e.pl)}. Hoy ${
+        e.cambioHoy > 0 ? 'ha ganado' : e.cambioHoy < 0 ? 'ha perdido' : 'sigue con lo mismo,'
+      } <strong class="${clase(e.cambioHoy)}">${e.cambioHoy === 0 ? '0 €' : eur(Math.abs(e.cambioHoy))}</strong> ${
+        e.cambioCajaHoy != null
+          ? `entre caja y plantilla, comparado con ayer (${firma(e.cambioCajaHoy)} en caja, ${firma(e.cambioPlantillaHoy)} en plantilla).`
+          : 'de valor en su plantilla, comparado con ayer. Aún no hay una foto de ayer de su caja para saber si esa parte ha subido o bajado también.'
       }</p>
       ${inteligenciaDeRival(e)}
       <h3 class="sub">Su plantilla</h3>
