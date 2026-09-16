@@ -693,9 +693,15 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
    crédito que da la plantilla. Juntos, el tope de puja. */
 .poder{grid-column:2/-1;display:flex;align-items:center;gap:9px;margin-top:2px}
 .poder .barra{flex:1;height:9px;border-radius:99px;background:var(--hueco);overflow:hidden;display:flex}
-.poder .caja{background:var(--oro)}
-.poder .credito{background:repeating-linear-gradient(115deg,var(--oro-raya) 0 4px,transparent 4px 8px);border-right:1px solid var(--oro-raya)}
+.poder .barra .caja{background:var(--oro)}
+.poder .barra .credito{background:repeating-linear-gradient(115deg,var(--oro-raya) 0 4px,transparent 4px 8px);border-right:1px solid var(--oro-raya)}
 .poder small{font-size:11px;color:var(--tenue);white-space:nowrap}
+/* Números de la leyenda, no del trozo de barra: si llevaran las mismas clases
+   "caja"/"credito" que los `<span>` de la barra, esta regla les pintaría
+   fondo dorado a ellos también y el texto —también dorado— desaparecería
+   dentro de su propio fondo. Por eso van con nombre distinto. */
+.poder small b.cf-caja{color:var(--oro)}
+.poder small b.cf-plant{color:var(--oro-raya)}
 
 .cuerpo{padding:0 16px 18px;display:flex;flex-direction:column;gap:9px;border-top:1px solid var(--raya)}
 .frase{margin:15px 0 0;font-size:14.5px;color:var(--gris)}

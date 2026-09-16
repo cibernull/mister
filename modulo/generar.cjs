@@ -1650,10 +1650,15 @@ ${suyos
  * caja— no se distinguía del crédito que solo da la plantilla. Ahora la caja
  * va en negrita y dorado, a juego con el trozo sólido de la barra; el crédito,
  * en el tono más apagado del trozo rayado.
+ *
+ * Los números de la leyenda llevan clase distinta a la de los `<span>` de la
+ * barra (`cf-caja`/`cf-plant`, no `caja`/`credito`): con el mismo nombre, la
+ * regla que pinta de fondo dorado el trozo de barra también pintaba el número
+ * —dorado sobre dorado, ilegible, un bloque sólido.
  */
 const barraPoder = (e) => `<div class="poder">
         <span class="barra"><span class="caja" style="width:${((e.saldo / maxTope) * 100).toFixed(1)}%"></span><span class="credito" style="width:${(((0.25 * e.pl) / maxTope) * 100).toFixed(1)}%"></span></span>
-        <small><b class="clave caja">${corto(e.saldo)}</b> en caja + <b class="clave plant">${corto(0.25 * e.pl)}</b> de crédito por su plantilla</small>
+        <small><b class="cf-caja">${corto(e.saldo)}</b> en caja + <b class="cf-plant">${corto(0.25 * e.pl)}</b> de crédito por su plantilla</small>
       </div>`
 
 const tablaMovimientos = (e) => {
