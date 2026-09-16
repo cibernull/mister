@@ -1,19 +1,25 @@
 {
- "cuando": "2026-09-16T22:08:12.433Z",
+ "cuando": "2026-09-16T22:38:20.985Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "16/09",
-   "titulo": "El Levante-Athletic podría encontrar hueco a mediados de octubre",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151385-el-levante-athletic-podria-encontrar-hueco-a-mediados-de-octubre",
-   "categoria": "rueda de prensa"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 de los equipos que han jugado la 6",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "17/09",
+   "titulo": "Flick celebra el triunfo, explica el estado de Joan García y destaca a Adeyemi",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151388-flick-celebra-el-triunfo-explica-el-estado-de-joan-garcia-y-destaca-a-adeyemi",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "17/09",
+   "titulo": "José Alberto analiza la derrota, explica las rotaciones y habla de Adeyemi y el Barça",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151387-jose-alberto-analiza-la-derrota-explica-las-rotaciones-y-habla-de-adeyemi-y-el-barca",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "16/09",
@@ -26,6 +32,12 @@
    "titulo": "Jornada 6: Barcelona 7-2 Racing. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22477-barcelona-racing",
    "categoria": "partido"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "El Levante-Athletic podría encontrar hueco a mediados de octubre",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151385-el-levante-athletic-podria-encontrar-hueco-a-mediados-de-octubre",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "16/09",
@@ -470,18 +482,6 @@
    "titulo": "Jornada 6: Alavés 0-1 Valencia. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22474-alaves-valencia",
    "categoria": "partido"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "San José valora el triunfo y habla de Camello, Sadick, Pathé Ciss, Álvaro García y la vuelta a Vallecas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151310-san-jose-valora-el-triunfo-y-habla-de-camello-sadick-pathe-ciss-alvaro-garcia-y-la-vuelta-a-v",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Luis Rioja se retira con molestias tras anotar el gol en Vitoria",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151309-luis-rioja-se-retira-con-molestias-tras-anotar-el-gol-en-vitoria",
-   "categoria": "lesión"
   }
  ]
 }
