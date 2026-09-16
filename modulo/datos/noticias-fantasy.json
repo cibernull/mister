@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-16T09:38:22.771Z",
+ "cuando": "2026-09-16T10:08:19.910Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "16/09",
+   "titulo": "Bordalás explica cómo llega el equipo, habla de Femenía, Satriano, el Betis, la Conference y esconde una duda",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151329-bordalas-explica-como-llega-el-equipo-habla-de-femenia-satriano-el-betis-la-conference-y-esco",
+   "categoria": "rueda de prensa"
+  },
   {
    "fecha": "15/09",
    "titulo": "¡Juega a la Europa League 26/27 en el Fantasy✨ y gana una camiseta!",
@@ -14,6 +20,18 @@
    "titulo": "Alineaciones probables para la jornada 7 de los equipos que han jugado la 6",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Ugrinic descubre una nueva vía por la derecha",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151328-ugrinic-descubre-una-nueva-via-por-la-derecha",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Ruibal y Llorente, bajas en la sesión previa a la visita del Getafe",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151327-ruibal-y-llorente-bajas-en-la-sesion-previa-a-la-visita-del-getafe",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "16/09",
@@ -191,9 +209,9 @@
   },
   {
    "fecha": "15/09",
-   "titulo": "El Betis descansó este martes pendiente de las molestias de Diego Llorente",
+   "titulo": "El Betis completó una sesión de recuperación pendiente de las molestias de Diego Llorente",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151299-el-betis-descanso-este-martes-pendiente-de-las-molestias-de-diego-llorente",
-   "categoria": "equipo"
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "15/09",
@@ -463,24 +481,6 @@
    "fecha": "15/09",
    "titulo": "Alineaciones probables para la jornada 6 de LaLiga 26/27 en Youtube: VERSIÓN EXTENDIDA",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151251-alineaciones-probables-para-la-jornada-6-de-laliga-26-27-en-youtube-version-extendida",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Las alineaciones probables del Espanyol para la jornada 6 según la prensa especializada",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151250-las-alineaciones-probables-del-espanyol-para-la-jornada-6-segun-la-prensa-especializada",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Las alineaciones probables del Rayo para la jornada 6 según la prensa especializada",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151249-las-alineaciones-probables-del-rayo-para-la-jornada-6-segun-la-prensa-especializada",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Las alineaciones probables del Alavés para la jornada 6 según la prensa especializada",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151248-las-alineaciones-probables-del-alaves-para-la-jornada-6-segun-la-prensa-especializada",
    "categoria": "análisis"
   }
  ]
