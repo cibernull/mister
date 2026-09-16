@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-16T20:12:05.986Z",
+ "cuando": "2026-09-16T20:38:12.612Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -14,6 +14,12 @@
    "titulo": "Alineaciones probables para la jornada 7 de los equipos que han jugado la 6",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "El cambio de Osambela en el Metropolitano fue por calambres",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151379-el-cambio-de-osambela-en-el-metropolitano-fue-por-calambres",
+   "categoria": "lesión"
   },
   {
    "fecha": "16/09",
@@ -476,12 +482,6 @@
    "titulo": "Omar El Hilali es expulsado por cortar una jugada con la mano",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151303-omar-el-hilali-es-expulsado-por-cortar-una-jugada-con-la-mano",
    "categoria": "sanción"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Giráldez habla de Miguel Román, Borja Iglesias, Jones, Febas y el partido contra el Omonia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151301-claudio-giraldez-habla-miguel-roman-borja-iglesias-jones-aleix-febas",
-   "categoria": "rueda de prensa"
   }
  ]
 }
