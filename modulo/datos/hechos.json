@@ -5234,7 +5234,7 @@
    "posicion": 2,
    "puntos": 16,
    "media": 4,
-   "racha": "3,6,-,3,4"
+   "racha": "6,-,3,4,-"
   },
   {
    "idTransfer": 547761275,
@@ -5250,8 +5250,8 @@
    "valor": 2524000,
    "posicion": 2,
    "puntos": 10,
-   "media": 2.8,
-   "racha": "3,2,5,1,-"
+   "media": 2,
+   "racha": "2,5,1,-,-1"
   },
   {
    "idTransfer": 547956485,
@@ -5268,7 +5268,7 @@
    "posicion": 3,
    "puntos": 19,
    "media": 4.8,
-   "racha": "-,3,6,6,4"
+   "racha": "3,6,6,4,-"
   },
   {
    "idTransfer": 548033128,
