@@ -206,10 +206,10 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 3,
-  "mediaFuera": 4,
+  "mediaFuera": 3.7,
   "edad": 31,
   "titular": null,
-  "titularidades": 1,
+  "titularidades": 2,
   "suplencias": 2,
   "jornadas": [
    {
@@ -246,11 +246,18 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 3,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-13",
-  "partidos": 2
+  "dia": "2026-09-16",
+  "partidos": 3
  },
  "42": {
   "nombre": "Koke",
@@ -2929,13 +2936,6 @@
     "rival": 9,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -4051,8 +4051,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 0
+  "dia": "2026-09-16",
+  "partidos": 1
  },
  "14432": {
   "nombre": "Javi Puado",
@@ -6264,18 +6264,11 @@
      "sub_in",
      "assist"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 6,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
   "dia": "2026-09-16",
-  "partidos": 3
+  "partidos": 4
  },
  "22502": {
   "nombre": "Alex Baena",
@@ -9968,10 +9961,10 @@
   "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 12,
-  "mediaFuera": 3.5,
+  "mediaFuera": 3.7,
   "edad": 23,
   "titular": null,
-  "titularidades": 3,
+  "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
    {
@@ -10006,11 +9999,18 @@
     "rival": 1,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 4,
+    "rival": 16,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-13",
-  "partidos": 4
+  "dia": "2026-09-16",
+  "partidos": 5
  },
  "35922": {
   "nombre": "Jofre Carreras",
@@ -10220,20 +10220,11 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 17,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 2
+  "partidos": 3
  },
  "36410": {
   "nombre": "Pierre-Emerick Aubameyang",
@@ -12920,11 +12911,11 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 0,
-  "mediaFuera": 1,
+  "mediaFuera": 2,
   "edad": 24,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 2,
+  "suplencias": 3,
   "jornadas": [
    {
     "jornada": 1,
@@ -12957,11 +12948,21 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 4,
+    "rival": 16,
+    "como": "banquillo",
+    "eventos": [
+     "yellow",
+     "sub_in"
+    ]
    }
   ],
-  "asistencias": 0,
-  "dia": "2026-09-13",
-  "partidos": 3
+  "asistencias": 1,
+  "dia": "2026-09-16",
+  "partidos": 4
  },
  "56583": {
   "nombre": "Augusto Batalla",
@@ -13444,8 +13445,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-12",
-  "partidos": 3
+  "dia": "2026-09-16",
+  "partidos": 4
  },
  "58438": {
   "nombre": "Flavien Boyomo",
@@ -13500,8 +13501,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 2
+  "dia": "2026-09-16",
+  "partidos": 3
  },
  "58467": {
   "nombre": "Chidera Ejuke",
@@ -17752,11 +17753,11 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 2,
+  "mediaCasa": 4,
   "mediaFuera": 3.5,
   "edad": 23,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 1,
   "jornadas": [
    {
@@ -17788,11 +17789,18 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 6,
+    "rival": 19,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-11",
-  "partidos": 4
+  "dia": "2026-09-16",
+  "partidos": 5
  },
  "65187": {
   "nombre": "Alejandro Rego",
@@ -19688,7 +19696,7 @@
   "edad": 21,
   "titular": null,
   "titularidades": 1,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -19721,11 +19729,20 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 2,
+    "rival": 19,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-11",
-  "partidos": 3
+  "dia": "2026-09-16",
+  "partidos": 4
  },
  "69889": {
   "nombre": "Xavi Espart",
@@ -20963,20 +20980,11 @@
      "sub_in",
      "assist"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 1,
   "dia": "2026-09-16",
-  "partidos": 4
+  "partidos": 5
  },
  "70940": {
   "nombre": "Zakaria Eddahchouri",
@@ -21031,13 +21039,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -21148,13 +21149,6 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -21211,20 +21205,11 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 2
+  "partidos": 3
  },
  "70945": {
   "nombre": "Diego Villares",
@@ -21275,13 +21260,6 @@
     "puntos": null,
     "rival": 9,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -21361,13 +21339,6 @@
     "eventos": [
      "yellow"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -21577,18 +21548,11 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 3
+  "partidos": 4
  },
  "70992": {
   "nombre": "Chupete",
@@ -22494,18 +22458,11 @@
      "penalty",
      "assist"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
   "dia": "2026-09-16",
-  "partidos": 4
+  "partidos": 5
  },
  "71022": {
   "nombre": "Teun Gijselhart",
@@ -22979,13 +22936,6 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23344,13 +23294,6 @@
     "rival": 16,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23463,15 +23406,6 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 17,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
@@ -24245,15 +24179,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 6,
-    "como": "inicio",
-    "eventos": [
-     "goal"
-    ]
    }
   ],
   "asistencias": 0,
@@ -24517,13 +24442,6 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 6,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24534,7 +24452,7 @@
   "nombre": "Angeliño",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 0,
   "mediaFuera": 0,
   "edad": 29,
@@ -24576,18 +24494,11 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 0
+  "partidos": 1
  },
  "78393": {
   "nombre": "Altay Bayındır",
@@ -24894,13 +24805,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 6,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -24956,18 +24860,11 @@
     "rival": 8,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 2,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 2
+  "partidos": 3
  },
  "925296": {
   "nombre": "Giorgi Tsitaishvili",
@@ -25127,13 +25024,6 @@
     "rival": 16,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -25244,20 +25134,11 @@
     "rival": 16,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 2
+  "partidos": 3
  },
  "1396108": {
   "nombre": "Arnau Ortiz",
@@ -25309,15 +25190,6 @@
     "jornada": 5,
     "puntos": 5,
     "rival": 16,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 50,
     "como": "banquillo",
     "eventos": [
      "sub_in"
@@ -26249,7 +26121,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 1
+  "partidos": 2
  },
  "4764213": {
   "nombre": "Gabriel Jesus",
@@ -26406,22 +26278,11 @@
      "sub_in",
      "goal"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": [
-     "sub_out",
-     "goal",
-     "assist"
-    ]
    }
   ],
   "asistencias": 1,
   "dia": "2026-09-16",
-  "partidos": 1
+  "partidos": 2
  },
  "4836165": {
   "nombre": "Roy Revivo",
@@ -26535,20 +26396,11 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 6,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 2
+  "partidos": 3
  },
  "4836173": {
   "nombre": "Félix Correia",
@@ -26598,18 +26450,11 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 6,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 1
+  "partidos": 2
  },
  "4836181": {
   "nombre": "Iván Azón",
@@ -26999,18 +26844,11 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 6,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-16",
-  "partidos": 2
+  "partidos": 3
  },
  "4947928": {
   "nombre": "Salvi Esquivel",
