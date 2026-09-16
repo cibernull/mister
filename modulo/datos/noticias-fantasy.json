@@ -1,24 +1,18 @@
 {
- "cuando": "2026-09-16T19:08:19.135Z",
+ "cuando": "2026-09-16T19:38:18.519Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "16/09",
-   "titulo": "Sigue en directo el Atlético - Osasuna",
-   "url": "https://www.futbolfantasy.com/partidos/22473-atletico-osasuna",
-   "categoria": "análisis"
+   "titulo": "El Levante - Athletic se aplaza por razones meteorológicas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151373-el-levante-athletic-se-aplaza-por-razones-meteorologicas",
+   "categoria": "sanción"
   },
   {
    "fecha": "16/09",
-   "titulo": "Sigue en directo el Deportivo - Sevilla",
-   "url": "https://www.futbolfantasy.com/partidos/22475-deportivo-sevilla",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "Sigue en directo el Omonia - Celta",
-   "url": "https://www.futbolfantasy.com/partidos/24258-omonia-celta",
+   "titulo": "Sigue en directo el Barcelona - Racing",
+   "url": "https://www.futbolfantasy.com/partidos/22477-barcelona-racing",
    "categoria": "análisis"
   },
   {
@@ -29,15 +23,51 @@
   },
   {
    "fecha": "16/09",
+   "titulo": "Sierra corta la racha del Dépor",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151374-sierra-corta-la-racha-del-depor",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "16/09",
    "titulo": "Alineaciones confirmadas del Levante - Athletic",
    "url": "https://www.futbolfantasy.com/partidos/22478-levante-athletic",
    "categoria": "rueda de prensa"
   },
   {
    "fecha": "16/09",
-   "titulo": "Alineaciones confirmadas del Barcelona - Racing",
-   "url": "https://www.futbolfantasy.com/partidos/22477-barcelona-racing",
-   "categoria": "rueda de prensa"
+   "titulo": "El Atlético aprende a divertirse",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151372-el-atletico-aprende-a-divertirse",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "El Celta traslada la mala dinámica a Europa",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151371-el-celta-traslada-la-mala-dinamica-a-europa",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Angeliño es expulsado y se pierde la visita del Betis",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151370-angelino-es-expulsado-y-se-pierde-la-visita-del-betis",
+   "categoria": "sanción"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Europa League: Omonia 1-0 Celta. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24258-omonia-celta",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Jornada 6: Deportivo 0-1 Sevilla. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22475-deportivo-sevilla",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "16/09",
+   "titulo": "Jornada 6: Atlético 4-0 Osasuna. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22473-atletico-osasuna",
+   "categoria": "partido"
   },
   {
    "fecha": "16/09",
@@ -452,36 +482,6 @@
    "titulo": "Óscar Sánchez repasa sus primeras horas como técnico y el Valencia que quiere ver",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151298-oscar-sanchez-repasa-sus-primeras-horas-como-tecnico-y-el-valencia-que-quiere-ver",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Quique explica la titularidad de Toni Martínez y analiza los peligros del Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151297-quique-explica-la-titularidad-de-toni-martinez-y-analiza-los-peligros-del-valencia",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "San José habló de Camello, Roberto y el Espanyol antes del encuentro",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151296-san-jose-hablo-de-camello-roberto-y-el-espanyol-antes-del-encuentro",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Manolo explica los cambios en el once y habla de Camello, Roberto y el Rayo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151295-manolo-explica-los-cambios-en-el-once-y-habla-de-camello-roberto-y-el-rayo",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Hamza Abdelkarim renueva con el FC Barcelona hasta 2030",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151294-hamza-abdelkarim-renueva-con-el-fc-barcelona-hasta-2030",
-   "categoria": "mercado"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "Luis García Plaza repite convocatoria para visitar al Deportivo en Riazor",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151292-luis-garcia-plaza-repite-convocatoria-visitar-deportivo-riazor",
-   "categoria": "convocatoria"
   }
  ]
 }
