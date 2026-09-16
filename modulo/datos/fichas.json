@@ -1655,7 +1655,9 @@
     "puntos": null,
     "rival": 1490,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -2350,6 +2352,7 @@
     "rival": 3,
     "como": "inicio",
     "eventos": [
+     "sub_out",
      "own_goal",
      "assist"
     ]
@@ -20660,7 +20663,9 @@
     "puntos": null,
     "rival": 3,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -22752,6 +22757,13 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 3,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24621,7 +24633,8 @@
     "rival": 3,
     "como": "inicio",
     "eventos": [
-     "yellow"
+     "yellow",
+     "sub_out"
     ]
    }
   ],
@@ -26465,13 +26478,6 @@
     "puntos": null,
     "rival": 12,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 1490,
-    "como": "inicio",
     "eventos": []
    }
   ],
