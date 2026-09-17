@@ -1078,6 +1078,16 @@
  ],
  "movimientos": [
   {
+   "id": "22502",
+   "nombre": "Alex Baena",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 12686760,
+   "tipo": "normal",
+   "fecha": "2026-09-17 15:01:28",
+   "pos": 3
+  },
+  {
    "id": "22595",
    "nombre": "Joaquín Muñoz",
    "de": null,
@@ -7474,6 +7484,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Alex Baena",
+     "id": "22502",
+     "tipo": "venta",
+     "importe": 12686760,
+     "fecha": "2026-09-17",
+     "op": "normal"
+    },
+    {
      "j": "Péter Gulácsi",
      "id": "71649",
      "tipo": "compra",
@@ -8060,8 +8078,8 @@
     "22502": {
      "nombre": "Alex Baena",
      "compras": 11100000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 12686760,
+     "ops": 2
     },
     "22591": {
      "nombre": "Rafa Mir",

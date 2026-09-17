@@ -5388,6 +5388,23 @@
    "puntos": 16,
    "media": 3.2,
    "racha": "4,4,2,4,2"
+  },
+  {
+   "idTransfer": 548798559,
+   "idJugador": "22502",
+   "nombre": "Alex Baena",
+   "de": "Saiyans FC (Fran)",
+   "a": "Mister",
+   "idUcDe": 12493752,
+   "idUcA": 0,
+   "importe": 12686760,
+   "tipo": "normal",
+   "cuando": "2026-09-17 15:01:28",
+   "valor": 12531000,
+   "posicion": 3,
+   "puntos": 50,
+   "media": 8.3,
+   "racha": "3,18,2,3,12"
   }
  ],
  "salidas": [
