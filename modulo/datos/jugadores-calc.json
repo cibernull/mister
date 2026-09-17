@@ -28610,6 +28610,81 @@
   "d": 0
  },
  {
+  "id": "68677",
+  "nombre": "Álvaro Fidalgo",
+  "valor": 160000,
+  "puntos": 3,
+  "media": 3,
+  "partidos": 1,
+  "semana": -14000,
+  "sem7": -94000,
+  "mes": -1030000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   3
+  ],
+  "eq": 4,
+  "riv": 9,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 3,
+  "mf": 0,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 29,
+  "js": [
+   [
+    1,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    4,
+    3,
+    15,
+    0,
+    "i60"
+   ],
+   [
+    5,
+    null,
+    20,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "1255969",
   "nombre": "Jorge Domínguez",
   "valor": 160000,
@@ -28683,81 +28758,6 @@
     6,
     null,
     50,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "68677",
-  "nombre": "Álvaro Fidalgo",
-  "valor": 160000,
-  "puntos": 3,
-  "media": 3,
-  "partidos": 1,
-  "semana": -14000,
-  "sem7": -94000,
-  "mes": -1030000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   3
-  ],
-  "eq": 4,
-  "riv": 9,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 3,
-  "mf": 0,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 29,
-  "js": [
-   [
-    1,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    12,
-    0,
-    ""
-   ],
-   [
-    4,
-    3,
-    15,
-    0,
-    "i60"
-   ],
-   [
-    5,
-    null,
-    20,
     0,
     ""
    ]
@@ -30227,75 +30227,6 @@
   "d": 0
  },
  {
-  "id": "70183",
-  "nombre": "Rayane Belaid",
-  "valor": 160000,
-  "puntos": 2,
-  "media": 2,
-  "partidos": 1,
-  "semana": -12000,
-  "sem7": 0,
-  "mes": -38000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   2
-  ],
-  "eq": 14,
-  "riv": 50,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [
-   [
-    1,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    1490,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "5235247",
   "nombre": "Xanet Olaiz",
   "valor": 160000,
@@ -30370,6 +30301,75 @@
     6,
     null,
     19,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "70183",
+  "nombre": "Rayane Belaid",
+  "valor": 160000,
+  "puntos": 2,
+  "media": 2,
+  "partidos": 1,
+  "semana": -12000,
+  "sem7": 0,
+  "mes": -38000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   2
+  ],
+  "eq": 14,
+  "riv": 50,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [
+   [
+    1,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    1490,
     0,
     ""
    ]
@@ -33425,6 +33425,46 @@
   "d": 0
  },
  {
+  "id": "5691",
+  "nombre": "Álvaro Odriozola",
+  "valor": 193000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -3000,
+  "sem7": 29000,
+  "mes": 8000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 16,
+  "riv": 19,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 30,
+  "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "78393",
   "nombre": "Altay Bayındır",
   "valor": 193000,
@@ -33504,46 +33544,6 @@
     ""
    ]
   ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "5691",
-  "nombre": "Álvaro Odriozola",
-  "valor": 193000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -3000,
-  "sem7": 29000,
-  "mes": 8000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 16,
-  "riv": 19,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 30,
-  "js": [],
   "p": 0,
   "d": 0
  },
@@ -35611,6 +35611,82 @@
   "d": 0
  },
  {
+  "id": "29238",
+  "nombre": "Arnau Comas",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -9000,
+  "sem7": -41000,
+  "mes": -20000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "other",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 6,
+  "riv": 4,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 26,
+  "js": [
+   [
+    1,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    9,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "63869",
   "nombre": "Bambo Diaby",
   "valor": 160000,
@@ -36413,20 +36489,20 @@
   "d": 0
  },
  {
-  "id": "11092",
-  "nombre": "Andoni Gorosabel",
+  "id": "61410",
+  "nombre": "Adrián Rodríguez",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": 0,
-  "sem7": -187000,
-  "mes": -471000,
+  "semana": -1000,
+  "sem7": -51000,
+  "mes": null,
   "mk": 0,
   "pv": null,
   "ced": 0,
-  "pos": 2,
-  "est": "injury",
+  "pos": 1,
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -36436,9 +36512,9 @@
    null,
    null
   ],
-  "eq": 8,
-  "riv": 23,
-  "casa": 1,
+  "eq": 48,
+  "riv": 1,
+  "casa": 0,
   "gol": 0,
   "tar": 0,
   "mc": 0,
@@ -36447,26 +36523,33 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 30,
+  "edad": 25,
   "js": [
    [
     1,
     null,
-    12,
+    9,
     0,
     ""
    ],
    [
     2,
     null,
-    15,
+    14,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    20,
     0,
     ""
    ],
    [
     4,
     null,
-    17,
+    50,
     0,
     ""
    ]
@@ -36551,6 +36634,68 @@
   "d": 0
  },
  {
+  "id": "11092",
+  "nombre": "Andoni Gorosabel",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -187000,
+  "mes": -471000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 8,
+  "riv": 23,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 30,
+  "js": [
+   [
+    1,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    17,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "48620",
   "nombre": "Marcão",
   "valor": 160000,
@@ -36619,82 +36764,6 @@
     5,
     null,
     19,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "68711",
-  "nombre": "Obed Vargas",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -16000,
-  "mes": -76000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 2,
-  "riv": 15,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    16,
     0,
     ""
    ]
@@ -36891,151 +36960,6 @@
   "asis": 0,
   "edad": 36,
   "js": [],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "29238",
-  "nombre": "Arnau Comas",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -9000,
-  "sem7": -41000,
-  "mes": -20000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "other",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 6,
-  "riv": 4,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 26,
-  "js": [
-   [
-    1,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    9,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "61410",
-  "nombre": "Adrián Rodríguez",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -1000,
-  "sem7": -51000,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 48,
-  "riv": 1,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    1,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    50,
-    0,
-    ""
-   ]
-  ],
   "p": 0,
   "d": 0
  },
@@ -37265,6 +37189,82 @@
     4,
     null,
     8,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "68711",
+  "nombre": "Obed Vargas",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -16000,
+  "mes": -76000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 2,
+  "riv": 15,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    16,
     0,
     ""
    ]
