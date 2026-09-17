@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-17T17:37:58.318Z",
+ "cuando": "2026-09-17T18:08:23.737Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "17/09",
-   "titulo": "Alineaciones confirmadas del Betis - Getafe",
+   "titulo": "Sigue en directo el Betis - Getafe",
    "url": "https://www.futbolfantasy.com/partidos/22481-betis-getafe",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -19,6 +19,12 @@
    "fecha": "17/09",
    "titulo": "Posibles alineaciones y previa fantasy del Real Sociedad - Bournemouth",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151389-posibles-alineaciones-y-previa-fantasy-del-real-sociedad-bournemouth",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "17/09",
+   "titulo": "ANÁLISIS FANTASY JORNADA 7 | Alineaciones probables, lesionados y sancionados, por Carrasco",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151425-analisis-fantasy-jornada-7-alineaciones-probables-lesionados-y-sancionados-por-carrasco",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Parte médico oficial de Jens Cajuste y Adam Aznou",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151346-parte-medico-oficial-de-jens-cajuste-y-adam-aznou",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "Lista de Pellegrini para recibir al Getafe sin los dos lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151345-lista-de-pellegrini-para-recibir-al-getafe-sin-los-dos-lesionados",
-   "categoria": "convocatoria"
   }
  ]
 }
