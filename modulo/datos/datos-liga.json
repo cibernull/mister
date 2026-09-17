@@ -1069,9 +1069,34 @@
    "id": "3845074",
    "nombre": "Nathan Saliba",
    "valor": 2612000
+  },
+  {
+   "id": "60210",
+   "nombre": "Pau Navarro",
+   "valor": 960000
   }
  ],
  "movimientos": [
+  {
+   "id": "22595",
+   "nombre": "Joaquín Muñoz",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 1928280,
+   "tipo": "normal",
+   "fecha": "2026-09-17 05:00:27",
+   "pos": 3
+  },
+  {
+   "id": "60210",
+   "nombre": "Pau Navarro",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 899000,
+   "tipo": "normal",
+   "fecha": "2026-09-17 05:00:27",
+   "pos": 2
+  },
   {
    "id": "3845074",
    "nombre": "Nathan Saliba",
@@ -4227,6 +4252,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Pau Navarro",
+     "id": "60210",
+     "tipo": "compra",
+     "importe": 899000,
+     "fecha": "2026-09-17",
+     "op": "normal"
+    },
+    {
      "j": "Miguel Sierra",
      "id": "71640",
      "tipo": "compra",
@@ -4982,6 +5015,12 @@
      "nombre": "Jon Martin",
      "compras": 0,
      "ventas": 7455140,
+     "ops": 1
+    },
+    "60210": {
+     "nombre": "Pau Navarro",
+     "compras": 899000,
+     "ventas": 0,
      "ops": 1
     },
     "60888": {
@@ -6057,6 +6096,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Joaquín Muñoz",
+     "id": "22595",
+     "tipo": "compra",
+     "importe": 1928280,
+     "fecha": "2026-09-17",
+     "op": "normal"
+    },
+    {
      "j": "Gabriel Suazo",
      "id": "64382",
      "tipo": "compra",
@@ -6683,6 +6730,12 @@
      "compras": 270580,
      "ventas": 174440,
      "ops": 2
+    },
+    "22595": {
+     "nombre": "Joaquín Muñoz",
+     "compras": 1928280,
+     "ventas": 0,
+     "ops": 1
     },
     "22885": {
      "nombre": "Josan Ferrández",
