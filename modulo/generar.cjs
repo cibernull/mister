@@ -79,25 +79,30 @@ const VALOR = new Map()
 for (const j of D.jugadores) VALOR.set(String(j.id), j.valor)
 for (const j of J) VALOR.set(String(j.id), j.valor)
 
-// Cuánto ha cambiado hoy el valor de la plantilla de cada equipo. Mister
-// publica el valor diario de cada jugador —es `j.semana`, exacto, viene de su
-// propia gráfica, no de un cálculo nuestro—, así que sumándolo por dueño se
-// sabe esto de cualquier equipo desde el primer día, sin esperar a que se
-// acumule ningún histórico propio. `MI_PLANTILLA_HOY`, más abajo, es este
-// mismo número para el propio equipo.
-const cambioPlantillaPorEquipo = new Map()
+// Cuánto ha cambiado hoy el valor de la plantilla de cada equipo. Lo correcto
+// es la resta directa entre dos fotos reales, `e.pl(hoy) − pl(ayer)`, una vez
+// que existe una foto de ayer: es la misma cuenta que la caja, y las dos
+// juntas dan el patrimonio de verdad. Antes de que hubiera fotos —el primer
+// día de este histórico— se usaba `j.semana`, el valor diario que Mister
+// publica de cada jugador, sumado por dueño; pero esa suma deja fuera lo que
+// vale un jugador fichado ese mismo día: a Neky, hoy, la plantilla le subía
+// 1.470.000 € por esa cuenta y en realidad subió 2.369.000 €, porque fichó a
+// Pau Navarro y su valor completo —960.000 €— no entraba en ningún `.semana`.
+// El resultado no cuadraba con caja + plantilla real. Se deja `j.semana` solo
+// como reserva para cuando de verdad no haya foto de ayer.
+const cambioPlantillaPorEquipoSinHistorico = new Map()
 for (const j of J) {
   const dueno = DUENIO.get(String(j.id))
   if (!dueno || j.semana == null) continue
-  cambioPlantillaPorEquipo.set(dueno, (cambioPlantillaPorEquipo.get(dueno) ?? 0) + j.semana)
+  cambioPlantillaPorEquipoSinHistorico.set(dueno, (cambioPlantillaPorEquipoSinHistorico.get(dueno) ?? 0) + j.semana)
 }
 
-// La caja, en cambio, Mister no la publica día a día: la clasificación solo
-// enseña la foto de hoy. `historico-equipos.json` guarda esa foto cada día por
-// nuestra cuenta, así que «ganó/perdió X en caja» sale de restar dos fotos
-// reales, no de una estimación. Hasta que haya una foto de ayer para un equipo
-// —el fichero es nuevo—, su caja no entra en la cuenta: se dice solo lo de la
-// plantilla, que sí se sabe desde hoy, en vez de fingir un total que no es.
+// La caja, Mister no la publica día a día: la clasificación solo enseña la
+// foto de hoy. `historico-equipos.json` guarda esa foto cada día por nuestra
+// cuenta, así que «ganó/perdió X» sale de restar dos fotos reales, no de una
+// estimación. Hasta que haya una foto de ayer para un equipo —el fichero es
+// nuevo—, ni su caja ni su plantilla entran en la cuenta con este método: se
+// usa la reserva de arriba, en vez de fingir un total que no es.
 const HIST_EQUIPOS = opcional('historico-equipos.json', {})
 const AYER_EQUIPOS = new Date(Date.now() - 86400000).toISOString().slice(0, 10)
 const fotoAyerDe = (nombre) => HIST_EQUIPOS[AYER_EQUIPOS]?.[nombre] ?? null
@@ -109,8 +114,8 @@ EQ.forEach((e) => {
   e.corto = e.n.replace(/\s*\(.*\)\s*/, '').trim()
   e.patrimonio = e.saldo + e.pl
   e.sobre50 = e.patrimonio - 50000000
-  e.cambioPlantillaHoy = cambioPlantillaPorEquipo.get(e.n) ?? 0
   const ayer = fotoAyerDe(e.n)
+  e.cambioPlantillaHoy = ayer ? e.pl - ayer.pl : (cambioPlantillaPorEquipoSinHistorico.get(e.n) ?? 0)
   e.cambioCajaHoy = ayer ? e.saldo - ayer.saldo : null
   e.cambioHoy = e.cambioCajaHoy != null ? e.cambioCajaHoy + e.cambioPlantillaHoy : e.cambioPlantillaHoy
 })
