@@ -2851,6 +2851,15 @@
     "eventos": [
      "yellow"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 4,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -6485,7 +6494,7 @@
   "mediaCasa": 4,
   "mediaFuera": 2.7,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
@@ -12304,7 +12313,7 @@
   "mediaCasa": 3,
   "mediaFuera": 3,
   "edad": 25,
-  "titular": null,
+  "titular": true,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -22036,7 +22045,7 @@
   "mediaCasa": 3.5,
   "mediaFuera": 2.3,
   "edad": 20,
-  "titular": null,
+  "titular": true,
   "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
@@ -25818,6 +25827,7 @@
     "rival": 9,
     "como": "inicio",
     "eventos": [
+     "sub_out",
      "assist"
     ]
    }

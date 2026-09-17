@@ -1,7 +1,7 @@
 {
- "cuando": "2026-09-17T18:16:41.191Z",
+ "cuando": "2026-09-17T18:38:12.876Z",
  "fuente": "futbolfantasy.com",
- "leidos": 512,
+ "leidos": 531,
  "jugadores": {
   "10": {
    "prob": 80,
@@ -193,7 +193,7 @@
    "min": 450
   },
   "1737": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 377
@@ -442,7 +442,7 @@
    "min": 0
   },
   "13011": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0,
@@ -751,7 +751,7 @@
    "hasta": "finales de septiembre"
   },
   "22595": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 290
@@ -925,7 +925,7 @@
    "hasta": null
   },
   "27861": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 193
@@ -937,7 +937,7 @@
    "min": 296
   },
   "27869": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 4
@@ -1321,7 +1321,7 @@
    "hasta": null
   },
   "51060": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 197
@@ -1453,7 +1453,7 @@
    "min": 313
   },
   "54900": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 313
@@ -1855,7 +1855,7 @@
    "min": 495
   },
   "60927": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 24
@@ -1999,7 +1999,7 @@
    "min": 65
   },
   "64038": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 225
@@ -2533,7 +2533,7 @@
    "min": 196
   },
   "70992": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 450
@@ -2545,13 +2545,13 @@
    "min": 35
   },
   "70994": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 11
   },
   "70996": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 395
@@ -2566,25 +2566,25 @@
    "hasta": "enero"
   },
   "70998": {
-   "prob": 40,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 358
   },
   "70999": {
-   "prob": 60,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 295
   },
   "71000": {
-   "prob": 40,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 87
   },
   "71002": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 90
@@ -2599,37 +2599,37 @@
    "hasta": null
   },
   "71004": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 269
   },
   "71006": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
   },
   "71008": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 426
   },
   "71010": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 450
   },
   "71011": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 450
   },
   "71012": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -2750,6 +2750,15 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 6
+  },
+  "71511": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 0,
+   "lesion": "Lesión en el sóleo",
+   "desde": "25/07 (54 días)",
+   "hasta": null
   },
   "71530": {
    "prob": 30,
