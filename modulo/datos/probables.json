@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-17T12:08:16.928Z",
+ "cuando": "2026-09-17T12:38:12.073Z",
  "fuente": "futbolfantasy.com",
  "leidos": 517,
  "jugadores": {
@@ -1093,11 +1093,11 @@
    "min": 531
   },
   "29166": {
-   "prob": 95,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 495,
-   "lesion": "Molestias en el tobillo",
+   "lesion": "Molestias en el menisco",
    "desde": "16/09 (1 día)",
    "hasta": null
   },
@@ -1870,7 +1870,7 @@
    "hasta": null
   },
   "60227": {
-   "prob": 0,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 45
@@ -2230,10 +2230,7 @@
    "prob": 30,
    "sancionado": 0,
    "fuera": 0,
-   "min": 202,
-   "lesion": "Calambres en los gemelos",
-   "desde": "16/09 (1 día)",
-   "hasta": null
+   "min": 202
   },
   "65476": {
    "prob": 60,
@@ -2266,7 +2263,7 @@
    "min": 368
   },
   "65721": {
-   "prob": 5,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -2950,10 +2947,7 @@
    "prob": 40,
    "sancionado": 0,
    "fuera": 0,
-   "min": 181,
-   "lesion": "Contusión",
-   "desde": "15/09 (2 días)",
-   "hasta": null
+   "min": 181
   },
   "1256139": {
    "prob": 50,
