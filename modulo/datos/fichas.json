@@ -6556,15 +6556,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
@@ -7977,10 +7968,10 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 2,
-  "mediaFuera": 1,
+  "mediaFuera": 2.5,
   "edad": 28,
   "titular": null,
-  "titularidades": 1,
+  "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
    {
@@ -8015,11 +8006,20 @@
      "yellow",
      "sub_out"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 4,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": [
+     "assist"
+    ]
    }
   ],
   "asistencias": 1,
-  "dia": "2026-09-13",
-  "partidos": 3
+  "dia": "2026-09-17",
+  "partidos": 4
  },
  "27865": {
   "nombre": "Jesús Areso",
@@ -8118,13 +8118,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -9525,13 +9518,6 @@
     "puntos": null,
     "rival": 15,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -11270,16 +11256,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
-    "eventos": [
-     "sub_out",
-     "assist"
-    ]
    }
   ],
   "asistencias": 1,
@@ -11995,7 +11971,7 @@
   "mediaCasa": -1,
   "mediaFuera": 0,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 0,
   "jornadas": [
@@ -12026,11 +12002,18 @@
     "rival": 6,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": null,
+    "rival": 4,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-14",
-  "partidos": 1
+  "dia": "2026-09-17",
+  "partidos": 2
  },
  "53111": {
   "nombre": "Álvaro Valles",
@@ -12404,16 +12387,6 @@
     "rival": 5,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
-    "eventos": [
-     "sub_out",
-     "goal"
-    ]
    }
   ],
   "asistencias": 0,
@@ -15192,7 +15165,7 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 3,
+  "mediaCasa": 4,
   "mediaFuera": 0,
   "edad": 21,
   "titular": null,
@@ -15229,15 +15202,15 @@
    },
    {
     "jornada": 5,
-    "puntos": 3,
+    "puntos": 4,
     "rival": 4,
     "como": "inicio",
     "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-14",
-  "partidos": 1
+  "dia": "2026-09-17",
+  "partidos": 2
  },
  "60218": {
   "nombre": "Peio Canales",
@@ -15750,20 +15723,11 @@
      "sub_in",
      "goal"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-17",
-  "partidos": 1
+  "partidos": 2
  },
  "61009": {
   "nombre": "Ángel Ortiz",
@@ -21923,13 +21887,6 @@
     "rival": 5,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -21986,13 +21943,6 @@
     "rival": 5,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -22046,13 +21996,6 @@
     "puntos": null,
     "rival": 5,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -22186,15 +22129,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
@@ -22305,13 +22239,6 @@
     "rival": 5,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -22322,7 +22249,7 @@
   "nombre": "Ramón Enríquez",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 2,
+  "tarjetas": 3,
   "mediaCasa": 1.5,
   "mediaFuera": 1.3,
   "edad": 25,
@@ -22453,15 +22380,6 @@
     "como": "banquillo",
     "eventos": [
      "sub_in"
-    ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
     ]
    }
   ],
@@ -22613,13 +22531,6 @@
     "jornada": 5,
     "puntos": 3,
     "rival": 5,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
     "como": "inicio",
     "eventos": []
    }
@@ -24736,18 +24647,11 @@
     "rival": 4,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-17",
-  "partidos": 1
+  "partidos": 2
  },
  "71790": {
   "nombre": "Saba Sazonov",
@@ -26239,18 +26143,11 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-17",
-  "partidos": 2
+  "partidos": 3
  },
  "3848674": {
   "nombre": "Matteo Prati",
@@ -27649,13 +27546,6 @@
     "puntos": null,
     "rival": 5,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
     "eventos": []
    }
   ],
