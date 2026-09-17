@@ -1,7 +1,7 @@
 {
- "cuando": "2026-09-17T18:38:12.876Z",
+ "cuando": "2026-09-17T21:08:15.953Z",
  "fuente": "futbolfantasy.com",
- "leidos": 531,
+ "leidos": 505,
  "jugadores": {
   "10": {
    "prob": 80,
@@ -441,15 +441,6 @@
    "fuera": 0,
    "min": 0
   },
-  "13011": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Fractura de costilla(s)",
-   "desde": "07/08 (41 días)",
-   "hasta": null
-  },
   "13420": {
    "prob": 0,
    "sancionado": 0,
@@ -792,15 +783,6 @@
    "fuera": 0,
    "min": 383
   },
-  "23369": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 270,
-   "lesion": "Molestias en el tendón de Aquiles",
-   "desde": "28/08 (20 días)",
-   "hasta": null
-  },
   "23664": {
    "prob": 30,
    "sancionado": 0,
@@ -1112,15 +1094,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 540
-  },
-  "31128": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 6,
-   "lesion": "Rotura de lig. cruzado anterior",
-   "desde": "04/09 (13 días)",
-   "hasta": "abril"
   },
   "31226": {
    "prob": 50,
@@ -1540,7 +1513,7 @@
    "min": 152
   },
   "56578": {
-   "prob": 40,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 137
@@ -1883,15 +1856,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 43
-  },
-  "61167": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Sobrecarga en el aductor",
-   "desde": "16/09 (1 día)",
-   "hasta": null
   },
   "61297": {
    "prob": 20,
@@ -2538,12 +2502,6 @@
    "fuera": 0,
    "min": 450
   },
-  "70993": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 35
-  },
   "70994": {
    "prob": 0,
    "sancionado": 0,
@@ -2555,15 +2513,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 395
-  },
-  "70997": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Rotura de menisco",
-   "desde": "10/08 (38 días)",
-   "hasta": "enero"
   },
   "70998": {
    "prob": 100,
@@ -2588,15 +2537,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 90
-  },
-  "71003": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Lesión de rodilla",
-   "desde": "20/06 (89 días)",
-   "hasta": null
   },
   "71004": {
    "prob": 100,
@@ -2750,15 +2690,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 6
-  },
-  "71511": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Lesión en el sóleo",
-   "desde": "25/07 (54 días)",
-   "hasta": null
   },
   "71530": {
    "prob": 30,
@@ -3016,7 +2947,7 @@
    "min": 194,
    "lesion": "Lesión en el aductor",
    "desde": "16/09 (1 día)",
-   "hasta": null
+   "hasta": "principios de octubre"
   },
   "4836173": {
    "prob": 50,
@@ -3071,15 +3002,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 180
-  },
-  "4947930": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 5,
-   "lesion": "Lesión en el cuádriceps",
-   "desde": "16/09 (1 día)",
-   "hasta": null
   },
   "4947931": {
    "prob": 30,

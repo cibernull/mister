@@ -414,6 +414,41 @@
   "entra": true
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-09-17",
+  "id": "13011",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-17",
+  "id": "23369",
+  "estado": "injury",
+  "equipo": "Niutin FC (Isaac)"
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-17",
+  "id": "27855",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-17",
+  "id": "70993",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-17",
+  "id": "71511",
+  "estado": "injury",
+  "equipo": "Los tocahuevos C.F ( juanito)"
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-16",
   "id": "607",

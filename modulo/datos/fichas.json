@@ -6561,8 +6561,10 @@
     "jornada": 6,
     "puntos": null,
     "rival": 20,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -12409,6 +12411,7 @@
     "rival": 20,
     "como": "inicio",
     "eventos": [
+     "sub_out",
      "goal"
     ]
    }
@@ -15752,8 +15755,10 @@
     "jornada": 6,
     "puntos": null,
     "rival": 20,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -22187,7 +22192,9 @@
     "puntos": null,
     "rival": 20,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -22369,13 +22376,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -22460,7 +22460,9 @@
     "puntos": null,
     "rival": 20,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
