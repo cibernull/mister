@@ -166,6 +166,41 @@
   "equipo": null
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-09-17",
+  "id": "607",
+  "estado": "other",
+  "equipo": "Saiyans FC (Fran)"
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-17",
+  "id": "28621",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-17",
+  "id": "48203",
+  "estado": "other",
+  "equipo": "Niutin FC (Isaac)"
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-17",
+  "id": "64458",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-17",
+  "id": "4478035",
+  "estado": "other",
+  "equipo": null
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-16",
   "id": "607",
