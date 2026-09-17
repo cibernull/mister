@@ -2461,9 +2461,9 @@
    "cuando": "2026-08-18 09:06:26",
    "valor": 5592000,
    "posicion": 3,
-   "puntos": 13,
-   "media": 2.2,
-   "racha": "1,3,2,2,3"
+   "puntos": 14,
+   "media": 2.3,
+   "racha": "3,2,2,3,3"
   },
   {
    "idTransfer": 540007627,
@@ -2478,9 +2478,9 @@
    "cuando": "2026-08-18 17:00:23",
    "valor": 1914000,
    "posicion": 3,
-   "puntos": 15,
+   "puntos": 17,
    "media": 2.8,
-   "racha": "2,4,2,2,4"
+   "racha": "4,2,2,4,3"
   },
   {
    "idTransfer": 540007634,
@@ -3005,9 +3005,9 @@
    "cuando": "2026-08-22 17:00:18",
    "valor": 2006000,
    "posicion": 3,
-   "puntos": 18,
-   "media": 3,
-   "racha": "4,4,2,2,-"
+   "puntos": 19,
+   "media": 3.8,
+   "racha": "4,2,2,-,7"
   },
   {
    "idTransfer": 541230639,
@@ -3092,7 +3092,7 @@
    "posicion": 3,
    "puntos": 6,
    "media": 2,
-   "racha": "2,2,2,-,-"
+   "racha": "2,2,-,-,-"
   },
   {
    "idTransfer": 541523849,
@@ -3243,9 +3243,9 @@
    "cuando": "2026-08-25 05:00:30",
    "valor": 2634000,
    "posicion": 2,
-   "puntos": 19,
-   "media": 3.6,
-   "racha": "5,6,2,3,2"
+   "puntos": 20,
+   "media": 3.3,
+   "racha": "6,2,3,2,2"
   },
   {
    "idTransfer": 541885286,
@@ -3294,9 +3294,9 @@
    "cuando": "2026-08-25 16:28:55",
    "valor": 1914000,
    "posicion": 3,
-   "puntos": 15,
+   "puntos": 17,
    "media": 2.8,
-   "racha": "2,4,2,2,4"
+   "racha": "4,2,2,4,3"
   },
   {
    "idTransfer": 542128428,
@@ -3549,9 +3549,9 @@
    "cuando": "2026-08-27 17:37:55",
    "valor": 6656000,
    "posicion": 3,
-   "puntos": 23,
-   "media": 4.4,
-   "racha": "4,3,5,6,4"
+   "puntos": 26,
+   "media": 4.3,
+   "racha": "3,5,6,4,4"
   },
   {
    "idTransfer": 542760107,
@@ -3957,9 +3957,9 @@
    "cuando": "2026-08-31 05:00:31",
    "valor": 5032000,
    "posicion": 3,
-   "puntos": 17,
-   "media": 4,
-   "racha": "6,5,-,4,1"
+   "puntos": 18,
+   "media": 3.6,
+   "racha": "5,-,4,1,2"
   },
   {
    "idTransfer": 543736259,
@@ -4076,9 +4076,9 @@
    "cuando": "2026-09-01 16:35:49",
    "valor": 1306000,
    "posicion": 1,
-   "puntos": 10,
-   "media": 9,
-   "racha": "-,-,-,-,9"
+   "puntos": 12,
+   "media": 6,
+   "racha": "-,-,-,9,3"
   },
   {
    "idTransfer": 544234229,
@@ -4178,9 +4178,9 @@
    "cuando": "2026-09-02 17:00:25",
    "valor": 13464000,
    "posicion": 4,
-   "puntos": 22,
-   "media": 4.2,
-   "racha": "4,10,3,2,2"
+   "puntos": 24,
+   "media": 4,
+   "racha": "10,3,2,2,3"
   },
   {
    "idTransfer": 544586246,
@@ -4331,9 +4331,9 @@
    "cuando": "2026-09-03 18:12:50",
    "valor": 2006000,
    "posicion": 3,
-   "puntos": 18,
-   "media": 3,
-   "racha": "4,4,2,2,-"
+   "puntos": 19,
+   "media": 3.8,
+   "racha": "4,2,2,-,7"
   },
   {
    "idTransfer": 544991117,
@@ -4348,9 +4348,9 @@
    "cuando": "2026-09-03 18:26:54",
    "valor": 5729000,
    "posicion": 4,
-   "puntos": 13,
-   "media": 2.4,
-   "racha": "2,5,2,3,0"
+   "puntos": 17,
+   "media": 2.8,
+   "racha": "5,2,3,0,5"
   },
   {
    "idTransfer": 545126526,
@@ -4452,7 +4452,7 @@
    "posicion": 4,
    "puntos": 36,
    "media": 7.2,
-   "racha": "10,6,6,10,4"
+   "racha": "6,6,10,4,-"
   },
   {
    "idTransfer": 545483012,
@@ -4552,9 +4552,9 @@
    "cuando": "2026-09-06 05:00:31",
    "valor": 160000,
    "posicion": 3,
-   "puntos": 5,
-   "media": 2.5,
-   "racha": "3,2,-,-,-"
+   "puntos": 9,
+   "media": 3,
+   "racha": "2,-,-,-,4"
   },
   {
    "idTransfer": 545609177,
@@ -4673,7 +4673,7 @@
    "posicion": 4,
    "puntos": 7,
    "media": 3.5,
-   "racha": "-,5,2,-,-"
+   "racha": "5,2,-,-,-"
   },
   {
    "idTransfer": 546048374,
@@ -4824,9 +4824,9 @@
    "cuando": "2026-09-09 05:00:34",
    "valor": 11911000,
    "posicion": 3,
-   "puntos": 34,
-   "media": 5.6,
-   "racha": "11,6,3,3,5"
+   "puntos": 43,
+   "media": 7.2,
+   "racha": "6,3,3,5,15"
   },
   {
    "idTransfer": 546630852,
@@ -4926,9 +4926,9 @@
    "cuando": "2026-09-09 17:12:59",
    "valor": 1835000,
    "posicion": 3,
-   "puntos": 17,
+   "puntos": 19,
    "media": 3.2,
-   "racha": "4,4,2,4,2"
+   "racha": "4,2,4,2,3"
   },
   {
    "idTransfer": 546823494,
@@ -5011,9 +5011,9 @@
    "cuando": "2026-09-10 17:04:39",
    "valor": 13464000,
    "posicion": 4,
-   "puntos": 22,
-   "media": 4.2,
-   "racha": "4,10,3,2,2"
+   "puntos": 24,
+   "media": 4,
+   "racha": "10,3,2,2,3"
   },
   {
    "idTransfer": 547099275,
@@ -5164,9 +5164,9 @@
    "cuando": "2026-09-13 05:00:27",
    "valor": 1306000,
    "posicion": 1,
-   "puntos": 10,
-   "media": 9,
-   "racha": "-,-,-,-,9"
+   "puntos": 12,
+   "media": 6,
+   "racha": "-,-,-,9,3"
   },
   {
    "idTransfer": 547692668,
@@ -5456,6 +5456,23 @@
    "puntos": 19,
    "media": 3.6,
    "racha": "5,6,2,3,2"
+  },
+  {
+   "idTransfer": 548890566,
+   "idJugador": "56632",
+   "nombre": "Isaac Romero",
+   "de": "Neky F.C. (Sergio)",
+   "a": "Mister",
+   "idUcDe": 12493688,
+   "idUcA": 0,
+   "importe": 4301280,
+   "tipo": "normal",
+   "cuando": "2026-09-18 00:38:30",
+   "valor": 4176000,
+   "posicion": 4,
+   "puntos": 18,
+   "media": 3.6,
+   "racha": "11,2,-,2,2"
   }
  ],
  "salidas": [

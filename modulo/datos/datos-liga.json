@@ -1088,6 +1088,16 @@
  ],
  "movimientos": [
   {
+   "id": "56632",
+   "nombre": "Isaac Romero",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 4301280,
+   "tipo": "normal",
+   "fecha": "2026-09-18 00:38:30",
+   "pos": 4
+  },
+  {
    "id": "71008",
    "nombre": "Rafita Garrido",
    "de": "Niutin FC (Isaac)",
@@ -4302,6 +4312,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Isaac Romero",
+     "id": "56632",
+     "tipo": "venta",
+     "importe": 4301280,
+     "fecha": "2026-09-18",
+     "op": "normal"
+    },
+    {
      "j": "Pau Navarro",
      "id": "60210",
      "tipo": "compra",
@@ -5022,8 +5040,8 @@
     "56632": {
      "nombre": "Isaac Romero",
      "compras": 3770621,
-     "ventas": 2223520,
-     "ops": 3
+     "ventas": 6524800,
+     "ops": 4
     },
     "58951": {
      "nombre": "Endrick",
