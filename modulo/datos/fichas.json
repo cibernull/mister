@@ -2851,6 +2851,13 @@
     "eventos": [
      "yellow"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 4,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -13462,7 +13469,15 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "jornadas": [],
+  "jornadas": [
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 4,
+    "como": "inicio",
+    "eventos": []
+   }
+  ],
   "asistencias": 0,
   "dia": "2026-09-17",
   "partidos": 0
@@ -23009,7 +23024,7 @@
   "mediaCasa": 4,
   "mediaFuera": 2,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
@@ -23301,6 +23316,13 @@
     "puntos": null,
     "rival": 6,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 4,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -24636,6 +24658,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 4,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24934,7 +24963,7 @@
   "mediaCasa": 2,
   "mediaFuera": 3.5,
   "edad": 28,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
@@ -25606,7 +25635,7 @@
   "mediaCasa": 2,
   "mediaFuera": 1,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
@@ -25723,7 +25752,7 @@
   "mediaCasa": 9,
   "mediaFuera": 1.5,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 2,
   "jornadas": [
@@ -26863,7 +26892,7 @@
   "mediaCasa": 3.5,
   "mediaFuera": 0,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 1,
   "jornadas": [
@@ -27667,6 +27696,13 @@
     "puntos": null,
     "rival": 6,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 4,
+    "como": "inicio",
     "eventos": []
    }
   ],
