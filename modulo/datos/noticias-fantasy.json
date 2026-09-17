@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-17T16:08:00.866Z",
+ "cuando": "2026-09-17T16:38:00.712Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "17/09",
+   "titulo": "Alineaciones confirmadas del Betis - Getafe",
+   "url": "https://www.futbolfantasy.com/partidos/22481-betis-getafe",
+   "categoria": "rueda de prensa"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 de los equipos que han jugado la 6",
@@ -17,9 +23,9 @@
   },
   {
    "fecha": "17/09",
-   "titulo": "Alineaciones confirmadas del Betis - Getafe",
-   "url": "https://www.futbolfantasy.com/partidos/22481-betis-getafe",
-   "categoria": "rueda de prensa"
+   "titulo": "Parte médico oficial de Lucas Stassin y Kike Salas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151423-parte-medico-oficial-de-lucas-stassin-y-kike-salas",
+   "categoria": "lesión"
   },
   {
    "fecha": "17/09",
@@ -476,12 +482,6 @@
    "titulo": "Luis Rioja pasa consulta, evita lesión grave y queda pendiente de evolución",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151344-luis-rioja-pasa-consulta-evita-lesion-grave-y-queda-pendiente-de-evolucion",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "Lista de Luis Castro para enfrentarse al Athletic sin Etta Eyong ni Sotelo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151343-lista-de-luis-castro-para-enfrentarse-al-athletic-sin-etta-eyong-ni-sotelo",
-   "categoria": "convocatoria"
   }
  ]
 }
