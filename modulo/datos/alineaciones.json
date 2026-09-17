@@ -1112,6 +1112,14 @@
   ],
   "banquillo": [
    {
+    "id": "58954",
+    "nombre": "Kylian Mbappé",
+    "puesto": 4,
+    "puntos": 10,
+    "jugo": true,
+    "capitan": false
+   },
+   {
     "id": "61012",
     "nombre": "Pablo García",
     "puesto": 4,

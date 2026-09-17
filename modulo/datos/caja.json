@@ -1,6 +1,22 @@
 {
- "saldo": 27115425,
+ "saldo": -481184,
  "apuntes": [
+  {
+   "cuando": 1789657307,
+   "fecha": "2026-09-17 17:01",
+   "motivo": "Rafita Garrido a Mister",
+   "tipo": "Venta",
+   "importe": 2713020,
+   "saldo": -481184
+  },
+  {
+   "cuando": 1789657200,
+   "fecha": "2026-09-17 17:00",
+   "motivo": "Kylian Mbappé a Mister",
+   "tipo": "Compra",
+   "importe": -30309629,
+   "saldo": -3194204
+  },
   {
    "cuando": 1789569008,
    "fecha": "2026-09-16 16:30",
@@ -464,22 +480,6 @@
    "tipo": "Penalización",
    "importe": -340000,
    "saldo": 607141
-  },
-  {
-   "cuando": 1787214164,
-   "fecha": "2026-08-20 10:22",
-   "motivo": "Modificación de cláusula (100%) de Fran García",
-   "tipo": "Penalización",
-   "importe": -575200,
-   "saldo": 947141
-  },
-  {
-   "cuando": 1787213435,
-   "fecha": "2026-08-20 10:10",
-   "motivo": "Luismi Cruz a Mister",
-   "tipo": "Venta",
-   "importe": 1816000,
-   "saldo": 1522341
   }
  ]
 }

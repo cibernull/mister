@@ -1074,9 +1074,49 @@
    "id": "60210",
    "nombre": "Pau Navarro",
    "valor": 960000
+  },
+  {
+   "id": "476",
+   "nombre": "Gerard Moreno",
+   "valor": 13567000
+  },
+  {
+   "id": "58954",
+   "nombre": "Kylian Mbappé",
+   "valor": 24580000
   }
  ],
  "movimientos": [
+  {
+   "id": "71008",
+   "nombre": "Rafita Garrido",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 2713020,
+   "tipo": "normal",
+   "fecha": "2026-09-17 17:01:47",
+   "pos": 2
+  },
+  {
+   "id": "58954",
+   "nombre": "Kylian Mbappé",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 30309629,
+   "tipo": "normal",
+   "fecha": "2026-09-17 17:00:20",
+   "pos": 4
+  },
+  {
+   "id": "476",
+   "nombre": "Gerard Moreno",
+   "de": null,
+   "a": "Mario80",
+   "importe": 13567040,
+   "tipo": "normal",
+   "fecha": "2026-09-17 17:00:20",
+   "pos": 4
+  },
   {
    "id": "22502",
    "nombre": "Alex Baena",
@@ -5152,6 +5192,22 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Kylian Mbappé",
+     "id": "58954",
+     "tipo": "compra",
+     "importe": 30309629,
+     "fecha": "2026-09-17",
+     "op": "normal"
+    },
+    {
+     "j": "Rafita Garrido",
+     "id": "71008",
+     "tipo": "venta",
+     "importe": 2713020,
+     "fecha": "2026-09-17",
+     "op": "normal"
+    },
+    {
      "j": "Nathan Saliba",
      "id": "3845074",
      "tipo": "compra",
@@ -5975,6 +6031,12 @@
      "ventas": 1418560,
      "ops": 2
     },
+    "58954": {
+     "nombre": "Kylian Mbappé",
+     "compras": 30309629,
+     "ventas": 0,
+     "ops": 1
+    },
     "59088": {
      "nombre": "Willy Kambwala",
      "compras": 0,
@@ -6050,8 +6112,8 @@
     "71008": {
      "nombre": "Rafita Garrido",
      "compras": 1180860,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 2713020,
+     "ops": 2
     },
     "71011": {
      "nombre": "Alfonso Herrero",
@@ -6974,6 +7036,14 @@
   "Mario80": {
    "movimientos": [
     {
+     "j": "Gerard Moreno",
+     "id": "476",
+     "tipo": "compra",
+     "importe": 13567040,
+     "fecha": "2026-09-17",
+     "op": "normal"
+    },
+    {
      "j": "Pablo Ramón",
      "id": "60858",
      "tipo": "compra",
@@ -7302,6 +7372,12 @@
     "308": {
      "nombre": "Johan Mojica",
      "compras": 1403590,
+     "ventas": 0,
+     "ops": 1
+    },
+    "476": {
+     "nombre": "Gerard Moreno",
+     "compras": 13567040,
      "ventas": 0,
      "ops": 1
     },
