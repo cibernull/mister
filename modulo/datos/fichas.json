@@ -367,7 +367,7 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 2,
+  "mediaFuera": 4,
   "edad": 30,
   "titular": null,
   "titularidades": 0,
@@ -396,7 +396,7 @@
    },
    {
     "jornada": 5,
-    "puntos": 2,
+    "puntos": 4,
     "rival": 20,
     "como": "banquillo",
     "eventos": [
@@ -405,8 +405,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-14",
-  "partidos": 1
+  "dia": "2026-09-17",
+  "partidos": 2
  },
  "118": {
   "nombre": "Jonny Otto",
@@ -885,11 +885,11 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 2,
-  "mediaCasa": 5,
+  "mediaCasa": 4.3,
   "mediaFuera": 3,
   "edad": 34,
   "titular": null,
-  "titularidades": 3,
+  "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
    {
@@ -923,11 +923,18 @@
     "eventos": [
      "yellow"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 3,
+    "rival": 6,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-13",
-  "partidos": 4
+  "dia": "2026-09-17",
+  "partidos": 5
  },
  "340": {
   "nombre": "Isco",
@@ -2850,15 +2857,6 @@
     "como": "inicio",
     "eventos": [
      "yellow"
-    ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 4,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
     ]
    }
   ],
@@ -5643,12 +5641,12 @@
   "nombre": "Nemanja Gudelj",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
-  "mediaCasa": 4,
+  "tarjetas": 1,
+  "mediaCasa": 3,
   "mediaFuera": 2,
   "edad": 34,
   "titular": null,
-  "titularidades": 1,
+  "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
    {
@@ -5680,11 +5678,18 @@
     "rival": 5,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 2,
+    "rival": 6,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-13",
-  "partidos": 3
+  "dia": "2026-09-17",
+  "partidos": 4
  },
  "19524": {
   "nombre": "Iker Losada",
@@ -9845,10 +9850,10 @@
  "33734": {
   "nombre": "Abde Ezzalzouli",
   "posicion": 4,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 3.5,
+  "mediaFuera": 5,
   "edad": 24,
   "titular": null,
   "titularidades": 1,
@@ -9872,7 +9877,7 @@
    },
    {
     "jornada": 5,
-    "puntos": 5,
+    "puntos": 8,
     "rival": 20,
     "como": "inicio",
     "eventos": [
@@ -9881,8 +9886,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-14",
-  "partidos": 2
+  "dia": "2026-09-17",
+  "partidos": 3
  },
  "33896": {
   "nombre": "Ilias Akhomach",
@@ -14519,10 +14524,10 @@
   "goles": 1,
   "tarjetas": 2,
   "mediaCasa": 5.5,
-  "mediaFuera": -1,
+  "mediaFuera": 6,
   "edad": 25,
   "titular": null,
-  "titularidades": 3,
+  "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
    {
@@ -14556,11 +14561,20 @@
     "eventos": [
      "yellow"
     ]
+   },
+   {
+    "jornada": 5,
+    "puntos": 13,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": [
+     "goal"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-14",
-  "partidos": 4
+  "dia": "2026-09-17",
+  "partidos": 5
  },
  "59506": {
   "nombre": "Javi Rodríguez",
@@ -19583,8 +19597,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 1
+  "dia": "2026-09-17",
+  "partidos": 2
  },
  "68711": {
   "nombre": "Obed Vargas",
@@ -23073,13 +23087,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 9,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23325,13 +23332,6 @@
     "puntos": null,
     "rival": 6,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 4,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -24667,13 +24667,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 4,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -25014,13 +25007,6 @@
     "jornada": 5,
     "puntos": 2,
     "rival": 6,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 4,
     "como": "inicio",
     "eventos": []
    }
@@ -25693,18 +25679,11 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 4,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-17",
-  "partidos": 3
+  "partidos": 4
  },
  "2586746": {
   "nombre": "Álvaro Padilla",
@@ -25820,16 +25799,6 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 9,
-    "como": "inicio",
-    "eventos": [
-     "sub_out",
-     "assist"
-    ]
    }
   ],
   "asistencias": 1,
@@ -26969,18 +26938,11 @@
      "sub_out",
      "assist"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 4,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
   "dia": "2026-09-17",
-  "partidos": 2
+  "partidos": 3
  },
  "4836184": {
   "nombre": "Jeanuël Belocian",
@@ -27742,13 +27704,15 @@
     "jornada": 6,
     "puntos": null,
     "rival": 4,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-17",
-  "partidos": 1
+  "partidos": 2
  },
  "5298724": {
   "nombre": "Iker Cordoba",

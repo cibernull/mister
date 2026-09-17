@@ -1,14 +1,8 @@
 {
- "cuando": "2026-09-17T18:38:14.089Z",
+ "cuando": "2026-09-17T19:08:01.755Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "17/09",
-   "titulo": "Sigue en directo el Betis - Getafe",
-   "url": "https://www.futbolfantasy.com/partidos/22481-betis-getafe",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 de los equipos que han jugado la 6",
@@ -19,6 +13,30 @@
    "fecha": "17/09",
    "titulo": "Posibles alineaciones y previa fantasy del Real Sociedad - Bournemouth",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151389-posibles-alineaciones-y-previa-fantasy-del-real-sociedad-bournemouth",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "17/09",
+   "titulo": "Funes habla de la salida de Dani Lorenzo y la entrada de Dotor en el once ante el Villarreal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151429-funes-habla-salida-dani-lorenzo-entrada-dotor-once-ante-villarreal",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "17/09",
+   "titulo": "Jornada 6: Betis 1-0 Getafe. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22481-betis-getafe",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "17/09",
+   "titulo": "Mario Martín es expulsado por un pisotón a Natan",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151428-mario-martin-es-expulsado-por-un-pisoton-a-natan",
+   "categoria": "sanción"
+  },
+  {
+   "fecha": "17/09",
+   "titulo": "Mundo Deportivo no descarta la titularidad de Cardoso en el derbi",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151427-mundo-deportivo-no-descarta-la-titularidad-de-cardoso-en-el-derbi",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Las molestias de Diego Llorente son ajenas a la fractura de nariz",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151350-las-molestias-de-diego-llorente-son-ajenas-a-la-fractura-nariz",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "Funes, sobre Aznou, Cajuste, Adrián Niño, el Villarreal y la posibilidad de acudir al mercado",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151349-funes-sobre-aznou-cajuste-adrian-nino-el-villarreal-y-la-posibilidad-de-acudir-al-mercado",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "Fort apunta al Bournemouth y Aramburu llegará fresco a Mestalla",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151348-fort-apunta-al-bournemouth-y-aramburu-llegara-fresco-a-mestalla",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "Lista de Matarazzo para recibir al Bournemouth con Marín, pero sin Aramburu ni Zubeldia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151347-lista-de-matarazzo-para-recibir-al-bournemouth-con-marin-pero-sin-aramburu-ni-zubeldia",
-   "categoria": "convocatoria"
   }
  ]
 }
