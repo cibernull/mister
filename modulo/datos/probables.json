@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-17T09:38:05.781Z",
+ "cuando": "2026-09-17T12:08:16.928Z",
  "fuente": "futbolfantasy.com",
  "leidos": 517,
  "jugadores": {
@@ -139,7 +139,10 @@
    "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 277
+   "min": 277,
+   "lesion": "Trabajo al margen",
+   "desde": "17/09 (1 día)",
+   "hasta": null
   },
   "476": {
    "prob": 30,
@@ -166,10 +169,13 @@
    "min": 416
   },
   "607": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 6
+   "min": 6,
+   "lesion": "Molestias sin determinar",
+   "desde": "16/09 (1 día)",
+   "hasta": null
   },
   "609": {
    "prob": 95,
@@ -421,7 +427,7 @@
    "min": 58
   },
   "11866": {
-   "prob": 60,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 178
@@ -737,7 +743,7 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 246,
-   "lesion": "Molestias sin determinar",
+   "lesion": "Contusión en el pie",
    "desde": "15/09 (2 días)",
    "hasta": null
   },
@@ -925,7 +931,7 @@
    "hasta": "mediados de octubre"
   },
   "27517": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 79,
@@ -991,7 +997,7 @@
    "min": 353
   },
   "28395": {
-   "prob": 90,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 540
@@ -1009,7 +1015,7 @@
    "min": 208
   },
   "28621": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 90,
@@ -1168,10 +1174,13 @@
    "hasta": "abril"
   },
   "31226": {
-   "prob": 70,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
-   "min": 437
+   "min": 437,
+   "lesion": "Molestias sin determinar",
+   "desde": "17/09 (1 día)",
+   "hasta": null
   },
   "31484": {
    "prob": 30,
@@ -1288,10 +1297,13 @@
    "min": 245
   },
   "48203": {
-   "prob": 70,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 449
+   "min": 449,
+   "lesion": "Molestias sin determinar",
+   "desde": "16/09 (1 día)",
+   "hasta": null
   },
   "48205": {
    "prob": 50,
@@ -2101,7 +2113,7 @@
    "min": 540
   },
   "64410": {
-   "prob": 10,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -2716,10 +2728,7 @@
    "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 126,
-   "lesion": "Molestias sin determinar",
-   "desde": "15/09 (2 días)",
-   "hasta": null
+   "min": 126
   },
   "71061": {
    "prob": 40,
@@ -2800,13 +2809,10 @@
    "min": 162
   },
   "71502": {
-   "prob": 40,
+   "prob": 60,
    "sancionado": 0,
    "fuera": 0,
-   "min": 311,
-   "lesion": "Molestias sin determinar",
-   "desde": "12/09 (5 días)",
-   "hasta": null
+   "min": 311
   },
   "71503": {
    "prob": 0,
