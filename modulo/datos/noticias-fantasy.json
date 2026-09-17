@@ -1,12 +1,12 @@
 {
- "cuando": "2026-09-17T11:08:04.784Z",
+ "cuando": "2026-09-17T11:29:17.714Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "17/09",
-   "titulo": "Adeyemi reduce distancias con Gordon",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151401-adeyemi-distncias-gordon",
+   "titulo": "Tchouaméni culmina su reconciliación",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151405-tchouameni-culmina-su-reconciliacion",
    "categoria": "análisis"
   },
   {
@@ -23,6 +23,12 @@
   },
   {
    "fecha": "17/09",
+   "titulo": "Danjuma pasa pruebas médicas por una posible lesión",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151404-danjuma-pasa-pruebas-medicas-por-una-posible-lesion",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "17/09",
    "titulo": "Lomónaco sigue esperando: Anselmi asegura que cada vez falta menos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151403-lomonaco-sigue-esperando-anselmi-asegura-que-cada-vez-falta-menos",
    "categoria": "análisis"
@@ -31,6 +37,12 @@
    "fecha": "17/09",
    "titulo": "Anselmi ya no confirma a Dituro y deja abierta la portería ante el Espanyol",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151402-anselmi-ya-no-confirma-a-dituro-y-deja-abierta-la-porteria-ante-el-espanyol",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "17/09",
+   "titulo": "Adeyemi reduce distancias con Gordon",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151401-adeyemi-distncias-gordon",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Análisis Fantasy de Aaron Mayol: equilibrio, lectura y margen de crecimiento",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151326-analisis-fantasy-de-aaron-mayol-equilibrio-lectura-y-margen-de-crecimiento",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "El Valencia descansa este miércoles pendiente de Guido, De Haas y Rioja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151325-el-valencia-descansa-este-miercoles-pendiente-de-guido-de-haas-y-rioja",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "Foyth sigue al margen y será baja en La Rosaleda",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151324-foyth-sigue-al-margen-y-sera-baja-en-la-rosaleda",
-   "categoria": "entrenamiento"
   }
  ]
 }
