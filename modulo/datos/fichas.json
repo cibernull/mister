@@ -22759,7 +22759,7 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 3,
-  "mediaFuera": 0.7,
+  "mediaFuera": 1,
   "edad": 23,
   "titular": null,
   "titularidades": 3,
@@ -22810,7 +22810,7 @@
    },
    {
     "jornada": 6,
-    "puntos": 0,
+    "puntos": 1,
     "rival": 3,
     "como": "inicio",
     "eventos": [
@@ -27804,7 +27804,7 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 1,
+  "mediaFuera": 2,
   "edad": 20,
   "titular": null,
   "titularidades": 1,
@@ -27847,7 +27847,7 @@
    },
    {
     "jornada": 6,
-    "puntos": 1,
+    "puntos": 2,
     "rival": 2,
     "como": "inicio",
     "eventos": []
