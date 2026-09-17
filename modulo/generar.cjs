@@ -79,30 +79,31 @@ const VALOR = new Map()
 for (const j of D.jugadores) VALOR.set(String(j.id), j.valor)
 for (const j of J) VALOR.set(String(j.id), j.valor)
 
-// Cuánto ha cambiado hoy el valor de la plantilla de cada equipo. Lo correcto
-// es la resta directa entre dos fotos reales, `e.pl(hoy) − pl(ayer)`, una vez
-// que existe una foto de ayer: es la misma cuenta que la caja, y las dos
-// juntas dan el patrimonio de verdad. Antes de que hubiera fotos —el primer
-// día de este histórico— se usaba `j.semana`, el valor diario que Mister
-// publica de cada jugador, sumado por dueño; pero esa suma deja fuera lo que
-// vale un jugador fichado ese mismo día: a Neky, hoy, la plantilla le subía
-// 1.470.000 € por esa cuenta y en realidad subió 2.369.000 €, porque fichó a
-// Pau Navarro y su valor completo —960.000 €— no entraba en ningún `.semana`.
-// El resultado no cuadraba con caja + plantilla real. Se deja `j.semana` solo
-// como reserva para cuando de verdad no haya foto de ayer.
-const cambioPlantillaPorEquipoSinHistorico = new Map()
+// Cuánto ha cambiado hoy el valor de la plantilla de cada equipo. Es la suma
+// de `j.semana` por dueño —el valor diario que Mister publica de cada
+// jugador, exacto, no un cálculo nuestro— y **no** la resta entre la foto de
+// hoy y la de ayer de `e.pl`, aunque a primera vista parezca lo mismo.
+//
+// La diferencia es justo un fichaje del mismo día: si compras a alguien hoy,
+// tu plantilla sube todo su valor de golpe, pero eso no es una revalorización
+// —es haber cambiado caja por jugador—, y Mister no lo cuenta como «subida».
+// Se comprobó contra la propia app de Mister, pantalla «Equipo» de cada
+// rival: a Neky, que fichó a Pau Navarro hoy, Mister le enseña «1.470.000 ↑»,
+// que es exactamente esta suma. La resta de fotos daba 2.369.000 —un número
+// que Mister no publica en ningún sitio— porque sí incluía el valor entero
+// del fichaje. Ese fue el error de una versión anterior de esta cuenta.
+const cambioPlantillaPorEquipo = new Map()
 for (const j of J) {
   const dueno = DUENIO.get(String(j.id))
   if (!dueno || j.semana == null) continue
-  cambioPlantillaPorEquipoSinHistorico.set(dueno, (cambioPlantillaPorEquipoSinHistorico.get(dueno) ?? 0) + j.semana)
+  cambioPlantillaPorEquipo.set(dueno, (cambioPlantillaPorEquipo.get(dueno) ?? 0) + j.semana)
 }
 
-// La caja, Mister no la publica día a día: la clasificación solo enseña la
-// foto de hoy. `historico-equipos.json` guarda esa foto cada día por nuestra
-// cuenta, así que «ganó/perdió X» sale de restar dos fotos reales, no de una
-// estimación. Hasta que haya una foto de ayer para un equipo —el fichero es
-// nuevo—, ni su caja ni su plantilla entran en la cuenta con este método: se
-// usa la reserva de arriba, en vez de fingir un total que no es.
+// La caja sí es una resta de fotos: Mister no publica un «sube/baja» de la
+// caja de nadie —ni la propia—, así que no hay con qué contrastarla más que
+// con la propia cuenta. `historico-equipos.json` guarda una foto de cada
+// equipo cada día por nuestra cuenta; hasta que haya una de ayer para un
+// equipo concreto —el fichero es nuevo—, no se dice nada de su caja.
 const HIST_EQUIPOS = opcional('historico-equipos.json', {})
 const AYER_EQUIPOS = new Date(Date.now() - 86400000).toISOString().slice(0, 10)
 const fotoAyerDe = (nombre) => HIST_EQUIPOS[AYER_EQUIPOS]?.[nombre] ?? null
@@ -114,10 +115,9 @@ EQ.forEach((e) => {
   e.corto = e.n.replace(/\s*\(.*\)\s*/, '').trim()
   e.patrimonio = e.saldo + e.pl
   e.sobre50 = e.patrimonio - 50000000
+  e.cambioPlantillaHoy = cambioPlantillaPorEquipo.get(e.n) ?? 0
   const ayer = fotoAyerDe(e.n)
-  e.cambioPlantillaHoy = ayer ? e.pl - ayer.pl : (cambioPlantillaPorEquipoSinHistorico.get(e.n) ?? 0)
   e.cambioCajaHoy = ayer ? e.saldo - ayer.saldo : null
-  e.cambioHoy = e.cambioCajaHoy != null ? e.cambioCajaHoy + e.cambioPlantillaHoy : e.cambioPlantillaHoy
 })
 const maxTope = Math.max(...EQ.map((e) => e.tope))
 const MIO = EQ.find((e) => e.mio)
@@ -2629,18 +2629,16 @@ const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     <summary>
       <span class="puesto">${e.pos}º</span>
       <div class="eqn">${esc(e.corto)}${e.mio ? '<span class="et et-eq et-mio">tú</span>' : ''}</div>
-      <div class="eqp"><b>${eur(e.tope)}</b><i>puede gastar</i><small class="cambio ${clase(e.cambioHoy)}" title="${
-        e.cambioCajaHoy != null ? 'Caja + plantilla, hoy contra ayer' : 'Solo su plantilla: su caja de hoy aún no se puede comparar con la de ayer'
-      }">${firmaCortaConDecimales(e.cambioHoy, 3)} hoy</small></div>
+      <div class="eqp"><b>${eur(e.tope)}</b><i>puede gastar</i><small class="cambio ${clase(e.cambioPlantillaHoy)}" title="Lo que sube o baja hoy el valor de su plantilla: la misma cuenta que hace Mister, jugador a jugador">${firmaCortaConDecimales(e.cambioPlantillaHoy, 3)} plantilla</small></div>
       ${barraPoder(e)}
     </summary>
     <div class="cuerpo">
-      <p class="frase">Va <strong>${e.pos}º con ${e.pts} puntos</strong>. Tiene <strong>${eur(e.saldo)}</strong> en caja y una plantilla de ${(PL[e.n] ?? []).length} jugadores que vale ${eur(e.pl)}. Hoy ${
-        e.cambioHoy > 0 ? 'ha ganado' : e.cambioHoy < 0 ? 'ha perdido' : 'sigue con lo mismo,'
-      } <strong class="${clase(e.cambioHoy)}">${e.cambioHoy === 0 ? '0 €' : eur(Math.abs(e.cambioHoy))}</strong> ${
+      <p class="frase">Va <strong>${e.pos}º con ${e.pts} puntos</strong>. Tiene <strong>${eur(e.saldo)}</strong> en caja y una plantilla de ${(PL[e.n] ?? []).length} jugadores que vale ${eur(e.pl)}. Hoy su plantilla ${
+        e.cambioPlantillaHoy > 0 ? 'ha subido' : e.cambioPlantillaHoy < 0 ? 'ha bajado' : 'sigue igual,'
+      } <strong class="${clase(e.cambioPlantillaHoy)}">${e.cambioPlantillaHoy === 0 ? '0 €' : eur(Math.abs(e.cambioPlantillaHoy))}</strong> —la misma cifra que enseña Mister en su ficha—.${
         e.cambioCajaHoy != null
-          ? `entre caja y plantilla, comparado con ayer (${firma(e.cambioCajaHoy)} en caja, ${firma(e.cambioPlantillaHoy)} en plantilla).`
-          : 'de valor en su plantilla, comparado con ayer. Aún no hay una foto de ayer de su caja para saber si esa parte ha subido o bajado también.'
+          ? ` Su caja, aparte, ${e.cambioCajaHoy > 0 ? 'ha subido' : e.cambioCajaHoy < 0 ? 'ha bajado' : 'sigue igual'}${e.cambioCajaHoy === 0 ? '' : ` <strong class="${clase(e.cambioCajaHoy)}">${eur(Math.abs(e.cambioCajaHoy))}</strong>`}, comparada con la de ayer.`
+          : ' De su caja aún no hay una foto de ayer con la que compararla.'
       }</p>
       ${inteligenciaDeRival(e)}
       <h3 class="sub">Su plantilla</h3>
