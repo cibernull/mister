@@ -9482,7 +9482,7 @@
   "mf": 2,
   "tit": 4,
   "sup": 1,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 29,
   "js": [
@@ -16666,7 +16666,7 @@
   "mf": 1.5,
   "tit": 1,
   "sup": 2,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 24,
   "js": [
