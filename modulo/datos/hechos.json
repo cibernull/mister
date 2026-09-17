@@ -2444,9 +2444,9 @@
    "cuando": "2026-08-18 05:00:30",
    "valor": 5305000,
    "posicion": 4,
-   "puntos": 19,
-   "media": 3.8,
-   "racha": "2,10,2,3,2"
+   "puntos": 21,
+   "media": 3.5,
+   "racha": "10,2,3,2,2"
   },
   {
    "idTransfer": 539937174,
@@ -2461,7 +2461,7 @@
    "cuando": "2026-08-18 09:06:26",
    "valor": 5592000,
    "posicion": 3,
-   "puntos": 11,
+   "puntos": 12,
    "media": 2.2,
    "racha": "1,3,2,2,3"
   },
@@ -2478,7 +2478,7 @@
    "cuando": "2026-08-18 17:00:23",
    "valor": 1914000,
    "posicion": 3,
-   "puntos": 14,
+   "puntos": 15,
    "media": 2.8,
    "racha": "2,4,2,2,4"
   },
@@ -2818,9 +2818,9 @@
    "cuando": "2026-08-20 17:00:21",
    "valor": 4011000,
    "posicion": 2,
-   "puntos": 17,
-   "media": 4,
-   "racha": "-,5,3,5,3"
+   "puntos": 18,
+   "media": 3.6,
+   "racha": "5,3,5,3,2"
   },
   {
    "idTransfer": 540583252,
@@ -2854,7 +2854,7 @@
    "posicion": 3,
    "puntos": 29,
    "media": 5.8,
-   "racha": "4,6,5,3,11"
+   "racha": "6,5,3,11,-"
   },
   {
    "idTransfer": 540788409,
@@ -2869,9 +2869,9 @@
    "cuando": "2026-08-21 08:42:37",
    "valor": 251000,
    "posicion": 2,
-   "puntos": 1,
-   "media": 0.5,
-   "racha": "0,-,-,-,1"
+   "puntos": 3,
+   "media": 1,
+   "racha": "-,-,-,1,2"
   },
   {
    "idTransfer": 540788414,
@@ -2988,9 +2988,9 @@
    "cuando": "2026-08-22 15:01:11",
    "valor": 10442000,
    "posicion": 1,
-   "puntos": 38,
-   "media": 7.4,
-   "racha": "8,6,2,12,9"
+   "puntos": 46,
+   "media": 7.7,
+   "racha": "6,2,12,9,9"
   },
   {
    "idTransfer": 541097327,
@@ -3005,7 +3005,7 @@
    "cuando": "2026-08-22 17:00:18",
    "valor": 2006000,
    "posicion": 3,
-   "puntos": 12,
+   "puntos": 13,
    "media": 3,
    "racha": "4,4,2,2,-"
   },
@@ -3143,7 +3143,7 @@
    "posicion": 4,
    "puntos": 1,
    "media": 0.5,
-   "racha": "-,0,1,-,-"
+   "racha": "0,1,-,-,-"
   },
   {
    "idTransfer": 541548003,
@@ -3192,9 +3192,9 @@
    "cuando": "2026-08-24 16:25:26",
    "valor": 6460000,
    "posicion": 4,
-   "puntos": 22,
-   "media": 4.4,
-   "racha": "2,4,2,10,4"
+   "puntos": 23,
+   "media": 3.8,
+   "racha": "4,2,10,4,1"
   },
   {
    "idTransfer": 541696656,
@@ -3294,7 +3294,7 @@
    "cuando": "2026-08-25 16:28:55",
    "valor": 1914000,
    "posicion": 3,
-   "puntos": 14,
+   "puntos": 15,
    "media": 2.8,
    "racha": "2,4,2,2,4"
   },
@@ -3549,7 +3549,7 @@
    "cuando": "2026-08-27 17:37:55",
    "valor": 6656000,
    "posicion": 3,
-   "puntos": 22,
+   "puntos": 23,
    "media": 4.4,
    "racha": "4,3,5,6,4"
   },
@@ -3668,9 +3668,9 @@
    "cuando": "2026-08-28 17:00:18",
    "valor": 10442000,
    "posicion": 1,
-   "puntos": 38,
-   "media": 7.4,
-   "racha": "8,6,2,12,9"
+   "puntos": 46,
+   "media": 7.7,
+   "racha": "6,2,12,9,9"
   },
   {
    "idTransfer": 542950714,
@@ -3755,7 +3755,7 @@
    "posicion": 2,
    "puntos": 23,
    "media": 5.8,
-   "racha": "-,3,8,6,6"
+   "racha": "3,8,6,6,-"
   },
   {
    "idTransfer": 543331298,
@@ -4044,7 +4044,7 @@
    "posicion": 2,
    "puntos": 2,
    "media": 1,
-   "racha": "2,0,-,-,-"
+   "racha": "0,-,-,-,-"
   },
   {
    "idTransfer": 544137719,
@@ -4059,9 +4059,9 @@
    "cuando": "2026-09-01 16:12:29",
    "valor": 6881000,
    "posicion": 2,
-   "puntos": 25,
-   "media": 5.8,
-   "racha": "-,5,-1,6,13"
+   "puntos": 30,
+   "media": 6,
+   "racha": "5,-1,6,13,7"
   },
   {
    "idTransfer": 544140990,
@@ -4076,7 +4076,7 @@
    "cuando": "2026-09-01 16:35:49",
    "valor": 1306000,
    "posicion": 1,
-   "puntos": 9,
+   "puntos": 10,
    "media": 9,
    "racha": "-,-,-,-,9"
   },
@@ -4316,7 +4316,7 @@
    "posicion": 3,
    "puntos": 14,
    "media": 3.5,
-   "racha": "-,4,2,3,5"
+   "racha": "4,2,3,5,-"
   },
   {
    "idTransfer": 544989075,
@@ -4331,7 +4331,7 @@
    "cuando": "2026-09-03 18:12:50",
    "valor": 2006000,
    "posicion": 3,
-   "puntos": 12,
+   "puntos": 13,
    "media": 3,
    "racha": "4,4,2,2,-"
   },
@@ -4348,7 +4348,7 @@
    "cuando": "2026-09-03 18:26:54",
    "valor": 5729000,
    "posicion": 4,
-   "puntos": 12,
+   "puntos": 13,
    "media": 2.4,
    "racha": "2,5,2,3,0"
   },
@@ -4637,9 +4637,9 @@
    "cuando": "2026-09-06 17:00:18",
    "valor": 5333000,
    "posicion": 3,
-   "puntos": 24,
-   "media": 4.8,
-   "racha": "2,12,7,1,2"
+   "puntos": 26,
+   "media": 4.3,
+   "racha": "12,7,1,2,2"
   },
   {
    "idTransfer": 545912135,
@@ -4775,7 +4775,7 @@
    "posicion": 2,
    "puntos": 23,
    "media": 5.8,
-   "racha": "-,3,8,6,6"
+   "racha": "3,8,6,6,-"
   },
   {
    "idTransfer": 546349320,
@@ -5096,9 +5096,9 @@
    "cuando": "2026-09-11 17:05:13",
    "valor": 4843000,
    "posicion": 3,
-   "puntos": 15,
-   "media": 2.8,
-   "racha": "3,5,2,3,1"
+   "puntos": 19,
+   "media": 3.2,
+   "racha": "5,2,3,1,5"
   },
   {
    "idTransfer": 547449527,
@@ -5149,7 +5149,7 @@
    "posicion": 2,
    "puntos": 18,
    "media": 3.6,
-   "racha": "5,5,0,3,5"
+   "racha": "5,0,3,5,-"
   },
   {
    "idTransfer": 547620421,
@@ -5164,7 +5164,7 @@
    "cuando": "2026-09-13 05:00:27",
    "valor": 1306000,
    "posicion": 1,
-   "puntos": 9,
+   "puntos": 10,
    "media": 9,
    "racha": "-,-,-,-,9"
   },
@@ -5198,9 +5198,9 @@
    "cuando": "2026-09-13 10:27:01",
    "valor": 5333000,
    "posicion": 3,
-   "puntos": 24,
-   "media": 4.8,
-   "racha": "2,12,7,1,2"
+   "puntos": 26,
+   "media": 4.3,
+   "racha": "12,7,1,2,2"
   },
   {
    "idTransfer": 547699075,
@@ -5351,7 +5351,7 @@
    "cuando": "2026-09-16 05:00:28",
    "valor": 2612000,
    "posicion": 3,
-   "puntos": 6,
+   "puntos": 7,
    "media": 3,
    "racha": "-,-,-,5,1"
   },
@@ -5368,7 +5368,7 @@
    "cuando": "2026-09-17 05:00:27",
    "valor": 960000,
    "posicion": 2,
-   "puntos": 4,
+   "puntos": 5,
    "media": 4,
    "racha": "-,-,-,-,4"
   },
@@ -5744,14 +5744,14 @@
     },
     {
      "idUc": 12493752,
-     "puntos": 40,
+     "puntos": 42,
      "puesto": 2,
      "valorPlantilla": 71986000,
      "premio": 0
     },
     {
      "idUc": 12493763,
-     "puntos": 28,
+     "puntos": 33,
      "puesto": 3,
      "valorPlantilla": 54979000,
      "premio": 0
@@ -5772,14 +5772,14 @@
     },
     {
      "idUc": 13435216,
-     "puntos": 7,
+     "puntos": 12,
      "puesto": 6,
      "valorPlantilla": 65327000,
      "premio": 75000
     },
     {
      "idUc": 12493758,
-     "puntos": 7,
+     "puntos": 10,
      "puesto": 7,
      "valorPlantilla": 28357000,
      "premio": 50000

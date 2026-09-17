@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-17T19:08:01.755Z",
+ "cuando": "2026-09-17T19:37:55.143Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "17/09",
+   "titulo": "Sigue en directo el Málaga - Villarreal",
+   "url": "https://www.futbolfantasy.com/partidos/22479-malaga-villarreal",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 de los equipos que han jugado la 6",
@@ -17,7 +23,31 @@
   },
   {
    "fecha": "17/09",
-   "titulo": "Funes habla de la salida de Dani Lorenzo y la entrada de Dotor en el once ante el Villarreal",
+   "titulo": "El Barcelona retoma los entrenamientos sin Joan García",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151433-el-barcelona-retoma-los-entrenamientos-sin-joan-garcia",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "17/09",
+   "titulo": "Abde se infiltra en la fortaleza",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151432-abde-se-infiltra-en-la-fortaleza",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "17/09",
+   "titulo": "Flick habría elegido ya a Szczesny para defender la portería ante el Sevilla, según Sport",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151431-flick-habria-elegido-ya-a-szczesny-para-defender-la-porteria-ante-el-sevilla-segun-sport",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "17/09",
+   "titulo": "Iñigo Pérez habla de la gestión de la plantilla y el estado mental del equipo antes del Málaga",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151430-inigo-perez-habla-gestion-plantilla-estado-mental-villarreal-antes-jugar-malaga",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "17/09",
+   "titulo": "Funes habla de la suplencia de Dani Lorenzo y la entrada de Dotor en el once ante el Villarreal",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151429-funes-habla-salida-dani-lorenzo-entrada-dotor-once-ante-villarreal",
    "categoria": "rueda de prensa"
   },
@@ -38,12 +68,6 @@
    "titulo": "Mundo Deportivo no descarta la titularidad de Cardoso en el derbi",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151427-mundo-deportivo-no-descarta-la-titularidad-de-cardoso-en-el-derbi",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Alineaciones confirmadas del Málaga - Villarreal",
-   "url": "https://www.futbolfantasy.com/partidos/22479-malaga-villarreal",
-   "categoria": "rueda de prensa"
   },
   {
    "fecha": "17/09",
@@ -458,30 +482,6 @@
    "titulo": "Óscar Sánchez se gana dirigir al Valencia contra la Real Sociedad",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151354-oscar-sanchez-se-gana-dirigir-al-valencia-contra-la-real-sociedad",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "Roberto Fernández y Carlos Espí llaman a la puerta de Luis de la Fuente",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151353-roberto-fernandez-y-carlos-espi-llaman-a-la-puerta-de-luis-de-la-fuente",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "Teun Gijselhart sale cedido al Al Ain en busca de minutos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151352-teun-gijselhart-sale-cedido-al-al-ain-en-busca-de-minutos",
-   "categoria": "mercado"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "Adrián Niño vuelve al grupo y Fernando Calero completa otra sesión",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151351-adrian-nino-vuelve-al-grupo-y-fernando-calero-completa-otra-sesion",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "Las molestias de Diego Llorente son ajenas a la fractura de nariz",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151350-las-molestias-de-diego-llorente-son-ajenas-a-la-fractura-nariz",
-   "categoria": "lesión"
   }
  ]
 }
