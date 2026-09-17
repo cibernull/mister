@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-17T09:08:17.770Z",
+ "cuando": "2026-09-17T09:38:06.726Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "17/09",
+   "titulo": "Gayà, Rioja, Guido y Danjuma, al margen en la vuelta al trabajo en Paterna",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151390-gaya-rioja-guido-y-danjuma-al-margen-en-la-vuelta-al-trabajo-en-paterna",
+   "categoria": "entrenamiento"
+  },
   {
    "fecha": "17/09",
    "titulo": "Posibles alineaciones y previa fantasy del Real Sociedad - Bournemouth",
@@ -476,12 +482,6 @@
    "titulo": "Tsitaishvili recibió un golpe sin aparente importancia",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151312-tsitaishvili-recibio-un-golpe-sin-aparente-importancia",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "15/09",
-   "titulo": "El Valencia se despierta de la pesadilla",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151311-el-valencia-se-despierta-de-la-pesadilla",
-   "categoria": "análisis"
   }
  ]
 }
