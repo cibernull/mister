@@ -5198,9 +5198,9 @@
    "cuando": "2026-09-13 10:27:01",
    "valor": 5333000,
    "posicion": 3,
-   "puntos": 26,
-   "media": 4.3,
-   "racha": "12,7,1,2,2"
+   "puntos": 27,
+   "media": 4.5,
+   "racha": "12,7,1,2,3"
   },
   {
    "idTransfer": 547699075,
@@ -5744,7 +5744,7 @@
     },
     {
      "idUc": 12493752,
-     "puntos": 42,
+     "puntos": 43,
      "puesto": 2,
      "valorPlantilla": 71986000,
      "premio": 0
@@ -5772,7 +5772,7 @@
     },
     {
      "idUc": 13435216,
-     "puntos": 12,
+     "puntos": 13,
      "puesto": 6,
      "valorPlantilla": 65327000,
      "premio": 75000
