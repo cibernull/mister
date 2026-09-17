@@ -11274,10 +11274,12 @@
     "puntos": null,
     "rival": 20,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "assist"
+    ]
    }
   ],
-  "asistencias": 0,
+  "asistencias": 1,
   "dia": "2026-09-17",
   "partidos": 5
  },
@@ -12350,7 +12352,7 @@
  "54900": {
   "nombre": "Carlos Dotor",
   "posicion": 3,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 3,
   "mediaFuera": 3,
@@ -12405,7 +12407,9 @@
     "puntos": null,
     "rival": 20,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "goal"
+    ]
    }
   ],
   "asistencias": 0,
