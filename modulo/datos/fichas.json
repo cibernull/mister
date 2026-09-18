@@ -1625,7 +1625,7 @@
   "mediaCasa": 5.7,
   "mediaFuera": 8,
   "edad": 30,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 2,
   "jornadas": [
@@ -2259,7 +2259,7 @@
   "mediaCasa": 0,
   "mediaFuera": 1,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 1,
   "jornadas": [
@@ -2320,7 +2320,7 @@
   "mediaCasa": 2,
   "mediaFuera": 0.5,
   "edad": 28,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 2,
   "jornadas": [
@@ -6352,7 +6352,7 @@
   "mediaCasa": 4,
   "mediaFuera": 2,
   "edad": 27,
-  "titular": null,
+  "titular": true,
   "titularidades": 1,
   "suplencias": 3,
   "jornadas": [
@@ -12802,7 +12802,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 6,
   "edad": 23,
-  "titular": null,
+  "titular": true,
   "titularidades": 3,
   "suplencias": 0,
   "jornadas": [
@@ -15620,7 +15620,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 0.5,
   "edad": 21,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 3,
   "jornadas": [
@@ -15713,7 +15713,7 @@
   "mediaCasa": 3.5,
   "mediaFuera": 4.5,
   "edad": 25,
-  "titular": null,
+  "titular": true,
   "titularidades": 3,
   "suplencias": 1,
   "jornadas": [
@@ -16500,7 +16500,7 @@
   "mediaCasa": 3,
   "mediaFuera": 3.3,
   "edad": 19,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 4,
   "jornadas": [
@@ -21091,7 +21091,7 @@
   "mediaCasa": 0,
   "mediaFuera": 0.3,
   "edad": 26,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 2,
   "jornadas": [
@@ -21156,7 +21156,7 @@
   "mediaCasa": 1.7,
   "mediaFuera": 5.5,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 4,
   "jornadas": [
@@ -21334,7 +21334,7 @@
   "mediaCasa": 4.3,
   "mediaFuera": 1.7,
   "edad": 19,
-  "titular": null,
+  "titular": true,
   "titularidades": 5,
   "suplencias": 1,
   "jornadas": [
@@ -21400,7 +21400,7 @@
   "mediaCasa": 4,
   "mediaFuera": 0.7,
   "edad": 28,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
@@ -21466,7 +21466,7 @@
   "mediaCasa": 2.7,
   "mediaFuera": 1.5,
   "edad": 26,
-  "titular": null,
+  "titular": true,
   "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
@@ -23252,7 +23252,7 @@
   "mediaCasa": 3,
   "mediaFuera": 1,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 2,
   "jornadas": [
@@ -23435,7 +23435,7 @@
   "mediaCasa": 3.5,
   "mediaFuera": 2,
   "edad": 30,
-  "titular": null,
+  "titular": true,
   "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
@@ -23886,7 +23886,7 @@
   "mediaCasa": 4,
   "mediaFuera": 1.3,
   "edad": 20,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 2,
   "jornadas": [
@@ -24004,7 +24004,7 @@
   "mediaCasa": 2.3,
   "mediaFuera": 4.3,
   "edad": 27,
-  "titular": null,
+  "titular": true,
   "titularidades": 4,
   "suplencias": 2,
   "jornadas": [
@@ -24698,7 +24698,7 @@
   "mediaCasa": 3.7,
   "mediaFuera": 3,
   "edad": 21,
-  "titular": true,
+  "titular": null,
   "titularidades": 6,
   "suplencias": 0,
   "jornadas": [
@@ -25597,7 +25597,7 @@
   "mediaCasa": 3.7,
   "mediaFuera": 1.7,
   "edad": 22,
-  "titular": null,
+  "titular": true,
   "titularidades": 3,
   "suplencias": 3,
   "jornadas": [
@@ -25667,7 +25667,7 @@
   "mediaCasa": 1,
   "mediaFuera": 2,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
@@ -27298,7 +27298,7 @@
   "mediaCasa": 3,
   "mediaFuera": 8,
   "edad": 21,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
@@ -27492,7 +27492,7 @@
   "mediaCasa": 4,
   "mediaFuera": 3,
   "edad": 21,
-  "titular": null,
+  "titular": true,
   "titularidades": 1,
   "suplencias": 1,
   "jornadas": [
@@ -28393,7 +28393,7 @@
   "mediaCasa": 0,
   "mediaFuera": 2,
   "edad": 20,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 0,
   "jornadas": [
