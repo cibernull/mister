@@ -1,7 +1,7 @@
 {
- "cuando": "2026-09-18T09:38:08.961Z",
+ "cuando": "2026-09-18T12:08:06.736Z",
  "fuente": "futbolfantasy.com",
- "leidos": 515,
+ "leidos": 516,
  "jugadores": {
   "10": {
    "prob": 80,
@@ -394,10 +394,7 @@
    "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 0,
-   "lesion": "Molestias sin determinar",
-   "desde": "24/08 (25 días)",
-   "hasta": null
+   "min": 0
   },
   "11186": {
    "prob": 30,
@@ -555,6 +552,12 @@
    "fuera": 0,
    "min": 255
   },
+  "15342": {
+   "prob": 30,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 286
+  },
   "15344": {
    "prob": 30,
    "sancionado": 0,
@@ -709,7 +712,7 @@
    "min": 425
   },
   "19562": {
-   "prob": 50,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 222
@@ -1369,7 +1372,7 @@
    "min": 410
   },
   "49424": {
-   "prob": 70,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 447
@@ -1636,7 +1639,7 @@
    "min": 506
   },
   "56926": {
-   "prob": 90,
+   "prob": 99,
    "sancionado": 0,
    "fuera": 0,
    "min": 331
@@ -2770,7 +2773,7 @@
    "min": 173
   },
   "71154": {
-   "prob": 70,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 540
@@ -2788,7 +2791,7 @@
    "min": 5
   },
   "71343": {
-   "prob": 30,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 162
@@ -2884,10 +2887,7 @@
    "prob": 10,
    "sancionado": 0,
    "fuera": 0,
-   "min": 73,
-   "lesion": "Lesión en los isquiotibiales",
-   "desde": "16/09 (2 días)",
-   "hasta": null
+   "min": 73
   },
   "71792": {
    "prob": 0,
