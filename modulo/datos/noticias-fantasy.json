@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-18T21:08:05.974Z",
+ "cuando": "2026-09-18T21:38:12.027Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "18/09",
+   "titulo": "Al Elche le sobra con diez en Cornellà",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151526-al-elche-le-sobra-con-diez-en-cornella",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 actualizadas",
@@ -476,12 +482,6 @@
    "titulo": "Foyth se probará con el grupo para intentar llegar al Levante",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151448-foyth-se-probara-con-el-grupo-para-intentar-llegar-al-levante",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Funes analiza el planteamiento, la derrota y reconoce la superioridad del Villarreal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151447-funes-analiza-el-planteamiento-la-derrota-y-reconoce-la-superioridad-del-villarreal",
-   "categoria": "rueda de prensa"
   }
  ]
 }
