@@ -1972,6 +1972,13 @@
     "rival": 15,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -15675,6 +15682,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 23,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -23746,6 +23760,13 @@
     "rival": 14,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 23,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23940,6 +23961,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 23,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24698,7 +24726,7 @@
   "mediaCasa": 3.7,
   "mediaFuera": 3,
   "edad": 21,
-  "titular": true,
+  "titular": null,
   "titularidades": 6,
   "suplencias": 0,
   "jornadas": [
@@ -25583,6 +25611,13 @@
     "rival": 15,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -25949,6 +25984,13 @@
     "rival": 14,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 23,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -26253,6 +26295,13 @@
     "puntos": null,
     "rival": 15,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -27237,7 +27286,7 @@
   "mediaCasa": 1.5,
   "mediaFuera": 2,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
@@ -27778,6 +27827,13 @@
     "puntos": null,
     "rival": 15,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
     "eventos": []
    }
   ],

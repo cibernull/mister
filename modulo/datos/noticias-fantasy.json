@@ -1,19 +1,31 @@
 {
- "cuando": "2026-09-18T18:38:13.740Z",
+ "cuando": "2026-09-18T19:08:00.352Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "18/09",
-   "titulo": "Alineaciones confirmadas del Espanyol - Elche",
-   "url": "https://www.futbolfantasy.com/partidos/22487-espanyol-elche",
-   "categoria": "rueda de prensa"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 actualizadas",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Sigue en directo el Espanyol - Elche",
+   "url": "https://www.futbolfantasy.com/partidos/22487-espanyol-elche",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Martín Anselmi habla de Matías Dituro antes de visitar al Espanyol",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151516-martin-anselmi-habla-matias-dituro-antes-visitar-espanyol",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Manolo González habla de José Ángel, Unai Núñez y Roberto antes del partido contra el Elche",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151515-manolo-gonzalez-habla-jose-angel-unai-nunez-roberto-antes-partido-contra-elche",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "18/09",
@@ -470,18 +482,6 @@
    "titulo": "Lomónaco entra en su primera convocatoria con el Elche",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151439-lomonaco-entra-en-su-primera-convocatoria-con-el-elche",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "El Levante retoma los entrenamientos en el Ciutat sin Sotelo ni Etta Eyong",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151438-el-levante-retoma-los-entrenamientos-en-el-ciutat-sin-sotelo-ni-etta-eyong",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Comesaña pide el cambio tras un choque con Salinas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151437-comesana-pide-el-cambio-tras-un-choque-con-salinas",
-   "categoria": "lesión"
   }
  ]
 }
