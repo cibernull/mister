@@ -1,18 +1,42 @@
 {
- "cuando": "2026-09-18T13:37:55.317Z",
+ "cuando": "2026-09-18T14:08:03.240Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "18/09",
-   "titulo": "Diario de Sevilla apuesta por Kochorashvili y Robbie Ure ante el Barcelona",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151501-diario-de-sevilla-apuesta-por-kochorashvili-y-robbie-ure-ante-el-barcelona",
+   "titulo": "Quique deja abierta la puerta a alguna rotación puntual",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151504-quique-deja-abierta-la-puerta-a-alguna-rotacion-puntual",
    "categoria": "análisis"
   },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Cajuste y Aznou siguen al margen en la vuelta al trabajo del Málaga",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151505-cajuste-y-aznou-siguen-al-margen-en-la-vuelta-al-trabajo-del-malaga",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Sergio Herrera o Aitor Fernández: Ramis mantiene abierto el debate",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151503-sergio-herrera-o-aitor-fernandez-ramis-mantiene-abierto-el-debate",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Ramis ve cada vez más cerca el momento de Del Castillo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151502-ramis-ve-cada-vez-mas-cerca-el-momento-de-del-castillo",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Diario de Sevilla apuesta por Kochorashvili y Robbie Ure ante el Barcelona",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151501-diario-de-sevilla-apuesta-por-kochorashvili-y-robbie-ure-ante-el-barcelona",
    "categoria": "análisis"
   },
   {
@@ -458,30 +482,6 @@
    "titulo": "Jornada 6: Betis 1-0 Getafe. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22481-betis-getafe",
    "categoria": "partido"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Mario Martín es expulsado por un pisotón a Natan",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151428-mario-martin-es-expulsado-por-un-pisoton-a-natan",
-   "categoria": "sanción"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Mundo Deportivo no descarta la titularidad de Cardoso en el derbi",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151427-mundo-deportivo-no-descarta-la-titularidad-de-cardoso-en-el-derbi",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "ANÁLISIS FANTASY JORNADA 7 | Alineaciones probables, lesionados y sancionados, por Carrasco",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151425-analisis-fantasy-jornada-7-alineaciones-probables-lesionados-y-sancionados-por-carrasco",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Pellegrini habla de Isco y de su estado físico en la previa del Getafe",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151424-pellegrini-habla-isco-estado-fisico-previa-getafe",
-   "categoria": "rueda de prensa"
   }
  ]
 }
