@@ -23699,7 +23699,7 @@
   "mediaCasa": 2,
   "mediaFuera": 2,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 1,
   "jornadas": [
@@ -24698,7 +24698,7 @@
   "mediaCasa": 3.7,
   "mediaFuera": 3,
   "edad": 21,
-  "titular": null,
+  "titular": true,
   "titularidades": 6,
   "suplencias": 0,
   "jornadas": [

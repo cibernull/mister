@@ -1,13 +1,31 @@
 {
- "cuando": "2026-09-18T17:37:54.264Z",
+ "cuando": "2026-09-18T18:08:12.294Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "18/09",
+   "titulo": "Alineaciones confirmadas del Espanyol - Elche",
+   "url": "https://www.futbolfantasy.com/partidos/22487-espanyol-elche",
+   "categoria": "rueda de prensa"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 actualizadas",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Almeida regresa a la convocatoria de José Alberto López ante el Celta",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151513-almeida-regresa-convocatoria-jose-alberto-lopez-ante-celta",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Sangante y Nico Guillén regresan a la convocatoria del Sevilla, que pierde a Stassin ante el Barcelona",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151512-sangante-nico-guillen-regresan-convocatoria-sevilla-pierde-stassin-ante-barcelona",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "18/09",
@@ -463,24 +481,6 @@
    "fecha": "17/09",
    "titulo": "El Celta retoma los entrenamientos sin Aspas ni Antañón",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151436-el-celta-retoma-los-entrenamientos-sin-aspas-ni-antanon",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Pellegrini analiza el triunfo y habla de Deossa, Llorente, Bartra, Natan y Valles",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151435-pellegrini-analiza-el-triunfo-y-habla-de-deossa-llorente-bartra-natan-y-valles",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Bordalás lamenta la derrota, explica los cambios y la prensa se olvida de preguntar por Terrats",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151434-bordalas-lamenta-la-derrota-explica-los-cambios-y-la-prensa-se-olvida-de-preguntar-por-terrat",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "El Barcelona retoma los entrenamientos sin Joan García",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151433-el-barcelona-retoma-los-entrenamientos-sin-joan-garcia",
    "categoria": "entrenamiento"
   }
  ]
