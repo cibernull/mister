@@ -1972,13 +1972,6 @@
     "rival": 15,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -3548,10 +3541,10 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 3,
-  "mediaFuera": 4,
+  "mediaFuera": 3,
   "edad": 35,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 0,
   "jornadas": [
    {
@@ -3574,11 +3567,18 @@
     "rival": 50,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": 2,
+    "rival": 14,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 3
+  "dia": "2026-09-18",
+  "partidos": 4
  },
  "11697": {
   "nombre": "Lucas Boyé",
@@ -3991,12 +3991,12 @@
   "posicion": 3,
   "goles": 1,
   "tarjetas": 1,
-  "mediaCasa": 11,
+  "mediaCasa": 8,
   "mediaFuera": 2,
   "edad": 30,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 2,
+  "suplencias": 3,
   "jornadas": [
    {
     "jornada": 1,
@@ -4038,11 +4038,20 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": 5,
+    "rival": 15,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 3
+  "dia": "2026-09-18",
+  "partidos": 4
  },
  "13005": {
   "nombre": "Andriy Lunin",
@@ -9965,12 +9974,12 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 0,
+  "mediaCasa": 2,
   "mediaFuera": 2,
   "edad": 25,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -10002,11 +10011,20 @@
      "yellow",
      "sub_in"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": 2,
+    "rival": 15,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 2
+  "dia": "2026-09-18",
+  "partidos": 3
  },
  "33726": {
   "nombre": "Hugo Álvarez",
@@ -12112,11 +12130,11 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 3,
-  "mediaFuera": 2,
+  "mediaFuera": 3.5,
   "edad": 25,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 2,
+  "suplencias": 3,
   "jornadas": [
    {
     "jornada": 1,
@@ -12149,11 +12167,20 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": 5,
+    "rival": 14,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 3
+  "dia": "2026-09-18",
+  "partidos": 4
  },
  "53098": {
   "nombre": "Alberto Moleiro",
@@ -15712,13 +15739,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 23,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -16784,13 +16804,13 @@
   "nombre": "Marcos Fernández",
   "posicion": 4,
   "goles": 1,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 5.5,
-  "mediaFuera": 4,
+  "mediaFuera": 4.3,
   "edad": 23,
   "titular": null,
   "titularidades": 1,
-  "suplencias": 3,
+  "suplencias": 4,
   "jornadas": [
    {
     "jornada": 1,
@@ -16837,11 +16857,21 @@
      "sub_out",
      "assist"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": 5,
+    "rival": 14,
+    "como": "banquillo",
+    "eventos": [
+     "yellow",
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 1,
-  "dia": "2026-09-12",
-  "partidos": 4
+  "dia": "2026-09-18",
+  "partidos": 5
  },
  "63780": {
   "nombre": "Carlos Espí",
@@ -19523,11 +19553,11 @@
   "posicion": 4,
   "goles": 1,
   "tarjetas": 1,
-  "mediaCasa": 4,
+  "mediaCasa": 7,
   "mediaFuera": 2,
   "edad": 24,
   "titular": null,
-  "titularidades": 0,
+  "titularidades": 1,
   "suplencias": 2,
   "jornadas": [
    {
@@ -19569,11 +19599,20 @@
      "yellow",
      "sub_in"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": 10,
+    "rival": 15,
+    "como": "inicio",
+    "eventos": [
+     "goal"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 3
+  "dia": "2026-09-18",
+  "partidos": 4
  },
  "68495": {
   "nombre": "Martín Satriano",
@@ -20436,18 +20475,11 @@
     "rival": 15,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-18",
-  "partidos": 3
+  "partidos": 4
  },
  "70181": {
   "nombre": "Dani Martínez",
@@ -23818,20 +23850,11 @@
     "rival": 14,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 23,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-18",
-  "partidos": 2
+  "partidos": 3
  },
  "71141": {
   "nombre": "Jean Ives Valou",
@@ -24021,13 +24044,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 23,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -25671,13 +25687,6 @@
     "rival": 15,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -26044,13 +26053,6 @@
     "rival": 14,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 23,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -26355,13 +26357,6 @@
     "puntos": null,
     "rival": 15,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -27266,11 +27261,18 @@
     "rival": 1,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 15,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-14",
-  "partidos": 0
+  "dia": "2026-09-18",
+  "partidos": 1
  },
  "4836153": {
   "nombre": "Jonathan David",
@@ -27393,21 +27395,11 @@
     "rival": 15,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": [
-     "assist",
-     "assist"
-    ]
    }
   ],
   "asistencias": 2,
   "dia": "2026-09-18",
-  "partidos": 3
+  "partidos": 4
  },
  "4836172": {
   "nombre": "Lucas Stassin",

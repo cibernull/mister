@@ -1210,7 +1210,13 @@
   "desde": "2026-09-18 21:00:00",
   "hasta": "2026-09-20 21:00:00",
   "partidos": 10,
-  "jugados": [],
+  "jugados": [
+   {
+    "cuando": "2026-09-18T19:00:00.000Z",
+    "local": 8,
+    "visitante": 23
+   }
+  ],
   "puntos": 0,
   "puesto": 5,
   "formacion": "1-3-4-3",

@@ -1,7 +1,7 @@
 {
- "cuando": "2026-09-18T18:38:12.569Z",
+ "cuando": "2026-09-18T21:08:04.988Z",
  "fuente": "futbolfantasy.com",
- "leidos": 538,
+ "leidos": 509,
  "jugadores": {
   "10": {
    "prob": 80,
@@ -195,15 +195,6 @@
    "desde": "21/02 (209 días)",
    "hasta": "noviembre"
   },
-  "1684": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Rotura completa del tendón proximal del bíceps femoral",
-   "desde": "01/08 (48 días)",
-   "hasta": "diciembre"
-  },
   "1713": {
    "prob": 80,
    "sancionado": 0,
@@ -390,12 +381,6 @@
    "fuera": 0,
    "min": 178
   },
-  "11092": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0
-  },
   "11186": {
    "prob": 30,
    "sancionado": 0,
@@ -488,15 +473,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 90
-  },
-  "14432": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Rotura de lig. cruzado anterior",
-   "desde": "11/01 (250 días)",
-   "hasta": "octubre"
   },
   "14670": {
    "prob": 95,
@@ -1080,12 +1056,6 @@
    "fuera": 0,
    "min": 340
   },
-  "29163": {
-   "prob": 0,
-   "sancionado": 1,
-   "fuera": 0,
-   "min": 531
-  },
   "29166": {
    "prob": 0,
    "sancionado": 0,
@@ -1226,15 +1196,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 358
-  },
-  "35922": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 20,
-   "lesion": "Molestias en el pubis",
-   "desde": "14/09 (4 días)",
-   "hasta": null
   },
   "36046": {
    "prob": 100,
@@ -2025,26 +1986,11 @@
    "fuera": 0,
    "min": 173
   },
-  "63867": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Sometido a artroscopia en la rodilla",
-   "desde": "15/04 (156 días)",
-   "hasta": null
-  },
   "63868": {
    "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 107
-  },
-  "63869": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0
   },
   "63871": {
    "prob": 0,
@@ -2205,12 +2151,6 @@
    "fuera": 0,
    "min": 0
   },
-  "65269": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 188
-  },
   "65347": {
    "prob": 70,
    "sancionado": 0,
@@ -2276,12 +2216,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 466
-  },
-  "67870": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0
   },
   "67942": {
    "prob": 70,
@@ -2967,12 +2901,6 @@
    "fuera": 0,
    "min": 260
   },
-  "2586746": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 10
-  },
   "2720265": {
    "prob": 30,
    "sancionado": 0,
@@ -3109,12 +3037,6 @@
    "min": 90
   },
   "4947925": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0
-  },
-  "4947926": {
    "prob": 0,
    "sancionado": 0,
    "fuera": 0,
