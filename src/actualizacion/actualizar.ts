@@ -835,11 +835,16 @@ main()
     process.exit(r.ok ? 0 : 1)
   })
   .catch((e: unknown) => {
+    // Solo el mensaje no basta para encontrar de dónde viene un error: un
+    // «Invalid string length» sin la traza es un callejón sin salida. La
+    // traza va también en `detalle`, no solo por stderr, para que quede en
+    // el propio log del workflow sin tener que reproducirlo aparte.
+    const traza = e instanceof Error && e.stack ? e.stack : null
     const r: Resultado = {
       ok: false,
       cuando: new Date().toISOString(),
       mensaje: 'La actualización se cortó por un error.',
-      detalle: [e instanceof Error ? e.message : String(e)],
+      detalle: [e instanceof Error ? e.message : String(e), ...(traza ? [traza] : [])],
     }
     process.stdout.write(JSON.stringify(r))
     process.exit(1)
