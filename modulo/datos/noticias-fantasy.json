@@ -1,18 +1,42 @@
 {
- "cuando": "2026-09-18T08:37:20.867Z",
+ "cuando": "2026-09-18T09:08:16.018Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "18/09",
-   "titulo": "Isco, una hora como máximo para esquivar las rotaciones",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151468-isco-una-hora-como-maximo-para-esquivar-las-rotaciones",
-   "categoria": "análisis"
+   "titulo": "Terzic habla de Padilla, Canales, Sannadi, Guruzeta, Iñaki Williams, Vivian, las rotaciones, el once y el aplazamiento",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151471-terzic-habla-de-padilla-canales-sannadi-guruzeta-inaki-williams-vivian-las-rotaciones-el-once",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "La ruleta de Giráldez sigue girando: el once más previsible si se cumple el patrón",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151472-la-ruleta-de-giraldez-sigue-girando-el-once-mas-previsible-si-se-cumple-el-patron",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Sangante y Kike Salas vuelven al grupo ya recuperados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151470-sangante-y-kike-salas-vuelven-al-grupo-ya-recuperados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Catena, redención o condena",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151469-catena-redencion-o-condena",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Isco, una hora como máximo para esquivar las rotaciones",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151468-isco-una-hora-como-maximo-para-esquivar-las-rotaciones",
    "categoria": "análisis"
   },
   {
@@ -458,30 +482,6 @@
    "titulo": "Cuti Romero alcanza la plenitud antes del derbi",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151394-cuti-romero-alcanza-la-plenitud-antes-del-derbi",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Andrés García entra en la lista, pero ahora se caen Terrats y Mayoral",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151393-andres-garcia-entra-en-la-lista-pero-ahora-se-cae-terrats",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Aitor Fernández pierde por goleada, pero gana argumentos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151392-aitor-fernandez-pierde-por-goleada-pero-gana-argumentos",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Budimir, Moncayola, Rubén, Muñoz y más rotaciones para recibir al Rayo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151391-budimir-moncayola-ruben-munoz-y-mas-rotaciones-para-recibir-al-rayo",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Gayà, Rioja, Guido y Danjuma, al margen en la vuelta al trabajo en Paterna",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151390-gaya-rioja-guido-y-danjuma-al-margen-en-la-vuelta-al-trabajo-en-paterna",
-   "categoria": "entrenamiento"
   }
  ]
 }

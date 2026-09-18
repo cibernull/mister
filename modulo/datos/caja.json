@@ -1,6 +1,14 @@
 {
- "saldo": -481184,
+ "saldo": 443816,
  "apuntes": [
+  {
+   "cuando": 1789721862,
+   "fecha": "2026-09-18 10:57",
+   "motivo": "Jornada 6",
+   "tipo": "Bonificación",
+   "importe": 925000,
+   "saldo": 443816
+  },
   {
    "cuando": 1789657307,
    "fecha": "2026-09-17 17:01",
@@ -472,14 +480,6 @@
    "tipo": "Penalización",
    "importe": -340000,
    "saldo": 267141
-  },
-  {
-   "cuando": 1787214186,
-   "fecha": "2026-08-20 10:23",
-   "motivo": "Modificación de cláusula (100%) de Juan Foyth",
-   "tipo": "Penalización",
-   "importe": -340000,
-   "saldo": 607141
   }
  ]
 }
