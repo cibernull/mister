@@ -1,23 +1,29 @@
 {
- "cuando": "2026-09-17T23:08:00.190Z",
+ "cuando": "2026-09-18T00:08:14.496Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
+   "fecha": "18/09",
+   "titulo": "Posibles alineaciones y previa fantasy del Espanyol - Elche",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151450-posibles-alineaciones-y-previa-fantasy-del-espanyol-elche",
+   "categoria": "análisis"
+  },
+  {
    "fecha": "02/09",
-   "titulo": "Alineaciones probables para la jornada 7 de los equipos que han jugado la 6",
+   "titulo": "Alineaciones probables para la jornada 7 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
   },
   {
-   "fecha": "17/09",
-   "titulo": "Posibles alineaciones y previa fantasy del Real Sociedad - Bournemouth",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151389-posibles-alineaciones-y-previa-fantasy-del-real-sociedad-bournemouth",
+   "fecha": "18/09",
+   "titulo": "Posibles alineaciones y previa fantasy del Osasuna - Rayo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151451-posibles-alineaciones-y-previa-fantasy-del-osasuna-rayo",
    "categoria": "análisis"
   },
   {
    "fecha": "18/09",
-   "titulo": "Terrats teminó \"con alguna molestia\" contra el Deportivo y se mantiene como duda",
+   "titulo": "Terrats teminó con 'alguna molestia' contra el Deportivo y se mantiene como duda",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151449-terrats-temino-con-alguna-molestia-contra-el-deportivo-y-se-mantiene-como-duda",
    "categoria": "lesión"
   },
@@ -377,6 +383,12 @@
   },
   {
    "fecha": "17/09",
+   "titulo": "Posibles alineaciones y previa fantasy del Real Sociedad - Bournemouth",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151389-posibles-alineaciones-y-previa-fantasy-del-real-sociedad-bournemouth",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "17/09",
    "titulo": "Flick celebra el triunfo, explica el estado de Joan García y destaca a Adeyemi",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151388-flick-celebra-el-triunfo-explica-el-estado-de-joan-garcia-y-destaca-a-adeyemi",
    "categoria": "rueda de prensa"
@@ -469,18 +481,6 @@
    "fecha": "16/09",
    "titulo": "Sierra corta la racha del Dépor",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151374-sierra-corta-la-racha-del-depor",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "El Levante - Athletic se aplaza por razones meteorológicas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151373-el-levante-athletic-se-aplaza-por-razones-meteorologicas",
-   "categoria": "sanción"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "El Atlético aprende a divertirse",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151372-el-atletico-aprende-a-divertirse",
    "categoria": "análisis"
   }
  ]
