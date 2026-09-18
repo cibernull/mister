@@ -1089,9 +1089,49 @@
    "id": "56628",
    "nombre": "Lucien Agoumé",
    "valor": 5861000
+  },
+  {
+   "id": "33734",
+   "nombre": "Abde Ezzalzouli",
+   "valor": 12402000
+  },
+  {
+   "id": "4947929",
+   "nombre": "Emil Audero",
+   "valor": 1099000
   }
  ],
  "movimientos": [
+  {
+   "id": "4947929",
+   "nombre": "Emil Audero",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 1059000,
+   "tipo": "normal",
+   "fecha": "2026-09-18 17:00:20",
+   "pos": 1
+  },
+  {
+   "id": "70935",
+   "nombre": "Jorge Salinas",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 4953000,
+   "tipo": "normal",
+   "fecha": "2026-09-18 17:00:20",
+   "pos": 2
+  },
+  {
+   "id": "33734",
+   "nombre": "Abde Ezzalzouli",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 15000000,
+   "tipo": "normal",
+   "fecha": "2026-09-18 17:00:20",
+   "pos": 4
+  },
   {
    "id": "564",
    "nombre": "Mikel Oyarzabal",
@@ -4345,6 +4385,22 @@
      "op": "normal"
     },
     {
+     "j": "Jorge Salinas",
+     "id": "70935",
+     "tipo": "compra",
+     "importe": 4953000,
+     "fecha": "2026-09-18",
+     "op": "normal"
+    },
+    {
+     "j": "Emil Audero",
+     "id": "4947929",
+     "tipo": "compra",
+     "importe": 1059000,
+     "fecha": "2026-09-18",
+     "op": "normal"
+    },
+    {
      "j": "Pau Navarro",
      "id": "60210",
      "tipo": "compra",
@@ -5182,6 +5238,12 @@
      "ventas": 1164000,
      "ops": 2
     },
+    "70935": {
+     "nombre": "Jorge Salinas",
+     "compras": 4953000,
+     "ventas": 0,
+     "ops": 1
+    },
     "70941": {
      "nombre": "Bil Nsongo",
      "compras": 2105021,
@@ -5227,6 +5289,12 @@
     "71640": {
      "nombre": "Miguel Sierra",
      "compras": 2867530,
+     "ventas": 0,
+     "ops": 1
+    },
+    "4947929": {
+     "nombre": "Emil Audero",
+     "compras": 1059000,
      "ventas": 0,
      "ops": 1
     }
@@ -7619,6 +7687,14 @@
      "op": "normal"
     },
     {
+     "j": "Abde Ezzalzouli",
+     "id": "33734",
+     "tipo": "compra",
+     "importe": 15000000,
+     "fecha": "2026-09-18",
+     "op": "normal"
+    },
+    {
      "j": "Alex Baena",
      "id": "22502",
      "tipo": "venta",
@@ -8250,6 +8326,12 @@
      "nombre": "Arnaut Danjuma",
      "compras": 0,
      "ventas": 3149180,
+     "ops": 1
+    },
+    "33734": {
+     "nombre": "Abde Ezzalzouli",
+     "compras": 15000000,
+     "ventas": 0,
      "ops": 1
     },
     "36334": {

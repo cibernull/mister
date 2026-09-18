@@ -621,6 +621,165 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "270",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "10967",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "12949",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "14670",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "15107",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "17614",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "17623",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "19527",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "22471",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "25631",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "27869",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-18",
+  "id": "33734",
+  "de": null,
+  "a": "Saiyans FC (Fran)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "40166",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "48620",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "54832",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "58436",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "59484",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "59623",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "64038",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-18",
+  "id": "70935",
+  "de": null,
+  "a": "Neky F.C. (Sergio)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "925296",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "2720265",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "4836189",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-18",
+  "id": "4947929",
+  "de": null,
+  "a": "Neky F.C. (Sergio)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "4947929",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "5298724",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-17",
   "id": "6034",
   "entra": false
