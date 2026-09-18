@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-18T09:38:10.078Z",
+ "cuando": "2026-09-18T10:07:59.020Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -13,6 +13,24 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Javi Hernández accede al olimpo del último pase",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151480-javi-hernandez-accede-al-olimpo-del-ultimo-pase",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "David Gordo cita a 23 futbolistas para cerrar la clasificación al Europeo sub-21",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151479-david-gordo-cita-a-23-futbolistas-para-cerrar-la-clasificacion-al-europeo-sub-21",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Simeone deja un primer ensayo de cara al derbi sin conclusiones claras",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151478-simeone-deja-un-primer-ensayo-de-cara-al-derbi-sin-conclusiones-claras",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Anselmi ya no confirma a Dituro y deja abierta la portería ante el Espanyol",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151402-anselmi-ya-no-confirma-a-dituro-y-deja-abierta-la-porteria-ante-el-espanyol",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Adeyemi reduce distancias con Gordon",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151401-adeyemi-distncias-gordon",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Anselmi habla de Dituro, Lomónaco, Diaby, Barzic, las rotaciones y el Espanyol",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151400-anselmi-habla-de-dituro-lomonaco-diaby-barzic-las-rotaciones-y-el-espanyol",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "El Sevilla retoma los entrenamientos con Sangante y Vargas bajo vigilancia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151399-el-sevilla-retyoma-con-sangante-y-vargas-bajo-vigilancia",
-   "categoria": "entrenamiento"
   }
  ]
 }
