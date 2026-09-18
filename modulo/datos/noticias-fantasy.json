@@ -1,19 +1,43 @@
 {
- "cuando": "2026-09-18T12:38:10.538Z",
+ "cuando": "2026-09-18T13:07:56.287Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "18/09",
-   "titulo": "Giráldez, sobre Antañón, Bayindir, Faye, Swedberg, Borja Iglesias, Burcio, las rotaciones, el momento del equipo y el Racing",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151495-giraldez-sobre-antanon-bayindir-faye-swedberg-borja-iglesias-burcio-las-rotaciones-el-momento",
-   "categoria": "rueda de prensa"
+   "titulo": "Comesaña vuelve de Málaga en muletas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151499-comesana-vuelve-de-malaga-en-muletas",
+   "categoria": "lesión"
   },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Diario de Sevilla analiza el posible once de Pellegrini para el domingo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151498-diario-de-sevilla-analiza-el-posible-once-de-pellegrini-para-el-domingo",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Mundo Deportivo trata de adivinar el once de Simeone",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151497-mundo-deportivo-trata-de-adivinar-el-once-de-simeone",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Las palabras de Flick llevan a Szczesny.",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151496-las-palabras-de-flick-llevan-a-szczesny",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Giráldez, sobre Antañón, Bayindir, Faye, Swedberg, Borja Iglesias, Burcio, las rotaciones, el momento del equipo y el Racing",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151495-giraldez-sobre-antanon-bayindir-faye-swedberg-borja-iglesias-burcio-las-rotaciones-el-momento",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "18/09",
@@ -458,30 +482,6 @@
    "titulo": "Manolo habla de Javi Hernández, Roberto, el sustituto de El Hilali, Lozano, Bauza, Jofre, Gorosabel, Bryan y el Elche",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151421-manolo-habla-de-javi-hernandez-roberto-el-sustituto-de-el-hilali-lozano-bauza-jofre-gorosabel",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Yeremay da un primer paso hacia la regularidad",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151420-yeremay-da-un-primer-paso-hacia-la-regularidad",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Canales y Prati, bajo el riesgo físico",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151419-canales-y-prati-bajo-el-riesgo-fisico",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "¡Sigue a las 16:15h en Twitch y Youtube la información fantasy para las alineaciones probables!",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151418-sigue-a-las-16-15h-en-twitch-y-youtube-la-informacion-fantasy-para-las-alineaciones-probables",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Análisis y predicción de la jornada 7 de Liga, por Huugo_21",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151417-analisis-y-prediccion-de-la-jornada-7-de-liga-por-huugo-21",
-   "categoria": "análisis"
   }
  ]
 }
