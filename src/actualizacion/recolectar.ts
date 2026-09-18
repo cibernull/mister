@@ -121,13 +121,25 @@ function paginaEnteraAnteriorA(cuerpo: string, hasta: string): boolean {
 /**
  * Añade las páginas nuevas al volcado, sin tirar las viejas.
  *
- * Un mismo evento puede quedar en varias páginas; deduplicarlo es tarea de
- * `extraerHechos`, que además se queda con la captura más reciente. Guardar
- * el crudo entero es lo que permite rehacer las cuentas si más adelante se
- * descubre que se estaba interpretando algo mal.
+ * Un mismo evento puede quedar en varias páginas; deduplicarlo evento a
+ * evento es tarea de `extraerHechos`, que además se queda con la captura más
+ * reciente. Guardar el crudo entero es lo que permite rehacer las cuentas si
+ * más adelante se descubre que se estaba interpretando algo mal.
+ *
+ * Lo que sí se deduplica aquí es la **página entera** por su `offset`: si el
+ * mismo offset llega dos veces, se sustituye por la captura nueva en vez de
+ * guardar las dos. Sin esto, cuando el hueco de historia del principio no se
+ * puede rellenar nunca —el primer traspaso real de Mister es de dos días
+ * después de que arrancara la liga, así que esa comprobación nunca se
+ * satisface—, cada pasada vuelve a bajar el feed entero y lo apila sobre el
+ * volcado cacheado de la pasada anterior. Así se llegó a un `volcado-feed.json`
+ * tan grande que `JSON.stringify` reventaba con «Invalid string length» y la
+ * actualización se cortaba en seco, cada hora, durante todo un día.
  */
 export function fundir(volcado: Volcado, nuevas: PaginaCruda[]): Volcado {
-  return { paginas: [...volcado.paginas, ...nuevas] }
+  const porOffset = new Map(volcado.paginas.map((p) => [p.offset, p]))
+  for (const p of nuevas) porOffset.set(p.offset, p)
+  return { paginas: [...porOffset.values()] }
 }
 
 /**
