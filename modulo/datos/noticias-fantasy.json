@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-18T15:08:12.673Z",
+ "cuando": "2026-09-18T15:38:05.493Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -7,6 +7,18 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 actualizadas",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "¡Sigue a las 18:00h en Twitch y Youtube la información fantasy para la jornada 7!",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151510-sigue-a-las-18-00h-en-twitch-y-youtube-la-informacion-fantasy-para-las-alineaciones-probables",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Canales es duda para iniciar en Vigo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151509-canales-es-duda-para-iniciar-en-vigo",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "El Barcelona retoma los entrenamientos sin Joan García",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151433-el-barcelona-retoma-los-entrenamientos-sin-joan-garcia",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Abde se infiltra en la fortaleza",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151432-abde-se-infiltra-en-la-fortaleza",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Flick habría elegido ya a Szczesny para defender la portería ante el Sevilla, según Sport",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151431-flick-habria-elegido-ya-a-szczesny-para-defender-la-porteria-ante-el-sevilla-segun-sport",
-   "categoria": "análisis"
   }
  ]
 }

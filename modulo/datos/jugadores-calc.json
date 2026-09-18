@@ -27975,75 +27975,6 @@
   "d": 0
  },
  {
-  "id": "53144",
-  "nombre": "Carlos Benavídez",
-  "valor": 160000,
-  "puntos": 4,
-  "media": 2,
-  "partidos": 2,
-  "semana": -2000,
-  "sem7": 0,
-  "mes": -40000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   2,
-   null,
-   2
-  ],
-  "eq": 48,
-  "riv": 1,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 2,
-  "mf": 0,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 28,
-  "js": [
-   [
-    1,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    3,
-    2,
-    20,
-    0,
-    "i71"
-   ],
-   [
-    4,
-    null,
-    50,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71792",
   "nombre": "Nico Guillén",
   "valor": 160000,
@@ -28110,6 +28041,75 @@
     6,
     null,
     6,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "53144",
+  "nombre": "Carlos Benavídez",
+  "valor": 160000,
+  "puntos": 4,
+  "media": 2,
+  "partidos": 2,
+  "semana": -2000,
+  "sem7": 0,
+  "mes": -40000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   2,
+   null,
+   2
+  ],
+  "eq": 48,
+  "riv": 1,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 2,
+  "mf": 0,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 28,
+  "js": [
+   [
+    1,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    3,
+    2,
+    20,
+    0,
+    "i71"
+   ],
+   [
+    4,
+    null,
+    50,
     0,
     ""
    ]
@@ -31932,72 +31932,6 @@
   "d": 0
  },
  {
-  "id": "31128",
-  "nombre": "Julen Lobete",
-  "valor": 160000,
-  "puntos": 1,
-  "media": 1,
-  "partidos": 1,
-  "semana": -47000,
-  "sem7": -15000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   1
-  ],
-  "eq": 13,
-  "riv": 9,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 1,
-  "mf": 0,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 26,
-  "js": [
-   [
-    1,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    2,
-    1,
-    6,
-    0,
-    "i85"
-   ],
-   [
-    3,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71509",
   "nombre": "Kevin Sánchez",
   "valor": 160000,
@@ -32138,6 +32072,72 @@
     5,
     null,
     23,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "31128",
+  "nombre": "Julen Lobete",
+  "valor": 160000,
+  "puntos": 1,
+  "media": 1,
+  "partidos": 1,
+  "semana": -47000,
+  "sem7": -15000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 4,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   1
+  ],
+  "eq": 13,
+  "riv": 9,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 1,
+  "mf": 0,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 26,
+  "js": [
+   [
+    1,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    2,
+    1,
+    6,
+    0,
+    "i85"
+   ],
+   [
+    3,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    20,
     0,
     ""
    ]
