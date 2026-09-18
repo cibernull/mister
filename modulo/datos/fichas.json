@@ -2968,11 +2968,27 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 14,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 23,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-12",
-  "partidos": 4
+  "dia": "2026-09-18",
+  "partidos": 3
  },
  "7011": {
   "nombre": "Ximo Navarro",
@@ -17915,11 +17931,18 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 14,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-12",
-  "partidos": 5
+  "dia": "2026-09-18",
+  "partidos": 4
  },
  "64491": {
   "nombre": "Valentín Gómez",
@@ -23800,8 +23823,10 @@
     "jornada": 7,
     "puntos": null,
     "rival": 23,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
