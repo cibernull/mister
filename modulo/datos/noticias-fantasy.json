@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-18T18:08:12.294Z",
+ "cuando": "2026-09-18T18:38:13.740Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -14,6 +14,12 @@
    "titulo": "Alineaciones probables para la jornada 7 actualizadas",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Parte médico del Celta: Jones El-Abdellaoui sufre una sinovitis",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151514-parte-medico-celta-jones-el-abdellaoui-sufre-sinovitis",
+   "categoria": "lesión"
   },
   {
    "fecha": "18/09",
@@ -476,12 +482,6 @@
    "titulo": "Comesaña pide el cambio tras un choque con Salinas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151437-comesana-pide-el-cambio-tras-un-choque-con-salinas",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "El Celta retoma los entrenamientos sin Aspas ni Antañón",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151436-el-celta-retoma-los-entrenamientos-sin-aspas-ni-antanon",
-   "categoria": "entrenamiento"
   }
  ]
 }

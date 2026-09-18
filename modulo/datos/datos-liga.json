@@ -1103,6 +1103,16 @@
  ],
  "movimientos": [
   {
+   "id": "6044",
+   "nombre": "Enes Ünal",
+   "de": "Saiyans FC (Fran)",
+   "a": "Legalize F.C (Victor)",
+   "importe": 11000000,
+   "tipo": "normal",
+   "fecha": "2026-09-18 20:37:05",
+   "pos": 4
+  },
+  {
    "id": "4947929",
    "nombre": "Emil Audero",
    "de": null,
@@ -7695,6 +7705,14 @@
      "op": "normal"
     },
     {
+     "j": "Enes Ünal",
+     "id": "6044",
+     "tipo": "venta",
+     "importe": 11000000,
+     "fecha": "2026-09-18",
+     "op": "normal"
+    },
+    {
      "j": "Alex Baena",
      "id": "22502",
      "tipo": "venta",
@@ -8235,8 +8253,8 @@
     "6044": {
      "nombre": "Enes Ünal",
      "compras": 2100000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 11000000,
+     "ops": 2
     },
     "6065": {
      "nombre": "Pere Milla",
@@ -8493,6 +8511,14 @@
   "Legalize F.C (Victor)": {
    "movimientos": [
     {
+     "j": "Enes Ünal",
+     "id": "6044",
+     "tipo": "compra",
+     "importe": 11000000,
+     "fecha": "2026-09-18",
+     "op": "normal"
+    },
+    {
      "j": "Pierre-Emerick Aubameyang",
      "id": "36410",
      "tipo": "venta",
@@ -8502,6 +8528,12 @@
     }
    ],
    "porJugador": {
+    "6044": {
+     "nombre": "Enes Ünal",
+     "compras": 11000000,
+     "ventas": 0,
+     "ops": 1
+    },
     "36410": {
      "nombre": "Pierre-Emerick Aubameyang",
      "compras": 0,
