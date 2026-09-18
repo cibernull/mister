@@ -1,19 +1,31 @@
 {
- "cuando": "2026-09-18T13:07:56.287Z",
+ "cuando": "2026-09-18T13:37:55.317Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "18/09",
-   "titulo": "Comesaña vuelve de Málaga en muletas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151499-comesana-vuelve-de-malaga-en-muletas",
-   "categoria": "lesión"
+   "titulo": "Diario de Sevilla apuesta por Kochorashvili y Robbie Ure ante el Barcelona",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151501-diario-de-sevilla-apuesta-por-kochorashvili-y-robbie-ure-ante-el-barcelona",
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Borja Iglesias no está para más de 45 minutos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151500-borja-iglesias-no-esta-para-mas-de-45-minutos",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Comesaña vuelve de Málaga en muletas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151499-comesana-vuelve-de-malaga-en-muletas",
+   "categoria": "lesión"
   },
   {
    "fecha": "18/09",
@@ -469,18 +481,6 @@
    "fecha": "17/09",
    "titulo": "Pellegrini habla de Isco y de su estado físico en la previa del Getafe",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151424-pellegrini-habla-isco-estado-fisico-previa-getafe",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Parte médico oficial de Lucas Stassin y Kike Salas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151423-parte-medico-oficial-de-lucas-stassin-y-kike-salas",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Manolo habla de Javi Hernández, Roberto, el sustituto de El Hilali, Lozano, Bauza, Jofre, Gorosabel, Bryan y el Elche",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151421-manolo-habla-de-javi-hernandez-roberto-el-sustituto-de-el-hilali-lozano-bauza-jofre-gorosabel",
    "categoria": "rueda de prensa"
   }
  ]
