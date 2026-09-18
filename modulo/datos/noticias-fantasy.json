@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-18T00:08:14.496Z",
+ "cuando": "2026-09-18T00:21:52.219Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -13,6 +13,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Posibles alineaciones y previa fantasy del Athletic - Alavés",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151452-posibles-alineaciones-y-previa-fantasy-del-athletic-alaves",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Ramis, sobre la derrota, el gol anulado, las rotaciones y los problemas para atacar",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151375-ramis-sobre-la-derrota-el-gol-anulado-las-rotaciones-y-los-problemas-para-atacar",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "16/09",
-   "titulo": "Sierra corta la racha del Dépor",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151374-sierra-corta-la-racha-del-depor",
-   "categoria": "análisis"
   }
  ]
 }
