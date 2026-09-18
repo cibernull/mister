@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-18T19:08:00.352Z",
+ "cuando": "2026-09-18T19:38:01.768Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "18/09",
+   "titulo": "Sigue en directo el Espanyol - Elche",
+   "url": "https://www.futbolfantasy.com/partidos/22487-espanyol-elche",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 actualizadas",
@@ -11,13 +17,13 @@
   },
   {
    "fecha": "18/09",
-   "titulo": "Sigue en directo el Espanyol - Elche",
-   "url": "https://www.futbolfantasy.com/partidos/22487-espanyol-elche",
-   "categoria": "análisis"
+   "titulo": "Fede Redondo fue expulsado por frenar con el brazo a Bryan Zaragoza",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151517-fede-redondo-fue-expulsado-por-frenar-con-el-brazo-a-bryan-zaragoza",
+   "categoria": "sanción"
   },
   {
    "fecha": "18/09",
-   "titulo": "Martín Anselmi habla de Matías Dituro antes de visitar al Espanyol",
+   "titulo": "Anselmi habla de Matías Dituro antes de medirse al Espanyol",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151516-martin-anselmi-habla-matias-dituro-antes-visitar-espanyol",
    "categoria": "rueda de prensa"
   },
@@ -29,19 +35,19 @@
   },
   {
    "fecha": "18/09",
-   "titulo": "Parte médico del Celta: Jones El-Abdellaoui sufre una sinovitis",
+   "titulo": "Parte médico oficial de Jones El-Abdellaoui: sinovitis en la rodilla",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151514-parte-medico-celta-jones-el-abdellaoui-sufre-sinovitis",
    "categoria": "lesión"
   },
   {
    "fecha": "18/09",
-   "titulo": "Almeida regresa a la convocatoria de José Alberto López ante el Celta",
+   "titulo": "Almeida regresa a la convocatoria de José Alberto ante el Celta",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151513-almeida-regresa-convocatoria-jose-alberto-lopez-ante-celta",
    "categoria": "convocatoria"
   },
   {
    "fecha": "18/09",
-   "titulo": "Sangante y Nico Guillén regresan a la convocatoria del Sevilla, que pierde a Stassin ante el Barcelona",
+   "titulo": "Sangante y Nico Guillén regresan a la convocatoria del Sevilla",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151512-sangante-nico-guillen-regresan-convocatoria-sevilla-pierde-stassin-ante-barcelona",
    "categoria": "convocatoria"
   },
@@ -476,12 +482,6 @@
    "titulo": "Davinchi pierde otra oportunidad",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151440-davinchi-pierde-otra-oportunidad",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Lomónaco entra en su primera convocatoria con el Elche",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151439-lomonaco-entra-en-su-primera-convocatoria-con-el-elche",
-   "categoria": "convocatoria"
   }
  ]
 }

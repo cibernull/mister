@@ -3190,11 +3190,25 @@
     "rival": 50,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 14,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 23,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 4
+  "dia": "2026-09-18",
+  "partidos": 3
  },
  "7893": {
   "nombre": "Antonio Sivera",
@@ -20348,10 +20362,10 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 2,
-  "mediaFuera": 2,
+  "mediaFuera": 2.7,
   "edad": 20,
   "titular": null,
-  "titularidades": 1,
+  "titularidades": 2,
   "suplencias": 2,
   "jornadas": [
    {
@@ -20385,11 +20399,32 @@
     "rival": 16,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 4,
+    "rival": 1,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 15,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-12",
-  "partidos": 4
+  "dia": "2026-09-18",
+  "partidos": 3
  },
  "70181": {
   "nombre": "Dani Martínez",
@@ -27333,9 +27368,19 @@
     "rival": 15,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
+    "eventos": [
+     "assist",
+     "assist"
+    ]
    }
   ],
-  "asistencias": 0,
+  "asistencias": 2,
   "dia": "2026-09-18",
   "partidos": 3
  },
