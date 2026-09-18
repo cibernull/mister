@@ -1,18 +1,24 @@
 {
- "cuando": "2026-09-18T14:08:03.240Z",
+ "cuando": "2026-09-18T14:37:54.937Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "18/09",
-   "titulo": "Quique deja abierta la puerta a alguna rotación puntual",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151504-quique-deja-abierta-la-puerta-a-alguna-rotacion-puntual",
+   "titulo": "As no descarta la primera titularidad de Adama Traoré contra el Betis",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151506-as-no-descarta-la-primera-titularidad-de-adama-traore-contra-el-betis",
    "categoria": "análisis"
   },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/09",
+   "titulo": "Quique deja abierta la puerta a alguna rotación puntual",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151504-quique-deja-abierta-la-puerta-a-alguna-rotacion-puntual",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Funes habla de la suplencia de Dani Lorenzo y la entrada de Dotor en el once ante el Villarreal",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151429-funes-habla-salida-dani-lorenzo-entrada-dotor-once-ante-villarreal",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/09",
-   "titulo": "Jornada 6: Betis 1-0 Getafe. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22481-betis-getafe",
-   "categoria": "partido"
   }
  ]
 }
