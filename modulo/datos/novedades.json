@@ -519,6 +519,18 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "61012",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-18",
+  "id": "71011",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-17",
   "id": "6034",
   "entra": false
