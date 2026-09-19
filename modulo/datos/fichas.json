@@ -5402,7 +5402,7 @@
   "mediaCasa": 2.7,
   "mediaFuera": 2,
   "edad": 31,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
@@ -5447,11 +5447,18 @@
     "rival": 2,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 14,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 5
+  "partidos": 4
  },
  "16868": {
   "nombre": "Ander Guevara",
@@ -5913,11 +5920,25 @@
      "sub_out",
      "red"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 8,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 50,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
-  "dia": "2026-09-15",
-  "partidos": 4
+  "dia": "2026-09-19",
+  "partidos": 3
  },
  "18004": {
   "nombre": "Ante Budimir",
@@ -11782,6 +11803,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 14,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -12681,7 +12709,7 @@
   "mediaCasa": 3,
   "mediaFuera": 4,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
@@ -12731,11 +12759,18 @@
     "rival": 2,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 14,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 5
+  "partidos": 4
  },
  "52372": {
   "nombre": "Javi Guerra",
@@ -15167,6 +15202,13 @@
     "puntos": null,
     "rival": 8,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 50,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -27194,6 +27236,13 @@
     "rival": 2,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 14,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -27258,6 +27307,13 @@
      "yellow",
      "sub_out"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 50,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28290,6 +28346,13 @@
      "yellow",
      "sub_in"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 50,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28527,6 +28590,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 14,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -29421,7 +29491,7 @@
   "mediaCasa": 3,
   "mediaFuera": 3,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 0,
   "jornadas": [
@@ -29464,6 +29534,13 @@
     "jornada": 6,
     "puntos": 3,
     "rival": 8,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 50,
     "como": "inicio",
     "eventos": []
    }
@@ -29595,7 +29672,7 @@
   "mediaCasa": 2,
   "mediaFuera": 2,
   "edad": 26,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 1,
   "jornadas": [
@@ -29644,6 +29721,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 50,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -29906,7 +29990,7 @@
   "mediaCasa": 0,
   "mediaFuera": 2,
   "edad": 20,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 0,
   "jornadas": [
@@ -29949,6 +30033,13 @@
     "jornada": 6,
     "puntos": 2,
     "rival": 2,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 14,
     "como": "inicio",
     "eventos": []
    }
