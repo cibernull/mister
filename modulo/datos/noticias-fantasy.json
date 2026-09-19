@@ -1,18 +1,36 @@
 {
- "cuando": "2026-09-19T16:07:52.591Z",
+ "cuando": "2026-09-19T16:37:55.752Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "19/09",
-   "titulo": "Sigue en directo el Athletic - Alavés",
-   "url": "https://www.futbolfantasy.com/partidos/22483-athletic-alaves",
-   "categoria": "análisis"
+   "titulo": "Sigue en directo el Celta - Racing",
+   "url": "https://www.futbolfantasy.com/partidos/22485-celta-racing",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Sivera le amarga la tarde a San Mamés",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151578-sivera-le-amarga-la-tarde-a-san-mames",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Jornada 7: Athletic 0-0 Alavés. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22483-athletic-alaves",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Pathé Ciss abre la sección de apercibidos de LaLiga 26/27",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151577-pathe-ciss-abre-la-seccion-de-apercibidos-de-laliga-26-27",
    "categoria": "análisis"
   },
   {
@@ -37,12 +55,6 @@
    "fecha": "19/09",
    "titulo": "Ramis analiza el empate y habla de Raúl Moro, Unai Santos, Osambela, Aitor, Moncayola e Iker Muñoz",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151573-ramis-analiza-el-empate-y-habla-de-raul-moro-unai-santos-osambela-aitor-moncayola-e-iker-muno",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Alineaciones confirmadas del Celta - Racing",
-   "url": "https://www.futbolfantasy.com/partidos/22485-celta-racing",
    "categoria": "rueda de prensa"
   },
   {
@@ -469,18 +481,6 @@
    "fecha": "18/09",
    "titulo": "Borja Iglesias no está para más de 45 minutos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151500-borja-iglesias-no-esta-para-mas-de-45-minutos",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Comesaña vuelve de Málaga en muletas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151499-comesana-vuelve-de-malaga-en-muletas",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Diario de Sevilla analiza el posible once de Pellegrini para el domingo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151498-diario-de-sevilla-analiza-el-posible-once-de-pellegrini-para-el-domingo",
    "categoria": "análisis"
   }
  ]

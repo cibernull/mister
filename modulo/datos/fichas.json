@@ -1086,7 +1086,7 @@
   "mediaCasa": -0.3,
   "mediaFuera": 5,
   "edad": 36,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -1134,7 +1134,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 4
+  "partidos": 5
  },
  "364": {
   "nombre": "Sergio Canales",
@@ -2477,6 +2477,13 @@
     "rival": 3,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -2548,6 +2555,13 @@
      "own_goal",
      "assist"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -5488,12 +5502,12 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 1,
+  "mediaCasa": 1.5,
   "mediaFuera": 0,
   "edad": 29,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -5531,11 +5545,20 @@
     "rival": 1490,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": 2,
+    "rival": 19,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 1
+  "dia": "2026-09-19",
+  "partidos": 2
  },
  "17290": {
   "nombre": "Sergio Camello",
@@ -8486,7 +8509,7 @@
   "nombre": "Iñigo Ruiz De Galarreta",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 3,
   "mediaFuera": 8,
   "edad": 33,
@@ -8542,7 +8565,7 @@
   ],
   "asistencias": 1,
   "dia": "2026-09-19",
-  "partidos": 4
+  "partidos": 5
  },
  "27516": {
   "nombre": "Andrés Martín",
@@ -8582,6 +8605,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -8853,11 +8883,11 @@
   "nombre": "Jesús Areso",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 1.7,
   "mediaFuera": 6,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -8905,7 +8935,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 4
+  "partidos": 5
  },
  "27869": {
   "nombre": "Juan Berrocal",
@@ -9385,8 +9415,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-14",
-  "partidos": 0
+  "dia": "2026-09-19",
+  "partidos": 1
  },
  "28773": {
   "nombre": "Aitor Paredes",
@@ -9442,8 +9472,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-14",
-  "partidos": 3
+  "dia": "2026-09-19",
+  "partidos": 4
  },
  "28774": {
   "nombre": "Julen Agirrezabala",
@@ -13441,7 +13471,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 2
+  "partidos": 3
  },
  "54817": {
   "nombre": "Arda Güler",
@@ -13828,7 +13858,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 6,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
   "jornadas": [
@@ -16676,15 +16706,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 48,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
@@ -16851,7 +16872,7 @@
   "mediaCasa": 3.5,
   "mediaFuera": 4.5,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 1,
   "jornadas": [
@@ -17490,7 +17511,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 2
+  "partidos": 3
  },
  "61167": {
   "nombre": "Adam Aznou",
@@ -22559,6 +22580,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -22693,6 +22721,13 @@
     "eventos": [
      "goal"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -22816,7 +22851,7 @@
   "mediaCasa": 4.3,
   "mediaFuera": 1.7,
   "edad": 19,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 1,
   "jornadas": [
@@ -22934,6 +22969,13 @@
     "rival": 3,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -22948,7 +22990,7 @@
   "mediaCasa": 2.7,
   "mediaFuera": 1.5,
   "edad": 26,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
@@ -24789,6 +24831,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -26451,13 +26500,6 @@
     "eventos": [
      "yellow"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -27000,13 +27042,6 @@
     "jornada": 6,
     "puntos": 5,
     "rival": 19,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 1,
     "como": "inicio",
     "eventos": []
    }
@@ -28132,6 +28167,13 @@
      "yellow",
      "sub_in"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 1490,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28258,6 +28300,13 @@
     "jornada": 6,
     "puntos": 2,
     "rival": 3,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 5,
     "como": "inicio",
     "eventos": []
    }
@@ -28465,15 +28514,6 @@
     "como": "banquillo",
     "eventos": [
      "sub_in"
-    ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
     ]
    }
   ],
@@ -29136,7 +29176,7 @@
   "mediaCasa": 4,
   "mediaFuera": 3,
   "edad": 21,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 1,
   "jornadas": [
@@ -29260,7 +29300,7 @@
   "mediaCasa": 3,
   "mediaFuera": 0,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 0,
   "jornadas": [
