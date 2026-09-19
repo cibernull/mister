@@ -1786,6 +1786,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 17,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -6968,6 +6975,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 3,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -22772,7 +22786,7 @@
     "jornada": 7,
     "puntos": null,
     "rival": 5,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -22919,11 +22933,11 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 0,
+  "mediaFuera": 0.5,
   "edad": 28,
   "titular": null,
   "titularidades": 1,
-  "suplencias": 0,
+  "suplencias": 1,
   "jornadas": [
    {
     "jornada": 1,
@@ -22967,6 +22981,15 @@
     "como": "inicio",
     "eventos": [
      "sub_out"
+    ]
+   },
+   {
+    "jornada": 7,
+    "puntos": 1,
+    "rival": 5,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
     ]
    }
   ],
@@ -26736,6 +26759,13 @@
      "sub_out",
      "goal"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 3,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -27432,6 +27462,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 3,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -29301,10 +29338,12 @@
     "puntos": null,
     "rival": 3,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "assist"
+    ]
    }
   ],
-  "asistencias": 0,
+  "asistencias": 1,
   "dia": "2026-09-19",
   "partidos": 2
  },
@@ -29693,7 +29732,7 @@
  "4947927": {
   "nombre": "Youssouf Fofana",
   "posicion": 3,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 5,
   "mediaFuera": 4,
@@ -29747,6 +29786,15 @@
     "rival": 6,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 3,
+    "como": "inicio",
+    "eventos": [
+     "goal"
+    ]
    }
   ],
   "asistencias": 0,

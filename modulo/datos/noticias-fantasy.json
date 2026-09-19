@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-19T19:07:57.575Z",
+ "cuando": "2026-09-19T19:37:53.013Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -13,6 +13,24 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Giráldez celebra el triunfo y habla de Hugo González, Jutglà, Febas y Burcio",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151590-giraldez-celebra-el-triunfo-y-habla-de-hugo-gonzalez-jutgla-febas-y-burcio",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "José Alberto analiza la derrota y explica las rotaciones durante la semana",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151588-jose-alberto-analiza-la-derrota-y-explica-las-rotaciones-durante-la-semana",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Giráldez le enseña a José Alberto cómo se rota",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151589-giraldez-le-ensena-a-jose-alberto-como-se-rota",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Almeida regresa a la convocatoria de José Alberto ante el Celta",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151513-almeida-regresa-convocatoria-jose-alberto-lopez-ante-celta",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Sangante y Nico Guillén regresan a la convocatoria del Sevilla",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151512-sangante-nico-guillen-regresan-convocatoria-sevilla-pierde-stassin-ante-barcelona",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "¡Sigue a las 18:00h en Twitch y Youtube la información fantasy para la jornada 7!",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151510-sigue-a-las-18-00h-en-twitch-y-youtube-la-informacion-fantasy-para-las-alineaciones-probables",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Canales es duda para iniciar en Vigo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151509-canales-es-duda-para-iniciar-en-vigo",
-   "categoria": "análisis"
   }
  ]
 }
