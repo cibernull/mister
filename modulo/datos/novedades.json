@@ -560,6 +560,21 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-09-19",
+  "id": "52117",
+  "entra": true
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-09-19",
+  "id": "71649",
+  "equipo": "Saiyans FC (Fran)",
+  "escalones": 5,
+  "coste": 1415000,
+  "clausula": 5660000
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-18",
   "id": "128",
   "entra": true

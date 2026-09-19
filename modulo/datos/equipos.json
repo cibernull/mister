@@ -108,7 +108,7 @@
  {
   "n": "Neky F.C. (Sergio)",
   "pos": 1,
-  "pts": 332,
+  "pts": 331,
   "saldo": -7970375,
   "pl": 124007000,
   "rep": 31142000,
@@ -147,7 +147,7 @@
   "n": "Saiyans FC (Fran)",
   "pos": 3,
   "pts": 250,
-  "saldo": 6516010,
+  "saldo": 5101010,
   "pl": 100354000,
   "rep": 21730000,
   "ini": 28270000,
@@ -156,10 +156,10 @@
   "pre": 5975000,
   "plantilla": 15,
   "sinValorar": [],
-  "subidas": 1,
-  "blindados": 1,
-  "costeSubidas": 1071600,
-  "gastoVisto": 0,
-  "gastoOculto": 1071600
+  "subidas": 6,
+  "blindados": 2,
+  "costeSubidas": 2486600,
+  "gastoVisto": 1415000,
+  "gastoOculto": 2486600
  }
 ]
