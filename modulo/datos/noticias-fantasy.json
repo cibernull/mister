@@ -1,18 +1,30 @@
 {
- "cuando": "2026-09-19T10:07:59.262Z",
+ "cuando": "2026-09-19T10:37:58.061Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "19/09",
-   "titulo": "Marcos Fernández llama a la puerta del once",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151541-marcos-fernandez-llama-a-la-puerta-del-once",
+   "titulo": "Revivo le muestra su repertorio a LaLiga",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151543-revivo-le-muestra-su-repertorio-a-laliga",
    "categoria": "análisis"
   },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 actualizadas",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Simeone habla de Julián Alvarez, Grimaldo, Lookman, Vinicius, Mbappé y Mourinho antes del derbi",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151542-simeone-habla-de-julian-alvarez-grimaldo-lookman-vinicius-mbappe-y-mourinho-antes-del-derbi",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Marcos Fernández llama a la puerta del once",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151541-marcos-fernandez-llama-a-la-puerta-del-once",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Braulio valora el fichaje de Joselu como agente libre para el Valencia",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151465-braulio-valora-el-fichaje-de-joselu-como-agente-libre-para-el-valencia",
    "categoria": "mercado"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Jornada 7: Once de Chollos, Intermedio e Ideal + Picks de Capitán y Ariete, por Scouting BWG",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151464-jornada-7-once-de-chollos-intermedio-e-ideal-picks-de-capitan-y-ariete-por-scouting-bwg",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Moleiro encuentra una mejor versión lejos de la banda",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151463-moleiro-encuentra-una-mejor-version-lejos-de-la-banda",
-   "categoria": "análisis"
   }
  ]
 }
