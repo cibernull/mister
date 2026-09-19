@@ -1,7 +1,7 @@
 {
- "cuando": "2026-09-19T09:08:15.596Z",
+ "cuando": "2026-09-19T09:38:04.073Z",
  "fuente": "futbolfantasy.com",
- "leidos": 509,
+ "leidos": 486,
  "jugadores": {
   "10": {
    "prob": 80,
@@ -309,12 +309,6 @@
    "fuera": 0,
    "min": 450
   },
-  "6034": {
-   "prob": 100,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 464
-  },
   "6035": {
    "prob": 0,
    "sancionado": 0,
@@ -327,12 +321,6 @@
    "fuera": 0,
    "min": 450
   },
-  "6065": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 44
-  },
   "7011": {
    "prob": 80,
    "sancionado": 0,
@@ -344,18 +332,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 472
-  },
-  "7025": {
-   "prob": 100,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 540
-  },
-  "7784": {
-   "prob": 100,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 355
   },
   "7893": {
    "prob": 95,
@@ -386,12 +362,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 9
-  },
-  "11472": {
-   "prob": 100,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 270
   },
   "11697": {
    "prob": 70,
@@ -611,12 +581,6 @@
    "lesion": "Lesión de rodilla",
    "desde": "04/07 (77 días)",
    "hasta": "principios de octubre"
-  },
-  "17568": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 42
   },
   "17614": {
    "prob": 70,
@@ -1068,12 +1032,6 @@
    "desde": "16/09 (3 días)",
    "hasta": null
   },
-  "29167": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0
-  },
   "29169": {
    "prob": 70,
    "sancionado": 0,
@@ -1421,12 +1379,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 29
-  },
-  "53095": {
-   "prob": 100,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 72
   },
   "53098": {
    "prob": 50,
@@ -1822,22 +1774,13 @@
    "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 206,
-   "lesion": "Lesión en el sóleo",
-   "desde": "01/09 (18 días)",
-   "hasta": null
+   "min": 206
   },
   "60227": {
    "prob": 60,
    "sancionado": 0,
    "fuera": 0,
    "min": 45
-  },
-  "60271": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 110
   },
   "60290": {
    "prob": 0,
@@ -1877,12 +1820,6 @@
    "lesion": "Parameniscitis en la rodilla",
    "desde": "03/09 (16 días)",
    "hasta": null
-  },
-  "60888": {
-   "prob": 100,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 521
   },
   "60919": {
    "prob": 70,
@@ -1964,12 +1901,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 540
-  },
-  "63727": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 168
   },
   "63780": {
    "prob": 10,
@@ -2082,12 +2013,6 @@
    "fuera": 0,
    "min": 456
   },
-  "64468": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 408
-  },
   "64491": {
    "prob": 20,
    "sancionado": 0,
@@ -2172,12 +2097,6 @@
    "fuera": 0,
    "min": 202
   },
-  "65476": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 340
-  },
   "65625": {
    "prob": 30,
    "sancionado": 0,
@@ -2219,12 +2138,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 107
-  },
-  "66706": {
-   "prob": 100,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 466
   },
   "67942": {
    "prob": 70,
@@ -2664,12 +2577,6 @@
    "fuera": 0,
    "min": 126
   },
-  "71061": {
-   "prob": 100,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 326
-  },
   "71124": {
    "prob": 70,
    "sancionado": 0,
@@ -2694,12 +2601,6 @@
    "fuera": 0,
    "min": 197
   },
-  "71140": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 95
-  },
   "71141": {
    "prob": 30,
    "sancionado": 0,
@@ -2711,12 +2612,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 230
-  },
-  "71149": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 173
   },
   "71154": {
    "prob": 50,
@@ -2783,12 +2678,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 312
-  },
-  "71623": {
-   "prob": 100,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 490
   },
   "71633": {
    "prob": 20,
@@ -2885,12 +2774,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 181
-  },
-  "1256139": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 117
   },
   "1385821": {
    "prob": 70,
@@ -3113,12 +2996,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 90
-  },
-  "5404997": {
-   "prob": 100,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0
   }
  }
 }
