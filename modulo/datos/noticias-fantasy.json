@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-19T20:08:35.537Z",
+ "cuando": "2026-09-19T20:37:57.046Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -14,6 +14,18 @@
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Foyth vuelve al grupo y Comesaña estará tres semanas de baja",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151592-foyth-vuelve-al-grupo-y-comesana-estara-tres-semanas-de-baja",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Christensen se retira del partido por unas molestias en el muslo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151591-christensen-se-retira-del-partido-por-unas-molestias-en-el-muslo",
+   "categoria": "lesión"
   },
   {
    "fecha": "19/09",
@@ -470,18 +482,6 @@
    "titulo": "Manolo González habla de José Ángel, Unai Núñez y Roberto antes del partido contra el Elche",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151515-manolo-gonzalez-habla-jose-angel-unai-nunez-roberto-antes-partido-contra-elche",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Parte médico oficial de Jones El-Abdellaoui: sinovitis en la rodilla",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151514-parte-medico-celta-jones-el-abdellaoui-sufre-sinovitis",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Almeida regresa a la convocatoria de José Alberto ante el Celta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151513-almeida-regresa-convocatoria-jose-alberto-lopez-ante-celta",
-   "categoria": "convocatoria"
   }
  ]
 }

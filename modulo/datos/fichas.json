@@ -6981,7 +6981,9 @@
     "puntos": null,
     "rival": 3,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 1,
@@ -15099,11 +15101,20 @@
     "rival": 6,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 3,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-18",
-  "partidos": 5
+  "dia": "2026-09-19",
+  "partidos": 4
  },
  "58820": {
   "nombre": "Marc Casadó",
@@ -29339,6 +29350,7 @@
     "rival": 3,
     "como": "inicio",
     "eventos": [
+     "sub_out",
      "assist"
     ]
    }
