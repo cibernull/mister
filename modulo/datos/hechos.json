@@ -2582,7 +2582,7 @@
    "posicion": 4,
    "puntos": 6,
    "media": 1.5,
-   "racha": "1,2,1,-,-"
+   "racha": "-,1,2,1,-"
   },
   {
    "idTransfer": 540161991,
@@ -2597,9 +2597,9 @@
    "cuando": "2026-08-19 05:00:25",
    "valor": 255000,
    "posicion": 2,
-   "puntos": 2,
-   "media": 1,
-   "racha": "-,-,0,-,2"
+   "puntos": 1,
+   "media": 0,
+   "racha": "-,-,-,0,-"
   },
   {
    "idTransfer": 540207635,
