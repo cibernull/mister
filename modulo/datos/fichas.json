@@ -26776,7 +26776,9 @@
     "puntos": null,
     "rival": 3,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -29805,6 +29807,7 @@
     "rival": 3,
     "como": "inicio",
     "eventos": [
+     "sub_out",
      "goal"
     ]
    }
