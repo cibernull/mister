@@ -564,8 +564,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 1
+  "dia": "2026-09-19",
+  "partidos": 2
  },
  "130": {
   "nombre": "Iago Aspas",
@@ -1732,7 +1732,7 @@
   "mediaCasa": 5.7,
   "mediaFuera": 8,
   "edad": 30,
-  "titular": null,
+  "titular": true,
   "titularidades": 3,
   "suplencias": 2,
   "jornadas": [
@@ -2477,20 +2477,11 @@
     "rival": 3,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 5,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 2
+  "partidos": 3
  },
  "4886": {
   "nombre": "Asier Villalibre",
@@ -2556,15 +2547,6 @@
      "sub_out",
      "own_goal",
      "assist"
-    ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 5,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
     ]
    }
   ],
@@ -8616,13 +8598,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 5,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -12185,7 +12160,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 2
+  "partidos": 3
  },
  "49296": {
   "nombre": "Fran Pérez",
@@ -13926,7 +13901,7 @@
   ],
   "asistencias": 2,
   "dia": "2026-09-19",
-  "partidos": 3
+  "partidos": 4
  },
  "55452": {
   "nombre": "Sergi Canós",
@@ -16895,7 +16870,7 @@
   "nombre": "Pablo Ramón",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 3.5,
   "mediaFuera": 4.5,
   "edad": 25,
@@ -17310,7 +17285,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 7.3,
   "edad": 20,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 3,
   "jornadas": [
@@ -17372,7 +17347,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 2
+  "partidos": 3
  },
  "61013": {
   "nombre": "Antony Santos",
@@ -18257,8 +18232,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 2
+  "dia": "2026-09-19",
+  "partidos": 3
  },
  "63867": {
   "nombre": "Yago Santiago",
@@ -22075,7 +22050,7 @@
   "edad": 21,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -22106,11 +22081,20 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": 0,
+    "rival": 3,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-16",
-  "partidos": 2
+  "dia": "2026-09-19",
+  "partidos": 3
  },
  "70496": {
   "nombre": "Alassane Diatta",
@@ -22614,20 +22598,11 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 5,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 3
+  "partidos": 4
  },
  "70929": {
   "nombre": "Juan Carlos Arana",
@@ -22764,13 +22739,6 @@
     "eventos": [
      "goal"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 5,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -22843,7 +22811,7 @@
   "mediaFuera": 0,
   "edad": 28,
   "titular": null,
-  "titularidades": 0,
+  "titularidades": 1,
   "suplencias": 0,
   "jornadas": [
    {
@@ -22880,11 +22848,20 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": 0,
+    "rival": 3,
+    "como": "inicio",
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-16",
-  "partidos": 1
+  "dia": "2026-09-19",
+  "partidos": 2
  },
  "70935": {
   "nombre": "Jorge Salinas",
@@ -23010,13 +22987,6 @@
     "jornada": 6,
     "puntos": -1,
     "rival": 3,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 5,
     "como": "inicio",
     "eventos": []
    }
@@ -24874,13 +24844,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 5,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28224,13 +28187,6 @@
      "yellow",
      "sub_in"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 1490,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28357,13 +28313,6 @@
     "jornada": 6,
     "puntos": 2,
     "rival": 3,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 5,
     "como": "inicio",
     "eventos": []
    }
@@ -29293,7 +29242,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 2
+  "partidos": 3
  },
  "4836189": {
   "nombre": "Harvey Elliott",
@@ -29415,7 +29364,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 1
+  "partidos": 2
  },
  "4947925": {
   "nombre": "Brian Fariñas",

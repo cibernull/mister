@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-19T18:08:10.723Z",
+ "cuando": "2026-09-19T18:38:04.013Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "19/09",
-   "titulo": "Sigue en directo el Celta - Racing",
-   "url": "https://www.futbolfantasy.com/partidos/22485-celta-racing",
-   "categoria": "análisis"
+   "titulo": "Alineaciones confirmadas del Sevilla - Barcelona",
+   "url": "https://www.futbolfantasy.com/partidos/22490-sevilla-barcelona",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
@@ -17,15 +17,45 @@
   },
   {
    "fecha": "19/09",
-   "titulo": "Actualizadas las jerarquías del Espanyol: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/espanyol/jerarquias",
+   "titulo": "Flick habla de Livakovic, Espart, Cancelo, Gordon y Adeyemi antes del partido",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151587-flick-habla-de-livakovic-espart-cancelo-gordon-y-adeyemi-antes-del-partido",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Luis García, sobre Kike Salas, Sangante, el once del Barcelona y cómo frenarlos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151586-luis-garcia-sobre-kike-salas-sangante-el-once-del-barcelona-y-como-frenarlos",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Jornada 7: Celta 5-0 Racing. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22485-celta-racing",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Kike Salas no supera la última prueba y se cae de la lista ante el Barcelona",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151585-kike-salas-no-supera-la-ultima-prueba-y-se-cae-de-la-lista-ante-el-barcelona",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
    "categoria": "análisis"
   },
   {
    "fecha": "19/09",
-   "titulo": "Alineaciones confirmadas del Sevilla - Barcelona",
-   "url": "https://www.futbolfantasy.com/partidos/22490-sevilla-barcelona",
-   "categoria": "rueda de prensa"
+   "titulo": "Julián Alvarez entra en una lista sin Barrios ni Sorloth",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151583-julian-alvarez-entra-en-una-lista-sin-barrios-ni-sorloth",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Actualizadas las jerarquías del Espanyol: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/espanyol/jerarquias",
+   "categoria": "análisis"
   },
   {
    "fecha": "19/09",
@@ -452,36 +482,6 @@
    "titulo": "Canales es duda para iniciar en Vigo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151509-canales-es-duda-para-iniciar-en-vigo",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Alineaciones probables y pronósticos Fantasy de la Jornada 7, por Carrasco",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151508-alineaciones-probables-y-pronosticos-fantasy-de-la-jornada-7-por-carrasco",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Los mejores jugadores para la Jornada 7 de LaLiga Fantasy 26/27, por Carrasco",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151507-los-mejores-jugadores-para-la-jornada-7-de-laliga-fantasy-26-27",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "As no descarta la primera titularidad de Adama Traoré contra el Betis",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151506-as-no-descarta-la-primera-titularidad-de-adama-traore-contra-el-betis",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Quique deja abierta la puerta a alguna rotación puntual",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151504-quique-deja-abierta-la-puerta-a-alguna-rotacion-puntual",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Cajuste y Aznou siguen al margen en la vuelta al trabajo del Málaga",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151505-cajuste-y-aznou-siguen-al-margen-en-la-vuelta-al-trabajo-del-malaga",
-   "categoria": "entrenamiento"
   }
  ]
 }
