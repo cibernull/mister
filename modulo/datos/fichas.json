@@ -7837,6 +7837,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 1,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -13853,7 +13860,7 @@
  "55439": {
   "nombre": "Hugo González",
   "posicion": 3,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 2.5,
   "mediaFuera": 6,
@@ -15401,6 +15408,13 @@
     "rival": 23,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 48,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -16677,12 +16691,12 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 6,
+  "mediaCasa": 4,
   "mediaFuera": 4,
   "edad": 21,
   "titular": null,
   "titularidades": 2,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -16702,6 +16716,15 @@
     "jornada": 3,
     "puntos": 3,
     "rival": 5,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
+   },
+   {
+    "jornada": 7,
+    "puntos": 2,
+    "rival": 48,
     "como": "banquillo",
     "eventos": [
      "sub_in"
@@ -16926,7 +16949,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 4
+  "partidos": 3
  },
  "60859": {
   "nombre": "Facundo Garcés",
@@ -22514,6 +22537,13 @@
     "rival": 3,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -22652,6 +22682,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23045,7 +23082,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 5
+  "partidos": 4
  },
  "70939": {
   "nombre": "Yeremay Hernández",
@@ -26500,6 +26537,13 @@
     "eventos": [
      "yellow"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 48,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -26992,10 +27036,10 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 5,
-  "mediaFuera": 2.5,
+  "mediaFuera": 2.7,
   "edad": 25,
   "titular": null,
-  "titularidades": 1,
+  "titularidades": 2,
   "suplencias": 2,
   "jornadas": [
    {
@@ -27042,6 +27086,13 @@
     "jornada": 6,
     "puntos": 5,
     "rival": 19,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": 3,
+    "rival": 1,
     "como": "inicio",
     "eventos": []
    }
@@ -28465,11 +28516,11 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 3,
+  "mediaCasa": 2.3,
   "mediaFuera": 3,
   "edad": 22,
   "titular": null,
-  "titularidades": 1,
+  "titularidades": 2,
   "suplencias": 3,
   "jornadas": [
    {
@@ -28514,6 +28565,15 @@
     "como": "banquillo",
     "eventos": [
      "sub_in"
+    ]
+   },
+   {
+    "jornada": 7,
+    "puntos": 1,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": [
+     "sub_out"
     ]
    }
   ],
@@ -29888,6 +29948,13 @@
     "jornada": 6,
     "puntos": null,
     "rival": 19,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 1,
     "como": "no jugó",
     "eventos": []
    }
