@@ -1786,18 +1786,11 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 4
+  "partidos": 5
  },
  "1034": {
   "nombre": "Juanmi Jiménez",
@@ -6975,20 +6968,11 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 1,
   "dia": "2026-09-19",
-  "partidos": 4
+  "partidos": 5
  },
  "22502": {
   "nombre": "Alex Baena",
@@ -14795,7 +14779,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 3
+  "partidos": 4
  },
  "56971": {
   "nombre": "Hector Fort",
@@ -16510,11 +16494,18 @@
     "rival": 19,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 6,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 1
+  "dia": "2026-09-19",
+  "partidos": 2
  },
  "59641": {
   "nombre": "Toni Martínez",
@@ -20304,11 +20295,18 @@
     "rival": 12,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 1490,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 0
+  "dia": "2026-09-19",
+  "partidos": 1
  },
  "65724": {
   "nombre": "Fábio Cardoso",
@@ -25866,13 +25864,6 @@
     "rival": 1490,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -26770,15 +26761,6 @@
      "sub_out",
      "goal"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
@@ -27072,13 +27054,6 @@
     "puntos": null,
     "rival": 6,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -27475,13 +27450,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -28996,18 +28964,11 @@
      "sub_in",
      "goal"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 2
+  "partidos": 3
  },
  "4774441": {
   "nombre": "Matia Barzic",
@@ -29275,13 +29236,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -29345,21 +29299,11 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": [
-     "sub_out",
-     "assist"
-    ]
    }
   ],
   "asistencias": 1,
   "dia": "2026-09-19",
-  "partidos": 2
+  "partidos": 3
  },
  "4836181": {
   "nombre": "Iván Azón",
@@ -29800,21 +29744,11 @@
     "rival": 6,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": [
-     "sub_out",
-     "goal"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 3
+  "partidos": 4
  },
  "4947928": {
   "nombre": "Salvi Esquivel",

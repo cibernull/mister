@@ -1,19 +1,25 @@
 {
- "cuando": "2026-09-19T20:43:08.092Z",
+ "cuando": "2026-09-19T21:08:12.190Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "19/09",
-   "titulo": "Sigue en directo el Sevilla - Barcelona",
-   "url": "https://www.futbolfantasy.com/partidos/22490-sevilla-barcelona",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Jornda 7: Sevilla 1-3 Barcelona. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22490-sevilla-barcelona",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Funes no recupera efectivos en la lista para visitar el Coliseum",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151593-funes-no-recupera-efectivos-en-la-lista-para-visitar-el-coliseum",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "19/09",
@@ -475,12 +481,6 @@
    "fecha": "18/09",
    "titulo": "Anselmi habla de Matías Dituro antes de medirse al Espanyol",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151516-martin-anselmi-habla-matias-dituro-antes-visitar-espanyol",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Manolo González habla de José Ángel, Unai Núñez y Roberto antes del partido contra el Elche",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151515-manolo-gonzalez-habla-jose-angel-unai-nunez-roberto-antes-partido-contra-elche",
    "categoria": "rueda de prensa"
   }
  ]
