@@ -1,19 +1,31 @@
 {
- "cuando": "2026-09-19T09:38:05.025Z",
+ "cuando": "2026-09-19T10:07:59.262Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "19/09",
-   "titulo": "Hidalgo revela un brote vírico en la plantilla y habla de Yeremay, Mella, Traoré, el sistema y el Betis",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151532-hidalgo-revela-un-brote-virico-en-la-plantilla-y-habla-de-yeremay-mella-traore-el-sistema-y-e",
-   "categoria": "rueda de prensa"
+   "titulo": "Marcos Fernández llama a la puerta del once",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151541-marcos-fernandez-llama-a-la-puerta-del-once",
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 actualizadas",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Bordalás habla de David Soria, Mayoral y Terrats antes de enfrentarse al Málaga",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151540-bordalas-habla-de-david-soria-mayoral-y-terrats-antes-de-enfrentarse-al-malaga",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "El Real Madrid completa la última sesión sin los tres lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151539-el-real-madrid-completa-la-ultima-sesion-sin-los-tres-lesionados",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "19/09",
@@ -50,6 +62,12 @@
    "titulo": "Lista del Rayo para viajar a Pamplona sin los cinco lesionados ni RDT",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151533-lista-del-rayo-para-viajar-a-pamplona-sin-los-cinco-lesionados-ni-rdt",
    "categoria": "convocatoria"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Hidalgo revela un brote vírico en la plantilla y habla de Yeremay, Mella, Traoré, el sistema y el Betis",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151532-hidalgo-revela-un-brote-virico-en-la-plantilla-y-habla-de-yeremay-mella-traore-el-sistema-y-e",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "19/09",
@@ -463,24 +481,6 @@
    "fecha": "18/09",
    "titulo": "Moleiro encuentra una mejor versión lejos de la banda",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151463-moleiro-encuentra-una-mejor-version-lejos-de-la-banda",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Matarazzo rotará en Mestalla con varios futbolistas descansados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151462-matarazzo-rotara-en-mestalla-con-varios-futbolistas-descansados",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Las alineaciones probables del Espanyol para la jornada 7 según la prensa especializada",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151461-las-alineaciones-probables-del-espanyol-para-la-jornada-7-segun-la-prensa-especializada",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Las alineaciones probables del Elche para la jornada 7 según la prensa especializada",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151460-las-alineaciones-probables-del-elche-para-la-jornada-7-segun-la-prensa-especializada",
    "categoria": "análisis"
   }
  ]
