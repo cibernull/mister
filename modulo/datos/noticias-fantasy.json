@@ -1,18 +1,36 @@
 {
- "cuando": "2026-09-19T10:37:58.061Z",
+ "cuando": "2026-09-19T11:02:39.507Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "19/09",
-   "titulo": "Revivo le muestra su repertorio a LaLiga",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151543-revivo-le-muestra-su-repertorio-a-laliga",
-   "categoria": "análisis"
+   "titulo": "Alineaciones confirmadas del Osasuna - Rayo",
+   "url": "https://www.futbolfantasy.com/partidos/22489-osasuna-rayo",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 actualizadas",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Cepeda recupera la titularidad perdida",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151545-cepeda-recupera-la-titularidad-perdida",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Luis Castro carga contra los horarios de LaLiga y habla del temporal, Cortés, Ndukwe, Ryan y el Villarreal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151544-luis-castro-carga-contra-los-horarios-de-laliga-y-habla-del-temporal-cortes-ndukwe-ryan-y-el-",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Revivo le muestra su repertorio a LaLiga",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151543-revivo-le-muestra-su-repertorio-a-laliga",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Isco, una hora como máximo para esquivar las rotaciones",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151468-isco-una-hora-como-maximo-para-esquivar-las-rotaciones",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Akhomach se gana más espacio antes de la inevitable vuelta de Pépé",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151467-akhomach-se-gana-mas-espacio-antes-de-la-inevitable-vuelta-de-pepe",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Pablo Martínez y Chupete, bajo el foco de la carga de minutos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151466-pablo-martinez-y-chupete-bajo-el-foco-de-la-carga-de-minutos",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Braulio valora el fichaje de Joselu como agente libre para el Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151465-braulio-valora-el-fichaje-de-joselu-como-agente-libre-para-el-valencia",
-   "categoria": "mercado"
   }
  ]
 }
