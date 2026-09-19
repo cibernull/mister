@@ -11803,13 +11803,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -26371,7 +26364,7 @@
   "mediaCasa": 4.3,
   "mediaFuera": 5,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
@@ -27307,13 +27300,6 @@
      "yellow",
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28367,7 +28353,7 @@
   "mediaCasa": 3,
   "mediaFuera": 3,
   "edad": 22,
-  "titular": null,
+  "titular": true,
   "titularidades": 1,
   "suplencias": 3,
   "jornadas": [
@@ -30033,13 +30019,6 @@
     "jornada": 6,
     "puntos": 2,
     "rival": 2,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 14,
     "como": "inicio",
     "eventos": []
    }
