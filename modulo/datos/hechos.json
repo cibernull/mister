@@ -2238,11 +2238,11 @@
    "importe": 4702340,
    "tipo": "normal",
    "cuando": "2026-08-16 05:00:24",
-   "valor": 6602000,
+   "valor": 6320000,
    "posicion": 2,
-   "puntos": 23,
-   "media": 5.8,
-   "racha": "-,5,-1,6,13"
+   "puntos": 10,
+   "media": 3.3,
+   "racha": "-,5,-1,6"
   },
   {
    "idTransfer": 539439656,
@@ -2255,7 +2255,7 @@
    "importe": 556500,
    "tipo": "normal",
    "cuando": "2026-08-16 08:21:23",
-   "valor": 160000,
+   "valor": 205000,
    "posicion": 4,
    "puntos": 0,
    "media": 0,
@@ -2272,7 +2272,7 @@
    "importe": 303680,
    "tipo": "normal",
    "cuando": "2026-08-16 11:51:17",
-   "valor": 177000,
+   "valor": 203000,
    "posicion": 4,
    "puntos": 3,
    "media": 1.5,
@@ -2289,7 +2289,7 @@
    "importe": 199680,
    "tipo": "normal",
    "cuando": "2026-08-16 11:51:19",
-   "valor": 164000,
+   "valor": 190000,
    "posicion": 3,
    "puntos": 4,
    "media": 2,
@@ -2306,11 +2306,11 @@
    "importe": 2310578,
    "tipo": "normal",
    "cuando": "2026-08-16 17:00:18",
-   "valor": 658000,
+   "valor": 891000,
    "posicion": 2,
    "puntos": 2,
    "media": 1,
-   "racha": "2,0,-,-,-"
+   "racha": "2,0,-,-"
   },
   {
    "idTransfer": 539627260,
@@ -2323,11 +2323,11 @@
    "importe": 3289630,
    "tipo": "normal",
    "cuando": "2026-08-17 05:00:29",
-   "valor": 2970000,
+   "valor": 3430000,
    "posicion": 4,
    "puntos": 4,
    "media": 1.3,
-   "racha": "0,0,4,-,-"
+   "racha": "0,0,4,-"
   },
   {
    "idTransfer": 539686076,
@@ -2340,11 +2340,11 @@
    "importe": 1952080,
    "tipo": "normal",
    "cuando": "2026-08-17 07:45:06",
-   "valor": 5032000,
+   "valor": 4547000,
    "posicion": 4,
-   "puntos": 21,
-   "media": 4.2,
-   "racha": "4,2,8,5,2"
+   "puntos": 19,
+   "media": 4.8,
+   "racha": "4,2,8,5"
   },
   {
    "idTransfer": 539686084,
@@ -5609,6 +5609,23 @@
    "puntos": 23,
    "media": 5.8,
    "racha": "-,11,2,5,5"
+  },
+  {
+   "idTransfer": 549281456,
+   "idJugador": "17290",
+   "nombre": "Sergio Camello",
+   "de": "Saiyans FC (Fran)",
+   "a": "Niutin FC (Isaac)",
+   "idUcDe": 12493752,
+   "idUcA": 12493763,
+   "importe": 12672000,
+   "tipo": "clause",
+   "cuando": "2026-09-19 15:10:11",
+   "valor": 8448000,
+   "posicion": 4,
+   "puntos": 63,
+   "media": 10.3,
+   "racha": "11,16,17,10,6"
   }
  ],
  "salidas": [

@@ -212,6 +212,22 @@
   "equipo": null
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-09-19",
+  "id": "17290",
+  "de": "Saiyans FC (Fran)",
+  "a": "Niutin FC (Isaac)"
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-09-19",
+  "id": "66706",
+  "equipo": "Neky F.C. (Sergio)",
+  "escalones": 1,
+  "coste": 506000,
+  "clausula": 8855000
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-18",
   "id": "128",

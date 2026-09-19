@@ -1,6 +1,14 @@
 {
- "saldo": 443816,
+ "saldo": -12228184,
  "apuntes": [
+  {
+   "cuando": 1789823411,
+   "fecha": "2026-09-19 15:10",
+   "motivo": "Sergio Camello a Saiyans FC (Fran)",
+   "tipo": "Compra por cláusula",
+   "importe": -12672000,
+   "saldo": -12228184
+  },
   {
    "cuando": 1789721862,
    "fecha": "2026-09-18 10:57",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -2201650,
    "saldo": -1934509
-  },
-  {
-   "cuando": 1787214239,
-   "fecha": "2026-08-20 10:23",
-   "motivo": "Modificación de cláusula (150%) de Juan Foyth",
-   "tipo": "Penalización",
-   "importe": -340000,
-   "saldo": 267141
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-19T12:38:09.233Z",
+ "cuando": "2026-09-19T13:07:52.606Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -14,6 +14,12 @@
    "titulo": "Alineaciones probables para la jornada 7 actualizadas",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Pedro Porro cae lesionado y obliga a Luis de la Fuente a llamar un sustituto",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151560-pedro-porro-cae-lesionado-y-obliga-a-luis-de-la-fuente-a-llamar-un-sustituto",
+   "categoria": "lesión"
   },
   {
    "fecha": "19/09",
@@ -476,12 +482,6 @@
    "titulo": "Luis García explica cómo llega el equipo y habla de Agoumé, Stassin, Ure, Isaac, Kike Salas, Sangante, Castrín y el Barça",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151482-luis-garcia-explica-como-llega-el-equipo-y-habla-de-agoume-stassin-ure-isaac-kike-salas-sanga",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Luis García deja la duda abierta con Kike Salas hasta última hora",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151481-luis-garcia-se-pone-jugueton-y-lanza-un-acertijo-con-una-duda-hasta-ultima-hora",
-   "categoria": "análisis"
   }
  ]
 }
