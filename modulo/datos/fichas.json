@@ -28484,7 +28484,9 @@
     "puntos": null,
     "rival": 48,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
