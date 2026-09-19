@@ -2482,8 +2482,10 @@
     "jornada": 7,
     "puntos": null,
     "rival": 5,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -2560,8 +2562,10 @@
     "jornada": 7,
     "puntos": null,
     "rival": 5,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 1,
@@ -12496,8 +12500,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 4
+  "dia": "2026-09-19",
+  "partidos": 3
  },
  "51135": {
   "nombre": "Pablo Barrios",
@@ -29232,7 +29236,7 @@
   "nombre": "Jeanuël Belocian",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 4,
   "mediaFuera": 3,
   "edad": 21,

@@ -1,7 +1,7 @@
 {
- "cuando": "2026-09-19T15:38:05.738Z",
+ "cuando": "2026-09-19T18:03:14.263Z",
  "fuente": "futbolfantasy.com",
- "leidos": 528,
+ "leidos": 532,
  "jugadores": {
   "10": {
    "prob": 100,
@@ -10,10 +10,10 @@
    "min": 483
   },
   "24": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
-   "min": 465
+   "min": 551
   },
   "29": {
    "prob": 100,
@@ -51,14 +51,14 @@
    "fuera": 0,
    "min": 22
   },
-  "130": {
-   "prob": 0,
+  "208": {
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
-   "min": 221,
-   "lesion": "Lesión en el recto anterior",
-   "desde": "13/09 (6 días)",
-   "hasta": "mediados de octubre"
+   "min": 238,
+   "lesion": "Lesión en el bíceps femoral",
+   "desde": "06/09 (13 días)",
+   "hasta": null
   },
   "213": {
    "prob": 95,
@@ -82,10 +82,10 @@
    "min": 192
   },
   "270": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
-   "min": 299
+   "min": 367
   },
   "306": {
    "prob": 20,
@@ -121,7 +121,7 @@
    "min": 281
   },
   "431": {
-   "prob": 30,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 119
@@ -169,7 +169,7 @@
    "min": 540
   },
   "616": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 266
@@ -193,10 +193,10 @@
    "hasta": "diciembre"
   },
   "1713": {
-   "prob": 100,
+   "prob": 95,
    "sancionado": 0,
    "fuera": 0,
-   "min": 540
+   "min": 630
   },
   "1719": {
    "prob": 60,
@@ -229,10 +229,10 @@
    "min": 350
   },
   "3117": {
-   "prob": 100,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
-   "min": 45
+   "min": 100
   },
   "3728": {
    "prob": 80,
@@ -280,7 +280,7 @@
    "hasta": "octubre"
   },
   "5916": {
-   "prob": 40,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 338
@@ -311,12 +311,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 554
-  },
-  "6035": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0
   },
   "6044": {
    "prob": 80,
@@ -420,6 +414,12 @@
    "fuera": 0,
    "min": 508
   },
+  "12902": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 0
+  },
   "12915": {
    "prob": 70,
    "sancionado": 0,
@@ -466,10 +466,10 @@
    "hasta": "princpios de octubre"
   },
   "14379": {
-   "prob": 100,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 90
+   "min": 180
   },
   "14432": {
    "prob": 0,
@@ -487,10 +487,10 @@
    "min": 540
   },
   "14691": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
-   "min": 308
+   "min": 398
   },
   "14789": {
    "prob": 100,
@@ -505,10 +505,10 @@
    "min": 540
   },
   "14911": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
-   "min": 442
+   "min": 528
   },
   "15107": {
    "prob": 80,
@@ -565,10 +565,10 @@
    "min": 204
   },
   "15756": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
-   "min": 450
+   "min": 540
   },
   "16868": {
    "prob": 100,
@@ -577,10 +577,10 @@
    "min": 96
   },
   "17290": {
-   "prob": 100,
+   "prob": 90,
    "sancionado": 0,
    "fuera": 0,
-   "min": 396
+   "min": 466
   },
   "17450": {
    "prob": 0,
@@ -616,13 +616,13 @@
    "min": 42
   },
   "17614": {
-   "prob": 100,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
-   "min": 182
+   "min": 237
   },
   "17615": {
-   "prob": 0,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 450
@@ -637,16 +637,16 @@
    "hasta": "octubre"
   },
   "17989": {
-   "prob": 100,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 300
+   "min": 370
   },
   "18004": {
-   "prob": 100,
+   "prob": 90,
    "sancionado": 0,
    "fuera": 0,
-   "min": 413
+   "min": 503
   },
   "18109": {
    "prob": 10,
@@ -658,7 +658,7 @@
    "hasta": null
   },
   "18186": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 174
@@ -682,10 +682,10 @@
    "min": 0
   },
   "19527": {
-   "prob": 100,
+   "prob": 90,
    "sancionado": 0,
    "fuera": 0,
-   "min": 425
+   "min": 493
   },
   "19562": {
    "prob": 50,
@@ -736,7 +736,7 @@
    "min": 197
   },
   "22495": {
-   "prob": 60,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 119
@@ -746,6 +746,15 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 386
+  },
+  "22527": {
+   "prob": 50,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 150,
+   "lesion": "Lesión en el bíceps femoral",
+   "desde": "31/08 (19 días)",
+   "hasta": null
   },
   "22595": {
    "prob": 70,
@@ -766,10 +775,10 @@
    "min": 453
   },
   "22668": {
-   "prob": 0,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
-   "min": 210
+   "min": 232
   },
   "22885": {
    "prob": 10,
@@ -811,7 +820,7 @@
    "min": 12
   },
   "24742": {
-   "prob": 0,
+   "prob": 20,
    "sancionado": 0,
    "fuera": 0,
    "min": 211
@@ -829,7 +838,7 @@
    "min": 364
   },
   "24792": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 540
@@ -841,10 +850,10 @@
    "min": 390
   },
   "25621": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
-   "min": 450
+   "min": 540
   },
   "25630": {
    "prob": 80,
@@ -865,7 +874,7 @@
    "min": 513
   },
   "27333": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 377
@@ -882,20 +891,20 @@
    "fuera": 0,
    "min": 285
   },
-  "27516": {
-   "prob": 0,
+  "27517": {
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
-   "min": 238,
-   "lesion": "Esguince de rodilla",
-   "desde": "28/08 (22 días)",
-   "hasta": "mediados de octubre"
+   "min": 79,
+   "lesion": "Lesión en el cuádriceps",
+   "desde": "20/08 (30 días)",
+   "hasta": null
   },
   "27518": {
-   "prob": 100,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
-   "min": 313
+   "min": 372
   },
   "27520": {
    "prob": 80,
@@ -952,10 +961,10 @@
    "min": 450
   },
   "28619": {
-   "prob": 0,
+   "prob": 20,
    "sancionado": 0,
    "fuera": 0,
-   "min": 208
+   "min": 212
   },
   "28621": {
    "prob": 10,
@@ -1009,7 +1018,7 @@
    "min": 370
   },
   "28784": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 43
@@ -1057,7 +1066,7 @@
    "min": 585
   },
   "29205": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 13
@@ -1075,7 +1084,7 @@
    "min": 415
   },
   "29235": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 74
@@ -1086,11 +1095,20 @@
    "fuera": 0,
    "min": 0
   },
-  "29403": {
-   "prob": 100,
+  "29402": {
+   "prob": 10,
    "sancionado": 0,
    "fuera": 0,
-   "min": 540
+   "min": 154,
+   "lesion": "Molestias musculares",
+   "desde": "10/09 (9 días)",
+   "hasta": null
+  },
+  "29403": {
+   "prob": 80,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 630
   },
   "30444": {
    "prob": 95,
@@ -1243,10 +1261,10 @@
    "min": 241
   },
   "48210": {
-   "prob": 0,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
-   "min": 233
+   "min": 255
   },
   "48486": {
    "prob": 0,
@@ -1257,8 +1275,17 @@
    "desde": "25/02 (206 días)",
    "hasta": "octubre"
   },
+  "48554": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 0,
+   "lesion": "Rotura en los isquiotibiales",
+   "desde": "16/04 (156 días)",
+   "hasta": null
+  },
   "48556": {
-   "prob": 21,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 344
@@ -1270,7 +1297,7 @@
    "min": 0
   },
   "48657": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 474
@@ -1291,7 +1318,7 @@
    "min": 62
   },
   "49296": {
-   "prob": 0,
+   "prob": 20,
    "sancionado": 0,
    "fuera": 0,
    "min": 150
@@ -1303,7 +1330,7 @@
    "min": 410
   },
   "49424": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 447
@@ -1354,10 +1381,10 @@
    "min": 282
   },
   "52371": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
-   "min": 385
+   "min": 475
   },
   "52372": {
    "prob": 80,
@@ -1366,10 +1393,19 @@
    "min": 472
   },
   "52375": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 489
+  },
+  "52377": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 185,
+   "lesion": "Lesión en el aductor",
+   "desde": "31/08 (19 días)",
+   "hasta": "noviembre"
   },
   "52404": {
    "prob": 0,
@@ -1411,7 +1447,10 @@
    "prob": 100,
    "sancionado": 0,
    "fuera": 0,
-   "min": 587
+   "min": 587,
+   "lesion": "Molestias en el cuádriceps",
+   "desde": "19/09 (1 día)",
+   "hasta": null
   },
   "53144": {
    "prob": 100,
@@ -1438,7 +1477,7 @@
    "min": 373
   },
   "55009": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 371
@@ -1524,14 +1563,23 @@
    "fuera": 0,
    "min": 137
   },
+  "56583": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 149,
+   "lesion": "Fractura de tibia",
+   "desde": "20/08 (30 días)",
+   "hasta": "enero"
+  },
   "56628": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 540
   },
   "56632": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 190
@@ -1552,7 +1600,7 @@
    "min": 506
   },
   "56926": {
-   "prob": 99,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 331
@@ -1579,22 +1627,22 @@
    "hasta": "mayo 2027"
   },
   "58436": {
-   "prob": 0,
+   "prob": 10,
    "sancionado": 0,
    "fuera": 0,
-   "min": 139,
+   "min": 174,
    "lesion": "Lesión en los isquiotibiales",
    "desde": "19/09 (1 día)",
    "hasta": null
   },
   "58438": {
-   "prob": 0,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 201
   },
   "58467": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 181
@@ -1618,16 +1666,25 @@
    "min": 540
   },
   "58958": {
-   "prob": 0,
+   "prob": 5,
    "sancionado": 0,
    "fuera": 0,
    "min": 67
   },
-  "58986": {
-   "prob": 0,
+  "58980": {
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
-   "min": 495
+   "min": 0,
+   "lesion": "Lesión en el bíceps femoral",
+   "desde": "24/07 (57 días)",
+   "hasta": null
+  },
+  "58986": {
+   "prob": 50,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 530
   },
   "58992": {
    "prob": 0,
@@ -1666,13 +1723,13 @@
    "min": 409
   },
   "59395": {
-   "prob": 0,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
-   "min": 293
+   "min": 324
   },
   "59415": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 248
@@ -1684,7 +1741,7 @@
    "min": 57
   },
   "59484": {
-   "prob": 40,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 288
@@ -1696,13 +1753,13 @@
    "min": 232
   },
   "59532": {
-   "prob": 0,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
   },
   "59533": {
-   "prob": 80,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 405
@@ -1762,7 +1819,7 @@
    "min": 206
   },
   "60227": {
-   "prob": 60,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 45
@@ -1784,15 +1841,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 292
-  },
-  "60861": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 152,
-   "lesion": "Sinovitis en la rodilla",
-   "desde": "18/09 (1 día)",
-   "hasta": null
   },
   "60872": {
    "prob": 0,
@@ -1873,7 +1921,7 @@
    "min": 249
   },
   "62910": {
-   "prob": 5,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -1984,7 +2032,7 @@
    "min": 177
   },
   "64382": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 540
@@ -2052,8 +2100,17 @@
    "fuera": 0,
    "min": 464
   },
+  "65104": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 121,
+   "lesion": "Lesión en los isquiotibiales",
+   "desde": "31/08 (19 días)",
+   "hasta": null
+  },
   "65111": {
-   "prob": 95,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 540
@@ -2065,7 +2122,7 @@
    "min": 324
   },
   "65179": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 391
@@ -2095,10 +2152,10 @@
    "min": 540
   },
   "65475": {
-   "prob": 100,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
-   "min": 202
+   "min": 292
   },
   "65476": {
    "prob": 40,
@@ -2131,7 +2188,7 @@
    "min": 396
   },
   "65721": {
-   "prob": 40,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -2143,10 +2200,10 @@
    "min": 0
   },
   "65727": {
-   "prob": 0,
+   "prob": 10,
    "sancionado": 0,
    "fuera": 0,
-   "min": 107
+   "min": 127
   },
   "66706": {
    "prob": 80,
@@ -2161,10 +2218,10 @@
    "min": 0
   },
   "67942": {
-   "prob": 100,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 472
+   "min": 562
   },
   "68259": {
    "prob": 20,
@@ -2272,13 +2329,13 @@
    "min": 293
   },
   "69744": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 85
   },
   "69889": {
-   "prob": 70,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 439
@@ -2290,19 +2347,10 @@
    "min": 309
   },
   "70183": {
-   "prob": 0,
+   "prob": 10,
    "sancionado": 0,
    "fuera": 0,
    "min": 24
-  },
-  "70189": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 62,
-   "lesion": "Esguince de tobillo",
-   "desde": "12/09 (7 días)",
-   "hasta": "finales de septiembre"
   },
   "70255": {
    "prob": 100,
@@ -2317,13 +2365,13 @@
    "min": 0
   },
   "70638": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 308
   },
   "70917": {
-   "prob": 30,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 212,
@@ -2342,15 +2390,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 450
-  },
-  "70925": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Tendinopatía en el hombro",
-   "desde": "08/09 (11 días)",
-   "hasta": null
   },
   "70927": {
    "prob": 0,
@@ -2659,7 +2698,7 @@
    "min": 341
   },
   "71179": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 5
@@ -2689,7 +2728,7 @@
    "min": 95
   },
   "71574": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 232
@@ -2699,6 +2738,12 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 312
+  },
+  "71622": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 0
   },
   "71623": {
    "prob": 50,
@@ -2725,7 +2770,7 @@
    "min": 373
   },
   "71640": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 415
@@ -2785,22 +2830,22 @@
    "min": 217
   },
   "523868": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 306
   },
   "822248": {
-   "prob": 0,
+   "prob": 20,
    "sancionado": 0,
    "fuera": 0,
    "min": 211
   },
   "925296": {
-   "prob": 0,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
-   "min": 181
+   "min": 201
   },
   "1256139": {
    "prob": 30,
@@ -2844,6 +2889,12 @@
    "fuera": 0,
    "min": 20
   },
+  "3368896": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 0
+  },
   "3688394": {
    "prob": 5,
    "sancionado": 0,
@@ -2875,10 +2926,10 @@
    "min": 103
   },
   "3848779": {
-   "prob": 0,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
-   "min": 186
+   "min": 190
   },
   "3848780": {
    "prob": 100,
@@ -2899,13 +2950,13 @@
    "min": 0
   },
   "4733614": {
-   "prob": 0,
+   "prob": 20,
    "sancionado": 0,
    "fuera": 0,
    "min": 36
   },
   "4764213": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 32
@@ -2938,7 +2989,7 @@
    "hasta": "principios de octubre"
   },
   "4836173": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 162
@@ -2980,16 +3031,16 @@
    "min": 0
   },
   "4947927": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 197
   },
   "4947929": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
-   "min": 180
+   "min": 270
   },
   "4947930": {
    "prob": 0,
@@ -3007,10 +3058,10 @@
    "min": 58
   },
   "4947932": {
-   "prob": 100,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 76
+   "min": 166
   },
   "5235247": {
    "prob": 0,
@@ -3031,10 +3082,10 @@
    "min": 90
   },
   "5358737": {
-   "prob": 100,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 90
+   "min": 162
   }
  }
 }
