@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-19T13:32:17.663Z",
+ "cuando": "2026-09-19T13:37:53.664Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -14,6 +14,12 @@
    "titulo": "Alineaciones probables para la jornada 7 actualizadas",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Terrats y Mayoral se prueban con el grupo antes del partido",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151562-terrats-y-mayoral-se-prueba-con-el-grupo-antes-del-partido",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "19/09",
@@ -476,12 +482,6 @@
    "titulo": "Gorosabel entra en la convocatoria, pero Jofre sigue fuera",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151484-gorosabel-entra-en-la-convocatoria-pero-jofre-sigue-fuera",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "El Real Madrid completa una nueva sesión sin recuperar efectivos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151483-el-real-madrid-completa-una-nueva-sesion-sin-recuperar-efectivos",
-   "categoria": "entrenamiento"
   }
  ]
 }

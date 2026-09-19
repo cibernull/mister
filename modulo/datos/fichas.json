@@ -11803,6 +11803,15 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 14,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -27299,6 +27308,15 @@
     "eventos": [
      "yellow",
      "sub_out"
+    ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 50,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
     ]
    }
   ],
