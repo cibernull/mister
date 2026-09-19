@@ -1,19 +1,43 @@
 {
- "cuando": "2026-09-19T12:08:06.666Z",
+ "cuando": "2026-09-19T12:38:09.233Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "19/09",
-   "titulo": "Alineaciones confirmadas del Osasuna - Rayo",
+   "titulo": "Sigue en directo el Osasuna - Rayo",
    "url": "https://www.futbolfantasy.com/partidos/22489-osasuna-rayo",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 7 actualizadas",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Lista de Luis Castro para la visita al Villarreal sin los tres lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151559-lista-de-luis-castro-para-la-visita-al-villarreal-sin-los-tres-lesionados",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Funes explica cómo llega el equipo y habla de Berrocal, Larrubia, Calero, Rafa Rodríguez, Recio, el sistema y el Getafe",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151558-funes-explica-como-llega-el-equipo-y-habla-de-berrocal-larrubia-calero-rafa-rodriguez-recio-e",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Lista de Pellegrini para visitar Riazor sin Llorente, Ruibal ni Losada",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151557-lista-de-pellegrini-para-visitar-riazor-sin-llorente-ruibal-ni-losada",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Lista de Matarazzo para visitar Mestalla sin Odriozola ni Zubeldia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151556-lista-de-matarazzo-para-visitar-mestalla-sin-odriozola-ni-zubeldia",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "19/09",
@@ -458,30 +482,6 @@
    "titulo": "Luis García deja la duda abierta con Kike Salas hasta última hora",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151481-luis-garcia-se-pone-jugueton-y-lanza-un-acertijo-con-una-duda-hasta-ultima-hora",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Javi Hernández accede al olimpo del último pase",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151480-javi-hernandez-accede-al-olimpo-del-ultimo-pase",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "David Gordo cita a 23 futbolistas para cerrar la clasificación al Europeo sub-21",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151479-david-gordo-cita-a-23-futbolistas-para-cerrar-la-clasificacion-al-europeo-sub-21",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Simeone deja un primer ensayo de cara al derbi sin conclusiones claras",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151478-simeone-deja-un-primer-ensayo-de-cara-al-derbi-sin-conclusiones-claras",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "De la Fuente abre una nueva etapa con España: primera lista tras el Mundial",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151477-de-la-fuente-abre-una-nueva-etapa-con-espana-primera-lista-tras-el-mundial",
-   "categoria": "convocatoria"
   }
  ]
 }

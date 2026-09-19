@@ -2597,7 +2597,7 @@
    "cuando": "2026-08-19 05:00:25",
    "valor": 255000,
    "posicion": 2,
-   "puntos": 0,
+   "puntos": 1,
    "media": 0,
    "racha": "-,-,-,0,-"
   },
@@ -3413,7 +3413,7 @@
    "cuando": "2026-08-26 09:04:52",
    "valor": 3495000,
    "posicion": 3,
-   "puntos": 21,
+   "puntos": 22,
    "media": 3.5,
    "racha": "3,1,4,3,7"
   },
@@ -3736,7 +3736,7 @@
    "cuando": "2026-08-28 19:39:39",
    "valor": 255000,
    "posicion": 2,
-   "puntos": 0,
+   "puntos": 1,
    "media": 0,
    "racha": "-,-,-,0,-"
   },
@@ -4110,7 +4110,7 @@
    "cuando": "2026-09-02 01:40:41",
    "valor": 3911000,
    "posicion": 3,
-   "puntos": 17,
+   "puntos": 18,
    "media": 2.8,
    "racha": "3,2,2,3,2"
   },
@@ -4722,7 +4722,7 @@
    "cuando": "2026-09-07 17:00:19",
    "valor": 8448000,
    "posicion": 4,
-   "puntos": 62,
+   "puntos": 63,
    "media": 10.3,
    "racha": "11,16,17,10,6"
   },
@@ -5130,7 +5130,7 @@
    "cuando": "2026-09-12 17:00:19",
    "valor": 5139000,
    "posicion": 3,
-   "puntos": 23,
+   "puntos": 24,
    "media": 3.8,
    "racha": "5,2,6,2,4"
   },
