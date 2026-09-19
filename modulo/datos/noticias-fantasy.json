@@ -1,18 +1,42 @@
 {
- "cuando": "2026-09-19T14:07:53.301Z",
+ "cuando": "2026-09-19T14:27:11.183Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "19/09",
-   "titulo": "Alineaciones confirmadas del Athletic - Alavés",
+   "titulo": "Sigue en directo el Athletic - Alavés",
    "url": "https://www.futbolfantasy.com/partidos/22483-athletic-alaves",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Quique explica las rotaciones en el once, el sistema de juego y las ventajas de jugar con dos puntas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151568-quique-explica-las-rotaciones-en-el-once-el-sistema-de-juego-y-las-ventajas-de-jugar-con-dos-",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Terzic habla de Guruzeta, las sustituciones y el control de los partidos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151567-terzic-habla-de-guruzeta-las-sustituciones-y-el-control-de-los-partidos",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Íñigo Pérez habla de Comesaña, Foyth, Akhomach, Moleiro, las rotaciones y el Levante",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151566-inigo-perez-habla-de-comesana-foyth-akhomach-moleiro-las-rotaciones-y-el-levante",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Budimir y Camello cruzan fuego en El Sadar",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151565-budimir-y-camello-cruzan-fuego-en-el-sadar",
    "categoria": "análisis"
   },
   {
@@ -458,30 +482,6 @@
    "titulo": "Antañón y Aspas siguen al margen este viernes y se pierden la cita de mañana",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151490-antanon-y-aspas-siguen-al-margen-este-viernes-y-se-pierden-la-cita-de-manana",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "José Alberto habla de Pedro Felipe, Canales, Villalibre, el planteamiento del Camp Nou y los internacionales",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151489-jose-alberto-habla-de-pedro-felipe-canales-villalibre-el-planteamiento-del-camp-nou-y-los-int",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Flick, sobre Szczesny, Joan García, Livakovic, Cubarsí, Adeyemi, Raphinha y las rotaciones",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151487-flick-sobre-szczesny-joan-garcia-livakovic-cubarsi-adeyemi-raphinha-y-las-rotaciones",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Pedro Felipe completa la sesión sin problemas y José Alberto solo tiene dos bajas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151488-pedro-felipe-completa-la-sesion-sin-problemas-y-jose-alberto-solo-tiene-dos-bajas",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Flick confirma la titularidad de Cubarsí en Sevilla",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151486-flick-confirma-la-titularidad-de-cubarsi-en-sevilla",
-   "categoria": "análisis"
   }
  ]
 }

@@ -500,11 +500,18 @@
     "rival": 19,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 1,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 5
+  "partidos": 4
  },
  "128": {
   "nombre": "Borja Iglesias",
@@ -7807,6 +7814,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 1,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -15348,6 +15362,13 @@
     "rival": 23,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -16653,6 +16674,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -26419,6 +26447,13 @@
     "eventos": [
      "yellow"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -26913,7 +26948,7 @@
   "mediaCasa": 5,
   "mediaFuera": 2.5,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 2,
   "jornadas": [
@@ -26961,6 +26996,13 @@
     "jornada": 6,
     "puntos": 5,
     "rival": 19,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 1,
     "como": "inicio",
     "eventos": []
    }
@@ -28348,7 +28390,7 @@
   "mediaCasa": 3,
   "mediaFuera": 3,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 3,
   "jornadas": [
@@ -28395,6 +28437,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -29748,6 +29797,13 @@
     "puntos": null,
     "rival": 19,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 1,
+    "como": "inicio",
     "eventos": []
    }
   ],
