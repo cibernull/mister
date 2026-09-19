@@ -1,31 +1,43 @@
 {
- "cuando": "2026-09-19T13:37:53.664Z",
+ "cuando": "2026-09-19T14:07:53.301Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "19/09",
-   "titulo": "Sigue en directo el Osasuna - Rayo",
-   "url": "https://www.futbolfantasy.com/partidos/22489-osasuna-rayo",
-   "categoria": "análisis"
+   "titulo": "Alineaciones confirmadas del Athletic - Alavés",
+   "url": "https://www.futbolfantasy.com/partidos/22483-athletic-alaves",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
-   "titulo": "Alineaciones probables para la jornada 7 actualizadas",
+   "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Mourinho habla de Vinicius, Tchouaméni, Valverde, Simeone y su evolución como entrenador",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151564-mourinho-habla-de-vinicius-tchouameni-valverde-simeone-y-su-evolucion-como-entrenador",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Jornada 7: Osasuna 1-1 Rayo. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22489-osasuna-rayo",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Raúl Moro no puede terminar el partido por lesión",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151563-raul-moro-no-puede-terminar-el-partido-por-lesion",
+   "categoria": "lesión"
   },
   {
    "fecha": "19/09",
    "titulo": "Terrats y Mayoral se prueban con el grupo antes del partido",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151562-terrats-y-mayoral-se-prueba-con-el-grupo-antes-del-partido",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Alineaciones confirmadas del Athletic - Alavés",
-   "url": "https://www.futbolfantasy.com/partidos/22483-athletic-alaves",
-   "categoria": "rueda de prensa"
   },
   {
    "fecha": "19/09",
@@ -470,18 +482,6 @@
    "titulo": "Flick confirma la titularidad de Cubarsí en Sevilla",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151486-flick-confirma-la-titularidad-de-cubarsi-en-sevilla",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Ramis habla de Aitor, Herrera, Unai Santos, Del Castillo, Yeboah, el sistema, el estado físico, mental y los errores",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151485-ramis-habla-de-aitor-herrera-unai-santos-del-castillo-yeboah-el-sistema-el-estado-fisico-ment",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Gorosabel entra en la convocatoria, pero Jofre sigue fuera",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151484-gorosabel-entra-en-la-convocatoria-pero-jofre-sigue-fuera",
-   "categoria": "convocatoria"
   }
  ]
 }

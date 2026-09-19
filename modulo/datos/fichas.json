@@ -2248,7 +2248,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 1
+  "partidos": 2
  },
  "3728": {
   "nombre": "Marc Roca",
@@ -4444,10 +4444,10 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 0,
+  "mediaFuera": 9,
   "edad": 35,
   "titular": null,
-  "titularidades": 0,
+  "titularidades": 1,
   "suplencias": 0,
   "jornadas": [
    {
@@ -4484,11 +4484,18 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": 9,
+    "rival": 2,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-16",
-  "partidos": 1
+  "dia": "2026-09-19",
+  "partidos": 2
  },
  "14432": {
   "nombre": "Javi Puado",
@@ -4570,11 +4577,11 @@
   "posicion": 2,
   "goles": 1,
   "tarjetas": 1,
-  "mediaCasa": 4,
+  "mediaCasa": 8,
   "mediaFuera": 2,
   "edad": 28,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 1,
   "jornadas": [
    {
@@ -4618,11 +4625,20 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": 12,
+    "rival": 8,
+    "como": "inicio",
+    "eventos": [
+     "goal"
+    ]
    }
   ],
-  "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 4
+  "asistencias": 1,
+  "dia": "2026-09-19",
+  "partidos": 5
  },
  "14789": {
   "nombre": "Oihan Sancet",
@@ -9233,7 +9249,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 4
+  "partidos": 5
  },
  "28621": {
   "nombre": "Abdel Abqar",
@@ -11802,15 +11818,6 @@
     "como": "inicio",
     "eventos": [
      "sub_out"
-    ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 14,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
     ]
    }
   ],
@@ -15205,13 +15212,6 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -15709,7 +15709,7 @@
   "mediaCasa": 4,
   "mediaFuera": 3,
   "edad": 28,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 2,
   "jornadas": [
@@ -15764,7 +15764,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 4
+  "partidos": 5
  },
  "59415": {
   "nombre": "Dani Olmo",
@@ -19733,7 +19733,7 @@
   "nombre": "Asier Osambela",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 2,
   "mediaFuera": 2.3,
   "edad": 21,
@@ -19792,7 +19792,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 3
+  "partidos": 4
  },
  "65476": {
   "nombre": "Clemens Riedel",
@@ -20214,7 +20214,7 @@
   "nombre": "Alemão",
   "posicion": 4,
   "goles": 0,
-  "tarjetas": 2,
+  "tarjetas": 3,
   "mediaCasa": 2,
   "mediaFuera": 2.7,
   "edad": 28,
@@ -20279,7 +20279,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 4
+  "partidos": 5
  },
  "66706": {
   "nombre": "Javi Hernandez",
@@ -27238,13 +27238,6 @@
     "rival": 2,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -27309,20 +27302,11 @@
      "yellow",
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 50,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 3
+  "partidos": 4
  },
  "1153038": {
   "nombre": "Rodrigo Gamón",
@@ -28350,18 +28334,11 @@
      "yellow",
      "sub_in"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 4
+  "partidos": 5
  },
  "3848780": {
   "nombre": "Johaneko Louis-Jean",
@@ -28594,13 +28571,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -29540,18 +29510,11 @@
     "rival": 8,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 2
+  "partidos": 3
  },
  "4947930": {
   "nombre": "Jens-Lys Cajuste",
@@ -29725,18 +29688,11 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 2
+  "partidos": 3
  },
  "5235247": {
   "nombre": "Xanet Olaiz",
@@ -30043,7 +29999,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-19",
-  "partidos": 1
+  "partidos": 2
  },
  "5404997": {
   "nombre": "José Ángel López",

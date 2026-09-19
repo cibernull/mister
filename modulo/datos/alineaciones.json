@@ -1223,6 +1223,11 @@
     "cuando": "2026-09-18T19:00:00.000Z",
     "local": 8,
     "visitante": 23
+   },
+   {
+    "cuando": "2026-09-19T12:00:00.000Z",
+    "local": 50,
+    "visitante": 14
    }
   ],
   "puntos": 0,
@@ -1323,8 +1328,8 @@
     "id": "17290",
     "nombre": "Sergio Camello",
     "puesto": 4,
-    "puntos": 5,
-    "jugo": false,
+    "puntos": 6,
+    "jugo": true,
     "capitan": false
    },
    {
