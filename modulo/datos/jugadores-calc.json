@@ -6351,8 +6351,8 @@
   "semana": -99000,
   "sem7": -101000,
   "mes": -846000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 7429000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -7505,8 +7505,8 @@
   "semana": 57000,
   "sem7": 486000,
   "mes": 1124000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 6320000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -8086,8 +8086,8 @@
   "semana": 152000,
   "sem7": 453000,
   "mes": -20000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 8920000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -17863,8 +17863,8 @@
   "semana": 54000,
   "sem7": 358000,
   "mes": -472000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 518000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -19573,8 +19573,8 @@
   "semana": -82000,
   "sem7": -847000,
   "mes": -1741000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 8014000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -22134,8 +22134,8 @@
   "semana": -91000,
   "sem7": -467000,
   "mes": -2381000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 5674000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -25241,8 +25241,8 @@
   "semana": 50000,
   "sem7": 395000,
   "mes": null,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1270000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -30562,6 +30562,82 @@
   "d": 0
  },
  {
+  "id": "55454",
+  "nombre": "Arsen Zakharyan",
+  "valor": 160000,
+  "puntos": 3,
+  "media": 1.5,
+  "partidos": 2,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -62000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   1,
+   null,
+   null,
+   2,
+   null
+  ],
+  "eq": 16,
+  "riv": 19,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 1,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    2,
+    1,
+    4,
+    0,
+    "i87"
+   ],
+   [
+    3,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    5,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "58958",
   "nombre": "Pelayo Fernández",
   "valor": 160000,
@@ -30635,82 +30711,6 @@
     6,
     null,
     8,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "55454",
-  "nombre": "Arsen Zakharyan",
-  "valor": 160000,
-  "puntos": 3,
-  "media": 1.5,
-  "partidos": 2,
-  "semana": 0,
-  "sem7": 0,
-  "mes": -62000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   1,
-   null,
-   null,
-   2,
-   null
-  ],
-  "eq": 16,
-  "riv": 19,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 1,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    2,
-    1,
-    4,
-    0,
-    "i87"
-   ],
-   [
-    3,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    5,
     0,
     ""
    ]
@@ -33991,8 +33991,8 @@
   "semana": -48000,
   "sem7": -350000,
   "mes": null,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1027000,
   "ced": 0,
   "pos": 2,
   "est": "other",
@@ -34354,8 +34354,8 @@
   "semana": -74000,
   "sem7": -471000,
   "mes": null,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 335000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -36873,82 +36873,6 @@
   "d": 0
  },
  {
-  "id": "70949",
-  "nombre": "Dani Barcia",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -17000,
-  "sem7": -6000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 6,
-  "riv": 4,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    9,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "28787",
   "nombre": "Diego López",
   "valor": 160000,
@@ -37232,6 +37156,82 @@
   "asis": 0,
   "edad": 29,
   "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "70949",
+  "nombre": "Dani Barcia",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -17000,
+  "sem7": -6000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 6,
+  "riv": 4,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    9,
+    0,
+    ""
+   ]
+  ],
   "p": 0,
   "d": 0
  },
@@ -37901,75 +37901,6 @@
   "d": 0
  },
  {
-  "id": "67580",
-  "nombre": "Samu Becerra",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -41000,
-  "mes": -3000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 14,
-  "riv": 50,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [
-   [
-    1,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    15,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "67931",
   "nombre": "Selton Sánchez",
   "valor": 160000,
@@ -38278,6 +38209,82 @@
   "d": 0
  },
  {
+  "id": "62910",
+  "nombre": "Fran González",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -22000,
+  "sem7": 0,
+  "mes": -458000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 17,
+  "riv": 3,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    19,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "78393",
   "nombre": "Altay Bayındır",
   "valor": 160000,
@@ -38361,6 +38368,46 @@
   "d": 0
  },
  {
+  "id": "13011",
+  "nombre": "Fernando Calero",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -81000,
+  "mes": -740000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "doubt",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 13,
+  "riv": 9,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 31,
+  "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "64458",
   "nombre": "Pablo Campos",
   "valor": 160000,
@@ -38437,55 +38484,15 @@
   "d": 0
  },
  {
-  "id": "13011",
-  "nombre": "Fernando Calero",
+  "id": "59064",
+  "nombre": "Jiri Letacek",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
   "semana": 0,
-  "sem7": -81000,
-  "mes": -740000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "doubt",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 13,
-  "riv": 9,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 31,
-  "js": [],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "62910",
-  "nombre": "Fran González",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -22000,
-  "sem7": 0,
-  "mes": -458000,
+  "sem7": -24000,
+  "mes": -52000,
   "mk": 0,
   "pv": null,
   "ced": 0,
@@ -38500,8 +38507,8 @@
    null,
    null
   ],
-  "eq": 17,
-  "riv": 3,
+  "eq": 9,
+  "riv": 13,
   "casa": 1,
   "gol": 0,
   "tar": 0,
@@ -38511,40 +38518,47 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 21,
+  "edad": 27,
   "js": [
    [
     1,
     null,
-    14,
+    48,
     0,
     ""
    ],
    [
     2,
     null,
-    1,
+    1490,
     0,
     ""
    ],
    [
     3,
     null,
-    2,
+    50,
     0,
     ""
    ],
    [
     4,
     null,
-    8,
+    5,
     0,
     ""
    ],
    [
     5,
     null,
-    19,
+    6,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    4,
     0,
     ""
    ]
@@ -38697,89 +38711,6 @@
     5,
     null,
     5,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "59064",
-  "nombre": "Jiri Letacek",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -24000,
-  "mes": -52000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 9,
-  "riv": 13,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    1,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    4,
     0,
     ""
    ]
@@ -39103,6 +39034,75 @@
     5,
     null,
     23,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "67580",
+  "nombre": "Samu Becerra",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -41000,
+  "mes": -3000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 14,
+  "riv": 50,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [
+   [
+    1,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    15,
     0,
     ""
    ]

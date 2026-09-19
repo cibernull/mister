@@ -1099,9 +1099,39 @@
    "id": "4947929",
    "nombre": "Emil Audero",
    "valor": 1134000
+  },
+  {
+   "id": "10967",
+   "nombre": "Gonçalo Guedes",
+   "valor": 6607000
+  },
+  {
+   "id": "12949",
+   "nombre": "Thomas Lemar",
+   "valor": 1189000
   }
  ],
  "movimientos": [
+  {
+   "id": "12949",
+   "nombre": "Thomas Lemar",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 1138460,
+   "tipo": "normal",
+   "fecha": "2026-09-19 05:00:26",
+   "pos": 3
+  },
+  {
+   "id": "10967",
+   "nombre": "Gonçalo Guedes",
+   "de": null,
+   "a": "Legalize F.C (Victor)",
+   "importe": 6653020,
+   "tipo": "normal",
+   "fecha": "2026-09-19 05:00:26",
+   "pos": 4
+  },
   {
    "id": "6044",
    "nombre": "Enes Ünal",
@@ -4387,6 +4417,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Thomas Lemar",
+     "id": "12949",
+     "tipo": "compra",
+     "importe": 1138460,
+     "fecha": "2026-09-19",
+     "op": "normal"
+    },
+    {
      "j": "Isaac Romero",
      "id": "56632",
      "tipo": "venta",
@@ -5019,6 +5057,12 @@
      "compras": 8349980,
      "ventas": 9845040,
      "ops": 2
+    },
+    "12949": {
+     "nombre": "Thomas Lemar",
+     "compras": 1138460,
+     "ventas": 0,
+     "ops": 1
     },
     "15566": {
      "nombre": "Yangel Herrera",
@@ -8511,6 +8555,14 @@
   "Legalize F.C (Victor)": {
    "movimientos": [
     {
+     "j": "Gonçalo Guedes",
+     "id": "10967",
+     "tipo": "compra",
+     "importe": 6653020,
+     "fecha": "2026-09-19",
+     "op": "normal"
+    },
+    {
      "j": "Enes Ünal",
      "id": "6044",
      "tipo": "compra",
@@ -8531,6 +8583,12 @@
     "6044": {
      "nombre": "Enes Ünal",
      "compras": 11000000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "10967": {
+     "nombre": "Gonçalo Guedes",
+     "compras": 6653020,
      "ventas": 0,
      "ops": 1
     },
