@@ -1,12 +1,36 @@
 {
- "cuando": "2026-09-19T21:08:12.190Z",
+ "cuando": "2026-09-19T21:38:09.502Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
+   "fecha": "19/09",
+   "titulo": "Actualizadas las jerarquías del Espanyol: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/espanyol/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
+   "categoria": "análisis"
+  },
+  {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Flick celebra el triunfo y habla de Raphinha, Christensen, Livakovic, Szczesny y Rodri",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151595-flick-celebra-el-triunfo-y-habla-de-raphinha-christensen-livakovic-szczesny-y-rodri",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Raphinha levita sobre Nervión",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151594-raphinha-levita-sobre-nervion",
    "categoria": "análisis"
   },
   {
@@ -77,21 +101,9 @@
   },
   {
    "fecha": "19/09",
-   "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "19/09",
    "titulo": "Julián Alvarez entra en una lista sin Barrios ni Sorloth",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151583-julian-alvarez-entra-en-una-lista-sin-barrios-ni-sorloth",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Actualizadas las jerarquías del Espanyol: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/espanyol/jerarquias",
-   "categoria": "análisis"
   },
   {
    "fecha": "19/09",
@@ -470,18 +482,6 @@
    "titulo": "La lista de Giráldez para recibir al Racing, sin Aspas, Antañón ni Jones El-Abdellaoui",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151518-lista-giraldez-recibir-racing-sin-aspas-antanon-jones-abdellaoui",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Fede Redondo fue expulsado por frenar con el brazo a Bryan Zaragoza",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151517-fede-redondo-fue-expulsado-por-frenar-con-el-brazo-a-bryan-zaragoza",
-   "categoria": "sanción"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Anselmi habla de Matías Dituro antes de medirse al Espanyol",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151516-martin-anselmi-habla-matias-dituro-antes-visitar-espanyol",
-   "categoria": "rueda de prensa"
   }
  ]
 }
