@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-19T14:37:55.163Z",
+ "cuando": "2026-09-19T15:08:09.541Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -14,6 +14,18 @@
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "Mourinho convoca a los disponibles para el derbi",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151570-mourinho-convoca-a-los-disponibles-para-el-derbi",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "19/09",
+   "titulo": "San José analiza el empate y habla de Camello, los ajustes tras el descanso y el parón",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151569-san-jose-analiza-el-empate-y-habla-de-camello-los-ajustes-tras-el-descanso-y-el-paron",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "19/09",
@@ -470,18 +482,6 @@
    "titulo": "De la Fuente analiza la convocatoria y habla de Huijsen, Fermín, Rodri, Josep, Raya, Unai Simón, Joan García y Zubimendi",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151492-de-la-fuente-analiza-la-convocatoria-y-habla-de-huijsen-fermin-rodri-josep-raya-unai-simon-jo",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Medios de Coruña creen que Amatucci podría descansar",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151491-medios-de-coruna-creen-que-amatucci-podria-descansar",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Antañón y Aspas siguen al margen este viernes y se pierden la cita de mañana",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151490-antanon-y-aspas-siguen-al-margen-este-viernes-y-se-pierden-la-cita-de-manana",
-   "categoria": "entrenamiento"
   }
  ]
 }

@@ -1109,9 +1109,44 @@
    "id": "12949",
    "nombre": "Thomas Lemar",
    "valor": 1189000
+  },
+  {
+   "id": "96",
+   "nombre": "Dani Ceballos",
+   "valor": 1270000
   }
  ],
  "movimientos": [
+  {
+   "id": "22956",
+   "nombre": "Sergio Gómez",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 6320000,
+   "tipo": "normal",
+   "fecha": "2026-09-19 17:00:21",
+   "pos": 2
+  },
+  {
+   "id": "71021",
+   "nombre": "Alejandro Grimaldo",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 8920000,
+   "tipo": "normal",
+   "fecha": "2026-09-19 17:00:21",
+   "pos": 2
+  },
+  {
+   "id": "96",
+   "nombre": "Dani Ceballos",
+   "de": null,
+   "a": "Mario80",
+   "importe": 2907770,
+   "tipo": "normal",
+   "fecha": "2026-09-19 17:00:21",
+   "pos": 3
+  },
   {
    "id": "17290",
    "nombre": "Sergio Camello",
@@ -4435,6 +4470,14 @@
      "op": "normal"
     },
     {
+     "j": "Sergio Gómez",
+     "id": "22956",
+     "tipo": "compra",
+     "importe": 6320000,
+     "fecha": "2026-09-19",
+     "op": "normal"
+    },
+    {
      "j": "Isaac Romero",
      "id": "56632",
      "tipo": "venta",
@@ -5112,9 +5155,9 @@
     },
     "22956": {
      "nombre": "Sergio Gómez",
-     "compras": 0,
+     "compras": 6320000,
      "ventas": 5044970,
-     "ops": 1
+     "ops": 2
     },
     "23147": {
      "nombre": "Tete Morente",
@@ -7225,6 +7268,14 @@
   "Mario80": {
    "movimientos": [
     {
+     "j": "Dani Ceballos",
+     "id": "96",
+     "tipo": "compra",
+     "importe": 2907770,
+     "fecha": "2026-09-19",
+     "op": "normal"
+    },
+    {
      "j": "Mikel Oyarzabal",
      "id": "564",
      "tipo": "venta",
@@ -7560,6 +7611,12 @@
      "ventas": 6537000,
      "ops": 2
     },
+    "96": {
+     "nombre": "Dani Ceballos",
+     "compras": 2907770,
+     "ventas": 0,
+     "ops": 1
+    },
     "213": {
      "nombre": "Stole Dimitrievski",
      "compras": 6905210,
@@ -7763,6 +7820,14 @@
      "importe": 12672000,
      "fecha": "2026-09-19",
      "op": "clause"
+    },
+    {
+     "j": "Alejandro Grimaldo",
+     "id": "71021",
+     "tipo": "compra",
+     "importe": 8920000,
+     "fecha": "2026-09-19",
+     "op": "normal"
     },
     {
      "j": "Lucien Agoumé",
@@ -8528,6 +8593,12 @@
      "nombre": "Juanpe Jiménez",
      "compras": 0,
      "ventas": 200550,
+     "ops": 1
+    },
+    "71021": {
+     "nombre": "Alejandro Grimaldo",
+     "compras": 8920000,
+     "ventas": 0,
      "ops": 1
     },
     "71154": {
