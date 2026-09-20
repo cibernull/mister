@@ -1695,7 +1695,7 @@ const cifrasDe = (e) => `<div class="cifras">
           e.ajustePujas > 0 ? `<em class="sube" title="Pujó por encima de lo que le calculábamos: ese dinero lo tenía">+${corto(e.ajustePujas)} por sus pujas</em>` : ''
         }</div>
         <div><b>${eur(e.pl)}</b><i>vale su plantilla</i><em class="${clase(e.cambioPlantillaHoy)}" title="Lo que sube o baja hoy el valor de su plantilla: la misma cuenta que hace Mister, jugador a jugador">${firmaCortaConDecimales(e.cambioPlantillaHoy, 3)} hoy</em></div>
-        <div><b class="credito">${eur(0.25 * e.pl)}</b><i>crédito · 25 % de ella</i></div>
+        <div><b class="credito">${eur(0.25 * e.pl)}</b><i>crédito · 25 % de su plantilla</i></div>
       </div>`
 
 const tablaMovimientos = (e) => {
