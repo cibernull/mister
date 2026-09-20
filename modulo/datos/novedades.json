@@ -342,6 +342,164 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "1719",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "15566",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "15653",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "22668",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-20",
+  "id": "27874",
+  "de": null,
+  "a": "Cacaculopedopis"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "29402",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "48556",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "52117",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "54832",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "61009",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "61093",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "61410",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "63727",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-20",
+  "id": "63866",
+  "de": null,
+  "a": "Mario80"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "63871",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "64031",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "65104",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "68640",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "68676",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "70183",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "70931",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "70934",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "71003",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "71142",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "71574",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "822248",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-19",
   "id": "128",
   "entra": false

@@ -2940,7 +2940,7 @@
    "cuando": "2026-08-20 10:10:25",
    "valor": 9083000,
    "posicion": 2,
-   "puntos": 22,
+   "puntos": 23,
    "media": 4.4,
    "racha": "3,2,-1,10,8",
    "otrasPujas": []
@@ -2976,7 +2976,7 @@
    "cuando": "2026-08-20 17:00:21",
    "valor": 4417000,
    "posicion": 2,
-   "puntos": 22,
+   "puntos": 24,
    "media": 3.8,
    "racha": "5,3,5,3,3",
    "otrasPujas": []
@@ -3012,7 +3012,7 @@
    "cuando": "2026-08-21 05:00:31",
    "valor": 5673000,
    "posicion": 3,
-   "puntos": 33,
+   "puntos": 35,
    "media": 5.8,
    "racha": "6,5,3,11,-",
    "otrasPujas": [
@@ -3184,7 +3184,7 @@
    "cuando": "2026-08-22 17:00:18",
    "valor": 2134000,
    "posicion": 3,
-   "puntos": 21,
+   "puntos": 22,
    "media": 3.8,
    "racha": "4,2,2,-,7",
    "otrasPujas": []
@@ -3279,7 +3279,7 @@
    "cuando": "2026-08-23 17:02:13",
    "valor": 160000,
    "posicion": 3,
-   "puntos": 9,
+   "puntos": 10,
    "media": 2,
    "racha": "2,2,-,-,-",
    "otrasPujas": []
@@ -3397,7 +3397,7 @@
    "cuando": "2026-08-24 16:25:26",
    "valor": 6480000,
    "posicion": 4,
-   "puntos": 26,
+   "puntos": 28,
    "media": 3.8,
    "racha": "4,2,10,4,1",
    "otrasPujas": []
@@ -4652,7 +4652,7 @@
    "cuando": "2026-09-03 18:12:50",
    "valor": 2134000,
    "posicion": 3,
-   "puntos": 21,
+   "puntos": 22,
    "media": 3.8,
    "racha": "4,2,2,-,7",
    "otrasPujas": []
@@ -5310,7 +5310,7 @@
    "cuando": "2026-09-09 17:12:59",
    "valor": 1693000,
    "posicion": 3,
-   "puntos": 19,
+   "puntos": 20,
    "media": 3,
    "racha": "4,2,4,2,2",
    "otrasPujas": []
@@ -5824,7 +5824,7 @@
    "cuando": "2026-09-17 05:00:27",
    "valor": 1693000,
    "posicion": 3,
-   "puntos": 19,
+   "puntos": 20,
    "media": 3,
    "racha": "4,2,4,2,2",
    "otrasPujas": []
@@ -6032,7 +6032,7 @@
    "cuando": "2026-09-18 20:37:05",
    "valor": 5395000,
    "posicion": 4,
-   "puntos": 23,
+   "puntos": 25,
    "media": 3.7,
    "racha": "10,2,3,2,3",
    "otrasPujas": []
@@ -6131,7 +6131,7 @@
    "cuando": "2026-09-19 17:00:21",
    "valor": 9083000,
    "posicion": 2,
-   "puntos": 22,
+   "puntos": 23,
    "media": 4.4,
    "racha": "3,2,-1,10,8",
    "otrasPujas": [
@@ -6172,7 +6172,7 @@
    "cuando": "2026-09-20 01:49:43",
    "valor": 7704000,
    "posicion": 1,
-   "puntos": 39,
+   "puntos": 40,
    "media": 5.8,
    "racha": "5,4,8,7,4",
    "otrasPujas": []
@@ -6418,6 +6418,42 @@
    "puntos": 13,
    "media": 2.6,
    "racha": "-,1,3,3,1",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 549504914,
+   "idJugador": "63866",
+   "nombre": "Álvaro Núñez",
+   "de": "Mister",
+   "a": "Mario80",
+   "idUcDe": 0,
+   "idUcA": 13435216,
+   "importe": 1057010,
+   "tipo": "normal",
+   "cuando": "2026-09-20 17:00:20",
+   "valor": 1057000,
+   "posicion": 2,
+   "puntos": 14,
+   "media": 4.7,
+   "racha": "3,-,-,5,6",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 549505917,
+   "idJugador": "27874",
+   "nombre": "Iván Martín",
+   "de": "Mister",
+   "a": "Cacaculopedopis",
+   "idUcDe": 0,
+   "idUcA": 15435600,
+   "importe": 2053150,
+   "tipo": "normal",
+   "cuando": "2026-09-20 17:00:20",
+   "valor": 1919000,
+   "posicion": 3,
+   "puntos": 21,
+   "media": 4.2,
+   "racha": "6,6,4,-,2",
    "otrasPujas": []
   }
  ],

@@ -1133,6 +1133,26 @@
  ],
  "movimientos": [
   {
+   "id": "27874",
+   "nombre": "Iván Martín",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 2053150,
+   "tipo": "normal",
+   "fecha": "2026-09-20 17:00:20",
+   "pos": 3
+  },
+  {
+   "id": "63866",
+   "nombre": "Álvaro Núñez",
+   "de": null,
+   "a": "Mario80",
+   "importe": 1057010,
+   "tipo": "normal",
+   "fecha": "2026-09-20 17:00:20",
+   "pos": 2
+  },
+  {
    "id": "3848780",
    "nombre": "Johaneko Louis-Jean",
    "de": "Cacaculopedopis",
@@ -6647,6 +6667,14 @@
      "op": "normal"
     },
     {
+     "j": "Iván Martín",
+     "id": "27874",
+     "tipo": "compra",
+     "importe": 2053150,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
      "j": "Joaquín Muñoz",
      "id": "22595",
      "tipo": "compra",
@@ -7302,9 +7330,9 @@
     },
     "27874": {
      "nombre": "Iván Martín",
-     "compras": 633120,
+     "compras": 2686270,
      "ventas": 1453340,
-     "ops": 2
+     "ops": 3
     },
     "28621": {
      "nombre": "Abdel Abqar",
@@ -7519,6 +7547,14 @@
      "id": "64468",
      "tipo": "venta",
      "importe": 4946000,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
+     "j": "Álvaro Núñez",
+     "id": "63866",
+     "tipo": "compra",
+     "importe": 1057010,
      "fecha": "2026-09-20",
      "op": "normal"
     },
@@ -8001,6 +8037,12 @@
     "61013": {
      "nombre": "Antony Santos",
      "compras": 14976070,
+     "ventas": 0,
+     "ops": 1
+    },
+    "63866": {
+     "nombre": "Álvaro Núñez",
+     "compras": 1057010,
      "ventas": 0,
      "ops": 1
     },

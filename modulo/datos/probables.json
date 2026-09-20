@@ -1,7 +1,7 @@
 {
- "cuando": "2026-09-20T12:38:06.245Z",
+ "cuando": "2026-09-20T15:08:03.667Z",
  "fuente": "futbolfantasy.com",
- "leidos": 507,
+ "leidos": 505,
  "jugadores": {
   "10": {
    "prob": 80,
@@ -22,7 +22,7 @@
    "min": 386
   },
   "31": {
-   "prob": 95,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 540
@@ -154,7 +154,7 @@
    "min": 375
   },
   "561": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 374
@@ -337,7 +337,7 @@
    "min": 442
   },
   "7024": {
-   "prob": 95,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 472
@@ -415,7 +415,7 @@
    "min": 178
   },
   "12900": {
-   "prob": 95,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 508
@@ -448,7 +448,7 @@
    "min": 167
   },
   "13005": {
-   "prob": 5,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -478,7 +478,7 @@
    "hasta": null
   },
   "14670": {
-   "prob": 95,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 540
@@ -517,7 +517,7 @@
    "min": 528
   },
   "15107": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 341
@@ -529,7 +529,7 @@
    "min": 7
   },
   "15338": {
-   "prob": 40,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 255
@@ -541,7 +541,7 @@
    "min": 286
   },
   "15344": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 100
@@ -559,7 +559,7 @@
    "min": 378
   },
   "15653": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 377
@@ -597,15 +597,6 @@
    "desde": "14/05 (129 días)",
    "hasta": null
   },
-  "17452": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Lesión en el bíceps femoral",
-   "desde": "21/04 (152 días)",
-   "hasta": "finales de septiembre"
-  },
   "17453": {
    "prob": 0,
    "sancionado": 0,
@@ -632,15 +623,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 450
-  },
-  "17623": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Lesión en el recto femoral",
-   "desde": "03/05 (140 días)",
-   "hasta": "octubre"
   },
   "17989": {
    "prob": 70,
@@ -745,7 +727,7 @@
    "min": 186
   },
   "22502": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 386
@@ -1084,7 +1066,7 @@
    "min": 13
   },
   "29222": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 385
@@ -1135,7 +1117,7 @@
    "min": 437
   },
   "31484": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 222
@@ -1183,7 +1165,7 @@
    "min": 386
   },
   "35434": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 358
@@ -1234,13 +1216,13 @@
    "hasta": "mediados de noviembre"
   },
   "40147": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 180
   },
   "40166": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 107
@@ -1344,15 +1326,6 @@
    "fuera": 0,
    "min": 246
   },
-  "51135": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 295,
-   "lesion": "Lesión en el sóleo",
-   "desde": "09/09 (11 días)",
-   "hasta": null
-  },
   "51137": {
    "prob": 0,
    "sancionado": 0,
@@ -1435,7 +1408,7 @@
    "min": 540
   },
   "53114": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 445
@@ -1456,7 +1429,7 @@
    "min": 139
   },
   "54817": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 293
@@ -1522,7 +1495,7 @@
    "min": 90
   },
   "55666": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 201
@@ -1555,7 +1528,7 @@
    "min": 213
   },
   "56578": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 137
@@ -1636,13 +1609,13 @@
    "min": 86
   },
   "58951": {
-   "prob": 5,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 5
   },
   "58954": {
-   "prob": 95,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 540
@@ -1717,7 +1690,7 @@
    "min": 263
   },
   "59476": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 57
@@ -1777,7 +1750,7 @@
    "min": 349
   },
   "59642": {
-   "prob": 5,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -1906,7 +1879,7 @@
    "min": 0
   },
   "62904": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 249
@@ -1918,7 +1891,7 @@
    "min": 0
   },
   "63406": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 214
@@ -1936,7 +1909,7 @@
    "min": 213
   },
   "63780": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 29
@@ -1948,7 +1921,7 @@
    "min": 0
   },
   "63788": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 450
@@ -1969,7 +1942,7 @@
    "hasta": null
   },
   "63868": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 107
@@ -2056,7 +2029,7 @@
    "min": 0
   },
   "64459": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 456
@@ -2299,7 +2272,7 @@
    "min": 619
   },
   "68676": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 434
@@ -2355,6 +2328,12 @@
    "fuera": 0,
    "min": 309
   },
+  "70181": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 90
+  },
   "70183": {
    "prob": 10,
    "sancionado": 0,
@@ -2395,13 +2374,13 @@
    "min": 279
   },
   "70918": {
-   "prob": 40,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 273
   },
   "70922": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 450
@@ -2611,7 +2590,7 @@
    "min": 0
   },
   "71021": {
-   "prob": 60,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 444
@@ -2635,7 +2614,7 @@
    "min": 386
   },
   "71124": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 322
@@ -2692,7 +2671,7 @@
    "hasta": null
   },
   "71176": {
-   "prob": 70,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 341
@@ -2841,6 +2820,12 @@
    "fuera": 0,
    "min": 201
   },
+  "1255969": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 45
+  },
   "1256139": {
    "prob": 30,
    "sancionado": 0,
@@ -2848,13 +2833,13 @@
    "min": 117
   },
   "1385821": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 189
   },
   "1396108": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 150
@@ -2956,7 +2941,7 @@
    "min": 14
   },
   "4836153": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 98

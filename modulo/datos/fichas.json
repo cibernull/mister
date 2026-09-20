@@ -28852,7 +28852,7 @@
   "nombre": "Cristian Romero",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 9,
   "mediaFuera": 4.5,
   "edad": 28,
@@ -28904,7 +28904,9 @@
     "puntos": null,
     "rival": 15,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,

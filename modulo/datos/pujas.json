@@ -2676,6 +2676,30 @@
     "topeMax": 29415835,
     "exceso": 0
    }
+  ],
+  "549504914": [
+   {
+    "idTransfer": 549504914,
+    "cuando": "2026-09-20 17:00:20",
+    "jugador": "Álvaro Núñez",
+    "equipo": "Mario80",
+    "puja": 1057010,
+    "gana": true,
+    "topeMax": 23611610,
+    "exceso": 0
+   }
+  ],
+  "549505917": [
+   {
+    "idTransfer": 549505917,
+    "cuando": "2026-09-20 17:00:20",
+    "jugador": "Iván Martín",
+    "equipo": "Cacaculopedopis",
+    "puja": 2053150,
+    "gana": true,
+    "topeMax": 26794338,
+    "exceso": 0
+   }
   ]
  }
 }
