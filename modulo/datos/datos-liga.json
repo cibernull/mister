@@ -1118,6 +1118,36 @@
  ],
  "movimientos": [
   {
+   "id": "25579",
+   "nombre": "Oriol Rey",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 1311440,
+   "tipo": "normal",
+   "fecha": "2026-09-20 01:57:40",
+   "pos": 3
+  },
+  {
+   "id": "364",
+   "nombre": "Sergio Canales",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 7094220,
+   "tipo": "normal",
+   "fecha": "2026-09-20 01:51:28",
+   "pos": 3
+  },
+  {
+   "id": "71011",
+   "nombre": "Alfonso Herrero",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 7872800,
+   "tipo": "normal",
+   "fecha": "2026-09-20 01:49:43",
+   "pos": 1
+  },
+  {
    "id": "22956",
    "nombre": "Sergio Gómez",
    "de": null,
@@ -5410,6 +5440,30 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Alfonso Herrero",
+     "id": "71011",
+     "tipo": "venta",
+     "importe": 7872800,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
+     "j": "Sergio Canales",
+     "id": "364",
+     "tipo": "venta",
+     "importe": 7094220,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
+     "j": "Oriol Rey",
+     "id": "25579",
+     "tipo": "venta",
+     "importe": 1311440,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
      "j": "Sergio Camello",
      "id": "17290",
      "tipo": "compra",
@@ -6086,8 +6140,8 @@
     "364": {
      "nombre": "Sergio Canales",
      "compras": 4038280,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 7094220,
+     "ops": 2
     },
     "616": {
      "nombre": "Rodri Hernández",
@@ -6152,8 +6206,8 @@
     "25579": {
      "nombre": "Oriol Rey",
      "compras": 960010,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1311440,
+     "ops": 2
     },
     "25885": {
      "nombre": "Carlos Dominguez",
@@ -6350,8 +6404,8 @@
     "71011": {
      "nombre": "Alfonso Herrero",
      "compras": 2229500,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 7872800,
+     "ops": 2
     },
     "71021": {
      "nombre": "Alejandro Grimaldo",

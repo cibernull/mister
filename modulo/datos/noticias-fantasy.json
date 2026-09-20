@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-19T23:11:42.697Z",
+ "cuando": "2026-09-20T00:08:08.628Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -20,6 +20,12 @@
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "La primera exploración confirma una rotura de Christensen en el cuádriceps",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151597-la-primera-exploracion-confirma-una-rotura-de-christensen-en-el-cuadriceps",
+   "categoria": "lesión"
   },
   {
    "fecha": "19/09",
@@ -476,12 +482,6 @@
    "titulo": "Diego Llorente trabaja parcialmente, pero apunta a baja para Riazor",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151520-diego-llorente-trabaja-parcialmente-pero-apunta-a-baja-para-riazor",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Buba Sangare se retira del RCDE Stadium lesionado de los isquiotibiales",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151519-buba-sangare-se-retira-del-rcde-stadium-lesionado-de-los-isquiotibiales",
-   "categoria": "lesión"
   }
  ]
 }

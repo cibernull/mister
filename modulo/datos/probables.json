@@ -1,7 +1,7 @@
 {
- "cuando": "2026-09-19T21:38:08.336Z",
+ "cuando": "2026-09-20T00:08:07.490Z",
  "fuente": "futbolfantasy.com",
- "leidos": 508,
+ "leidos": 514,
  "jugadores": {
   "10": {
    "prob": 80,
@@ -57,7 +57,7 @@
    "fuera": 0,
    "min": 221,
    "lesion": "Lesión en el recto anterior",
-   "desde": "13/09 (6 días)",
+   "desde": "13/09 (7 días)",
    "hasta": "mediados de octubre"
   },
   "208": {
@@ -66,7 +66,7 @@
    "fuera": 0,
    "min": 238,
    "lesion": "Lesión en el bíceps femoral",
-   "desde": "06/09 (13 días)",
+   "desde": "06/09 (14 días)",
    "hasta": null
   },
   "213": {
@@ -81,7 +81,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Lesión en el aductor",
-   "desde": "05/09 (14 días)",
+   "desde": "05/09 (15 días)",
    "hasta": "octubre"
   },
   "239": {
@@ -102,7 +102,7 @@
    "fuera": 0,
    "min": 128,
    "lesion": "Molestias sin determinar",
-   "desde": "12/09 (7 días)",
+   "desde": "12/09 (8 días)",
    "hasta": null
   },
   "308": {
@@ -130,7 +130,7 @@
    "min": 281
   },
   "431": {
-   "prob": 100,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 209
@@ -178,7 +178,7 @@
    "min": 540
   },
   "616": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 356
@@ -189,7 +189,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Lesión de rodilla",
-   "desde": "21/02 (210 días)",
+   "desde": "21/02 (211 días)",
    "hasta": "noviembre"
   },
   "1684": {
@@ -198,7 +198,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Rotura completa del tendón proximal del bíceps femoral",
-   "desde": "01/08 (49 días)",
+   "desde": "01/08 (50 días)",
    "hasta": "diciembre"
   },
   "1713": {
@@ -285,11 +285,11 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Rotura de lig. cruzado anterior",
-   "desde": "21/02 (210 días)",
+   "desde": "21/02 (211 días)",
    "hasta": "octubre"
   },
   "5916": {
-   "prob": 0,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
    "min": 351
@@ -300,7 +300,7 @@
    "fuera": 0,
    "min": 394,
    "lesion": "Molestias en los isquiotibiales",
-   "desde": "12/09 (7 días)",
+   "desde": "12/09 (8 días)",
    "hasta": null
   },
   "5920": {
@@ -447,7 +447,7 @@
    "fuera": 0,
    "min": 354,
    "lesion": "Lesión de tobillo",
-   "desde": "17/09 (2 días)",
+   "desde": "17/09 (3 días)",
    "hasta": "mediados de octubre"
   },
   "12949": {
@@ -468,7 +468,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Fractura de costilla(s)",
-   "desde": "07/08 (43 días)",
+   "desde": "07/08 (44 días)",
    "hasta": null
   },
   "13420": {
@@ -477,7 +477,7 @@
    "fuera": 0,
    "min": 286,
    "lesion": "Lesión en el aductor",
-   "desde": "06/09 (13 días)",
+   "desde": "06/09 (14 días)",
    "hasta": "princpios de octubre"
   },
   "14379": {
@@ -492,7 +492,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Rotura de lig. cruzado anterior",
-   "desde": "11/01 (251 días)",
+   "desde": "11/01 (252 días)",
    "hasta": "octubre"
   },
   "14670": {
@@ -612,7 +612,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Operado del menisco",
-   "desde": "14/05 (128 días)",
+   "desde": "14/05 (129 días)",
    "hasta": null
   },
   "17452": {
@@ -621,8 +621,17 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Lesión en el bíceps femoral",
-   "desde": "21/04 (151 días)",
+   "desde": "21/04 (152 días)",
    "hasta": "finales de septiembre"
+  },
+  "17453": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 0,
+   "lesion": "Lesión de rodilla",
+   "desde": "04/07 (78 días)",
+   "hasta": "principios de octubre"
   },
   "17568": {
    "prob": 20,
@@ -648,7 +657,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Lesión en el recto femoral",
-   "desde": "03/05 (139 días)",
+   "desde": "03/05 (140 días)",
    "hasta": "octubre"
   },
   "17989": {
@@ -669,11 +678,11 @@
    "fuera": 0,
    "min": 114,
    "lesion": "Fractura en el hueso calcáneo",
-   "desde": "15/09 (4 días)",
+   "desde": "15/09 (5 días)",
    "hasta": null
   },
   "18186": {
-   "prob": 0,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 174
@@ -751,7 +760,7 @@
    "min": 197
   },
   "22495": {
-   "prob": 100,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 186
@@ -768,7 +777,7 @@
    "fuera": 0,
    "min": 150,
    "lesion": "Lesión en el bíceps femoral",
-   "desde": "31/08 (19 días)",
+   "desde": "31/08 (20 días)",
    "hasta": null
   },
   "22595": {
@@ -819,7 +828,7 @@
    "fuera": 0,
    "min": 270,
    "lesion": "Molestias en el tendón de Aquiles",
-   "desde": "28/08 (22 días)",
+   "desde": "28/08 (23 días)",
    "hasta": null
   },
   "23664": {
@@ -853,7 +862,7 @@
    "min": 364
   },
   "24792": {
-   "prob": 100,
+   "prob": 90,
    "sancionado": 0,
    "fuera": 0,
    "min": 630
@@ -889,7 +898,7 @@
    "min": 529
   },
   "27333": {
-   "prob": 100,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 467
@@ -912,7 +921,7 @@
    "fuera": 0,
    "min": 238,
    "lesion": "Esguince de rodilla",
-   "desde": "28/08 (22 días)",
+   "desde": "28/08 (23 días)",
    "hasta": "mediados de octubre"
   },
   "27517": {
@@ -921,7 +930,7 @@
    "fuera": 0,
    "min": 79,
    "lesion": "Lesión en el cuádriceps",
-   "desde": "20/08 (30 días)",
+   "desde": "20/08 (31 días)",
    "hasta": null
   },
   "27518": {
@@ -942,7 +951,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Lesión en el aductor",
-   "desde": "16/07 (65 días)",
+   "desde": "16/07 (66 días)",
    "hasta": null
   },
   "27855": {
@@ -1005,7 +1014,7 @@
    "fuera": 0,
    "min": 90,
    "lesion": "Lesión muscular en el muslo",
-   "desde": "27/08 (23 días)",
+   "desde": "27/08 (24 días)",
    "hasta": null
   },
   "28677": {
@@ -1051,7 +1060,7 @@
    "min": 370
   },
   "28784": {
-   "prob": 0,
+   "prob": 20,
    "sancionado": 0,
    "fuera": 0,
    "min": 66
@@ -1062,7 +1071,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Rotura de lig. cruzado anterior",
-   "desde": "23/05 (119 días)",
+   "desde": "23/05 (120 días)",
    "hasta": "diciembre"
   },
   "28791": {
@@ -1077,6 +1086,15 @@
    "fuera": 0,
    "min": 531
   },
+  "29166": {
+   "prob": 50,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 495,
+   "lesion": "Molestias en el menisco",
+   "desde": "16/09 (4 días)",
+   "hasta": null
+  },
   "29167": {
    "prob": 5,
    "sancionado": 0,
@@ -1090,7 +1108,7 @@
    "min": 579
   },
   "29205": {
-   "prob": 0,
+   "prob": 10,
    "sancionado": 0,
    "fuera": 0,
    "min": 13
@@ -1108,7 +1126,7 @@
    "min": 415
   },
   "29235": {
-   "prob": 0,
+   "prob": 10,
    "sancionado": 0,
    "fuera": 0,
    "min": 74
@@ -1125,7 +1143,7 @@
    "fuera": 0,
    "min": 154,
    "lesion": "Molestias musculares",
-   "desde": "10/09 (9 días)",
+   "desde": "10/09 (10 días)",
    "hasta": null
   },
   "29403": {
@@ -1146,7 +1164,7 @@
    "fuera": 0,
    "min": 6,
    "lesion": "Rotura de lig. cruzado anterior",
-   "desde": "04/09 (15 días)",
+   "desde": "04/09 (16 días)",
    "hasta": "abril"
   },
   "31226": {
@@ -1215,7 +1233,7 @@
    "fuera": 0,
    "min": 20,
    "lesion": "Molestias en el pubis",
-   "desde": "14/09 (5 días)",
+   "desde": "14/09 (6 días)",
    "hasta": null
   },
   "36046": {
@@ -1242,7 +1260,7 @@
    "fuera": 0,
    "min": 534,
    "lesion": "Trabajo al margen",
-   "desde": "18/09 (1 día)",
+   "desde": "18/09 (2 días)",
    "hasta": null
   },
   "40089": {
@@ -1251,7 +1269,7 @@
    "fuera": 0,
    "min": 160,
    "lesion": "Lesión en los isquiotibiales",
-   "desde": "30/08 (20 días)",
+   "desde": "30/08 (21 días)",
    "hasta": "mediados de noviembre"
   },
   "40147": {
@@ -1296,7 +1314,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Rotura de menisco",
-   "desde": "25/02 (206 días)",
+   "desde": "25/02 (207 días)",
    "hasta": "octubre"
   },
   "48554": {
@@ -1305,11 +1323,11 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Rotura en los isquiotibiales",
-   "desde": "16/04 (156 días)",
+   "desde": "16/04 (157 días)",
    "hasta": null
   },
   "48556": {
-   "prob": 100,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 402,
@@ -1324,7 +1342,7 @@
    "min": 0
   },
   "48657": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 550
@@ -1335,7 +1353,7 @@
    "fuera": 0,
    "min": 138,
    "lesion": "Lesión en los isquiotibiales",
-   "desde": "07/09 (12 días)",
+   "desde": "07/09 (13 días)",
    "hasta": "octubre"
   },
   "49275": {
@@ -1356,6 +1374,12 @@
    "fuera": 0,
    "min": 410
   },
+  "49424": {
+   "prob": 90,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 447
+  },
   "51060": {
    "prob": 30,
    "sancionado": 0,
@@ -1374,7 +1398,7 @@
    "fuera": 0,
    "min": 295,
    "lesion": "Lesión en el sóleo",
-   "desde": "09/09 (10 días)",
+   "desde": "09/09 (11 días)",
    "hasta": null
   },
   "51137": {
@@ -1414,7 +1438,7 @@
    "min": 472
   },
   "52375": {
-   "prob": 100,
+   "prob": 95,
    "sancionado": 0,
    "fuera": 0,
    "min": 579
@@ -1425,7 +1449,7 @@
    "fuera": 0,
    "min": 185,
    "lesion": "Lesión en el aductor",
-   "desde": "31/08 (19 días)",
+   "desde": "31/08 (20 días)",
    "hasta": "noviembre"
   },
   "52404": {
@@ -1498,7 +1522,7 @@
    "min": 373
   },
   "55009": {
-   "prob": 100,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 446
@@ -1509,7 +1533,7 @@
    "fuera": 0,
    "min": 100,
    "lesion": "Esguince de rodilla",
-   "desde": "13/09 (6 días)",
+   "desde": "13/09 (7 días)",
    "hasta": null
   },
   "55088": {
@@ -1530,7 +1554,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Rotura de lig. cruzado anterior",
-   "desde": "13/05 (129 días)",
+   "desde": "13/05 (130 días)",
    "hasta": "diciembre"
   },
   "55454": {
@@ -1557,7 +1581,7 @@
    "fuera": 0,
    "min": 330,
    "lesion": "Lesión en el isquiosural",
-   "desde": "11/09 (8 días)",
+   "desde": "11/09 (9 días)",
    "hasta": "principios de octubre"
   },
   "55743": {
@@ -1590,17 +1614,17 @@
    "fuera": 0,
    "min": 149,
    "lesion": "Fractura de tibia",
-   "desde": "20/08 (30 días)",
+   "desde": "20/08 (31 días)",
    "hasta": "enero"
   },
   "56628": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 630
   },
   "56632": {
-   "prob": 0,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 213
@@ -1611,7 +1635,7 @@
    "fuera": 0,
    "min": 65,
    "lesion": "Lesión en el recto anterior",
-   "desde": "04/09 (15 días)",
+   "desde": "04/09 (16 días)",
    "hasta": "finales de septiembre"
   },
   "56925": {
@@ -1621,7 +1645,7 @@
    "min": 506
   },
   "56926": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 421
@@ -1644,7 +1668,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Rotura de ligamento cruzado y menisco",
-   "desde": "06/08 (44 días)",
+   "desde": "06/08 (45 días)",
    "hasta": "mayo 2027"
   },
   "58436": {
@@ -1663,7 +1687,7 @@
    "min": 201
   },
   "58467": {
-   "prob": 0,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 213
@@ -1698,7 +1722,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Lesión en el bíceps femoral",
-   "desde": "24/07 (57 días)",
+   "desde": "24/07 (58 días)",
    "hasta": null
   },
   "58986": {
@@ -1750,7 +1774,7 @@
    "min": 324
   },
   "59415": {
-   "prob": 0,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 263
@@ -1762,7 +1786,7 @@
    "min": 57
   },
   "59484": {
-   "prob": 0,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 293
@@ -1780,7 +1804,7 @@
    "min": 0
   },
   "59533": {
-   "prob": 0,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 437
@@ -1840,7 +1864,7 @@
    "min": 222
   },
   "60227": {
-   "prob": 0,
+   "prob": 10,
    "sancionado": 0,
    "fuera": 0,
    "min": 45
@@ -1869,7 +1893,7 @@
    "fuera": 1,
    "min": 0,
    "lesion": "Rotura de lig. cruzado anterior",
-   "desde": "08/09 (11 días)",
+   "desde": "08/09 (12 días)",
    "hasta": "abril"
   },
   "60861": {
@@ -1878,7 +1902,16 @@
    "fuera": 0,
    "min": 152,
    "lesion": "Sinovitis en la rodilla",
-   "desde": "18/09 (1 día)",
+   "desde": "18/09 (2 días)",
+   "hasta": null
+  },
+  "60872": {
+   "prob": 10,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 21,
+   "lesion": "Parameniscitis en la rodilla",
+   "desde": "03/09 (17 días)",
    "hasta": null
   },
   "60888": {
@@ -1929,7 +1962,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Sobrecarga en el aductor",
-   "desde": "16/09 (3 días)",
+   "desde": "16/09 (4 días)",
    "hasta": null
   },
   "61297": {
@@ -1951,7 +1984,7 @@
    "min": 249
   },
   "62910": {
-   "prob": 0,
+   "prob": 5,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -2004,7 +2037,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Sometido a artroscopia en la rodilla",
-   "desde": "15/04 (157 días)",
+   "desde": "15/04 (158 días)",
    "hasta": null
   },
   "63868": {
@@ -2061,7 +2094,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Rotura de lig. cruzado anterior",
-   "desde": "15/05 (127 días)",
+   "desde": "15/05 (128 días)",
    "hasta": "enero 2027"
   },
   "64200": {
@@ -2071,7 +2104,7 @@
    "min": 177
   },
   "64382": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 630
@@ -2112,6 +2145,15 @@
    "fuera": 0,
    "min": 180
   },
+  "64496": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 0,
+   "lesion": "Rotura de lig. cruzado anterior",
+   "desde": "10/08 (41 días)",
+   "hasta": "marzo"
+  },
   "64524": {
    "prob": 30,
    "sancionado": 0,
@@ -2136,11 +2178,11 @@
    "fuera": 0,
    "min": 121,
    "lesion": "Lesión en los isquiotibiales",
-   "desde": "31/08 (19 días)",
+   "desde": "31/08 (20 días)",
    "hasta": null
   },
   "65111": {
-   "prob": 100,
+   "prob": 95,
    "sancionado": 0,
    "fuera": 0,
    "min": 630
@@ -2152,7 +2194,7 @@
    "min": 324
   },
   "65179": {
-   "prob": 100,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 481
@@ -2218,10 +2260,16 @@
    "min": 396
   },
   "65721": {
-   "prob": 100,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
    "min": 90
+  },
+  "65724": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 0
   },
   "65727": {
    "prob": 10,
@@ -2259,7 +2307,7 @@
    "fuera": 0,
    "min": 96,
    "lesion": "Traumatismo craneoencefálico",
-   "desde": "12/09 (7 días)",
+   "desde": "12/09 (8 días)",
    "hasta": "finales de septiembre"
   },
   "68383": {
@@ -2346,7 +2394,7 @@
    "fuera": 0,
    "min": 536,
    "lesion": "Lesión en los isquiotibiales",
-   "desde": "18/09 (1 día)",
+   "desde": "18/09 (2 días)",
    "hasta": null
   },
   "68835": {
@@ -2362,13 +2410,13 @@
    "min": 293
   },
   "69744": {
-   "prob": 0,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 85
   },
   "69889": {
-   "prob": 0,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 439
@@ -2391,7 +2439,7 @@
    "fuera": 0,
    "min": 62,
    "lesion": "Esguince de tobillo",
-   "desde": "12/09 (7 días)",
+   "desde": "12/09 (8 días)",
    "hasta": "finales de septiembre"
   },
   "70255": {
@@ -2407,13 +2455,13 @@
    "min": 0
   },
   "70638": {
-   "prob": 100,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 393
   },
   "70917": {
-   "prob": 100,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 279
@@ -2436,7 +2484,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Tendinopatía en el hombro",
-   "desde": "08/09 (11 días)",
+   "desde": "08/09 (12 días)",
    "hasta": null
   },
   "70927": {
@@ -2523,7 +2571,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Lesión de tobillo",
-   "desde": "12/08 (38 días)",
+   "desde": "12/08 (39 días)",
    "hasta": null
   },
   "70948": {
@@ -2586,7 +2634,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Rotura de menisco",
-   "desde": "10/08 (40 días)",
+   "desde": "10/08 (41 días)",
    "hasta": "enero"
   },
   "70998": {
@@ -2619,7 +2667,7 @@
    "fuera": 0,
    "min": 0,
    "lesion": "Lesión de rodilla",
-   "desde": "20/06 (91 días)",
+   "desde": "20/06 (92 días)",
    "hasta": null
   },
   "71004": {
@@ -2736,7 +2784,7 @@
    "fuera": 0,
    "min": 540,
    "lesion": "Trabajo al margen",
-   "desde": "18/09 (1 día)",
+   "desde": "18/09 (2 días)",
    "hasta": null
   },
   "71176": {
@@ -2746,7 +2794,7 @@
    "min": 341
   },
   "71179": {
-   "prob": 0,
+   "prob": 10,
    "sancionado": 0,
    "fuera": 0,
    "min": 5
@@ -2776,7 +2824,7 @@
    "min": 95
   },
   "71574": {
-   "prob": 0,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 246
@@ -2812,7 +2860,7 @@
    "min": 373
   },
   "71640": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 492
@@ -2872,7 +2920,7 @@
    "min": 217
   },
   "523868": {
-   "prob": 100,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 396
@@ -2992,7 +3040,7 @@
    "min": 36
   },
   "4764213": {
-   "prob": 0,
+   "prob": 15,
    "sancionado": 0,
    "fuera": 0,
    "min": 37
@@ -3015,8 +3063,17 @@
    "fuera": 0,
    "min": 266
   },
+  "4836172": {
+   "prob": 40,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 194,
+   "lesion": "Lesión en el aductor",
+   "desde": "16/09 (4 días)",
+   "hasta": "principios de octubre"
+  },
   "4836173": {
-   "prob": 100,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 220
@@ -3045,6 +3102,12 @@
    "fuera": 0,
    "min": 180
   },
+  "4947925": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 0
+  },
   "4947926": {
    "prob": 40,
    "sancionado": 0,
@@ -3052,7 +3115,7 @@
    "min": 0
   },
   "4947927": {
-   "prob": 100,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 275
@@ -3069,7 +3132,7 @@
    "fuera": 0,
    "min": 5,
    "lesion": "Lesión en el cuádriceps",
-   "desde": "16/09 (3 días)",
+   "desde": "16/09 (4 días)",
    "hasta": null
   },
   "4947931": {

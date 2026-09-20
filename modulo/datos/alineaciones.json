@@ -1162,14 +1162,6 @@
     "capitan": false
    },
    {
-    "id": "25579",
-    "nombre": "Oriol Rey",
-    "puesto": 3,
-    "puntos": null,
-    "jugo": false,
-    "capitan": false
-   },
-   {
     "id": "23369",
     "nombre": "Juan Foyth",
     "puesto": 2,
@@ -1199,14 +1191,6 @@
     "puesto": 2,
     "puntos": null,
     "jugo": false,
-    "capitan": false
-   },
-   {
-    "id": "71011",
-    "nombre": "Alfonso Herrero",
-    "puesto": 1,
-    "puntos": 4,
-    "jugo": true,
     "capitan": false
    }
   ]
@@ -1356,14 +1340,6 @@
     "capitan": false
    },
    {
-    "id": "25579",
-    "nombre": "Oriol Rey",
-    "puesto": 3,
-    "puntos": null,
-    "jugo": false,
-    "capitan": false
-   },
-   {
     "id": "48203",
     "nombre": "Ramón Terrats",
     "puesto": 3,
@@ -1383,14 +1359,6 @@
     "id": "48554",
     "nombre": "Luiz Felipe",
     "puesto": 2,
-    "puntos": null,
-    "jugo": false,
-    "capitan": false
-   },
-   {
-    "id": "71011",
-    "nombre": "Alfonso Herrero",
-    "puesto": 1,
     "puntos": null,
     "jugo": false,
     "capitan": false

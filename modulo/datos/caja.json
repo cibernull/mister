@@ -1,6 +1,38 @@
 {
- "saldo": -12228184,
+ "saldo": 4176376,
  "apuntes": [
+  {
+   "cuando": 1789862260,
+   "fecha": "2026-09-20 01:57",
+   "motivo": "Oriol Rey a Mister",
+   "tipo": "Venta",
+   "importe": 1311440,
+   "saldo": 4176376
+  },
+  {
+   "cuando": 1789861968,
+   "fecha": "2026-09-20 01:52",
+   "motivo": "Modificación de cláusula (50%) de Oriol Rey",
+   "tipo": "Bonificación",
+   "importe": 126100,
+   "saldo": 2864936
+  },
+  {
+   "cuando": 1789861888,
+   "fecha": "2026-09-20 01:51",
+   "motivo": "Sergio Canales a Mister",
+   "tipo": "Venta",
+   "importe": 7094220,
+   "saldo": 2738836
+  },
+  {
+   "cuando": 1789861783,
+   "fecha": "2026-09-20 01:49",
+   "motivo": "Alfonso Herrero a Mister",
+   "tipo": "Venta",
+   "importe": 7872800,
+   "saldo": -4355384
+  },
   {
    "cuando": 1789823411,
    "fecha": "2026-09-19 15:10",
@@ -448,38 +480,6 @@
    "tipo": "Penalización",
    "importe": -783400,
    "saldo": 5441341
-  },
-  {
-   "cuando": 1787403671,
-   "fecha": "2026-08-22 15:01",
-   "motivo": "Álvaro Valles a Mister",
-   "tipo": "Venta",
-   "importe": 6910050,
-   "saldo": 6224741
-  },
-  {
-   "cuando": 1787367600,
-   "fecha": "2026-08-22 05:00",
-   "motivo": "Ryunosuke Sato a Mister",
-   "tipo": "Compra",
-   "importe": -2666250,
-   "saldo": -685309
-  },
-  {
-   "cuando": 1787343541,
-   "fecha": "2026-08-21 22:19",
-   "motivo": "Iago Aspas a Mister",
-   "tipo": "Venta",
-   "importe": 3915450,
-   "saldo": 1980941
-  },
-  {
-   "cuando": 1787281200,
-   "fecha": "2026-08-21 05:00",
-   "motivo": "Ramón Terrats a Mister",
-   "tipo": "Compra",
-   "importe": -2201650,
-   "saldo": -1934509
   }
  ]
 }
