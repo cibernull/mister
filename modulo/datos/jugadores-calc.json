@@ -4241,7 +4241,7 @@
   "pos": 3,
   "est": null,
   "bl": 0,
-  "sub": 0,
+  "sub": 1,
   "racha": [
    4,
    5,
@@ -13212,7 +13212,7 @@
   "mf": 2.7,
   "tit": 6,
   "sup": 0,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 23,
   "js": [
@@ -14298,7 +14298,7 @@
   "mf": 3,
   "tit": 4,
   "sup": 2,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 25,
   "js": [
@@ -14381,7 +14381,7 @@
   "mf": 2.7,
   "tit": 4,
   "sup": 2,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 27,
   "js": [
@@ -15665,7 +15665,7 @@
   "mf": 2.7,
   "tit": 3,
   "sup": 3,
-  "once": 1,
+  "once": null,
   "asis": 1,
   "edad": 26,
   "js": [
@@ -16776,7 +16776,7 @@
   "mf": 3.3,
   "tit": 6,
   "sup": 0,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 28,
   "js": [
@@ -18641,7 +18641,7 @@
   "mf": 2.3,
   "tit": 5,
   "sup": 1,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 20,
   "js": [
@@ -20455,7 +20455,7 @@
   "mf": 1.3,
   "tit": 6,
   "sup": 0,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 22,
   "js": [
@@ -28607,7 +28607,7 @@
   "mf": 2,
   "tit": 1,
   "sup": 2,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 23,
   "js": [
@@ -33034,7 +33034,7 @@
   "mf": 2,
   "tit": 0,
   "sup": 1,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 30,
   "js": [
@@ -34589,7 +34589,7 @@
   "mf": 1,
   "tit": 0,
   "sup": 1,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 27,
   "js": [

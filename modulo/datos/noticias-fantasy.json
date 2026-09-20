@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-20T11:07:52.514Z",
+ "cuando": "2026-09-20T11:38:08.322Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,24 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Rubén Sánchez emerge tras la lesión de Sangaré",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151609-ruben-sanchez-emerge-tras-la-lesion-de-sangare",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "El Valencia se concentra horas antes del partido con Rioja y sin los siete lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151608-el-valencia-se-concentra-horas-antes-del-partido-con-rioja-y-sin-los-siete-lesionados",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Aimar Oroz y Moi Gómez aceleran para reconstruir el ataque",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151607-aimar-oroz-y-moi-gomez-aceleran-para-reconstruir-el-ataque",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Lista del Barcelona para viajar a Sevilla sin Fariñas ni los tres lesionados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151531-lista-del-barcelona-para-viajar-a-sevilla-sin-farinas-ni-los-tres-lesionados",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Guruzeta recae de su lesión muscular y se queda fuera ante el Alavés",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151529-guruzeta-recae-de-su-lesion-muscular-y-se-queda-fuera-ante-el-alaves",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Sotelo y Etta Eyong, bajas en la sesión de este sábado",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151530-sotelo-y-etta-eyong-bajas-en-la-sesion-de-este-sabado",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Manolo reconoce el mal partido y habla de José Ángel, la superioridad numérica y el parón",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151528-manolo-reconoce-el-mal-partido-y-habla-de-jose-angel-la-superioridad-numerica-y-el-paron",
-   "categoria": "rueda de prensa"
   }
  ]
 }
