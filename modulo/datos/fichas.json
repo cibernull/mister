@@ -18486,13 +18486,6 @@
      "sub_out",
      "assist"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 2,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -24294,7 +24287,7 @@
   "mediaCasa": 2,
   "mediaFuera": 2,
   "edad": 21,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 2,
   "jornadas": [
@@ -25781,7 +25774,7 @@
  "71021": {
   "nombre": "Alejandro Grimaldo",
   "posicion": 2,
-  "goles": 1,
+  "goles": 2,
   "tarjetas": 0,
   "mediaCasa": 5.5,
   "mediaFuera": 3.7,
@@ -25842,7 +25835,9 @@
     "puntos": null,
     "rival": 15,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "penalty"
+    ]
    }
   ],
   "asistencias": 1,
@@ -26115,7 +26110,7 @@
   "nombre": "Denzel Dumfries",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 3.5,
   "mediaFuera": 2,
   "edad": 30,
@@ -26176,7 +26171,9 @@
     "puntos": null,
     "rival": 2,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,
@@ -27232,7 +27229,7 @@
   "mediaCasa": 3,
   "mediaFuera": 1,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 1,
   "jornadas": [
@@ -31083,7 +31080,7 @@
   "mediaCasa": 1,
   "mediaFuera": 0,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 0,
   "jornadas": [
