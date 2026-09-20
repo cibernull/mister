@@ -31,6 +31,7 @@ import { verificar, verificarLiga } from './verificar.js'
 import { podar, subidasDeLaSemana, subidasDelMes, type Historico } from './historicoValores.js'
 import { actualizarHistoricoEquipos, type HistoricoEquipos } from './historicoEquipos.js'
 import { anotarTopes, comprobarPujas, type EstadoPujas, type FotoTopes } from './pujas.js'
+import { contrastarClausulasPagadas, contrastarPremios } from './contrastes.js'
 import type { FichaGuardada } from './fichas.js'
 import { reinicioDeLiga } from '../recoleccion/parseadorSaldo.js'
 import { detectarSubidas, gastoEnClausulas, gastoPorEquipo, subidasVivas, type Subida } from './clausulas.js'
@@ -463,6 +464,25 @@ async function intentar(): Promise<Resultado> {
         pujas.avisos.length === 0 ? ', ninguna lo supera.' : '.'
       }`,
     )
+  }
+
+  // ── Premios de jornada y cláusulas pagadas, contra cifras reales ───────────
+  // El premio propio se cobra en el libro con su cifra exacta, y el mismo
+  // evento paga a los ocho: si cuadra el mío, cuadran los suyos. Una cláusula
+  // pagada es la cláusula exacta del vendedor ese día: dice cuántas subidas
+  // tenía de verdad, que es lo que estimamos de su gasto en cláusulas.
+  const jornadasMister = leerJson<{ jornada: number; estado: string }[]>(join(DATOS, 'jornadas-mister.json'), [])
+  const idUcPropio = constantes.equipos.find((e) => e.mio)?.idUc ?? -1
+  const contrastes = [
+    ...contrastarPremios(hechos.jornadas, desdeElReinicio, idUcPropio, jornadasMister),
+    ...contrastarClausulasPagadas(hechos.traspasos, histCl, historico),
+  ]
+  for (const a of contrastes) {
+    paso(`AVISO ${a}`)
+    cuentas.avisos.push(a)
+  }
+  if (contrastes.length === 0) {
+    paso(`Premios de ${hechos.jornadas.length} jornadas y ${hechos.traspasos.filter((t) => t.tipo === 'clause').length} cláusulas pagadas: cuadran con el libro y con las cláusulas apuntadas.`)
   }
 
   // Las cuentas propias, sacadas del libro y no del feed.

@@ -159,8 +159,9 @@ export function comprobarPujas(
         continue
       }
       ajustes[p.equipo] = (ajustes[p.equipo] ?? 0) + exceso
+      const verbo = p.gana && t.tipo === 'clause' ? 'pagó la cláusula de' : p.gana ? 'pagó' : 'pujó'
       avisos.push(
-        `${p.equipo.replace(/\s*\(.*\)\s*/, '')} pujó ${eur(p.puja)} por ${t.nombre} y le calculaba como mucho ${eur(corregido)}: tenía al menos ${eur(exceso)} más. Se le suman a su caja.`,
+        `${p.equipo.replace(/\s*\(.*\)\s*/, '')} ${verbo} ${eur(p.puja)} por ${t.nombre} y le calculaba como mucho ${eur(corregido)}: tenía al menos ${eur(exceso)} más. Se le suman a su caja.`,
       )
     }
     vistas[String(t.idTransfer)] = deEsta

@@ -191,6 +191,13 @@ export function extraerHechos(volcado: Volcado): Hechos {
           const ranking = (d['ranking'] as Record<string, unknown>)?.['ranking'] as Record<string, unknown>
           const posiciones = arr(ranking?.['positions']) as Record<string, unknown>[]
           if (posiciones.length === 0) throw new Error(`el cierre de jornada ${idJornada} no trae clasificación`)
+          // Una jornada puede cerrarse dos veces: una provisional —J6 de 2026,
+          // con solo el partido adelantado y 200.000 € en premios— y la
+          // definitiva dos semanas después, que es la que paga el libro de
+          // caja. Manda la de fecha más reciente; las páginas del feed van de
+          // lo nuevo a lo viejo y sin esto la vieja pisaba a la buena.
+          const previa = jornadas.get(idJornada)
+          if (previa !== undefined && previa.cuando >= cuando) break
           jornadas.set(idJornada, {
             idJornada,
             jornada: num(d['gameweek'], 'gameweek'),

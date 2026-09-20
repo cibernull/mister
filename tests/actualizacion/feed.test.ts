@@ -162,6 +162,28 @@ describe('extraerHechos', () => {
     ])
   })
 
+  it('con dos cierres de la misma jornada se queda con el último, que es cuando se paga', () => {
+    // J6 de 2026 se cerró el 4 de septiembre con solo el partido adelantado y
+    // 200.000 € en premios, y de verdad el 18, con 5.025.000 €. El libro de
+    // caja cobra el 18. Quedarse con el primero ponía la fecha mal y, hasta que
+    // Mister reescribió el evento viejo, los premios también.
+    const cierre = (created: string, pago: number) => ({
+      category: 'gameweek_end',
+      created,
+      data: { id_gameweek: 4047, gameweek: 6, ranking: { ranking: { positions: [{ idUc: 1, points: 10, rank: 1, teamValue: 1, payment: pago }] } } },
+    })
+    // El feed va de lo nuevo a lo viejo: el cierre definitivo llega en la primera página.
+    const h = extraerHechos({
+      paginas: [
+        pagina(0, '2026-09-20T10:00:00Z', [cierre('2026-09-18 10:58:43', 925_000)]),
+        pagina(20, '2026-09-20T10:00:01Z', [cierre('2026-09-04 09:50:39', 0)]),
+      ],
+    })
+    expect(h.jornadas).toHaveLength(1)
+    expect(h.jornadas[0]!.cuando).toBe('2026-09-18 10:58:43')
+    expect(h.jornadas[0]!.posiciones[0]!.premio).toBe(925_000)
+  })
+
   it('un cierre de jornada sin clasificación es un error, no una jornada sin premios', () => {
     // Devolver premios en cero falsearía el saldo de los ocho equipos sin que
     // nada lo delatara.
