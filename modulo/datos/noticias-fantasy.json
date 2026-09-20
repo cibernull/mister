@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-20T19:07:53.387Z",
+ "cuando": "2026-09-20T19:27:53.637Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "20/09",
-   "titulo": "Alineaciones confirmadas del Valencia - Real Sociedad",
+   "titulo": "Sigue en directo el Valencia - Real Sociedad",
    "url": "https://www.futbolfantasy.com/partidos/22491-valencia-real-sociedad",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "20/09",
@@ -32,6 +32,18 @@
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Hidalgo valora el empate y habla de Casadó, Villares, Cucho, Amatucci, Aubameyang y Mella",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151648-hidalgo-valora-el-empate-y-habla-de-casado-villares-cucho-amatucci-aubameyang-y-mella",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Pellegrini analiza el empate, hace balance de la semana y habla de Bartra, Cucho, Ximo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151647-pellegrini-analiza-el-empate-hace-balance-de-la-semana-y-habla-de-bartra-cucho-ximo",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "20/09",
@@ -470,18 +482,6 @@
    "titulo": "Mourinho convoca a los disponibles para el derbi",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151570-mourinho-convoca-a-los-disponibles-para-el-derbi",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "San José analiza el empate y habla de Camello, los ajustes tras el descanso y el parón",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151569-san-jose-analiza-el-empate-y-habla-de-camello-los-ajustes-tras-el-descanso-y-el-paron",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Quique explica las rotaciones en el once, el sistema de juego y las ventajas de jugar con dos puntas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151568-quique-explica-las-rotaciones-en-el-once-el-sistema-de-juego-y-las-ventajas-de-jugar-con-dos-",
-   "categoria": "rueda de prensa"
   }
  ]
 }

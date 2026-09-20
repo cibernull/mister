@@ -17288,11 +17288,18 @@
     "rival": 5,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 19,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 5
+  "dia": "2026-09-20",
+  "partidos": 4
  },
  "59633": {
   "nombre": "Alfon González",
@@ -26340,7 +26347,7 @@
   "nombre": "Justin De Haas",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 1,
   "mediaFuera": 3,
   "edad": 26,
@@ -26379,6 +26386,15 @@
     "como": "inicio",
     "eventos": [
      "sub_out"
+    ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 16,
+    "como": "inicio",
+    "eventos": [
+     "yellow"
     ]
    }
   ],
@@ -32004,6 +32020,13 @@
     "eventos": [
      "yellow"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 16,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
