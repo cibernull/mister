@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-20T09:08:10.379Z",
+ "cuando": "2026-09-20T09:38:17.995Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,18 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "La cuenta atrás de Javi Puado",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151599-la-cuenta-atras-de-javi-puado",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Un parón para poner a punto a Lomónaco",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151598-un-paron-para-poner-a-punto-a-lomonaco",
    "categoria": "análisis"
   },
   {
@@ -469,18 +481,6 @@
    "fecha": "18/09",
    "titulo": "El Alavés completa la sesión del viernes sin los tres lesionados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151522-el-alaves-completa-la-sesion-del-viernes-sin-los-tres-lesionados",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Peio Canales repite con el grupo a la espera del alta médica",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151521-peio-canales-repite-con-el-grupo-a-la-espera-del-alta-medica",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Diego Llorente trabaja parcialmente, pero apunta a baja para Riazor",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151520-diego-llorente-trabaja-parcialmente-pero-apunta-a-baja-para-riazor",
    "categoria": "entrenamiento"
   }
  ]
