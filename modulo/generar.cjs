@@ -119,7 +119,6 @@ EQ.forEach((e) => {
   const ayer = fotoAyerDe(e.n)
   e.cambioCajaHoy = ayer ? e.saldo - ayer.saldo : null
 })
-const maxTope = Math.max(...EQ.map((e) => e.tope))
 const MIO = EQ.find((e) => e.mio)
 if (!MIO) throw new Error('No encuentro mi equipo en la tabla de equipos')
 const RIVALES = EQ.filter((e) => !e.mio)
@@ -1682,22 +1681,21 @@ ${suyos
 }
 
 /**
- * La barra que descompone el tope: sólido es caja, rayado el 25 % de plantilla.
+ * Las tres cifras de las que sale lo que puede gastar un equipo, en euros
+ * completos: caja, lo que vale su plantilla y el crédito (el 25 % de eso).
  *
- * El texto de debajo decía «X en caja + Y de su plantilla» todo del mismo
- * color y peso, así que la cifra que de verdad es dinero disponible —la
- * caja— no se distinguía del crédito que solo da la plantilla. Ahora la caja
- * va en negrita y dorado, a juego con el trozo sólido de la barra; el crédito,
- * en el tono más apagado del trozo rayado.
- *
- * Los números de la leyenda llevan clase distinta a la de los `<span>` de la
- * barra (`cf-caja`/`cf-plant`, no `caja`/`credito`): con el mismo nombre, la
- * regla que pinta de fondo dorado el trozo de barra también pintaba el número
- * —dorado sobre dorado, ilegible, un bloque sólido.
+ * Aquí había una barra que las representaba a escala, con la caja en sólido y
+ * el crédito rayado. No decía nada que no dijeran los números y les quitaba
+ * el sitio; lo que importa son las cifras, así que van ellas. Debajo de cada
+ * una, lo que la matiza: en la caja, lo que sus pujas demostraron que tenía
+ * de más; en la plantilla, lo que sube o baja hoy.
  */
-const barraPoder = (e) => `<div class="poder">
-        <span class="barra"><span class="caja" style="width:${((e.saldo / maxTope) * 100).toFixed(1)}%"></span><span class="credito" style="width:${(((0.25 * e.pl) / maxTope) * 100).toFixed(1)}%"></span></span>
-        <small><b class="cf-caja">${corto(e.saldo)}</b> en caja + <b class="cf-plant">${corto(0.25 * e.pl)}</b> de crédito por su plantilla</small>
+const cifrasDe = (e) => `<div class="cifras">
+        <div><b class="caja${e.saldo < 0 ? ' baja' : ''}">${eur(e.saldo)}</b><i>en caja</i>${
+          e.ajustePujas > 0 ? `<em class="sube" title="Pujó por encima de lo que le calculábamos: ese dinero lo tenía">+${corto(e.ajustePujas)} por sus pujas</em>` : ''
+        }</div>
+        <div><b>${eur(e.pl)}</b><i>vale su plantilla</i><em class="${clase(e.cambioPlantillaHoy)}" title="Lo que sube o baja hoy el valor de su plantilla: la misma cuenta que hace Mister, jugador a jugador">${firmaCortaConDecimales(e.cambioPlantillaHoy, 3)} hoy</em></div>
+        <div><b class="credito">${eur(0.25 * e.pl)}</b><i>crédito · 25 % de ella</i></div>
       </div>`
 
 const tablaMovimientos = (e) => {
@@ -2637,8 +2635,8 @@ const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     <summary>
       <span class="puesto">${e.pos}º</span>
       <div class="eqn">${esc(e.corto)}${e.mio ? '<span class="et et-eq et-mio">tú</span>' : ''}</div>
-      <div class="eqp"><b>${eur(e.tope)}</b><i>puede gastar</i><small class="cambio ${clase(e.cambioPlantillaHoy)}" title="Lo que sube o baja hoy el valor de su plantilla: la misma cuenta que hace Mister, jugador a jugador">${firmaCortaConDecimales(e.cambioPlantillaHoy, 3)} plantilla</small></div>
-      ${barraPoder(e)}
+      <div class="eqp"><b>${eur(e.tope)}</b><i>puede gastar</i></div>
+      ${cifrasDe(e)}
     </summary>
     <div class="cuerpo">
       <p class="frase">Va <strong>${e.pos}º con ${e.pts} puntos</strong>. Tiene <strong>${eur(e.saldo)}</strong> en caja y una plantilla de ${(PL[e.n] ?? []).length} jugadores que vale ${eur(e.pl)}. Hoy su plantilla ${
@@ -2658,7 +2656,7 @@ const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     </div>
   </details>`
 
-const rivales = `    <p class="intro">Ordenados por lo que pueden gastar hoy. La parte sólida de cada barra es dinero en caja; la rayada, el crédito que le da su plantilla.</p>
+const rivales = `    <p class="intro">Ordenados por lo que pueden gastar hoy: lo que tienen en caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale. En cada uno van las tres cifras.</p>
 ${[...EQ]
   .sort((a, b) => b.tope - a.tope)
   .map(fichaEquipo)
@@ -3194,7 +3192,7 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
         ${def('±', 'txt', 'De fiar', 'Calculado aquí. Cuánto se aparta de su media jornada a jornada. Dos jugadores de media 6 no valen lo mismo: uno hace 6, 6, 6 y el otro 0, 0, 18. Cuanto más bajo, más de fiar. Solo se listan los que promedian 4 o más, porque al que hace un punto siempre le sobra regularidad.')}
         ${def('€', '', 'Valor y cláusula', 'El <strong>valor</strong> es lo que Mister dice que vale un jugador, y lo que cobras si lo vendes al mercado. La <strong>cláusula</strong> es lo que un rival paga para quitártelo sin tu permiso, y siempre es mayor. La cifra grande de cada fila es <strong>lo que costaría ficharlo de verdad</strong>.')}
         ${def('POR', 'txt', 'Los dorsales de color', 'La posición: <strong>POR</strong> portero, <strong>DEF</strong> defensa, <strong>MED</strong> centrocampista, <strong>DEL</strong> delantero.')}
-        ${def('▐', '', 'Las barras de los equipos', 'La parte sólida es dinero en caja; la rayada, el crédito que le da su plantilla. Juntas, lo que puede gastar.')}
+        ${def('€', '', 'Las cifras de los equipos', 'Caja, lo que vale su plantilla y el crédito, que es el 25 % de ese valor. Caja más crédito es lo que puede gastar. Debajo de la caja, si pujó por encima de lo que le calculábamos, lo que eso demostró que tenía; debajo de la plantilla, lo que sube o baja hoy.')}
       </div>
     </div>
 

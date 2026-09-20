@@ -687,21 +687,26 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
 .eqp{text-align:right;white-space:nowrap;display:flex;flex-direction:column;align-items:flex-end}
 .eqp b{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:700;font-size:19px}
 .eqp i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--tenue)}
-.eqp small.cambio{font-family:"IBM Plex Mono",monospace;font-weight:700;font-size:13px;margin-top:3px}
-
-/* La barra explica la fórmula sin enunciarla: sólido es caja, rayado el
-   crédito que da la plantilla. Juntos, el tope de puja. */
-.poder{grid-column:2/-1;display:flex;align-items:center;gap:9px;margin-top:2px}
-.poder .barra{flex:1;height:9px;border-radius:99px;background:var(--hueco);overflow:hidden;display:flex}
-.poder .barra .caja{background:var(--oro)}
-.poder .barra .credito{background:repeating-linear-gradient(115deg,var(--oro-raya) 0 4px,transparent 4px 8px);border-right:1px solid var(--oro-raya)}
-.poder small{font-size:13px;color:var(--tenue);white-space:nowrap}
-/* Números de la leyenda, no del trozo de barra: si llevaran las mismas clases
-   "caja"/"credito" que los `<span>` de la barra, esta regla les pintaría
-   fondo dorado a ellos también y el texto —también dorado— desaparecería
-   dentro de su propio fondo. Por eso van con nombre distinto. */
-.poder small b.cf-caja{color:var(--oro)}
-.poder small b.cf-plant{color:var(--oro-raya)}
+/* Las tres cifras de las que sale el tope, en euros completos y cada una en
+   su sitio. Había una barra que las representaba a escala; no aportaba nada
+   que no dijeran los números y les quitaba sitio. Caja en dorado, como la
+   cifra que de verdad se puede gastar; el crédito en el dorado apagado. */
+.cifras{grid-column:2/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 10px;margin-top:8px;padding-top:8px;border-top:1px solid var(--raya)}
+.cifras>div{min-width:0}
+.cifras b{display:block;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:700;font-size:14.5px;letter-spacing:-.01em;white-space:nowrap}
+.cifras b.caja{color:var(--oro)} .cifras b.caja.baja{color:var(--baja)} .cifras b.credito{color:var(--oro-raya)}
+.cifras i{display:block;margin-top:2px;font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--tenue);white-space:nowrap}
+.cifras em{display:block;margin-top:2px;font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:11.5px;font-weight:700}
+.cifras em.sube{color:var(--sube)} .cifras em.baja{color:var(--baja)}
+/* En estrecho no caben tres cifras de once dígitos en una fila: se apilan,
+   etiqueta a la izquierda y cifra a la derecha, que es como se lee una cuenta. */
+@media (max-width:560px){
+  .cifras{grid-template-columns:1fr;gap:5px}
+  .cifras>div{display:grid;grid-template-columns:1fr auto;grid-template-areas:"i b" "i em";align-items:baseline;column-gap:10px}
+  .cifras b{grid-area:b;text-align:right;font-size:14px}
+  .cifras i{grid-area:i;margin:0;align-self:center}
+  .cifras em{grid-area:em;text-align:right;margin-top:0}
+}
 
 .cuerpo{padding:0 16px 18px;display:flex;flex-direction:column;gap:9px;border-top:1px solid var(--raya)}
 .frase{margin:15px 0 0;font-size:14.5px;color:var(--gris)}
