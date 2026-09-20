@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-20T10:37:55.918Z",
+ "cuando": "2026-09-20T11:07:52.514Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "20/09",
-   "titulo": "Aitor convierte una rotación intersemanal en un cambio de ciclo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151603-aitor-convierte-una-rotacion-intersemanal-en-un-cambio-de-ciclo",
-   "categoria": "análisis"
+   "titulo": "Alineaciones confirmadas del Getafe - Málaga",
+   "url": "https://www.futbolfantasy.com/partidos/22488-getafe-malaga",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "19/09",
@@ -25,6 +25,24 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Isi vuelve a escena para reordenar la medular del Rayo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151605-isi-vuelve-a-escena-para-reordenar-la-medular-del-rayo",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Mujaid Sadick pilla sitio antes de que lleguen Kumbulla y Luiz Felipe",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151604-mujaid-sadick-pilla-sitio-antes-de-que-lleguen-kumbulla-y-luiz-felipe",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Aitor convierte una rotación intersemanal en un cambio de ciclo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151603-aitor-convierte-una-rotacion-intersemanal-en-un-cambio-de-ciclo",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Manolo reconoce el mal partido y habla de José Ángel, la superioridad numérica y el parón",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151528-manolo-reconoce-el-mal-partido-y-habla-de-jose-angel-la-superioridad-numerica-y-el-paron",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Anselmi celebra el triunfo y habla de Redondo, Morcillo, Sangaré, Buonanotte y Ali Houary",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151527-anselmi-celebra-el-triunfo-y-habla-de-redondo-morcillo-sangare-buonanotte-y-ali-houary",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Al Elche le sobra con diez en Cornellà",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151526-al-elche-le-sobra-con-diez-en-cornella",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Jornada 7: Espanyol 1-3 Elche. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22487-espanyol-elche",
-   "categoria": "partido"
   }
  ]
 }
