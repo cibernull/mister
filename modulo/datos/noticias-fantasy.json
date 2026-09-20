@@ -1,11 +1,11 @@
 {
- "cuando": "2026-09-20T11:38:08.322Z",
+ "cuando": "2026-09-20T12:08:06.474Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "20/09",
-   "titulo": "Alineaciones confirmadas del Getafe - Málaga",
+   "titulo": "Sigue en directo el Getafe - Málaga",
    "url": "https://www.futbolfantasy.com/partidos/22488-getafe-malaga",
    "categoria": "rueda de prensa"
   },
@@ -26,6 +26,24 @@
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Johaneko, una oportunidad aprovechada a medias",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151612-johaneko-una-oportunidad-aprovechada-a-medias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Audero devuelve la estabilidad a la meta rayista",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151611-audero-devuelve-la-estabilidad-a-la-meta-rayista",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Funes explica las rotaciones, la titularidad de Berrocal y Jauregi",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151610-funes-explica-las-rotaciones-la-titularidad-de-berrocal-y-jauregi",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "20/09",
@@ -464,24 +482,6 @@
    "titulo": "Julián Álvarez completa el último entrenamiento antes del derbi; Sorloth y Barrios siguen al margen",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151534-julian-alvarez-completa-el-ultimo-entrenamiento-antes-del-derbi-sorloth-y-barrios-siguen-al-m",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Lista del Rayo para viajar a Pamplona sin los cinco lesionados ni RDT",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151533-lista-del-rayo-para-viajar-a-pamplona-sin-los-cinco-lesionados-ni-rdt",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Hidalgo revela un brote vírico en la plantilla y habla de Yeremay, Mella, Traoré, el sistema y el Betis",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151532-hidalgo-revela-un-brote-virico-en-la-plantilla-y-habla-de-yeremay-mella-traore-el-sistema-y-e",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Lista del Barcelona para viajar a Sevilla sin Fariñas ni los tres lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151531-lista-del-barcelona-para-viajar-a-sevilla-sin-farinas-ni-los-tres-lesionados",
-   "categoria": "convocatoria"
   }
  ]
 }

@@ -3190,7 +3190,7 @@
   "mediaCasa": 5,
   "mediaFuera": 2.3,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 2,
   "jornadas": [
@@ -7361,7 +7361,7 @@
   "mediaCasa": 3.3,
   "mediaFuera": 2.7,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 2,
   "jornadas": [
@@ -9201,7 +9201,7 @@
   "mediaCasa": 0,
   "mediaFuera": 1,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 0,
   "suplencias": 1,
   "jornadas": [
@@ -9247,6 +9247,13 @@
     "puntos": null,
     "rival": 20,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -10897,6 +10904,13 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -12136,7 +12150,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-20",
-  "partidos": 5
+  "partidos": 4
  },
  "48205": {
   "nombre": "Arnau Martínez",
@@ -12859,6 +12873,13 @@
      "sub_out",
      "assist"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -14100,7 +14121,7 @@
   "mediaCasa": 4.3,
   "mediaFuera": 3,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
@@ -15418,7 +15439,15 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "jornadas": [],
+  "jornadas": [
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 13,
+    "como": "inicio",
+    "eventos": []
+   }
+  ],
   "asistencias": 0,
   "dia": "2026-09-20",
   "partidos": 0
@@ -17919,6 +17948,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24802,6 +24838,13 @@
     "rival": 20,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24865,6 +24908,13 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24879,7 +24929,7 @@
   "mediaCasa": 0,
   "mediaFuera": 2,
   "edad": 30,
-  "titular": true,
+  "titular": null,
   "titularidades": 0,
   "suplencias": 1,
   "jornadas": [
@@ -24926,11 +24976,18 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-20",
-  "partidos": 1
+  "partidos": 0
  },
  "70996": {
   "nombre": "David Larrubia",
@@ -25083,6 +25140,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -25167,7 +25231,7 @@
   "mediaCasa": 2,
   "mediaFuera": 2,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 2,
   "jornadas": [
@@ -25218,11 +25282,18 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-20",
-  "partidos": 3
+  "partidos": 2
  },
  "71002": {
   "nombre": "Ramón Enríquez",
@@ -25292,6 +25363,13 @@
      "yellow",
      "sub_in"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -25379,6 +25457,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -26441,6 +26526,13 @@
     "puntos": null,
     "rival": 4,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 13,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -27919,6 +28011,13 @@
     "rival": 4,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 13,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28291,6 +28390,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 13,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28956,7 +29062,7 @@
   "mediaCasa": 2,
   "mediaFuera": 1.5,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 1,
   "jornadas": [
@@ -30347,7 +30453,7 @@
   "mediaCasa": 3.5,
   "mediaFuera": 6,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
@@ -30967,6 +31073,13 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -31222,6 +31335,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 13,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
