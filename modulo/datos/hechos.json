@@ -6455,6 +6455,42 @@
    "media": 4.2,
    "racha": "6,6,4,-,2",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 549598061,
+   "idJugador": "59042",
+   "nombre": "Peque Fernández",
+   "de": "Cacaculopedopis",
+   "a": "Mister",
+   "idUcDe": 15435600,
+   "idUcA": 0,
+   "importe": 1625280,
+   "tipo": "normal",
+   "cuando": "2026-09-20 23:07:38",
+   "valor": 1693000,
+   "posicion": 3,
+   "puntos": 16,
+   "media": 5.3,
+   "racha": "2,-,-,-,-",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 549598072,
+   "idJugador": "59789",
+   "nombre": "Orri Óskarsson",
+   "de": "Cacaculopedopis",
+   "a": "Mister",
+   "idUcDe": 15435600,
+   "idUcA": 0,
+   "importe": 5190000,
+   "tipo": "normal",
+   "cuando": "2026-09-20 23:07:44",
+   "valor": 5190000,
+   "posicion": 4,
+   "puntos": 17,
+   "media": 3.4,
+   "racha": "1,10,-,2,3",
+   "otrasPujas": []
   }
  ],
  "salidas": [

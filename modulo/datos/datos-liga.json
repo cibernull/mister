@@ -1133,6 +1133,26 @@
  ],
  "movimientos": [
   {
+   "id": "59789",
+   "nombre": "Orri Óskarsson",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 5190000,
+   "tipo": "normal",
+   "fecha": "2026-09-20 23:07:44",
+   "pos": 4
+  },
+  {
+   "id": "59042",
+   "nombre": "Peque Fernández",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 1625280,
+   "tipo": "normal",
+   "fecha": "2026-09-20 23:07:38",
+   "pos": 3
+  },
+  {
    "id": "27874",
    "nombre": "Iván Martín",
    "de": null,
@@ -6675,6 +6695,22 @@
      "op": "normal"
     },
     {
+     "j": "Peque Fernández",
+     "id": "59042",
+     "tipo": "venta",
+     "importe": 1625280,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
+     "j": "Orri Óskarsson",
+     "id": "59789",
+     "tipo": "venta",
+     "importe": 5190000,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
      "j": "Joaquín Muñoz",
      "id": "22595",
      "tipo": "compra",
@@ -7391,8 +7427,8 @@
     "59042": {
      "nombre": "Peque Fernández",
      "compras": 2212870,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1625280,
+     "ops": 2
     },
     "59395": {
      "nombre": "Pedro Díaz",
@@ -7409,8 +7445,8 @@
     "59789": {
      "nombre": "Orri Óskarsson",
      "compras": 6126970,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5190000,
+     "ops": 2
     },
     "60271": {
      "nombre": "Rafa Bauza",
