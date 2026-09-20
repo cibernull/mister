@@ -11872,7 +11872,7 @@
   "posicion": 4,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 2.5,
+  "mediaCasa": 3,
   "mediaFuera": 1.5,
   "edad": 30,
   "titular": null,
@@ -11930,7 +11930,7 @@
    },
    {
     "jornada": 7,
-    "puntos": 2,
+    "puntos": 3,
     "rival": 4,
     "como": "banquillo",
     "eventos": [
@@ -24539,7 +24539,7 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 3,
+  "mediaCasa": 3.5,
   "mediaFuera": 2,
   "edad": 21,
   "titular": null,
@@ -24594,7 +24594,7 @@
    },
    {
     "jornada": 7,
-    "puntos": 4,
+    "puntos": 5,
     "rival": 4,
     "como": "inicio",
     "eventos": [
@@ -24685,7 +24685,7 @@
   "posicion": 3,
   "goles": 1,
   "tarjetas": 0,
-  "mediaCasa": 5.5,
+  "mediaCasa": 6,
   "mediaFuera": 2,
   "edad": 30,
   "titular": null,
@@ -24740,7 +24740,7 @@
    },
    {
     "jornada": 7,
-    "puntos": 9,
+    "puntos": 10,
     "rival": 4,
     "como": "banquillo",
     "eventos": [
@@ -26380,15 +26380,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": [
-     "yellow"
-    ]
    }
   ],
   "asistencias": 0,
@@ -26557,7 +26548,7 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 4,
-  "mediaFuera": 2,
+  "mediaFuera": 2.3,
   "edad": 23,
   "titular": null,
   "titularidades": 5,
@@ -26616,7 +26607,7 @@
    },
    {
     "jornada": 7,
-    "puntos": 2,
+    "puntos": 3,
     "rival": 6,
     "como": "banquillo",
     "eventos": [
@@ -27277,7 +27268,7 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 2.3,
+  "mediaCasa": 2.5,
   "mediaFuera": 2,
   "edad": 20,
   "titular": null,
@@ -27336,7 +27327,7 @@
    },
    {
     "jornada": 7,
-    "puntos": 2,
+    "puntos": 3,
     "rival": 4,
     "como": "inicio",
     "eventos": [
@@ -31168,13 +31159,6 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -31623,7 +31607,7 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 1,
-  "mediaFuera": 0,
+  "mediaFuera": 1,
   "edad": 23,
   "titular": null,
   "titularidades": 1,
@@ -31668,7 +31652,7 @@
    },
    {
     "jornada": 7,
-    "puntos": 0,
+    "puntos": 1,
     "rival": 20,
     "como": "banquillo",
     "eventos": [
@@ -31961,7 +31945,7 @@
  "5340038": {
   "nombre": "Aaron Mayol",
   "posicion": 3,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 0,
   "mediaFuera": 5,
@@ -32013,13 +31997,6 @@
     "eventos": [
      "yellow"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,

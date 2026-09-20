@@ -2886,9 +2886,9 @@
    "cuando": "2026-08-20 05:00:33",
    "valor": 11258000,
    "posicion": 3,
-   "puntos": 48,
-   "media": 6.9,
-   "racha": "6,3,3,13,5",
+   "puntos": 49,
+   "media": 7,
+   "racha": "6,3,3,13,6",
    "otrasPujas": []
   },
   {
@@ -3167,8 +3167,8 @@
    "valor": 10726000,
    "posicion": 1,
    "puntos": 54,
-   "media": 7.7,
-   "racha": "2,12,9,9,8",
+   "media": 7.9,
+   "racha": "2,12,9,9,9",
    "otrasPujas": []
   },
   {
@@ -3202,7 +3202,7 @@
    "cuando": "2026-08-23 05:00:30",
    "valor": 9984000,
    "posicion": 1,
-   "puntos": 25,
+   "puntos": 24,
    "media": 4.8,
    "racha": "5,6,-,4,3",
    "otrasPujas": []
@@ -3492,7 +3492,7 @@
    "cuando": "2026-08-25 08:51:52",
    "valor": 1870000,
    "posicion": 2,
-   "puntos": 5,
+   "puntos": 6,
    "media": 2,
    "racha": "1,-,-,-,3",
    "otrasPujas": []
@@ -3917,8 +3917,8 @@
    "valor": 10726000,
    "posicion": 1,
    "puntos": 54,
-   "media": 7.7,
-   "racha": "2,12,9,9,8",
+   "media": 7.9,
+   "racha": "2,12,9,9,9",
    "otrasPujas": [
     {
      "equipo": "Saiyans FC (Fran)",
@@ -4107,8 +4107,8 @@
    "valor": 1707000,
    "posicion": 3,
    "puntos": 39,
-   "media": 7.8,
-   "racha": "4,19,1,11,4",
+   "media": 8.2,
+   "racha": "4,19,1,11,6",
    "otrasPujas": []
   },
   {
@@ -4202,8 +4202,8 @@
    "valor": 9153000,
    "posicion": 2,
    "puntos": 29,
-   "media": 4.8,
-   "racha": "4,13,5,1,3",
+   "media": 5,
+   "racha": "4,13,5,1,4",
    "otrasPujas": []
   },
   {
@@ -4346,8 +4346,8 @@
    "valor": 7321000,
    "posicion": 2,
    "puntos": 35,
-   "media": 5.8,
-   "racha": "-1,6,13,7,5",
+   "media": 6,
+   "racha": "-1,6,13,7,6",
    "otrasPujas": []
   },
   {
@@ -4417,7 +4417,7 @@
    "cuando": "2026-09-02 01:44:10",
    "valor": 4889000,
    "posicion": 4,
-   "puntos": 16,
+   "puntos": 17,
    "media": 2.5,
    "racha": "2,1,3,4,5",
    "otrasPujas": []
@@ -4531,8 +4531,8 @@
    "valor": 2266000,
    "posicion": 2,
    "puntos": 20,
-   "media": 3.3,
-   "racha": "2,6,3,1,5",
+   "media": 3.5,
+   "racha": "2,6,3,1,6",
    "otrasPujas": [
     {
      "equipo": "Saiyans FC (Fran)",
@@ -4576,8 +4576,8 @@
    "valor": 2825000,
    "posicion": 4,
    "puntos": 8,
-   "media": 2,
-   "racha": "-,1,2,3,2",
+   "media": 2.3,
+   "racha": "-,1,2,3,3",
    "otrasPujas": [
     {
      "equipo": "Mario80",
@@ -4769,7 +4769,7 @@
    "cuando": "2026-09-05 17:00:19",
    "valor": 5190000,
    "posicion": 4,
-   "puntos": 17,
+   "puntos": 18,
    "media": 3.4,
    "racha": "1,10,-,2,3",
    "otrasPujas": []
@@ -4788,8 +4788,8 @@
    "valor": 15160000,
    "posicion": 4,
    "puntos": 37,
-   "media": 6.2,
-   "racha": "6,10,4,-,1",
+   "media": 6.3,
+   "racha": "6,10,4,-,2",
    "otrasPujas": []
   },
   {
@@ -4914,8 +4914,8 @@
    "valor": 4413000,
    "posicion": 2,
    "puntos": 25,
-   "media": 3.6,
-   "racha": "6,3,4,3,2",
+   "media": 3.7,
+   "racha": "6,3,4,3,3",
    "otrasPujas": []
   },
   {
@@ -4968,8 +4968,8 @@
    "valor": 5943000,
    "posicion": 3,
    "puntos": 34,
-   "media": 4.9,
-   "racha": "8,4,6,3,7",
+   "media": 5,
+   "racha": "8,4,6,3,8",
    "otrasPujas": []
   },
   {
@@ -5487,8 +5487,8 @@
    "valor": 11258000,
    "posicion": 3,
    "puntos": 48,
-   "media": 6.9,
-   "racha": "6,3,3,13,5",
+   "media": 7,
+   "racha": "6,3,3,13,6",
    "otrasPujas": []
   },
   {
@@ -5505,8 +5505,8 @@
    "valor": 4610000,
    "posicion": 3,
    "puntos": 20,
-   "media": 2.9,
-   "racha": "2,3,1,4,2",
+   "media": 3,
+   "racha": "2,3,1,4,3",
    "otrasPujas": []
   },
   {
@@ -5879,8 +5879,8 @@
    "valor": 24647000,
    "posicion": 4,
    "puntos": 60,
-   "media": 8.6,
-   "racha": "9,1,14,10,2",
+   "media": 8.4,
+   "racha": "9,1,14,10,1",
    "otrasPujas": [
     {
      "equipo": "Saiyans FC (Fran)",
@@ -5979,8 +5979,8 @@
    "valor": 12566000,
    "posicion": 4,
    "puntos": 25,
-   "media": 6.3,
-   "racha": "2,-,8,10,5",
+   "media": 6.5,
+   "racha": "2,-,8,10,6",
    "otrasPujas": []
   },
   {
@@ -6050,7 +6050,7 @@
    "cuando": "2026-09-19 05:00:26",
    "valor": 6521000,
    "posicion": 4,
-   "puntos": 13,
+   "puntos": 12,
    "media": 2.4,
    "racha": "-,2,2,3,3",
    "otrasPujas": []
@@ -6105,8 +6105,8 @@
    "valor": 1322000,
    "posicion": 3,
    "puntos": 8,
-   "media": 2.7,
-   "racha": "-,-,4,3,1",
+   "media": 3,
+   "racha": "-,-,4,3,2",
    "otrasPujas": [
     {
      "equipo": "Saiyans FC (Fran)",
@@ -6227,8 +6227,8 @@
    "valor": 5186000,
    "posicion": 4,
    "puntos": 29,
-   "media": 4.1,
-   "racha": "8,5,2,4,4",
+   "media": 4.3,
+   "racha": "8,5,2,4,5",
    "otrasPujas": []
   },
   {
@@ -6272,8 +6272,8 @@
    "valor": 10397000,
    "posicion": 3,
    "puntos": 22,
-   "media": 3.1,
-   "racha": "3,3,4,6,2",
+   "media": 3.3,
+   "racha": "3,3,4,6,3",
    "otrasPujas": []
   },
   {
