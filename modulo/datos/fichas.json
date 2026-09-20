@@ -24946,7 +24946,7 @@
   "nombre": "Eneko Jauregi",
   "posicion": 4,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 0,
   "mediaFuera": 2,
   "edad": 30,
@@ -25003,7 +25003,9 @@
     "puntos": null,
     "rival": 9,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,
@@ -26782,7 +26784,7 @@
   "mediaCasa": 2.3,
   "mediaFuera": 4.3,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 2,
   "jornadas": [

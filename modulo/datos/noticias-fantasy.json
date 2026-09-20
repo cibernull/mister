@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-20T12:38:07.394Z",
+ "cuando": "2026-09-20T13:07:58.042Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,30 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Alineaciones confirmadas del Atlético - Real Madrid",
+   "url": "https://www.futbolfantasy.com/partidos/22484-atletico-real-madrid",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "A Galán se le multiplica la competencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151618-a-galan-se-le-multiplica-la-competencia",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Parte médico oficial de Andreas Christensen y periodo estimado de baja",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151617-parte-medico-oficial-de-andreas-christensen-y-periodo-estimado-de-baja",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "José Alberto complica el sitio de Almeida en el Racing",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151616-jose-alberto-complica-el-sitio-de-almeida-en-el-racing",
    "categoria": "análisis"
   },
   {
@@ -458,30 +482,6 @@
    "titulo": "Marcos Fernández llama a la puerta del once",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151541-marcos-fernandez-llama-a-la-puerta-del-once",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Bordalás habla de David Soria, Mayoral y Terrats antes de enfrentarse al Málaga",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151540-bordalas-habla-de-david-soria-mayoral-y-terrats-antes-de-enfrentarse-al-malaga",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "El Real Madrid completa la última sesión sin los tres lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151539-el-real-madrid-completa-la-ultima-sesion-sin-los-tres-lesionados",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Morante vuelve al grupo; Ruibal y Llorente, ausencias antes de viajar a A Coruña",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151538-morante-vuelve-al-grupo-ruibal-y-llorente-ausencias-antes-de-viajar-a-a-coruna",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Laporta repasa la situación deportiva, económica e institucional del club",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151537-laporta-repasa-la-situacion-deportiva-economica-e-institucional-del-club",
-   "categoria": "rueda de prensa"
   }
  ]
 }
