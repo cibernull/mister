@@ -3915,8 +3915,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 4
+  "dia": "2026-09-20",
+  "partidos": 5
  },
  "11092": {
   "nombre": "Andoni Gorosabel",
@@ -6295,14 +6295,14 @@
  "18109": {
   "nombre": "Luis Rioja",
   "posicion": 3,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 5,
-  "mediaFuera": 0,
+  "mediaFuera": 5.5,
   "edad": 32,
   "titular": null,
   "titularidades": 1,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -6328,11 +6328,31 @@
     "rival": 3,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": 11,
+    "rival": 48,
+    "como": "banquillo",
+    "eventos": [
+     "sub_out",
+     "sub_in",
+     "goal"
+    ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 16,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 2
+  "dia": "2026-09-20",
+  "partidos": 3
  },
  "18186": {
   "nombre": "Jules Koundé",
@@ -17124,7 +17144,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-20",
-  "partidos": 4
+  "partidos": 5
  },
  "59581": {
   "nombre": "Luiz Júnior",
@@ -18570,8 +18590,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-15",
-  "partidos": 1
+  "dia": "2026-09-20",
+  "partidos": 2
  },
  "61410": {
   "nombre": "Adrián Rodríguez",
@@ -19479,7 +19499,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-20",
-  "partidos": 4
+  "partidos": 5
  },
  "64038": {
   "nombre": "José Salinas",
@@ -22740,9 +22760,9 @@
     "eventos": []
    }
   ],
-  "asistencias": 2,
-  "dia": "2026-09-14",
-  "partidos": 2
+  "asistencias": 3,
+  "dia": "2026-09-20",
+  "partidos": 3
  },
  "69281": {
   "nombre": "Nacho Pérez",
@@ -26683,13 +26703,6 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -26962,13 +26975,6 @@
     "puntos": null,
     "rival": 48,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -30179,13 +30185,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -30393,13 +30392,6 @@
     "puntos": null,
     "rival": 5,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -31163,7 +31155,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-20",
-  "partidos": 2
+  "partidos": 3
  },
  "4836242": {
   "nombre": "Sebastián Cáceres",
@@ -31929,13 +31921,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -32001,7 +31986,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-20",
-  "partidos": 1
+  "partidos": 2
  },
  "5358737": {
   "nombre": "Unai Santos",

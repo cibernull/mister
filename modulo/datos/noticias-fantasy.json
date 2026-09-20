@@ -1,12 +1,12 @@
 {
- "cuando": "2026-09-20T20:44:32.718Z",
+ "cuando": "2026-09-20T21:04:01.302Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
-   "fecha": "20/09",
-   "titulo": "Sigue en directo el Valencia - Real Sociedad",
-   "url": "https://www.futbolfantasy.com/partidos/22491-valencia-real-sociedad",
+   "fecha": "02/09",
+   "titulo": "Alineaciones probables para la jornada 8 disponibles",
+   "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
   },
   {
@@ -28,10 +28,16 @@
    "categoria": "análisis"
   },
   {
-   "fecha": "02/09",
-   "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
-   "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
-   "categoria": "análisis"
+   "fecha": "20/09",
+   "titulo": "Oskarsson es expulsado con doble amarilla por protestar",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151651-oskarsson-es-expulsado-con-doble-amarilla-por-protestar",
+   "categoria": "sanción"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Jornada 7: Valencia 2-3 Real Sociedad. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22491-valencia-real-sociedad",
+   "categoria": "partido"
   },
   {
    "fecha": "20/09",
@@ -476,12 +482,6 @@
    "titulo": "Abde Rebbach se retira con molestias en el cuádriceps de San Mamés",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151574-abde-rebbach-se-retira-con-molestias-en-el-cuadriceps-de-san-mames",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Ramis analiza el empate y habla de Raúl Moro, Unai Santos, Osambela, Aitor, Moncayola e Iker Muñoz",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151573-ramis-analiza-el-empate-y-habla-de-raul-moro-unai-santos-osambela-aitor-moncayola-e-iker-muno",
-   "categoria": "rueda de prensa"
   }
  ]
 }

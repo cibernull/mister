@@ -2,7 +2,7 @@
  {
   "n": "Betico1993",
   "pos": 8,
-  "pts": 12,
+  "pts": 11,
   "saldo": 44706500,
   "pl": 8055000,
   "rep": 10419000,
@@ -21,8 +21,8 @@
  },
  {
   "n": "Los tocahuevos C.F ( juanito)",
-  "pos": 6,
-  "pts": 104,
+  "pos": 7,
+  "pts": 103,
   "saldo": 22668000,
   "pl": 26477000,
   "rep": 31407000,
@@ -57,7 +57,7 @@
   "blindados": 7,
   "costeSubidas": 10788200,
   "gastoVisto": -809600,
-  "gastoOculto": 7758200,
+  "gastoOculto": 6972200,
   "ajustePujas": 0,
   "libro": {
    "ventas": 171979060,
@@ -72,9 +72,9 @@
  },
  {
   "n": "Legalize F.C (Victor)",
-  "pos": 7,
-  "pts": 100,
-  "saldo": -2661020,
+  "pos": 6,
+  "pts": 105,
+  "saldo": 575980,
   "pl": 54982000,
   "rep": 38225000,
   "ini": 11775000,
@@ -87,14 +87,14 @@
   "blindados": 1,
   "costeSubidas": 3237000,
   "gastoVisto": 0,
-  "gastoOculto": 3237000,
+  "gastoOculto": 0,
   "ajustePujas": 0
  },
  {
   "n": "Cacaculopedopis",
   "pos": 4,
   "pts": 221,
-  "saldo": 13290938,
+  "saldo": 13629538,
   "pl": 47720000,
   "rep": 19942000,
   "ini": 30058000,
@@ -107,7 +107,7 @@
   "blindados": 1,
   "costeSubidas": 338600,
   "gastoVisto": 0,
-  "gastoOculto": 338600,
+  "gastoOculto": 0,
   "ajustePujas": 0
  },
  {
@@ -133,8 +133,8 @@
  {
   "n": "Mario80",
   "pos": 5,
-  "pts": 212,
-  "saldo": 3240350,
+  "pts": 209,
+  "saldo": 4826750,
   "pl": 78314000,
   "rep": 28838000,
   "ini": 21162000,
@@ -147,7 +147,7 @@
   "blindados": 4,
   "costeSubidas": 7453400,
   "gastoVisto": 0,
-  "gastoOculto": 7453400,
+  "gastoOculto": 5867000,
   "ajustePujas": 0
  },
  {
