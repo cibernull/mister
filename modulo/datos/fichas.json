@@ -3336,7 +3336,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 3,
   "edad": 36,
-  "titular": null,
+  "titular": true,
   "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
@@ -11070,11 +11070,20 @@
     "rival": 23,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 2,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-09-19",
-  "partidos": 5
+  "dia": "2026-09-20",
+  "partidos": 4
  },
  "31496": {
   "nombre": "Héctor Bellerín",
@@ -18486,6 +18495,15 @@
      "sub_out",
      "assist"
     ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 2,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 1,
@@ -23285,18 +23303,11 @@
     "rival": 23,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 2,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-20",
-  "partidos": 5
+  "partidos": 4
  },
  "70922": {
   "nombre": "Ibrahima Konaté",
@@ -24076,7 +24087,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 3.3,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 4,
   "jornadas": [
@@ -24730,7 +24741,7 @@
   "mediaCasa": 3,
   "mediaFuera": 2.5,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 2,
   "jornadas": [
@@ -26188,7 +26199,7 @@
   "mediaCasa": 4,
   "mediaFuera": 2,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 1,
   "jornadas": [
@@ -26326,7 +26337,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 3,
   "edad": 19,
-  "titular": null,
+  "titular": true,
   "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
@@ -26868,7 +26879,7 @@
   "mediaCasa": 2.3,
   "mediaFuera": 2,
   "edad": 20,
-  "titular": null,
+  "titular": true,
   "titularidades": 2,
   "suplencias": 2,
   "jornadas": [
@@ -29174,7 +29185,7 @@
   "mediaCasa": 7,
   "mediaFuera": 1.5,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 2,
   "jornadas": [
@@ -30157,7 +30168,7 @@
  "4836153": {
   "nombre": "Jonathan David",
   "posicion": 4,
-  "goles": 2,
+  "goles": 3,
   "tarjetas": 0,
   "mediaCasa": 11,
   "mediaFuera": 10,
@@ -30220,7 +30231,10 @@
     "puntos": null,
     "rival": 15,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out",
+     "goal"
+    ]
    }
   ],
   "asistencias": 1,
