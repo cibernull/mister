@@ -1,18 +1,18 @@
 {
- "cuando": "2026-09-20T18:08:05.069Z",
+ "cuando": "2026-09-20T18:38:11.373Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "20/09",
-   "titulo": "Sigue en directo el Deportivo - Betis",
-   "url": "https://www.futbolfantasy.com/partidos/22486-deportivo-betis",
-   "categoria": "análisis"
+   "titulo": "Alineaciones confirmadas del Valencia - Real Sociedad",
+   "url": "https://www.futbolfantasy.com/partidos/22491-valencia-real-sociedad",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "20/09",
-   "titulo": "Sigue en directo el Villarreal - Levante",
-   "url": "https://www.futbolfantasy.com/partidos/22492-villarreal-levante",
+   "titulo": "Actualizadas las jerarquías de Osasuna: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/osasuna/jerarquias",
    "categoria": "análisis"
   },
   {
@@ -35,8 +35,26 @@
   },
   {
    "fecha": "20/09",
-   "titulo": "Alineaciones confirmadas del Valencia - Real Sociedad",
-   "url": "https://www.futbolfantasy.com/partidos/22491-valencia-real-sociedad",
+   "titulo": "Jornada 7: Deportivo 1-1 Betis. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22486-deportivo-betis",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Jornada 7: Villarreal 3-1 Levante. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22492-villarreal-levante",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Matarazzo explica las novedades del once y lo que espera del Valencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151644-matarazzo-explica-las-novedades-del-once-y-lo-que-espera-del-valencia",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Óscar Sánchez explica por qué repite once y habla de jugar en Mestalla",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151643-oscar-sanchez-explica-por-que-repite-once-y-habla-de-jugar-en-mestalla",
    "categoria": "rueda de prensa"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Íñigo Pérez habla de Comesaña, Foyth, Akhomach, Moleiro, las rotaciones y el Levante",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151566-inigo-perez-habla-de-comesana-foyth-akhomach-moleiro-las-rotaciones-y-el-levante",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Budimir y Camello cruzan fuego en El Sadar",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151565-budimir-y-camello-cruzan-fuego-en-el-sadar",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Mourinho habla de Vinicius, Tchouaméni, Valverde, Simeone y su evolución como entrenador",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151564-mourinho-habla-de-vinicius-tchouameni-valverde-simeone-y-su-evolucion-como-entrenador",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Jornada 7: Osasuna 1-1 Rayo. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22489-osasuna-rayo",
-   "categoria": "partido"
   }
  ]
 }

@@ -1245,9 +1245,19 @@
     "cuando": "2026-09-20T14:15:00.000Z",
     "local": 2,
     "visitante": 15
+   },
+   {
+    "cuando": "2026-09-20T16:30:00.000Z",
+    "local": 6,
+    "visitante": 4
+   },
+   {
+    "cuando": "2026-09-20T16:30:00.000Z",
+    "local": 20,
+    "visitante": 12
    }
   ],
-  "puntos": 26,
+  "puntos": 31,
   "puesto": 3,
   "formacion": "1-3-4-3",
   "once": [
@@ -1255,7 +1265,7 @@
     "id": "53111",
     "nombre": "Álvaro Valles",
     "puesto": 1,
-    "puntos": null,
+    "puntos": 3,
     "jugo": true,
     "capitan": false
    },
@@ -1263,7 +1273,7 @@
     "id": "34",
     "nombre": "José Giménez",
     "puesto": 2,
-    "puntos": null,
+    "puntos": 2,
     "jugo": true,
     "capitan": false
    },
@@ -1271,7 +1281,7 @@
     "id": "63",
     "nombre": "Marc Bartra",
     "puesto": 2,
-    "puntos": null,
+    "puntos": 1,
     "jugo": true,
     "capitan": false
    },
@@ -1303,7 +1313,7 @@
     "id": "27907",
     "nombre": "Roger Brugué",
     "puesto": 3,
-    "puntos": null,
+    "puntos": 2,
     "jugo": true,
     "capitan": false
    },
@@ -1319,8 +1329,8 @@
     "id": "36410",
     "nombre": "Pierre-Emerick Aubameyang",
     "puesto": 4,
-    "puntos": null,
-    "jugo": false,
+    "puntos": 2,
+    "jugo": true,
     "capitan": false
    },
    {
@@ -1369,7 +1379,7 @@
     "id": "3845074",
     "nombre": "Nathan Saliba",
     "puesto": 3,
-    "puntos": 1,
+    "puntos": 2,
     "jugo": true,
     "capitan": false
    },
