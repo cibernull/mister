@@ -1,6 +1,14 @@
 {
- "saldo": 4176376,
+ "saldo": -24032500,
  "apuntes": [
+  {
+   "cuando": 1789873200,
+   "fecha": "2026-09-20 05:00",
+   "motivo": "Raphinha a Mister",
+   "tipo": "Compra",
+   "importe": -28208876,
+   "saldo": -24032500
+  },
   {
    "cuando": 1789862260,
    "fecha": "2026-09-20 01:57",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -1180860,
    "saldo": 4260481
-  },
-  {
-   "cuando": 1787573164,
-   "fecha": "2026-08-24 14:06",
-   "motivo": "Modificación de cláusula (100%) de Jorge Salinas",
-   "tipo": "Penalización",
-   "importe": -783400,
-   "saldo": 5441341
   }
  ]
 }

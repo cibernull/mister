@@ -1138,6 +1138,14 @@
     "capitan": false
    },
    {
+    "id": "48657",
+    "nombre": "Raphinha",
+    "puesto": 4,
+    "puntos": 21,
+    "jugo": true,
+    "capitan": false
+   },
+   {
     "id": "17290",
     "nombre": "Sergio Camello",
     "puesto": 4,
@@ -1323,6 +1331,14 @@
    }
   ],
   "banquillo": [
+   {
+    "id": "48657",
+    "nombre": "Raphinha",
+    "puesto": 4,
+    "puntos": 21,
+    "jugo": true,
+    "capitan": false
+   },
    {
     "id": "17290",
     "nombre": "Sergio Camello",
