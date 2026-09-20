@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-20T12:24:42.248Z",
+ "cuando": "2026-09-20T12:38:07.394Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,18 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Osasuna se ejercitó este domingo sin los cuatro lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151615-osasuna-se-ejercito-este-domingo-sin-los-cuatro-lesionados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Toni Martínez entra en crisis de gol",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151614-toni-martinez-entra-en-crisis-de-gol",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Laporta repasa la situación deportiva, económica e institucional del club",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151537-laporta-repasa-la-situacion-deportiva-economica-e-institucional-del-club",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Hinojo sigue perdiendo terreno ante Hartman",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151536-hinojo-sigue-perdiendo-terreno-ante-hartman",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Lista de Ramis para recibir al Rayo sin los cuatro lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151535-lista-de-ramis-para-recibir-al-rayo-sin-los-cuatro-lesionados",
-   "categoria": "convocatoria"
   }
  ]
 }
