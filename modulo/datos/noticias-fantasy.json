@@ -1,12 +1,18 @@
 {
- "cuando": "2026-09-20T16:07:52.775Z",
+ "cuando": "2026-09-20T16:37:57.367Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "20/09",
-   "titulo": "Sigue en directo el Atlético - Real Madrid",
-   "url": "https://www.futbolfantasy.com/partidos/22484-atletico-real-madrid",
+   "titulo": "Sigue en directo el Deportivo - Betis",
+   "url": "https://www.futbolfantasy.com/partidos/22486-deportivo-betis",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Sigue en directo el Villarreal - Levante",
+   "url": "https://www.futbolfantasy.com/partidos/22492-villarreal-levante",
    "categoria": "análisis"
   },
   {
@@ -26,6 +32,24 @@
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Birdie atlético para dinamitar LaLiga",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151634-birdie-atletico-para-dinamitar-laliga",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Jornada 7: Atlético 2-0 Real Madrid. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22484-atletico-real-madrid",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Pellegrini, sobre Isco, Deossa, las rotaciones y el planteamiento contra el Deportivo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151633-pellegrini-sobre-isco-deossa-las-rotaciones-y-el-planteamiento-contra-el-deportivo",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "20/09",
@@ -56,18 +80,6 @@
    "titulo": "Amatucci se cae de la convocatoria por un proceso viral",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151627-amatucci-se-cae-de-la-convocatoria-por-un-proceso-viral",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Alineaciones confirmadas del Deportivo - Betis",
-   "url": "https://www.futbolfantasy.com/partidos/22486-deportivo-betis",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Alineaciones confirmadas del Villarreal - Levante",
-   "url": "https://www.futbolfantasy.com/partidos/22492-villarreal-levante",
-   "categoria": "rueda de prensa"
   },
   {
    "fecha": "20/09",
@@ -470,18 +482,6 @@
    "titulo": "Lista de Matarazzo para visitar Mestalla sin Odriozola ni Zubeldia",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151556-lista-de-matarazzo-para-visitar-mestalla-sin-odriozola-ni-zubeldia",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Bryan, donde aprieta la competencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151555-bryan-donde-aprieta-la-competencia",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "San José espera un partido disputado y destaca la importancia de los duelos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151554-san-jose-espera-un-partido-disputado-y-destaca-la-importancia-de-los-duelos",
-   "categoria": "rueda de prensa"
   }
  ]
 }

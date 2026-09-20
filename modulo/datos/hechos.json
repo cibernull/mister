@@ -2886,9 +2886,9 @@
    "cuando": "2026-08-20 05:00:33",
    "valor": 11258000,
    "posicion": 3,
-   "puntos": 44,
+   "puntos": 45,
    "media": 7.2,
-   "racha": "4,6,3,3,13",
+   "racha": "6,3,3,13,-",
    "otrasPujas": []
   },
   {
@@ -2940,9 +2940,9 @@
    "cuando": "2026-08-20 10:10:25",
    "valor": 9083000,
    "posicion": 2,
-   "puntos": 23,
+   "puntos": 27,
    "media": 4.4,
-   "racha": "3,2,-1,10,8",
+   "racha": "2,-1,10,8,-",
    "otrasPujas": []
   },
   {
@@ -2977,8 +2977,8 @@
    "valor": 4417000,
    "posicion": 2,
    "puntos": 24,
-   "media": 3.8,
-   "racha": "5,3,5,3,3",
+   "media": 4,
+   "racha": "3,5,3,3,5",
    "otrasPujas": []
   },
   {
@@ -3012,9 +3012,9 @@
    "cuando": "2026-08-21 05:00:31",
    "valor": 5673000,
    "posicion": 3,
-   "puntos": 35,
-   "media": 5.8,
-   "racha": "6,5,3,11,-",
+   "puntos": 36,
+   "media": 6,
+   "racha": "5,3,11,-,7",
    "otrasPujas": [
     {
      "equipo": "Neky F.C. (Sergio)",
@@ -3036,8 +3036,8 @@
    "valor": 162000,
    "posicion": 2,
    "puntos": 3,
-   "media": 1,
-   "racha": "-,-,-,1,2",
+   "media": 0.8,
+   "racha": "-,-,1,2,0",
    "otrasPujas": []
   },
   {
@@ -3185,8 +3185,8 @@
    "valor": 2134000,
    "posicion": 3,
    "puntos": 22,
-   "media": 3.8,
-   "racha": "4,2,2,-,7",
+   "media": 3.7,
+   "racha": "2,2,-,7,3",
    "otrasPujas": []
   },
   {
@@ -3243,7 +3243,7 @@
    "cuando": "2026-08-23 09:47:13",
    "valor": 5384000,
    "posicion": 2,
-   "puntos": 20,
+   "puntos": 21,
    "media": 4,
    "racha": "3,7,4,4,2",
    "otrasPujas": []
@@ -3279,9 +3279,9 @@
    "cuando": "2026-08-23 17:02:13",
    "valor": 160000,
    "posicion": 3,
-   "puntos": 10,
-   "media": 2,
-   "racha": "2,2,-,-,-",
+   "puntos": 12,
+   "media": 3,
+   "racha": "2,-,-,-,6",
    "otrasPujas": []
   },
   {
@@ -3345,7 +3345,7 @@
    "posicion": 4,
    "puntos": 1,
    "media": 0.5,
-   "racha": "0,1,-,-,-",
+   "racha": "1,-,-,-,-",
    "otrasPujas": []
   },
   {
@@ -3361,9 +3361,9 @@
    "cuando": "2026-08-24 05:00:29",
    "valor": 12797000,
    "posicion": 3,
-   "puntos": 51,
+   "puntos": 53,
    "media": 8.3,
-   "racha": "3,18,2,3,12",
+   "racha": "18,2,3,12,-",
    "otrasPujas": []
   },
   {
@@ -3397,9 +3397,9 @@
    "cuando": "2026-08-24 16:25:26",
    "valor": 6480000,
    "posicion": 4,
-   "puntos": 28,
-   "media": 3.8,
-   "racha": "4,2,10,4,1",
+   "puntos": 29,
+   "media": 4.1,
+   "racha": "2,10,4,1,6",
    "otrasPujas": []
   },
   {
@@ -3456,9 +3456,9 @@
    "cuando": "2026-08-25 05:00:30",
    "valor": 2821000,
    "posicion": 2,
-   "puntos": 24,
+   "puntos": 26,
    "media": 3.7,
-   "racha": "6,2,3,2,4",
+   "racha": "2,3,2,4,4",
    "otrasPujas": []
   },
   {
@@ -3511,8 +3511,8 @@
    "valor": 1837000,
    "posicion": 3,
    "puntos": 18,
-   "media": 2.8,
-   "racha": "4,2,2,4,3",
+   "media": 2.6,
+   "racha": "2,2,4,3,1",
    "otrasPujas": []
   },
   {
@@ -3674,7 +3674,7 @@
    "posicion": 3,
    "puntos": 15,
    "media": 7.5,
-   "racha": "4,-,-,-,-",
+   "racha": "-,-,-,-,-",
    "otrasPujas": []
   },
   {
@@ -3785,9 +3785,9 @@
    "cuando": "2026-08-27 17:37:55",
    "valor": 6742000,
    "posicion": 3,
-   "puntos": 28,
+   "puntos": 30,
    "media": 4.3,
-   "racha": "3,5,6,4,4",
+   "racha": "5,6,4,4,4",
    "otrasPujas": []
   },
   {
@@ -4106,7 +4106,7 @@
    "cuando": "2026-08-30 12:42:40",
    "valor": 1707000,
    "posicion": 3,
-   "puntos": 35,
+   "puntos": 36,
    "media": 8.8,
    "racha": "-,4,19,1,11",
    "otrasPujas": []
@@ -4201,7 +4201,7 @@
    "cuando": "2026-08-30 17:00:21",
    "valor": 9153000,
    "posicion": 2,
-   "puntos": 26,
+   "puntos": 27,
    "media": 5.2,
    "racha": "3,4,13,5,1",
    "otrasPujas": []
@@ -4219,7 +4219,7 @@
    "cuando": "2026-08-30 17:00:21",
    "valor": 5323000,
    "posicion": 3,
-   "puntos": 27,
+   "puntos": 28,
    "media": 5.4,
    "racha": "2,3,13,6,3",
    "otrasPujas": []
@@ -4237,9 +4237,9 @@
    "cuando": "2026-08-31 05:00:31",
    "valor": 4650000,
    "posicion": 3,
-   "puntos": 21,
-   "media": 3.6,
-   "racha": "5,-,4,1,2",
+   "puntos": 23,
+   "media": 3.8,
+   "racha": "-,4,1,2,5",
    "otrasPujas": []
   },
   {
@@ -4291,9 +4291,9 @@
    "cuando": "2026-09-01 05:00:34",
    "valor": 15304000,
    "posicion": 3,
-   "puntos": 51,
+   "puntos": 53,
    "media": 8.3,
-   "racha": "7,10,9,10,6",
+   "racha": "10,9,10,6,-",
    "otrasPujas": []
   },
   {
@@ -4329,7 +4329,7 @@
    "posicion": 2,
    "puntos": 2,
    "media": 1,
-   "racha": "0,-,-,-,-",
+   "racha": "-,-,-,-,-",
    "otrasPujas": []
   },
   {
@@ -4363,7 +4363,7 @@
    "cuando": "2026-09-01 16:35:49",
    "valor": 1472000,
    "posicion": 1,
-   "puntos": 12,
+   "puntos": 13,
    "media": 6,
    "racha": "-,-,-,9,3",
    "otrasPujas": []
@@ -4435,9 +4435,9 @@
    "cuando": "2026-09-02 07:02:55",
    "valor": 10924000,
    "posicion": 4,
-   "puntos": 16,
+   "puntos": 17,
    "media": 2.7,
-   "racha": "2,10,-1,1,2",
+   "racha": "10,-1,1,2,-",
    "otrasPujas": []
   },
   {
@@ -4653,8 +4653,8 @@
    "valor": 2134000,
    "posicion": 3,
    "puntos": 22,
-   "media": 3.8,
-   "racha": "4,2,2,-,7",
+   "media": 3.7,
+   "racha": "2,2,-,7,3",
    "otrasPujas": []
   },
   {
@@ -4688,7 +4688,7 @@
    "cuando": "2026-09-04 05:00:25",
    "valor": 1260000,
    "posicion": 3,
-   "puntos": 16,
+   "puntos": 17,
    "media": 3.2,
    "racha": "2,2,6,3,3",
    "otrasPujas": []
@@ -4861,7 +4861,7 @@
    "posicion": 3,
    "puntos": 15,
    "media": 7.5,
-   "racha": "4,-,-,-,-",
+   "racha": "-,-,-,-,-",
    "otrasPujas": []
   },
   {
@@ -5028,7 +5028,7 @@
    "posicion": 4,
    "puntos": 7,
    "media": 3.5,
-   "racha": "5,2,-,-,-",
+   "racha": "2,-,-,-,-",
    "otrasPujas": []
   },
   {
@@ -5202,7 +5202,7 @@
    "cuando": "2026-09-09 05:00:34",
    "valor": 12072000,
    "posicion": 3,
-   "puntos": 44,
+   "puntos": 45,
    "media": 7.3,
    "racha": "6,3,3,5,16",
    "otrasPujas": []
@@ -5311,8 +5311,8 @@
    "valor": 1693000,
    "posicion": 3,
    "puntos": 20,
-   "media": 3,
-   "racha": "4,2,4,2,2",
+   "media": 2.9,
+   "racha": "2,4,2,2,2",
    "otrasPujas": []
   },
   {
@@ -5486,9 +5486,9 @@
    "cuando": "2026-09-11 17:05:10",
    "valor": 11258000,
    "posicion": 3,
-   "puntos": 44,
+   "puntos": 45,
    "media": 7.2,
-   "racha": "4,6,3,3,13",
+   "racha": "6,3,3,13,-",
    "otrasPujas": []
   },
   {
@@ -5576,7 +5576,7 @@
    "cuando": "2026-09-13 05:00:27",
    "valor": 1472000,
    "posicion": 1,
-   "puntos": 12,
+   "puntos": 13,
    "media": 6,
    "racha": "-,-,-,9,3",
    "otrasPujas": []
@@ -5707,9 +5707,9 @@
    "cuando": "2026-09-14 17:09:38",
    "valor": 4650000,
    "posicion": 3,
-   "puntos": 21,
-   "media": 3.6,
-   "racha": "5,-,4,1,2",
+   "puntos": 23,
+   "media": 3.8,
+   "racha": "-,4,1,2,5",
    "otrasPujas": []
   },
   {
@@ -5788,7 +5788,7 @@
    "cuando": "2026-09-16 05:00:28",
    "valor": 2860000,
    "posicion": 3,
-   "puntos": 11,
+   "puntos": 12,
    "media": 3.7,
    "racha": "-,-,5,1,5",
    "otrasPujas": []
@@ -5806,7 +5806,7 @@
    "cuando": "2026-09-17 05:00:27",
    "valor": 1090000,
    "posicion": 2,
-   "puntos": 8,
+   "puntos": 9,
    "media": 4,
    "racha": "-,-,-,4,4",
    "otrasPujas": []
@@ -5825,8 +5825,8 @@
    "valor": 1693000,
    "posicion": 3,
    "puntos": 20,
-   "media": 3,
-   "racha": "4,2,4,2,2",
+   "media": 2.9,
+   "racha": "2,4,2,2,2",
    "otrasPujas": []
   },
   {
@@ -5842,9 +5842,9 @@
    "cuando": "2026-09-17 15:01:28",
    "valor": 12797000,
    "posicion": 3,
-   "puntos": 51,
+   "puntos": 53,
    "media": 8.3,
-   "racha": "3,18,2,3,12",
+   "racha": "18,2,3,12,-",
    "otrasPujas": []
   },
   {
@@ -5878,9 +5878,9 @@
    "cuando": "2026-09-17 17:00:20",
    "valor": 24647000,
    "posicion": 4,
-   "puntos": 59,
+   "puntos": 61,
    "media": 9.7,
-   "racha": "3,9,1,14,10",
+   "racha": "9,1,14,10,-",
    "otrasPujas": [
     {
      "equipo": "Saiyans FC (Fran)",
@@ -5901,9 +5901,9 @@
    "cuando": "2026-09-17 17:01:47",
    "valor": 2821000,
    "posicion": 2,
-   "puntos": 24,
+   "puntos": 26,
    "media": 3.7,
-   "racha": "6,2,3,2,4",
+   "racha": "2,3,2,4,4",
    "otrasPujas": []
   },
   {
