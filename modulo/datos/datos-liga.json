@@ -1118,6 +1118,16 @@
  ],
  "movimientos": [
   {
+   "id": "70941",
+   "nombre": "Bil Nsongo",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 5170000,
+   "tipo": "normal",
+   "fecha": "2026-09-20 04:47:22",
+   "pos": 4
+  },
+  {
    "id": "25579",
    "nombre": "Oriol Rey",
    "de": "Niutin FC (Isaac)",
@@ -4492,6 +4502,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Bil Nsongo",
+     "id": "70941",
+     "tipo": "venta",
+     "importe": 5170000,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
      "j": "Thomas Lemar",
      "id": "12949",
      "tipo": "compra",
@@ -5384,8 +5402,8 @@
     "70941": {
      "nombre": "Bil Nsongo",
      "compras": 2105021,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5170000,
+     "ops": 2
     },
     "70945": {
      "nombre": "Diego Villares",

@@ -5728,6 +5728,23 @@
    "puntos": 16,
    "media": 3.2,
    "racha": "2,2,6,3,3"
+  },
+  {
+   "idTransfer": 549366013,
+   "idJugador": "70941",
+   "nombre": "Bil Nsongo",
+   "de": "Neky F.C. (Sergio)",
+   "a": "Mister",
+   "idUcDe": 12493688,
+   "idUcA": 0,
+   "importe": 5170000,
+   "tipo": "normal",
+   "cuando": "2026-09-20 04:47:22",
+   "valor": 5170000,
+   "posicion": 4,
+   "puntos": 25,
+   "media": 4.2,
+   "racha": "2,8,5,2,4"
   }
  ],
  "salidas": [
