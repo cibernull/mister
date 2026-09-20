@@ -3408,13 +3408,6 @@
     "rival": 17,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 4,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23357,7 +23350,7 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 3.3,
-  "mediaFuera": 2.3,
+  "mediaFuera": 3,
   "edad": 32,
   "titular": null,
   "titularidades": 3,
@@ -23417,7 +23410,7 @@
    },
    {
     "jornada": 7,
-    "puntos": 4,
+    "puntos": 6,
     "rival": 2,
     "como": "banquillo",
     "eventos": [
@@ -24482,13 +24475,6 @@
     "rival": 17,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 4,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24554,13 +24540,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 4,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24628,7 +24607,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-09-20",
-  "partidos": 2
+  "partidos": 1
  },
  "70947": {
   "nombre": "Noé Carrillo",
@@ -26619,15 +26598,6 @@
     "rival": 17,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 4,
-    "como": "inicio",
-    "eventos": [
-     "yellow"
-    ]
    }
   ],
   "asistencias": 0,
@@ -27185,13 +27155,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 4,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28213,13 +28176,6 @@
     "jornada": 6,
     "puntos": 3,
     "rival": 13,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 12,
     "como": "inicio",
     "eventos": []
    }
@@ -29885,13 +29841,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 12,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,

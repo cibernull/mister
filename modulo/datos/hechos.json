@@ -2886,9 +2886,9 @@
    "cuando": "2026-08-20 05:00:33",
    "valor": 11258000,
    "posicion": 3,
-   "puntos": 45,
-   "media": 7.2,
-   "racha": "6,3,3,13,-",
+   "puntos": 48,
+   "media": 6.9,
+   "racha": "6,3,3,13,5",
    "otrasPujas": []
   },
   {
@@ -2940,9 +2940,9 @@
    "cuando": "2026-08-20 10:10:25",
    "valor": 9083000,
    "posicion": 2,
-   "puntos": 27,
-   "media": 4.4,
-   "racha": "2,-1,10,8,-",
+   "puntos": 29,
+   "media": 4.8,
+   "racha": "2,-1,10,8,7",
    "otrasPujas": []
   },
   {
@@ -3166,7 +3166,7 @@
    "cuando": "2026-08-22 15:01:11",
    "valor": 10726000,
    "posicion": 1,
-   "puntos": 46,
+   "puntos": 47,
    "media": 7.7,
    "racha": "6,2,12,9,9",
    "otrasPujas": []
@@ -3361,9 +3361,9 @@
    "cuando": "2026-08-24 05:00:29",
    "valor": 12797000,
    "posicion": 3,
-   "puntos": 53,
-   "media": 8.3,
-   "racha": "18,2,3,12,-",
+   "puntos": 55,
+   "media": 7.9,
+   "racha": "18,2,3,12,5",
    "otrasPujas": []
   },
   {
@@ -3916,7 +3916,7 @@
    "cuando": "2026-08-28 17:00:18",
    "valor": 10726000,
    "posicion": 1,
-   "puntos": 46,
+   "puntos": 47,
    "media": 7.7,
    "racha": "6,2,12,9,9",
    "otrasPujas": [
@@ -4011,7 +4011,7 @@
    "cuando": "2026-08-29 05:00:28",
    "valor": 6057000,
    "posicion": 2,
-   "puntos": 23,
+   "puntos": 24,
    "media": 5.8,
    "racha": "3,8,6,6,-",
    "otrasPujas": [
@@ -4292,8 +4292,8 @@
    "valor": 15304000,
    "posicion": 3,
    "puntos": 53,
-   "media": 8.3,
-   "racha": "10,9,10,6,-",
+   "media": 7.6,
+   "racha": "10,9,10,6,3",
    "otrasPujas": []
   },
   {
@@ -4345,7 +4345,7 @@
    "cuando": "2026-09-01 16:12:29",
    "valor": 7321000,
    "posicion": 2,
-   "puntos": 30,
+   "puntos": 31,
    "media": 6,
    "racha": "5,-1,6,13,7",
    "otrasPujas": []
@@ -4363,7 +4363,7 @@
    "cuando": "2026-09-01 16:35:49",
    "valor": 1472000,
    "posicion": 1,
-   "puntos": 13,
+   "puntos": 12,
    "media": 6,
    "racha": "-,-,-,9,3",
    "otrasPujas": []
@@ -4435,9 +4435,9 @@
    "cuando": "2026-09-02 07:02:55",
    "valor": 10924000,
    "posicion": 4,
-   "puntos": 17,
-   "media": 2.7,
-   "racha": "10,-1,1,2,-",
+   "puntos": 18,
+   "media": 2.6,
+   "racha": "10,-1,1,2,2",
    "otrasPujas": []
   },
   {
@@ -4530,7 +4530,7 @@
    "cuando": "2026-09-03 05:00:31",
    "valor": 2266000,
    "posicion": 2,
-   "puntos": 15,
+   "puntos": 16,
    "media": 3,
    "racha": "3,2,6,3,1",
    "otrasPujas": [
@@ -4634,7 +4634,7 @@
    "cuando": "2026-09-03 17:03:45",
    "valor": 6841000,
    "posicion": 3,
-   "puntos": 14,
+   "puntos": 15,
    "media": 3.5,
    "racha": "4,2,3,5,-",
    "otrasPujas": []
@@ -4670,7 +4670,7 @@
    "cuando": "2026-09-03 18:26:54",
    "valor": 5638000,
    "posicion": 4,
-   "puntos": 17,
+   "puntos": 21,
    "media": 2.8,
    "racha": "5,2,3,0,5",
    "otrasPujas": []
@@ -4913,7 +4913,7 @@
    "cuando": "2026-09-06 05:00:31",
    "valor": 4413000,
    "posicion": 2,
-   "puntos": 23,
+   "puntos": 24,
    "media": 3.8,
    "racha": "4,6,3,4,3",
    "otrasPujas": []
@@ -4949,7 +4949,7 @@
    "cuando": "2026-09-06 08:54:43",
    "valor": 985000,
    "posicion": 2,
-   "puntos": 8,
+   "puntos": 9,
    "media": 2.7,
    "racha": "3,0,-,-,-",
    "otrasPujas": []
@@ -4967,7 +4967,7 @@
    "cuando": "2026-09-06 11:00:55",
    "valor": 5943000,
    "posicion": 3,
-   "puntos": 27,
+   "puntos": 28,
    "media": 4.5,
    "racha": "3,8,4,6,3",
    "otrasPujas": []
@@ -5143,7 +5143,7 @@
    "cuando": "2026-09-08 08:21:37",
    "valor": 6057000,
    "posicion": 2,
-   "puntos": 23,
+   "puntos": 24,
    "media": 5.8,
    "racha": "3,8,6,6,-",
    "otrasPujas": []
@@ -5486,9 +5486,9 @@
    "cuando": "2026-09-11 17:05:10",
    "valor": 11258000,
    "posicion": 3,
-   "puntos": 45,
-   "media": 7.2,
-   "racha": "6,3,3,13,-",
+   "puntos": 48,
+   "media": 6.9,
+   "racha": "6,3,3,13,5",
    "otrasPujas": []
   },
   {
@@ -5558,7 +5558,7 @@
    "cuando": "2026-09-12 17:03:31",
    "valor": 6725000,
    "posicion": 2,
-   "puntos": 18,
+   "puntos": 19,
    "media": 3.6,
    "racha": "5,0,3,5,-",
    "otrasPujas": []
@@ -5576,7 +5576,7 @@
    "cuando": "2026-09-13 05:00:27",
    "valor": 1472000,
    "posicion": 1,
-   "puntos": 13,
+   "puntos": 12,
    "media": 6,
    "racha": "-,-,-,9,3",
    "otrasPujas": []
@@ -5842,9 +5842,9 @@
    "cuando": "2026-09-17 15:01:28",
    "valor": 12797000,
    "posicion": 3,
-   "puntos": 53,
-   "media": 8.3,
-   "racha": "18,2,3,12,-",
+   "puntos": 55,
+   "media": 7.9,
+   "racha": "18,2,3,12,5",
    "otrasPujas": []
   },
   {
@@ -5878,9 +5878,9 @@
    "cuando": "2026-09-17 17:00:20",
    "valor": 24647000,
    "posicion": 4,
-   "puntos": 61,
-   "media": 9.7,
-   "racha": "9,1,14,10,-",
+   "puntos": 60,
+   "media": 8.6,
+   "racha": "9,1,14,10,2",
    "otrasPujas": [
     {
      "equipo": "Saiyans FC (Fran)",
