@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-20T17:37:54.414Z",
+ "cuando": "2026-09-20T18:08:05.069Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -32,6 +32,12 @@
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Alineaciones confirmadas del Valencia - Real Sociedad",
+   "url": "https://www.futbolfantasy.com/partidos/22491-valencia-real-sociedad",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "20/09",
@@ -476,12 +482,6 @@
    "titulo": "Jornada 7: Osasuna 1-1 Rayo. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22489-osasuna-rayo",
    "categoria": "partido"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Raúl Moro no puede terminar el partido por lesión",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151563-raul-moro-no-puede-terminar-el-partido-por-lesion",
-   "categoria": "lesión"
   }
  ]
 }
