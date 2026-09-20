@@ -37,7 +37,18 @@ export type Traspaso = {
   puntos: number
   media: number
   racha: string
+  /**
+   * Lo que pujaron los que perdieron la subasta, tal cual lo publica Mister al
+   * resolverse (`other_bids`). Es la única cifra de dinero de un rival que
+   * Mister enseña, y vale como suelo: ese día tenía al menos eso. Vacío si no
+   * hubo más pujas o si el traspaso no fue una subasta. Los guardados antes de
+   * que se leyera este campo no lo traen.
+   */
+  otrasPujas?: OtraPuja[]
 }
+
+/** Una puja perdedora en una subasta del mercado. */
+export type OtraPuja = { equipo: string; puja: number }
 
 /** Un jugador que se fue de LaLiga: deja de estar en cualquier plantilla. */
 export type Salida = { idJugador: string; cuando: string }
@@ -84,6 +95,24 @@ const num = (x: unknown, campo: string): number => {
 const texto = (x: unknown, campo: string): string => {
   if (typeof x === 'string' && x !== '') return x
   throw new Error(`el campo ${campo} no es un texto con contenido: ${JSON.stringify(x)}`)
+}
+
+/**
+ * Las pujas perdedoras de una subasta. A diferencia del resto del traspaso,
+ * una puja mal formada no tira la pasada entera: se descarta esa puja y ya.
+ * Es un dato accesorio —el traspaso vale igual sin ella— y Mister solo lo
+ * trae en las subastas del mercado, así que lo normal es que falte.
+ */
+const leerOtrasPujas = (x: unknown): OtraPuja[] => {
+  if (!Array.isArray(x)) return []
+  const salida: OtraPuja[] = []
+  for (const p of x) {
+    if (p === null || typeof p !== 'object') continue
+    const { name, bid } = p as Record<string, unknown>
+    if (typeof name !== 'string' || name === '' || typeof bid !== 'number' || !Number.isFinite(bid)) continue
+    salida.push({ equipo: name, puja: bid })
+  }
+  return salida
 }
 
 /**
@@ -141,6 +170,7 @@ export function extraerHechos(volcado: Volcado): Hechos {
               puntos: num(m['points'] ?? 0, 'points'),
               media: typeof m['avg'] === 'number' ? m['avg'] : 0,
               racha: typeof m['streak'] === 'string' ? m['streak'] : '',
+              otrasPujas: leerOtrasPujas(m['other_bids']),
             })
           }
           break

@@ -53,6 +53,36 @@ describe('extraerHechos', () => {
     expect(h.traspasos[0]!.valor).toBe(1_250_000)
   })
 
+  it('guarda las pujas rivales de una subasta, que Mister publica al resolverse', () => {
+    // Son la única cifra de dinero de un rival que Mister publica: lo que
+    // pujó por un jugador. Cada una es un suelo de lo que tenía ese día.
+    const h = extraerHechos({
+      paginas: [
+        pagina(0, '2026-09-20T03:11:00Z', [
+          traspaso({
+            other_bids: [
+              { name: 'Neky F.C. (Sergio)', bid: 28_056_362 },
+              { name: 'Mario80', bid: 20_593_630 },
+            ],
+          }),
+        ]),
+      ],
+    })
+    expect(h.traspasos[0]!.otrasPujas).toEqual([
+      { equipo: 'Neky F.C. (Sergio)', puja: 28_056_362 },
+      { equipo: 'Mario80', puja: 20_593_630 },
+    ])
+  })
+
+  it('un traspaso sin pujas rivales las deja vacías, y una puja rota no pasa por buena', () => {
+    const sin = extraerHechos({ paginas: [pagina(0, '2026-09-20T03:11:00Z', [traspaso({ other_bids: null })])] })
+    expect(sin.traspasos[0]!.otrasPujas).toEqual([])
+    const rota = extraerHechos({
+      paginas: [pagina(0, '2026-09-20T03:11:00Z', [traspaso({ other_bids: [{ name: 'X', bid: 'mucho' }] })])],
+    })
+    expect(rota.traspasos[0]!.otrasPujas).toEqual([])
+  })
+
   it('trae la posición del jugador, que es lo que pinta el dorsal de color', () => {
     const h = extraerHechos({ paginas: [pagina(0, '2026-09-03T10:00:00Z', [traspaso()])] })
     expect(h.traspasos[0]!.posicion).toBe(3)

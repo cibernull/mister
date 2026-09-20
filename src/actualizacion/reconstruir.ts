@@ -62,6 +62,13 @@ export type Equipo = {
   comprometido?: number
   /** Lo que se le estima gastado en cláusulas y el feed no publica. */
   gastoOculto?: number
+  /**
+   * Dinero que se le ha sumado porque pujó por encima de lo que le
+   * calculábamos: una puja es un suelo de lo que tenía. Solo rivales; el
+   * propio equipo sale del libro de caja y no se ajusta. Ya está dentro de
+   * `saldo`; se guarda aparte para poder decirlo.
+   */
+  ajustePujas?: number
   /** Las cuentas propias tal como las cuenta el libro de caja de Mister. */
   libro?: {
     inicio: number

@@ -1645,9 +1645,17 @@ const cuentasDe = (e) => e.libro
         <div class="l"><span>Ha vendido por</span><span class="mas">+${eur(e.ven)}</span></div>
         <div class="l"><span>Ha fichado por</span><span class="menos">−${eur(e.com)}</span></div>${
           e.gastoOculto ? `<div class="l"><span>Estimado en subir cláusulas</span><span class="menos">−${eur(e.gastoOculto)}</span></div>` : ''
+        }${
+          // Una puja es un suelo: Mister no deja pujar por encima del tope. Si
+          // pujó más de lo que le calculábamos, ese dinero lo tenía.
+          e.ajustePujas > 0
+            ? `<div class="l"><span>Demostrado en sus pujas que tenía además</span><span class="mas">+${eur(e.ajustePujas)}</span></div>`
+            : ''
         }
         <div class="l tot caja"><span>Le queda en caja</span><span>${eur(e.saldo)}</span></div>
-        <div class="l sub-caja"><span>Estimado: de él no hay libro de caja</span><span>léelo como «no más de esto»</span></div>
+        <div class="l sub-caja"><span>Estimado: de él no hay libro de caja</span><span>${
+          e.ajustePujas > 0 ? 'contrastado con sus pujas' : 'léelo como «no más de esto»'
+        }</span></div>
         <div class="l"><span>Más su plantilla, que vale</span><span>${eur(e.pl)}</span></div>
         <div class="l tot"><span>Patrimonio hoy</span><span>${eur(e.patrimonio)}</span></div>
         <div class="l"><span>Sobre los 50.000.000 € de salida</span><span class="${clase(e.sobre50)}">${firma(e.sobre50)}</span></div>

@@ -1,0 +1,2681 @@
+{
+ "ajustes": {
+  "Neky F.C. (Sergio)": 807125
+ },
+ "vistas": {
+  "536228207": [
+   {
+    "idTransfer": 536228207,
+    "cuando": "2026-08-03 17:00:10",
+    "jugador": "Alejandro Catena",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 7987616,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536230690": [
+   {
+    "idTransfer": 536230690,
+    "cuando": "2026-08-03 17:00:10",
+    "jugador": "Jon Moncayola",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2314570,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 536230690,
+    "cuando": "2026-08-03 17:00:10",
+    "jugador": "Jon Moncayola",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 2201000,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 536230690,
+    "cuando": "2026-08-03 17:00:10",
+    "jugador": "Jon Moncayola",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2194761,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536230695": [
+   {
+    "idTransfer": 536230695,
+    "cuando": "2026-08-03 17:00:10",
+    "jugador": "Justin De Haas",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2832890,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 536230695,
+    "cuando": "2026-08-03 17:00:10",
+    "jugador": "Justin De Haas",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 2660000,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 536230695,
+    "cuando": "2026-08-03 17:00:10",
+    "jugador": "Justin De Haas",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2647130,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536231211": [
+   {
+    "idTransfer": 536231211,
+    "cuando": "2026-08-03 17:00:10",
+    "jugador": "Iago Aspas",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2131720,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 536231211,
+    "cuando": "2026-08-03 17:00:10",
+    "jugador": "Iago Aspas",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 2010000,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536231965": [
+   {
+    "idTransfer": 536231965,
+    "cuando": "2026-08-03 17:00:10",
+    "jugador": "Davinchi",
+    "equipo": "Cacaculopedopis",
+    "puja": 914960,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536308614": [
+   {
+    "idTransfer": 536308614,
+    "cuando": "2026-08-04 05:00:20",
+    "jugador": "Óscar Valentín",
+    "equipo": "Mario80",
+    "puja": 1109020,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536309745": [
+   {
+    "idTransfer": 536309745,
+    "cuando": "2026-08-04 05:00:20",
+    "jugador": "Luismi Cruz",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1188370,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536313516": [
+   {
+    "idTransfer": 536313516,
+    "cuando": "2026-08-04 05:00:20",
+    "jugador": "Marc Bernal",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 7577310,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536330147": [
+   {
+    "idTransfer": 536330147,
+    "cuando": "2026-08-04 05:00:20",
+    "jugador": "Álvaro García",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 5805000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536330237": [
+   {
+    "idTransfer": 536330237,
+    "cuando": "2026-08-04 05:00:20",
+    "jugador": "Manu Sánchez",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 850000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536431779": [
+   {
+    "idTransfer": 536431779,
+    "cuando": "2026-08-04 17:00:10",
+    "jugador": "Pathé Ciss",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2701648,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536431795": [
+   {
+    "idTransfer": 536431795,
+    "cuando": "2026-08-04 17:00:10",
+    "jugador": "Álvaro Valles",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 5342000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536520985": [
+   {
+    "idTransfer": 536520985,
+    "cuando": "2026-08-05 05:00:23",
+    "jugador": "Luis Rioja",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 6159290,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536521989": [
+   {
+    "idTransfer": 536521989,
+    "cuando": "2026-08-05 05:00:23",
+    "jugador": "Roberto Fernández",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 4001323,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536522007": [
+   {
+    "idTransfer": 536522007,
+    "cuando": "2026-08-05 05:00:23",
+    "jugador": "Santi Comesaña",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 8349980,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536522077": [
+   {
+    "idTransfer": 536522077,
+    "cuando": "2026-08-05 05:00:23",
+    "jugador": "Jon Ander Olasagasti",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1446850,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536523606": [
+   {
+    "idTransfer": 536523606,
+    "cuando": "2026-08-05 05:00:23",
+    "jugador": "Jon Aramburu",
+    "equipo": "Mario80",
+    "puja": 2595040,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536523686": [
+   {
+    "idTransfer": 536523686,
+    "cuando": "2026-08-05 05:00:23",
+    "jugador": "Éder Militão",
+    "equipo": "Mario80",
+    "puja": 3217020,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536639051": [
+   {
+    "idTransfer": 536639051,
+    "cuando": "2026-08-05 17:00:15",
+    "jugador": "Mariano Díaz",
+    "equipo": "Mario80",
+    "puja": 302050,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536639779": [
+   {
+    "idTransfer": 536639779,
+    "cuando": "2026-08-05 17:00:15",
+    "jugador": "Iñigo Vicente",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 4121087,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536639917": [
+   {
+    "idTransfer": 536639917,
+    "cuando": "2026-08-05 17:00:15",
+    "jugador": "Pedro Bigas",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 1301000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536639927": [
+   {
+    "idTransfer": 536639927,
+    "cuando": "2026-08-05 17:00:15",
+    "jugador": "Igor Zubeldia",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 1195000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536639985": [
+   {
+    "idTransfer": 536639985,
+    "cuando": "2026-08-05 17:00:15",
+    "jugador": "Hugo Duro",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 5505000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536646278": [
+   {
+    "idTransfer": 536646278,
+    "cuando": "2026-08-05 17:00:15",
+    "jugador": "Isaac Romero",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1303000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536747227": [
+   {
+    "idTransfer": 536747227,
+    "cuando": "2026-08-06 05:00:23",
+    "jugador": "Gustavo Puerta",
+    "equipo": "Cacaculopedopis",
+    "puja": 5739051,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536748366": [
+   {
+    "idTransfer": 536748366,
+    "cuando": "2026-08-06 05:00:23",
+    "jugador": "Álvaro Mantilla",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1060800,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536758379": [
+   {
+    "idTransfer": 536758379,
+    "cuando": "2026-08-06 05:00:23",
+    "jugador": "Pablo Ibáñez",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 1400000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536758461": [
+   {
+    "idTransfer": 536758461,
+    "cuando": "2026-08-06 05:00:23",
+    "jugador": "Hugo González",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 400000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536860611": [
+   {
+    "idTransfer": 536860611,
+    "cuando": "2026-08-06 17:00:14",
+    "jugador": "Antony Santos",
+    "equipo": "Mario80",
+    "puja": 14976070,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536862712": [
+   {
+    "idTransfer": 536862712,
+    "cuando": "2026-08-06 17:00:14",
+    "jugador": "Djibril Sow",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1988260,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536863286": [
+   {
+    "idTransfer": 536863286,
+    "cuando": "2026-08-06 17:00:14",
+    "jugador": "Oihan Sancet",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 5601000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536964647": [
+   {
+    "idTransfer": 536964647,
+    "cuando": "2026-08-07 05:00:21",
+    "jugador": "Carlos Dominguez",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 609480,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536964663": [
+   {
+    "idTransfer": 536964663,
+    "cuando": "2026-08-07 05:00:21",
+    "jugador": "Alfonso Herrero",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2229500,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "536968830": [
+   {
+    "idTransfer": 536968830,
+    "cuando": "2026-08-07 05:00:21",
+    "jugador": "Mikel Jauregizar",
+    "equipo": "Cacaculopedopis",
+    "puja": 2381393,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537086344": [
+   {
+    "idTransfer": 537086344,
+    "cuando": "2026-08-07 17:00:13",
+    "jugador": "Ademola Lookman",
+    "equipo": "Mario80",
+    "puja": 10837160,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537088769": [
+   {
+    "idTransfer": 537088769,
+    "cuando": "2026-08-07 17:00:13",
+    "jugador": "Juan Foyth",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1544348,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 537088769,
+    "cuando": "2026-08-07 17:00:13",
+    "jugador": "Juan Foyth",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1004470,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 537088769,
+    "cuando": "2026-08-07 17:00:13",
+    "jugador": "Juan Foyth",
+    "equipo": "Mario80",
+    "puja": 928040,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537094042": [
+   {
+    "idTransfer": 537094042,
+    "cuando": "2026-08-07 17:00:13",
+    "jugador": "César Tárrega",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1394000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537094045": [
+   {
+    "idTransfer": 537094045,
+    "cuando": "2026-08-07 17:00:13",
+    "jugador": "Gonzalo Villar",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1267000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537237788": [
+   {
+    "idTransfer": 537237788,
+    "cuando": "2026-08-08 05:00:25",
+    "jugador": "Karim Adeyemi",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 10070010,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537237877": [
+   {
+    "idTransfer": 537237877,
+    "cuando": "2026-08-08 05:00:25",
+    "jugador": "Fran García",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2689960,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537237898": [
+   {
+    "idTransfer": 537237898,
+    "cuando": "2026-08-08 05:00:25",
+    "jugador": "Carlos Álvarez",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 3011780,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537340047": [
+   {
+    "idTransfer": 537340047,
+    "cuando": "2026-08-08 17:00:12",
+    "jugador": "Martín Satriano",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 5936000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537344086": [
+   {
+    "idTransfer": 537344086,
+    "cuando": "2026-08-08 17:00:12",
+    "jugador": "Ayoze Pérez",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 3200000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 537344086,
+    "cuando": "2026-08-08 17:00:12",
+    "jugador": "Ayoze Pérez",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2105870,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537459476": [
+   {
+    "idTransfer": 537459476,
+    "cuando": "2026-08-09 05:00:24",
+    "jugador": "Sergio Canales",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 4038280,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 537459476,
+    "cuando": "2026-08-09 05:00:24",
+    "jugador": "Sergio Canales",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 4000000,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 537459476,
+    "cuando": "2026-08-09 05:00:24",
+    "jugador": "Sergio Canales",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 3397317,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 537459476,
+    "cuando": "2026-08-09 05:00:24",
+    "jugador": "Sergio Canales",
+    "equipo": "Mario80",
+    "puja": 3378390,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537463345": [
+   {
+    "idTransfer": 537463345,
+    "cuando": "2026-08-09 05:00:24",
+    "jugador": "Pol Lozano",
+    "equipo": "Cacaculopedopis",
+    "puja": 1608920,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537484705": [
+   {
+    "idTransfer": 537484705,
+    "cuando": "2026-08-09 05:00:24",
+    "jugador": "Rubén García",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 3200000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537579559": [
+   {
+    "idTransfer": 537579559,
+    "cuando": "2026-08-09 17:00:13",
+    "jugador": "Miguel Loureiro",
+    "equipo": "Mario80",
+    "puja": 1460040,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537585113": [
+   {
+    "idTransfer": 537585113,
+    "cuando": "2026-08-09 17:00:13",
+    "jugador": "Facundo Bernal",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2200010,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537702315": [
+   {
+    "idTransfer": 537702315,
+    "cuando": "2026-08-10 05:00:23",
+    "jugador": "Marc Roca",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 3250000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 537702315,
+    "cuando": "2026-08-10 05:00:23",
+    "jugador": "Marc Roca",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 3104560,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537704805": [
+   {
+    "idTransfer": 537704805,
+    "cuando": "2026-08-10 05:00:23",
+    "jugador": "Mario Soriano",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2307010,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537801809": [
+   {
+    "idTransfer": 537801809,
+    "cuando": "2026-08-10 16:49:39",
+    "jugador": "Pere Milla",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 2946000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537808262": [
+   {
+    "idTransfer": 537808262,
+    "cuando": "2026-08-10 17:00:14",
+    "jugador": "Marash Kumbulla",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 329200,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "537964701": [
+   {
+    "idTransfer": 537964701,
+    "cuando": "2026-08-11 05:00:25",
+    "jugador": "Jan Oblak",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 6850000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "538081996": [
+   {
+    "idTransfer": 538081996,
+    "cuando": "2026-08-11 17:00:15",
+    "jugador": "Aïssa Mandi",
+    "equipo": "Cacaculopedopis",
+    "puja": 2163621,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "538082642": [
+   {
+    "idTransfer": 538082642,
+    "cuando": "2026-08-11 17:00:15",
+    "jugador": "Aimar Oroz",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 4764360,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 538082642,
+    "cuando": "2026-08-11 17:00:15",
+    "jugador": "Aimar Oroz",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 4556900,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "538226696": [
+   {
+    "idTransfer": 538226696,
+    "cuando": "2026-08-12 05:00:24",
+    "jugador": "David Larrubia",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 4128810,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 538226696,
+    "cuando": "2026-08-12 05:00:24",
+    "jugador": "David Larrubia",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 4000000,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 538226696,
+    "cuando": "2026-08-12 05:00:24",
+    "jugador": "David Larrubia",
+    "equipo": "Mario80",
+    "puja": 3369710,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "538358050": [
+   {
+    "idTransfer": 538358050,
+    "cuando": "2026-08-12 17:00:12",
+    "jugador": "Jon Pacheco",
+    "equipo": "Cacaculopedopis",
+    "puja": 270580,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "538358054": [
+   {
+    "idTransfer": 538358054,
+    "cuando": "2026-08-12 17:00:12",
+    "jugador": "Haitam Abaida",
+    "equipo": "Cacaculopedopis",
+    "puja": 192000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "538358055": [
+   {
+    "idTransfer": 538358055,
+    "cuando": "2026-08-12 17:00:12",
+    "jugador": "Kevin Sánchez",
+    "equipo": "Cacaculopedopis",
+    "puja": 253000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "538358058": [
+   {
+    "idTransfer": 538358058,
+    "cuando": "2026-08-12 17:00:12",
+    "jugador": "Rafa Rodriguez",
+    "equipo": "Cacaculopedopis",
+    "puja": 201000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "538358067": [
+   {
+    "idTransfer": 538358067,
+    "cuando": "2026-08-12 17:00:12",
+    "jugador": "Pedro Díaz",
+    "equipo": "Cacaculopedopis",
+    "puja": 1204000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "538496310": [
+   {
+    "idTransfer": 538496310,
+    "cuando": "2026-08-13 05:00:26",
+    "jugador": "Tyrhys Dolan",
+    "equipo": "Mario80",
+    "puja": 1653060,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "538504588": [
+   {
+    "idTransfer": 538504588,
+    "cuando": "2026-08-13 05:00:26",
+    "jugador": "Antonio Sivera",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 7730000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "538645940": [
+   {
+    "idTransfer": 538645940,
+    "cuando": "2026-08-13 17:00:13",
+    "jugador": "Carlos Puga",
+    "equipo": "Mario80",
+    "puja": 1376110,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "538941245": [
+   {
+    "idTransfer": 538941245,
+    "cuando": "2026-08-14 17:00:15",
+    "jugador": "Jonny Otto",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1801050,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 538941245,
+    "cuando": "2026-08-14 17:00:15",
+    "jugador": "Jonny Otto",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1786000,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "539077465": [
+   {
+    "idTransfer": 539077465,
+    "cuando": "2026-08-15 05:00:25",
+    "jugador": "Jorge Salinas",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 3163520,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 539077465,
+    "cuando": "2026-08-15 05:00:25",
+    "jugador": "Jorge Salinas",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2912334,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 539077465,
+    "cuando": "2026-08-15 05:00:25",
+    "jugador": "Jorge Salinas",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 2900000,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "539081560": [
+   {
+    "idTransfer": 539081560,
+    "cuando": "2026-08-15 05:00:25",
+    "jugador": "Bright Ede",
+    "equipo": "Mario80",
+    "puja": 663010,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "539081723": [
+   {
+    "idTransfer": 539081723,
+    "cuando": "2026-08-15 05:00:25",
+    "jugador": "Javi Rodríguez",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2024010,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "539243393": [
+   {
+    "idTransfer": 539243393,
+    "cuando": "2026-08-15 17:00:15",
+    "jugador": "Julen Agirrezabala",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 2500000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "539248254": [
+   {
+    "idTransfer": 539248254,
+    "cuando": "2026-08-15 17:00:15",
+    "jugador": "Péter Gulácsi",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 1200000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "539379949": [
+   {
+    "idTransfer": 539379949,
+    "cuando": "2026-08-16 05:00:24",
+    "jugador": "Natan Souza",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 4702340,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "539500904": [
+   {
+    "idTransfer": 539500904,
+    "cuando": "2026-08-16 17:00:18",
+    "jugador": "Abdel Abqar",
+    "equipo": "Cacaculopedopis",
+    "puja": 2310578,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 539500904,
+    "cuando": "2026-08-16 17:00:18",
+    "jugador": "Abdel Abqar",
+    "equipo": "Mario80",
+    "puja": 1691330,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "539627260": [
+   {
+    "idTransfer": 539627260,
+    "cuando": "2026-08-17 05:00:29",
+    "jugador": "Etta Eyong",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 3289630,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 539627260,
+    "cuando": "2026-08-17 05:00:29",
+    "jugador": "Etta Eyong",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 3139100,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "539753999": [
+   {
+    "idTransfer": 539753999,
+    "cuando": "2026-08-17 17:00:16",
+    "jugador": "Iker Muñoz",
+    "equipo": "Cacaculopedopis",
+    "puja": 1825850,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "539755959": [
+   {
+    "idTransfer": 539755959,
+    "cuando": "2026-08-17 17:00:16",
+    "jugador": "Omar El Hilali",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 2227000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "539833005": [
+   {
+    "idTransfer": 539833005,
+    "cuando": "2026-08-18 00:30:46",
+    "jugador": "Pierre-Emerick Aubameyang",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 4029000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "539876611": [
+   {
+    "idTransfer": 539876611,
+    "cuando": "2026-08-18 05:00:30",
+    "jugador": "Fede Redondo",
+    "equipo": "Mario80",
+    "puja": 557020,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "539892721": [
+   {
+    "idTransfer": 539892721,
+    "cuando": "2026-08-18 05:00:30",
+    "jugador": "Enes Ünal",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 2100000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "540007627": [
+   {
+    "idTransfer": 540007627,
+    "cuando": "2026-08-18 17:00:23",
+    "jugador": "Juan Cruz",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2429000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "540007634": [
+   {
+    "idTransfer": 540007634,
+    "cuando": "2026-08-18 17:00:23",
+    "jugador": "Isi Palazón",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 5291000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "540133909": [
+   {
+    "idTransfer": 540133909,
+    "cuando": "2026-08-19 05:00:25",
+    "jugador": "Sergio Martinez",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 301000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 540133909,
+    "cuando": "2026-08-19 05:00:25",
+    "jugador": "Sergio Martinez",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 301000,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "540144056": [
+   {
+    "idTransfer": 540144056,
+    "cuando": "2026-08-19 05:00:25",
+    "jugador": "Aitor Mañas",
+    "equipo": "Cacaculopedopis",
+    "puja": 481296,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "540161991": [
+   {
+    "idTransfer": 540161991,
+    "cuando": "2026-08-19 05:00:25",
+    "jugador": "Diego Rico",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 500000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "540276375": [
+   {
+    "idTransfer": 540276375,
+    "cuando": "2026-08-19 17:00:16",
+    "jugador": "Bil Nsongo",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2105021,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "540411726": [
+   {
+    "idTransfer": 540411726,
+    "cuando": "2026-08-20 05:00:33",
+    "jugador": "Rodri Hernández",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 13057233,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "540417823": [
+   {
+    "idTransfer": 540417823,
+    "cuando": "2026-08-20 05:00:33",
+    "jugador": "Kang-In Lee",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 8285000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "540565021": [
+   {
+    "idTransfer": 540565021,
+    "cuando": "2026-08-20 17:00:21",
+    "jugador": "Johan Mojica",
+    "equipo": "Mario80",
+    "puja": 1403590,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "540745667": [
+   {
+    "idTransfer": 540745667,
+    "cuando": "2026-08-21 05:00:31",
+    "jugador": "Ramón Terrats",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2201650,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 540745667,
+    "cuando": "2026-08-21 05:00:31",
+    "jugador": "Ramón Terrats",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2095110,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "540977462": [
+   {
+    "idTransfer": 540977462,
+    "cuando": "2026-08-22 05:00:24",
+    "jugador": "Ryunosuke Sato",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2666250,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 540977462,
+    "cuando": "2026-08-22 05:00:24",
+    "jugador": "Ryunosuke Sato",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2523370,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "541097327": [
+   {
+    "idTransfer": 541097327,
+    "cuando": "2026-08-22 17:00:18",
+    "jugador": "Carlos Dotor",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 871000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "541230639": [
+   {
+    "idTransfer": 541230639,
+    "cuando": "2026-08-23 05:00:30",
+    "jugador": "Alex Remiro",
+    "equipo": "Cacaculopedopis",
+    "puja": 11590994,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "541230877": [
+   {
+    "idTransfer": 541230877,
+    "cuando": "2026-08-23 05:00:30",
+    "jugador": "José Luis Gayà",
+    "equipo": "Cacaculopedopis",
+    "puja": 3185420,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 541230877,
+    "cuando": "2026-08-23 05:00:30",
+    "jugador": "José Luis Gayà",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 2513000,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "541364942": [
+   {
+    "idTransfer": 541364942,
+    "cuando": "2026-08-23 17:00:19",
+    "jugador": "Takefusa Kubo",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 10223829,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "541523849": [
+   {
+    "idTransfer": 541523849,
+    "cuando": "2026-08-24 05:00:29",
+    "jugador": "Roger Hinojo",
+    "equipo": "Cacaculopedopis",
+    "puja": 937200,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 541523849,
+    "cuando": "2026-08-24 05:00:29",
+    "jugador": "Roger Hinojo",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 691740,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "541525926": [
+   {
+    "idTransfer": 541525926,
+    "cuando": "2026-08-24 05:00:29",
+    "jugador": "Isaac Romero",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2467621,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 541525926,
+    "cuando": "2026-08-24 05:00:29",
+    "jugador": "Isaac Romero",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2434260,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "541547919": [
+   {
+    "idTransfer": 541547919,
+    "cuando": "2026-08-24 05:00:29",
+    "jugador": "Borja Mayoral",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 2110000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "541548003": [
+   {
+    "idTransfer": 541548003,
+    "cuando": "2026-08-24 05:00:29",
+    "jugador": "Alex Baena",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 11100000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "541696656": [
+   {
+    "idTransfer": 541696656,
+    "cuando": "2026-08-24 20:32:13",
+    "jugador": "Javi Hernandez",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1054500,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "541824602": [
+   {
+    "idTransfer": 541824602,
+    "cuando": "2026-08-25 05:00:30",
+    "jugador": "Karim Adeyemi",
+    "equipo": "Cacaculopedopis",
+    "puja": 14150801,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 541824602,
+    "cuando": "2026-08-25 05:00:30",
+    "jugador": "Karim Adeyemi",
+    "equipo": "Mario80",
+    "puja": 10703090,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "541840325": [
+   {
+    "idTransfer": 541840325,
+    "cuando": "2026-08-25 05:00:30",
+    "jugador": "Rafita Garrido",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1180860,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542173928": [
+   {
+    "idTransfer": 542173928,
+    "cuando": "2026-08-26 05:00:39",
+    "jugador": "Rafa Bauza",
+    "equipo": "Cacaculopedopis",
+    "puja": 436710,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542179041": [
+   {
+    "idTransfer": 542179041,
+    "cuando": "2026-08-26 05:00:39",
+    "jugador": "Juan Iglesias",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 5816000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542199026": [
+   {
+    "idTransfer": 542199026,
+    "cuando": "2026-08-26 05:00:39",
+    "jugador": "Jorge Herrando",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 185010,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542247427": [
+   {
+    "idTransfer": 542247427,
+    "cuando": "2026-08-26 09:04:06",
+    "jugador": "Pierre-Emerick Aubameyang",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 6171000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542365699": [
+   {
+    "idTransfer": 542365699,
+    "cuando": "2026-08-26 19:05:16",
+    "jugador": "Sergio Martinez",
+    "equipo": "Cacaculopedopis",
+    "puja": 1164000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542483586": [
+   {
+    "idTransfer": 542483586,
+    "cuando": "2026-08-27 05:00:29",
+    "jugador": "Job Ochieng",
+    "equipo": "Cacaculopedopis",
+    "puja": 172870,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542483758": [
+   {
+    "idTransfer": 542483758,
+    "cuando": "2026-08-27 05:00:29",
+    "jugador": "Yangel Herrera",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2241676,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 542483758,
+    "cuando": "2026-08-27 05:00:29",
+    "jugador": "Yangel Herrera",
+    "equipo": "Mario80",
+    "puja": 2054020,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542513469": [
+   {
+    "idTransfer": 542513469,
+    "cuando": "2026-08-27 05:00:29",
+    "jugador": "Gabriel Suazo",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2327010,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542637415": [
+   {
+    "idTransfer": 542637415,
+    "cuando": "2026-08-27 17:27:10",
+    "jugador": "Mariano Díaz",
+    "equipo": "Cacaculopedopis",
+    "puja": 4686500,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542760107": [
+   {
+    "idTransfer": 542760107,
+    "cuando": "2026-08-28 05:00:34",
+    "jugador": "Andreas Christensen",
+    "equipo": "Cacaculopedopis",
+    "puja": 2111290,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542944126": [
+   {
+    "idTransfer": 542944126,
+    "cuando": "2026-08-28 17:00:18",
+    "jugador": "Iván Martín",
+    "equipo": "Cacaculopedopis",
+    "puja": 633120,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542945850": [
+   {
+    "idTransfer": 542945850,
+    "cuando": "2026-08-28 17:00:18",
+    "jugador": "Anthony Gordon",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 14500000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 542945850,
+    "cuando": "2026-08-28 17:00:18",
+    "jugador": "Anthony Gordon",
+    "equipo": "Mario80",
+    "puja": 14006720,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542945868": [
+   {
+    "idTransfer": 542945868,
+    "cuando": "2026-08-28 17:00:18",
+    "jugador": "Angeliño",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 2300000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542948614": [
+   {
+    "idTransfer": 542948614,
+    "cuando": "2026-08-28 17:00:18",
+    "jugador": "Álvaro Valles",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 7813750,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 542948614,
+    "cuando": "2026-08-28 17:00:18",
+    "jugador": "Álvaro Valles",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 7600000,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "542950714": [
+   {
+    "idTransfer": 542950714,
+    "cuando": "2026-08-28 17:00:18",
+    "jugador": "Pablo Maffeo",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 4196000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "543106564": [
+   {
+    "idTransfer": 543106564,
+    "cuando": "2026-08-29 05:00:28",
+    "jugador": "Marc Bartra",
+    "equipo": "Mario80",
+    "puja": 2697740,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 543106564,
+    "cuando": "2026-08-29 05:00:28",
+    "jugador": "Marc Bartra",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2697000,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "543358209": [
+   {
+    "idTransfer": 543358209,
+    "cuando": "2026-08-30 05:00:29",
+    "jugador": "Mikel Oyarzabal",
+    "equipo": "Mario80",
+    "puja": 17019470,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "543447069": [
+   {
+    "idTransfer": 543447069,
+    "cuando": "2026-08-30 12:42:40",
+    "jugador": "Roger Brugué",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1000000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "543494120": [
+   {
+    "idTransfer": 543494120,
+    "cuando": "2026-08-30 17:00:21",
+    "jugador": "Yassir Zabiri",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2940142,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 543494120,
+    "cuando": "2026-08-30 17:00:21",
+    "jugador": "Yassir Zabiri",
+    "equipo": "Mario80",
+    "puja": 2632050,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "543496170": [
+   {
+    "idTransfer": 543496170,
+    "cuando": "2026-08-30 17:00:21",
+    "jugador": "Aitor Paredes",
+    "equipo": "Cacaculopedopis",
+    "puja": 2027690,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "543496179": [
+   {
+    "idTransfer": 543496179,
+    "cuando": "2026-08-30 17:00:21",
+    "jugador": "Moi Gómez",
+    "equipo": "Cacaculopedopis",
+    "puja": 780000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "543497237": [
+   {
+    "idTransfer": 543497237,
+    "cuando": "2026-08-30 17:00:21",
+    "jugador": "Adrián de la Fuente",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 6777000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "543497266": [
+   {
+    "idTransfer": 543497266,
+    "cuando": "2026-08-30 17:00:21",
+    "jugador": "Jon Ander Olasagasti",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2489000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "543673394": [
+   {
+    "idTransfer": 543673394,
+    "cuando": "2026-08-31 05:00:31",
+    "jugador": "Dani Lorenzo",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 3244010,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "543801824": [
+   {
+    "idTransfer": 543801824,
+    "cuando": "2026-08-31 17:00:22",
+    "jugador": "Hector Fort",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 878010,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "543978956": [
+   {
+    "idTransfer": 543978956,
+    "cuando": "2026-09-01 05:00:34",
+    "jugador": "Arda Güler",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 13110000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "544570561": [
+   {
+    "idTransfer": 544570561,
+    "cuando": "2026-09-02 17:00:25",
+    "jugador": "Gabriel Jesus",
+    "equipo": "Mario80",
+    "puja": 4437640,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 544570561,
+    "cuando": "2026-09-02 17:00:25",
+    "jugador": "Gabriel Jesus",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 3895024,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "544577925": [
+   {
+    "idTransfer": 544577925,
+    "cuando": "2026-09-02 17:00:25",
+    "jugador": "Georges Mikautadze",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 14372000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "544729389": [
+   {
+    "idTransfer": 544729389,
+    "cuando": "2026-09-03 05:00:31",
+    "jugador": "José Giménez",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2034236,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 544729389,
+    "cuando": "2026-09-03 05:00:31",
+    "jugador": "José Giménez",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 1600000,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 544729389,
+    "cuando": "2026-09-03 05:00:31",
+    "jugador": "José Giménez",
+    "equipo": "Mario80",
+    "puja": 1062020,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "544962517": [
+   {
+    "idTransfer": 544962517,
+    "cuando": "2026-09-03 17:00:21",
+    "jugador": "Adama Traoré",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 3500000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 544962517,
+    "cuando": "2026-09-03 17:00:21",
+    "jugador": "Adama Traoré",
+    "equipo": "Mario80",
+    "puja": 2669520,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "544962538": [
+   {
+    "idTransfer": 544962538,
+    "cuando": "2026-09-03 17:00:21",
+    "jugador": "Lorenzo Amatucci",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 6500000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "544965532": [
+   {
+    "idTransfer": 544965532,
+    "cuando": "2026-09-03 17:00:21",
+    "jugador": "Ville Koski",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2251000,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "545126526": [
+   {
+    "idTransfer": 545126526,
+    "cuando": "2026-09-04 05:00:25",
+    "jugador": "Oriol Rey",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 960010,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "545126560": [
+   {
+    "idTransfer": 545126560,
+    "cuando": "2026-09-04 05:00:25",
+    "jugador": "Beñat Gerenabarrena",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1060096,
+    "gana": true,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 545126560,
+    "cuando": "2026-09-04 05:00:25",
+    "jugador": "Beñat Gerenabarrena",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 828323,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 545126560,
+    "cuando": "2026-09-04 05:00:25",
+    "jugador": "Beñat Gerenabarrena",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 828000,
+    "gana": false,
+    "topeMax": null,
+    "exceso": 0
+   }
+  ],
+  "545479545": [
+   {
+    "idTransfer": 545479545,
+    "cuando": "2026-09-05 17:00:19",
+    "jugador": "Orri Óskarsson",
+    "equipo": "Cacaculopedopis",
+    "puja": 6126970,
+    "gana": true,
+    "topeMax": 26035146,
+    "exceso": 0
+   }
+  ],
+  "545479653": [
+   {
+    "idTransfer": 545479653,
+    "cuando": "2026-09-05 17:00:19",
+    "jugador": "Nicolas Pépé",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 15054000,
+    "gana": true,
+    "topeMax": 26879655,
+    "exceso": 0
+   }
+  ],
+  "545603412": [
+   {
+    "idTransfer": 545603412,
+    "cuando": "2026-09-06 05:00:31",
+    "jugador": "Carlos Macia",
+    "equipo": "Cacaculopedopis",
+    "puja": 764000,
+    "gana": true,
+    "topeMax": 26035146,
+    "exceso": 0
+   }
+  ],
+  "545609177": [
+   {
+    "idTransfer": 545609177,
+    "cuando": "2026-09-06 05:00:31",
+    "jugador": "Giacomo Quagliata",
+    "equipo": "Mario80",
+    "puja": 2919470,
+    "gana": true,
+    "topeMax": 24391380,
+    "exceso": 0
+   }
+  ],
+  "545743978": [
+   {
+    "idTransfer": 545743978,
+    "cuando": "2026-09-06 17:00:18",
+    "jugador": "Rodrigo Riquelme",
+    "equipo": "Cacaculopedopis",
+    "puja": 4076927,
+    "gana": true,
+    "topeMax": 26035146,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 545743978,
+    "cuando": "2026-09-06 17:00:18",
+    "jugador": "Rodrigo Riquelme",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 3787020,
+    "gana": false,
+    "topeMax": 38027460,
+    "exceso": 0
+   }
+  ],
+  "545912135": [
+   {
+    "idTransfer": 545912135,
+    "cuando": "2026-09-07 05:00:28",
+    "jugador": "Luiz Felipe",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 207040,
+    "gana": true,
+    "topeMax": 38027460,
+    "exceso": 0
+   }
+  ],
+  "546048374": [
+   {
+    "idTransfer": 546048374,
+    "cuando": "2026-09-07 17:00:19",
+    "jugador": "Stole Dimitrievski",
+    "equipo": "Mario80",
+    "puja": 6905210,
+    "gana": true,
+    "topeMax": 26450460,
+    "exceso": 0
+   }
+  ],
+  "546051776": [
+   {
+    "idTransfer": 546051776,
+    "cuando": "2026-09-07 17:00:19",
+    "jugador": "Álex Berenguer",
+    "equipo": "Cacaculopedopis",
+    "puja": 4074130,
+    "gana": true,
+    "topeMax": 23328096,
+    "exceso": 0
+   }
+  ],
+  "546054496": [
+   {
+    "idTransfer": 546054496,
+    "cuando": "2026-09-07 17:00:19",
+    "jugador": "Sergio Camello",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 7900000,
+    "gana": true,
+    "topeMax": 28718800,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 546054496,
+    "cuando": "2026-09-07 17:00:19",
+    "jugador": "Sergio Camello",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 6901760,
+    "gana": false,
+    "topeMax": 33942494,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 546054496,
+    "cuando": "2026-09-07 17:00:19",
+    "jugador": "Sergio Camello",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 6832816,
+    "gana": false,
+    "topeMax": 38036570,
+    "exceso": 0
+   }
+  ],
+  "546280734": [
+   {
+    "idTransfer": 546280734,
+    "cuando": "2026-09-08 08:21:37",
+    "jugador": "Marc Bartra",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 6537000,
+    "gana": true,
+    "topeMax": 38036570,
+    "exceso": 0
+   }
+  ],
+  "546394274": [
+   {
+    "idTransfer": 546394274,
+    "cuando": "2026-09-08 17:00:19",
+    "jugador": "Fermín López",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 17100000,
+    "gana": true,
+    "topeMax": 26412200,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 546394274,
+    "cuando": "2026-09-08 17:00:19",
+    "jugador": "Fermín López",
+    "equipo": "Mario80",
+    "puja": 17020560,
+    "gana": false,
+    "topeMax": 28849670,
+    "exceso": 0
+   }
+  ],
+  "546553023": [
+   {
+    "idTransfer": 546553023,
+    "cuando": "2026-09-09 05:00:34",
+    "jugador": "Pape Gueye",
+    "equipo": "Mario80",
+    "puja": 11737250,
+    "gana": true,
+    "topeMax": 28849670,
+    "exceso": 0
+   }
+  ],
+  "546696517": [
+   {
+    "idTransfer": 546696517,
+    "cuando": "2026-09-09 17:00:18",
+    "jugador": "Álvaro García",
+    "equipo": "Cacaculopedopis",
+    "puja": 9082371,
+    "gana": true,
+    "topeMax": 19647969,
+    "exceso": 0
+   }
+  ],
+  "546823494": [
+   {
+    "idTransfer": 546823494,
+    "cuando": "2026-09-10 05:00:28",
+    "jugador": "Xavi Espart",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 4821590,
+    "gana": true,
+    "topeMax": 36088870,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 546823494,
+    "cuando": "2026-09-10 05:00:28",
+    "jugador": "Xavi Espart",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 3800000,
+    "gana": false,
+    "topeMax": 19477750,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 546823494,
+    "cuando": "2026-09-10 05:00:28",
+    "jugador": "Xavi Espart",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2811110,
+    "gana": false,
+    "topeMax": 20862175,
+    "exceso": 0
+   }
+  ],
+  "546825319": [
+   {
+    "idTransfer": 546825319,
+    "cuando": "2026-09-10 05:00:28",
+    "jugador": "Peque Fernández",
+    "equipo": "Cacaculopedopis",
+    "puja": 2212870,
+    "gana": true,
+    "topeMax": 19647969,
+    "exceso": 0
+   }
+  ],
+  "546963488": [
+   {
+    "idTransfer": 546963488,
+    "cuando": "2026-09-10 17:00:18",
+    "jugador": "Pablo García",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1869890,
+    "gana": true,
+    "topeMax": 36088870,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 546963488,
+    "cuando": "2026-09-10 17:00:18",
+    "jugador": "Pablo García",
+    "equipo": "Mario80",
+    "puja": 1561480,
+    "gana": false,
+    "topeMax": 19965220,
+    "exceso": 0
+   }
+  ],
+  "546967396": [
+   {
+    "idTransfer": 546967396,
+    "cuando": "2026-09-10 17:00:18",
+    "jugador": "Pedri",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 21934000,
+    "gana": true,
+    "topeMax": 21126875,
+    "exceso": 807125
+   }
+  ],
+  "547099275": [
+   {
+    "idTransfer": 547099275,
+    "cuando": "2026-09-11 05:00:33",
+    "jugador": "Johaneko Louis-Jean",
+    "equipo": "Cacaculopedopis",
+    "puja": 766700,
+    "gana": true,
+    "topeMax": 16184058,
+    "exceso": 0
+   }
+  ],
+  "547503333": [
+   {
+    "idTransfer": 547503333,
+    "cuando": "2026-09-12 17:00:19",
+    "jugador": "Unai López",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 4330000,
+    "gana": true,
+    "topeMax": 20967850,
+    "exceso": 0
+   }
+  ],
+  "547620421": [
+   {
+    "idTransfer": 547620421,
+    "cuando": "2026-09-13 05:00:27",
+    "jugador": "Péter Gulácsi",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 1088000,
+    "gana": true,
+    "topeMax": 20967850,
+    "exceso": 0
+   }
+  ],
+  "547751362": [
+   {
+    "idTransfer": 547751362,
+    "cuando": "2026-09-13 17:00:19",
+    "jugador": "Pablo Ramón",
+    "equipo": "Mario80",
+    "puja": 1952070,
+    "gana": true,
+    "topeMax": 19932120,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 547751362,
+    "cuando": "2026-09-13 17:00:19",
+    "jugador": "Pablo Ramón",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1951000,
+    "gana": false,
+    "topeMax": 30333285,
+    "exceso": 0
+   }
+  ],
+  "548171199": [
+   {
+    "idTransfer": 548171199,
+    "cuando": "2026-09-15 05:00:31",
+    "jugador": "Miguel Sierra",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2867530,
+    "gana": true,
+    "topeMax": 27514085,
+    "exceso": 0
+   }
+  ],
+  "548303154": [
+   {
+    "idTransfer": 548303154,
+    "cuando": "2026-09-15 17:06:26",
+    "jugador": "Gabriel Suazo",
+    "equipo": "Cacaculopedopis",
+    "puja": 3934360,
+    "gana": true,
+    "topeMax": 23299858,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 548303154,
+    "cuando": "2026-09-15 17:06:26",
+    "jugador": "Gabriel Suazo",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 3529224,
+    "gana": false,
+    "topeMax": 28788205,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 548303154,
+    "cuando": "2026-09-15 17:06:26",
+    "jugador": "Gabriel Suazo",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 3224010,
+    "gana": false,
+    "topeMax": 48388072,
+    "exceso": 0
+   }
+  ],
+  "548455377": [
+   {
+    "idTransfer": 548455377,
+    "cuando": "2026-09-16 05:00:28",
+    "jugador": "Nathan Saliba",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2484550,
+    "gana": true,
+    "topeMax": 48388072,
+    "exceso": 0
+   }
+  ],
+  "548698617": [
+   {
+    "idTransfer": 548698617,
+    "cuando": "2026-09-17 05:00:27",
+    "jugador": "Pau Navarro",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 899000,
+    "gana": true,
+    "topeMax": 29040555,
+    "exceso": 0
+   }
+  ],
+  "548699917": [
+   {
+    "idTransfer": 548699917,
+    "cuando": "2026-09-17 05:00:27",
+    "jugador": "Joaquín Muñoz",
+    "equipo": "Cacaculopedopis",
+    "puja": 1928280,
+    "gana": true,
+    "topeMax": 20298498,
+    "exceso": 0
+   }
+  ],
+  "548809143": [
+   {
+    "idTransfer": 548809143,
+    "cuando": "2026-09-17 17:00:20",
+    "jugador": "Gerard Moreno",
+    "equipo": "Mario80",
+    "puja": 13567040,
+    "gana": true,
+    "topeMax": 21488980,
+    "exceso": 0
+   }
+  ],
+  "548813179": [
+   {
+    "idTransfer": 548813179,
+    "cuando": "2026-09-17 17:00:20",
+    "jugador": "Kylian Mbappé",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 30309629,
+    "gana": true,
+    "topeMax": 46888175,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 548813179,
+    "cuando": "2026-09-17 17:00:20",
+    "jugador": "Kylian Mbappé",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 26200000,
+    "gana": false,
+    "topeMax": 30294460,
+    "exceso": 0
+   }
+  ],
+  "548950289": [
+   {
+    "idTransfer": 548950289,
+    "cuando": "2026-09-18 05:00:30",
+    "jugador": "Lucien Agoumé",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 5900000,
+    "gana": true,
+    "topeMax": 30294460,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 548950289,
+    "cuando": "2026-09-18 05:00:30",
+    "jugador": "Lucien Agoumé",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 5806680,
+    "gana": false,
+    "topeMax": 31883885,
+    "exceso": 0
+   }
+  ],
+  "549066425": [
+   {
+    "idTransfer": 549066425,
+    "cuando": "2026-09-18 17:00:20",
+    "jugador": "Abde Ezzalzouli",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 15000000,
+    "gana": true,
+    "topeMax": 30294460,
+    "exceso": 0
+   }
+  ],
+  "549070852": [
+   {
+    "idTransfer": 549070852,
+    "cuando": "2026-09-18 17:00:20",
+    "jugador": "Jorge Salinas",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 4953000,
+    "gana": true,
+    "topeMax": 33392435,
+    "exceso": 0
+   }
+  ],
+  "549070900": [
+   {
+    "idTransfer": 549070900,
+    "cuando": "2026-09-18 17:00:20",
+    "jugador": "Emil Audero",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1059000,
+    "gana": true,
+    "topeMax": 33392435,
+    "exceso": 0
+   }
+  ],
+  "549115755": [
+   {
+    "idTransfer": 549115755,
+    "cuando": "2026-09-18 20:37:05",
+    "jugador": "Enes Ünal",
+    "equipo": "Legalize F.C (Victor)",
+    "puja": 11000000,
+    "gana": true,
+    "topeMax": 28945000,
+    "exceso": 0
+   }
+  ],
+  "549187396": [
+   {
+    "idTransfer": 549187396,
+    "cuando": "2026-09-19 05:00:26",
+    "jugador": "Gonçalo Guedes",
+    "equipo": "Legalize F.C (Victor)",
+    "puja": 6653020,
+    "gana": true,
+    "topeMax": 28945000,
+    "exceso": 0
+   }
+  ],
+  "549204937": [
+   {
+    "idTransfer": 549204937,
+    "cuando": "2026-09-19 05:00:26",
+    "jugador": "Thomas Lemar",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1138460,
+    "gana": true,
+    "topeMax": 33392435,
+    "exceso": 0
+   }
+  ],
+  "549281456": [
+   {
+    "idTransfer": 549281456,
+    "cuando": "2026-09-19 15:10:11",
+    "jugador": "Sergio Camello",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 12672000,
+    "gana": true,
+    "topeMax": 26381816,
+    "exceso": 0
+   }
+  ],
+  "549288684": [
+   {
+    "idTransfer": 549288684,
+    "cuando": "2026-09-19 17:00:21",
+    "jugador": "Dani Ceballos",
+    "equipo": "Mario80",
+    "puja": 2907770,
+    "gana": true,
+    "topeMax": 23518930,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 549288684,
+    "cuando": "2026-09-19 17:00:21",
+    "jugador": "Dani Ceballos",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 1800000,
+    "gana": false,
+    "topeMax": 38294510,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 549288684,
+    "cuando": "2026-09-19 17:00:21",
+    "jugador": "Dani Ceballos",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1690774,
+    "gana": false,
+    "topeMax": 26381816,
+    "exceso": 0
+   }
+  ],
+  "549293971": [
+   {
+    "idTransfer": 549293971,
+    "cuando": "2026-09-19 17:00:21",
+    "jugador": "Alejandro Grimaldo",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 8920000,
+    "gana": true,
+    "topeMax": 38294510,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 549293971,
+    "cuando": "2026-09-19 17:00:21",
+    "jugador": "Alejandro Grimaldo",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 8920000,
+    "gana": false,
+    "topeMax": 33392435,
+    "exceso": 0
+   }
+  ],
+  "549295090": [
+   {
+    "idTransfer": 549295090,
+    "cuando": "2026-09-19 17:00:21",
+    "jugador": "Sergio Gómez",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 6320000,
+    "gana": true,
+    "topeMax": 33392435,
+    "exceso": 0
+   }
+  ],
+  "549407598": [
+   {
+    "idTransfer": 549407598,
+    "cuando": "2026-09-20 05:00:27",
+    "jugador": "Raphinha",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 28208876,
+    "gana": true,
+    "topeMax": 28208876,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 549407598,
+    "cuando": "2026-09-20 05:00:27",
+    "jugador": "Raphinha",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 28056362,
+    "gana": false,
+    "topeMax": 29415835,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 549407598,
+    "cuando": "2026-09-20 05:00:27",
+    "jugador": "Raphinha",
+    "equipo": "Mario80",
+    "puja": 20593630,
+    "gana": false,
+    "topeMax": 23518930,
+    "exceso": 0
+   }
+  ],
+  "549408740": [
+   {
+    "idTransfer": 549408740,
+    "cuando": "2026-09-20 05:00:27",
+    "jugador": "Isco",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 10400000,
+    "gana": true,
+    "topeMax": 38294510,
+    "exceso": 0
+   }
+  ],
+  "549408742": [
+   {
+    "idTransfer": 549408742,
+    "cuando": "2026-09-20 05:00:27",
+    "jugador": "Youssouf Fofana",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 5426000,
+    "gana": true,
+    "topeMax": 38294510,
+    "exceso": 0
+   }
+  ],
+  "549437025": [
+   {
+    "idTransfer": 549437025,
+    "cuando": "2026-09-20 05:35:55",
+    "jugador": "Rodri Hernández",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 21198000,
+    "gana": true,
+    "topeMax": 29415835,
+    "exceso": 0
+   }
+  ]
+ }
+}

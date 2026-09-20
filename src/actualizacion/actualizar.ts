@@ -30,6 +30,7 @@ import type { JugadorMister } from '../recoleccion/parseadorUniverso.js'
 import { verificar, verificarLiga } from './verificar.js'
 import { podar, subidasDeLaSemana, subidasDelMes, type Historico } from './historicoValores.js'
 import { actualizarHistoricoEquipos, type HistoricoEquipos } from './historicoEquipos.js'
+import { anotarTopes, comprobarPujas, type EstadoPujas, type FotoTopes } from './pujas.js'
 import type { FichaGuardada } from './fichas.js'
 import { reinicioDeLiga } from '../recoleccion/parseadorSaldo.js'
 import { detectarSubidas, gastoEnClausulas, gastoPorEquipo, subidasVivas, type Subida } from './clausulas.js'
@@ -45,6 +46,8 @@ const FICHAS = join(DATOS, 'fichas.json')
 const CAJA = join(DATOS, 'caja.json')
 const HISTORICO_CL = join(DATOS, 'historico-clausulas.json')
 const HISTORICO_EQUIPOS = join(DATOS, 'historico-equipos.json')
+const HISTORICO_TOPES = join(DATOS, 'historico-topes.json')
+const PUJAS = join(DATOS, 'pujas.json')
 const SUBIDAS = join(DATOS, 'subidas-clausula.json')
 const FOTO = join(DATOS, 'foto.json')
 const NOVEDADES = join(DATOS, 'novedades.json')
@@ -432,6 +435,36 @@ async function intentar(): Promise<Resultado> {
     e.gastoOculto = gasto.total
     if (!e.mio && e.gastoOculto > 0) e.saldo -= e.gastoOculto
   }
+
+  // ── Recalibrar con las pujas ───────────────────────────────────────────────
+  // Lo único de dinero que Mister publica de un rival es lo que pujó en cada
+  // subasta, y es un suelo: no deja pujar por encima del tope. Se contrasta
+  // cada puja contra el tope máximo que le calculábamos mientras el jugador
+  // estuvo en el mercado; si pujó más, la diferencia se le suma desde ahora.
+  // Los topes de cada pasada se anotan SIN el ajuste, para que el ajuste
+  // acumulado entre una sola vez en la comparación y no se cuente dos veces.
+  const topesPrevios = leerJson<FotoTopes[]>(HISTORICO_TOPES, [])
+  const crudos = cuentas.equipos.map((e) => ({ n: e.n, saldo: e.saldo, pl: e.pl }))
+  const pujas = comprobarPujas(hechos.traspasos, topesPrevios, leerJson<EstadoPujas>(PUJAS, { ajustes: {}, vistas: {} }), mio.n)
+  for (const e of cuentas.equipos) {
+    e.ajustePujas = e.mio ? 0 : (pujas.estado.ajustes[e.n] ?? 0)
+    if (e.ajustePujas > 0) e.saldo += e.ajustePujas
+  }
+  escribirJson(PUJAS, pujas.estado)
+  escribirJson(HISTORICO_TOPES, anotarTopes(topesPrevios, cuando, crudos))
+  for (const a of pujas.avisos) {
+    paso(`AVISO ${a}`)
+    cuentas.avisos.push(a)
+  }
+  const juzgadas = pujas.resultados.filter((r) => r.topeMax !== null)
+  if (juzgadas.length > 0) {
+    paso(
+      `Pujas: ${juzgadas.length} contrastadas contra el tope de cada equipo${
+        pujas.avisos.length === 0 ? ', ninguna lo supera.' : '.'
+      }`,
+    )
+  }
+
   // Las cuentas propias, sacadas del libro y no del feed.
   //
   // Enseñadas desde el feed no cuadraban: salían 22.726.239 € y el libro decía
