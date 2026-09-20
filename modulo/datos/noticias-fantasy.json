@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-20T09:38:17.995Z",
+ "cuando": "2026-09-20T10:08:00.699Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "20/09",
+   "titulo": "Análisis Fantasy de Unai Santos: anticipación y personalidad desde el perfil izquierdo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151601-analisis-fantasy-de-unai-santos-anticipacion-y-personalidad-desde-el-perfil-izquierdo",
+   "categoria": "análisis"
+  },
   {
    "fecha": "19/09",
    "titulo": "Actualizadas las jerarquías del Espanyol: Jugadores clave, importantes, de rotación, revulsivos y reservas",
@@ -20,6 +26,12 @@
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "El Valencia cierra la contratación de Javier Aguirre",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151600-el-valencia-cierra-la-contratacion-de-javier-aguirre",
+   "categoria": "mercado"
   },
   {
    "fecha": "20/09",
@@ -469,18 +481,6 @@
    "fecha": "18/09",
    "titulo": "Terrats trabaja con el grupo y apunta al Málaga",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151524-terrats-trabaja-con-el-grupo-y-apunta-al-malaga",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Osasuna no recupera efectivos en la sesión previa a la visita del Rayo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151523-osasuna-no-recupera-efectivos-en-la-sesion-previa-a-la-visita-del-rayo",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "El Alavés completa la sesión del viernes sin los tres lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151522-el-alaves-completa-la-sesion-del-viernes-sin-los-tres-lesionados",
    "categoria": "entrenamiento"
   }
  ]
