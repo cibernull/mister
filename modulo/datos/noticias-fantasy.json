@@ -1,12 +1,12 @@
 {
- "cuando": "2026-09-20T10:08:00.699Z",
+ "cuando": "2026-09-20T10:37:55.918Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "20/09",
-   "titulo": "Análisis Fantasy de Unai Santos: anticipación y personalidad desde el perfil izquierdo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151601-analisis-fantasy-de-unai-santos-anticipacion-y-personalidad-desde-el-perfil-izquierdo",
+   "titulo": "Aitor convierte una rotación intersemanal en un cambio de ciclo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151603-aitor-convierte-una-rotacion-intersemanal-en-un-cambio-de-ciclo",
    "categoria": "análisis"
   },
   {
@@ -25,6 +25,18 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Diego Rico abre un pulso con Bretones",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151602-diego-rico-abre-un-pulso-con-bretones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Análisis Fantasy de Unai Santos: anticipación y personalidad desde el perfil izquierdo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151601-analisis-fantasy-de-unai-santos-anticipacion-y-personalidad-desde-el-perfil-izquierdo",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Jornada 7: Espanyol 1-3 Elche. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22487-espanyol-elche",
    "categoria": "partido"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Aubameyang y Amatucci trabajan al margen por gestión de cargas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151525-aubameyang-y-amatucci-trabajan-al-margen-por-gestion-de-cargas",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "18/09",
-   "titulo": "Terrats trabaja con el grupo y apunta al Málaga",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151524-terrats-trabaja-con-el-grupo-y-apunta-al-malaga",
-   "categoria": "entrenamiento"
   }
  ]
 }
