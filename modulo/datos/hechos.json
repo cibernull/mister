@@ -2886,9 +2886,9 @@
    "cuando": "2026-08-20 05:00:33",
    "valor": 11258000,
    "posicion": 3,
-   "puntos": 49,
-   "media": 7,
-   "racha": "6,3,3,13,6",
+   "puntos": 43,
+   "media": 7.2,
+   "racha": "4,6,3,3,13",
    "otrasPujas": []
   },
   {
@@ -6487,9 +6487,9 @@
    "cuando": "2026-09-20 23:07:44",
    "valor": 5190000,
    "posicion": 4,
-   "puntos": 17,
-   "media": 3.4,
-   "racha": "1,10,-,2,3",
+   "puntos": 14,
+   "media": 2.3,
+   "racha": "10,-,2,3,-3",
    "otrasPujas": []
   }
  ],
