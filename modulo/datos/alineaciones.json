@@ -1257,15 +1257,15 @@
     "visitante": 12
    }
   ],
-  "puntos": 31,
-  "puesto": 3,
+  "puntos": 39,
+  "puesto": 1,
   "formacion": "1-3-4-3",
   "once": [
    {
     "id": "53111",
     "nombre": "Álvaro Valles",
     "puesto": 1,
-    "puntos": 3,
+    "puntos": 6,
     "jugo": true,
     "capitan": false
    },
@@ -1273,7 +1273,7 @@
     "id": "34",
     "nombre": "José Giménez",
     "puesto": 2,
-    "puntos": 2,
+    "puntos": 4,
     "jugo": true,
     "capitan": false
    },
@@ -1313,7 +1313,7 @@
     "id": "27907",
     "nombre": "Roger Brugué",
     "puesto": 3,
-    "puntos": 2,
+    "puntos": 4,
     "jugo": true,
     "capitan": false
    },
@@ -1329,7 +1329,7 @@
     "id": "36410",
     "nombre": "Pierre-Emerick Aubameyang",
     "puesto": 4,
-    "puntos": 2,
+    "puntos": 3,
     "jugo": true,
     "capitan": false
    },
@@ -1379,7 +1379,7 @@
     "id": "3845074",
     "nombre": "Nathan Saliba",
     "puesto": 3,
-    "puntos": 2,
+    "puntos": 3,
     "jugo": true,
     "capitan": false
    },

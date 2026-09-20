@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-20T18:38:11.373Z",
+ "cuando": "2026-09-20T19:07:53.387Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -31,6 +31,18 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Villares entra en el garaje de Pellegrini",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151646-villares-entra-en-el-garaje-de-pellegrini",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Íñigo Pérez lubrica sus platanitos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151645-inigo-perez-lubrica-sus-platanitos",
    "categoria": "análisis"
   },
   {
@@ -469,18 +481,6 @@
    "fecha": "19/09",
    "titulo": "Quique explica las rotaciones en el once, el sistema de juego y las ventajas de jugar con dos puntas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151568-quique-explica-las-rotaciones-en-el-once-el-sistema-de-juego-y-las-ventajas-de-jugar-con-dos-",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Terzic habla de Guruzeta, las sustituciones y el control de los partidos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151567-terzic-habla-de-guruzeta-las-sustituciones-y-el-control-de-los-partidos",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Íñigo Pérez habla de Comesaña, Foyth, Akhomach, Moleiro, las rotaciones y el Levante",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151566-inigo-perez-habla-de-comesana-foyth-akhomach-moleiro-las-rotaciones-y-el-levante",
    "categoria": "rueda de prensa"
   }
  ]
