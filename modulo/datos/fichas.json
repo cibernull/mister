@@ -7431,7 +7431,9 @@
     "puntos": null,
     "rival": 9,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -17974,8 +17976,10 @@
     "jornada": 7,
     "puntos": null,
     "rival": 9,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -24859,13 +24863,6 @@
     "rival": 20,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 9,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -25004,7 +25001,8 @@
     "rival": 9,
     "como": "inicio",
     "eventos": [
-     "yellow"
+     "yellow",
+     "sub_out"
     ]
    }
   ],
@@ -28420,13 +28418,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -29088,7 +29079,7 @@
   "nombre": "Francho Serrano",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 2,
   "mediaFuera": 1.5,
   "edad": 24,
@@ -29149,7 +29140,9 @@
     "puntos": null,
     "rival": 13,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,
@@ -30539,13 +30532,6 @@
     "jornada": 6,
     "puntos": 6,
     "rival": 4,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 13,
     "como": "inicio",
     "eventos": []
    }
