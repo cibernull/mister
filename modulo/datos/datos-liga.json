@@ -1133,6 +1133,36 @@
  ],
  "movimientos": [
   {
+   "id": "3848780",
+   "nombre": "Johaneko Louis-Jean",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 1017720,
+   "tipo": "normal",
+   "fecha": "2026-09-20 10:20:54",
+   "pos": 2
+  },
+  {
+   "id": "3060",
+   "nombre": "Mariano Díaz",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 3619500,
+   "tipo": "normal",
+   "fecha": "2026-09-20 10:20:40",
+   "pos": 4
+  },
+  {
+   "id": "1762",
+   "nombre": "Álex Berenguer",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 5047000,
+   "tipo": "normal",
+   "fecha": "2026-09-20 10:20:33",
+   "pos": 3
+  },
+  {
    "id": "64468",
    "nombre": "Tyrhys Dolan",
    "de": "Mario80",
@@ -6593,6 +6623,30 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Álex Berenguer",
+     "id": "1762",
+     "tipo": "venta",
+     "importe": 5047000,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
+     "j": "Mariano Díaz",
+     "id": "3060",
+     "tipo": "venta",
+     "importe": 3619500,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
+     "j": "Johaneko Louis-Jean",
+     "id": "3848780",
+     "tipo": "venta",
+     "importe": 1017720,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
      "j": "Joaquín Muñoz",
      "id": "22595",
      "tipo": "compra",
@@ -7183,14 +7237,14 @@
     "1762": {
      "nombre": "Álex Berenguer",
      "compras": 4074130,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5047000,
+     "ops": 2
     },
     "3060": {
      "nombre": "Mariano Díaz",
      "compras": 4686500,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 3619500,
+     "ops": 2
     },
     "6032": {
      "nombre": "Alex Remiro",
@@ -7453,8 +7507,8 @@
     "3848780": {
      "nombre": "Johaneko Louis-Jean",
      "compras": 766700,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1017720,
+     "ops": 2
     }
    }
   },
