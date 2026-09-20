@@ -1,12 +1,12 @@
 {
- "cuando": "2026-09-20T14:06:30.105Z",
+ "cuando": "2026-09-20T14:38:06.579Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "20/09",
-   "titulo": "Sigue en directo el Getafe - Málaga",
-   "url": "https://www.futbolfantasy.com/partidos/22488-getafe-malaga",
+   "titulo": "Sigue en directo el Atlético - Real Madrid",
+   "url": "https://www.futbolfantasy.com/partidos/22484-atletico-real-madrid",
    "categoria": "análisis"
   },
   {
@@ -29,15 +29,21 @@
   },
   {
    "fecha": "20/09",
-   "titulo": "Cancelo frena el hype con Espart",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151620-cancelo-frena-el-hype-con-espart",
+   "titulo": "El tiburAzón devora un banco de boquerones",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151621-el-tiburazon-devora-un-banco-de-boquerones",
    "categoria": "análisis"
   },
   {
    "fecha": "20/09",
-   "titulo": "Alineaciones confirmadas del Atlético - Real Madrid",
-   "url": "https://www.futbolfantasy.com/partidos/22484-atletico-real-madrid",
-   "categoria": "rueda de prensa"
+   "titulo": "Jornada 7: Getafe 1-0 Málaga. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22488-getafe-malaga",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Cancelo frena el hype con Espart",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151620-cancelo-frena-el-hype-con-espart",
+   "categoria": "análisis"
   },
   {
    "fecha": "20/09",
@@ -476,12 +482,6 @@
    "titulo": "Revivo le muestra su repertorio a LaLiga",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151543-revivo-le-muestra-su-repertorio-a-laliga",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Simeone habla de Julián Alvarez, Grimaldo, Lookman, Vinicius, Mbappé y Mourinho antes del derbi",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151542-simeone-habla-de-julian-alvarez-grimaldo-lookman-vinicius-mbappe-y-mourinho-antes-del-derbi",
-   "categoria": "rueda de prensa"
   }
  ]
 }

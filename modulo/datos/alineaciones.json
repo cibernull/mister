@@ -1242,8 +1242,8 @@
     "visitante": 13
    }
   ],
-  "puntos": 15,
-  "puesto": 4,
+  "puntos": 17,
+  "puesto": 3,
   "formacion": "1-3-4-3",
   "once": [
    {
@@ -1306,8 +1306,8 @@
     "id": "48203",
     "nombre": "Ramón Terrats",
     "puesto": 3,
-    "puntos": 3,
-    "jugo": false,
+    "puntos": 4,
+    "jugo": true,
     "capitan": false
    },
    {
