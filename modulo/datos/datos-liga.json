@@ -1114,9 +1114,64 @@
    "id": "96",
    "nombre": "Dani Ceballos",
    "valor": 1322000
+  },
+  {
+   "id": "48657",
+   "nombre": "Raphinha",
+   "valor": 20572000
+  },
+  {
+   "id": "340",
+   "nombre": "Isco",
+   "valor": 10397000
+  },
+  {
+   "id": "4947927",
+   "nombre": "Youssouf Fofana",
+   "valor": 5521000
   }
  ],
  "movimientos": [
+  {
+   "id": "616",
+   "nombre": "Rodri Hernández",
+   "de": "Niutin FC (Isaac)",
+   "a": "Neky F.C. (Sergio)",
+   "importe": 21198000,
+   "tipo": "clause",
+   "fecha": "2026-09-20 05:35:55",
+   "pos": 3
+  },
+  {
+   "id": "4947927",
+   "nombre": "Youssouf Fofana",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 5426000,
+   "tipo": "normal",
+   "fecha": "2026-09-20 05:00:27",
+   "pos": 3
+  },
+  {
+   "id": "340",
+   "nombre": "Isco",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 10400000,
+   "tipo": "normal",
+   "fecha": "2026-09-20 05:00:27",
+   "pos": 3
+  },
+  {
+   "id": "48657",
+   "nombre": "Raphinha",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 28208876,
+   "tipo": "normal",
+   "fecha": "2026-09-20 05:00:27",
+   "pos": 4
+  },
   {
    "id": "70941",
    "nombre": "Bil Nsongo",
@@ -4510,6 +4565,14 @@
      "op": "normal"
     },
     {
+     "j": "Rodri Hernández",
+     "id": "616",
+     "tipo": "compra",
+     "importe": 21198000,
+     "fecha": "2026-09-20",
+     "op": "clause"
+    },
+    {
      "j": "Thomas Lemar",
      "id": "12949",
      "tipo": "compra",
@@ -5141,6 +5204,12 @@
      "ventas": 0,
      "ops": 1
     },
+    "616": {
+     "nombre": "Rodri Hernández",
+     "compras": 21198000,
+     "ventas": 0,
+     "ops": 1
+    },
     "1034": {
      "nombre": "Juanmi Jiménez",
      "compras": 0,
@@ -5480,6 +5549,22 @@
      "importe": 1311440,
      "fecha": "2026-09-20",
      "op": "normal"
+    },
+    {
+     "j": "Raphinha",
+     "id": "48657",
+     "tipo": "compra",
+     "importe": 28208876,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
+     "j": "Rodri Hernández",
+     "id": "616",
+     "tipo": "venta",
+     "importe": 21198000,
+     "fecha": "2026-09-20",
+     "op": "clause"
     },
     {
      "j": "Sergio Camello",
@@ -6164,8 +6249,8 @@
     "616": {
      "nombre": "Rodri Hernández",
      "compras": 13057233,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 21198000,
+     "ops": 2
     },
     "15344": {
      "nombre": "Brahim Díaz",
@@ -6302,6 +6387,12 @@
     "48554": {
      "nombre": "Luiz Felipe",
      "compras": 207040,
+     "ventas": 0,
+     "ops": 1
+    },
+    "48657": {
+     "nombre": "Raphinha",
+     "compras": 28208876,
      "ventas": 0,
      "ops": 1
     },
@@ -7886,6 +7977,22 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Isco",
+     "id": "340",
+     "tipo": "compra",
+     "importe": 10400000,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
+     "j": "Youssouf Fofana",
+     "id": "4947927",
+     "tipo": "compra",
+     "importe": 5426000,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
      "j": "Sergio Camello",
      "id": "17290",
      "tipo": "venta",
@@ -8433,6 +8540,12 @@
      "ventas": 5280000,
      "ops": 2
     },
+    "340": {
+     "nombre": "Isco",
+     "compras": 10400000,
+     "ventas": 0,
+     "ops": 1
+    },
     "607": {
      "nombre": "Borja Mayoral",
      "compras": 2110000,
@@ -8690,6 +8803,12 @@
      "compras": 2300000,
      "ventas": 1980300,
      "ops": 2
+    },
+    "4947927": {
+     "nombre": "Youssouf Fofana",
+     "compras": 5426000,
+     "ventas": 0,
+     "ops": 1
     }
    }
   },
