@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-20T12:08:05.420Z",
+ "cuando": "2026-09-20T12:24:41.249Z",
  "fuente": "futbolfantasy.com",
  "leidos": 507,
  "jugadores": {
@@ -2592,6 +2592,12 @@
    "fuera": 0,
    "min": 471
   },
+  "71010": {
+   "prob": 100,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 540
+  },
   "71011": {
    "prob": 100,
    "sancionado": 0,
@@ -2714,15 +2720,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 6
-  },
-  "71511": {
-   "prob": 100,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0,
-   "lesion": "Lesión en el sóleo",
-   "desde": "25/07 (57 días)",
-   "hasta": null
   },
   "71530": {
    "prob": 30,

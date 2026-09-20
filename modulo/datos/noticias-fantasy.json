@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-20T12:08:06.474Z",
+ "cuando": "2026-09-20T12:24:42.248Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -7,7 +7,7 @@
    "fecha": "20/09",
    "titulo": "Sigue en directo el Getafe - Málaga",
    "url": "https://www.futbolfantasy.com/partidos/22488-getafe-malaga",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "19/09",
@@ -25,6 +25,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Peio Canales regresa a la ecuación de la medular",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151613-peio-canales-regresa-a-la-ecuacion-de-la-medular",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Lista de Ramis para recibir al Rayo sin los cuatro lesionados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151535-lista-de-ramis-para-recibir-al-rayo-sin-los-cuatro-lesionados",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Julián Álvarez completa el último entrenamiento antes del derbi; Sorloth y Barrios siguen al margen",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151534-julian-alvarez-completa-el-ultimo-entrenamiento-antes-del-derbi-sorloth-y-barrios-siguen-al-m",
-   "categoria": "entrenamiento"
   }
  ]
 }
