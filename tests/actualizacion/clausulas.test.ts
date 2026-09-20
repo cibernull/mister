@@ -162,6 +162,26 @@ describe('gastoEnClausulas', () => {
     expect(r.total).toBe(700_000)
   })
 
+  it('una cláusula anclada a lo que se pagó no son subidas: 1,5 × lo pagado, no 1,5 × el valor', () => {
+    // Enes Ünal, 18 de septiembre de 2026: Legalize pagó 11 M por un jugador
+    // de 5,4 M y su cláusula quedó en 16,5 M, exactamente 1,5 × 11 M. Dividido
+    // por el valor da ×3,06, que se leía como tres subidas —3.237.000 € que
+    // nunca pagó—. Dani Ceballos, igual: 7.269.425 = 2,5 × 2.907.770 pagados,
+    // dos subidas reales, no ocho.
+    const r = gastoEnClausulas([], [
+      { id: 'unal', valor: 5_395_000, clausula: 16_500_000, pagado: 11_000_000 },
+      { id: 'ceballos', valor: 1_322_000, clausula: 7_269_425, pagado: 2_907_770 },
+    ])
+    expect(r.escalonesHeredados).toBe(2)
+    // Cada escalón se cobra al 20 % del valor, que es lo que se comprobó en el libro.
+    expect(r.heredado).toBe(2 * 1_322_000 * 0.2)
+  })
+
+  it('si el valor ya supera lo pagado, la base vuelve a ser el valor', () => {
+    const r = gastoEnClausulas([], [{ id: 'x', valor: 6_000_000, clausula: 12_000_000, pagado: 4_000_000 }])
+    expect(r.escalonesHeredados).toBe(1)
+  })
+
   it('no cobra dos veces la subida que ya se vio', () => {
     const r = gastoEnClausulas([sub('1', 1, 500_000)], [{ id: '1', valor: 2_500_000, clausula: 5_000_000 }])
     expect(r.heredado).toBe(0)

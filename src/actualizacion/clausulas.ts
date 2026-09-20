@@ -201,9 +201,19 @@ export function gastoPorEquipo(subidas: Subida[]): Map<string, number> {
  * subió tres cláusulas antes de que vigiláramos y una después salía con la
  * mayor de las dos cifras en vez de con la suma.
  */
+/**
+ * La base sobre la que Mister pone la cláusula: el valor del jugador, salvo
+ * que su dueño pagara más que eso por él. Entonces la cláusula queda anclada a
+ * lo pagado —1,5 × 11 M por un jugador de 5,4 M, comprobado al euro con Enes
+ * Ünal— hasta que el valor lo supere, y las subidas multiplican esa base
+ * (Dani Ceballos: 7.269.425 = 2,5 × 2.907.770 pagados). Dividir siempre por
+ * el valor leía esos anclajes como subidas que nadie pagó.
+ */
+export const baseDeClausula = (j: { valor: number; pagado?: number | null }): number => Math.max(j.valor, j.pagado ?? 0)
+
 export function gastoEnClausulas(
   vistas: Subida[],
-  suyos: { id: string; valor: number; clausula: number | null }[],
+  suyos: { id: string; valor: number; clausula: number | null; pagado?: number | null }[],
 ): { total: number; visto: number; heredado: number; escalonesHeredados: number } {
   const visto = vistas.reduce((t, s) => t + s.coste, 0)
 
@@ -216,7 +226,7 @@ export function gastoEnClausulas(
   let escalonesHeredados = 0
   for (const j of suyos) {
     if (j.clausula === null) continue
-    const vivos = subidasVivas(j.valor, j.clausula)
+    const vivos = subidasVivas(baseDeClausula(j), j.clausula)
     // Solo los que no hemos visto subir: los vistos ya están contados arriba, y
     // contarlos otra vez sería cobrarle dos veces la misma subida.
     const sinVer = Math.max(0, vivos - (escalonesVistos.get(j.id) ?? 0))

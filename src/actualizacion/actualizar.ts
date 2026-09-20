@@ -425,10 +425,16 @@ async function intentar(): Promise<Resultado> {
     // Lo visto más lo heredado, no el mayor de los dos: quien subió cláusulas
     // antes de que empezáramos a mirar y también después tenía las dos cosas y
     // solo se le contaba una.
+    // Lo que este dueño pagó por cada uno: si fue más que su valor, la
+    // cláusula quedó anclada a eso y no hay que leer el exceso como subidas.
+    const pagadoPor = (id: string): number | null => {
+      const compras = hechos.traspasos.filter((t) => t.idJugador === id && t.a === e.n)
+      return compras.length ? compras.reduce((u, t) => (t.cuando > u.cuando ? t : u)).importe : null
+    }
     const paraClausulas = (cuentas.plantillas[e.n] ?? [])
       .map((id) => universo.find((u) => u.id === id))
       .filter((u): u is (typeof universo)[number] => u !== undefined)
-      .map((u) => ({ id: u.id, valor: u.valor, clausula: u.clausula }))
+      .map((u) => ({ id: u.id, valor: u.valor, clausula: u.clausula, pagado: pagadoPor(u.id) }))
     const gasto = gastoEnClausulas(
       subidasVistas.filter((s) => s.equipo === e.n),
       paraClausulas,
