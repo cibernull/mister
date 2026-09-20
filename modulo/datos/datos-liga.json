@@ -1133,6 +1133,16 @@
  ],
  "movimientos": [
   {
+   "id": "64468",
+   "nombre": "Tyrhys Dolan",
+   "de": "Mario80",
+   "a": null,
+   "importe": 4946000,
+   "tipo": "normal",
+   "fecha": "2026-09-20 08:54:57",
+   "pos": 3
+  },
+  {
    "id": "29163",
    "nombre": "Omar El Hilali",
    "de": "Saiyans FC (Fran)",
@@ -7451,6 +7461,14 @@
   "Mario80": {
    "movimientos": [
     {
+     "j": "Tyrhys Dolan",
+     "id": "64468",
+     "tipo": "venta",
+     "importe": 4946000,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
      "j": "Dani Ceballos",
      "id": "96",
      "tipo": "compra",
@@ -7935,8 +7953,8 @@
     "64468": {
      "nombre": "Tyrhys Dolan",
      "compras": 1653060,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 4946000,
+     "ops": 2
     },
     "65136": {
      "nombre": "Fede Redondo",

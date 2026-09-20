@@ -262,6 +262,19 @@
   "clausula": 30608000
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-09-20",
+  "id": "64468",
+  "de": "Mario80",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "64468",
+  "entra": false
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-19",
   "id": "128",

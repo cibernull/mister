@@ -5847,6 +5847,23 @@
    "puntos": 18,
    "media": 3,
    "racha": "5,3,8,-4,-"
+  },
+  {
+   "idTransfer": 549448624,
+   "idJugador": "64468",
+   "nombre": "Tyrhys Dolan",
+   "de": "Mario80",
+   "a": "Mister",
+   "idUcDe": 13435216,
+   "idUcA": 0,
+   "importe": 4946000,
+   "tipo": "normal",
+   "cuando": "2026-09-20 08:54:57",
+   "valor": 4750000,
+   "posicion": 3,
+   "puntos": 21,
+   "media": 3.5,
+   "racha": "2,4,2,-,1"
   }
  ],
  "salidas": [
