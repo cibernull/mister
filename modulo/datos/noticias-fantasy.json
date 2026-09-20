@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-20T21:08:10.380Z",
+ "cuando": "2026-09-20T21:32:36.260Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,12 @@
    "fecha": "19/09",
    "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Matarazzo esconde una botella de whisky en Mestalla",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151652-matarazzo-esconde-una-botella-de-whisky-en-mestalla",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Giráldez analiza la falta de acierto y habla de Borja Iglesias, Aspas, El Abdellaoui y Jutglà",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151575-giraldez-analiza-la-falta-de-acierto-y-habla-de-borja-iglesias-aspas-el-abdellaoui-y-jutgla",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Abde Rebbach se retira con molestias en el cuádriceps de San Mamés",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151574-abde-rebbach-se-retira-con-molestias-en-el-cuadriceps-de-san-mames",
-   "categoria": "lesión"
   }
  ]
 }
