@@ -4,8 +4,8 @@
   "description": "Datos, mercado y decisiones para ganar tu liga.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#090A0F",
-  "theme_color": "#090A0F",
+  "background_color": "#F2F2F7",
+  "theme_color": "#F2F2F7",
   "lang": "es",
   "icons": [
     { "src": "icono-1024.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any maskable" }
