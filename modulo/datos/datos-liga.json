@@ -1133,6 +1133,26 @@
  ],
  "movimientos": [
   {
+   "id": "29163",
+   "nombre": "Omar El Hilali",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 5426260,
+   "tipo": "normal",
+   "fecha": "2026-09-20 08:06:35",
+   "pos": 2
+  },
+  {
+   "id": "24",
+   "nombre": "Unai López",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 5344560,
+   "tipo": "normal",
+   "fecha": "2026-09-20 08:06:00",
+   "pos": 3
+  },
+  {
    "id": "616",
    "nombre": "Rodri Hernández",
    "de": "Niutin FC (Isaac)",
@@ -7993,6 +8013,22 @@
      "op": "normal"
     },
     {
+     "j": "Unai López",
+     "id": "24",
+     "tipo": "venta",
+     "importe": 5344560,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
+     "j": "Omar El Hilali",
+     "id": "29163",
+     "tipo": "venta",
+     "importe": 5426260,
+     "fecha": "2026-09-20",
+     "op": "normal"
+    },
+    {
      "j": "Sergio Camello",
      "id": "17290",
      "tipo": "venta",
@@ -8525,8 +8561,8 @@
     "24": {
      "nombre": "Unai López",
      "compras": 4330000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5344560,
+     "ops": 2
     },
     "239": {
      "nombre": "Pedro Bigas",
@@ -8657,8 +8693,8 @@
     "29163": {
      "nombre": "Omar El Hilali",
      "compras": 2227000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5426260,
+     "ops": 2
     },
     "29169": {
      "nombre": "Pablo Ibáñez",

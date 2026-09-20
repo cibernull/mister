@@ -233,6 +233,35 @@
   "entra": true
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-09-20",
+  "id": "24",
+  "de": "Saiyans FC (Fran)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-20",
+  "id": "607",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-20",
+  "id": "29163",
+  "de": "Saiyans FC (Fran)",
+  "a": null
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-09-20",
+  "id": "54817",
+  "equipo": "Saiyans FC (Fran)",
+  "escalones": 1,
+  "coste": 3060800,
+  "clausula": 30608000
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-19",
   "id": "128",

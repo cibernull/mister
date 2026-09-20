@@ -5813,6 +5813,40 @@
    "puntos": 42,
    "media": 7,
    "racha": "4,9,7,8,9"
+  },
+  {
+   "idTransfer": 549445204,
+   "idJugador": "24",
+   "nombre": "Unai López",
+   "de": "Saiyans FC (Fran)",
+   "a": "Mister",
+   "idUcDe": 12493752,
+   "idUcA": 0,
+   "importe": 5344560,
+   "tipo": "normal",
+   "cuando": "2026-09-20 08:06:00",
+   "valor": 5158000,
+   "posicion": 3,
+   "puntos": 26,
+   "media": 3.7,
+   "racha": "2,6,2,4,3"
+  },
+  {
+   "idTransfer": 549445240,
+   "idJugador": "29163",
+   "nombre": "Omar El Hilali",
+   "de": "Saiyans FC (Fran)",
+   "a": "Mister",
+   "idUcDe": 12493752,
+   "idUcA": 0,
+   "importe": 5426260,
+   "tipo": "normal",
+   "cuando": "2026-09-20 08:06:35",
+   "valor": 5478000,
+   "posicion": 2,
+   "puntos": 18,
+   "media": 3,
+   "racha": "5,3,8,-4,-"
   }
  ],
  "salidas": [
