@@ -1171,7 +1171,8 @@
    "posicion": 3,
    "puntos": 2,
    "media": 2,
-   "racha": "-,-,2,-"
+   "racha": "-,-,2,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537187747,
@@ -1188,7 +1189,8 @@
    "posicion": 1,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-,-"
+   "racha": "-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537237788,
@@ -1205,7 +1207,8 @@
    "posicion": 4,
    "puntos": 23,
    "media": 5.8,
-   "racha": "3,11,4,5"
+   "racha": "3,11,4,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537237877,
@@ -1222,7 +1225,8 @@
    "posicion": 2,
    "puntos": 13,
    "media": 3.3,
-   "racha": "5,5,0,3"
+   "racha": "5,5,0,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537237898,
@@ -1239,7 +1243,8 @@
    "posicion": 3,
    "puntos": 1,
    "media": 1,
-   "racha": "1,-,-"
+   "racha": "1,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537340047,
@@ -1256,7 +1261,8 @@
    "posicion": 4,
    "puntos": 18,
    "media": 4.5,
-   "racha": "2,4,2,10"
+   "racha": "2,4,2,10",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537344086,
@@ -1273,7 +1279,13 @@
    "posicion": 4,
    "puntos": 12,
    "media": 3,
-   "racha": "2,5,2,3"
+   "racha": "2,5,2,3",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 2105870
+    }
+   ]
   },
   {
    "idTransfer": 537360064,
@@ -1290,7 +1302,8 @@
    "posicion": 3,
    "puntos": 18,
    "media": 4.5,
-   "racha": "10,2,2,4"
+   "racha": "10,2,2,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537365003,
@@ -1307,7 +1320,8 @@
    "posicion": 1,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-,-"
+   "racha": "-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537435738,
@@ -1324,7 +1338,8 @@
    "posicion": 3,
    "puntos": 4,
    "media": 2,
-   "racha": "2,2,-,-"
+   "racha": "2,2,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537459476,
@@ -1341,7 +1356,21 @@
    "posicion": 3,
    "puntos": 20,
    "media": 5,
-   "racha": "4,3,4,9"
+   "racha": "4,3,4,9",
+   "otrasPujas": [
+    {
+     "equipo": "Saiyans FC (Fran)",
+     "puja": 4000000
+    },
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 3397317
+    },
+    {
+     "equipo": "Mario80",
+     "puja": 3378390
+    }
+   ]
   },
   {
    "idTransfer": 537463345,
@@ -1358,7 +1387,8 @@
    "posicion": 3,
    "puntos": 5,
    "media": 2.5,
-   "racha": "3,2,-,-"
+   "racha": "3,2,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537484705,
@@ -1375,7 +1405,8 @@
    "posicion": 3,
    "puntos": 12,
    "media": 3,
-   "racha": "5,3,2,2"
+   "racha": "5,3,2,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537529065,
@@ -1392,7 +1423,8 @@
    "posicion": 3,
    "puntos": 8,
    "media": 2.7,
-   "racha": "2,-,2,4"
+   "racha": "2,-,2,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537531030,
@@ -1409,7 +1441,8 @@
    "posicion": 2,
    "puntos": 8,
    "media": 4,
-   "racha": "-,-,3,-,5"
+   "racha": "-,-,3,-,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537558744,
@@ -1426,7 +1459,8 @@
    "posicion": 3,
    "puntos": 4,
    "media": 2,
-   "racha": "-,-,2,2"
+   "racha": "-,-,2,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537558847,
@@ -1443,7 +1477,8 @@
    "posicion": 3,
    "puntos": 2,
    "media": 1,
-   "racha": "-,-,1,1"
+   "racha": "-,-,1,1",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537579559,
@@ -1460,7 +1495,8 @@
    "posicion": 2,
    "puntos": 7,
    "media": 2.3,
-   "racha": "-,2,2,3"
+   "racha": "-,2,2,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537585113,
@@ -1477,7 +1513,8 @@
    "posicion": 3,
    "puntos": 13,
    "media": 3.3,
-   "racha": "3,5,2,3"
+   "racha": "3,5,2,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537598964,
@@ -1494,7 +1531,8 @@
    "posicion": 3,
    "puntos": 16,
    "media": 4,
-   "racha": "2,4,6,4"
+   "racha": "2,4,6,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537702315,
@@ -1511,7 +1549,13 @@
    "posicion": 3,
    "puntos": 9,
    "media": 3,
-   "racha": "-,4,2,3"
+   "racha": "-,4,2,3",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 3104560
+    }
+   ]
   },
   {
    "idTransfer": 537704805,
@@ -1528,7 +1572,8 @@
    "posicion": 3,
    "puntos": 18,
    "media": 4.5,
-   "racha": "3,3,8,4"
+   "racha": "3,3,8,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537721600,
@@ -1545,7 +1590,8 @@
    "posicion": 1,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-,-,-"
+   "racha": "-,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537801809,
@@ -1562,7 +1608,8 @@
    "posicion": 4,
    "puntos": 5,
    "media": 1.7,
-   "racha": "2,2,1,-"
+   "racha": "2,2,1,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537808262,
@@ -1579,7 +1626,8 @@
    "posicion": 2,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-,-"
+   "racha": "-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537906455,
@@ -1596,7 +1644,8 @@
    "posicion": 3,
    "puntos": 25,
    "media": 6.3,
-   "racha": "7,6,7,5"
+   "racha": "7,6,7,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537906473,
@@ -1613,7 +1662,8 @@
    "posicion": 2,
    "puntos": 12,
    "media": 3,
-   "racha": "6,3,5,-2"
+   "racha": "6,3,5,-2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 537964701,
@@ -1630,7 +1680,8 @@
    "posicion": 1,
    "puntos": 18,
    "media": 4.5,
-   "racha": "5,7,5,1"
+   "racha": "5,7,5,1",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538010583,
@@ -1647,7 +1698,8 @@
    "posicion": 2,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-,-"
+   "racha": "-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538025585,
@@ -1664,7 +1716,8 @@
    "posicion": 2,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-,-,-"
+   "racha": "-,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538081996,
@@ -1681,7 +1734,8 @@
    "posicion": 2,
    "puntos": 18,
    "media": 4.5,
-   "racha": "3,7,4,4"
+   "racha": "3,7,4,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538082642,
@@ -1698,7 +1752,13 @@
    "posicion": 3,
    "puntos": 7,
    "media": 2.3,
-   "racha": "1,3,3,-"
+   "racha": "1,3,3,-",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 4556900
+    }
+   ]
   },
   {
    "idTransfer": 538102987,
@@ -1715,7 +1775,8 @@
    "posicion": 2,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-,-"
+   "racha": "-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538102993,
@@ -1732,7 +1793,8 @@
    "posicion": 2,
    "puntos": 5,
    "media": 5,
-   "racha": "-,-,5,-"
+   "racha": "-,-,5,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538226696,
@@ -1749,7 +1811,17 @@
    "posicion": 3,
    "puntos": 18,
    "media": 4.5,
-   "racha": "4,3,5,6"
+   "racha": "4,3,5,6",
+   "otrasPujas": [
+    {
+     "equipo": "Saiyans FC (Fran)",
+     "puja": 4000000
+    },
+    {
+     "equipo": "Mario80",
+     "puja": 3369710
+    }
+   ]
   },
   {
    "idTransfer": 538358050,
@@ -1766,7 +1838,8 @@
    "posicion": 2,
    "puntos": 2,
    "media": 2,
-   "racha": "-,-,-,2,-"
+   "racha": "-,-,-,2,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538358054,
@@ -1783,7 +1856,8 @@
    "posicion": 4,
    "puntos": 7,
    "media": 3.5,
-   "racha": "-,5,2,-"
+   "racha": "-,5,2,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538358055,
@@ -1800,7 +1874,8 @@
    "posicion": 4,
    "puntos": 1,
    "media": 1,
-   "racha": "1,-,-,-"
+   "racha": "1,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538358058,
@@ -1817,7 +1892,8 @@
    "posicion": 3,
    "puntos": 6,
    "media": 2,
-   "racha": "2,2,2,-"
+   "racha": "2,2,2,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538358067,
@@ -1834,7 +1910,8 @@
    "posicion": 3,
    "puntos": 8,
    "media": 2.7,
-   "racha": "2,-,2,4"
+   "racha": "2,-,2,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538370953,
@@ -1851,7 +1928,8 @@
    "posicion": 3,
    "puntos": 7,
    "media": 3.5,
-   "racha": "-,-,4,3"
+   "racha": "-,-,4,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538496310,
@@ -1868,7 +1946,8 @@
    "posicion": 3,
    "puntos": 20,
    "media": 4,
-   "racha": "10,2,2,4,2"
+   "racha": "10,2,2,4,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538504588,
@@ -1885,7 +1964,8 @@
    "posicion": 1,
    "puntos": 28,
    "media": 5.6,
-   "racha": "5,4,8,7,4"
+   "racha": "5,4,8,7,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538561722,
@@ -1902,7 +1982,8 @@
    "posicion": 4,
    "puntos": 9,
    "media": 1.8,
-   "racha": "2,1,2,2,2"
+   "racha": "2,1,2,2,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538572121,
@@ -1919,7 +2000,8 @@
    "posicion": 3,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-,-,-"
+   "racha": "-,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538645940,
@@ -1936,7 +2018,8 @@
    "posicion": 2,
    "puntos": 12,
    "media": 3,
-   "racha": "4,3,2,3"
+   "racha": "4,3,2,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538654868,
@@ -1953,7 +2036,8 @@
    "posicion": 2,
    "puntos": 3,
    "media": 3,
-   "racha": "3,-,-,-"
+   "racha": "3,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538658263,
@@ -1970,7 +2054,8 @@
    "posicion": 2,
    "puntos": -4,
    "media": -1.3,
-   "racha": "0,3,-,-7,-"
+   "racha": "0,3,-,-7,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538659061,
@@ -1987,7 +2072,8 @@
    "posicion": 1,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-,-"
+   "racha": "-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538868227,
@@ -2004,7 +2090,8 @@
    "posicion": 3,
    "puntos": 5,
    "media": 2.5,
-   "racha": "5,-,0,-,-"
+   "racha": "5,-,0,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538941245,
@@ -2021,7 +2108,13 @@
    "posicion": 2,
    "puntos": 18,
    "media": 3.6,
-   "racha": "4,3,5,2,4"
+   "racha": "4,3,5,2,4",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 1786000
+    }
+   ]
   },
   {
    "idTransfer": 538947209,
@@ -2038,7 +2131,8 @@
    "posicion": 4,
    "puntos": 23,
    "media": 5.8,
-   "racha": "3,11,4,5"
+   "racha": "3,11,4,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538953256,
@@ -2055,7 +2149,8 @@
    "posicion": 2,
    "puntos": 2,
    "media": 0.7,
-   "racha": "-,1,2,-1,-"
+   "racha": "-,1,2,-1,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 538959104,
@@ -2072,7 +2167,8 @@
    "posicion": 4,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-,-,-"
+   "racha": "-,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539077465,
@@ -2089,7 +2185,8 @@
    "posicion": 2,
    "puntos": 17,
    "media": 3.4,
-   "racha": "4,3,4,1,5"
+   "racha": "4,3,4,1,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539081560,
@@ -2106,7 +2203,8 @@
    "posicion": 2,
    "puntos": 8,
    "media": 2.7,
-   "racha": "5,3,0,-,-"
+   "racha": "5,3,0,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539081723,
@@ -2123,7 +2221,8 @@
    "posicion": 2,
    "puntos": 7,
    "media": 1.8,
-   "racha": "5,-1,-,-,1"
+   "racha": "5,-1,-,-,1",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539152820,
@@ -2140,7 +2239,8 @@
    "posicion": 1,
    "puntos": 15,
    "media": 3,
-   "racha": "3,4,0,4,4"
+   "racha": "3,4,0,4,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539243393,
@@ -2157,7 +2257,8 @@
    "posicion": 1,
    "puntos": 22,
    "media": 4.4,
-   "racha": "4,3,4,4,7"
+   "racha": "4,3,4,4,7",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539248254,
@@ -2174,7 +2275,8 @@
    "posicion": 1,
    "puntos": 9,
    "media": 9,
-   "racha": "-,-,-,-,9"
+   "racha": "-,-,-,-,9",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539251156,
@@ -2191,7 +2293,8 @@
    "posicion": 3,
    "puntos": 12,
    "media": 2.4,
-   "racha": "2,4,3,2,1"
+   "racha": "2,4,3,2,1",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539252898,
@@ -2208,7 +2311,8 @@
    "posicion": 2,
    "puntos": 17,
    "media": 3.4,
-   "racha": "2,6,3,-,5"
+   "racha": "2,6,3,-,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539253443,
@@ -2225,7 +2329,8 @@
    "posicion": 3,
    "puntos": 16,
    "media": 3.2,
-   "racha": "6,2,2,3,3"
+   "racha": "6,2,2,3,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539379949,
@@ -2242,7 +2347,8 @@
    "posicion": 2,
    "puntos": 10,
    "media": 3.3,
-   "racha": "-,5,-1,6"
+   "racha": "-,5,-1,6",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539439656,
@@ -2259,7 +2365,8 @@
    "posicion": 4,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-,-,-"
+   "racha": "-,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539456823,
@@ -2276,7 +2383,8 @@
    "posicion": 4,
    "puntos": 3,
    "media": 1.5,
-   "racha": "-,-,1,-,2"
+   "racha": "-,-,1,-,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539456828,
@@ -2293,7 +2401,8 @@
    "posicion": 3,
    "puntos": 4,
    "media": 2,
-   "racha": "-,-,2,-,2"
+   "racha": "-,-,2,-,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539500904,
@@ -2310,7 +2419,13 @@
    "posicion": 2,
    "puntos": 2,
    "media": 1,
-   "racha": "2,0,-,-"
+   "racha": "2,0,-,-",
+   "otrasPujas": [
+    {
+     "equipo": "Mario80",
+     "puja": 1691330
+    }
+   ]
   },
   {
    "idTransfer": 539627260,
@@ -2327,7 +2442,13 @@
    "posicion": 4,
    "puntos": 4,
    "media": 1.3,
-   "racha": "0,0,4,-"
+   "racha": "0,0,4,-",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 3139100
+    }
+   ]
   },
   {
    "idTransfer": 539686076,
@@ -2344,7 +2465,8 @@
    "posicion": 4,
    "puntos": 19,
    "media": 4.8,
-   "racha": "4,2,8,5"
+   "racha": "4,2,8,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539686084,
@@ -2361,7 +2483,8 @@
    "posicion": 3,
    "puntos": 5,
    "media": 2.5,
-   "racha": "3,2,-,-,-"
+   "racha": "3,2,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539753999,
@@ -2378,7 +2501,8 @@
    "posicion": 3,
    "puntos": 17,
    "media": 3.4,
-   "racha": "6,4,3,2,2"
+   "racha": "6,4,3,2,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539755959,
@@ -2395,7 +2519,8 @@
    "posicion": 2,
    "puntos": 22,
    "media": 4.4,
-   "racha": "2,4,5,3,8"
+   "racha": "2,4,5,3,8",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539833005,
@@ -2412,7 +2537,8 @@
    "posicion": 4,
    "puntos": 47,
    "media": 11.8,
-   "racha": "11,10,13,13"
+   "racha": "11,10,13,13",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539876611,
@@ -2429,7 +2555,8 @@
    "posicion": 3,
    "puntos": 6,
    "media": 2,
-   "racha": "2,0,-,-,4"
+   "racha": "2,0,-,-,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 539892721,
@@ -2446,7 +2573,17 @@
    "posicion": 4,
    "puntos": 17,
    "media": 4.3,
-   "racha": "2,10,2,3"
+   "racha": "2,10,2,3",
+   "otrasPujas": [
+    {
+     "equipo": "Cacaculopedopis",
+     "puja": 1979850
+    },
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 1662000
+    }
+   ]
   },
   {
    "idTransfer": 539937174,
@@ -2463,7 +2600,8 @@
    "posicion": 3,
    "puntos": 14,
    "media": 2.3,
-   "racha": "3,2,2,3,3"
+   "racha": "3,2,2,3,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540007627,
@@ -2480,7 +2618,8 @@
    "posicion": 3,
    "puntos": 10,
    "media": 2.5,
-   "racha": "2,4,2,2"
+   "racha": "2,4,2,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540007634,
@@ -2497,7 +2636,8 @@
    "posicion": 3,
    "puntos": 7,
    "media": 3.5,
-   "racha": "6,1,-,-,-"
+   "racha": "6,1,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540014312,
@@ -2514,7 +2654,8 @@
    "posicion": 3,
    "puntos": 24,
    "media": 6,
-   "racha": "2,3,13,6"
+   "racha": "2,3,13,6",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540025867,
@@ -2531,7 +2672,8 @@
    "posicion": 3,
    "puntos": 7,
    "media": 2.3,
-   "racha": "1,3,3,-,-"
+   "racha": "1,3,3,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540109708,
@@ -2548,7 +2690,8 @@
    "posicion": 2,
    "puntos": 21,
    "media": 3.5,
-   "racha": "5,4,2,4,1"
+   "racha": "5,4,2,4,1",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540133909,
@@ -2565,7 +2708,8 @@
    "posicion": 3,
    "puntos": 15,
    "media": 7.5,
-   "racha": "4,-,-,-,-"
+   "racha": "4,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540144056,
@@ -2582,7 +2726,8 @@
    "posicion": 4,
    "puntos": 6,
    "media": 1.5,
-   "racha": "-,1,2,1,-"
+   "racha": "-,1,2,1,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540161991,
@@ -2599,7 +2744,8 @@
    "posicion": 2,
    "puntos": 1,
    "media": 0,
-   "racha": "-,-,-,0,-"
+   "racha": "-,-,-,0,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540207635,
@@ -2616,7 +2762,8 @@
    "posicion": 2,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-,-,-"
+   "racha": "-,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540273277,
@@ -2633,7 +2780,8 @@
    "posicion": 4,
    "puntos": 18,
    "media": 3.6,
-   "racha": "11,2,-,2,2"
+   "racha": "11,2,-,2,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540276375,
@@ -2650,7 +2798,8 @@
    "posicion": 4,
    "puntos": 25,
    "media": 4.2,
-   "racha": "2,8,5,2,4"
+   "racha": "2,8,5,2,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540297149,
@@ -2667,7 +2816,8 @@
    "posicion": 2,
    "puntos": 11,
    "media": 2.8,
-   "racha": "2,2,3,-,4"
+   "racha": "2,2,3,-,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540344064,
@@ -2684,7 +2834,8 @@
    "posicion": 2,
    "puntos": 11,
    "media": 2.2,
-   "racha": "2,4,1,2,-"
+   "racha": "2,4,1,2,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540358553,
@@ -2701,7 +2852,8 @@
    "posicion": 2,
    "puntos": 6,
    "media": 1.2,
-   "racha": "3,4,-8,-,4"
+   "racha": "3,4,-8,-,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540411726,
@@ -2718,7 +2870,8 @@
    "posicion": 3,
    "puntos": 42,
    "media": 7,
-   "racha": "4,9,7,8,9"
+   "racha": "4,9,7,8,9",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540417823,
@@ -2735,7 +2888,8 @@
    "posicion": 3,
    "puntos": 43,
    "media": 7.2,
-   "racha": "4,6,3,3,13"
+   "racha": "4,6,3,3,13",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540463444,
@@ -2752,7 +2906,8 @@
    "posicion": 1,
    "puntos": 42,
    "media": 6,
-   "racha": "8,7,4,4,10"
+   "racha": "8,7,4,4,10",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540477029,
@@ -2769,7 +2924,8 @@
    "posicion": 2,
    "puntos": 23,
    "media": 3.8,
-   "racha": "3,6,3,3,5"
+   "racha": "3,6,3,3,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540480375,
@@ -2786,7 +2942,8 @@
    "posicion": 2,
    "puntos": 22,
    "media": 4.4,
-   "racha": "3,2,-1,10,8"
+   "racha": "3,2,-1,10,8",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540480397,
@@ -2803,7 +2960,8 @@
    "posicion": 3,
    "puntos": 30,
    "media": 5,
-   "racha": "6,4,12,5,1"
+   "racha": "6,4,12,5,1",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540565021,
@@ -2820,7 +2978,8 @@
    "posicion": 2,
    "puntos": 20,
    "media": 3.8,
-   "racha": "5,3,5,3,3"
+   "racha": "5,3,5,3,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540583252,
@@ -2837,7 +2996,8 @@
    "posicion": 3,
    "puntos": 16,
    "media": 4,
-   "racha": "6,3,-,-,2"
+   "racha": "6,3,-,-,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540745667,
@@ -2854,7 +3014,13 @@
    "posicion": 3,
    "puntos": 30,
    "media": 5.8,
-   "racha": "6,5,3,11,-"
+   "racha": "6,5,3,11,-",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 2095110
+    }
+   ]
   },
   {
    "idTransfer": 540788409,
@@ -2871,7 +3037,8 @@
    "posicion": 2,
    "puntos": 3,
    "media": 1,
-   "racha": "-,-,-,1,2"
+   "racha": "-,-,-,1,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540788414,
@@ -2888,7 +3055,8 @@
    "posicion": 3,
    "puntos": 19,
    "media": 3.2,
-   "racha": "2,4,5,4,2"
+   "racha": "2,4,5,4,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540934080,
@@ -2905,7 +3073,8 @@
    "posicion": 4,
    "puntos": 24,
    "media": 4,
-   "racha": "4,3,3,3,-"
+   "racha": "4,3,3,3,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 540977462,
@@ -2922,7 +3091,13 @@
    "posicion": 3,
    "puntos": 14,
    "media": 2.8,
-   "racha": "4,2,2,1,-"
+   "racha": "4,2,2,1,-",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 2523370
+    }
+   ]
   },
   {
    "idTransfer": 541034522,
@@ -2939,7 +3114,8 @@
    "posicion": 1,
    "puntos": 7,
    "media": 3.5,
-   "racha": "-,-,-,-,-"
+   "racha": "-,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541034526,
@@ -2956,7 +3132,8 @@
    "posicion": 3,
    "puntos": 12,
    "media": 4,
-   "racha": "4,2,6"
+   "racha": "4,2,6",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541034534,
@@ -2973,7 +3150,8 @@
    "posicion": 2,
    "puntos": 2,
    "media": 2,
-   "racha": "-,-,2,-,-"
+   "racha": "-,-,2,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541086361,
@@ -2990,7 +3168,8 @@
    "posicion": 1,
    "puntos": 46,
    "media": 7.7,
-   "racha": "6,2,12,9,9"
+   "racha": "6,2,12,9,9",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541097327,
@@ -3007,7 +3186,8 @@
    "posicion": 3,
    "puntos": 21,
    "media": 3.8,
-   "racha": "4,2,2,-,7"
+   "racha": "4,2,2,-,7",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541230639,
@@ -3024,7 +3204,8 @@
    "posicion": 1,
    "puntos": 24,
    "media": 4.8,
-   "racha": "5,6,-,4,3"
+   "racha": "5,6,-,4,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541230877,
@@ -3041,7 +3222,13 @@
    "posicion": 2,
    "puntos": 12,
    "media": 3,
-   "racha": "4,-,3,2,3"
+   "racha": "4,-,3,2,3",
+   "otrasPujas": [
+    {
+     "equipo": "Saiyans FC (Fran)",
+     "puja": 2513000
+    }
+   ]
   },
   {
    "idTransfer": 541303545,
@@ -3058,7 +3245,8 @@
    "posicion": 2,
    "puntos": 20,
    "media": 4,
-   "racha": "3,7,4,4,2"
+   "racha": "3,7,4,4,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541364942,
@@ -3075,7 +3263,8 @@
    "posicion": 3,
    "puntos": 12,
    "media": 2.4,
-   "racha": "5,1,-,2,2"
+   "racha": "5,1,-,2,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541370726,
@@ -3092,7 +3281,8 @@
    "posicion": 3,
    "puntos": 7,
    "media": 2,
-   "racha": "2,2,-,-,-"
+   "racha": "2,2,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541523849,
@@ -3109,7 +3299,13 @@
    "posicion": 2,
    "puntos": 21,
    "media": 3,
-   "racha": "4,2,3,2,1"
+   "racha": "4,2,3,2,1",
+   "otrasPujas": [
+    {
+     "equipo": "Niutin FC (Isaac)",
+     "puja": 691740
+    }
+   ]
   },
   {
    "idTransfer": 541525926,
@@ -3126,7 +3322,13 @@
    "posicion": 4,
    "puntos": 20,
    "media": 3.3,
-   "racha": "2,-,2,2,2"
+   "racha": "2,-,2,2,2",
+   "otrasPujas": [
+    {
+     "equipo": "Niutin FC (Isaac)",
+     "puja": 2434260
+    }
+   ]
   },
   {
    "idTransfer": 541547919,
@@ -3143,7 +3345,8 @@
    "posicion": 4,
    "puntos": 1,
    "media": 0.5,
-   "racha": "0,1,-,-,-"
+   "racha": "0,1,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541548003,
@@ -3160,7 +3363,8 @@
    "posicion": 3,
    "puntos": 50,
    "media": 8.3,
-   "racha": "3,18,2,3,12"
+   "racha": "3,18,2,3,12",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541584251,
@@ -3177,7 +3381,8 @@
    "posicion": 3,
    "puntos": 36,
    "media": 5.1,
-   "racha": "8,10,2,5,2"
+   "racha": "8,10,2,5,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541661392,
@@ -3194,7 +3399,8 @@
    "posicion": 4,
    "puntos": 24,
    "media": 3.8,
-   "racha": "4,2,10,4,1"
+   "racha": "4,2,10,4,1",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541696656,
@@ -3211,7 +3417,8 @@
    "posicion": 3,
    "puntos": 34,
    "media": 4.9,
-   "racha": "5,3,5,5,2"
+   "racha": "5,3,5,5,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541824602,
@@ -3228,7 +3435,13 @@
    "posicion": 4,
    "puntos": 49,
    "media": 7,
-   "racha": "4,5,11,11,4"
+   "racha": "4,5,11,11,4",
+   "otrasPujas": [
+    {
+     "equipo": "Mario80",
+     "puja": 10703090
+    }
+   ]
   },
   {
    "idTransfer": 541840325,
@@ -3245,7 +3458,8 @@
    "posicion": 2,
    "puntos": 23,
    "media": 3.7,
-   "racha": "6,2,3,2,4"
+   "racha": "6,2,3,2,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541885286,
@@ -3262,7 +3476,8 @@
    "posicion": 4,
    "puntos": 1,
    "media": 1,
-   "racha": "-,-,-,-,-"
+   "racha": "-,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541897456,
@@ -3279,7 +3494,8 @@
    "posicion": 2,
    "puntos": 4,
    "media": 2,
-   "racha": "1,-,-,-,3"
+   "racha": "1,-,-,-,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 541999940,
@@ -3296,7 +3512,8 @@
    "posicion": 3,
    "puntos": 17,
    "media": 2.8,
-   "racha": "4,2,2,4,3"
+   "racha": "4,2,2,4,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542128428,
@@ -3313,7 +3530,8 @@
    "posicion": 3,
    "puntos": 1,
    "media": 1,
-   "racha": "1,-,-"
+   "racha": "1,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542173928,
@@ -3330,7 +3548,8 @@
    "posicion": 3,
    "puntos": 6,
    "media": 1.5,
-   "racha": "2,-,-,-1,-"
+   "racha": "2,-,-,-1,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542179041,
@@ -3347,7 +3566,8 @@
    "posicion": 2,
    "puntos": 35,
    "media": 5,
-   "racha": "1,2,13,5,4"
+   "racha": "1,2,13,5,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542199026,
@@ -3364,7 +3584,8 @@
    "posicion": 2,
    "puntos": 10,
    "media": 3.3,
-   "racha": "4,-,-,-,-"
+   "racha": "4,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542238151,
@@ -3381,7 +3602,8 @@
    "posicion": 3,
    "puntos": 14,
    "media": 2.8,
-   "racha": "-,2,3,3,3"
+   "racha": "-,2,3,3,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542247427,
@@ -3398,7 +3620,8 @@
    "posicion": 4,
    "puntos": 59,
    "media": 9.8,
-   "racha": "10,13,13,10,2"
+   "racha": "10,13,13,10,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542247518,
@@ -3415,7 +3638,8 @@
    "posicion": 3,
    "puntos": 24,
    "media": 3.4,
-   "racha": "1,4,3,7,3"
+   "racha": "1,4,3,7,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542359589,
@@ -3432,7 +3656,8 @@
    "posicion": 4,
    "puntos": 6,
    "media": 1.5,
-   "racha": "1,2,1,-,-"
+   "racha": "1,2,1,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542365699,
@@ -3449,7 +3674,8 @@
    "posicion": 3,
    "puntos": 15,
    "media": 7.5,
-   "racha": "4,-,-,-,-"
+   "racha": "4,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542431527,
@@ -3466,7 +3692,8 @@
    "posicion": 4,
    "puntos": 4,
    "media": 1.3,
-   "racha": "0,0,4,-,-"
+   "racha": "0,0,4,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542483586,
@@ -3483,7 +3710,8 @@
    "posicion": 3,
    "puntos": 18,
    "media": 6,
-   "racha": "-,-,13,2,-"
+   "racha": "-,-,13,2,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542483758,
@@ -3500,7 +3728,13 @@
    "posicion": 3,
    "puntos": 22,
    "media": 3.7,
-   "racha": "3,3,10,3,2"
+   "racha": "3,3,10,3,2",
+   "otrasPujas": [
+    {
+     "equipo": "Mario80",
+     "puja": 2054020
+    }
+   ]
   },
   {
    "idTransfer": 542513469,
@@ -3517,7 +3751,8 @@
    "posicion": 2,
    "puntos": 26,
    "media": 3.7,
-   "racha": "1,3,6,6,5"
+   "racha": "1,3,6,6,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542637415,
@@ -3534,7 +3769,8 @@
    "posicion": 4,
    "puntos": 43,
    "media": 6.1,
-   "racha": "2,11,3,3,1"
+   "racha": "2,11,3,3,1",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542639237,
@@ -3551,7 +3787,8 @@
    "posicion": 3,
    "puntos": 27,
    "media": 4.3,
-   "racha": "3,5,6,4,4"
+   "racha": "3,5,6,4,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542760107,
@@ -3568,7 +3805,8 @@
    "posicion": 2,
    "puntos": 21,
    "media": 3.5,
-   "racha": "2,4,2,3,4"
+   "racha": "2,4,2,3,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542851052,
@@ -3585,7 +3823,8 @@
    "posicion": 4,
    "puntos": 4,
    "media": 1,
-   "racha": "0,2,2,-,-"
+   "racha": "0,2,2,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542851122,
@@ -3602,7 +3841,8 @@
    "posicion": 3,
    "puntos": 20,
    "media": 5,
-   "racha": "1,6,4,-,9"
+   "racha": "1,6,4,-,9",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542944126,
@@ -3619,7 +3859,8 @@
    "posicion": 3,
    "puntos": 21,
    "media": 4.2,
-   "racha": "6,6,4,-,2"
+   "racha": "6,6,4,-,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542945850,
@@ -3636,7 +3877,13 @@
    "posicion": 4,
    "puntos": 33,
    "media": 5.5,
-   "racha": "9,5,2,-,2"
+   "racha": "9,5,2,-,2",
+   "otrasPujas": [
+    {
+     "equipo": "Mario80",
+     "puja": 14006720
+    }
+   ]
   },
   {
    "idTransfer": 542945868,
@@ -3653,7 +3900,8 @@
    "posicion": 2,
    "puntos": -8,
    "media": -8,
-   "racha": "-,-,-,-,-8"
+   "racha": "-,-,-,-,-8",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542948614,
@@ -3670,7 +3918,13 @@
    "posicion": 1,
    "puntos": 46,
    "media": 7.7,
-   "racha": "6,2,12,9,9"
+   "racha": "6,2,12,9,9",
+   "otrasPujas": [
+    {
+     "equipo": "Saiyans FC (Fran)",
+     "puja": 7600000
+    }
+   ]
   },
   {
    "idTransfer": 542950714,
@@ -3687,7 +3941,8 @@
    "posicion": 2,
    "puntos": 8,
    "media": 1.6,
-   "racha": "2,-,-1,1,2"
+   "racha": "2,-,-1,1,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542963138,
@@ -3704,7 +3959,8 @@
    "posicion": 3,
    "puntos": 7,
    "media": 3.5,
-   "racha": "-,-,-,-,-"
+   "racha": "-,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542994712,
@@ -3721,7 +3977,8 @@
    "posicion": 3,
    "puntos": 21,
    "media": 3.5,
-   "racha": "1,4,12,4,-2"
+   "racha": "1,4,12,4,-2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 542994751,
@@ -3738,7 +3995,8 @@
    "posicion": 2,
    "puntos": 2,
    "media": 1,
-   "racha": "-,-,0,-,2"
+   "racha": "-,-,0,-,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 543106564,
@@ -3755,7 +4013,13 @@
    "posicion": 2,
    "puntos": 23,
    "media": 5.8,
-   "racha": "3,8,6,6,-"
+   "racha": "3,8,6,6,-",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 2697000
+    }
+   ]
   },
   {
    "idTransfer": 543331298,
@@ -3772,7 +4036,8 @@
    "posicion": 2,
    "puntos": 27,
    "media": 4.5,
-   "racha": "2,5,4,5,8"
+   "racha": "2,5,4,5,8",
+   "otrasPujas": []
   },
   {
    "idTransfer": 543358209,
@@ -3789,7 +4054,8 @@
    "posicion": 4,
    "puntos": 24,
    "media": 4,
-   "racha": "4,9,3,2,3"
+   "racha": "4,9,3,2,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 543426497,
@@ -3806,7 +4072,8 @@
    "posicion": 4,
    "puntos": 8,
    "media": 1.6,
-   "racha": "1,-,2,-,1"
+   "racha": "1,-,2,-,1",
+   "otrasPujas": []
   },
   {
    "idTransfer": 543441582,
@@ -3823,7 +4090,8 @@
    "posicion": 3,
    "puntos": 12,
    "media": 2.4,
-   "racha": "5,1,-,2,2"
+   "racha": "5,1,-,2,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 543447069,
@@ -3840,7 +4108,8 @@
    "posicion": 3,
    "puntos": 35,
    "media": 8.8,
-   "racha": "-,4,19,1,11"
+   "racha": "-,4,19,1,11",
+   "otrasPujas": []
   },
   {
    "idTransfer": 543481930,
@@ -3857,7 +4126,8 @@
    "posicion": 3,
    "puntos": 19,
    "media": 3.2,
-   "racha": "3,2,2,-,2"
+   "racha": "3,2,2,-,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 543494120,
@@ -3874,7 +4144,13 @@
    "posicion": 4,
    "puntos": 51,
    "media": 7.3,
-   "racha": "20,0,16,9,2"
+   "racha": "20,0,16,9,2",
+   "otrasPujas": [
+    {
+     "equipo": "Mario80",
+     "puja": 2632050
+    }
+   ]
   },
   {
    "idTransfer": 543496170,
@@ -3891,7 +4167,8 @@
    "posicion": 2,
    "puntos": 22,
    "media": 5.5,
-   "racha": "9,4,3,-,6"
+   "racha": "9,4,3,-,6",
+   "otrasPujas": []
   },
   {
    "idTransfer": 543496179,
@@ -3908,7 +4185,8 @@
    "posicion": 3,
    "puntos": 13,
    "media": 3.3,
-   "racha": "4,4,-,-,-"
+   "racha": "4,4,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 543497237,
@@ -3925,7 +4203,8 @@
    "posicion": 2,
    "puntos": 26,
    "media": 5.2,
-   "racha": "3,4,13,5,1"
+   "racha": "3,4,13,5,1",
+   "otrasPujas": []
   },
   {
    "idTransfer": 543497266,
@@ -3942,7 +4221,8 @@
    "posicion": 3,
    "puntos": 27,
    "media": 5.4,
-   "racha": "2,3,13,6,3"
+   "racha": "2,3,13,6,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 543673394,
@@ -3959,7 +4239,8 @@
    "posicion": 3,
    "puntos": 19,
    "media": 3.6,
-   "racha": "5,-,4,1,2"
+   "racha": "5,-,4,1,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 543736259,
@@ -3976,7 +4257,8 @@
    "posicion": 3,
    "puntos": 17,
    "media": 2.4,
-   "racha": "4,1,3,2,2"
+   "racha": "4,1,3,2,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 543801824,
@@ -3993,7 +4275,8 @@
    "posicion": 2,
    "puntos": 2,
    "media": 2,
-   "racha": "-,-,2,-,-"
+   "racha": "-,-,2,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 543978956,
@@ -4010,7 +4293,8 @@
    "posicion": 3,
    "puntos": 50,
    "media": 8.3,
-   "racha": "7,10,9,10,6"
+   "racha": "7,10,9,10,6",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544009687,
@@ -4027,7 +4311,8 @@
    "posicion": 2,
    "puntos": 26,
    "media": 3.7,
-   "racha": "1,3,4,3,6"
+   "racha": "1,3,4,3,6",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544009694,
@@ -4044,7 +4329,8 @@
    "posicion": 2,
    "puntos": 2,
    "media": 1,
-   "racha": "0,-,-,-,-"
+   "racha": "0,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544137719,
@@ -4061,7 +4347,8 @@
    "posicion": 2,
    "puntos": 30,
    "media": 6,
-   "racha": "5,-1,6,13,7"
+   "racha": "5,-1,6,13,7",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544140990,
@@ -4078,7 +4365,8 @@
    "posicion": 1,
    "puntos": 12,
    "media": 6,
-   "racha": "-,-,-,9,3"
+   "racha": "-,-,-,9,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544234229,
@@ -4095,7 +4383,8 @@
    "posicion": 3,
    "puntos": 14,
    "media": 2.8,
-   "racha": "4,2,2,1,-"
+   "racha": "4,2,2,1,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544295358,
@@ -4112,7 +4401,8 @@
    "posicion": 3,
    "puntos": 20,
    "media": 2.9,
-   "racha": "2,2,3,2,3"
+   "racha": "2,2,3,2,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544295628,
@@ -4129,7 +4419,8 @@
    "posicion": 4,
    "puntos": 15,
    "media": 2.5,
-   "racha": "2,1,3,4,5"
+   "racha": "2,1,3,4,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544459112,
@@ -4146,7 +4437,8 @@
    "posicion": 4,
    "puntos": 16,
    "media": 2.7,
-   "racha": "2,10,-1,1,2"
+   "racha": "2,10,-1,1,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544570561,
@@ -4163,7 +4455,13 @@
    "posicion": 4,
    "puntos": 16,
    "media": 5.3,
-   "racha": "-,4,-,11,1"
+   "racha": "-,4,-,11,1",
+   "otrasPujas": [
+    {
+     "equipo": "Niutin FC (Isaac)",
+     "puja": 3895024
+    }
+   ]
   },
   {
    "idTransfer": 544577925,
@@ -4180,7 +4478,8 @@
    "posicion": 4,
    "puntos": 25,
    "media": 4.2,
-   "racha": "10,3,2,2,4"
+   "racha": "10,3,2,2,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544586246,
@@ -4197,7 +4496,8 @@
    "posicion": 2,
    "puntos": 35,
    "media": 5,
-   "racha": "1,2,13,5,4"
+   "racha": "1,2,13,5,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544696518,
@@ -4214,7 +4514,8 @@
    "posicion": 2,
    "puntos": 10,
    "media": 3.3,
-   "racha": "4,-,-,-,-"
+   "racha": "4,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544729389,
@@ -4231,7 +4532,17 @@
    "posicion": 2,
    "puntos": 15,
    "media": 3,
-   "racha": "3,2,6,3,1"
+   "racha": "3,2,6,3,1",
+   "otrasPujas": [
+    {
+     "equipo": "Saiyans FC (Fran)",
+     "puja": 1600000
+    },
+    {
+     "equipo": "Mario80",
+     "puja": 1062020
+    }
+   ]
   },
   {
    "idTransfer": 544956311,
@@ -4248,7 +4559,8 @@
    "posicion": 2,
    "puntos": 7,
    "media": 1.8,
-   "racha": "-1,-,-,1,-"
+   "racha": "-1,-,-,1,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544962517,
@@ -4265,7 +4577,13 @@
    "posicion": 4,
    "puntos": 6,
    "media": 2,
-   "racha": "-,-,1,2,3"
+   "racha": "-,-,1,2,3",
+   "otrasPujas": [
+    {
+     "equipo": "Mario80",
+     "puja": 2669520
+    }
+   ]
   },
   {
    "idTransfer": 544962538,
@@ -4282,7 +4600,8 @@
    "posicion": 3,
    "puntos": 30,
    "media": 5,
-   "racha": "4,5,6,5,4"
+   "racha": "4,5,6,5,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544965532,
@@ -4299,7 +4618,8 @@
    "posicion": 2,
    "puntos": 29,
    "media": 4.1,
-   "racha": "4,1,11,4,4"
+   "racha": "4,1,11,4,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544975148,
@@ -4316,7 +4636,8 @@
    "posicion": 3,
    "puntos": 14,
    "media": 3.5,
-   "racha": "4,2,3,5,-"
+   "racha": "4,2,3,5,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544989075,
@@ -4333,7 +4654,8 @@
    "posicion": 3,
    "puntos": 21,
    "media": 3.8,
-   "racha": "4,2,2,-,7"
+   "racha": "4,2,2,-,7",
+   "otrasPujas": []
   },
   {
    "idTransfer": 544991117,
@@ -4350,7 +4672,8 @@
    "posicion": 4,
    "puntos": 17,
    "media": 2.8,
-   "racha": "5,2,3,0,5"
+   "racha": "5,2,3,0,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545126526,
@@ -4367,7 +4690,8 @@
    "posicion": 3,
    "puntos": 16,
    "media": 3.2,
-   "racha": "2,2,6,3,3"
+   "racha": "2,2,6,3,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545126560,
@@ -4384,7 +4708,17 @@
    "posicion": 3,
    "puntos": 23,
    "media": 4.6,
-   "racha": "5,7,5,3,-"
+   "racha": "5,7,5,3,-",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 828323
+    },
+    {
+     "equipo": "Saiyans FC (Fran)",
+     "puja": 828000
+    }
+   ]
   },
   {
    "idTransfer": 545246560,
@@ -4401,7 +4735,8 @@
    "posicion": 2,
    "puntos": 26,
    "media": 3.7,
-   "racha": "1,3,6,6,5"
+   "racha": "1,3,6,6,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545246586,
@@ -4418,7 +4753,8 @@
    "posicion": 4,
    "puntos": 48,
    "media": 6.9,
-   "racha": "9,8,2,9,17"
+   "racha": "9,8,2,9,17",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545479545,
@@ -4435,7 +4771,8 @@
    "posicion": 4,
    "puntos": 17,
    "media": 3.4,
-   "racha": "1,10,-,2,3"
+   "racha": "1,10,-,2,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545479653,
@@ -4452,7 +4789,8 @@
    "posicion": 4,
    "puntos": 36,
    "media": 7.2,
-   "racha": "6,6,10,4,-"
+   "racha": "6,6,10,4,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545483012,
@@ -4469,7 +4807,8 @@
    "posicion": 2,
    "puntos": 4,
    "media": 1,
-   "racha": "4,-1,-1,-,-"
+   "racha": "4,-1,-1,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545483043,
@@ -4486,7 +4825,8 @@
    "posicion": 3,
    "puntos": 6,
    "media": 1.5,
-   "racha": "2,-,-,-1,-"
+   "racha": "2,-,-,-1,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545483069,
@@ -4503,7 +4843,8 @@
    "posicion": 3,
    "puntos": 18,
    "media": 6,
-   "racha": "-,-,13,2,-"
+   "racha": "-,-,13,2,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545483091,
@@ -4520,7 +4861,8 @@
    "posicion": 3,
    "puntos": 15,
    "media": 7.5,
-   "racha": "4,-,-,-,-"
+   "racha": "4,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545505817,
@@ -4537,7 +4879,8 @@
    "posicion": 2,
    "puntos": 18,
    "media": 2.6,
-   "racha": "4,1,5,1,0"
+   "racha": "4,1,5,1,0",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545603412,
@@ -4554,7 +4897,8 @@
    "posicion": 3,
    "puntos": 11,
    "media": 3.7,
-   "racha": "2,-,-,-,6"
+   "racha": "2,-,-,-,6",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545609177,
@@ -4571,7 +4915,8 @@
    "posicion": 2,
    "puntos": 23,
    "media": 3.8,
-   "racha": "4,6,3,4,3"
+   "racha": "4,6,3,4,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545676071,
@@ -4588,7 +4933,8 @@
    "posicion": 4,
    "puntos": 9,
    "media": 1.5,
-   "racha": "3,-,1,-1,2"
+   "racha": "3,-,1,-1,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545676079,
@@ -4605,7 +4951,8 @@
    "posicion": 2,
    "puntos": 8,
    "media": 2.7,
-   "racha": "3,0,-,-,-"
+   "racha": "3,0,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545688795,
@@ -4622,7 +4969,8 @@
    "posicion": 3,
    "puntos": 27,
    "media": 4.5,
-   "racha": "3,8,4,6,3"
+   "racha": "3,8,4,6,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545743978,
@@ -4639,7 +4987,13 @@
    "posicion": 3,
    "puntos": 27,
    "media": 4.5,
-   "racha": "12,7,1,2,3"
+   "racha": "12,7,1,2,3",
+   "otrasPujas": [
+    {
+     "equipo": "Niutin FC (Isaac)",
+     "puja": 3787020
+    }
+   ]
   },
   {
    "idTransfer": 545912135,
@@ -4656,7 +5010,8 @@
    "posicion": 2,
    "puntos": 0,
    "media": 0,
-   "racha": "-,-,-,-,-"
+   "racha": "-,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 545979972,
@@ -4673,7 +5028,8 @@
    "posicion": 4,
    "puntos": 7,
    "media": 3.5,
-   "racha": "5,2,-,-,-"
+   "racha": "5,2,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546048374,
@@ -4690,7 +5046,8 @@
    "posicion": 1,
    "puntos": 23,
    "media": 3.8,
-   "racha": "5,3,4,3,6"
+   "racha": "5,3,4,3,6",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546051776,
@@ -4707,7 +5064,8 @@
    "posicion": 3,
    "puntos": 26,
    "media": 4.3,
-   "racha": "2,12,2,4,3"
+   "racha": "2,12,2,4,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546054496,
@@ -4724,7 +5082,17 @@
    "posicion": 4,
    "puntos": 72,
    "media": 10.3,
-   "racha": "16,17,10,6,10"
+   "racha": "16,17,10,6,10",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 6901760
+    },
+    {
+     "equipo": "Niutin FC (Isaac)",
+     "puja": 6832816
+    }
+   ]
   },
   {
    "idTransfer": 546057885,
@@ -4741,7 +5109,8 @@
    "posicion": 2,
    "puntos": 8,
    "media": 1.6,
-   "racha": "2,-,-1,1,2"
+   "racha": "2,-,-1,1,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546254857,
@@ -4758,7 +5127,8 @@
    "posicion": 3,
    "puntos": 39,
    "media": 5.6,
-   "racha": "5,4,2,13,3"
+   "racha": "5,4,2,13,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546280734,
@@ -4775,7 +5145,8 @@
    "posicion": 2,
    "puntos": 23,
    "media": 5.8,
-   "racha": "3,8,6,6,-"
+   "racha": "3,8,6,6,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546349320,
@@ -4792,7 +5163,8 @@
    "posicion": 1,
    "puntos": 11,
    "media": 2.2,
-   "racha": "6,-2,2,-,-"
+   "racha": "6,-2,2,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546394274,
@@ -4809,7 +5181,13 @@
    "posicion": 3,
    "puntos": 59,
    "media": 9.8,
-   "racha": "4,14,4,-,6"
+   "racha": "4,14,4,-,6",
+   "otrasPujas": [
+    {
+     "equipo": "Mario80",
+     "puja": 17020560
+    }
+   ]
   },
   {
    "idTransfer": 546553023,
@@ -4826,7 +5204,8 @@
    "posicion": 3,
    "puntos": 44,
    "media": 7.3,
-   "racha": "6,3,3,5,16"
+   "racha": "6,3,3,5,16",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546630852,
@@ -4843,7 +5222,8 @@
    "posicion": 4,
    "puntos": 33,
    "media": 5.5,
-   "racha": "9,5,2,-,2"
+   "racha": "9,5,2,-,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546689621,
@@ -4860,7 +5240,8 @@
    "posicion": 3,
    "puntos": 19,
    "media": 4.8,
-   "racha": "1,-,-,3,-"
+   "racha": "1,-,-,3,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546696517,
@@ -4877,7 +5258,8 @@
    "posicion": 3,
    "puntos": 39,
    "media": 5.6,
-   "racha": "5,4,2,13,3"
+   "racha": "5,4,2,13,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546699980,
@@ -4894,7 +5276,8 @@
    "posicion": 3,
    "puntos": 13,
    "media": 3.3,
-   "racha": "4,4,-,-,-"
+   "racha": "4,4,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546700011,
@@ -4911,7 +5294,8 @@
    "posicion": 2,
    "puntos": 12,
    "media": 3,
-   "racha": "4,-,3,2,3"
+   "racha": "4,-,3,2,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546701830,
@@ -4928,7 +5312,8 @@
    "posicion": 3,
    "puntos": 18,
    "media": 3,
-   "racha": "4,2,4,2,2"
+   "racha": "4,2,4,2,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546823494,
@@ -4945,7 +5330,17 @@
    "posicion": 2,
    "puntos": 37,
    "media": 7.4,
-   "racha": "6,6,11,-,-"
+   "racha": "6,6,11,-,-",
+   "otrasPujas": [
+    {
+     "equipo": "Saiyans FC (Fran)",
+     "puja": 3800000
+    },
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 2811110
+    }
+   ]
   },
   {
    "idTransfer": 546825319,
@@ -4962,7 +5357,8 @@
    "posicion": 3,
    "puntos": 16,
    "media": 5.3,
-   "racha": "2,-,-,-,-"
+   "racha": "2,-,-,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546963488,
@@ -4979,7 +5375,13 @@
    "posicion": 4,
    "puntos": 28,
    "media": 4.7,
-   "racha": "2,10,3,-,1"
+   "racha": "2,10,3,-,1",
+   "otrasPujas": [
+    {
+     "equipo": "Mario80",
+     "puja": 1561480
+    }
+   ]
   },
   {
    "idTransfer": 546967396,
@@ -4996,7 +5398,8 @@
    "posicion": 3,
    "puntos": 53,
    "media": 7.6,
-   "racha": "6,14,5,7,6"
+   "racha": "6,14,5,7,6",
+   "otrasPujas": []
   },
   {
    "idTransfer": 546971046,
@@ -5013,7 +5416,8 @@
    "posicion": 4,
    "puntos": 25,
    "media": 4.2,
-   "racha": "10,3,2,2,4"
+   "racha": "10,3,2,2,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 547099275,
@@ -5030,7 +5434,8 @@
    "posicion": 2,
    "puntos": 13,
    "media": 2.6,
-   "racha": "-,1,3,3,1"
+   "racha": "-,1,3,3,1",
+   "otrasPujas": []
   },
   {
    "idTransfer": 547183942,
@@ -5047,7 +5452,8 @@
    "posicion": 2,
    "puntos": 21,
    "media": 3,
-   "racha": "4,2,3,2,1"
+   "racha": "4,2,3,2,1",
+   "otrasPujas": []
   },
   {
    "idTransfer": 547263317,
@@ -5064,7 +5470,8 @@
    "posicion": 2,
    "puntos": 2,
    "media": 2,
-   "racha": "-,-,2,-,-"
+   "racha": "-,-,2,-,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 547263461,
@@ -5081,7 +5488,8 @@
    "posicion": 3,
    "puntos": 43,
    "media": 7.2,
-   "racha": "4,6,3,3,13"
+   "racha": "4,6,3,3,13",
+   "otrasPujas": []
   },
   {
    "idTransfer": 547263482,
@@ -5098,7 +5506,8 @@
    "posicion": 3,
    "puntos": 18,
    "media": 3,
-   "racha": "5,2,3,1,4"
+   "racha": "5,2,3,1,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 547449527,
@@ -5115,7 +5524,8 @@
    "posicion": 2,
    "puntos": 11,
    "media": 2.2,
-   "racha": "5,-2,1,2,-"
+   "racha": "5,-2,1,2,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 547503333,
@@ -5132,7 +5542,8 @@
    "posicion": 3,
    "puntos": 26,
    "media": 3.7,
-   "racha": "2,6,2,4,3"
+   "racha": "2,6,2,4,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 547507375,
@@ -5149,7 +5560,8 @@
    "posicion": 2,
    "puntos": 18,
    "media": 3.6,
-   "racha": "5,0,3,5,-"
+   "racha": "5,0,3,5,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 547620421,
@@ -5166,7 +5578,8 @@
    "posicion": 1,
    "puntos": 12,
    "media": 6,
-   "racha": "-,-,-,9,3"
+   "racha": "-,-,-,9,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 547692668,
@@ -5183,7 +5596,8 @@
    "posicion": 2,
    "puntos": -8,
    "media": -8,
-   "racha": "-,-,-,-,-8"
+   "racha": "-,-,-,-,-8",
+   "otrasPujas": []
   },
   {
    "idTransfer": 547699061,
@@ -5200,7 +5614,8 @@
    "posicion": 3,
    "puntos": 27,
    "media": 4.5,
-   "racha": "12,7,1,2,3"
+   "racha": "12,7,1,2,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 547699075,
@@ -5217,7 +5632,8 @@
    "posicion": 2,
    "puntos": 22,
    "media": 5.5,
-   "racha": "9,4,3,-,6"
+   "racha": "9,4,3,-,6",
+   "otrasPujas": []
   },
   {
    "idTransfer": 547751362,
@@ -5234,7 +5650,13 @@
    "posicion": 2,
    "puntos": 17,
    "media": 3.4,
-   "racha": "-,3,4,-,1"
+   "racha": "-,3,4,-,1",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 1951000
+    }
+   ]
   },
   {
    "idTransfer": 547761275,
@@ -5251,7 +5673,8 @@
    "posicion": 2,
    "puntos": 10,
    "media": 2,
-   "racha": "5,1,-,-1,-"
+   "racha": "5,1,-,-1,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 547956485,
@@ -5268,7 +5691,8 @@
    "posicion": 3,
    "puntos": 21,
    "media": 4.2,
-   "racha": "6,6,4,-,2"
+   "racha": "6,6,4,-,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 548033128,
@@ -5285,7 +5709,8 @@
    "posicion": 3,
    "puntos": 19,
    "media": 3.6,
-   "racha": "5,-,4,1,2"
+   "racha": "5,-,4,1,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 548171199,
@@ -5302,7 +5727,8 @@
    "posicion": 3,
    "puntos": 46,
    "media": 6.6,
-   "racha": "11,2,2,12,7"
+   "racha": "11,2,2,12,7",
+   "otrasPujas": []
   },
   {
    "idTransfer": 548265561,
@@ -5319,7 +5745,8 @@
    "posicion": 2,
    "puntos": 23,
    "media": 3.8,
-   "racha": "5,2,4,-,5"
+   "racha": "5,2,4,-,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 548303154,
@@ -5336,7 +5763,17 @@
    "posicion": 2,
    "puntos": 26,
    "media": 3.7,
-   "racha": "1,3,6,6,5"
+   "racha": "1,3,6,6,5",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 3529224
+    },
+    {
+     "equipo": "Niutin FC (Isaac)",
+     "puja": 3224010
+    }
+   ]
   },
   {
    "idTransfer": 548455377,
@@ -5353,7 +5790,8 @@
    "posicion": 3,
    "puntos": 11,
    "media": 3.7,
-   "racha": "-,-,5,1,5"
+   "racha": "-,-,5,1,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 548698617,
@@ -5370,7 +5808,8 @@
    "posicion": 2,
    "puntos": 8,
    "media": 4,
-   "racha": "-,-,-,4,4"
+   "racha": "-,-,-,4,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 548699917,
@@ -5387,7 +5826,8 @@
    "posicion": 3,
    "puntos": 18,
    "media": 3,
-   "racha": "4,2,4,2,2"
+   "racha": "4,2,4,2,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 548798559,
@@ -5404,7 +5844,8 @@
    "posicion": 3,
    "puntos": 50,
    "media": 8.3,
-   "racha": "3,18,2,3,12"
+   "racha": "3,18,2,3,12",
+   "otrasPujas": []
   },
   {
    "idTransfer": 548809143,
@@ -5421,7 +5862,8 @@
    "posicion": 4,
    "puntos": 33,
    "media": 6.6,
-   "racha": "9,3,7,10,-"
+   "racha": "9,3,7,10,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 548813179,
@@ -5438,7 +5880,13 @@
    "posicion": 4,
    "puntos": 58,
    "media": 9.7,
-   "racha": "3,9,1,14,10"
+   "racha": "3,9,1,14,10",
+   "otrasPujas": [
+    {
+     "equipo": "Saiyans FC (Fran)",
+     "puja": 26200000
+    }
+   ]
   },
   {
    "idTransfer": 548817205,
@@ -5455,7 +5903,8 @@
    "posicion": 2,
    "puntos": 23,
    "media": 3.7,
-   "racha": "6,2,3,2,4"
+   "racha": "6,2,3,2,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 548890566,
@@ -5472,7 +5921,8 @@
    "posicion": 4,
    "puntos": 20,
    "media": 3.3,
-   "racha": "2,-,2,2,2"
+   "racha": "2,-,2,2,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 548950289,
@@ -5489,7 +5939,13 @@
    "posicion": 3,
    "puntos": 35,
    "media": 5,
-   "racha": "3,5,4,7,5"
+   "racha": "3,5,4,7,5",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 5806680
+    }
+   ]
   },
   {
    "idTransfer": 548967534,
@@ -5506,7 +5962,8 @@
    "posicion": 4,
    "puntos": 24,
    "media": 4,
-   "racha": "4,9,3,2,3"
+   "racha": "4,9,3,2,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549066425,
@@ -5523,7 +5980,8 @@
    "posicion": 4,
    "puntos": 20,
    "media": 6.7,
-   "racha": "-,2,-,8,10"
+   "racha": "-,2,-,8,10",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549070852,
@@ -5540,7 +5998,8 @@
    "posicion": 2,
    "puntos": 18,
    "media": 2.6,
-   "racha": "4,1,5,1,0"
+   "racha": "4,1,5,1,0",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549070900,
@@ -5557,7 +6016,8 @@
    "posicion": 1,
    "puntos": 9,
    "media": 3,
-   "racha": "-,-,3,3,3"
+   "racha": "-,-,3,3,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549115755,
@@ -5574,7 +6034,8 @@
    "posicion": 4,
    "puntos": 23,
    "media": 3.7,
-   "racha": "10,2,3,2,3"
+   "racha": "10,2,3,2,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549187396,
@@ -5591,7 +6052,8 @@
    "posicion": 4,
    "puntos": 12,
    "media": 2.4,
-   "racha": "-,2,2,3,3"
+   "racha": "-,2,2,3,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549204937,
@@ -5608,7 +6070,8 @@
    "posicion": 3,
    "puntos": 23,
    "media": 5.8,
-   "racha": "-,11,2,5,5"
+   "racha": "-,11,2,5,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549281456,
@@ -5625,7 +6088,8 @@
    "posicion": 4,
    "puntos": 72,
    "media": 10.3,
-   "racha": "16,17,10,6,10"
+   "racha": "16,17,10,6,10",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549288684,
@@ -5642,7 +6106,17 @@
    "posicion": 3,
    "puntos": 7,
    "media": 3.5,
-   "racha": "-,-,-,4,3"
+   "racha": "-,-,-,4,3",
+   "otrasPujas": [
+    {
+     "equipo": "Saiyans FC (Fran)",
+     "puja": 1800000
+    },
+    {
+     "equipo": "Niutin FC (Isaac)",
+     "puja": 1690774
+    }
+   ]
   },
   {
    "idTransfer": 549293971,
@@ -5659,7 +6133,13 @@
    "posicion": 2,
    "puntos": 22,
    "media": 4.4,
-   "racha": "3,2,-1,10,8"
+   "racha": "3,2,-1,10,8",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 8920000
+    }
+   ]
   },
   {
    "idTransfer": 549295090,
@@ -5676,7 +6156,8 @@
    "posicion": 2,
    "puntos": 23,
    "media": 3.8,
-   "racha": "3,6,3,3,5"
+   "racha": "3,6,3,3,5",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549360979,
@@ -5693,7 +6174,8 @@
    "posicion": 1,
    "puntos": 38,
    "media": 5.8,
-   "racha": "5,4,8,7,4"
+   "racha": "5,4,8,7,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549361041,
@@ -5710,7 +6192,8 @@
    "posicion": 3,
    "puntos": 28,
    "media": 4,
-   "racha": "4,9,5,1,2"
+   "racha": "4,9,5,1,2",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549361251,
@@ -5727,7 +6210,8 @@
    "posicion": 3,
    "puntos": 16,
    "media": 3.2,
-   "racha": "2,2,6,3,3"
+   "racha": "2,2,6,3,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549366013,
@@ -5744,7 +6228,8 @@
    "posicion": 4,
    "puntos": 25,
    "media": 4.2,
-   "racha": "2,8,5,2,4"
+   "racha": "2,8,5,2,4",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549407598,
@@ -5761,7 +6246,17 @@
    "posicion": 4,
    "puntos": 108,
    "media": 15.4,
-   "racha": "18,11,8,21,21"
+   "racha": "18,11,8,21,21",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 28056362
+    },
+    {
+     "equipo": "Mario80",
+     "puja": 20593630
+    }
+   ]
   },
   {
    "idTransfer": 549408740,
@@ -5778,7 +6273,8 @@
    "posicion": 3,
    "puntos": 20,
    "media": 3.3,
-   "racha": "2,3,3,4,6"
+   "racha": "2,3,3,4,6",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549408742,
@@ -5795,7 +6291,8 @@
    "posicion": 3,
    "puntos": 26,
    "media": 6.5,
-   "racha": "-,3,5,5,13"
+   "racha": "-,3,5,5,13",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549437025,
@@ -5812,7 +6309,8 @@
    "posicion": 3,
    "puntos": 42,
    "media": 7,
-   "racha": "4,9,7,8,9"
+   "racha": "4,9,7,8,9",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549445204,
@@ -5829,7 +6327,8 @@
    "posicion": 3,
    "puntos": 26,
    "media": 3.7,
-   "racha": "2,6,2,4,3"
+   "racha": "2,6,2,4,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549445240,
@@ -5846,7 +6345,8 @@
    "posicion": 2,
    "puntos": 18,
    "media": 3,
-   "racha": "5,3,8,-4,-"
+   "racha": "5,3,8,-4,-",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549448624,
@@ -5863,7 +6363,8 @@
    "posicion": 3,
    "puntos": 21,
    "media": 3.5,
-   "racha": "2,4,2,-,1"
+   "racha": "2,4,2,-,1",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549455840,
@@ -5880,7 +6381,8 @@
    "posicion": 3,
    "puntos": 26,
    "media": 4.3,
-   "racha": "2,12,2,4,3"
+   "racha": "2,12,2,4,3",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549455847,
@@ -5897,7 +6399,8 @@
    "posicion": 4,
    "puntos": 43,
    "media": 6.1,
-   "racha": "2,11,3,3,1"
+   "racha": "2,11,3,3,1",
+   "otrasPujas": []
   },
   {
    "idTransfer": 549455867,
@@ -5914,7 +6417,8 @@
    "posicion": 2,
    "puntos": 13,
    "media": 2.6,
-   "racha": "-,1,3,3,1"
+   "racha": "-,1,3,3,1",
+   "otrasPujas": []
   }
  ],
  "salidas": [

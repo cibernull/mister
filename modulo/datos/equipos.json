@@ -2,7 +2,7 @@
  {
   "n": "Betico1993",
   "pos": 8,
-  "pts": 10,
+  "pts": 9,
   "saldo": 44706500,
   "pl": 8055000,
   "rep": 10419000,
@@ -16,7 +16,8 @@
   "blindados": 0,
   "costeSubidas": 0,
   "gastoVisto": 0,
-  "gastoOculto": 0
+  "gastoOculto": 0,
+  "ajustePujas": 0
  },
  {
   "n": "Los tocahuevos C.F ( juanito)",
@@ -35,12 +36,13 @@
   "blindados": 0,
   "costeSubidas": 0,
   "gastoVisto": 0,
-  "gastoOculto": 0
+  "gastoOculto": 0,
+  "ajustePujas": 0
  },
  {
   "n": "Niutin FC (Isaac)",
   "pos": 2,
-  "pts": 319,
+  "pts": 314,
   "saldo": -2834500,
   "pl": 104057000,
   "rep": 33800000,
@@ -56,6 +58,7 @@
   "costeSubidas": 10788200,
   "gastoVisto": -809600,
   "gastoOculto": 7758200,
+  "ajustePujas": 0,
   "libro": {
    "ventas": 171979060,
    "compras": -197128176,
@@ -70,7 +73,7 @@
  {
   "n": "Legalize F.C (Victor)",
   "pos": 7,
-  "pts": 99,
+  "pts": 92,
   "saldo": -2661020,
   "pl": 54982000,
   "rep": 38225000,
@@ -84,7 +87,8 @@
   "blindados": 1,
   "costeSubidas": 3237000,
   "gastoVisto": 0,
-  "gastoOculto": 3237000
+  "gastoOculto": 3237000,
+  "ajustePujas": 0
  },
  {
   "n": "Cacaculopedopis",
@@ -103,13 +107,14 @@
   "blindados": 1,
   "costeSubidas": 338600,
   "gastoVisto": 0,
-  "gastoOculto": 338600
+  "gastoOculto": 338600,
+  "ajustePujas": 0
  },
  {
   "n": "Neky F.C. (Sergio)",
   "pos": 1,
   "pts": 332,
-  "saldo": -28419575,
+  "saldo": -27612450,
   "pl": 134284000,
   "rep": 31142000,
   "ini": 18858000,
@@ -122,12 +127,13 @@
   "blindados": 5,
   "costeSubidas": 12665400,
   "gastoVisto": 8211200,
-  "gastoOculto": 11884000
+  "gastoOculto": 11884000,
+  "ajustePujas": 807125
  },
  {
   "n": "Mario80",
   "pos": 5,
-  "pts": 198,
+  "pts": 194,
   "saldo": 4297360,
   "pl": 77257000,
   "rep": 28838000,
@@ -141,7 +147,8 @@
   "blindados": 4,
   "costeSubidas": 7453400,
   "gastoVisto": 0,
-  "gastoOculto": 7453400
+  "gastoOculto": 7453400,
+  "ajustePujas": 0
  },
  {
   "n": "Saiyans FC (Fran)",
@@ -160,6 +167,7 @@
   "blindados": 4,
   "costeSubidas": 7316000,
   "gastoVisto": 6171800,
-  "gastoOculto": 7259000
+  "gastoOculto": 7259000,
+  "ajustePujas": 0
  }
 ]

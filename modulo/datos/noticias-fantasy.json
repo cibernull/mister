@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-20T13:37:57.692Z",
+ "cuando": "2026-09-20T14:06:30.105Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 de los equipos que han disputado la 7",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/09",
+   "titulo": "Cancelo frena el hype con Espart",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151620-cancelo-frena-el-hype-con-espart",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Simeone habla de Julián Alvarez, Grimaldo, Lookman, Vinicius, Mbappé y Mourinho antes del derbi",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151542-simeone-habla-de-julian-alvarez-grimaldo-lookman-vinicius-mbappe-y-mourinho-antes-del-derbi",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Marcos Fernández llama a la puerta del once",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151541-marcos-fernandez-llama-a-la-puerta-del-once",
-   "categoria": "análisis"
   }
  ]
 }

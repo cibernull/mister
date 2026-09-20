@@ -9270,7 +9270,9 @@
     "puntos": null,
     "rival": 9,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -10919,13 +10921,6 @@
     "puntos": null,
     "rival": 20,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 9,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -12894,8 +12889,10 @@
     "jornada": 7,
     "puntos": null,
     "rival": 9,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 1,
@@ -15462,15 +15459,7 @@
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
-  "jornadas": [
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
-    "eventos": []
-   }
-  ],
+  "jornadas": [],
   "asistencias": 0,
   "dia": "2026-09-20",
   "partidos": 0
@@ -24863,6 +24852,15 @@
     "rival": 20,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 9,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -24925,13 +24923,6 @@
     "puntos": null,
     "rival": 20,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 9,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -25161,13 +25152,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 9,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -25309,7 +25293,9 @@
     "puntos": null,
     "rival": 9,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -25389,8 +25375,10 @@
     "jornada": 7,
     "puntos": null,
     "rival": 9,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -25478,13 +25466,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 9,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -26554,13 +26535,6 @@
     "puntos": null,
     "rival": 4,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -28044,13 +28018,15 @@
     "jornada": 7,
     "puntos": null,
     "rival": 13,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-09-20",
-  "partidos": 3
+  "partidos": 2
  },
  "71791": {
   "nombre": "Pedro Felipe",
@@ -28417,6 +28393,15 @@
     "como": "inicio",
     "eventos": [
      "sub_out"
+    ]
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 13,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
     ]
    }
   ],
@@ -30478,7 +30463,7 @@
  "4836181": {
   "nombre": "Iván Azón",
   "posicion": 4,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 3.5,
   "mediaFuera": 6,
@@ -30534,6 +30519,16 @@
     "rival": 4,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": null,
+    "rival": 13,
+    "como": "inicio",
+    "eventos": [
+     "sub_out",
+     "goal"
+    ]
    }
   ],
   "asistencias": 1,
@@ -31103,13 +31098,6 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 9,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -31365,13 +31353,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 7,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
