@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T18:38:05.200Z",
+ "cuando": "2026-09-21T19:07:58.732Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -31,6 +31,12 @@
    "fecha": "19/09",
    "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "As pone el duda la titularidad de Vinicius tras el parón y apunta a Diomandé",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151684-as-pone-el-duda-la-titularidad-de-vinicius-tras-el-paron-y-apunta-a-diomande",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "El Valencia se concentra horas antes del partido con Rioja y sin los siete lesionados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151608-el-valencia-se-concentra-horas-antes-del-partido-con-rioja-y-sin-los-siete-lesionados",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Aimar Oroz y Moi Gómez aceleran para reconstruir el ataque",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151607-aimar-oroz-y-moi-gomez-aceleran-para-reconstruir-el-ataque",
-   "categoria": "análisis"
   }
  ]
 }
