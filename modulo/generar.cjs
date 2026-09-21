@@ -1383,141 +1383,6 @@ const fueraDelMercado = J.filter((j) => j.mk !== 1)
 const filasMercado = enMercado.map(filaJugador).join(NL)
 const filasResto = fueraDelMercado.map(filaJugador).join(NL)
 
-// ── Escaparate del mercado ──────────────────────────────────────────────────
-// La lista completa sirve para investigar; estas tarjetas sirven para decidir.
-// Solo entran jugadores que el usuario puede pagar hoy, ordenados por señales
-// deportivas, margen de precio, próximo partido y tendencia de valor.
-/**
- * Las cuatro oportunidades de hoy.
- *
- * Ordenaba primero por `p + d` —dos banderas de 0/1: media en el tercio alto y
- * valor subiendo—, así que solo había tres escalones y las cuatro tarjetas
- * salían siempre del mismo cajón. De ahí que fueran casi fijas. Y dejaba fuera
- * al mejor: Fermín López, con la media más alta de todo lo que puedes pagar
- * (12,3), no aparecía porque su bandera valía 1 en vez de 2.
- *
- * Ahora manda lo que la propia tarjeta dice: cuánto por debajo de su techo
- * estimado está. Es el número que ya se enseña y el que justifica la palabra
- * «oportunidad».
- *
- * Con dos coladores, porque una ganga que no juega no es una ganga:
- *   · al menos dos partidos, para que la media signifique algo;
- *   · y que vaya a salir de titular, cuando sabemos su probabilidad. Sin esto
- *     el ranking se llenaba de gente al 0 % y al 20 %.
- */
-const PROBABILIDAD_MINIMA_ESCAPARATE = 50
-const PARTIDOS_MINIMOS_ESCAPARATE = 2
-
-/**
- * Cuántas oportunidades se preparan, aunque solo se enseñen cuatro de golpe.
- *
- * El resto va en la página, oculto, y el botón «ver más» las va destapando de
- * cuatro en cuatro. Rotarlas —cambiar las cuatro en cada pulsación— pierde de
- * vista la que acabas de mirar y no deja compararlas; así se acumulan.
- */
-const MAXIMO_ESCAPARATE = 24
-const DE_GOLPE_ESCAPARATE = 4
-
-/**
- * Lo que ganarías en un mes si lo compras hoy: lo que valdrá menos lo que pagas.
- *
- * «Generar dinero» ordenaba por cuánto sube el valor, y eso ignora lo que se
- * paga. A un jugador de otro equipo se le paga la cláusula, que es como poco
- * 1,5 veces su valor: Mariano Díaz valía 2,4 M, costaba 7,0 M de cláusula y
- * subía un 81 % al mes, y salía como oportunidad de dinero. Pagas 7,0 por algo
- * que vale 2,4 —sales 4,6 M por debajo en el minuto uno— y aunque repita ese
- * 81 %, al mes vale 4,4: sigues perdiendo 2,6 M. De 80 candidatos, 56 perdían
- * dinero pese a subir.
- *
- * La proyección es la más simple posible y va dicha en la tarjeta: «si repite
- * lo de este mes». Es valor + lo que subió el último mes, menos lo pagado.
- */
-const gananciaMesDe = (j) =>
-  j.subeMes != null && j.valor && j.precio ? j.valor * (1 + j.subeMes) - j.precio : null
-
-/**
- * Las oportunidades, elegidas por cada objetivo y no solo por rendimiento.
- *
- * Antes el lote eran las 24 mejores por margen sobre su techo, y los botones
- * de objetivo solo las reordenaban. Así «Generar dinero» nunca podía enseñar a
- * quien sí da dinero —los del mercado, donde pagas lo que valen— porque no
- * estaban en el lote. Ahora cada objetivo aporta sus mejores y la tarjeta lleva
- * las tres claves y si es apta para cada uno: el navegador ordena y esconde.
- */
-const aptosEscaparate = J.filter((j) => {
-  if (!j.a || j.mio) return false
-  if ((j.partidos ?? 0) < PARTIDOS_MINIMOS_ESCAPARATE) return false
-  // Ni a quien no se puede fichar hoy: recomendar a un recién fichado es
-  // mandarte a una puerta cerrada.
-  const veto = vetoDe(j)
-  if (veto && veto.grave) return false
-  const pr = probabilidadDe(j)
-  return pr === null || pr >= PROBABILIDAD_MINIMA_ESCAPARATE
-}).map((j) => ({ j, renta: hastaCuanto(j), forma: formaDe(j), dinero: gananciaMesDe(j) }))
-
-const porMargen = aptosEscaparate
-  .filter((x) => x.renta && x.renta.margen > 0)
-  .sort((a, b) => b.renta.margen - a.renta.margen || b.j.esperado - a.j.esperado)
-const porPuntos = aptosEscaparate
-  .filter((x) => x.j.esperado > 0)
-  .sort((a, b) => b.j.esperado - a.j.esperado)
-const porDinero = aptosEscaparate
-  .filter((x) => x.dinero != null && x.dinero > 0)
-  .sort((a, b) => b.dinero - a.dinero)
-
-// La unión, en el orden de «Equilibrado», que es el que se ve al abrir.
-const candidatosEscaparate = (() => {
-  const vistos = new Set()
-  const l = []
-  for (const x of [...porMargen.slice(0, MAXIMO_ESCAPARATE), ...porPuntos.slice(0, MAXIMO_ESCAPARATE), ...porDinero.slice(0, MAXIMO_ESCAPARATE)]) {
-    if (vistos.has(x.j.id)) continue
-    vistos.add(x.j.id)
-    l.push(x)
-  }
-  return l
-})()
-
-const tarjetaOportunidad = ({ j, renta, forma, dinero }, i) => {
-  // La etiqueta de «mejor» la pone el navegador a la que quede primera: aquí no
-  // se sabe, porque el botón de objetivo reordena las tarjetas al cargar y la
-  // etiqueta cosida a la primera acababa en la segunda.
-  const etiqueta = renta && renta.margen >= 0 ? 'Precio con margen' : forma > 0 ? 'Llega en forma' : 'Para esta jornada'
-  const motivo = renta && renta.margen >= 0
-    ? `${corto(renta.margen)} por debajo de su techo estimado`
-    : j.riv
-      ? `${dec(j.esperado)} puntos esperados en su próximo partido`
-      : `${dec(j.media)} puntos de media`
-  return `      <article class="oportunidad" data-op-id="${j.id}" data-op-puntos="${j.esperado}" data-op-valor="${dinero == null ? -1e12 : Math.round(dinero)}" data-apto-equilibrio="${renta && renta.margen > 0 ? 1 : 0}" data-apto-puntos="${j.esperado > 0 ? 1 : 0}" data-apto-valor="${dinero != null && dinero > 0 ? 1 : 0}" data-motivo-equilibrio="${esc(renta && renta.margen >= 0 ? `${corto(renta.margen)} por debajo de su techo estimado por rendimiento` : `${corto(-(renta?.margen ?? 0))} por encima de su techo estimado`)}" data-motivo-puntos="${esc(j.riv ? `${dec(j.esperado)} puntos que cabe esperar en su próximo partido${probabilidadDe(j) != null ? ` · ${probabilidadDe(j)} % de salir` : ''}` : `${dec(j.media)} puntos de media`)}" data-motivo-valor="${esc(dinero == null ? 'Sin dato de cómo se mueve su valor' : `${j.mk ? 'Pagas lo que vale' : `Pagas ${corto(j.precio)} de cláusula por ${corto(j.valor)} de valor`}: si repite lo de este mes, dentro de un mes ${dinero >= 0 ? 'ganas' : 'pierdes'} ${corto(Math.abs(dinero))}`)}" data-op-equilibrio="${Math.round(renta?.margen ?? -1e9)}">
-        <div class="op-foto">${caraDe(j.id, j.nombre)}<span class="dorsal p${j.puesto}">${PUESTOS[j.puesto]}</span></div>
-        <div class="op-cuerpo">
-          <span class="op-etiqueta">${etiqueta}</span>
-          <button type="button" class="op-nombre" data-ficha="${j.id}">${esc(j.nombre)}</button>
-          <div class="op-club">${escudoDe(j.id)}${esc(j.duenioCorto ?? 'Libre')}${j.once === 1 ? '<span>· titular</span>' : ''}</div>
-          <div class="op-metricas"><span><b>${dec(j.media)}</b> media</span><span title="${j.mk ? 'Lo que pide quien lo vende' : 'Su cláusula: lo que hay que pagar para quitárselo a su dueño'}"><b>${corto(j.precio)}</b> ${j.mk ? 'piden' : 'cláusula'}</span><span title="Lo que vale en Mister hoy: es lo que recuperas si lo vendes"><b>${corto(j.valor)}</b> vale</span><span class="${j.semana === 0 ? 'quieto' : clase(j.semana ?? 0)}"><b>${j.semana == null ? '—' : j.semana === 0 ? '=' : firmaCorta(j.semana)}</b> hoy${(() => {
-            const d = subeDiaDe(j)
-            return d == null || Math.abs(d) < 0.0005 ? '' : `<em>${d > 0 ? '+' : '−'}${dec(Math.abs(d) * 100)} %</em>`
-          })()}</span><span class="${clase(j.subeMes ?? 0)}"><b>${j.subeMes == null ? '—' : `${j.subeMes > 0 ? '+' : ''}${Math.round(j.subeMes * 100)} %`}</b> mes</span></div>
-          <p class="op-motivo">${motivo}</p>
-          <button type="button" class="op-cta" data-ficha="${j.id}">Analizar fichaje <span>→</span></button>
-        </div>
-      </article>`
-}
-
-const oportunidades = candidatosEscaparate.length
-  ? `    <section class="escaparate">
-      <div class="escaparate-cab"><div><span class="eyebrow">Selección inteligente</span><h2>Oportunidades para ti</h2><p>Jugadores que puedes pagar hoy, priorizados según tu objetivo.</p></div><span class="op-contador" id="op-cuenta">${Math.min(DE_GOLPE_ESCAPARATE, candidatosEscaparate.length)} de ${candidatosEscaparate.length}</span></div>
-      <div class="objetivos" aria-label="Objetivo de las recomendaciones"><span>Mi objetivo</span><button type="button" data-objetivo="equilibrio">Equilibrado</button><button type="button" data-objetivo="puntos">Ganar puntos</button><button type="button" data-objetivo="valor">Generar dinero</button></div>
-      <div class="op-grid" data-de-golpe="${DE_GOLPE_ESCAPARATE}">
-${candidatosEscaparate.map(tarjetaOportunidad).join(NL)}
-      </div>
-      ${
-        candidatosEscaparate.length > DE_GOLPE_ESCAPARATE
-          ? `<button type="button" class="op-mas" id="op-mas">Ver ${DE_GOLPE_ESCAPARATE} más</button><p class="op-vacio sd" id="op-vacio" hidden>Con este objetivo no hay ninguna que salga a cuenta hoy.</p>`
-          : ''
-      }
-    </section>`
-  : ''
-
 // ── Marcador ─────────────────────────────────────────────────────────────────
 /**
  * Lo que se te mueve la plantilla en un día.
@@ -2027,6 +1892,178 @@ const formacionesPorPerfil = Object.fromEntries(['seguro', 'equilibrado', 'ambic
     .sort((a, b) => b.once.total - a.once.total),
 ]))
 
+
+/**
+ * Cuánto mejoraría tu mejor once si lo fichas: lo que se espera de él menos lo
+ * del titular más flojo de su puesto, al que echaría. Se compara con el mejor
+ * once equilibrado de hoy, el mismo que enseña la pestaña de inicio; y si esa
+ * formación no tiene su puesto, no entra y no mejora nada.
+ */
+const mejoraDelOnce = (() => {
+  const mejor = formacionesPorPerfil.equilibrado[0]?.once ?? once
+  if (!mejor) return () => null
+  const peorPorPuesto = new Map()
+  for (const t of mejor.elegidos) {
+    const da = noJuega(t) ? 0 : esperadoTotal(t)
+    const p = peorPorPuesto.get(t.puesto)
+    if (p === undefined || da < p) peorPorPuesto.set(t.puesto, da)
+  }
+  return (j) => {
+    const peor = peorPorPuesto.get(j.puesto)
+    if (peor === undefined || noJuega(j)) return null
+    return esperadoTotal(j) - peor
+  }
+})()
+
+// ── Escaparate del mercado ──────────────────────────────────────────────────
+// La lista completa sirve para investigar; estas tarjetas sirven para decidir.
+// Solo entran jugadores que el usuario puede pagar hoy, ordenados por señales
+// deportivas, margen de precio, próximo partido y tendencia de valor.
+/**
+ * Las cuatro oportunidades de hoy.
+ *
+ * Ordenaba primero por `p + d` —dos banderas de 0/1: media en el tercio alto y
+ * valor subiendo—, así que solo había tres escalones y las cuatro tarjetas
+ * salían siempre del mismo cajón. De ahí que fueran casi fijas. Y dejaba fuera
+ * al mejor: Fermín López, con la media más alta de todo lo que puedes pagar
+ * (12,3), no aparecía porque su bandera valía 1 en vez de 2.
+ *
+ * Ahora manda lo que la propia tarjeta dice: cuánto por debajo de su techo
+ * estimado está. Es el número que ya se enseña y el que justifica la palabra
+ * «oportunidad».
+ *
+ * Con dos coladores, porque una ganga que no juega no es una ganga:
+ *   · al menos dos partidos, para que la media signifique algo;
+ *   · y que vaya a salir de titular, cuando sabemos su probabilidad. Sin esto
+ *     el ranking se llenaba de gente al 0 % y al 20 %.
+ */
+const PROBABILIDAD_MINIMA_ESCAPARATE = 50
+const PARTIDOS_MINIMOS_ESCAPARATE = 2
+
+/**
+ * Cuántas oportunidades se preparan, aunque solo se enseñen cuatro de golpe.
+ *
+ * El resto va en la página, oculto, y el botón «ver más» las va destapando de
+ * cuatro en cuatro. Rotarlas —cambiar las cuatro en cada pulsación— pierde de
+ * vista la que acabas de mirar y no deja compararlas; así se acumulan.
+ */
+const MAXIMO_ESCAPARATE = 24
+const DE_GOLPE_ESCAPARATE = 4
+
+/**
+ * Lo que ganarías en un mes si lo compras hoy: lo que valdrá menos lo que pagas.
+ *
+ * «Generar dinero» ordenaba por cuánto sube el valor, y eso ignora lo que se
+ * paga. A un jugador de otro equipo se le paga la cláusula, que es como poco
+ * 1,5 veces su valor: Mariano Díaz valía 2,4 M, costaba 7,0 M de cláusula y
+ * subía un 81 % al mes, y salía como oportunidad de dinero. Pagas 7,0 por algo
+ * que vale 2,4 —sales 4,6 M por debajo en el minuto uno— y aunque repita ese
+ * 81 %, al mes vale 4,4: sigues perdiendo 2,6 M. De 80 candidatos, 56 perdían
+ * dinero pese a subir.
+ *
+ * La proyección es la más simple posible y va dicha en la tarjeta: «si repite
+ * lo de este mes». Es valor + lo que subió el último mes, menos lo pagado.
+ */
+const gananciaMesDe = (j) =>
+  j.subeMes != null && j.valor && j.precio ? j.valor * (1 + j.subeMes) - j.precio : null
+
+/**
+ * Lo que tiene que pasar para que algo sea una oportunidad de verdad.
+ *
+ * Antes cada objetivo dejaba pasar a cualquiera con la señal en positivo
+ * —un euro de margen, un punto esperado, mil euros de subida— y así siempre
+ * había cuatro tarjetas, hubiera o no algo que mereciera la pena. Se pidió lo
+ * contrario: si no hay nada rentable, que no salga nada, o uno.
+ *
+ *   · Precio con margen: el techo sale de comparar con jugadores de media
+ *     parecida a ±15 %, así que un margen menor que ese 15 % del techo está
+ *     dentro del error del propio método y no es una ganga.
+ *   · Ganar puntos: tiene que entrar en tu mejor once y mejorar en al menos
+ *     un punto por jornada al titular que echaría. Quien no entra en el once
+ *     no da puntos, dé la media que dé.
+ *   · Generar dinero: que en un mes, si repite lo de este, devuelva al menos
+ *     el 10 % de lo pagado. Por debajo, el vaivén diario del valor se lo come.
+ */
+const MARGEN_MINIMO_ESCAPARATE = 0.15
+const MEJORA_MINIMA_ESCAPARATE = 1
+const RETORNO_MINIMO_ESCAPARATE = 0.1
+
+/**
+ * Los candidatos: solo libres, y solo los que se pueden pagar hoy.
+ *
+ * Un jugador con dueño no es una oportunidad tuya aunque esté en venta: la
+ * puja la decide su dueño, que puede rechazarla, y quitárselo por la cláusula
+ * cuesta como poco 1,5 veces lo que vale. Se pidió expresamente que no salgan,
+ * «aunque los pongan en venta».
+ */
+const aptosEscaparate = J.filter((j) => {
+  if (!j.a || j.mio || j.duenio) return false
+  if ((j.partidos ?? 0) < PARTIDOS_MINIMOS_ESCAPARATE) return false
+  // Ni a quien no se puede fichar hoy: recomendar a un recién fichado es
+  // mandarte a una puerta cerrada.
+  const veto = vetoDe(j)
+  if (veto && veto.grave) return false
+  const pr = probabilidadDe(j)
+  return pr === null || pr >= PROBABILIDAD_MINIMA_ESCAPARATE
+}).map((j) => ({ j, renta: hastaCuanto(j), forma: formaDe(j), dinero: gananciaMesDe(j), mejora: mejoraDelOnce(j) }))
+
+const conMargen = (x) => x.renta !== null && x.renta.margen >= x.renta.techo * MARGEN_MINIMO_ESCAPARATE
+const conPuntos = (x) => x.mejora !== null && x.mejora >= MEJORA_MINIMA_ESCAPARATE
+const conDinero = (x) => x.dinero !== null && x.dinero >= x.j.precio * RETORNO_MINIMO_ESCAPARATE
+
+const porMargen = aptosEscaparate.filter(conMargen).sort((a, b) => b.renta.margen - a.renta.margen || b.j.esperado - a.j.esperado)
+const porPuntos = aptosEscaparate.filter(conPuntos).sort((a, b) => b.mejora - a.mejora)
+const porDinero = aptosEscaparate.filter(conDinero).sort((a, b) => b.dinero - a.dinero)
+
+// La unión, en el orden de «Equilibrado», que es el que se ve al abrir.
+const candidatosEscaparate = (() => {
+  const vistos = new Set()
+  const l = []
+  for (const x of [...porMargen.slice(0, MAXIMO_ESCAPARATE), ...porPuntos.slice(0, MAXIMO_ESCAPARATE), ...porDinero.slice(0, MAXIMO_ESCAPARATE)]) {
+    if (vistos.has(x.j.id)) continue
+    vistos.add(x.j.id)
+    l.push(x)
+  }
+  return l
+})()
+
+const tarjetaOportunidad = (x, i) => {
+  const { j, renta, forma, dinero, mejora } = x
+  // La etiqueta de «mejor» la pone el navegador a la que quede primera: aquí no
+  // se sabe, porque el botón de objetivo reordena las tarjetas al cargar y la
+  // etiqueta cosida a la primera acababa en la segunda.
+  const etiqueta = renta && renta.margen >= 0 ? 'Precio con margen' : forma > 0 ? 'Llega en forma' : 'Para esta jornada'
+  const motivo = renta && renta.margen >= 0
+    ? `${corto(renta.margen)} por debajo de su techo estimado`
+    : j.riv
+      ? `${dec(j.esperado)} puntos esperados en su próximo partido`
+      : `${dec(j.media)} puntos de media`
+  return `      <article class="oportunidad" data-op-id="${j.id}" data-op-puntos="${mejora === null ? -1e9 : Math.round(mejora * 100) / 100}" data-op-valor="${dinero == null ? -1e12 : Math.round(dinero)}" data-apto-equilibrio="${conMargen(x) ? 1 : 0}" data-apto-puntos="${conPuntos(x) ? 1 : 0}" data-apto-valor="${conDinero(x) ? 1 : 0}" data-motivo-equilibrio="${esc(renta && renta.margen >= 0 ? `${corto(renta.margen)} por debajo de su techo estimado por rendimiento` : `${corto(-(renta?.margen ?? 0))} por encima de su techo estimado`)}" data-motivo-puntos="${esc(mejora !== null && mejora > 0 ? `Entra en tu mejor once: ${dec(j.esperado)} puntos esperados, ${dec(mejora)} más que el titular al que echa${probabilidadDe(j) != null ? ` · ${probabilidadDe(j)} % de salir` : ''}` : `No entra en tu mejor once: ${dec(j.esperado)} puntos esperados no mejoran a tu titular`)}" data-motivo-valor="${esc(dinero == null ? 'Sin dato de cómo se mueve su valor' : `${j.mk ? 'Pagas lo que vale' : `Pagas ${corto(j.precio)} de cláusula por ${corto(j.valor)} de valor`}: si repite lo de este mes, dentro de un mes ${dinero >= 0 ? 'ganas' : 'pierdes'} ${corto(Math.abs(dinero))}`)}" data-op-equilibrio="${Math.round(renta?.margen ?? -1e9)}">
+        <div class="op-foto">${caraDe(j.id, j.nombre)}<span class="dorsal p${j.puesto}">${PUESTOS[j.puesto]}</span></div>
+        <div class="op-cuerpo">
+          <span class="op-etiqueta">${etiqueta}</span>
+          <button type="button" class="op-nombre" data-ficha="${j.id}">${esc(j.nombre)}</button>
+          <div class="op-club">${escudoDe(j.id)}${esc(j.duenioCorto ?? 'Libre')}${j.once === 1 ? '<span>· titular</span>' : ''}</div>
+          <div class="op-metricas"><span><b>${dec(j.media)}</b> media</span><span title="${j.mk ? 'Lo que pide quien lo vende' : 'Su cláusula: lo que hay que pagar para quitárselo a su dueño'}"><b>${corto(j.precio)}</b> ${j.mk ? 'piden' : 'cláusula'}</span><span title="Lo que vale en Mister hoy: es lo que recuperas si lo vendes"><b>${corto(j.valor)}</b> vale</span><span class="${j.semana === 0 ? 'quieto' : clase(j.semana ?? 0)}"><b>${j.semana == null ? '—' : j.semana === 0 ? '=' : firmaCorta(j.semana)}</b> hoy${(() => {
+            const d = subeDiaDe(j)
+            return d == null || Math.abs(d) < 0.0005 ? '' : `<em>${d > 0 ? '+' : '−'}${dec(Math.abs(d) * 100)} %</em>`
+          })()}</span><span class="${clase(j.subeMes ?? 0)}"><b>${j.subeMes == null ? '—' : `${j.subeMes > 0 ? '+' : ''}${Math.round(j.subeMes * 100)} %`}</b> mes</span></div>
+          <p class="op-motivo">${motivo}</p>
+          <button type="button" class="op-cta" data-ficha="${j.id}">Analizar fichaje <span>→</span></button>
+        </div>
+      </article>`
+}
+
+const oportunidades = `    <section class="escaparate">
+      <div class="escaparate-cab"><div><span class="eyebrow">Selección inteligente</span><h2>Oportunidades para ti</h2><p>Solo libres del mercado que puedes pagar hoy y que salen a cuenta de verdad. Si no hay ninguno, no sale ninguno.</p></div>${candidatosEscaparate.length ? `<span class="op-contador" id="op-cuenta">${Math.min(DE_GOLPE_ESCAPARATE, candidatosEscaparate.length)} de ${candidatosEscaparate.length}</span>` : ''}</div>
+      <div class="objetivos" aria-label="Objetivo de las recomendaciones"><span>Mi objetivo</span><button type="button" data-objetivo="equilibrio">Equilibrado</button><button type="button" data-objetivo="puntos">Ganar puntos</button><button type="button" data-objetivo="valor">Generar dinero</button></div>
+      <div class="op-grid" data-de-golpe="${DE_GOLPE_ESCAPARATE}">
+${candidatosEscaparate.map(tarjetaOportunidad).join(NL)}
+      </div>
+      ${candidatosEscaparate.length > DE_GOLPE_ESCAPARATE ? `<button type="button" class="op-mas" id="op-mas">Ver ${DE_GOLPE_ESCAPARATE} más</button>` : ''}
+      <p class="op-vacio sd" id="op-vacio"${candidatosEscaparate.length ? ' hidden' : ''}>${candidatosEscaparate.length ? 'Con este objetivo no hay ningún libre que salga a cuenta hoy.' : `Hoy no hay ningún libre en el mercado que salga a cuenta: ninguno tiene un ${Math.round(MARGEN_MINIMO_ESCAPARATE * 100)} % de margen sobre su techo, mejora tu once en un punto ni devolvería el ${Math.round(RETORNO_MINIMO_ESCAPARATE * 100)} % en un mes. Mejor no gastar que gastar por gastar.`}</p>
+    </section>`
+
 /**
  * Una fila del once: quién es, qué se espera de él y por qué.
  *
@@ -2472,8 +2509,10 @@ ${once.banquillo.map(filaOnce).join(NL)}
     </section>
 `
 
-const oportunidad = J.filter((j) => j.a && !j.mio && !(vetoDe(j)?.grave))
-  .sort((a, b) => (b.p + b.d) - (a.p + a.d) || b.media - a.media || (b.subeMes ?? -9) - (a.subeMes ?? -9))[0]
+// La misma que encabeza el escaparate: un libre que pasa algún umbral. Si no
+// hay ninguno, no se recomienda a nadie —antes salía el mejor de lo que hubiera,
+// aunque fuera de otro equipo o no mereciera la pena—.
+const oportunidad = candidatosEscaparate[0]?.j ?? null
 
 // ── Inteligencia accionable ─────────────────────────────────────────────────
 // La portada no debe ser otro resumen de datos. Convierte las señales que ya
@@ -3186,6 +3225,7 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
     <div class="tarjeta">
       <h2 class="sh">Las palabras</h2>
       <div class="defs">
+        ${def('★', 'txt', 'Oportunidades para ti', `Solo <strong>libres</strong> del mercado: un jugador con dueño no es una oportunidad tuya aunque esté en venta —la puja la decide su dueño, y quitárselo por la cláusula cuesta como poco 1,5 veces lo que vale—. Y solo si pasa algún umbral: <strong>margen</strong> de al menos el ${Math.round(MARGEN_MINIMO_ESCAPARATE * 100)} % sobre su techo (por debajo está dentro del error del propio cálculo), <strong>puntos</strong> si entra en tu mejor once y mejora en ${MEJORA_MINIMA_ESCAPARATE} punto al titular que echa, o <strong>dinero</strong> si en un mes, repitiendo lo de este, devuelve el ${Math.round(RETORNO_MINIMO_ESCAPARATE * 100)} % de lo pagado. Si hoy no lo pasa nadie, no sale nadie.`)}
         ${def('↗', 'txt', 'Llega en forma', `Calculado aquí. Sus últimas ${JORNADAS_DE_FORMA} jornadas frente a <strong>su propia</strong> media, no la de la liga: la pregunta no es si es bueno, sino si está mejor o peor que de costumbre. Hacen falta dos jornadas jugadas.`)}
         ${def('16 M', 'txt', 'Hasta cuánto sale a cuenta', `Calculado aquí. Es <strong>lo que vale en esta liga alguien que rinde como él</strong>: se buscan los jugadores con una media parecida y se toma su valor mediano. Él no cuenta en esa mediana — comparar a alguien consigo mismo daba siempre «te sobran 0», y así salía. Su media va corregida por los partidos que lleva: cuatro partidos no sostienen una media de 11, así que hasta que juegue más tira hacia la media de la liga. Con menos de dos partidos, o si no hay ocho jugadores que rindan como él, no sale ninguna cifra: a alguien sin parecidos no se le puede poner precio comparando, y decir un número sería inventarlo. El techo nunca pasa de tu tope de puja.`)}
         ${def('🎯', 'txt', 'Buen clausulazo', 'Calculado aquí. Lo primero es dejar de mirar la cláusula como el precio: el jugador entra en tu plantilla y, si lo revendes, recuperas su valor. Lo que no vuelve nunca es la diferencia, y esa <strong>prima real</strong> es la cifra sobre la que hay que decidir. Luego hacen falta <strong>las tres</strong> condiciones, porque una sola engaña: que sea titular de verdad (dos partidos de inicio y más de inicio que desde el banquillo), que la prima por punto de media esté por debajo de la mediana de la liga, y que el próximo partido le venga bien —dónde juega y contra quién, sin contar la forma—. Con las tres, «buen clausulazo»; con dos, dudoso; con menos, malo. Aparte se dice si su dueño le ha subido la cláusula: si lo ha hecho, es que le importa.')}

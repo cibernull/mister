@@ -2804,7 +2804,7 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
         }
       })
       var cuenta = document.getElementById('op-cuenta')
-      if (cuenta) cuenta.textContent = Math.min(n, aptas.length) + ' de ' + aptas.length
+      if (cuenta) { cuenta.textContent = Math.min(n, aptas.length) + ' de ' + aptas.length; cuenta.hidden = aptas.length === 0 }
       var mas = document.getElementById('op-mas')
       if (mas) {
         var quedan = aptas.length - n
