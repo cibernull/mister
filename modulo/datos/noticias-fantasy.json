@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T21:38:05.957Z",
+ "cuando": "2026-09-21T22:07:54.763Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -32,6 +32,18 @@
    "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "Internacionales del Getafe en septiembre: Partidos, calendario y horarios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151702-internacionales-getafe-septiembre-partidos-calendario-horarios",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "Puado da otro paso y completa la primera sesión del parón",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151701-puado-da-otro-paso-y-completa-la-primera-sesion-del-paron",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "21/09",
@@ -470,18 +482,6 @@
    "titulo": "Huijsen, expulsado en el derbi por un agarrón a Giuliano",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151628-huijsen-expulsado-en-el-derbi-por-un-agarron-a-giuliano",
    "categoria": "sanción"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Amatucci se cae de la convocatoria por unas molestias en el aductor",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151627-amatucci-se-cae-de-la-convocatoria-por-un-proceso-viral",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Bordalás celebra el triunfo y habla del cambio de Djené, el arbitraje y el parón",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151624-bordalas-celebra-el-triunfo-y-habla-del-cambio-de-djene-el-arbitraje-y-el-paron",
-   "categoria": "rueda de prensa"
   }
  ]
 }
