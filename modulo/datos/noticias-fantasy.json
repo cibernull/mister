@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-21T12:38:11.354Z",
+ "cuando": "2026-09-21T13:07:56.545Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "21/09",
+   "titulo": "Íñigo Pérez invierte su once de gala en un mes: Análisis a fondo de la evolución del Villarreal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151669-inigo-perez-invierte-su-once-tipo-en-un-mes",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
@@ -29,9 +35,9 @@
   },
   {
    "fecha": "21/09",
-   "titulo": "Íñigo Pérez invierte su once tipo en un mes",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151669-inigo-perez-invierte-su-once-tipo-en-un-mes",
-   "categoria": "análisis"
+   "titulo": "Luis de la Fuente renueva con España hasta 2032",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151670-luis-de-la-fuente-renueva-con-espana-hasta-2032",
+   "categoria": "mercado"
   },
   {
    "fecha": "21/09",
@@ -476,12 +482,6 @@
    "titulo": "Jornda 7: Sevilla 1-3 Barcelona. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22490-sevilla-barcelona",
    "categoria": "partido"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Funes no recupera efectivos en la lista para visitar el Coliseum",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151593-funes-no-recupera-efectivos-en-la-lista-para-visitar-el-coliseum",
-   "categoria": "convocatoria"
   }
  ]
 }
