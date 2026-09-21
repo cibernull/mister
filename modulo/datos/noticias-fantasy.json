@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T09:31:29.951Z",
+ "cuando": "2026-09-21T09:38:10.829Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "Vivian vuelve al grupo en una sesión sin Yuri, Canales, Guruzeta ni Maroan",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151655-vivian-vuelve-al-grupo-en-una-sesion-sin-yuri-canales-guruzeta-ni-maroan",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "20/09",
@@ -476,12 +482,6 @@
    "titulo": "Jornada 7: Athletic 0-0 Alavés. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22483-athletic-alaves",
    "categoria": "partido"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Pathé Ciss abre la sección de apercibidos de LaLiga 26/27",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151577-pathe-ciss-abre-la-seccion-de-apercibidos-de-laliga-26-27",
-   "categoria": "análisis"
   }
  ]
 }
