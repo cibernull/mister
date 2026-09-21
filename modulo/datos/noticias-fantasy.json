@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T19:07:58.732Z",
+ "cuando": "2026-09-21T19:30:39.969Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -31,6 +31,30 @@
    "fecha": "19/09",
    "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "El Betis descansó este lunes pendiente de Bartra, Llorente y Ruibal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151688-el-betis-descanso-este-lunes-pendiente-de-bartra-llorente-y-ruibal",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "Bartra no sufre lesión grave y podría estar listo tras el parón",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151687-bartra-no-sufre-lesion-grave-y-podria-estar-listo-tras-el-paron",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "El Villarreal descansa con Comesaña en la enfermería",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151686-el-villarreal-descansa-con-comesana-en-la-enfermeria",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "Marcos Llorente: Albañil, fontanero y pintor",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151685-marcos-llorente-albanil-fontanero-y-pintor",
    "categoria": "análisis"
   },
   {
@@ -458,30 +482,6 @@
    "titulo": "Johaneko, una oportunidad aprovechada a medias",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151612-johaneko-una-oportunidad-aprovechada-a-medias",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Audero devuelve la estabilidad a la meta rayista",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151611-audero-devuelve-la-estabilidad-a-la-meta-rayista",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Funes explica las rotaciones, la titularidad de Berrocal y Jauregi",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151610-funes-explica-las-rotaciones-la-titularidad-de-berrocal-y-jauregi",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Rubén Sánchez emerge tras la lesión de Sangaré",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151609-ruben-sanchez-emerge-tras-la-lesion-de-sangare",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "El Valencia se concentra horas antes del partido con Rioja y sin los siete lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151608-el-valencia-se-concentra-horas-antes-del-partido-con-rioja-y-sin-los-siete-lesionados",
-   "categoria": "convocatoria"
   }
  ]
 }
