@@ -1,6 +1,14 @@
 {
- "saldo": -4578450,
+ "saldo": -3378450,
  "apuntes": [
+  {
+   "cuando": 1789982121,
+   "fecha": "2026-09-21 11:15",
+   "motivo": "Jornada 7",
+   "tipo": "Bonificación",
+   "importe": 1200000,
+   "saldo": -3378450
+  },
   {
    "cuando": 1789979775,
    "fecha": "2026-09-21 10:36",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -185010,
    "saldo": 13803271
-  },
-  {
-   "cuando": 1787694054,
-   "fecha": "2026-08-25 23:40",
-   "motivo": "Carlos Álvarez a Mister",
-   "tipo": "Venta",
-   "importe": 4171800,
-   "saldo": 13988281
   }
  ]
 }
