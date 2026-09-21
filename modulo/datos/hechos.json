@@ -6563,6 +6563,42 @@
      "puja": 1414870
     }
    ]
+  },
+  {
+   "idTransfer": 549785062,
+   "idJugador": "59395",
+   "nombre": "Pedro Díaz",
+   "de": "Mister",
+   "a": "Cacaculopedopis",
+   "idUcDe": 0,
+   "idUcA": 15435600,
+   "importe": 1011160,
+   "tipo": "normal",
+   "cuando": "2026-09-21 17:00:19",
+   "valor": 985000,
+   "posicion": 3,
+   "puntos": 19,
+   "media": 3.2,
+   "racha": "2,4,5,4,2",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 549785071,
+   "idJugador": "23147",
+   "nombre": "Tete Morente",
+   "de": "Mister",
+   "a": "Cacaculopedopis",
+   "idUcDe": 0,
+   "idUcA": 15435600,
+   "importe": 1458179,
+   "tipo": "normal",
+   "cuando": "2026-09-21 17:00:19",
+   "valor": 1381000,
+   "posicion": 3,
+   "puntos": 24,
+   "media": 3.4,
+   "racha": "6,4,3,3,2",
+   "otrasPujas": []
   }
  ],
  "salidas": [

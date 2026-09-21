@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T12:38:10.298Z",
+ "cuando": "2026-09-21T15:08:05.192Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -745,7 +745,10 @@
    "prob": 80,
    "sancionado": 0,
    "fuera": 0,
-   "min": 314
+   "min": 314,
+   "lesion": "Molestias en el pie",
+   "desde": "20/09 (1 día)",
+   "hasta": null
   },
   "20449": {
    "prob": 90,
@@ -1969,7 +1972,10 @@
    "prob": 20,
    "sancionado": 0,
    "fuera": 0,
-   "min": 0
+   "min": 0,
+   "lesion": "Sobrecarga en el aductor",
+   "desde": "16/09 (5 días)",
+   "hasta": null
   },
   "61297": {
    "prob": 30,
@@ -2659,10 +2665,7 @@
    "prob": 30,
    "sancionado": 0,
    "fuera": 0,
-   "min": 160,
-   "lesion": "Calambres en los isquiotibiales",
-   "desde": "20/09 (1 día)",
-   "hasta": null
+   "min": 160
   },
   "71002": {
    "prob": 10,

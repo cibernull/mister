@@ -1143,6 +1143,26 @@
  ],
  "movimientos": [
   {
+   "id": "23147",
+   "nombre": "Tete Morente",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 1458179,
+   "tipo": "normal",
+   "fecha": "2026-09-21 17:00:19",
+   "pos": 3
+  },
+  {
+   "id": "59395",
+   "nombre": "Pedro Díaz",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 1011160,
+   "tipo": "normal",
+   "fecha": "2026-09-21 17:00:19",
+   "pos": 3
+  },
+  {
    "id": "63727",
    "nombre": "Marcos Fernández",
    "de": null,
@@ -6731,6 +6751,22 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Pedro Díaz",
+     "id": "59395",
+     "tipo": "compra",
+     "importe": 1011160,
+     "fecha": "2026-09-21",
+     "op": "normal"
+    },
+    {
+     "j": "Tete Morente",
+     "id": "23147",
+     "tipo": "compra",
+     "importe": 1458179,
+     "fecha": "2026-09-21",
+     "op": "normal"
+    },
+    {
      "j": "Álex Berenguer",
      "id": "1762",
      "tipo": "venta",
@@ -7426,6 +7462,12 @@
      "ventas": 198900,
      "ops": 1
     },
+    "23147": {
+     "nombre": "Tete Morente",
+     "compras": 1458179,
+     "ventas": 0,
+     "ops": 1
+    },
     "23664": {
      "nombre": "Sergio Carreira",
      "compras": 0,
@@ -7500,9 +7542,9 @@
     },
     "59395": {
      "nombre": "Pedro Díaz",
-     "compras": 1204000,
+     "compras": 2215160,
      "ventas": 1103000,
-     "ops": 2
+     "ops": 3
     },
     "59581": {
      "nombre": "Luiz Júnior",

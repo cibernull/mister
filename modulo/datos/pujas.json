@@ -2756,6 +2756,30 @@
     "topeMax": 28208876,
     "exceso": 0
    }
+  ],
+  "549785062": [
+   {
+    "idTransfer": 549785062,
+    "cuando": "2026-09-21 17:00:19",
+    "jugador": "Pedro Díaz",
+    "equipo": "Cacaculopedopis",
+    "puja": 1011160,
+    "gana": true,
+    "topeMax": 31278568,
+    "exceso": 0
+   }
+  ],
+  "549785071": [
+   {
+    "idTransfer": 549785071,
+    "cuando": "2026-09-21 17:00:19",
+    "jugador": "Tete Morente",
+    "equipo": "Cacaculopedopis",
+    "puja": 1458179,
+    "gana": true,
+    "topeMax": 31278568,
+    "exceso": 0
+   }
   ]
  }
 }
