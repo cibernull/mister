@@ -2700,6 +2700,62 @@
     "topeMax": 26794338,
     "exceso": 0
    }
+  ],
+  "549641832": [
+   {
+    "idTransfer": 549641832,
+    "cuando": "2026-09-21 05:00:28",
+    "jugador": "Kang-In Lee",
+    "equipo": "Mario80",
+    "puja": 11258030,
+    "gana": true,
+    "topeMax": 24405250,
+    "exceso": 0
+   }
+  ],
+  "549648771": [
+   {
+    "idTransfer": 549648771,
+    "cuando": "2026-09-21 05:00:28",
+    "jugador": "Alex Freeman",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1391150,
+    "gana": true,
+    "topeMax": 28208876,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 549648771,
+    "cuando": "2026-09-21 05:00:28",
+    "jugador": "Alex Freeman",
+    "equipo": "Mario80",
+    "puja": 1250020,
+    "gana": false,
+    "topeMax": 24405250,
+    "exceso": 0
+   }
+  ],
+  "549659437": [
+   {
+    "idTransfer": 549659437,
+    "cuando": "2026-09-21 05:00:28",
+    "jugador": "Marcos Fernández",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1640508,
+    "gana": true,
+    "topeMax": 27168025,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 549659437,
+    "cuando": "2026-09-21 05:00:28",
+    "jugador": "Marcos Fernández",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1414870,
+    "gana": false,
+    "topeMax": 28208876,
+    "exceso": 0
+   }
   ]
  }
 }
