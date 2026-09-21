@@ -1,6 +1,14 @@
 {
- "saldo": -4225650,
+ "saldo": -4578450,
  "apuntes": [
+  {
+   "cuando": 1789979775,
+   "fecha": "2026-09-21 10:36",
+   "motivo": "Modificación de cláusula (250%) de Roger Brugué",
+   "tipo": "Penalización",
+   "importe": -352800,
+   "saldo": -4578450
+  },
   {
    "cuando": 1789959600,
    "fecha": "2026-09-21 05:00",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 4171800,
    "saldo": 13988281
-  },
-  {
-   "cuando": 1787651931,
-   "fecha": "2026-08-25 11:58",
-   "motivo": "Jornada 2",
-   "tipo": "Bonificación",
-   "importe": 725000,
-   "saldo": 9816481
   }
  ]
 }
