@@ -1,12 +1,12 @@
 {
- "cuando": "2026-09-21T13:07:56.545Z",
+ "cuando": "2026-09-21T13:38:02.766Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "21/09",
-   "titulo": "Íñigo Pérez invierte su once de gala en un mes: Análisis a fondo de la evolución del Villarreal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151669-inigo-perez-invierte-su-once-tipo-en-un-mes",
+   "titulo": "Internacionales de LaLiga convocados por sus selecciones para la primera fecha FIFA",
+   "url": "https://www.futbolfantasy.com/laliga/internacionales",
    "categoria": "análisis"
   },
   {
@@ -35,9 +35,21 @@
   },
   {
    "fecha": "21/09",
+   "titulo": "Guido seguía renqueante y aprovechará el parón para recuperarse",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151671-guido-seguia-renqueante-y-aprovechara-el-paron-para-recuperarse",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "21/09",
    "titulo": "Luis de la Fuente renueva con España hasta 2032",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151670-luis-de-la-fuente-renueva-con-espana-hasta-2032",
    "categoria": "mercado"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "Íñigo Pérez invierte su once de gala en un mes: Análisis a fondo de la evolución del Villarreal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151669-inigo-perez-invierte-su-once-tipo-en-un-mes",
+   "categoria": "análisis"
   },
   {
    "fecha": "21/09",
@@ -470,18 +482,6 @@
    "titulo": "Flick celebra el triunfo y habla de Raphinha, Christensen, Livakovic, Szczesny y Rodri",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151595-flick-celebra-el-triunfo-y-habla-de-raphinha-christensen-livakovic-szczesny-y-rodri",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Raphinha levita sobre Nervión",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151594-raphinha-levita-sobre-nervion",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Jornda 7: Sevilla 1-3 Barcelona. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22490-sevilla-barcelona",
-   "categoria": "partido"
   }
  ]
 }
