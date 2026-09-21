@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T22:07:54.763Z",
+ "cuando": "2026-09-21T22:38:02.715Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -32,6 +32,18 @@
    "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "El Elche descansó este lunes pendiente de las pruebas a Sangaré",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151704-el-elche-descanso-este-lunes-pendiente-de-las-pruebas-a-sangare",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "El Alavés descansa hasta el jueves pendiente de las molestias de Rebbach",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151703-el-alaves-descansa-hasta-el-jueves-pendiente-de-las-molestias-de-rebbach",
+   "categoria": "equipo"
   },
   {
    "fecha": "21/09",
@@ -470,18 +482,6 @@
    "titulo": "Hidalgo lamenta la afectación del virus y habla de Aubameyang, Giménez y las rotaciones en defensa",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151631-hidalgo-lamenta-la-afectacion-del-virus-y-habla-de-aubameyang-gimenez-y-las-rotaciones-en-def",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Íñigo Pérez explica la continuidad de su once y la dificultad del Levante",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151629-inigo-perez-explica-la-continuidad-de-su-once-y-la-dificultad-del-levante",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Huijsen, expulsado en el derbi por un agarrón a Giuliano",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151628-huijsen-expulsado-en-el-derbi-por-un-agarron-a-giuliano",
-   "categoria": "sanción"
   }
  ]
 }
