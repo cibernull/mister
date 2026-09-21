@@ -37764,6 +37764,46 @@
   "d": 1
  },
  {
+  "id": "71003",
+  "nombre": "Diego Murillo",
+  "valor": 195000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 35000,
+  "sem7": 30000,
+  "mes": 35000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 13,
+  "riv": 8,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [],
+  "p": 0,
+  "d": 1
+ },
+ {
   "id": "48620",
   "nombre": "Marcão",
   "valor": 195000,
@@ -37850,46 +37890,6 @@
     ""
    ]
   ],
-  "p": 0,
-  "d": 1
- },
- {
-  "id": "71003",
-  "nombre": "Diego Murillo",
-  "valor": 195000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 35000,
-  "sem7": 30000,
-  "mes": 35000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 13,
-  "riv": 8,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [],
   "p": 0,
   "d": 1
  },
@@ -41141,6 +41141,82 @@
   "d": 0
  },
  {
+  "id": "70952",
+  "nombre": "Germán Parreño",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -4000,
+  "mes": -51000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 6,
+  "riv": 16,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 33,
+  "js": [
+   [
+    1,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    9,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "61410",
   "nombre": "Adrián Rodríguez",
   "valor": 160000,
@@ -41216,82 +41292,6 @@
     6,
     null,
     19,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "70952",
-  "nombre": "Germán Parreño",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -4000,
-  "mes": -51000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 6,
-  "riv": 16,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 33,
-  "js": [
-   [
-    1,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    9,
     0,
     ""
    ]
@@ -41632,96 +41632,6 @@
   "d": 0
  },
  {
-  "id": "3688394",
-  "nombre": "Kayne van Oevelen",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -2000,
-  "sem7": -49000,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 19,
-  "riv": 1490,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    16,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "11092",
   "nombre": "Andoni Gorosabel",
   "valor": 160000,
@@ -41942,6 +41852,96 @@
     7,
     null,
     50,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "3688394",
+  "nombre": "Kayne van Oevelen",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -2000,
+  "sem7": -49000,
+  "mes": null,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 19,
+  "riv": 1490,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    16,
     0,
     ""
    ]

@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T15:08:06.240Z",
+ "cuando": "2026-09-21T15:38:15.061Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -31,6 +31,12 @@
    "fecha": "19/09",
    "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "Internacionales del Alavés en septiembre: Partidos, calendario y horarios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151677-internacionales-alaves-septiembre-partidos-calendario-horarios",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "El Valencia cierra la contratación de Javier Aguirre",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151600-el-valencia-cierra-la-contratacion-de-javier-aguirre",
    "categoria": "mercado"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "La cuenta atrás de Javi Puado",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151599-la-cuenta-atras-de-javi-puado",
-   "categoria": "análisis"
   }
  ]
 }
