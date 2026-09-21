@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T11:07:54.125Z",
+ "cuando": "2026-09-21T11:37:53.091Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,12 @@
    "fecha": "19/09",
    "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "Berrocal mancha un correcto debut antes del regreso de Calero",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151664-berrocal-mancha-un-correcto-debut-antes-del-regreso-de-calero",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Giráldez le enseña a José Alberto cómo se rota",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151589-giraldez-le-ensena-a-jose-alberto-como-se-rota",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Flick habla de Livakovic, Espart, Cancelo, Gordon y Adeyemi antes del partido",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151587-flick-habla-de-livakovic-espart-cancelo-gordon-y-adeyemi-antes-del-partido",
-   "categoria": "rueda de prensa"
   }
  ]
 }
