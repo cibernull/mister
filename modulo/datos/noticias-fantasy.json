@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T12:08:14.840Z",
+ "cuando": "2026-09-21T12:38:11.354Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,12 @@
    "fecha": "19/09",
    "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "Íñigo Pérez invierte su once tipo en un mes",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151669-inigo-perez-invierte-su-once-tipo-en-un-mes",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Funes no recupera efectivos en la lista para visitar el Coliseum",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151593-funes-no-recupera-efectivos-en-la-lista-para-visitar-el-coliseum",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Foyth vuelve al grupo y Comesaña estará tres semanas de baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151592-foyth-vuelve-al-grupo-y-comesana-estara-tres-semanas-de-baja",
-   "categoria": "entrenamiento"
   }
  ]
 }
