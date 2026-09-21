@@ -15924,7 +15924,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "red",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -21450,7 +21450,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": null,
+  "est": "double",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -22354,7 +22354,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": null,
+  "est": "red",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -31784,7 +31784,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "double",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -41963,7 +41963,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": null,
+  "est": "red",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -42520,7 +42520,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "red",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
