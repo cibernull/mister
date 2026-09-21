@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T15:38:15.061Z",
+ "cuando": "2026-09-21T16:07:56.778Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -31,6 +31,12 @@
    "fecha": "19/09",
    "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "Internacionales del Athletic en septiembre: Partidos, calendario y horarios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151678-internacionales-athletic-septiembre-partidos-calendario-horarios",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Análisis Fantasy de Unai Santos: anticipación y personalidad desde el perfil izquierdo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151601-analisis-fantasy-de-unai-santos-anticipacion-y-personalidad-desde-el-perfil-izquierdo",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "El Valencia cierra la contratación de Javier Aguirre",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151600-el-valencia-cierra-la-contratacion-de-javier-aguirre",
-   "categoria": "mercado"
   }
  ]
 }
