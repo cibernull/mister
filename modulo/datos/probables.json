@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T09:38:09.827Z",
+ "cuando": "2026-09-21T12:08:13.703Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -118,7 +118,10 @@
    "prob": 80,
    "sancionado": 0,
    "fuera": 0,
-   "min": 365
+   "min": 365,
+   "lesion": "Trabajo al margen",
+   "desde": "21/09 (1 día)",
+   "hasta": null
   },
   "364": {
    "prob": 90,
@@ -1694,9 +1697,9 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 119,
-   "lesion": "Traumatismo acromioclavicular",
+   "lesion": "Fractura de clavícula",
    "desde": "20/09 (1 día)",
-   "hasta": null
+   "hasta": "mediados de diciembre"
   },
   "58951": {
    "prob": 10,
@@ -1861,7 +1864,10 @@
    "prob": 40,
    "sancionado": 0,
    "fuera": 0,
-   "min": 222
+   "min": 222,
+   "lesion": "Trabajo al margen",
+   "desde": "21/09 (1 día)",
+   "hasta": null
   },
   "60227": {
    "prob": 10,
@@ -1954,7 +1960,10 @@
    "prob": 10,
    "sancionado": 0,
    "fuera": 0,
-   "min": 72
+   "min": 72,
+   "lesion": "Trabajo al margen",
+   "desde": "21/09 (1 día)",
+   "hasta": null
   },
   "61167": {
    "prob": 20,

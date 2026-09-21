@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T11:37:53.091Z",
+ "cuando": "2026-09-21T12:08:14.840Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,30 @@
    "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "Akhomach adelanta a Pépé por la derecha",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151668-akhomach-adelanta-a-pepe-por-la-derecha",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "El Atlético se toma dos días de descanso pendiente de Sorloth y Barrios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151667-el-atletico-se-toma-dos-dias-de-descanso-pendiente-de-sorloth-y-barrios",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "El Barça inicia el parón pendiente de Joan Garcia y con Christensen en la enfermería",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151666-el-barca-inicia-el-paron-pendiente-de-joan-garcia-y-con-christensen-en-la-enfermeria",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "El Real Madrid descansa este lunes pendiente del tobillo de Valverde",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151665-el-real-madrid-descansa-este-lunes-pendiente-del-tobillo-de-valverde",
+   "categoria": "equipo"
   },
   {
    "fecha": "21/09",
@@ -458,30 +482,6 @@
    "titulo": "Foyth vuelve al grupo y Comesaña estará tres semanas de baja",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151592-foyth-vuelve-al-grupo-y-comesana-estara-tres-semanas-de-baja",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Christensen se retira del partido por unas molestias en el muslo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151591-christensen-se-retira-del-partido-por-unas-molestias-en-el-muslo",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Giráldez celebra el triunfo y habla de Hugo González, Jutglà, Febas y Burcio",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151590-giraldez-celebra-el-triunfo-y-habla-de-hugo-gonzalez-jutgla-febas-y-burcio",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "José Alberto analiza la derrota y explica las rotaciones durante la semana",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151588-jose-alberto-analiza-la-derrota-y-explica-las-rotaciones-durante-la-semana",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Giráldez le enseña a José Alberto cómo se rota",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151589-giraldez-le-ensena-a-jose-alberto-como-se-rota",
-   "categoria": "análisis"
   }
  ]
 }
