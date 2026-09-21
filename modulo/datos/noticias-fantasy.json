@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T23:07:55.262Z",
+ "cuando": "2026-09-21T23:18:59.786Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -16,19 +16,25 @@
    "categoria": "análisis"
   },
   {
-   "fecha": "20/09",
+   "fecha": "22/09",
+   "titulo": "Actualizadas las jerarquías del Alavés: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/alaves/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
    "titulo": "Actualizadas las jerarquías de Osasuna: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/osasuna/jerarquias",
    "categoria": "análisis"
   },
   {
-   "fecha": "19/09",
+   "fecha": "22/09",
    "titulo": "Actualizadas las jerarquías del Espanyol: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/espanyol/jerarquias",
    "categoria": "análisis"
   },
   {
-   "fecha": "19/09",
+   "fecha": "22/09",
    "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
    "categoria": "análisis"
@@ -476,12 +482,6 @@
    "titulo": "Jornada 7: Atlético 2-0 Real Madrid. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22484-atletico-real-madrid",
    "categoria": "partido"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Pellegrini, sobre Isco, Deossa, las rotaciones y el planteamiento contra el Deportivo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151633-pellegrini-sobre-isco-deossa-las-rotaciones-y-el-planteamiento-contra-el-deportivo",
-   "categoria": "rueda de prensa"
   }
  ]
 }
