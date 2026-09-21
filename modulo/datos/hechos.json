@@ -2866,12 +2866,25 @@
    "importe": 13057233,
    "tipo": "normal",
    "cuando": "2026-08-20 05:00:33",
-   "valor": 14132000,
+   "valor": 13985000,
    "posicion": 3,
    "puntos": 42,
    "media": 7,
    "racha": "4,9,7,8,9",
-   "otrasPujas": []
+   "otrasPujas": [
+    {
+     "equipo": "Mario80",
+     "puja": 12892170
+    },
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 12362652
+    },
+    {
+     "equipo": "Saiyans FC (Fran)",
+     "puja": 11500000
+    }
+   ]
   },
   {
    "idTransfer": 540417823,
@@ -2884,7 +2897,7 @@
    "importe": 8285000,
    "tipo": "normal",
    "cuando": "2026-08-20 05:00:33",
-   "valor": 11258000,
+   "valor": 11188000,
    "posicion": 3,
    "puntos": 43,
    "media": 7.2,
@@ -2956,7 +2969,7 @@
    "importe": 1816000,
    "tipo": "normal",
    "cuando": "2026-08-20 10:10:35",
-   "valor": 4558000,
+   "valor": 4396000,
    "posicion": 3,
    "puntos": 30,
    "media": 5,
@@ -2974,7 +2987,7 @@
    "importe": 1403590,
    "tipo": "normal",
    "cuando": "2026-08-20 17:00:21",
-   "valor": 4417000,
+   "valor": 4287000,
    "posicion": 2,
    "puntos": 19,
    "media": 3.8,
@@ -2992,7 +3005,7 @@
    "importe": 1785050,
    "tipo": "normal",
    "cuando": "2026-08-20 17:16:23",
-   "valor": 1648000,
+   "valor": 1654000,
    "posicion": 3,
    "puntos": 16,
    "media": 4,
@@ -7010,6 +7023,69 @@
      "puesto": 8,
      "valorPlantilla": 6623000,
      "premio": 0
+    }
+   ]
+  },
+  {
+   "idJornada": 4048,
+   "jornada": 7,
+   "cuando": "2026-09-21 11:16:09",
+   "posiciones": [
+    {
+     "idUc": 12493763,
+     "puntos": 48,
+     "puesto": 1,
+     "valorPlantilla": 88003000,
+     "premio": 1200000
+    },
+    {
+     "idUc": 12493752,
+     "puntos": 38,
+     "puesto": 2,
+     "valorPlantilla": 91273000,
+     "premio": 1050000
+    },
+    {
+     "idUc": 12493688,
+     "puntos": 34,
+     "puesto": 3,
+     "valorPlantilla": 94745000,
+     "premio": 850000
+    },
+    {
+     "idUc": 12493758,
+     "puntos": 31,
+     "puesto": 4,
+     "valorPlantilla": 42301000,
+     "premio": 875000
+    },
+    {
+     "idUc": 13435216,
+     "puntos": 24,
+     "puesto": 5,
+     "valorPlantilla": 72370000,
+     "premio": 600000
+    },
+    {
+     "idUc": 15435600,
+     "puntos": 21,
+     "puesto": 6,
+     "valorPlantilla": 54410000,
+     "premio": 525000
+    },
+    {
+     "idUc": 13428410,
+     "puntos": 8,
+     "puesto": 7,
+     "valorPlantilla": 23348000,
+     "premio": 200000
+    },
+    {
+     "idUc": 13491767,
+     "puntos": 1,
+     "puesto": 8,
+     "valorPlantilla": 6658000,
+     "premio": 25000
     }
    ]
   }
