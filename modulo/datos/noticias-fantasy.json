@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T20:08:06.809Z",
+ "cuando": "2026-09-21T20:37:54.426Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -32,6 +32,18 @@
    "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "Vivian regresa a la casilla de salida",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151694-vivian-regresa-a-la-casilla-de-salida",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "El Getafe decansará varios días con cuatro futbolistas en la enfermería",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151693-el-getafe-decansara-varios-dias-con-cuatro-futbolistas-en-la-enfermeria",
+   "categoria": "equipo"
   },
   {
    "fecha": "21/09",
@@ -469,18 +481,6 @@
    "fecha": "20/09",
    "titulo": "A Galán se le multiplica la competencia",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151618-a-galan-se-le-multiplica-la-competencia",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Parte médico oficial de Andreas Christensen y periodo estimado de baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151617-parte-medico-oficial-de-andreas-christensen-y-periodo-estimado-de-baja",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "José Alberto complica el sitio de Almeida en el Racing",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151616-jose-alberto-complica-el-sitio-de-almeida-en-el-racing",
    "categoria": "análisis"
   }
  ]
