@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T10:07:55.493Z",
+ "cuando": "2026-09-21T10:37:57.324Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,18 @@
    "fecha": "19/09",
    "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "El Valencia retoma los entrenamientos sin los siete lesionados ni los internacionales",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151660-el-valencia-retoma-los-entrenamientos-sin-los-siete-lesionados-ni-los-internacionales",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "21/09",
+   "titulo": "Vinicius impacienta al madridismo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151659-vinicius-impacienta-al-madridismo",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Kike Salas no supera la última prueba y se cae de la lista ante el Barcelona",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151585-kike-salas-no-supera-la-ultima-prueba-y-se-cae-de-la-lista-ante-el-barcelona",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Julián Alvarez entra en una lista sin Barrios ni Sorloth",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151583-julian-alvarez-entra-en-una-lista-sin-barrios-ni-sorloth",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "19/09",
-   "titulo": "Terzic analiza el empate y habla de Serrano, Sancet, Navarro, Guruzeta, Vivian y Areso",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151580-terzic-analiza-el-empate-y-habla-de-serrano-sancet-navarro-guruzeta-vivian-y-areso",
-   "categoria": "rueda de prensa"
   }
  ]
 }
