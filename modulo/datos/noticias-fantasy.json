@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-22T18:08:13.525Z",
+ "cuando": "2026-09-22T18:38:11.529Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "El Málaga es el único equipo de LaLiga sin ningún internacional en septiembre",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151751-el-malaga-es-el-unico-equipo-de-laliga-sin-ningun-internacional-en-septiembre",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Internacionales del Alavés en septiembre: Partidos, calendario y horarios",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151677-internacionales-alaves-septiembre-partidos-calendario-horarios",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "Zubeldia sigue al margen antes de seis días de descanso en la Real",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151676-zubeldia-sigue-al-margen-antes-de-seis-dias-de-descanso-en-la-real",
-   "categoria": "entrenamiento"
   }
  ]
 }
