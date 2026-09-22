@@ -6612,6 +6612,24 @@
    "media": 6.6,
    "racha": "11,2,2,12,7",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 549980992,
+   "idJugador": "59382",
+   "nombre": "Nicolas Pépé",
+   "de": "Neky F.C. (Sergio)",
+   "a": "Mister",
+   "idUcDe": 12493688,
+   "idUcA": 0,
+   "importe": 15728960,
+   "tipo": "normal",
+   "cuando": "2026-09-22 07:03:20",
+   "valor": 15078000,
+   "posicion": 4,
+   "puntos": 38,
+   "media": 6.3,
+   "racha": "6,10,4,-,2",
+   "otrasPujas": []
   }
  ],
  "salidas": [

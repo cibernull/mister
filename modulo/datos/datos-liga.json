@@ -1143,6 +1143,16 @@
  ],
  "movimientos": [
   {
+   "id": "59382",
+   "nombre": "Nicolas Pépé",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 15728960,
+   "tipo": "normal",
+   "fecha": "2026-09-22 07:03:20",
+   "pos": 4
+  },
+  {
    "id": "71640",
    "nombre": "Miguel Sierra",
    "de": "Neky F.C. (Sergio)",
@@ -4735,6 +4745,14 @@
      "op": "clause"
     },
     {
+     "j": "Nicolas Pépé",
+     "id": "59382",
+     "tipo": "venta",
+     "importe": 15728960,
+     "fecha": "2026-09-22",
+     "op": "normal"
+    },
+    {
      "j": "Marcos Fernández",
      "id": "63727",
      "tipo": "compra",
@@ -5543,8 +5561,8 @@
     "59382": {
      "nombre": "Nicolas Pépé",
      "compras": 15054000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 15728960,
+     "ops": 2
     },
     "59484": {
      "nombre": "Marc Bernal",
