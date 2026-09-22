@@ -1,6 +1,14 @@
 {
- "saldo": -3378450,
+ "saldo": -9331950,
  "apuntes": [
+  {
+   "cuando": 1790046671,
+   "fecha": "2026-09-22 05:11",
+   "motivo": "Miguel Sierra a Neky F.C. (Sergio)",
+   "tipo": "Compra por cláusula",
+   "importe": -5953500,
+   "saldo": -9331950
+  },
   {
    "cuando": 1789982121,
    "fecha": "2026-09-21 11:15",
@@ -472,14 +480,6 @@
    "tipo": "Compra por cláusula",
    "importe": -6171000,
    "saldo": 7632271
-  },
-  {
-   "cuando": 1787713200,
-   "fecha": "2026-08-26 05:00",
-   "motivo": "Jorge Herrando a Mister",
-   "tipo": "Compra",
-   "importe": -185010,
-   "saldo": 13803271
   }
  ]
 }

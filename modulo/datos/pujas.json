@@ -2780,6 +2780,18 @@
     "topeMax": 31278568,
     "exceso": 0
    }
+  ],
+  "549968110": [
+   {
+    "idTransfer": 549968110,
+    "cuando": "2026-09-22 05:11:11",
+    "jugador": "Miguel Sierra",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 5953500,
+    "gana": true,
+    "topeMax": 23225300,
+    "exceso": 0
+   }
   ]
  }
 }

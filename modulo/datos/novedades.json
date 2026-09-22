@@ -1,6 +1,139 @@
 [
  {
   "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "217",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "432",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "12915",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "14811",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "17568",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "22486",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "24789",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "28619",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "52117",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "53114",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "58958",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "59642",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "60227",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "60872",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "65179",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "68495",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "71004",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "71012",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "71061",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "71506",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-22",
+  "id": "71640",
+  "de": "Neky F.C. (Sergio)",
+  "a": "Niutin FC (Isaac)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "4836172",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-21",
   "id": "8171",
   "entra": false
