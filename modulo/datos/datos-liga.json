@@ -1164,9 +1164,34 @@
    "id": "7784",
    "nombre": "Unai Núñez",
    "valor": 2783000
+  },
+  {
+   "id": "71061",
+   "nombre": "Álex Calatrava",
+   "valor": 5353000
   }
  ],
  "movimientos": [
+  {
+   "id": "71061",
+   "nombre": "Álex Calatrava",
+   "de": "Mario80",
+   "a": null,
+   "importe": 5192410,
+   "tipo": "normal",
+   "fecha": "2026-09-22 23:00:48",
+   "pos": 3
+  },
+  {
+   "id": "71004",
+   "nombre": "Carlos Puga",
+   "de": "Mario80",
+   "a": null,
+   "importe": 2997820,
+   "tipo": "normal",
+   "fecha": "2026-09-22 22:59:25",
+   "pos": 2
+  },
   {
    "id": "48556",
    "nombre": "Andreas Christensen",
@@ -7894,6 +7919,22 @@
   "Mario80": {
    "movimientos": [
     {
+     "j": "Carlos Puga",
+     "id": "71004",
+     "tipo": "venta",
+     "importe": 2997820,
+     "fecha": "2026-09-22",
+     "op": "normal"
+    },
+    {
+     "j": "Álex Calatrava",
+     "id": "71061",
+     "tipo": "venta",
+     "importe": 5192410,
+     "fecha": "2026-09-22",
+     "op": "normal"
+    },
+    {
      "j": "Kang-In Lee",
      "id": "15653",
      "tipo": "compra",
@@ -8456,7 +8497,13 @@
     "71004": {
      "nombre": "Carlos Puga",
      "compras": 1376110,
-     "ventas": 0,
+     "ventas": 2997820,
+     "ops": 2
+    },
+    "71061": {
+     "nombre": "Álex Calatrava",
+     "compras": 0,
+     "ventas": 5192410,
      "ops": 1
     },
     "71139": {
