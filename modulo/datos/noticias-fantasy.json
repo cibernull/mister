@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-22T12:38:21.776Z",
+ "cuando": "2026-09-22T13:01:12.454Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,24 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Iago Aspas habla sobre su lesión, fecha de vuelta y la actualidad del Celta",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151738-iago-aspas-habla-sobre-su-lesion-fecha-de-vuelta-y-la-actualidad-del-celta",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Guruzeta y Yuri siguen al margen por segundo día consecutivo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151737-guruzeta-y-yuri-siguen-al-margen-por-segundo-dia-consecutivo",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Internacionales del Sevilla en septiembre: Partidos, calendario y horarios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151736-internacionales-sevilla-septiembre-partidos-calendario-horarios",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Análisis Fantasy de Aimar Blázquez: potencia, apoyos y presencia de área",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151663-analisis-fantasy-de-aimar-blazquez-potencia-apoyos-y-presencia-de-area",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "Livakovic enseña a Szczesny la puerta de la jubilación",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151662-livakovic-ensena-a-szczesny-la-puerta-de-la-jubilacion",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "Johnny Cardoso se abre paso en la medular",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151661-johnny-cardoso-se-abre-paso-en-la-medular",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "El Valencia retoma los entrenamientos sin los siete lesionados ni los internacionales",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151660-el-valencia-retoma-los-entrenamientos-sin-los-siete-lesionados-ni-los-internacionales",
-   "categoria": "entrenamiento"
   }
  ]
 }
