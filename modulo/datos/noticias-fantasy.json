@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-22T01:07:54.641Z",
+ "cuando": "2026-09-22T02:07:59.046Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -13,6 +13,24 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Actualizadas las jerarquías del Deportivo: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/deportivo/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Actualizadas las jerarquías del Celta: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/celta/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Actualizadas las jerarquías del Real Betis: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/betis/jerarquias",
    "categoria": "análisis"
   },
   {
@@ -463,24 +481,6 @@
    "fecha": "20/09",
    "titulo": "Fede Valverde cae lesionado en el derbi y será sometido a pruebas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151639-fede-valverde-cae-lesionado-en-el-derbi-y-sera-sometido-a-pruebas",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Simeone pone freno a Mourinho, habla de Julián y Jonathan David y reivindica el juego del equipo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151638-simeone-pone-freno-a-mourinho-habla-de-julian-y-jonathan-david-y-reivindica-el-juego-del-equi",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Marc Casadó pide el cambio por una lesión de clavícula",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151637-marc-casado-pide-el-cambio-por-una-lesion-de-clavicula",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Bartra pide el cambio por molestias en Riazor",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151636-bartra-pide-el-cambio-por-molestias-en-riazor",
    "categoria": "lesión"
   }
  ]
