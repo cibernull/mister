@@ -1168,6 +1168,16 @@
  ],
  "movimientos": [
   {
+   "id": "48556",
+   "nombre": "Andreas Christensen",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 3153860,
+   "tipo": "normal",
+   "fecha": "2026-09-22 17:15:18",
+   "pos": 2
+  },
+  {
    "id": "7784",
    "nombre": "Unai Núñez",
    "de": "Saiyans FC (Fran)",
@@ -6932,6 +6942,14 @@
      "op": "normal"
     },
     {
+     "j": "Andreas Christensen",
+     "id": "48556",
+     "tipo": "venta",
+     "importe": 3153860,
+     "fecha": "2026-09-22",
+     "op": "normal"
+    },
+    {
      "j": "Pedro Díaz",
      "id": "59395",
      "tipo": "compra",
@@ -7676,8 +7694,8 @@
     "48556": {
      "nombre": "Andreas Christensen",
      "compras": 2111290,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 3153860,
+     "ops": 2
     },
     "52371": {
      "nombre": "Iker Muñoz",

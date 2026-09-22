@@ -6770,6 +6770,24 @@
    "media": 2.4,
    "racha": "3,2,-,-,1",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 550062197,
+   "idJugador": "48556",
+   "nombre": "Andreas Christensen",
+   "de": "Cacaculopedopis",
+   "a": "Mister",
+   "idUcDe": 15435600,
+   "idUcA": 0,
+   "importe": 3153860,
+   "tipo": "normal",
+   "cuando": "2026-09-22 17:15:18",
+   "valor": 3062000,
+   "posicion": 2,
+   "puntos": 21,
+   "media": 3.5,
+   "racha": "2,4,2,3,4",
+   "otrasPujas": []
   }
  ],
  "salidas": [
