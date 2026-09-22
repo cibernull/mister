@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-22T11:07:52.877Z",
+ "cuando": "2026-09-22T11:37:56.277Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,36 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Mourinho enfría la irrupción de Thiago Pitarch",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151727-mourinho-enfria-la-irrupcion-de-thiago-pitarch",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Internacionales del Rayo Vallecano en septiembre: Partidos, calendario y horarios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151726-internacionales-rayo-vallecano-septiembre-partidos-calendario-horarios",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "El Getafe peina el mercado de jugadores libres para completar su plantilla",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151725-el-getafe-peina-el-mercado-de-jugadores-libres-para-completar-su-plantilla",
+   "categoria": "mercado"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Balde toca fondo en el Barça tras negarse a salir",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151724-balde-toca-fondo-en-el-barca-tras-negarse-a-salir",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Internacionales del Racing en septiembre: Partidos, calendario y horarios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151723-internacionales-racing-septiembre-partidos-calendario-horarios",
    "categoria": "análisis"
   },
   {
@@ -452,36 +482,6 @@
    "titulo": "Matarazzo esconde una botella de whisky en Mestalla",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151652-matarazzo-esconde-una-botella-de-whisky-en-mestalla",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Oskarsson es expulsado con doble amarilla por protestar",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151651-oskarsson-es-expulsado-con-doble-amarilla-por-protestar",
-   "categoria": "sanción"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Jornada 7: Valencia 2-3 Real Sociedad. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22491-valencia-real-sociedad",
-   "categoria": "partido"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Íñigo Pérez celebra el triunfo y habla de Moleiro, Akhomach y Mikautadze",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151650-inigo-perez-celebra-el-triunfo-habla-de-moleiro-akhomach-y-mikautadze",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Luis Castro analiza la derrota y habla de Mandi, el arbitraje y los cambios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151649-luis-castro-analiza-la-derrota-y-habla-de-mandi-el-arbitraje-y-los-cambios",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Hidalgo valora el empate y habla de Casadó, Villares, Cucho, Amatucci, Aubameyang y Mella",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151648-hidalgo-valora-el-empate-y-habla-de-casado-villares-cucho-amatucci-aubameyang-y-mella",
-   "categoria": "rueda de prensa"
   }
  ]
 }
