@@ -1143,6 +1143,26 @@
  ],
  "movimientos": [
   {
+   "id": "29169",
+   "nombre": "Pablo Ibáñez",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 5324070,
+   "tipo": "normal",
+   "fecha": "2026-09-22 12:49:11",
+   "pos": 3
+  },
+  {
+   "id": "55009",
+   "nombre": "Fermín López",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 17105950,
+   "tipo": "normal",
+   "fecha": "2026-09-22 12:48:46",
+   "pos": 3
+  },
+  {
    "id": "59382",
    "nombre": "Nicolas Pépé",
    "de": "Neky F.C. (Sergio)",
@@ -8321,6 +8341,22 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Fermín López",
+     "id": "55009",
+     "tipo": "venta",
+     "importe": 17105950,
+     "fecha": "2026-09-22",
+     "op": "normal"
+    },
+    {
+     "j": "Pablo Ibáñez",
+     "id": "29169",
+     "tipo": "venta",
+     "importe": 5324070,
+     "fecha": "2026-09-22",
+     "op": "normal"
+    },
+    {
      "j": "Isco",
      "id": "340",
      "tipo": "compra",
@@ -9023,8 +9059,8 @@
     "29169": {
      "nombre": "Pablo Ibáñez",
      "compras": 1400000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5324070,
+     "ops": 2
     },
     "31226": {
      "nombre": "Arnaut Danjuma",
@@ -9065,8 +9101,8 @@
     "55009": {
      "nombre": "Fermín López",
      "compras": 17100000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 17105950,
+     "ops": 2
     },
     "55439": {
      "nombre": "Hugo González",

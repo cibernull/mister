@@ -6630,6 +6630,42 @@
    "media": 6.3,
    "racha": "6,10,4,-,2",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 550009806,
+   "idJugador": "55009",
+   "nombre": "Fermín López",
+   "de": "Saiyans FC (Fran)",
+   "a": "Mister",
+   "idUcDe": 12493752,
+   "idUcA": 0,
+   "importe": 17105950,
+   "tipo": "normal",
+   "cuando": "2026-09-22 12:48:46",
+   "valor": 17664000,
+   "posicion": 3,
+   "puntos": 59,
+   "media": 9.8,
+   "racha": "4,14,4,-,6",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 550009832,
+   "idJugador": "29169",
+   "nombre": "Pablo Ibáñez",
+   "de": "Saiyans FC (Fran)",
+   "a": "Mister",
+   "idUcDe": 12493752,
+   "idUcA": 0,
+   "importe": 5324070,
+   "tipo": "normal",
+   "cuando": "2026-09-22 12:49:11",
+   "valor": 5197000,
+   "posicion": 3,
+   "puntos": 31,
+   "media": 4.4,
+   "racha": "3,11,2,4,4",
+   "otrasPujas": []
   }
  ],
  "salidas": [

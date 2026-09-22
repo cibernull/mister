@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-22T10:37:57.524Z",
+ "cuando": "2026-09-22T11:07:52.877Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,36 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Andrés Martín reaparece sobre el césped y el Racing trabaja sin José Alberto",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151722-andres-martin-reaparece-sobre-el-cesped-y-el-racing-trabaja-sin-jose-alberto",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Stassin viaja con la Sub-21 de Bélgica para ser examinado por los médicos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151721-stassin-viaja-con-la-sub-21-de-belgica-para-ser-examinado-por-los-medicos",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Internacionales de Osasuna en septiembre: Partidos, calendario y horarios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151720-internacionales-osasuna-septiembre-partidos-calendario-horarios",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "El Elche retoma los entrenamientos sin Buba Sangaré ni los internacionales",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151719-el-elche-retoma-los-entrenamientos-sin-buba-sangare-ni-los-internacionales",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Internacionales del Levante en septiembre: Partidos, calendario y horarios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151718-internacionales-levante-septiembre-partidos-calendario-horarios",
    "categoria": "análisis"
   },
   {
@@ -452,36 +482,6 @@
    "titulo": "Hidalgo valora el empate y habla de Casadó, Villares, Cucho, Amatucci, Aubameyang y Mella",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151648-hidalgo-valora-el-empate-y-habla-de-casado-villares-cucho-amatucci-aubameyang-y-mella",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Pellegrini analiza el empate, hace balance de la semana y habla de Bartra, Cucho, Ximo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151647-pellegrini-analiza-el-empate-hace-balance-de-la-semana-y-habla-de-bartra-cucho-ximo",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Villares entra en el garaje de Pellegrini",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151646-villares-entra-en-el-garaje-de-pellegrini",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Íñigo Pérez lubrica sus platanitos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151645-inigo-perez-lubrica-sus-platanitos",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Jornada 7: Deportivo 1-1 Betis. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22486-deportivo-betis",
-   "categoria": "partido"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Jornada 7: Villarreal 3-1 Levante. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22492-villarreal-levante",
-   "categoria": "partido"
   }
  ]
 }
