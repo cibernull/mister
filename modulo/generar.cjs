@@ -2720,9 +2720,11 @@ const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     </div>
   </details>`
 
-const rivales = `    <p class="intro">Ordenados por lo que pueden gastar hoy: lo que tienen en caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale. En cada uno van las tres cifras. La tuya es exacta —Mister publica lo que te retienen las pujas puestas y se comprueba al euro—; la de un rival es <strong>un techo</strong>, porque sus pujas vivas no las enseña nadie hasta que se resuelven.</p>
+const rivales = `    <p class="intro">En el orden de la clasificación de la liga. De cada uno, lo que puede gastar hoy: lo que tiene en caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale. En cada uno van las tres cifras. La tuya es exacta —Mister publica lo que te retienen las pujas puestas y se comprueba al euro—; la de un rival es <strong>un techo</strong>, porque sus pujas vivas no las enseña nadie hasta que se resuelven.</p>
 ${[...EQ]
-  .sort((a, b) => b.tope - a.tope)
+  // Por el puesto en la liga, que es como se mira una clasificación. Iban por
+  // lo que podían gastar, y la columna de puestos salía 8º, 3º, 4º, 7º…
+  .sort((a, b) => a.pos - b.pos)
   .map(fichaEquipo)
   .join(NL)}`
 
