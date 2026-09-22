@@ -1565,7 +1565,7 @@ const cifrasDe = (e) => `<div class="cifras">
           e.ajustePujas > 0 ? `<em class="sube" title="Pujó por encima de lo que le calculábamos: ese dinero lo tenía">+${corto(e.ajustePujas)} por sus pujas</em>` : ''
         }</div>
         <div><b>${eur(e.pl)}</b><i>vale su plantilla</i><em class="${clase(e.cambioPlantillaHoy)}" title="Lo que sube o baja hoy el valor de su plantilla: la misma cuenta que hace Mister, jugador a jugador">${firmaCortaConDecimales(e.cambioPlantillaHoy, 3)} hoy</em></div>
-        <div><b class="credito">${eur(0.25 * e.pl)}</b><i>crédito · 25 % de su plantilla</i></div>
+        <div><b class="credito${e.patrimonio < 0 ? ' baja' : ''}">${eur(e.patrimonio)}</b><i title="Lo que vale su plantilla más lo que tiene en caja —o menos lo que debe—. Es la misma cifra que ordena «Quién es más rico»: todos empezasteis en 50 M.">patrimonio<span class="detalle-cifra"> · plantilla ${e.saldo < 0 ? '− deuda' : '+ caja'}</span></i></div>
       </div>`
 
 const tablaMovimientos = (e) => {
@@ -2720,7 +2720,7 @@ const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     </div>
   </details>`
 
-const rivales = `    <p class="intro">En el orden de la clasificación de la liga. De cada uno, lo que puede gastar hoy: lo que tiene en caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale. En cada uno van las tres cifras. La tuya es exacta —Mister publica lo que te retienen las pujas puestas y se comprueba al euro—; la de un rival es <strong>un techo</strong>, porque sus pujas vivas no las enseña nadie hasta que se resuelven.</p>
+const rivales = `    <p class="intro">En el orden de la clasificación de la liga. De cada uno, lo que puede gastar hoy —la caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale— y, debajo, su caja, lo que vale su plantilla y su patrimonio, que es la plantilla más la caja o menos lo que debe. La tuya es exacta —Mister publica lo que te retienen las pujas puestas y se comprueba al euro—; la de un rival es <strong>un techo</strong>, porque sus pujas vivas no las enseña nadie hasta que se resuelven.</p>
 ${[...EQ]
   // Por el puesto en la liga, que es como se mira una clasificación. Iban por
   // lo que podían gastar, y la columna de puestos salía 8º, 3º, 4º, 7º…
@@ -3259,7 +3259,7 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
         ${def('±', 'txt', 'De fiar', 'Calculado aquí. Cuánto se aparta de su media jornada a jornada. Dos jugadores de media 6 no valen lo mismo: uno hace 6, 6, 6 y el otro 0, 0, 18. Cuanto más bajo, más de fiar. Solo se listan los que promedian 4 o más, porque al que hace un punto siempre le sobra regularidad.')}
         ${def('€', '', 'Valor y cláusula', 'El <strong>valor</strong> es lo que Mister dice que vale un jugador, y lo que cobras si lo vendes al mercado. La <strong>cláusula</strong> es lo que un rival paga para quitártelo sin tu permiso, y siempre es mayor. La cifra grande de cada fila es <strong>lo que costaría ficharlo de verdad</strong>.')}
         ${def('POR', 'txt', 'Los dorsales de color', 'La posición: <strong>POR</strong> portero, <strong>DEF</strong> defensa, <strong>MED</strong> centrocampista, <strong>DEL</strong> delantero.')}
-        ${def('€', '', 'Las cifras de los equipos', 'Caja, lo que vale su plantilla y el crédito, que es el 25 % de ese valor. Caja más crédito es lo que puede gastar, <strong>menos el dinero que le retengan las pujas que tenga puestas</strong>: pujar reserva el dinero en el acto, y hasta que la puja se resuelve no se puede gastar en otra cosa. Eso solo se ve del equipo propio —Mister publica ahí sus tres saldos—, así que tu cifra es exacta y la de un rival es un techo: como mucho tiene eso. Debajo de la caja, lo retenido si es la tuya y, si pujó por encima de lo que le calculábamos, lo que eso demostró que tenía; debajo de la plantilla, lo que sube o baja hoy.')}
+        ${def('€', '', 'Las cifras de los equipos', 'Caja, lo que vale su plantilla y el patrimonio, que es la plantilla más la caja —o menos lo que debe—. Lo que puede gastar es otra cuenta: la caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale, <strong>menos el dinero que le retengan las pujas que tenga puestas</strong>: pujar reserva el dinero en el acto, y hasta que la puja se resuelve no se puede gastar en otra cosa. Eso solo se ve del equipo propio —Mister publica ahí sus tres saldos—, así que tu cifra es exacta y la de un rival es un techo: como mucho tiene eso. Debajo de la caja, lo retenido si es la tuya y, si pujó por encima de lo que le calculábamos, lo que eso demostró que tenía; debajo de la plantilla, lo que sube o baja hoy.')}
       </div>
     </div>
 
