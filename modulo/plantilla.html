@@ -846,6 +846,8 @@ ol.top .v{font-family:var(--f-cifra);font-variant-numeric:tabular-nums;font-weig
 .sello b{color:var(--gris);font-weight:600}
 .sello.viejo{color:var(--oro);border-color:var(--oro-raya);background:var(--oro-fondo)}
 .sello.viejo b{color:var(--oro)}
+.sello.nueva{color:var(--oro);border-color:var(--oro);background:var(--oro-fondo);cursor:pointer}
+.sello.nueva b{color:var(--oro)}
 .cuenta .l.sub-caja > span:first-child{color:var(--tenue);font-size:12.5px}
 .cuenta .l.sub-caja > span:last-child{color:var(--tenue);font-size:11px;font-family:var(--f-texto)}
 .acc{flex-wrap:wrap;justify-content:flex-end}
@@ -1071,7 +1073,15 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
 .marcador dd{font-weight:700}
 .tarjeta,.mando,.lista,.ficha,.eq,.marcador{border-color:var(--raya)}
 @media(max-width:760px){.marca h1{font-size:24px}.sh{font-size:19px}.centro-mando h2{font-size:26px}.intel-cab h2{font-size:25px}.cf-cab h3{font-size:24px}}
-@media(max-width:560px){.eqn{font-size:17px}.eqp b{font-size:18px}}
+/* En un móvil el nombre y la cifra no caben en la misma línea: «Betico1993»
+   se partía por la mitad. La cifra baja a su propia línea y el nombre se
+   queda con todo el ancho. */
+@media(max-width:560px){
+  .eq > summary{grid-template-columns:26px minmax(0,1fr)}
+  .eqn{font-size:18px;overflow-wrap:break-word}
+  .eqp{grid-column:2;grid-row:2;align-items:flex-end;margin-top:2px}
+  .eqp b{font-size:19px}
+}
 @media(max-width:390px){.centro-mando h2{font-size:24px}.marcador dd{font-size:15px}}
 </style>
 </head>
@@ -2098,9 +2108,13 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     return fecha.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' })
   }
   var sello = document.getElementById('sello')
+  // Puesto a true en cuanto se publica una versión más nueva que esta: desde
+  // ahí el sello deja de contar la edad y ofrece recargar.
+  var hayVersionNueva = false
   if (sello && sello.getAttribute('data-generado')) {
     var nacido = Date.parse(sello.getAttribute('data-generado'))
     var refrescar = function () {
+      if (hayVersionNueva) return
       var mins = Math.round((Date.now() - nacido) / 60000)
       if (isNaN(mins) || mins < 0) return
       var cuanto = mins < 2 ? 'ahora mismo'
@@ -2116,6 +2130,60 @@ body.actualizando .panel{opacity:.55;pointer-events:none}body.actualizando:after
     refrescar()
     setInterval(refrescar, 60000)
     document.addEventListener('visibilitychange', function () { if (!document.hidden) refrescar() })
+
+    // ── Vigilancia de versión ──────────────────────────────────────────────
+    // Una pestaña abierta se queda con las cifras del momento en que se cargó,
+    // y algunas caducan en cuanto pasa algo: el tope de puja cambia en el
+    // instante en que pujas. Pasó de verdad —la página enseñaba 23,2 M de la
+    // tarde anterior cuando Mister ya decía otra cosa—, y una cifra vieja
+    // presentada como un hecho es justo lo que este panel no puede hacer.
+    //
+    // Se pregunta por `cuando.txt`, veinte bytes, no por la página entera, que
+    // pasa del mega. Al volver a la pestaña con datos nuevos se recarga sola,
+    // salvo que haya una ficha abierta encima: no se le quita de delante al
+    // usuario lo que estaba mirando.
+    var MIRAR_CADA = 3 * 60 * 1000
+    if (location.protocol === 'http:' || location.protocol === 'https:') {
+      var miVersion = (sello.getAttribute('data-generado') || '').trim()
+      var hayCapaAbierta = function () {
+        var capa = document.getElementById('capa')
+        if (capa && !capa.hidden) return true
+        if (document.documentElement.classList.contains('selector-puesto-abierto')) return true
+        var comp = document.querySelector('.comparador')
+        return !!(comp && !comp.hidden)
+      }
+      var ofrecerRecarga = function () {
+        sello.classList.remove('viejo')
+        sello.classList.add('nueva')
+        sello.innerHTML = 'Hay datos nuevos · <b>recargar</b>'
+        sello.title = 'Se ha publicado una lectura más reciente de Mister'
+        sello.setAttribute('role', 'button')
+        sello.setAttribute('tabindex', '0')
+      }
+      var mirarVersion = function () {
+        if (hayVersionNueva || document.hidden || !miVersion) return
+        fetch('cuando.txt?_=' + Date.now(), { cache: 'no-store' })
+          .then(function (r) { return r.ok ? r.text() : '' })
+          .then(function (t) {
+            t = (t || '').trim()
+            if (!t || t === miVersion) return
+            hayVersionNueva = true
+            ofrecerRecarga()
+          })
+          .catch(function () {})
+      }
+      sello.addEventListener('click', function () { if (hayVersionNueva) location.reload() })
+      sello.addEventListener('keydown', function (e) {
+        if (hayVersionNueva && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); location.reload() }
+      })
+      document.addEventListener('visibilitychange', function () {
+        if (document.hidden) return
+        if (hayVersionNueva && !hayCapaAbierta()) { location.reload(); return }
+        mirarVersion()
+      })
+      setTimeout(mirarVersion, 4000)
+      setInterval(mirarVersion, MIRAR_CADA)
+    }
   }
 
   var svgRecargar = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>'

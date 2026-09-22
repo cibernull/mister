@@ -1557,6 +1557,11 @@ ${suyos
  */
 const cifrasDe = (e) => `<div class="cifras">
         <div><b class="caja${e.saldo < 0 ? ' baja' : ''}">${eur(e.saldo)}</b><i>en caja</i>${
+          // Lo retenido en pujas vivas solo se sabe del equipo propio, y sin
+          // decirlo aquí la fila no cuadra: caja más crédito daban 18,5 M
+          // cuando Mister dejaba gastar 5,4 M, y parecía un error nuestro.
+          e.comprometido > 0 ? `<em class="baja" title="Está en tu caja, pero lo reservan las pujas que tienes puestas: no cuenta para lo que puedes gastar">−${eur(e.comprometido)} retenidos en pujas</em>` : ''
+        }${
           e.ajustePujas > 0 ? `<em class="sube" title="Pujó por encima de lo que le calculábamos: ese dinero lo tenía">+${corto(e.ajustePujas)} por sus pujas</em>` : ''
         }</div>
         <div><b>${eur(e.pl)}</b><i>vale su plantilla</i><em class="${clase(e.cambioPlantillaHoy)}" title="Lo que sube o baja hoy el valor de su plantilla: la misma cuenta que hace Mister, jugador a jugador">${firmaCortaConDecimales(e.cambioPlantillaHoy, 3)} hoy</em></div>
@@ -2690,7 +2695,11 @@ const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     <summary>
       <span class="puesto">${e.pos}º</span>
       <div class="eqn">${esc(e.corto)}${e.mio ? '<span class="et et-eq et-mio">tú</span>' : ''}</div>
-      <div class="eqp"><b>${eur(e.tope)}</b><i>puede gastar</i></div>
+      <div class="eqp"><b>${eur(e.tope)}</b><i title="${
+        e.mio
+          ? 'Lo que Mister te deja gastar ahora mismo: caja más crédito menos lo que tienen retenido tus pujas vivas. Es la cifra que él publica, comprobada al euro en cada pasada.'
+          : 'Como mucho: si ahora mismo tiene alguna puja puesta, ese dinero le está retenido y no se puede ver —Mister solo publica lo retenido del equipo propio—. Se sabe cuando la puja se resuelve, y entonces la cuenta se corrige sola.'
+      }">puede gastar${e.mio ? '' : ', como mucho'}</i></div>
       ${cifrasDe(e)}
     </summary>
     <div class="cuerpo">
@@ -2711,7 +2720,7 @@ const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     </div>
   </details>`
 
-const rivales = `    <p class="intro">Ordenados por lo que pueden gastar hoy: lo que tienen en caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale. En cada uno van las tres cifras.</p>
+const rivales = `    <p class="intro">Ordenados por lo que pueden gastar hoy: lo que tienen en caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale. En cada uno van las tres cifras. La tuya es exacta —Mister publica lo que te retienen las pujas puestas y se comprueba al euro—; la de un rival es <strong>un techo</strong>, porque sus pujas vivas no las enseña nadie hasta que se resuelven.</p>
 ${[...EQ]
   .sort((a, b) => b.tope - a.tope)
   .map(fichaEquipo)
@@ -3248,7 +3257,7 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
         ${def('±', 'txt', 'De fiar', 'Calculado aquí. Cuánto se aparta de su media jornada a jornada. Dos jugadores de media 6 no valen lo mismo: uno hace 6, 6, 6 y el otro 0, 0, 18. Cuanto más bajo, más de fiar. Solo se listan los que promedian 4 o más, porque al que hace un punto siempre le sobra regularidad.')}
         ${def('€', '', 'Valor y cláusula', 'El <strong>valor</strong> es lo que Mister dice que vale un jugador, y lo que cobras si lo vendes al mercado. La <strong>cláusula</strong> es lo que un rival paga para quitártelo sin tu permiso, y siempre es mayor. La cifra grande de cada fila es <strong>lo que costaría ficharlo de verdad</strong>.')}
         ${def('POR', 'txt', 'Los dorsales de color', 'La posición: <strong>POR</strong> portero, <strong>DEF</strong> defensa, <strong>MED</strong> centrocampista, <strong>DEL</strong> delantero.')}
-        ${def('€', '', 'Las cifras de los equipos', 'Caja, lo que vale su plantilla y el crédito, que es el 25 % de ese valor. Caja más crédito es lo que puede gastar. Debajo de la caja, si pujó por encima de lo que le calculábamos, lo que eso demostró que tenía; debajo de la plantilla, lo que sube o baja hoy.')}
+        ${def('€', '', 'Las cifras de los equipos', 'Caja, lo que vale su plantilla y el crédito, que es el 25 % de ese valor. Caja más crédito es lo que puede gastar, <strong>menos el dinero que le retengan las pujas que tenga puestas</strong>: pujar reserva el dinero en el acto, y hasta que la puja se resuelve no se puede gastar en otra cosa. Eso solo se ve del equipo propio —Mister publica ahí sus tres saldos—, así que tu cifra es exacta y la de un rival es un techo: como mucho tiene eso. Debajo de la caja, lo retenido si es la tuya y, si pujó por encima de lo que le calculábamos, lo que eso demostró que tenía; debajo de la plantilla, lo que sube o baja hoy.')}
       </div>
     </div>
 
