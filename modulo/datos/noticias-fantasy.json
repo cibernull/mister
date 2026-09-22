@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-22T09:38:06.415Z",
+ "cuando": "2026-09-22T09:59:53.583Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -14,6 +14,12 @@
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Kike Salas, Stassin y Vargas trabajan al margen este martes",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151714-kike-salas-stassin-y-vargas-trabajan-al-margen-este-martes",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "22/09",
@@ -476,12 +482,6 @@
    "titulo": "Luis de la Fuente llama a Iván Fresneda para sustituir a Pedro Porro",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151640-luis-de-la-fuente-llama-a-ivan-fresneda-para-sustituir-a-pedro-porro",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Fede Valverde cae lesionado en el derbi y será sometido a pruebas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151639-fede-valverde-cae-lesionado-en-el-derbi-y-sera-sometido-a-pruebas",
-   "categoria": "lesión"
   }
  ]
 }
