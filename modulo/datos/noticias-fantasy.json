@@ -1,8 +1,14 @@
 {
- "cuando": "2026-09-22T10:07:56.634Z",
+ "cuando": "2026-09-22T10:37:57.524Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "22/09",
+   "titulo": "Parte médico oficial de Fede Valverde: El tiempo de baja que estima la prensa y el que registra la medicina",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151717-parte-medico-oficial-de-fede-valverde-el-tiempo-de-baja-que-dice-la-prensa-y-el-que-reg-la-m",
+   "categoria": "lesión"
+  },
   {
    "fecha": "21/09",
    "titulo": "Internacionales de LaLiga convocados por sus selecciones para la primera fecha FIFA",
@@ -14,6 +20,18 @@
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Vargas ve una luz al final del parón",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151716-vargas-ve-una-luz-al-final-del-paron",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "El Valencia descansa este martes y volverá mañana al trabajo pendiente de la enfermería",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151715-el-valencia-descansa-este-martes-y-volvera-manana-al-trabajo-pendiente-de-la-enfermeria",
+   "categoria": "equipo"
   },
   {
    "fecha": "22/09",
@@ -464,24 +482,6 @@
    "titulo": "Jornada 7: Villarreal 3-1 Levante. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22492-villarreal-levante",
    "categoria": "partido"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Matarazzo explica las novedades del once y lo que espera del Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151644-matarazzo-explica-las-novedades-del-once-y-lo-que-espera-del-valencia",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Óscar Sánchez explica por qué repite once y habla de jugar en Mestalla",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151643-oscar-sanchez-explica-por-que-repite-once-y-habla-de-jugar-en-mestalla",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Luis de la Fuente llama a Iván Fresneda para sustituir a Pedro Porro",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151640-luis-de-la-fuente-llama-a-ivan-fresneda-para-sustituir-a-pedro-porro",
-   "categoria": "análisis"
   }
  ]
 }
