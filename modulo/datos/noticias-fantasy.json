@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-22T22:11:54.637Z",
+ "cuando": "2026-09-22T22:37:55.391Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Marruecos cita a Akhomach a última hora",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151764-marruecos-cita-a-akhomach-a-ultima-hora",
    "categoria": "análisis"
   },
   {
@@ -475,12 +481,6 @@
    "fecha": "21/09",
    "titulo": "Sergio Gómez I el infatigable",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151690-sergio-gomez-i-el-infatigable",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "Take Kubo entrega su katana",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151689-take-kubo-entrega-su-katana",
    "categoria": "análisis"
   }
  ]
