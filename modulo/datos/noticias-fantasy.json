@@ -1,12 +1,12 @@
 {
- "cuando": "2026-09-22T13:08:07.200Z",
+ "cuando": "2026-09-22T13:37:29.776Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "22/09",
-   "titulo": "Borja Iglesias recupera jerarquía a fuego lento",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151735-borja-iglesias-recupera-jerarquia-a-fuego-lento",
+   "titulo": "Gabriel Jesus reclama minutos bajo la sombra de Raphinha",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151740-gabriel-jesus-reclama-minutos-bajo-la-sombra-de-raphinha",
    "categoria": "análisis"
   },
   {
@@ -19,6 +19,18 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "James anuncia su retirada de la selección de Colombia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151742-james-anuncia-su-retirada-de-la-seleccion-de-colombia",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Terzic aparta a Hugo Rincón al andén",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151741-terzic-aparta-a-hugo-rincon-al-anden",
    "categoria": "análisis"
   },
   {
@@ -43,6 +55,12 @@
    "fecha": "22/09",
    "titulo": "Internacionales del Sevilla en septiembre: Partidos, calendario y horarios",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151736-internacionales-sevilla-septiembre-partidos-calendario-horarios",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Borja Iglesias recupera jerarquía a fuego lento",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151735-borja-iglesias-recupera-jerarquia-a-fuego-lento",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "El Atlético se toma dos días de descanso pendiente de Sorloth y Barrios",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151667-el-atletico-se-toma-dos-dias-de-descanso-pendiente-de-sorloth-y-barrios",
    "categoria": "equipo"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "El Barça inicia el parón pendiente de Joan Garcia y con Christensen en la enfermería",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151666-el-barca-inicia-el-paron-pendiente-de-joan-garcia-y-con-christensen-en-la-enfermeria",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "El Real Madrid descansa este lunes pendiente del tobillo de Valverde",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151665-el-real-madrid-descansa-este-lunes-pendiente-del-tobillo-de-valverde",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "Berrocal mancha un correcto debut antes del regreso de Calero",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151664-berrocal-mancha-un-correcto-debut-antes-del-regreso-de-calero",
-   "categoria": "análisis"
   }
  ]
 }
