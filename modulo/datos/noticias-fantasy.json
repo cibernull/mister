@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-21T23:18:59.786Z",
+ "cuando": "2026-09-22T00:08:12.570Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -13,6 +13,18 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Actualizadas las jerarquías del Atlético: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/atletico/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Actualizadas las jerarquías del Athletic: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/athletic/jerarquias",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Mourinho repasa agravios, precedentes y decisiones arbitrales antes de descartar sarcásticamente sus sospechas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151635-mourinho-repasa-agrav-precedentes-y-decisiones-arbitrales-antes-de-descartar-sarcasticamente-",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Birdie atlético para dinamitar LaLiga",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151634-birdie-atletico-para-dinamitar-laliga",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Jornada 7: Atlético 2-0 Real Madrid. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22484-atletico-real-madrid",
-   "categoria": "partido"
   }
  ]
 }
