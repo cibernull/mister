@@ -2694,7 +2694,7 @@ const inteligenciaDeRival = (e) => {
 const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     <summary>
       <span class="puesto">${e.pos}º</span>
-      <div class="eqn">${esc(e.corto)}${e.mio ? '<span class="et et-eq et-mio">tú</span>' : ''}</div>
+      <div class="eqn">${esc(e.corto)}${e.mio ? '<span class="et et-eq et-mio">tú</span>' : ''}<span class="eq-jug" title="Jugadores que tiene fichados ahora mismo">${e.plantilla} jugador${e.plantilla === 1 ? '' : 'es'}</span></div>
       <div class="eqp"><b>${eur(e.tope)}</b><i title="${
         e.mio
           ? 'Lo que Mister te deja gastar ahora mismo: caja más crédito menos lo que tienen retenido tus pujas vivas. Es la cifra que él publica, comprobada al euro en cada pasada.'
