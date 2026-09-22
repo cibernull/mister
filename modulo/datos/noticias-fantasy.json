@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-22T21:08:09.669Z",
+ "cuando": "2026-09-22T21:38:05.015Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -20,6 +20,18 @@
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "El Celta completó una sesión vespertina sin Aspas, Jones ni los internacionales",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151761-el-celta-completo-una-sesion-vespertina-sin-aspas-jones-ni-los-internacionales",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "El Villarreal retomó los entrenamientos sin Comesaña ni los internacionales",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151760-el-villarreal-retomo-los-entrenamientos-sin-comesana-ni-los-internacionales",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "22/09",
@@ -470,18 +482,6 @@
    "titulo": "Bartra no sufre lesión grave y podría estar listo tras el parón",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151687-bartra-no-sufre-lesion-grave-y-podria-estar-listo-tras-el-paron",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "El Villarreal descansa con Comesaña en la enfermería",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151686-el-villarreal-descansa-con-comesana-en-la-enfermeria",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "Marcos Llorente: Albañil, fontanero y pintor",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151685-marcos-llorente-albanil-fontanero-y-pintor",
-   "categoria": "análisis"
   }
  ]
 }
