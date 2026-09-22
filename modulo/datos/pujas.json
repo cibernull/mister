@@ -2792,6 +2792,84 @@
     "topeMax": 23225300,
     "exceso": 0
    }
+  ],
+  "550056252": [
+   {
+    "idTransfer": 550056252,
+    "cuando": "2026-09-22 17:00:19",
+    "jugador": "Javi Morcillo",
+    "equipo": "Cacaculopedopis",
+    "puja": 573000,
+    "gana": true,
+    "topeMax": 31278568,
+    "exceso": 0
+   }
+  ],
+  "550056575": [
+   {
+    "idTransfer": 550056575,
+    "cuando": "2026-09-22 17:00:19",
+    "jugador": "Cucho Hernández",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 9533010,
+    "gana": true,
+    "topeMax": 23225300,
+    "exceso": 0
+   }
+  ],
+  "550057511": [
+   {
+    "idTransfer": 550057511,
+    "cuando": "2026-09-22 17:00:19",
+    "jugador": "Jude Bellingham",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 26000000,
+    "gana": true,
+    "topeMax": 40008650,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 550057511,
+    "cuando": "2026-09-22 17:00:19",
+    "jugador": "Jude Bellingham",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 20072000,
+    "gana": false,
+    "topeMax": 22022277,
+    "exceso": 0
+   }
+  ],
+  "550057671": [
+   {
+    "idTransfer": 550057671,
+    "cuando": "2026-09-22 17:00:19",
+    "jugador": "Andrés Castrín",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 3713463,
+    "gana": true,
+    "topeMax": 22022277,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 550057671,
+    "cuando": "2026-09-22 17:00:19",
+    "jugador": "Andrés Castrín",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 3600320,
+    "gana": false,
+    "topeMax": 23225300,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 550057671,
+    "cuando": "2026-09-22 17:00:19",
+    "jugador": "Andrés Castrín",
+    "equipo": "Cacaculopedopis",
+    "puja": 3534840,
+    "gana": false,
+    "topeMax": 31278568,
+    "exceso": 0
+   }
   ]
  }
 }

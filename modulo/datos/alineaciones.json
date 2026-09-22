@@ -1122,6 +1122,14 @@
   ],
   "banquillo": [
    {
+    "id": "12915",
+    "nombre": "Cucho Hernández",
+    "puesto": 4,
+    "puntos": 2,
+    "jugo": true,
+    "capitan": false
+   },
+   {
     "id": "58954",
     "nombre": "Kylian Mbappé",
     "puesto": 4,

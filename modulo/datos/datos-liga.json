@@ -1139,9 +1139,84 @@
    "id": "63727",
    "nombre": "Marcos Fernández",
    "valor": 1156000
+  },
+  {
+   "id": "70150",
+   "nombre": "Javi Morcillo",
+   "valor": 603000
+  },
+  {
+   "id": "12915",
+   "nombre": "Cucho Hernández",
+   "valor": 9533000
+  },
+  {
+   "id": "53114",
+   "nombre": "Jude Bellingham",
+   "valor": 20072000
+  },
+  {
+   "id": "65179",
+   "nombre": "Andrés Castrín",
+   "valor": 3446000
+  },
+  {
+   "id": "7784",
+   "nombre": "Unai Núñez",
+   "valor": 2783000
   }
  ],
  "movimientos": [
+  {
+   "id": "7784",
+   "nombre": "Unai Núñez",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 2922150,
+   "tipo": "normal",
+   "fecha": "2026-09-22 17:06:21",
+   "pos": 2
+  },
+  {
+   "id": "65179",
+   "nombre": "Andrés Castrín",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 3713463,
+   "tipo": "normal",
+   "fecha": "2026-09-22 17:00:19",
+   "pos": 2
+  },
+  {
+   "id": "53114",
+   "nombre": "Jude Bellingham",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 26000000,
+   "tipo": "normal",
+   "fecha": "2026-09-22 17:00:19",
+   "pos": 3
+  },
+  {
+   "id": "12915",
+   "nombre": "Cucho Hernández",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 9533010,
+   "tipo": "normal",
+   "fecha": "2026-09-22 17:00:19",
+   "pos": 4
+  },
+  {
+   "id": "70150",
+   "nombre": "Javi Morcillo",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 573000,
+   "tipo": "normal",
+   "fecha": "2026-09-22 17:00:19",
+   "pos": 3
+  },
   {
    "id": "29169",
    "nombre": "Pablo Ibáñez",
@@ -4773,6 +4848,14 @@
      "op": "normal"
     },
     {
+     "j": "Andrés Castrín",
+     "id": "65179",
+     "tipo": "compra",
+     "importe": 3713463,
+     "fecha": "2026-09-22",
+     "op": "normal"
+    },
+    {
      "j": "Marcos Fernández",
      "id": "63727",
      "tipo": "compra",
@@ -5656,6 +5739,12 @@
      "ventas": 6626000,
      "ops": 1
     },
+    "65179": {
+     "nombre": "Andrés Castrín",
+     "compras": 3713463,
+     "ventas": 0,
+     "ops": 1
+    },
     "65704": {
      "nombre": "Georges Mikautadze",
      "compras": 14372000,
@@ -5763,6 +5852,14 @@
      "importe": 5953500,
      "fecha": "2026-09-22",
      "op": "clause"
+    },
+    {
+     "j": "Cucho Hernández",
+     "id": "12915",
+     "tipo": "compra",
+     "importe": 9533010,
+     "fecha": "2026-09-22",
+     "op": "normal"
     },
     {
      "j": "Alex Freeman",
@@ -6498,6 +6595,12 @@
      "ventas": 21198000,
      "ops": 2
     },
+    "12915": {
+     "nombre": "Cucho Hernández",
+     "compras": 9533010,
+     "ventas": 0,
+     "ops": 1
+    },
     "15344": {
      "nombre": "Brahim Díaz",
      "compras": 0,
@@ -6820,6 +6923,14 @@
   },
   "Cacaculopedopis": {
    "movimientos": [
+    {
+     "j": "Javi Morcillo",
+     "id": "70150",
+     "tipo": "compra",
+     "importe": 573000,
+     "fecha": "2026-09-22",
+     "op": "normal"
+    },
     {
      "j": "Pedro Díaz",
      "id": "59395",
@@ -7688,6 +7799,12 @@
      "ventas": 192400,
      "ops": 2
     },
+    "70150": {
+     "nombre": "Javi Morcillo",
+     "compras": 573000,
+     "ventas": 0,
+     "ops": 1
+    },
     "70927": {
      "nombre": "Giorgi Guliashvili",
      "compras": 0,
@@ -8357,6 +8474,22 @@
      "op": "normal"
     },
     {
+     "j": "Jude Bellingham",
+     "id": "53114",
+     "tipo": "compra",
+     "importe": 26000000,
+     "fecha": "2026-09-22",
+     "op": "normal"
+    },
+    {
+     "j": "Unai Núñez",
+     "id": "7784",
+     "tipo": "venta",
+     "importe": 2922150,
+     "fecha": "2026-09-22",
+     "op": "normal"
+    },
+    {
      "j": "Isco",
      "id": "340",
      "tipo": "compra",
@@ -8984,6 +9117,12 @@
      "ventas": 3238000,
      "ops": 2
     },
+    "7784": {
+     "nombre": "Unai Núñez",
+     "compras": 0,
+     "ventas": 2922150,
+     "ops": 1
+    },
     "7893": {
      "nombre": "Antonio Sivera",
      "compras": 7730000,
@@ -9091,6 +9230,12 @@
      "compras": 3200000,
      "ventas": 5625900,
      "ops": 2
+    },
+    "53114": {
+     "nombre": "Jude Bellingham",
+     "compras": 26000000,
+     "ventas": 0,
+     "ops": 1
     },
     "54817": {
      "nombre": "Arda Güler",

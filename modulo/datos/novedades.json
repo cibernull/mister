@@ -173,6 +173,191 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "24",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "3046",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-22",
+  "id": "7784",
+  "de": "Saiyans FC (Fran)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "7784",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-22",
+  "id": "12915",
+  "de": null,
+  "a": "Niutin FC (Isaac)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "15107",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "17614",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "25631",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "27333",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "27861",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "48960",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "52377",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "53095",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "53107",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-22",
+  "id": "53114",
+  "de": null,
+  "a": "Saiyans FC (Fran)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "56926",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "60218",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "60927",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "62904",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "63788",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "65104",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-22",
+  "id": "65179",
+  "de": null,
+  "a": "Neky F.C. (Sergio)"
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-22",
+  "id": "70150",
+  "de": null,
+  "a": "Cacaculopedopis"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "70150",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "70917",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "71176",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "71509",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "78393",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "925296",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-22",
+  "id": "4947928",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-21",
   "id": "8171",
   "entra": false

@@ -6666,6 +6666,110 @@
    "media": 4.4,
    "racha": "3,11,2,4,4",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 550056252,
+   "idJugador": "70150",
+   "nombre": "Javi Morcillo",
+   "de": "Mister",
+   "a": "Cacaculopedopis",
+   "idUcDe": 0,
+   "idUcA": 15435600,
+   "importe": 573000,
+   "tipo": "normal",
+   "cuando": "2026-09-22 17:00:19",
+   "valor": 603000,
+   "posicion": 3,
+   "puntos": 18,
+   "media": 3.4,
+   "racha": "2,2,4,-,7",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 550056575,
+   "idJugador": "12915",
+   "nombre": "Cucho Hernández",
+   "de": "Mister",
+   "a": "Niutin FC (Isaac)",
+   "idUcDe": 0,
+   "idUcA": 12493763,
+   "importe": 9533010,
+   "tipo": "normal",
+   "cuando": "2026-09-22 17:00:19",
+   "valor": 9533000,
+   "posicion": 4,
+   "puntos": 31,
+   "media": 4.4,
+   "racha": "1,2,9,2,10",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 550057511,
+   "idJugador": "53114",
+   "nombre": "Jude Bellingham",
+   "de": "Mister",
+   "a": "Saiyans FC (Fran)",
+   "idUcDe": 0,
+   "idUcA": 12493752,
+   "importe": 26000000,
+   "tipo": "normal",
+   "cuando": "2026-09-22 17:00:19",
+   "valor": 20072000,
+   "posicion": 3,
+   "puntos": 57,
+   "media": 8.1,
+   "racha": "14,3,10,5,5",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 20072000
+    }
+   ]
+  },
+  {
+   "idTransfer": 550057671,
+   "idJugador": "65179",
+   "nombre": "Andrés Castrín",
+   "de": "Mister",
+   "a": "Neky F.C. (Sergio)",
+   "idUcDe": 0,
+   "idUcA": 12493688,
+   "importe": 3713463,
+   "tipo": "normal",
+   "cuando": "2026-09-22 17:00:19",
+   "valor": 3446000,
+   "posicion": 2,
+   "puntos": 23,
+   "media": 3.8,
+   "racha": "2,2,6,6,2",
+   "otrasPujas": [
+    {
+     "equipo": "Niutin FC (Isaac)",
+     "puja": 3600320
+    },
+    {
+     "equipo": "Cacaculopedopis",
+     "puja": 3534840
+    }
+   ]
+  },
+  {
+   "idTransfer": 550060715,
+   "idJugador": "7784",
+   "nombre": "Unai Núñez",
+   "de": "Saiyans FC (Fran)",
+   "a": "Mister",
+   "idUcDe": 12493752,
+   "idUcA": 0,
+   "importe": 2922150,
+   "tipo": "normal",
+   "cuando": "2026-09-22 17:06:21",
+   "valor": 2783000,
+   "posicion": 2,
+   "puntos": 12,
+   "media": 2.4,
+   "racha": "3,2,-,-,1",
+   "otrasPujas": []
   }
  ],
  "salidas": [

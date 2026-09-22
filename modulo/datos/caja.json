@@ -1,6 +1,14 @@
 {
- "saldo": -9331950,
+ "saldo": -18864960,
  "apuntes": [
+  {
+   "cuando": 1790089200,
+   "fecha": "2026-09-22 17:00",
+   "motivo": "Cucho Hernández a Mister",
+   "tipo": "Compra",
+   "importe": -9533010,
+   "saldo": -18864960
+  },
   {
    "cuando": 1790046671,
    "fecha": "2026-09-22 05:11",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 4811040,
    "saldo": 12443311
-  },
-  {
-   "cuando": 1787727846,
-   "fecha": "2026-08-26 09:04",
-   "motivo": "Pierre-Emerick Aubameyang a Saiyans FC (Fran)",
-   "tipo": "Compra por cláusula",
-   "importe": -6171000,
-   "saldo": 7632271
   }
  ]
 }
