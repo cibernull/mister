@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-22T00:08:12.570Z",
+ "cuando": "2026-09-22T01:07:54.641Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -13,6 +13,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Actualizadas las jerarquías del Barcelona: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/barcelona/jerarquias",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Bartra pide el cambio por molestias en Riazor",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151636-bartra-pide-el-cambio-por-molestias-en-riazor",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "20/09",
-   "titulo": "Mourinho repasa agravios, precedentes y decisiones arbitrales antes de descartar sarcásticamente sus sospechas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151635-mourinho-repasa-agrav-precedentes-y-decisiones-arbitrales-antes-de-descartar-sarcasticamente-",
-   "categoria": "rueda de prensa"
   }
  ]
 }
