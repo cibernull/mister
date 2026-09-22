@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-22T13:37:29.776Z",
+ "cuando": "2026-09-22T13:52:32.879Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Aïssa Mandi muestra los primeros signos de fragilidad",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151743-aissa-mandi-muestra-los-primeros-signos-de-fragilidad",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Akhomach adelanta a Pépé por la derecha",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151668-akhomach-adelanta-a-pepe-por-la-derecha",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "El Atlético se toma dos días de descanso pendiente de Sorloth y Barrios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151667-el-atletico-se-toma-dos-dias-de-descanso-pendiente-de-sorloth-y-barrios",
-   "categoria": "equipo"
   }
  ]
 }
