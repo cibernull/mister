@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-23T01:07:55.358Z",
+ "cuando": "2026-09-23T02:08:00.608Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Actualizadas las jerarquías del Levante: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/levante/jerarquias",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Jones El-Abdellaoui pasará por quirófano por su problema en la rodilla izquierda",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151692-jones-el-abdellaoui-pasara-por-quirofano-por-su-problema-en-la-rodilla-izquierda",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "El Celta retoma los entrenamientos con El Abdellaoui, Aspas y Antañón en la enfermería",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151691-el-celta-retoma-los-entrenamientos-con-el-abdellaoui-aspas-y-antanon-en-la-enfermeria",
-   "categoria": "entrenamiento"
   }
  ]
 }
