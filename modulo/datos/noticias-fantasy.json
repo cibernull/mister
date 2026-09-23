@@ -1,12 +1,12 @@
 {
- "cuando": "2026-09-23T13:08:03.339Z",
+ "cuando": "2026-09-23T13:38:03.683Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "23/09",
-   "titulo": "Un parón para impulsar a Ceballos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151787-un-paron-para-impulsar-a-ceballos",
+   "titulo": "Sergio Camello y el poder de la salud mental",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151790-sergio-camello-y-el-poder-de-la-salud-mental",
    "categoria": "análisis"
   },
   {
@@ -23,9 +23,21 @@
   },
   {
    "fecha": "23/09",
+   "titulo": "El Athletic pone fin a la semana de trabajo pendiente de Vivian, Yuri y Guruzeta",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151789-el-athletic-pone-fin-a-la-semana-de-trabajo-pendiente-de-vivian-yuri-y-guruzeta",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "23/09",
    "titulo": "El Celta cierra la semana de trabajo sin Aspas, Antañón ni Jones",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151788-el-celta-cierra-la-semana-de-trabajo-sin-aspas-antanon-ni-jones",
    "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Un parón para impulsar a Ceballos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151787-un-paron-para-impulsar-a-ceballos",
+   "categoria": "análisis"
   },
   {
    "fecha": "23/09",
@@ -469,18 +481,6 @@
    "fecha": "22/09",
    "titulo": "Actualizadas las jerarquías del Deportivo: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/deportivo/jerarquias",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Actualizadas las jerarquías del Celta: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/celta/jerarquias",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Actualizadas las jerarquías del Real Betis: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/betis/jerarquias",
    "categoria": "análisis"
   }
  ]
