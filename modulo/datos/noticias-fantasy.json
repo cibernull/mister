@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-23T13:38:03.683Z",
+ "cuando": "2026-09-23T14:07:57.886Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -20,6 +20,12 @@
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Militao activa la cuenta atrás",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151791-militao-activa-la-cuenta-atras",
+   "categoria": "lesión"
   },
   {
    "fecha": "23/09",
@@ -476,12 +482,6 @@
    "titulo": "Kike Salas, Stassin y Vargas trabajan al margen este martes",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151714-kike-salas-stassin-y-vargas-trabajan-al-margen-este-martes",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Actualizadas las jerarquías del Deportivo: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/deportivo/jerarquias",
-   "categoria": "análisis"
   }
  ]
 }
