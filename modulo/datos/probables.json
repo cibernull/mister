@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-23T15:38:17.253Z",
+ "cuando": "2026-09-23T18:08:10.827Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -1267,10 +1267,13 @@
    "min": 115
   },
   "36410": {
-   "prob": 90,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
-   "min": 560
+   "min": 560,
+   "lesion": "Operado del menisco",
+   "desde": "23/09 (1 día)",
+   "hasta": "principios de noviembre"
   },
   "40089": {
    "prob": 0,
@@ -2554,7 +2557,7 @@
    "min": 165
   },
   "70940": {
-   "prob": 10,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 73
