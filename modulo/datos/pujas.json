@@ -2870,6 +2870,50 @@
     "topeMax": 31278568,
     "exceso": 0
    }
+  ],
+  "550166137": [
+   {
+    "idTransfer": 550166137,
+    "cuando": "2026-09-23 05:00:29",
+    "jugador": "Ilaix Moriba",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 4388590,
+    "gana": true,
+    "topeMax": 23225300,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 550166137,
+    "cuando": "2026-09-23 05:00:29",
+    "jugador": "Ilaix Moriba",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 4268130,
+    "gana": false,
+    "topeMax": 22022277,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 550166137,
+    "cuando": "2026-09-23 05:00:29",
+    "jugador": "Ilaix Moriba",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 4136000,
+    "gana": false,
+    "topeMax": 40008650,
+    "exceso": 0
+   }
+  ],
+  "550167569": [
+   {
+    "idTransfer": 550167569,
+    "cuando": "2026-09-23 05:00:29",
+    "jugador": "Fermín López",
+    "equipo": "Cacaculopedopis",
+    "puja": 20944615,
+    "gana": true,
+    "topeMax": 31483589,
+    "exceso": 0
+   }
   ]
  }
 }

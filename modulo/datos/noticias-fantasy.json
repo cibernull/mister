@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-23T02:08:00.608Z",
+ "cuando": "2026-09-23T03:08:12.786Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Actualizadas las jerarquías del Málaga: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/malaga/jerarquias",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "El Getafe decansará varios días con cuatro futbolistas en la enfermería",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151693-el-getafe-decansara-varios-dias-con-cuatro-futbolistas-en-la-enfermeria",
    "categoria": "equipo"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "Jones El-Abdellaoui pasará por quirófano por su problema en la rodilla izquierda",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151692-jones-el-abdellaoui-pasara-por-quirofano-por-su-problema-en-la-rodilla-izquierda",
-   "categoria": "lesión"
   }
  ]
 }
