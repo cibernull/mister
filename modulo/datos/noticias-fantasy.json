@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-23T16:37:59.035Z",
+ "cuando": "2026-09-23T17:04:20.535Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -20,6 +20,12 @@
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Parte médico oficial de Pierre-Emerick Aubameyang y periodo estimado de baja",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151799-parte-medico-oficial-de-pierre-emerick-aubameyang-y-periodo-estimado-de-baja",
+   "categoria": "lesión"
   },
   {
    "fecha": "23/09",
@@ -476,12 +482,6 @@
    "titulo": "Andrés Martín reaparece sobre el césped y el Racing trabaja sin José Alberto",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151722-andres-martin-reaparece-sobre-el-cesped-y-el-racing-trabaja-sin-jose-alberto",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Stassin viaja con la Sub-21 de Bélgica para ser examinado por los médicos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151721-stassin-viaja-con-la-sub-21-de-belgica-para-ser-examinado-por-los-medicos",
-   "categoria": "lesión"
   }
  ]
 }
