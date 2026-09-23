@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-23T00:36:27.543Z",
+ "cuando": "2026-09-23T01:07:55.358Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,12 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Actualizadas las jerarquías del Getafe: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/getafe/jerarquias",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "El Celta retoma los entrenamientos con El Abdellaoui, Aspas y Antañón en la enfermería",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151691-el-celta-retoma-los-entrenamientos-con-el-abdellaoui-aspas-y-antanon-en-la-enfermeria",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "Sergio Gómez I el infatigable",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151690-sergio-gomez-i-el-infatigable",
-   "categoria": "análisis"
   }
  ]
 }
