@@ -784,8 +784,8 @@
   "semana": 81000,
   "sem7": 597000,
   "mes": 2250000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 13035000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -9992,8 +9992,8 @@
   "semana": 27000,
   "sem7": 213000,
   "mes": 1104000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1893000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -14081,8 +14081,8 @@
   "semana": 74000,
   "sem7": -176000,
   "mes": -1832000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 5753000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -21808,8 +21808,8 @@
   "semana": -120000,
   "sem7": -863000,
   "mes": -3051000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 4211000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -30214,8 +30214,8 @@
   "semana": 29000,
   "sem7": 40000,
   "mes": -376000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 200000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -32652,8 +32652,8 @@
   "semana": 9000,
   "sem7": 2000,
   "mes": null,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 189000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -37981,96 +37981,6 @@
   "d": 1
  },
  {
-  "id": "62910",
-  "nombre": "Fran González",
-  "valor": 199000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -10000,
-  "sem7": 39000,
-  "mes": -287000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 17,
-  "riv": 12,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    3,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "59642",
   "nombre": "Juan Musso",
   "valor": 199000,
@@ -38153,6 +38063,96 @@
     7,
     null,
     15,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "62910",
+  "nombre": "Fran González",
+  "valor": 199000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -10000,
+  "sem7": 39000,
+  "mes": -287000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 17,
+  "riv": 12,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    3,
     0,
     ""
    ]
@@ -38604,8 +38604,8 @@
   "semana": -41000,
   "sem7": -330000,
   "mes": -1735000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 196000,
   "ced": 0,
   "pos": 1,
   "est": "doubt",
@@ -41158,6 +41158,54 @@
   "d": 0
  },
  {
+  "id": "17450",
+  "nombre": "Aitor Ruibal",
+  "valor": 161000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -1000,
+  "sem7": -95000,
+  "mes": -119000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "doubt",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 4,
+  "riv": 50,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 30,
+  "js": [
+   [
+    6,
+    null,
+    9,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "71638",
   "nombre": "Laro Gómez",
   "valor": 161000,
@@ -41226,54 +41274,6 @@
     7,
     null,
     5,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "17450",
-  "nombre": "Aitor Ruibal",
-  "valor": 161000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -1000,
-  "sem7": -95000,
-  "mes": -119000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "doubt",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 4,
-  "riv": 50,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 30,
-  "js": [
-   [
-    6,
-    null,
-    9,
     0,
     ""
    ]
@@ -41585,8 +41585,8 @@
   "semana": 0,
   "sem7": -29000,
   "mes": -1000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -41637,6 +41637,96 @@
     4,
     null,
     8,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    3,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "48620",
+  "nombre": "Marcão",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -23000,
+  "sem7": -4000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 17,
+  "riv": 12,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 30,
+  "js": [
+   [
+    1,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    19,
     0,
     ""
    ],
@@ -42389,151 +42479,6 @@
   "d": 0
  },
  {
-  "id": "67870",
-  "nombre": "Adam Boayar",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -11000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 23,
-  "riv": 5,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [
-   [
-    5,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    15,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "48620",
-  "nombre": "Marcão",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -23000,
-  "sem7": -4000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 17,
-  "riv": 12,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 30,
-  "js": [
-   [
-    1,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    3,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71006",
   "nombre": "Álex Pastor",
   "valor": 160000,
@@ -42616,6 +42561,61 @@
     7,
     null,
     9,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "67870",
+  "nombre": "Adam Boayar",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -11000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 4,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 23,
+  "riv": 5,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [
+   [
+    5,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    15,
     0,
     ""
    ]
