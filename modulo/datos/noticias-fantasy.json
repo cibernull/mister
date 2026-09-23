@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-23T10:07:53.690Z",
+ "cuando": "2026-09-23T10:38:00.466Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
-   "fecha": "22/09",
-   "titulo": "Maffeo regresa a los brazos de Aguirre",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151763-maffeo-aguirre",
-   "categoria": "análisis"
+   "fecha": "23/09",
+   "titulo": "Javier Aguirre es oficialmente nuevo entrenador del Valencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151772-javier-aguirre-es-oficialmente-nuevo-entrenador-del-valencia",
+   "categoria": "mercado"
   },
   {
    "fecha": "21/09",
@@ -20,6 +20,18 @@
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Koundé encuentra una segunda vía por el centro",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151774-kounde-encuentra-una-segunda-via-por-el-centro",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Christensen podría estar hasta dos meses de baja",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151773-christensen-podria-estar-hasta-dos-meses-de-baja",
+   "categoria": "lesión"
   },
   {
    "fecha": "23/09",
@@ -67,6 +79,12 @@
    "fecha": "23/09",
    "titulo": "Marruecos cita a Akhomach a última hora",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151764-marruecos-cita-a-akhomach-a-ultima-hora",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/09",
+   "titulo": "Maffeo regresa a los brazos de Aguirre",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151763-maffeo-aguirre",
    "categoria": "análisis"
   },
   {
@@ -463,24 +481,6 @@
    "fecha": "21/09",
    "titulo": "Las compras fantasy obligatorias para ganar millones en el primer parón de LaLiga Fantasy 26/27, por Carrasco",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151700-las-compras-fantasy-obligatorias-para-ganar-millones-en-el-primer-paron-de-laliga-fantasy-26-",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "Osasuna inicia una semana completa de vacaciones con cinco futbolistas en la enfermería",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151699-osasuna-inicia-una-semana-completa-de-vacaciones-con-cinco-futbolistas-en-la-enfermeria",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "Las pruebas confirman que Raúl Moro sufre una rotura de grado I",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151698-las-pruebas-confirman-que-raul-moro-sufre-una-rotura-de-grado-i",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "Internacionales del Espanyol en septiembre: Partidos, calendario y horarios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151697-internacionales-espanyol-septiembre-partidos-calendario-horarios",
    "categoria": "análisis"
   }
  ]
