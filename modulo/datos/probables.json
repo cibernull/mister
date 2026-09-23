@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-23T18:38:10.721Z",
+ "cuando": "2026-09-23T21:08:12.482Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -838,7 +838,10 @@
    "prob": 40,
    "sancionado": 0,
    "fuera": 0,
-   "min": 270
+   "min": 270,
+   "lesion": "Molestias sin determinar",
+   "desde": "23/09 (1 día)",
+   "hasta": null
   },
   "23664": {
    "prob": 50,
@@ -1507,13 +1510,10 @@
    "min": 526
   },
   "53143": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 561,
-   "lesion": "Molestias en el cuádriceps",
-   "desde": "19/09 (4 días)",
-   "hasta": null
+   "min": 561
   },
   "53144": {
    "prob": 30,
@@ -1922,7 +1922,7 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 152,
-   "lesion": "Sinovitis en la rodilla",
+   "lesion": "Sometido a artroscopia en la rodilla",
    "desde": "18/09 (5 días)",
    "hasta": null
   },
@@ -2137,7 +2137,7 @@
    "min": 0
   },
   "64411": {
-   "prob": 50,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 154
@@ -2326,10 +2326,7 @@
    "prob": 20,
    "sancionado": 0,
    "fuera": 0,
-   "min": 96,
-   "lesion": "Traumatismo craneoencefálico",
-   "desde": "12/09 (11 días)",
-   "hasta": "finales de septiembre"
+   "min": 96
   },
   "68383": {
    "prob": 60,
