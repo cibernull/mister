@@ -161,6 +161,181 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "24",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "3060",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "17614",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "22601",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "27861",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "36410",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-23",
+  "id": "40147",
+  "de": null,
+  "a": "Saiyans FC (Fran)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "48203",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "48960",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "52117",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "52189",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "52375",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "53095",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "53107",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "53111",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "56926",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "59533",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "59633",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "60927",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "63788",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "65104",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "65475",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "69889",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "70948",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "71176",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "71791",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "2586746",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "3848779",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "4836173",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-22",
   "id": "217",
   "entra": false

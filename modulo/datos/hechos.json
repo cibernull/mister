@@ -6905,6 +6905,24 @@
    "media": 5.6,
    "racha": "5,4,2,13,3",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 550286842,
+   "idJugador": "40147",
+   "nombre": "Antonio Rüdiger",
+   "de": "Mister",
+   "a": "Saiyans FC (Fran)",
+   "idUcDe": 0,
+   "idUcA": 12493752,
+   "importe": 5753000,
+   "tipo": "normal",
+   "cuando": "2026-09-23 17:00:16",
+   "valor": 5753000,
+   "posicion": 2,
+   "puntos": 20,
+   "media": 6.7,
+   "racha": "5,-,4,-,11",
+   "otrasPujas": []
   }
  ],
  "salidas": [

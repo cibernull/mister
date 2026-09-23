@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-23T12:38:04.340Z",
+ "cuando": "2026-09-23T15:38:17.253Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -223,7 +223,10 @@
    "prob": 60,
    "sancionado": 0,
    "fuera": 0,
-   "min": 467
+   "min": 467,
+   "lesion": "Trabajo al margen",
+   "desde": "23/09 (1 día)",
+   "hasta": null
   },
   "1762": {
    "prob": 40,
@@ -475,10 +478,7 @@
    "prob": 40,
    "sancionado": 0,
    "fuera": 0,
-   "min": 0,
-   "lesion": "Fractura de costilla(s)",
-   "desde": "07/08 (47 días)",
-   "hasta": null
+   "min": 0
   },
   "13420": {
    "prob": 0,
@@ -739,7 +739,10 @@
    "prob": 80,
    "sancionado": 0,
    "fuera": 0,
-   "min": 568
+   "min": 568,
+   "lesion": "Gastroenteritis",
+   "desde": "23/09 (1 día)",
+   "hasta": null
   },
   "20346": {
    "prob": 80,
@@ -1393,7 +1396,10 @@
    "prob": 50,
    "sancionado": 0,
    "fuera": 0,
-   "min": 244
+   "min": 244,
+   "lesion": "Trabajo al margen",
+   "desde": "23/09 (1 día)",
+   "hasta": null
   },
   "51134": {
    "prob": 30,
