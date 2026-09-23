@@ -128,6 +128,19 @@
   "entra": true
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-09-23",
+  "id": "64382",
+  "de": "Cacaculopedopis",
+  "a": "Neky F.C. (Sergio)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-23",
+  "id": "64382",
+  "entra": false
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-22",
   "id": "217",

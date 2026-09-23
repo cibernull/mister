@@ -1178,6 +1178,16 @@
  ],
  "movimientos": [
   {
+   "id": "64382",
+   "nombre": "Gabriel Suazo",
+   "de": "Cacaculopedopis",
+   "a": "Neky F.C. (Sergio)",
+   "importe": 6426000,
+   "tipo": "clause",
+   "fecha": "2026-09-23 06:34:55",
+   "pos": 2
+  },
+  {
    "id": "55009",
    "nombre": "Fermín López",
    "de": null,
@@ -4892,6 +4902,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Gabriel Suazo",
+     "id": "64382",
+     "tipo": "compra",
+     "importe": 6426000,
+     "fecha": "2026-09-23",
+     "op": "clause"
+    },
+    {
      "j": "Miguel Sierra",
      "id": "71640",
      "tipo": "venta",
@@ -5791,6 +5809,12 @@
      "nombre": "Marc Aguado",
      "compras": 0,
      "ventas": 3797040,
+     "ops": 1
+    },
+    "64382": {
+     "nombre": "Gabriel Suazo",
+     "compras": 6426000,
+     "ventas": 0,
      "ops": 1
     },
     "65111": {
@@ -7006,6 +7030,14 @@
      "op": "normal"
     },
     {
+     "j": "Gabriel Suazo",
+     "id": "64382",
+     "tipo": "venta",
+     "importe": 6426000,
+     "fecha": "2026-09-23",
+     "op": "clause"
+    },
+    {
      "j": "Javi Morcillo",
      "id": "70150",
      "tipo": "compra",
@@ -7856,8 +7888,8 @@
     "64382": {
      "nombre": "Gabriel Suazo",
      "compras": 3934360,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 6426000,
+     "ops": 2
     },
     "65476": {
      "nombre": "Clemens Riedel",
