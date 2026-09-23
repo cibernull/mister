@@ -1,12 +1,12 @@
 {
- "cuando": "2026-09-23T18:08:11.934Z",
+ "cuando": "2026-09-23T18:38:11.869Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "23/09",
-   "titulo": "Braulio enciende la luz y elimina los filtros",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151794-braulio-enciende-la-luz-y-elimina-los-filtros",
+   "titulo": "Dotor, el discreto imprescindible de Funes",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151801-dotor-el-imprescindible-discreto",
    "categoria": "análisis"
   },
   {
@@ -20,6 +20,18 @@
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Amatucci sigue gestionando cargas al margen en una sesión sin Casadó ni Aubameyang",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151802-amatucci-sigue-gestionando-cargas-al-margen-en-una-sesion-sin-casado-ni-aubameyang",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Lobete es operado con éxito e inicia una recuperación de nueve a doce meses",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151800-lobete-es-operado-con-exito-e-inicia-una-recuperacion-de-nueve-a-doce-meses",
+   "categoria": "lesión"
   },
   {
    "fecha": "23/09",
@@ -50,6 +62,12 @@
    "titulo": "Germán Valera causa baja de última hora en el acto de firmas por gastroenteritis",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151795-german-valera-causa-baja-de-ultima-hora-en-el-acto-de-firmas-por-gastroenteritis",
    "categoria": "lesión"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Braulio enciende la luz y elimina los filtros",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151794-braulio-enciende-la-luz-y-elimina-los-filtros",
+   "categoria": "análisis"
   },
   {
    "fecha": "23/09",
@@ -464,24 +482,6 @@
    "titulo": "El Getafe peina el mercado de jugadores libres para completar su plantilla",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151725-el-getafe-peina-el-mercado-de-jugadores-libres-para-completar-su-plantilla",
    "categoria": "mercado"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Balde toca fondo en el Barça tras negarse a salir",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151724-balde-toca-fondo-en-el-barca-tras-negarse-a-salir",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Internacionales del Racing en septiembre: Partidos, calendario y horarios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151723-internacionales-racing-septiembre-partidos-calendario-horarios",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Andrés Martín reaparece sobre el césped y el Racing trabaja sin José Alberto",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151722-andres-martin-reaparece-sobre-el-cesped-y-el-racing-trabaja-sin-jose-alberto",
-   "categoria": "entrenamiento"
   }
  ]
 }
