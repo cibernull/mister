@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-23T19:38:29.853Z",
+ "cuando": "2026-09-23T20:08:03.171Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -20,6 +20,18 @@
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "El Alavés retoma los entrenamientos con Rebbach y Aitor Mañas recuperados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151809-el-alaves-retoma-los-entrenamientos-con-rebbach-y-aitor-manas-recuperados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "El Levante vuelve al trabajo sin Sotelo ni Etta Eyong, que ha sido desconvocado por Camerún",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151808-el-levante-vuelve-al-trabajo-sin-los-lesionados-sotelo-y-etta-eyong",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "23/09",
@@ -470,18 +482,6 @@
    "titulo": "La Real inicia seis días de descanso con Zubeldia y Odriozola en la enfermería",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151732-la-real-inicia-seis-dias-de-descanso-con-zubeldia-y-odriozola-en-la-enfermeria",
    "categoria": "equipo"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "A Lookman se le estrecha el espacio en el once de gala",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151731-a-lookman-se-le-estrecha-el-espacio-en-el-once-de-gala",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Freeman sigue con propulsión mundialista",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151728-freeman-sigue-con-propulsion-mundialista",
-   "categoria": "análisis"
   }
  ]
 }
