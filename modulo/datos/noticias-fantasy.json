@@ -1,13 +1,13 @@
 {
- "cuando": "2026-09-23T11:37:53.921Z",
+ "cuando": "2026-09-23T11:45:12.951Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "23/09",
-   "titulo": "Javier Aguirre es oficialmente nuevo entrenador del Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151772-javier-aguirre-es-oficialmente-nuevo-entrenador-del-valencia",
-   "categoria": "mercado"
+   "titulo": "Simeone siempre encuentra sitio para Kang In",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151783-simeone-siempre-encuentra-sitio-para-kang-in",
+   "categoria": "análisis"
   },
   {
    "fecha": "21/09",
@@ -80,6 +80,12 @@
    "titulo": "Christensen podría estar hasta dos meses de baja",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151773-christensen-podria-estar-hasta-dos-meses-de-baja",
    "categoria": "lesión"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Javier Aguirre es oficialmente nuevo entrenador del Valencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151772-javier-aguirre-es-oficialmente-nuevo-entrenador-del-valencia",
+   "categoria": "mercado"
   },
   {
    "fecha": "23/09",
@@ -475,12 +481,6 @@
    "fecha": "22/09",
    "titulo": "Actualizadas las jerarquías de Osasuna: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/osasuna/jerarquias",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Actualizadas las jerarquías del Espanyol: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/espanyol/jerarquias",
    "categoria": "análisis"
   }
  ]
