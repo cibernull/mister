@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-23T11:08:00.750Z",
+ "cuando": "2026-09-23T11:37:53.921Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,24 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Análisis Fantasy de Javier Aguirre: orden, pragmatismo e instinto de supervivencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151782-analisis-fantasy-de-javier-aguirre-orden-pragmatismo-e-instinto-de-supervivencia",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Diakhaby inicia su incorporación progresiva con el grupo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151781-diakhaby-inicia-su-incorporacion-progresiva-con-el-grupo",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Francia Sub-20 convoca a Axel Tape para jugar La Liga Élite",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151780-francia-sub-20-convoca-a-axel-tape-para-jugar-la-liga-elite",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Actualizadas las jerarquías del Espanyol: Jugadores clave, importantes, de rotación, revulsivos y reservas",
    "url": "https://www.futbolfantasy.com/laliga/equipos/espanyol/jerarquias",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Actualizadas las jerarquías del Elche: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/elche/jerarquias",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "El Racing abre el parón con Eriksson y Andrés Martín en la enfermería",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151706-el-racing-abre-el-paron-con-eriksson-y-andres-martin-en-la-enfermeria",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "21/09",
-   "titulo": "El Deportivo retomó los entrenamientos sin Casadó ni los internacionales",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151705-el-deportivo-retomo-los-entrenamientos-sin-casado-ni-los-internacionales",
-   "categoria": "entrenamiento"
   }
  ]
 }
