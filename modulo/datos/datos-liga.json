@@ -1178,6 +1178,16 @@
  ],
  "movimientos": [
   {
+   "id": "14911",
+   "nombre": "Álvaro García",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 8853880,
+   "tipo": "normal",
+   "fecha": "2026-09-23 07:42:56",
+   "pos": 3
+  },
+  {
    "id": "64382",
    "nombre": "Gabriel Suazo",
    "de": "Cacaculopedopis",
@@ -7038,6 +7048,14 @@
      "op": "clause"
     },
     {
+     "j": "Álvaro García",
+     "id": "14911",
+     "tipo": "venta",
+     "importe": 8853880,
+     "fecha": "2026-09-23",
+     "op": "normal"
+    },
+    {
      "j": "Javi Morcillo",
      "id": "70150",
      "tipo": "compra",
@@ -7732,8 +7750,8 @@
     "14911": {
      "nombre": "Álvaro García",
      "compras": 9082371,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 8853880,
+     "ops": 2
     },
     "17568": {
      "nombre": "Pol Lozano",
