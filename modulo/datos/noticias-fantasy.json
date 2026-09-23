@@ -1,12 +1,12 @@
 {
- "cuando": "2026-09-23T14:07:57.886Z",
+ "cuando": "2026-09-23T14:38:04.101Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "23/09",
-   "titulo": "Sergio Camello y el poder de la salud mental",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151790-sergio-camello-y-el-poder-de-la-salud-mental",
+   "titulo": "Ville Koski, el finlandés inmaculado",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151792-ville-koski-el-finlandes-inmaculado",
    "categoria": "análisis"
   },
   {
@@ -23,9 +23,21 @@
   },
   {
    "fecha": "23/09",
+   "titulo": "Toljan insiste hasta recuperar sensaciones",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151793-toljan-insiste-hasta-recuperar-sensaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
    "titulo": "Militao activa la cuenta atrás",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151791-militao-activa-la-cuenta-atras",
    "categoria": "lesión"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Sergio Camello y el poder de la salud mental",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151790-sergio-camello-y-el-poder-de-la-salud-mental",
+   "categoria": "análisis"
   },
   {
    "fecha": "23/09",
@@ -470,18 +482,6 @@
    "titulo": "Vargas ve una luz al final del parón",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151716-vargas-ve-una-luz-al-final-del-paron",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "El Valencia descansa este martes y volverá mañana al trabajo pendiente de la enfermería",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151715-el-valencia-descansa-este-martes-y-volvera-manana-al-trabajo-pendiente-de-la-enfermeria",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Kike Salas, Stassin y Vargas trabajan al margen este martes",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151714-kike-salas-stassin-y-vargas-trabajan-al-margen-este-martes",
-   "categoria": "entrenamiento"
   }
  ]
 }
