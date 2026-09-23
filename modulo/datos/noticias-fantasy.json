@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-23T21:38:15.491Z",
+ "cuando": "2026-09-23T22:07:55.932Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,24 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "24/09",
+   "titulo": "Actualizadas las jerarquías de la Villarreal: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/villarreal/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Actualizadas las jerarquías de la Valencia: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/valencia/jerarquias",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/09",
+   "titulo": "Actualizadas las jerarquías de la Sevilla: Jugadores clave, importantes, de rotación, revulsivos y reservas",
+   "url": "https://www.futbolfantasy.com/laliga/equipos/sevilla/jerarquias",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Gabriel Jesus reclama minutos bajo la sombra de Raphinha",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151740-gabriel-jesus-reclama-minutos-bajo-la-sombra-de-raphinha",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "El Valencia despide al jefe de los servicios médicos con el historial de lesiones de fondo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151739-el-valencia-despide-al-jefe-de-los-servicios-medicos-con-el-historial-de-lesiones-de-fondo",
-   "categoria": "mercado"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Iago Aspas habla sobre su lesión, fecha de vuelta y la actualidad del Celta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151738-iago-aspas-habla-sobre-su-lesion-fecha-de-vuelta-y-la-actualidad-del-celta",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Guruzeta y Yuri siguen al margen por segundo día consecutivo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151737-guruzeta-y-yuri-siguen-al-margen-por-segundo-dia-consecutivo",
-   "categoria": "entrenamiento"
   }
  ]
 }
