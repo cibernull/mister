@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-24T11:38:02.585Z",
+ "cuando": "2026-09-24T12:08:15.206Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -20,6 +20,18 @@
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "24/09",
+   "titulo": "David Alaba es oficialmente nuevo jugador de Udinese tras dejar el Real Madrid",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151829-david-alaba-es-oficialmente-nuevo-jugador-de-udinese-tras-dejar-el-real-madrid",
+   "categoria": "mercado"
+  },
+  {
+   "fecha": "24/09",
+   "titulo": "El Sevilla cierra la semana con un amistoso ante el filial",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151828-el-sevilla-cierra-la-semana-con-un-amistoso-ante-el-filial",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "24/09",
@@ -469,18 +481,6 @@
    "fecha": "22/09",
    "titulo": "Las ventas Fantasy obligatorias del primer parón de LALIGA FANTASY 2026/27, por Carrasco",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151752-las-ventas-fantasy-obligatorias-del-primer-paron-de-laliga-fantasy-2026-27-por-carrasco",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "El Málaga es el único equipo de LaLiga sin ningún internacional en septiembre",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151751-el-malaga-es-el-unico-equipo-de-laliga-sin-ningun-internacional-en-septiembre",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Internacionales del Villarreal en septiembre: partidos, calendario y horarios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151750-internacionales-villarreal-septiembre-partidos-calendario-horarios",
    "categoria": "análisis"
   }
  ]
