@@ -1184,9 +1184,59 @@
    "id": "68498",
    "nombre": "Zaid Romero",
    "valor": 4576000
+  },
+  {
+   "id": "33896",
+   "nombre": "Ilias Akhomach",
+   "valor": 726000
+  },
+  {
+   "id": "5340038",
+   "nombre": "Aaron Mayol",
+   "valor": 578000
   }
  ],
  "movimientos": [
+  {
+   "id": "71011",
+   "nombre": "Alfonso Herrero",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 8216530,
+   "tipo": "normal",
+   "fecha": "2026-09-24 17:00:18",
+   "pos": 1
+  },
+  {
+   "id": "5340038",
+   "nombre": "Aaron Mayol",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 578000,
+   "tipo": "normal",
+   "fecha": "2026-09-24 17:00:18",
+   "pos": 3
+  },
+  {
+   "id": "33896",
+   "nombre": "Ilias Akhomach",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 750000,
+   "tipo": "normal",
+   "fecha": "2026-09-24 17:00:18",
+   "pos": 3
+  },
+  {
+   "id": "60210",
+   "nombre": "Pau Navarro",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 1133860,
+   "tipo": "normal",
+   "fecha": "2026-09-24 16:56:56",
+   "pos": 2
+  },
   {
    "id": "607",
    "nombre": "Borja Mayoral",
@@ -4992,6 +5042,22 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Pau Navarro",
+     "id": "60210",
+     "tipo": "venta",
+     "importe": 1133860,
+     "fecha": "2026-09-24",
+     "op": "normal"
+    },
+    {
+     "j": "Alfonso Herrero",
+     "id": "71011",
+     "tipo": "compra",
+     "importe": 8216530,
+     "fecha": "2026-09-24",
+     "op": "normal"
+    },
+    {
      "j": "Gabriel Suazo",
      "id": "64382",
      "tipo": "compra",
@@ -5868,8 +5934,8 @@
     "60210": {
      "nombre": "Pau Navarro",
      "compras": 899000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1133860,
+     "ops": 2
     },
     "60888": {
      "nombre": "Roberto Fernández",
@@ -5989,6 +6055,12 @@
      "nombre": "Aarón Ochoa",
      "compras": 0,
      "ventas": 221000,
+     "ops": 1
+    },
+    "71011": {
+     "nombre": "Alfonso Herrero",
+     "compras": 8216530,
+     "ventas": 0,
      "ops": 1
     },
     "71132": {
@@ -8766,6 +8838,22 @@
      "op": "normal"
     },
     {
+     "j": "Ilias Akhomach",
+     "id": "33896",
+     "tipo": "compra",
+     "importe": 750000,
+     "fecha": "2026-09-24",
+     "op": "normal"
+    },
+    {
+     "j": "Aaron Mayol",
+     "id": "5340038",
+     "tipo": "compra",
+     "importe": 578000,
+     "fecha": "2026-09-24",
+     "op": "normal"
+    },
+    {
      "j": "Antonio Rüdiger",
      "id": "40147",
      "tipo": "compra",
@@ -9529,6 +9617,12 @@
      "ventas": 0,
      "ops": 1
     },
+    "33896": {
+     "nombre": "Ilias Akhomach",
+     "compras": 750000,
+     "ventas": 0,
+     "ops": 1
+    },
     "36334": {
      "nombre": "Adama Traoré",
      "compras": 3500000,
@@ -9676,6 +9770,12 @@
     "4947927": {
      "nombre": "Youssouf Fofana",
      "compras": 5426000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "5340038": {
+     "nombre": "Aaron Mayol",
+     "compras": 578000,
      "ventas": 0,
      "ops": 1
     }

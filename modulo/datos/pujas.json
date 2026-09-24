@@ -2996,6 +2996,42 @@
     "topeMax": 21425200,
     "exceso": 0
    }
+  ],
+  "550511974": [
+   {
+    "idTransfer": 550511974,
+    "cuando": "2026-09-24 17:00:18",
+    "jugador": "Ilias Akhomach",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 750000,
+    "gana": true,
+    "topeMax": 21425200,
+    "exceso": 0
+   }
+  ],
+  "550511984": [
+   {
+    "idTransfer": 550511984,
+    "cuando": "2026-09-24 17:00:18",
+    "jugador": "Aaron Mayol",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 578000,
+    "gana": true,
+    "topeMax": 21425200,
+    "exceso": 0
+   }
+  ],
+  "550512623": [
+   {
+    "idTransfer": 550512623,
+    "cuando": "2026-09-24 17:00:18",
+    "jugador": "Alfonso Herrero",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 8216530,
+    "gana": true,
+    "topeMax": 14309064,
+    "exceso": 0
+   }
   ]
  }
 }
