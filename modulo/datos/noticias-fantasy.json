@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-24T10:07:53.034Z",
+ "cuando": "2026-09-24T10:37:54.719Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -20,6 +20,18 @@
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "24/09",
+   "titulo": "Rebbach y Aitor Mañas repiten con el grupo ya recuperados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151827-rebbach-y-aitor-manas-repiten-con-el-grupo-ya-recuperados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "24/09",
+   "titulo": "Diakhaby repite con el grupo en la primera sesión de Javier Aguirre",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151826-diakhaby-repite-con-el-grupo-en-la-primera-sesion-de-javier-aguirre",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "24/09",
@@ -469,18 +481,6 @@
    "fecha": "22/09",
    "titulo": "Internacionales del Villarreal en septiembre: partidos, calendario y horarios",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151750-internacionales-villarreal-septiembre-partidos-calendario-horarios",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Internacionales del Valencia en septiembre: partidos, calendario y horarios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151749-internacionales-valencia-septiembre-partidos-calendario-horarios",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "RADAR FANTASY J8 | Fichajes recomendables + Ventas Clave, por Scouting BWG",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151748-radar-fantasy-j8-fichajes-recomendables-ventas-clave-por-scouting-bwg",
    "categoria": "análisis"
   }
  ]
