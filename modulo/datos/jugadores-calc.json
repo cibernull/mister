@@ -2078,8 +2078,8 @@
   "semana": 115000,
   "sem7": 878000,
   "mes": 3765000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 8169000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -4804,8 +4804,8 @@
   "semana": -41000,
   "sem7": -395000,
   "mes": -1405000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 15021000,
   "ced": 0,
   "pos": 1,
   "est": "injury",
@@ -10774,8 +10774,8 @@
   "semana": 46000,
   "sem7": 237000,
   "mes": -403000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 726000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -13265,8 +13265,8 @@
   "semana": 70000,
   "sem7": 581000,
   "mes": 2531000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 8964000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -13673,8 +13673,8 @@
   "semana": -17000,
   "sem7": -209000,
   "mes": -309000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1910000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -18293,8 +18293,8 @@
   "semana": 36000,
   "sem7": 358000,
   "mes": null,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 578000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -22429,8 +22429,8 @@
   "semana": -23000,
   "sem7": 29000,
   "mes": null,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 987000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -25883,8 +25883,8 @@
   "semana": 57000,
   "sem7": 355000,
   "mes": 1054000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 5552000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -33684,8 +33684,8 @@
   "semana": 5000,
   "sem7": 10000,
   "mes": null,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 176000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -37960,6 +37960,82 @@
   "d": 1
  },
  {
+  "id": "71622",
+  "nombre": "Jesse Bisiwu",
+  "valor": 205000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 2000,
+  "sem7": 31000,
+  "mes": -828000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 3,
+  "riv": 9,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 18,
+  "js": [
+   [
+    1,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    17,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "59642",
   "nombre": "Juan Musso",
   "valor": 205000,
@@ -38050,82 +38126,6 @@
   "d": 0
  },
  {
-  "id": "71622",
-  "nombre": "Jesse Bisiwu",
-  "valor": 205000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 2000,
-  "sem7": 31000,
-  "mes": -828000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 3,
-  "riv": 9,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 18,
-  "js": [
-   [
-    1,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    17,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "63869",
   "nombre": "Bambo Diaby",
   "valor": 203000,
@@ -38192,96 +38192,6 @@
    ],
    [
     6,
-    null,
-    15,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "4947928",
-  "nombre": "Salvi Esquivel",
-  "valor": 203000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 30000,
-  "sem7": 43000,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 2,
-  "riv": 48,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [
-   [
-    1,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    7,
     null,
     15,
     0,
@@ -38374,6 +38284,96 @@
     7,
     null,
     4,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "4947928",
+  "nombre": "Salvi Esquivel",
+  "valor": 203000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 30000,
+  "sem7": 43000,
+  "mes": null,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 2,
+  "riv": 48,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [
+   [
+    1,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    15,
     0,
     ""
    ]
@@ -38534,6 +38534,54 @@
   "d": 0
  },
  {
+  "id": "70997",
+  "nombre": "Aarón Ochoa",
+  "valor": 197000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 4000,
+  "sem7": 11000,
+  "mes": -11000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 13,
+  "riv": 8,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 19,
+  "js": [
+   [
+    1,
+    null,
+    2,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "60290",
   "nombre": "Raúl Asencio",
   "valor": 197000,
@@ -38581,54 +38629,6 @@
     6,
     null,
     23,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "70997",
-  "nombre": "Aarón Ochoa",
-  "valor": 197000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 4000,
-  "sem7": 11000,
-  "mes": -11000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 13,
-  "riv": 8,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 19,
-  "js": [
-   [
-    1,
-    null,
-    2,
     0,
     ""
    ]
@@ -40137,6 +40137,96 @@
   "d": 0
  },
  {
+  "id": "4947925",
+  "nombre": "Brian Fariñas",
+  "valor": 173000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -15000,
+  "sem7": -8000,
+  "mes": null,
+  "mk": 1,
+  "pv": 173000,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 3,
+  "riv": 9,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [
+   [
+    1,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    17,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "59064",
   "nombre": "Jiri Letacek",
   "valor": 173000,
@@ -40212,96 +40302,6 @@
     6,
     null,
     4,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "4947925",
-  "nombre": "Brian Fariñas",
-  "valor": 173000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -15000,
-  "sem7": -8000,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 3,
-  "riv": 9,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [
-   [
-    1,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    12,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    17,
     0,
     ""
    ]
@@ -42136,6 +42136,54 @@
   "d": 0
  },
  {
+  "id": "17450",
+  "nombre": "Aitor Ruibal",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -1000,
+  "sem7": -70000,
+  "mes": -96000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "doubt",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 4,
+  "riv": 50,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 30,
+  "js": [
+   [
+    6,
+    null,
+    9,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "27855",
   "nombre": "Diego Conde",
   "valor": 160000,
@@ -42197,54 +42245,6 @@
     7,
     null,
     6,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "17450",
-  "nombre": "Aitor Ruibal",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -1000,
-  "sem7": -70000,
-  "mes": -96000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "doubt",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 4,
-  "riv": 50,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 30,
-  "js": [
-   [
-    6,
-    null,
-    9,
     0,
     ""
    ]
@@ -42495,96 +42495,6 @@
   "d": 0
  },
  {
-  "id": "68711",
-  "nombre": "Obed Vargas",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -11000,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 2,
-  "riv": 48,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    15,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "78393",
   "nombre": "Altay Bayındır",
   "valor": 160000,
@@ -42720,6 +42630,96 @@
    ],
    [
     6,
+    null,
+    15,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "68711",
+  "nombre": "Obed Vargas",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -11000,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 2,
+  "riv": 48,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    7,
     null,
     15,
     0,
