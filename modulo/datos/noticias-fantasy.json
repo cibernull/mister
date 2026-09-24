@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-24T08:37:58.008Z",
+ "cuando": "2026-09-24T09:08:05.467Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -20,6 +20,12 @@
    "titulo": "Alineaciones probables para la jornada 8 disponibles",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "24/09",
+   "titulo": "Konaté abandona la selección francesa por un esguince leve",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151819-konate-abandona-la-seleccion-francesa-por-un-esguince-leve",
+   "categoria": "lesión"
   },
   {
    "fecha": "24/09",
@@ -475,12 +481,6 @@
    "fecha": "22/09",
    "titulo": "James anuncia su retirada de la selección de Colombia",
    "url": "https://www.futbolfantasy.com/laliga/noticias/151742-james-anuncia-su-retirada-de-la-seleccion-de-colombia",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Terzic aparta a Hugo Rincón al andén",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151741-terzic-aparta-a-hugo-rincon-al-anden",
    "categoria": "análisis"
   }
  ]
