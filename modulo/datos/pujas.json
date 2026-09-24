@@ -2938,6 +2938,52 @@
     "topeMax": 40008650,
     "exceso": 0
    }
+  ],
+  "550414513": [
+   {
+    "idTransfer": 550414513,
+    "cuando": "2026-09-24 05:00:27",
+    "jugador": "Lamine Yamal",
+    "equipo": "Cacaculopedopis",
+    "puja": 25101910,
+    "gana": true,
+    "topeMax": 31483589,
+    "exceso": 0
+   }
+  ],
+  "550415854": [
+   {
+    "idTransfer": 550415854,
+    "cuando": "2026-09-24 05:00:27",
+    "jugador": "Ayoze Pérez",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 5850000,
+    "gana": true,
+    "topeMax": 21425200,
+    "exceso": 0
+   }
+  ],
+  "550416114": [
+   {
+    "idTransfer": 550416114,
+    "cuando": "2026-09-24 05:00:27",
+    "jugador": "Mariano Díaz",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 4464220,
+    "gana": true,
+    "topeMax": 11403540,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 550416114,
+    "cuando": "2026-09-24 05:00:27",
+    "jugador": "Mariano Díaz",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 4345000,
+    "gana": false,
+    "topeMax": 21425200,
+    "exceso": 0
+   }
   ]
  }
 }
