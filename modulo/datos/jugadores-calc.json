@@ -38202,96 +38202,6 @@
   "d": 0
  },
  {
-  "id": "70952",
-  "nombre": "Germán Parreño",
-  "valor": 203000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -2000,
-  "sem7": 7000,
-  "mes": 29000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 6,
-  "riv": 16,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 33,
-  "js": [
-   [
-    1,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    4,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "4947928",
   "nombre": "Salvi Esquivel",
   "valor": 203000,
@@ -38374,6 +38284,96 @@
     7,
     null,
     15,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "70952",
+  "nombre": "Germán Parreño",
+  "valor": 203000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -2000,
+  "sem7": 7000,
+  "mes": 29000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 6,
+  "riv": 16,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 33,
+  "js": [
+   [
+    1,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    4,
     0,
     ""
    ]
@@ -38534,6 +38534,96 @@
   "d": 0
  },
  {
+  "id": "3688394",
+  "nombre": "Kayne van Oevelen",
+  "valor": 197000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -16000,
+  "sem7": 37000,
+  "mes": -270000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 19,
+  "riv": 1490,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    16,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "70997",
   "nombre": "Aarón Ochoa",
   "valor": 197000,
@@ -38629,96 +38719,6 @@
     6,
     null,
     23,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "3688394",
-  "nombre": "Kayne van Oevelen",
-  "valor": 197000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -16000,
-  "sem7": 37000,
-  "mes": -270000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 19,
-  "riv": 1490,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    16,
     0,
     ""
    ]
@@ -42253,6 +42253,82 @@
   "d": 0
  },
  {
+  "id": "28677",
+  "nombre": "Beñat Prados",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -30000,
+  "sem7": -11000,
+  "mes": -8000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 1,
+  "riv": 14,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    1,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    48,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "59089",
   "nombre": "Alex Padilla",
   "valor": 160000,
@@ -42411,82 +42487,6 @@
     6,
     null,
     19,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "28677",
-  "nombre": "Beñat Prados",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -30000,
-  "sem7": -11000,
-  "mes": -8000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1,
-  "riv": 14,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    1,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    48,
     0,
     ""
    ]
