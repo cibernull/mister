@@ -1198,6 +1198,16 @@
  ],
  "movimientos": [
   {
+   "id": "71639",
+   "nombre": "Beñat Gerenabarrena",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 2083120,
+   "tipo": "normal",
+   "fecha": "2026-09-24 17:49:16",
+   "pos": 3
+  },
+  {
    "id": "71011",
    "nombre": "Alfonso Herrero",
    "de": null,
@@ -6100,6 +6110,14 @@
      "op": "normal"
     },
     {
+     "j": "Beñat Gerenabarrena",
+     "id": "71639",
+     "tipo": "venta",
+     "importe": 2083120,
+     "fecha": "2026-09-24",
+     "op": "normal"
+    },
+    {
      "j": "Ilaix Moriba",
      "id": "25631",
      "tipo": "compra",
@@ -7178,8 +7196,8 @@
     "71639": {
      "nombre": "Beñat Gerenabarrena",
      "compras": 1060096,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 2083120,
+     "ops": 2
     },
     "71640": {
      "nombre": "Miguel Sierra",

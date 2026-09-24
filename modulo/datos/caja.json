@@ -1,6 +1,14 @@
 {
- "saldo": -26391460,
+ "saldo": -24308340,
  "apuntes": [
+  {
+   "cuando": 1790264956,
+   "fecha": "2026-09-24 17:49",
+   "motivo": "Beñat Gerenabarrena a Mister",
+   "tipo": "Venta",
+   "importe": 2083120,
+   "saldo": -24308340
+  },
   {
    "cuando": 1790218800,
    "fecha": "2026-09-24 05:00",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -7813750,
    "saldo": 6930281
-  },
-  {
-   "cuando": 1787907426,
-   "fecha": "2026-08-28 10:57",
-   "motivo": "Jornada 1",
-   "tipo": "Bonificación",
-   "importe": 1050000,
-   "saldo": 14744031
   }
  ]
 }
