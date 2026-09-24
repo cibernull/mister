@@ -147,6 +147,39 @@
   "entra": true
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-09-24",
+  "id": "607",
+  "de": "Saiyans FC (Fran)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-24",
+  "id": "607",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-24",
+  "id": "54817",
+  "de": "Saiyans FC (Fran)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-24",
+  "id": "54817",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-24",
+  "id": "68498",
+  "de": "Legalize F.C (Victor)",
+  "a": "Saiyans FC (Fran)"
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-23",
   "id": "20131",

@@ -2984,6 +2984,18 @@
     "topeMax": 21425200,
     "exceso": 0
    }
+  ],
+  "550452943": [
+   {
+    "idTransfer": 550452943,
+    "cuando": "2026-09-24 07:34:09",
+    "jugador": "Zaid Romero",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 6864000,
+    "gana": true,
+    "topeMax": 21425200,
+    "exceso": 0
+   }
   ]
  }
 }

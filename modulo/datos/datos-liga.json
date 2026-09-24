@@ -1179,9 +1179,44 @@
    "id": "52375",
    "nombre": "Lamine Yamal",
    "valor": 23782000
+  },
+  {
+   "id": "68498",
+   "nombre": "Zaid Romero",
+   "valor": 4576000
   }
  ],
  "movimientos": [
+  {
+   "id": "607",
+   "nombre": "Borja Mayoral",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 546480,
+   "tipo": "normal",
+   "fecha": "2026-09-24 07:35:04",
+   "pos": 4
+  },
+  {
+   "id": "68498",
+   "nombre": "Zaid Romero",
+   "de": "Legalize F.C (Victor)",
+   "a": "Saiyans FC (Fran)",
+   "importe": 6864000,
+   "tipo": "clause",
+   "fecha": "2026-09-24 07:34:09",
+   "pos": 2
+  },
+  {
+   "id": "54817",
+   "nombre": "Arda Güler",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 16177350,
+   "tipo": "normal",
+   "fecha": "2026-09-24 07:33:40",
+   "pos": 3
+  },
   {
    "id": "3060",
    "nombre": "Mariano Díaz",
@@ -8707,6 +8742,30 @@
      "op": "normal"
     },
     {
+     "j": "Arda Güler",
+     "id": "54817",
+     "tipo": "venta",
+     "importe": 16177350,
+     "fecha": "2026-09-24",
+     "op": "normal"
+    },
+    {
+     "j": "Zaid Romero",
+     "id": "68498",
+     "tipo": "compra",
+     "importe": 6864000,
+     "fecha": "2026-09-24",
+     "op": "clause"
+    },
+    {
+     "j": "Borja Mayoral",
+     "id": "607",
+     "tipo": "venta",
+     "importe": 546480,
+     "fecha": "2026-09-24",
+     "op": "normal"
+    },
+    {
      "j": "Antonio Rüdiger",
      "id": "40147",
      "tipo": "compra",
@@ -9335,8 +9394,8 @@
     "607": {
      "nombre": "Borja Mayoral",
      "compras": 2110000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 546480,
+     "ops": 2
     },
     "3117": {
      "nombre": "Diego Rico",
@@ -9503,8 +9562,8 @@
     "54817": {
      "nombre": "Arda Güler",
      "compras": 13110000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 16177350,
+     "ops": 2
     },
     "55009": {
      "nombre": "Fermín López",
@@ -9558,6 +9617,12 @@
      "nombre": "Filip Ugrinic",
      "compras": 0,
      "ventas": 1059000,
+     "ops": 1
+    },
+    "68498": {
+     "nombre": "Zaid Romero",
+     "compras": 6864000,
+     "ventas": 0,
      "ops": 1
     },
     "68835": {
@@ -9653,6 +9718,14 @@
   "Legalize F.C (Victor)": {
    "movimientos": [
     {
+     "j": "Zaid Romero",
+     "id": "68498",
+     "tipo": "venta",
+     "importe": 6864000,
+     "fecha": "2026-09-24",
+     "op": "clause"
+    },
+    {
      "j": "Gonçalo Guedes",
      "id": "10967",
      "tipo": "compra",
@@ -9694,6 +9767,12 @@
      "nombre": "Pierre-Emerick Aubameyang",
      "compras": 0,
      "ventas": 4029000,
+     "ops": 1
+    },
+    "68498": {
+     "nombre": "Zaid Romero",
+     "compras": 0,
+     "ventas": 6864000,
      "ops": 1
     }
    }
