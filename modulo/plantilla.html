@@ -109,6 +109,11 @@ body{
 .sd:last-child{margin-bottom:0}
 .sd strong{color:var(--tinta)}
 .intro{font-size:13.5px;color:var(--gris);margin:0;max-width:70ch;line-height:1.6}
+/* La entradilla de Mi liga explica cuatro cifras: con 70 caracteres por línea
+   se comía seis renglones y dejaba medio panel en blanco. A todo el ancho son
+   dos o tres, y el texto queda pegado a lo que describe. */
+.intro.ancha{max-width:none;font-size:13px;line-height:1.55;margin-bottom:2px}
+.intro.ancha strong{color:var(--tinta);font-weight:600}
 .sub{font-family:var(--f-titulo);font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.07em;color:var(--tenue);margin:16px 0 0}
 .sub2{font-family:var(--f-titulo);font-weight:700;font-size:17px;text-transform:uppercase;letter-spacing:.02em;margin:0 0 3px}
 .sec{display:flex;flex-direction:column;gap:9px}

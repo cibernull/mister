@@ -2778,7 +2778,7 @@ const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     </div>
   </details>`
 
-const rivales = `    <p class="intro">En el orden de la clasificación de la liga. De cada uno, lo que puede gastar hoy —la caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale— y, debajo, su caja, lo que vale su plantilla, su patrimonio —la plantilla más la caja o menos lo que debe— y, ya como estimación, a cuánto llegaría ese patrimonio en siete días si su plantilla sigue al ritmo de la última semana. La tuya es exacta —Mister publica lo que te retienen las pujas puestas y se comprueba al euro—; la de un rival es <strong>un techo</strong>, porque sus pujas vivas no las enseña nadie hasta que se resuelven.</p>
+const rivales = `    <p class="intro ancha">En el orden de la liga. De cada uno: <strong>lo que puede gastar hoy</strong> —su caja más el 25 % que Mister le presta por la plantilla—, su caja, lo que vale su plantilla, su <strong>patrimonio</strong> (plantilla ± caja) y, como única estimación, ese patrimonio <strong>dentro de 7 días</strong> al ritmo de la última semana. Tu tope es exacto —Mister publica lo que te retienen las pujas y se comprueba al euro—; el de un rival es un <strong>techo</strong>: sus pujas vivas no se ven hasta que se resuelven.</p>
 ${[...EQ]
   // Por el puesto en la liga, que es como se mira una clasificación. Iban por
   // lo que podían gastar, y la columna de puestos salía 8º, 3º, 4º, 7º…
