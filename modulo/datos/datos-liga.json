@@ -1194,9 +1194,24 @@
    "id": "5340038",
    "nombre": "Aaron Mayol",
    "valor": 629000
+  },
+  {
+   "id": "20141",
+   "nombre": "Germán Valera",
+   "valor": 7378000
   }
  ],
  "movimientos": [
+  {
+   "id": "20141",
+   "nombre": "Germán Valera",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 7272000,
+   "tipo": "normal",
+   "fecha": "2026-09-25 17:00:17",
+   "pos": 3
+  },
   {
    "id": "22595",
    "nombre": "Joaquín Muñoz",
@@ -6158,6 +6173,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Germán Valera",
+     "id": "20141",
+     "tipo": "compra",
+     "importe": 7272000,
+     "fecha": "2026-09-25",
+     "op": "normal"
+    },
+    {
      "j": "Mariano Díaz",
      "id": "3060",
      "tipo": "compra",
@@ -6966,6 +6989,12 @@
      "compras": 2314570,
      "ventas": 5107000,
      "ops": 2
+    },
+    "20141": {
+     "nombre": "Germán Valera",
+     "compras": 7272000,
+     "ventas": 0,
+     "ops": 1
     },
     "20449": {
      "nombre": "Fer Niño",

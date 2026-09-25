@@ -1,6 +1,14 @@
 {
- "saldo": -24308340,
+ "saldo": -31580340,
  "apuntes": [
+  {
+   "cuando": 1790348400,
+   "fecha": "2026-09-25 17:00",
+   "motivo": "Germán Valera a Mister",
+   "tipo": "Compra",
+   "importe": -7272000,
+   "saldo": -31580340
+  },
   {
    "cuando": 1790264956,
    "fecha": "2026-09-24 17:49",
@@ -472,14 +480,6 @@
    "tipo": "Compra por cláusula",
    "importe": -1000000,
    "saldo": 5930281
-  },
-  {
-   "cuando": 1787929200,
-   "fecha": "2026-08-28 17:00",
-   "motivo": "Álvaro Valles a Mister",
-   "tipo": "Compra",
-   "importe": -7813750,
-   "saldo": 6930281
   }
  ]
 }

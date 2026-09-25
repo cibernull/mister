@@ -160,6 +160,170 @@
   "clausula": 19754000
  },
  {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "270",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "607",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "3117",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "12946",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "15344",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "15693",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "16868",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "19562",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-25",
+  "id": "20141",
+  "de": null,
+  "a": "Niutin FC (Isaac)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "20141",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "29163",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "29238",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "36048",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "53095",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "59506",
+  "entra": true
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-25",
+  "id": "60861",
+  "estado": "injury",
+  "equipo": "Legalize F.C (Victor)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "62910",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "63784",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "63867",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "68361",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "70934",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "71019",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "71132",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "71176",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "71179",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "1385821",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-25",
+  "id": "4947930",
+  "entra": false
+ },
+ {
   "tipo": "duenio",
   "dia": "2026-09-24",
   "id": "3060",

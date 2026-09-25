@@ -3032,6 +3032,18 @@
     "topeMax": 14309064,
     "exceso": 0
    }
+  ],
+  "550702818": [
+   {
+    "idTransfer": 550702818,
+    "cuando": "2026-09-25 17:00:17",
+    "jugador": "Germán Valera",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 7272000,
+    "gana": true,
+    "topeMax": 8940160,
+    "exceso": 0
+   }
   ]
  }
 }

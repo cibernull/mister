@@ -7183,6 +7183,24 @@
    "media": 2.9,
    "racha": "2,4,2,2,2",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 550702818,
+   "idJugador": "20141",
+   "nombre": "Germán Valera",
+   "de": "Mister",
+   "a": "Niutin FC (Isaac)",
+   "idUcDe": 0,
+   "idUcA": 12493763,
+   "importe": 7272000,
+   "tipo": "normal",
+   "cuando": "2026-09-25 17:00:17",
+   "valor": 7378000,
+   "posicion": 3,
+   "puntos": 34,
+   "media": 4.9,
+   "racha": "1,5,4,3,13",
+   "otrasPujas": []
   }
  ],
  "salidas": [
