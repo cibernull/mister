@@ -1,6 +1,14 @@
 {
- "saldo": -31580340,
+ "saldo": -22034790,
  "apuntes": [
+  {
+   "cuando": 1790349165,
+   "fecha": "2026-09-25 17:12",
+   "motivo": "Pierre-Emerick Aubameyang a Mister",
+   "tipo": "Venta",
+   "importe": 9545550,
+   "saldo": -22034790
+  },
   {
    "cuando": 1790348400,
    "fecha": "2026-09-25 17:00",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -3244010,
    "saldo": 2686271
-  },
-  {
-   "cuando": 1788086560,
-   "fecha": "2026-08-30 12:42",
-   "motivo": "Roger Brugué a Los tocahuevos C.F ( juanito)",
-   "tipo": "Compra por cláusula",
-   "importe": -1000000,
-   "saldo": 5930281
   }
  ]
 }

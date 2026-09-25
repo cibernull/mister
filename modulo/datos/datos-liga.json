@@ -1203,6 +1203,16 @@
  ],
  "movimientos": [
   {
+   "id": "36410",
+   "nombre": "Pierre-Emerick Aubameyang",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 9545550,
+   "tipo": "normal",
+   "fecha": "2026-09-25 17:12:45",
+   "pos": 4
+  },
+  {
    "id": "20141",
    "nombre": "Germán Valera",
    "de": null,
@@ -6181,6 +6191,14 @@
      "op": "normal"
     },
     {
+     "j": "Pierre-Emerick Aubameyang",
+     "id": "36410",
+     "tipo": "venta",
+     "importe": 9545550,
+     "fecha": "2026-09-25",
+     "op": "normal"
+    },
+    {
      "j": "Mariano Díaz",
      "id": "3060",
      "tipo": "compra",
@@ -7101,8 +7119,8 @@
     "36410": {
      "nombre": "Pierre-Emerick Aubameyang",
      "compras": 6171000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 9545550,
+     "ops": 2
     },
     "48203": {
      "nombre": "Ramón Terrats",
