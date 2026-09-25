@@ -7911,8 +7911,8 @@
   "semana": -109000,
   "sem7": -468000,
   "mes": 426000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 9506000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -13646,8 +13646,8 @@
   "semana": -177000,
   "sem7": -967000,
   "mes": 1233000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 4060000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -17023,8 +17023,8 @@
   "semana": -76000,
   "sem7": -475000,
   "mes": -830000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 11687000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -22908,8 +22908,8 @@
   "semana": -98000,
   "sem7": -607000,
   "mes": 191000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 2512000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -27619,8 +27619,8 @@
   "semana": -44000,
   "sem7": -252000,
   "mes": -213000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 608000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -36376,8 +36376,8 @@
   "semana": 45000,
   "sem7": 45000,
   "mes": 41000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 205000,
   "ced": 0,
   "pos": 4,
   "est": "injury",
@@ -39073,89 +39073,6 @@
   "d": 0
  },
  {
-  "id": "70925",
-  "nombre": "Simon Eriksson",
-  "valor": 192000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 30000,
-  "sem7": -233000,
-  "mes": -1586000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": "doubt",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1490,
-  "riv": 19,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [
-   [
-    1,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    5,
-    1,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "68711",
   "nombre": "Obed Vargas",
   "valor": 192000,
@@ -39239,6 +39156,89 @@
     null,
     15,
     0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "70925",
+  "nombre": "Simon Eriksson",
+  "valor": 192000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 30000,
+  "sem7": -233000,
+  "mes": -1586000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": "doubt",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 1490,
+  "riv": 19,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [
+   [
+    1,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    5,
+    1,
     ""
    ]
   ],
@@ -39452,96 +39452,6 @@
   "d": 0
  },
  {
-  "id": "71006",
-  "nombre": "Álex Pastor",
-  "valor": 187000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 8000,
-  "sem7": 27000,
-  "mes": 27000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 13,
-  "riv": 8,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 26,
-  "js": [
-   [
-    1,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    12,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    9,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 1
- },
- {
   "id": "78393",
   "nombre": "Altay Bayındır",
   "valor": 187000,
@@ -39630,6 +39540,96 @@
   ],
   "p": 0,
   "d": 0
+ },
+ {
+  "id": "71006",
+  "nombre": "Álex Pastor",
+  "valor": 187000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 8000,
+  "sem7": 27000,
+  "mes": 27000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 13,
+  "riv": 8,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 26,
+  "js": [
+   [
+    1,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    9,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 1
  },
  {
   "id": "3368896",
@@ -41420,6 +41420,96 @@
   "d": 0
  },
  {
+  "id": "61410",
+  "nombre": "Adrián Rodríguez",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": null,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 48,
+  "riv": 2,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    1,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    1,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "217",
   "nombre": "Dimitri Foulquier",
   "valor": 160000,
@@ -41429,8 +41519,8 @@
   "semana": -11000,
   "sem7": -32000,
   "mes": 0,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 2,
   "est": "doubt",
@@ -42310,179 +42400,6 @@
   "d": 0
  },
  {
-  "id": "71012",
-  "nombre": "Carlos López",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -7000,
-  "sem7": -4000,
-  "mes": -60000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 13,
-  "riv": 8,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    12,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    9,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "59089",
-  "nombre": "Alex Padilla",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -36000,
-  "mes": -32000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1,
-  "riv": 14,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    48,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "12902",
   "nombre": "Raúl de Tomás",
   "valor": 160000,
@@ -42558,96 +42475,6 @@
     7,
     null,
     50,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "61410",
-  "nombre": "Adrián Rodríguez",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 48,
-  "riv": 2,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    1,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    1,
     0,
     ""
    ]
@@ -42919,6 +42746,96 @@
   "d": 0
  },
  {
+  "id": "71012",
+  "nombre": "Carlos López",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -7000,
+  "sem7": -4000,
+  "mes": -60000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 13,
+  "riv": 8,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    9,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "71506",
   "nombre": "Rubén López",
   "valor": 160000,
@@ -43045,6 +42962,89 @@
   "asis": 0,
   "edad": 20,
   "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "59089",
+  "nombre": "Alex Padilla",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -36000,
+  "mes": -32000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 1,
+  "riv": 14,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    48,
+    0,
+    ""
+   ]
+  ],
   "p": 0,
   "d": 0
  },
