@@ -1198,6 +1198,46 @@
  ],
  "movimientos": [
   {
+   "id": "22595",
+   "nombre": "Joaquín Muñoz",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 1571780,
+   "tipo": "normal",
+   "fecha": "2026-09-25 09:38:45",
+   "pos": 3
+  },
+  {
+   "id": "6032",
+   "nombre": "Alex Remiro",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 9971280,
+   "tipo": "normal",
+   "fecha": "2026-09-25 09:38:43",
+   "pos": 1
+  },
+  {
+   "id": "70935",
+   "nombre": "Jorge Salinas",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 4875500,
+   "tipo": "normal",
+   "fecha": "2026-09-25 09:13:22",
+   "pos": 2
+  },
+  {
+   "id": "52117",
+   "nombre": "Jon Ander Olasagasti",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 5684700,
+   "tipo": "normal",
+   "fecha": "2026-09-25 09:13:19",
+   "pos": 3
+  },
+  {
    "id": "71639",
    "nombre": "Beñat Gerenabarrena",
    "de": "Niutin FC (Isaac)",
@@ -5052,6 +5092,22 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Jon Ander Olasagasti",
+     "id": "52117",
+     "tipo": "venta",
+     "importe": 5684700,
+     "fecha": "2026-09-25",
+     "op": "normal"
+    },
+    {
+     "j": "Jorge Salinas",
+     "id": "70935",
+     "tipo": "venta",
+     "importe": 4875500,
+     "fecha": "2026-09-25",
+     "op": "normal"
+    },
+    {
      "j": "Pau Navarro",
      "id": "60210",
      "tipo": "venta",
@@ -5872,8 +5928,8 @@
     "52117": {
      "nombre": "Jon Ander Olasagasti",
      "compras": 3935850,
-     "ventas": 2375360,
-     "ops": 3
+     "ventas": 8060060,
+     "ops": 4
     },
     "52404": {
      "nombre": "Manu Bueno",
@@ -6034,8 +6090,8 @@
     "70935": {
      "nombre": "Jorge Salinas",
      "compras": 4953000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 4875500,
+     "ops": 2
     },
     "70941": {
      "nombre": "Bil Nsongo",
@@ -7216,6 +7272,22 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Alex Remiro",
+     "id": "6032",
+     "tipo": "venta",
+     "importe": 9971280,
+     "fecha": "2026-09-25",
+     "op": "normal"
+    },
+    {
+     "j": "Joaquín Muñoz",
+     "id": "22595",
+     "tipo": "venta",
+     "importe": 1571780,
+     "fecha": "2026-09-25",
+     "op": "normal"
+    },
+    {
      "j": "Lamine Yamal",
      "id": "52375",
      "tipo": "compra",
@@ -7930,8 +8002,8 @@
     "6032": {
      "nombre": "Alex Remiro",
      "compras": 11590994,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 9971280,
+     "ops": 2
     },
     "13420": {
      "nombre": "Mouctar Diakhaby",
@@ -7966,8 +8038,8 @@
     "22595": {
      "nombre": "Joaquín Muñoz",
      "compras": 1928280,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1571780,
+     "ops": 2
     },
     "22885": {
      "nombre": "Josan Ferrández",

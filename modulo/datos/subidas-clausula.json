@@ -142,5 +142,23 @@
   "escalones": 3,
   "antes": 1.5,
   "despues": 3
+ },
+ {
+  "idJugador": "56628",
+  "equipo": "Saiyans FC (Fran)",
+  "dia": "2026-09-25",
+  "coste": 1310400,
+  "escalones": 1,
+  "antes": 1.5,
+  "despues": 2
+ },
+ {
+  "idJugador": "71021",
+  "equipo": "Saiyans FC (Fran)",
+  "dia": "2026-09-25",
+  "coste": 1975400,
+  "escalones": 1,
+  "antes": 1.5,
+  "despues": 2
  }
 ]
