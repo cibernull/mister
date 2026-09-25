@@ -2181,12 +2181,21 @@
    "importe": 3163520,
    "tipo": "normal",
    "cuando": "2026-08-15 05:00:25",
-   "valor": 4613000,
+   "valor": 4520000,
    "posicion": 2,
-   "puntos": 17,
-   "media": 3.4,
-   "racha": "4,3,4,1,5",
-   "otrasPujas": []
+   "puntos": 18,
+   "media": 3.6,
+   "racha": "4,3,4,1,6",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 2912334
+    },
+    {
+     "equipo": "Saiyans FC (Fran)",
+     "puja": 2900000
+    }
+   ]
   },
   {
    "idTransfer": 539081560,
@@ -2199,11 +2208,11 @@
    "importe": 663010,
    "tipo": "normal",
    "cuando": "2026-08-15 05:00:25",
-   "valor": 1217000,
+   "valor": 1370000,
    "posicion": 2,
    "puntos": 8,
    "media": 2.7,
-   "racha": "5,3,0,-,-",
+   "racha": "5,3,0,-",
    "otrasPujas": []
   },
   {
@@ -2217,11 +2226,11 @@
    "importe": 2024010,
    "tipo": "normal",
    "cuando": "2026-08-15 05:00:25",
-   "valor": 2209000,
+   "valor": 2529000,
    "posicion": 2,
    "puntos": 7,
    "media": 1.8,
-   "racha": "5,-1,-,-,1",
+   "racha": "2,5,-1,-,1",
    "otrasPujas": []
   },
   {
@@ -2235,7 +2244,7 @@
    "importe": 6626000,
    "tipo": "normal",
    "cuando": "2026-08-15 09:07:03",
-   "valor": 7240000,
+   "valor": 7367000,
    "posicion": 1,
    "puntos": 15,
    "media": 3,
@@ -7218,6 +7227,24 @@
    "puntos": 64,
    "media": 9.1,
    "racha": "13,13,10,2,5",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 550752213,
+   "idJugador": "68259",
+   "nombre": "Carlos Macia",
+   "de": "Cacaculopedopis",
+   "a": "Mister",
+   "idUcDe": 15435600,
+   "idUcA": 0,
+   "importe": 275520,
+   "tipo": "normal",
+   "cuando": "2026-09-25 23:11:20",
+   "valor": 287000,
+   "posicion": 3,
+   "puntos": 12,
+   "media": 3,
+   "racha": "-,-,-,6,1",
    "otrasPujas": []
   }
  ],

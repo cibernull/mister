@@ -1203,6 +1203,16 @@
  ],
  "movimientos": [
   {
+   "id": "68259",
+   "nombre": "Carlos Macia",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 275520,
+   "tipo": "normal",
+   "fecha": "2026-09-25 23:11:20",
+   "pos": 3
+  },
+  {
    "id": "36410",
    "nombre": "Pierre-Emerick Aubameyang",
    "de": "Niutin FC (Isaac)",
@@ -7335,6 +7345,14 @@
      "op": "normal"
     },
     {
+     "j": "Carlos Macia",
+     "id": "68259",
+     "tipo": "venta",
+     "importe": 275520,
+     "fecha": "2026-09-25",
+     "op": "normal"
+    },
+    {
      "j": "Lamine Yamal",
      "id": "52375",
      "tipo": "compra",
@@ -8241,8 +8259,8 @@
     "68259": {
      "nombre": "Carlos Macia",
      "compras": 764000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 275520,
+     "ops": 2
     },
     "68361": {
      "nombre": "Aitor Mañas",
