@@ -1555,7 +1555,57 @@ ${suyos
  * una, lo que la matiza: en la caja, lo que sus pujas demostraron que tenía
  * de más; en la plantilla, lo que sube o baja hoy.
  */
-const cifrasDe = (e) => `<div class="cifras">
+/**
+ * A cuánto llegaría su patrimonio dentro de una semana si su plantilla siguiera
+ * subiendo al ritmo de los últimos siete días.
+ *
+ * Es una estimación y la fila lo dice. Proyecta **solo** la revalorización de
+ * los jugadores que tiene hoy, con interés compuesto, porque el valor sube
+ * sobre el valor y no en línea recta. No cuenta los premios de jornada ni nada
+ * de lo que pase en el mercado, y eso pesa más que la propia subida: Saiyans
+ * perdió 2.113.000 € de patrimonio en un minuto pagando la cláusula de Zaid
+ * Romero —6.864.000 € por alguien que valía 4.751.000 €—, más que una semana
+ * entera de revalorización suya.
+ *
+ * El ritmo se mide solo sobre lo medible: sus jugadores con valor de hace siete
+ * días. Si con esos no se cubre el 80 % de lo que vale su plantilla, no sale
+ * cifra. Antes un hueco que un número inventado.
+ */
+const DIAS_DE_PROYECCION = 7
+const COBERTURA_MINIMA_RITMO = 0.8
+
+const RITMO_SEMANAL = (() => {
+  const dias = Object.keys(HIST).sort()
+  const ritmos = new Map()
+  if (dias.length <= DIAS_DE_PROYECCION) return ritmos
+  const hoy = HIST[dias.at(-1)] || {}
+  const antes = HIST[dias.at(-1 - DIAS_DE_PROYECCION)] || {}
+  for (const e of EQ) {
+    let cubierto = 0
+    let sube = 0
+    for (const id of PL[e.n] || []) {
+      const a = hoy[id]
+      const b = antes[id]
+      if (a == null || b == null) continue
+      cubierto += a
+      sube += a - b
+    }
+    if (cubierto <= 0 || cubierto < e.pl * COBERTURA_MINIMA_RITMO) continue
+    ritmos.set(e.n, sube / cubierto / DIAS_DE_PROYECCION)
+  }
+  return ritmos
+})()
+
+/** El patrimonio que tendría dentro de una semana a ese ritmo, o null. */
+const patrimonioProyectado = (e) => {
+  const tasa = RITMO_SEMANAL.get(e.n)
+  return tasa === undefined ? null : e.saldo + e.pl * (1 + tasa) ** DIAS_DE_PROYECCION
+}
+
+const cifrasDe = (e) => {
+  const proyectado = patrimonioProyectado(e)
+  const tasa = RITMO_SEMANAL.get(e.n)
+  return `<div class="cifras">
         <div><b class="caja${e.saldo < 0 ? ' baja' : ''}">${eur(e.saldo)}</b><i>en caja</i>${
           // Lo retenido en pujas vivas solo se sabe del equipo propio, y sin
           // decirlo aquí la fila no cuadra: caja más crédito daban 18,5 M
@@ -1566,7 +1616,15 @@ const cifrasDe = (e) => `<div class="cifras">
         }</div>
         <div><b>${eur(e.pl)}</b><i>vale su plantilla</i><em class="${clase(e.cambioPlantillaHoy)}" title="Lo que sube o baja hoy el valor de su plantilla: la misma cuenta que hace Mister, jugador a jugador">${firmaCortaConDecimales(e.cambioPlantillaHoy, 3)} hoy</em></div>
         <div><b class="credito${e.patrimonio < 0 ? ' baja' : ''}">${eur(e.patrimonio)}</b><i title="Lo que vale su plantilla más lo que tiene en caja —o menos lo que debe—. Es la misma cifra que ordena «Quién es más rico»: todos empezasteis en 50 M.">patrimonio<span class="detalle-cifra"> · plantilla ${e.saldo < 0 ? '− deuda' : '+ caja'}</span></i></div>
+        <div><b class="proy">${proyectado === null ? '—' : eur(proyectado)}</b><i title="${
+          proyectado === null
+            ? 'No hay valor de hace siete días para bastantes de sus jugadores, así que no se estima nada.'
+            : `Estimación, no un dato: su patrimonio dentro de siete días si su plantilla sigue subiendo al ${dec((tasa ?? 0) * 100)} % diario de la última semana, con interés compuesto. No cuenta los premios de jornada ni lo que haga en el mercado, que pesa más: pagar una cláusula resta patrimonio en el acto.`
+        }">en 7 días<span class="detalle-cifra"> · estimado</span></i>${
+          proyectado === null ? '' : `<em class="${clase(proyectado - e.patrimonio)}">${firmaCortaConDecimales(proyectado - e.patrimonio, 2)}</em>`
+        }</div>
       </div>`
+}
 
 const tablaMovimientos = (e) => {
   const d = (D.porEquipo || {})[e.n] || { porJugador: {} }
@@ -2720,7 +2778,7 @@ const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     </div>
   </details>`
 
-const rivales = `    <p class="intro">En el orden de la clasificación de la liga. De cada uno, lo que puede gastar hoy —la caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale— y, debajo, su caja, lo que vale su plantilla y su patrimonio, que es la plantilla más la caja o menos lo que debe. La tuya es exacta —Mister publica lo que te retienen las pujas puestas y se comprueba al euro—; la de un rival es <strong>un techo</strong>, porque sus pujas vivas no las enseña nadie hasta que se resuelven.</p>
+const rivales = `    <p class="intro">En el orden de la clasificación de la liga. De cada uno, lo que puede gastar hoy —la caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale— y, debajo, su caja, lo que vale su plantilla, su patrimonio —la plantilla más la caja o menos lo que debe— y, ya como estimación, a cuánto llegaría ese patrimonio en siete días si su plantilla sigue al ritmo de la última semana. La tuya es exacta —Mister publica lo que te retienen las pujas puestas y se comprueba al euro—; la de un rival es <strong>un techo</strong>, porque sus pujas vivas no las enseña nadie hasta que se resuelven.</p>
 ${[...EQ]
   // Por el puesto en la liga, que es como se mira una clasificación. Iban por
   // lo que podían gastar, y la columna de puestos salía 8º, 3º, 4º, 7º…
@@ -3259,7 +3317,7 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
         ${def('±', 'txt', 'De fiar', 'Calculado aquí. Cuánto se aparta de su media jornada a jornada. Dos jugadores de media 6 no valen lo mismo: uno hace 6, 6, 6 y el otro 0, 0, 18. Cuanto más bajo, más de fiar. Solo se listan los que promedian 4 o más, porque al que hace un punto siempre le sobra regularidad.')}
         ${def('€', '', 'Valor y cláusula', 'El <strong>valor</strong> es lo que Mister dice que vale un jugador, y lo que cobras si lo vendes al mercado. La <strong>cláusula</strong> es lo que un rival paga para quitártelo sin tu permiso, y siempre es mayor. La cifra grande de cada fila es <strong>lo que costaría ficharlo de verdad</strong>.')}
         ${def('POR', 'txt', 'Los dorsales de color', 'La posición: <strong>POR</strong> portero, <strong>DEF</strong> defensa, <strong>MED</strong> centrocampista, <strong>DEL</strong> delantero.')}
-        ${def('€', '', 'Las cifras de los equipos', 'Caja, lo que vale su plantilla y el patrimonio, que es la plantilla más la caja —o menos lo que debe—. Lo que puede gastar es otra cuenta: la caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale, <strong>menos el dinero que le retengan las pujas que tenga puestas</strong>: pujar reserva el dinero en el acto, y hasta que la puja se resuelve no se puede gastar en otra cosa. Eso solo se ve del equipo propio —Mister publica ahí sus tres saldos—, así que tu cifra es exacta y la de un rival es un techo: como mucho tiene eso. Debajo de la caja, lo retenido si es la tuya y, si pujó por encima de lo que le calculábamos, lo que eso demostró que tenía; debajo de la plantilla, lo que sube o baja hoy.')}
+        ${def('€', '', 'Las cifras de los equipos', 'Caja, lo que vale su plantilla y el patrimonio, que es la plantilla más la caja —o menos lo que debe—. Lo que puede gastar es otra cuenta: la caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale, <strong>menos el dinero que le retengan las pujas que tenga puestas</strong>: pujar reserva el dinero en el acto, y hasta que la puja se resuelve no se puede gastar en otra cosa. Eso solo se ve del equipo propio —Mister publica ahí sus tres saldos—, así que tu cifra es exacta y la de un rival es un techo: como mucho tiene eso. Debajo de la caja, lo retenido si es la tuya y, si pujó por encima de lo que le calculábamos, lo que eso demostró que tenía; debajo de la plantilla, lo que sube o baja hoy. La cuarta cifra, <strong>«en 7 días», es la única estimación de la fila</strong>: su patrimonio de aquí a una semana si su plantilla sigue subiendo al ritmo de los siete últimos días, con interés compuesto. No cuenta los premios de jornada ni el mercado, que pesa más que la subida —pagar una cláusula resta patrimonio en el acto—, y si faltan valores de hace una semana para más de un 20 % de su plantilla, no sale cifra.')}
       </div>
     </div>
 

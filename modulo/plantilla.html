@@ -681,7 +681,10 @@ ol.top .n .cara,.mejores .n .cara,.mn .cara,.novs .cara,table.jt .cara,.record .
    su sitio. Había una barra que las representaba a escala; no aportaba nada
    que no dijeran los números y les quitaba sitio. Caja en dorado, como la
    cifra que de verdad se puede gastar; el crédito en el dorado apagado. */
-.cifras{grid-column:2/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 10px;margin-top:8px;padding-top:8px;border-top:1px solid var(--raya)}
+.cifras{grid-column:2/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px 10px;margin-top:8px;padding-top:8px;border-top:1px solid var(--raya)}
+/* La cuarta es una estimación: va en gris para que no se lea como un hecho. */
+.cifras b.proy{color:var(--gris)}
+@media (max-width:1000px){.cifras{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .cifras>div{min-width:0}
 .cifras b{display:block;font-family:var(--f-cifra);font-variant-numeric:tabular-nums;font-weight:700;font-size:14.5px;letter-spacing:-.01em;white-space:nowrap}
 .cifras b.caja{color:var(--oro)} .cifras b.caja.baja{color:var(--baja)} .cifras b.credito{color:color-mix(in srgb,var(--oro) 62%,var(--tenue))}
