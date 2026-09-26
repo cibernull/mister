@@ -1,6 +1,14 @@
 {
- "saldo": -32071800,
+ "saldo": -25524420,
  "apuntes": [
+  {
+   "cuando": 1790435677,
+   "fecha": "2026-09-26 17:14",
+   "motivo": "Marc Bartra a Mister",
+   "tipo": "Venta",
+   "importe": 6547380,
+   "saldo": -25524420
+  },
   {
    "cuando": 1790391600,
    "fecha": "2026-09-26 05:00",
@@ -472,14 +480,6 @@
    "tipo": "Penalización",
    "importe": -1234200,
    "saldo": 6559071
-  },
-  {
-   "cuando": 1788165011,
-   "fecha": "2026-08-31 10:30",
-   "motivo": "Jon Moncayola a Mister",
-   "tipo": "Venta",
-   "importe": 5107000,
-   "saldo": 7793271
   }
  ]
 }

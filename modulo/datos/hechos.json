@@ -7305,6 +7305,24 @@
      "puja": 7889410
     }
    ]
+  },
+  {
+   "idTransfer": 550893136,
+   "idJugador": "63",
+   "nombre": "Marc Bartra",
+   "de": "Niutin FC (Isaac)",
+   "a": "Mister",
+   "idUcDe": 12493763,
+   "idUcA": 0,
+   "importe": 6547380,
+   "tipo": "normal",
+   "cuando": "2026-09-26 17:14:37",
+   "valor": 6419000,
+   "posicion": 2,
+   "puntos": 25,
+   "media": 5,
+   "racha": "8,6,6,-,2",
+   "otrasPujas": []
   }
  ],
  "salidas": [

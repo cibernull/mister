@@ -1218,6 +1218,16 @@
  ],
  "movimientos": [
   {
+   "id": "63",
+   "nombre": "Marc Bartra",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 6547380,
+   "tipo": "normal",
+   "fecha": "2026-09-26 17:14:37",
+   "pos": 2
+  },
+  {
    "id": "4888",
    "nombre": "Carlos Soler",
    "de": null,
@@ -6246,6 +6256,14 @@
      "op": "normal"
     },
     {
+     "j": "Marc Bartra",
+     "id": "63",
+     "tipo": "venta",
+     "importe": 6547380,
+     "fecha": "2026-09-26",
+     "op": "normal"
+    },
+    {
      "j": "Germán Valera",
      "id": "20141",
      "tipo": "compra",
@@ -7008,8 +7026,8 @@
     "63": {
      "nombre": "Marc Bartra",
      "compras": 6537000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 6547380,
+     "ops": 2
     },
     "118": {
      "nombre": "Jonny Otto",
