@@ -1,6 +1,14 @@
 {
- "saldo": -22034790,
+ "saldo": -32071800,
  "apuntes": [
+  {
+   "cuando": 1790391600,
+   "fecha": "2026-09-26 05:00",
+   "motivo": "Cristian Romero a Mister",
+   "tipo": "Compra",
+   "importe": -10037010,
+   "saldo": -32071800
+  },
   {
    "cuando": 1790349165,
    "fecha": "2026-09-25 17:12",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 5107000,
    "saldo": 7793271
-  },
-  {
-   "cuando": 1788145200,
-   "fecha": "2026-08-31 05:00",
-   "motivo": "Dani Lorenzo a Mister",
-   "tipo": "Compra",
-   "importe": -3244010,
-   "saldo": 2686271
   }
  ]
 }

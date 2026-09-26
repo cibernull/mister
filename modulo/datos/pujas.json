@@ -3044,6 +3044,18 @@
     "topeMax": 8940160,
     "exceso": 0
    }
+  ],
+  "550781721": [
+   {
+    "idTransfer": 550781721,
+    "cuando": "2026-09-26 05:00:25",
+    "jugador": "Cristian Romero",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 10037010,
+    "gana": true,
+    "topeMax": 10785460,
+    "exceso": 0
+   }
   ]
  }
 }
