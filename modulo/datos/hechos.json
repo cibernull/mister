@@ -7264,6 +7264,47 @@
    "media": 6,
    "racha": "-,2,7,9,6",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 550884567,
+   "idJugador": "64491",
+   "nombre": "Valentín Gómez",
+   "de": "Mister",
+   "a": "Cacaculopedopis",
+   "idUcDe": 0,
+   "idUcA": 15435600,
+   "importe": 593000,
+   "tipo": "normal",
+   "cuando": "2026-09-26 17:00:17",
+   "valor": 593000,
+   "posicion": 2,
+   "puntos": 12,
+   "media": 4,
+   "racha": "-,-,-,5,4",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 550887647,
+   "idJugador": "4888",
+   "nombre": "Carlos Soler",
+   "de": "Mister",
+   "a": "Saiyans FC (Fran)",
+   "idUcDe": 0,
+   "idUcA": 12493752,
+   "importe": 7900000,
+   "tipo": "normal",
+   "cuando": "2026-09-26 17:00:17",
+   "valor": 7882000,
+   "posicion": 3,
+   "puntos": 28,
+   "media": 4,
+   "racha": "3,5,3,1,11",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 7889410
+    }
+   ]
   }
  ],
  "salidas": [

@@ -1204,9 +1204,39 @@
    "id": "1385821",
    "nombre": "Cristian Romero",
    "valor": 10117000
+  },
+  {
+   "id": "64491",
+   "nombre": "Valentín Gómez",
+   "valor": 593000
+  },
+  {
+   "id": "4888",
+   "nombre": "Carlos Soler",
+   "valor": 7882000
   }
  ],
  "movimientos": [
+  {
+   "id": "4888",
+   "nombre": "Carlos Soler",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 7900000,
+   "tipo": "normal",
+   "fecha": "2026-09-26 17:00:17",
+   "pos": 3
+  },
+  {
+   "id": "64491",
+   "nombre": "Valentín Gómez",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 593000,
+   "tipo": "normal",
+   "fecha": "2026-09-26 17:00:17",
+   "pos": 2
+  },
   {
    "id": "1385821",
    "nombre": "Cristian Romero",
@@ -7358,6 +7388,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Valentín Gómez",
+     "id": "64491",
+     "tipo": "compra",
+     "importe": 593000,
+     "fecha": "2026-09-26",
+     "op": "normal"
+    },
+    {
      "j": "Alex Remiro",
      "id": "6032",
      "tipo": "venta",
@@ -8273,6 +8311,12 @@
      "ventas": 6426000,
      "ops": 2
     },
+    "64491": {
+     "nombre": "Valentín Gómez",
+     "compras": 593000,
+     "ventas": 0,
+     "ops": 1
+    },
     "65476": {
      "nombre": "Clemens Riedel",
      "compras": 0,
@@ -8990,6 +9034,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Carlos Soler",
+     "id": "4888",
+     "tipo": "compra",
+     "importe": 7900000,
+     "fecha": "2026-09-26",
+     "op": "normal"
+    },
+    {
      "j": "Ayoze Pérez",
      "id": "52189",
      "tipo": "compra",
@@ -9680,6 +9732,12 @@
      "compras": 3250000,
      "ventas": 5489000,
      "ops": 2
+    },
+    "4888": {
+     "nombre": "Carlos Soler",
+     "compras": 7900000,
+     "ventas": 0,
+     "ops": 1
     },
     "5917": {
      "nombre": "Igor Zubeldia",
