@@ -5802,8 +5802,8 @@
   "semana": -23000,
   "sem7": -23000,
   "mes": 1103000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 10018000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -7442,8 +7442,8 @@
   "semana": 130000,
   "sem7": 440000,
   "mes": -1140000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 7882000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -21745,8 +21745,8 @@
   "semana": -45000,
   "sem7": -229000,
   "mes": 189000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1200000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -23436,8 +23436,8 @@
   "semana": 44000,
   "sem7": 332000,
   "mes": 369000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 593000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -31030,8 +31030,8 @@
   "semana": -131000,
   "sem7": -884000,
   "mes": null,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 3397000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -35979,87 +35979,6 @@
   "d": 0
  },
  {
-  "id": "1751425",
-  "nombre": "Marc Santos",
-  "valor": 160000,
-  "puntos": 2,
-  "media": 2,
-  "partidos": 1,
-  "semana": 0,
-  "sem7": -19000,
-  "mes": -194000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   2,
-   null,
-   null
-  ],
-  "eq": 12,
-  "riv": 17,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 2,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": null,
-  "js": [
-   [
-    1,
-    2,
-    8,
-    0,
-    "i64"
-   ],
-   [
-    2,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "70183",
   "nombre": "Rayane Belaid",
   "valor": 160000,
@@ -36307,6 +36226,87 @@
     7,
     null,
     19,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "1751425",
+  "nombre": "Marc Santos",
+  "valor": 160000,
+  "puntos": 2,
+  "media": 2,
+  "partidos": 1,
+  "semana": 0,
+  "sem7": -19000,
+  "mes": -194000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   2,
+   null,
+   null
+  ],
+  "eq": 12,
+  "riv": 17,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 2,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": null,
+  "js": [
+   [
+    1,
+    2,
+    8,
+    0,
+    "i64"
+   ],
+   [
+    2,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    20,
     0,
     ""
    ]
@@ -38046,8 +38046,8 @@
   "semana": -20000,
   "sem7": -128000,
   "mes": -1643000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1133000,
   "ced": 0,
   "pos": 2,
   "est": "injury",
@@ -38249,8 +38249,8 @@
   "semana": -27000,
   "sem7": -172000,
   "mes": -1518000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 520000,
   "ced": 0,
   "pos": 2,
   "est": "doubt",
@@ -38473,96 +38473,6 @@
   "d": 0
  },
  {
-  "id": "4947925",
-  "nombre": "Brian Fariñas",
-  "valor": 208000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 42000,
-  "sem7": 41000,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 3,
-  "riv": 9,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [
-   [
-    1,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    12,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    17,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "27855",
   "nombre": "Diego Conde",
   "valor": 208000,
@@ -38706,6 +38616,96 @@
   ],
   "p": 0,
   "d": 1
+ },
+ {
+  "id": "4947925",
+  "nombre": "Brian Fariñas",
+  "valor": 208000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 42000,
+  "sem7": 41000,
+  "mes": null,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 3,
+  "riv": 9,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [
+   [
+    1,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    17,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
  },
  {
   "id": "59126",
@@ -41803,8 +41803,8 @@
   "semana": -11000,
   "sem7": -175000,
   "mes": null,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -42181,6 +42181,89 @@
   "d": 0
  },
  {
+  "id": "63784",
+  "nombre": "Jorge Cabello",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -38000,
+  "sem7": -14000,
+  "mes": 0,
+  "mk": 1,
+  "pv": 198000,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 12,
+  "riv": 17,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 22,
+  "js": [
+   [
+    1,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    20,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "1034",
   "nombre": "Juanmi Jiménez",
   "valor": 160000,
@@ -42434,6 +42517,89 @@
     7,
     null,
     19,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "67580",
+  "nombre": "Samu Becerra",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 14,
+  "riv": 1,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [
+   [
+    1,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    50,
     0,
     ""
    ]
@@ -42878,255 +43044,6 @@
   "d": 0
  },
  {
-  "id": "64458",
-  "nombre": "Pablo Campos",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -3000,
-  "sem7": 0,
-  "mes": -752000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 12,
-  "riv": 17,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 24,
-  "js": [
-   [
-    1,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "67580",
-  "nombre": "Samu Becerra",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 14,
-  "riv": 1,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [
-   [
-    1,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    50,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "63784",
-  "nombre": "Jorge Cabello",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -38000,
-  "sem7": -14000,
-  "mes": 0,
-  "mk": 1,
-  "pv": 198000,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 12,
-  "riv": 17,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 22,
-  "js": [
-   [
-    1,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71012",
   "nombre": "Carlos López",
   "valor": 160000,
@@ -43209,6 +43126,89 @@
     7,
     null,
     9,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "64458",
+  "nombre": "Pablo Campos",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -3000,
+  "sem7": 0,
+  "mes": -752000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 12,
+  "riv": 17,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 24,
+  "js": [
+   [
+    1,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    20,
     0,
     ""
    ]
