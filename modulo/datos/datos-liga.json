@@ -1219,9 +1219,44 @@
    "id": "42",
    "nombre": "Koke",
    "valor": 9504000
+  },
+  {
+   "id": "59371",
+   "nombre": "Luka Sučić",
+   "valor": 6855000
   }
  ],
  "movimientos": [
+  {
+   "id": "4947929",
+   "nombre": "Emil Audero",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 1376640,
+   "tipo": "normal",
+   "fecha": "2026-09-27 17:05:03",
+   "pos": 1
+  },
+  {
+   "id": "59371",
+   "nombre": "Luka Sučić",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 6999985,
+   "tipo": "normal",
+   "fecha": "2026-09-27 17:00:15",
+   "pos": 3
+  },
+  {
+   "id": "70953",
+   "nombre": "Miguel Loureiro",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 795600,
+   "tipo": "normal",
+   "fecha": "2026-09-27 17:00:15",
+   "pos": 2
+  },
   {
    "id": "27874",
    "nombre": "Iván Martín",
@@ -5235,6 +5270,22 @@
      "op": "normal"
     },
     {
+     "j": "Luka Sučić",
+     "id": "59371",
+     "tipo": "compra",
+     "importe": 6999985,
+     "fecha": "2026-09-27",
+     "op": "normal"
+    },
+    {
+     "j": "Emil Audero",
+     "id": "4947929",
+     "tipo": "venta",
+     "importe": 1376640,
+     "fecha": "2026-09-27",
+     "op": "normal"
+    },
+    {
      "j": "Jon Ander Olasagasti",
      "id": "52117",
      "tipo": "venta",
@@ -6110,6 +6161,12 @@
      "ventas": 1974000,
      "ops": 1
     },
+    "59371": {
+     "nombre": "Luka Sučić",
+     "compras": 6999985,
+     "ventas": 0,
+     "ops": 1
+    },
     "59382": {
      "nombre": "Nicolas Pépé",
      "compras": 15054000,
@@ -6299,8 +6356,8 @@
     "4947929": {
      "nombre": "Emil Audero",
      "compras": 1059000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1376640,
+     "ops": 2
     }
    }
   },
@@ -7495,6 +7552,14 @@
      "op": "normal"
     },
     {
+     "j": "Miguel Loureiro",
+     "id": "70953",
+     "tipo": "compra",
+     "importe": 795600,
+     "fecha": "2026-09-27",
+     "op": "normal"
+    },
+    {
      "j": "Valentín Gómez",
      "id": "64491",
      "tipo": "compra",
@@ -8494,6 +8559,12 @@
      "nombre": "Riki Rodríguez",
      "compras": 0,
      "ventas": 158400,
+     "ops": 1
+    },
+    "70953": {
+     "nombre": "Miguel Loureiro",
+     "compras": 795600,
+     "ventas": 0,
      "ops": 1
     },
     "70993": {

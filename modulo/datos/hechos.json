@@ -7404,6 +7404,65 @@
    "media": 4.2,
    "racha": "6,6,4,-,2",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 551064219,
+   "idJugador": "70953",
+   "nombre": "Miguel Loureiro",
+   "de": "Mister",
+   "a": "Cacaculopedopis",
+   "idUcDe": 0,
+   "idUcA": 15435600,
+   "importe": 795600,
+   "tipo": "normal",
+   "cuando": "2026-09-27 17:00:15",
+   "valor": 788000,
+   "posicion": 2,
+   "puntos": 11,
+   "media": 2.8,
+   "racha": "2,3,-,4,-",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 551066596,
+   "idJugador": "59371",
+   "nombre": "Luka Sučić",
+   "de": "Mister",
+   "a": "Neky F.C. (Sergio)",
+   "idUcDe": 0,
+   "idUcA": 12493688,
+   "importe": 6999985,
+   "tipo": "normal",
+   "cuando": "2026-09-27 17:00:15",
+   "valor": 6855000,
+   "posicion": 3,
+   "puntos": 44,
+   "media": 6.3,
+   "racha": "4,11,5,2,12",
+   "otrasPujas": [
+    {
+     "equipo": "Niutin FC (Isaac)",
+     "puja": 6907990
+    }
+   ]
+  },
+  {
+   "idTransfer": 551071331,
+   "idJugador": "4947929",
+   "nombre": "Emil Audero",
+   "de": "Neky F.C. (Sergio)",
+   "a": "Mister",
+   "idUcDe": 12493688,
+   "idUcA": 0,
+   "importe": 1376640,
+   "tipo": "normal",
+   "cuando": "2026-09-27 17:05:03",
+   "valor": 1434000,
+   "posicion": 1,
+   "puntos": 9,
+   "media": 3,
+   "racha": "-,-,3,3,3",
+   "otrasPujas": []
   }
  ],
  "salidas": [

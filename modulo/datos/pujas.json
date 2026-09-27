@@ -3144,6 +3144,40 @@
     "topeMax": 17655744,
     "exceso": 0
    }
+  ],
+  "551064219": [
+   {
+    "idTransfer": 551064219,
+    "cuando": "2026-09-27 17:00:15",
+    "jugador": "Miguel Loureiro",
+    "equipo": "Cacaculopedopis",
+    "puja": 795600,
+    "gana": true,
+    "topeMax": 18379384,
+    "exceso": 0
+   }
+  ],
+  "551066596": [
+   {
+    "idTransfer": 551066596,
+    "cuando": "2026-09-27 17:00:15",
+    "jugador": "Luka Sučić",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 6999985,
+    "gana": true,
+    "topeMax": 20361344,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 551066596,
+    "cuando": "2026-09-27 17:00:15",
+    "jugador": "Luka Sučić",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 6907990,
+    "gana": false,
+    "topeMax": 8751830,
+    "exceso": 0
+   }
   ]
  }
 }
