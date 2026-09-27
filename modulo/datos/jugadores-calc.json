@@ -11063,8 +11063,8 @@
   "semana": -9000,
   "sem7": 56000,
   "mes": 2797000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 11000007,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -36564,6 +36564,87 @@
   "d": 0
  },
  {
+  "id": "1751425",
+  "nombre": "Marc Santos",
+  "valor": 160000,
+  "puntos": 2,
+  "media": 2,
+  "partidos": 1,
+  "semana": 0,
+  "sem7": -32000,
+  "mes": -199000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   2,
+   null,
+   null
+  ],
+  "eq": 12,
+  "riv": 17,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 2,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": null,
+  "js": [
+   [
+    1,
+    2,
+    8,
+    0,
+    "i64"
+   ],
+   [
+    2,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    20,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "22471",
   "nombre": "Jon Pacheco",
   "valor": 160000,
@@ -36639,87 +36720,6 @@
     7,
     null,
     19,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "1751425",
-  "nombre": "Marc Santos",
-  "valor": 160000,
-  "puntos": 2,
-  "media": 2,
-  "partidos": 1,
-  "semana": 0,
-  "sem7": -32000,
-  "mes": -199000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   2,
-   null,
-   null
-  ],
-  "eq": 12,
-  "riv": 17,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 2,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": null,
-  "js": [
-   [
-    1,
-    2,
-    8,
-    0,
-    "i64"
-   ],
-   [
-    2,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    20,
     0,
     ""
    ]
@@ -41835,61 +41835,6 @@
   "d": 0
  },
  {
-  "id": "71511",
-  "nombre": "Moussa Diarra",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 1,
-  "semana": 0,
-  "sem7": 0,
-  "mes": -45000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   0
-  ],
-  "eq": 13,
-  "riv": 8,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 1,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 24,
-  "js": [
-   [
-    6,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    7,
-    0,
-    9,
-    1,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "27422",
   "nombre": "Cristian Rivero",
   "valor": 160000,
@@ -41973,6 +41918,61 @@
     null,
     16,
     0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "71511",
+  "nombre": "Moussa Diarra",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 1,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -45000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   0
+  ],
+  "eq": 13,
+  "riv": 8,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 1,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 24,
+  "js": [
+   [
+    6,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    7,
+    0,
+    9,
+    1,
     ""
    ]
   ],
@@ -42297,6 +42297,82 @@
     6,
     null,
     15,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "28677",
+  "nombre": "Beñat Prados",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -22000,
+  "sem7": 0,
+  "mes": -43000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 1,
+  "riv": 14,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    1,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    48,
     0,
     ""
    ]
@@ -42691,6 +42767,96 @@
   "d": 0
  },
  {
+  "id": "71506",
+  "nombre": "Rubén López",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -24000,
+  "sem7": -50000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 6,
+  "riv": 16,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 22,
+  "js": [
+   [
+    1,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    4,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "67580",
   "nombre": "Samu Becerra",
   "valor": 160000,
@@ -42942,46 +43108,6 @@
   "d": 0
  },
  {
-  "id": "48486",
-  "nombre": "José Copete",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -26000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 19,
-  "riv": 1490,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 26,
-  "js": [],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71003",
   "nombre": "Diego Murillo",
   "valor": 160000,
@@ -43018,172 +43144,6 @@
   "asis": 0,
   "edad": 25,
   "js": [],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "28677",
-  "nombre": "Beñat Prados",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -22000,
-  "sem7": 0,
-  "mes": -43000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1,
-  "riv": 14,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    1,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    48,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "62910",
-  "nombre": "Fran González",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -21000,
-  "sem7": -25000,
-  "mes": -191000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 17,
-  "riv": 12,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    3,
-    0,
-    ""
-   ]
-  ],
   "p": 0,
   "d": 0
  },
@@ -43451,20 +43411,20 @@
   "d": 0
  },
  {
-  "id": "71506",
-  "nombre": "Rubén López",
+  "id": "48486",
+  "nombre": "José Copete",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": -24000,
-  "sem7": -50000,
+  "semana": 0,
+  "sem7": -26000,
   "mes": 0,
   "mk": 0,
   "pv": null,
   "ced": 0,
-  "pos": 3,
-  "est": null,
+  "pos": 2,
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -43474,8 +43434,8 @@
    null,
    null
   ],
-  "eq": 6,
-  "riv": 16,
+  "eq": 19,
+  "riv": 1490,
   "casa": 0,
   "gol": 0,
   "tar": 0,
@@ -43485,58 +43445,8 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 22,
-  "js": [
-   [
-    1,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    4,
-    0,
-    ""
-   ]
-  ],
+  "edad": 26,
+  "js": [],
   "p": 0,
   "d": 0
  },
@@ -43616,6 +43526,96 @@
     7,
     null,
     20,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "62910",
+  "nombre": "Fran González",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -21000,
+  "sem7": -25000,
+  "mes": -191000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 17,
+  "riv": 12,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    3,
     0,
     ""
    ]
