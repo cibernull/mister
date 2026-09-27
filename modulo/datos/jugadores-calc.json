@@ -909,8 +909,8 @@
   "semana": 18000,
   "sem7": 163000,
   "mes": 448000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 16560000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -1719,8 +1719,8 @@
   "semana": 143000,
   "sem7": 839000,
   "mes": 3565000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 6855000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -5028,8 +5028,8 @@
   "semana": -123000,
   "sem7": -480000,
   "mes": -1563000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 14728000,
   "ced": 0,
   "pos": 1,
   "est": "injury",
@@ -5111,8 +5111,8 @@
   "semana": -45000,
   "sem7": 45000,
   "mes": 494000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 10029000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -15036,8 +15036,8 @@
   "semana": -128000,
   "sem7": -647000,
   "mes": -2496000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 13917000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -15486,8 +15486,8 @@
   "semana": -109000,
   "sem7": -703000,
   "mes": -2171000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 3069000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -19621,8 +19621,8 @@
   "semana": -107000,
   "sem7": -633000,
   "mes": -3594000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 6230000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -33806,8 +33806,8 @@
   "semana": 12000,
   "sem7": 116000,
   "mes": null,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 276000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -41061,6 +41061,54 @@
   "d": 0
  },
  {
+  "id": "70997",
+  "nombre": "Aarón Ochoa",
+  "valor": 172000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 12000,
+  "sem7": 3000,
+  "mes": 12000,
+  "mk": 1,
+  "pv": 160000,
+  "ced": 0,
+  "pos": 3,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 13,
+  "riv": 8,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 19,
+  "js": [
+   [
+    1,
+    null,
+    2,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "67931",
   "nombre": "Selton Sánchez",
   "valor": 172000,
@@ -41136,54 +41184,6 @@
     7,
     null,
     48,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "70997",
-  "nombre": "Aarón Ochoa",
-  "valor": 172000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 12000,
-  "sem7": 3000,
-  "mes": 12000,
-  "mk": 1,
-  "pv": 160000,
-  "ced": 0,
-  "pos": 3,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 13,
-  "riv": 8,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 19,
-  "js": [
-   [
-    1,
-    null,
-    2,
     0,
     ""
    ]
@@ -42305,20 +42305,20 @@
   "d": 0
  },
  {
-  "id": "217",
-  "nombre": "Dimitri Foulquier",
+  "id": "71012",
+  "nombre": "Carlos López",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
   "semana": 0,
-  "sem7": -3000,
-  "mes": -38000,
+  "sem7": 0,
+  "mes": -99000,
   "mk": 0,
   "pv": null,
   "ced": 0,
-  "pos": 2,
-  "est": "doubt",
+  "pos": 1,
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -42328,9 +42328,9 @@
    null,
    null
   ],
-  "eq": 19,
-  "riv": 1490,
-  "casa": 0,
+  "eq": 13,
+  "riv": 8,
+  "casa": 1,
   "gol": 0,
   "tar": 0,
   "mc": 0,
@@ -42339,19 +42339,54 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 33,
+  "edad": 21,
   "js": [
    [
-    3,
+    1,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    2,
     null,
     6,
     0,
     ""
    ],
    [
+    3,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
     6,
     null,
-    48,
+    20,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    9,
     0,
     ""
    ]
@@ -43333,15 +43368,15 @@
   "d": 0
  },
  {
-  "id": "71012",
-  "nombre": "Carlos López",
+  "id": "59089",
+  "nombre": "Alex Padilla",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
   "semana": 0,
   "sem7": 0,
-  "mes": -99000,
+  "mes": -57000,
   "mk": 0,
   "pv": null,
   "ced": 0,
@@ -43356,9 +43391,9 @@
    null,
    null
   ],
-  "eq": 13,
-  "riv": 8,
-  "casa": 1,
+  "eq": 1,
+  "riv": 14,
+  "casa": 0,
   "gol": 0,
   "tar": 0,
   "mc": 0,
@@ -43367,54 +43402,47 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 21,
+  "edad": 23,
   "js": [
    [
     1,
     null,
-    2,
+    3,
     0,
     ""
    ],
    [
     2,
     null,
-    6,
+    17,
     0,
     ""
    ],
    [
     3,
     null,
-    15,
+    5,
     0,
     ""
    ],
    [
     4,
     null,
-    12,
+    2,
     0,
     ""
    ],
    [
     5,
     null,
-    5,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    20,
+    23,
     0,
     ""
    ],
    [
     7,
     null,
-    9,
+    48,
     0,
     ""
    ]
@@ -43795,89 +43823,6 @@
   "d": 0
  },
  {
-  "id": "59089",
-  "nombre": "Alex Padilla",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": -57000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1,
-  "riv": 14,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    48,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "11092",
   "nombre": "Andoni Gorosabel",
   "valor": 160000,
@@ -43983,6 +43928,61 @@
   "asis": 0,
   "edad": 31,
   "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "217",
+  "nombre": "Dimitri Foulquier",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -3000,
+  "mes": -38000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "doubt",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 19,
+  "riv": 1490,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 33,
+  "js": [
+   [
+    3,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    48,
+    0,
+    ""
+   ]
+  ],
   "p": 0,
   "d": 0
  },

@@ -3090,6 +3090,60 @@
     "topeMax": 17655744,
     "exceso": 0
    }
+  ],
+  "550959313": [
+   {
+    "idTransfer": 550959313,
+    "cuando": "2026-09-27 05:00:25",
+    "jugador": "Koke",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 9595338,
+    "gana": true,
+    "topeMax": 17655744,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 550959313,
+    "cuando": "2026-09-27 05:00:25",
+    "jugador": "Koke",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 9500000,
+    "gana": false,
+    "topeMax": 16342680,
+    "exceso": 0
+   }
+  ],
+  "550967995": [
+   {
+    "idTransfer": 550967995,
+    "cuando": "2026-09-27 05:00:25",
+    "jugador": "Éder Militão",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 4199248,
+    "gana": true,
+    "topeMax": 10785460,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 550967995,
+    "cuando": "2026-09-27 05:00:25",
+    "jugador": "Éder Militão",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 1850000,
+    "gana": false,
+    "topeMax": 16342680,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 550967995,
+    "cuando": "2026-09-27 05:00:25",
+    "jugador": "Éder Militão",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1780100,
+    "gana": false,
+    "topeMax": 17655744,
+    "exceso": 0
+   }
   ]
  }
 }

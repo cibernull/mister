@@ -1214,9 +1214,34 @@
    "id": "4888",
    "nombre": "Carlos Soler",
    "valor": 8009000
+  },
+  {
+   "id": "42",
+   "nombre": "Koke",
+   "valor": 9504000
   }
  ],
  "movimientos": [
+  {
+   "id": "17452",
+   "nombre": "Éder Militão",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 4199248,
+   "tipo": "normal",
+   "fecha": "2026-09-27 05:00:25",
+   "pos": 2
+  },
+  {
+   "id": "42",
+   "nombre": "Koke",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 9595338,
+   "tipo": "normal",
+   "fecha": "2026-09-27 05:00:25",
+   "pos": 3
+  },
   {
    "id": "63",
    "nombre": "Marc Bartra",
@@ -5182,6 +5207,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Koke",
+     "id": "42",
+     "tipo": "compra",
+     "importe": 9595338,
+     "fecha": "2026-09-27",
+     "op": "normal"
+    },
+    {
      "j": "Jon Ander Olasagasti",
      "id": "52117",
      "tipo": "venta",
@@ -5901,6 +5934,12 @@
      "ventas": 0,
      "ops": 1
     },
+    "42": {
+     "nombre": "Koke",
+     "compras": 9595338,
+     "ventas": 0,
+     "ops": 1
+    },
     "616": {
      "nombre": "Rodri Hernández",
      "compras": 21198000,
@@ -6247,6 +6286,14 @@
   },
   "Niutin FC (Isaac)": {
    "movimientos": [
+    {
+     "j": "Éder Militão",
+     "id": "17452",
+     "tipo": "compra",
+     "importe": 4199248,
+     "fecha": "2026-09-27",
+     "op": "normal"
+    },
     {
      "j": "Cristian Romero",
      "id": "1385821",
@@ -7074,6 +7121,12 @@
     "17290": {
      "nombre": "Sergio Camello",
      "compras": 12672000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "17452": {
+     "nombre": "Éder Militão",
+     "compras": 4199248,
      "ventas": 0,
      "ops": 1
     },
