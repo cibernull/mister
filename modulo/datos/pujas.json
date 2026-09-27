@@ -3178,6 +3178,18 @@
     "topeMax": 8751830,
     "exceso": 0
    }
+  ],
+  "551080707": [
+   {
+    "idTransfer": 551080707,
+    "cuando": "2026-09-27 19:34:41",
+    "jugador": "Enes Ünal",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 11000000,
+    "gana": true,
+    "topeMax": 16342680,
+    "exceso": 0
+   }
   ]
  }
 }

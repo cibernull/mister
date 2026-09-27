@@ -7463,6 +7463,24 @@
    "media": 3,
    "racha": "-,-,3,3,3",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 551080707,
+   "idJugador": "6044",
+   "nombre": "Enes Ünal",
+   "de": "Legalize F.C (Victor)",
+   "a": "Saiyans FC (Fran)",
+   "idUcDe": 12493758,
+   "idUcA": 12493752,
+   "importe": 11000000,
+   "tipo": "normal",
+   "cuando": "2026-09-27 19:34:41",
+   "valor": 5451000,
+   "posicion": 4,
+   "puntos": 25,
+   "media": 3.6,
+   "racha": "2,3,2,3,3",
+   "otrasPujas": []
   }
  ],
  "salidas": [

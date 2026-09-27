@@ -1228,6 +1228,16 @@
  ],
  "movimientos": [
   {
+   "id": "6044",
+   "nombre": "Enes Ünal",
+   "de": "Legalize F.C (Victor)",
+   "a": "Saiyans FC (Fran)",
+   "importe": 11000000,
+   "tipo": "normal",
+   "fecha": "2026-09-27 19:34:41",
+   "pos": 4
+  },
+  {
    "id": "4947929",
    "nombre": "Emil Audero",
    "de": "Neky F.C. (Sergio)",
@@ -9212,6 +9222,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Enes Ünal",
+     "id": "6044",
+     "tipo": "compra",
+     "importe": 11000000,
+     "fecha": "2026-09-27",
+     "op": "normal"
+    },
+    {
      "j": "Carlos Soler",
      "id": "4888",
      "tipo": "compra",
@@ -9931,9 +9949,9 @@
     },
     "6044": {
      "nombre": "Enes Ünal",
-     "compras": 2100000,
+     "compras": 13100000,
      "ventas": 11000000,
-     "ops": 2
+     "ops": 3
     },
     "6065": {
      "nombre": "Pere Milla",
@@ -10238,6 +10256,14 @@
   "Legalize F.C (Victor)": {
    "movimientos": [
     {
+     "j": "Enes Ünal",
+     "id": "6044",
+     "tipo": "venta",
+     "importe": 11000000,
+     "fecha": "2026-09-27",
+     "op": "normal"
+    },
+    {
      "j": "Zaid Romero",
      "id": "68498",
      "tipo": "venta",
@@ -10274,8 +10300,8 @@
     "6044": {
      "nombre": "Enes Ünal",
      "compras": 11000000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 11000000,
+     "ops": 2
     },
     "10967": {
      "nombre": "Gonçalo Guedes",
