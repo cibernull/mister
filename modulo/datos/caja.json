@@ -1,6 +1,38 @@
 {
- "saldo": -29723668,
+ "saldo": -27956168,
  "apuntes": [
+  {
+   "cuando": 1790495530,
+   "fecha": "2026-09-27 09:52",
+   "motivo": "Modificación de cláusula (100%) de Juan Foyth",
+   "tipo": "Bonificación",
+   "importe": 489400,
+   "saldo": -27956168
+  },
+  {
+   "cuando": 1790495500,
+   "fecha": "2026-09-27 09:51",
+   "motivo": "Modificación de cláusula (150%) de Juan Foyth",
+   "tipo": "Bonificación",
+   "importe": 489400,
+   "saldo": -28445568
+  },
+  {
+   "cuando": 1790495449,
+   "fecha": "2026-09-27 09:50",
+   "motivo": "Luiz Felipe a Mister",
+   "tipo": "Venta por rescisión",
+   "importe": 155200,
+   "saldo": -28934968
+  },
+  {
+   "cuando": 1790495431,
+   "fecha": "2026-09-27 09:50",
+   "motivo": "Modificación de cláusula (50%) de Ramón Terrats",
+   "tipo": "Bonificación",
+   "importe": 633500,
+   "saldo": -29090168
+  },
   {
    "cuando": 1790478000,
    "fecha": "2026-09-27 05:00",
@@ -448,38 +480,6 @@
    "tipo": "Venta",
    "importe": 641680,
    "saldo": 11244191
-  },
-  {
-   "cuando": 1788289227,
-   "fecha": "2026-09-01 21:00",
-   "motivo": "Ryunosuke Sato a Mister",
-   "tipo": "Venta",
-   "importe": 3621450,
-   "saldo": 10602511
-  },
-  {
-   "cuando": 1788252243,
-   "fecha": "2026-09-01 10:44",
-   "motivo": "Jornada 3",
-   "tipo": "Bonificación",
-   "importe": 1500000,
-   "saldo": 6981061
-  },
-  {
-   "cuando": 1788188400,
-   "fecha": "2026-08-31 17:00",
-   "motivo": "Hector Fort a Mister",
-   "tipo": "Compra",
-   "importe": -878010,
-   "saldo": 5481061
-  },
-  {
-   "cuando": 1788165321,
-   "fecha": "2026-08-31 10:35",
-   "motivo": "Modificación de cláusula (100%) de Roger Brugué",
-   "tipo": "Penalización",
-   "importe": -200000,
-   "saldo": 6359071
   }
  ]
 }

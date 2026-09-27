@@ -134,6 +134,31 @@
   "entra": true
  },
  {
+  "tipo": "clausula",
+  "dia": "2026-09-27",
+  "id": "23369",
+  "equipo": "Niutin FC (Isaac)",
+  "escalones": -2,
+  "coste": -1957600,
+  "clausula": 9788000
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-09-27",
+  "id": "48203",
+  "equipo": "Niutin FC (Isaac)",
+  "escalones": -1,
+  "coste": -1267000,
+  "clausula": 9502500
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-27",
+  "id": "48554",
+  "de": "Niutin FC (Isaac)",
+  "a": null
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-26",
   "id": "217",

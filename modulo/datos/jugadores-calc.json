@@ -3248,7 +3248,7 @@
   "pos": 3,
   "est": null,
   "bl": 0,
-  "sub": 1,
+  "sub": 0,
   "racha": [
    5,
    3,
@@ -23697,7 +23697,7 @@
   "pos": 2,
   "est": "doubt",
   "bl": 0,
-  "sub": 3,
+  "sub": 1,
   "racha": [
    3,
    5,
@@ -39541,61 +39541,6 @@
   "d": 0
  },
  {
-  "id": "48554",
-  "nombre": "Luiz Felipe",
-  "valor": 194000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 29000,
-  "sem7": 7000,
-  "mes": 18000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "doubt",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 14,
-  "riv": 1,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 29,
-  "js": [
-   [
-    6,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    50,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71006",
   "nombre": "Álex Pastor",
   "valor": 194000,
@@ -39684,6 +39629,61 @@
   ],
   "p": 0,
   "d": 1
+ },
+ {
+  "id": "48554",
+  "nombre": "Luiz Felipe",
+  "valor": 194000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 29000,
+  "sem7": 7000,
+  "mes": 18000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "doubt",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 14,
+  "riv": 1,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 29,
+  "js": [
+   [
+    6,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    50,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
  },
  {
   "id": "29167",

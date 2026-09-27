@@ -1223,6 +1223,16 @@
  ],
  "movimientos": [
   {
+   "id": "48554",
+   "nombre": "Luiz Felipe",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 155200,
+   "tipo": "rescind",
+   "fecha": "2026-09-27 09:50:49",
+   "pos": 2
+  },
+  {
    "id": "17452",
    "nombre": "Éder Militão",
    "de": null,
@@ -6295,6 +6305,14 @@
      "op": "normal"
     },
     {
+     "j": "Luiz Felipe",
+     "id": "48554",
+     "tipo": "venta",
+     "importe": 155200,
+     "fecha": "2026-09-27",
+     "op": "rescind"
+    },
+    {
      "j": "Cristian Romero",
      "id": "1385821",
      "tipo": "compra",
@@ -7265,8 +7283,8 @@
     "48554": {
      "nombre": "Luiz Felipe",
      "compras": 207040,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 155200,
+     "ops": 2
     },
     "48657": {
      "nombre": "Raphinha",
