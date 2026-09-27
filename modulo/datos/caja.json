@@ -1,6 +1,14 @@
 {
- "saldo": -25524420,
+ "saldo": -29723668,
  "apuntes": [
+  {
+   "cuando": 1790478000,
+   "fecha": "2026-09-27 05:00",
+   "motivo": "Éder Militão a Mister",
+   "tipo": "Compra",
+   "importe": -4199248,
+   "saldo": -29723668
+  },
   {
    "cuando": 1790435677,
    "fecha": "2026-09-26 17:14",
@@ -472,14 +480,6 @@
    "tipo": "Penalización",
    "importe": -200000,
    "saldo": 6359071
-  },
-  {
-   "cuando": 1788165214,
-   "fecha": "2026-08-31 10:33",
-   "motivo": "Modificación de cláusula (100%) de Pierre-Emerick Aubameyang",
-   "tipo": "Penalización",
-   "importe": -1234200,
-   "saldo": 6559071
   }
  ]
 }
