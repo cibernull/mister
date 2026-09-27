@@ -1223,6 +1223,16 @@
  ],
  "movimientos": [
   {
+   "id": "27874",
+   "nombre": "Iván Martín",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 2329860,
+   "tipo": "normal",
+   "fecha": "2026-09-27 10:39:55",
+   "pos": 3
+  },
+  {
    "id": "48554",
    "nombre": "Luiz Felipe",
    "de": "Niutin FC (Isaac)",
@@ -7477,6 +7487,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Iván Martín",
+     "id": "27874",
+     "tipo": "venta",
+     "importe": 2329860,
+     "fecha": "2026-09-27",
+     "op": "normal"
+    },
+    {
      "j": "Valentín Gómez",
      "id": "64491",
      "tipo": "compra",
@@ -8283,8 +8301,8 @@
     "27874": {
      "nombre": "Iván Martín",
      "compras": 2686270,
-     "ventas": 1453340,
-     "ops": 3
+     "ventas": 3783200,
+     "ops": 4
     },
     "28621": {
      "nombre": "Abdel Abqar",
