@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-27T18:37:30.904Z",
+ "cuando": "2026-09-27T21:07:38.450Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -1018,7 +1018,10 @@
    "prob": 20,
    "sancionado": 0,
    "fuera": 0,
-   "min": 212
+   "min": 212,
+   "lesion": "Molestias en el tobillo",
+   "desde": "19/09 (8 días)",
+   "hasta": null
   },
   "28621": {
    "prob": 10,
@@ -3145,7 +3148,10 @@
    "prob": 80,
    "sancionado": 0,
    "fuera": 0,
-   "min": 270
+   "min": 270,
+   "lesion": "Molestias sin determinar",
+   "desde": "26/09 (1 día)",
+   "hasta": null
   },
   "4947930": {
    "prob": 20,
