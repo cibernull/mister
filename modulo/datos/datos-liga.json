@@ -1224,9 +1224,54 @@
    "id": "59371",
    "nombre": "Luka Sučić",
    "valor": 6999000
+  },
+  {
+   "id": "5358737",
+   "nombre": "Unai Santos",
+   "valor": 279000
+  },
+  {
+   "id": "5404997",
+   "nombre": "José Ángel López",
+   "valor": 172000
+  },
+  {
+   "id": "18004",
+   "nombre": "Ante Budimir",
+   "valor": 16583000
   }
  ],
  "movimientos": [
+  {
+   "id": "18004",
+   "nombre": "Ante Budimir",
+   "de": null,
+   "a": "Mario80",
+   "importe": 16560160,
+   "tipo": "normal",
+   "fecha": "2026-09-28 05:00:22",
+   "pos": 4
+  },
+  {
+   "id": "5404997",
+   "nombre": "José Ángel López",
+   "de": null,
+   "a": "Legalize F.C (Victor)",
+   "importe": 191020,
+   "tipo": "normal",
+   "fecha": "2026-09-28 05:00:22",
+   "pos": 2
+  },
+  {
+   "id": "5358737",
+   "nombre": "Unai Santos",
+   "de": null,
+   "a": "Legalize F.C (Victor)",
+   "importe": 276010,
+   "tipo": "normal",
+   "fecha": "2026-09-28 05:00:22",
+   "pos": 2
+  },
   {
    "id": "6044",
    "nombre": "Enes Ünal",
@@ -8618,6 +8663,14 @@
   "Mario80": {
    "movimientos": [
     {
+     "j": "Ante Budimir",
+     "id": "18004",
+     "tipo": "compra",
+     "importe": 16560160,
+     "fecha": "2026-09-28",
+     "op": "normal"
+    },
+    {
      "j": "Carlos Puga",
      "id": "71004",
      "tipo": "venta",
@@ -9071,6 +9124,12 @@
      "nombre": "Sergio Herrera",
      "compras": 0,
      "ventas": 8377200,
+     "ops": 1
+    },
+    "18004": {
+     "nombre": "Ante Budimir",
+     "compras": 16560160,
+     "ventas": 0,
      "ops": 1
     },
     "22595": {
@@ -10256,6 +10315,22 @@
   "Legalize F.C (Victor)": {
    "movimientos": [
     {
+     "j": "Unai Santos",
+     "id": "5358737",
+     "tipo": "compra",
+     "importe": 276010,
+     "fecha": "2026-09-28",
+     "op": "normal"
+    },
+    {
+     "j": "José Ángel López",
+     "id": "5404997",
+     "tipo": "compra",
+     "importe": 191020,
+     "fecha": "2026-09-28",
+     "op": "normal"
+    },
+    {
      "j": "Enes Ünal",
      "id": "6044",
      "tipo": "venta",
@@ -10319,6 +10394,18 @@
      "nombre": "Zaid Romero",
      "compras": 0,
      "ventas": 6864000,
+     "ops": 1
+    },
+    "5358737": {
+     "nombre": "Unai Santos",
+     "compras": 276010,
+     "ventas": 0,
+     "ops": 1
+    },
+    "5404997": {
+     "nombre": "José Ángel López",
+     "compras": 191020,
+     "ventas": 0,
      "ops": 1
     }
    }

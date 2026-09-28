@@ -3190,6 +3190,52 @@
     "topeMax": 16342680,
     "exceso": 0
    }
+  ],
+  "551137789": [
+   {
+    "idTransfer": 551137789,
+    "cuando": "2026-09-28 05:00:22",
+    "jugador": "Unai Santos",
+    "equipo": "Legalize F.C (Victor)",
+    "puja": 276010,
+    "gana": true,
+    "topeMax": 30760230,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 551137789,
+    "cuando": "2026-09-28 05:00:22",
+    "jugador": "Unai Santos",
+    "equipo": "Cacaculopedopis",
+    "puja": 276000,
+    "gana": false,
+    "topeMax": 18379384,
+    "exceso": 0
+   }
+  ],
+  "551137795": [
+   {
+    "idTransfer": 551137795,
+    "cuando": "2026-09-28 05:00:22",
+    "jugador": "José Ángel López",
+    "equipo": "Legalize F.C (Victor)",
+    "puja": 191020,
+    "gana": true,
+    "topeMax": 30760230,
+    "exceso": 0
+   }
+  ],
+  "551139643": [
+   {
+    "idTransfer": 551139643,
+    "cuando": "2026-09-28 05:00:22",
+    "jugador": "Ante Budimir",
+    "equipo": "Mario80",
+    "puja": 16560160,
+    "gana": true,
+    "topeMax": 25031400,
+    "exceso": 0
+   }
   ]
  }
 }
