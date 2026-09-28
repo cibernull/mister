@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-28T18:37:34.157Z",
+ "cuando": "2026-09-28T21:07:33.172Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -838,10 +838,7 @@
    "prob": 40,
    "sancionado": 0,
    "fuera": 0,
-   "min": 270,
-   "lesion": "Molestias sin determinar",
-   "desde": "23/09 (5 días)",
-   "hasta": null
+   "min": 270
   },
   "23664": {
    "prob": 50,
@@ -1400,7 +1397,7 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 447,
-   "lesion": "Trabajo al margen",
+   "lesion": "Contusión en la rodilla",
    "desde": "22/09 (6 días)",
    "hasta": null
   },
@@ -1409,7 +1406,7 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 244,
-   "lesion": "Trabajo al margen",
+   "lesion": "Sobrecarga muscular",
    "desde": "23/09 (5 días)",
    "hasta": null
   },
@@ -2315,7 +2312,7 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 556,
-   "lesion": "Molestias sin determinar",
+   "lesion": "Sobrecarga en el obturador",
    "desde": "26/09 (2 días)",
    "hasta": null
   },
