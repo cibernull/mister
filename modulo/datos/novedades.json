@@ -330,6 +330,13 @@
   "entra": true
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-09-28",
+  "id": "64038",
+  "estado": "other",
+  "equipo": null
+ },
+ {
   "tipo": "duenio",
   "dia": "2026-09-27",
   "id": "42",
