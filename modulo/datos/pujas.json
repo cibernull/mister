@@ -3236,6 +3236,38 @@
     "topeMax": 25031400,
     "exceso": 0
    }
+  ],
+  "551246087": [
+   {
+    "idTransfer": 551246087,
+    "cuando": "2026-09-28 17:00:17",
+    "jugador": "Yoel Lago",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2604670,
+    "gana": true,
+    "topeMax": 7756582,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 551246087,
+    "cuando": "2026-09-28 17:00:17",
+    "jugador": "Yoel Lago",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2494135,
+    "gana": false,
+    "topeMax": 10766006,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 551246087,
+    "cuando": "2026-09-28 17:00:17",
+    "jugador": "Yoel Lago",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 2480000,
+    "gana": false,
+    "topeMax": 10764630,
+    "exceso": 0
+   }
   ]
  }
 }

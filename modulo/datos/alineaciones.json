@@ -1240,6 +1240,14 @@
     "puntos": null,
     "jugo": false,
     "capitan": false
+   },
+   {
+    "id": "60919",
+    "nombre": "Yoel Lago",
+    "puesto": 2,
+    "puntos": 5,
+    "jugo": true,
+    "capitan": false
    }
   ]
  },

@@ -2877,9 +2877,9 @@
    "cuando": "2026-08-20 05:00:33",
    "valor": 13985000,
    "posicion": 3,
-   "puntos": 42,
-   "media": 7,
-   "racha": "4,9,7,8,9",
+   "puntos": 33,
+   "media": 6.6,
+   "racha": "-,4,9,7,8",
    "otrasPujas": [
     {
      "equipo": "Mario80",
@@ -2926,9 +2926,9 @@
    "cuando": "2026-08-20 08:10:05",
    "valor": 10206000,
    "posicion": 1,
-   "puntos": 42,
-   "media": 6,
-   "racha": "8,7,4,4,10",
+   "puntos": 32,
+   "media": 5.3,
+   "racha": "4,8,7,4,4",
    "otrasPujas": []
   },
   {
@@ -3016,9 +3016,9 @@
    "cuando": "2026-08-20 17:16:23",
    "valor": 1654000,
    "posicion": 3,
-   "puntos": 16,
-   "media": 4,
-   "racha": "6,3,-,-,2",
+   "puntos": 14,
+   "media": 4.7,
+   "racha": "5,6,3,-,-",
    "otrasPujas": []
   },
   {
@@ -3075,9 +3075,9 @@
    "cuando": "2026-08-21 08:42:40",
    "valor": 888000,
    "posicion": 3,
-   "puntos": 19,
-   "media": 3.2,
-   "racha": "2,4,5,4,2",
+   "puntos": 17,
+   "media": 3.4,
+   "racha": "-,2,4,5,4",
    "otrasPujas": []
   },
   {
@@ -3870,12 +3870,7 @@
    "puntos": 33,
    "media": 5.5,
    "racha": "9,5,2,-,2",
-   "otrasPujas": [
-    {
-     "equipo": "Mario80",
-     "puja": 14006720
-    }
-   ]
+   "otrasPujas": []
   },
   {
    "idTransfer": 542945868,
@@ -3911,12 +3906,7 @@
    "puntos": 55,
    "media": 7.9,
    "racha": "2,12,9,9,9",
-   "otrasPujas": [
-    {
-     "equipo": "Saiyans FC (Fran)",
-     "puja": 7600000
-    }
-   ]
+   "otrasPujas": []
   },
   {
    "idTransfer": 542950714,
@@ -7109,7 +7099,7 @@
    "importe": 2083120,
    "tipo": "normal",
    "cuando": "2026-09-24 17:49:16",
-   "valor": 2168000,
+   "valor": 2225000,
    "posicion": 3,
    "puntos": 23,
    "media": 4.6,
@@ -7540,6 +7530,51 @@
    "media": 7.6,
    "racha": "10,14,4,2,10",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 551242543,
+   "idJugador": "340",
+   "nombre": "Isco",
+   "de": "Saiyans FC (Fran)",
+   "a": "Mister",
+   "idUcDe": 12493752,
+   "idUcA": 0,
+   "importe": 10240390,
+   "tipo": "normal",
+   "cuando": "2026-09-28 16:43:28",
+   "valor": 10086000,
+   "posicion": 3,
+   "puntos": 23,
+   "media": 3.3,
+   "racha": "3,3,4,6,3",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 551246087,
+   "idJugador": "60919",
+   "nombre": "Yoel Lago",
+   "de": "Mister",
+   "a": "Niutin FC (Isaac)",
+   "idUcDe": 0,
+   "idUcA": 12493763,
+   "importe": 2604670,
+   "tipo": "normal",
+   "cuando": "2026-09-28 17:00:17",
+   "valor": 2474000,
+   "posicion": 2,
+   "puntos": 29,
+   "media": 4.1,
+   "racha": "3,3,4,5,7",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 2494135
+    },
+    {
+     "equipo": "Saiyans FC (Fran)",
+     "puja": 2480000
+    }
+   ]
   }
  ],
  "salidas": [

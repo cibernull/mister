@@ -1239,9 +1239,34 @@
    "id": "18004",
    "nombre": "Ante Budimir",
    "valor": 16583000
+  },
+  {
+   "id": "60919",
+   "nombre": "Yoel Lago",
+   "valor": 2474000
   }
  ],
  "movimientos": [
+  {
+   "id": "60919",
+   "nombre": "Yoel Lago",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 2604670,
+   "tipo": "normal",
+   "fecha": "2026-09-28 17:00:17",
+   "pos": 2
+  },
+  {
+   "id": "340",
+   "nombre": "Isco",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 10240390,
+   "tipo": "normal",
+   "fecha": "2026-09-28 16:43:28",
+   "pos": 3
+  },
   {
    "id": "18004",
    "nombre": "Ante Budimir",
@@ -6419,6 +6444,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Yoel Lago",
+     "id": "60919",
+     "tipo": "compra",
+     "importe": 2604670,
+     "fecha": "2026-09-28",
+     "op": "normal"
+    },
+    {
      "j": "Éder Militão",
      "id": "17452",
      "tipo": "compra",
@@ -7460,6 +7493,12 @@
      "nombre": "Pedro Díaz",
      "compras": 0,
      "ventas": 1205400,
+     "ops": 1
+    },
+    "60919": {
+     "nombre": "Yoel Lago",
+     "compras": 2604670,
+     "ventas": 0,
      "ops": 1
     },
     "61012": {
@@ -9281,6 +9320,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Isco",
+     "id": "340",
+     "tipo": "venta",
+     "importe": 10240390,
+     "fecha": "2026-09-28",
+     "op": "normal"
+    },
+    {
      "j": "Enes Ünal",
      "id": "6044",
      "tipo": "compra",
@@ -9967,8 +10014,8 @@
     "340": {
      "nombre": "Isco",
      "compras": 10400000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 10240390,
+     "ops": 2
     },
     "607": {
      "nombre": "Borja Mayoral",

@@ -1,6 +1,14 @@
 {
- "saldo": -27956168,
+ "saldo": -30560838,
  "apuntes": [
+  {
+   "cuando": 1790607600,
+   "fecha": "2026-09-28 17:00",
+   "motivo": "Yoel Lago a Mister",
+   "tipo": "Compra",
+   "importe": -2604670,
+   "saldo": -30560838
+  },
   {
    "cuando": 1790495530,
    "fecha": "2026-09-27 09:52",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -2034236,
    "saldo": 9209955
-  },
-  {
-   "cuando": 1788391689,
-   "fecha": "2026-09-03 01:28",
-   "motivo": "Jorge Herrando a Mister",
-   "tipo": "Venta",
-   "importe": 641680,
-   "saldo": 11244191
   }
  ]
 }
