@@ -324,6 +324,12 @@
   "a": null
  },
  {
+  "tipo": "mercado",
+  "dia": "2026-09-28",
+  "id": "12915",
+  "entra": true
+ },
+ {
   "tipo": "duenio",
   "dia": "2026-09-27",
   "id": "42",
