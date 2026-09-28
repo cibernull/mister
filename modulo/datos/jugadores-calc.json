@@ -39477,6 +39477,96 @@
   "d": 0
  },
  {
+  "id": "64410",
+  "nombre": "Alejandro Iturbe",
+  "valor": 196000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 25000,
+  "sem7": 22000,
+  "mes": 30000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 23,
+  "riv": 5,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    8,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 1
+ },
+ {
   "id": "28677",
   "nombre": "Beñat Prados",
   "valor": 196000,
@@ -39627,96 +39717,6 @@
   ],
   "p": 0,
   "d": 0
- },
- {
-  "id": "64410",
-  "nombre": "Alejandro Iturbe",
-  "valor": 196000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 25000,
-  "sem7": 22000,
-  "mes": 30000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 23,
-  "riv": 5,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    8,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 1
  },
  {
   "id": "78393",
@@ -43420,96 +43420,6 @@
   "d": 0
  },
  {
-  "id": "4947928",
-  "nombre": "Salvi Esquivel",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -5000,
-  "mes": null,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 2,
-  "riv": 48,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [
-   [
-    1,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    15,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "29238",
   "nombre": "Arnau Comas",
   "valor": 160000,
@@ -43648,15 +43558,15 @@
   "d": 0
  },
  {
-  "id": "59089",
-  "nombre": "Alex Padilla",
+  "id": "4947928",
+  "nombre": "Salvi Esquivel",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
   "semana": 0,
-  "sem7": 0,
-  "mes": -43000,
+  "sem7": -5000,
+  "mes": null,
   "mk": 0,
   "pv": null,
   "ced": 0,
@@ -43671,8 +43581,8 @@
    null,
    null
   ],
-  "eq": 1,
-  "riv": 14,
+  "eq": 2,
+  "riv": 48,
   "casa": 0,
   "gol": 0,
   "tar": 0,
@@ -43682,47 +43592,54 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 23,
+  "edad": 20,
   "js": [
    [
     1,
     null,
-    3,
+    13,
     0,
     ""
    ],
    [
     2,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    3,
     null,
     17,
     0,
     ""
    ],
    [
-    3,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
     4,
     null,
-    2,
+    1,
     0,
     ""
    ],
    [
     5,
     null,
-    23,
+    16,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    50,
     0,
     ""
    ],
    [
     7,
     null,
-    48,
+    15,
     0,
     ""
    ]
@@ -43889,6 +43806,89 @@
     6,
     null,
     3,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "59089",
+  "nombre": "Alex Padilla",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -43000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 1,
+  "riv": 14,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    48,
     0,
     ""
    ]
