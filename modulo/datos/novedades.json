@@ -311,6 +311,19 @@
   "entra": false
  },
  {
+  "tipo": "mercado",
+  "dia": "2026-09-28",
+  "id": "27518",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-28",
+  "id": "61013",
+  "de": "Mario80",
+  "a": null
+ },
+ {
   "tipo": "duenio",
   "dia": "2026-09-27",
   "id": "42",

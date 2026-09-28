@@ -1248,6 +1248,16 @@
  ],
  "movimientos": [
   {
+   "id": "61013",
+   "nombre": "Antony Santos",
+   "de": "Mario80",
+   "a": null,
+   "importe": 14177800,
+   "tipo": "normal",
+   "fecha": "2026-09-28 17:15:22",
+   "pos": 4
+  },
+  {
    "id": "60919",
    "nombre": "Yoel Lago",
    "de": null,
@@ -8710,6 +8720,14 @@
      "op": "normal"
     },
     {
+     "j": "Antony Santos",
+     "id": "61013",
+     "tipo": "venta",
+     "importe": 14177800,
+     "fecha": "2026-09-28",
+     "op": "normal"
+    },
+    {
      "j": "Carlos Puga",
      "id": "71004",
      "tipo": "venta",
@@ -9240,8 +9258,8 @@
     "61013": {
      "nombre": "Antony Santos",
      "compras": 14976070,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 14177800,
+     "ops": 2
     },
     "63866": {
      "nombre": "Álvaro Núñez",

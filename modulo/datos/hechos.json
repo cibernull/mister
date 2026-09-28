@@ -3757,7 +3757,7 @@
    "importe": 4686500,
    "tipo": "clause",
    "cuando": "2026-08-27 17:27:10",
-   "valor": 5025000,
+   "valor": 4209000,
    "posicion": 4,
    "puntos": 43,
    "media": 6.1,
@@ -3775,7 +3775,7 @@
    "importe": 5651100,
    "tipo": "normal",
    "cuando": "2026-08-27 17:37:55",
-   "valor": 7045000,
+   "valor": 6803000,
    "posicion": 3,
    "puntos": 30,
    "media": 4.3,
@@ -7575,6 +7575,24 @@
      "puja": 2480000
     }
    ]
+  },
+  {
+   "idTransfer": 551253568,
+   "idJugador": "61013",
+   "nombre": "Antony Santos",
+   "de": "Mario80",
+   "a": "Mister",
+   "idUcDe": 13435216,
+   "idUcA": 0,
+   "importe": 14177800,
+   "tipo": "normal",
+   "cuando": "2026-09-28 17:15:22",
+   "valor": 14924000,
+   "posicion": 4,
+   "puntos": 32,
+   "media": 4.6,
+   "racha": "3,5,3,7,2",
+   "otrasPujas": []
   }
  ],
  "salidas": [
