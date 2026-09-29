@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-29T18:37:37.213Z",
+ "cuando": "2026-09-29T21:07:39.427Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -739,10 +739,7 @@
    "prob": 80,
    "sancionado": 0,
    "fuera": 0,
-   "min": 568,
-   "lesion": "Gastroenteritis",
-   "desde": "23/09 (6 días)",
-   "hasta": null
+   "min": 568
   },
   "20346": {
    "prob": 80,
@@ -1237,10 +1234,7 @@
    "prob": 80,
    "sancionado": 0,
    "fuera": 0,
-   "min": 403,
-   "lesion": "Molestias en el pie",
-   "desde": "23/09 (6 días)",
-   "hasta": null
+   "min": 403
   },
   "35922": {
    "prob": 10,
@@ -1396,10 +1390,7 @@
    "prob": 90,
    "sancionado": 0,
    "fuera": 0,
-   "min": 447,
-   "lesion": "Contusión en la rodilla",
-   "desde": "22/09 (7 días)",
-   "hasta": null
+   "min": 447
   },
   "51060": {
    "prob": 50,
@@ -2279,9 +2270,9 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 578,
-   "lesion": "Lesión de rodilla",
+   "lesion": "Sometido a artroscopia en la rodilla",
    "desde": "29/09 (1 día)",
-   "hasta": null
+   "hasta": "principios de noviembre"
   },
   "65704": {
    "prob": 40,
@@ -2746,7 +2737,10 @@
    "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 534
+   "min": 534,
+   "lesion": "Molestias sin determinar",
+   "desde": "29/09 (1 día)",
+   "hasta": null
   },
   "71037": {
    "prob": 20,
