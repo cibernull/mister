@@ -140,6 +140,31 @@
   "entra": false
  },
  {
+  "tipo": "alta",
+  "dia": "2026-09-29",
+  "id": "130",
+  "equipo": null
+ },
+ {
+  "tipo": "alta",
+  "dia": "2026-09-29",
+  "id": "27852",
+  "equipo": null
+ },
+ {
+  "tipo": "alta",
+  "dia": "2026-09-29",
+  "id": "29166",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-09-29",
+  "id": "48556",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-28",
   "id": "340",

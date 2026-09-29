@@ -1,5 +1,5 @@
 {
- "cuando": "2026-09-29T09:07:39.532Z",
+ "cuando": "2026-09-29T09:37:35.262Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -3136,7 +3136,10 @@
    "prob": 70,
    "sancionado": 0,
    "fuera": 0,
-   "min": 180
+   "min": 180,
+   "lesion": "Molestias sin determinar",
+   "desde": "29/09 (1 día)",
+   "hasta": null
   },
   "4947925": {
    "prob": 0,
