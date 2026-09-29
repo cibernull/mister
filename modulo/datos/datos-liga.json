@@ -1244,9 +1244,39 @@
    "id": "60919",
    "nombre": "Yoel Lago",
    "valor": 2576000
+  },
+  {
+   "id": "51134",
+   "nombre": "Pablo Durán",
+   "valor": 1122000
+  },
+  {
+   "id": "63780",
+   "nombre": "Carlos Espí",
+   "valor": 9691000
   }
  ],
  "movimientos": [
+  {
+   "id": "63780",
+   "nombre": "Carlos Espí",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 9607560,
+   "tipo": "normal",
+   "fecha": "2026-09-29 05:00:26",
+   "pos": 4
+  },
+  {
+   "id": "51134",
+   "nombre": "Pablo Durán",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 1223960,
+   "tipo": "normal",
+   "fecha": "2026-09-29 05:00:26",
+   "pos": 4
+  },
   {
    "id": "61013",
    "nombre": "Antony Santos",
@@ -5352,6 +5382,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Carlos Espí",
+     "id": "63780",
+     "tipo": "compra",
+     "importe": 9607560,
+     "fecha": "2026-09-29",
+     "op": "normal"
+    },
+    {
      "j": "Koke",
      "id": "42",
      "tipo": "compra",
@@ -6308,6 +6346,12 @@
     "63727": {
      "nombre": "Marcos Fernández",
      "compras": 1640508,
+     "ventas": 0,
+     "ops": 1
+    },
+    "63780": {
+     "nombre": "Carlos Espí",
+     "compras": 9607560,
      "ventas": 0,
      "ops": 1
     },
@@ -7648,6 +7692,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Pablo Durán",
+     "id": "51134",
+     "tipo": "compra",
+     "importe": 1223960,
+     "fecha": "2026-09-29",
+     "op": "normal"
+    },
+    {
      "j": "Iván Martín",
      "id": "27874",
      "tipo": "venta",
@@ -8490,6 +8542,12 @@
      "compras": 2111290,
      "ventas": 3153860,
      "ops": 2
+    },
+    "51134": {
+     "nombre": "Pablo Durán",
+     "compras": 1223960,
+     "ventas": 0,
+     "ops": 1
     },
     "52371": {
      "nombre": "Iker Muñoz",

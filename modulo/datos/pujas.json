@@ -1,6 +1,6 @@
 {
  "ajustes": {
-  "Neky F.C. (Sergio)": 807125
+  "Neky F.C. (Sergio)": 2732449
  },
  "vistas": {
   "536228207": [
@@ -3267,6 +3267,30 @@
     "gana": false,
     "topeMax": 10764630,
     "exceso": 0
+   }
+  ],
+  "551318365": [
+   {
+    "idTransfer": 551318365,
+    "cuando": "2026-09-29 05:00:26",
+    "jugador": "Pablo Durán",
+    "equipo": "Cacaculopedopis",
+    "puja": 1223960,
+    "gana": true,
+    "topeMax": 17843784,
+    "exceso": 0
+   }
+  ],
+  "551322804": [
+   {
+    "idTransfer": 551322804,
+    "cuando": "2026-09-29 05:00:26",
+    "jugador": "Carlos Espí",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 9607560,
+    "gana": true,
+    "topeMax": 6875111,
+    "exceso": 1925324
    }
   ]
  }
