@@ -1258,6 +1258,16 @@
  ],
  "movimientos": [
   {
+   "id": "22604",
+   "nombre": "Iñigo Vicente",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 10287720,
+   "tipo": "normal",
+   "fecha": "2026-09-29 21:25:38",
+   "pos": 3
+  },
+  {
    "id": "12915",
    "nombre": "Cucho Hernández",
    "de": "Niutin FC (Isaac)",
@@ -5400,6 +5410,14 @@
      "op": "normal"
     },
     {
+     "j": "Iñigo Vicente",
+     "id": "22604",
+     "tipo": "venta",
+     "importe": 10287720,
+     "fecha": "2026-09-29",
+     "op": "normal"
+    },
+    {
      "j": "Koke",
      "id": "42",
      "tipo": "compra",
@@ -6212,8 +6230,8 @@
     "22604": {
      "nombre": "Iñigo Vicente",
      "compras": 4121087,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 10287720,
+     "ops": 2
     },
     "22956": {
      "nombre": "Sergio Gómez",
