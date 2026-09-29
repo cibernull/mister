@@ -7624,6 +7624,24 @@
    "media": 7.5,
    "racha": "-,4,-,11,-",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 551424024,
+   "idJugador": "12915",
+   "nombre": "Cucho Hernández",
+   "de": "Niutin FC (Isaac)",
+   "a": "Mister",
+   "idUcDe": 12493763,
+   "idUcA": 0,
+   "importe": 10506000,
+   "tipo": "normal",
+   "cuando": "2026-09-29 17:25:36",
+   "valor": 10200000,
+   "posicion": 4,
+   "puntos": 31,
+   "media": 4.4,
+   "racha": "1,2,9,2,10",
+   "otrasPujas": []
   }
  ],
  "salidas": [

@@ -1,6 +1,14 @@
 {
- "saldo": -30560838,
+ "saldo": -20054838,
  "apuntes": [
+  {
+   "cuando": 1790695536,
+   "fecha": "2026-09-29 17:25",
+   "motivo": "Cucho Hernández a Mister",
+   "tipo": "Venta",
+   "importe": 10506000,
+   "saldo": -20054838
+  },
   {
    "cuando": 1790607600,
    "fecha": "2026-09-28 17:00",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -1060096,
    "saldo": 8149859
-  },
-  {
-   "cuando": 1788404400,
-   "fecha": "2026-09-03 05:00",
-   "motivo": "José Giménez a Mister",
-   "tipo": "Compra",
-   "importe": -2034236,
-   "saldo": 9209955
   }
  ]
 }

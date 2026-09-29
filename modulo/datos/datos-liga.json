@@ -1258,6 +1258,16 @@
  ],
  "movimientos": [
   {
+   "id": "12915",
+   "nombre": "Cucho Hernández",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 10506000,
+   "tipo": "normal",
+   "fecha": "2026-09-29 17:25:36",
+   "pos": 4
+  },
+  {
    "id": "63780",
    "nombre": "Carlos Espí",
    "de": null,
@@ -6498,6 +6508,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Cucho Hernández",
+     "id": "12915",
+     "tipo": "venta",
+     "importe": 10506000,
+     "fecha": "2026-09-29",
+     "op": "normal"
+    },
+    {
      "j": "Yoel Lago",
      "id": "60919",
      "tipo": "compra",
@@ -7336,8 +7354,8 @@
     "12915": {
      "nombre": "Cucho Hernández",
      "compras": 9533010,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 10506000,
+     "ops": 2
     },
     "15344": {
      "nombre": "Brahim Díaz",
