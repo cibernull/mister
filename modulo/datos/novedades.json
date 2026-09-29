@@ -1,6 +1,74 @@
 [
  {
   "tipo": "mercado",
+  "dia": "2026-09-29",
+  "id": "22527",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-29",
+  "id": "28772",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-29",
+  "id": "49382",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-29",
+  "id": "51134",
+  "de": null,
+  "a": "Cacaculopedopis"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-29",
+  "id": "51134",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-29",
+  "id": "58951",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-29",
+  "id": "59789",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-29",
+  "id": "63780",
+  "de": null,
+  "a": "Neky F.C. (Sergio)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-29",
+  "id": "63780",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-29",
+  "id": "71179",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-29",
+  "id": "71502",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-28",
   "id": "340",
   "entra": true
