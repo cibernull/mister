@@ -1,18 +1,24 @@
 {
- "cuando": "2026-09-29T12:37:35.204Z",
+ "cuando": "2026-09-29T13:07:21.773Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
-   "fecha": "24/09",
-   "titulo": "Actualizadas todas las jerarquías: Jugadores clave, importantes de rotación, revulsivos, reservas y onces tipo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/91324-actualizados-los-jugadores-clave-importantes-de-rotacion-reservas-y-descartes-de-laliga",
-   "categoria": "análisis"
+   "fecha": "29/09",
+   "titulo": "La CBF informa que Raphinha ha sido sustituido al descanso por molestias",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151939-la-cbf-informa-que-raphinha-ha-sido-sustituido-al-descanso-por-molestias",
+   "categoria": "lesión"
   },
   {
    "fecha": "21/09",
-   "titulo": "Internacionales de LaLiga convocados por sus selecciones para la primera fecha FIFA",
+   "titulo": "Participación de los internacionales de LaLiga durante la primera fecha FIFA",
    "url": "https://www.futbolfantasy.com/laliga/internacionales",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "24/09",
+   "titulo": "Actualizadas todas las jerarquías: Jugadores clave, importantes de rotación, revulsivos, reservas y onces tipo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/91324-actualizados-los-jugadores-clave-importantes-de-rotacion-reservas-y-descartes-de-laliga",
    "categoria": "análisis"
   },
   {
@@ -22,465 +28,459 @@
    "categoria": "análisis"
   },
   {
-   "fecha": "24/09",
-   "titulo": "David Alaba es oficialmente nuevo jugador de Udinese tras dejar el Real Madrid",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151829-david-alaba-es-oficialmente-nuevo-jugador-de-udinese-tras-dejar-el-real-madrid",
-   "categoria": "mercado"
-  },
-  {
-   "fecha": "24/09",
-   "titulo": "El Sevilla cierra la semana con un amistoso ante el filial",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151828-el-sevilla-cierra-la-semana-con-un-amistoso-ante-el-filial",
+   "fecha": "29/09",
+   "titulo": "Luiz Felipe e Isi empiezan la semana de trabajo con el grupo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151944-luiz-felipe-e-isi-empiezan-la-semana-de-trabajo-con-el-grupo",
    "categoria": "entrenamiento"
   },
   {
-   "fecha": "24/09",
-   "titulo": "Rebbach y Aitor Mañas repiten con el grupo ya recuperados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151827-rebbach-y-aitor-manas-repiten-con-el-grupo-ya-recuperados",
+   "fecha": "29/09",
+   "titulo": "Aimar Oroz y Moi Gómez repiten con el grupo y Rosier solo hace una parte",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151943-aimar-oroz-y-moi-gomez-repiten-con-el-grupo-y-rosier-solo-hace-una-parte",
    "categoria": "entrenamiento"
   },
   {
-   "fecha": "24/09",
-   "titulo": "Diakhaby repite con el grupo en la primera sesión de Javier Aguirre",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151826-diakhaby-repite-con-el-grupo-en-la-primera-sesion-de-javier-aguirre",
+   "fecha": "29/09",
+   "titulo": "El derbi amistoso de Anoeta abre una ventana a la luz para los menos habituales del Athletic",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151942-el-derbi-amistoso-de-anoeta-abre-una-ventana-a-la-luz-para-los-menos-habituales-del-athletic",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "29/09",
+   "titulo": "Einar Galilea se incorpora al grupo tras varios días al margen",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151941-einar-galilea-se-incorpora-al-grupo-tras-varios-dias-al-margen",
    "categoria": "entrenamiento"
   },
   {
-   "fecha": "24/09",
-   "titulo": "Aitor Ruibal ya pisa césped y entra en la recta final",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151825-aitor-ruibal-ya-pisa-cesped-y-entra-en-la-recta-final",
+   "fecha": "29/09",
+   "titulo": "Nueva mejora completada: Sección de internacionales con minutajes y rendimientos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151940-nueva-mejora-completada-seccion-de-internacionales-con-minutajes-y-rendimientos",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "29/09",
+   "titulo": "Ancelotti tambien despega a Raphinha de la banda",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151938-ancelotti-tambien-despega-a-raphinha-de-la-banda",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "29/09",
+   "titulo": "Konaté, Valverde y Mbappé se ejercitan al margen en la segunda sesión de la semana",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151937-konate-valverde-y-mbappe-se-ejercitan-al-margen-en-la-segunda-sesion-del-real-madrid",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "29/09",
+   "titulo": "Rioja frena y se dosifica para depurar sus molestias definitivamente",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151936-rioja-sigue-dosificando-y-vuelve-a-quedarse-fuera-del-grupo",
    "categoria": "lesión"
   },
   {
-   "fecha": "24/09",
-   "titulo": "Maguette se suma a la lista de bajas en la sesión del jueves",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151824-maguette-se-suma-a-la-lista-de-bajas-en-la-sesion-del-jueves",
+   "fecha": "29/09",
+   "titulo": "Diakhaby repite con el grupo y Tàrrega acelera sobre el césped",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151935-diakhaby-repite-con-el-grupo-y-tarrega-acelera-sobre-el-cesped",
    "categoria": "entrenamiento"
   },
   {
-   "fecha": "24/09",
-   "titulo": "Bartra y Ruibal, al margen en el entrenamiento de este jueves",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151823-bartra-y-ruibal-al-margen-en-el-entrenamiento-de-este-jueves",
+   "fecha": "29/09",
+   "titulo": "Yuri y Guruzeta dan un paso adelante y vuelven con el grupo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151934-yuri-y-guruzeta-dan-un-paso-adelante-y-vuelven-con-el-grupo",
    "categoria": "entrenamiento"
   },
   {
-   "fecha": "24/09",
-   "titulo": "Barrios vuelve a pisar césped, mientras Sorloth continúa con su recuperación",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151822-barrios-vuelve-a-pisar-cesped-mientras-sorloth-continua-con-su-recuperacion",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "24/09",
-   "titulo": "Terzic atiende a AS en una entrevista: su llegada, influencias, líderes, internacionales y la adaptación",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151821-terzic-atiende-a-as-en-una-entrevista-su-llegada-influencias-lideres-internacionales-y-la-ada",
+   "fecha": "29/09",
+   "titulo": "El Elche cerrará su concentración con un amistoso ante México Sub-20",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151933-el-elche-cerrara-su-concentracion-con-un-amistoso-ante-mexico-sub-20",
    "categoria": "rueda de prensa"
   },
   {
-   "fecha": "24/09",
-   "titulo": "Primeras palabras de Aguirre al aterrizar en Valencia: motivos, plantilla y balance",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151820-primeras-palabras-de-aguirre-al-aterrizar-en-valencia-motivos-plantilla-y-balance",
+   "fecha": "29/09",
+   "titulo": "Parte médico oficial de Fran González",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151932-parte-medico-oficial-de-fran-gonzalez",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "29/09",
+   "titulo": "De la Fuente descarta a Yeremy, Le Normand y Roberto ante Croacia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151931-de-la-fuente-descarta-a-yeremy-le-normand-y-roberto-ante-croacia",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "29/09",
+   "titulo": "Cáceres no jugó contra Corea del Sur por problemas físicos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151930-caceres-no-jugo-contra-corea-del-sur-por-problemas-fisicos",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "29/09",
+   "titulo": "Según As, Sorloth apunta a volver al grupo la semana que viene",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151929-segun-as-sorloth-apunta-a-volver-al-grupo-la-semana-que-viene",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "29/09",
+   "titulo": "Lo Celso sigue en la Ciudad Deportiva y Ceballos se ausenta del entrenamiento del Betis",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151928-lo-celso-sigue-en-la-ciudad-deportiva-y-ceballos-se-ausenta-del-entrenamiento-del-betis",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "29/09",
+   "titulo": "Radu sale señalado de la derrota de Rumanía ante Bosnia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151927-radu-sale-senalado-de-la-derrota-de-rumania-ante-bosnia",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "29/09",
+   "titulo": "Monchi habla de Roberto, Bryan y el Espanyol en una entrevista para El Larguero",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151926-monchi-habla-de-roberto-bryan-y-el-espanyol-en-una-entrevista-para-el-larguero",
    "categoria": "rueda de prensa"
   },
   {
-   "fecha": "24/09",
-   "titulo": "Konaté abandona la selección francesa por un esguince leve",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151819-konate-abandona-la-seleccion-francesa-por-un-esguince-leve",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "24/09",
-   "titulo": "Actualizadas las jerarquías de la Villarreal: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/villarreal/jerarquias",
+   "fecha": "28/09",
+   "titulo": "La insurrección de Hugo González",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151925-la-insurreccion-de-hugo-gonzalez",
    "categoria": "análisis"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Actualizadas las jerarquías de la Valencia: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/valencia/jerarquias",
+   "fecha": "28/09",
+   "titulo": "Yusi se enreda en las barbas de Rebbach",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151924-yusi-se-enreda-en-las-barbas-de-rebbach",
    "categoria": "análisis"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Actualizadas las jerarquías de la Sevilla: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/sevilla/jerarquias",
-   "categoria": "análisis"
+   "fecha": "28/09",
+   "titulo": "Joan García y Eric García centran la atención en el lunes de descanso del Barça",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151923-joan-garcia-y-eric-garcia-centran-la-atencion-en-el-lunes-de-descanso-del-barca",
+   "categoria": "equipo"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Ayoze se reinventa como único punta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151814-ayoze-se-reinventa-como-unico-punta",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "El Atlético vuelve al trabajo sin Barrios, Sorloth ni los internacionales",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151813-el-atletico-vuelve-al-trabajo-sin-barrios-sorloth-ni-los-internacionales",
+   "fecha": "28/09",
+   "titulo": "El Celta retoma los entrenamientos sin recuperar a Aspas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151922-el-celta-retoma-los-entrenamientos-sin-recuperar-a-aspas",
    "categoria": "entrenamiento"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Argentina desconvoca a Foyth por problemas físicos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151812-argentina-desconvoca-a-foyth-por-problemas-fisicos",
-   "categoria": "lesión"
+   "fecha": "28/09",
+   "titulo": "El Sevilla descansó este lunes con Stassin, Vargas y Kike Salas en el foco",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151921-el-sevilla-descanso-este-lunes-con-stassin-vargas-y-kike-salas-en-el-foco",
+   "categoria": "equipo"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Natan se sienta en el trono del rey del despeje efectivo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151811-natan-se-sienta-en-el-trono-del-rey-del-despeje-efectivo",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Jones es operado con éxito e inicia una recuperación de más de un mes",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151810-jones-es-operado-con-exito-e-inicia-una-recuperacion-de-mas-de-un-mes",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "El Alavés retoma los entrenamientos con Rebbach y Aitor Mañas recuperados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151809-el-alaves-retoma-los-entrenamientos-con-rebbach-y-aitor-manas-recuperados",
+   "fecha": "28/09",
+   "titulo": "El Villarreal retoma los entrenamientos con Foyth con el grupo y sin rastro de Comesaña",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151920-el-villarreal-retoma-los-entrenamientos-con-foyth-con-el-grupo-y-sin-rastro-de-comesana",
    "categoria": "entrenamiento"
   },
   {
-   "fecha": "23/09",
-   "titulo": "El Levante vuelve al trabajo sin Sotelo ni Etta Eyong, que ha sido desconvocado por Camerún",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151808-el-levante-vuelve-al-trabajo-sin-los-lesionados-sotelo-y-etta-eyong",
+   "fecha": "28/09",
+   "titulo": "Yuri y Guruzeta mantienen la incógnita en el regreso del Athletic",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151919-yuri-y-guruzeta-mantienen-la-incognita-en-el-regreso-del-athletic",
    "categoria": "entrenamiento"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Fer Niño por fin se hace grande en Primera",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151807-fer-nino-fin-se-hace-grande-en-primera",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Agirrezabala, un portero condenado al paredón",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151806-agirrezabala-un-portero-condenado-al-paredon",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "El Elche trabaja con Sangaré al margen antes de una minipretemporada en Pinatar",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151805-el-elche-trabaja-con-sangare-al-margen-y-antes-de-una-minipretemporada-en-pinatar",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Eddahchouri, ante la mayor oportunidad de su carrera",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151804-eddahchouri-ante-la-oportunidad-de-su-carrera",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Crónica del amistoso: Racing 4-1 Logroñés",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151803-cronica-del-amistoso-racing-4-1-logrones",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Amatucci sigue gestionando cargas al margen en una sesión sin Casadó ni Aubameyang",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151802-amatucci-sigue-gestionando-cargas-al-margen-en-una-sesion-sin-casado-ni-aubameyang",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Dotor, el discreto imprescindible de Funes",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151801-dotor-el-imprescindible-discreto",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Lobete es operado con éxito e inicia una recuperación de nueve a doce meses",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151800-lobete-es-operado-con-exito-e-inicia-una-recuperacion-de-nueve-a-doce-meses",
+   "fecha": "28/09",
+   "titulo": "Puado empieza la semana con buenas sensaciones y se fija una fecha de vuelta",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151918-puado-empieza-la-semana-con-buenas-sensaciones-y-se-fija-una-fecha-de-vuelta",
    "categoria": "lesión"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Parte médico oficial de Pierre-Emerick Aubameyang y periodo estimado de baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151799-parte-medico-oficial-de-pierre-emerick-aubameyang-y-periodo-estimado-de-baja",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Cata se presenta y habla de la plantilla, la estructura, Budimir, Del Castillo, Arguibide, Braulio y Ramis",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151798-cata-se-presenta-y-habla-de-la-plantilla-la-estructura-budimir-del-castillo-arguibide-braulio",
+   "fecha": "28/09",
+   "titulo": "De la Fuente habla del estilo de juego, las rotaciones, Fermín, Eric García, el Balón de Oro y Croacia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151917-de-la-fuente-habla-del-estilo-de-juego-las-rotaciones-fermin-eric-garcia-el-balon-de-oro-y-cr",
    "categoria": "rueda de prensa"
   },
   {
-   "fecha": "23/09",
-   "titulo": "El Málaga vuelve al Anexo con Juan Cruz y Einar gestionando cargas y el alta de Calero",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151797-el-malaga-vuelve-al-anexo-con-juan-cruz-y-einar-gestionando-cargas-y-el-alta-de-calero",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Del Castillo no descansa y acelera su puesta a punto en Tajonar",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151796-del-castillo-no-descansa-y-acelera-su-puesta-a-punto-en-tajonar",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Germán Valera causa baja de última hora en el acto de firmas por gastroenteritis",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151795-german-valera-causa-baja-de-ultima-hora-en-el-acto-de-firmas-por-gastroenteritis",
+   "fecha": "28/09",
+   "titulo": "Las pruebas a Javi Hernández descartan una lesión de gravedad en el obturador",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151916-las-pruebas-a-javi-hernandez-descartan-una-lesion-de-gravedad-en-el-obturador",
    "categoria": "lesión"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Braulio enciende la luz y elimina los filtros",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151794-braulio-enciende-la-luz-y-elimina-los-filtros",
+   "fecha": "28/09",
+   "titulo": "Mariano pone ritmo caribeño a su arranque de temporada",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151915-mariano-pone-ritmo-caribeno-a-su-arranque-de-temporada",
    "categoria": "análisis"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Toljan insiste hasta recuperar sensaciones",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151793-toljan-insiste-hasta-recuperar-sensaciones",
+   "fecha": "28/09",
+   "titulo": "El Elche inicia una concentración de cinco días en San Pedro del Pinatar",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151914-el-elche-inicia-una-concentracion-de-cinco-dias-en-san-pedro-del-pinatar",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "28/09",
+   "titulo": "Einar Galilea y Aznou se incorporan parcialmente al grupo y Juan Cruz sigue al margen",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151913-einar-galilea-y-aznou-se-incorporan-parcialmente-al-grupo-y-juan-cruz-sigue-al-margen",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "28/09",
+   "titulo": "Las grandes dudas del parón en LaLiga Fantasy 26/27, por Carrasco",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151912-las-grandes-dudas-del-paron-en-laliga-fantasy-26-27-por-carrasco",
    "categoria": "análisis"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Ville Koski, el finlandés inmaculado",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151792-ville-koski-el-finlandes-inmaculado",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Militao activa la cuenta atrás",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151791-militao-activa-la-cuenta-atras",
+   "fecha": "28/09",
+   "titulo": "Fran González abandona la Sub-21 por molestias y regresa a Sevilla",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151911-fran-gonzalez-abandona-la-sub-21-por-molestias-y-regresa-a-sevilla",
    "categoria": "lesión"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Sergio Camello y el poder de la salud mental",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151790-sergio-camello-y-el-poder-de-la-salud-mental",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "El Athletic pone fin a la semana de trabajo pendiente de Vivian, Yuri y Guruzeta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151789-el-athletic-pone-fin-a-la-semana-de-trabajo-pendiente-de-vivian-yuri-y-guruzeta",
+   "fecha": "28/09",
+   "titulo": "Aimar Oroz, Rosier y Moi Gómez empiezan la semana con el grupo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151910-aimar-oroz-rosier-y-moi-gomez-empiezana-semana-con-el-grupo",
    "categoria": "entrenamiento"
   },
   {
-   "fecha": "23/09",
-   "titulo": "El Celta cierra la semana de trabajo sin Aspas, Antañón ni Jones",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151788-el-celta-cierra-la-semana-de-trabajo-sin-aspas-antanon-ni-jones",
+   "fecha": "28/09",
+   "titulo": "Diakhaby avanza con el grupo y Copete, Tárrega y Foulquier pisan césped",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151909-diakhaby-avanza-con-el-grupo-y-copete-tarrega-y-foulquier-pisan-cesped",
    "categoria": "entrenamiento"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Un parón para impulsar a Ceballos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151787-un-paron-para-impulsar-a-ceballos",
+   "fecha": "28/09",
+   "titulo": "Salinas no podrá enfrentarse al Espanyol por la cláusula del miedo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151908-salinas-no-podra-enfrentarse-al-espanyol-por-la-clausula-del-miedo",
+   "categoria": "sanción"
+  },
+  {
+   "fecha": "28/09",
+   "titulo": "Japón libera a Sato por petición de Aguirre",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151907-japon-libera-a-sato-por-peticion-de-aguirre",
    "categoria": "análisis"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Konaté ft. Rüdiger: Hard flow",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151786-konate-ft-rudiger-hard-flow",
+   "fecha": "28/09",
+   "titulo": "El Racing catapulta a Zabiri",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151906-el-racing-catapulta-a-zabiri",
    "categoria": "análisis"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Braulio se presenta y habla de Corberán, objetivo, cantera, Jesús Vázquez, Aguirre, Gayà, Kiat Lim y el mercado libre",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151785-braulio-se-presenta-y-habla-de-corberan-objetivo-cantera-jesus-vazquez-aguirre-gaya-kiat-lim-",
+   "fecha": "28/09",
+   "titulo": "Klopp parte en dos el nuevo parón FIFA: una decisión que puede marcar una tendencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151905-klopp-parte-en-dos-el-nuevo-paron-fifa-una-decision-que-puede-marcar-una-tendencia",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "28/09",
+   "titulo": "El Deportivo descansa hasta el miércoles pendiente de Amatucci y Eddahchouri",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151904-el-deportivo-descansa-hasta-el-miercoles-pendiente-de-amatucci-y-eddahchouri",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "28/09",
+   "titulo": "Robbie Ure y una adaptación necesariamente progresiva",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151899-robbie-ure-y-una-adaptacion-necesariamente-progresiva",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "28/09",
+   "titulo": "El Levante prolonga el descanso este lunes pendiente de Hugo Sotelo y Etta Eyong",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151903-el-levante-prolonga-el-descanso-este-lunes-pendiente-de-hugo-sotelo-y-etta-eyong",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "28/09",
+   "titulo": "El Espanyol vuelve al trabajo pendiente de Puado, Jofre y Javi Hernández",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151902-el-espanyol-vuelve-al-trabajo-pendiente-de-puado-jofre-y-javi-hernandez",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "28/09",
+   "titulo": "RDT, la mascota olvidada de un club secuestrado",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151901-rdt-la-mascota-olvidada-de-un-club-secuestrado",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "28/09",
+   "titulo": "Zubeldia sigue al margen en el regreso de la Real a Zubieta",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151900-zubeldia-sigue-al-margen-en-el-regreso-de-la-real-a-zubieta",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "28/09",
+   "titulo": "El Celta programa un amistoso ante el Santa Clara para coger ritmo durante el parón",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151898-el-celta-programa-un-amistoso-ante-el-santa-clara-para-coger-ritmo-durante-el-paron",
    "categoria": "rueda de prensa"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Los disponibles del Barça realizaron un entrenamiento conjunto con el filial",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151784-los-disponibles-del-barca-realizaron-un-entrenamiento-conjunto-con-el-filial",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Simeone siempre encuentra sitio para Kang In",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151783-simeone-siempre-encuentra-sitio-para-kang-in",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Análisis Fantasy de Javier Aguirre: orden, pragmatismo e instinto de supervivencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151782-analisis-fantasy-de-javier-aguirre-orden-pragmatismo-e-instinto-de-supervivencia",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Diakhaby inicia su incorporación progresiva con el grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151781-diakhaby-inicia-su-incorporacion-progresiva-con-el-grupo",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Francia Sub-20 convoca a Axel Tape para jugar La Liga Élite",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151780-francia-sub-20-convoca-a-axel-tape-para-jugar-la-liga-elite",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Pubill no completa el entrenamiento con España por unas molestias",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151779-pubill-no-completa-el-entrenamiento-con-espana-por-unas-molestias",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Pellegrini recupera a Diego Llorente sin máscara y mantiene al margen a Bartra y Ruibal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151778-pellegrini-recupera-a-diego-llorente-sin-mascara-y-mantiene-al-margen-a-bartra-y-ruibal",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Íñigo Pérez tira del filial en una sesión marcada por las ausencias",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151777-inigo-perez-tira-del-filial-en-una-sesion-marcada-por-las-ausencias",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Luis García está de vuelta en una sesión sin Kike Salas, Vargas ni Stassin",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151776-luis-garcia-esta-de-vuelta-en-una-sesion-sin-kike-salas-vargas-ni-stassin",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "El Elche iniciará el próximo lunes una concentración en San Pedro del Pinatar con dobles sesiones",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151775-el-elche-iniciara-el-proximo-lunes-una-concentracion-en-san-pedro-del-pinatar-con-dobles-sesi",
+   "fecha": "28/09",
+   "titulo": "Aguirre se presenta al valencianismo: Su decisión, objetivos, cantera, afición, plantilla, lesiones, Copete y Maffeo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151896-aguirre-se-presenta-al-valencianismo-su-decision-objetivos-cantera-aficion-plantilla-lesiones",
    "categoria": "rueda de prensa"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Koundé encuentra una segunda vía por el centro",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151774-kounde-encuentra-una-segunda-via-por-el-centro",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Christensen podría estar hasta dos meses de baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151773-christensen-podria-estar-hasta-dos-meses-de-baja",
+   "fecha": "28/09",
+   "titulo": "Rodrygo ya toca balón y entra en una nueva fase de su recuperación",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151897-rodrygo-ya-toca-balon-y-entra-en-una-nueva-fase-de-su-recuperacion",
    "categoria": "lesión"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Javier Aguirre es oficialmente nuevo entrenador del Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151772-javier-aguirre-es-oficialmente-nuevo-entrenador-del-valencia",
-   "categoria": "mercado"
+   "fecha": "28/09",
+   "titulo": "El Atlético descansa este lunes pendiente de Barrios y Sorloth",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151895-el-atletico-descansa-este-lunes-pendiente-de-barrios-y-sorloth",
+   "categoria": "equipo"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Actualizadas las jerarquías de la Real Sociedad: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/real-sociedad/jerarquias",
+   "fecha": "28/09",
+   "titulo": "Compras Fantasy bajo el radar: parte 1, por Huugo_21",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151894-compras-fantasy-bajo-el-radar-parte-1-por-huugo-21",
    "categoria": "análisis"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Actualizadas las jerarquías del Real Madrid: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/real-madrid/jerarquias",
-   "categoria": "análisis"
+   "fecha": "28/09",
+   "titulo": "Luis García atiende a ABC: balance desde su llegada, plantilla, Navarro, sistema, Oso, VAR, Agoumé, Ure, Stassin y el futuro",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151893-luis-garcia-atiende-a-abc-balance-desde-su-llegada-plantilla-navarro-sistema-oso-var-agoume-u",
+   "categoria": "rueda de prensa"
   },
   {
-   "fecha": "23/09",
-   "titulo": "Actualizadas las jerarquías del Rayo: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/rayo-vallecano/jerarquias",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Actualizadas las jerarquías del Racing: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/racing/jerarquias",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Actualizadas las jerarquías del Málaga: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/malaga/jerarquias",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Actualizadas las jerarquías del Levante: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/levante/jerarquias",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Actualizadas las jerarquías del Getafe: Jugadores clave, importantes, de rotación, revulsivos y reservas",
-   "url": "https://www.futbolfantasy.com/laliga/equipos/getafe/jerarquias",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/09",
-   "titulo": "Marruecos cita a Akhomach a última hora",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151764-marruecos-cita-a-akhomach-a-ultima-hora",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Maffeo regresa a los brazos de Aguirre",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151763-maffeo-aguirre",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Iván Azón acecha la dupla Ünal - Satriano",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151762-ivan-azon-acecha-la-dupla-unal-satriano",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "El Celta completó una sesión vespertina sin Aspas, Jones ni los internacionales",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151761-el-celta-completo-una-sesion-vespertina-sin-aspas-jones-ni-los-internacionales",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "El Villarreal retomó los entrenamientos sin Comesaña ni los internacionales",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151760-el-villarreal-retomo-los-entrenamientos-sin-comesana-ni-los-internacionales",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Sucic se apodera del gol txuri urdin",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151759-sucic-se-apodera-del-gol-txuri-urdin",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Buchanan se pasa de la derecha conservadora a la izquierda liberal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151758-buchanan-de-la-derecha-conservadora-a-la-izquierda-liberal",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Fidalgo empieza a pagar cara su apuesta por quedarse",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151757-fidalgo-empieza-a-pagar-cara-su-apuesta-por-quedarse",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Grimaldo aprovechó San Mamés como punto de inflexión",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151756-grimaldo-san-mames-como-punto-de-inflexion",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/09",
-   "titulo": "Frenkie de Jong entra en las últimas tres semanas antes de volver al grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151755-frenkie-de-jong-entra-en-las-ultimas-tres-semanas-antes-de-volver-al-grupo",
+   "fecha": "28/09",
+   "titulo": "Eric García regresa a Barcelona sin lesión de importancia y apunta al Getafe",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151892-eric-garcia-regresa-a-barcelona-sin-lesion-de-importancia-y-apunta-al-getafe",
    "categoria": "lesión"
   },
   {
-   "fecha": "22/09",
-   "titulo": "Brian Fariñas ya cuenta los días para que abra el mercado de invierno",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151754-brian-farinas-ya-cuenta-los-dias-para-que-abra-el-mercado-de-invierno",
-   "categoria": "mercado"
+   "fecha": "28/09",
+   "titulo": "Le Normand se incorpora al trabajo de España en la última sesión antes de Croacia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151891-le-normand-se-incorpora-al-trabajo-de-espana-en-la-ultima-sesion-antes-de-croacia",
+   "categoria": "entrenamiento"
   },
   {
-   "fecha": "22/09",
-   "titulo": "Yan Diomandé, motivos para creer",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151753-yan-diomande-motivos-para-creer",
+   "fecha": "28/09",
+   "titulo": "El Real Madrid retoma los entrenamientos con Militao con el grupo y Mendy tocando balón",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151890-el-real-madrid-retoma-los-entrenamientos-con-militao-con-el-grupo-y-mendy-tocando-balon",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "28/09",
+   "titulo": "El Racing apura su descanso pendiente de Maguette, Andrés Martín y Eriksson",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151889-el-racing-apura-su-descanso-pendiente-de-maguette-andres-martin-y-eriksson",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "28/09",
+   "titulo": "Mayol seguirá con el primer equipo a las órdenes de Aguirre",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151888-mayol-seguira-con-el-primer-equipo-a-las-ordenes-de-aguirre",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "28/09",
+   "titulo": "Audero se ejercita con normalidad y deja atrás las molestias",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151887-audero-se-ejercita-con-normalidad-y-deja-atras-las-molestias",
    "categoria": "análisis"
   },
   {
-   "fecha": "22/09",
-   "titulo": "Las ventas Fantasy obligatorias del primer parón de LALIGA FANTASY 2026/27, por Carrasco",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/151752-las-ventas-fantasy-obligatorias-del-primer-paron-de-laliga-fantasy-2026-27-por-carrasco",
+   "fecha": "28/09",
+   "titulo": "André Almeida podrá jugar contra el Valencia al no haber cláusula del miedo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151886-andre-almeida-podra-jugar-contra-el-valencia-al-no-haber-clausula-del-miedo",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Klopp cambia toda la convocatoria tras dos partidos y libera a Adeyemi",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151885-klopp-cambia-toda-la-convocatoria-tras-dos-partidos-y-libera-a-adeyemi",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Morcillo crece entre las palmeras",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151884-morcillo-crece-entre-las-palmeras",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Hidalgo entrega las llaves a Amatucci",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151883-hidalgo-entrega-las-llaves-a-amatucci",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Los internacionales de Brasil volverán con una semana de margen para preparar la jornada 8",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151882-los-internacionales-de-brasil-volveran-con-una-semana-de-margen-para-preparar-la-jornada-8",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Iván Romero iza el estandarte del castrismo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151881-ivan-romero-iza-el-estandarte-del-castrismo",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Rosier entra en la recta final y apunta a volver al grupo durante el parón",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151880-rosier-entra-en-la-recta-final-y-apunta-a-volver-al-grupo-durante-el-paron",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Miguel Sierra se afianza a pierna cambiada",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151879-miguel-sierra-se-afianza-a-pierna-cambiada",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Balliu sigue en Madrid y Albania vigila la evolución de su tobillo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151878-balliu-sigue-en-madrid-y-albania-vigila-la-evolucion-de-su-tobillo",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Angola desconvoca a Nteka por precaución tras superar su lesión",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151877-nteka-angola-desconvocao",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Audero se perdió el partido contra Singapur por molestias",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151876-audero-se-pierde-el-partido-contra-malasia-por-molestias",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Pathé Ciss se alza como líder de la armada rebelde",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151875-pathe-ciss-alza-lider-de-la-armada-rebelde",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Yuri también es incombustible con Terzic",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151874-yuri-tambien-es-incombustible-con-terzic",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Terrats extiende su territorio para Bordalás",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151873-terrats-extiende-su-territorio-para-bordalas",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Miguel Román, el eje de la ruleta",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151872-miguel-roman-el-eje-de-la-ruleta",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Febas explica cómo evoluciona de sus molestias y analiza la actualidad del Celta",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151871-febas-explica-como-evoluciona-de-sus-molestias-y-analiza-la-actualidad-del-celta",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Oyarzabal se entiende mejor con los rojos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151870-oyarzabal-se-entiende-mejor-con-los-rojos",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Nelson Deossa se abre paso entre jerarcas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151869-nelson-deossa-se-abre-paso-entre-jerarcas",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "27/09",
+   "titulo": "Gerard Moreno es la la principal víctima de los resultados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151868-gerard-moreno-la-principal-victima-de-los-resultados",
    "categoria": "análisis"
   }
  ]
