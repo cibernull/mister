@@ -3109,12 +3109,17 @@
    "importe": 2666250,
    "tipo": "normal",
    "cuando": "2026-08-22 05:00:24",
-   "valor": 2223000,
+   "valor": 2471000,
    "posicion": 3,
    "puntos": 14,
    "media": 2.8,
-   "racha": "2,2,1,-,-",
-   "otrasPujas": []
+   "racha": "4,2,2,1,-",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 2523370
+    }
+   ]
   },
   {
    "idTransfer": 541034522,
@@ -3127,11 +3132,11 @@
    "importe": 7666910,
    "tipo": "normal",
    "cuando": "2026-08-22 07:42:21",
-   "valor": 2697000,
+   "valor": 3038000,
    "posicion": 1,
    "puntos": 7,
    "media": 3.5,
-   "racha": "-,-,-,-,-",
+   "racha": "5,-,-,-,-",
    "otrasPujas": []
   },
   {
@@ -3167,7 +3172,7 @@
    "posicion": 2,
    "puntos": 2,
    "media": 2,
-   "racha": "-,2,-,-,-",
+   "racha": "-,-,2,-,-",
    "otrasPujas": []
   },
   {
@@ -3181,11 +3186,11 @@
    "importe": 6910050,
    "tipo": "normal",
    "cuando": "2026-08-22 15:01:11",
-   "valor": 10886000,
+   "valor": 10625000,
    "posicion": 1,
-   "puntos": 55,
-   "media": 7.9,
-   "racha": "2,12,9,9,9",
+   "puntos": 46,
+   "media": 7.7,
+   "racha": "6,2,12,9,9",
    "otrasPujas": []
   },
   {
@@ -3199,11 +3204,11 @@
    "importe": 871000,
    "tipo": "normal",
    "cuando": "2026-08-22 17:00:18",
-   "valor": 2242000,
+   "valor": 2070000,
    "posicion": 3,
-   "puntos": 22,
-   "media": 3.7,
-   "racha": "2,2,-,7,3",
+   "puntos": 19,
+   "media": 3.8,
+   "racha": "4,2,2,-,7",
    "otrasPujas": []
   },
   {
@@ -3253,11 +3258,11 @@
    "importe": 2563000,
    "tipo": "normal",
    "cuando": "2026-08-23 09:47:13",
-   "valor": 5392000,
+   "valor": 5358000,
    "posicion": 2,
-   "puntos": 22,
-   "media": 3.7,
-   "racha": "7,4,4,2,2",
+   "puntos": 20,
+   "media": 4,
+   "racha": "3,7,4,4,2",
    "otrasPujas": []
   },
   {
@@ -3271,11 +3276,11 @@
    "importe": 10223829,
    "tipo": "normal",
    "cuando": "2026-08-23 17:00:19",
-   "valor": 7715000,
+   "valor": 8014000,
    "posicion": 3,
    "puntos": 12,
    "media": 2.4,
-   "racha": "1,-,2,2,-",
+   "racha": "5,1,-,2,2",
    "otrasPujas": []
   },
   {
@@ -3289,11 +3294,11 @@
    "importe": 643620,
    "tipo": "normal",
    "cuando": "2026-08-23 17:02:13",
-   "valor": 195000,
+   "valor": 160000,
    "posicion": 3,
-   "puntos": 12,
-   "media": 3,
-   "racha": "2,-,-,-,6",
+   "puntos": 6,
+   "media": 2,
+   "racha": "2,2,-,-,-",
    "otrasPujas": []
   },
   {
@@ -3379,11 +3384,11 @@
    "importe": 3683470,
    "tipo": "normal",
    "cuando": "2026-08-24 07:42:47",
-   "valor": 7441000,
+   "valor": 7167000,
    "posicion": 3,
-   "puntos": 36,
-   "media": 5.1,
-   "racha": "8,10,2,5,2",
+   "puntos": 34,
+   "media": 5.7,
+   "racha": "5,8,10,2,5",
    "otrasPujas": []
   },
   {
@@ -3397,11 +3402,11 @@
    "importe": 7270200,
    "tipo": "normal",
    "cuando": "2026-08-24 16:25:26",
-   "valor": 6444000,
+   "valor": 6480000,
    "posicion": 4,
-   "puntos": 29,
-   "media": 4.1,
-   "racha": "2,10,4,1,6",
+   "puntos": 23,
+   "media": 3.8,
+   "racha": "4,2,10,4,1",
    "otrasPujas": []
   },
   {
@@ -3415,7 +3420,7 @@
    "importe": 1054500,
    "tipo": "clause",
    "cuando": "2026-08-24 20:32:13",
-   "valor": 2750000,
+   "valor": 2530000,
    "posicion": 3,
    "puntos": 34,
    "media": 4.9,
@@ -4099,7 +4104,7 @@
    "importe": 1419840,
    "tipo": "normal",
    "cuando": "2026-08-30 15:29:05",
-   "valor": 2326000,
+   "valor": 2409000,
    "posicion": 3,
    "puntos": 19,
    "media": 3.2,
@@ -4117,12 +4122,17 @@
    "importe": 2940142,
    "tipo": "normal",
    "cuando": "2026-08-30 17:00:21",
-   "valor": 6814000,
+   "valor": 6673000,
    "posicion": 4,
    "puntos": 51,
    "media": 7.3,
    "racha": "20,0,16,9,2",
-   "otrasPujas": []
+   "otrasPujas": [
+    {
+     "equipo": "Mario80",
+     "puja": 2632050
+    }
+   ]
   },
   {
    "idTransfer": 543496170,
@@ -4135,7 +4145,7 @@
    "importe": 2027690,
    "tipo": "normal",
    "cuando": "2026-08-30 17:00:21",
-   "valor": 5668000,
+   "valor": 5574000,
    "posicion": 2,
    "puntos": 22,
    "media": 5.5,
@@ -4153,7 +4163,7 @@
    "importe": 780000,
    "tipo": "normal",
    "cuando": "2026-08-30 17:00:21",
-   "valor": 460000,
+   "valor": 491000,
    "posicion": 3,
    "puntos": 13,
    "media": 3.3,
@@ -4171,7 +4181,7 @@
    "importe": 6777000,
    "tipo": "normal",
    "cuando": "2026-08-30 17:00:21",
-   "valor": 10017000,
+   "valor": 10010000,
    "posicion": 2,
    "puntos": 30,
    "media": 5,
@@ -4189,7 +4199,7 @@
    "importe": 2489000,
    "tipo": "normal",
    "cuando": "2026-08-30 17:00:21",
-   "valor": 4989000,
+   "valor": 5080000,
    "posicion": 3,
    "puntos": 28,
    "media": 4.7,
