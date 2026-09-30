@@ -7220,7 +7220,7 @@
    "importe": 275520,
    "tipo": "normal",
    "cuando": "2026-09-25 23:11:20",
-   "valor": 312000,
+   "valor": 309000,
    "posicion": 3,
    "puntos": 12,
    "media": 3,
@@ -7683,6 +7683,24 @@
      "puja": 3609260
     }
    ]
+  },
+  {
+   "idTransfer": 551505705,
+   "idJugador": "27518",
+   "nombre": "Óscar Valentín",
+   "de": "Mario80",
+   "a": "Mister",
+   "idUcDe": 13435216,
+   "idUcA": 0,
+   "importe": 1310700,
+   "tipo": "normal",
+   "cuando": "2026-09-30 05:16:53",
+   "valor": 1248000,
+   "posicion": 3,
+   "puntos": 18,
+   "media": 2.6,
+   "racha": "2,3,3,3,2",
+   "otrasPujas": []
   }
  ],
  "salidas": [

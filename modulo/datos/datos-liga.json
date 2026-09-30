@@ -1258,6 +1258,16 @@
  ],
  "movimientos": [
   {
+   "id": "27518",
+   "nombre": "Óscar Valentín",
+   "de": "Mario80",
+   "a": null,
+   "importe": 1310700,
+   "tipo": "normal",
+   "fecha": "2026-09-30 05:16:53",
+   "pos": 3
+  },
+  {
    "id": "71008",
    "nombre": "Rafita Garrido",
    "de": null,
@@ -8830,6 +8840,14 @@
   "Mario80": {
    "movimientos": [
     {
+     "j": "Óscar Valentín",
+     "id": "27518",
+     "tipo": "venta",
+     "importe": 1310700,
+     "fecha": "2026-09-30",
+     "op": "normal"
+    },
+    {
      "j": "Ante Budimir",
      "id": "18004",
      "tipo": "compra",
@@ -9316,8 +9334,8 @@
     "27518": {
      "nombre": "Óscar Valentín",
      "compras": 1109020,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1310700,
+     "ops": 2
     },
     "40147": {
      "nombre": "Antonio Rüdiger",
