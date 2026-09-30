@@ -3292,6 +3292,28 @@
     "topeMax": 6875111,
     "exceso": 1925324
    }
+  ],
+  "551489732": [
+   {
+    "idTransfer": 551489732,
+    "cuando": "2026-09-30 05:00:27",
+    "jugador": "Rafita Garrido",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 3617555,
+    "gana": true,
+    "topeMax": 9801971,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 551489732,
+    "cuando": "2026-09-30 05:00:27",
+    "jugador": "Rafita Garrido",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 3609260,
+    "gana": false,
+    "topeMax": 14114662,
+    "exceso": 0
+   }
   ]
  }
 }
