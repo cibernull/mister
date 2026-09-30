@@ -26756,7 +26756,7 @@
   "mediaCasa": 3.5,
   "mediaFuera": 3.8,
   "edad": 27,
-  "titular": null,
+  "titular": true,
   "titularidades": 6,
   "suplencias": 0,
   "jornadas": [
