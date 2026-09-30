@@ -32441,7 +32441,7 @@
   "mediaCasa": 1,
   "mediaFuera": 2,
   "edad": 22,
-  "titular": null,
+  "titular": true,
   "titularidades": 2,
   "suplencias": 1,
   "jornadas": [

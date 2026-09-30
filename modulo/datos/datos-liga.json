@@ -1263,6 +1263,16 @@
  ],
  "movimientos": [
   {
+   "id": "22956",
+   "nombre": "Sergio Gómez",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 7051800,
+   "tipo": "normal",
+   "fecha": "2026-09-30 19:49:21",
+   "pos": 2
+  },
+  {
    "id": "64200",
    "nombre": "Jeremy Toljan",
    "de": null,
@@ -5455,6 +5465,14 @@
      "op": "normal"
     },
     {
+     "j": "Sergio Gómez",
+     "id": "22956",
+     "tipo": "venta",
+     "importe": 7051800,
+     "fecha": "2026-09-30",
+     "op": "normal"
+    },
+    {
      "j": "Carlos Espí",
      "id": "63780",
      "tipo": "compra",
@@ -6289,8 +6307,8 @@
     "22956": {
      "nombre": "Sergio Gómez",
      "compras": 6320000,
-     "ventas": 5044970,
-     "ops": 2
+     "ventas": 12096770,
+     "ops": 3
     },
     "23147": {
      "nombre": "Tete Morente",

@@ -329,6 +329,25 @@
   "entra": true
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-09-30",
+  "id": "22956",
+  "de": "Neky F.C. (Sergio)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "22956",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "33053",
+  "entra": true
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-09-29",
   "id": "22527",

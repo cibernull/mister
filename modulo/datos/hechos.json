@@ -7732,6 +7732,24 @@
    "media": 3,
    "racha": "2,5,2,1,6",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 551568071,
+   "idJugador": "22956",
+   "nombre": "Sergio Gómez",
+   "de": "Neky F.C. (Sergio)",
+   "a": "Mister",
+   "idUcDe": 12493688,
+   "idUcA": 0,
+   "importe": 7051800,
+   "tipo": "normal",
+   "cuando": "2026-09-30 19:49:21",
+   "valor": 6716000,
+   "posicion": 2,
+   "puntos": 25,
+   "media": 3.6,
+   "racha": "6,3,3,5,2",
+   "otrasPujas": []
   }
  ],
  "salidas": [
