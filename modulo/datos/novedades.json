@@ -184,6 +184,152 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "29",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "5916",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "8171",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-30",
+  "id": "11761",
+  "de": null,
+  "a": "Cacaculopedopis"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "11761",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "14911",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "15344",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "25621",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "40147",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "52189",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "52377",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "58980",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "59506",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "59623",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-09-30",
+  "id": "64200",
+  "de": null,
+  "a": "Saiyans FC (Fran)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "64200",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "68498",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "70255",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "70923",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "70999",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "71021",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "78393",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "3848684",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-09-30",
+  "id": "5298724",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-09-29",
   "id": "22527",
   "entra": false

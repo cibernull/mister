@@ -4122,12 +4122,7 @@
    "puntos": 51,
    "media": 7.3,
    "racha": "20,0,16,9,2",
-   "otrasPujas": [
-    {
-     "equipo": "Mario80",
-     "puja": 2632050
-    }
-   ]
+   "otrasPujas": []
   },
   {
    "idTransfer": 543496170,
@@ -7700,6 +7695,42 @@
    "puntos": 18,
    "media": 2.6,
    "racha": "2,3,3,3,2",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 551552072,
+   "idJugador": "11761",
+   "nombre": "Junior Firpo",
+   "de": "Mister",
+   "a": "Cacaculopedopis",
+   "idUcDe": 0,
+   "idUcA": 15435600,
+   "importe": 488570,
+   "tipo": "normal",
+   "cuando": "2026-09-30 17:00:15",
+   "valor": 483000,
+   "posicion": 2,
+   "puntos": 6,
+   "media": 3,
+   "racha": "-,-,-,3,-",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 551553695,
+   "idJugador": "64200",
+   "nombre": "Jeremy Toljan",
+   "de": "Mister",
+   "a": "Saiyans FC (Fran)",
+   "idUcDe": 0,
+   "idUcA": 12493752,
+   "importe": 1423000,
+   "tipo": "normal",
+   "cuando": "2026-09-30 17:00:15",
+   "valor": 1463000,
+   "posicion": 2,
+   "puntos": 18,
+   "media": 3,
+   "racha": "2,5,2,1,6",
    "otrasPujas": []
   }
  ],

@@ -3314,6 +3314,30 @@
     "topeMax": 14114662,
     "exceso": 0
    }
+  ],
+  "551552072": [
+   {
+    "idTransfer": 551552072,
+    "cuando": "2026-09-30 17:00:15",
+    "jugador": "Junior Firpo",
+    "equipo": "Cacaculopedopis",
+    "puja": 488570,
+    "gana": true,
+    "topeMax": 17004324,
+    "exceso": 0
+   }
+  ],
+  "551553695": [
+   {
+    "idTransfer": 551553695,
+    "cuando": "2026-09-30 17:00:15",
+    "jugador": "Jeremy Toljan",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 1423000,
+    "gana": true,
+    "topeMax": 9747770,
+    "exceso": 0
+   }
   ]
  }
 }

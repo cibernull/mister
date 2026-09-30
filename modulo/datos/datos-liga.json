@@ -1254,9 +1254,34 @@
    "id": "63780",
    "nombre": "Carlos Espí",
    "valor": 9817000
+  },
+  {
+   "id": "64200",
+   "nombre": "Jeremy Toljan",
+   "valor": 1463000
   }
  ],
  "movimientos": [
+  {
+   "id": "64200",
+   "nombre": "Jeremy Toljan",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 1423000,
+   "tipo": "normal",
+   "fecha": "2026-09-30 17:00:15",
+   "pos": 2
+  },
+  {
+   "id": "11761",
+   "nombre": "Junior Firpo",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 488570,
+   "tipo": "normal",
+   "fecha": "2026-09-30 17:00:15",
+   "pos": 2
+  },
   {
    "id": "27518",
    "nombre": "Óscar Valentín",
@@ -7762,6 +7787,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Junior Firpo",
+     "id": "11761",
+     "tipo": "compra",
+     "importe": 488570,
+     "fecha": "2026-09-30",
+     "op": "normal"
+    },
+    {
      "j": "Pablo Durán",
      "id": "51134",
      "tipo": "compra",
@@ -8534,6 +8567,12 @@
      "compras": 11590994,
      "ventas": 9971280,
      "ops": 2
+    },
+    "11761": {
+     "nombre": "Junior Firpo",
+     "compras": 488570,
+     "ventas": 0,
+     "ops": 1
     },
     "13420": {
      "nombre": "Mouctar Diakhaby",
@@ -9474,6 +9513,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Jeremy Toljan",
+     "id": "64200",
+     "tipo": "compra",
+     "importe": 1423000,
+     "fecha": "2026-09-30",
+     "op": "normal"
+    },
+    {
      "j": "Isco",
      "id": "340",
      "tipo": "venta",
@@ -10391,6 +10438,12 @@
      "nombre": "Facundo Garcés",
      "compras": 0,
      "ventas": 158400,
+     "ops": 1
+    },
+    "64200": {
+     "nombre": "Jeremy Toljan",
+     "compras": 1423000,
+     "ventas": 0,
      "ops": 1
     },
     "64459": {
