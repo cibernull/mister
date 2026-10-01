@@ -3762,11 +3762,11 @@
    "importe": 4686500,
    "tipo": "clause",
    "cuando": "2026-08-27 17:27:10",
-   "valor": 4209000,
+   "valor": 3810000,
    "posicion": 4,
-   "puntos": 43,
-   "media": 6.1,
-   "racha": "2,11,3,3,1",
+   "puntos": 42,
+   "media": 7,
+   "racha": "10,2,11,3,3",
    "otrasPujas": []
   },
   {
@@ -3780,11 +3780,11 @@
    "importe": 5651100,
    "tipo": "normal",
    "cuando": "2026-08-27 17:37:55",
-   "valor": 6803000,
+   "valor": 6703000,
    "posicion": 3,
-   "puntos": 30,
+   "puntos": 26,
    "media": 4.3,
-   "racha": "5,6,4,4,4",
+   "racha": "3,5,6,4,4",
    "otrasPujas": []
   },
   {
@@ -7818,6 +7818,24 @@
    "puntos": 30,
    "media": 5,
    "racha": "4,13,5,1,4",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 551683225,
+   "idJugador": "27517",
+   "nombre": "Isi Palazón",
+   "de": "Mister",
+   "a": "Niutin FC (Isaac)",
+   "idUcDe": 0,
+   "idUcA": 12493763,
+   "importe": 3915670,
+   "tipo": "normal",
+   "cuando": "2026-10-01 17:00:17",
+   "valor": 3873000,
+   "posicion": 3,
+   "puntos": 7,
+   "media": 3.5,
+   "racha": "-,-,-,-,-",
    "otrasPujas": []
   }
  ],

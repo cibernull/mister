@@ -1,6 +1,14 @@
 {
- "saldo": -20054838,
+ "saldo": -23970508,
  "apuntes": [
+  {
+   "cuando": 1790866800,
+   "fecha": "2026-10-01 17:00",
+   "motivo": "Isi Palazón a Mister",
+   "tipo": "Compra",
+   "importe": -3915670,
+   "saldo": -23970508
+  },
   {
    "cuando": 1790695536,
    "fecha": "2026-09-29 17:25",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -960010,
    "saldo": 7189849
-  },
-  {
-   "cuando": 1788490800,
-   "fecha": "2026-09-04 05:00",
-   "motivo": "Beñat Gerenabarrena a Mister",
-   "tipo": "Compra",
-   "importe": -1060096,
-   "saldo": 8149859
   }
  ]
 }

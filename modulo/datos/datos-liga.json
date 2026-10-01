@@ -1273,6 +1273,16 @@
  ],
  "movimientos": [
   {
+   "id": "27517",
+   "nombre": "Isi Palazón",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 3915670,
+   "tipo": "normal",
+   "fecha": "2026-10-01 17:00:17",
+   "pos": 3
+  },
+  {
    "id": "33053",
    "nombre": "Adrián de la Fuente",
    "de": "Neky F.C. (Sergio)",
@@ -6665,6 +6675,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Isi Palazón",
+     "id": "27517",
+     "tipo": "compra",
+     "importe": 3915670,
+     "fecha": "2026-10-01",
+     "op": "normal"
+    },
+    {
      "j": "Cucho Hernández",
      "id": "12915",
      "tipo": "venta",
@@ -7597,6 +7615,12 @@
      "compras": 609480,
      "ventas": 559200,
      "ops": 2
+    },
+    "27517": {
+     "nombre": "Isi Palazón",
+     "compras": 3915670,
+     "ventas": 0,
+     "ops": 1
     },
     "27520": {
      "nombre": "Fran García",

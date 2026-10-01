@@ -43,14 +43,14 @@
   "n": "Niutin FC (Isaac)",
   "pos": 1,
   "pts": 347,
-  "saldo": -20054838,
-  "pl": 139794000,
+  "saldo": -23970508,
+  "pl": 143667000,
   "rep": 33800000,
   "ini": 16200000,
-  "com": 246971574,
+  "com": 250887244,
   "ven": 200816310,
   "pre": 10575000,
-  "plantilla": 19,
+  "plantilla": 20,
   "mio": 1,
   "sinValorar": [],
   "subidas": 14,
@@ -61,14 +61,14 @@
   "ajustePujas": 0,
   "libro": {
    "ventas": 200816310,
-   "compras": -246971574,
+   "compras": -250887244,
    "premios": 10575000,
    "devueltoPorClausulas": 5034500,
    "pagadoPorClausulas": -10556074,
    "inicio": 21047000
   },
   "costeReal": 10556074,
-  "comprometido": 3915670
+  "comprometido": 0
  },
  {
   "n": "Legalize F.C (Victor)",

@@ -3372,6 +3372,18 @@
     "topeMax": 14500912,
     "exceso": 0
    }
+  ],
+  "551683225": [
+   {
+    "idTransfer": 551683225,
+    "cuando": "2026-10-01 17:00:17",
+    "jugador": "Isi Palazón",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 3915670,
+    "gana": true,
+    "topeMax": 14893662,
+    "exceso": 0
+   }
   ]
  }
 }
