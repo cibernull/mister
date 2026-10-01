@@ -3338,6 +3338,40 @@
     "topeMax": 9747770,
     "exceso": 0
    }
+  ],
+  "551619014": [
+   {
+    "idTransfer": 551619014,
+    "cuando": "2026-10-01 05:00:24",
+    "jugador": "Dani Cárdenas",
+    "equipo": "Cacaculopedopis",
+    "puja": 1074000,
+    "gana": true,
+    "topeMax": 17004324,
+    "exceso": 0
+   }
+  ],
+  "551622649": [
+   {
+    "idTransfer": 551622649,
+    "cuando": "2026-10-01 05:00:24",
+    "jugador": "Dakonam Djené",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 3972368,
+    "gana": true,
+    "topeMax": 12807966,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 551622649,
+    "cuando": "2026-10-01 05:00:24",
+    "jugador": "Dakonam Djené",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 3921310,
+    "gana": false,
+    "topeMax": 14500912,
+    "exceso": 0
+   }
   ]
  }
 }

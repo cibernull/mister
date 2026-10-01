@@ -1259,9 +1259,39 @@
    "id": "64200",
    "nombre": "Jeremy Toljan",
    "valor": 1505000
+  },
+  {
+   "id": "24742",
+   "nombre": "Dani Cárdenas",
+   "valor": 1030000
+  },
+  {
+   "id": "8171",
+   "nombre": "Dakonam Djené",
+   "valor": 3891000
   }
  ],
  "movimientos": [
+  {
+   "id": "8171",
+   "nombre": "Dakonam Djené",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 3972368,
+   "tipo": "normal",
+   "fecha": "2026-10-01 05:00:24",
+   "pos": 2
+  },
+  {
+   "id": "24742",
+   "nombre": "Dani Cárdenas",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 1074000,
+   "tipo": "normal",
+   "fecha": "2026-10-01 05:00:24",
+   "pos": 1
+  },
   {
    "id": "22956",
    "nombre": "Sergio Gómez",
@@ -5457,6 +5487,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Dakonam Djené",
+     "id": "8171",
+     "tipo": "compra",
+     "importe": 3972368,
+     "fecha": "2026-10-01",
+     "op": "normal"
+    },
+    {
      "j": "Rafita Garrido",
      "id": "71008",
      "tipo": "compra",
@@ -6248,6 +6286,12 @@
      "nombre": "Juanmi Jiménez",
      "compras": 0,
      "ventas": 187150,
+     "ops": 1
+    },
+    "8171": {
+     "nombre": "Dakonam Djené",
+     "compras": 3972368,
+     "ventas": 0,
      "ops": 1
     },
     "8953": {
@@ -7805,6 +7849,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Dani Cárdenas",
+     "id": "24742",
+     "tipo": "compra",
+     "importe": 1074000,
+     "fecha": "2026-10-01",
+     "op": "normal"
+    },
+    {
      "j": "Junior Firpo",
      "id": "11761",
      "tipo": "compra",
@@ -8644,6 +8696,12 @@
      "nombre": "Sergio Carreira",
      "compras": 0,
      "ventas": 5505760,
+     "ops": 1
+    },
+    "24742": {
+     "nombre": "Dani Cárdenas",
+     "compras": 1074000,
+     "ventas": 0,
      "ops": 1
     },
     "27874": {

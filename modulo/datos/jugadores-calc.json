@@ -279,8 +279,8 @@
   "semana": -81000,
   "sem7": 28000,
   "mes": 3666000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 9014000,
   "ced": 0,
   "pos": 4,
   "est": "injury",
@@ -10613,8 +10613,8 @@
   "semana": -35000,
   "sem7": 125000,
   "mes": 1591000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 6681000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -14067,8 +14067,8 @@
   "semana": -132000,
   "sem7": -515000,
   "mes": 1080000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 2604000,
   "ced": 0,
   "pos": 2,
   "est": "injury",
@@ -15216,8 +15216,8 @@
   "semana": -92000,
   "sem7": -692000,
   "mes": -454000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 2876000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -15749,8 +15749,8 @@
   "semana": 48000,
   "sem7": 287000,
   "mes": 715000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 877000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -16372,8 +16372,8 @@
   "semana": -77000,
   "sem7": -320000,
   "mes": 702000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 2249000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -25689,8 +25689,8 @@
   "semana": 6000,
   "sem7": 49000,
   "mes": 417000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 587000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -29593,8 +29593,8 @@
   "semana": 116000,
   "sem7": 712000,
   "mes": -1641000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 3873000,
   "ced": 0,
   "pos": 3,
   "est": "doubt",
@@ -29789,8 +29789,8 @@
   "semana": 29000,
   "sem7": 280000,
   "mes": 15000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 915000,
   "ced": 0,
   "pos": 2,
   "est": "doubt",
@@ -32382,8 +32382,8 @@
   "semana": 0,
   "sem7": -66000,
   "mes": -2000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -34899,8 +34899,8 @@
   "semana": -36000,
   "sem7": 0,
   "mes": -36000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -36385,87 +36385,6 @@
   "d": 0
  },
  {
-  "id": "1751425",
-  "nombre": "Marc Santos",
-  "valor": 160000,
-  "puntos": 2,
-  "media": 2,
-  "partidos": 1,
-  "semana": -26000,
-  "sem7": 0,
-  "mes": -49000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   2,
-   null,
-   null
-  ],
-  "eq": 12,
-  "riv": 17,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 2,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": null,
-  "js": [
-   [
-    1,
-    2,
-    8,
-    0,
-    "i64"
-   ],
-   [
-    2,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "70183",
   "nombre": "Rayane Belaid",
   "valor": 160000,
@@ -36720,6 +36639,87 @@
     7,
     null,
     19,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "1751425",
+  "nombre": "Marc Santos",
+  "valor": 160000,
+  "puntos": 2,
+  "media": 2,
+  "partidos": 1,
+  "semana": -26000,
+  "sem7": 0,
+  "mes": -49000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   2,
+   null,
+   null
+  ],
+  "eq": 12,
+  "riv": 17,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 2,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": null,
+  "js": [
+   [
+    1,
+    2,
+    8,
+    0,
+    "i64"
+   ],
+   [
+    2,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    20,
     0,
     ""
    ]
@@ -41868,6 +41868,89 @@
   "d": 0
  },
  {
+  "id": "59089",
+  "nombre": "Alex Padilla",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -35000,
+  "sem7": 0,
+  "mes": -32000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 1,
+  "riv": 14,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    48,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "78393",
   "nombre": "Altay Bayındır",
   "valor": 160000,
@@ -43412,89 +43495,6 @@
     7,
     null,
     13,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "59089",
-  "nombre": "Alex Padilla",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -35000,
-  "sem7": 0,
-  "mes": -32000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1,
-  "riv": 14,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    48,
     0,
     ""
    ]
