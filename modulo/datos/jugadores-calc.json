@@ -6541,7 +6541,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": null,
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -21192,7 +21192,7 @@
   "mf": 2,
   "tit": 5,
   "sup": 1,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 30,
   "js": [
