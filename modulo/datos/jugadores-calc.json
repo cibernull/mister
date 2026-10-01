@@ -39741,46 +39741,6 @@
   "d": 1
  },
  {
-  "id": "17623",
-  "nombre": "Ferland Mendy",
-  "valor": 197000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 37000,
-  "sem7": 13000,
-  "mes": 37000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 15,
-  "riv": 20,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 31,
-  "js": [],
-  "p": 0,
-  "d": 1
- },
- {
   "id": "12902",
   "nombre": "Raúl de Tomás",
   "valor": 197000,
@@ -39862,6 +39822,46 @@
   ],
   "p": 0,
   "d": 0
+ },
+ {
+  "id": "17623",
+  "nombre": "Ferland Mendy",
+  "valor": 197000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 37000,
+  "sem7": 13000,
+  "mes": 37000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 15,
+  "riv": 20,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 31,
+  "js": [],
+  "p": 0,
+  "d": 1
  },
  {
   "id": "71506",
@@ -41377,96 +41377,6 @@
   "d": 0
  },
  {
-  "id": "70949",
-  "nombre": "Dani Barcia",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -23000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 6,
-  "riv": 16,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    4,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "70499",
   "nombre": "Iñaki Rupérez",
   "valor": 160000,
@@ -41632,6 +41542,96 @@
     7,
     null,
     6,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "70949",
+  "nombre": "Dani Barcia",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -23000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 6,
+  "riv": 16,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    4,
     0,
     ""
    ]
@@ -42033,6 +42033,75 @@
     7,
     null,
     1490,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "11092",
+  "nombre": "Andoni Gorosabel",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -38000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 8,
+  "riv": 13,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 30,
+  "js": [
+   [
+    1,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    14,
     0,
     ""
    ]
@@ -43495,75 +43564,6 @@
     7,
     null,
     13,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "11092",
-  "nombre": "Andoni Gorosabel",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -38000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 8,
-  "riv": 13,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 30,
-  "js": [
-   [
-    1,
-    null,
-    12,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    14,
     0,
     ""
    ]
