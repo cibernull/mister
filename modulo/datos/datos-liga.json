@@ -1273,6 +1273,16 @@
  ],
  "movimientos": [
   {
+   "id": "33053",
+   "nombre": "Adrián de la Fuente",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 10117170,
+   "tipo": "normal",
+   "fecha": "2026-10-01 07:57:12",
+   "pos": 2
+  },
+  {
    "id": "8171",
    "nombre": "Dakonam Djené",
    "de": null,
@@ -5495,6 +5505,14 @@
      "op": "normal"
     },
     {
+     "j": "Adrián de la Fuente",
+     "id": "33053",
+     "tipo": "venta",
+     "importe": 10117170,
+     "fecha": "2026-10-01",
+     "op": "normal"
+    },
+    {
      "j": "Rafita Garrido",
      "id": "71008",
      "tipo": "compra",
@@ -6375,8 +6393,8 @@
     "33053": {
      "nombre": "Adrián de la Fuente",
      "compras": 6777000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 10117170,
+     "ops": 2
     },
     "36046": {
      "nombre": "Gonzalo Villar",

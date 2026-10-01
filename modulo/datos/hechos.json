@@ -7302,7 +7302,7 @@
    "importe": 6547380,
    "tipo": "normal",
    "cuando": "2026-09-26 17:14:37",
-   "valor": 6558000,
+   "valor": 6569000,
    "posicion": 2,
    "puntos": 25,
    "media": 5,
@@ -7801,6 +7801,24 @@
      "puja": 3921310
     }
    ]
+  },
+  {
+   "idTransfer": 551650661,
+   "idJugador": "33053",
+   "nombre": "Adrián de la Fuente",
+   "de": "Neky F.C. (Sergio)",
+   "a": "Mister",
+   "idUcDe": 12493688,
+   "idUcA": 0,
+   "importe": 10117170,
+   "tipo": "normal",
+   "cuando": "2026-10-01 07:57:12",
+   "valor": 9996000,
+   "posicion": 2,
+   "puntos": 30,
+   "media": 5,
+   "racha": "4,13,5,1,4",
+   "otrasPujas": []
   }
  ],
  "salidas": [
