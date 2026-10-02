@@ -92,3 +92,70 @@ describe('verificar', () => {
     expect(r.motivos[0]).toMatch(/algo he leído mal/)
   })
 })
+
+describe('verificar · la foto tomada a medio movimiento', () => {
+  // El 2 de octubre de 2026, a las 19:11 de Madrid, se vendió a Mariano Díaz.
+  // La pasada de las 19:07 leyó la plantilla propia con él —20 jugadores,
+  // 145.363.000 €— y la clasificación de Mister sin él —19 y 140.028.000 €—.
+  // El tope descuadró 1.333.750 €, que es el 25 % exacto de esos 5.335.000 €:
+  // las dos cifras son de Mister y aún no se habían puesto de acuerdo. Hasta
+  // entonces eso daba la pasada por perdida sin reintentar, y media hora
+  // después cuadraba sola.
+  const CON_MARIANO = 145_363_000
+  const SIN_MARIANO = 140_028_000
+
+  it('reconoce el desfase cuando el tope descuadra justo el 25 % de la plantilla', () => {
+    const r = verificar(
+      mio(-24_000_000, CON_MARIANO),
+      suyo(-24_000_000, -24_000_000, -24_000_000 + 0.25 * SIN_MARIANO),
+      -24_000_000,
+      SIN_MARIANO,
+    )
+    expect(r.cuadra).toBe(false)
+    expect(r.fotoAMedias).toBe(true)
+    expect(r.motivos).toHaveLength(1)
+  })
+
+  it('un tope que descuadra por otra cosa NO es un desfase: ahí hay que parar', () => {
+    // Misma plantilla en las dos fuentes y aun así falta dinero: eso es un
+    // error de cálculo, y taparlo con un reintento sería esconderlo.
+    const r = verificar(
+      mio(10_000_000, 40_000_000),
+      suyo(10_000_000, 10_000_000, 19_000_000),
+      10_000_000,
+      40_000_000,
+    )
+    expect(r.cuadra).toBe(false)
+    expect(r.fotoAMedias).toBe(false)
+  })
+
+  it('si además el saldo se leyó mal, no es un desfase', () => {
+    const r = verificar(
+      mio(-24_000_000, CON_MARIANO),
+      suyo(-23_000_000, -23_000_000, -23_000_000 + 0.25 * SIN_MARIANO),
+      -24_000_000,
+      SIN_MARIANO,
+    )
+    expect(r.fotoAMedias).toBe(false)
+  })
+
+  it('sin la cifra de la clasificación no se presume nada', () => {
+    const r = verificar(
+      mio(-24_000_000, CON_MARIANO),
+      suyo(-24_000_000, -24_000_000, -24_000_000 + 0.25 * SIN_MARIANO),
+      -24_000_000,
+    )
+    expect(r.fotoAMedias).toBe(false)
+  })
+
+  it('cuando todo cuadra no hay desfase que reconocer', () => {
+    const r = verificar(
+      mio(10_000_000, 40_000_000),
+      suyo(10_000_000, 10_000_000, 20_000_000),
+      10_000_000,
+      40_000_000,
+    )
+    expect(r.cuadra).toBe(true)
+    expect(r.fotoAMedias).toBe(false)
+  })
+})

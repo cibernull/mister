@@ -314,7 +314,10 @@ async function intentar(): Promise<Resultado> {
   escribirJson(SUBIDAS, subidasVistas)
   const gastoVisto = gastoPorEquipo(subidasVistas)
 
-  const veredicto = verificar(mio, mister, libro.saldo)
+  // Se le pasa también lo que la clasificación dice que vale mi plantilla: con
+  // eso distingue un error de cuentas de una foto tomada a medio movimiento,
+  // que se arregla esperando.
+  const veredicto = verificar(mio, mister, libro.saldo, clasificacion.find((c) => c.equipo === mio.n)?.valorPlantilla)
   const dLiga = verificarLiga(cuentas.equipos, clasificacion)
   if (!veredicto.cuadra || dLiga.motivos.length > 0) {
     return {
@@ -323,8 +326,10 @@ async function intentar(): Promise<Resultado> {
       mensaje: 'Las cuentas no cuadran con las de Mister, así que no he tocado nada.',
       // Que solo discrepen los rivales suele ser Mister desfasado consigo
       // mismo, y se arregla esperando: merece la pena reintentar antes de dar
-      // la pasada por perdida.
-      reintentable: veredicto.cuadra,
+      // la pasada por perdida. Y lo mismo cuando el que discrepa soy yo pero
+      // el descuadre del tope es exactamente el 25 % de lo que se aparta mi
+      // plantilla: también son dos cifras suyas sin ponerse de acuerdo.
+      reintentable: veredicto.cuadra || veredicto.fotoAMedias,
       detalle: [
         ...veredicto.motivos,
         ...dLiga.motivos,
@@ -871,9 +876,17 @@ function construirJugadores(
  * pasada se negó a escribir, y los datos se quedaron congelados hora y media
  * hasta que alguien miró.
  *
- * Solo se reintenta cuando lo único que falla son los rivales. Si el saldo
- * propio no cuadra contra `_FG_user`, eso no lo arregla esperar: es un error de
- * cálculo y hay que verlo.
+ * Al equipo propio le pasa igual, y eso costó una pasada el 2 de octubre a las
+ * 19:07: se acababa de vender a Mariano Díaz, la plantilla se leyó con él y la
+ * clasificación sin él, y el tope descuadró 1.333.750 € —el 25 % clavado de
+ * los 5.335.000 € que valía—. Media hora después cuadraba solo. Por eso ahora
+ * también se reintenta cuando el descuadre propio se explica entero por esa
+ * diferencia de plantilla; lo decide `verificar`, que es quien tiene las dos
+ * cifras delante.
+ *
+ * Lo que no se reintenta nunca es un error de cuentas: si el saldo del libro no
+ * es el de la página, o falta dinero por cualquier otra razón, esperar no lo
+ * arregla y hay que verlo.
  */
 const ESPERA_ENTRE_INTENTOS_MS = 45_000
 const INTENTOS = 3

@@ -23,6 +23,9 @@ import type { Equipo } from './reconstruir.js'
  */
 export const MARGEN_REDONDEO = 5000
 
+/** Lo que Mister presta sobre el valor de la plantilla. Comprobado al euro. */
+export const COEFICIENTE_TOPE = 0.25
+
 export type Veredicto = {
   cuadra: boolean
   saldoCalculado: number
@@ -31,10 +34,32 @@ export type Veredicto = {
   topeDeMister: number
   /** Dinero retenido por pujas vivas: está en el saldo pero ya no es tuyo. */
   comprometido: number
+  /**
+   * Lo único que falla es el tope, y descuadra **exactamente** el 25 % de lo
+   * que la plantilla propia se aparta de la que publica la clasificación: las
+   * dos cifras son de Mister y aún no se han puesto de acuerdo entre ellas.
+   *
+   * Pasó el 2 de octubre de 2026: a las 19:11 de Madrid se vendió a Mariano
+   * Díaz y la pasada de las 19:07 leyó la plantilla con él —20 jugadores,
+   * 145.363.000 €— y la clasificación sin él —19 y 140.028.000 €—. El tope
+   * descuadró 1.333.750 €, que es el 25 % clavado de esos 5.335.000 €. No era
+   * un error de cuentas: media hora después cuadraba solo.
+   *
+   * Sirve para reintentar en vez de dar la pasada por perdida. Que la cuenta
+   * salga **entera** es lo que lo distingue de un error de verdad: si falta o
+   * sobra un euro por cualquier otra razón, esto es `false` y se para.
+   */
+  fotoAMedias: boolean
   motivos: string[]
 }
 
-export function verificar(mio: Equipo, mister: DatosUsuario, saldoDelLibro: number): Veredicto {
+export function verificar(
+  mio: Equipo,
+  mister: DatosUsuario,
+  saldoDelLibro: number,
+  /** Lo que la clasificación de Mister dice que vale la plantilla propia. */
+  valorPlantillaEnClasificacion?: number,
+): Veredicto {
   // Mister publica tres cifras de dinero, no dos: `current` es lo que tienes,
   // `future` es lo que te quedará cuando se resuelvan las pujas que has dejado
   // puestas, y `maxDebt` se construye sobre `future`. Usar `current` aquí
@@ -46,13 +71,14 @@ export function verificar(mio: Equipo, mister: DatosUsuario, saldoDelLibro: numb
   // una puja no es un apunte hasta que se resuelve—, pero el saldo base sigue
   // siendo el calculado, para no perder la comparación independiente.
   const comprometido = mister.saldo - mister.saldoFuturo
-  const topeCalculado = mio.saldo - comprometido + 0.25 * mio.pl
+  const topeCalculado = mio.saldo - comprometido + COEFICIENTE_TOPE * mio.pl
   const motivos: string[] = []
 
   // El saldo ya no se calcula: se lee del libro de caja. Compararlo con el que
   // trae la página es una comprobación de que se ha leído bien, y ahí no hay
   // margen que valga: son dos cifras de Mister sobre lo mismo.
-  if (saldoDelLibro !== mister.saldo) {
+  const saldoMalLeido = saldoDelLibro !== mister.saldo
+  if (saldoMalLeido) {
     motivos.push(
       `el libro de caja dice ${euros(saldoDelLibro)} y la página dice ${euros(mister.saldo)}; algo he leído mal`,
     )
@@ -62,7 +88,8 @@ export function verificar(mio: Equipo, mister: DatosUsuario, saldoDelLibro: numb
   // delata: `maxDebt` es el saldo disponible más el 25 % de la plantilla. Si
   // sobra o falta un jugador, o su valor está viejo, se ve aquí.
   const dTope = topeCalculado - mister.topePuja
-  if (Math.abs(dTope) > MARGEN_REDONDEO) {
+  const topeDescuadrado = Math.abs(dTope) > MARGEN_REDONDEO
+  if (topeDescuadrado) {
     motivos.push(
       `el tope de puja calculado (${euros(topeCalculado)}) se aparta ${euros(Math.abs(dTope))} del que publica Mister (${euros(mister.topePuja)})`,
     )
@@ -74,8 +101,19 @@ export function verificar(mio: Equipo, mister: DatosUsuario, saldoDelLibro: numb
     )
   }
 
+  // La diferencia de plantilla entre mis cuentas y la clasificación explica
+  // el descuadre del tope entero, o no lo explica.
+  const dPlantilla = valorPlantillaEnClasificacion === undefined ? 0 : mio.pl - valorPlantillaEnClasificacion
+  const fotoAMedias =
+    topeDescuadrado &&
+    !saldoMalLeido &&
+    mio.sinValorar.length === 0 &&
+    dPlantilla !== 0 &&
+    Math.abs(dTope - COEFICIENTE_TOPE * dPlantilla) <= MARGEN_REDONDEO
+
   return {
     cuadra: motivos.length === 0,
+    fotoAMedias,
     saldoCalculado: mio.saldo,
     saldoDeMister: mister.saldo,
     topeCalculado,
