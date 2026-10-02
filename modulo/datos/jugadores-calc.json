@@ -42492,96 +42492,6 @@
   "d": 0
  },
  {
-  "id": "78393",
-  "nombre": "Altay Bayındır",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -27000,
-  "mes": -275000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 5,
-  "riv": 23,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 28,
-  "js": [
-   [
-    1,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    1490,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "11092",
   "nombre": "Andoni Gorosabel",
   "valor": 160000,
@@ -43987,6 +43897,96 @@
     6,
     null,
     48,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "78393",
+  "nombre": "Altay Bayındır",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -27000,
+  "mes": -275000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 5,
+  "riv": 23,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 28,
+  "js": [
+   [
+    1,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    1490,
     0,
     ""
    ]
