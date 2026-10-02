@@ -290,6 +290,19 @@
   "entra": true
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-10-02",
+  "id": "3060",
+  "de": "Niutin FC (Isaac)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-02",
+  "id": "3060",
+  "entra": false
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-01",
   "id": "4753",

@@ -1273,6 +1273,16 @@
  ],
  "movimientos": [
   {
+   "id": "3060",
+   "nombre": "Mariano Díaz",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 5495050,
+   "tipo": "normal",
+   "fecha": "2026-10-02 19:11:17",
+   "pos": 4
+  },
+  {
    "id": "36046",
    "nombre": "Gonzalo Villar",
    "de": "Neky F.C. (Sergio)",
@@ -6717,6 +6727,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Mariano Díaz",
+     "id": "3060",
+     "tipo": "venta",
+     "importe": 5495050,
+     "fecha": "2026-10-02",
+     "op": "normal"
+    },
+    {
      "j": "Isi Palazón",
      "id": "27517",
      "tipo": "compra",
@@ -7565,8 +7583,8 @@
     "3060": {
      "nombre": "Mariano Díaz",
      "compras": 4464220,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5495050,
+     "ops": 2
     },
     "12915": {
      "nombre": "Cucho Hernández",

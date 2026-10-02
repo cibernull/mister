@@ -1,6 +1,14 @@
 {
- "saldo": -23970508,
+ "saldo": -18475458,
  "apuntes": [
+  {
+   "cuando": 1790961077,
+   "fecha": "2026-10-02 19:11",
+   "motivo": "Mariano Díaz a Mister",
+   "tipo": "Venta",
+   "importe": 5495050,
+   "saldo": -18475458
+  },
   {
    "cuando": 1790866800,
    "fecha": "2026-10-01 17:00",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 2709930,
    "saldo": 9899779
-  },
-  {
-   "cuando": 1788490800,
-   "fecha": "2026-09-04 05:00",
-   "motivo": "Oriol Rey a Mister",
-   "tipo": "Compra",
-   "importe": -960010,
-   "saldo": 7189849
   }
  ]
 }
