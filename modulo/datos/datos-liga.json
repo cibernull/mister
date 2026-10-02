@@ -1273,6 +1273,16 @@
  ],
  "movimientos": [
   {
+   "id": "68606",
+   "nombre": "Ángel Pérez",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 8587112,
+   "tipo": "normal",
+   "fecha": "2026-10-02 05:00:22",
+   "pos": 3
+  },
+  {
    "id": "27517",
    "nombre": "Isi Palazón",
    "de": null,
@@ -5507,6 +5517,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Ángel Pérez",
+     "id": "68606",
+     "tipo": "compra",
+     "importe": 8587112,
+     "fecha": "2026-10-02",
+     "op": "normal"
+    },
+    {
      "j": "Dakonam Djené",
      "id": "8171",
      "tipo": "compra",
@@ -6585,6 +6603,12 @@
      "compras": 5936000,
      "ventas": 7270200,
      "ops": 2
+    },
+    "68606": {
+     "nombre": "Ángel Pérez",
+     "compras": 8587112,
+     "ventas": 0,
+     "ops": 1
     },
     "68652": {
      "nombre": "Ville Koski",

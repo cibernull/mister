@@ -3384,6 +3384,18 @@
     "topeMax": 14893662,
     "exceso": 0
    }
+  ],
+  "551746054": [
+   {
+    "idTransfer": 551746054,
+    "cuando": "2026-10-02 05:00:22",
+    "jugador": "Ángel Pérez",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 8587112,
+    "gana": true,
+    "topeMax": 17705718,
+    "exceso": 0
+   }
   ]
  }
 }
