@@ -1,6 +1,91 @@
 [
  {
   "tipo": "mercado",
+  "dia": "2026-10-02",
+  "id": "22956",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-02",
+  "id": "23369",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-02",
+  "id": "36410",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-02",
+  "id": "48556",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-02",
+  "id": "52371",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-02",
+  "id": "55454",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-02",
+  "id": "56632",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-02",
+  "id": "68465",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-02",
+  "id": "68606",
+  "de": null,
+  "a": "Neky F.C. (Sergio)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-02",
+  "id": "68606",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-02",
+  "id": "69889",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-02",
+  "id": "70927",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-02",
+  "id": "925296",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-02",
+  "id": "4836242",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-10-01",
   "id": "4753",
   "entra": false
