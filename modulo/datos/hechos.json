@@ -7388,7 +7388,7 @@
    "importe": 2329860,
    "tipo": "normal",
    "cuando": "2026-09-27 10:39:55",
-   "valor": 2635000,
+   "valor": 2707000,
    "posicion": 3,
    "puntos": 21,
    "media": 4.2,
@@ -7854,6 +7854,24 @@
    "puntos": 36,
    "media": 5.1,
    "racha": "8,10,2,5,2",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 551770134,
+   "idJugador": "36046",
+   "nombre": "Gonzalo Villar",
+   "de": "Neky F.C. (Sergio)",
+   "a": "Mister",
+   "idUcDe": 12493688,
+   "idUcA": 0,
+   "importe": 5407020,
+   "tipo": "normal",
+   "cuando": "2026-10-02 06:18:20",
+   "valor": 5318000,
+   "posicion": 3,
+   "puntos": 27,
+   "media": 3.9,
+   "racha": "4,3,3,4,5",
    "otrasPujas": []
   }
  ],

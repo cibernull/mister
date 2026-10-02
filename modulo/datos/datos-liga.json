@@ -1273,6 +1273,16 @@
  ],
  "movimientos": [
   {
+   "id": "36046",
+   "nombre": "Gonzalo Villar",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 5407020,
+   "tipo": "normal",
+   "fecha": "2026-10-02 06:18:20",
+   "pos": 3
+  },
+  {
    "id": "68606",
    "nombre": "Ángel Pérez",
    "de": null,
@@ -5525,6 +5535,14 @@
      "op": "normal"
     },
     {
+     "j": "Gonzalo Villar",
+     "id": "36046",
+     "tipo": "venta",
+     "importe": 5407020,
+     "fecha": "2026-10-02",
+     "op": "normal"
+    },
+    {
      "j": "Dakonam Djené",
      "id": "8171",
      "tipo": "compra",
@@ -6427,8 +6445,8 @@
     "36046": {
      "nombre": "Gonzalo Villar",
      "compras": 1267000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5407020,
+     "ops": 2
     },
     "48937": {
      "nombre": "Jon Karrikaburu",
