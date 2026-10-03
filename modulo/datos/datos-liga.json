@@ -1278,6 +1278,16 @@
  ],
  "movimientos": [
   {
+   "id": "71154",
+   "nombre": "Lorenzo Amatucci",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 9733860,
+   "tipo": "normal",
+   "fecha": "2026-10-03 09:06:32",
+   "pos": 3
+  },
+  {
    "id": "25621",
    "nombre": "Andrei Rațiu",
    "de": null,
@@ -9720,6 +9730,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Lorenzo Amatucci",
+     "id": "71154",
+     "tipo": "venta",
+     "importe": 9733860,
+     "fecha": "2026-10-03",
+     "op": "normal"
+    },
+    {
      "j": "Jeremy Toljan",
      "id": "64200",
      "tipo": "compra",
@@ -10710,8 +10728,8 @@
     "71154": {
      "nombre": "Lorenzo Amatucci",
      "compras": 6500000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 9733860,
+     "ops": 2
     },
     "71649": {
      "nombre": "Péter Gulácsi",
