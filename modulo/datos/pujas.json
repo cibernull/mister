@@ -3396,6 +3396,18 @@
     "topeMax": 17705718,
     "exceso": 0
    }
+  ],
+  "551872085": [
+   {
+    "idTransfer": 551872085,
+    "cuando": "2026-10-03 05:00:19",
+    "jugador": "Andrei Rațiu",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 8346000,
+    "gana": true,
+    "topeMax": 20105668,
+    "exceso": 0
+   }
   ]
  }
 }
