@@ -1278,6 +1278,16 @@
  ],
  "movimientos": [
   {
+   "id": "31",
+   "nombre": "Jan Oblak",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 10170420,
+   "tipo": "normal",
+   "fecha": "2026-10-03 19:11:58",
+   "pos": 1
+  },
+  {
    "id": "23369",
    "nombre": "Juan Foyth",
    "de": "Niutin FC (Isaac)",
@@ -5580,6 +5590,14 @@
      "op": "normal"
     },
     {
+     "j": "Jan Oblak",
+     "id": "31",
+     "tipo": "venta",
+     "importe": 10170420,
+     "fecha": "2026-10-03",
+     "op": "normal"
+    },
+    {
      "j": "Ángel Pérez",
      "id": "68606",
      "tipo": "compra",
@@ -6384,8 +6402,8 @@
     "31": {
      "nombre": "Jan Oblak",
      "compras": 6850000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 10170420,
+     "ops": 2
     },
     "42": {
      "nombre": "Koke",
