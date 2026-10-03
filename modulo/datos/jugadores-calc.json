@@ -2792,8 +2792,8 @@
   "semana": 16000,
   "sem7": 751000,
   "mes": 1207000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 24994032,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -17712,7 +17712,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": null,
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -40043,7 +40043,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": null,
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
