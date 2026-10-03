@@ -7160,8 +7160,8 @@
   "semana": -135000,
   "sem7": -866000,
   "mes": -1136000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 9024000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -12212,8 +12212,8 @@
   "semana": -74000,
   "sem7": -726000,
   "mes": -405000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 3377000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -13631,8 +13631,8 @@
   "semana": 78000,
   "sem7": 523000,
   "mes": 1843000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 2785000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -16552,8 +16552,8 @@
   "semana": -56000,
   "sem7": -445000,
   "mes": -858000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1501000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -19441,8 +19441,8 @@
   "semana": -56000,
   "sem7": -169000,
   "mes": -127000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 365000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -20057,8 +20057,8 @@
   "semana": -42000,
   "sem7": -314000,
   "mes": -851000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 777000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -32472,8 +32472,8 @@
   "semana": -21000,
   "sem7": -38000,
   "mes": -454000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -33896,8 +33896,8 @@
   "semana": -9000,
   "sem7": -38000,
   "mes": -51000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 191000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -36296,6 +36296,89 @@
   "d": 0
  },
  {
+  "id": "22471",
+  "nombre": "Jon Pacheco",
+  "valor": 173000,
+  "puntos": 2,
+  "media": 2,
+  "partidos": 1,
+  "semana": -14000,
+  "sem7": 13000,
+  "mes": 13000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   2,
+   null
+  ],
+  "eq": 16,
+  "riv": 6,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 2,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    1,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    4,
+    2,
+    23,
+    0,
+    "i70"
+   ],
+   [
+    5,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    19,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "59593",
   "nombre": "Logan Costa",
   "valor": 173000,
@@ -36377,89 +36460,6 @@
     7,
     null,
     12,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "22471",
-  "nombre": "Jon Pacheco",
-  "valor": 173000,
-  "puntos": 2,
-  "media": 2,
-  "partidos": 1,
-  "semana": -14000,
-  "sem7": 13000,
-  "mes": 13000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   2,
-   null
-  ],
-  "eq": 16,
-  "riv": 6,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 2,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    1,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    4,
-    2,
-    23,
-    0,
-    "i70"
-   ],
-   [
-    5,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    19,
     0,
     ""
    ]
@@ -40425,8 +40425,8 @@
   "semana": 3000,
   "sem7": 19000,
   "mes": 28000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 188000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -41063,96 +41063,6 @@
   "d": 0
  },
  {
-  "id": "13005",
-  "nombre": "Andriy Lunin",
-  "valor": 172000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -18000,
-  "sem7": 10000,
-  "mes": -425000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 15,
-  "riv": 20,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    1,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    2,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "27422",
   "nombre": "Cristian Rivero",
   "valor": 172000,
@@ -41235,6 +41145,96 @@
     7,
     null,
     16,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "13005",
+  "nombre": "Andriy Lunin",
+  "valor": 172000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -18000,
+  "sem7": 10000,
+  "mes": -425000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 15,
+  "riv": 20,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 27,
+  "js": [
+   [
+    1,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    2,
     0,
     ""
    ]
@@ -41480,8 +41480,8 @@
   "semana": -23000,
   "sem7": -41000,
   "mes": -410000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 169000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -42079,6 +42079,96 @@
   "d": 0
  },
  {
+  "id": "4947925",
+  "nombre": "Brian Fariñas",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -12000,
+  "sem7": -48000,
+  "mes": -335000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 3,
+  "riv": 9,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [
+   [
+    1,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    17,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "60859",
   "nombre": "Facundo Garcés",
   "valor": 160000,
@@ -42619,8 +42709,8 @@
   "semana": -14000,
   "sem7": 0,
   "mes": -79000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -42808,6 +42898,75 @@
     7,
     null,
     5,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "59532",
+  "nombre": "Marash Kumbulla",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -3000,
+  "mes": -54000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 14,
+  "riv": 1,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 26,
+  "js": [
+   [
+    1,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    50,
     0,
     ""
    ]
@@ -43167,54 +43326,6 @@
   "d": 0
  },
  {
-  "id": "71003",
-  "nombre": "Diego Murillo",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -35000,
-  "sem7": -5000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "doubt",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 13,
-  "riv": 8,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    6,
-    null,
-    20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "29167",
   "nombre": "Ángel Fortuño",
   "valor": 160000,
@@ -43305,20 +43416,20 @@
   "d": 0
  },
  {
-  "id": "59532",
-  "nombre": "Marash Kumbulla",
+  "id": "71003",
+  "nombre": "Diego Murillo",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": 0,
-  "sem7": -3000,
-  "mes": -54000,
-  "mk": 0,
-  "pv": null,
+  "semana": -35000,
+  "sem7": -5000,
+  "mes": 0,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 2,
-  "est": null,
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -43328,8 +43439,8 @@
    null,
    null
   ],
-  "eq": 14,
-  "riv": 1,
+  "eq": 13,
+  "riv": 8,
   "casa": 1,
   "gol": 0,
   "tar": 0,
@@ -43339,123 +43450,12 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 26,
+  "edad": 25,
   "js": [
-   [
-    1,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    15,
-    0,
-    ""
-   ],
    [
     6,
     null,
-    8,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    50,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "4947925",
-  "nombre": "Brian Fariñas",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -12000,
-  "sem7": -48000,
-  "mes": -335000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 3,
-  "riv": 9,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [
-   [
-    1,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    12,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    17,
+    20,
     0,
     ""
    ]
