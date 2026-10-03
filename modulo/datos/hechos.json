@@ -7913,6 +7913,24 @@
    "media": 5,
    "racha": "5,6,5,4,-",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 551929436,
+   "idJugador": "23369",
+   "nombre": "Juan Foyth",
+   "de": "Niutin FC (Isaac)",
+   "a": "Mister",
+   "idUcDe": 12493763,
+   "idUcA": 0,
+   "importe": 5217660,
+   "tipo": "normal",
+   "cuando": "2026-10-03 17:33:21",
+   "valor": 5166000,
+   "posicion": 2,
+   "puntos": 12,
+   "media": 4,
+   "racha": "4,-,-,-,-",
+   "otrasPujas": []
   }
  ],
  "salidas": [

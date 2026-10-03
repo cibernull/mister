@@ -1,6 +1,22 @@
 {
- "saldo": -18475458,
+ "saldo": -12741198,
  "apuntes": [
+  {
+   "cuando": 1791041601,
+   "fecha": "2026-10-03 17:33",
+   "motivo": "Juan Foyth a Mister",
+   "tipo": "Venta",
+   "importe": 5217660,
+   "saldo": -12741198
+  },
+  {
+   "cuando": 1791041589,
+   "fecha": "2026-10-03 17:33",
+   "motivo": "Modificación de cláusula (50%) de Juan Foyth",
+   "tipo": "Bonificación",
+   "importe": 516600,
+   "saldo": -17958858
+  },
   {
    "cuando": 1790961077,
    "fecha": "2026-10-02 19:11",
@@ -464,22 +480,6 @@
    "tipo": "Penalización",
    "importe": -212019,
    "saldo": 12132800
-  },
-  {
-   "cuando": 1788538635,
-   "fecha": "2026-09-04 18:17",
-   "motivo": "Fer Niño a Mister",
-   "tipo": "Venta",
-   "importe": 2445040,
-   "saldo": 12344819
-  },
-  {
-   "cuando": 1788538621,
-   "fecha": "2026-09-04 18:17",
-   "motivo": "Gabriel Suazo a Mister",
-   "tipo": "Venta",
-   "importe": 2709930,
-   "saldo": 9899779
   }
  ]
 }

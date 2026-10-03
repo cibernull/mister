@@ -1278,6 +1278,16 @@
  ],
  "movimientos": [
   {
+   "id": "23369",
+   "nombre": "Juan Foyth",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 5217660,
+   "tipo": "normal",
+   "fecha": "2026-10-03 17:33:21",
+   "pos": 2
+  },
+  {
    "id": "71154",
    "nombre": "Lorenzo Amatucci",
    "de": "Saiyans FC (Fran)",
@@ -6766,6 +6776,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Juan Foyth",
+     "id": "23369",
+     "tipo": "venta",
+     "importe": 5217660,
+     "fecha": "2026-10-03",
+     "op": "normal"
+    },
+    {
      "j": "Mariano Díaz",
      "id": "3060",
      "tipo": "venta",
@@ -7688,8 +7706,8 @@
     "23369": {
      "nombre": "Juan Foyth",
      "compras": 1544348,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5217660,
+     "ops": 2
     },
     "24860": {
      "nombre": "John Donald",
