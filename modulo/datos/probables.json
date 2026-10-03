@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-03T12:38:15.429Z",
+ "cuando": "2026-10-03T15:08:15.725Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -328,7 +328,7 @@
    "min": 562
   },
   "7025": {
-   "prob": 95,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 630
@@ -1018,7 +1018,7 @@
    "min": 495
   },
   "29167": {
-   "prob": 5,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -1804,7 +1804,7 @@
    "min": 378
   },
   "61093": {
-   "prob": 10,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 72
@@ -2362,7 +2362,7 @@
    "min": 165
   },
   "70940": {
-   "prob": 50,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
    "min": 73
@@ -2614,7 +2614,7 @@
    "min": 5
   },
   "71343": {
-   "prob": 40,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 226

@@ -192,6 +192,108 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "217",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "1684",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "14911",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "22956",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "24792",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "52189",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "54832",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "55666",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "59506",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "60218",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "60290",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "64199",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "68498",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "68676",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "70931",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "71503",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-03",
+  "id": "4836184",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-10-02",
   "id": "22956",
   "entra": false
