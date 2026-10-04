@@ -2522,8 +2522,8 @@
   "semana": 103000,
   "sem7": 753000,
   "mes": 2199000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 9906000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -6357,8 +6357,8 @@
   "semana": 202000,
   "sem7": 1343000,
   "mes": 3417000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 9536000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -6537,8 +6537,8 @@
   "semana": -104000,
   "sem7": 39000,
   "mes": 1260000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 11674000,
   "ced": 0,
   "pos": 4,
   "est": "injury",
@@ -23841,8 +23841,8 @@
   "semana": -78000,
   "sem7": -606000,
   "mes": -147000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1813000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -24464,8 +24464,8 @@
   "semana": 15000,
   "sem7": 141000,
   "mes": 287000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 457000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -26973,8 +26973,8 @@
   "semana": -17000,
   "sem7": -215000,
   "mes": 7000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 267000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -32742,8 +32742,8 @@
   "semana": -33000,
   "sem7": -34000,
   "mes": -115000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -37948,6 +37948,94 @@
   "d": 0
  },
  {
+  "id": "607",
+  "nombre": "Borja Mayoral",
+  "valor": 160000,
+  "puntos": 1,
+  "media": 0.5,
+  "partidos": 2,
+  "semana": 0,
+  "sem7": -182000,
+  "mes": -1290000,
+  "mk": 1,
+  "pv": 160000,
+  "ced": 0,
+  "pos": 4,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   0,
+   1
+  ],
+  "eq": 9,
+  "riv": 3,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 1,
+  "tit": 0,
+  "sup": 2,
+  "once": null,
+  "asis": 0,
+  "edad": 29,
+  "js": [
+   [
+    1,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    2,
+    0,
+    1490,
+    0,
+    "i90"
+   ],
+   [
+    3,
+    1,
+    50,
+    0,
+    "i86"
+   ],
+   [
+    4,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    13,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "65104",
   "nombre": "Jozhua Vertrouwd",
   "valor": 160000,
@@ -38106,94 +38194,6 @@
     5,
     0,
     "i84"
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "607",
-  "nombre": "Borja Mayoral",
-  "valor": 160000,
-  "puntos": 1,
-  "media": 0.5,
-  "partidos": 2,
-  "semana": 0,
-  "sem7": -182000,
-  "mes": -1290000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   0,
-   1
-  ],
-  "eq": 9,
-  "riv": 3,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 1,
-  "tit": 0,
-  "sup": 2,
-  "once": null,
-  "asis": 0,
-  "edad": 29,
-  "js": [
-   [
-    1,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    2,
-    0,
-    1490,
-    0,
-    "i90"
-   ],
-   [
-    3,
-    1,
-    50,
-    0,
-    "i86"
-   ],
-   [
-    4,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    13,
-    0,
-    ""
    ]
   ],
   "p": 0,
@@ -38675,8 +38675,8 @@
   "semana": -53000,
   "sem7": -350000,
   "mes": -1330000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 260000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -40439,8 +40439,8 @@
   "semana": 27000,
   "sem7": -23000,
   "mes": -177000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 187000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -42646,89 +42646,6 @@
   "d": 0
  },
  {
-  "id": "65724",
-  "nombre": "Fábio Cardoso",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -21000,
-  "sem7": -8000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 17,
-  "riv": 12,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 32,
-  "js": [
-   [
-    1,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    3,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "65669",
   "nombre": "Grady Diangana",
   "valor": 160000,
@@ -42738,8 +42655,8 @@
   "semana": 0,
   "sem7": -25000,
   "mes": 0,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -43560,96 +43477,6 @@
   "d": 0
  },
  {
-  "id": "59064",
-  "nombre": "Jiri Letacek",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -2000,
-  "sem7": -17000,
-  "mes": -4000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 9,
-  "riv": 3,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    1,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    13,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "27855",
   "nombre": "Diego Conde",
   "valor": 160000,
@@ -43801,6 +43628,96 @@
     7,
     null,
     23,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "59064",
+  "nombre": "Jiri Letacek",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -2000,
+  "sem7": -17000,
+  "mes": -4000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 9,
+  "riv": 3,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 27,
+  "js": [
+   [
+    1,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    13,
     0,
     ""
    ]
@@ -43987,6 +43904,89 @@
     7,
     null,
     50,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "65724",
+  "nombre": "Fábio Cardoso",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -21000,
+  "sem7": -8000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 17,
+  "riv": 12,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 32,
+  "js": [
+   [
+    1,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    3,
     0,
     ""
    ]
@@ -44438,8 +44438,8 @@
   "semana": -11000,
   "sem7": -231000,
   "mes": -1588000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 177000,
   "ced": 0,
   "pos": 2,
   "est": null,
