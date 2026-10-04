@@ -1278,6 +1278,16 @@
  ],
  "movimientos": [
   {
+   "id": "6044",
+   "nombre": "Enes Ünal",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 5214560,
+   "tipo": "normal",
+   "fecha": "2026-10-04 08:59:23",
+   "pos": 4
+  },
+  {
    "id": "31",
    "nombre": "Jan Oblak",
    "de": "Neky F.C. (Sergio)",
@@ -9766,6 +9776,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Enes Ünal",
+     "id": "6044",
+     "tipo": "venta",
+     "importe": 5214560,
+     "fecha": "2026-10-04",
+     "op": "normal"
+    },
+    {
      "j": "Lorenzo Amatucci",
      "id": "71154",
      "tipo": "venta",
@@ -10518,8 +10536,8 @@
     "6044": {
      "nombre": "Enes Ünal",
      "compras": 13100000,
-     "ventas": 11000000,
-     "ops": 3
+     "ventas": 16214560,
+     "ops": 4
     },
     "6065": {
      "nombre": "Pere Milla",
