@@ -4397,7 +4397,7 @@
    "importe": 3149180,
    "tipo": "normal",
    "cuando": "2026-09-02 01:44:10",
-   "valor": 5715000,
+   "valor": 5082000,
    "posicion": 4,
    "puntos": 20,
    "media": 2.9,
@@ -4433,7 +4433,7 @@
    "importe": 4437640,
    "tipo": "normal",
    "cuando": "2026-09-02 17:00:25",
-   "valor": 6378000,
+   "valor": 5721000,
    "posicion": 4,
    "puntos": 16,
    "media": 5.3,
@@ -4456,7 +4456,7 @@
    "importe": 14372000,
    "tipo": "normal",
    "cuando": "2026-09-02 17:00:25",
-   "valor": 12486000,
+   "valor": 13143000,
    "posicion": 4,
    "puntos": 34,
    "media": 4.9,
@@ -4474,7 +4474,7 @@
    "importe": 6441750,
    "tipo": "normal",
    "cuando": "2026-09-02 17:03:02",
-   "valor": 7245000,
+   "valor": 6327000,
    "posicion": 2,
    "puntos": 35,
    "media": 5,
@@ -7999,6 +7999,24 @@
      "puja": 9967753
     }
    ]
+  },
+  {
+   "idTransfer": 552040898,
+   "idJugador": "68652",
+   "nombre": "Ville Koski",
+   "de": "Neky F.C. (Sergio)",
+   "a": "Mister",
+   "idUcDe": 12493688,
+   "idUcA": 0,
+   "importe": 5411620,
+   "tipo": "normal",
+   "cuando": "2026-10-04 17:12:08",
+   "valor": 5254000,
+   "posicion": 2,
+   "puntos": 29,
+   "media": 4.1,
+   "racha": "4,1,11,4,4",
+   "otrasPujas": []
   }
  ],
  "salidas": [

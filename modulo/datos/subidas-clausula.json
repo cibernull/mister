@@ -196,5 +196,14 @@
   "escalones": 2,
   "antes": 1.5,
   "despues": 2.5
+ },
+ {
+  "idJugador": "69889",
+  "equipo": "Niutin FC (Isaac)",
+  "dia": "2026-10-04",
+  "coste": -1154800,
+  "escalones": -1,
+  "antes": 2,
+  "despues": 1.5
  }
 ]

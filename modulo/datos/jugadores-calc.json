@@ -2978,7 +2978,7 @@
   "pos": 2,
   "est": null,
   "bl": 0,
-  "sub": 1,
+  "sub": 0,
   "racha": [
    6,
    8,
@@ -6890,8 +6890,8 @@
   "semana": 42000,
   "sem7": 723000,
   "mes": 2949000,
-  "mk": 1,
-  "pv": 16071144,
+  "mk": 0,
+  "pv": null,
   "ced": 0,
   "pos": 2,
   "est": "injury",
@@ -7423,8 +7423,8 @@
   "semana": 124000,
   "sem7": 791000,
   "mes": 2493000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 12864780,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -43375,68 +43375,6 @@
   "d": 0
  },
  {
-  "id": "65188",
-  "nombre": "Thiago Pitarch",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -9000,
-  "sem7": -39000,
-  "mes": -4000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 15,
-  "riv": 20,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 19,
-  "js": [
-   [
-    5,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    2,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "64199",
   "nombre": "Unai Egiluz",
   "valor": 160000,
@@ -43636,6 +43574,54 @@
   "d": 0
  },
  {
+  "id": "71003",
+  "nombre": "Diego Murillo",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -2000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "doubt",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 13,
+  "riv": 8,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    6,
+    null,
+    20,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "59064",
   "nombre": "Jiri Letacek",
   "valor": 160000,
@@ -43809,54 +43795,6 @@
   "d": 0
  },
  {
-  "id": "71003",
-  "nombre": "Diego Murillo",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": -2000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "doubt",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 13,
-  "riv": 8,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    6,
-    null,
-    20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "48554",
   "nombre": "Luiz Felipe",
   "valor": 160000,
@@ -43987,6 +43925,68 @@
     7,
     null,
     3,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "65188",
+  "nombre": "Thiago Pitarch",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -9000,
+  "sem7": -39000,
+  "mes": -4000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 15,
+  "riv": 20,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 19,
+  "js": [
+   [
+    5,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    2,
     0,
     ""
    ]

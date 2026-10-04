@@ -1283,6 +1283,16 @@
  ],
  "movimientos": [
   {
+   "id": "68652",
+   "nombre": "Ville Koski",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 5411620,
+   "tipo": "normal",
+   "fecha": "2026-10-04 17:12:08",
+   "pos": 2
+  },
+  {
    "id": "4836153",
    "nombre": "Jonathan David",
    "de": null,
@@ -5617,6 +5627,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Ville Koski",
+     "id": "68652",
+     "tipo": "venta",
+     "importe": 5411620,
+     "fecha": "2026-10-04",
+     "op": "normal"
+    },
+    {
      "j": "Andrei Rațiu",
      "id": "25621",
      "tipo": "compra",
@@ -6743,8 +6761,8 @@
     "68652": {
      "nombre": "Ville Koski",
      "compras": 2251000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5411620,
+     "ops": 2
     },
     "70932": {
      "nombre": "Sergio Martinez",

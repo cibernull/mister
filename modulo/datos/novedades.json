@@ -305,6 +305,34 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "61012",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-04",
+  "id": "68652",
+  "de": "Neky F.C. (Sergio)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "68652",
+  "entra": false
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-10-04",
+  "id": "69889",
+  "equipo": "Niutin FC (Isaac)",
+  "escalones": -1,
+  "coste": -1154800,
+  "clausula": 8661000
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-10-03",
   "id": "306",
   "entra": false
