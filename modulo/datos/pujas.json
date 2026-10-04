@@ -3408,6 +3408,28 @@
     "topeMax": 20105668,
     "exceso": 0
    }
+  ],
+  "552036529": [
+   {
+    "idTransfer": 552036529,
+    "cuando": "2026-10-04 17:00:15",
+    "jugador": "Jonathan David",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 11669232,
+    "gana": true,
+    "topeMax": 26184102,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 552036529,
+    "cuando": "2026-10-04 17:00:15",
+    "jugador": "Jonathan David",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 9967753,
+    "gana": false,
+    "topeMax": 16906896,
+    "exceso": 0
+   }
   ]
  }
 }

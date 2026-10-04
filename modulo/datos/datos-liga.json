@@ -1274,9 +1274,24 @@
    "id": "25621",
    "nombre": "Andrei Rațiu",
    "valor": 8532000
+  },
+  {
+   "id": "4836153",
+   "nombre": "Jonathan David",
+   "valor": 9536000
   }
  ],
  "movimientos": [
+  {
+   "id": "4836153",
+   "nombre": "Jonathan David",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 11669232,
+   "tipo": "normal",
+   "fecha": "2026-10-04 17:00:15",
+   "pos": 4
+  },
   {
    "id": "25631",
    "nombre": "Ilaix Moriba",
@@ -6822,6 +6837,14 @@
      "op": "normal"
     },
     {
+     "j": "Jonathan David",
+     "id": "4836153",
+     "tipo": "compra",
+     "importe": 11669232,
+     "fecha": "2026-10-04",
+     "op": "normal"
+    },
+    {
      "j": "Juan Foyth",
      "id": "23369",
      "tipo": "venta",
@@ -8046,6 +8069,12 @@
     "3845074": {
      "nombre": "Nathan Saliba",
      "compras": 2484550,
+     "ventas": 0,
+     "ops": 1
+    },
+    "4836153": {
+     "nombre": "Jonathan David",
+     "compras": 11669232,
      "ventas": 0,
      "ops": 1
     }

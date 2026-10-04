@@ -7976,6 +7976,29 @@
    "media": 4,
    "racha": "1,2,5,4,13",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 552036529,
+   "idJugador": "4836153",
+   "nombre": "Jonathan David",
+   "de": "Mister",
+   "a": "Niutin FC (Isaac)",
+   "idUcDe": 0,
+   "idUcA": 12493763,
+   "importe": 11669232,
+   "tipo": "normal",
+   "cuando": "2026-10-04 17:00:15",
+   "valor": 9536000,
+   "posicion": 4,
+   "puntos": 29,
+   "media": 9.7,
+   "racha": "-,-,10,11,8",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 9967753
+    }
+   ]
   }
  ],
  "salidas": [

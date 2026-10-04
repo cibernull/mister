@@ -184,6 +184,127 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "63",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "392",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "4886",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "14691",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "22956",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "40147",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "55666",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "58958",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "59042",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "60218",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "64199",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "68498",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "68676",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "68677",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "70189",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "70931",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "71503",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "71506",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-04",
+  "id": "4836153",
+  "de": null,
+  "a": "Niutin FC (Isaac)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-04",
+  "id": "4947932",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-10-03",
   "id": "306",
   "entra": false

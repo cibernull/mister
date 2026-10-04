@@ -1,6 +1,14 @@
 {
- "saldo": -6959898,
+ "saldo": -18629130,
  "apuntes": [
+  {
+   "cuando": 1791126000,
+   "fecha": "2026-10-04 17:00",
+   "motivo": "Jonathan David a Mister",
+   "tipo": "Compra",
+   "importe": -11669232,
+   "saldo": -18629130
+  },
   {
    "cuando": 1791107217,
    "fecha": "2026-10-04 11:46",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 5096460,
    "saldo": 17025460
-  },
-  {
-   "cuando": 1788560011,
-   "fecha": "2026-09-05 00:13",
-   "motivo": "Modificación de cláusula (100%) de Oriol Rey",
-   "tipo": "Penalización",
-   "importe": -203800,
-   "saldo": 11929000
   }
  ]
 }
