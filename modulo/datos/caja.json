@@ -1,6 +1,14 @@
 {
- "saldo": -12741198,
+ "saldo": -6959898,
  "apuntes": [
+  {
+   "cuando": 1791107217,
+   "fecha": "2026-10-04 11:46",
+   "motivo": "Ilaix Moriba a Mister",
+   "tipo": "Venta",
+   "importe": 5781300,
+   "saldo": -6959898
+  },
   {
    "cuando": 1791041601,
    "fecha": "2026-10-03 17:33",
@@ -472,14 +480,6 @@
    "tipo": "Penalización",
    "importe": -203800,
    "saldo": 11929000
-  },
-  {
-   "cuando": 1788560001,
-   "fecha": "2026-09-05 00:13",
-   "motivo": "Modificación de cláusula (100%) de Beñat Gerenabarrena",
-   "tipo": "Penalización",
-   "importe": -212019,
-   "saldo": 12132800
   }
  ]
 }

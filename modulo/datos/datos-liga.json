@@ -1278,6 +1278,16 @@
  ],
  "movimientos": [
   {
+   "id": "25631",
+   "nombre": "Ilaix Moriba",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 5781300,
+   "tipo": "normal",
+   "fecha": "2026-10-04 11:46:57",
+   "pos": 3
+  },
+  {
    "id": "6044",
    "nombre": "Enes Ünal",
    "de": "Saiyans FC (Fran)",
@@ -6804,6 +6814,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Ilaix Moriba",
+     "id": "25631",
+     "tipo": "venta",
+     "importe": 5781300,
+     "fecha": "2026-10-04",
+     "op": "normal"
+    },
+    {
      "j": "Juan Foyth",
      "id": "23369",
      "tipo": "venta",
@@ -7752,8 +7770,8 @@
     "25631": {
      "nombre": "Ilaix Moriba",
      "compras": 4388590,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5781300,
+     "ops": 2
     },
     "25885": {
      "nombre": "Carlos Dominguez",
