@@ -1,6 +1,36 @@
 [
  {
   "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "36334",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "40147",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "52189",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "68498",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "5340038",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-10-04",
   "id": "27874",
   "entra": false
