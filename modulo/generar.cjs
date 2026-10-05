@@ -1556,6 +1556,26 @@ ${suyos
  * de más; en la plantilla, lo que sube o baja hoy.
  */
 /**
+ * Lo que vale lo que cada equipo tiene puesto en el mercado.
+ *
+ * Se cuenta **lo que valen**, no lo que piden por ellos, porque son dos cifras
+ * muy distintas y solo una está asegurada: Xavi Espart estaba pedido en
+ * 13.944.003 € y valía 5.878.000 €. El valor es lo que Mister paga sí o sí si
+ * el jugador acaba saliendo; lo pedido es una aspiración que puede no llegar.
+ */
+const EN_VENTA = (() => {
+  const por = new Map()
+  for (const j of J) {
+    if (!j.mk || !j.duenio) continue
+    const x = por.get(j.duenio) ?? { cuantos: 0, valen: 0 }
+    x.cuantos += 1
+    x.valen += j.valor
+    por.set(j.duenio, x)
+  }
+  return por
+})()
+
+/**
  * A cuánto llegaría su patrimonio dentro de una semana si su plantilla siguiera
  * subiendo al ritmo de los últimos siete días.
  *
@@ -1605,6 +1625,7 @@ const patrimonioProyectado = (e) => {
 const cifrasDe = (e) => {
   const proyectado = patrimonioProyectado(e)
   const tasa = RITMO_SEMANAL.get(e.n)
+  const enVenta = EN_VENTA.get(e.n) ?? { cuantos: 0, valen: 0 }
   return `<div class="cifras">
         <div><b class="caja${e.saldo < 0 ? ' baja' : ''}">${eur(e.saldo)}</b><i>en caja</i>${
           // Lo retenido en pujas vivas solo se sabe del equipo propio, y sin
@@ -1614,6 +1635,9 @@ const cifrasDe = (e) => {
         }${
           e.ajustePujas > 0 ? `<em class="sube" title="Pujó por encima de lo que le calculábamos: ese dinero lo tenía">+${corto(e.ajustePujas)} por sus pujas</em>` : ''
         }</div>
+        <div><b class="venta">${eur(enVenta.valen)}</b><i title="Lo que valen los jugadores que tiene puestos en el mercado: eso es lo que recupera si salen. Lo que pide por ellos puede ser mucho más y no está asegurado.">en venta<span class="detalle-cifra"> · lo que valen</span></i><em class="quieto">${
+          enVenta.cuantos === 0 ? 'ninguno' : `${enVenta.cuantos} jugador${enVenta.cuantos === 1 ? '' : 'es'}`
+        }</em></div>
         <div><b>${eur(e.pl)}</b><i>vale su plantilla</i><em class="${clase(e.cambioPlantillaHoy)}" title="Lo que sube o baja hoy el valor de su plantilla: la misma cuenta que hace Mister, jugador a jugador">${firmaCortaConDecimales(e.cambioPlantillaHoy, 3)} hoy</em></div>
         <div><b class="credito${e.patrimonio < 0 ? ' baja' : ''}">${eur(e.patrimonio)}</b><i title="Lo que vale su plantilla más lo que tiene en caja —o menos lo que debe—. Es la misma cifra que ordena «Quién es más rico»: todos empezasteis en 50 M.">patrimonio<span class="detalle-cifra"> · plantilla ${e.saldo < 0 ? '− deuda' : '+ caja'}</span></i></div>
         <div><b class="proy">${proyectado === null ? '—' : eur(proyectado)}</b><i title="${
@@ -2778,7 +2802,7 @@ const fichaEquipo = (e) => `<details class="eq${e.mio ? ' yo' : ''}">
     </div>
   </details>`
 
-const rivales = `    <p class="intro ancha">En el orden de la liga. De cada uno: <strong>lo que puede gastar hoy</strong> —su caja más el 25 % que Mister le presta por la plantilla—, su caja, lo que vale su plantilla, su <strong>patrimonio</strong> (plantilla ± caja) y, como única estimación, ese patrimonio <strong>dentro de 7 días</strong> al ritmo de la última semana. Tu tope es exacto —Mister publica lo que te retienen las pujas y se comprueba al euro—; el de un rival es un <strong>techo</strong>: sus pujas vivas no se ven hasta que se resuelven.</p>
+const rivales = `    <p class="intro ancha">En el orden de la liga. De cada uno: <strong>lo que puede gastar hoy</strong> —su caja más el 25 % que Mister le presta por la plantilla—, su caja, <strong>lo que tiene en venta</strong>, lo que vale su plantilla, su <strong>patrimonio</strong> (plantilla ± caja) y, como única estimación, ese patrimonio <strong>dentro de 7 días</strong> al ritmo de la última semana. Tu tope es exacto —Mister publica lo que te retienen las pujas y se comprueba al euro—; el de un rival es un <strong>techo</strong>: sus pujas vivas no se ven hasta que se resuelven.</p>
 ${[...EQ]
   // Por el puesto en la liga, que es como se mira una clasificación. Iban por
   // lo que podían gastar, y la columna de puestos salía 8º, 3º, 4º, 7º…
@@ -3317,7 +3341,7 @@ Todos empezasteis con <b>50.000.000 €</b> menos lo que valía la plantilla que
         ${def('±', 'txt', 'De fiar', 'Calculado aquí. Cuánto se aparta de su media jornada a jornada. Dos jugadores de media 6 no valen lo mismo: uno hace 6, 6, 6 y el otro 0, 0, 18. Cuanto más bajo, más de fiar. Solo se listan los que promedian 4 o más, porque al que hace un punto siempre le sobra regularidad.')}
         ${def('€', '', 'Valor y cláusula', 'El <strong>valor</strong> es lo que Mister dice que vale un jugador, y lo que cobras si lo vendes al mercado. La <strong>cláusula</strong> es lo que un rival paga para quitártelo sin tu permiso, y siempre es mayor. La cifra grande de cada fila es <strong>lo que costaría ficharlo de verdad</strong>.')}
         ${def('POR', 'txt', 'Los dorsales de color', 'La posición: <strong>POR</strong> portero, <strong>DEF</strong> defensa, <strong>MED</strong> centrocampista, <strong>DEL</strong> delantero.')}
-        ${def('€', '', 'Las cifras de los equipos', 'Caja, lo que vale su plantilla y el patrimonio, que es la plantilla más la caja —o menos lo que debe—. Lo que puede gastar es otra cuenta: la caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale, <strong>menos el dinero que le retengan las pujas que tenga puestas</strong>: pujar reserva el dinero en el acto, y hasta que la puja se resuelve no se puede gastar en otra cosa. Eso solo se ve del equipo propio —Mister publica ahí sus tres saldos—, así que tu cifra es exacta y la de un rival es un techo: como mucho tiene eso. Debajo de la caja, lo retenido si es la tuya y, si pujó por encima de lo que le calculábamos, lo que eso demostró que tenía; debajo de la plantilla, lo que sube o baja hoy. La cuarta cifra, <strong>«en 7 días», es la única estimación de la fila</strong>: su patrimonio de aquí a una semana si su plantilla sigue subiendo al ritmo de los siete últimos días, con interés compuesto. No cuenta los premios de jornada ni el mercado, que pesa más que la subida —pagar una cláusula resta patrimonio en el acto—, y si faltan valores de hace una semana para más de un 20 % de su plantilla, no sale cifra.')}
+        ${def('€', '', 'Las cifras de los equipos', 'Caja, lo que valen los jugadores que tiene puestos en el mercado, lo que vale su plantilla y el patrimonio, que es la plantilla más la caja —o menos lo que debe—. En venta se cuenta <strong>lo que valen, no lo que pide</strong>: el valor es lo que Mister paga si salen, y lo pedido puede ser el doble o el triple sin que nadie lo pague. Lo que puede gastar es otra cuenta: la caja más el crédito que Mister da por la plantilla, el 25 % de lo que vale, <strong>menos el dinero que le retengan las pujas que tenga puestas</strong>: pujar reserva el dinero en el acto, y hasta que la puja se resuelve no se puede gastar en otra cosa. Eso solo se ve del equipo propio —Mister publica ahí sus tres saldos—, así que tu cifra es exacta y la de un rival es un techo: como mucho tiene eso. Debajo de la caja, lo retenido si es la tuya y, si pujó por encima de lo que le calculábamos, lo que eso demostró que tenía; debajo de la plantilla, lo que sube o baja hoy. La cuarta cifra, <strong>«en 7 días», es la única estimación de la fila</strong>: su patrimonio de aquí a una semana si su plantilla sigue subiendo al ritmo de los siete últimos días, con interés compuesto. No cuenta los premios de jornada ni el mercado, que pesa más que la subida —pagar una cláusula resta patrimonio en el acto—, y si faltan valores de hace una semana para más de un 20 % de su plantilla, no sale cifra.')}
       </div>
     </div>
 
