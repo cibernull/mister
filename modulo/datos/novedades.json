@@ -277,6 +277,87 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "239",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "1713",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "3728",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-05",
+  "id": "20449",
+  "de": null,
+  "a": "Saiyans FC (Fran)"
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-05",
+  "id": "24778",
+  "de": null,
+  "a": "Mario80"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "59484",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "59533",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "59623",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "60872",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "64459",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "65090",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-05",
+  "id": "70938",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-05",
+  "id": "1385821",
+  "de": "Niutin FC (Isaac)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-10-04",
   "id": "27874",
   "entra": false

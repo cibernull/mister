@@ -8071,6 +8071,69 @@
    "media": 4.9,
    "racha": "1,5,4,3,13",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 552158003,
+   "idJugador": "24778",
+   "nombre": "Robert Navarro",
+   "de": "Mister",
+   "a": "Mario80",
+   "idUcDe": 0,
+   "idUcA": 13435216,
+   "importe": 5192140,
+   "tipo": "normal",
+   "cuando": "2026-10-05 17:15:15",
+   "valor": 5192000,
+   "posicion": 3,
+   "puntos": 33,
+   "media": 6.6,
+   "racha": "-,11,11,3,6",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 552160814,
+   "idJugador": "20449",
+   "nombre": "Fer Niño",
+   "de": "Mister",
+   "a": "Saiyans FC (Fran)",
+   "idUcDe": 0,
+   "idUcA": 12493752,
+   "importe": 8500000,
+   "tipo": "normal",
+   "cuando": "2026-10-05 17:15:15",
+   "valor": 6170000,
+   "posicion": 4,
+   "puntos": 48,
+   "media": 6.9,
+   "racha": "9,8,2,9,17",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 6578262
+    },
+    {
+     "equipo": "Mario80",
+     "puja": 6170420
+    }
+   ]
+  },
+  {
+   "idTransfer": 552163955,
+   "idJugador": "1385821",
+   "nombre": "Cristian Romero",
+   "de": "Niutin FC (Isaac)",
+   "a": "Mister",
+   "idUcDe": 12493763,
+   "idUcA": 0,
+   "importe": 11107200,
+   "tipo": "normal",
+   "cuando": "2026-10-05 17:27:09",
+   "valor": 10680000,
+   "posicion": 2,
+   "puntos": 24,
+   "media": 6,
+   "racha": "-,2,7,9,6",
+   "otrasPujas": []
   }
  ],
  "salidas": [

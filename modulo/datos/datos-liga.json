@@ -1284,9 +1284,44 @@
    "id": "14691",
    "nombre": "Adrià Pedrosa",
    "valor": 2192000
+  },
+  {
+   "id": "24778",
+   "nombre": "Robert Navarro",
+   "valor": 5192000
   }
  ],
  "movimientos": [
+  {
+   "id": "1385821",
+   "nombre": "Cristian Romero",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 11107200,
+   "tipo": "normal",
+   "fecha": "2026-10-05 17:27:09",
+   "pos": 2
+  },
+  {
+   "id": "20449",
+   "nombre": "Fer Niño",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 8500000,
+   "tipo": "normal",
+   "fecha": "2026-10-05 17:15:15",
+   "pos": 4
+  },
+  {
+   "id": "24778",
+   "nombre": "Robert Navarro",
+   "de": null,
+   "a": "Mario80",
+   "importe": 5192140,
+   "tipo": "normal",
+   "fecha": "2026-10-05 17:15:15",
+   "pos": 3
+  },
   {
    "id": "20141",
    "nombre": "Germán Valera",
@@ -6898,6 +6933,14 @@
      "op": "normal"
     },
     {
+     "j": "Cristian Romero",
+     "id": "1385821",
+     "tipo": "venta",
+     "importe": 11107200,
+     "fecha": "2026-10-05",
+     "op": "normal"
+    },
+    {
      "j": "Ilaix Moriba",
      "id": "25631",
      "tipo": "venta",
@@ -8132,8 +8175,8 @@
     "1385821": {
      "nombre": "Cristian Romero",
      "compras": 10037010,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 11107200,
+     "ops": 2
     },
     "3845074": {
      "nombre": "Nathan Saliba",
@@ -9258,6 +9301,14 @@
   "Mario80": {
    "movimientos": [
     {
+     "j": "Robert Navarro",
+     "id": "24778",
+     "tipo": "compra",
+     "importe": 5192140,
+     "fecha": "2026-10-05",
+     "op": "normal"
+    },
+    {
      "j": "Óscar Valentín",
      "id": "27518",
      "tipo": "venta",
@@ -9749,6 +9800,12 @@
      "ventas": 2173000,
      "ops": 1
     },
+    "24778": {
+     "nombre": "Robert Navarro",
+     "compras": 5192140,
+     "ventas": 0,
+     "ops": 1
+    },
     "27518": {
      "nombre": "Óscar Valentín",
      "compras": 1109020,
@@ -9896,6 +9953,14 @@
      "id": "14691",
      "tipo": "compra",
      "importe": 2103000,
+     "fecha": "2026-10-05",
+     "op": "normal"
+    },
+    {
+     "j": "Fer Niño",
+     "id": "20449",
+     "tipo": "compra",
+     "importe": 8500000,
      "fecha": "2026-10-05",
      "op": "normal"
     },
@@ -10720,6 +10785,12 @@
     "20131": {
      "nombre": "Manu Sánchez",
      "compras": 850000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "20449": {
+     "nombre": "Fer Niño",
+     "compras": 8500000,
      "ventas": 0,
      "ops": 1
     },

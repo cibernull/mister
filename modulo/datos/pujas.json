@@ -3442,6 +3442,50 @@
     "topeMax": 21060390,
     "exceso": 0
    }
+  ],
+  "552158003": [
+   {
+    "idTransfer": 552158003,
+    "cuando": "2026-10-05 17:15:15",
+    "jugador": "Robert Navarro",
+    "equipo": "Mario80",
+    "puja": 5192140,
+    "gana": true,
+    "topeMax": 23436340,
+    "exceso": 0
+   }
+  ],
+  "552160814": [
+   {
+    "idTransfer": 552160814,
+    "cuando": "2026-10-05 17:15:15",
+    "jugador": "Fer Niño",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 8500000,
+    "gana": true,
+    "topeMax": 21060390,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 552160814,
+    "cuando": "2026-10-05 17:15:15",
+    "jugador": "Fer Niño",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 6578262,
+    "gana": false,
+    "topeMax": 25421326,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 552160814,
+    "cuando": "2026-10-05 17:15:15",
+    "jugador": "Fer Niño",
+    "equipo": "Mario80",
+    "puja": 6170420,
+    "gana": false,
+    "topeMax": 23436340,
+    "exceso": 0
+   }
   ]
  }
 }
