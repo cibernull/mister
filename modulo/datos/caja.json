@@ -1,6 +1,14 @@
 {
- "saldo": -18051730,
+ "saldo": -9536770,
  "apuntes": [
+  {
+   "cuando": 1791181261,
+   "fecha": "2026-10-05 08:21",
+   "motivo": "Germán Valera a Mister",
+   "tipo": "Venta",
+   "importe": 8514960,
+   "saldo": -9536770
+  },
   {
    "cuando": 1791128438,
    "fecha": "2026-10-04 17:40",
@@ -472,14 +480,6 @@
    "tipo": "Bonificación",
    "importe": 573300,
    "saldo": 16364560
-  },
-  {
-   "cuando": 1788641332,
-   "fecha": "2026-09-05 22:48",
-   "motivo": "Modificación de cláusula (150%) de Pierre-Emerick Aubameyang",
-   "tipo": "Penalización",
-   "importe": -1234200,
-   "saldo": 15791260
   }
  ]
 }

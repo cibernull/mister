@@ -1288,6 +1288,16 @@
  ],
  "movimientos": [
   {
+   "id": "20141",
+   "nombre": "Germán Valera",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 8514960,
+   "tipo": "normal",
+   "fecha": "2026-10-05 08:21:01",
+   "pos": 3
+  },
+  {
    "id": "15566",
    "nombre": "Yangel Herrera",
    "de": "Neky F.C. (Sergio)",
@@ -6880,6 +6890,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Germán Valera",
+     "id": "20141",
+     "tipo": "venta",
+     "importe": 8514960,
+     "fecha": "2026-10-05",
+     "op": "normal"
+    },
+    {
      "j": "Ilaix Moriba",
      "id": "25631",
      "tipo": "venta",
@@ -7802,8 +7820,8 @@
     "20141": {
      "nombre": "Germán Valera",
      "compras": 7272000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 8514960,
+     "ops": 2
     },
     "20449": {
      "nombre": "Fer Niño",
