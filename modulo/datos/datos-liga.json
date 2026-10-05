@@ -1288,6 +1288,16 @@
  ],
  "movimientos": [
   {
+   "id": "15566",
+   "nombre": "Yangel Herrera",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 5464160,
+   "tipo": "normal",
+   "fecha": "2026-10-05 06:17:24",
+   "pos": 3
+  },
+  {
    "id": "14691",
    "nombre": "Adrià Pedrosa",
    "de": null,
@@ -5642,6 +5652,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Yangel Herrera",
+     "id": "15566",
+     "tipo": "venta",
+     "importe": 5464160,
+     "fecha": "2026-10-05",
+     "op": "normal"
+    },
+    {
      "j": "Ville Koski",
      "id": "68652",
      "tipo": "venta",
@@ -6518,8 +6536,8 @@
     "15566": {
      "nombre": "Yangel Herrera",
      "compras": 2241676,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5464160,
+     "ops": 2
     },
     "15653": {
      "nombre": "Kang-In Lee",
