@@ -3430,6 +3430,18 @@
     "topeMax": 16906896,
     "exceso": 0
    }
+  ],
+  "552103761": [
+   {
+    "idTransfer": 552103761,
+    "cuando": "2026-10-05 05:00:18",
+    "jugador": "Adrià Pedrosa",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 2103000,
+    "gana": true,
+    "topeMax": 21060390,
+    "exceso": 0
+   }
   ]
  }
 }
