@@ -1,6 +1,22 @@
 {
- "saldo": -9536770,
+ "saldo": -21240470,
  "apuntes": [
+  {
+   "cuando": 1791196730,
+   "fecha": "2026-10-05 12:38",
+   "motivo": "Modificación de cláusula (100%) de Kylian Mbappé",
+   "tipo": "Penalización",
+   "importe": -6061925,
+   "saldo": -21240470
+  },
+  {
+   "cuando": 1791196715,
+   "fecha": "2026-10-05 12:38",
+   "motivo": "Modificación de cláusula (100%) de Raphinha",
+   "tipo": "Penalización",
+   "importe": -5641775,
+   "saldo": -15178545
+  },
   {
    "cuando": 1791181261,
    "fecha": "2026-10-05 08:21",
@@ -464,22 +480,6 @@
    "tipo": "Venta",
    "importe": 5491200,
    "saldo": 21071960
-  },
-  {
-   "cuando": 1788647080,
-   "fecha": "2026-09-06 00:24",
-   "motivo": "Modificación de cláusula (100%) de Ramón Terrats",
-   "tipo": "Penalización",
-   "importe": -783800,
-   "saldo": 15580760
-  },
-  {
-   "cuando": 1788646993,
-   "fecha": "2026-09-06 00:23",
-   "motivo": "Modificación de cláusula (50%) de Alfonso Herrero",
-   "tipo": "Bonificación",
-   "importe": 573300,
-   "saldo": 16364560
   }
  ]
 }
