@@ -1293,6 +1293,16 @@
  ],
  "movimientos": [
   {
+   "id": "63780",
+   "nombre": "Carlos Espí",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 10213260,
+   "tipo": "normal",
+   "fecha": "2026-10-05 20:09:13",
+   "pos": 4
+  },
+  {
    "id": "1385821",
    "nombre": "Cristian Romero",
    "de": "Niutin FC (Isaac)",
@@ -5705,6 +5715,14 @@
      "op": "normal"
     },
     {
+     "j": "Carlos Espí",
+     "id": "63780",
+     "tipo": "venta",
+     "importe": 10213260,
+     "fecha": "2026-10-05",
+     "op": "normal"
+    },
+    {
      "j": "Ville Koski",
      "id": "68652",
      "tipo": "venta",
@@ -6767,8 +6785,8 @@
     "63780": {
      "nombre": "Carlos Espí",
      "compras": 9607560,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 10213260,
+     "ops": 2
     },
     "63788": {
      "nombre": "Dean Huijsen",
