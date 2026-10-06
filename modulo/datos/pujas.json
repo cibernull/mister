@@ -3486,6 +3486,18 @@
     "topeMax": 23436340,
     "exceso": 0
    }
+  ],
+  "552215086": [
+   {
+    "idTransfer": 552215086,
+    "cuando": "2026-10-06 05:00:19",
+    "jugador": "Lucas Cepeda",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 3343661,
+    "gana": true,
+    "topeMax": 33131336,
+    "exceso": 0
+   }
   ]
  }
 }
