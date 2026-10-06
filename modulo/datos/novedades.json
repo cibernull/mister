@@ -104,6 +104,79 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-10-06",
+  "id": "15344",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-06",
+  "id": "15756",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-06",
+  "id": "17614",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-06",
+  "id": "25579",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-06",
+  "id": "28780",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-06",
+  "id": "52162",
+  "de": "Mario80",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-06",
+  "id": "52162",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-06",
+  "id": "54900",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-06",
+  "id": "70917",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-06",
+  "id": "70948",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-06",
+  "id": "71000",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-06",
+  "id": "3368896",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-10-05",
   "id": "36334",
   "entra": true

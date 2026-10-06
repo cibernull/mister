@@ -1298,6 +1298,16 @@
  ],
  "movimientos": [
   {
+   "id": "52162",
+   "nombre": "Pape Gueye",
+   "de": "Mario80",
+   "a": null,
+   "importe": 12074550,
+   "tipo": "normal",
+   "fecha": "2026-10-06 05:51:13",
+   "pos": 3
+  },
+  {
    "id": "68593",
    "nombre": "Lucas Cepeda",
    "de": null,
@@ -9348,6 +9358,14 @@
   "Mario80": {
    "movimientos": [
     {
+     "j": "Pape Gueye",
+     "id": "52162",
+     "tipo": "venta",
+     "importe": 12074550,
+     "fecha": "2026-10-06",
+     "op": "normal"
+    },
+    {
      "j": "Robert Navarro",
      "id": "24778",
      "tipo": "compra",
@@ -9868,8 +9886,8 @@
     "52162": {
      "nombre": "Pape Gueye",
      "compras": 11737250,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 12074550,
+     "ops": 2
     },
     "55666": {
      "nombre": "Álvaro Carreras",

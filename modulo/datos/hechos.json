@@ -7858,7 +7858,7 @@
    "importe": 5407020,
    "tipo": "normal",
    "cuando": "2026-10-02 06:18:20",
-   "valor": 5374000,
+   "valor": 5385000,
    "posicion": 3,
    "puntos": 27,
    "media": 3.9,
@@ -8183,6 +8183,24 @@
    "puntos": 26,
    "media": 3.7,
    "racha": "3,4,2,5,6",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 552239045,
+   "idJugador": "52162",
+   "nombre": "Pape Gueye",
+   "de": "Mario80",
+   "a": "Mister",
+   "idUcDe": 13435216,
+   "idUcA": 0,
+   "importe": 12074550,
+   "tipo": "normal",
+   "cuando": "2026-10-06 05:51:13",
+   "valor": 11893000,
+   "posicion": 3,
+   "puntos": 47,
+   "media": 6.7,
+   "racha": "3,3,5,16,3",
    "otrasPujas": []
   }
  ],
