@@ -4956,12 +4956,17 @@
    "importe": 4076927,
    "tipo": "normal",
    "cuando": "2026-09-06 17:00:18",
-   "valor": 4390000,
+   "valor": 4546000,
    "posicion": 3,
    "puntos": 26,
    "media": 3.7,
    "racha": "7,1,2,3,-1",
-   "otrasPujas": []
+   "otrasPujas": [
+    {
+     "equipo": "Niutin FC (Isaac)",
+     "puja": 3787020
+    }
+   ]
   },
   {
    "idTransfer": 545912135,
