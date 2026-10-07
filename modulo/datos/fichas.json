@@ -33880,7 +33880,7 @@
   "mediaCasa": 5,
   "mediaFuera": 3,
   "edad": 21,
-  "titular": null,
+  "titular": true,
   "titularidades": 2,
   "suplencias": 0,
   "jornadas": [
