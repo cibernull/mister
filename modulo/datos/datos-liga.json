@@ -1303,6 +1303,16 @@
  ],
  "movimientos": [
   {
+   "id": "42",
+   "nombre": "Koke",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 10215140,
+   "tipo": "normal",
+   "fecha": "2026-10-07 19:40:52",
+   "pos": 3
+  },
+  {
    "id": "61012",
    "nombre": "Pablo García",
    "de": "Niutin FC (Isaac)",
@@ -5775,6 +5785,14 @@
      "op": "normal"
     },
     {
+     "j": "Koke",
+     "id": "42",
+     "tipo": "venta",
+     "importe": 10215140,
+     "fecha": "2026-10-07",
+     "op": "normal"
+    },
+    {
      "j": "Lucas Cepeda",
      "id": "68593",
      "tipo": "compra",
@@ -6633,8 +6651,8 @@
     "42": {
      "nombre": "Koke",
      "compras": 9595338,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 10215140,
+     "ops": 2
     },
     "616": {
      "nombre": "Rodri Hernández",
