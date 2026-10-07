@@ -3510,6 +3510,18 @@
     "topeMax": 15907254,
     "exceso": 0
    }
+  ],
+  "552408346": [
+   {
+    "idTransfer": 552408346,
+    "cuando": "2026-10-07 17:00:13",
+    "jugador": "Alberto Moleiro",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 12159820,
+    "gana": true,
+    "topeMax": 31159225,
+    "exceso": 0
+   }
   ]
  }
 }

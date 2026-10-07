@@ -1,6 +1,14 @@
 {
- "saldo": -10133270,
+ "saldo": -5915030,
  "apuntes": [
+  {
+   "cuando": 1791385289,
+   "fecha": "2026-10-07 17:01",
+   "motivo": "Pablo García a Mister",
+   "tipo": "Venta",
+   "importe": 4218240,
+   "saldo": -5915030
+  },
   {
    "cuando": 1791214029,
    "fecha": "2026-10-05 17:27",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -207040,
    "saldo": 20652320
-  },
-  {
-   "cuando": 1788721361,
-   "fecha": "2026-09-06 21:02",
-   "motivo": "Modificación de cláusula (150%) de Beñat Gerenabarrena",
-   "tipo": "Penalización",
-   "importe": -212600,
-   "saldo": 20859360
   }
  ]
 }

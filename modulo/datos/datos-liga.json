@@ -1294,9 +1294,34 @@
    "id": "68593",
    "nombre": "Lucas Cepeda",
    "valor": 3391000
+  },
+  {
+   "id": "53098",
+   "nombre": "Alberto Moleiro",
+   "valor": 12121000
   }
  ],
  "movimientos": [
+  {
+   "id": "61012",
+   "nombre": "Pablo García",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 4218240,
+   "tipo": "normal",
+   "fecha": "2026-10-07 17:01:29",
+   "pos": 4
+  },
+  {
+   "id": "53098",
+   "nombre": "Alberto Moleiro",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 12159820,
+   "tipo": "normal",
+   "fecha": "2026-10-07 17:00:13",
+   "pos": 3
+  },
   {
    "id": "239",
    "nombre": "Pedro Bigas",
@@ -5742,6 +5767,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Alberto Moleiro",
+     "id": "53098",
+     "tipo": "compra",
+     "importe": 12159820,
+     "fecha": "2026-10-07",
+     "op": "normal"
+    },
+    {
      "j": "Lucas Cepeda",
      "id": "68593",
      "tipo": "compra",
@@ -6741,6 +6774,12 @@
      "ventas": 195520,
      "ops": 1
     },
+    "53098": {
+     "nombre": "Alberto Moleiro",
+     "compras": 12159820,
+     "ventas": 0,
+     "ops": 1
+    },
     "54900": {
      "nombre": "Carlos Dotor",
      "compras": 871000,
@@ -6991,6 +7030,14 @@
   },
   "Niutin FC (Isaac)": {
    "movimientos": [
+    {
+     "j": "Pablo García",
+     "id": "61012",
+     "tipo": "venta",
+     "importe": 4218240,
+     "fecha": "2026-10-07",
+     "op": "normal"
+    },
     {
      "j": "Germán Valera",
      "id": "20141",
@@ -8122,8 +8169,8 @@
     "61012": {
      "nombre": "Pablo García",
      "compras": 1869890,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 4218240,
+     "ops": 2
     },
     "64382": {
      "nombre": "Gabriel Suazo",
