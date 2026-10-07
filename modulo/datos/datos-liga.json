@@ -1303,6 +1303,16 @@
  ],
  "movimientos": [
   {
+   "id": "66706",
+   "nombre": "Javi Hernandez",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 3855280,
+   "tipo": "normal",
+   "fecha": "2026-10-07 21:21:44",
+   "pos": 3
+  },
+  {
    "id": "42",
    "nombre": "Koke",
    "de": "Neky F.C. (Sergio)",
@@ -5793,6 +5803,14 @@
      "op": "normal"
     },
     {
+     "j": "Javi Hernandez",
+     "id": "66706",
+     "tipo": "venta",
+     "importe": 3855280,
+     "fecha": "2026-10-07",
+     "op": "normal"
+    },
+    {
      "j": "Lucas Cepeda",
      "id": "68593",
      "tipo": "compra",
@@ -6933,8 +6951,8 @@
     "66706": {
      "nombre": "Javi Hernandez",
      "compras": 1054500,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 3855280,
+     "ops": 2
     },
     "67580": {
      "nombre": "Samu Becerra",
