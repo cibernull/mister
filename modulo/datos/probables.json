@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-07T00:08:25.617Z",
+ "cuando": "2026-10-07T03:08:20.412Z",
  "fuente": "futbolfantasy.com",
  "leidos": 515,
  "jugadores": {
@@ -418,7 +418,7 @@
    "min": 442
   },
   "12946": {
-   "prob": 40,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 354
@@ -1036,7 +1036,7 @@
    "min": 13
   },
   "29222": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 475
@@ -2806,7 +2806,7 @@
    "min": 66
   },
   "3845074": {
-   "prob": 60,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 296
