@@ -1298,6 +1298,16 @@
  ],
  "movimientos": [
   {
+   "id": "239",
+   "nombre": "Pedro Bigas",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 350000,
+   "tipo": "normal",
+   "fecha": "2026-10-07 05:00:20",
+   "pos": 2
+  },
+  {
    "id": "52162",
    "nombre": "Pape Gueye",
    "de": "Mario80",
@@ -8252,6 +8262,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Pedro Bigas",
+     "id": "239",
+     "tipo": "compra",
+     "importe": 350000,
+     "fecha": "2026-10-07",
+     "op": "normal"
+    },
+    {
      "j": "Dani Cárdenas",
      "id": "24742",
      "tipo": "compra",
@@ -9010,6 +9028,12 @@
      "compras": 780000,
      "ventas": 1304160,
      "ops": 2
+    },
+    "239": {
+     "nombre": "Pedro Bigas",
+     "compras": 350000,
+     "ventas": 0,
+     "ops": 1
     },
     "432": {
      "nombre": "José Luis Gayà",

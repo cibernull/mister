@@ -3498,6 +3498,18 @@
     "topeMax": 33131336,
     "exceso": 0
    }
+  ],
+  "552340602": [
+   {
+    "idTransfer": 552340602,
+    "cuando": "2026-10-07 05:00:20",
+    "jugador": "Pedro Bigas",
+    "equipo": "Cacaculopedopis",
+    "puja": 350000,
+    "gana": true,
+    "topeMax": 15907254,
+    "exceso": 0
+   }
   ]
  }
 }
