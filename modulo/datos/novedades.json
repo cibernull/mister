@@ -190,6 +190,138 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "10",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "4775",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "4888",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "22471",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "22486",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "27865",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "28774",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "28791",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "29167",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "35922",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "40147",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "52189",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "61167",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "63869",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "67580",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "68711",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "68716",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "69281",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "71019",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "71021",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "4836165",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-08",
+  "id": "4947926",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-10-07",
   "id": "40147",
   "entra": true
