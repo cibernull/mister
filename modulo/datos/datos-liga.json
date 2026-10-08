@@ -1303,6 +1303,16 @@
  ],
  "movimientos": [
   {
+   "id": "11761",
+   "nombre": "Junior Firpo",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 259080,
+   "tipo": "normal",
+   "fecha": "2026-10-08 10:56:30",
+   "pos": 2
+  },
+  {
    "id": "66706",
    "nombre": "Javi Hernandez",
    "de": "Neky F.C. (Sergio)",
@@ -8345,6 +8355,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Junior Firpo",
+     "id": "11761",
+     "tipo": "venta",
+     "importe": 259080,
+     "fecha": "2026-10-08",
+     "op": "normal"
+    },
+    {
      "j": "Pedro Bigas",
      "id": "239",
      "tipo": "compra",
@@ -9151,8 +9169,8 @@
     "11761": {
      "nombre": "Junior Firpo",
      "compras": 488570,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 259080,
+     "ops": 2
     },
     "13420": {
      "nombre": "Mouctar Diakhaby",

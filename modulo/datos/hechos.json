@@ -7957,7 +7957,7 @@
    "importe": 5214560,
    "tipo": "normal",
    "cuando": "2026-10-04 08:59:23",
-   "valor": 4628000,
+   "valor": 4486000,
    "posicion": 4,
    "puntos": 25,
    "media": 3.6,
@@ -8282,6 +8282,24 @@
    "puntos": 34,
    "media": 4.9,
    "racha": "5,3,5,5,2",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 552512955,
+   "idJugador": "11761",
+   "nombre": "Junior Firpo",
+   "de": "Cacaculopedopis",
+   "a": "Mister",
+   "idUcDe": 15435600,
+   "idUcA": 0,
+   "importe": 259080,
+   "tipo": "normal",
+   "cuando": "2026-10-08 10:56:30",
+   "valor": 212000,
+   "posicion": 2,
+   "puntos": 6,
+   "media": 3,
+   "racha": "-,-,-,3,-",
    "otrasPujas": []
   }
  ],
