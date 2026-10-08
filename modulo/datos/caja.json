@@ -1,6 +1,14 @@
 {
- "saldo": -5915030,
+ "saldo": 305560,
  "apuntes": [
+  {
+   "cuando": 1791472423,
+   "fecha": "2026-10-08 17:13",
+   "motivo": "Xavi Espart a Mister",
+   "tipo": "Venta",
+   "importe": 6220590,
+   "saldo": 305560
+  },
   {
    "cuando": 1791385289,
    "fecha": "2026-10-07 17:01",
@@ -472,14 +480,6 @@
    "tipo": "Compra por cláusula",
    "importe": -6537000,
    "saldo": 14115320
-  },
-  {
-   "cuando": 1788750000,
-   "fecha": "2026-09-07 05:00",
-   "motivo": "Luiz Felipe a Mister",
-   "tipo": "Compra",
-   "importe": -207040,
-   "saldo": 20652320
   }
  ]
 }

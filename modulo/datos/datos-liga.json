@@ -1303,6 +1303,16 @@
  ],
  "movimientos": [
   {
+   "id": "69889",
+   "nombre": "Xavi Espart",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 6220590,
+   "tipo": "normal",
+   "fecha": "2026-10-08 17:13:43",
+   "pos": 2
+  },
+  {
    "id": "11761",
    "nombre": "Junior Firpo",
    "de": "Cacaculopedopis",
@@ -7077,6 +7087,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Xavi Espart",
+     "id": "69889",
+     "tipo": "venta",
+     "importe": 6220590,
+     "fecha": "2026-10-08",
+     "op": "normal"
+    },
+    {
      "j": "Pablo García",
      "id": "61012",
      "tipo": "venta",
@@ -8239,8 +8257,8 @@
     "69889": {
      "nombre": "Xavi Espart",
      "compras": 4821590,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 6220590,
+     "ops": 2
     },
     "70917": {
      "nombre": "Arouna Sangante",

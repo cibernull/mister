@@ -8296,6 +8296,24 @@
    "media": 3,
    "racha": "-,-,-,3,-",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 552548245,
+   "idJugador": "69889",
+   "nombre": "Xavi Espart",
+   "de": "Niutin FC (Isaac)",
+   "a": "Mister",
+   "idUcDe": 12493763,
+   "idUcA": 0,
+   "importe": 6220590,
+   "tipo": "normal",
+   "cuando": "2026-10-08 17:13:43",
+   "valor": 6159000,
+   "posicion": 2,
+   "puntos": 37,
+   "media": 7.4,
+   "racha": "6,6,11,-,-",
+   "otrasPujas": []
   }
  ],
  "salidas": [
