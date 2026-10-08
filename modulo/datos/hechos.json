@@ -5015,7 +5015,7 @@
    "importe": 6905210,
    "tipo": "normal",
    "cuando": "2026-09-07 17:00:19",
-   "valor": 6313000,
+   "valor": 6420000,
    "posicion": 1,
    "puntos": 25,
    "media": 3.6,
@@ -5033,7 +5033,7 @@
    "importe": 4074130,
    "tipo": "normal",
    "cuando": "2026-09-07 17:00:19",
-   "valor": 5078000,
+   "valor": 5106000,
    "posicion": 3,
    "puntos": 26,
    "media": 4.3,
@@ -5051,12 +5051,21 @@
    "importe": 7900000,
    "tipo": "normal",
    "cuando": "2026-09-07 17:00:19",
-   "valor": 11153000,
+   "valor": 11043000,
    "posicion": 4,
    "puntos": 72,
    "media": 10.3,
    "racha": "16,17,10,6,10",
-   "otrasPujas": []
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 6901760
+    },
+    {
+     "equipo": "Niutin FC (Isaac)",
+     "puja": 6832816
+    }
+   ]
   },
   {
    "idTransfer": 546057885,
@@ -5069,7 +5078,7 @@
    "importe": 3574480,
    "tipo": "normal",
    "cuando": "2026-09-07 17:06:52",
-   "valor": 1790000,
+   "valor": 1807000,
    "posicion": 2,
    "puntos": 11,
    "media": 1.8,
