@@ -9900,8 +9900,8 @@
   "semana": 25000,
   "sem7": 311000,
   "mes": 1055000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 6311000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -11153,8 +11153,8 @@
   "semana": 45000,
   "sem7": 382000,
   "mes": 2422000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 10833000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -17078,8 +17078,8 @@
   "semana": -108000,
   "sem7": -982000,
   "mes": -2696000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 8989000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -17528,8 +17528,8 @@
   "semana": -63000,
   "sem7": -727000,
   "mes": -1733000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 3034000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -21259,8 +21259,8 @@
   "semana": -123000,
   "sem7": -896000,
   "mes": -2240000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 6576000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -21686,8 +21686,8 @@
   "semana": 14000,
   "sem7": 123000,
   "mes": 541000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 705000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -28362,8 +28362,8 @@
   "semana": -6000,
   "sem7": -9000,
   "mes": -3000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 189000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -33993,8 +33993,8 @@
   "semana": 45000,
   "sem7": 5000,
   "mes": -125000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 205000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -35167,8 +35167,8 @@
   "semana": -3000,
   "sem7": -36000,
   "mes": -1082000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 2,
   "est": "doubt",
@@ -37786,94 +37786,6 @@
   "d": 0
  },
  {
-  "id": "71141",
-  "nombre": "Jean Ives Valou",
-  "valor": 160000,
-  "puntos": 1,
-  "media": 1,
-  "partidos": 1,
-  "semana": -2000,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   1,
-   null,
-   null
-  ],
-  "eq": 9,
-  "riv": 3,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 1,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [
-   [
-    1,
-    1,
-    48,
-    0,
-    "i73"
-   ],
-   [
-    2,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    13,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "11186",
   "nombre": "Dani Raba",
   "valor": 160000,
@@ -37954,6 +37866,94 @@
     7,
     null,
     16,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "71141",
+  "nombre": "Jean Ives Valou",
+  "valor": 160000,
+  "puntos": 1,
+  "media": 1,
+  "partidos": 1,
+  "semana": -2000,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   1,
+   null,
+   null
+  ],
+  "eq": 9,
+  "riv": 3,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 1,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [
+   [
+    1,
+    1,
+    48,
+    0,
+    "i73"
+   ],
+   [
+    2,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    13,
     0,
     ""
    ]
@@ -42544,82 +42544,6 @@
   "d": 0
  },
  {
-  "id": "71638",
-  "nombre": "Laro Gómez",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -43000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1490,
-  "riv": 19,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 19,
-  "js": [
-   [
-    1,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    5,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "70947",
   "nombre": "Noé Carrillo",
   "valor": 160000,
@@ -43411,75 +43335,6 @@
   "d": 0
  },
  {
-  "id": "27855",
-  "nombre": "Diego Conde",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -20000,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 4,
-  "riv": 50,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    1,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    6,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "64458",
   "nombre": "Pablo Campos",
   "valor": 160000,
@@ -43645,6 +43500,96 @@
     7,
     null,
     4,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "59064",
+  "nombre": "Jiri Letacek",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -5000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 9,
+  "riv": 3,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 27,
+  "js": [
+   [
+    1,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    13,
     0,
     ""
    ]
@@ -43819,6 +43764,75 @@
   "d": 0
  },
  {
+  "id": "27855",
+  "nombre": "Diego Conde",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -20000,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 4,
+  "riv": 50,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 27,
+  "js": [
+   [
+    1,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    6,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "65724",
   "nombre": "Fábio Cardoso",
   "valor": 160000,
@@ -43950,15 +43964,15 @@
   "d": 0
  },
  {
-  "id": "59064",
-  "nombre": "Jiri Letacek",
+  "id": "71638",
+  "nombre": "Laro Gómez",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
   "semana": 0,
-  "sem7": 0,
-  "mes": -5000,
+  "sem7": -43000,
+  "mes": 0,
   "mk": 0,
   "pv": null,
   "ced": 0,
@@ -43973,9 +43987,9 @@
    null,
    null
   ],
-  "eq": 9,
-  "riv": 3,
-  "casa": 0,
+  "eq": 1490,
+  "riv": 19,
+  "casa": 1,
   "gol": 0,
   "tar": 0,
   "mc": 0,
@@ -43984,54 +43998,40 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 27,
+  "edad": 19,
   "js": [
    [
     1,
     null,
-    48,
+    20,
     0,
     ""
    ],
    [
     2,
     null,
-    1490,
+    9,
     0,
     ""
    ],
    [
+    5,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
     3,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    4,
     0,
     ""
    ],
    [
     7,
     null,
-    13,
+    5,
     0,
     ""
    ]
@@ -44215,8 +44215,8 @@
   "semana": -21000,
   "sem7": 0,
   "mes": 0,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 2,
   "est": null,
