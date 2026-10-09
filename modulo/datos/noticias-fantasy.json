@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-09T11:08:06.915Z",
+ "cuando": "2026-10-09T11:38:05.879Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "09/10",
-   "titulo": "Rueda de prensa de Hansi Flick en directo",
+   "titulo": "Flick, sobre Raphinha, Gabriel Jesús, De Jong, Yamal, Bernal, el calendario y la portería",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152484-rueda-de-prensa-de-hansi-flick-en-directo",
-   "categoria": "análisis"
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "06/10",
@@ -74,6 +74,24 @@
    "titulo": "Actualizadas todas las jerarquías: Jugadores clave, importantes de rotación, revulsivos, reservas y onces tipo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/91324-actualizados-los-jugadores-clave-importantes-de-rotacion-reservas-y-descartes-de-laliga",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "José Alberto juega al despiste con Pablo García y Zabiri: «Han vuelto cansados»",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152487-jose-alberto-juega-al-despiste-con-pablo-garcia-y-zabiri-han-vuelto-cansados",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Flick deja casi confirmadas las titularidades de Joan García y Gabriel Jesús",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152486-flick-deja-casi-confirmadas-las-titularidades-de-joan-garcia-y-gabriel-jesus",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Raphinha, baja contra el Getafe y Galatasaray",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152485-raphinha-baja-contra-el-getafe-y-galatasaray",
+   "categoria": "lesión"
   },
   {
    "fecha": "09/10",
@@ -464,24 +482,6 @@
    "titulo": "Aubameyang confirma el avance en su recuperación y habla de Casadó, Eddahchouri y Bil Nsongo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152418-aubameyang-confirma-el-avance-en-su-recuperacion-y-habla-de-casado-eddahchouri-y-bil-nsongo",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Anselmi habla de Cepeda, Josan, Lomónaco, Redondo, Febas, Sangaré, Valera, la idea de juego y el Celta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152417-anselmi-habla-de-cepeda-josan-lomonaco-redondo-febas-sangare-valera-la-idea-de-juego-y-el-cel",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "El Málaga completa la última sesión sin los cuatro lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152416-el-malaga-completa-la-ultima-sesion-sin-los-cuatro-lesionados",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Ndukwe está de vuelta y Castro los tiene a todos menos a los lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152415-ndukwe-esta-de-vuelta-y-castro-los-tiene-a-todos-menos-a-los-lesionados",
-   "categoria": "entrenamiento"
   }
  ]
 }
