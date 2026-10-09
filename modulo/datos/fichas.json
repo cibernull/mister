@@ -28454,7 +28454,7 @@
   "nombre": "Chupete",
   "posicion": 4,
   "goles": 1,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 3,
   "mediaFuera": 1.5,
   "edad": 22,
@@ -28524,7 +28524,9 @@
     "puntos": null,
     "rival": 8,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,
