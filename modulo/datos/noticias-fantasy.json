@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-09T10:08:10.111Z",
+ "cuando": "2026-10-09T10:38:09.564Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "09/10",
-   "titulo": "Raphinha no entrena este viernes y apunta a baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152477-raphinha-no-entrena-este-viernes-y-apunta-a-baja",
-   "categoria": "entrenamiento"
+   "titulo": "Simeone habla de Julián, Barrios, Sorloth, Messi, Maradona, el parón y el Alavés",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152481-simeone-habla-de-julian-barrios-sorloth-messi-maradona-el-paron-y-el-alaves",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "06/10",
@@ -77,9 +77,27 @@
   },
   {
    "fecha": "09/10",
+   "titulo": "Pellegrini habla de Conde, Valles, Bartra, Ruibal, Ceballos, Lo Celso, Osasuna y las rotaciones",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152480-pellegrini-habla-de-conde-valles-bartra-bellerin-ceballos-lo-celso-osasuna-y-las-rotaciones",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Aguirre alterna la posición de Pepelu entre pivote y tercer central para dar salida al juego",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152479-aguirre-alterna-la-posicion-de-pepelu-entre-pivote-y-tercer-central-para-dar-salida-al-juego",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
    "titulo": "Diario de Sevilla modifica su posible once: Ceballos y Riquelme por Fornals y Abde",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152478-diario-de-sevilla-modifica-su-posible-once-ceballos-y-riquelme-por-fornals-y-abde",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Raphinha no entrena este viernes y apunta a baja",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152477-raphinha-no-entrena-este-viernes-y-apunta-a-baja",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "09/10",
@@ -464,24 +482,6 @@
    "titulo": "Joan García completa toda la sesión del jueves y apunta al once",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152412-joan-garcia-completa-toda-la-sesion-del-jueves-y-apunta-al-once",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Giménez y Noubi están de vuelta e Hidalgo los tiene a todos menos a los lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152411-gimenez-y-noubi-estan-de-vuelta-e-hidalgo-los-tiene-a-todos-menos-a-los-lesionados",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Cucurella encadena dos días con trabajo específico y aparece la amenaza de la rotación",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152410-cucurella-encadena-dos-dias-con-trabajo-especifico-y-aparece-la-amenaza-de-la-rotacion",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Mbappé repite con el grupo, con Bellingham y Trent de vuelta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152408-mbappe-repite-con-el-grupo-con-bellingham-y-trent-de-vuelta",
-   "categoria": "entrenamiento"
   }
  ]
 }
