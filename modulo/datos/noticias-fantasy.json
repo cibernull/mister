@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-09T09:12:24.947Z",
+ "cuando": "2026-10-09T09:38:20.650Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "09/10",
-   "titulo": "Valverde y Mendy empiezan la sesión del viernes con el grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152469-valverde-y-mendy-empiezan-la-sesion-del-viernes-con-el-grupo",
-   "categoria": "entrenamiento"
+   "titulo": "Terzic habla de Nico Williams, Sancet, Djaló, Unai Simón, Vivian, Lezama y Vallecas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152475-terzic-habla-de-nico-williams-sancet-djalo-unai-simon-vivian-lezama-y-vallecas",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "06/10",
@@ -77,6 +77,30 @@
   },
   {
    "fecha": "09/10",
+   "titulo": "Terzic espera que Nico Williams pise césped la próxima semana",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152476-terzic-espera-que-nico-williams-pise-cesped-la-proxima-semana",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Robbie Ure y Gabriel Suazo se incorporan y Stassin vuelve al gimnasio",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152474-robbie-ure-y-gabriel-suazo-se-incorporan-y-stassin-vuelve-al-gimnasio",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Cucurella ya entrena a pleno rendimiento tras dos días de gestión de cargas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152473-cucurella-ya-entrena-a-pleno-rendimiento-tras-dos-dias-de-gestion-de-cargas",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Rioja, Danjuma y Foulquier vuelven a trabajar al margen este viernes",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152472-rioja-danjuma-y-foulquier-vuelven-a-trabajar-al-margen-este-viernes",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "09/10",
    "titulo": "El Atlético se ejercita esta mañana con toda la plantilla disponible",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152471-el-atletico-se-ejercita-esta-manana-con-toda-la-plantilla-disponible",
    "categoria": "entrenamiento"
@@ -86,6 +110,12 @@
    "titulo": "Hidalgo reconoce que Yeremay se acerca a su mejor versión",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152470-hidalgo-reconoce-que-yeremay-se-acerca-a-su-mejor-version",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Valverde y Mendy empiezan la sesión del viernes con el grupo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152469-valverde-y-mendy-empiezan-la-sesion-del-viernes-con-el-grupo",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "09/10",
@@ -452,36 +482,6 @@
    "titulo": "Danjuma ya toca balón sobre el césped y no está descartado",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152407-danjuma-ya-toca-balon-sobre-el-cesped-y-no-esta-descartado",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Stassin ya pisa césped y solo faltan Suazo y Ure",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152406-stasssin-vargas-ure",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Joan García repite con el grupo, regresan los internacionales mientras Raphinha sigue al margen",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152405-joan-garcia-repite-con-el-grupo-regresan-los-internacionales-mientras-raphinha-sigue-al-marge",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Unai Simón, Peio Canales y Yuri regresan al trabajo con el Athletic",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152404-unai-simon-peio-canales-y-yuri-regresan-al-trabajo-con-el-athletic",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Mouriño y Mikautadze están de vuelta, Buchanan será baja y faltan tres internacionales",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152403-mourino-y-mikautadze-estan-de-vuelta-buchanan-sera-baja-y-faltan-tres-internacionales",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Zabiri y Pablo García completan el regreso de los internacionales del Racing",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152402-zabiri-y-pablo-garcia-completan-el-regreso-de-los-internacionales-del-racing",
-   "categoria": "entrenamiento"
   }
  ]
 }
