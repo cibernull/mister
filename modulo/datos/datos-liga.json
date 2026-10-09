@@ -1303,6 +1303,16 @@
  ],
  "movimientos": [
   {
+   "id": "28774",
+   "nombre": "Julen Agirrezabala",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 6155280,
+   "tipo": "normal",
+   "fecha": "2026-10-09 08:51:20",
+   "pos": 1
+  },
+  {
    "id": "69889",
    "nombre": "Xavi Espart",
    "de": "Niutin FC (Isaac)",
@@ -10157,6 +10167,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Julen Agirrezabala",
+     "id": "28774",
+     "tipo": "venta",
+     "importe": 6155280,
+     "fecha": "2026-10-09",
+     "op": "normal"
+    },
+    {
      "j": "Adrià Pedrosa",
      "id": "14691",
      "tipo": "compra",
@@ -11023,8 +11041,8 @@
     "28774": {
      "nombre": "Julen Agirrezabala",
      "compras": 2500000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 6155280,
+     "ops": 2
     },
     "29163": {
      "nombre": "Omar El Hilali",
