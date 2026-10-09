@@ -1,17 +1,11 @@
 {
- "cuando": "2026-10-09T21:08:22.725Z",
+ "cuando": "2026-10-09T21:38:25.957Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
-   "fecha": "09/10",
-   "titulo": "Jornada 8: Málaga 1-1 Espanyol. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22497-malaga-espanyol",
-   "categoria": "partido"
-  },
-  {
    "fecha": "02/09",
-   "titulo": "Alineaciones probables para la jornada 8 actualizadas",
+   "titulo": "Alineaciones probables para la jornada 9 disponibles de los que han jugado la 8",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
   },
@@ -74,6 +68,24 @@
    "titulo": "Actualizadas todas las jerarquías: Jugadores clave, importantes de rotación, revulsivos, reservas y onces tipo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/91324-actualizados-los-jugadores-clave-importantes-de-rotacion-reservas-y-descartes-de-laliga",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Manolo analiza el empate y habla de Javi Hernández, Fortuño, Dmitrovic y Bryan Zaragoza",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152520-manolo-analiza-el-empate-y-habla-de-javi-hernandez-fortuno-dmitrovic-y-bryan-zaragoza",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "El Málaga sobrevive a la vida de Bryan",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152519-el-malaga-sobrevive-a-la-vida-de-bryan",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Jornada 8: Málaga 1-1 Espanyol. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22497-malaga-espanyol",
+   "categoria": "partido"
   },
   {
    "fecha": "09/10",
@@ -470,18 +482,6 @@
    "titulo": "Kike Salas confirma su plena recuperación y habla de Sierra, Stassin, Ure, Fofana, Iglesias y el Levante",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152452-kike-salas-confirma-su-plena-recuperacion-y-habla-de-sierra-stassin-ure-fofana-iglesias-y-el-",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Yamal, Gabriel Jesús y Adeyemi, el tridente de Sport contra el Getafe",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152451-yamal-gabriel-jesus-y-adeyemi-el-tridente-de-sport-contra-el-getafe",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Giuliano, trabajo específico de más intensidad tras sus pocos minutos con Argentina",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152450-giuliano-trabajo-especifico-de-mas-intensidad-tras-sus-pocos-minutos-con-argentina",
-   "categoria": "análisis"
   }
  ]
 }
