@@ -4470,7 +4470,7 @@
   "mediaCasa": 1,
   "mediaFuera": 3,
   "edad": 35,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -4512,7 +4512,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-09",
-  "partidos": 4
+  "partidos": 5
  },
  "11697": {
   "nombre": "Lucas Boyé",
@@ -5179,7 +5179,7 @@
   "mediaCasa": 0,
   "mediaFuera": 0,
   "edad": 31,
-  "titular": true,
+  "titular": null,
   "titularidades": 0,
   "suplencias": 0,
   "jornadas": [
@@ -5193,7 +5193,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-09",
-  "partidos": 0
+  "partidos": 1
  },
  "13420": {
   "nombre": "Mouctar Diakhaby",
@@ -6786,7 +6786,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-09",
-  "partidos": 1
+  "partidos": 2
  },
  "17614": {
   "nombre": "Kike Barja",
@@ -8514,15 +8514,6 @@
     "jornada": 7,
     "puntos": 2,
     "rival": 9,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 8,
     "como": "inicio",
     "eventos": [
      "sub_out"
@@ -10612,13 +10603,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -11829,8 +11813,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
-  "partidos": 0
+  "dia": "2026-10-09",
+  "partidos": 1
  },
  "29169": {
   "nombre": "Pablo Ibáñez",
@@ -12504,13 +12488,6 @@
     "puntos": null,
     "rival": 20,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -14810,13 +14787,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -15600,12 +15570,12 @@
  "53095": {
   "nombre": "Bryan Zaragoza",
   "posicion": 3,
-  "goles": 0,
-  "tarjetas": 0,
+  "goles": 1,
+  "tarjetas": 1,
   "mediaCasa": 2,
   "mediaFuera": 3.5,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 3,
   "jornadas": [
@@ -15662,7 +15632,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-09",
-  "partidos": 4
+  "partidos": 5
  },
  "53098": {
   "nombre": "Alberto Moleiro",
@@ -16348,16 +16318,6 @@
     "rival": 9,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 8,
-    "como": "banquillo",
-    "eventos": [
-     "yellow",
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
@@ -20191,13 +20151,6 @@
     "rival": 23,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -20606,7 +20559,7 @@
  "60927": {
   "nombre": "Adrián Niño",
   "posicion": 4,
-  "goles": 1,
+  "goles": 2,
   "tarjetas": 0,
   "mediaCasa": 2,
   "mediaFuera": 6.5,
@@ -20642,20 +20595,11 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 8,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-09",
-  "partidos": 3
+  "partidos": 4
  },
  "61009": {
   "nombre": "Ángel Ortiz",
@@ -21032,7 +20976,7 @@
   "nombre": "Adam Aznou",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 0,
   "mediaFuera": 0,
   "edad": 20,
@@ -21081,20 +21025,11 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 8,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-09",
-  "partidos": 0
+  "partidos": 1
  },
  "61297": {
   "nombre": "Luken Beitia",
@@ -23855,11 +23790,11 @@
   "nombre": "Clemens Riedel",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 3,
+  "tarjetas": 4,
   "mediaCasa": 2.3,
   "mediaFuera": 2,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 2,
   "jornadas": [
@@ -23924,8 +23859,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-03",
-  "partidos": 4
+  "dia": "2026-10-09",
+  "partidos": 5
  },
  "65625": {
   "nombre": "Tani Oluwaseyi",
@@ -28534,15 +28469,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": [
-     "yellow"
-    ]
    }
   ],
   "asistencias": 0,
@@ -28613,18 +28539,11 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-09",
-  "partidos": 2
+  "partidos": 1
  },
  "70994": {
   "nombre": "Eneko Jauregi",
@@ -28691,13 +28610,6 @@
      "yellow",
      "sub_out"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28885,7 +28797,7 @@
   "mediaCasa": 3.7,
   "mediaFuera": 4,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 1,
   "jornadas": [
@@ -28953,8 +28865,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-04",
-  "partidos": 4
+  "dia": "2026-10-09",
+  "partidos": 5
  },
  "71000": {
   "nombre": "Rafa Rodriguez",
@@ -29020,15 +28932,6 @@
     "jornada": 7,
     "puntos": 6,
     "rival": 9,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 8,
     "como": "inicio",
     "eventos": [
      "sub_out"
@@ -29116,13 +29019,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -29225,16 +29121,6 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": [
-     "yellow",
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
@@ -29436,13 +29322,6 @@
     "jornada": 7,
     "puntos": 2,
     "rival": 9,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 8,
     "como": "inicio",
     "eventos": []
    }
@@ -30352,18 +30231,11 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-09",
-  "partidos": 3
+  "partidos": 4
  },
  "71141": {
   "nombre": "Jean Ives Valou",
@@ -30573,13 +30445,6 @@
     "puntos": null,
     "rival": 23,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -31533,7 +31398,7 @@
   "nombre": "Roger Hinojo",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 2,
+  "tarjetas": 3,
   "mediaCasa": 3,
   "mediaFuera": 3,
   "edad": 21,
@@ -31599,13 +31464,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -32969,13 +32827,6 @@
     "puntos": null,
     "rival": 23,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -35872,13 +35723,6 @@
     "jornada": 7,
     "puntos": 1,
     "rival": 23,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 13,
     "como": "inicio",
     "eventos": []
    }
