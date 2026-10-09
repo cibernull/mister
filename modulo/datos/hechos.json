@@ -8341,6 +8341,24 @@
    "media": 4,
    "racha": "4,4,7,5,1",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 552706885,
+   "idJugador": "4888",
+   "nombre": "Carlos Soler",
+   "de": "Saiyans FC (Fran)",
+   "a": "Mister",
+   "idUcDe": 12493752,
+   "idUcA": 0,
+   "importe": 9513190,
+   "tipo": "normal",
+   "cuando": "2026-10-09 17:58:11",
+   "valor": 9419000,
+   "posicion": 3,
+   "puntos": 28,
+   "media": 4,
+   "racha": "3,5,3,1,11",
+   "otrasPujas": []
   }
  ],
  "salidas": [

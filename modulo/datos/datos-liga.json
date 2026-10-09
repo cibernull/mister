@@ -1303,6 +1303,16 @@
  ],
  "movimientos": [
   {
+   "id": "4888",
+   "nombre": "Carlos Soler",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 9513190,
+   "tipo": "normal",
+   "fecha": "2026-10-09 17:58:11",
+   "pos": 3
+  },
+  {
    "id": "28774",
    "nombre": "Julen Agirrezabala",
    "de": "Saiyans FC (Fran)",
@@ -10175,6 +10185,14 @@
      "op": "normal"
     },
     {
+     "j": "Carlos Soler",
+     "id": "4888",
+     "tipo": "venta",
+     "importe": 9513190,
+     "fecha": "2026-10-09",
+     "op": "normal"
+    },
+    {
      "j": "Adrià Pedrosa",
      "id": "14691",
      "tipo": "compra",
@@ -10933,8 +10951,8 @@
     "4888": {
      "nombre": "Carlos Soler",
      "compras": 7900000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 9513190,
+     "ops": 2
     },
     "5917": {
      "nombre": "Igor Zubeldia",

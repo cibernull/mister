@@ -318,6 +318,32 @@
   "entra": true
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-10-09",
+  "id": "10",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-09",
+  "id": "4888",
+  "de": "Saiyans FC (Fran)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "4888",
+  "entra": false
+ },
+ {
+  "tipo": "alta",
+  "dia": "2026-10-09",
+  "id": "58992",
+  "equipo": null
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-08",
   "id": "118",
