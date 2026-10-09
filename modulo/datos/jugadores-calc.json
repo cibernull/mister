@@ -41958,89 +41958,6 @@
   "d": 0
  },
  {
-  "id": "63784",
-  "nombre": "Jorge Cabello",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -16000,
-  "mes": -43000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 12,
-  "riv": 17,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 22,
-  "js": [
-   [
-    1,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "48486",
   "nombre": "José Copete",
   "valor": 160000,
@@ -42722,96 +42639,6 @@
   "d": 0
  },
  {
-  "id": "4947928",
-  "nombre": "Salvi Esquivel",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 2,
-  "riv": 48,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    15,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "67931",
   "nombre": "Selton Sánchez",
   "valor": 160000,
@@ -43066,96 +42893,6 @@
   "d": 0
  },
  {
-  "id": "6035",
-  "nombre": "Iván Villar",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -24000,
-  "sem7": -44000,
-  "mes": -38000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 5,
-  "riv": 23,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 29,
-  "js": [
-   [
-    1,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    1490,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "59064",
   "nombre": "Jiri Letacek",
   "valor": 160000,
@@ -43238,6 +42975,96 @@
     7,
     null,
     13,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "6035",
+  "nombre": "Iván Villar",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -24000,
+  "sem7": -44000,
+  "mes": -38000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 5,
+  "riv": 23,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 29,
+  "js": [
+   [
+    1,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    1490,
     0,
     ""
    ]
@@ -44040,6 +43867,179 @@
     7,
     null,
     1,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "4947928",
+  "nombre": "Salvi Esquivel",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 2,
+  "riv": 48,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    15,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "63784",
+  "nombre": "Jorge Cabello",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -16000,
+  "mes": -43000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 12,
+  "riv": 17,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 22,
+  "js": [
+   [
+    1,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    20,
     0,
     ""
    ]

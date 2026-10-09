@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-09T15:08:20.900Z",
+ "cuando": "2026-10-09T15:38:24.263Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -67,6 +67,12 @@
    "fecha": "24/09",
    "titulo": "Actualizadas todas las jerarquías: Jugadores clave, importantes de rotación, revulsivos, reservas y onces tipo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/91324-actualizados-los-jugadores-clave-importantes-de-rotacion-reservas-y-descartes-de-laliga",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "¡Sigue a las 18:00h en Twitch y Youtube la información fantasy para la jornada 8!",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152507-sigue-a-las-18-00h-en-twitch-y-youtube-la-informacion-fantasy-para-la-jornada-8",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "El Alavés rebaja la carga en el gimnasio con Koski como principal incógnita médica",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152439-el-alaves-rebaja-la-carga-en-el-gimnasio-con-koski-como-principal-incognita-medica",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Xavi Espart renueva con el Barcelona hasta 2030",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152438-xavi-espart-renueva-con-el-barcelona-hasta-2030",
-   "categoria": "mercado"
   }
  ]
 }
