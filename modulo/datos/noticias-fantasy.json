@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-09T08:08:08.041Z",
+ "cuando": "2026-10-09T08:38:06.642Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "09/10",
-   "titulo": "Radu deja atrás las molestias y estará disponible contra el Elche",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152461-radu-deja-atras-las-molestias-y-estara-disponible-contra-el-elche",
-   "categoria": "análisis"
+   "titulo": "Mourinho habla de Mbappé, Güler, Valverde, Konaté, Huijsen, Militao, Rodrygo, Mendy, Vinicius y Diomandé",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152464-mourinho-habla-de-mbappe-guler-valverde-konate-huijsen-thiago-militao-rodrygo-mendy-vinicius-",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "06/10",
@@ -77,8 +77,20 @@
   },
   {
    "fecha": "09/10",
+   "titulo": "Mbappé será titular contra el Villarreal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152463-mbappe-sera-titular-contra-el-villarreal",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
    "titulo": "Las extrañas dudas de la prensa de Málaga con Dotor",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152462-las-extranas-dudas-de-la-prensa-de-malaga-con-dotor",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Radu deja atrás las molestias y estará disponible contra el Elche",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152461-radu-deja-atras-las-molestias-y-estara-disponible-contra-el-elche",
    "categoria": "análisis"
   },
   {
@@ -469,18 +481,6 @@
    "fecha": "08/10",
    "titulo": "Rioja se suma al grupo. Dimitrievski y Guido están de vuelta",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152395-rioja-se-suma-al-grupo-dimitrievski-y-guido-estan-de-vuelta",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Parte médico oficial de Sancet y periodo estimado de baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152393-parte-medico-oficial-de-sancet-y-periodo-estimado-de-baja",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Buba Sangaré inicia su incorporación progresiva al grupo y todavía falta Cepeda",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152394-buba-sangare-inicia-su-incorporacion-progresiva-al-grupo",
    "categoria": "entrenamiento"
   }
  ]
