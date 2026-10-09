@@ -2972,8 +2972,8 @@
   "semana": 104000,
   "sem7": 689000,
   "mes": 3910000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 6263000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -10080,8 +10080,8 @@
   "semana": -25000,
   "sem7": -537000,
   "mes": 482000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 9279000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -15486,8 +15486,8 @@
   "semana": -38000,
   "sem7": -469000,
   "mes": -2786000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 2185000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -16372,8 +16372,8 @@
   "semana": -43000,
   "sem7": -469000,
   "mes": -257000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1693000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -16898,8 +16898,8 @@
   "semana": -23000,
   "sem7": -346000,
   "mes": -676000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 3570000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -18834,8 +18834,8 @@
   "semana": -69000,
   "sem7": -662000,
   "mes": -2245000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 3386000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -19967,8 +19967,8 @@
   "semana": -19000,
   "sem7": -253000,
   "mes": -522000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1172000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -23428,8 +23428,8 @@
   "semana": -167000,
   "sem7": -1235000,
   "mes": -2536000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 7960000,
   "ced": 0,
   "pos": 2,
   "est": "red",
@@ -28099,8 +28099,8 @@
   "semana": -26000,
   "sem7": -235000,
   "mes": -1433000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 162000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -41460,96 +41460,6 @@
   "d": 0
  },
  {
-  "id": "61410",
-  "nombre": "Adrián Rodríguez",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -7000,
-  "sem7": -50000,
-  "mes": -48000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 48,
-  "riv": 2,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    1,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    1,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "11092",
   "nombre": "Andoni Gorosabel",
   "valor": 160000,
@@ -42301,6 +42211,61 @@
     7,
     null,
     16,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "48554",
+  "nombre": "Luiz Felipe",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -26000,
+  "sem7": -2000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "doubt",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 14,
+  "riv": 1,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 29,
+  "js": [
+   [
+    6,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    50,
     0,
     ""
    ]
@@ -43191,6 +43156,96 @@
   "d": 0
  },
  {
+  "id": "59064",
+  "nombre": "Jiri Letacek",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -31000,
+  "mes": -37000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 9,
+  "riv": 3,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 27,
+  "js": [
+   [
+    1,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    13,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "51137",
   "nombre": "Pablo Marín",
   "valor": 160000,
@@ -43440,151 +43495,6 @@
   "d": 0
  },
  {
-  "id": "59064",
-  "nombre": "Jiri Letacek",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -31000,
-  "mes": -37000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 9,
-  "riv": 3,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    1,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    13,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "48554",
-  "nombre": "Luiz Felipe",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -26000,
-  "sem7": -2000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "doubt",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 14,
-  "riv": 1,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 29,
-  "js": [
-   [
-    6,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    50,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "27855",
   "nombre": "Diego Conde",
   "valor": 160000,
@@ -43594,8 +43504,8 @@
   "semana": 0,
   "sem7": -20000,
   "mes": 0,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -44040,6 +43950,96 @@
     7,
     null,
     50,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "61410",
+  "nombre": "Adrián Rodríguez",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -7000,
+  "sem7": -50000,
+  "mes": -48000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 48,
+  "riv": 2,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    1,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    1,
     0,
     ""
    ]
