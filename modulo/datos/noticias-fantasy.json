@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-09T14:08:07.578Z",
+ "cuando": "2026-10-09T14:38:07.517Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -73,6 +73,12 @@
    "fecha": "24/09",
    "titulo": "Actualizadas todas las jerarquías: Jugadores clave, importantes de rotación, revulsivos, reservas y onces tipo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/91324-actualizados-los-jugadores-clave-importantes-de-rotacion-reservas-y-descartes-de-laliga",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Alineaciones probables y pronósticos de Carrasco para la jornada 8 de LaLiga Fantasy 26/27",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152503-alineaciones-probables-y-pronosticos-de-carrasco-para-la-jornada-8-de-laliga-fantasy-26-27",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "¡Sigue a las 16:30h en Twitch y Youtube la información fantasy para la jornada 8!",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152435-sigue-a-las-16-30h-en-twitch-y-youtube-la-informacion-fantasy-para-la-jornada-8",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Puado vuelve a una convocatoria y Jofre sigue fuera",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152434-puado-vuelve-a-una-convocatoria-y-jofre-sigue-fuera",
-   "categoria": "convocatoria"
   }
  ]
 }
