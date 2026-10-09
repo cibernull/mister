@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-09T13:38:09.483Z",
+ "cuando": "2026-10-09T14:08:07.578Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "09/10",
-   "titulo": "Valverde, Mbappé y Konaté, en la lista para recibir al Villarreal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152498-valverde-mbappe-y-konate-en-la-lista-para-recibir-al-villarreal",
-   "categoria": "convocatoria"
+   "titulo": "Lucas Boyé no completa el entrenamiento del viernes",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152501-lucas-boye-no-completa-el-entrenamiento-del-viernes",
+   "categoria": "lesión"
   },
   {
    "fecha": "06/10",
@@ -77,6 +77,12 @@
   },
   {
    "fecha": "09/10",
+   "titulo": "Nico Williams y Sancet, bajas en la convocatoria de Terzic",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152502-nico-williams-y-sancet-bajas-en-la-convocatoria-de-terzic",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "09/10",
    "titulo": "El Real Madrid mintió en el parte médico oficial de Valverde",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152500-el-real-madrid-mintio-en-el-parte-medico-oficial-de-valverde",
    "categoria": "lesión"
@@ -86,6 +92,12 @@
    "titulo": "Jorge Herrando avanza a una nueva fase de recuperación y ya pisa césped",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152499-jorge-herrando-avanza-a-una-nueva-fase-de-recuperacion-y-ya-pisa-cesped",
    "categoria": "lesión"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Valverde, Mbappé y Konaté, en la lista para recibir al Villarreal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152498-valverde-mbappe-y-konate-en-la-lista-para-recibir-al-villarreal",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "09/10",
@@ -470,18 +482,6 @@
    "titulo": "Puado vuelve a una convocatoria y Jofre sigue fuera",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152434-puado-vuelve-a-una-convocatoria-y-jofre-sigue-fuera",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "LaLiga prohibe el fichaje de Carvajal por el Getafe y Ángel Torres zanja el tema",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152433-laliga-prohibe-el-fichaje-de-carvajal-por-el-getafe-y-angel-torres-zanja-el-tema",
-   "categoria": "mercado"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Cáceres completa toda la sesión y Aspas sigue de forma parcial",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152431-caceres-completa-toda-la-sesion-y-aspas-sigue-de-forma-parcial",
-   "categoria": "entrenamiento"
   }
  ]
 }
