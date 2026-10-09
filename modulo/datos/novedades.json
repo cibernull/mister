@@ -170,6 +170,20 @@
   "equipo": "Niutin FC (Isaac)"
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-10-09",
+  "id": "17452",
+  "estado": "injury",
+  "equipo": "Niutin FC (Isaac)"
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-09",
+  "id": "70932",
+  "estado": "other",
+  "equipo": null
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-08",
   "id": "118",

@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-09T13:08:15.432Z",
+ "cuando": "2026-10-09T13:38:09.483Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "09/10",
-   "titulo": "El Rayo se ejercita en el estadio sin Batalla ni Balliu",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152497-el-rayo-se-ejercita-en-el-estadio-sin-batalla-ni-balliu",
-   "categoria": "entrenamiento"
+   "titulo": "Valverde, Mbappé y Konaté, en la lista para recibir al Villarreal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152498-valverde-mbappe-y-konate-en-la-lista-para-recibir-al-villarreal",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "06/10",
@@ -74,6 +74,24 @@
    "titulo": "Actualizadas todas las jerarquías: Jugadores clave, importantes de rotación, revulsivos, reservas y onces tipo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/91324-actualizados-los-jugadores-clave-importantes-de-rotacion-reservas-y-descartes-de-laliga",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "El Real Madrid mintió en el parte médico oficial de Valverde",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152500-el-real-madrid-mintio-en-el-parte-medico-oficial-de-valverde",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Jorge Herrando avanza a una nueva fase de recuperación y ya pisa césped",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152499-jorge-herrando-avanza-a-una-nueva-fase-de-recuperacion-y-ya-pisa-cesped",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "El Rayo se ejercita en el estadio sin Batalla ni Balliu",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152497-el-rayo-se-ejercita-en-el-estadio-sin-batalla-ni-balliu",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "09/10",
@@ -464,24 +482,6 @@
    "titulo": "Cáceres completa toda la sesión y Aspas sigue de forma parcial",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152431-caceres-completa-toda-la-sesion-y-aspas-sigue-de-forma-parcial",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Sport ya descarta a Raphinha de titular contra el Getafe",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152430-sport-ya-descarta-a-raphinha-de-titular-contra-el-getafe",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "La Real Sociedad descansa este jueves pendiente de Fort y el regreso del resto de internacionales",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152429-la-real-sociedad-descansa-este-jueves-pendiente-de-fort-y-el-regreso-del-resto-de-internacion",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Quique habla de Koski, Aitor Mañas, el sistema, el once, Simeone y el Atlético",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152428-quique-habla-de-koski-aitor-manas-el-sistema-el-once-simeone-y-el-atletico",
-   "categoria": "rueda de prensa"
   }
  ]
 }
