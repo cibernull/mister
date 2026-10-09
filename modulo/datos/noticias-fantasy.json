@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-09T00:08:27.750Z",
+ "cuando": "2026-10-09T01:08:04.568Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "06/10",
+   "titulo": "Participa en el primer reto del Fantasy✨ 26/27: Resiliencia del portero",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152233-participa-en-el-primer-reto-del-fantasy-26-27-resiliencia-del-portero",
+   "categoria": "análisis"
+  },
   {
    "fecha": "08/10",
    "titulo": "Se cumplen siete años de porcentajes: La idea de FútbolFantasy que revolucionó las alineaciones probables",
@@ -13,12 +19,6 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 actualizadas",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "06/10",
-   "titulo": "Participa en el primer reto del Fantasy✨ 26/27: Resiliencia del portero",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152233-participa-en-el-primer-reto-del-fantasy-26-27-resiliencia-del-portero",
    "categoria": "análisis"
   },
   {
@@ -68,6 +68,108 @@
    "titulo": "Actualizadas todas las jerarquías: Jugadores clave, importantes de rotación, revulsivos, reservas y onces tipo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/91324-actualizados-los-jugadores-clave-importantes-de-rotacion-reservas-y-descartes-de-laliga",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Kike Salas confirma su plena recuperación y habla de Sierra, Stassin, Ure, Fofana, Iglesias y el Levante",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152452-kike-salas-confirma-su-plena-recuperacion-y-habla-de-sierra-stassin-ure-fofana-iglesias-y-el-",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Yamal, Gabriel Jesús y Adeyemi, el tridente de Sport contra el Getafe",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152451-yamal-gabriel-jesus-y-adeyemi-el-tridente-de-sport-contra-el-getafe",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Giuliano, trabajo específico de más intensidad tras sus pocos minutos con Argentina",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152450-giuliano-trabajo-especifico-de-mas-intensidad-tras-sus-pocos-minutos-con-argentina",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Kike Barja no completó las dos últimas sesiones por fatiga muscular",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152449-kike-barja-no-completo-las-dos-ultimas-sesiones-por-fatiga-muscular",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "José Alberto medita un cambio de posiciones para Canales y Pablo García",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152448-jose-alberto-medita-un-cambio-de-posiciones-para-canales-y-pablo-garcia",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Guruzeta repasa sus inicios y habla de Lezama, la lesión de rodilla, sus cesiones, Valverde y el futuro",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152447-guruzeta-repasa-sus-inicios-y-habla-de-lezama-la-lesion-de-rodilla-sus-cesiones-valverde-y-el",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Oriol Rey analiza el parón y habla del Sevilla, su crecimiento, el futuro y la permanencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152446-oriol-rey-analiza-el-paron-y-habla-del-sevilla-su-crecimiento-el-futuro-y-la-permanencia",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Zaid Romero repasa sus orígenes, su llegada al Getafe y habla de Bordalás, Argentina, el Barcelona y Messi",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152445-zaid-romero-repasa-sus-origenes-su-llegada-al-getafe-y-habla-de-bordalas-argentina-el-barcelo",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Javi Rodríguez, sobre su renovación, su evolución, la confianza de Claudio y el duelo ante el Elche",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152444-javi-rodriguez-sobre-su-renovacion-su-evolucion-la-confianza-de-claudio-y-el-duelo-ante-el-el",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Javi Rodríguez amplía su contrato con el Celta hasta 2030",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152443-javi-rodriguez-amplia-su-contrato-con-el-celta-hasta-2030",
+   "categoria": "mercado"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Diario de Sevilla ve un once del Betis con solo un internacional",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152442-diario-de-sevilla-ve-un-once-del-betis-con-solo-un-internacional",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Marca apuesta por la titularidad de Adeyemi contra el Getafe",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152441-marca-apuesta-por-la-titularidad-de-adeyemi-contra-el-getafe",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Mourinho atiende a CdS: Su llegada al Madrid, Vinicius, Roma, Inter, Manchester City, Ancelotti y los árbitros",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152440-mourinho-atiende-a-cds-su-llegada-al-madrid-vinicius-roma-inter-manchester-city-ancelotti-y-l",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "El Alavés rebaja la carga en el gimnasio con Koski como principal incógnita médica",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152439-el-alaves-rebaja-la-carga-en-el-gimnasio-con-koski-como-principal-incognita-medica",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Xavi Espart renueva con el Barcelona hasta 2030",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152438-xavi-espart-renueva-con-el-barcelona-hasta-2030",
+   "categoria": "mercado"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Simeone recupera al resto de internacionales, con Kang-In, Grimaldo y Sorloth con el grupo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152437-simeone-recupera-al-resto-de-internacionales-con-kang-in-grimaldo-y-sorloth-con-el-grupo",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "08/10",
+   "titulo": "Parte médico oficial de Romain del Castillo y periodo estimado de baja",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152436-parte-medico-oficial-de-romain-del-castillo-y-periodo-estimado-de-baja",
+   "categoria": "lesión"
   },
   {
    "fecha": "08/10",
@@ -380,108 +482,6 @@
    "titulo": "Posibles alineaciones y previa fantasy del Málaga - Espanyol",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152367-posibles-alineaciones-y-previa-fantasy-del-malaga-espanyol",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "JORNADA 8: Top Picks, Chollos Fantasy, Alineaciones y Datos Clave, por Scouting BWG",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152383-jornada-8-top-picks-chollos-fantasy-alineaciones-y-datos-clave-por-scouting-bwg",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "Los mejores jugadores para la Jornada 8 de LaLiga Fantasy 26/27, por Carrasco",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152382-los-mejores-jugadores-para-la-jornada-8-de-laliga-fantasy-26-27",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "Stassin apura sus opciones para llegar al Levante - Sevilla",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152381-stassin-apura-sus-opciones-para-llegar-al-levante-sevilla",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "El Levante completa otra sesión pendiente de Etta Etong, Sotelo y Ndukwe",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152380-el-levante-completa-otra-sesion-pendiente-de-etta-etong-sotelo-y-ndukwe",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "El Elche avanza ante el Celta con Revivo de vuelta y pendientes de Sangaré, Josan y Cepeda",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152379-el-elche-avanza-ante-el-celta-con-revivo-de-vuelta-y-pendientes-de-sangare-josan-y-cepeda",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "Luken Beitia, posible lateral de emergencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152378-luken-beitia-posible-lateral-de-emergencia",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "Parte médico oficial de Jon Mikel Aramburu y periodo estimado de baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152377-parte-medico-oficial-de-jon-mikel-aramburu-y-periodo-estimado-de-baja",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "Satriano se incorpora al grupo. Mario Martín y Sazonov están de vuelta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152376-satriano-se-incorpora-al-grupo-mario-martin-y-sazonov-estan-de-vuelta",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "Antañón ya realiza trabajo parcial con el grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152375-antanon-ya-realiza-trabajo-parcial-con-el-grupo",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "Pedrosa sigue sin reaparecer a tres días del partido",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152374-pedrosa-sigue-sin-reaparecer-a-tres-dias-del-partido",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "Raphinha se probará con el grupo este viernes",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152373-raphinha-se-probara-con-el-grupo-este-viernes",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "Valverde se probará este jueves con el grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152372-valverde-se-probara-este-jueves-con-el-grupo",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "Ángel Torres da por descartado el fichaje de Dani Carvajal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152371-angel-torres-descartado-fichaje-dani-carvajal",
-   "categoria": "mercado"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "Diego López pasa de nuevo por el quirófano",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152370-diego-lopez-pasa-nuevo-quirofano",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "Mbappé reaparece con el grupo y Valverde avanza en su recuperación",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152369-mbappe-reaparece-grupo-valverde-avanza-recuperacion",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "Audero y Ratiu están de vuelta mientras Luiz Felipe sigue completando sesiones",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152368-audero-y-ratiu-estan-de-vuelta-mientras-luiz-felipe-sigue-completando-sesiones",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "07/10",
-   "titulo": "David Silva vuelve del retiro y ficha por el Supreme Sha Tin de Hong Kong.",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152366-david-silva-vuelve-del-retiro-y-ficha-por-el-supreme-sha-tin-de-hong-kong",
-   "categoria": "mercado"
   }
  ]
 }
