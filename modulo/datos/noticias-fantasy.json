@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-09T09:38:20.650Z",
+ "cuando": "2026-10-09T10:08:10.111Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "09/10",
-   "titulo": "Terzic habla de Nico Williams, Sancet, Djaló, Unai Simón, Vivian, Lezama y Vallecas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152475-terzic-habla-de-nico-williams-sancet-djalo-unai-simon-vivian-lezama-y-vallecas",
-   "categoria": "rueda de prensa"
+   "titulo": "Raphinha no entrena este viernes y apunta a baja",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152477-raphinha-no-entrena-este-viernes-y-apunta-a-baja",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "06/10",
@@ -77,9 +77,21 @@
   },
   {
    "fecha": "09/10",
+   "titulo": "Diario de Sevilla modifica su posible once: Ceballos y Riquelme por Fornals y Abde",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152478-diario-de-sevilla-modifica-su-posible-once-ceballos-y-riquelme-por-fornals-y-abde",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
    "titulo": "Terzic espera que Nico Williams pise césped la próxima semana",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152476-terzic-espera-que-nico-williams-pise-cesped-la-proxima-semana",
    "categoria": "lesión"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Terzic habla de Nico Williams, Sancet, Djaló, Unai Simón, Vivian, Lezama y Vallecas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152475-terzic-habla-de-nico-williams-sancet-djalo-unai-simon-vivian-lezama-y-vallecas",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "09/10",
@@ -470,18 +482,6 @@
    "titulo": "Mbappé repite con el grupo, con Bellingham y Trent de vuelta",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152408-mbappe-repite-con-el-grupo-con-bellingham-y-trent-de-vuelta",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Javier R. Beltrán, en As, pone en duda la titularidad de Laporte",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152409-javier-r-beltran-en-as-pone-en-duda-la-titularidad-de-laporte",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Danjuma ya toca balón sobre el césped y no está descartado",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152407-danjuma-ya-toca-balon-sobre-el-cesped-y-no-esta-descartado",
-   "categoria": "lesión"
   }
  ]
 }
