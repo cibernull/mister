@@ -199,6 +199,126 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "10",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "11761",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "14789",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "18186",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "22486",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "28791",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "51137",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "56583",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "61167",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "63869",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "68652",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "70181",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "70997",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "71019",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "71503",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "822248",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "4836165",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "4836242",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "4947926",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-09",
+  "id": "4947929",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-10-08",
   "id": "118",
   "entra": false

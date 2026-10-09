@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-09T14:38:07.517Z",
+ "cuando": "2026-10-09T15:08:20.900Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
-   "fecha": "09/10",
-   "titulo": "Lucas Boyé no completa el entrenamiento del viernes",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152501-lucas-boye-no-completa-el-entrenamiento-del-viernes",
-   "categoria": "lesión"
+   "fecha": "02/09",
+   "titulo": "Alineaciones probables para la jornada 8 actualizadas",
+   "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
+   "categoria": "análisis"
   },
   {
    "fecha": "06/10",
@@ -19,12 +19,6 @@
    "fecha": "08/10",
    "titulo": "Se cumplen siete años de porcentajes: La idea de FútbolFantasy que revolucionó las alineaciones probables",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152432-se-cumplen-siete-anos-de-porcentajes-la-idea-de-futbolfantasy-que-revoluciono-las-alineacione",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "02/09",
-   "titulo": "Alineaciones probables para la jornada 8 actualizadas",
-   "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
    "categoria": "análisis"
   },
   {
@@ -77,6 +71,24 @@
   },
   {
    "fecha": "09/10",
+   "titulo": "Buchanan, única baja en una sesión con Saliba, Oluwaseyi y Freeman de vuelta",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152506-buchanan-unica-baja-en-una-sesion-con-saliba-oluwaseyi-y-freeman-de-vuelta",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "El Ideal Gallego apuesta por Ede y Villares para completar el once de Hidalgo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152505-el-ideal-gallego-apuesta-por-ede-y-villares-para-completar-el-once-de-hidalgo",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Aspas y Cáceres reciben el alta médica tras completar la sesion del viernes",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152504-aspas-y-caceres-reciben-el-alta-medica-tras-completar-la-sesion-del-viernes",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "09/10",
    "titulo": "Alineaciones probables y pronósticos de Carrasco para la jornada 8 de LaLiga Fantasy 26/27",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152503-alineaciones-probables-y-pronosticos-de-carrasco-para-la-jornada-8-de-laliga-fantasy-26-27",
    "categoria": "análisis"
@@ -86,6 +98,12 @@
    "titulo": "Nico Williams y Sancet, bajas en la convocatoria de Terzic",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152502-nico-williams-y-sancet-bajas-en-la-convocatoria-de-terzic",
    "categoria": "convocatoria"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Lucas Boyé no completa el entrenamiento del viernes",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152501-lucas-boye-no-completa-el-entrenamiento-del-viernes",
+   "categoria": "lesión"
   },
   {
    "fecha": "09/10",
@@ -464,24 +482,6 @@
    "titulo": "Xavi Espart renueva con el Barcelona hasta 2030",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152438-xavi-espart-renueva-con-el-barcelona-hasta-2030",
    "categoria": "mercado"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Simeone recupera al resto de internacionales, con Kang-In, Grimaldo y Sorloth con el grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152437-simeone-recupera-al-resto-de-internacionales-con-kang-in-grimaldo-y-sorloth-con-el-grupo",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Parte médico oficial de Romain del Castillo y periodo estimado de baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152436-parte-medico-oficial-de-romain-del-castillo-y-periodo-estimado-de-baja",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "¡Sigue a las 16:30h en Twitch y Youtube la información fantasy para la jornada 8!",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152435-sigue-a-las-16-30h-en-twitch-y-youtube-la-informacion-fantasy-para-la-jornada-8",
-   "categoria": "análisis"
   }
  ]
 }
