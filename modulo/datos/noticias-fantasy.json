@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-09T19:08:14.150Z",
+ "cuando": "2026-10-09T19:38:07.306Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "09/10",
+   "titulo": "Sigue en directo el Málaga - Espanyol",
+   "url": "https://www.futbolfantasy.com/partidos/22497-malaga-espanyol",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 8 actualizadas",
@@ -71,15 +77,27 @@
   },
   {
    "fecha": "09/10",
-   "titulo": "Héctor Fort se suma al grupo y Oyarzabal gestiona cargas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152513-hector-fort-se-suma-al-grupo-y-oyarzabal-gestiona-cargas",
-   "categoria": "entrenamiento"
+   "titulo": "El Correo de Andalucía apuesta por un once con Deossa en lugar de Abde ante Osasuna",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152516-el-correo-de-andalucia-apuesta-por-un-once-con-deossa-en-lugar-de-abde-ante-osasuna",
+   "categoria": "análisis"
   },
   {
    "fecha": "09/10",
-   "titulo": "Alineaciones confirmadas del Málaga - Espanyol",
-   "url": "https://www.futbolfantasy.com/partidos/22497-malaga-espanyol",
+   "titulo": "Manolo habla de la importancia de Roberto y de la elección de Fortuño en lugar de Dmitrovic",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152515-manolo-habla-de-la-importancia-de-roberto-de-la-eleccion-de-fortuno-en-lugar-de-dmitrovic",
    "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Funes explica la titularidad de Calero y la presión por conseguir la primera victoria",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152514-funes-explica-la-titularidad-de-calero-y-la-presion-por-conseguir-la-primera-victoria",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "09/10",
+   "titulo": "Héctor Fort se suma al grupo y Oyarzabal gestiona cargas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152513-hector-fort-se-suma-al-grupo-y-oyarzabal-gestiona-cargas",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "09/10",
@@ -464,24 +482,6 @@
    "titulo": "José Alberto medita un cambio de posiciones para Canales y Pablo García",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152448-jose-alberto-medita-un-cambio-de-posiciones-para-canales-y-pablo-garcia",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Guruzeta repasa sus inicios y habla de Lezama, la lesión de rodilla, sus cesiones, Valverde y el futuro",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152447-guruzeta-repasa-sus-inicios-y-habla-de-lezama-la-lesion-de-rodilla-sus-cesiones-valverde-y-el",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Oriol Rey analiza el parón y habla del Sevilla, su crecimiento, el futuro y la permanencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152446-oriol-rey-analiza-el-paron-y-habla-del-sevilla-su-crecimiento-el-futuro-y-la-permanencia",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "08/10",
-   "titulo": "Zaid Romero repasa sus orígenes, su llegada al Getafe y habla de Bordalás, Argentina, el Barcelona y Messi",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152445-zaid-romero-repasa-sus-origenes-su-llegada-al-getafe-y-habla-de-bordalas-argentina-el-barcelo",
-   "categoria": "rueda de prensa"
   }
  ]
 }
