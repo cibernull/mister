@@ -6785,8 +6785,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-06",
-  "partidos": 2
+  "dia": "2026-10-09",
+  "partidos": 1
  },
  "17614": {
   "nombre": "Kike Barja",
@@ -8452,7 +8452,7 @@
   "mediaCasa": 3.3,
   "mediaFuera": 2.5,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 2,
   "jornadas": [
@@ -10603,6 +10603,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -11631,7 +11638,7 @@
   "mediaCasa": 3,
   "mediaFuera": 3,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 6,
   "suplencias": 0,
   "jornadas": [
@@ -11686,8 +11693,8 @@
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-03",
-  "partidos": 5
+  "dia": "2026-10-09",
+  "partidos": 4
  },
  "29166": {
   "nombre": "Joan Garcia",
@@ -12488,6 +12495,13 @@
     "puntos": null,
     "rival": 20,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -14787,6 +14801,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -16316,6 +16337,13 @@
     "jornada": 7,
     "puntos": 3,
     "rival": 9,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 8,
     "como": "inicio",
     "eventos": []
    }
@@ -20151,6 +20179,13 @@
     "rival": 23,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 13,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -20595,6 +20630,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28409,7 +28451,7 @@
   "mediaCasa": 3,
   "mediaFuera": 1.5,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 6,
   "suplencias": 1,
   "jornadas": [
@@ -28539,6 +28581,13 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28610,6 +28659,13 @@
      "yellow",
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28783,6 +28839,13 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28876,7 +28939,7 @@
   "mediaCasa": 2,
   "mediaFuera": 3.3,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 2,
   "jornadas": [
@@ -29019,6 +29082,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -29057,7 +29127,7 @@
   "mediaCasa": 3,
   "mediaFuera": 3,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 2,
   "jornadas": [
@@ -29125,7 +29195,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-09",
-  "partidos": 5
+  "partidos": 4
  },
  "71006": {
   "nombre": "Álex Pastor",
@@ -29272,7 +29342,7 @@
   "mediaCasa": 3.7,
   "mediaFuera": 2.5,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 7,
   "suplencias": 0,
   "jornadas": [
@@ -30175,7 +30245,7 @@
   "mediaCasa": 1.5,
   "mediaFuera": 2,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 2,
   "jornadas": [
@@ -30445,6 +30515,13 @@
     "puntos": null,
     "rival": 23,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 13,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -31464,6 +31541,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 13,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -32827,6 +32911,13 @@
     "puntos": null,
     "rival": 23,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 13,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -35173,6 +35264,13 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 8,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -35716,6 +35814,13 @@
     "jornada": 7,
     "puntos": 1,
     "rival": 23,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 13,
     "como": "inicio",
     "eventos": []
    }

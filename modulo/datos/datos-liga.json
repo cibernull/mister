@@ -1303,6 +1303,26 @@
  ],
  "movimientos": [
   {
+   "id": "52375",
+   "nombre": "Lamine Yamal",
+   "de": "Cacaculopedopis",
+   "a": "Neky F.C. (Sergio)",
+   "importe": 37652865,
+   "tipo": "clause",
+   "fecha": "2026-10-09 21:10:41",
+   "pos": 4
+  },
+  {
+   "id": "8171",
+   "nombre": "Dakonam Djené",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 4819360,
+   "tipo": "normal",
+   "fecha": "2026-10-09 21:05:53",
+   "pos": 2
+  },
+  {
    "id": "4888",
    "nombre": "Carlos Soler",
    "de": "Saiyans FC (Fran)",
@@ -5827,6 +5847,22 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Dakonam Djené",
+     "id": "8171",
+     "tipo": "venta",
+     "importe": 4819360,
+     "fecha": "2026-10-09",
+     "op": "normal"
+    },
+    {
+     "j": "Lamine Yamal",
+     "id": "52375",
+     "tipo": "compra",
+     "importe": 37652865,
+     "fecha": "2026-10-09",
+     "op": "clause"
+    },
+    {
      "j": "Alberto Moleiro",
      "id": "53098",
      "tipo": "compra",
@@ -6727,8 +6763,8 @@
     "8171": {
      "nombre": "Dakonam Djené",
      "compras": 3972368,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 4819360,
+     "ops": 2
     },
     "8953": {
      "nombre": "Pablo Maffeo",
@@ -6843,6 +6879,12 @@
      "compras": 3935850,
      "ventas": 8060060,
      "ops": 4
+    },
+    "52375": {
+     "nombre": "Lamine Yamal",
+     "compras": 37652865,
+     "ventas": 0,
+     "ops": 1
     },
     "52404": {
      "nombre": "Manu Bueno",
@@ -8393,6 +8435,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Lamine Yamal",
+     "id": "52375",
+     "tipo": "venta",
+     "importe": 37652865,
+     "fecha": "2026-10-09",
+     "op": "clause"
+    },
+    {
      "j": "Junior Firpo",
      "id": "11761",
      "tipo": "venta",
@@ -9309,8 +9359,8 @@
     "52375": {
      "nombre": "Lamine Yamal",
      "compras": 25101910,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 37652865,
+     "ops": 2
     },
     "53144": {
      "nombre": "Carlos Benavídez",

@@ -8359,6 +8359,42 @@
    "media": 4,
    "racha": "3,5,3,1,11",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 552736823,
+   "idJugador": "8171",
+   "nombre": "Dakonam Djené",
+   "de": "Neky F.C. (Sergio)",
+   "a": "Mister",
+   "idUcDe": 12493688,
+   "idUcA": 0,
+   "importe": 4819360,
+   "tipo": "normal",
+   "cuando": "2026-10-09 21:05:53",
+   "valor": 4634000,
+   "posicion": 2,
+   "puntos": 20,
+   "media": 2.9,
+   "racha": "-2,3,5,3,5",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 552737384,
+   "idJugador": "52375",
+   "nombre": "Lamine Yamal",
+   "de": "Cacaculopedopis",
+   "a": "Neky F.C. (Sergio)",
+   "idUcDe": 15435600,
+   "idUcA": 12493688,
+   "importe": 37652865,
+   "tipo": "clause",
+   "cuando": "2026-10-09 21:10:41",
+   "valor": 24037000,
+   "posicion": 4,
+   "puntos": 82,
+   "media": 11.7,
+   "racha": "17,17,16,11,10",
+   "otrasPujas": []
   }
  ],
  "salidas": [

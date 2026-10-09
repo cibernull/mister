@@ -3522,6 +3522,18 @@
     "topeMax": 31159225,
     "exceso": 0
    }
+  ],
+  "552737384": [
+   {
+    "idTransfer": 552737384,
+    "cuando": "2026-10-09 21:10:41",
+    "jugador": "Lamine Yamal",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 37652865,
+    "gana": true,
+    "topeMax": 38340025,
+    "exceso": 0
+   }
   ]
  }
 }
