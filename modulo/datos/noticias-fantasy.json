@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-10T18:42:36.878Z",
+ "cuando": "2026-10-10T19:08:15.081Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "10/10",
-   "titulo": "Alineaciones confirmadas del Real Madrid - Villarreal",
+   "titulo": "Sigue en directo el Real Madrid - Villarreal",
    "url": "https://www.futbolfantasy.com/partidos/22500-real-madrid-villarreal",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -32,6 +32,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Íñigo Pérez mantiene sus ideas, evita hacer cuentas y valora el trabajo durante el parón",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152560-inigo-perez-mantiene-sus-ideas-evita-hacer-cuentas-y-valora-el-trabajo-durante-el-paron",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Ángel Torres revela ahora que el fichaje de Dani Carvajal sigue adelante",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152559-angel-torres-revela-ahora-que-el-fichaje-de-dani-carvajal-sigue-adelante",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "10/10",
@@ -470,18 +482,6 @@
    "titulo": "Flick, sobre Raphinha, Gabriel Jesús, De Jong, Yamal, Bernal, el calendario y la portería",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152484-rueda-de-prensa-de-hansi-flick-en-directo",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Raphinha, baja contra el Getafe y Galatasaray",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152485-raphinha-baja-contra-el-getafe-y-galatasaray",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Sorloth recibe el alta médica y tendrá sus primeros minutos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152483-sorloth-recibe-el-alta-medica-y-tendra-sus-primeros-minutos",
-   "categoria": "análisis"
   }
  ]
 }
