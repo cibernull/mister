@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-10T18:08:24.733Z",
+ "cuando": "2026-10-10T18:38:26.889Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "10/10",
-   "titulo": "Sigue en directo el Barcelona - Getafe",
-   "url": "https://www.futbolfantasy.com/partidos/22495-barcelona-getafe",
-   "categoria": "análisis"
+   "titulo": "Alineaciones confirmadas del Real Madrid - Villarreal",
+   "url": "https://www.futbolfantasy.com/partidos/22500-real-madrid-villarreal",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
@@ -32,6 +32,30 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "El parón no frena la inercia azulgrana",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152558-el-paron-no-frena-la-inercia-azulgrana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Jornada 8: Barcelona 3-0 Getafe. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22495-barcelona-getafe",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Zaïd Romero y Andrés García piden el cambio por molestias ante el Barcelona",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152557-zaid-romero-y-andres-garcia-piden-el-cambio-por-molestias-ante-el-barcelona",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Nicolas Pepe pasa por quirófano y queda pendiente de evolución",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152556-nicolas-pepe-pasa-por-quirofano-y-queda-pendiente-de-evolucion",
+   "categoria": "lesión"
   },
   {
    "fecha": "10/10",
@@ -457,30 +481,6 @@
    "fecha": "09/10",
    "titulo": "Sorloth recibe el alta médica y tendrá sus primeros minutos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152483-sorloth-recibe-el-alta-medica-y-tendra-sus-primeros-minutos",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Pellegrini confirma el paso adelante de Ceballos, pero solo 'tendrá sus minutos'",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152482-pellegrini-confirma-el-paso-adelante-de-ceballos-pero-solo-tendra-sus-minutos",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Simeone habla de Julián, Barrios, Sorloth, Messi, Maradona, el parón y el Alavés",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152481-simeone-habla-de-julian-barrios-sorloth-messi-maradona-el-paron-y-el-alaves",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Pellegrini habla de Conde, Valles, Bartra, Ruibal, Ceballos, Lo Celso, Osasuna y las rotaciones",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152480-pellegrini-habla-de-conde-valles-bartra-bellerin-ceballos-lo-celso-osasuna-y-las-rotaciones",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Aguirre alterna la posición de Pepelu entre pivote y tercer central para dar salida al juego",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152479-aguirre-alterna-la-posicion-de-pepelu-entre-pivote-y-tercer-central-para-dar-salida-al-juego",
    "categoria": "análisis"
   }
  ]
