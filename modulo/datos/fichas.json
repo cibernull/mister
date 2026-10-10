@@ -1458,7 +1458,7 @@
   "mediaCasa": 2.8,
   "mediaFuera": 3,
   "edad": 32,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 3,
   "jornadas": [
@@ -1521,11 +1521,18 @@
     "rival": 1,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 2,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-10",
-  "partidos": 5
+  "partidos": 4
  },
  "431": {
   "nombre": "João Cancelo",
@@ -9286,6 +9293,13 @@
     "rival": 1,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 2,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -14983,11 +14997,18 @@
     "rival": 50,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-05",
-  "partidos": 4
+  "dia": "2026-10-10",
+  "partidos": 2
  },
  "51137": {
   "nombre": "Pablo Marín",
@@ -29712,7 +29733,7 @@
   "mediaCasa": 6,
   "mediaFuera": 3.7,
   "edad": 31,
-  "titular": true,
+  "titular": null,
   "titularidades": 6,
   "suplencias": 0,
   "jornadas": [
@@ -29771,6 +29792,13 @@
     "eventos": [
      "penalty"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -30799,6 +30827,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -32414,7 +32449,7 @@
   "mediaCasa": 5,
   "mediaFuera": 2.7,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 2,
   "jornadas": [
@@ -32469,6 +32504,13 @@
     "jornada": 7,
     "puntos": 3,
     "rival": 1,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 2,
     "como": "inicio",
     "eventos": []
    }
@@ -32970,6 +33012,13 @@
     "rival": 15,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33061,7 +33110,7 @@
   "mediaCasa": 7.5,
   "mediaFuera": 4.5,
   "edad": 28,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 1,
   "jornadas": [
@@ -33113,6 +33162,13 @@
      "yellow",
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33188,6 +33244,13 @@
     "puntos": null,
     "rival": 15,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -34445,7 +34508,7 @@
   "mediaCasa": 9.5,
   "mediaFuera": 10,
   "edad": 26,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
@@ -34507,6 +34570,13 @@
      "sub_out",
      "goal"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -35592,6 +35662,13 @@
     "puntos": null,
     "rival": 1,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 2,
+    "como": "inicio",
     "eventos": []
    }
   ],
