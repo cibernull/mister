@@ -1303,6 +1303,16 @@
  ],
  "movimientos": [
   {
+   "id": "65179",
+   "nombre": "Andrés Castrín",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 5487040,
+   "tipo": "normal",
+   "fecha": "2026-10-10 09:22:38",
+   "pos": 2
+  },
+  {
    "id": "69889",
    "nombre": "Xavi Espart",
    "de": null,
@@ -5867,6 +5877,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Andrés Castrín",
+     "id": "65179",
+     "tipo": "venta",
+     "importe": 5487040,
+     "fecha": "2026-10-10",
+     "op": "normal"
+    },
+    {
      "j": "Dakonam Djené",
      "id": "8171",
      "tipo": "venta",
@@ -7041,8 +7059,8 @@
     "65179": {
      "nombre": "Andrés Castrín",
      "compras": 3713463,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5487040,
+     "ops": 2
     },
     "65704": {
      "nombre": "Georges Mikautadze",

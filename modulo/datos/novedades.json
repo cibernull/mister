@@ -199,6 +199,19 @@
   "equipo": "Los tocahuevos C.F ( juanito)"
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-10-10",
+  "id": "65179",
+  "de": "Neky F.C. (Sergio)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "65179",
+  "entra": false
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-09",
   "id": "13420",
