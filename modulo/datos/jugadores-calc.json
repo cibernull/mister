@@ -11185,7 +11185,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": null,
+  "est": "other",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -11204,7 +11204,7 @@
   "mf": 2.3,
   "tit": 5,
   "sup": 2,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 29,
   "js": [
@@ -17491,7 +17491,7 @@
   "pv": 1100000,
   "ced": 0,
   "pos": 3,
-  "est": null,
+  "est": "other",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -17510,7 +17510,7 @@
   "mf": 3.3,
   "tit": 6,
   "sup": 1,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 28,
   "js": [
@@ -27288,7 +27288,7 @@
   "mf": 1.5,
   "tit": 4,
   "sup": 1,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 24,
   "js": [
