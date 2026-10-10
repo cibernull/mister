@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-10T13:08:05.930Z",
+ "cuando": "2026-10-10T13:38:10.055Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "10/10",
+   "titulo": "Alineaciones confirmadas del Alavés - Atlético",
+   "url": "https://www.futbolfantasy.com/partidos/22493-alaves-atletico",
+   "categoria": "rueda de prensa"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 disponibles de los que han jugado la 8",
@@ -68,6 +74,30 @@
    "titulo": "Actualizadas todas las jerarquías: Jugadores clave, importantes de rotación, revulsivos, reservas y onces tipo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/91324-actualizados-los-jugadores-clave-importantes-de-rotacion-reservas-y-descartes-de-laliga",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "El Espanyol informa de la lesión de Jofre Carreras en la vuelta al trabajo del equipo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152542-el-espanyol-informa-de-la-lesion-de-jofre-carreras-en-la-vuelta-al-trabajo-del-equipo",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "El Málaga cierra la semana de trabajo con Cajuste parcialmente",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152541-el-malaga-cierra-la-semana-de-trabajo-con-cajuste-parcialmente",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Ramis repsasa las bajas y habla de Oroz, Moi, Rosier, Aitor, Herrera, Arguibide, Diego Rico y el Betis",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152540-ramis-repsasa-las-bajas-y-habla-de-oroz-moi-rosier-aitor-herrera-arguibide-diego-rico-y-el-be",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Aguirre habla de Javi Guerra, Jesús Vázquez, Sato, Danjuma, Rioja y Elliott y el sistema de juego",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152539-aguirre-habla-de-javi-guerra-jesus-vazquez-sato-danjuma-rioja-y-elliott-y-el-sistema-de-juego",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "10/10",
@@ -451,36 +481,6 @@
    "fecha": "09/10",
    "titulo": "Robbie Ure y Gabriel Suazo se incorporan y Stassin vuelve al gimnasio",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152474-robbie-ure-y-gabriel-suazo-se-incorporan-y-stassin-vuelve-al-gimnasio",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Cucurella ya entrena a pleno rendimiento tras dos días de gestión de cargas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152473-cucurella-ya-entrena-a-pleno-rendimiento-tras-dos-dias-de-gestion-de-cargas",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Rioja, Danjuma y Foulquier vuelven a trabajar al margen este viernes",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152472-rioja-danjuma-y-foulquier-vuelven-a-trabajar-al-margen-este-viernes",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "El Atlético se ejercita esta mañana con toda la plantilla disponible",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152471-el-atletico-se-ejercita-esta-manana-con-toda-la-plantilla-disponible",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Hidalgo reconoce que Yeremay se acerca a su mejor versión",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152470-hidalgo-reconoce-que-yeremay-se-acerca-a-su-mejor-version",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Valverde y Mendy empiezan la sesión del viernes con el grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152469-valverde-y-mendy-empiezan-la-sesion-del-viernes-con-el-grupo",
    "categoria": "entrenamiento"
   }
  ]
