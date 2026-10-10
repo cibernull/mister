@@ -43,7 +43,7 @@
   "n": "Niutin FC (Isaac)",
   "pos": 2,
   "pts": 347,
-  "saldo": 305560,
+  "saldo": -2228840,
   "pl": 120517000,
   "rep": 33800000,
   "ini": 16200000,
@@ -57,17 +57,17 @@
   "blindados": 5,
   "costeSubidas": 16293800,
   "gastoVisto": 1496800,
-  "gastoOculto": 8149000,
+  "gastoOculto": 10423200,
   "ajustePujas": 0,
   "libro": {
    "ventas": 247371310,
    "compras": -262556476,
    "premios": 10575000,
    "devueltoPorClausulas": 6128500,
-   "pagadoPorClausulas": -22259774,
+   "pagadoPorClausulas": -24794174,
    "inicio": 21047000
   },
-  "costeReal": 22259774,
+  "costeReal": 24794174,
   "comprometido": 2001010
  },
  {

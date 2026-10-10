@@ -1,6 +1,14 @@
 {
- "saldo": 305560,
+ "saldo": -2228840,
  "apuntes": [
+  {
+   "cuando": 1791594874,
+   "fecha": "2026-10-10 03:14",
+   "motivo": "Modificación de cláusula (100%) de Sergio Camello",
+   "tipo": "Penalización",
+   "importe": -2534400,
+   "saldo": -2228840
+  },
   {
    "cuando": 1791472423,
    "fecha": "2026-10-08 17:13",
@@ -472,14 +480,6 @@
    "tipo": "Bonificación",
    "importe": 561800,
    "saldo": 14677120
-  },
-  {
-   "cuando": 1788848497,
-   "fecha": "2026-09-08 08:21",
-   "motivo": "Marc Bartra a Mario80",
-   "tipo": "Compra por cláusula",
-   "importe": -6537000,
-   "saldo": 14115320
   }
  ]
 }
