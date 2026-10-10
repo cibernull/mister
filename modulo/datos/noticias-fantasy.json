@@ -1,12 +1,12 @@
 {
- "cuando": "2026-10-10T21:08:23.615Z",
+ "cuando": "2026-10-10T21:38:29.945Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "10/10",
-   "titulo": "Sigue en directo el Real Madrid - Villarreal",
-   "url": "https://www.futbolfantasy.com/partidos/22500-real-madrid-villarreal",
+   "titulo": "Diomandé da otro estirón",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152568-diomande-da-otro-estiron",
    "categoria": "análisis"
   },
   {
@@ -32,6 +32,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Jornada 8: Real Madrid 1-0 Villarreal. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22500-real-madrid-villarreal",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Vinicius se expone a más de un partido de sanción",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152567-vinicius-se-expone-a-mas-de-un-partido-de-sancion",
+   "categoria": "sanción"
   },
   {
    "fecha": "10/10",
@@ -470,18 +482,6 @@
    "titulo": "Parte médico oficial de Tajon Buchanan, sin tiempo revelado",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152493-parte-medico-oficial-de-tajon-buchanan-sin-tiempo-revelado",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Osasuna completa una sesión abierta sin Kike Barja ni los lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152492-osasuna-completa-una-sesion-abierta-sin-kike-barja-ni-los-lesionados",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Satriano repite con el grupo y apunta a la convocatoria",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152491-satriano-repite-con-el-grupo-y-apunta-a-la-convocatoria",
-   "categoria": "entrenamiento"
   }
  ]
 }
