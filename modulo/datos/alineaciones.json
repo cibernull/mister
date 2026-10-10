@@ -1496,7 +1496,7 @@
     "nombre": "Sergio Camello",
     "puesto": 4,
     "puntos": null,
-    "jugo": false,
+    "jugo": true,
     "capitan": false
    },
    {
@@ -1504,7 +1504,7 @@
     "nombre": "Jonathan David",
     "puesto": 4,
     "puntos": null,
-    "jugo": false,
+    "jugo": true,
     "capitan": false
    },
    {
@@ -1546,7 +1546,7 @@
     "nombre": "Emil Audero",
     "puesto": 1,
     "puntos": 1,
-    "jugo": false,
+    "jugo": true,
     "capitan": false
    }
   ]
