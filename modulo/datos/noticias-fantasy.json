@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-10T19:38:11.316Z",
+ "cuando": "2026-10-10T20:08:11.112Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -32,6 +32,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Tárrega y Diakhaby regresan a la convocatoria y Rioja se queda fuera",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152564-tarrega-y-diakhaby-regresan-a-la-convocatoria-y-rioja-se-queda-fuera",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Flick celebra el triunfo y habla de Yamal, Koundé Eric García, Cubarsí, Gabriel Jesús y el Galatasaray",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152563-flick-celebra-el-triunfo-y-habla-de-yamal-kounde-eric-garcia-cubarsi-gabriel-jesus-y-el-galat",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "10/10",
@@ -470,18 +482,6 @@
    "titulo": "José Alberto, sobre el parón, Pablo García, Andrés Martín, Zabiri, Almeida y el Valencia",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152489-jose-alberto-sobre-el-paron-pablo-garcia-andres-martin-zabiri-almeida-y-el-valencia",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Bordalás habla de Carvajal, Satriano, Mayoral, Raphinha, Yamal y el Barcelona",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152488-bordalas-habla-de-carvajal-satriano-mayoral-raphinha-yamal-y-el-barcelona",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "José Alberto juega al despiste con Pablo García y Zabiri: «Han vuelto cansados»",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152487-jose-alberto-juega-al-despiste-con-pablo-garcia-y-zabiri-han-vuelto-cansados",
-   "categoria": "análisis"
   }
  ]
 }
