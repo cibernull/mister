@@ -32508,6 +32508,13 @@
     "rival": 1,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 2,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -34572,6 +34579,7 @@
     "rival": 48,
     "como": "inicio",
     "eventos": [
+     "sub_out",
      "assist"
     ]
    }
