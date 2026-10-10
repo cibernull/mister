@@ -5871,15 +5871,6 @@
     "rival": 2,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 20,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
@@ -13870,11 +13861,11 @@
   "nombre": "Aurélien Tchouaméni",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 4,
   "mediaFuera": 3.5,
   "edad": 26,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
@@ -13921,8 +13912,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-04",
-  "partidos": 3
+  "dia": "2026-10-10",
+  "partidos": 4
  },
  "48194": {
   "nombre": "Williot Swedberg",
@@ -15941,8 +15932,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-04",
-  "partidos": 3
+  "dia": "2026-10-10",
+  "partidos": 4
  },
  "53111": {
   "nombre": "Álvaro Valles",
@@ -17011,7 +17002,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-10",
-  "partidos": 2
+  "partidos": 3
  },
  "55738": {
   "nombre": "César Tárrega",
@@ -20088,11 +20079,11 @@
   "nombre": "Pau Navarro",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 3,
   "mediaFuera": 4,
   "edad": 21,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 0,
   "jornadas": [
@@ -20149,8 +20140,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-04",
-  "partidos": 3
+  "dia": "2026-10-10",
+  "partidos": 4
  },
  "60218": {
   "nombre": "Peio Canales",
@@ -27046,13 +27037,6 @@
      "sub_in",
      "assist"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -27063,7 +27047,7 @@
   "nombre": "Ibrahima Konaté",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 3,
+  "tarjetas": 4,
   "mediaCasa": 3.5,
   "mediaFuera": 3.8,
   "edad": 27,
@@ -27129,7 +27113,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-10",
-  "partidos": 4
+  "partidos": 5
  },
  "70923": {
   "nombre": "Enzo Bardeli",
@@ -27534,13 +27518,6 @@
     "puntos": null,
     "rival": 2,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -30287,18 +30264,11 @@
     "eventos": [
      "yellow"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-10",
-  "partidos": 4
+  "partidos": 5
  },
  "71132": {
   "nombre": "Facundo Bernal",
@@ -32272,7 +32242,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-10",
-  "partidos": 3
+  "partidos": 4
  },
  "71790": {
   "nombre": "Saba Sazonov",
@@ -34046,20 +34016,11 @@
     "rival": 12,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 15,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-10",
-  "partidos": 4
+  "partidos": 5
  },
  "3848674": {
   "nombre": "Matteo Prati",
