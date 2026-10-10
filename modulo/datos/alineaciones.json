@@ -1433,7 +1433,7 @@
     "visitante": 9
    }
   ],
-  "puntos": 7,
+  "puntos": 10,
   "puesto": 5,
   "formacion": "1-3-4-3",
   "once": [
@@ -1466,7 +1466,7 @@
     "nombre": "Alex Freeman",
     "puesto": 2,
     "puntos": null,
-    "jugo": false,
+    "jugo": true,
     "capitan": false
    },
    {
@@ -1522,7 +1522,7 @@
     "nombre": "Kylian Mbappé",
     "puesto": 4,
     "puntos": null,
-    "jugo": false,
+    "jugo": true,
     "capitan": false
    }
   ],

@@ -5072,8 +5072,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
-  "partidos": 5
+  "dia": "2026-10-10",
+  "partidos": 4
  },
  "12949": {
   "nombre": "Thomas Lemar",
@@ -9199,8 +9199,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
-  "partidos": 3
+  "dia": "2026-10-10",
+  "partidos": 1
  },
  "23664": {
   "nombre": "Sergio Carreira",
@@ -17009,7 +17009,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-10",
-  "partidos": 4
+  "partidos": 2
  },
  "55738": {
   "nombre": "César Tárrega",
@@ -21535,7 +21535,7 @@
   "tarjetas": 0,
   "mediaCasa": 7,
   "mediaFuera": 2,
-  "edad": 27,
+  "edad": 28,
   "titular": null,
   "titularidades": 2,
   "suplencias": 2,
@@ -21599,8 +21599,8 @@
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-06",
-  "partidos": 4
+  "dia": "2026-10-10",
+  "partidos": 3
  },
  "63705": {
   "nombre": "Ionuț Radu",
@@ -30982,7 +30982,7 @@
   "posicion": 4,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 2,
+  "mediaCasa": 2.5,
   "mediaFuera": 0,
   "edad": 18,
   "titular": null,
@@ -31042,7 +31042,7 @@
    },
    {
     "jornada": 8,
-    "puntos": 1,
+    "puntos": 2,
     "rival": 9,
     "como": "banquillo",
     "eventos": [
@@ -33491,7 +33491,7 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 2.3,
-  "mediaFuera": 0.7,
+  "mediaFuera": 1,
   "edad": 24,
   "titular": null,
   "titularidades": 5,
@@ -33556,7 +33556,7 @@
    },
    {
     "jornada": 8,
-    "puntos": -1,
+    "puntos": 0,
     "rival": 3,
     "como": "inicio",
     "eventos": []
