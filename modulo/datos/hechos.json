@@ -5335,7 +5335,12 @@
    "puntos": 28,
    "media": 4.7,
    "racha": "2,10,3,-,1",
-   "otrasPujas": []
+   "otrasPujas": [
+    {
+     "equipo": "Mario80",
+     "puja": 1561480
+    }
+   ]
   },
   {
    "idTransfer": 546967396,
@@ -5350,9 +5355,9 @@
    "cuando": "2026-09-10 17:00:18",
    "valor": 21281000,
    "posicion": 3,
-   "puntos": 59,
-   "media": 7.4,
-   "racha": "14,5,7,6,6",
+   "puntos": 53,
+   "media": 7.6,
+   "racha": "6,14,5,7,6",
    "otrasPujas": []
   },
   {
@@ -5368,9 +5373,9 @@
    "cuando": "2026-09-10 17:04:39",
    "valor": 11592000,
    "posicion": 4,
-   "puntos": 36,
-   "media": 4.5,
-   "racha": "2,2,4,9,2",
+   "puntos": 34,
+   "media": 4.9,
+   "racha": "3,2,2,4,9",
    "otrasPujas": []
   },
   {
@@ -8179,9 +8184,9 @@
    "cuando": "2026-10-06 05:51:13",
    "valor": 11585000,
    "posicion": 3,
-   "puntos": 51,
-   "media": 6.4,
-   "racha": "3,5,16,3,4",
+   "puntos": 52,
+   "media": 6.5,
+   "racha": "3,5,16,3,5",
    "otrasPujas": []
   },
   {

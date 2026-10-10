@@ -1,14 +1,8 @@
 {
- "cuando": "2026-10-10T22:08:05.175Z",
+ "cuando": "2026-10-10T22:35:08.800Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "10/10",
-   "titulo": "Diomandé da otro estirón",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152568-diomande-da-otro-estiron",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 disponibles de los que han jugado la 8",
@@ -34,6 +28,12 @@
    "categoria": "análisis"
   },
   {
+   "fecha": "11/10",
+   "titulo": "El acta de Díaz de Mera no salva a Vinicius",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152571-el-acta-de-diaz-de-mera-no-salva-a-vinicius",
+   "categoria": "sanción"
+  },
+  {
    "fecha": "10/10",
    "titulo": "Íñigo Pérez analiza la derrota y habla del sistema de juego y la evolución del equipo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152570-inigo-perez-analiza-la-derrota-y-habla-del-sistema-de-juego-y-la-evolucion-del-equipo",
@@ -44,6 +44,12 @@
    "titulo": "Mourinho se niega a dar la rueda de prensa post partido",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152569-mourinho-se-niega-a-dar-la-rueda-de-prensa-post-partido",
    "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Diomandé da otro estirón",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152568-diomande-da-otro-estiron",
+   "categoria": "análisis"
   },
   {
    "fecha": "10/10",
@@ -475,12 +481,6 @@
    "fecha": "09/10",
    "titulo": "As abre debate entre Trent y Dumfries para recibir al Villarreal",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152496-as-abre-debate-entre-trent-y-dumfries-para-recibir-al-villarreal",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Plaza Deportiva solo tiene una duda para el once del Levante",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152495-plaza-deportiva-solo-tiene-una-duda-para-el-once-del-levante",
    "categoria": "análisis"
   }
  ]
