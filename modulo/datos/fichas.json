@@ -29728,7 +29728,7 @@
  "71021": {
   "nombre": "Alejandro Grimaldo",
   "posicion": 2,
-  "goles": 2,
+  "goles": 3,
   "tarjetas": 0,
   "mediaCasa": 6,
   "mediaFuera": 3.7,
@@ -29798,7 +29798,9 @@
     "puntos": null,
     "rival": 48,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "goal"
+    ]
    }
   ],
   "asistencias": 1,
@@ -32506,13 +32508,6 @@
     "rival": 1,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 2,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -34576,10 +34571,12 @@
     "puntos": null,
     "rival": 48,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "assist"
+    ]
    }
   ],
-  "asistencias": 1,
+  "asistencias": 2,
   "dia": "2026-10-10",
   "partidos": 3
  },

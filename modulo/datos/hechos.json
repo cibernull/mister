@@ -5335,12 +5335,7 @@
    "puntos": 28,
    "media": 4.7,
    "racha": "2,10,3,-,1",
-   "otrasPujas": [
-    {
-     "equipo": "Mario80",
-     "puja": 1561480
-    }
-   ]
+   "otrasPujas": []
   },
   {
    "idTransfer": 546967396,
@@ -5702,7 +5697,7 @@
    "cuando": "2026-09-15 13:06:25",
    "valor": 3936000,
    "posicion": 2,
-   "puntos": 23,
+   "puntos": 24,
    "media": 3.8,
    "racha": "5,2,4,-,5",
    "otrasPujas": []
@@ -6090,7 +6085,7 @@
    "cuando": "2026-09-19 17:00:21",
    "valor": 10001000,
    "posicion": 2,
-   "puntos": 29,
+   "puntos": 36,
    "media": 4.8,
    "racha": "2,-1,10,8,7",
    "otrasPujas": [
@@ -6618,7 +6613,7 @@
    "cuando": "2026-09-22 12:49:11",
    "valor": 3801000,
    "posicion": 3,
-   "puntos": 31,
+   "puntos": 32,
    "media": 4.4,
    "racha": "3,11,2,4,4",
    "otrasPujas": []
@@ -7299,7 +7294,7 @@
    "cuando": "2026-09-27 05:00:25",
    "valor": 9965000,
    "posicion": 3,
-   "puntos": 38,
+   "puntos": 40,
    "media": 5.4,
    "racha": "3,3,7,6,9",
    "otrasPujas": [
@@ -7828,7 +7823,7 @@
    "cuando": "2026-10-02 05:00:22",
    "valor": 8817000,
    "posicion": 3,
-   "puntos": 36,
+   "puntos": 37,
    "media": 5.1,
    "racha": "8,10,2,5,2",
    "otrasPujas": []
@@ -7936,7 +7931,7 @@
    "cuando": "2026-10-03 19:11:58",
    "valor": 9797000,
    "posicion": 1,
-   "puntos": 34,
+   "puntos": 35,
    "media": 4.9,
    "racha": "5,1,6,5,5",
    "otrasPujas": []
@@ -7990,7 +7985,7 @@
    "cuando": "2026-10-04 17:00:15",
    "valor": 10398000,
    "posicion": 4,
-   "puntos": 29,
+   "puntos": 30,
    "media": 9.7,
    "racha": "-,-,10,11,8",
    "otrasPujas": [
@@ -8130,7 +8125,7 @@
    "cuando": "2026-10-05 17:27:09",
    "valor": 10903000,
    "posicion": 2,
-   "puntos": 25,
+   "puntos": 24,
    "media": 6,
    "racha": "-,2,7,9,6",
    "otrasPujas": []
@@ -8256,7 +8251,7 @@
    "cuando": "2026-10-07 19:40:52",
    "valor": 9965000,
    "posicion": 3,
-   "puntos": 39,
+   "puntos": 40,
    "media": 5.4,
    "racha": "3,3,7,6,9",
    "otrasPujas": []

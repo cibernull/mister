@@ -42,7 +42,7 @@
  {
   "n": "Niutin FC (Isaac)",
   "pos": 2,
-  "pts": 351,
+  "pts": 352,
   "saldo": -4229850,
   "pl": 123510000,
   "rep": 33800000,
@@ -153,8 +153,8 @@
  {
   "n": "Saiyans FC (Fran)",
   "pos": 3,
-  "pts": 264,
-  "saldo": -5925890,
+  "pts": 273,
+  "saldo": -7926090,
   "pl": 112765000,
   "rep": 21730000,
   "ini": 28270000,
@@ -163,11 +163,11 @@
   "pre": 7025000,
   "plantilla": 17,
   "sinValorar": [],
-  "subidas": 7,
+  "subidas": 8,
   "blindados": 3,
-  "costeSubidas": 6603600,
-  "gastoVisto": 9457600,
-  "gastoOculto": 9457600,
+  "costeSubidas": 8603800,
+  "gastoVisto": 11457800,
+  "gastoOculto": 11457800,
   "ajustePujas": 0
  }
 ]

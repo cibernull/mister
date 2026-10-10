@@ -262,6 +262,135 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "11472",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "14789",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "18186",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "25621",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "51137",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "53107",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "56583",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "62904",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "67931",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "68606",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "68652",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "70181",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "70997",
+  "entra": false
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-10-10",
+  "id": "71021",
+  "equipo": "Saiyans FC (Fran)",
+  "escalones": 1,
+  "coste": 2000200,
+  "clausula": 25002500
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "71141",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "71149",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "822248",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "925296",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "4836172",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "4836242",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-10",
+  "id": "4947925",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-10-09",
   "id": "13420",
   "entra": false

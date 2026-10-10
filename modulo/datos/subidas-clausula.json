@@ -223,5 +223,14 @@
   "escalones": -4,
   "antes": 3.5,
   "despues": 1.5
+ },
+ {
+  "idJugador": "71021",
+  "equipo": "Saiyans FC (Fran)",
+  "dia": "2026-10-10",
+  "coste": 2000200,
+  "escalones": 1,
+  "antes": 2,
+  "despues": 2.5
  }
 ]
