@@ -11090,11 +11090,20 @@
     "rival": 4,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 3,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-06",
-  "partidos": 2
+  "dia": "2026-10-10",
+  "partidos": 0
  },
  "28677": {
   "nombre": "Beñat Prados",
