@@ -1,6 +1,14 @@
 {
- "saldo": -2228840,
+ "saldo": -4229850,
  "apuntes": [
+  {
+   "cuando": 1791601200,
+   "fecha": "2026-10-10 05:00",
+   "motivo": "Emil Audero a Mister",
+   "tipo": "Compra",
+   "importe": -2001010,
+   "saldo": -4229850
+  },
   {
    "cuando": 1791594874,
    "fecha": "2026-10-10 03:14",
@@ -472,14 +480,6 @@
    "tipo": "Bonificación",
    "importe": 2100000,
    "saldo": 16777120
-  },
-  {
-   "cuando": 1788848797,
-   "fecha": "2026-09-08 08:26",
-   "motivo": "Modificación de cláusula (50%) de Fran García",
-   "tipo": "Bonificación",
-   "importe": 561800,
-   "saldo": 14677120
   }
  ]
 }

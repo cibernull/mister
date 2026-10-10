@@ -3534,6 +3534,30 @@
     "topeMax": 38340025,
     "exceso": 0
    }
+  ],
+  "552763910": [
+   {
+    "idTransfer": 552763910,
+    "cuando": "2026-10-10 05:00:19",
+    "jugador": "Emil Audero",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2001010,
+    "gana": true,
+    "topeMax": 30434810,
+    "exceso": 0
+   }
+  ],
+  "552770620": [
+   {
+    "idTransfer": 552770620,
+    "cuando": "2026-10-10 05:00:19",
+    "jugador": "Xavi Espart",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 6263000,
+    "gana": true,
+    "topeMax": 26833860,
+    "exceso": 0
+   }
   ]
  }
 }

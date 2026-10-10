@@ -1200,6 +1200,14 @@
     "puntos": 5,
     "jugo": true,
     "capitan": false
+   },
+   {
+    "id": "4947929",
+    "nombre": "Emil Audero",
+    "puesto": 1,
+    "puntos": 3,
+    "jugo": true,
+    "capitan": false
    }
   ]
  },
@@ -1529,6 +1537,14 @@
     "id": "17452",
     "nombre": "Éder Militão",
     "puesto": 2,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
+    "id": "4947929",
+    "nombre": "Emil Audero",
+    "puesto": 1,
     "puntos": null,
     "jugo": false,
     "capitan": false
