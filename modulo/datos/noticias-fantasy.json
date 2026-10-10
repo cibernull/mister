@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-10T11:38:03.410Z",
+ "cuando": "2026-10-10T12:08:22.804Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "10/10",
+   "titulo": "Sigue en directo el Rayo - Athletic",
+   "url": "https://www.futbolfantasy.com/partidos/22498-rayo-athletic",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 disponibles de los que han jugado la 8",
@@ -71,9 +77,33 @@
   },
   {
    "fecha": "10/10",
-   "titulo": "Alineaciones confirmadas del Rayo - Athletic",
-   "url": "https://www.futbolfantasy.com/partidos/22498-rayo-athletic",
+   "titulo": "Junior, Ruibal y Losada, fuera de la lista tras el último entrenamiento",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152528-junior-ruibal-y-losada-fuera-de-la-lista-tras-el-ultimo-entrenamiento",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Flick anuncia la lista de convocados para recibir al Getafe",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152527-flick-anuncia-la-lista-de-convocados-para-recibir-al-getafe",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Terzic, sobre las bajas de Nico Williams y Sancet y la citación de Christian Imga",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152526-terzic-sobre-las-bajas-de-nico-williams-y-sancet-y-la-citacion-de-christian-imga",
    "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Beñat San José celebra el regreso a Vallecas y explica la baja de Ratiu",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152525-benat-san-jose-celebra-el-regreso-a-vallecas-y-explica-la-baja-de-ratiu",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Ratiu se cae de la convocatoria por un problema muscular",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152524-ratiu-se-cae-de-la-convocatoria-por-problema-muscular",
+   "categoria": "lesión"
   },
   {
    "fecha": "10/10",
@@ -451,36 +481,6 @@
    "fecha": "09/10",
    "titulo": "Jornada 8: Once de Chollos, Intermedio e Ideal + Picks de Capitán y Ariete, por Scouting BWG",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152460-jornada-8-once-de-chollos-intermedio-e-ideal-picks-de-capitan-y-ariete-por-scouting-bwg",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Mundo Deportivo espera a Peio Canales en la mediapunta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152459-mundo-deportivo-espera-a-peio-canales-en-la-mediapunta",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Mundo Deportivo genera dudas con Pedri y Rodri",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152458-mundo-deportivo-genera-dudas-con-pedri-y-rodri",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "SuperDeporte apuesta por Sato y Otorbi en las bandas ante el Racing",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152457-superdeporte-apuesta-por-sato-y-otorbi-en-las-bandas-ante-el-racing",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Rafita desaparece de la prensa de Málaga y Aznou podría tener su oportunidad",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152456-rafita-desaparece-de-la-prensa-de-malaga-y-aznou-podria-tener-su-oportunidad",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Pol Lozano se asienta en los pronósticos de la prensa catalana",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152455-pol-lozano-se-asienta-en-los-pronosticos-de-la-prensa-catalana",
    "categoria": "análisis"
   }
  ]
