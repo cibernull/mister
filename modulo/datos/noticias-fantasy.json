@@ -1,14 +1,8 @@
 {
- "cuando": "2026-10-10T12:38:23.914Z",
+ "cuando": "2026-10-10T13:08:05.930Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "10/10",
-   "titulo": "Sigue en directo el Rayo - Athletic",
-   "url": "https://www.futbolfantasy.com/partidos/22498-rayo-athletic",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 disponibles de los que han jugado la 8",
@@ -74,6 +68,30 @@
    "titulo": "Actualizadas todas las jerarquías: Jugadores clave, importantes de rotación, revulsivos, reservas y onces tipo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/91324-actualizados-los-jugadores-clave-importantes-de-rotacion-reservas-y-descartes-de-laliga",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Danjuma y Copete se ejercitan con el grupo y Rioja se queda al margen",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152537-danjuma-y-copete-se-ejercitan-con-el-grupo-y-rioja-se-queda-al-margen",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Suspendido: Rayo - Athletic. Estadísticas y puntos fantasy provisionales",
+   "url": "https://www.futbolfantasy.com/partidos/22498-rayo-athletic",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "El Rayo - Athletic se suspende definitivamente por lanzamiento de objetos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152536-el-rayo-athletic-se-suspende-definitivamente-por-lanzamiento-de-objetos",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "El Sevilla se ejercitó este sábado todavía sin Stassin",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152535-el-sevilla-se-ejercito-este-sabado-todavia-sin-stassin",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "10/10",
@@ -463,24 +481,6 @@
    "fecha": "09/10",
    "titulo": "Valverde y Mendy empiezan la sesión del viernes con el grupo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152469-valverde-y-mendy-empiezan-la-sesion-del-viernes-con-el-grupo",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Hidalgo descarta que Eddahchouri pueda jugar con férula y lo descarta varias semanas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152468-hidalgo-descarta-que-eddahchouri-pueda-jugar-con-ferula-y-lo-descarta-varias-semanas",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Hidalgo habla de Noubi, Ede, Giménez, Eddahchouri, Amatucci, Yeremay, Bil Nsongo, Kevin, Noé y la Real Sociedad",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152467-hidalgo-habla-de-comas-barcia-amatucci-yeremay-bil-nsongo-kevin-ochoa-noe-y-la-real-sociedad",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Fidalgo se incorpora al Betis y Junior Firpo es la única baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152466-fidalgo-se-incorpora-al-betis-y-junior-firpo-es-la-unica-baja",
    "categoria": "entrenamiento"
   }
  ]

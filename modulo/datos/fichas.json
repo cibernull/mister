@@ -18277,13 +18277,6 @@
     "rival": 50,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -18435,13 +18428,6 @@
     "puntos": null,
     "rival": 48,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -20086,13 +20072,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -31879,13 +31858,6 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -32870,13 +32842,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -34058,13 +34023,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -34135,13 +34093,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -35380,13 +35331,6 @@
     "rival": 50,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -35579,13 +35523,6 @@
     "jornada": 7,
     "puntos": 2,
     "rival": 50,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 1,
     "como": "inicio",
     "eventos": []
    }
