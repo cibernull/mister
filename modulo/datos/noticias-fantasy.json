@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-10T20:08:11.112Z",
+ "cuando": "2026-10-10T20:38:15.378Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -32,6 +32,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Dani Raba gana enteros para tener minutos en el estreno de Aguirre, según À Punt",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152566-dani-raba-gana-enteros-para-tener-minutos-en-el-estreno-de-aguirre-segun-a-punt",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Moi Gómez y Rosier, novedades en la lista de Ramis",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152565-moi-gomez-y-rosier-novedades-en-la-lista-de-ramis",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "10/10",
@@ -470,18 +482,6 @@
    "titulo": "Satriano repite con el grupo y apunta a la convocatoria",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152491-satriano-repite-con-el-grupo-y-apunta-a-la-convocatoria",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Cepeda se incorpora al trabajo y Buba Sangaré repite con el grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152490-cepeda-se-incorpora-al-trabajo-y-buba-sangare-repite-con-el-grupo",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "José Alberto, sobre el parón, Pablo García, Andrés Martín, Zabiri, Almeida y el Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152489-jose-alberto-sobre-el-paron-pablo-garcia-andres-martin-zabiri-almeida-y-el-valencia",
-   "categoria": "rueda de prensa"
   }
  ]
 }

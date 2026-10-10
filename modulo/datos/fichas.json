@@ -5871,6 +5871,15 @@
     "rival": 2,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 20,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -17077,7 +17086,7 @@
   "mediaCasa": 2,
   "mediaFuera": 3.3,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
@@ -17133,11 +17142,20 @@
     "rival": 12,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 15,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
-  "partidos": 4
+  "dia": "2026-10-10",
+  "partidos": 3
  },
  "55966": {
   "nombre": "Adrià Altimira",
@@ -21376,7 +21394,7 @@
  "62904": {
   "nombre": "Yan Diomande",
   "posicion": 4,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 3,
   "mediaFuera": 4.3,
@@ -34033,8 +34051,10 @@
     "jornada": 8,
     "puntos": null,
     "rival": 15,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
