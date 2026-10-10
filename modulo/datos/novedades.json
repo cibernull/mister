@@ -164,6 +164,41 @@
   "entra": true
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-10-10",
+  "id": "11092",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-10",
+  "id": "51060",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-10",
+  "id": "63868",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-10",
+  "id": "68711",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-10",
+  "id": "71511",
+  "estado": "other",
+  "equipo": "Los tocahuevos C.F ( juanito)"
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-09",
   "id": "13420",
