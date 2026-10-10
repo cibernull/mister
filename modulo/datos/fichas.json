@@ -2205,6 +2205,13 @@
     "rival": 17,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -7290,11 +7297,18 @@
     "rival": 17,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-06",
-  "partidos": 4
+  "dia": "2026-10-10",
+  "partidos": 2
  },
  "18531": {
   "nombre": "Aleix Febas",
@@ -11832,11 +11846,18 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-04",
-  "partidos": 5
+  "dia": "2026-10-10",
+  "partidos": 4
  },
  "29167": {
   "nombre": "Ángel Fortuño",
@@ -12261,11 +12282,18 @@
     "rival": 17,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-07",
-  "partidos": 2
+  "dia": "2026-10-10",
+  "partidos": 1
  },
  "29238": {
   "nombre": "Arnau Comas",
@@ -14492,7 +14520,7 @@
   "nombre": "Kiko Femenía",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 1,
   "mediaFuera": -2,
   "edad": 35,
@@ -14531,11 +14559,20 @@
     "rival": 4,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 3,
+    "como": "inicio",
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
-  "partidos": 3
+  "dia": "2026-10-10",
+  "partidos": 2
  },
  "49275": {
   "nombre": "André Almeida",
@@ -26317,11 +26354,18 @@
     "rival": 17,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 2,
-  "dia": "2026-10-04",
-  "partidos": 5
+  "dia": "2026-10-10",
+  "partidos": 3
  },
  "70150": {
   "nombre": "Javi Morcillo",
@@ -33201,7 +33245,7 @@
   "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 7.5,
-  "mediaFuera": 7,
+  "mediaFuera": 7.7,
   "edad": 28,
   "titular": null,
   "titularidades": 4,
@@ -33258,7 +33302,7 @@
    },
    {
     "jornada": 8,
-    "puntos": 12,
+    "puntos": 14,
     "rival": 48,
     "como": "inicio",
     "eventos": [
@@ -33482,6 +33526,13 @@
     "eventos": [
      "yellow"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 3,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -34457,7 +34508,7 @@
  "4764213": {
   "nombre": "Gabriel Jesus",
   "posicion": 4,
-  "goles": 1,
+  "goles": 2,
   "tarjetas": 0,
   "mediaCasa": 11,
   "mediaFuera": 2.5,
@@ -34520,6 +34571,15 @@
     "como": "banquillo",
     "eventos": [
      "sub_in"
+    ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": [
+     "goal"
     ]
    }
   ],
@@ -34961,6 +35021,13 @@
      "sub_out",
      "goal"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 3,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,

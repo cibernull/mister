@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-10T16:38:08.535Z",
+ "cuando": "2026-10-10T17:08:06.045Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "10/10",
-   "titulo": "Alineaciones confirmadas del Barcelona - Getafe",
+   "titulo": "Sigue en directo el Barcelona - Getafe",
    "url": "https://www.futbolfantasy.com/partidos/22495-barcelona-getafe",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -32,6 +32,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Quique analiza la derrota, la expulsión de Ángel Pérez y los problemas del equipo con balón",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152554-quique-analiza-la-derrota-la-expulsion-de-angel-perez-y-los-problemas-del-equipo-con-balon",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "10/10",
+   "titulo": "Simeone celebra el triunfo y reconoce que hay margen de crecimiento",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152553-simeone-celebra-el-triunfo-y-reconoce-que-hay-margen-de-crecimiento",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "10/10",
@@ -470,18 +482,6 @@
    "titulo": "Aguirre alterna la posición de Pepelu entre pivote y tercer central para dar salida al juego",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152479-aguirre-alterna-la-posicion-de-pepelu-entre-pivote-y-tercer-central-para-dar-salida-al-juego",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Diario de Sevilla modifica su posible once: Ceballos y Riquelme por Fornals y Abde",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152478-diario-de-sevilla-modifica-su-posible-once-ceballos-y-riquelme-por-fornals-y-abde",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "Raphinha no entrena este viernes y apunta a baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152477-raphinha-no-entrena-este-viernes-y-apunta-a-baja",
-   "categoria": "entrenamiento"
   }
  ]
 }
