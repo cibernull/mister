@@ -1170,14 +1170,6 @@
     "capitan": false
    },
    {
-    "id": "3845074",
-    "nombre": "Nathan Saliba",
-    "puesto": 3,
-    "puntos": 5,
-    "jugo": true,
-    "capitan": false
-   },
-   {
     "id": "68640",
     "nombre": "Alex Freeman",
     "puesto": 2,
@@ -1443,8 +1435,8 @@
     "visitante": 5
    }
   ],
-  "puntos": 22,
-  "puesto": 3,
+  "puntos": 21,
+  "puesto": 4,
   "formacion": "1-3-4-3",
   "once": [
    {

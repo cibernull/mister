@@ -3952,7 +3952,9 @@
     "puntos": null,
     "rival": 16,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -13793,13 +13795,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -17396,8 +17391,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-06",
-  "partidos": 3
+  "dia": "2026-10-11",
+  "partidos": 2
  },
  "56502": {
   "nombre": "Mikel Jauregizar",
@@ -28425,7 +28420,8 @@
     "rival": 16,
     "como": "inicio",
     "eventos": [
-     "yellow"
+     "yellow",
+     "sub_out"
     ]
    }
   ],
@@ -28506,11 +28502,14 @@
     "jornada": 8,
     "puntos": null,
     "rival": 16,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in",
+     "assist"
+    ]
    }
   ],
-  "asistencias": 0,
+  "asistencias": 1,
   "dia": "2026-10-11",
   "partidos": 4
  },
@@ -28587,7 +28586,9 @@
     "puntos": null,
     "rival": 16,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -31185,7 +31186,7 @@
   "mediaCasa": 5,
   "mediaFuera": 5,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 6,
   "suplencias": 0,
   "jornadas": [
@@ -31248,7 +31249,7 @@
   ],
   "asistencias": 1,
   "dia": "2026-10-11",
-  "partidos": 5
+  "partidos": 4
  },
  "71176": {
   "nombre": "Morten Hjulmand",
@@ -33324,7 +33325,7 @@
   "mediaCasa": 1,
   "mediaFuera": 2,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
