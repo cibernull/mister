@@ -1299,9 +1299,24 @@
    "id": "53098",
    "nombre": "Alberto Moleiro",
    "valor": 12300000
+  },
+  {
+   "id": "62904",
+   "nombre": "Yan Diomande",
+   "valor": 15787000
   }
  ],
  "movimientos": [
+  {
+   "id": "62904",
+   "nombre": "Yan Diomande",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 16000000,
+   "tipo": "normal",
+   "fecha": "2026-10-11 05:00:19",
+   "pos": 4
+  },
   {
    "id": "65179",
    "nombre": "Andrés Castrín",
@@ -10279,6 +10294,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Yan Diomande",
+     "id": "62904",
+     "tipo": "compra",
+     "importe": 16000000,
+     "fecha": "2026-10-11",
+     "op": "normal"
+    },
+    {
      "j": "Xavi Espart",
      "id": "69889",
      "tipo": "compra",
@@ -11272,6 +11295,12 @@
      "nombre": "Facundo Garcés",
      "compras": 0,
      "ventas": 158400,
+     "ops": 1
+    },
+    "62904": {
+     "nombre": "Yan Diomande",
+     "compras": 16000000,
+     "ventas": 0,
      "ops": 1
     },
     "64200": {

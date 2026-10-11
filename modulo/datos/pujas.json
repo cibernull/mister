@@ -3558,6 +3558,28 @@
     "topeMax": 26833860,
     "exceso": 0
    }
+  ],
+  "552896714": [
+   {
+    "idTransfer": 552896714,
+    "cuando": "2026-10-11 05:00:19",
+    "jugador": "Yan Diomande",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 16000000,
+    "gana": true,
+    "topeMax": 26833860,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 552896714,
+    "cuando": "2026-10-11 05:00:19",
+    "jugador": "Yan Diomande",
+    "equipo": "Cacaculopedopis",
+    "puja": 15774000,
+    "gana": false,
+    "topeMax": 47524199,
+    "exceso": 0
+   }
   ]
  }
 }
