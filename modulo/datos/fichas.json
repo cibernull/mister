@@ -28356,7 +28356,7 @@
   "nombre": "David Mella",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 3.5,
   "mediaFuera": 2,
   "edad": 21,
@@ -28424,7 +28424,9 @@
     "puntos": null,
     "rival": 16,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,

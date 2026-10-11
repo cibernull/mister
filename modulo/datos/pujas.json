@@ -3580,6 +3580,42 @@
     "topeMax": 47524199,
     "exceso": 0
    }
+  ],
+  "552949756": [
+   {
+    "idTransfer": 552949756,
+    "cuando": "2026-10-11 17:00:13",
+    "jugador": "Alex Baena",
+    "equipo": "Cacaculopedopis",
+    "puja": 15579351,
+    "gana": true,
+    "topeMax": 48663949,
+    "exceso": 0
+   }
+  ],
+  "552949760": [
+   {
+    "idTransfer": 552949760,
+    "cuando": "2026-10-11 17:00:13",
+    "jugador": "Marc Bartra",
+    "equipo": "Cacaculopedopis",
+    "puja": 6224000,
+    "gana": true,
+    "topeMax": 48663949,
+    "exceso": 0
+   }
+  ],
+  "552950376": [
+   {
+    "idTransfer": 552950376,
+    "cuando": "2026-10-11 17:00:13",
+    "jugador": "Leandro Cabrera",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 3280000,
+    "gana": true,
+    "topeMax": 24401410,
+    "exceso": 0
+   }
   ]
  }
 }

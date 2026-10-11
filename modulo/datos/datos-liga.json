@@ -1304,9 +1304,54 @@
    "id": "62904",
    "nombre": "Yan Diomande",
    "valor": 15787000
+  },
+  {
+   "id": "11472",
+   "nombre": "Leandro Cabrera",
+   "valor": 3312000
   }
  ],
  "movimientos": [
+  {
+   "id": "3845074",
+   "nombre": "Nathan Saliba",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 5154450,
+   "tipo": "normal",
+   "fecha": "2026-10-11 17:11:18",
+   "pos": 3
+  },
+  {
+   "id": "11472",
+   "nombre": "Leandro Cabrera",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 3280000,
+   "tipo": "normal",
+   "fecha": "2026-10-11 17:00:13",
+   "pos": 2
+  },
+  {
+   "id": "63",
+   "nombre": "Marc Bartra",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 6224000,
+   "tipo": "normal",
+   "fecha": "2026-10-11 17:00:13",
+   "pos": 2
+  },
+  {
+   "id": "22502",
+   "nombre": "Alex Baena",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 15579351,
+   "tipo": "normal",
+   "fecha": "2026-10-11 17:00:13",
+   "pos": 3
+  },
   {
    "id": "70953",
    "nombre": "Miguel Loureiro",
@@ -7222,6 +7267,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Nathan Saliba",
+     "id": "3845074",
+     "tipo": "venta",
+     "importe": 5154450,
+     "fecha": "2026-10-11",
+     "op": "normal"
+    },
+    {
      "j": "Emil Audero",
      "id": "4947929",
      "tipo": "compra",
@@ -8502,8 +8555,8 @@
     "3845074": {
      "nombre": "Nathan Saliba",
      "compras": 2484550,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5154450,
+     "ops": 2
     },
     "4836153": {
      "nombre": "Jonathan David",
@@ -8534,6 +8587,22 @@
      "id": "70953",
      "tipo": "venta",
      "importe": 372750,
+     "fecha": "2026-10-11",
+     "op": "normal"
+    },
+    {
+     "j": "Alex Baena",
+     "id": "22502",
+     "tipo": "compra",
+     "importe": 15579351,
+     "fecha": "2026-10-11",
+     "op": "normal"
+    },
+    {
+     "j": "Marc Bartra",
+     "id": "63",
+     "tipo": "compra",
+     "importe": 6224000,
      "fecha": "2026-10-11",
      "op": "normal"
     },
@@ -9315,6 +9384,12 @@
     }
    ],
    "porJugador": {
+    "63": {
+     "nombre": "Marc Bartra",
+     "compras": 6224000,
+     "ventas": 0,
+     "ops": 1
+    },
     "208": {
      "nombre": "Moi Gómez",
      "compras": 780000,
@@ -9392,6 +9467,12 @@
      "compras": 270580,
      "ventas": 174440,
      "ops": 2
+    },
+    "22502": {
+     "nombre": "Alex Baena",
+     "compras": 15579351,
+     "ventas": 0,
+     "ops": 1
     },
     "22595": {
      "nombre": "Joaquín Muñoz",
@@ -10338,6 +10419,14 @@
      "op": "normal"
     },
     {
+     "j": "Leandro Cabrera",
+     "id": "11472",
+     "tipo": "compra",
+     "importe": 3280000,
+     "fecha": "2026-10-11",
+     "op": "normal"
+    },
+    {
      "j": "Xavi Espart",
      "id": "69889",
      "tipo": "compra",
@@ -11158,6 +11247,12 @@
      "compras": 7730000,
      "ventas": 8458320,
      "ops": 2
+    },
+    "11472": {
+     "nombre": "Leandro Cabrera",
+     "compras": 3280000,
+     "ventas": 0,
+     "ops": 1
     },
     "11866": {
      "nombre": "Hugo Duro",

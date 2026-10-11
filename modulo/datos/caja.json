@@ -1,6 +1,14 @@
 {
- "saldo": -4229850,
+ "saldo": 924600,
  "apuntes": [
+  {
+   "cuando": 1791731478,
+   "fecha": "2026-10-11 17:11",
+   "motivo": "Nathan Saliba a Mister",
+   "tipo": "Venta",
+   "importe": 5154450,
+   "saldo": 924600
+  },
   {
    "cuando": 1791601200,
    "fecha": "2026-10-10 05:00",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -4821590,
    "saldo": 11955530
-  },
-  {
-   "cuando": 1788864661,
-   "fecha": "2026-09-08 12:51",
-   "motivo": "Jornada 4",
-   "tipo": "Bonificación",
-   "importe": 2100000,
-   "saldo": 16777120
   }
  ]
 }
