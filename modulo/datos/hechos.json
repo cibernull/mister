@@ -5526,7 +5526,7 @@
    "cuando": "2026-09-12 17:03:31",
    "valor": 7858000,
    "posicion": 2,
-   "puntos": 20,
+   "puntos": 21,
    "media": 3.3,
    "racha": "0,3,5,-,2",
    "otrasPujas": []
@@ -5580,7 +5580,7 @@
    "cuando": "2026-09-13 10:27:01",
    "valor": 3755000,
    "posicion": 3,
-   "puntos": 26,
+   "puntos": 27,
    "media": 3.7,
    "racha": "7,1,2,3,-1",
    "otrasPujas": []
@@ -5928,9 +5928,9 @@
    "cuando": "2026-09-18 05:17:29",
    "valor": 14778000,
    "posicion": 4,
-   "puntos": 30,
-   "media": 3.8,
-   "racha": "3,2,3,4,2",
+   "puntos": 31,
+   "media": 3.9,
+   "racha": "3,2,3,4,3",
    "otrasPujas": []
   },
   {
@@ -5946,7 +5946,7 @@
    "cuando": "2026-09-18 17:00:20",
    "valor": 14147000,
    "posicion": 4,
-   "puntos": 26,
+   "puntos": 31,
    "media": 6.5,
    "racha": "2,-,8,10,6",
    "otrasPujas": []
@@ -6194,9 +6194,9 @@
    "cuando": "2026-09-20 04:47:22",
    "valor": 6448000,
    "posicion": 4,
-   "puntos": 34,
-   "media": 4.3,
-   "racha": "5,2,4,5,4",
+   "puntos": 35,
+   "media": 4.4,
+   "racha": "5,2,4,5,5",
    "otrasPujas": []
   },
   {
@@ -6239,7 +6239,7 @@
    "cuando": "2026-09-20 05:00:27",
    "valor": 9956000,
    "posicion": 3,
-   "puntos": 23,
+   "puntos": 33,
    "media": 3.3,
    "racha": "3,3,4,6,3",
    "otrasPujas": []
@@ -6663,7 +6663,7 @@
    "cuando": "2026-09-22 17:00:19",
    "valor": 9996000,
    "posicion": 4,
-   "puntos": 31,
+   "puntos": 32,
    "media": 4.4,
    "racha": "1,2,9,2,10",
    "otrasPujas": []
@@ -7141,9 +7141,9 @@
    "cuando": "2026-09-25 09:38:43",
    "valor": 9108000,
    "posicion": 1,
-   "puntos": 36,
-   "media": 5.1,
-   "racha": "-,4,3,7,5",
+   "puntos": 37,
+   "media": 5.3,
+   "racha": "-,4,3,7,6",
    "otrasPujas": []
   },
   {
@@ -7471,7 +7471,7 @@
    "cuando": "2026-09-28 05:00:22",
    "valor": 385000,
    "posicion": 2,
-   "puntos": 4,
+   "puntos": 3,
    "media": 2,
    "racha": "-,-,-,2,2",
    "otrasPujas": [
@@ -7512,7 +7512,7 @@
    "cuando": "2026-09-28 05:00:22",
    "valor": 16566000,
    "posicion": 4,
-   "puntos": 53,
+   "puntos": 57,
    "media": 7.6,
    "racha": "10,14,4,2,10",
    "otrasPujas": []
@@ -7530,7 +7530,7 @@
    "cuando": "2026-09-28 16:43:28",
    "valor": 9956000,
    "posicion": 3,
-   "puntos": 23,
+   "puntos": 33,
    "media": 3.3,
    "racha": "3,3,4,6,3",
    "otrasPujas": []
@@ -7629,7 +7629,7 @@
    "cuando": "2026-09-29 17:25:36",
    "valor": 9996000,
    "posicion": 4,
-   "puntos": 31,
+   "puntos": 32,
    "media": 4.4,
    "racha": "1,2,9,2,10",
    "otrasPujas": []
