@@ -16862,7 +16862,7 @@
   "mediaCasa": 4.7,
   "mediaFuera": 6,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -35525,7 +35525,7 @@
   "mediaCasa": 3.5,
   "mediaFuera": 0,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 0,
   "jornadas": [
