@@ -13764,7 +13764,7 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 3,
-  "mediaFuera": 2,
+  "mediaFuera": 2.3,
   "edad": 30,
   "titular": null,
   "titularidades": 0,
@@ -13830,7 +13830,7 @@
    },
    {
     "jornada": 8,
-    "puntos": 3,
+    "puntos": 4,
     "rival": 16,
     "como": "banquillo",
     "eventos": [
@@ -28188,7 +28188,7 @@
   "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 2.3,
-  "mediaFuera": 4.8,
+  "mediaFuera": 5,
   "edad": 23,
   "titular": null,
   "titularidades": 2,
@@ -28259,7 +28259,7 @@
    },
    {
     "jornada": 8,
-    "puntos": 9,
+    "puntos": 10,
     "rival": 16,
     "como": "inicio",
     "eventos": [
@@ -28599,7 +28599,7 @@
   "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 6,
-  "mediaFuera": 2.5,
+  "mediaFuera": 3,
   "edad": 30,
   "titular": null,
   "titularidades": 1,
@@ -28663,7 +28663,7 @@
    },
    {
     "jornada": 8,
-    "puntos": 3,
+    "puntos": 4,
     "rival": 16,
     "como": "inicio",
     "eventos": [
@@ -36674,7 +36674,7 @@
   "nombre": "Unai Santos",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 2,
   "mediaFuera": 2,
   "edad": 20,
@@ -36732,13 +36732,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 4,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
