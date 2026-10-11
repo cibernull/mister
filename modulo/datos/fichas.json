@@ -20712,7 +20712,7 @@
   "nombre": "Pablo Ramón",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 2,
+  "tarjetas": 3,
   "mediaCasa": 3.5,
   "mediaFuera": 3.3,
   "edad": 25,
@@ -20775,13 +20775,6 @@
     "eventos": [
      "yellow"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
