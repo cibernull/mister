@@ -1308,6 +1308,26 @@
  ],
  "movimientos": [
   {
+   "id": "70953",
+   "nombre": "Miguel Loureiro",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 372750,
+   "tipo": "normal",
+   "fecha": "2026-10-11 09:11:48",
+   "pos": 2
+  },
+  {
+   "id": "59395",
+   "nombre": "Pedro Díaz",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 1160250,
+   "tipo": "normal",
+   "fecha": "2026-10-11 09:11:42",
+   "pos": 3
+  },
+  {
    "id": "62904",
    "nombre": "Yan Diomande",
    "de": null,
@@ -8502,6 +8522,22 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Pedro Díaz",
+     "id": "59395",
+     "tipo": "venta",
+     "importe": 1160250,
+     "fecha": "2026-10-11",
+     "op": "normal"
+    },
+    {
+     "j": "Miguel Loureiro",
+     "id": "70953",
+     "tipo": "venta",
+     "importe": 372750,
+     "fecha": "2026-10-11",
+     "op": "normal"
+    },
+    {
      "j": "Lamine Yamal",
      "id": "52375",
      "tipo": "venta",
@@ -9474,8 +9510,8 @@
     "59395": {
      "nombre": "Pedro Díaz",
      "compras": 2215160,
-     "ventas": 1103000,
-     "ops": 3
+     "ventas": 2263250,
+     "ops": 4
     },
     "59581": {
      "nombre": "Luiz Júnior",
@@ -9594,8 +9630,8 @@
     "70953": {
      "nombre": "Miguel Loureiro",
      "compras": 795600,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 372750,
+     "ops": 2
     },
     "70993": {
      "nombre": "Haitam Abaida",

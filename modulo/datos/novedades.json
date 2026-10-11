@@ -294,6 +294,32 @@
   "equipo": null
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-10-11",
+  "id": "59395",
+  "de": "Cacaculopedopis",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-11",
+  "id": "59395",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-11",
+  "id": "70953",
+  "de": "Cacaculopedopis",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-11",
+  "id": "70953",
+  "entra": false
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-10",
   "id": "270",

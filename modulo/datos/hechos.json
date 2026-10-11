@@ -8128,7 +8128,7 @@
    "importe": 11107200,
    "tipo": "normal",
    "cuando": "2026-10-05 17:27:09",
-   "valor": 10903000,
+   "valor": 11003000,
    "posicion": 2,
    "puntos": 38,
    "media": 7.6,
@@ -8463,6 +8463,42 @@
      "puja": 15774000
     }
    ]
+  },
+  {
+   "idTransfer": 552916996,
+   "idJugador": "59395",
+   "nombre": "Pedro Díaz",
+   "de": "Cacaculopedopis",
+   "a": "Mister",
+   "idUcDe": 15435600,
+   "idUcA": 0,
+   "importe": 1160250,
+   "tipo": "normal",
+   "cuando": "2026-10-11 09:11:42",
+   "valor": 1063000,
+   "posicion": 3,
+   "puntos": 20,
+   "media": 3.2,
+   "racha": "2,4,5,4,2",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 552917002,
+   "idJugador": "70953",
+   "nombre": "Miguel Loureiro",
+   "de": "Cacaculopedopis",
+   "a": "Mister",
+   "idUcDe": 15435600,
+   "idUcA": 0,
+   "importe": 372750,
+   "tipo": "normal",
+   "cuando": "2026-10-11 09:11:48",
+   "valor": 307000,
+   "posicion": 2,
+   "puntos": 11,
+   "media": 2.8,
+   "racha": "2,3,-,4,-",
+   "otrasPujas": []
   }
  ],
  "salidas": [
