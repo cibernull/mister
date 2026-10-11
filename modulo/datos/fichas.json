@@ -3109,13 +3109,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -10398,18 +10391,11 @@
     "rival": 3,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-11",
-  "partidos": 3
+  "partidos": 1
  },
  "27517": {
   "nombre": "Isi Palazón",
@@ -19858,7 +19844,7 @@
  "59534": {
   "nombre": "David Otorbi",
   "posicion": 4,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 3.3,
   "mediaFuera": 2.3,
