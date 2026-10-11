@@ -1,14 +1,8 @@
 {
- "cuando": "2026-10-11T20:38:11.598Z",
+ "cuando": "2026-10-11T21:08:29.383Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "11/10",
-   "titulo": "Sigue en directo el Racing - Valencia",
-   "url": "https://www.futbolfantasy.com/partidos/22501-racing-valencia",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 disponibles de los que han jugado la 8",
@@ -32,6 +26,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "11/10",
+   "titulo": "Jornada 8: Racing 2-2 Valencia. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22501-racing-valencia",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "11/10",
+   "titulo": "Prati termina siendo sustituido por un golpe en el muslo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152621-prati-termina-siendo-sustituido-por-un-golpe-en-el-muslo",
+   "categoria": "lesión"
   },
   {
    "fecha": "11/10",
@@ -476,12 +482,6 @@
    "titulo": "Ángel Pérez es expulsado por una dura entrada contra el Atlético",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152548-angel-perez-es-expulsado-por-una-dura-entrada-contra-el-atletico",
    "categoria": "sanción"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Andrés Martín regresa a la convocatoria para recibir al Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152546-andres-martin-regresa-a-la-convocatoria-para-recibir-al-valencia",
-   "categoria": "convocatoria"
   }
  ]
 }

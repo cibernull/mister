@@ -1657,7 +1657,7 @@
   "mediaCasa": 3,
   "mediaFuera": 2.5,
   "edad": 31,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
@@ -1721,8 +1721,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-06",
-  "partidos": 4
+  "dia": "2026-10-11",
+  "partidos": 5
  },
  "476": {
   "nombre": "Gerard Moreno",
@@ -3113,7 +3113,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-11",
-  "partidos": 3
+  "partidos": 4
  },
  "4886": {
   "nombre": "Asier Villalibre",
@@ -3189,13 +3189,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -4366,11 +4359,11 @@
   "nombre": "Pablo Maffeo",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 2,
   "mediaFuera": 1.5,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 2,
   "jornadas": [
@@ -4429,8 +4422,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-09",
-  "partidos": 4
+  "dia": "2026-10-11",
+  "partidos": 5
  },
  "10967": {
   "nombre": "Gonçalo Guedes",
@@ -8097,11 +8090,11 @@
   "nombre": "Guido Rodríguez",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 5.3,
   "mediaFuera": 4,
   "edad": 32,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -8142,8 +8135,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-06",
-  "partidos": 2
+  "dia": "2026-10-11",
+  "partidos": 3
  },
  "20449": {
   "nombre": "Fer Niño",
@@ -14797,7 +14790,7 @@
   "mediaCasa": -8,
   "mediaFuera": 3,
   "edad": 26,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 2,
   "jornadas": [
@@ -14859,8 +14852,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-10",
-  "partidos": 3
+  "dia": "2026-10-11",
+  "partidos": 4
  },
  "49296": {
   "nombre": "Fran Pérez",
@@ -20758,7 +20751,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-11",
-  "partidos": 3
+  "partidos": 4
  },
  "60859": {
   "nombre": "Facundo Garcés",
@@ -21191,7 +21184,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 5.8,
   "edad": 20,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 3,
   "jornadas": [
@@ -21261,8 +21254,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-10",
-  "partidos": 3
+  "dia": "2026-10-11",
+  "partidos": 4
  },
  "61013": {
   "nombre": "Antony Santos",
@@ -27690,13 +27683,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -27852,18 +27838,11 @@
     "rival": 5,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-11",
-  "partidos": 4
+  "partidos": 3
  },
  "70932": {
   "nombre": "Sergio Martinez",
@@ -28145,13 +28124,6 @@
     "puntos": null,
     "rival": 5,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -30533,13 +30505,6 @@
     "rival": 5,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -30603,7 +30568,7 @@
   ],
   "asistencias": 1,
   "dia": "2026-10-11",
-  "partidos": 2
+  "partidos": 3
  },
  "71061": {
   "nombre": "Álex Calatrava",
@@ -30934,13 +30899,6 @@
     "rival": 16,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 1490,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -31242,18 +31200,11 @@
     "rival": 16,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 1490,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-11",
-  "partidos": 5
+  "partidos": 3
  },
  "71149": {
   "nombre": "Gabriel Moscardo",
@@ -35774,7 +35725,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-11",
-  "partidos": 3
+  "partidos": 4
  },
  "4836189": {
   "nombre": "Harvey Elliott",
@@ -35846,7 +35797,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-11",
-  "partidos": 3
+  "partidos": 4
  },
  "4836242": {
   "nombre": "Sebastián Cáceres",
@@ -36661,13 +36612,6 @@
     "rival": 16,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 1490,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -36738,13 +36682,6 @@
     "eventos": [
      "goal"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 1490,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
