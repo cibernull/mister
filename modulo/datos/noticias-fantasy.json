@@ -1,12 +1,12 @@
 {
- "cuando": "2026-10-11T14:08:04.462Z",
+ "cuando": "2026-10-11T14:38:09.234Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "11/10",
-   "titulo": "Sigue en directo el Elche - Celta",
-   "url": "https://www.futbolfantasy.com/partidos/22494-elche-celta",
+   "titulo": "Sigue en directo el Real Sociedad - Deportivo",
+   "url": "https://www.futbolfantasy.com/partidos/22502-real-sociedad-deportivo",
    "categoria": "análisis"
   },
   {
@@ -35,9 +35,21 @@
   },
   {
    "fecha": "11/10",
+   "titulo": "Giráldez analiza el empate y habla de Yoel Lago y los momentos del equipo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152592-giraldez-analiza-el-empate-y-habla-de-yoel-lago-y-los-momentos-del-equipo",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "11/10",
    "titulo": "Oda a la siesta en el Martínez Valero",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152591-oda-a-la-siesta-en-el-martinez-valero",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "11/10",
+   "titulo": "Jornada 8: Elche 0-0 Celta. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22494-elche-celta",
+   "categoria": "partido"
   },
   {
    "fecha": "11/10",
@@ -56,12 +68,6 @@
    "titulo": "El Málaga descansa este domingo antes de empezar a preparar la visita de la Real Sociedad",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152588-el-malaga-descansa-este-domingo-antes-de-empezar-a-preparar-la-visita-de-la-real-sociedad",
    "categoria": "equipo"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Alineaciones confirmadas del Real Sociedad - Deportivo",
-   "url": "https://www.futbolfantasy.com/partidos/22502-real-sociedad-deportivo",
-   "categoria": "rueda de prensa"
   },
   {
    "fecha": "11/10",
@@ -476,12 +482,6 @@
    "titulo": "El Deportivo ultima la visita a Anoeta con tres ausencias y refuerzos de la cantera",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152518-el-deportivo-ultima-la-visita-a-anoeta-con-tres-ausencias-y-refuerzos-de-la-cantera",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "09/10",
-   "titulo": "La federación turca destituye a Vincenzo Montella como seleccionador",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152517-la-federacion-turca-destituye-a-vincenzo-montella-como-seleccionador",
-   "categoria": "mercado"
   }
  ]
 }

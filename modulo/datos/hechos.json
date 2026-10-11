@@ -6027,9 +6027,9 @@
    "cuando": "2026-09-19 05:00:26",
    "valor": 2892000,
    "posicion": 3,
-   "puntos": 24,
+   "puntos": 29,
    "media": 5.8,
-   "racha": "-,11,2,5,5",
+   "racha": "11,2,5,5,6",
    "otrasPujas": []
   },
   {
@@ -6113,7 +6113,7 @@
    "cuando": "2026-09-19 17:00:21",
    "valor": 5823000,
    "posicion": 2,
-   "puntos": 25,
+   "puntos": 26,
    "media": 3.6,
    "racha": "6,3,3,5,2",
    "otrasPujas": []
@@ -6185,7 +6185,7 @@
    "cuando": "2026-09-20 04:47:22",
    "valor": 6448000,
    "posicion": 4,
-   "puntos": 30,
+   "puntos": 31,
    "media": 4.3,
    "racha": "8,5,2,4,5",
    "otrasPujas": []
@@ -6392,9 +6392,9 @@
    "cuando": "2026-09-20 17:00:20",
    "valor": 2092000,
    "posicion": 2,
-   "puntos": 15,
-   "media": 4.7,
-   "racha": "3,-,-,5,6",
+   "puntos": 17,
+   "media": 4.3,
+   "racha": "-,-,5,6,3",
    "otrasPujas": []
   },
   {
@@ -6546,9 +6546,9 @@
    "cuando": "2026-09-21 17:00:19",
    "valor": 1286000,
    "posicion": 3,
-   "puntos": 24,
+   "puntos": 27,
    "media": 3.4,
-   "racha": "6,4,3,3,2",
+   "racha": "4,3,3,2,3",
    "otrasPujas": []
   },
   {
@@ -6636,9 +6636,9 @@
    "cuando": "2026-09-22 17:00:19",
    "valor": 1186000,
    "posicion": 3,
-   "puntos": 19,
-   "media": 3.4,
-   "racha": "2,2,4,-,7",
+   "puntos": 22,
+   "media": 3.5,
+   "racha": "2,4,-,7,4",
    "otrasPujas": []
   },
   {
@@ -6794,9 +6794,9 @@
    "cuando": "2026-09-23 05:00:29",
    "valor": 5865000,
    "posicion": 3,
-   "puntos": 29,
-   "media": 4,
-   "racha": "1,2,5,4,13",
+   "puntos": 33,
+   "media": 4.1,
+   "racha": "2,5,4,13,5",
    "otrasPujas": [
     {
      "equipo": "Neky F.C. (Sergio)",
@@ -7132,7 +7132,7 @@
    "cuando": "2026-09-25 09:38:43",
    "valor": 9108000,
    "posicion": 1,
-   "puntos": 31,
+   "puntos": 32,
    "media": 5.2,
    "racha": "6,-,4,3,7",
    "otrasPujas": []
@@ -7168,9 +7168,9 @@
    "cuando": "2026-09-25 17:00:17",
    "valor": 8592000,
    "posicion": 3,
-   "puntos": 35,
-   "media": 4.9,
-   "racha": "1,5,4,3,13",
+   "puntos": 38,
+   "media": 4.8,
+   "racha": "5,4,3,13,4",
    "otrasPujas": []
   },
   {
@@ -7258,7 +7258,7 @@
    "cuando": "2026-09-26 17:00:17",
    "valor": 9567000,
    "posicion": 3,
-   "puntos": 28,
+   "puntos": 29,
    "media": 4,
    "racha": "3,5,3,1,11",
    "otrasPujas": [
@@ -7403,7 +7403,7 @@
    "cuando": "2026-09-27 17:00:15",
    "valor": 9005000,
    "posicion": 3,
-   "puntos": 44,
+   "puntos": 45,
    "media": 6.3,
    "racha": "4,11,5,2,12",
    "otrasPujas": [
@@ -7539,9 +7539,9 @@
    "cuando": "2026-09-28 17:00:17",
    "valor": 4123000,
    "posicion": 2,
-   "puntos": 30,
-   "media": 4.1,
-   "racha": "3,3,4,5,7",
+   "puntos": 34,
+   "media": 4.3,
+   "racha": "3,4,5,7,5",
    "otrasPujas": [
     {
      "equipo": "Neky F.C. (Sergio)",
@@ -7584,9 +7584,9 @@
    "cuando": "2026-09-29 05:00:26",
    "valor": 1423000,
    "posicion": 4,
-   "puntos": 22,
-   "media": 4.4,
-   "racha": "-,1,-,2,14",
+   "puntos": 24,
+   "media": 4,
+   "racha": "1,-,2,14,2",
    "otrasPujas": []
   },
   {
@@ -7733,7 +7733,7 @@
    "cuando": "2026-09-30 19:49:21",
    "valor": 5823000,
    "posicion": 2,
-   "puntos": 25,
+   "puntos": 26,
    "media": 3.6,
    "racha": "6,3,3,5,2",
    "otrasPujas": []
@@ -7846,9 +7846,9 @@
    "cuando": "2026-10-02 06:18:20",
    "valor": 5184000,
    "posicion": 3,
-   "puntos": 28,
-   "media": 3.9,
-   "racha": "4,3,3,4,5",
+   "puntos": 30,
+   "media": 3.8,
+   "racha": "3,3,4,5,3",
    "otrasPujas": []
   },
   {
@@ -7972,9 +7972,9 @@
    "cuando": "2026-10-04 11:46:57",
    "valor": 5865000,
    "posicion": 3,
-   "puntos": 29,
-   "media": 4,
-   "racha": "1,2,5,4,13",
+   "puntos": 33,
+   "media": 4.1,
+   "racha": "2,5,4,13,5",
    "otrasPujas": []
   },
   {
@@ -8049,7 +8049,7 @@
    "cuando": "2026-10-05 06:17:24",
    "valor": 4799000,
    "posicion": 3,
-   "puntos": 26,
+   "puntos": 27,
    "media": 3.7,
    "racha": "3,10,3,2,4",
    "otrasPujas": []
@@ -8067,9 +8067,9 @@
    "cuando": "2026-10-05 08:21:01",
    "valor": 8592000,
    "posicion": 3,
-   "puntos": 35,
-   "media": 4.9,
-   "racha": "1,5,4,3,13",
+   "puntos": 38,
+   "media": 4.8,
+   "racha": "5,4,3,13,4",
    "otrasPujas": []
   },
   {
@@ -8103,9 +8103,9 @@
    "cuando": "2026-10-05 17:15:15",
    "valor": 6993000,
    "posicion": 4,
-   "puntos": 49,
-   "media": 6.9,
-   "racha": "9,8,2,9,17",
+   "puntos": 50,
+   "media": 6.3,
+   "racha": "8,2,9,17,2",
    "otrasPujas": [
     {
      "equipo": "Neky F.C. (Sergio)",
@@ -8204,7 +8204,7 @@
    "posicion": 2,
    "puntos": 5,
    "media": 1.3,
-   "racha": "2,-1,-,-,3",
+   "racha": "-1,-,-,3,-",
    "otrasPujas": []
   },
   {
