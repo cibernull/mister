@@ -320,6 +320,15 @@
   "entra": false
  },
  {
+  "tipo": "clausula",
+  "dia": "2026-10-11",
+  "id": "63866",
+  "equipo": "Mario80",
+  "escalones": 1,
+  "coste": 418400,
+  "clausula": 4184000
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-10",
   "id": "270",
