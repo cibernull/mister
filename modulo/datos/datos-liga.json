@@ -1313,6 +1313,16 @@
  ],
  "movimientos": [
   {
+   "id": "25621",
+   "nombre": "Andrei Rațiu",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 8864000,
+   "tipo": "normal",
+   "fecha": "2026-10-11 22:06:32",
+   "pos": 2
+  },
+  {
    "id": "3845074",
    "nombre": "Nathan Saliba",
    "de": "Niutin FC (Isaac)",
@@ -5957,6 +5967,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Andrei Rațiu",
+     "id": "25621",
+     "tipo": "venta",
+     "importe": 8864000,
+     "fecha": "2026-10-11",
+     "op": "normal"
+    },
+    {
      "j": "Andrés Castrín",
      "id": "65179",
      "tipo": "venta",
@@ -6959,8 +6977,8 @@
     "25621": {
      "nombre": "Andrei Rațiu",
      "compras": 8346000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 8864000,
+     "ops": 2
     },
     "27517": {
      "nombre": "Isi Palazón",
