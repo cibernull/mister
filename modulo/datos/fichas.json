@@ -13795,6 +13795,15 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 16,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -28100,7 +28109,7 @@
  "70939": {
   "nombre": "Yeremay Hernández",
   "posicion": 4,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 2.3,
   "mediaFuera": 3.3,
@@ -28177,7 +28186,9 @@
     "puntos": null,
     "rival": 16,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "penalty"
+    ]
    }
   ],
   "asistencias": 1,
