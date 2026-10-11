@@ -23502,11 +23502,20 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 5,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-10",
-  "partidos": 3
+  "dia": "2026-10-11",
+  "partidos": 2
  },
  "64562": {
   "nombre": "Nelson Deossa",
@@ -28332,7 +28341,7 @@
   "mediaCasa": 3.5,
   "mediaFuera": 2,
   "edad": 21,
-  "titular": null,
+  "titular": true,
   "titularidades": 1,
   "suplencias": 2,
   "jornadas": [
@@ -28478,7 +28487,7 @@
   "mediaCasa": 6,
   "mediaFuera": 2,
   "edad": 30,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 3,
   "jornadas": [
@@ -31348,7 +31357,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 2,
   "edad": 20,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 2,
   "jornadas": [
@@ -34300,8 +34309,10 @@
     "jornada": 8,
     "puntos": null,
     "rival": 23,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
