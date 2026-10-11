@@ -1,12 +1,12 @@
 {
- "cuando": "2026-10-11T16:08:13.858Z",
+ "cuando": "2026-10-11T16:38:12.844Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "11/10",
-   "titulo": "Sigue en directo el Real Sociedad - Deportivo",
-   "url": "https://www.futbolfantasy.com/partidos/22502-real-sociedad-deportivo",
+   "titulo": "Sigue en directo el Betis - Osasuna",
+   "url": "https://www.futbolfantasy.com/partidos/22499-betis-osasuna",
    "categoria": "análisis"
   },
   {
@@ -32,6 +32,30 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "11/10",
+   "titulo": "Lista de Luis García con la vuelta de Rubén Vargas y la baja de Stassin",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152601-lista-de-luis-garcia-con-la-vuelta-de-ruben-vargas-y-la-baja-de-stassin",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "11/10",
+   "titulo": "La Real resiste a la furia del Dépor",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152600-la-real-resiste-a-la-furia-del-depor",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "11/10",
+   "titulo": "Jornada 8: Real Sociedad 3-2 Deportivo. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22502-real-sociedad-deportivo",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "11/10",
+   "titulo": "Amatucci ve la roja por una falta a Oyarzabal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152598-amatucci-ve-la-roja-por-una-falta-a-oyarzabal",
+   "categoria": "sanción"
   },
   {
    "fecha": "11/10",
@@ -458,30 +482,6 @@
    "titulo": "Flick anuncia la lista de convocados para recibir al Getafe",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152527-flick-anuncia-la-lista-de-convocados-para-recibir-al-getafe",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Terzic, sobre las bajas de Nico Williams y Sancet y la citación de Christian Imga",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152526-terzic-sobre-las-bajas-de-nico-williams-y-sancet-y-la-citacion-de-christian-imga",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Beñat San José celebra el regreso a Vallecas y explica la baja de Ratiu",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152525-benat-san-jose-celebra-el-regreso-a-vallecas-y-explica-la-baja-de-ratiu",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Ratiu se cae de la convocatoria por un problema muscular",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152524-ratiu-se-cae-de-la-convocatoria-por-problema-muscular",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Niño sigue golpeando la puerta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152522-nino-sigue-golpeando-la-puerta",
-   "categoria": "análisis"
   }
  ]
 }
