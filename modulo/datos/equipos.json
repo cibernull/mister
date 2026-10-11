@@ -22,7 +22,7 @@
  {
   "n": "Los tocahuevos C.F ( juanito)",
   "pos": 7,
-  "pts": 104,
+  "pts": 102,
   "saldo": 22868000,
   "pl": 20815000,
   "rep": 31407000,
@@ -42,7 +42,7 @@
  {
   "n": "Niutin FC (Isaac)",
   "pos": 2,
-  "pts": 365,
+  "pts": 366,
   "saldo": -4229850,
   "pl": 124728000,
   "rep": 33800000,
@@ -153,8 +153,8 @@
  {
   "n": "Saiyans FC (Fran)",
   "pos": 3,
-  "pts": 297,
-  "saldo": -23926090,
+  "pts": 299,
+  "saldo": -25609090,
   "pl": 129310000,
   "rep": 21730000,
   "ini": 28270000,
@@ -163,11 +163,11 @@
   "pre": 7025000,
   "plantilla": 18,
   "sinValorar": [],
-  "subidas": 8,
-  "blindados": 3,
-  "costeSubidas": 8753200,
-  "gastoVisto": 11457800,
-  "gastoOculto": 11457800,
+  "subidas": 13,
+  "blindados": 4,
+  "costeSubidas": 10436200,
+  "gastoVisto": 13140800,
+  "gastoOculto": 13140800,
   "ajustePujas": 0
  }
 ]
