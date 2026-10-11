@@ -592,7 +592,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-11",
-  "partidos": 3
+  "partidos": 4
  },
  "118": {
   "nombre": "Jonny Otto",
@@ -1174,18 +1174,11 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-11",
-  "partidos": 1
+  "partidos": 2
  },
  "308": {
   "nombre": "Johan Mojica",
@@ -5416,7 +5409,7 @@
   "mediaCasa": 2,
   "mediaFuera": 9,
   "edad": 35,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 0,
   "jornadas": [
@@ -5471,8 +5464,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-10",
-  "partidos": 2
+  "dia": "2026-10-11",
+  "partidos": 3
  },
  "14432": {
   "nombre": "Javi Puado",
@@ -14422,13 +14415,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 4,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -18656,7 +18642,7 @@
   "nombre": "Valentin Rosier",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 0,
   "mediaFuera": 0,
   "edad": 30,
@@ -18670,11 +18656,18 @@
     "rival": 5,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 2,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-06",
-  "partidos": 0
+  "dia": "2026-10-11",
+  "partidos": 1
  },
  "58986": {
   "nombre": "Abel Bretones",
@@ -24314,8 +24307,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-10",
-  "partidos": 4
+  "dia": "2026-10-11",
+  "partidos": 5
  },
  "65476": {
   "nombre": "Clemens Riedel",
@@ -30792,13 +30785,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33469,13 +33455,6 @@
     "rival": 14,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 4,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -34204,13 +34183,6 @@
     "puntos": null,
     "rival": 6,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 50,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -35079,13 +35051,6 @@
     "puntos": null,
     "rival": 14,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 4,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -36736,7 +36701,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-11",
-  "partidos": 2
+  "partidos": 3
  },
  "5404997": {
   "nombre": "José Ángel López",

@@ -589,6 +589,20 @@
   "equipo": null
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-10-11",
+  "id": "27422",
+  "estado": "other",
+  "equipo": "Betico1993"
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-11",
+  "id": "71791",
+  "estado": "other",
+  "equipo": null
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-10",
   "id": "270",

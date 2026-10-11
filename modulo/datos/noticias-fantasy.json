@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-11T18:08:27.024Z",
+ "cuando": "2026-10-11T18:38:29.660Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "11/10",
-   "titulo": "Sigue en directo el Betis - Osasuna",
-   "url": "https://www.futbolfantasy.com/partidos/22499-betis-osasuna",
-   "categoria": "análisis"
+   "titulo": "Alineaciones confirmadas del Racing - Valencia",
+   "url": "https://www.futbolfantasy.com/partidos/22501-racing-valencia",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
@@ -35,15 +35,45 @@
   },
   {
    "fecha": "11/10",
-   "titulo": "Barrios gana rodaje antes del carrusel de partidos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152606-barrios-gana-rodaje-antes-del-carrusel-de-partidos",
+   "titulo": "Jornada 8: Betis 5-2 Osasuna. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22499-betis-osasuna",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "11/10",
+   "titulo": "Toni Amor explica la evolución del equipo, la titularidad de Raba y el estado emocional de Aguirre",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152611-toni-amor-explica-la-evolucion-del-equipo-la-titularidad-de-raba-y-el-estado-emocional-de-agu",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "11/10",
+   "titulo": "José Alberto habla de la dificultad del Valencia y la motivación de Almeida",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152610-jose-alberto-habla-de-la-dificultad-del-valencia-y-la-motivacion-de-almeida",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "11/10",
+   "titulo": "Beitia se lesiona la rodilla en los ejercicios post partido",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152609-beitia-se-lesiona-la-rodilla-en-los-ejercicios-post-partido",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "11/10",
+   "titulo": "Raúl García pide el cambio por molestias en los isquiotibiales",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152608-raul-garcia-pide-el-cambio-por-molestias-en-los-isquiotibiales",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "11/10",
+   "titulo": "Abqar, ante una nueva oportunidad",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152607-abqar-ante-una-nueva-oportunidad",
    "categoria": "análisis"
   },
   {
    "fecha": "11/10",
-   "titulo": "Alineaciones confirmadas del Racing - Valencia",
-   "url": "https://www.futbolfantasy.com/partidos/22501-racing-valencia",
-   "categoria": "rueda de prensa"
+   "titulo": "Barrios gana rodaje antes del carrusel de partidos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152606-barrios-gana-rodaje-antes-del-carrusel-de-partidos",
+   "categoria": "análisis"
   },
   {
    "fecha": "11/10",
@@ -452,36 +482,6 @@
    "titulo": "Suspendido: Rayo - Athletic. Estadísticas y puntos fantasy provisionales",
    "url": "https://www.futbolfantasy.com/partidos/22498-rayo-athletic",
    "categoria": "partido"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "El Rayo - Athletic se suspende definitivamente por lanzamiento de objetos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152536-el-rayo-athletic-se-suspende-definitivamente-por-lanzamiento-de-objetos",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "El Sevilla se ejercitó este sábado todavía sin Stassin",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152535-el-sevilla-se-ejercito-este-sabado-todavia-sin-stassin",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "El Racing completa el último entrenamiento con la única baja médica de Eriksson",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152534-el-racing-completa-el-ultimo-entrenamiento-con-la-unica-baja-medica-de-eriksson",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Enes Ünal y Mangala, bajas por molestias musculares. Abqar y Satriano entran en la lista",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152533-enes-unal-y-mangala-bajas-por-molestias-musculares-abqar-y-satriano-entran-en-la-lista",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Giráldez habla de Cáceres, Aspas, Álvaro Núñez, Driouech y las alternativas al centro del campo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152532-giraldez-habla-de-caceres-aspas-alvaro-nunez-driouech-y-las-alternativas-al-centro-del-campo",
-   "categoria": "rueda de prensa"
   }
  ]
 }
