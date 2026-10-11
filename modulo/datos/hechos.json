@@ -5436,9 +5436,9 @@
    "cuando": "2026-09-11 17:04:53",
    "valor": 592000,
    "posicion": 2,
-   "puntos": 3,
-   "media": 1.5,
-   "racha": "2,-,-,-,1",
+   "puntos": 2,
+   "media": 2,
+   "racha": "-,2,-,-,-",
    "otrasPujas": []
   },
   {
@@ -5474,7 +5474,7 @@
    "posicion": 3,
    "puntos": 21,
    "media": 3,
-   "racha": "3,1,4,3,-",
+   "racha": "2,3,1,4,3",
    "otrasPujas": []
   },
   {
