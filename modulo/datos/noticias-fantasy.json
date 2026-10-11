@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-11T21:08:29.383Z",
+ "cuando": "2026-10-11T21:38:26.789Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "11/10",
+   "titulo": "Aguirre analiza el empate, la actitud del equipo y habla de Duro, Raba, Elliott y el sistema",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152623-aguirre-analiza-el-empate-la-actitud-del-equipo-y-habla-de-duro-raba-elliott-y-el-sistema",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "11/10",
+   "titulo": "El Racing y Hugo Duro anulan el efecto chili",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152622-el-racing-y-hugo-duro-anulan-el-efecto-chili",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Bordalás lamenta las bajas de Enes Ünal y Mangala y habla de Satriano y el Barcelona",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152550-bordalas-lamenta-las-bajas-de-enes-unal-y-mangala-y-habla-de-satriano-y-el-barcelona",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "El Rayo-Athletic apunta a retomarse en noviembre",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152549-el-rayo-athletic-apunta-a-retomarse-en-noviembre",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Ángel Pérez es expulsado por una dura entrada contra el Atlético",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152548-angel-perez-es-expulsado-por-una-dura-entrada-contra-el-atletico",
-   "categoria": "sanción"
   }
  ]
 }
