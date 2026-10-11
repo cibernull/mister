@@ -854,11 +854,18 @@
     "rival": 2,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 4,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-06",
-  "partidos": 4
+  "dia": "2026-10-11",
+  "partidos": 2
  },
  "213": {
   "nombre": "Stole Dimitrievski",
@@ -1167,11 +1174,18 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 50,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-06",
-  "partidos": 2
+  "dia": "2026-10-11",
+  "partidos": 1
  },
  "308": {
   "nombre": "Johan Mojica",
@@ -31898,7 +31912,7 @@
     "jornada": 8,
     "puntos": null,
     "rival": 16,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -36718,6 +36732,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 4,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
