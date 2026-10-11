@@ -715,8 +715,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-10",
-  "partidos": 2
+  "dia": "2026-10-11",
+  "partidos": 3
  },
  "130": {
   "nombre": "Iago Aspas",
@@ -2648,13 +2648,6 @@
     "puntos": null,
     "rival": 8,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 5,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -5148,7 +5141,7 @@
   "mediaCasa": 8,
   "mediaFuera": 3.5,
   "edad": 30,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 3,
   "jornadas": [
@@ -5213,8 +5206,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-09",
-  "partidos": 4
+  "dia": "2026-10-11",
+  "partidos": 5
  },
  "13005": {
   "nombre": "Andriy Lunin",
@@ -6546,8 +6539,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-06",
-  "partidos": 4
+  "dia": "2026-10-11",
+  "partidos": 5
  },
  "15756": {
   "nombre": "Alejandro Catena",
@@ -13127,8 +13120,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-09",
-  "partidos": 3
+  "dia": "2026-10-11",
+  "partidos": 4
  },
  "33726": {
   "nombre": "Hugo Álvarez",
@@ -14937,7 +14930,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-11",
-  "partidos": 3
+  "partidos": 4
  },
  "49424": {
   "nombre": "Kike Salas",
@@ -15166,8 +15159,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-10",
-  "partidos": 3
+  "dia": "2026-10-11",
+  "partidos": 4
  },
  "51135": {
   "nombre": "Pablo Barrios",
@@ -16932,13 +16925,6 @@
      "sub_out",
      "penalty"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 23,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 2,
@@ -23502,20 +23488,11 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 5,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-11",
-  "partidos": 2
+  "partidos": 3
  },
  "64562": {
   "nombre": "Nelson Deossa",
@@ -25487,8 +25464,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-09",
-  "partidos": 4
+  "dia": "2026-10-11",
+  "partidos": 5
  },
  "68495": {
   "nombre": "Martín Satriano",
@@ -33147,18 +33124,11 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 5,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-11",
-  "partidos": 4
+  "partidos": 3
  },
  "523868": {
   "nombre": "Robbie Ure",
@@ -34304,20 +34274,11 @@
     "rival": 1490,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 23,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-11",
-  "partidos": 3
+  "partidos": 4
  },
  "3845074": {
   "nombre": "Nathan Saliba",
@@ -35034,13 +34995,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 5,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -35199,18 +35153,11 @@
      "assist",
      "assist"
     ]
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 5,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 2,
   "dia": "2026-10-11",
-  "partidos": 4
+  "partidos": 5
  },
  "4836172": {
   "nombre": "Lucas Stassin",
@@ -35635,13 +35582,6 @@
     "jornada": 7,
     "puntos": 4,
     "rival": 1490,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 8,
-    "puntos": null,
-    "rival": 23,
     "como": "inicio",
     "eventos": []
    }
