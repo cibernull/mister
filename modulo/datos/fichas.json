@@ -3415,11 +3415,20 @@
     "rival": 5,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 6,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
-  "partidos": 5
+  "dia": "2026-10-11",
+  "partidos": 3
  },
  "5920": {
   "nombre": "Carles Aleñá",
@@ -31499,8 +31508,10 @@
     "jornada": 8,
     "puntos": null,
     "rival": 16,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
