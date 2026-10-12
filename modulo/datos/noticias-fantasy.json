@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-12T13:38:08.300Z",
+ "cuando": "2026-10-12T14:08:16.492Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Juan Cruz recae de sus molestias musculares y se ejercita al margen",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152641-juan-cruz-recae-de-sus-molestias-musculares-y-se-ejercita-al-margen",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "El Getafe recibe el OK de LaLiga y llega a un acuerdo con Carvajal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152640-el-getafe-recibe-el-ok-de-laliga-y-llega-a-un-acuerdo-con-carvajal",
+   "categoria": "mercado"
   },
   {
    "fecha": "12/10",
@@ -470,18 +482,6 @@
    "titulo": "Vinicius se expone a más de un partido de sanción",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152567-vinicius-se-expone-a-mas-de-un-partido-de-sancion",
    "categoria": "sanción"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Dani Raba gana enteros para tener minutos en el estreno de Aguirre, según À Punt",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152566-dani-raba-gana-enteros-para-tener-minutos-en-el-estreno-de-aguirre-segun-a-punt",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Moi Gómez y Rosier, novedades en la lista de Ramis",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152565-moi-gomez-y-rosier-novedades-en-la-lista-de-ramis",
-   "categoria": "convocatoria"
   }
  ]
 }
