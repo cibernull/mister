@@ -1,7 +1,7 @@
 {
- "cuando": "2026-10-12T18:38:24.170Z",
+ "cuando": "2026-10-12T21:08:25.210Z",
  "fuente": "futbolfantasy.com",
- "leidos": 536,
+ "leidos": 508,
  "jugadores": {
   "10": {
    "prob": 80,
@@ -1233,12 +1233,6 @@
    "fuera": 0,
    "min": 402
   },
-  "48620": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0
-  },
   "48657": {
    "prob": 40,
    "sancionado": 0,
@@ -1413,12 +1407,6 @@
    "fuera": 0,
    "min": 476
   },
-  "55045": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 100
-  },
   "55088": {
    "prob": 0,
    "sancionado": 0,
@@ -1502,12 +1490,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 213
-  },
-  "56924": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 65
   },
   "56925": {
    "prob": 0,
@@ -2703,12 +2685,6 @@
    "fuera": 0,
    "min": 73
   },
-  "71792": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 90
-  },
   "71795": {
    "prob": 20,
    "sancionado": 0,
@@ -2768,12 +2744,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 150
-  },
-  "1751425": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 27
   },
   "2196106": {
    "prob": 50,
@@ -2876,12 +2846,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 356
-  },
-  "4836172": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 194
   },
   "4836173": {
    "prob": 100,
