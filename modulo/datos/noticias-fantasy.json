@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-12T22:38:16.722Z",
+ "cuando": "2026-10-12T23:08:08.272Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -35,6 +35,24 @@
   },
   {
    "fecha": "13/10",
+   "titulo": "Riki Rodríguez pide paso en la medular",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152668-riki-rodriguez-pide-paso-en-la-medular",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Morcillo también convence en la defensa",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152667-morcillo-tambien-convence-en-la-defensa",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Andrés Martín y Pablo García empiezan una guerra",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152666-andres-martin-y-pablo-garcia-empeizan-una-guerra",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
    "titulo": "Ndukwe, cal y arena para que permanezcan las dudas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152665-ndukwe-cal-y-arena-para-elevar-las-dudas",
    "categoria": "análisis"
@@ -56,6 +74,18 @@
    "titulo": "Luis Castro analiza la reacción del equipo y habla de Iván Romero, Musuayi, Ndukwe y los ajustes tácticos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152662-luis-castro-analiza-la-reaccion-del-equipo-y-habla-de-ivan-romero-musuayi-ndukwe-y-los-ajuste",
    "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "El Racing regenera tras el Valencia y ya mira a El Sadar",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152670-el-racing-regenera-tras-el-valencia-y-ya-mira-a-el-sadar",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "El Deportivo regresó al trabajo con el alta de Noé Carrillo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152669-el-deportivo-regreso-al-trabajo-con-el-alta-de-noe-carrillo",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "12/10",
@@ -452,36 +482,6 @@
    "titulo": "Ramis destaca el trabajo realizado durante el parón y habla de Raúl García, Budimir y el Betis",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152596-ramis-destaca-el-trabajo-realizado-durante-el-paron-y-habla-de-raul-garcia-budimir-y-el-betis",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Pellegrini, sobre la suplencia de Antony, la gestión de minutos y los peligros de Osasuna",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152595-pellegrini-sobre-la-suplencia-de-antony-la-gestion-de-minutos-y-los-peligros-de-osasuna",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Pablo Marín es expulsado contra el Deportivo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152594-pablo-marin-es-expulsado-contra-el-deportivo",
-   "categoria": "sanción"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Anselmi valora el empate y la portería a cero y habla de Rubén Sánchez y Morcillo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152593-anselmi-valora-el-empate-y-la-porteria-a-cero-y-habla-de-ruben-sanchez-y-morcillo",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Giráldez analiza el empate y habla de Yoel Lago y los momentos del equipo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152592-giraldez-analiza-el-empate-y-habla-de-yoel-lago-y-los-momentos-del-equipo",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Oda a la siesta en el Martínez Valero",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152591-oda-a-la-siesta-en-el-martinez-valero",
-   "categoria": "análisis"
   }
  ]
 }
