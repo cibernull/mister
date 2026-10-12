@@ -5488,7 +5488,7 @@
    "importe": 3703620,
    "tipo": "normal",
    "cuando": "2026-09-12 09:48:57",
-   "valor": 1064000,
+   "valor": 1105000,
    "posicion": 2,
    "puntos": 11,
    "media": 2.2,
@@ -5506,7 +5506,7 @@
    "importe": 4330000,
    "tipo": "normal",
    "cuando": "2026-09-12 17:00:19",
-   "valor": 3879000,
+   "valor": 4003000,
    "posicion": 3,
    "puntos": 27,
    "media": 3.7,
@@ -5524,11 +5524,11 @@
    "importe": 6312600,
    "tipo": "normal",
    "cuando": "2026-09-12 17:03:31",
-   "valor": 7893000,
+   "valor": 7858000,
    "posicion": 2,
-   "puntos": 25,
-   "media": 3.6,
-   "racha": "3,5,-,2,5",
+   "puntos": 20,
+   "media": 3.3,
+   "racha": "0,3,5,-,2",
    "otrasPujas": []
   },
   {
@@ -8445,9 +8445,9 @@
    "cuando": "2026-10-10 09:22:38",
    "valor": 5097000,
    "posicion": 2,
-   "puntos": 23,
-   "media": 3.8,
-   "racha": "2,2,6,6,2",
+   "puntos": 24,
+   "media": 3.4,
+   "racha": "2,6,6,2,1",
    "otrasPujas": []
   },
   {
@@ -8612,9 +8612,9 @@
    "cuando": "2026-10-12 02:44:00",
    "valor": 4550000,
    "posicion": 2,
-   "puntos": 24,
-   "media": 3.5,
-   "racha": "3,4,4,6,2",
+   "puntos": 26,
+   "media": 3.7,
+   "racha": "4,4,6,2,5",
    "otrasPujas": []
   },
   {
@@ -8738,9 +8738,9 @@
    "cuando": "2026-10-12 22:16:51",
    "valor": 8247000,
    "posicion": 4,
-   "puntos": 39,
-   "media": 5.5,
-   "racha": "2,6,2,12,10",
+   "puntos": 44,
+   "media": 6.3,
+   "racha": "6,2,12,10,11",
    "otrasPujas": []
   }
  ],
