@@ -32819,7 +32819,7 @@
   "mediaCasa": 0,
   "mediaFuera": 2,
   "edad": 19,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 2,
   "jornadas": [
@@ -34719,7 +34719,7 @@
   "mediaCasa": 2,
   "mediaFuera": 2,
   "edad": 18,
-  "titular": null,
+  "titular": true,
   "titularidades": 0,
   "suplencias": 2,
   "jornadas": [
