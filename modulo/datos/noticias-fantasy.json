@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-12T18:38:25.300Z",
+ "cuando": "2026-10-12T19:08:08.398Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "12/10",
-   "titulo": "Alineaciones confirmadas del Levante - Sevilla",
+   "titulo": "Sigue en directo el Levante - Sevilla",
    "url": "https://www.futbolfantasy.com/partidos/22496-levante-sevilla",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "12/10",
@@ -37,6 +37,36 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Alineaciones probables y previa fantasy del Galatasaray - Barcelona",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152656-alineaciones-probables-y-previa-fantasy-del-galatasaray-barcelona",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Gabriel Jesús completa el proceso",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152655-gabriel-jesus-completa-el-proceso",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Luis García, sobre el parón, la titularidad de Robbie Ure y el regreso al Ciutat",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152654-luis-garcia-sobre-el-paron-la-titularidad-de-robbie-ure-y-el-regreso-al-ciutat",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Luis Castro explica cómo llega el equipo tras el parón y la entrada de Ndukwe por Mandi",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152653-luis-castro-explica-como-llega-el-equipo-tras-el-paron-y-la-entrada-de-ndukwe-por-mandi",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Valverde fue omnipresente tras el 'milagro'",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152652-valverde-fue-omnipresente-tras-el-milagro",
    "categoria": "análisis"
   },
   {
@@ -452,36 +482,6 @@
    "titulo": "Foyth abre una nueva vía táctica para Íñigo Pérez",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152582-foyth-abre-una-nueva-via-tactica-para-inigo-perez",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Vinicius abre a gritos las puertas a Diomande",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152581-vinicius-abre-a-gritos-las-puertas-a-diomande",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "El Real Madrid descansa y pone el foco en Roma, Vinicius y la enfermería",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152580-el-real-madrid-descansa-y-pone-el-foco-en-roma-vinicius-y-la-enfermeria",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Anselmi analiza las similitudes futbolísticas con Giráldez y habla del momento de Fer Niño",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152579-anselmi-analiza-las-similitudes-futbolisticas-con-giraldez-y-habla-del-momento-de-fer-nino",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Giráldez hace balance del parón, habla del Elche, la Juventus y los ex franjiverdes Carreira, Núñez y Febas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152578-giraldez-hace-balance-del-paron-habla-del-elche-la-juventus-y-los-ex-franjiverdes-carreira-nu",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Primer parte médico oficial de Zaïd Romero, pendiente de pruebas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152577-primer-parte-medico-oficial-de-zaid-romero-pendiente-de-pruebas",
-   "categoria": "lesión"
   }
  ]
 }
