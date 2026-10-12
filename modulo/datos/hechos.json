@@ -8706,6 +8706,24 @@
    "media": 4,
    "racha": "10,2,5,2,-4",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 553124980,
+   "idJugador": "68498",
+   "nombre": "Zaid Romero",
+   "de": "Saiyans FC (Fran)",
+   "a": "Mister",
+   "idUcDe": 12493752,
+   "idUcA": 0,
+   "importe": 5506000,
+   "tipo": "normal",
+   "cuando": "2026-10-12 20:07:34",
+   "valor": 5506000,
+   "posicion": 2,
+   "puntos": 14,
+   "media": 2,
+   "racha": "-4,-,6,5,-2",
+   "otrasPujas": []
   }
  ],
  "salidas": [

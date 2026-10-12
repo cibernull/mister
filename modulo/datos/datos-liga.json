@@ -1318,6 +1318,16 @@
  ],
  "movimientos": [
   {
+   "id": "68498",
+   "nombre": "Zaid Romero",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 5506000,
+   "tipo": "normal",
+   "fecha": "2026-10-12 20:07:34",
+   "pos": 2
+  },
+  {
    "id": "68606",
    "nombre": "Ángel Pérez",
    "de": "Neky F.C. (Sergio)",
@@ -10548,6 +10558,14 @@
      "op": "normal"
     },
     {
+     "j": "Zaid Romero",
+     "id": "68498",
+     "tipo": "venta",
+     "importe": 5506000,
+     "fecha": "2026-10-12",
+     "op": "normal"
+    },
+    {
      "j": "Yan Diomande",
      "id": "62904",
      "tipo": "compra",
@@ -11598,8 +11616,8 @@
     "68498": {
      "nombre": "Zaid Romero",
      "compras": 6864000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5506000,
+     "ops": 2
     },
     "68835": {
      "nombre": "Job Ochieng",

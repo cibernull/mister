@@ -1,8 +1,20 @@
 {
- "cuando": "2026-10-12T17:57:49.797Z",
+ "cuando": "2026-10-12T18:08:22.837Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "12/10",
+   "titulo": "Alineaciones confirmadas del Levante - Sevilla",
+   "url": "https://www.futbolfantasy.com/partidos/22496-levante-sevilla",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Disponibles las alineaciones probables para la J2 de UEFA Champions League",
+   "url": "https://www.futbolfantasy.com/champions/posibles-alineaciones",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 disponibles de los que han jugado la 8",
@@ -470,18 +482,6 @@
    "titulo": "Stassin se probó con el grupo, pero se retiró antes de tiempo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152572-stassin-se-probo-con-el-grupo-pero-se-retiro-antes-de-tiempo",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "El acta de Díaz de Mera no salva a Vinicius",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152571-el-acta-de-diaz-de-mera-no-salva-a-vinicius",
-   "categoria": "sanción"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Íñigo Pérez analiza la derrota y habla del sistema de juego y la evolución del equipo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152570-inigo-perez-analiza-la-derrota-y-habla-del-sistema-de-juego-y-la-evolucion-del-equipo",
-   "categoria": "rueda de prensa"
   }
  ]
 }
