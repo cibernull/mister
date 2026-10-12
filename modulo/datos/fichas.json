@@ -14520,7 +14520,7 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 2.3,
-  "mediaFuera": 2.3,
+  "mediaFuera": 2.5,
   "edad": 26,
   "titular": null,
   "titularidades": 2,
@@ -14592,7 +14592,7 @@
    },
    {
     "jornada": 8,
-    "puntos": 2,
+    "puntos": 3,
     "rival": 4,
     "como": "banquillo",
     "eventos": [
