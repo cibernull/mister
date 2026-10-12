@@ -8598,6 +8598,24 @@
    "media": 4.3,
    "racha": "-,12,1,5,5",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 553013329,
+   "idJugador": "20131",
+   "nombre": "Manu Sánchez",
+   "de": "Saiyans FC (Fran)",
+   "a": "Mister",
+   "idUcDe": 12493752,
+   "idUcA": 0,
+   "importe": 4765440,
+   "tipo": "normal",
+   "cuando": "2026-10-12 02:44:00",
+   "valor": 4672000,
+   "posicion": 2,
+   "puntos": 21,
+   "media": 3.5,
+   "racha": "3,4,4,6,2",
+   "otrasPujas": []
   }
  ],
  "salidas": [

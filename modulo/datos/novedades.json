@@ -1,5 +1,24 @@
 [
  {
+  "tipo": "duenio",
+  "dia": "2026-10-12",
+  "id": "20131",
+  "de": "Saiyans FC (Fran)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-12",
+  "id": "20131",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-12",
+  "id": "5340038",
+  "entra": true
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-11",
   "id": "11866",

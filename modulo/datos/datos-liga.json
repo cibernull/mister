@@ -1313,6 +1313,16 @@
  ],
  "movimientos": [
   {
+   "id": "20131",
+   "nombre": "Manu Sánchez",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 4765440,
+   "tipo": "normal",
+   "fecha": "2026-10-12 02:44:00",
+   "pos": 2
+  },
+  {
    "id": "25621",
    "nombre": "Andrei Rațiu",
    "de": "Neky F.C. (Sergio)",
@@ -10429,6 +10439,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Manu Sánchez",
+     "id": "20131",
+     "tipo": "venta",
+     "importe": 4765440,
+     "fecha": "2026-10-12",
+     "op": "normal"
+    },
+    {
      "j": "Yan Diomande",
      "id": "62904",
      "tipo": "compra",
@@ -11311,8 +11329,8 @@
     "20131": {
      "nombre": "Manu Sánchez",
      "compras": 850000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 4765440,
+     "ops": 2
     },
     "20449": {
      "nombre": "Fer Niño",
