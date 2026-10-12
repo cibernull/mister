@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-12T11:08:10.405Z",
+ "cuando": "2026-10-12T11:38:14.454Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "El Atlético se ejercita este lunes con toda la plantilla disponible",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152628-el-atletico-se-ejercita-este-lunes-con-toda-la-plantilla-disponible",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "El Barcelona pone rumbo a Estambul sin Raphinha",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152627-el-barcelona-pone-rumbo-a-estambul-sin-raphinha",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "12/10",
@@ -470,18 +482,6 @@
    "titulo": "Quique analiza la derrota, la expulsión de Ángel Pérez y los problemas del equipo con balón",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152554-quique-analiza-la-derrota-la-expulsion-de-angel-perez-y-los-problemas-del-equipo-con-balon",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Simeone celebra el triunfo y reconoce que hay margen de crecimiento",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152553-simeone-celebra-el-triunfo-y-reconoce-que-hay-margen-de-crecimiento",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Simeone impone su ley en Mendizorroza",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152552-simeone-impone-su-ley-en-mendizorroza",
-   "categoria": "análisis"
   }
  ]
 }
