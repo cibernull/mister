@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-12T12:08:17.410Z",
+ "cuando": "2026-10-12T12:38:20.281Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,12 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Simeone habla de Julián Alvarez, Lookman, Baena y el Manchester United",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152632-simeone-habla-de-julian-alvarez-lookman-baena-y-el-manchester-united",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "12/10",
@@ -476,12 +482,6 @@
    "titulo": "El parón no frena la inercia azulgrana",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152558-el-paron-no-frena-la-inercia-azulgrana",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Jornada 8: Barcelona 3-0 Getafe. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22495-barcelona-getafe",
-   "categoria": "partido"
   }
  ]
 }
