@@ -1,14 +1,8 @@
 {
- "cuando": "2026-10-12T21:08:26.273Z",
+ "cuando": "2026-10-12T21:38:25.668Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "12/10",
-   "titulo": "Sigue en directo el Levante - Sevilla",
-   "url": "https://www.futbolfantasy.com/partidos/22496-levante-sevilla",
-   "categoria": "análisis"
-  },
   {
    "fecha": "12/10",
    "titulo": "Disponibles las alineaciones probables para la J2 de UEFA Champions League",
@@ -38,6 +32,36 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Compras y ventas recomendadas en LaLiga Fantasy 26-27 tras la jornada 8, por Carrasco",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152660-compras-y-ventas-recomendadas-en-laliga-fantasy-26-27-tras-la-jornada-8",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Isaac Romero pasó del gol a la expulsión en cuestión de minutos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152659-isaac-romero-paso-del-gol-a-la-expulsion-en-cuestion-de-minutos",
+   "categoria": "sanción"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Miguel Sierra y Félix Correia se retiraron con molestias del partido en el Ciutat",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152658-miguel-sierra-y-felix-correia-se-retiraron-con-molestias-del-partido-en-el-ciutat",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "El Ciutat se convierte en un manicomio",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152657-el-ciutat-se-convierte-en-un-manicomio",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Jornada 8: Levante 3-3 Sevilla. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22496-levante-sevilla",
+   "categoria": "partido"
   },
   {
    "fecha": "12/10",
@@ -457,30 +481,6 @@
    "fecha": "11/10",
    "titulo": "Rubén Vargas vuelve a la convocatoria, pero Luis García pide paciencia",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152586-ruben-vargas-vuelve-a-la-convocatoria-pero-luis-garcia-pide-paciencia",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Buba Sangare no recibió el alta médica a tiempo para enfrentarse al Celta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152585-buba-sangare-no-recibio-el-alta-medica-a-tiempo-para-enfrentarse-al-celta",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Sesión de recuperación del Atlético con todos disponibles antes de recibir al Manchester United",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152584-sesion-de-recuperacion-del-atletico-con-todos-disponibles-antes-de-recibir-al-manchester-unit",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "El Barça recupera fuerzas pensando en el Galatasaray sin Raphinha",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152583-el-barca-recupera-fuerzas-pensando-en-el-galatasaray-sin-raphinha",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Foyth abre una nueva vía táctica para Íñigo Pérez",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152582-foyth-abre-una-nueva-via-tactica-para-inigo-perez",
    "categoria": "análisis"
   }
  ]
