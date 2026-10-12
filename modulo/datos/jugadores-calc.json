@@ -6533,8 +6533,8 @@
   "semana": -102000,
   "sem7": -846000,
   "mes": -2131000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 7886000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -9164,8 +9164,8 @@
   "semana": -10000,
   "sem7": -216000,
   "mes": -1141000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 10139000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -13388,8 +13388,8 @@
   "semana": -35000,
   "sem7": 21000,
   "mes": 2001000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 5319000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -18920,8 +18920,8 @@
   "semana": -196000,
   "sem7": -963000,
   "mes": -761000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 9093000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -20104,8 +20104,8 @@
   "semana": -108000,
   "sem7": -811000,
   "mes": -4074000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 5711000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -20201,8 +20201,8 @@
   "semana": -52000,
   "sem7": -312000,
   "mes": -1812000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 998000,
   "ced": 0,
   "pos": 3,
   "est": "other",
@@ -32571,6 +32571,94 @@
   "d": 0
  },
  {
+  "id": "63868",
+  "nombre": "Rodrigo Mendoza",
+  "valor": 160000,
+  "puntos": 7,
+  "media": 2.3,
+  "partidos": 3,
+  "semana": -10000,
+  "sem7": -1000,
+  "mes": -595000,
+  "mk": 1,
+  "pv": 160000,
+  "ced": 0,
+  "pos": 3,
+  "est": "other",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   4,
+   2,
+   1
+  ],
+  "eq": 2,
+  "riv": 8,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 3,
+  "mf": 1,
+  "tit": 2,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    4,
+    13,
+    1,
+    "o57"
+   ],
+   [
+    2,
+    2,
+    20,
+    1,
+    "o46"
+   ],
+   [
+    3,
+    1,
+    17,
+    0,
+    "i85"
+   ],
+   [
+    4,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    15,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "29402",
   "nombre": "Randy Nteka",
   "valor": 160000,
@@ -32644,94 +32732,6 @@
     7,
     null,
     50,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "63868",
-  "nombre": "Rodrigo Mendoza",
-  "valor": 160000,
-  "puntos": 7,
-  "media": 2.3,
-  "partidos": 3,
-  "semana": -10000,
-  "sem7": -1000,
-  "mes": -595000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": "other",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   4,
-   2,
-   1
-  ],
-  "eq": 2,
-  "riv": 8,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 3,
-  "mf": 1,
-  "tit": 2,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    4,
-    13,
-    1,
-    "o57"
-   ],
-   [
-    2,
-    2,
-    20,
-    1,
-    "o46"
-   ],
-   [
-    3,
-    1,
-    17,
-    0,
-    "i85"
-   ],
-   [
-    4,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    15,
     0,
     ""
    ]
@@ -32839,8 +32839,8 @@
   "semana": -46000,
   "sem7": -346000,
   "mes": -2050000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 479000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -38623,87 +38623,6 @@
   "d": 0
  },
  {
-  "id": "35922",
-  "nombre": "Jofre Carreras",
-  "valor": 160000,
-  "puntos": 2,
-  "media": 0.7,
-  "partidos": 3,
-  "semana": 0,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   1,
-   0,
-   1
-  ],
-  "eq": 8,
-  "riv": 2,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0.5,
-  "mf": 1,
-  "tit": 0,
-  "sup": 3,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    1,
-    1,
-    12,
-    0,
-    "i81"
-   ],
-   [
-    2,
-    0,
-    15,
-    0,
-    "i88"
-   ],
-   [
-    3,
-    1,
-    16,
-    0,
-    "i83"
-   ],
-   [
-    4,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    14,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "61093",
   "nombre": "Maroan Sannadi",
   "valor": 160000,
@@ -38781,6 +38700,87 @@
     48,
     0,
     "i62"
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "35922",
+  "nombre": "Jofre Carreras",
+  "valor": 160000,
+  "puntos": 2,
+  "media": 0.7,
+  "partidos": 3,
+  "semana": 0,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   1,
+   0,
+   1
+  ],
+  "eq": 8,
+  "riv": 2,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0.5,
+  "mf": 1,
+  "tit": 0,
+  "sup": 3,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    1,
+    1,
+    12,
+    0,
+    "i81"
+   ],
+   [
+    2,
+    0,
+    15,
+    0,
+    "i88"
+   ],
+   [
+    3,
+    1,
+    16,
+    0,
+    "i83"
+   ],
+   [
+    4,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    14,
+    0,
+    ""
    ]
   ],
   "p": 0,
@@ -40391,8 +40391,8 @@
   "semana": 44000,
   "sem7": 44000,
   "mes": 12000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 204000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -43373,20 +43373,20 @@
   "d": 0
  },
  {
-  "id": "62910",
-  "nombre": "Fran González",
+  "id": "60859",
+  "nombre": "Facundo Garcés",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": -27000,
-  "sem7": 0,
-  "mes": 0,
+  "semana": 0,
+  "sem7": -35000,
+  "mes": -16000,
   "mk": 0,
   "pv": null,
   "ced": 0,
-  "pos": 1,
-  "est": null,
+  "pos": 2,
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -43396,8 +43396,8 @@
    null,
    null
   ],
-  "eq": 17,
-  "riv": 12,
+  "eq": 48,
+  "riv": 5,
   "casa": 0,
   "gol": 0,
   "tar": 0,
@@ -43407,54 +43407,12 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 21,
+  "edad": 27,
   "js": [
    [
-    1,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    5,
+    6,
     null,
     19,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    3,
     0,
     ""
    ]
@@ -43631,8 +43589,8 @@
   "semana": 0,
   "sem7": 0,
   "mes": -7000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 4,
   "est": "injury",
@@ -44180,6 +44138,96 @@
   "d": 0
  },
  {
+  "id": "64410",
+  "nombre": "Alejandro Iturbe",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -6000,
+  "sem7": -30000,
+  "mes": -105000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 23,
+  "riv": 20,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    8,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "29238",
   "nombre": "Arnau Comas",
   "valor": 160000,
@@ -44277,96 +44325,6 @@
   "d": 0
  },
  {
-  "id": "64410",
-  "nombre": "Alejandro Iturbe",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -6000,
-  "sem7": -30000,
-  "mes": -105000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 23,
-  "riv": 20,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    8,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "63784",
   "nombre": "Jorge Cabello",
   "valor": 160000,
@@ -44442,6 +44400,96 @@
     7,
     null,
     20,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "78393",
+  "nombre": "Altay Bayındır",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -2000,
+  "sem7": -15000,
+  "mes": -9000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 5,
+  "riv": 48,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 28,
+  "js": [
+   [
+    1,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    1490,
     0,
     ""
    ]
@@ -44532,54 +44580,6 @@
     7,
     null,
     17,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "60859",
-  "nombre": "Facundo Garcés",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -35000,
-  "mes": -16000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 48,
-  "riv": 5,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    6,
-    null,
-    19,
     0,
     ""
    ]
@@ -45169,96 +45169,6 @@
   "d": 0
  },
  {
-  "id": "78393",
-  "nombre": "Altay Bayındır",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -2000,
-  "sem7": -15000,
-  "mes": -9000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 5,
-  "riv": 48,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 28,
-  "js": [
-   [
-    1,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    1490,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "48554",
   "nombre": "Luiz Felipe",
   "valor": 160000,
@@ -45500,6 +45410,96 @@
     8,
     null,
     1490,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "62910",
+  "nombre": "Fran González",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -27000,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 17,
+  "riv": 12,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    3,
     0,
     ""
    ]
