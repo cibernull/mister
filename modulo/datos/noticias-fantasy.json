@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-12T18:08:22.837Z",
+ "cuando": "2026-10-12T18:38:25.300Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -37,6 +37,30 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Buchanan y Pépé, bajas en el entrenamiento vespertino de este lunes",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152651-buchanan-y-pepe-bajas-en-el-entrenamiento-vespertino-de-este-lunes",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Antony mejora de sus molestias en la vuelta al trabajo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152650-antony-mejora-de-sus-molestias-en-la-vuelta-al-trabajo",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "El Barcelona se ejercita en Estambul sin los cuatro lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152649-el-barcelona-se-ejercita-en-estambul-sin-los-cuatro-lesionados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Análisis Fantasy de Jagoba Arrasate: Una llamada al pasado para reconducir el presente",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152648-analisis-fantasy-de-jagoba-arrasate-una-llamada-al-pasado-para-reconducir-el-presente",
    "categoria": "análisis"
   },
   {
@@ -458,30 +482,6 @@
    "titulo": "Primer parte médico oficial de Zaïd Romero, pendiente de pruebas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152577-primer-parte-medico-oficial-de-zaid-romero-pendiente-de-pruebas",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Luis García habla de Vargas, Ure, Correia, Suazo, Agoumé, Kike Salas, los capitanes y el Levante",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152576-luis-garcia-habla-de-vargas-ure-correia-suazo-agoume-kike-salas-los-capitanes-y-el-levante",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Luis Castro habla de Sotelo, Etta Eyong, Moyano, Tape, Ratkov, Musuayi, los internacionales y el Sevilla",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152575-luis-castro-habla-de-sotelo-etta-eyong-moyano-tape-ratkov-musuayi-los-internacionales-y-el-se",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Etta Eyong inicia su incorporación parcial al grupo y Sotelo sigue fuera",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152574-etta-eyong-inicia-su-incorporacion-parcial-al-grupo-y-sotelo-sigue-fuera",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Stassin se probó con el grupo, pero se retiró antes de tiempo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152572-stassin-se-probo-con-el-grupo-pero-se-retiro-antes-de-tiempo",
-   "categoria": "entrenamiento"
   }
  ]
 }
