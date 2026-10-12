@@ -1309,9 +1309,34 @@
    "id": "11472",
    "nombre": "Leandro Cabrera",
    "valor": 3396000
+  },
+  {
+   "id": "30444",
+   "nombre": "Leo Román",
+   "valor": 7886000
   }
  ],
  "movimientos": [
+  {
+   "id": "24742",
+   "nombre": "Dani Cárdenas",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 427230,
+   "tipo": "normal",
+   "fecha": "2026-10-12 17:04:43",
+   "pos": 1
+  },
+  {
+   "id": "30444",
+   "nombre": "Leo Román",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 8134090,
+   "tipo": "normal",
+   "fecha": "2026-10-12 17:00:14",
+   "pos": 1
+  },
   {
    "id": "64491",
    "nombre": "Valentín Gómez",
@@ -8631,6 +8656,22 @@
      "op": "normal"
     },
     {
+     "j": "Leo Román",
+     "id": "30444",
+     "tipo": "compra",
+     "importe": 8134090,
+     "fecha": "2026-10-12",
+     "op": "normal"
+    },
+    {
+     "j": "Dani Cárdenas",
+     "id": "24742",
+     "tipo": "venta",
+     "importe": 427230,
+     "fecha": "2026-10-12",
+     "op": "normal"
+    },
+    {
      "j": "Pedro Díaz",
      "id": "59395",
      "tipo": "venta",
@@ -9557,8 +9598,8 @@
     "24742": {
      "nombre": "Dani Cárdenas",
      "compras": 1074000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 427230,
+     "ops": 2
     },
     "27874": {
      "nombre": "Iván Martín",
@@ -9577,6 +9618,12 @@
      "compras": 2027690,
      "ventas": 3117900,
      "ops": 2
+    },
+    "30444": {
+     "nombre": "Leo Román",
+     "compras": 8134090,
+     "ventas": 0,
+     "ops": 1
     },
     "48556": {
      "nombre": "Andreas Christensen",

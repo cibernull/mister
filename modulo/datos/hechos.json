@@ -8652,6 +8652,42 @@
    "media": 4,
    "racha": "-,-,5,4,-",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 553105430,
+   "idJugador": "30444",
+   "nombre": "Leo Román",
+   "de": "Mister",
+   "a": "Cacaculopedopis",
+   "idUcDe": 0,
+   "idUcA": 15435600,
+   "importe": 8134090,
+   "tipo": "normal",
+   "cuando": "2026-10-12 17:00:14",
+   "valor": 7886000,
+   "posicion": 1,
+   "puntos": 34,
+   "media": 4.3,
+   "racha": "3,3,4,3,5",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 553112194,
+   "idJugador": "24742",
+   "nombre": "Dani Cárdenas",
+   "de": "Cacaculopedopis",
+   "a": "Mister",
+   "idUcDe": 15435600,
+   "idUcA": 0,
+   "importe": 427230,
+   "tipo": "normal",
+   "cuando": "2026-10-12 17:04:43",
+   "valor": 423000,
+   "posicion": 1,
+   "puntos": 7,
+   "media": 2.3,
+   "racha": "2,2,-,-,-",
+   "otrasPujas": []
   }
  ],
  "salidas": [

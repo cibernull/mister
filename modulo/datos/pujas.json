@@ -3616,6 +3616,18 @@
     "topeMax": 24401410,
     "exceso": 0
    }
+  ],
+  "553105430": [
+   {
+    "idTransfer": 553105430,
+    "cuando": "2026-10-12 17:00:14",
+    "jugador": "Leo Román",
+    "equipo": "Cacaculopedopis",
+    "puja": 8134090,
+    "gana": true,
+    "topeMax": 48663949,
+    "exceso": 0
+   }
   ]
  }
 }
