@@ -465,7 +465,7 @@
   "mediaCasa": 4.5,
   "mediaFuera": 5.3,
   "edad": 35,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
@@ -523,10 +523,17 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 50,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "96": {
@@ -793,10 +800,17 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 23,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "208": {
@@ -963,7 +977,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "239": {
@@ -1257,13 +1271,13 @@
  "340": {
   "nombre": "Isco",
   "posicion": 3,
-  "goles": 0,
+  "goles": 2,
   "tarjetas": 0,
-  "mediaCasa": 3.7,
+  "mediaCasa": 7,
   "mediaFuera": 3,
   "edad": 34,
-  "titular": true,
-  "titularidades": 4,
+  "titular": null,
+  "titularidades": 5,
   "suplencias": 3,
   "jornadas": [
    {
@@ -1328,10 +1342,21 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 17,
+    "rival": 50,
+    "como": "inicio",
+    "eventos": [
+     "sub_out",
+     "penalty",
+     "goal"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "361": {
@@ -1975,12 +2000,12 @@
   "posicion": 4,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 4.7,
+  "mediaCasa": 4.3,
   "mediaFuera": 3.5,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 6,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -2045,10 +2070,19 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 3,
+    "rival": 6,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 2,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "607": {
@@ -2277,7 +2311,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "1034": {
@@ -2293,7 +2327,7 @@
   "suplencias": 0,
   "jornadas": [],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "1684": {
@@ -2840,12 +2874,12 @@
   "nombre": "Marc Roca",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 1,
-  "mediaCasa": 3.5,
+  "tarjetas": 2,
+  "mediaCasa": 4,
   "mediaFuera": 4.3,
   "edad": 29,
-  "titular": true,
-  "titularidades": 5,
+  "titular": null,
+  "titularidades": 6,
   "suplencias": 0,
   "jornadas": [
    {
@@ -2903,10 +2937,19 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 5,
+    "rival": 50,
+    "como": "inicio",
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "4753": {
@@ -3039,10 +3082,17 @@
     "rival": 4,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 16,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "4775": {
@@ -3548,11 +3598,11 @@
   "posicion": 1,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 4.3,
+  "mediaCasa": 4.8,
   "mediaFuera": 6,
   "edad": 31,
-  "titular": true,
-  "titularidades": 6,
+  "titular": null,
+  "titularidades": 7,
   "suplencias": 0,
   "jornadas": [
    {
@@ -3603,10 +3653,17 @@
     "rival": 19,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": 6,
+    "rival": 6,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "6034": {
@@ -3843,7 +3900,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "6065": {
@@ -4001,7 +4058,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "7024": {
@@ -5037,19 +5094,19 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "12915": {
   "nombre": "Cucho Hernández",
   "posicion": 4,
   "goles": 2,
-  "tarjetas": 0,
-  "mediaCasa": 3,
+  "tarjetas": 1,
+  "mediaCasa": 3.8,
   "mediaFuera": 5.5,
   "edad": 27,
-  "titular": true,
-  "titularidades": 5,
+  "titular": null,
+  "titularidades": 6,
   "suplencias": 2,
   "jornadas": [
    {
@@ -5116,10 +5173,21 @@
     "eventos": [
      "goal"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 6,
+    "rival": 50,
+    "como": "inicio",
+    "eventos": [
+     "yellow",
+     "sub_out",
+     "assist"
+    ]
    }
   ],
-  "asistencias": 1,
-  "dia": "2026-10-05",
+  "asistencias": 2,
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "12946": {
@@ -6007,7 +6075,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "15109": {
@@ -6051,10 +6119,17 @@
     "rival": 6,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 50,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 1
  },
  "15338": {
@@ -6137,11 +6212,11 @@
   "posicion": 3,
   "goles": 2,
   "tarjetas": 0,
-  "mediaCasa": 6,
+  "mediaCasa": 5.5,
   "mediaFuera": 4.7,
   "edad": 24,
   "titular": null,
-  "titularidades": 4,
+  "titularidades": 5,
   "suplencias": 2,
   "jornadas": [
    {
@@ -6206,10 +6281,20 @@
      "sub_in",
      "goal"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 4,
+    "rival": 6,
+    "como": "inicio",
+    "eventos": [
+     "sub_out",
+     "assist"
+    ]
    }
   ],
-  "asistencias": 0,
-  "dia": "2026-10-05",
+  "asistencias": 1,
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "15344": {
@@ -6358,12 +6443,12 @@
   "nombre": "Yangel Herrera",
   "posicion": 3,
   "goles": 1,
-  "tarjetas": 3,
-  "mediaCasa": 2.7,
+  "tarjetas": 4,
+  "mediaCasa": 2.8,
   "mediaFuera": 4.5,
   "edad": 28,
   "titular": null,
-  "titularidades": 5,
+  "titularidades": 6,
   "suplencias": 2,
   "jornadas": [
    {
@@ -6432,10 +6517,19 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 3,
+    "rival": 6,
+    "como": "inicio",
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "15653": {
@@ -7162,7 +7256,7 @@
   "suplencias": 0,
   "jornadas": [],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "17989": {
@@ -7647,10 +7741,17 @@
     "rival": 6,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 50,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "19527": {
@@ -7809,11 +7910,11 @@
   "posicion": 3,
   "goles": 2,
   "tarjetas": 0,
-  "mediaCasa": 5.3,
+  "mediaCasa": 5.5,
   "mediaFuera": 2.5,
   "edad": 26,
   "titular": null,
-  "titularidades": 4,
+  "titularidades": 5,
   "suplencias": 3,
   "jornadas": [
    {
@@ -7880,10 +7981,19 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 6,
+    "rival": 50,
+    "como": "inicio",
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "19927": {
@@ -8770,7 +8880,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "22601": {
@@ -9076,11 +9186,11 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 4.7,
+  "mediaCasa": 4.5,
   "mediaFuera": 2.8,
   "edad": 26,
-  "titular": true,
-  "titularidades": 7,
+  "titular": null,
+  "titularidades": 8,
   "suplencias": 0,
   "jornadas": [
    {
@@ -9136,10 +9246,17 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 4,
+    "rival": 6,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "23147": {
@@ -10414,7 +10531,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 1
  },
  "27517": {
@@ -10664,10 +10781,17 @@
     "rival": 6,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 50,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "27861": {
@@ -11333,7 +11457,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "28772": {
@@ -12545,10 +12669,17 @@
     "rival": 4,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 16,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "29402": {
@@ -13000,11 +13131,11 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 4,
+  "mediaCasa": 3.8,
   "mediaFuera": 2.5,
   "edad": 31,
-  "titular": true,
-  "titularidades": 5,
+  "titular": null,
+  "titularidades": 6,
   "suplencias": 2,
   "jornadas": [
    {
@@ -13061,10 +13192,19 @@
     "rival": 6,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": 3,
+    "rival": 50,
+    "como": "inicio",
+    "eventos": [
+     "assist"
+    ]
    }
   ],
-  "asistencias": 0,
-  "dia": "2026-10-05",
+  "asistencias": 1,
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "33053": {
@@ -14461,7 +14601,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "48486": {
@@ -14471,7 +14611,7 @@
   "tarjetas": 0,
   "mediaCasa": 0,
   "mediaFuera": 0,
-  "edad": 26,
+  "edad": 27,
   "titular": null,
   "titularidades": 0,
   "suplencias": 0,
@@ -14485,7 +14625,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "48554": {
@@ -14516,7 +14656,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "48556": {
@@ -14655,7 +14795,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "48657": {
@@ -15174,7 +15314,7 @@
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "51134": {
@@ -15458,10 +15598,10 @@
   "goles": 3,
   "tarjetas": 1,
   "mediaCasa": 3.7,
-  "mediaFuera": 9,
+  "mediaFuera": 8.2,
   "edad": 27,
-  "titular": true,
-  "titularidades": 6,
+  "titular": null,
+  "titularidades": 7,
   "suplencias": 1,
   "jornadas": [
    {
@@ -15525,10 +15665,17 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 5,
+    "rival": 15,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "52189": {
@@ -15537,10 +15684,10 @@
   "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 4,
-  "mediaFuera": 3.5,
+  "mediaFuera": 3.2,
   "edad": 33,
-  "titular": true,
-  "titularidades": 5,
+  "titular": null,
+  "titularidades": 6,
   "suplencias": 2,
   "jornadas": [
    {
@@ -15608,10 +15755,17 @@
      "sub_out",
      "goal"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 2,
+    "rival": 15,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 2,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "52371": {
@@ -16049,10 +16203,10 @@
   "goles": 2,
   "tarjetas": 0,
   "mediaCasa": 6.7,
-  "mediaFuera": 5,
+  "mediaFuera": 4.6,
   "edad": 23,
-  "titular": true,
-  "titularidades": 5,
+  "titular": null,
+  "titularidades": 6,
   "suplencias": 2,
   "jornadas": [
    {
@@ -16121,10 +16275,19 @@
      "assist",
      "assist"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 3,
+    "rival": 15,
+    "como": "inicio",
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 3,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "53107": {
@@ -16198,11 +16361,11 @@
   "posicion": 1,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 9,
+  "mediaCasa": 7.8,
   "mediaFuera": 7,
   "edad": 29,
-  "titular": true,
-  "titularidades": 7,
+  "titular": null,
+  "titularidades": 8,
   "suplencias": 0,
   "jornadas": [
    {
@@ -16255,10 +16418,17 @@
     "rival": 6,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": 4,
+    "rival": 50,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "53114": {
@@ -16587,7 +16757,7 @@
   "mediaCasa": 1.5,
   "mediaFuera": 2.8,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 2,
   "jornadas": [
@@ -16652,10 +16822,17 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 15,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "54900": {
@@ -16740,7 +16917,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "55009": {
@@ -16953,7 +17130,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 3
  },
  "55439": {
@@ -17037,7 +17214,7 @@
    }
   ],
   "asistencias": 2,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "55452": {
@@ -17890,7 +18067,7 @@
   "mediaCasa": 6,
   "mediaFuera": 2.8,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 7,
   "suplencias": 0,
   "jornadas": [
@@ -17952,7 +18129,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "56926": {
@@ -18911,7 +19088,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 3
  },
  "59064": {
@@ -19036,7 +19213,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "59126": {
@@ -19110,11 +19287,11 @@
   "posicion": 3,
   "goles": 3,
   "tarjetas": 2,
-  "mediaCasa": 3.7,
+  "mediaCasa": 3.3,
   "mediaFuera": 8.3,
   "edad": 24,
-  "titular": true,
-  "titularidades": 6,
+  "titular": null,
+  "titularidades": 7,
   "suplencias": 1,
   "jornadas": [
    {
@@ -19180,10 +19357,17 @@
      "sub_out",
      "goal"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 2,
+    "rival": 6,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "59382": {
@@ -19787,7 +19971,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "59533": {
@@ -19944,7 +20128,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "59581": {
@@ -20525,7 +20709,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 3
  },
  "60227": {
@@ -20797,7 +20981,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "60859": {
@@ -20821,7 +21005,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "60861": {
@@ -21027,12 +21211,12 @@
   "nombre": "Yoel Lago",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 3,
+  "tarjetas": 4,
   "mediaCasa": 4.3,
-  "mediaFuera": 4,
+  "mediaFuera": 4.3,
   "edad": 22,
-  "titular": true,
-  "titularidades": 6,
+  "titular": null,
+  "titularidades": 7,
   "suplencias": 1,
   "jornadas": [
    {
@@ -21091,10 +21275,19 @@
     "eventos": [
      "yellow"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 5,
+    "rival": 23,
+    "como": "inicio",
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "60927": {
@@ -21149,7 +21342,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "61009": {
@@ -21309,12 +21502,12 @@
   "posicion": 4,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 6,
+  "mediaCasa": 5,
   "mediaFuera": 3.5,
   "edad": 26,
-  "titular": true,
+  "titular": null,
   "titularidades": 6,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -21372,10 +21565,19 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 2,
+    "rival": 50,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "61092": {
@@ -21386,7 +21588,7 @@
   "mediaCasa": 3,
   "mediaFuera": 4,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 3,
   "jornadas": [
@@ -21455,7 +21657,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "61093": {
@@ -21817,7 +22019,7 @@
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "62910": {
@@ -21883,7 +22085,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "63406": {
@@ -21966,10 +22168,10 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 4.5,
-  "mediaFuera": 4.3,
+  "mediaFuera": 4.8,
   "edad": 29,
-  "titular": true,
-  "titularidades": 7,
+  "titular": null,
+  "titularidades": 8,
   "suplencias": 0,
   "jornadas": [
    {
@@ -22022,10 +22224,17 @@
     "rival": 1490,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": 6,
+    "rival": 23,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "63727": {
@@ -22180,10 +22389,17 @@
     "rival": 2,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 20,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 3
  },
  "63784": {
@@ -22242,7 +22458,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "63788": {
@@ -22310,7 +22526,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "63866": {
@@ -22530,10 +22746,17 @@
     "rival": 15,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 5,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "63871": {
@@ -22987,7 +23210,7 @@
   "suplencias": 0,
   "jornadas": [],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "64200": {
@@ -23572,7 +23795,7 @@
   "suplencias": 0,
   "jornadas": [],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "64524": {
@@ -23654,12 +23877,12 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 3.7,
+  "mediaCasa": 3.3,
   "mediaFuera": 3.5,
   "edad": 26,
   "titular": null,
   "titularidades": 3,
-  "suplencias": 4,
+  "suplencias": 5,
   "jornadas": [
    {
     "jornada": 1,
@@ -23720,10 +23943,19 @@
      "sub_out",
      "assist"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 2,
+    "rival": 50,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "65090": {
@@ -24116,7 +24348,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "65188": {
@@ -24234,12 +24466,12 @@
   "nombre": "Renato Veiga",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 5,
   "mediaFuera": 4,
   "edad": 23,
-  "titular": true,
-  "titularidades": 7,
+  "titular": null,
+  "titularidades": 8,
   "suplencias": 0,
   "jornadas": [
    {
@@ -24293,10 +24525,19 @@
     "rival": 12,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": 4,
+    "rival": 15,
+    "como": "inicio",
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "65475": {
@@ -24517,10 +24758,17 @@
     "rival": 12,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 15,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "65669": {
@@ -24660,7 +24908,7 @@
    }
   ],
   "asistencias": 2,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "65704": {
@@ -24669,11 +24917,11 @@
   "goles": 2,
   "tarjetas": 0,
   "mediaCasa": 4.3,
-  "mediaFuera": 5.3,
+  "mediaFuera": 5,
   "edad": 25,
   "titular": null,
   "titularidades": 4,
-  "suplencias": 3,
+  "suplencias": 4,
   "jornadas": [
    {
     "jornada": 1,
@@ -24737,10 +24985,19 @@
      "sub_in",
      "goal"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 4,
+    "rival": 15,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "65721": {
@@ -24865,7 +25122,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "65727": {
@@ -25097,7 +25354,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "67870": {
@@ -25125,10 +25382,17 @@
     "rival": 15,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 5,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "67931": {
@@ -25187,7 +25451,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "67942": {
@@ -26386,10 +26650,17 @@
     "rival": 15,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 48,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "68716": {
@@ -27159,10 +27430,17 @@
     "rival": 12,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 15,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "70499": {
@@ -27218,10 +27496,17 @@
     "rival": 19,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 6,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "70638": {
@@ -27454,7 +27739,7 @@
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "70922": {
@@ -27535,7 +27820,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "70923": {
@@ -27904,7 +28189,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 3
  },
  "70932": {
@@ -28127,7 +28412,7 @@
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "70936": {
@@ -28377,7 +28662,7 @@
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "70940": {
@@ -28781,7 +29066,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 2
  },
  "70947": {
@@ -28812,7 +29097,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "70948": {
@@ -28950,10 +29235,17 @@
     "rival": 4,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 16,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "70950": {
@@ -29251,7 +29543,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "70993": {
@@ -29512,7 +29804,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "70998": {
@@ -29597,7 +29889,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "70999": {
@@ -29961,7 +30253,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "71006": {
@@ -30024,10 +30316,17 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 8,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "71008": {
@@ -30180,7 +30479,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "71011": {
@@ -30320,10 +30619,17 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 8,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "71019": {
@@ -30464,7 +30770,7 @@
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "71022": {
@@ -30927,7 +31233,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "71138": {
@@ -31561,7 +31867,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "71179": {
@@ -31732,10 +32038,10 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 5.7,
-  "mediaFuera": 2.3,
+  "mediaFuera": 2.5,
   "edad": 23,
-  "titular": true,
-  "titularidades": 5,
+  "titular": null,
+  "titularidades": 6,
   "suplencias": 1,
   "jornadas": [
    {
@@ -31796,10 +32102,19 @@
     "rival": 13,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": 3,
+    "rival": 3,
+    "como": "inicio",
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "71503": {
@@ -31851,7 +32166,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 3
  },
  "71505": {
@@ -31914,10 +32229,17 @@
     "rival": 4,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 16,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "71506": {
@@ -31980,10 +32302,17 @@
     "rival": 4,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 16,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "71509": {
@@ -32479,7 +32808,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "71633": {
@@ -32591,10 +32920,17 @@
     "rival": 5,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 19,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "71639": {
@@ -32661,7 +32997,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "71640": {
@@ -32745,7 +33081,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "71642": {
@@ -32810,10 +33146,17 @@
     "rival": 1490,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 23,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 1
  },
  "71649": {
@@ -32886,7 +33229,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "71790": {
@@ -33382,7 +33725,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "78751": {
@@ -33467,7 +33810,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 3
  },
  "523868": {
@@ -33544,7 +33887,7 @@
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "822248": {
@@ -33749,10 +34092,17 @@
     "rival": 16,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 1490,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "1255969": {
@@ -33980,7 +34330,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "1396108": {
@@ -34358,7 +34708,7 @@
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 3
  },
  "3317698": {
@@ -34557,10 +34907,17 @@
     "rival": 16,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 1490,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "3844425": {
@@ -35318,7 +35675,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "4774441": {
@@ -35479,7 +35836,7 @@
    }
   ],
   "asistencias": 2,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "4836165": {
@@ -35624,7 +35981,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 3
  },
  "4836173": {
@@ -35781,7 +36138,7 @@
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 5
  },
  "4836184": {
@@ -36210,7 +36567,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 4
  },
  "4947928": {
@@ -36273,10 +36630,17 @@
     "rival": 15,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 48,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-05",
+  "dia": "2026-10-12",
   "partidos": 0
  },
  "4947929": {
@@ -36342,7 +36706,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 3
  },
  "4947930": {
@@ -36842,7 +37206,7 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
+  "dia": "2026-10-12",
   "partidos": 2
  },
  "5358737": {
