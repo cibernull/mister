@@ -32442,7 +32442,7 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 2.5,
+  "mediaCasa": 3,
   "mediaFuera": 1.5,
   "edad": 22,
   "titular": null,
@@ -32497,7 +32497,7 @@
    },
    {
     "jornada": 8,
-    "puntos": 2,
+    "puntos": 3,
     "rival": 17,
     "como": "banquillo",
     "eventos": [
@@ -33034,7 +33034,7 @@
   "goles": 2,
   "tarjetas": 2,
   "mediaCasa": 6.5,
-  "mediaFuera": 6.3,
+  "mediaFuera": 6.5,
   "edad": 22,
   "titular": null,
   "titularidades": 8,
@@ -33109,7 +33109,7 @@
    },
    {
     "jornada": 8,
-    "puntos": 5,
+    "puntos": 6,
     "rival": 12,
     "como": "inicio",
     "eventos": [
@@ -33863,7 +33863,7 @@
   "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 3.5,
-  "mediaFuera": 3.8,
+  "mediaFuera": 4,
   "edad": 22,
   "titular": null,
   "titularidades": 5,
@@ -33931,7 +33931,7 @@
    },
    {
     "jornada": 8,
-    "puntos": 10,
+    "puntos": 11,
     "rival": 12,
     "como": "inicio",
     "eventos": [
@@ -34778,7 +34778,7 @@
   "posicion": 2,
   "goles": 1,
   "tarjetas": 0,
-  "mediaCasa": 5,
+  "mediaCasa": 6,
   "mediaFuera": 2,
   "edad": 18,
   "titular": null,
@@ -34833,7 +34833,7 @@
    },
    {
     "jornada": 8,
-    "puntos": 8,
+    "puntos": 10,
     "rival": 17,
     "como": "inicio",
     "eventos": [
@@ -36061,7 +36061,7 @@
   "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 4,
-  "mediaFuera": 5,
+  "mediaFuera": 5.5,
   "edad": 25,
   "titular": null,
   "titularidades": 4,
@@ -36125,7 +36125,7 @@
    },
    {
     "jornada": 8,
-    "puntos": 7,
+    "puntos": 8,
     "rival": 12,
     "como": "inicio",
     "eventos": [
@@ -36866,7 +36866,7 @@
   "posicion": 4,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 1,
+  "mediaCasa": 1.5,
   "mediaFuera": 1,
   "edad": 23,
   "titular": null,
@@ -36921,7 +36921,7 @@
    },
    {
     "jornada": 8,
-    "puntos": 1,
+    "puntos": 2,
     "rival": 17,
     "como": "banquillo",
     "eventos": [
