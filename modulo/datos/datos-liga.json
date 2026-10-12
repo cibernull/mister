@@ -1313,6 +1313,16 @@
  ],
  "movimientos": [
   {
+   "id": "36334",
+   "nombre": "Adama Traoré",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 3770390,
+   "tipo": "normal",
+   "fecha": "2026-10-12 09:56:44",
+   "pos": 4
+  },
+  {
    "id": "20131",
    "nombre": "Manu Sánchez",
    "de": "Saiyans FC (Fran)",
@@ -10447,6 +10457,14 @@
      "op": "normal"
     },
     {
+     "j": "Adama Traoré",
+     "id": "36334",
+     "tipo": "venta",
+     "importe": 3770390,
+     "fecha": "2026-10-12",
+     "op": "normal"
+    },
+    {
      "j": "Yan Diomande",
      "id": "62904",
      "tipo": "compra",
@@ -11395,8 +11413,8 @@
     "36334": {
      "nombre": "Adama Traoré",
      "compras": 3500000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 3770390,
+     "ops": 2
     },
     "36410": {
      "nombre": "Pierre-Emerick Aubameyang",
