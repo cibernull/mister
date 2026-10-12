@@ -1314,9 +1314,24 @@
    "id": "30444",
    "nombre": "Leo Román",
    "valor": 7886000
+  },
+  {
+   "id": "28779",
+   "nombre": "Iván Romero",
+   "valor": 8247000
   }
  ],
  "movimientos": [
+  {
+   "id": "28779",
+   "nombre": "Iván Romero",
+   "de": "Legalize F.C (Victor)",
+   "a": "Saiyans FC (Fran)",
+   "importe": 12370500,
+   "tipo": "clause",
+   "fecha": "2026-10-12 22:16:51",
+   "pos": 4
+  },
   {
    "id": "68498",
    "nombre": "Zaid Romero",
@@ -10566,6 +10581,14 @@
      "op": "normal"
     },
     {
+     "j": "Iván Romero",
+     "id": "28779",
+     "tipo": "compra",
+     "importe": 12370500,
+     "fecha": "2026-10-12",
+     "op": "clause"
+    },
+    {
      "j": "Yan Diomande",
      "id": "62904",
      "tipo": "compra",
@@ -11481,6 +11504,12 @@
      "ventas": 6155280,
      "ops": 2
     },
+    "28779": {
+     "nombre": "Iván Romero",
+     "compras": 12370500,
+     "ventas": 0,
+     "ops": 1
+    },
     "29163": {
      "nombre": "Omar El Hilali",
      "compras": 2227000,
@@ -11724,6 +11753,14 @@
   "Legalize F.C (Victor)": {
    "movimientos": [
     {
+     "j": "Iván Romero",
+     "id": "28779",
+     "tipo": "venta",
+     "importe": 12370500,
+     "fecha": "2026-10-12",
+     "op": "clause"
+    },
+    {
      "j": "Unai Santos",
      "id": "5358737",
      "tipo": "compra",
@@ -11791,6 +11828,12 @@
      "nombre": "Gonçalo Guedes",
      "compras": 6653020,
      "ventas": 0,
+     "ops": 1
+    },
+    "28779": {
+     "nombre": "Iván Romero",
+     "compras": 0,
+     "ventas": 12370500,
      "ops": 1
     },
     "36410": {

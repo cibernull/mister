@@ -1,6 +1,7 @@
 {
  "ajustes": {
-  "Neky F.C. (Sergio)": 2732449
+  "Neky F.C. (Sergio)": 2732449,
+  "Saiyans FC (Fran)": 116860
  },
  "vistas": {
   "536228207": [
@@ -3627,6 +3628,18 @@
     "gana": true,
     "topeMax": 48663949,
     "exceso": 0
+   }
+  ],
+  "553156506": [
+   {
+    "idTransfer": 553156506,
+    "cuando": "2026-10-12 22:16:51",
+    "jugador": "Iván Romero",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 12370500,
+    "gana": true,
+    "topeMax": 12253640,
+    "exceso": 116860
    }
   ]
  }

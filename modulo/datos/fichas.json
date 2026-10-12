@@ -26971,8 +26971,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-07",
-  "partidos": 4
+  "dia": "2026-10-12",
+  "partidos": 3
  },
  "69889": {
   "nombre": "Xavi Espart",
@@ -32439,7 +32439,7 @@
   "nombre": "Daniel Requena",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 3,
   "mediaFuera": 1.5,
   "edad": 22,
@@ -32497,8 +32497,11 @@
     "jornada": 8,
     "puntos": null,
     "rival": 17,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "yellow",
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -32888,7 +32891,9 @@
     "puntos": null,
     "rival": 17,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -33105,7 +33110,9 @@
     "puntos": null,
     "rival": 12,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -33926,11 +33933,13 @@
     "rival": 12,
     "como": "inicio",
     "eventos": [
-     "goal"
+     "sub_out",
+     "goal",
+     "assist"
     ]
    }
   ],
-  "asistencias": 1,
+  "asistencias": 2,
   "dia": "2026-10-12",
   "partidos": 5
  },
@@ -36052,7 +36061,7 @@
  "4836173": {
   "nombre": "Félix Correia",
   "posicion": 3,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 4,
   "mediaFuera": 3,
@@ -36123,7 +36132,9 @@
     "rival": 12,
     "como": "inicio",
     "eventos": [
-     "yellow"
+     "yellow",
+     "sub_out",
+     "goal"
     ]
    }
   ],
@@ -36913,8 +36924,10 @@
     "jornada": 8,
     "puntos": null,
     "rival": 17,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,

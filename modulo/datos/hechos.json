@@ -5729,7 +5729,7 @@
    "cuando": "2026-09-15 17:06:26",
    "valor": 6148000,
    "posicion": 2,
-   "puntos": 27,
+   "puntos": 28,
    "media": 3.7,
    "racha": "1,3,6,6,5",
    "otrasPujas": [
@@ -5887,7 +5887,7 @@
    "cuando": "2026-09-18 00:38:30",
    "valor": 2069000,
    "posicion": 4,
-   "puntos": 20,
+   "puntos": 21,
    "media": 3.3,
    "racha": "2,-,2,2,2",
    "otrasPujas": []
@@ -6257,7 +6257,7 @@
    "cuando": "2026-09-20 05:00:27",
    "valor": 7837000,
    "posicion": 3,
-   "puntos": 28,
+   "puntos": 29,
    "media": 6.5,
    "racha": "-,3,5,5,13",
    "otrasPujas": []
@@ -6704,7 +6704,7 @@
    "cuando": "2026-09-22 17:00:19",
    "valor": 5097000,
    "posicion": 2,
-   "puntos": 24,
+   "puntos": 23,
    "media": 3.8,
    "racha": "2,2,6,6,2",
    "otrasPujas": [
@@ -6848,7 +6848,7 @@
    "cuando": "2026-09-23 06:34:55",
    "valor": 6148000,
    "posicion": 2,
-   "puntos": 27,
+   "puntos": 28,
    "media": 3.7,
    "racha": "1,3,6,6,5",
    "otrasPujas": []
@@ -7801,7 +7801,7 @@
    "cuando": "2026-10-01 07:57:12",
    "valor": 8776000,
    "posicion": 2,
-   "puntos": 31,
+   "puntos": 30,
    "media": 5,
    "racha": "4,13,5,1,4",
    "otrasPujas": []
@@ -8445,7 +8445,7 @@
    "cuando": "2026-10-10 09:22:38",
    "valor": 5097000,
    "posicion": 2,
-   "puntos": 23,
+   "puntos": 24,
    "media": 3.8,
    "racha": "2,2,6,6,2",
    "otrasPujas": []
@@ -8612,7 +8612,7 @@
    "cuando": "2026-10-12 02:44:00",
    "valor": 4550000,
    "posicion": 2,
-   "puntos": 21,
+   "puntos": 22,
    "media": 3.5,
    "racha": "3,4,4,6,2",
    "otrasPujas": []
@@ -8723,6 +8723,24 @@
    "puntos": 14,
    "media": 2,
    "racha": "-4,-,6,5,-2",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 553156506,
+   "idJugador": "28779",
+   "nombre": "Iván Romero",
+   "de": "Legalize F.C (Victor)",
+   "a": "Saiyans FC (Fran)",
+   "idUcDe": 12493758,
+   "idUcA": 12493752,
+   "importe": 12370500,
+   "tipo": "clause",
+   "cuando": "2026-10-12 22:16:51",
+   "valor": 8247000,
+   "posicion": 4,
+   "puntos": 34,
+   "media": 5.5,
+   "racha": "2,6,2,12,10",
    "otrasPujas": []
   }
  ],
