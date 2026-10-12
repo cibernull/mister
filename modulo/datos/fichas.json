@@ -8551,6 +8551,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 12,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -32875,6 +32882,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 17,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33085,6 +33099,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 12,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33830,7 +33851,7 @@
  "523868": {
   "nombre": "Robbie Ure",
   "posicion": 4,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 3.5,
   "mediaFuera": 1.7,
@@ -33898,6 +33919,15 @@
     "rival": 3,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 12,
+    "como": "inicio",
+    "eventos": [
+     "goal"
+    ]
    }
   ],
   "asistencias": 1,
@@ -34789,6 +34819,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 17,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -36079,6 +36116,13 @@
      "sub_out",
      "assist"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 12,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -36592,6 +36636,13 @@
      "sub_out",
      "goal"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 12,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
