@@ -8688,6 +8688,24 @@
    "media": 2.3,
    "racha": "2,2,-,-,-",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 553115125,
+   "idJugador": "68606",
+   "nombre": "Ángel Pérez",
+   "de": "Neky F.C. (Sergio)",
+   "a": "Mister",
+   "idUcDe": 12493688,
+   "idUcA": 0,
+   "importe": 9170700,
+   "tipo": "normal",
+   "cuando": "2026-10-12 17:32:20",
+   "valor": 8734000,
+   "posicion": 3,
+   "puntos": 32,
+   "media": 4,
+   "racha": "10,2,5,2,-4",
+   "otrasPujas": []
   }
  ],
  "salidas": [

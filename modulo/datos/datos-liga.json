@@ -1318,6 +1318,16 @@
  ],
  "movimientos": [
   {
+   "id": "68606",
+   "nombre": "Ángel Pérez",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 9170700,
+   "tipo": "normal",
+   "fecha": "2026-10-12 17:32:20",
+   "pos": 3
+  },
+  {
    "id": "24742",
    "nombre": "Dani Cárdenas",
    "de": "Cacaculopedopis",
@@ -6022,6 +6032,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Ángel Pérez",
+     "id": "68606",
+     "tipo": "venta",
+     "importe": 9170700,
+     "fecha": "2026-10-12",
+     "op": "normal"
+    },
+    {
      "j": "Andrei Rațiu",
      "id": "25621",
      "tipo": "venta",
@@ -7248,8 +7266,8 @@
     "68606": {
      "nombre": "Ángel Pérez",
      "compras": 8587112,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 9170700,
+     "ops": 2
     },
     "68652": {
      "nombre": "Ville Koski",
