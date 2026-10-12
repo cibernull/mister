@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-12T10:38:05.473Z",
+ "cuando": "2026-10-12T11:08:10.405Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Osasuna comunica la contratación de Jagoba Arrasate",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152626-osasuna-comunica-la-contratacion-de-jagoba-arrasate",
+   "categoria": "mercado"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "Osasuna anuncia la destitución de Luis Miguel Ramis",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152625-osasuna-anuncia-la-destitucion-de-luis-miguel-ramis",
+   "categoria": "mercado"
   },
   {
    "fecha": "11/10",
@@ -470,18 +482,6 @@
    "titulo": "Simeone impone su ley en Mendizorroza",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152552-simeone-impone-su-ley-en-mendizorroza",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Jornada 8: Alavés 1-2 Atlético. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22493-alaves-atletico",
-   "categoria": "partido"
-  },
-  {
-   "fecha": "10/10",
-   "titulo": "Flick pide controlar el balón y al rival, reivindica la presión sin posesión y destaca la evolución de Gabriel Jesus",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152551-flick-pide-controlar-el-balon-y-al-rival-reivindica-la-presion-sin-posesion-y-destaca-la-evol",
-   "categoria": "rueda de prensa"
   }
  ]
 }
