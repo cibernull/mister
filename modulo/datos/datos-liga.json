@@ -1313,6 +1313,16 @@
  ],
  "movimientos": [
   {
+   "id": "64491",
+   "nombre": "Valentín Gómez",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 1262760,
+   "tipo": "normal",
+   "fecha": "2026-10-12 11:15:37",
+   "pos": 2
+  },
+  {
    "id": "36334",
    "nombre": "Adama Traoré",
    "de": "Saiyans FC (Fran)",
@@ -8613,6 +8623,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Valentín Gómez",
+     "id": "64491",
+     "tipo": "venta",
+     "importe": 1262760,
+     "fecha": "2026-10-12",
+     "op": "normal"
+    },
+    {
      "j": "Pedro Díaz",
      "id": "59395",
      "tipo": "venta",
@@ -9671,8 +9689,8 @@
     "64491": {
      "nombre": "Valentín Gómez",
      "compras": 593000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1262760,
+     "ops": 2
     },
     "65476": {
      "nombre": "Clemens Riedel",

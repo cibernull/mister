@@ -8634,6 +8634,24 @@
    "media": 2.6,
    "racha": "1,2,3,3,4",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 553073841,
+   "idJugador": "64491",
+   "nombre": "Valentín Gómez",
+   "de": "Cacaculopedopis",
+   "a": "Mister",
+   "idUcDe": 15435600,
+   "idUcA": 0,
+   "importe": 1262760,
+   "tipo": "normal",
+   "cuando": "2026-10-12 11:15:37",
+   "valor": 1258000,
+   "posicion": 2,
+   "puntos": 12,
+   "media": 4,
+   "racha": "-,-,5,4,-",
+   "otrasPujas": []
   }
  ],
  "salidas": [
