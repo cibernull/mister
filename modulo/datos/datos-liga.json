@@ -1328,6 +1328,26 @@
  ],
  "movimientos": [
   {
+   "id": "70150",
+   "nombre": "Javi Morcillo",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 1182000,
+   "tipo": "normal",
+   "fecha": "2026-10-13 06:53:57",
+   "pos": 3
+  },
+  {
+   "id": "40147",
+   "nombre": "Antonio Rüdiger",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 7866560,
+   "tipo": "normal",
+   "fecha": "2026-10-13 06:20:13",
+   "pos": 2
+  },
+  {
    "id": "29167",
    "nombre": "Ángel Fortuño",
    "de": null,
@@ -8726,6 +8746,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Javi Morcillo",
+     "id": "70150",
+     "tipo": "venta",
+     "importe": 1182000,
+     "fecha": "2026-10-13",
+     "op": "normal"
+    },
+    {
      "j": "Valentín Gómez",
      "id": "64491",
      "tipo": "venta",
@@ -9856,8 +9884,8 @@
     "70150": {
      "nombre": "Javi Morcillo",
      "compras": 573000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1182000,
+     "ops": 2
     },
     "70927": {
      "nombre": "Giorgi Guliashvili",
@@ -10618,6 +10646,14 @@
      "id": "52189",
      "tipo": "venta",
      "importe": 7683800,
+     "fecha": "2026-10-13",
+     "op": "normal"
+    },
+    {
+     "j": "Antonio Rüdiger",
+     "id": "40147",
+     "tipo": "venta",
+     "importe": 7866560,
      "fecha": "2026-10-13",
      "op": "normal"
     },
@@ -11620,8 +11656,8 @@
     "40147": {
      "nombre": "Antonio Rüdiger",
      "compras": 5753000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 7866560,
+     "ops": 2
     },
     "52189": {
      "nombre": "Ayoze Pérez",
