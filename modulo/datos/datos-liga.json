@@ -1328,6 +1328,16 @@
  ],
  "movimientos": [
   {
+   "id": "239",
+   "nombre": "Pedro Bigas",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 309120,
+   "tipo": "normal",
+   "fecha": "2026-10-13 23:14:50",
+   "pos": 2
+  },
+  {
    "id": "56578",
    "nombre": "Johnny Cardoso",
    "de": null,
@@ -8772,6 +8782,14 @@
      "op": "normal"
     },
     {
+     "j": "Pedro Bigas",
+     "id": "239",
+     "tipo": "venta",
+     "importe": 309120,
+     "fecha": "2026-10-13",
+     "op": "normal"
+    },
+    {
      "j": "Valentín Gómez",
      "id": "64491",
      "tipo": "venta",
@@ -9620,8 +9638,8 @@
     "239": {
      "nombre": "Pedro Bigas",
      "compras": 350000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 309120,
+     "ops": 2
     },
     "432": {
      "nombre": "José Luis Gayà",

@@ -4997,7 +4997,7 @@
    "importe": 650430,
    "tipo": "normal",
    "cuando": "2026-09-07 09:45:27",
-   "valor": 160000,
+   "valor": 205000,
    "posicion": 4,
    "puntos": 7,
    "media": 3.5,
@@ -8855,6 +8855,24 @@
      "puja": 1922050
     }
    ]
+  },
+  {
+   "idTransfer": 553377988,
+   "idJugador": "239",
+   "nombre": "Pedro Bigas",
+   "de": "Cacaculopedopis",
+   "a": "Mister",
+   "idUcDe": 15435600,
+   "idUcA": 0,
+   "importe": 309120,
+   "tipo": "normal",
+   "cuando": "2026-10-13 23:14:50",
+   "valor": 322000,
+   "posicion": 2,
+   "puntos": 5,
+   "media": 1.3,
+   "racha": "-1,-,-,3,-",
+   "otrasPujas": []
   }
  ],
  "salidas": [

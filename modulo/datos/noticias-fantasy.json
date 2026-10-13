@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-13T21:08:27.686Z",
+ "cuando": "2026-10-13T21:17:40.677Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -35,6 +35,12 @@
   },
   {
    "fecha": "13/10",
+   "titulo": "El Barça se sacude las llamas del infierno",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152728-el-barca-se-sacude-las-llamas-del-infierno",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
    "titulo": "Champions League: Villarreal 3-1 Napoli. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/24136-villarreal-napoli",
    "categoria": "partido"
@@ -43,7 +49,7 @@
    "fecha": "13/10",
    "titulo": "Champions League: Atlético 2-0 Manchester United. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/24131-atletico-man-united",
-   "categoria": "análisis"
+   "categoria": "partido"
   },
   {
    "fecha": "13/10",
@@ -476,12 +482,6 @@
    "titulo": "Gabriel Jesús completa el proceso",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152655-gabriel-jesus-completa-el-proceso",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "12/10",
-   "titulo": "Luis García, sobre el parón, la titularidad de Robbie Ure y el regreso al Ciutat",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152654-luis-garcia-sobre-el-paron-la-titularidad-de-robbie-ure-y-el-regreso-al-ciutat",
-   "categoria": "rueda de prensa"
   }
  ]
 }
