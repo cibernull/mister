@@ -1,26 +1,8 @@
 {
- "cuando": "2026-10-13T20:38:09.886Z",
+ "cuando": "2026-10-13T21:08:27.686Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "13/10",
-   "titulo": "Sigue en directo el Galatasaray - Barcelona",
-   "url": "https://www.futbolfantasy.com/partidos/24132-galatasaray-barcelona",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Sigue en directo el Atlético - Manchester United",
-   "url": "https://www.futbolfantasy.com/partidos/24131-atletico-man-united",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Sigue en directo el Villarreal - Napoli",
-   "url": "https://www.futbolfantasy.com/partidos/24136-villarreal-napoli",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 actualizadas",
@@ -50,6 +32,42 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Champions League: Villarreal 3-1 Napoli. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24136-villarreal-napoli",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Champions League: Atlético 2-0 Manchester United. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24131-atletico-man-united",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Champions League: Galatasaray 1-4 Barcelona. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24132-galatasaray-barcelona",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Vargas, Ejuke, Alfon y Peque desatan un battle royale",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152727-vargas-ejuke-alfon-y-peque-desatan-un-battle-royale",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Pedri pide el cambio por un dolor de barriga tras otra gran actuación en Estambul",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152726-pedri-pide-el-cambio-por-cansancio-tras-otra-gran-actuacion-en-estambul",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "El Rayo descansó este martes pendiente de la evolución de Ratiu",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152725-el-rayo-descanso-este-martes-pendiente-de-la-evolucion-de-ratiu",
+   "categoria": "equipo"
   },
   {
    "fecha": "13/10",
@@ -464,24 +482,6 @@
    "titulo": "Luis García, sobre el parón, la titularidad de Robbie Ure y el regreso al Ciutat",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152654-luis-garcia-sobre-el-paron-la-titularidad-de-robbie-ure-y-el-regreso-al-ciutat",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "12/10",
-   "titulo": "Luis Castro explica cómo llega el equipo tras el parón y la entrada de Ndukwe por Mandi",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152653-luis-castro-explica-como-llega-el-equipo-tras-el-paron-y-la-entrada-de-ndukwe-por-mandi",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "12/10",
-   "titulo": "Valverde fue omnipresente tras el 'milagro'",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152652-valverde-fue-omnipresente-tras-el-milagro",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "12/10",
-   "titulo": "Buchanan y Pépé, bajas en el entrenamiento vespertino de este lunes",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152651-buchanan-y-pepe-bajas-en-el-entrenamiento-vespertino-de-este-lunes",
-   "categoria": "entrenamiento"
   }
  ]
 }
