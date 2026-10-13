@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-13T10:08:04.935Z",
+ "cuando": "2026-10-13T10:38:13.072Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "13/10",
+   "titulo": "Análisis Fantasy de Dani Carvajal: jerarquía de élite con el físico bajo examen",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152678-analisis-fantasy-de-dani-carvajal-jerarquia-de-elite-con-el-fisico-bajo-examen",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 disponibles",
@@ -31,6 +37,42 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Rodrygo y Asencio, únicos futbolistas al margen este martes",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152682-rodrygo-y-asencio-unicos-futbolistas-al-margen-este-martes",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Según Sport, Raphinha tampoco llegará al Betis y apunta al PSG",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152681-segun-sport-raphinha-tampoco-llegara-al-betis-y-apunta-al-psg",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "El Valencia descansa este martes pendiente de Rioja, Foulquier y Copete",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152680-el-valencia-descansa-este-martes-pendiente-de-rioja-foulquier-y-copete",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Alineaciones probables y previa fantasy del Villarreal - Napoli",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152679-alineaciones-probables-y-previa-fantasy-del-villarreal-napoli",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Posibles alineaciones y previa fantasy del Atlético - Man United",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152677-posibles-alineaciones-y-previa-fantasy-del-atletico-man-united",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Flick medita alinear a Gordon de nueve en Estambul",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152676-flick-medita-alinear-a-gordon-de-nueve-en-estambul",
    "categoria": "análisis"
   },
   {
@@ -440,48 +482,6 @@
    "titulo": "Beitia se lesiona la rodilla en los ejercicios post partido",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152609-beitia-se-lesiona-la-rodilla-en-los-ejercicios-post-partido",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Raúl García pide el cambio por molestias en los isquiotibiales",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152608-raul-garcia-pide-el-cambio-por-molestias-en-los-isquiotibiales",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Abqar, ante una nueva oportunidad",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152607-abqar-ante-una-nueva-oportunidad",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Barrios gana rodaje antes del carrusel de partidos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152606-barrios-gana-rodaje-antes-del-carrusel-de-partidos",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Una semana para recuperar a Laporte",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152604-una-semana-para-recuperar-a-laporte",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Matarazzo analiza el triunfo y habla de Zakharyan, Pablo Marín y el partido contra el Union Saint-Gillois",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152603-matarazzo-analiza-el-triunfo-y-habla-de-zakharyan-pablo-marin-y-el-partido-contra-el-union-sa",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Hidalgo habla de la derrota, el arbitraje, los cambios y la actuación de Yeremay",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152602-hidalgo-habla-de-la-derrota-el-arbitraje-los-cambios-y-la-actuacion-de-yeremay",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Lista de Luis García con la vuelta de Rubén Vargas y la baja de Stassin",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152601-lista-de-luis-garcia-con-la-vuelta-de-ruben-vargas-y-la-baja-de-stassin",
-   "categoria": "convocatoria"
   }
  ]
 }
