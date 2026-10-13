@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-13T09:38:25.842Z",
+ "cuando": "2026-10-13T10:08:04.935Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -31,6 +31,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Dani Carvajal ya es nuevo jugador del Getafe",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152675-dani-carvajal-ya-es-nuevo-jugador-del-getafe",
+   "categoria": "mercado"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Bernardo Silva desaparece del imaginario de Mourinho",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152674-bernardo-silva-desaparece-del-imaginario-de-mourinho",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Lista de Luis García con la vuelta de Rubén Vargas y la baja de Stassin",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152601-lista-de-luis-garcia-con-la-vuelta-de-ruben-vargas-y-la-baja-de-stassin",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "La Real resiste a la furia del Dépor",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152600-la-real-resiste-a-la-furia-del-depor",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Jornada 8: Real Sociedad 3-2 Deportivo. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22502-real-sociedad-deportivo",
-   "categoria": "partido"
   }
  ]
 }
