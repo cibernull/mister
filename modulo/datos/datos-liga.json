@@ -1323,6 +1323,26 @@
  ],
  "movimientos": [
   {
+   "id": "52189",
+   "nombre": "Ayoze Pérez",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 7683800,
+   "tipo": "normal",
+   "fecha": "2026-10-13 02:57:14",
+   "pos": 4
+  },
+  {
+   "id": "5340038",
+   "nombre": "Aaron Mayol",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 1622250,
+   "tipo": "normal",
+   "fecha": "2026-10-13 02:56:59",
+   "pos": 3
+  },
+  {
    "id": "28779",
    "nombre": "Iván Romero",
    "de": "Legalize F.C (Victor)",
@@ -10557,6 +10577,22 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Aaron Mayol",
+     "id": "5340038",
+     "tipo": "venta",
+     "importe": 1622250,
+     "fecha": "2026-10-13",
+     "op": "normal"
+    },
+    {
+     "j": "Ayoze Pérez",
+     "id": "52189",
+     "tipo": "venta",
+     "importe": 7683800,
+     "fecha": "2026-10-13",
+     "op": "normal"
+    },
+    {
      "j": "Manu Sánchez",
      "id": "20131",
      "tipo": "venta",
@@ -11561,8 +11597,8 @@
     "52189": {
      "nombre": "Ayoze Pérez",
      "compras": 9050000,
-     "ventas": 5625900,
-     "ops": 3
+     "ventas": 13309700,
+     "ops": 4
     },
     "53114": {
      "nombre": "Jude Bellingham",
@@ -11711,8 +11747,8 @@
     "5340038": {
      "nombre": "Aaron Mayol",
      "compras": 578000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1622250,
+     "ops": 2
     }
    }
   },
