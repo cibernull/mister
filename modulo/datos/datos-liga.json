@@ -1328,6 +1328,16 @@
  ],
  "movimientos": [
   {
+   "id": "56578",
+   "nombre": "Johnny Cardoso",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 2047640,
+   "tipo": "normal",
+   "fecha": "2026-10-13 17:00:15",
+   "pos": 3
+  },
+  {
    "id": "70150",
    "nombre": "Javi Morcillo",
    "de": "Cacaculopedopis",
@@ -8754,6 +8764,14 @@
      "op": "normal"
     },
     {
+     "j": "Johnny Cardoso",
+     "id": "56578",
+     "tipo": "compra",
+     "importe": 2047640,
+     "fecha": "2026-10-13",
+     "op": "normal"
+    },
+    {
      "j": "Valentín Gómez",
      "id": "64491",
      "tipo": "venta",
@@ -9775,9 +9793,9 @@
     },
     "56578": {
      "nombre": "Johnny Cardoso",
-     "compras": 0,
+     "compras": 2047640,
      "ventas": 1024100,
-     "ops": 1
+     "ops": 2
     },
     "56583": {
      "nombre": "Augusto Batalla",

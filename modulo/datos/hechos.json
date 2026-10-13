@@ -5132,7 +5132,7 @@
    "importe": 8377200,
    "tipo": "normal",
    "cuando": "2026-09-08 13:21:53",
-   "valor": 4928000,
+   "valor": 5792000,
    "posicion": 1,
    "puntos": 11,
    "media": 2.2,
@@ -5150,12 +5150,17 @@
    "importe": 17100000,
    "tipo": "normal",
    "cuando": "2026-09-08 17:00:19",
-   "valor": 17737000,
+   "valor": 17786000,
    "posicion": 3,
    "puntos": 59,
    "media": 9.8,
    "racha": "4,14,4,-,6",
-   "otrasPujas": []
+   "otrasPujas": [
+    {
+     "equipo": "Mario80",
+     "puja": 17020560
+    }
+   ]
   },
   {
    "idTransfer": 546553023,
@@ -5186,7 +5191,7 @@
    "importe": 15286350,
    "tipo": "normal",
    "cuando": "2026-09-09 09:31:22",
-   "valor": 14710000,
+   "valor": 14885000,
    "posicion": 4,
    "puntos": 33,
    "media": 5.5,
@@ -5204,7 +5209,7 @@
    "importe": 3797040,
    "tipo": "normal",
    "cuando": "2026-09-09 16:53:26",
-   "valor": 1203000,
+   "valor": 1657000,
    "posicion": 3,
    "puntos": 19,
    "media": 4.8,
@@ -5222,7 +5227,7 @@
    "importe": 9082371,
    "tipo": "normal",
    "cuando": "2026-09-09 17:00:18",
-   "valor": 10022000,
+   "valor": 9581000,
    "posicion": 3,
    "puntos": 39,
    "media": 5.6,
@@ -5619,12 +5624,7 @@
    "puntos": 19,
    "media": 3.2,
    "racha": "3,4,-,1,2",
-   "otrasPujas": [
-    {
-     "equipo": "Neky F.C. (Sergio)",
-     "puja": 1951000
-    }
-   ]
+   "otrasPujas": []
   },
   {
    "idTransfer": 547761275,
@@ -8832,6 +8832,29 @@
    "media": 3.5,
    "racha": "2,4,-,7,4",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 553314706,
+   "idJugador": "56578",
+   "nombre": "Johnny Cardoso",
+   "de": "Mister",
+   "a": "Cacaculopedopis",
+   "idUcDe": 0,
+   "idUcA": 15435600,
+   "importe": 2047640,
+   "tipo": "normal",
+   "cuando": "2026-10-13 17:00:15",
+   "valor": 1922000,
+   "posicion": 3,
+   "puntos": 24,
+   "media": 4,
+   "racha": "1,4,9,4,5",
+   "otrasPujas": [
+    {
+     "equipo": "Mario80",
+     "puja": 1922050
+    }
+   ]
   }
  ],
  "salidas": [

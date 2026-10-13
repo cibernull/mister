@@ -563,6 +563,139 @@
   "equipo": "Legalize F.C (Victor)"
  },
  {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "31",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "364",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "6065",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "11186",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "17453",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "18186",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "19727",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "20141",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "24792",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "29166",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "29238",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "52377",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-13",
+  "id": "56578",
+  "de": null,
+  "a": "Cacaculopedopis"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "60210",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "65187",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "65669",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "68677",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "69281",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "71006",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "71623",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "4836242",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-13",
+  "id": "5515298",
+  "entra": false
+ },
+ {
   "tipo": "duenio",
   "dia": "2026-10-12",
   "id": "20131",

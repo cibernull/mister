@@ -3653,6 +3653,28 @@
     "topeMax": 27745150,
     "exceso": 0
    }
+  ],
+  "553314706": [
+   {
+    "idTransfer": 553314706,
+    "cuando": "2026-10-13 17:00:15",
+    "jugador": "Johnny Cardoso",
+    "equipo": "Cacaculopedopis",
+    "puja": 2047640,
+    "gana": true,
+    "topeMax": 32986858,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 553314706,
+    "cuando": "2026-10-13 17:00:15",
+    "jugador": "Johnny Cardoso",
+    "equipo": "Mario80",
+    "puja": 1922050,
+    "gana": false,
+    "topeMax": 28471300,
+    "exceso": 0
+   }
   ]
  }
 }
