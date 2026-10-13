@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-13T16:38:10.437Z",
+ "cuando": "2026-10-13T17:08:12.505Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -31,6 +31,12 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Gulácsi se pierde el Villarreal-Nápoles tras sufrir un atraco a mano armada en su domicilio",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152710-gulacsi-se-pierde-el-villarreal-napoles-tras-sufrir-un-atraco-a-mano-armada-en-su-domicilio",
    "categoria": "análisis"
   },
   {
@@ -475,12 +481,6 @@
    "fecha": "12/10",
    "titulo": "Lunes de descanso en Zubieta pendientes de las pruebas a Luken Beitia",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152635-lunes-de-descanso-en-zubieta-pendientes-de-las-pruebas-a-luken-beitia",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "12/10",
-   "titulo": "El Athletic descansa este lunes pendiente de Laporte y Nico Williams",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152634-el-athletic-descansa-este-lunes-pendiente-de-laporte-y-nico-williams",
    "categoria": "equipo"
   }
  ]
