@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-13T12:08:25.896Z",
+ "cuando": "2026-10-13T12:38:17.410Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "13/10",
-   "titulo": "Pellegrini habla de Antony, Isco, Bartra, Parrott, Morante y el Porto",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152688-pellegrini-habla-de-antony-isco-bartra-parrott-morante-el-porto",
-   "categoria": "rueda de prensa"
+   "titulo": "Bryan Zaragoza consolida su jerarquía",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152692-bryan-zaragoza-consolida-su-jerarquia",
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -41,6 +41,12 @@
   },
   {
    "fecha": "13/10",
+   "titulo": "Arrasate se presenta como entrenador, explica los motivos de su vuelta y el nuevo proyecto",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152693-arrasate-se-presenta-como-entrenador-explica-los-motivos-de-su-vuelta-y-el-nuevo-proyecto",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "13/10",
    "titulo": "Carvajal no podrá jugar la Conference con el Getafe hasta la fase eliminatoria",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152691-carvajal-no-podra-jugar-la-conference-con-el-getafe-hasta-la-fase-eliminatoria",
    "categoria": "rueda de prensa"
@@ -55,6 +61,12 @@
    "fecha": "13/10",
    "titulo": "El Sevilla recurre la tarjeta amarilla que Castrín vio en el Ciutat",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152689-el-sevilla-recurre-la-tarjeta-amarilla-que-castrin-vio-en-el-ciutat",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Pellegrini habla de Antony, Isco, Bartra, Parrott, Morante y el Porto",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152688-pellegrini-habla-de-antony-isco-bartra-parrott-morante-el-porto",
    "categoria": "rueda de prensa"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "El Rayo vuelve al trabajo pendiente de las molestias de Ratiu",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152619-el-rayo-vuelve-al-trabajo-pendiente-ratiu",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Carlos Muñiz Muñoz le otorga el tercer gol del Betis a Diego Llorente",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152618-carlos-muniz-munoz-le-otorga-el-tercer-gol-del-betis-a-diego-llorente",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Antony pasará pruebas tras terminar el partido con molestias",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152617-antony-pasara-pruebas-tras-terminar-el-partido-con-molestias",
-   "categoria": "lesión"
   }
  ]
 }
