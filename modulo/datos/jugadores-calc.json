@@ -13,7 +13,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -4196,7 +4196,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -7818,7 +7818,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "doubt",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -7908,7 +7908,7 @@
   "pv": 8567000,
   "ced": 0,
   "pos": 3,
-  "est": null,
+  "est": "red",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -11890,7 +11890,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -12070,7 +12070,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -13164,7 +13164,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -13344,7 +13344,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -14777,7 +14777,7 @@
   "pv": 2018000,
   "ced": 0,
   "pos": 4,
-  "est": null,
+  "est": "double",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -14867,7 +14867,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": null,
+  "est": "red",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -15331,7 +15331,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -16418,7 +16418,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -18883,7 +18883,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -20739,7 +20739,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -20926,7 +20926,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -21210,7 +21210,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -21457,7 +21457,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -23746,7 +23746,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -24173,7 +24173,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -25752,7 +25752,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "double",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -26299,7 +26299,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": null,
+  "est": "red",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -27108,7 +27108,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "red",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -28126,7 +28126,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -28396,7 +28396,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -30021,7 +30021,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -32866,7 +32866,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -33110,7 +33110,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -33778,7 +33778,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -33861,7 +33861,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -36417,7 +36417,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -37641,7 +37641,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -38031,7 +38031,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -38463,7 +38463,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -38829,7 +38829,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -39106,7 +39106,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -39311,7 +39311,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -39541,7 +39541,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -40319,7 +40319,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -40430,6 +40430,103 @@
   "asis": 0,
   "edad": 27,
   "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "328",
+  "nombre": "Dani Carvajal",
+  "valor": 1082000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": null,
+  "mes": null,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 9,
+  "riv": 14,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 34,
+  "js": [
+   [
+    1,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    3,
+    0,
+    ""
+   ]
+  ],
   "p": 0,
   "d": 0
  },
@@ -40672,7 +40769,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -40734,7 +40831,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -40796,7 +40893,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -41201,7 +41298,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -41457,7 +41554,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -41594,7 +41691,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -41781,7 +41878,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -42007,7 +42104,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -42332,7 +42429,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -42505,7 +42602,7 @@
   "pv": 160000,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -42692,7 +42789,7 @@
   "pv": null,
   "ced": 0,
   "pos": 1,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -42782,7 +42879,7 @@
   "pv": null,
   "ced": 0,
   "pos": 1,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -42948,7 +43045,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -43038,7 +43135,7 @@
   "pv": null,
   "ced": 0,
   "pos": 1,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -43571,7 +43668,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -43708,7 +43805,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -43805,7 +43902,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -43895,7 +43992,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -43992,7 +44089,7 @@
   "pv": null,
   "ced": 0,
   "pos": 1,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -44331,7 +44428,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -44379,7 +44476,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -44502,7 +44599,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -44585,7 +44682,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -44668,7 +44765,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -44831,7 +44928,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -44976,7 +45073,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -45114,7 +45211,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -45957,7 +46054,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "red",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -46047,7 +46144,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "other",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -46467,7 +46564,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": null,
+  "est": "red",
   "bl": 0,
   "sub": 0,
   "racha": [

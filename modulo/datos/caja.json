@@ -1,6 +1,14 @@
 {
- "saldo": 924600,
+ "saldo": 1874600,
  "apuntes": [
+  {
+   "cuando": 1791883037,
+   "fecha": "2026-10-13 11:17",
+   "motivo": "Jornada 8",
+   "tipo": "Bonificación",
+   "importe": 950000,
+   "saldo": 1874600
+  },
   {
    "cuando": 1791731478,
    "fecha": "2026-10-11 17:11",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -1869890,
    "saldo": 10085640
-  },
-  {
-   "cuando": 1789009200,
-   "fecha": "2026-09-10 05:00",
-   "motivo": "Xavi Espart a Mister",
-   "tipo": "Compra",
-   "importe": -4821590,
-   "saldo": 11955530
   }
  ]
 }

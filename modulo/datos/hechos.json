@@ -9357,6 +9357,69 @@
      "premio": 25000
     }
    ]
+  },
+  {
+   "idJornada": 4049,
+   "jornada": 8,
+   "cuando": "2026-10-13 11:18:05",
+   "posiciones": [
+    {
+     "idUc": 12493752,
+     "puntos": 62,
+     "puesto": 1,
+     "valorPlantilla": 93280000,
+     "premio": 1550000
+    },
+    {
+     "idUc": 12493688,
+     "puntos": 44,
+     "puesto": 2,
+     "valorPlantilla": 112040000,
+     "premio": 1100000
+    },
+    {
+     "idUc": 13435216,
+     "puntos": 42,
+     "puesto": 3,
+     "valorPlantilla": 71096000,
+     "premio": 1050000
+    },
+    {
+     "idUc": 12493763,
+     "puntos": 38,
+     "puesto": 4,
+     "valorPlantilla": 95925000,
+     "premio": 950000
+    },
+    {
+     "idUc": 12493758,
+     "puntos": 37,
+     "puesto": 5,
+     "valorPlantilla": 43684000,
+     "premio": 925000
+    },
+    {
+     "idUc": 15435600,
+     "puntos": 22,
+     "puesto": 6,
+     "valorPlantilla": 62141000,
+     "premio": 550000
+    },
+    {
+     "idUc": 13428410,
+     "puntos": 11,
+     "puesto": 7,
+     "valorPlantilla": 19791000,
+     "premio": 275000
+    },
+    {
+     "idUc": 13491767,
+     "puntos": -5,
+     "puesto": 8,
+     "valorPlantilla": 5181000,
+     "premio": 0
+    }
+   ]
   }
  ]
 }
