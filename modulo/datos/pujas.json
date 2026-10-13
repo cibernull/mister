@@ -3641,6 +3641,18 @@
     "topeMax": 12253640,
     "exceso": 116860
    }
+  ],
+  "553190420": [
+   {
+    "idTransfer": 553190420,
+    "cuando": "2026-10-13 05:00:21",
+    "jugador": "Ángel Fortuño",
+    "equipo": "Mario80",
+    "puja": 282350,
+    "gana": true,
+    "topeMax": 27745150,
+    "exceso": 0
+   }
   ]
  }
 }
