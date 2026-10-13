@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-12T23:08:08.272Z",
+ "cuando": "2026-10-13T00:08:22.970Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -31,6 +31,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "El parte médico oficial de Beitia confirma un esguince de tobillo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152672-el-parte-medico-oficial-de-beitia-confirma-un-esguince-de-tobillo",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Hugo Duro de ver",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152671-hugo-duro-de-ver",
    "categoria": "análisis"
   },
   {
@@ -74,6 +86,12 @@
    "titulo": "Luis Castro analiza la reacción del equipo y habla de Iván Romero, Musuayi, Ndukwe y los ajustes tácticos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152662-luis-castro-analiza-la-reaccion-del-equipo-y-habla-de-ivan-romero-musuayi-ndukwe-y-los-ajuste",
    "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "12/10",
+   "titulo": "El Getafe vuelve al trabajo pendiente de sus cuatro nuevos lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152673-el-getafe-vuelve-al-trabajo-pendiente-de-sus-cuatro-nuevos-lesionados",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "12/10",
@@ -464,24 +482,6 @@
    "titulo": "Jornada 8: Real Sociedad 3-2 Deportivo. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22502-real-sociedad-deportivo",
    "categoria": "partido"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Amatucci ve la roja por una falta a Oyarzabal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152598-amatucci-ve-la-roja-por-una-falta-a-oyarzabal",
-   "categoria": "sanción"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Tenaglia volverá a proyectarse en ataque",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152597-tenaglia-volvera-a-proyectarse-en-ataque",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "11/10",
-   "titulo": "Ramis destaca el trabajo realizado durante el parón y habla de Raúl García, Budimir y el Betis",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152596-ramis-destaca-el-trabajo-realizado-durante-el-paron-y-habla-de-raul-garcia-budimir-y-el-betis",
-   "categoria": "rueda de prensa"
   }
  ]
 }
