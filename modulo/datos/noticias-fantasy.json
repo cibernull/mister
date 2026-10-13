@@ -1,8 +1,26 @@
 {
- "cuando": "2026-10-13T19:08:07.541Z",
+ "cuando": "2026-10-13T19:38:05.373Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "13/10",
+   "titulo": "Sigue en directo el Galatasaray - Barcelona",
+   "url": "https://www.futbolfantasy.com/partidos/24132-galatasaray-barcelona",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Sigue en directo el Atlético - Manchester United",
+   "url": "https://www.futbolfantasy.com/partidos/24131-atletico-man-united",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Sigue en directo el Villarreal - Napoli",
+   "url": "https://www.futbolfantasy.com/partidos/24136-villarreal-napoli",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 actualizadas",
@@ -32,6 +50,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Simeone habló de Koke, Llorente y Julián Alvarez antes del partido",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152718-simeone-hablo-de-koke-llorente-y-julian-alvarez-antes-del-partido",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Flick explica la titularidad de Olmo y la exigencia del Galatasaray",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152717-flick-explica-la-titularidad-de-olmo-y-la-exigencia-del-galatasaray",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "13/10",
@@ -452,36 +482,6 @@
    "titulo": "Flick habla de Gabriel Jesús, el Galatasaray y las opciones de ganar la Champions",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152643-flick-habla-de-gabriel-jesus-el-galatasaray-y-las-opciones-de-ganar-la-champions",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "12/10",
-   "titulo": "Íñigo Pérez explica cómo llega el equipo y habla de Pépé, De Bruyne, Rafa Marín y las rotaciones",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152642-inigo-perez-explica-como-llega-el-equipo-y-habla-de-pepe-de-bruyne-rafa-marin-y-las-rotacione",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "12/10",
-   "titulo": "Juan Cruz recae de sus molestias musculares y se ejercita al margen",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152641-juan-cruz-recae-de-sus-molestias-musculares-y-se-ejercita-al-margen",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "12/10",
-   "titulo": "El Getafe recibe el OK de LaLiga y llega a un acuerdo con Carvajal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152640-el-getafe-recibe-el-ok-de-laliga-y-llega-a-un-acuerdo-con-carvajal",
-   "categoria": "mercado"
-  },
-  {
-   "fecha": "12/10",
-   "titulo": "El Espanyol descansa este lunes con la portería en el foco",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152639-el-espanyol-descansa-este-lunes-con-la-porteria-en-el-foco",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "12/10",
-   "titulo": "El Real Madrid recurrirá la roja a Vinicius y la amarilla a Konaté",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152638-el-real-madrid-recurrira-la-roja-a-vinicius-y-la-amarilla-a-konate",
-   "categoria": "sanción"
   }
  ]
 }
