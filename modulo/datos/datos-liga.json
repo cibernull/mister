@@ -1324,9 +1324,44 @@
    "id": "29167",
    "nombre": "Ángel Fortuño",
    "valor": 353000
+  },
+  {
+   "id": "11186",
+   "nombre": "Dani Raba",
+   "valor": 346000
   }
  ],
  "movimientos": [
+  {
+   "id": "11186",
+   "nombre": "Dani Raba",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 295000,
+   "tipo": "normal",
+   "fecha": "2026-10-14 05:00:23",
+   "pos": 4
+  },
+  {
+   "id": "6065",
+   "nombre": "Pere Milla",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 528000,
+   "tipo": "normal",
+   "fecha": "2026-10-14 05:00:23",
+   "pos": 4
+  },
+  {
+   "id": "71623",
+   "nombre": "Roger Hinojo",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 2030040,
+   "tipo": "normal",
+   "fecha": "2026-10-14 05:00:23",
+   "pos": 2
+  },
   {
    "id": "239",
    "nombre": "Pedro Bigas",
@@ -7458,6 +7493,22 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Pere Milla",
+     "id": "6065",
+     "tipo": "compra",
+     "importe": 528000,
+     "fecha": "2026-10-14",
+     "op": "normal"
+    },
+    {
+     "j": "Dani Raba",
+     "id": "11186",
+     "tipo": "compra",
+     "importe": 295000,
+     "fecha": "2026-10-14",
+     "op": "normal"
+    },
+    {
      "j": "Nathan Saliba",
      "id": "3845074",
      "tipo": "venta",
@@ -8389,6 +8440,18 @@
      "ventas": 5495050,
      "ops": 2
     },
+    "6065": {
+     "nombre": "Pere Milla",
+     "compras": 528000,
+     "ventas": 0,
+     "ops": 1
+    },
+    "11186": {
+     "nombre": "Dani Raba",
+     "compras": 295000,
+     "ventas": 0,
+     "ops": 1
+    },
     "12915": {
      "nombre": "Cucho Hernández",
      "compras": 9533010,
@@ -8765,6 +8828,14 @@
   },
   "Cacaculopedopis": {
    "movimientos": [
+    {
+     "j": "Roger Hinojo",
+     "id": "71623",
+     "tipo": "compra",
+     "importe": 2030040,
+     "fecha": "2026-10-14",
+     "op": "normal"
+    },
     {
      "j": "Javi Morcillo",
      "id": "70150",
@@ -9985,9 +10056,9 @@
     },
     "71623": {
      "nombre": "Roger Hinojo",
-     "compras": 937200,
+     "compras": 2967240,
      "ventas": 1681980,
-     "ops": 2
+     "ops": 3
     },
     "3848780": {
      "nombre": "Johaneko Louis-Jean",

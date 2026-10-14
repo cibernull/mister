@@ -2156,8 +2156,8 @@
   "semana": 188000,
   "sem7": 917000,
   "mes": 3171000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 8743000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -9573,8 +9573,8 @@
   "semana": 24000,
   "sem7": -103000,
   "mes": -1117000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 10157000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -13444,8 +13444,8 @@
   "semana": -44000,
   "sem7": -484000,
   "mes": -2949000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 2032000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -17259,8 +17259,8 @@
   "semana": -20000,
   "sem7": -15000,
   "mes": 888000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1070000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -19170,8 +19170,8 @@
   "semana": -43000,
   "sem7": -310000,
   "mes": -1003000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1000000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -24183,8 +24183,8 @@
   "semana": -45000,
   "sem7": -397000,
   "mes": -785000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 510000,
   "ced": 0,
   "pos": 4,
   "est": "doubt",
@@ -27859,8 +27859,8 @@
   "semana": -99000,
   "sem7": -757000,
   "mes": -3606000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 5001000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -28690,8 +28690,8 @@
   "semana": -81000,
   "sem7": -1042000,
   "mes": -3714000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 4000000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -32105,8 +32105,8 @@
   "semana": 0,
   "sem7": -37000,
   "mes": -1033000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 201000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -33609,8 +33609,8 @@
   "semana": -16000,
   "sem7": -52000,
   "mes": 535000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1016000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -38055,8 +38055,8 @@
   "semana": 33000,
   "sem7": -9000,
   "mes": 33000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 193000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -39999,8 +39999,8 @@
   "semana": 11000,
   "sem7": 11000,
   "mes": 11000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 171000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -43318,6 +43318,89 @@
   "d": 0
  },
  {
+  "id": "71638",
+  "nombre": "Laro Gómez",
+  "valor": 163000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -41000,
+  "sem7": 3000,
+  "mes": 3000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 1490,
+  "riv": 50,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 19,
+  "js": [
+   [
+    1,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    19,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "70952",
   "nombre": "Germán Parreño",
   "valor": 163000,
@@ -43415,89 +43498,6 @@
   "d": 0
  },
  {
-  "id": "71638",
-  "nombre": "Laro Gómez",
-  "valor": 163000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -41000,
-  "sem7": 3000,
-  "mes": 3000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1490,
-  "riv": 50,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 19,
-  "js": [
-   [
-    1,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    19,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71019",
   "nombre": "Kazunari Kita",
   "valor": 161000,
@@ -43573,6 +43573,96 @@
     7,
     null,
     19,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "27422",
+  "nombre": "Cristian Rivero",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -5000,
+  "mes": -14000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 19,
+  "riv": 1,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 28,
+  "js": [
+   [
+    1,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    16,
     0,
     ""
    ]
@@ -43994,96 +44084,6 @@
     8,
     null,
     20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "27422",
-  "nombre": "Cristian Rivero",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -5000,
-  "mes": -14000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 19,
-  "riv": 1,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 28,
-  "js": [
-   [
-    1,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    16,
     0,
     ""
    ]
@@ -44972,54 +44972,6 @@
   "d": 0
  },
  {
-  "id": "17450",
-  "nombre": "Aitor Ruibal",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -117000,
-  "mes": -103000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "doubt",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 4,
-  "riv": 3,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 30,
-  "js": [
-   [
-    6,
-    null,
-    9,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71012",
   "nombre": "Carlos López",
   "valor": 160000,
@@ -45117,15 +45069,84 @@
   "d": 0
  },
  {
-  "id": "71003",
-  "nombre": "Diego Murillo",
+  "id": "65188",
+  "nombre": "Thiago Pitarch",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
   "semana": 0,
   "sem7": 0,
-  "mes": -5000,
+  "mes": -61000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 15,
+  "riv": 17,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 19,
+  "js": [
+   [
+    5,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    20,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "17450",
+  "nombre": "Aitor Ruibal",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -117000,
+  "mes": -103000,
   "mk": 0,
   "pv": null,
   "ced": 0,
@@ -45140,8 +45161,8 @@
    null,
    null
   ],
-  "eq": 13,
-  "riv": 16,
+  "eq": 4,
+  "riv": 3,
   "casa": 1,
   "gol": 0,
   "tar": 0,
@@ -45151,109 +45172,12 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 25,
+  "edad": 30,
   "js": [
    [
     6,
-    null,
-    20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "29238",
-  "nombre": "Arnau Comas",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -14000,
-  "sem7": -15000,
-  "mes": -37000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 6,
-  "riv": 12,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 26,
-  "js": [
-   [
-    1,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    5,
     null,
     9,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    16,
     0,
     ""
    ]
@@ -45352,75 +45276,6 @@
   "d": 0
  },
  {
-  "id": "65188",
-  "nombre": "Thiago Pitarch",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": -61000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 15,
-  "riv": 17,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 19,
-  "js": [
-   [
-    5,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "65187",
   "nombre": "Alejandro Rego",
   "valor": 160000,
@@ -45496,6 +45351,54 @@
     7,
     null,
     48,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "71003",
+  "nombre": "Diego Murillo",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -5000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "doubt",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 13,
+  "riv": 16,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    6,
+    null,
+    20,
     0,
     ""
    ]
@@ -45685,6 +45588,103 @@
   "asis": 0,
   "edad": 31,
   "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "29238",
+  "nombre": "Arnau Comas",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -14000,
+  "sem7": -15000,
+  "mes": -37000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 6,
+  "riv": 12,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 26,
+  "js": [
+   [
+    1,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    16,
+    0,
+    ""
+   ]
+  ],
   "p": 0,
   "d": 0
  },

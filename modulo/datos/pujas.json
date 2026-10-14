@@ -3675,6 +3675,42 @@
     "topeMax": 28471300,
     "exceso": 0
    }
+  ],
+  "553419841": [
+   {
+    "idTransfer": 553419841,
+    "cuando": "2026-10-14 05:00:23",
+    "jugador": "Roger Hinojo",
+    "equipo": "Cacaculopedopis",
+    "puja": 2030040,
+    "gana": true,
+    "topeMax": 28574248,
+    "exceso": 0
+   }
+  ],
+  "553425878": [
+   {
+    "idTransfer": 553425878,
+    "cuando": "2026-10-14 05:00:23",
+    "jugador": "Pere Milla",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 528000,
+    "gana": true,
+    "topeMax": 32388850,
+    "exceso": 0
+   }
+  ],
+  "553425932": [
+   {
+    "idTransfer": 553425932,
+    "cuando": "2026-10-14 05:00:23",
+    "jugador": "Dani Raba",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 295000,
+    "gana": true,
+    "topeMax": 32388850,
+    "exceso": 0
+   }
   ]
  }
 }
