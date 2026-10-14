@@ -1122,6 +1122,14 @@
   ],
   "banquillo": [
    {
+    "id": "11186",
+    "nombre": "Dani Raba",
+    "puesto": 4,
+    "puntos": null,
+    "jugo": false,
+    "capitan": false
+   },
+   {
     "id": "4836153",
     "nombre": "Jonathan David",
     "puesto": 4,
@@ -1135,6 +1143,14 @@
     "puesto": 4,
     "puntos": 10,
     "jugo": true,
+    "capitan": false
+   },
+   {
+    "id": "6065",
+    "nombre": "Pere Milla",
+    "puesto": 4,
+    "puntos": null,
+    "jugo": false,
     "capitan": false
    },
    {

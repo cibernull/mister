@@ -1,6 +1,22 @@
 {
- "saldo": 1874600,
+ "saldo": 1051600,
  "apuntes": [
+  {
+   "cuando": 1791946800,
+   "fecha": "2026-10-14 05:00",
+   "motivo": "Pere Milla a Mister",
+   "tipo": "Compra",
+   "importe": -528000,
+   "saldo": 1051600
+  },
+  {
+   "cuando": 1791946800,
+   "fecha": "2026-10-14 05:00",
+   "motivo": "Dani Raba a Mister",
+   "tipo": "Compra",
+   "importe": -295000,
+   "saldo": 1579600
+  },
   {
    "cuando": 1791883037,
    "fecha": "2026-10-13 11:17",
@@ -464,22 +480,6 @@
    "tipo": "Venta",
    "importe": 6312600,
    "saldo": 17816800
-  },
-  {
-   "cuando": 1789139093,
-   "fecha": "2026-09-11 17:04",
-   "motivo": "Hector Fort a Mister",
-   "tipo": "Venta",
-   "importe": 1418560,
-   "saldo": 11504200
-  },
-  {
-   "cuando": 1789052400,
-   "fecha": "2026-09-10 17:00",
-   "motivo": "Pablo García a Mister",
-   "tipo": "Compra",
-   "importe": -1869890,
-   "saldo": 10085640
   }
  ]
 }
