@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-14T11:38:19.481Z",
+ "cuando": "2026-10-14T11:56:34.130Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -35,6 +35,18 @@
   },
   {
    "fecha": "14/10",
+   "titulo": "Juan Cruz sigue al margen del grupo este miércoles",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152766-juan-cruz-sigue-al-margen-del-grupo-este-miercoles",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Primer parte medico de Borja Iglesias y Pablo Duran",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152765-primer-parte-medico-de-borja-iglesias-y-pablo-duran",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "14/10",
    "titulo": "Borja Iglesias y Pablo Durán se caen para recibir a la Juventus, pero vuelve Antañón",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152764-borja-iglesias-y-pablo-duran-se-caen-para-recibir-a-la-juventus-pero-vuelve-antanon",
    "categoria": "convocatoria"
@@ -47,9 +59,9 @@
   },
   {
    "fecha": "14/10",
-   "titulo": "Iván Azón, baja de última hora para viajar a Craiova",
+   "titulo": "Iván Azón no podrá jugar en la Conference al no estar inscrito",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152762-ivan-azon-baja-de-ultima-hora-para-viajar-a-craiova",
-   "categoria": "lesión"
+   "categoria": "sanción"
   },
   {
    "fecha": "14/10",
@@ -470,18 +482,6 @@
    "titulo": "Arrasate se presenta como entrenador, explica los motivos de su vuelta y el nuevo proyecto",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152693-arrasate-se-presenta-como-entrenador-explica-los-motivos-de-su-vuelta-y-el-nuevo-proyecto",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Carvajal no podrá jugar la Conference con el Getafe hasta la fase eliminatoria",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152691-carvajal-no-podra-jugar-la-conference-con-el-getafe-hasta-la-fase-eliminatoria",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Osasuna descansa antes del estreno de Arrasate en Tajonar y pendientes de la enfermería",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152690-osasuna-descansa-antes-del-estreno-de-arrasate-en-tajonar-y-pendientes-de-la-enfermeria",
-   "categoria": "equipo"
   }
  ]
 }
