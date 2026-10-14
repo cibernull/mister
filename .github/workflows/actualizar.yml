@@ -173,7 +173,14 @@ jobs:
           echo "No pude guardar tras tres intentos."
           exit 1
 
+      # Si el sitio de Pages no existe, lo crea en vez de tumbar la pasada. El
+      # 14 de octubre el repositorio pasó a privado un rato y GitHub desactivó
+      # Pages —en el plan gratuito no hay Pages en repos privados—: la web se
+      # quedó en 404 y cada media hora llegaba un correo de fallo. Los datos sí
+      # se guardaron, porque el commit va antes que esto.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: datos/sitio
