@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-14T21:38:35.504Z",
+ "cuando": "2026-10-14T22:08:19.714Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -7,18 +7,6 @@
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 actualizadas",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "12/10",
-   "titulo": "Disponibles las alineaciones probables para la J2 de UEFA Champions League",
-   "url": "https://www.futbolfantasy.com/champions/posibles-alineaciones",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "06/10",
-   "titulo": "Participa en el primer reto del Fantasy✨ 26/27: Resiliencia del portero",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152233-participa-en-el-primer-reto-del-fantasy-26-27-resiliencia-del-portero",
    "categoria": "análisis"
   },
   {
@@ -31,6 +19,12 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Arda Güler y alguna rotación más para recibir al Sevilla",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152803-arda-guler-y-alguna-rotacion-mas-para-recibir-al-sevilla",
    "categoria": "análisis"
   },
   {
@@ -481,6 +475,12 @@
    "fecha": "13/10",
    "titulo": "Champions League: Villarreal 3-1 Napoli. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/24136-villarreal-napoli",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "13/10",
+   "titulo": "Champions League: Atlético 2-0 Manchester United. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24131-atletico-man-united",
    "categoria": "partido"
   }
  ]
