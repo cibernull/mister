@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-14T19:08:19.744Z",
+ "cuando": "2026-10-14T19:38:27.136Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -7,6 +7,12 @@
    "fecha": "14/10",
    "titulo": "Sigue en directo el Roma - Real Madrid",
    "url": "https://www.futbolfantasy.com/partidos/24139-roma-real-madrid",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Sigue en directo el Betis - Porto",
+   "url": "https://www.futbolfantasy.com/partidos/24143-betis-porto",
    "categoria": "análisis"
   },
   {
@@ -41,9 +47,33 @@
   },
   {
    "fecha": "14/10",
-   "titulo": "Sigue en directo el Betis - Porto",
-   "url": "https://www.futbolfantasy.com/partidos/24143-betis-porto",
+   "titulo": "Aguirre probó a Sato por la izquierda, pero en dos onces mezclados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152794-aguirre-probo-a-sato-por-la-izquierda-pero-en-dos-onces-mezclados",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Competición retira la amarilla que Konaté vio contra el Villarreal y deja de estar apercibido",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152793-competicion-retira-la-amarilla-que-konate-vio-contra-el-villarreal-y-deja-de-estar-apercibido",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "El Getafe se ejercita en Craiova sin Carvajal ni los lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152792-el-getafe-se-ejercita-en-craiova-sin-carvajal-ni-los-lesionados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Sergio Gómez habla del Anderlecht, su estado físico y el plan de juego",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152791-sergio-gomez-habla-del-anderlecht-su-estado-fisico-y-el-plan-de-juego",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Matarazzo habla de Héctor Fort, Gorrotxategi, Turrientes, Yangel Herrera, la portería y el Union Saint-Gillois",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152790-matarazzo-habla-de-hector-fort-gorrotxategi-turrientes-yangel-herrera-la-porteria-y-el-union-",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "14/10",
@@ -452,36 +482,6 @@
    "titulo": "Beitia, Aramburu y Odriozola, bajas en la vuelta al trabajo de la Real",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152722-beitia-aramburu-y-odriozola-bajas-en-la-vuelta-al-trabajo-de-la-real",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Posibles alineaciones y previa fantasy del Roma - Real Madrid",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152721-posibles-alineaciones-y-previa-fantasy-del-roma-real-madrid",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Posibles alineaciones y previa fantasy del Betis - Porto",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152720-posibles-alineaciones-y-previa-fantasy-del-betis-porto",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Íñigo Pérez habla de Gulácsi, el Napoli y la ilusión por la Champions",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152719-inigo-perez-habla-de-gulacsi-el-napoli-y-la-ilusion-por-la-champions",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Simeone habló de Koke, Llorente y Julián Alvarez antes del partido",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152718-simeone-hablo-de-koke-llorente-y-julian-alvarez-antes-del-partido",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Flick explica la titularidad de Olmo y la exigencia del Galatasaray",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152717-flick-explica-la-titularidad-de-olmo-y-la-exigencia-del-galatasaray",
-   "categoria": "rueda de prensa"
   }
  ]
 }
