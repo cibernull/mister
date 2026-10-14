@@ -41656,6 +41656,75 @@
   "d": 1
  },
  {
+  "id": "59532",
+  "nombre": "Marash Kumbulla",
+  "valor": 193000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 33000,
+  "sem7": 17000,
+  "mes": 33000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 14,
+  "riv": 9,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 26,
+  "js": [
+   [
+    1,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    50,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 1
+ },
+ {
   "id": "4947926",
   "nombre": "Kevin Lomónaco",
   "valor": 193000,
@@ -41744,75 +41813,6 @@
   ],
   "p": 0,
   "d": 0
- },
- {
-  "id": "59532",
-  "nombre": "Marash Kumbulla",
-  "valor": 193000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 33000,
-  "sem7": 17000,
-  "mes": 33000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 14,
-  "riv": 9,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 26,
-  "js": [
-   [
-    1,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    50,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 1
  },
  {
   "id": "59089",
@@ -41938,6 +41938,46 @@
   "d": 0
  },
  {
+  "id": "55452",
+  "nombre": "Sergi Canós",
+  "valor": 184000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 24000,
+  "sem7": 24000,
+  "mes": -2000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 19,
+  "riv": 1,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 29,
+  "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "217",
   "nombre": "Dimitri Foulquier",
   "valor": 184000,
@@ -41989,46 +42029,6 @@
     ""
    ]
   ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "55452",
-  "nombre": "Sergi Canós",
-  "valor": 184000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 24000,
-  "sem7": 24000,
-  "mes": -2000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 19,
-  "riv": 1,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 29,
-  "js": [],
   "p": 0,
   "d": 0
  },
@@ -43768,46 +43768,6 @@
   "d": 0
  },
  {
-  "id": "28787",
-  "nombre": "Diego López",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -5000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 19,
-  "riv": 1,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 24,
-  "js": [],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "19524",
   "nombre": "Iker Losada",
   "valor": 160000,
@@ -44092,6 +44052,46 @@
   "d": 0
  },
  {
+  "id": "28787",
+  "nombre": "Diego López",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -5000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 19,
+  "riv": 1,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 24,
+  "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "70997",
   "nombre": "Aarón Ochoa",
   "valor": 160000,
@@ -44132,6 +44132,89 @@
     1,
     null,
     2,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "65187",
+  "nombre": "Alejandro Rego",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -14000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 1,
+  "riv": 19,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    48,
     0,
     ""
    ]
@@ -44600,103 +44683,6 @@
   "d": 0
  },
  {
-  "id": "68711",
-  "nombre": "Obed Vargas",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -38000,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 2,
-  "riv": 8,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    48,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71506",
   "nombre": "Rubén López",
   "valor": 160000,
@@ -45138,6 +45124,96 @@
   "d": 0
  },
  {
+  "id": "64458",
+  "nombre": "Pablo Campos",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -9000,
+  "sem7": -15000,
+  "mes": -28000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 12,
+  "riv": 6,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 24,
+  "js": [
+   [
+    1,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    17,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "17450",
   "nombre": "Aitor Ruibal",
   "valor": 160000,
@@ -45276,89 +45352,6 @@
   "d": 0
  },
  {
-  "id": "65187",
-  "nombre": "Alejandro Rego",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -14000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1,
-  "riv": 19,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    48,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "71003",
   "nombre": "Diego Murillo",
   "valor": 160000,
@@ -45399,96 +45392,6 @@
     6,
     null,
     20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "64458",
-  "nombre": "Pablo Campos",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -9000,
-  "sem7": -15000,
-  "mes": -28000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 12,
-  "riv": 6,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 24,
-  "js": [
-   [
-    1,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    17,
     0,
     ""
    ]
@@ -46075,6 +45978,103 @@
     7,
     null,
     2,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "68711",
+  "nombre": "Obed Vargas",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -38000,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 2,
+  "riv": 8,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    48,
     0,
     ""
    ]
