@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-14T11:08:19.045Z",
+ "cuando": "2026-10-14T11:21:02.150Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -35,13 +35,25 @@
   },
   {
    "fecha": "14/10",
+   "titulo": "Iván Azón, baja de última hora para viajar a Craiova",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152762-ivan-azon-baja-de-ultima-hora-para-viajar-a-craiova",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Bright Ede busca estabilidad entre los bandazos de Hidalgo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152761-bright-ede-busca-estabilidad-entre-los-bandazos-de-hidalgo",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/10",
    "titulo": "Nico Williams entra en la recta final",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152760-nico-williams-entra-en-la-recta-final",
    "categoria": "lesión"
   },
   {
    "fecha": "14/10",
-   "titulo": "Enes Ünal, Romero, Andrés García, Mangala y Carvajal se quedan en Getafe",
+   "titulo": "Enes Ünal, Romero, Mangala, Iván Azón y Carvajal se quedan en Getafe",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152759-enes-unal-romero-andres-garcia-mangala-y-carvajal-se-quedan-en-getafe",
    "categoria": "convocatoria"
   },
@@ -470,18 +482,6 @@
    "titulo": "Pellegrini habla de Antony, Isco, Bartra, Parrott, Morante y el Porto",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152688-pellegrini-habla-de-antony-isco-bartra-parrott-morante-el-porto",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Laporta ensalza el juego del Barça, elogia a Flick, habla de Yamal y apunta a la Champions",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152687-laporta-ensalza-el-juego-del-barca-elogia-a-flick-habla-de-yamal-y-apunta-a-la-champions",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Carvajal completa su primera sesión con el Getafe y Andrés García entrena con normalidad",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152686-carvajal-completa-su-primera-sesion-con-el-getafe-y-andres-garcia-entrena-con-normalidad",
-   "categoria": "entrenamiento"
   }
  ]
 }
