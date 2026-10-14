@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-14T21:08:28.049Z",
+ "cuando": "2026-10-14T21:38:35.504Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -31,6 +31,24 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Pellegrini podría utilizar varios futbolistas descansados contra el Barcelona",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152802-pellegrini-podria-utilizar-varios-futbolistas-descansados-contra-el-barcelona",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "El beticismo vuelve a volar sobre Europa",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152801-el-beticismo-vuelve-a-volar-sobre-europa",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "La bacanal romana termina en clímax blanco",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152800-la-bacanal-romana-termina-en-climax-blanco",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Champions League: Villarreal 3-1 Napoli. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/24136-villarreal-napoli",
    "categoria": "partido"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Champions League: Atlético 2-0 Manchester United. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/24131-atletico-man-united",
-   "categoria": "partido"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Champions League: Galatasaray 1-4 Barcelona. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/24132-galatasaray-barcelona",
-   "categoria": "partido"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Vargas, Ejuke, Alfon y Peque desatan un battle royale",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152727-vargas-ejuke-alfon-y-peque-desatan-un-battle-royale",
-   "categoria": "análisis"
   }
  ]
 }
