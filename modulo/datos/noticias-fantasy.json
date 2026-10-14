@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-14T22:38:17.497Z",
+ "cuando": "2026-10-14T23:08:15.740Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -23,6 +23,12 @@
   },
   {
    "fecha": "15/10",
+   "titulo": "Pellegrini valora el triunfo y habla de Isco, Abde, Ortiz, Cucho, Marc Roca y el Porto",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152808-pellegrini-valora-el-triunfo-y-habla-de-isco-abde-ortiz-cucho-marc-roca-y-el-porto",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "15/10",
    "titulo": "Posibles alineaciones y previa fantasy del Universitatea Craiova - Getafe",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152807-posibles-alineaciones-y-previa-fantasy-del-u-craiova-getafe",
    "categoria": "análisis"
@@ -38,6 +44,12 @@
    "titulo": "Vinícius explica su enfado por el cambio, cuestiona la sanción y el arbitraje y asume los pitos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152805-vinicius-explica-su-enfado-por-el-cambio-cuestiona-la-sancion-y-el-arbitraje-y-asume-los-pito",
    "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "El Deportivo completó otro entrenamiento el miércoles sin recuperar lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152809-el-deportivo-completo-otro-entrenamiento-el-miercoles-sin-recuperar-lesionados",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "14/10",
@@ -470,18 +482,6 @@
    "titulo": "Kike García y Jofre siguen con sus procesos de recuperación al margen del grupo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152732-kike-garcia-y-jofre-siguen-con-sus-procesos-de-recuperacion-al-margen-del-grupo",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "El Alavés retoma el trabajo en Ibaia con dos grandes dudas en el once",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152731-el-alaves-retoma-el-trabajo-en-ibaia-con-dos-grandes-dudas-en-el-once",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "El Villarreal le enseña al Napoli la ermita de San Pascual",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152730-el-villarreal-le-ensena-al-napoli-la-ermita-de-san-pascual",
-   "categoria": "análisis"
   }
  ]
 }
