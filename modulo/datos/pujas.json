@@ -3711,6 +3711,30 @@
     "topeMax": 32388850,
     "exceso": 0
    }
+  ],
+  "553521767": [
+   {
+    "idTransfer": 553521767,
+    "cuando": "2026-10-14 17:00:15",
+    "jugador": "Abiel Osorio",
+    "equipo": "Cacaculopedopis",
+    "puja": 1070000,
+    "gana": true,
+    "topeMax": 28574248,
+    "exceso": 0
+   }
+  ],
+  "553523328": [
+   {
+    "idTransfer": 553523328,
+    "cuando": "2026-10-14 17:00:15",
+    "jugador": "Pau Navarro",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1766000,
+    "gana": true,
+    "topeMax": 30105310,
+    "exceso": 0
+   }
   ]
  }
 }

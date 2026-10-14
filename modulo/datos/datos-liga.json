@@ -1329,9 +1329,34 @@
    "id": "11186",
    "nombre": "Dani Raba",
    "valor": 346000
+  },
+  {
+   "id": "68465",
+   "nombre": "Abiel Osorio",
+   "valor": 1070000
   }
  ],
  "movimientos": [
+  {
+   "id": "60210",
+   "nombre": "Pau Navarro",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 1766000,
+   "tipo": "normal",
+   "fecha": "2026-10-14 17:00:15",
+   "pos": 2
+  },
+  {
+   "id": "68465",
+   "nombre": "Abiel Osorio",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 1070000,
+   "tipo": "normal",
+   "fecha": "2026-10-14 17:00:15",
+   "pos": 4
+  },
   {
    "id": "11186",
    "nombre": "Dani Raba",
@@ -6167,6 +6192,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Pau Navarro",
+     "id": "60210",
+     "tipo": "compra",
+     "importe": 1766000,
+     "fecha": "2026-10-14",
+     "op": "normal"
+    },
+    {
      "j": "Ángel Pérez",
      "id": "68606",
      "tipo": "venta",
@@ -7310,9 +7343,9 @@
     },
     "60210": {
      "nombre": "Pau Navarro",
-     "compras": 899000,
+     "compras": 2665000,
      "ventas": 1133860,
-     "ops": 2
+     "ops": 3
     },
     "60888": {
      "nombre": "Roberto Fernández",
@@ -8837,6 +8870,14 @@
      "op": "normal"
     },
     {
+     "j": "Abiel Osorio",
+     "id": "68465",
+     "tipo": "compra",
+     "importe": 1070000,
+     "fecha": "2026-10-14",
+     "op": "normal"
+    },
+    {
      "j": "Javi Morcillo",
      "id": "70150",
      "tipo": "venta",
@@ -9975,6 +10016,12 @@
      "compras": 481296,
      "ventas": 330480,
      "ops": 2
+    },
+    "68465": {
+     "nombre": "Abiel Osorio",
+     "compras": 1070000,
+     "ventas": 0,
+     "ops": 1
     },
     "68606": {
      "nombre": "Ángel Pérez",
