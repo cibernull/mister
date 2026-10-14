@@ -1,20 +1,8 @@
 {
- "cuando": "2026-10-14T20:43:53.719Z",
+ "cuando": "2026-10-14T21:08:28.049Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "14/10",
-   "titulo": "Sigue en directo el Roma - Real Madrid",
-   "url": "https://www.futbolfantasy.com/partidos/24139-roma-real-madrid",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Sigue en directo el Betis - Porto",
-   "url": "https://www.futbolfantasy.com/partidos/24143-betis-porto",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 actualizadas",
@@ -44,6 +32,30 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Champions League: Betis 3-2 Porto. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24143-betis-porto",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Champions League: Roma 3-4 Real Madrid. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24139-roma-real-madrid",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "El Villarreal descansó este miércoles pendiente de Buchanan, Gulácsi y Pépé",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152799-el-villarreal-descanso-este-miercoles-pendiente-de-buchanan-gulacsi-y-pepe",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Gulácsi manda un mensaje de agradecimiento y pide privacidad",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152798-gulacsi-manda-un-mensaje-de-agradecimiento-y-pide-privacidad-tras-el-atraco",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "14/10",
@@ -470,18 +482,6 @@
    "titulo": "Vargas, Ejuke, Alfon y Peque desatan un battle royale",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152727-vargas-ejuke-alfon-y-peque-desatan-un-battle-royale",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Pedri pide el cambio por un dolor de barriga tras otra gran actuación en Estambul",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152726-pedri-pide-el-cambio-por-cansancio-tras-otra-gran-actuacion-en-estambul",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "El Rayo descansó este martes pendiente de la evolución de Ratiu",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152725-el-rayo-descanso-este-martes-pendiente-de-la-evolucion-de-ratiu",
-   "categoria": "equipo"
   }
  ]
 }
