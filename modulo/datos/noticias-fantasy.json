@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-14T23:08:15.740Z",
+ "cuando": "2026-10-14T23:56:11.445Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,12 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Análisis Fantasy Jornada 9: alineaciones probables, lesionados y sancionados en LaLiga Fantasy, por Carrasco",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152810-analisis-fantasy-jornada-9-alineaciones-probables-lesionados-y-sancionados-en-laliga-fantasy-",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Íñigo le hace el vacío a Carlos Maciá",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152733-inigo-le-hace-el-vacio-a-carlos-macia",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Kike García y Jofre siguen con sus procesos de recuperación al margen del grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152732-kike-garcia-y-jofre-siguen-con-sus-procesos-de-recuperacion-al-margen-del-grupo",
-   "categoria": "entrenamiento"
   }
  ]
 }
