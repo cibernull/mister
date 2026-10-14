@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-14T18:38:32.280Z",
+ "cuando": "2026-10-14T19:08:19.744Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "14/10",
+   "titulo": "Sigue en directo el Roma - Real Madrid",
+   "url": "https://www.futbolfantasy.com/partidos/24139-roma-real-madrid",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 actualizadas",
@@ -35,6 +41,36 @@
   },
   {
    "fecha": "14/10",
+   "titulo": "Sigue en directo el Betis - Porto",
+   "url": "https://www.futbolfantasy.com/partidos/24143-betis-porto",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Umar Sadiq asegura que está muy cerca de volver con el equipo y pasará una prueba",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152787-umar-sadiq-asegura-que-esta-muy-cerca-de-volver-con-el-equipo-y-pasara-una-prueba",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "JORNADA 9: Top picks, Chollos Fantasy, Alineaciones y Datos Clave, por Scouting BWG",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152786-jornada-9-top-picks-chollos-fantasy-alineaciones-y-datos-clave-por-scouting-bwg",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "RADAR FANTASY J9 | Fichajes recomendables + Ventas Clave, por Scouting BWG",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152785-radar-fantasy-j9-fichajes-recomendables-ventas-clave-por-scouting-bwg",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Mario Martín muestra su ilusión por la competición europea y explica lo que puede aportrar Carvajal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152784-mario-martin-muestra-su-ilusion-por-la-competicion-europea-y-explica-lo-que-puede-aportrar-ca",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "14/10",
    "titulo": "Dani Carvajal explica su fichaje por el Getafe y los objetivos en esta nueva etapa",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152783-dani-carvajal-explica-fichaje-getafe-objetivos-esta-nueva-etapa",
    "categoria": "rueda de prensa"
@@ -47,7 +83,7 @@
   },
   {
    "fecha": "14/10",
-   "titulo": "Bordalás habla de la llegada de Dani Carvajal antes del estreno del Getafe en la Conference League",
+   "titulo": "Bordalás habla de Carvajal, Arambarri, Luis Milla y el partido contra el Universitatea Craiova",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152781-bordalas-habla-llegada-dani-carvajal-antes-estreno-getafe-conference-league",
    "categoria": "rueda de prensa"
   },
@@ -446,42 +482,6 @@
    "titulo": "Flick explica la titularidad de Olmo y la exigencia del Galatasaray",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152717-flick-explica-la-titularidad-de-olmo-y-la-exigencia-del-galatasaray",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Mourinho habla de Endrick para TNT Brasil y le cierra la puerta de una cesión en enero",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152713-mourinho-habla-de-endrick-para-tnt-brasil-y-le-cierra-la-puerta-de-una-cesion-en-enero",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "El Sevilla inicia la semana con Lucas Stassin de vuelta al grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152712-el-sevilla-inicia-la-semana-con-lucas-stassin-de-vuelta-al-grupo",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Mourinho habla de Fede Valverde, Trent y Dumfries antes de visitar a la Roma",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152711-mourinho-habla-fede-valverde-trent-dumfries-antes-visitar-roma",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Gulácsi se pierde el Villarreal-Nápoles tras sufrir un atraco a mano armada en su domicilio",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152710-gulacsi-se-pierde-el-villarreal-napoles-tras-sufrir-un-atraco-a-mano-armada-en-su-domicilio",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Parte médico de Miguel Sierra: sufre una luxación acromioclavicular y pasará por quirófano",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152709-parte-medico-miguel-sierra-sufre-luxacion-acromioclavicular-pasara-quirofano",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "¡Sigue a las 16:45h en Twitch y Youtube la información fantasy para las alineaciones probables!",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152708-sigue-a-las-16-45h-en-twitch-y-youtube-la-informacion-fantasy-para-las-alineaciones-probables",
-   "categoria": "análisis"
   }
  ]
 }
