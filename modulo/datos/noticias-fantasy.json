@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-14T13:08:14.185Z",
+ "cuando": "2026-10-14T13:38:20.230Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -38,6 +38,12 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Ratiu sigue sin aparecer en los entrenamientos del Rayo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152778-ratiu-sigue-sin-aparecer-en-los-entrenamientos-del-rayo",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "14/10",
@@ -476,12 +482,6 @@
    "titulo": "Yeremay vuelve a tomar el control de la banda",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152704-yeremay-vuelve-a-tomar-el-control-de-la-banda",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Día de descanso para el Málaga pendiente de Juan Cruz y Cajuste",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152703-dia-de-descanso-para-el-malaga-pendiente-de-juan-cruz-y-cajuste",
-   "categoria": "equipo"
   }
  ]
 }
