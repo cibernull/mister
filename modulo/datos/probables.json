@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-14T09:38:25.363Z",
+ "cuando": "2026-10-14T12:08:25.504Z",
  "fuente": "futbolfantasy.com",
  "leidos": 512,
  "jugadores": {
@@ -274,7 +274,7 @@
    "min": 0
   },
   "5916": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 354
@@ -712,7 +712,7 @@
    "min": 280
   },
   "22495": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 273

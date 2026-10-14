@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-14T11:56:34.130Z",
+ "cuando": "2026-10-14T12:08:26.271Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -35,6 +35,24 @@
   },
   {
    "fecha": "14/10",
+   "titulo": "Iván Azón no podrá jugar en Craiova por molestias de última hora",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152762-ivan-azon-baja-de-ultima-hora-para-craiova",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "El Atlético decansa este miércoles pendiente de Koke y con varias rotaciones en mente",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152768-el-atletico-decansa-este-miercoles-pendiente-de-koke-y-con-varias-rotaciones-en-mente",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "14/10",
+   "titulo": "Pol Lozano hace autocrítica tras Málaga, respalda a Manolo y habla de la portería y la adaptación de Bryan y Calatrava",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152767-pol-lozano-hace-autocritica-tras-malaga-respalda-a-manolo-y-habla-de-la-porteria-y-la-adaptac",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "14/10",
    "titulo": "Juan Cruz sigue al margen del grupo este miércoles",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152766-juan-cruz-sigue-al-margen-del-grupo-este-miercoles",
    "categoria": "entrenamiento"
@@ -56,12 +74,6 @@
    "titulo": "Lista de Matarazzo para viajar a Bélgica sin los tres lesionados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152763-lista-de-matarazzo-para-viajar-a-belgica-sin-los-tres-lesionados",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Iván Azón no podrá jugar en la Conference al no estar inscrito",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152762-ivan-azon-baja-de-ultima-hora-para-viajar-a-craiova",
-   "categoria": "sanción"
   },
   {
    "fecha": "14/10",
@@ -469,18 +481,6 @@
    "fecha": "13/10",
    "titulo": "Cata explica el cese de Ramis, la apuesta por Arrasate, las lesiones musculares, Tajonar, el mercado y el proyecto hasta 2029",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152694-cata-explica-el-cese-de-ramis-la-apuesta-por-arrasate-las-lesiones-musculares-tajonar-el-merc",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Bryan Zaragoza consolida su jerarquía",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152692-bryan-zaragoza-consolida-su-jerarquia",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "Arrasate se presenta como entrenador, explica los motivos de su vuelta y el nuevo proyecto",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152693-arrasate-se-presenta-como-entrenador-explica-los-motivos-de-su-vuelta-y-el-nuevo-proyecto",
    "categoria": "rueda de prensa"
   }
  ]
