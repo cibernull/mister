@@ -9036,6 +9036,24 @@
    "media": 3,
    "racha": "1,2,2,6,4",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 553745346,
+   "idJugador": "71640",
+   "nombre": "Miguel Sierra",
+   "de": "Niutin FC (Isaac)",
+   "a": "Mister",
+   "idUcDe": 12493763,
+   "idUcA": 0,
+   "importe": 6913000,
+   "tipo": "normal",
+   "cuando": "2026-10-15 18:24:16",
+   "valor": 6913000,
+   "posicion": 3,
+   "puntos": 52,
+   "media": 6.5,
+   "racha": "2,2,12,7,6",
+   "otrasPujas": []
   }
  ],
  "salidas": [

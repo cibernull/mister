@@ -1348,6 +1348,16 @@
  ],
  "movimientos": [
   {
+   "id": "71640",
+   "nombre": "Miguel Sierra",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 6913000,
+   "tipo": "normal",
+   "fecha": "2026-10-15 18:24:16",
+   "pos": 3
+  },
+  {
    "id": "4836165",
    "nombre": "Roy Revivo",
    "de": null,
@@ -7592,6 +7602,14 @@
      "op": "normal"
     },
     {
+     "j": "Miguel Sierra",
+     "id": "71640",
+     "tipo": "venta",
+     "importe": 6913000,
+     "fecha": "2026-10-15",
+     "op": "normal"
+    },
+    {
      "j": "Pere Milla",
      "id": "6065",
      "tipo": "compra",
@@ -8902,8 +8920,8 @@
     "71640": {
      "nombre": "Miguel Sierra",
      "compras": 5953500,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 6913000,
+     "ops": 2
     },
     "1385821": {
      "nombre": "Cristian Romero",

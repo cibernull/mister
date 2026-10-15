@@ -1,6 +1,14 @@
 {
- "saldo": -1157410,
+ "saldo": 5755590,
  "apuntes": [
+  {
+   "cuando": 1792081456,
+   "fecha": "2026-10-15 18:24",
+   "motivo": "Miguel Sierra a Mister",
+   "tipo": "Venta",
+   "importe": 6913000,
+   "saldo": 5755590
+  },
   {
    "cuando": 1792076400,
    "fecha": "2026-10-15 17:00",
@@ -472,14 +480,6 @@
    "tipo": "Penalización",
    "importe": -964318,
    "saldo": 16349282
-  },
-  {
-   "cuando": 1789319747,
-   "fecha": "2026-09-13 19:15",
-   "motivo": "Modificación de cláusula (200%) de Roger Brugué",
-   "tipo": "Penalización",
-   "importe": -251600,
-   "saldo": 17313600
   }
  ]
 }
