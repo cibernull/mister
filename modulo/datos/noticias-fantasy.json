@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-15T10:37:55.393Z",
+ "cuando": "2026-10-15T11:07:53.729Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "15/10",
-   "titulo": "Raphinha y De Jong empiezan el entrenamiento con el grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152827-raphinha-y-de-jong-empiezan-el-entrenamiento-con-el-grupo",
-   "categoria": "entrenamiento"
+   "titulo": "Endrick abre una puerta hacia Narnia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152837-endrick-abre-las-puertas-de-narnia",
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -25,6 +25,24 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "El Ideal Gallego deja entrever la pareja Riki-Villares",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152838-el-ideal-gallego-deja-entrever-la-pareja-riki-villares",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Bardeli no puede dormirse",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152836-bardeli-no-puede-dormirse",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Luis Castro eleva las opciones de Nduwke para mantenerse en el once",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152835-luis-castro-eleva-las-opciones-de-nduwke-para-mantenerse-en-el-once",
    "categoria": "análisis"
   },
   {
@@ -67,6 +85,12 @@
    "fecha": "15/10",
    "titulo": "Eriksson vuelve a apartarse del grupo en una sesión realizada en el estadio",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152828-eriksson-vuelve-a-apartarse-del-grupo-en-una-sesion-realizada-en-el-estadio",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Raphinha y De Jong empiezan el entrenamiento con el grupo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152827-raphinha-y-de-jong-empiezan-el-entrenamiento-con-el-grupo",
    "categoria": "entrenamiento"
   },
   {
@@ -458,30 +482,6 @@
    "titulo": "Bright Ede busca estabilidad entre los bandazos de Hidalgo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152761-bright-ede-busca-estabilidad-entre-los-bandazos-de-hidalgo",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Nico Williams entra en la recta final",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152760-nico-williams-entra-en-la-recta-final",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Enes Ünal, Romero, Mangala, Iván Azón y Carvajal se quedan en Getafe",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152759-enes-unal-romero-andres-garcia-mangala-y-carvajal-se-quedan-en-getafe",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Aguirre prueba una defensa de cuatro y devuelve a Pepelu al centro del campo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152758-aguirre-prueba-una-defensa-de-cuatro-y-devuelve-a-pepelu-al-centro-del-campo",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Eriksson se suma al grupo y Prati no tiene ningún problema",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152757-eriksson-se-suma-al-grupo-y-prati-no-tiene-ningun-problema",
-   "categoria": "entrenamiento"
   }
  ]
 }
