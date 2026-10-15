@@ -1348,6 +1348,16 @@
  ],
  "movimientos": [
   {
+   "id": "53098",
+   "nombre": "Alberto Moleiro",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 13240500,
+   "tipo": "normal",
+   "fecha": "2026-10-15 21:21:39",
+   "pos": 3
+  },
+  {
    "id": "71640",
    "nombre": "Miguel Sierra",
    "de": "Niutin FC (Isaac)",
@@ -6252,6 +6262,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Alberto Moleiro",
+     "id": "53098",
+     "tipo": "venta",
+     "importe": 13240500,
+     "fecha": "2026-10-15",
+     "op": "normal"
+    },
+    {
      "j": "Pau Navarro",
      "id": "60210",
      "tipo": "compra",
@@ -7332,8 +7350,8 @@
     "53098": {
      "nombre": "Alberto Moleiro",
      "compras": 12159820,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 13240500,
+     "ops": 2
     },
     "54900": {
      "nombre": "Carlos Dotor",
