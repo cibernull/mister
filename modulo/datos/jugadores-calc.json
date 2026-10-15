@@ -1121,7 +1121,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": null,
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -1498,8 +1498,8 @@
   "semana": -28000,
   "sem7": 672000,
   "mes": 3935000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 19019691,
   "ced": 0,
   "pos": 3,
   "est": "injury",
@@ -4584,7 +4584,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": null,
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
