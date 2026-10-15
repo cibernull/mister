@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-15T00:08:25.205Z",
+ "cuando": "2026-10-15T01:08:13.604Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Alineaciones probables y previa fantasy del Villarreal - Elche",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152813-alineaciones-probables-y-previa-fantasy-del-villarreal-elche",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Posibles alineaciones y previa fantasy del Espanyol - Atlético",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152812-posibles-alineaciones-y-previa-fantasy-del-espanyol-atletico",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Las rotaciones de Íñigo seguirán contra el Elche: Seis novedades apuntan al once",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152736-las-rotaciones-de-inigo-seguiran-contra-el-elche-seis-novedades-apuntan-al-once",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Flick celebra el triunfo y habla de Lamine Yamal, Adeyemi y Gabriel Jesús",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152734-flick-celebra-el-triunfo-y-habla-de-lamine-yamal-adeyemi-y-gabriel-jesus",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "13/10",
-   "titulo": "El Levante vuelve al trabajo con Etta Eyong en la recta final",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152735-el-levante-vuelve-al-trabajo-con-etta-eyong-en-la-recta-final",
-   "categoria": "entrenamiento"
   }
  ]
 }
