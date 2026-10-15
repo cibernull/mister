@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-15T16:38:02.270Z",
+ "cuando": "2026-10-15T17:07:58.724Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -29,7 +29,13 @@
   },
   {
    "fecha": "15/10",
-   "titulo": "Matarazzo habla de Igor Zubeldia antes del partido frente al Union Saint-Gilloise",
+   "titulo": "Bordalás analiza el regreso del Getafe a Europa y explica la gestión de esfuerzos ante el Craiova",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152851-bordalas-analiza-regreso-getafe-europa-explica-gestion-esfuerzos-ante-craiova",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Matarazzo habla de Zubeldia y destaca la importancia de controlar el partido frente al Union Saint-Gilloise",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152850-matarazzo-habla-igor-zubeldia-antes-partido-frente-union-saint-gilloise",
    "categoria": "rueda de prensa"
   },
@@ -475,12 +481,6 @@
    "fecha": "14/10",
    "titulo": "Sadiq, a un paso de incorporarse al grupo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152774-sadiq-a-un-paso-de-incorporarse-al-grupo",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Primer parte medico de Borja Iglesias y Pablo Duran",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152765-primer-parte-medico-de-borja-iglesias-y-pablo-duran",
    "categoria": "lesión"
   }
  ]
