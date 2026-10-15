@@ -1,12 +1,12 @@
 {
- "cuando": "2026-10-15T18:38:12.479Z",
+ "cuando": "2026-10-15T19:08:00.825Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "15/10",
-   "titulo": "Fofana expande sus dominios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152848-fofana-expande-sus-dominios",
+   "titulo": "Sigue en directo el Celta - Juventus",
+   "url": "https://www.futbolfantasy.com/partidos/24282-celta-juventus",
    "categoria": "análisis"
   },
   {
@@ -29,6 +29,18 @@
   },
   {
    "fecha": "15/10",
+   "titulo": "Conference League: Univertitatea Craiova 1-1 Getafe. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24399-u-craiova-getafe",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Europa League: Union Saint-Gillois 1-1 Real Sociedad. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24278-union-saint-gilloise-real-sociedad",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "15/10",
    "titulo": "Bordalás analiza el regreso del Getafe a Europa y explica la gestión de esfuerzos ante el Craiova",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152851-bordalas-analiza-regreso-getafe-europa-explica-gestion-esfuerzos-ante-craiova",
    "categoria": "rueda de prensa"
@@ -38,6 +50,12 @@
    "titulo": "Matarazzo habla de Zubeldia y destaca la importancia de controlar el partido frente al Union Saint-Gilloise",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152850-matarazzo-habla-igor-zubeldia-antes-partido-frente-union-saint-gilloise",
    "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Fofana expande sus dominios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152848-fofana-expande-sus-dominios",
+   "categoria": "análisis"
   },
   {
    "fecha": "15/10",
@@ -463,24 +481,6 @@
    "fecha": "14/10",
    "titulo": "Osasuna emite el nuevo parte médico de Aimar Oroz",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152777-osasuna-emite-el-nuevo-parte-medico-de-aimar-oroz",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Eric García termina en Estambul con una contusión en la tibia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152776-eric-garcia-termina-en-estambul-con-una-contusion-en-la-tibia",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Arrasate dirige su primera sesión con la enfermería llena",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152775-arrasate-dirige-su-primera-sesion-con-la-enfermeria-llena",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Sadiq, a un paso de incorporarse al grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152774-sadiq-a-un-paso-de-incorporarse-al-grupo",
    "categoria": "lesión"
   }
  ]
