@@ -17732,7 +17732,7 @@
   "mf": 2.3,
   "tit": 5,
   "sup": 2,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 23,
   "js": [
@@ -28630,7 +28630,7 @@
   "mf": 2,
   "tit": 2,
   "sup": 2,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 21,
   "js": [
@@ -43596,7 +43596,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "doubt",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [

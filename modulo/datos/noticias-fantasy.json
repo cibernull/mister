@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-15T09:38:06.164Z",
+ "cuando": "2026-10-15T09:57:55.951Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "15/10",
+   "titulo": "Raphinha y De Jong empiezan el entrenamiento con el grupo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152827-raphinha-y-de-jong-empiezan-el-entrenamiento-con-el-grupo",
+   "categoria": "entrenamiento"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 actualizadas",
@@ -23,6 +29,36 @@
   },
   {
    "fecha": "15/10",
+   "titulo": "Sport rectifica: Raphinha se probará con el grupo y apunta el Betis",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152826-sport-rectifica-raphinha-se-probara-con-el-grupo-y-apunta-el-betis",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Laporte sigue sin entrenar con el grupo y preocupa su titularidad",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152825-laporte-sigue-sin-entrenar-con-el-grupo-y-preocupa-su-titularidad",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Koke y Cardoso se ausentan en el entrenamiento de este jueves",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152824-koke-y-cardoso-se-ausentan-en-el-entrenamiento-de-este-jueves",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Abde está iluminado",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152820-abde-esta-iluminado",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Foulquier y Sadiq, al margen en la sesión de esta mañana en Paterna",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152823-foulquier-y-sadiq-al-margen-en-la-sesion-de-esta-manana-en-paterna",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "15/10",
    "titulo": "Sierra, Guridi, Marcao y Kochorashvili tampoco entrenan con el grupo este martes",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152822-sierra-guridi-marcao-y-kochorashvili-tampoco-entrenan-con-el-grupo-este-martes",
    "categoria": "entrenamiento"
@@ -32,12 +68,6 @@
    "titulo": "El Real Betis vuelve al trabajo con la única baja de Junior",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152821-el-real-betis-vuelve-al-trabajo-con-la-unica-baja-de-junior",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Abde está iluminado",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152820-abde-esta-iluminado",
-   "categoria": "análisis"
   },
   {
    "fecha": "15/10",
@@ -452,36 +482,6 @@
    "titulo": "Buba Sangaré y Yago Santiago trabajan con el grupo este martes",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152750-buba-sangare-y-yago-santiago-trabajan-con-el-grupo-este-martes",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Stassin y Félix Correia se ejercitan con normalidad. Guridi, Sierra y Kochorashvili, al margen",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152749-stassin-y-felix-correia-se-ejercitan-con-normalidad-guridi-sierra-y-kochorashvili-al-margen",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Parte médico oficial de Jon Guridi",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152748-parte-medico-oficial-de-jon-guridi",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Alineaciones probables para la jornada 9 de LaLiga 26/27 en Youtube: VERSIÓN EXTENDIDA",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152747-alineaciones-probables-para-la-jornada-9-de-laliga-26-27-en-youtube-version-extendida",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Pubill, Lookman, Hjulmand y Jonathan David apuntan a recuperar protagonismo en Liga",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152746-pubill-lookman-hjulmand-y-jonathan-david-apuntan-a-recuperar-protagonismo-en-liga",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Dani Raba sale de Guantánamo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152745-dani-raba-sale-de-guantanamo",
-   "categoria": "análisis"
   }
  ]
 }
