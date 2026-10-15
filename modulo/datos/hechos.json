@@ -8986,6 +8986,65 @@
    "media": 4.6,
    "racha": "5,4,7,5,2",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 553728800,
+   "idJugador": "68652",
+   "nombre": "Ville Koski",
+   "de": "Mister",
+   "a": "Cacaculopedopis",
+   "idUcDe": 0,
+   "idUcA": 15435600,
+   "importe": 5575850,
+   "tipo": "normal",
+   "cuando": "2026-10-15 17:00:14",
+   "valor": 4346000,
+   "posicion": 2,
+   "puntos": 32,
+   "media": 4,
+   "racha": "1,11,4,4,3",
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 4241000
+    }
+   ]
+  },
+  {
+   "idTransfer": 553729450,
+   "idJugador": "53107",
+   "nombre": "Sergi Cardona",
+   "de": "Mister",
+   "a": "Niutin FC (Isaac)",
+   "idUcDe": 0,
+   "idUcA": 12493763,
+   "importe": 1023000,
+   "tipo": "normal",
+   "cuando": "2026-10-15 17:00:14",
+   "valor": 1051000,
+   "posicion": 2,
+   "puntos": 8,
+   "media": 2,
+   "racha": "-1,-,3,4,2",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 553732017,
+   "idJugador": "4836165",
+   "nombre": "Roy Revivo",
+   "de": "Mister",
+   "a": "Niutin FC (Isaac)",
+   "idUcDe": 0,
+   "idUcA": 12493763,
+   "importe": 1186010,
+   "tipo": "normal",
+   "cuando": "2026-10-15 17:00:14",
+   "valor": 1186000,
+   "posicion": 2,
+   "puntos": 15,
+   "media": 3,
+   "racha": "1,2,2,6,4",
+   "otrasPujas": []
   }
  ],
  "salidas": [

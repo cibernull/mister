@@ -3735,6 +3735,52 @@
     "topeMax": 30105310,
     "exceso": 0
    }
+  ],
+  "553728800": [
+   {
+    "idTransfer": 553728800,
+    "cuando": "2026-10-15 17:00:14",
+    "jugador": "Ville Koski",
+    "equipo": "Cacaculopedopis",
+    "puja": 5575850,
+    "gana": true,
+    "topeMax": 25749438,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 553728800,
+    "cuando": "2026-10-15 17:00:14",
+    "jugador": "Ville Koski",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 4241000,
+    "gana": false,
+    "topeMax": 29759410,
+    "exceso": 0
+   }
+  ],
+  "553729450": [
+   {
+    "idTransfer": 553729450,
+    "cuando": "2026-10-15 17:00:14",
+    "jugador": "Sergi Cardona",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1023000,
+    "gana": true,
+    "topeMax": 32373850,
+    "exceso": 0
+   }
+  ],
+  "553732017": [
+   {
+    "idTransfer": 553732017,
+    "cuando": "2026-10-15 17:00:14",
+    "jugador": "Roy Revivo",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1186010,
+    "gana": true,
+    "topeMax": 32373850,
+    "exceso": 0
+   }
   ]
  }
 }

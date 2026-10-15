@@ -1334,9 +1334,49 @@
    "id": "68465",
    "nombre": "Abiel Osorio",
    "valor": 1057000
+  },
+  {
+   "id": "53107",
+   "nombre": "Sergi Cardona",
+   "valor": 1051000
+  },
+  {
+   "id": "4836165",
+   "nombre": "Roy Revivo",
+   "valor": 1186000
   }
  ],
  "movimientos": [
+  {
+   "id": "4836165",
+   "nombre": "Roy Revivo",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 1186010,
+   "tipo": "normal",
+   "fecha": "2026-10-15 17:00:14",
+   "pos": 2
+  },
+  {
+   "id": "53107",
+   "nombre": "Sergi Cardona",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 1023000,
+   "tipo": "normal",
+   "fecha": "2026-10-15 17:00:14",
+   "pos": 2
+  },
+  {
+   "id": "68652",
+   "nombre": "Ville Koski",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 5575850,
+   "tipo": "normal",
+   "fecha": "2026-10-15 17:00:14",
+   "pos": 2
+  },
   {
    "id": "56628",
    "nombre": "Lucien Agoumé",
@@ -7536,6 +7576,22 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Sergi Cardona",
+     "id": "53107",
+     "tipo": "compra",
+     "importe": 1023000,
+     "fecha": "2026-10-15",
+     "op": "normal"
+    },
+    {
+     "j": "Roy Revivo",
+     "id": "4836165",
+     "tipo": "compra",
+     "importe": 1186010,
+     "fecha": "2026-10-15",
+     "op": "normal"
+    },
+    {
      "j": "Pere Milla",
      "id": "6065",
      "tipo": "compra",
@@ -8675,6 +8731,12 @@
      "ventas": 641680,
      "ops": 2
     },
+    "53107": {
+     "nombre": "Sergi Cardona",
+     "compras": 1023000,
+     "ventas": 0,
+     "ops": 1
+    },
     "53111": {
      "nombre": "Álvaro Valles",
      "compras": 13155750,
@@ -8861,6 +8923,12 @@
      "ventas": 0,
      "ops": 1
     },
+    "4836165": {
+     "nombre": "Roy Revivo",
+     "compras": 1186010,
+     "ventas": 0,
+     "ops": 1
+    },
     "4947929": {
      "nombre": "Emil Audero",
      "compras": 2001010,
@@ -8871,6 +8939,14 @@
   },
   "Cacaculopedopis": {
    "movimientos": [
+    {
+     "j": "Ville Koski",
+     "id": "68652",
+     "tipo": "compra",
+     "importe": 5575850,
+     "fecha": "2026-10-15",
+     "op": "normal"
+    },
     {
      "j": "Roger Hinojo",
      "id": "71623",
@@ -10037,6 +10113,12 @@
      "nombre": "Ángel Pérez",
      "compras": 0,
      "ventas": 3683470,
+     "ops": 1
+    },
+    "68652": {
+     "nombre": "Ville Koski",
+     "compras": 5575850,
+     "ventas": 0,
      "ops": 1
     },
     "68835": {
