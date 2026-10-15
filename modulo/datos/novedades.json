@@ -204,6 +204,12 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-10-15",
+  "id": "48203",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-10-14",
   "id": "130",
   "entra": false

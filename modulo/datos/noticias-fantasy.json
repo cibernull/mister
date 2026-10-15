@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-15T13:37:52.867Z",
+ "cuando": "2026-10-15T14:08:01.128Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "15/10",
+   "titulo": "Fofana expande sus dominios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152848-fofana-expande-sus-dominios",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 actualizadas",
@@ -19,6 +25,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "¡Sigue a las 16:30h en Twitch y Youtube la información fantasy para la jornada 8!",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152849-sigue-a-las-16-30h-en-twitch-y-youtube-la-informacion-fantasy-para-la-jornada-8",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Otorbi le muestra el DNI a Aguirre",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152847-otorbi-le-muestra-el-dni-a-aguirre",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Aspas repasa su regreso y habla de la Juventus, su posible titularidad y la evolución de Faye",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152773-aspas-repasa-su-regresoy-habla-de-la-juventus-su-posible-titularidad-y-la-evolucion-de-faye",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Mella analiza su estado físico y habla de Yeremay, Aubameyang, Bil Nsongo y su competencia en banda",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152772-mella-analiza-su-estado-fisico-y-habla-de-yeremay-aubameyang-bil-nsongo-y-su-competencia-en-b",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Giráldez habla de Pablo Durán, Iglesias, Faye, Aspas, la enfermería, la cantera y la Juventus",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152771-giraldez-habla-de-pablo-duran-iglesias-faye-aspas-la-enfermeria-la-cantera-y-la-juventus",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "El Barça cambia el césped por el gimnasio en Estambul antes de preparar el partido del Betis",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152770-el-barca-cambia-el-cesped-por-el-gimnasio-en-estambul-antes-de-preparar-al-betis",
-   "categoria": "entrenamiento"
   }
  ]
 }
