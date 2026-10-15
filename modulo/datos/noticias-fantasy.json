@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-15T12:08:04.966Z",
+ "cuando": "2026-10-15T12:38:16.655Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,24 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Stassin, listo para volver a tener minutos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152844-stassin-listo-para-volver-a-tener-minutos",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Juan Cruz sigue al margen del grupo y está casi descartado",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152843-juan-cruz-sigue-al-margen-del-grupo-y-esta-casi-descartado",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Luis Castro cita a los disponibles para viajar a Riazor",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152842-luis-castro-cita-a-los-disponibles-para-viajar-a-riazor",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "15/10",
@@ -464,24 +482,6 @@
    "titulo": "Iván Azón no podrá jugar en Craiova por molestias de última hora",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152762-ivan-azon-baja-de-ultima-hora-para-craiova",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "El Atlético decansa este miércoles pendiente de Koke y con varias rotaciones en mente",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152768-el-atletico-decansa-este-miercoles-pendiente-de-koke-y-con-varias-rotaciones-en-mente",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Pol Lozano hace autocrítica tras Málaga, respalda a Manolo y habla de la portería y la adaptación de Bryan y Calatrava",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152767-pol-lozano-hace-autocritica-tras-malaga-respalda-a-manolo-y-habla-de-la-porteria-y-la-adaptac",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Juan Cruz sigue al margen del grupo este miércoles",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152766-juan-cruz-sigue-al-margen-del-grupo-este-miercoles",
-   "categoria": "entrenamiento"
   }
  ]
 }
