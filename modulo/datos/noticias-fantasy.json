@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-15T21:08:06.079Z",
+ "cuando": "2026-10-15T21:38:10.205Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "15/10",
-   "titulo": "Europa League: Celta 1-2 Juventus. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/24282-celta-juventus",
-   "categoria": "partido"
+   "titulo": "La Juve desKoloca al Celta",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152867-la-juve-deskoloca-al-celta",
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -26,6 +26,30 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Aguado recupera algo de saldo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152870-aguado-recupera-algo-de-saldo",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Ave, Claudio: Los que van a rotar te saludan",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152869-ave-claudio-los-que-van-a-rotar-te-saludan",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Andrés García vuelve a encender las alarmas y queda pendiente de evolución",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152868-andres-garcia-vuelve-a-encender-las-alarmas-y-queda-pendiente-de-evolucion",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Europa League: Celta 1-2 Juventus. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24282-celta-juventus",
+   "categoria": "partido"
   },
   {
    "fecha": "15/10",
@@ -458,30 +482,6 @@
    "titulo": "Mourinho habló de Huijsen, Rudiger y la sanción de Vinicius antes del partido",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152796-mourinho-hablo-de-huijsen-rudiger-y-la-sancion-de-vinicius-antes-del-partido",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "La Real Sociedad se ejercitó en Bélgica sin los lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152795-la-real-sociedad-se-ejercito-en-belgica-sin-los-lesionados",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Aguirre probó a Sato por la izquierda, pero en dos onces mezclados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152794-aguirre-probo-a-sato-por-la-izquierda-pero-en-dos-onces-mezclados",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Competición retira la amarilla que Konaté vio contra el Villarreal y deja de estar apercibido",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152793-competicion-retira-la-amarilla-que-konate-vio-contra-el-villarreal-y-deja-de-estar-apercibido",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "El Getafe se ejercita en Craiova sin Carvajal ni los lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152792-el-getafe-se-ejercita-en-craiova-sin-carvajal-ni-los-lesionados",
-   "categoria": "entrenamiento"
   }
  ]
 }

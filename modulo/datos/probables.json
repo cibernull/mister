@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-15T21:08:05.376Z",
+ "cuando": "2026-10-15T21:38:09.118Z",
  "fuente": "futbolfantasy.com",
  "leidos": 513,
  "jugadores": {
@@ -52,7 +52,7 @@
    "min": 81
   },
   "130": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 221
@@ -544,7 +544,7 @@
    "min": 499
   },
   "15693": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 301
@@ -634,7 +634,7 @@
    "min": 264
   },
   "18531": {
-   "prob": 70,
+   "prob": 60,
    "sancionado": 0,
    "fuera": 0,
    "min": 248
@@ -772,7 +772,7 @@
    "min": 325
   },
   "23664": {
-   "prob": 50,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 478
@@ -826,7 +826,7 @@
    "min": 720
   },
   "25631": {
-   "prob": 70,
+   "prob": 60,
    "sancionado": 0,
    "fuera": 0,
    "min": 582
@@ -1114,7 +1114,7 @@
    "min": 182
   },
   "33726": {
-   "prob": 70,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 349
@@ -1192,7 +1192,7 @@
    "min": 267
   },
   "48194": {
-   "prob": 40,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 328
@@ -1264,7 +1264,7 @@
    "min": 150
   },
   "49382": {
-   "prob": 80,
+   "prob": 60,
    "sancionado": 0,
    "fuera": 0,
    "min": 500
@@ -1426,7 +1426,7 @@
    "min": 219
   },
   "55439": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 233
@@ -1876,7 +1876,7 @@
    "min": 501
   },
   "63866": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 353
@@ -1930,7 +1930,7 @@
    "min": 118
   },
   "64160": {
-   "prob": 70,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 464
@@ -2266,7 +2266,7 @@
    "min": 24
   },
   "70189": {
-   "prob": 20,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
    "min": 62
@@ -2680,7 +2680,7 @@
    "min": 559
   },
   "71642": {
-   "prob": 20,
+   "prob": 40,
    "sancionado": 0,
    "fuera": 0,
    "min": 45
@@ -2902,7 +2902,7 @@
    "min": 121
   },
   "4836242": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 180
