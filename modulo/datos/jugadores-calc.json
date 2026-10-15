@@ -19278,7 +19278,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": null,
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -20954,7 +20954,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": null,
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -24215,7 +24215,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -31555,7 +31555,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": null,
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -32901,7 +32901,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "doubt",
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -39075,7 +39075,7 @@
   "mf": 0,
   "tit": 3,
   "sup": 0,
-  "once": 1,
+  "once": null,
   "asis": 0,
   "edad": 20,
   "js": [
@@ -39598,6 +39598,101 @@
   "d": 0
  },
  {
+  "id": "71509",
+  "nombre": "Kevin Sánchez",
+  "valor": 160000,
+  "puntos": 1,
+  "media": 1,
+  "partidos": 1,
+  "semana": -33000,
+  "sem7": -8000,
+  "mes": -27000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 4,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   1,
+   null,
+   null
+  ],
+  "eq": 6,
+  "riv": 12,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 1,
+  "mf": 0,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    1,
+    23,
+    0,
+    "i85"
+   ],
+   [
+    2,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    16,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "58992",
   "nombre": "Álvaro Djaló",
   "valor": 160000,
@@ -39752,101 +39847,6 @@
     8,
     null,
     5,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "71509",
-  "nombre": "Kevin Sánchez",
-  "valor": 160000,
-  "puntos": 1,
-  "media": 1,
-  "partidos": 1,
-  "semana": -33000,
-  "sem7": -8000,
-  "mes": -27000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   1,
-   null,
-   null
-  ],
-  "eq": 6,
-  "riv": 12,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 1,
-  "mf": 0,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    1,
-    23,
-    0,
-    "i85"
-   ],
-   [
-    2,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    16,
     0,
     ""
    ]
@@ -40880,7 +40880,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "doubt",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -45615,6 +45615,46 @@
   "d": 0
  },
  {
+  "id": "17623",
+  "nombre": "Ferland Mendy",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -41000,
+  "mes": -2000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 15,
+  "riv": 17,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 31,
+  "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "61410",
   "nombre": "Adrián Rodríguez",
   "valor": 160000,
@@ -45798,46 +45838,6 @@
     ""
    ]
   ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "17623",
-  "nombre": "Ferland Mendy",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -41000,
-  "mes": -2000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 15,
-  "riv": 17,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 31,
-  "js": [],
   "p": 0,
   "d": 0
  },
