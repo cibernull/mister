@@ -5155,13 +5155,13 @@
   "semana": 62000,
   "sem7": 608000,
   "mes": 3155000,
-  "mk": 1,
-  "pv": 8641000,
+  "mk": 0,
+  "pv": null,
   "ced": 0,
   "pos": 3,
   "est": null,
   "bl": 0,
-  "sub": 1,
+  "sub": 0,
   "racha": [
    5,
    4,
@@ -9490,8 +9490,8 @@
   "semana": -37000,
   "sem7": -267000,
   "mes": -708000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 15511000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -9580,8 +9580,8 @@
   "semana": 51000,
   "sem7": -6000,
   "mes": -978000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 10208000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -10521,7 +10521,7 @@
   "pos": 4,
   "est": null,
   "bl": 0,
-  "sub": 2,
+  "sub": 3,
   "racha": [
    4,
    null,
@@ -23154,8 +23154,8 @@
   "semana": 27000,
   "sem7": -17000,
   "mes": -71000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 187000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -24114,8 +24114,8 @@
   "semana": 33000,
   "sem7": 61000,
   "mes": 872000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1186000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -26150,8 +26150,8 @@
   "semana": -15000,
   "sem7": -114000,
   "mes": -1036000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1667000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -26419,7 +26419,7 @@
   "pos": 3,
   "est": null,
   "bl": 0,
-  "sub": 2,
+  "sub": 3,
   "racha": [
    null,
    4,
@@ -28974,8 +28974,8 @@
   "semana": 5000,
   "sem7": 10000,
   "mes": -59000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 170000,
   "ced": 0,
   "pos": 2,
   "est": "injury",
@@ -34887,8 +34887,8 @@
   "semana": -48000,
   "sem7": -324000,
   "mes": -1706000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1157000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -37088,8 +37088,8 @@
   "semana": 1000,
   "sem7": 45000,
   "mes": -449000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 209000,
   "ced": 0,
   "pos": 2,
   "est": "doubt",
@@ -37954,8 +37954,8 @@
   "semana": -18000,
   "sem7": -136000,
   "mes": -1588000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1295000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -38612,8 +38612,8 @@
   "semana": 0,
   "sem7": 0,
   "mes": -48000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 3,
   "est": "doubt",
@@ -39598,6 +39598,80 @@
   "d": 0
  },
  {
+  "id": "58992",
+  "nombre": "Álvaro Djaló",
+  "valor": 160000,
+  "puntos": 1,
+  "media": 1,
+  "partidos": 1,
+  "semana": 0,
+  "sem7": -5000,
+  "mes": -17000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 4,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   1,
+   null,
+   null
+  ],
+  "eq": 1,
+  "riv": 19,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 1,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 27,
+  "js": [
+   [
+    1,
+    1,
+    3,
+    0,
+    "i81"
+   ],
+   [
+    2,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    48,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "2586746",
   "nombre": "Álvaro Padilla",
   "valor": 160000,
@@ -39678,80 +39752,6 @@
     8,
     null,
     5,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "58992",
-  "nombre": "Álvaro Djaló",
-  "valor": 160000,
-  "puntos": 1,
-  "media": 1,
-  "partidos": 1,
-  "semana": 0,
-  "sem7": -5000,
-  "mes": -17000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   1,
-   null,
-   null
-  ],
-  "eq": 1,
-  "riv": 19,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 1,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    1,
-    1,
-    3,
-    0,
-    "i81"
-   ],
-   [
-    2,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    48,
     0,
     ""
    ]
@@ -40309,8 +40309,8 @@
   "semana": 76000,
   "sem7": 91000,
   "mes": -2217000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 3331000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -43797,103 +43797,6 @@
   "d": 0
  },
  {
-  "id": "70949",
-  "nombre": "Dani Barcia",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": -17000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 6,
-  "riv": 12,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    16,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "19524",
   "nombre": "Iker Losada",
   "valor": 160000,
@@ -44311,6 +44214,103 @@
   "asis": 0,
   "edad": 24,
   "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "70949",
+  "nombre": "Dani Barcia",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -17000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 6,
+  "riv": 12,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    16,
+    0,
+    ""
+   ]
+  ],
   "p": 0,
   "d": 0
  },
@@ -44757,54 +44757,6 @@
   "d": 0
  },
  {
-  "id": "48486",
-  "nombre": "José Copete",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "doubt",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 19,
-  "riv": 1,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    6,
-    null,
-    48,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "1684",
   "nombre": "Kike García",
   "valor": 160000,
@@ -44845,20 +44797,20 @@
   "d": 0
  },
  {
-  "id": "48620",
-  "nombre": "Marcão",
+  "id": "71638",
+  "nombre": "Laro Gómez",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": -23000,
-  "sem7": -6000,
+  "semana": -3000,
+  "sem7": 0,
   "mes": 0,
   "mk": 0,
   "pv": null,
   "ced": 0,
-  "pos": 2,
-  "est": "injury",
+  "pos": 1,
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -44868,8 +44820,8 @@
    null,
    null
   ],
-  "eq": 17,
-  "riv": 15,
+  "eq": 1490,
+  "riv": 50,
   "casa": 0,
   "gol": 0,
   "tar": 0,
@@ -44879,54 +44831,47 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 30,
+  "edad": 19,
   "js": [
    [
     1,
     null,
-    14,
+    20,
     0,
     ""
    ],
    [
     2,
     null,
-    1,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    8,
+    9,
     0,
     ""
    ],
    [
     5,
     null,
-    19,
+    48,
     0,
     ""
    ],
    [
     6,
     null,
-    6,
+    3,
     0,
     ""
    ],
    [
     7,
     null,
-    3,
+    5,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    19,
     0,
     ""
    ]
@@ -45449,15 +45394,15 @@
   "d": 0
  },
  {
-  "id": "64458",
-  "nombre": "Pablo Campos",
+  "id": "62910",
+  "nombre": "Fran González",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
   "semana": 0,
   "sem7": 0,
-  "mes": -15000,
+  "mes": 0,
   "mk": 0,
   "pv": null,
   "ced": 0,
@@ -45472,8 +45417,8 @@
    null,
    null
   ],
-  "eq": 12,
-  "riv": 6,
+  "eq": 17,
+  "riv": 15,
   "casa": 0,
   "gol": 0,
   "tar": 0,
@@ -45483,54 +45428,54 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 24,
+  "edad": 21,
   "js": [
    [
     1,
     null,
-    8,
+    14,
     0,
     ""
    ],
    [
     2,
     null,
-    50,
+    1,
     0,
     ""
    ],
    [
     3,
     null,
-    4,
+    2,
     0,
     ""
    ],
    [
     4,
     null,
-    13,
+    8,
     0,
     ""
    ],
    [
     5,
     null,
-    3,
+    19,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    6,
     0,
     ""
    ],
    [
     7,
     null,
-    20,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    17,
+    3,
     0,
     ""
    ]
@@ -45662,89 +45607,6 @@
     6,
     null,
     9,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "71638",
-  "nombre": "Laro Gómez",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -3000,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1490,
-  "riv": 50,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 19,
-  "js": [
-   [
-    1,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    19,
     0,
     ""
    ]
@@ -45980,20 +45842,172 @@
   "d": 0
  },
  {
-  "id": "62910",
-  "nombre": "Fran González",
+  "id": "60290",
+  "nombre": "Raúl Asencio",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -29000,
+  "mes": -88000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 15,
+  "riv": 17,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    5,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    2,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "64458",
+  "nombre": "Pablo Campos",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
   "semana": 0,
   "sem7": 0,
-  "mes": 0,
+  "mes": -15000,
   "mk": 0,
   "pv": null,
   "ced": 0,
   "pos": 1,
   "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 12,
+  "riv": 6,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 24,
+  "js": [
+   [
+    1,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    17,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "48620",
+  "nombre": "Marcão",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -23000,
+  "sem7": -6000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -46014,7 +46028,7 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 21,
+  "edad": 30,
   "js": [
    [
     1,
@@ -46070,20 +46084,20 @@
   "d": 0
  },
  {
-  "id": "60290",
-  "nombre": "Raúl Asencio",
+  "id": "48486",
+  "nombre": "José Copete",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
   "semana": 0,
-  "sem7": -29000,
-  "mes": -88000,
+  "sem7": 0,
+  "mes": 0,
   "mk": 0,
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -46093,8 +46107,8 @@
    null,
    null
   ],
-  "eq": 15,
-  "riv": 17,
+  "eq": 19,
+  "riv": 1,
   "casa": 1,
   "gol": 0,
   "tar": 0,
@@ -46104,26 +46118,12 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 23,
+  "edad": 27,
   "js": [
-   [
-    5,
-    null,
-    14,
-    0,
-    ""
-   ],
    [
     6,
     null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    2,
+    48,
     0,
     ""
    ]

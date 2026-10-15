@@ -66,6 +66,97 @@
   "entra": false
  },
  {
+  "tipo": "clausula",
+  "dia": "2026-10-15",
+  "id": "96",
+  "equipo": "Mario80",
+  "escalones": 1,
+  "coste": 587200,
+  "clausula": 8808000
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-15",
+  "id": "8953",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-15",
+  "id": "28621",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-15",
+  "id": "29205",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-15",
+  "id": "31355",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-15",
+  "id": "52377",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-15",
+  "id": "56628",
+  "de": "Saiyans FC (Fran)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-15",
+  "id": "56628",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-15",
+  "id": "56926",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-15",
+  "id": "60872",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-15",
+  "id": "70189",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-15",
+  "id": "1396108",
+  "entra": true
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-10-15",
+  "id": "4764213",
+  "equipo": "Mario80",
+  "escalones": 1,
+  "coste": 1559800,
+  "clausula": 23397000
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-15",
+  "id": "4836165",
+  "entra": true
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-14",
   "id": "130",

@@ -8579,7 +8579,7 @@
    "importe": 5154450,
    "tipo": "normal",
    "cuando": "2026-10-11 17:11:18",
-   "valor": 4768000,
+   "valor": 4734000,
    "posicion": 3,
    "puntos": 16,
    "media": 3.2,
@@ -8967,6 +8967,24 @@
    "puntos": 13,
    "media": 3.3,
    "racha": "-,4,4,2,3",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 553663109,
+   "idJugador": "56628",
+   "nombre": "Lucien Agoumé",
+   "de": "Saiyans FC (Fran)",
+   "a": "Mister",
+   "idUcDe": 12493752,
+   "idUcA": 0,
+   "importe": 8900230,
+   "tipo": "normal",
+   "cuando": "2026-10-15 05:36:59",
+   "valor": 8703000,
+   "posicion": 3,
+   "puntos": 37,
+   "media": 4.6,
+   "racha": "5,4,7,5,2",
    "otrasPujas": []
   }
  ],

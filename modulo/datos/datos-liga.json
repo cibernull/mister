@@ -1338,6 +1338,16 @@
  ],
  "movimientos": [
   {
+   "id": "56628",
+   "nombre": "Lucien Agoumé",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 8900230,
+   "tipo": "normal",
+   "fecha": "2026-10-15 05:36:59",
+   "pos": 3
+  },
+  {
    "id": "60210",
    "nombre": "Pau Navarro",
    "de": null,
@@ -10788,6 +10798,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Lucien Agoumé",
+     "id": "56628",
+     "tipo": "venta",
+     "importe": 8900230,
+     "fecha": "2026-10-15",
+     "op": "normal"
+    },
+    {
      "j": "Aaron Mayol",
      "id": "5340038",
      "tipo": "venta",
@@ -11846,8 +11864,8 @@
     "56628": {
      "nombre": "Lucien Agoumé",
      "compras": 5900000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 8900230,
+     "ops": 2
     },
     "58980": {
      "nombre": "Valentin Rosier",
