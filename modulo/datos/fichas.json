@@ -6159,7 +6159,7 @@
   "mediaCasa": 3.3,
   "mediaFuera": 2.3,
   "edad": 28,
-  "titular": null,
+  "titular": true,
   "titularidades": 4,
   "suplencias": 4,
   "jornadas": [
