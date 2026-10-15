@@ -5732,12 +5732,21 @@
    "importe": 3934360,
    "tipo": "normal",
    "cuando": "2026-09-15 17:06:26",
-   "valor": 6350000,
+   "valor": 6290000,
    "posicion": 2,
    "puntos": 29,
    "media": 3.6,
    "racha": "3,6,6,5,3",
-   "otrasPujas": []
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 3529224
+    },
+    {
+     "equipo": "Niutin FC (Isaac)",
+     "puja": 3224010
+    }
+   ]
   },
   {
    "idTransfer": 548455377,
