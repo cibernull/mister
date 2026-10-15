@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-15T20:37:53.545Z",
+ "cuando": "2026-10-15T21:08:06.079Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "15/10",
-   "titulo": "Sigue en directo el Celta - Juventus",
+   "titulo": "Europa League: Celta 1-2 Juventus. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/24282-celta-juventus",
-   "categoria": "análisis"
+   "categoria": "partido"
   },
   {
    "fecha": "02/09",
@@ -26,6 +26,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Luiz Felipe se retira de la sesión con molestias y Ratiu sigue al margen",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152866-luiz-felipe-se-retira-de-la-sesion-con-molestias-y-ratiu-sigue-al-margen",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "Bordalás analiza el empate y habla de Gudelj y Andrés García",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152865-bordalas-analiza-el-empate-y-habla-de-gudelj-y-andres-garcia",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "15/10",
@@ -470,18 +482,6 @@
    "titulo": "El Getafe se ejercita en Craiova sin Carvajal ni los lesionados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152792-el-getafe-se-ejercita-en-craiova-sin-carvajal-ni-los-lesionados",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Sergio Gómez habla del Anderlecht, su estado físico y el plan de juego",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152791-sergio-gomez-habla-del-anderlecht-su-estado-fisico-y-el-plan-de-juego",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Matarazzo habla de Héctor Fort, Gorrotxategi, Turrientes, Yangel Herrera, la portería y el Union Saint-Gillois",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152790-matarazzo-habla-de-hector-fort-gorrotxategi-turrientes-yangel-herrera-la-porteria-y-el-union-",
-   "categoria": "rueda de prensa"
   }
  ]
 }
