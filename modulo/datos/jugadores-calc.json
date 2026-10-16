@@ -13,7 +13,7 @@
   "pv": null,
   "ced": 0,
   "pos": 4,
-  "est": "doubt",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -4591,7 +4591,7 @@
   "pv": 13007000,
   "ced": 0,
   "pos": 2,
-  "est": "doubt",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -19416,7 +19416,7 @@
   "mf": 2.7,
   "tit": 3,
   "sup": 3,
-  "once": 1,
+  "once": null,
   "asis": 1,
   "edad": 27,
   "js": [
@@ -21611,7 +21611,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "doubt",
+  "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -40612,7 +40612,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": "injury",
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -46197,7 +46197,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "doubt",
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -46252,7 +46252,7 @@
   "pv": null,
   "ced": 0,
   "pos": 2,
-  "est": "doubt",
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [

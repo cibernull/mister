@@ -165,6 +165,26 @@
   "equipo": "Cacaculopedopis"
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-10-16",
+  "id": "217",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "alta",
+  "dia": "2026-10-16",
+  "id": "17453",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-16",
+  "id": "48486",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-15",
   "id": "17615",
