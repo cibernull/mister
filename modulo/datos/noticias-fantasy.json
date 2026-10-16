@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-16T18:38:04.333Z",
+ "cuando": "2026-10-16T19:07:57.416Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -29,7 +29,25 @@
   },
   {
    "fecha": "16/10",
-   "titulo": "Parte médico de Borja Iglesias: qué lesión tiene y cuánto tiempo estará de baja",
+   "titulo": "Luís Castro destaca la calidad del Deportivo y advierte de la dificultad del partido",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152942-luis-castro-destaca-calidad-deportivo-advierte-dificultad-partido",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "Flick probó once para enfrentarse al Betis",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152941-flick-probo-once-para-enfrentarse-al-betis",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "Antonio Hidalgo analiza los ajustes tácticos y el peligro del Levante",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152940-antonio-hidalgo-analiza-ajustes-tacticos-peligro-levante",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "Parte médico de Borja Iglesias y periodo estimado de baja",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152939-parte-medico-borja-iglesias-lesion-tiene-cuanto-tiempo-estara-baja",
    "categoria": "lesión"
   },
@@ -464,24 +482,6 @@
    "titulo": "Europa League: Celta 1-2 Juventus. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/24282-celta-juventus",
    "categoria": "partido"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Luiz Felipe se retira de la sesión con molestias y Ratiu sigue al margen",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152866-luiz-felipe-se-retira-de-la-sesion-con-molestias-y-ratiu-sigue-al-margen",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Bordalás analiza el empate y habla de Gudelj y Andrés García",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152865-bordalas-analiza-el-empate-y-habla-de-gudelj-y-andres-garcia",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Jonny, sobre su regreso a Balaídos, el momento del Alavés, su polivalencia, Miguel, Novoa y Giráldez",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152864-jonny-sobre-su-regreso-a-balaidos-el-momento-del-alaves-su-polivalencia-miguel-novoa-y-girald",
-   "categoria": "rueda de prensa"
   }
  ]
 }
