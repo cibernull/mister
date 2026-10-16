@@ -4194,6 +4194,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 12,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -28704,11 +28711,25 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 17,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 6,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-11",
-  "partidos": 5
+  "dia": "2026-10-16",
+  "partidos": 4
  },
  "70925": {
   "nombre": "Simon Eriksson",
@@ -29475,6 +29496,13 @@
     "eventos": [
      "penalty"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 12,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -29811,6 +29839,13 @@
      "sub_in",
      "assist"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 12,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -29893,6 +29928,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 12,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -32256,6 +32298,13 @@
     "rival": 16,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 12,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33374,6 +33423,13 @@
      "yellow",
      "sub_in"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 6,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -35751,6 +35807,13 @@
     "eventos": [
      "goal"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 6,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
