@@ -9108,6 +9108,24 @@
      "puja": 1185960
     }
    ]
+  },
+  {
+   "idTransfer": 553946343,
+   "idJugador": "25631",
+   "nombre": "Ilaix Moriba",
+   "de": "Mister",
+   "a": "Niutin FC (Isaac)",
+   "idUcDe": 0,
+   "idUcA": 12493763,
+   "importe": 6279000,
+   "tipo": "normal",
+   "cuando": "2026-10-16 17:00:16",
+   "valor": 6279000,
+   "posicion": 3,
+   "puntos": 33,
+   "media": 4.1,
+   "racha": "2,5,4,13,5",
+   "otrasPujas": []
   }
  ],
  "salidas": [

@@ -1,6 +1,14 @@
 {
- "saldo": 5755590,
+ "saldo": -523410,
  "apuntes": [
+  {
+   "cuando": 1792162800,
+   "fecha": "2026-10-16 17:00",
+   "motivo": "Ilaix Moriba a Mister",
+   "tipo": "Compra",
+   "importe": -6279000,
+   "saldo": -523410
+  },
   {
    "cuando": 1792081456,
    "fecha": "2026-10-15 18:24",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 5276460,
    "saldo": 21625742
-  },
-  {
-   "cuando": 1789335553,
-   "fecha": "2026-09-13 23:39",
-   "motivo": "Modificación de cláusula (100%) de Xavi Espart",
-   "tipo": "Penalización",
-   "importe": -964318,
-   "saldo": 16349282
   }
  ]
 }

@@ -1353,6 +1353,16 @@
  ],
  "movimientos": [
   {
+   "id": "25631",
+   "nombre": "Ilaix Moriba",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 6279000,
+   "tipo": "normal",
+   "fecha": "2026-10-16 17:00:16",
+   "pos": 3
+  },
+  {
    "id": "328",
    "nombre": "Dani Carvajal",
    "de": null,
@@ -7619,6 +7629,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Ilaix Moriba",
+     "id": "25631",
+     "tipo": "compra",
+     "importe": 6279000,
+     "fecha": "2026-10-16",
+     "op": "normal"
+    },
+    {
      "j": "Sergi Cardona",
      "id": "53107",
      "tipo": "compra",
@@ -8682,9 +8700,9 @@
     },
     "25631": {
      "nombre": "Ilaix Moriba",
-     "compras": 4388590,
+     "compras": 10667590,
      "ventas": 5781300,
-     "ops": 2
+     "ops": 3
     },
     "25885": {
      "nombre": "Carlos Dominguez",

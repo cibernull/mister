@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-16T14:37:57.302Z",
+ "cuando": "2026-10-16T15:08:13.149Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,24 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "Parte médico oficial de Luiz Felipe: rotura de ligamento cruzado anterior",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152931-parte-medico-oficial-de-luiz-felipe-rotura-de-ligamento-cruzado-anterior",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "Yago Santiago y Buba Sangare reciben el alta médica y dejan vacía la enfermería",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152930-yago-santiago-y-sangare-reciben-el-alta-medica-y-dejan-vacia-la-enfermeria",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "MundoLevante apuesta por la suplencia de Olasagasti y la titularidad de Ratkov",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152929-mundolevante-apuesta-por-la-suplencia-de-olasagasti-y-la-titularidad-de-ratkov",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Keita complica la vida europea a la Real",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152856-keita-complica-la-vida-europea-a-la-real",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Terrats termina sustituido por molestias en el hombro",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152855-terrats-termina-sustituido-por-molestias-en-el-hombro",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Conference League: Univertitatea Craiova 1-1 Getafe. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/24399-u-craiova-getafe",
-   "categoria": "partido"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Europa League: Union Saint-Gillois 1-1 Real Sociedad. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/24278-union-saint-gilloise-real-sociedad",
-   "categoria": "partido"
   }
  ]
 }

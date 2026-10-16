@@ -26825,6 +26825,85 @@
   "dia": "2026-10-13",
   "partidos": 4
  },
+ "68516": {
+  "nombre": "Hugo Burcio",
+  "posicion": 3,
+  "goles": 0,
+  "tarjetas": 0,
+  "mediaCasa": 3.5,
+  "mediaFuera": 2,
+  "edad": 19,
+  "titular": null,
+  "titularidades": 0,
+  "suplencias": 3,
+  "jornadas": [
+   {
+    "jornada": 1,
+    "puntos": null,
+    "rival": 50,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 2,
+    "puntos": null,
+    "rival": 19,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 3,
+    "puntos": null,
+    "rival": 1,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 4,
+    "puntos": null,
+    "rival": 9,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 5,
+    "puntos": 6,
+    "rival": 13,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 16,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 7,
+    "puntos": 1,
+    "rival": 1490,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 2,
+    "rival": 23,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
+   }
+  ],
+  "asistencias": 0,
+  "dia": "2026-10-16",
+  "partidos": 0
+ },
  "68593": {
   "nombre": "Lucas Cepeda",
   "posicion": 4,

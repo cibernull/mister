@@ -3813,6 +3813,18 @@
     "topeMax": 35908840,
     "exceso": 0
    }
+  ],
+  "553946343": [
+   {
+    "idTransfer": 553946343,
+    "cuando": "2026-10-16 17:00:16",
+    "jugador": "Ilaix Moriba",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 6279000,
+    "gana": true,
+    "topeMax": 36215090,
+    "exceso": 0
+   }
   ]
  }
 }
