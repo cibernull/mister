@@ -6000,8 +6000,8 @@
   "semana": -143000,
   "sem7": -1109000,
   "mes": -704000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 2933000,
   "ced": 0,
   "pos": 3,
   "est": "injury",
@@ -7295,8 +7295,8 @@
   "semana": 89000,
   "sem7": 475000,
   "mes": 2808000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 6279000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -8583,8 +8583,8 @@
   "semana": -32000,
   "sem7": -330000,
   "mes": -1543000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 14568000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -25729,8 +25729,8 @@
   "semana": 32000,
   "sem7": 21000,
   "mes": -607000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 558000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -28664,8 +28664,8 @@
   "semana": -1000,
   "sem7": -229000,
   "mes": -468000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -30702,8 +30702,8 @@
   "semana": -68000,
   "sem7": -596000,
   "mes": 769000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 2844000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -31159,8 +31159,8 @@
   "semana": 30000,
   "sem7": -10000,
   "mes": -6000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 190000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -31726,8 +31726,8 @@
   "semana": -47000,
   "sem7": -197000,
   "mes": 324000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 505000,
   "ced": 0,
   "pos": 2,
   "est": "injury",
@@ -32585,8 +32585,8 @@
   "semana": -29000,
   "sem7": -32000,
   "mes": -52000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 162000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -41351,8 +41351,8 @@
   "semana": 43000,
   "sem7": 47000,
   "mes": 47000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 207000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -41652,96 +41652,6 @@
   "d": 1
  },
  {
-  "id": "4947926",
-  "nombre": "Kevin Lomónaco",
-  "valor": 205000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 41000,
-  "sem7": 45000,
-  "mes": -967000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 23,
-  "riv": 20,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 24,
-  "js": [
-   [
-    1,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    5,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "64496",
   "nombre": "Roony Bardghji",
   "valor": 205000,
@@ -41856,6 +41766,96 @@
   ],
   "p": 0,
   "d": 1
+ },
+ {
+  "id": "4947926",
+  "nombre": "Kevin Lomónaco",
+  "valor": 205000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 41000,
+  "sem7": 45000,
+  "mes": -967000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 23,
+  "riv": 20,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 24,
+  "js": [
+   [
+    1,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    5,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
  },
  {
   "id": "70496",
@@ -44412,6 +44412,103 @@
   "d": 0
  },
  {
+  "id": "61410",
+  "nombre": "Adrián Rodríguez",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -1000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 48,
+  "riv": 5,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    1,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    2,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "59089",
   "nombre": "Alex Padilla",
   "valor": 160000,
@@ -44421,8 +44518,8 @@
   "semana": -26000,
   "sem7": 0,
   "mes": -50000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -44708,89 +44805,6 @@
     7,
     null,
     3,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "71638",
-  "nombre": "Laro Gómez",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -25000,
-  "mes": -36000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1490,
-  "riv": 50,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 19,
-  "js": [
-   [
-    1,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    19,
     0,
     ""
    ]
@@ -45686,103 +45700,6 @@
   "d": 0
  },
  {
-  "id": "61410",
-  "nombre": "Adrián Rodríguez",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": -1000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 48,
-  "riv": 5,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    1,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    2,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "29238",
   "nombre": "Arnau Comas",
   "valor": 160000,
@@ -46362,6 +46279,89 @@
     6,
     null,
     48,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "71638",
+  "nombre": "Laro Gómez",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -25000,
+  "mes": -36000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 1490,
+  "riv": 50,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 19,
+  "js": [
+   [
+    1,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    19,
     0,
     ""
    ]

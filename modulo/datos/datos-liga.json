@@ -1344,9 +1344,24 @@
    "id": "4836165",
    "nombre": "Roy Revivo",
    "valor": 1220000
+  },
+  {
+   "id": "328",
+   "nombre": "Dani Carvajal",
+   "valor": 1218000
   }
  ],
  "movimientos": [
+  {
+   "id": "328",
+   "nombre": "Dani Carvajal",
+   "de": null,
+   "a": "Mario80",
+   "importe": 3027470,
+   "tipo": "normal",
+   "fecha": "2026-10-16 05:00:22",
+   "pos": 2
+  },
   {
    "id": "53098",
    "nombre": "Alberto Moleiro",
@@ -10246,6 +10261,14 @@
   "Mario80": {
    "movimientos": [
     {
+     "j": "Dani Carvajal",
+     "id": "328",
+     "tipo": "compra",
+     "importe": 3027470,
+     "fecha": "2026-10-16",
+     "op": "normal"
+    },
+    {
      "j": "Ángel Fortuño",
      "id": "29167",
      "tipo": "compra",
@@ -10692,6 +10715,12 @@
     "308": {
      "nombre": "Johan Mojica",
      "compras": 1403590,
+     "ventas": 0,
+     "ops": 1
+    },
+    "328": {
+     "nombre": "Dani Carvajal",
+     "compras": 3027470,
      "ventas": 0,
      "ops": 1
     },

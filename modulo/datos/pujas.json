@@ -3781,6 +3781,38 @@
     "topeMax": 32373850,
     "exceso": 0
    }
+  ],
+  "553835079": [
+   {
+    "idTransfer": 553835079,
+    "cuando": "2026-10-16 05:00:22",
+    "jugador": "Dani Carvajal",
+    "equipo": "Mario80",
+    "puja": 3027470,
+    "gana": true,
+    "topeMax": 28486250,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 553835079,
+    "cuando": "2026-10-16 05:00:22",
+    "jugador": "Dani Carvajal",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1454265,
+    "gana": false,
+    "topeMax": 38813110,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 553835079,
+    "cuando": "2026-10-16 05:00:22",
+    "jugador": "Dani Carvajal",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1185960,
+    "gana": false,
+    "topeMax": 35908840,
+    "exceso": 0
+   }
   ]
  }
 }
