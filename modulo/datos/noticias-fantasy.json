@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-16T17:37:57.810Z",
+ "cuando": "2026-10-16T18:08:05.844Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "16/10",
+   "titulo": "Alineaciones confirmadas del Deportivo - Levante",
+   "url": "https://www.futbolfantasy.com/partidos/22504-deportivo-levante",
+   "categoria": "rueda de prensa"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 actualizadas",
@@ -476,12 +482,6 @@
    "titulo": "Balde comunica a Mendes su intención de salir en enero",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152863-balde-comunica-a-mendes-su-intencion-de-salir-en-enero",
    "categoria": "mercado"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Pablo Ramón, sobre su estado físico, los goles encajados, la lucha por la titularidad y Belocian",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152862-pablo-ramon-sobre-su-estado-fisico-los-goles-encajados-la-lucha-por-la-titularidad-y-belocian",
-   "categoria": "rueda de prensa"
   }
  ]
 }
