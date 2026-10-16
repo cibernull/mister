@@ -2520,7 +2520,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": null,
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -14231,7 +14231,7 @@
   "pv": null,
   "ced": 0,
   "pos": 3,
-  "est": null,
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -16653,7 +16653,7 @@
   "mf": 4.3,
   "tit": 4,
   "sup": 3,
-  "once": null,
+  "once": 1,
   "asis": 0,
   "edad": 27,
   "js": [
@@ -18569,8 +18569,8 @@
   "semana": 46000,
   "sem7": 218000,
   "mes": 808000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 2059000,
   "ced": 0,
   "pos": 2,
   "est": null,
