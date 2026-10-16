@@ -1,12 +1,12 @@
 {
- "cuando": "2026-10-16T11:07:51.541Z",
+ "cuando": "2026-10-16T11:37:55.908Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "16/10",
-   "titulo": "Luis García habla de Sierra, Ejuke, Alfon, Vargas, Kochorashvili, Stassin, Ure, Cardoso, Guridi y el Real Madrid",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152899-luis-garcia-habla-de-sierra-ejuke-alfon-vargas-kochorashvili-stassin-ure-cardoso-guridi-y-el-",
+   "titulo": "Pellegrini explica cómo llega el equipo y habla de Isco, Ceballos, Ruibal, Ortiz, Bellerín, Antony, Lamine Yamal y el Barcelona",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152902-pellegrini-explica-como-llega-el-equipo-y-habla-de-isco-ceballos-ruibal-ortiz-bellerin-antony",
    "categoria": "rueda de prensa"
   },
   {
@@ -29,6 +29,18 @@
   },
   {
    "fecha": "16/10",
+   "titulo": "Junior, Ruibal y Losada siguen fuera de la convocatoria",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152904-junior-ruibal-y-losada-siguen-fuera-de-la-convocatoria",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "El Real Madrid retoma los entrenamientos sin Rodrygo ni Asencio",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152903-el-real-madrid-retoma-los-entrenamientos-sin-rodrygo-ni-asencio",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "16/10",
    "titulo": "Rioja recibe el alta médica, pero Copete todavía no",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152901-rioja-recibe-el-alta-medica-pero-copete-todavia-no",
    "categoria": "lesión"
@@ -38,6 +50,12 @@
    "titulo": "Diario de Sevilla publica su pronóstico para el once de Pellegrini",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152900-diario-de-sevilla-publica-su-pronostico-para-el-once-de-pellegrini",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "Luis García habla de Sierra, Ejuke, Alfon, Vargas, Kochorashvili, Stassin, Ure, Cardoso, Guridi y el Real Madrid",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152899-luis-garcia-habla-de-sierra-ejuke-alfon-vargas-kochorashvili-stassin-ure-cardoso-guridi-y-el-",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "16/10",
@@ -463,24 +481,6 @@
    "fecha": "15/10",
    "titulo": "Eriksson vuelve a apartarse del grupo en una sesión realizada en el estadio",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152828-eriksson-vuelve-a-apartarse-del-grupo-en-una-sesion-realizada-en-el-estadio",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Raphinha y De Jong empiezan el entrenamiento con el grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152827-raphinha-y-de-jong-empiezan-el-entrenamiento-con-el-grupo",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Sport rectifica: Raphinha se probará con el grupo y apunta el Betis",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152826-sport-rectifica-raphinha-se-probara-con-el-grupo-y-apunta-el-betis",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Laporte sigue sin entrenar con el grupo y preocupa su titularidad",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152825-laporte-sigue-sin-entrenar-con-el-grupo-y-preocupa-su-titularidad",
    "categoria": "entrenamiento"
   }
  ]
