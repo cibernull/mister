@@ -151,6 +151,20 @@
   "entra": true
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-10-16",
+  "id": "42",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-16",
+  "id": "56578",
+  "estado": "injury",
+  "equipo": "Cacaculopedopis"
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-15",
   "id": "17615",
