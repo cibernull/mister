@@ -4200,7 +4200,9 @@
     "puntos": null,
     "rival": 12,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -14419,8 +14421,10 @@
     "jornada": 9,
     "puntos": null,
     "rival": 12,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -37928,8 +37932,10 @@
     "jornada": 9,
     "puntos": null,
     "rival": 6,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
