@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-16T08:37:55.694Z",
+ "cuando": "2026-10-16T09:08:09.350Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "16/10",
+   "titulo": "Pablo García se prueba por dentro y Canales sigue en la derecha",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152883-pablo-garcia-se-prueba-por-dentro-y-canales-sigue-en-la-derecha",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 actualizadas",
@@ -19,6 +25,24 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "Kochorashvili tampoco entrena hoy y se elevan las dudas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152885-kochorashvili-tampoco-entrena-hoy-y-se-elevan-las-dudas",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "Plaza Deportiva apuesta por la titularidad de Danjuma y tiene dudas entre Raba y Otorbi",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152884-plaza-deportiva-apuesta-por-la-titularidad-de-danjuma-y-tiene-dudas-entre-raba-y-otorbi",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "SuperDeporte apuesta por un once con la única novedad de Otorbi",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152882-superdeporte-apuesta-por-un-once-con-la-unica-novedad-de-otorbi",
    "categoria": "análisis"
   },
   {
@@ -458,30 +482,6 @@
    "titulo": "Pellegrini valora el triunfo y habla de Isco, Abde, Ortiz, Cucho, Marc Roca y el Porto",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152808-pellegrini-valora-el-triunfo-y-habla-de-isco-abde-ortiz-cucho-marc-roca-y-el-porto",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Posibles alineaciones y previa fantasy del Universitatea Craiova - Getafe",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152807-posibles-alineaciones-y-previa-fantasy-del-u-craiova-getafe",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Alineaciones probables y previa fantasy del Union Saint-Gilloise - Real Sociedad",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152806-alineaciones-probables-y-previa-fantasy-del-union-saint-gilloise-real-sociedad",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Vinícius explica su enfado por el cambio, cuestiona la sanción y el arbitraje y asume los pitos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152805-vinicius-explica-su-enfado-por-el-cambio-cuestiona-la-sancion-y-el-arbitraje-y-asume-los-pito",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "El Deportivo completó otro entrenamiento el miércoles sin recuperar lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152809-el-deportivo-completo-otro-entrenamiento-el-miercoles-sin-recuperar-lesionados",
-   "categoria": "entrenamiento"
   }
  ]
 }
