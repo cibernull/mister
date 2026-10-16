@@ -6181,9 +6181,9 @@
    "cuando": "2026-09-20 01:57:40",
    "valor": 844000,
    "posicion": 3,
-   "puntos": 22,
-   "media": 3,
-   "racha": "6,3,3,3,2",
+   "puntos": 23,
+   "media": 2.9,
+   "racha": "3,3,3,2,2",
    "otrasPujas": []
   },
   {
@@ -6199,9 +6199,9 @@
    "cuando": "2026-09-20 04:47:22",
    "valor": 6863000,
    "posicion": 4,
-   "puntos": 40,
-   "media": 4.4,
-   "racha": "5,2,4,5,5",
+   "puntos": 44,
+   "media": 4.9,
+   "racha": "2,4,5,5,9",
    "otrasPujas": []
   },
   {
@@ -7110,9 +7110,9 @@
    "cuando": "2026-09-25 09:13:19",
    "valor": 4064000,
    "posicion": 3,
-   "puntos": 33,
-   "media": 4.6,
-   "racha": "13,6,3,1,4",
+   "puntos": 35,
+   "media": 4.4,
+   "racha": "6,3,1,4,3",
    "otrasPujas": []
   },
   {
@@ -7202,7 +7202,7 @@
    "posicion": 4,
    "puntos": 64,
    "media": 9.1,
-   "racha": "13,10,2,5,-",
+   "racha": "10,2,5,-,-",
    "otrasPujas": []
   },
   {
@@ -8509,9 +8509,9 @@
    "cuando": "2026-10-11 09:11:48",
    "valor": 160000,
    "posicion": 2,
-   "puntos": 12,
-   "media": 2.8,
-   "racha": "3,-,4,-,-",
+   "puntos": 13,
+   "media": 2.6,
+   "racha": "-,4,-,-,2",
    "otrasPujas": []
   },
   {
@@ -8617,9 +8617,9 @@
    "cuando": "2026-10-12 02:44:00",
    "valor": 4659000,
    "posicion": 2,
-   "puntos": 27,
-   "media": 3.7,
-   "racha": "4,4,6,2,5",
+   "puntos": 29,
+   "media": 3.6,
+   "racha": "4,6,2,5,3",
    "otrasPujas": []
   },
   {
@@ -8635,9 +8635,9 @@
    "cuando": "2026-10-12 09:56:44",
    "valor": 3432000,
    "posicion": 4,
-   "puntos": 14,
-   "media": 2.6,
-   "racha": "1,2,3,3,4",
+   "puntos": 17,
+   "media": 2.8,
+   "racha": "2,3,3,4,4",
    "otrasPujas": []
   },
   {
@@ -8671,9 +8671,9 @@
    "cuando": "2026-10-12 17:00:14",
    "valor": 7635000,
    "posicion": 1,
-   "puntos": 35,
-   "media": 4.3,
-   "racha": "3,3,4,3,5",
+   "puntos": 34,
+   "media": 3.8,
+   "racha": "3,4,3,5,0",
    "otrasPujas": []
   },
   {
@@ -8743,9 +8743,9 @@
    "cuando": "2026-10-12 22:16:51",
    "valor": 8979000,
    "posicion": 4,
-   "puntos": 46,
-   "media": 6.3,
-   "racha": "6,2,12,10,11",
+   "puntos": 48,
+   "media": 6,
+   "racha": "2,12,10,11,4",
    "otrasPujas": []
   },
   {
