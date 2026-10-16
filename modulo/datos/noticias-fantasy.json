@@ -1,11 +1,17 @@
 {
- "cuando": "2026-10-16T12:08:05.019Z",
+ "cuando": "2026-10-16T12:28:03.797Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "16/10",
-   "titulo": "Flick habla de Olmo, De Jong, Abde, Gavi y Fermín, Espart, Cancelo, Balde, y la gestión de los minutos",
+   "titulo": "Terzic, sobre Laporte, Nico Williams, Sancet, Djaló, Imga y el partido contra el Valencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152912-terzic-sobre-laporte-nico-williams-sancet-djalo-imga-y-el-partido-contra-el-valencia",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "Flick habla de Raphinha, Olmo, De Jong, Abde, Gavi y Fermín, Espart, Cancelo, Balde, y la gestión de los minutos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152908-flick-habla-de-olmo-de-jong-abde-gavi-y-fermin-espart-cancelo-balde-y-la-gestion-de-los-minut",
    "categoria": "rueda de prensa"
   },
@@ -29,13 +35,25 @@
   },
   {
    "fecha": "16/10",
+   "titulo": "Cajuste recibe el alta médica y Juan Cruz es baja segura",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152911-cajuste-recibe-el-alta-medica-y-juan-cruz-es-baja-segura",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "Apelación desestima el recurso y mantiene los cuatro partidos de sanción a Vinicius",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152910-apelacion-desestima-el-recurso-y-mantiene-los-cuatro-partidos-de-sancion-a-vinicius",
+   "categoria": "sanción"
+  },
+  {
+   "fecha": "16/10",
    "titulo": "Quique habla de la urgencia del partido, los cambios de sistema, Miguel, Blanco y Ángel Pérez",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152909-quique-habla-de-la-urgencia-del-partido-los-cambios-de-sistema-miguel-blanco-y-angel-perez",
    "categoria": "rueda de prensa"
   },
   {
    "fecha": "16/10",
-   "titulo": "Manolo, sobre Fortuño, Puado, la presión externa y el Atlético",
+   "titulo": "Manolo, sobre Fortuño, Puado, Expósito, Calatrava, la presión externa y el Atlético",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152907-manolo-sobre-fortuno-puado-la-presion-externa-y-el-atletico",
    "categoria": "rueda de prensa"
   },
@@ -464,24 +482,6 @@
    "titulo": "Bardeli no puede dormirse",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152836-bardeli-no-puede-dormirse",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Luis Castro eleva las opciones de Nduwke para mantenerse en el once",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152835-luis-castro-eleva-las-opciones-de-nduwke-para-mantenerse-en-el-once",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "Luis Castro habla de Sotelo, Etta Eyong, Primo, Ndukwe, Ratkov, Iván, Musuayi, Dela, Bardeli y el Deportivo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152834-luis-castro-habla-de-sotelo-etta-eyong-primo-ndukwe-ratkov-musuayi-dela-bardeli-y-el-deportiv",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "15/10",
-   "titulo": "El Real Madrid descansa este jueves pendiente de Militao y Mendy",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152833-el-real-madrid-descansa-este-jueves-pendiente-de-militao-y-mendy",
-   "categoria": "equipo"
   }
  ]
 }
