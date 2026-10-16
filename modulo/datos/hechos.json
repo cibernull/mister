@@ -9126,6 +9126,24 @@
    "media": 4.1,
    "racha": "2,5,4,13,5",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 553969455,
+   "idJugador": "64200",
+   "nombre": "Jeremy Toljan",
+   "de": "Saiyans FC (Fran)",
+   "a": "Mister",
+   "idUcDe": 12493752,
+   "idUcA": 0,
+   "importe": 1997230,
+   "tipo": "normal",
+   "cuando": "2026-10-16 19:02:10",
+   "valor": 2059000,
+   "posicion": 2,
+   "puntos": 20,
+   "media": 2.9,
+   "racha": "5,2,1,6,2",
+   "otrasPujas": []
   }
  ],
  "salidas": [

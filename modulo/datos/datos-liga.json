@@ -1353,6 +1353,16 @@
  ],
  "movimientos": [
   {
+   "id": "64200",
+   "nombre": "Jeremy Toljan",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 1997230,
+   "tipo": "normal",
+   "fecha": "2026-10-16 19:02:10",
+   "pos": 2
+  },
+  {
    "id": "25631",
    "nombre": "Ilaix Moriba",
    "de": null,
@@ -10963,6 +10973,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Jeremy Toljan",
+     "id": "64200",
+     "tipo": "venta",
+     "importe": 1997230,
+     "fecha": "2026-10-16",
+     "op": "normal"
+    },
+    {
      "j": "Lucien Agoumé",
      "id": "56628",
      "tipo": "venta",
@@ -12059,8 +12077,8 @@
     "64200": {
      "nombre": "Jeremy Toljan",
      "compras": 1423000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1997230,
+     "ops": 2
     },
     "64459": {
      "nombre": "Dávid Hancko",
