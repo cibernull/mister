@@ -1,14 +1,8 @@
 {
- "cuando": "2026-10-15T23:07:54.355Z",
+ "cuando": "2026-10-16T00:08:05.332Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "15/10",
-   "titulo": "La Juve desKoloca al Celta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152867-la-juve-deskoloca-al-celta",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 9 actualizadas",
@@ -25,6 +19,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "Roberto Fernández habla de la Selección, De la Fuente, su cláusula, las críticas y Manolo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152875-roberto-fernandez-habla-de-la-seleccion-de-la-fuente-su-clausula-las-criticas-y-manolo",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "El Ideal Gallego apuesta por Riki Rodríguez como única novedad ante el Levante",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152874-el-ideal-gallego-apuesta-por-riki-rodriguez-como-unica-novedad-ante-el-levante",
    "categoria": "análisis"
   },
   {
@@ -55,6 +61,12 @@
    "fecha": "15/10",
    "titulo": "Ave, Claudio: Los que van a rotar te saludan",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152869-ave-claudio-los-que-van-a-rotar-te-saludan",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "15/10",
+   "titulo": "La Juve desKoloca al Celta",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152867-la-juve-deskoloca-al-celta",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Champions League: Betis 3-2 Porto. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/24143-betis-porto",
    "categoria": "partido"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "Champions League: Roma 3-4 Real Madrid. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/24139-roma-real-madrid",
-   "categoria": "partido"
-  },
-  {
-   "fecha": "14/10",
-   "titulo": "El Villarreal descansó este miércoles pendiente de Buchanan, Gulácsi y Pépé",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152799-el-villarreal-descanso-este-miercoles-pendiente-de-buchanan-gulacsi-y-pepe",
-   "categoria": "equipo"
   }
  ]
 }
