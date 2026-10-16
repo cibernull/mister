@@ -1,6 +1,14 @@
 {
- "saldo": -523410,
+ "saldo": 497390,
  "apuntes": [
+  {
+   "cuando": 1792164753,
+   "fecha": "2026-10-16 17:32",
+   "motivo": "Modificación de cláusula (150%) de Roger Brugué",
+   "tipo": "Bonificación",
+   "importe": 1020800,
+   "saldo": 497390
+  },
   {
    "cuando": 1792162800,
    "fecha": "2026-10-16 17:00",
@@ -472,14 +480,6 @@
    "tipo": "Bonificación",
    "importe": 3075000,
    "saldo": 24700742
-  },
-  {
-   "cuando": 1789398578,
-   "fecha": "2026-09-14 17:09",
-   "motivo": "Dani Lorenzo a Mister",
-   "tipo": "Venta",
-   "importe": 5276460,
-   "saldo": 21625742
   }
  ]
 }
