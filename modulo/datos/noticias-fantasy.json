@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-16T20:37:53.759Z",
+ "cuando": "2026-10-16T21:08:13.282Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "16/10",
-   "titulo": "Sigue en directo el Deportivo - Levante",
-   "url": "https://www.futbolfantasy.com/partidos/22504-deportivo-levante",
-   "categoria": "análisis"
+   "titulo": "Bright Ede pide el cambio por una lesión en los isquiotibiales",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152951-bright-ede-pide-el-cambio-por-una-lesion-en-los-isquiotibiales",
+   "categoria": "lesión"
   },
   {
    "fecha": "02/09",
@@ -26,6 +26,24 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "Jornada 9: Deportivo 1-1 Levante. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22504-deportivo-levante",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "El Getafe retoma los entrenamientos con ocho jugadores en la enfermería",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152953-el-getafe-retoma-los-entrenamientos-con-ocho-jugadores-en-la-enfermeria",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "16/10",
+   "titulo": "Yeremay, sustituido por un corte con sangrado en la cabeza",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152952-yeremay-sustituido-por-un-corte-con-sangrado-en-la-cabeza",
+   "categoria": "lesión"
   },
   {
    "fecha": "16/10",
@@ -463,24 +481,6 @@
    "fecha": "16/10",
    "titulo": "Posibles alineaciones y previa fantasy del Málaga - Real Sociedad",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152877-posibles-alineaciones-y-previa-fantasy-del-malaga-real-sociedad",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Posibles alineaciones y previa fantasy del Celta - Alavés",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152876-posibles-alineaciones-y-previa-fantasy-del-celta-alaves",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Roberto Fernández habla de la Selección, De la Fuente, su cláusula, las críticas y Manolo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152875-roberto-fernandez-habla-de-la-seleccion-de-la-fuente-su-clausula-las-criticas-y-manolo",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "El Ideal Gallego apuesta por Riki Rodríguez como única novedad ante el Levante",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152874-el-ideal-gallego-apuesta-por-riki-rodriguez-como-unica-novedad-ante-el-levante",
    "categoria": "análisis"
   }
  ]
