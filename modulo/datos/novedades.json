@@ -211,6 +211,13 @@
   "entra": true
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-10-17",
+  "id": "15566",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
   "tipo": "duenio",
   "dia": "2026-10-16",
   "id": "328",
