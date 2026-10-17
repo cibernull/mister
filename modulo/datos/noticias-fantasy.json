@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-17T12:08:03.007Z",
+ "cuando": "2026-10-17T12:38:09.661Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "17/10",
-   "titulo": "Alineaciones confirmadas del Espanyol - Atlético",
+   "titulo": "Sigue en directo el Espanyol - Atlético",
    "url": "https://www.futbolfantasy.com/partidos/22505-espanyol-atletico",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "17/10",
@@ -31,6 +31,30 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Sebastián Cáceres será titular contra el Alavés",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152980-sebastian-caceres-sera-titular-contra-el-alaves",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Giráldez, sobre Durán, Faye, Iglesias, Javi Rodríguez, Cáceres, Lago, Driouech, Starfelt, Román, Jones, Aspas, Antañón y Radu",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152979-giraldez-sobre-duran-faye-iglesias-javi-rodriguez-caceres-lago-driouech-starfelt-roman-jones-",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Militao, novedad en una lista sin Vinicius ni los lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152978-militao-novedad-en-una-lista-sin-vinicius-ni-los-lesionados",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Diario de Sevilla apuesta por Ejuke y Peque para completar el once del Bernabéu",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152977-diario-de-sevilla-apuesta-por-ejuke-y-peque-para-completar-el-once-del-bernabeu",
    "categoria": "análisis"
   },
   {
@@ -458,30 +482,6 @@
    "titulo": "Junior, Ruibal y Losada siguen fuera de la convocatoria",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152904-junior-ruibal-y-losada-siguen-fuera-de-la-convocatoria",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "El Real Madrid retoma los entrenamientos sin Rodrygo ni Asencio",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152903-el-real-madrid-retoma-los-entrenamientos-sin-rodrygo-ni-asencio",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Pellegrini explica cómo llega el equipo y habla de Isco, Ceballos, Ruibal, Ortiz, Bellerín, Antony, Lamine Yamal y el Barcelona",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152902-pellegrini-explica-como-llega-el-equipo-y-habla-de-isco-ceballos-ruibal-ortiz-bellerin-antony",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Rioja recibe el alta médica, pero Copete todavía no",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152901-rioja-recibe-el-alta-medica-pero-copete-todavia-no",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Diario de Sevilla publica su pronóstico para el once de Pellegrini",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152900-diario-de-sevilla-publica-su-pronostico-para-el-once-de-pellegrini",
-   "categoria": "análisis"
   }
  ]
 }
