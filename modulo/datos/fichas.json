@@ -2370,7 +2370,7 @@
   "mediaCasa": 6.3,
   "mediaFuera": 8.3,
   "edad": 30,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 2,
   "jornadas": [
@@ -2837,13 +2837,6 @@
     "puntos": null,
     "rival": 5,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -9913,11 +9906,11 @@
   "nombre": "Juan Foyth",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 2,
+  "tarjetas": 3,
   "mediaCasa": 0,
   "mediaFuera": 4,
   "edad": 28,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -9965,7 +9958,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-17",
-  "partidos": 1
+  "partidos": 2
  },
  "23664": {
   "nombre": "Sergio Carreira",
@@ -13921,11 +13914,11 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 2,
+  "mediaCasa": 4,
   "mediaFuera": 4,
   "edad": 25,
   "titular": null,
-  "titularidades": 0,
+  "titularidades": 1,
   "suplencias": 3,
   "jornadas": [
    {
@@ -13976,11 +13969,18 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 6,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
-  "partidos": 4
+  "dia": "2026-10-17",
+  "partidos": 5
  },
  "33726": {
   "nombre": "Hugo Álvarez",
@@ -23846,12 +23846,12 @@
   "nombre": "Marc Aguado",
   "posicion": 3,
   "goles": 1,
-  "tarjetas": 1,
-  "mediaCasa": 2.5,
+  "tarjetas": 2,
+  "mediaCasa": 2.7,
   "mediaFuera": 7,
   "edad": 26,
   "titular": null,
-  "titularidades": 4,
+  "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
    {
@@ -23911,11 +23911,20 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": 3,
+    "rival": 5,
+    "como": "inicio",
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
-  "partidos": 2
+  "dia": "2026-10-17",
+  "partidos": 3
  },
  "64031": {
   "nombre": "Hugo Rincón",
@@ -24941,12 +24950,12 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 1.5,
+  "mediaCasa": 2.7,
   "mediaFuera": 2,
   "edad": 23,
   "titular": null,
   "titularidades": 2,
-  "suplencias": 2,
+  "suplencias": 3,
   "jornadas": [
    {
     "jornada": 1,
@@ -25004,11 +25013,20 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": 5,
+    "rival": 5,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
-  "partidos": 3
+  "dia": "2026-10-17",
+  "partidos": 4
  },
  "64562": {
   "nombre": "Nelson Deossa",
@@ -25376,7 +25394,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-17",
-  "partidos": 3
+  "partidos": 4
  },
  "65179": {
   "nombre": "Andrés Castrín",
@@ -26815,8 +26833,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-13",
-  "partidos": 2
+  "dia": "2026-10-17",
+  "partidos": 3
  },
  "68361": {
   "nombre": "Aitor Mañas",
@@ -32654,7 +32672,7 @@
   "mediaCasa": 4,
   "mediaFuera": 2.3,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 2,
   "jornadas": [
@@ -33469,6 +33487,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 4,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -34840,18 +34865,11 @@
     "rival": 15,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 23,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-17",
-  "partidos": 4
+  "partidos": 5
  },
  "71790": {
   "nombre": "Saba Sazonov",
@@ -35456,13 +35474,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -36419,6 +36430,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 3,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -36801,15 +36819,6 @@
     "jornada": 8,
     "puntos": 2,
     "rival": 15,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 23,
     "como": "banquillo",
     "eventos": [
      "sub_in"
@@ -37349,7 +37358,7 @@
   "mediaCasa": 11.5,
   "mediaFuera": 2.5,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 3,
   "jornadas": [
@@ -37492,13 +37501,6 @@
     "puntos": null,
     "rival": 5,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -37672,15 +37674,6 @@
     "rival": 5,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
-    "eventos": [
-     "yellow"
-    ]
    }
   ],
   "asistencias": 2,
@@ -39252,6 +39245,13 @@
      "sub_in",
      "goal"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 3,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,

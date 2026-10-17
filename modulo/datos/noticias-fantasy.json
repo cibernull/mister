@@ -1,12 +1,12 @@
 {
- "cuando": "2026-10-17T16:07:26.792Z",
+ "cuando": "2026-10-17T16:37:29.021Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "17/10",
-   "titulo": "Sigue en directo el Villarreal - Elche",
-   "url": "https://www.futbolfantasy.com/partidos/22512-villarreal-elche",
+   "titulo": "Sigue en directo el Betis - Barcelona",
+   "url": "https://www.futbolfantasy.com/partidos/22509-betis-barcelona",
    "categoria": "análisis"
   },
   {
@@ -29,6 +29,24 @@
   },
   {
    "fecha": "17/10",
+   "titulo": "Dituro seca La Cerámica",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153005-dituro-seca-la-ceramica",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Jornada 9: Villarreal 0-0 Elche. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22512-villarreal-elche",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Ratkov se asoma por los planes de Castro",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153004-ratkov-se-asoma-por-los-planes-de-castro",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "17/10",
    "titulo": "Flick, sobre cómo afrontar el partido contra el Betis y la vuelta de De Jong",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153003-flick-sobre-como-afrontar-el-partido-contra-el-betis-y-la-vuelta-de-de-jong",
    "categoria": "rueda de prensa"
@@ -44,12 +62,6 @@
    "titulo": "Operación recuperar a Amatucci",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153001-operacion-recuperar-a-amatucci",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Alineaciones confirmadas del Betis - Barcelona",
-   "url": "https://www.futbolfantasy.com/partidos/22509-betis-barcelona",
-   "categoria": "rueda de prensa"
   },
   {
    "fecha": "17/10",
@@ -469,18 +481,6 @@
    "fecha": "16/10",
    "titulo": "MundoLevante apuesta por la suplencia de Olasagasti y la titularidad de Ratkov",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152929-mundolevante-apuesta-por-la-suplencia-de-olasagasti-y-la-titularidad-de-ratkov",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "À Punt filtra un once con Danjuma para recibir al Athletic",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152928-a-punt-filtra-un-once-con-danjuma-para-recibir-al-athletic",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Abdelkarim no entrena con el grupo y bajará al filial esta jornada",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152927-abdelkarim-no-entrena-con-el-grupo-y-bajara-al-filial-esta-jornada",
    "categoria": "análisis"
   }
  ]
