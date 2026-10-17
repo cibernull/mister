@@ -33212,6 +33212,15 @@
     "rival": 13,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 2,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -34296,7 +34305,7 @@
   "nombre": "Roger Hinojo",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 3,
+  "tarjetas": 4,
   "mediaCasa": 3,
   "mediaFuera": 2.5,
   "edad": 21,
@@ -34378,7 +34387,9 @@
     "puntos": null,
     "rival": 2,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,
