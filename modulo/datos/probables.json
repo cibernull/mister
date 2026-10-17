@@ -1,7 +1,7 @@
 {
- "cuando": "2026-10-17T09:38:07.863Z",
+ "cuando": "2026-10-17T12:08:02.252Z",
  "fuente": "futbolfantasy.com",
- "leidos": 514,
+ "leidos": 513,
  "jugadores": {
   "10": {
    "prob": 50,
@@ -22,7 +22,7 @@
    "min": 476
   },
   "31": {
-   "prob": 95,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 720
@@ -148,7 +148,7 @@
    "min": 533
   },
   "561": {
-   "prob": 70,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 554
@@ -178,12 +178,6 @@
    "min": 426
   },
   "1034": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 0
-  },
-  "1684": {
    "prob": 0,
    "sancionado": 0,
    "fuera": 0,
@@ -298,7 +292,7 @@
    "min": 630
   },
   "6034": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 635
@@ -316,7 +310,7 @@
    "min": 540
   },
   "6065": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 83
@@ -334,13 +328,13 @@
    "min": 652
   },
   "7025": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 630
   },
   "7784": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 421
@@ -370,7 +364,7 @@
    "min": 323
   },
   "11092": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -382,7 +376,7 @@
    "min": 66
   },
   "11472": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 450
@@ -514,7 +508,7 @@
    "min": 7
   },
   "15338": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 318
@@ -538,13 +532,13 @@
    "min": 41
   },
   "15566": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 490
   },
   "15653": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 499
@@ -592,7 +586,7 @@
    "min": 0
   },
   "17568": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 132
@@ -718,7 +712,7 @@
    "min": 273
   },
   "22502": {
-   "prob": 70,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 497
@@ -820,7 +814,7 @@
    "min": 608
   },
   "25621": {
-   "prob": 40,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 540
@@ -940,7 +934,7 @@
    "min": 720
   },
   "28619": {
-   "prob": 60,
+   "prob": 90,
    "sancionado": 0,
    "fuera": 0,
    "min": 302
@@ -976,7 +970,7 @@
    "min": 720
   },
   "28776": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 257
@@ -1012,7 +1006,7 @@
    "min": 349
   },
   "29163": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 621
@@ -1024,7 +1018,7 @@
    "min": 585
   },
   "29167": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 90
@@ -1042,7 +1036,7 @@
    "min": 13
   },
   "29222": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 547
@@ -1144,16 +1138,10 @@
    "min": 456
   },
   "35434": {
-   "prob": 50,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 403
-  },
-  "35922": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 20
   },
   "36046": {
    "prob": 70,
@@ -1288,13 +1276,13 @@
    "min": 244
   },
   "51134": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 305
   },
   "51135": {
-   "prob": 60,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 351
@@ -1354,7 +1342,7 @@
    "min": 29
   },
   "53095": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 210
@@ -1484,12 +1472,6 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 213
-  },
-  "56578": {
-   "prob": 0,
-   "sancionado": 0,
-   "fuera": 0,
-   "min": 317
   },
   "56583": {
    "prob": 0,
@@ -1648,7 +1630,7 @@
    "min": 323
   },
   "59476": {
-   "prob": 40,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 131
@@ -1708,7 +1690,7 @@
    "min": 412
   },
   "59642": {
-   "prob": 5,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -1750,7 +1732,7 @@
    "min": 0
   },
   "60858": {
-   "prob": 60,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 442
@@ -1774,7 +1756,7 @@
    "min": 21
   },
   "60888": {
-   "prob": 90,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 692
@@ -1858,7 +1840,7 @@
    "min": 720
   },
   "63727": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 222
@@ -1894,7 +1876,7 @@
    "min": 0
   },
   "63868": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 107
@@ -1978,13 +1960,13 @@
    "min": 0
   },
   "64459": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 575
   },
   "64468": {
-   "prob": 60,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 513
@@ -2074,7 +2056,7 @@
    "min": 337
   },
   "65476": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 454
@@ -2122,7 +2104,7 @@
    "min": 127
   },
   "66706": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 612
@@ -2218,7 +2200,7 @@
    "min": 639
   },
   "68676": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 503
@@ -2230,7 +2212,7 @@
    "min": 31
   },
   "68711": {
-   "prob": 10,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 0
@@ -2270,6 +2252,12 @@
    "sancionado": 0,
    "fuera": 0,
    "min": 399
+  },
+  "70181": {
+   "prob": 100,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 90
   },
   "70183": {
    "prob": 0,
@@ -2356,7 +2344,7 @@
    "min": 635
   },
   "70936": {
-   "prob": 40,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 396
@@ -2536,7 +2524,7 @@
    "min": 0
   },
   "71021": {
-   "prob": 60,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 624
@@ -2554,7 +2542,7 @@
    "min": 306
   },
   "71061": {
-   "prob": 40,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 404
@@ -2584,7 +2572,7 @@
    "min": 461
   },
   "71140": {
-   "prob": 70,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 230
@@ -2602,7 +2590,7 @@
    "min": 236
   },
   "71149": {
-   "prob": 30,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 173
@@ -2614,7 +2602,7 @@
    "min": 574
   },
   "71176": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 343
@@ -2662,7 +2650,7 @@
    "min": 472
   },
   "71623": {
-   "prob": 30,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 544
@@ -2763,20 +2751,26 @@
    "fuera": 0,
    "min": 201
   },
+  "1255969": {
+   "prob": 0,
+   "sancionado": 0,
+   "fuera": 0,
+   "min": 45
+  },
   "1256139": {
-   "prob": 20,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 117
   },
   "1385821": {
-   "prob": 70,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 367
   },
   "1396108": {
-   "prob": 20,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 150
@@ -2872,7 +2866,7 @@
    "min": 14
   },
   "4836153": {
-   "prob": 80,
+   "prob": 100,
    "sancionado": 0,
    "fuera": 0,
    "min": 204
