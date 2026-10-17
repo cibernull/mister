@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-17T18:07:33.354Z",
+ "cuando": "2026-10-17T18:37:38.851Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "17/10",
-   "titulo": "Sigue en directo el Betis - Barcelona",
-   "url": "https://www.futbolfantasy.com/partidos/22509-betis-barcelona",
-   "categoria": "análisis"
+   "titulo": "Alineaciones confirmadas del Valencia - Athletic",
+   "url": "https://www.futbolfantasy.com/partidos/22511-valencia-athletic",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
@@ -29,15 +29,27 @@
   },
   {
    "fecha": "17/10",
-   "titulo": "Facundo Bernal es expulsado por una discusión con Lamine Yamal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153011-facundo-bernal-es-expulsado-por-una-discusion-con-lamine-yamal",
-   "categoria": "sanción"
+   "titulo": "Jornada 9: Betis 2-5 Barcelona. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22509-betis-barcelona",
+   "categoria": "partido"
   },
   {
    "fecha": "17/10",
-   "titulo": "Alineaciones confirmadas del Valencia - Athletic",
-   "url": "https://www.futbolfantasy.com/partidos/22511-valencia-athletic",
-   "categoria": "rueda de prensa"
+   "titulo": "Eric García cae lesionado en La Cartuja",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153013-eric-garcia-cae-lesionado-en-la-cartuja",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Gerard Martín fue sustituido por precaución tras torcerse el tobillo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153012-gerard-martin-fue-sustituido-por-precaucion-tras-torcerse-el-tobillo",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Facundo Bernal es expulsado por una discusión con Lamine Yamal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153011-facundo-bernal-es-expulsado-por-una-discusion-con-lamine-yamal",
+   "categoria": "sanción"
   },
   {
    "fecha": "17/10",
@@ -469,18 +481,6 @@
    "fecha": "16/10",
    "titulo": "El Barça recupera a Frenkie de Jong y Raphinha para visitar La Cartuja",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152937-barca-recupera-frenkie-de-jong-raphinha-visitar-la-cartuja",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Frenkie de Jong recibe el alta médica y estará disponible contra el Betis",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152936-frenkie-de-jong-recibe-alta-medica-estara-disponible-contra-betis",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "El Atlético viaja a Cornellà con las bajas de Koke y Cardoso",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152935-atletico-viaja-cornella-bajas-koke-cardoso",
    "categoria": "convocatoria"
   }
  ]

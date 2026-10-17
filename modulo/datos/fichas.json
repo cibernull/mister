@@ -541,12 +541,12 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 3,
+  "mediaCasa": 3.5,
   "mediaFuera": 3,
   "edad": 30,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 3,
+  "suplencias": 4,
   "jornadas": [
    {
     "jornada": 1,
@@ -595,11 +595,20 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 4,
+    "rival": 50,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
-  "partidos": 4
+  "dia": "2026-10-17",
+  "partidos": 5
  },
  "118": {
   "nombre": "Jonny Otto",
@@ -6450,9 +6459,9 @@
     "eventos": []
    }
   ],
-  "asistencias": 0,
-  "dia": "2026-10-12",
-  "partidos": 1
+  "asistencias": 1,
+  "dia": "2026-10-17",
+  "partidos": 2
  },
  "15338": {
   "nombre": "Robin Le Normand",
@@ -13180,7 +13189,7 @@
   "mediaCasa": 3.5,
   "mediaFuera": 3,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
@@ -13242,7 +13251,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-17",
-  "partidos": 2
+  "partidos": 3
  },
  "29238": {
   "nombre": "Arnau Comas",
@@ -14078,13 +14087,13 @@
  "33734": {
   "nombre": "Abde Ezzalzouli",
   "posicion": 4,
-  "goles": 1,
+  "goles": 3,
   "tarjetas": 0,
   "mediaCasa": 10,
   "mediaFuera": 5.3,
   "edad": 24,
-  "titular": true,
-  "titularidades": 3,
+  "titular": null,
+  "titularidades": 4,
   "suplencias": 1,
   "jornadas": [
    {
@@ -14128,11 +14137,21 @@
     "rival": 6,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 8,
+    "puntos": 10,
+    "rival": 50,
+    "como": "inicio",
+    "eventos": [
+     "sub_out",
+     "goal"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
-  "partidos": 4
+  "dia": "2026-10-17",
+  "partidos": 5
  },
  "33896": {
   "nombre": "Ilias Akhomach",
@@ -15625,8 +15644,8 @@
    }
   ],
   "asistencias": 3,
-  "dia": "2026-10-11",
-  "partidos": 5
+  "dia": "2026-10-17",
+  "partidos": 4
  },
  "48960": {
   "nombre": "Kiko Femenía",
@@ -22471,8 +22490,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-13",
-  "partidos": 1
+  "dia": "2026-10-17",
+  "partidos": 2
  },
  "61012": {
   "nombre": "Pablo García",
@@ -24877,7 +24896,7 @@
  "64491": {
   "nombre": "Valentín Gómez",
   "posicion": 2,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 5,
   "mediaFuera": 3.5,
@@ -24937,11 +24956,18 @@
      "yellow",
      "sub_in"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": null,
+    "rival": 50,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
-  "partidos": 2
+  "dia": "2026-10-17",
+  "partidos": 3
  },
  "64496": {
   "nombre": "Roony Bardghji",
@@ -32682,7 +32708,7 @@
   "nombre": "Facundo Bernal",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 2,
+  "tarjetas": 3,
   "mediaCasa": 4,
   "mediaFuera": 2.3,
   "edad": 23,
@@ -33501,13 +33527,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 4,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -39291,13 +39310,6 @@
      "sub_in",
      "goal"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
