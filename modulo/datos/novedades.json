@@ -350,6 +350,15 @@
   "entra": true
  },
  {
+  "tipo": "clausula",
+  "dia": "2026-10-17",
+  "id": "12949",
+  "equipo": "Neky F.C. (Sergio)",
+  "escalones": 2,
+  "coste": 1510400,
+  "clausula": 11328000
+ },
+ {
   "tipo": "duenio",
   "dia": "2026-10-16",
   "id": "328",

@@ -6191,8 +6191,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-13",
-  "partidos": 4
+  "dia": "2026-10-17",
+  "partidos": 3
  },
  "14811": {
   "nombre": "Unai Simón",
@@ -7801,7 +7801,7 @@
   "tarjetas": 0,
   "mediaCasa": 3,
   "mediaFuera": 5.5,
-  "edad": 32,
+  "edad": 33,
   "titular": null,
   "titularidades": 1,
   "suplencias": 3,
@@ -7850,11 +7850,20 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 1,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
-  "partidos": 3
+  "dia": "2026-10-17",
+  "partidos": 2
  },
  "18186": {
   "nombre": "Jules Koundé",
@@ -21153,8 +21162,10 @@
     "jornada": 9,
     "puntos": null,
     "rival": 1,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -21785,6 +21796,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 19,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -32567,7 +32585,9 @@
     "puntos": null,
     "rival": 1,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 1,
@@ -37282,7 +37302,9 @@
     "puntos": null,
     "rival": 19,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -38242,13 +38264,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
