@@ -32147,7 +32147,7 @@
   "mediaCasa": 6,
   "mediaFuera": 5.8,
   "edad": 31,
-  "titular": true,
+  "titular": null,
   "titularidades": 7,
   "suplencias": 0,
   "jornadas": [
@@ -32862,7 +32862,7 @@
   "mediaCasa": 1.5,
   "mediaFuera": 2.5,
   "edad": 24,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 2,
   "jornadas": [
@@ -34242,7 +34242,7 @@
   "mediaCasa": 3,
   "mediaFuera": 2.5,
   "edad": 21,
-  "titular": null,
+  "titular": true,
   "titularidades": 7,
   "suplencias": 1,
   "jornadas": [
@@ -35762,7 +35762,7 @@
   "mediaCasa": 2,
   "mediaFuera": 2,
   "edad": 26,
-  "titular": null,
+  "titular": true,
   "titularidades": 1,
   "suplencias": 2,
   "jornadas": [
