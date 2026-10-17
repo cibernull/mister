@@ -1634,8 +1634,8 @@
     "visitante": 23
    }
   ],
-  "puntos": 14,
-  "puesto": 3,
+  "puntos": 16,
+  "puesto": 4,
   "formacion": "1-3-3-4",
   "once": [
    {
@@ -1643,7 +1643,7 @@
     "nombre": "Álvaro Valles",
     "puesto": 1,
     "puntos": null,
-    "jugo": false,
+    "jugo": true,
     "capitan": false
    },
    {
@@ -1666,7 +1666,7 @@
     "id": "68640",
     "nombre": "Alex Freeman",
     "puesto": 2,
-    "puntos": 5,
+    "puntos": 6,
     "jugo": true,
     "capitan": false
    },
@@ -1764,7 +1764,7 @@
     "id": "4836165",
     "nombre": "Roy Revivo",
     "puesto": 2,
-    "puntos": 4,
+    "puntos": 6,
     "jugo": true,
     "capitan": false
    },
@@ -1772,7 +1772,7 @@
     "id": "53107",
     "nombre": "Sergi Cardona",
     "puesto": 2,
-    "puntos": 4,
+    "puntos": 6,
     "jugo": true,
     "capitan": false
    },
