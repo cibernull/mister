@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-17T13:07:51.010Z",
+ "cuando": "2026-10-17T13:37:21.589Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,24 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "El Valencia - Athletic no corre peligro por la DANA, de momento",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152985-el-valencia-athletic-no-corre-peligro-por-la-dana-de-momento",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Alineaciones confirmadas del Villarreal - Elche",
+   "url": "https://www.futbolfantasy.com/partidos/22512-villarreal-elche",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Andrés García reaparece con el grupo este sábado",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152983-andres-garcia-reaparece-con-el-grupo-este-sabado",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "17/10",
@@ -464,24 +482,6 @@
    "titulo": "Apelación desestima el recurso y mantiene los cuatro partidos de sanción a Vinicius",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152910-apelacion-desestima-el-recurso-y-mantiene-los-cuatro-partidos-de-sancion-a-vinicius",
    "categoria": "sanción"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Quique habla de la urgencia del partido, los cambios de sistema, Miguel, Blanco y Ángel Pérez",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152909-quique-habla-de-la-urgencia-del-partido-los-cambios-de-sistema-miguel-blanco-y-angel-perez",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Manolo, sobre Fortuño, Puado, Expósito, Calatrava, la presión externa y el Atlético",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152907-manolo-sobre-fortuno-puado-la-presion-externa-y-el-atletico",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "José Alberto habla de Pablo Ramón, Andrés Martín, Íñigo Vicente, Zabiri, Villalibre, Guliashvili, Arana y Osasuna",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152906-jose-alberto-habla-de-pablo-ramon-andres-martin-inigo-vicente-zabiri-villalibre-guliashvili-a",
-   "categoria": "rueda de prensa"
   }
  ]
 }

@@ -4480,11 +4480,20 @@
     "rival": 13,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 2,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-16",
-  "partidos": 3
+  "dia": "2026-10-17",
+  "partidos": 2
  },
  "7893": {
   "nombre": "Antonio Sivera",
@@ -23692,7 +23701,7 @@
   "nombre": "Rodrigo Mendoza",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 3,
   "mediaFuera": 1,
   "edad": 21,
@@ -23761,11 +23770,21 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 8,
+    "como": "banquillo",
+    "eventos": [
+     "yellow",
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-13",
-  "partidos": 3
+  "dia": "2026-10-17",
+  "partidos": 0
  },
  "63869": {
   "nombre": "Bambo Diaby",
@@ -32229,6 +32248,15 @@
     "eventos": [
      "goal"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 8,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 1,
@@ -33184,18 +33212,11 @@
     "rival": 13,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 2,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-17",
-  "partidos": 4
+  "partidos": 3
  },
  "71154": {
   "nombre": "Lorenzo Amatucci",
@@ -35882,7 +35903,9 @@
     "puntos": null,
     "rival": 2,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -35893,7 +35916,7 @@
   "nombre": "Cristian Romero",
   "posicion": 2,
   "goles": 1,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 7.5,
   "mediaFuera": 7.7,
   "edad": 28,
@@ -35964,7 +35987,10 @@
     "puntos": null,
     "rival": 8,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow",
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
