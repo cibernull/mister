@@ -18403,11 +18403,18 @@
     "rival": 1490,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 1,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-16",
-  "partidos": 5
+  "dia": "2026-10-17",
+  "partidos": 2
  },
  "55743": {
   "nombre": "Carlos Romero",
@@ -21778,6 +21785,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 19,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -24037,11 +24051,18 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 19,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-13",
-  "partidos": 2
+  "dia": "2026-10-17",
+  "partidos": 1
  },
  "64033": {
   "nombre": "Jon Gorrotxategi",
@@ -32547,6 +32568,13 @@
     "eventos": [
      "assist"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 1,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -34710,6 +34738,13 @@
     "puntos": null,
     "rival": 48,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 19,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -37245,6 +37280,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 19,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,

@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-17T19:07:25.933Z",
+ "cuando": "2026-10-17T19:26:42.468Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "17/10",
-   "titulo": "Alineaciones confirmadas del Valencia - Athletic",
+   "titulo": "Sigue en directo el Valencia - Athletic",
    "url": "https://www.futbolfantasy.com/partidos/22511-valencia-athletic",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -26,6 +26,12 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Flick habla de Lamine Yamal, Eric García, Koundé, Gerard Martín y la gestión de minutos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153015-flick-habla-de-lamine-yamal-eric-garcia-kounde-gerard-martin-y-la-gestion-de-minutos",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "17/10",
@@ -476,12 +482,6 @@
    "titulo": "Antonio Hidalgo analiza los ajustes tácticos y el peligro del Levante",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152940-antonio-hidalgo-analiza-ajustes-tacticos-peligro-levante",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Parte médico de Borja Iglesias y periodo estimado de baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152939-parte-medico-borja-iglesias-lesion-tiene-cuanto-tiempo-estara-baja",
-   "categoria": "lesión"
   }
  ]
 }
