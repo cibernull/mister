@@ -36810,8 +36810,10 @@
     "jornada": 9,
     "puntos": null,
     "rival": 23,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -37601,7 +37603,7 @@
   "nombre": "Roy Revivo",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 2.3,
   "mediaFuera": 4,
   "edad": 23,
@@ -37676,7 +37678,9 @@
     "puntos": null,
     "rival": 20,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 2,
