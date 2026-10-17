@@ -5815,9 +5815,9 @@
    "cuando": "2026-09-17 15:01:28",
    "valor": 15051000,
    "posicion": 3,
-   "puntos": 63,
-   "media": 7.8,
-   "racha": "2,3,12,5,7",
+   "puntos": 76,
+   "media": 8.4,
+   "racha": "3,12,5,7,14",
    "otrasPujas": []
   },
   {
@@ -5854,12 +5854,7 @@
    "puntos": 62,
    "media": 7.8,
    "racha": "1,14,10,1,3",
-   "otrasPujas": [
-    {
-     "equipo": "Saiyans FC (Fran)",
-     "puja": 26200000
-    }
-   ]
+   "otrasPujas": []
   },
   {
    "idTransfer": 548817205,
@@ -6041,7 +6036,7 @@
    "cuando": "2026-09-19 05:00:26",
    "valor": 3776000,
    "posicion": 3,
-   "puntos": 29,
+   "puntos": 30,
    "media": 5.8,
    "racha": "11,2,5,5,6",
    "otrasPujas": []
@@ -6104,9 +6099,9 @@
    "cuando": "2026-09-19 17:00:21",
    "valor": 10635000,
    "posicion": 2,
-   "puntos": 42,
-   "media": 5.9,
-   "racha": "-1,10,8,7,12",
+   "puntos": 44,
+   "media": 5.5,
+   "racha": "10,8,7,12,3",
    "otrasPujas": [
     {
      "equipo": "Neky F.C. (Sergio)",
@@ -6316,9 +6311,9 @@
    "cuando": "2026-09-20 08:06:35",
    "valor": 5219000,
    "posicion": 2,
-   "puntos": 23,
-   "media": 3.1,
-   "racha": "3,8,-4,-,4",
+   "puntos": 24,
+   "media": 3,
+   "racha": "8,-4,-,4,2",
    "otrasPujas": []
   },
   {
@@ -6336,7 +6331,7 @@
    "posicion": 3,
    "puntos": 25,
    "media": 3.6,
-   "racha": "4,2,-,1,4",
+   "racha": "2,-,1,4,-",
    "otrasPujas": []
   },
   {
@@ -6478,9 +6473,9 @@
    "cuando": "2026-09-21 05:00:28",
    "valor": 12706000,
    "posicion": 3,
-   "puntos": 53,
-   "media": 6.5,
-   "racha": "3,3,13,6,3",
+   "puntos": 56,
+   "media": 6.2,
+   "racha": "3,13,6,3,4",
    "otrasPujas": []
   },
   {
@@ -6496,7 +6491,7 @@
    "cuando": "2026-09-21 05:00:28",
    "valor": 3395000,
    "posicion": 2,
-   "puntos": 25,
+   "puntos": 26,
    "media": 3.6,
    "racha": "3,2,7,5,4",
    "otrasPujas": [
@@ -6519,9 +6514,9 @@
    "cuando": "2026-09-21 05:00:28",
    "valor": 2946000,
    "posicion": 4,
-   "puntos": 30,
-   "media": 4.3,
-   "racha": "9,6,5,5,1",
+   "puntos": 32,
+   "media": 4,
+   "racha": "6,5,5,1,2",
    "otrasPujas": [
     {
      "equipo": "Niutin FC (Isaac)",
@@ -6650,7 +6645,7 @@
    "cuando": "2026-09-22 17:00:19",
    "valor": 1233000,
    "posicion": 3,
-   "puntos": 22,
+   "puntos": 23,
    "media": 3.5,
    "racha": "2,4,-,7,4",
    "otrasPujas": []
@@ -6736,9 +6731,9 @@
    "cuando": "2026-09-22 17:06:21",
    "valor": 1310000,
    "posicion": 2,
-   "puntos": 13,
-   "media": 2.4,
-   "racha": "2,-,-,1,-",
+   "puntos": 14,
+   "media": 2.3,
+   "racha": "-,-,1,-,2",
    "otrasPujas": []
   },
   {
@@ -6790,9 +6785,9 @@
    "cuando": "2026-09-22 23:00:48",
    "valor": 2307000,
    "posicion": 3,
-   "puntos": 26,
-   "media": 3.1,
-   "racha": "3,2,2,0,2",
+   "puntos": 27,
+   "media": 3,
+   "racha": "2,2,0,2,2",
    "otrasPujas": []
   },
   {
@@ -6925,7 +6920,7 @@
    "cuando": "2026-09-24 05:00:27",
    "valor": 7937000,
    "posicion": 4,
-   "puntos": 28,
+   "puntos": 29,
    "media": 3.5,
    "racha": "3,0,5,9,2",
    "otrasPujas": []
@@ -7038,7 +7033,7 @@
    "cuando": "2026-09-24 17:00:18",
    "valor": 2190000,
    "posicion": 3,
-   "puntos": 30,
+   "puntos": 31,
    "media": 4.3,
    "racha": "1,-,8,9,6",
    "otrasPujas": []
@@ -7182,7 +7177,7 @@
    "cuando": "2026-09-25 17:00:17",
    "valor": 8629000,
    "posicion": 3,
-   "puntos": 38,
+   "puntos": 39,
    "media": 4.8,
    "racha": "5,4,3,13,4",
    "otrasPujas": []
@@ -7218,7 +7213,7 @@
    "cuando": "2026-09-25 23:11:20",
    "valor": 162000,
    "posicion": 3,
-   "puntos": 12,
+   "puntos": 13,
    "media": 3,
    "racha": "-,-,6,1,-",
    "otrasPujas": []
@@ -7236,9 +7231,9 @@
    "cuando": "2026-09-26 05:00:25",
    "valor": 11559000,
    "posicion": 2,
-   "puntos": 40,
-   "media": 7.6,
-   "racha": "2,7,9,6,14",
+   "puntos": 45,
+   "media": 7.5,
+   "racha": "7,9,6,14,7",
    "otrasPujas": []
   },
   {
@@ -7315,7 +7310,7 @@
    "posicion": 3,
    "puntos": 45,
    "media": 5.6,
-   "racha": "3,7,6,9,7",
+   "racha": "7,6,9,7,-",
    "otrasPujas": [
     {
      "equipo": "Saiyans FC (Fran)",
@@ -7501,7 +7496,7 @@
    "posicion": 2,
    "puntos": 1,
    "media": 1,
-   "racha": "-,-,-,1,-",
+   "racha": "-,-,1,-,-",
    "otrasPujas": []
   },
   {
@@ -7932,7 +7927,7 @@
    "cuando": "2026-10-03 17:33:21",
    "valor": 5339000,
    "posicion": 2,
-   "puntos": 16,
+   "puntos": 17,
    "media": 4,
    "racha": "-,-,-,-,4",
    "otrasPujas": []
@@ -7950,9 +7945,9 @@
    "cuando": "2026-10-03 19:11:58",
    "valor": 9476000,
    "posicion": 1,
-   "puntos": 37,
-   "media": 4.5,
-   "racha": "1,6,5,5,2",
+   "puntos": 42,
+   "media": 4.7,
+   "racha": "6,5,5,2,6",
    "otrasPujas": []
   },
   {
@@ -8004,9 +7999,9 @@
    "cuando": "2026-10-04 17:00:15",
    "valor": 10952000,
    "posicion": 4,
-   "puntos": 34,
-   "media": 8.3,
-   "racha": "-,10,11,8,4",
+   "puntos": 36,
+   "media": 7.2,
+   "racha": "10,11,8,4,3",
    "otrasPujas": [
     {
      "equipo": "Neky F.C. (Sergio)",
@@ -8081,7 +8076,7 @@
    "cuando": "2026-10-05 08:21:01",
    "valor": 8629000,
    "posicion": 3,
-   "puntos": 38,
+   "puntos": 39,
    "media": 4.8,
    "racha": "5,4,3,13,4",
    "otrasPujas": []
@@ -8144,9 +8139,9 @@
    "cuando": "2026-10-05 17:27:09",
    "valor": 11559000,
    "posicion": 2,
-   "puntos": 40,
-   "media": 7.6,
-   "racha": "2,7,9,6,14",
+   "puntos": 45,
+   "media": 7.5,
+   "racha": "7,9,6,14,7",
    "otrasPujas": []
   },
   {
@@ -8180,7 +8175,7 @@
    "cuando": "2026-10-06 05:00:19",
    "valor": 4513000,
    "posicion": 4,
-   "puntos": 31,
+   "puntos": 32,
    "media": 3.9,
    "racha": "4,2,5,6,5",
    "otrasPujas": []
@@ -8234,7 +8229,7 @@
    "cuando": "2026-10-07 17:00:13",
    "valor": 12739000,
    "posicion": 3,
-   "puntos": 43,
+   "puntos": 44,
    "media": 5.4,
    "racha": "3,3,12,14,3",
    "otrasPujas": []
@@ -8272,7 +8267,7 @@
    "posicion": 3,
    "puntos": 45,
    "media": 5.6,
-   "racha": "3,7,6,9,7",
+   "racha": "7,6,9,7,-",
    "otrasPujas": []
   },
   {
@@ -8288,9 +8283,9 @@
    "cuando": "2026-10-07 21:21:44",
    "valor": 4571000,
    "posicion": 3,
-   "puntos": 39,
+   "puntos": 44,
    "media": 4.9,
-   "racha": "3,5,5,2,5",
+   "racha": "5,5,2,5,5",
    "otrasPujas": []
   },
   {
@@ -8527,9 +8522,9 @@
    "cuando": "2026-10-11 17:00:13",
    "valor": 15051000,
    "posicion": 3,
-   "puntos": 63,
-   "media": 7.8,
-   "racha": "2,3,12,5,7",
+   "puntos": 76,
+   "media": 8.4,
+   "racha": "3,12,5,7,14",
    "otrasPujas": []
   },
   {
@@ -8563,9 +8558,9 @@
    "cuando": "2026-10-11 17:00:13",
    "valor": 3936000,
    "posicion": 2,
-   "puntos": 17,
-   "media": 3.2,
-   "racha": "3,4,2,-1,8",
+   "puntos": 20,
+   "media": 3.3,
+   "racha": "4,2,-1,8,4",
    "otrasPujas": []
   },
   {
@@ -8779,7 +8774,7 @@
    "cuando": "2026-10-13 02:57:14",
    "valor": 7937000,
    "posicion": 4,
-   "puntos": 28,
+   "puntos": 29,
    "media": 3.5,
    "racha": "3,0,5,9,2",
    "otrasPujas": []
@@ -8946,7 +8941,7 @@
    "cuando": "2026-10-14 17:00:15",
    "valor": 1028000,
    "posicion": 4,
-   "puntos": 21,
+   "puntos": 22,
    "media": 4.2,
    "racha": "4,2,10,3,2",
    "otrasPujas": []
@@ -9023,7 +9018,7 @@
    "cuando": "2026-10-15 17:00:14",
    "valor": 1102000,
    "posicion": 2,
-   "puntos": 9,
+   "puntos": 10,
    "media": 2,
    "racha": "-1,-,3,4,2",
    "otrasPujas": []
