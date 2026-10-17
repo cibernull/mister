@@ -2440,6 +2440,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 4,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -2836,6 +2843,13 @@
     "jornada": 8,
     "puntos": null,
     "rival": 5,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 20,
     "como": "no jugó",
     "eventos": []
    }
@@ -19021,7 +19035,7 @@
   "mediaCasa": 5.5,
   "mediaFuera": 6,
   "edad": 19,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
@@ -19083,11 +19097,18 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 4,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-17",
-  "partidos": 4
+  "partidos": 3
  },
  "56971": {
   "nombre": "Hector Fort",
@@ -32742,11 +32763,18 @@
     "rival": 50,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 3,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-17",
-  "partidos": 5
+  "partidos": 4
  },
  "71138": {
   "nombre": "Ryunosuke Sato",
@@ -34803,11 +34831,11 @@
   "posicion": 1,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 6,
+  "mediaCasa": 5.7,
   "mediaFuera": 4.5,
   "edad": 36,
   "titular": null,
-  "titularidades": 4,
+  "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
    {
@@ -34863,6 +34891,13 @@
     "jornada": 8,
     "puntos": 6,
     "rival": 15,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": 5,
+    "rival": 23,
     "como": "inicio",
     "eventos": []
    }
@@ -35474,6 +35509,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 20,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -36343,7 +36385,7 @@
     "jornada": 9,
     "puntos": null,
     "rival": 20,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -36755,12 +36797,12 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 3,
+  "mediaCasa": 2.8,
   "mediaFuera": 3.5,
   "edad": 22,
   "titular": null,
   "titularidades": 3,
-  "suplencias": 2,
+  "suplencias": 3,
   "jornadas": [
    {
     "jornada": 1,
@@ -36819,6 +36861,15 @@
     "jornada": 8,
     "puntos": 2,
     "rival": 15,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
+   },
+   {
+    "jornada": 9,
+    "puntos": 2,
+    "rival": 23,
     "como": "banquillo",
     "eventos": [
      "sub_in"
@@ -37427,6 +37478,13 @@
      "sub_out",
      "goal"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 4,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -37500,6 +37558,13 @@
     "jornada": 8,
     "puntos": null,
     "rival": 5,
+    "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 20,
     "como": "no jugó",
     "eventos": []
    }
@@ -37607,10 +37672,10 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 2.3,
-  "mediaFuera": 4,
+  "mediaFuera": 4.3,
   "edad": 23,
   "titular": null,
-  "titularidades": 4,
+  "titularidades": 5,
   "suplencias": 1,
   "jornadas": [
    {
@@ -37674,6 +37739,15 @@
     "rival": 5,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": 5,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 2,

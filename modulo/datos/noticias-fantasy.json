@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-17T16:37:29.021Z",
+ "cuando": "2026-10-17T17:07:20.818Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Anselmi, sobre el empate, el penalti anulado, Aguado, Dituro, Morcillo y Redondo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153007-anselmi-sobre-el-empate-el-penalti-anulado-aguado-dituro-morcillo-y-redondo",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Leo Román alimenta las críticas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153006-leo-roman-alimenta-las-criticas",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Parte médico oficial de Luiz Felipe: rotura de ligamento cruzado anterior",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152931-parte-medico-oficial-de-luiz-felipe-rotura-de-ligamento-cruzado-anterior",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Yago Santiago y Buba Sangare reciben el alta médica y dejan vacía la enfermería",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152930-yago-santiago-y-sangare-reciben-el-alta-medica-y-dejan-vacia-la-enfermeria",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "MundoLevante apuesta por la suplencia de Olasagasti y la titularidad de Ratkov",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152929-mundolevante-apuesta-por-la-suplencia-de-olasagasti-y-la-titularidad-de-ratkov",
-   "categoria": "análisis"
   }
  ]
 }

@@ -338,6 +338,18 @@
   "entra": false
  },
  {
+  "tipo": "mercado",
+  "dia": "2026-10-17",
+  "id": "63",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-17",
+  "id": "23147",
+  "entra": true
+ },
+ {
   "tipo": "duenio",
   "dia": "2026-10-16",
   "id": "328",
