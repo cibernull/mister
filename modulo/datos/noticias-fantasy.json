@@ -1,14 +1,8 @@
 {
- "cuando": "2026-10-17T13:44:53.614Z",
+ "cuando": "2026-10-17T14:07:29.618Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "17/10",
-   "titulo": "Sigue en directo el Espanyol - Atlético",
-   "url": "https://www.futbolfantasy.com/partidos/22505-espanyol-atletico",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 10 de los que han disputado la 9 disponibles",
@@ -26,6 +20,24 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "El Málaga completa la última sesión sin los cuatro lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152989-el-malaga-completa-la-ultima-sesion-sin-los-cuatro-lesionados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Jornada 9: Espanyol 0-1 Atlético. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22505-espanyol-atletico",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Anselmi habla de Íñigo Pérez y explica lo de Fer Niño, Osorio, Sangaré y Rubén Sánchez",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/152988-anselmi-habla-de-inigo-perez-y-explica-lo-de-fer-nino-osorio-sangare-y-ruben-sanchez",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "17/10",
@@ -469,18 +481,6 @@
    "fecha": "16/10",
    "titulo": "Anselmi habla de Lomonaco, Barzic, Diaby, Aguado, Redondo, Yago, Bigas, Josan, Ali Houary y el Villarreal",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152913-anselmi-habla-de-lomonaco-barzic-diaby-aguado-redondo-yago-bigas-josan-ali-houary-y-el-villar",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Terzic, sobre Laporte, Nico Williams, Sancet, Djaló, Imga y el partido contra el Valencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152912-terzic-sobre-laporte-nico-williams-sancet-djalo-imga-y-el-partido-contra-el-valencia",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Flick habla de Raphinha, Olmo, De Jong, Abde, Gavi y Fermín, Espart, Cancelo, Balde, y la gestión de los minutos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152908-flick-habla-de-olmo-de-jong-abde-gavi-y-fermin-espart-cancelo-balde-y-la-gestion-de-los-minut",
    "categoria": "rueda de prensa"
   }
  ]

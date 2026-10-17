@@ -5889,8 +5889,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-13",
-  "partidos": 0
+  "dia": "2026-10-17",
+  "partidos": 1
  },
  "14670": {
   "nombre": "Thibaut Courtois",
@@ -7363,7 +7363,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 1.5,
   "edad": 27,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 3,
   "jornadas": [
@@ -7432,8 +7432,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-16",
-  "partidos": 2
+  "dia": "2026-10-17",
+  "partidos": 3
  },
  "17614": {
   "nombre": "Kike Barja",
@@ -12777,7 +12777,7 @@
   "mediaCasa": 0,
   "mediaFuera": 4,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 0,
   "jornadas": [
@@ -12839,8 +12839,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-16",
-  "partidos": 1
+  "dia": "2026-10-17",
+  "partidos": 2
  },
  "29169": {
   "nombre": "Pablo Ibáñez",
@@ -21873,13 +21873,6 @@
     "rival": 13,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 2,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -23770,21 +23763,11 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 8,
-    "como": "banquillo",
-    "eventos": [
-     "yellow",
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-17",
-  "partidos": 0
+  "partidos": 1
  },
  "63869": {
   "nombre": "Bambo Diaby",
@@ -28546,18 +28529,11 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-17",
-  "partidos": 0
+  "partidos": 1
  },
  "70183": {
   "nombre": "Rayane Belaid",
@@ -32248,15 +32224,6 @@
     "eventos": [
      "goal"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 8,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 1,
@@ -32967,13 +32934,6 @@
     "rival": 13,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 2,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33212,15 +33172,6 @@
     "rival": 13,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 2,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
@@ -33379,15 +33330,6 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": [
-     "yellow"
-    ]
    }
   ],
   "asistencias": 0,
@@ -34380,15 +34322,6 @@
     "eventos": [
      "yellow",
      "sub_in"
-    ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 2,
-    "como": "inicio",
-    "eventos": [
-     "yellow"
     ]
    }
   ],
@@ -35824,13 +35757,6 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -35908,20 +35834,11 @@
     "rival": 13,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 2,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-17",
-  "partidos": 1
+  "partidos": 2
  },
  "1385821": {
   "nombre": "Cristian Romero",
@@ -35991,16 +35908,6 @@
     "como": "inicio",
     "eventos": [
      "goal"
-    ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": [
-     "yellow",
-     "sub_out"
     ]
    }
   ],
@@ -36084,13 +35991,6 @@
     "puntos": null,
     "rival": 48,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -37545,18 +37445,11 @@
      "sub_out",
      "assist"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 2,
   "dia": "2026-10-17",
-  "partidos": 4
+  "partidos": 5
  },
  "4836165": {
   "nombre": "Roy Revivo",
@@ -39117,13 +39010,6 @@
     "jornada": 7,
     "puntos": 1,
     "rival": 23,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 2,
     "como": "inicio",
     "eventos": []
    }
