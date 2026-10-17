@@ -32682,7 +32682,7 @@
   "nombre": "Facundo Bernal",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 4,
   "mediaFuera": 2.3,
   "edad": 23,
@@ -36458,13 +36458,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 3,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -37114,7 +37107,7 @@
   "mediaCasa": 2.3,
   "mediaFuera": 3,
   "edad": 22,
-  "titular": null,
+  "titular": true,
   "titularidades": 2,
   "suplencias": 3,
   "jornadas": [
@@ -37390,7 +37383,7 @@
  "4764213": {
   "nombre": "Gabriel Jesus",
   "posicion": 4,
-  "goles": 2,
+  "goles": 3,
   "tarjetas": 0,
   "mediaCasa": 11.5,
   "mediaFuera": 2.5,
