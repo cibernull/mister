@@ -4874,7 +4874,7 @@
   "nombre": "Dani Raba",
   "posicion": 4,
   "goles": 1,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 0,
   "mediaFuera": 4.5,
   "edad": 30,
@@ -4946,8 +4946,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-13",
-  "partidos": 1
+  "dia": "2026-10-17",
+  "partidos": 2
  },
  "11472": {
   "nombre": "Leandro Cabrera",
@@ -7850,20 +7850,11 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 1,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-17",
-  "partidos": 2
+  "partidos": 3
  },
  "18186": {
   "nombre": "Jules Koundé",
@@ -8655,7 +8646,7 @@
   "mediaFuera": 4,
   "edad": 32,
   "titular": null,
-  "titularidades": 4,
+  "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
    {
@@ -8692,11 +8683,20 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 8,
+    "puntos": 4,
+    "rival": 1490,
+    "como": "inicio",
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-11",
-  "partidos": 3
+  "dia": "2026-10-17",
+  "partidos": 4
  },
  "20449": {
   "nombre": "Fer Niño",
@@ -10294,7 +10294,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-17",
-  "partidos": 4
+  "partidos": 5
  },
  "24789": {
   "nombre": "Nico Williams",
@@ -12657,8 +12657,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-16",
-  "partidos": 5
+  "dia": "2026-10-17",
+  "partidos": 4
  },
  "29163": {
   "nombre": "Omar El Hilali",
@@ -18588,7 +18588,7 @@
   "mediaCasa": 3,
   "mediaFuera": 2.5,
   "edad": 22,
-  "titular": null,
+  "titular": true,
   "titularidades": 2,
   "suplencias": 3,
   "jornadas": [
@@ -18647,7 +18647,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-17",
-  "partidos": 4
+  "partidos": 5
  },
  "56578": {
   "nombre": "Johnny Cardoso",
@@ -21157,15 +21157,6 @@
      "sub_in",
      "goal"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 1,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
@@ -21796,13 +21787,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -25624,8 +25608,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-12",
-  "partidos": 0
+  "dia": "2026-10-17",
+  "partidos": 1
  },
  "65188": {
   "nombre": "Thiago Pitarch",
@@ -32579,20 +32563,11 @@
     "eventos": [
      "assist"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 1,
   "dia": "2026-10-17",
-  "partidos": 3
+  "partidos": 4
  },
  "71061": {
   "nombre": "Álex Calatrava",
@@ -32940,13 +32915,6 @@
     "rival": 1490,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33273,13 +33241,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -34752,16 +34713,6 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": [
-     "yellow",
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
@@ -37296,20 +37247,11 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-17",
-  "partidos": 4
+  "partidos": 5
  },
  "3849388": {
   "nombre": "Mamadou Sarr",
@@ -39139,13 +39081,6 @@
     "rival": 1490,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -39222,13 +39157,6 @@
     "puntos": null,
     "rival": 1490,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
     "eventos": []
    }
   ],

@@ -359,6 +359,12 @@
   "clausula": 11328000
  },
  {
+  "tipo": "mercado",
+  "dia": "2026-10-17",
+  "id": "476",
+  "entra": true
+ },
+ {
   "tipo": "duenio",
   "dia": "2026-10-16",
   "id": "328",

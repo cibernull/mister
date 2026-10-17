@@ -1637,6 +1637,11 @@
     "cuando": "2026-10-17T16:30:00.000Z",
     "local": 4,
     "visitante": 3
+   },
+   {
+    "cuando": "2026-10-17T19:00:00.000Z",
+    "local": 19,
+    "visitante": 1
    }
   ],
   "puntos": 24,
@@ -1738,7 +1743,7 @@
     "nombre": "Dani Raba",
     "puesto": 4,
     "puntos": 1,
-    "jugo": false,
+    "jugo": true,
     "capitan": false
    },
    {
