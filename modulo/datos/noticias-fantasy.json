@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-17T17:12:58.900Z",
+ "cuando": "2026-10-17T17:37:24.812Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Fajardo habla de Ceballos y de su relación con Pellegrini",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153009-fajardo-habla-de-ceballos-y-de-su-relacion-con-pellegrini",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Íñigo lamenta la falta de acierto y habla de las rotaciones, Carlos Maciá y la confianza en los delanteros",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153008-inigo-lamenta-la-falta-de-acierto-y-habla-de-las-rotaciones-carlos-macia-y-la-confianza-en-lo",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "17/10",
@@ -470,18 +482,6 @@
    "titulo": "Alineaciones probables de la jornada 9 de LaLiga Fantasy 26-27 con última hora y pronósticos, por Carrasco",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152933-alineaciones-probables-de-la-jornada-9-de-laliga-fantasy-26-27-con-ultima-hora-y-pronosticos-",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Íñigo Pérez habla de Gulácsi, Veiga, las rotaciones y el Elche",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152932-inigo-perez-habla-de-gulacsi-veiga-las-rotaciones-y-el-elche",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Parte médico oficial de Luiz Felipe: rotura de ligamento cruzado anterior",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152931-parte-medico-oficial-de-luiz-felipe-rotura-de-ligamento-cruzado-anterior",
-   "categoria": "lesión"
   }
  ]
 }
