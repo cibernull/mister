@@ -21785,13 +21785,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 19,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -34682,7 +34675,7 @@
   "nombre": "Beñat Gerenabarrena",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 2,
+  "tarjetas": 3,
   "mediaCasa": 4.3,
   "mediaFuera": 5,
   "edad": 23,
@@ -34745,7 +34738,10 @@
     "puntos": null,
     "rival": 19,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow",
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
