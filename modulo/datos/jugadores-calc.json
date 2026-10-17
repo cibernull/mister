@@ -6576,8 +6576,8 @@
   "semana": -9000,
   "sem7": 543000,
   "mes": 3465000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 10179000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -13094,8 +13094,8 @@
   "semana": -72000,
   "sem7": -456000,
   "mes": -2411000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1453000,
   "ced": 0,
   "pos": 3,
   "est": "injury",
@@ -15317,8 +15317,8 @@
   "semana": 56000,
   "sem7": 541000,
   "mes": 1572000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 2847000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -17533,8 +17533,8 @@
   "semana": -97000,
   "sem7": -528000,
   "mes": -2482000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 9776000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -20068,8 +20068,8 @@
   "semana": -66000,
   "sem7": -223000,
   "mes": 199000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1733000,
   "ced": 0,
   "pos": 3,
   "est": "doubt",
@@ -26890,8 +26890,8 @@
   "semana": -33000,
   "sem7": -161000,
   "mes": -952000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1623000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -27623,8 +27623,8 @@
   "semana": -18000,
   "sem7": -199000,
   "mes": -758000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 200000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -29479,8 +29479,8 @@
   "semana": -47000,
   "sem7": -315000,
   "mes": -2054000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 830000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -31430,8 +31430,8 @@
   "semana": 0,
   "sem7": -49000,
   "mes": -1066000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -33147,8 +33147,8 @@
   "semana": -5000,
   "sem7": -7000,
   "mes": -19000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -37447,6 +37447,87 @@
   "d": 0
  },
  {
+  "id": "64031",
+  "nombre": "Hugo Rincón",
+  "valor": 160000,
+  "puntos": 4,
+  "media": 2,
+  "partidos": 2,
+  "semana": 0,
+  "sem7": -36000,
+  "mes": -128000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   2,
+   2,
+   null
+  ],
+  "eq": 1,
+  "riv": 19,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 2,
+  "mf": 2,
+  "tit": 1,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    2,
+    3,
+    1,
+    ""
+   ],
+   [
+    2,
+    2,
+    17,
+    0,
+    "i74"
+   ],
+   [
+    3,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    48,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "5298724",
   "nombre": "Iker Cordoba",
   "valor": 160000,
@@ -37536,87 +37617,6 @@
     8,
     null,
     1490,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "64031",
-  "nombre": "Hugo Rincón",
-  "valor": 160000,
-  "puntos": 4,
-  "media": 2,
-  "partidos": 2,
-  "semana": 0,
-  "sem7": -36000,
-  "mes": -128000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   2,
-   2,
-   null
-  ],
-  "eq": 1,
-  "riv": 19,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 2,
-  "mf": 2,
-  "tit": 1,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    2,
-    3,
-    1,
-    ""
-   ],
-   [
-    2,
-    2,
-    17,
-    0,
-    "i74"
-   ],
-   [
-    3,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    48,
     0,
     ""
    ]
@@ -40272,6 +40272,88 @@
   "d": 0
  },
  {
+  "id": "4947930",
+  "nombre": "Jens-Lys Cajuste",
+  "valor": 160000,
+  "puntos": 1,
+  "media": 1,
+  "partidos": 1,
+  "semana": -21000,
+  "sem7": 0,
+  "mes": -441000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   1
+  ],
+  "eq": 13,
+  "riv": 16,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 1,
+  "mf": 0,
+  "tit": 0,
+  "sup": 1,
+  "once": null,
+  "asis": 0,
+  "edad": 27,
+  "js": [
+   [
+    1,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    4,
+    1,
+    12,
+    0,
+    "i86"
+   ],
+   [
+    5,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    20,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "31128",
   "nombre": "Julen Lobete",
   "valor": 160000,
@@ -40330,108 +40412,6 @@
     6,
     null,
     20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "71509",
-  "nombre": "Kevin Sánchez",
-  "valor": 160000,
-  "puntos": 1,
-  "media": 1,
-  "partidos": 1,
-  "semana": -8000,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   1,
-   null,
-   null
-  ],
-  "eq": 6,
-  "riv": 2,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 1,
-  "mf": 0,
-  "tit": 0,
-  "sup": 1,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    1,
-    23,
-    0,
-    "i85"
-   ],
-   [
-    2,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    12,
     0,
     ""
    ]
@@ -40697,31 +40677,30 @@
   "d": 0
  },
  {
-  "id": "4947930",
-  "nombre": "Jens-Lys Cajuste",
+  "id": "71509",
+  "nombre": "Kevin Sánchez",
   "valor": 160000,
   "puntos": 1,
   "media": 1,
   "partidos": 1,
-  "semana": -21000,
+  "semana": -8000,
   "sem7": 0,
-  "mes": -441000,
+  "mes": 0,
   "mk": 0,
   "pv": null,
   "ced": 0,
-  "pos": 3,
+  "pos": 4,
   "est": null,
   "bl": 0,
   "sub": 0,
   "racha": [
+   1,
    null,
-   null,
-   null,
-   1
+   null
   ],
-  "eq": 13,
-  "riv": 16,
-  "casa": 1,
+  "eq": 6,
+  "riv": 2,
+  "casa": 0,
   "gol": 0,
   "tar": 0,
   "mc": 1,
@@ -40730,47 +40709,68 @@
   "sup": 1,
   "once": null,
   "asis": 0,
-  "edad": 27,
+  "edad": 21,
   "js": [
    [
     1,
-    null,
-    2,
+    1,
+    23,
     0,
-    ""
+    "i85"
    ],
    [
     2,
     null,
-    6,
+    13,
     0,
     ""
    ],
    [
     3,
     null,
-    15,
+    19,
     0,
     ""
    ],
    [
     4,
-    1,
-    12,
+    null,
+    20,
     0,
-    "i86"
+    ""
    ],
    [
     5,
     null,
-    5,
+    9,
     0,
     ""
    ],
    [
     6,
     null,
-    20,
+    17,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    12,
     0,
     ""
    ]
@@ -44704,103 +44704,6 @@
   "d": 0
  },
  {
-  "id": "61410",
-  "nombre": "Adrián Rodríguez",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -47000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 48,
-  "riv": 5,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    1,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    2,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "65187",
   "nombre": "Alejandro Rego",
   "valor": 160000,
@@ -45354,6 +45257,61 @@
   "asis": 0,
   "edad": 36,
   "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "48554",
+  "nombre": "Luiz Felipe",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -30000,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 14,
+  "riv": 9,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 29,
+  "js": [
+   [
+    6,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    50,
+    0,
+    ""
+   ]
+  ],
   "p": 0,
   "d": 0
  },
@@ -45976,103 +45934,6 @@
   "d": 0
  },
  {
-  "id": "59642",
-  "nombre": "Juan Musso",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -28000,
-  "sem7": 0,
-  "mes": -62000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 2,
-  "riv": 8,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 32,
-  "js": [
-   [
-    1,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    48,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "64410",
   "nombre": "Alejandro Iturbe",
   "valor": 160000,
@@ -46162,6 +46023,103 @@
     8,
     null,
     5,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "59642",
+  "nombre": "Juan Musso",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -28000,
+  "sem7": 0,
+  "mes": -62000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 2,
+  "riv": 8,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 32,
+  "js": [
+   [
+    1,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    48,
     0,
     ""
    ]
@@ -46267,6 +46225,96 @@
   "d": 0
  },
  {
+  "id": "62910",
+  "nombre": "Fran González",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -16000,
+  "mes": -23000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 17,
+  "riv": 15,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    3,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "71012",
   "nombre": "Carlos López",
   "valor": 160000,
@@ -46360,6 +46408,143 @@
     ""
    ]
   ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "6035",
+  "nombre": "Iván Villar",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -35000,
+  "sem7": -14000,
+  "mes": -2000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 5,
+  "riv": 48,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 29,
+  "js": [
+   [
+    1,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    23,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "17623",
+  "nombre": "Ferland Mendy",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -7000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 15,
+  "riv": 17,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 31,
+  "js": [],
   "p": 0,
   "d": 0
  },
@@ -46461,55 +46646,15 @@
   "d": 0
  },
  {
-  "id": "17623",
-  "nombre": "Ferland Mendy",
+  "id": "61410",
+  "nombre": "Adrián Rodríguez",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
   "semana": 0,
-  "sem7": 0,
-  "mes": -7000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 15,
-  "riv": 17,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 31,
-  "js": [],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "62910",
-  "nombre": "Fran González",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -16000,
-  "mes": -23000,
+  "sem7": -47000,
+  "mes": 0,
   "mk": 0,
   "pv": null,
   "ced": 0,
@@ -46524,8 +46669,8 @@
    null,
    null
   ],
-  "eq": 17,
-  "riv": 15,
+  "eq": 48,
+  "riv": 5,
   "casa": 0,
   "gol": 0,
   "tar": 0,
@@ -46535,109 +46680,61 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 21,
+  "edad": 25,
   "js": [
    [
     1,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    2,
     null,
     14,
     0,
     ""
    ],
    [
-    2,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
     3,
     null,
-    2,
+    20,
     0,
     ""
    ],
    [
     4,
     null,
-    8,
+    50,
     0,
     ""
    ],
    [
     5,
     null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
     19,
     0,
     ""
    ],
    [
-    6,
+    7,
     null,
-    6,
+    1,
     0,
     ""
    ],
    [
-    7,
-    null,
-    3,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "48554",
-  "nombre": "Luiz Felipe",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -30000,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 14,
-  "riv": 9,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 29,
-  "js": [
-   [
-    6,
-    null,
     8,
-    0,
-    ""
-   ],
-   [
-    7,
     null,
-    50,
+    2,
     0,
     ""
    ]
@@ -46825,103 +46922,6 @@
     8,
     null,
     1490,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "6035",
-  "nombre": "Iván Villar",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -35000,
-  "sem7": -14000,
-  "mes": -2000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 5,
-  "riv": 48,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 29,
-  "js": [
-   [
-    1,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    23,
     0,
     ""
    ]
