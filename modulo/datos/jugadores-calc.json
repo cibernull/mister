@@ -3231,8 +3231,8 @@
   "semana": 32000,
   "sem7": 411000,
   "mes": 1274000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 10297000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -12550,8 +12550,8 @@
   "semana": -72000,
   "sem7": -466000,
   "mes": 656000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 5833000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -19062,8 +19062,8 @@
   "semana": -54000,
   "sem7": -444000,
   "mes": -1601000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1171000,
   "ced": 0,
   "pos": 2,
   "est": "injury",
@@ -26213,8 +26213,8 @@
   "semana": -25000,
   "sem7": -17000,
   "mes": -462000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 168000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -26751,8 +26751,8 @@
   "semana": -2000,
   "sem7": 0,
   "mes": 0,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -26848,8 +26848,8 @@
   "semana": -61000,
   "sem7": -165000,
   "mes": 227000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 387000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -34222,8 +34222,8 @@
   "semana": -43000,
   "sem7": -331000,
   "mes": -2121000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1160000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -36018,8 +36018,8 @@
   "semana": -48000,
   "sem7": 0,
   "mes": -65000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 2,
   "est": "injury",
@@ -36840,8 +36840,8 @@
   "semana": -2000,
   "sem7": -15000,
   "mes": -26000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -36944,8 +36944,8 @@
   "semana": -50000,
   "sem7": -362000,
   "mes": -2537000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1017000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -46413,6 +46413,89 @@
   "d": 0
  },
  {
+  "id": "63869",
+  "nombre": "Bambo Diaby",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -40000,
+  "sem7": -43000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 23,
+  "riv": 14,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 28,
+  "js": [
+   [
+    1,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    5,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "71003",
   "nombre": "Diego Murillo",
   "valor": 160000,
@@ -46550,6 +46633,110 @@
     8,
     null,
     5,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "3368896",
+  "nombre": "Jordi Pesquer",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -50000,
+  "sem7": -3000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "other",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 3,
+  "riv": 15,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 17,
+  "js": [
+   [
+    1,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    4,
     0,
     ""
    ]
@@ -47037,8 +47224,8 @@
   "semana": 0,
   "sem7": -6000,
   "mes": -47000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -47214,6 +47401,75 @@
     8,
     null,
     3,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "65188",
+  "nombre": "Thiago Pitarch",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -2000,
+  "sem7": 0,
+  "mes": -33000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 15,
+  "riv": 17,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 19,
+  "js": [
+   [
+    5,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    20,
     0,
     ""
    ]
@@ -47409,20 +47665,20 @@
   "d": 0
  },
  {
-  "id": "65188",
-  "nombre": "Thiago Pitarch",
+  "id": "17623",
+  "nombre": "Ferland Mendy",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": -2000,
-  "sem7": 0,
-  "mes": -33000,
+  "semana": 0,
+  "sem7": -37000,
+  "mes": 0,
   "mk": 0,
   "pv": null,
   "ced": 0,
-  "pos": 3,
-  "est": null,
+  "pos": 2,
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -47443,37 +47699,8 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 19,
-  "js": [
-   [
-    5,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    20,
-    0,
-    ""
-   ]
-  ],
+  "edad": 31,
+  "js": [],
   "p": 0,
   "d": 0
  },
@@ -47636,233 +47863,6 @@
     7,
     null,
     50,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "17623",
-  "nombre": "Ferland Mendy",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -37000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 15,
-  "riv": 17,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 31,
-  "js": [],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "3368896",
-  "nombre": "Jordi Pesquer",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -50000,
-  "sem7": -3000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "other",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 3,
-  "riv": 15,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 17,
-  "js": [
-   [
-    1,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    12,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    4,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "63869",
-  "nombre": "Bambo Diaby",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -40000,
-  "sem7": -43000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 23,
-  "riv": 14,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 28,
-  "js": [
-   [
-    1,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    5,
     0,
     ""
    ]

@@ -1,14 +1,8 @@
 {
- "cuando": "2026-10-18T03:07:36.540Z",
+ "cuando": "2026-10-18T04:07:26.289Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "17/10",
-   "titulo": "Sigue en directo el Valencia - Athletic",
-   "url": "https://www.futbolfantasy.com/partidos/22511-valencia-athletic",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 10 de los que han disputado la 9 disponibles",
@@ -29,6 +23,18 @@
   },
   {
    "fecha": "18/10",
+   "titulo": "Terzic le da valor al punto y habla de Guruzeta, Johaneko y Gerenabarrena",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153020-terzic-le-da-valor-al-punto-y-habla-de-guruzeta-johaneko-y-gerenabarrena",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Aguirre y Terzic se abrazan en la mediocridad",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153019-aguirre-y-terzic-se-funden-en-la-mediocridad",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/10",
    "titulo": "De Haas se retira con molestias musculares ante el Athletic",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153018-de-haas-se-retira-con-molestias-musculares-ante-el-athletic",
    "categoria": "lesión"
@@ -38,6 +44,12 @@
    "titulo": "Guruzeta fue sustituido por una lesión de rodilla",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153017-guruzeta-fue-sustituido-por-una-lesion-de-rodilla",
    "categoria": "lesión"
+  },
+  {
+   "fecha": "17/10",
+   "titulo": "Jornada 9: Valencia 0-0 Athletic. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22511-valencia-athletic",
+   "categoria": "partido"
   },
   {
    "fecha": "17/10",
@@ -470,18 +482,6 @@
    "titulo": "Buchanan y Pépé, bajas en la última sesión previa al Elche",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152945-buchanan-y-pepe-bajas-en-la-ultima-sesion-previa-al-elche",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Jofre Carreras y Kike García siguen fuera de la convocatoria para recibir al Atlético",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152944-jofre-carreras-kike-garcia-siguen-fuera-convocatoria-recibir-atletico",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Parte médico oficial de Johnny Cardoso: gastroenteritis aguda",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152943-parte-medico-oficial-de-johnny-cardoso-gastroenteritis-aguda",
-   "categoria": "lesión"
   }
  ]
 }
