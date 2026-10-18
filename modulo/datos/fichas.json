@@ -6545,7 +6545,7 @@
   "nombre": "Marc Cucurella",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 3.3,
   "mediaFuera": 2.3,
   "edad": 28,
@@ -6624,7 +6624,9 @@
     "puntos": null,
     "rival": 17,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 0,
@@ -6923,11 +6925,20 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 17,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-13",
-  "partidos": 2
+  "dia": "2026-10-18",
+  "partidos": 1
  },
  "15345": {
   "nombre": "Aihen Muñoz",
@@ -30060,7 +30071,7 @@
   ],
   "asistencias": 1,
   "dia": "2026-10-18",
-  "partidos": 4
+  "partidos": 3
  },
  "70922": {
   "nombre": "Ibrahima Konaté",
