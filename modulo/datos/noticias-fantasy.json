@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-18T19:07:35.602Z",
+ "cuando": "2026-10-18T19:37:41.045Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "18/10",
-   "titulo": "Alineaciones confirmadas del Real Madrid - Sevilla",
+   "titulo": "Sigue en directo el Real Madrid - Sevilla",
    "url": "https://www.futbolfantasy.com/partidos/22510-real-madrid-sevilla",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -26,6 +26,12 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Funes destaca la crueldad del resultado y habla del nivel de la plantilla, la confianza, Chupete, Niño y el proyecto",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153064-funes-destaca-la-crueldad-del-resultado-y-habla-del-nivel-de-la-plantilla-la-confianza-chupet",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "18/10",
@@ -476,12 +482,6 @@
    "titulo": "El Málaga completa la última sesión sin los cuatro lesionados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152989-el-malaga-completa-la-ultima-sesion-sin-los-cuatro-lesionados",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Jornada 9: Espanyol 0-1 Atlético. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22505-espanyol-atletico",
-   "categoria": "partido"
   }
  ]
 }
