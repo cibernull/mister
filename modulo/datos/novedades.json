@@ -485,6 +485,12 @@
   "equipo": null
  },
  {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "71008",
+  "entra": true
+ },
+ {
   "tipo": "lesion",
   "dia": "2026-10-17",
   "id": "29238",
