@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-18T16:37:41.039Z",
+ "cuando": "2026-10-18T17:07:37.335Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "18/10",
-   "titulo": "Alineaciones confirmadas del Málaga - Real Sociedad",
+   "titulo": "Sigue en directo el Málaga - Real Sociedad",
    "url": "https://www.futbolfantasy.com/partidos/22507-malaga-real-sociedad",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -26,6 +26,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Giráldez analiza el triunfo y el juego del equipo y habla de Cáceres, Javi Rodríguez, Moriba, Galán y Núñez",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153057-giraldez-analiza-el-triunfo-y-el-juego-del-equipo-y-habla-de-caceres-javi-rodriguez-moriba-ga",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Quique analiza la derrota, la mala racha de resultados y la evolución de Hugo Novoa",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153056-quique-analiza-la-derrota-la-mala-racha-de-resultados-y-la-evolucion-de-hugo-novoa",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "18/10",
@@ -470,18 +482,6 @@
    "titulo": "Monchi confirma la confianza en Manolo y habla del proyecto y el mercado",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152982-monchi-confirma-la-confianza-en-manolo-y-habla-del-proyecto-y-el-mercado",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Alemany habla de la situación de Koke, Pubill y la opción de compra de Jonathan David",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152981-alemany-habla-de-la-situacion-de-koke-pubill-y-la-opcion-de-compra-de-jonathan-david",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Sebastián Cáceres será titular contra el Alavés",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152980-sebastian-caceres-sera-titular-contra-el-alaves",
-   "categoria": "análisis"
   }
  ]
 }

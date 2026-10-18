@@ -479,6 +479,13 @@
  },
  {
   "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "27333",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
   "dia": "2026-10-17",
   "id": "29238",
   "estado": "other",
