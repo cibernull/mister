@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-18T14:36:34.339Z",
+ "cuando": "2026-10-18T15:07:47.682Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,24 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Arrasate celebra el primer triunfo y habla de Budimir, Raúl García, Echegoyen, Rosier, Boyomo, Aitor, Herrera, Dubasin, Torró y Osambela",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153049-arrasate-celebra-el-primer-triunfo-y-habla-de-budimir-raul-garcia-echegoyen-rosier-boyomo-ait",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "José Alberto analiza la derrota, el mal arranque, el arbitraje, la confianza en Almeida y los cambios",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153048-jose-alberto-analiza-la-derrota-el-mal-arranque-el-arbitraje-la-confianza-en-almeida-y-los-ca",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Carlos Maciá escribe su primera página amarilla",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153047-carlos-macia-escribe-su-primera-pagina-amarilla",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Ratiu sigue fuera del grupo y es baja contra el Getafe",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152974-ratiu-sigue-fuera-del-grupo-y-es-baja-contra-el-getafe",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Pablo Durán no llega a tiempo y se suma a las bajas en la convocatoria",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152973-pablo-duran-no-llega-a-tiempo-y-se-suma-a-las-bajas-en-la-convocatoria",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Simeone explica las rotaciones y habla de la dificultad de visitar al Espanyol",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152972-simeone-explica-las-rotaciones-y-habla-de-la-dificultad-de-visitar-al-espanyol",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Manolo habla de Fortuño, Dmitrovic y Puado antes del partido contra el Atlético",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152971-manolo-habla-de-fortuno-dmitrovic-y-puado-antes-del-partido-contra-el-atletico",
-   "categoria": "rueda de prensa"
   }
  ]
 }

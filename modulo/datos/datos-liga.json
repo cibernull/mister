@@ -1358,6 +1358,16 @@
  ],
  "movimientos": [
   {
+   "id": "51134",
+   "nombre": "Pablo Durán",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 1405950,
+   "tipo": "normal",
+   "fecha": "2026-10-18 17:01:23",
+   "pos": 4
+  },
+  {
    "id": "23147",
    "nombre": "Tete Morente",
    "de": "Cacaculopedopis",
@@ -9090,6 +9100,14 @@
      "op": "normal"
     },
     {
+     "j": "Pablo Durán",
+     "id": "51134",
+     "tipo": "venta",
+     "importe": 1405950,
+     "fecha": "2026-10-18",
+     "op": "normal"
+    },
+    {
      "j": "Ville Koski",
      "id": "68652",
      "tipo": "compra",
@@ -10124,8 +10142,8 @@
     "51134": {
      "nombre": "Pablo Durán",
      "compras": 1223960,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1405950,
+     "ops": 2
     },
     "52371": {
      "nombre": "Iker Muñoz",
