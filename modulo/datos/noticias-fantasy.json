@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-18T13:07:35.188Z",
+ "cuando": "2026-10-18T13:37:37.958Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Pedri y Rodri se funden en el olimpo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153038-pedri-y-rodri-se-funden-en-el-olimpo",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Alineaciones confirmadas del Celta - Alavés",
+   "url": "https://www.futbolfantasy.com/partidos/22503-celta-alaves",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "18/10",
@@ -470,18 +482,6 @@
    "titulo": "Rodrygo y Asencio, únicas bajas en la sesión de este sábado en Valdebebas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152962-rodrygo-y-asencio-unicas-bajas-en-la-sesion-de-este-sabado-en-valdebebas",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Militao recibe el alta médica y volverá a una convocatoria",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152961-militao-recibe-el-alta-medica-y-volvera-a-una-convocatoria",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "El Athletic viaja a Valencia con cuatro bajas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152960-el-athletic-viaja-a-valencia-con-cuatro-bajas",
-   "categoria": "convocatoria"
   }
  ]
 }
