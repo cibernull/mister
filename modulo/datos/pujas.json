@@ -3837,6 +3837,40 @@
     "topeMax": 26433150,
     "exceso": 0
    }
+  ],
+  "554207388": [
+   {
+    "idTransfer": 554207388,
+    "cuando": "2026-10-18 05:00:20",
+    "jugador": "Lucas Boyé",
+    "equipo": "Mario80",
+    "puja": 10148580,
+    "gana": true,
+    "topeMax": 22918480,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 554207388,
+    "cuando": "2026-10-18 05:00:20",
+    "jugador": "Lucas Boyé",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 10147000,
+    "gana": false,
+    "topeMax": 32688640,
+    "exceso": 0
+   }
+  ],
+  "554216629": [
+   {
+    "idTransfer": 554216629,
+    "cuando": "2026-10-18 05:00:20",
+    "jugador": "Pablo Maffeo",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1623000,
+    "gana": true,
+    "topeMax": 39236810,
+    "exceso": 0
+   }
   ]
  }
 }

@@ -1,5 +1,91 @@
 [
  {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "5916",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-18",
+  "id": "8953",
+  "de": null,
+  "a": "Neky F.C. (Sergio)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "8953",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-18",
+  "id": "11697",
+  "de": null,
+  "a": "Mario80"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "11697",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "15107",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "17568",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "22495",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "48203",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "55738",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "65347",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "71010",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "71037",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "3848780",
+  "entra": false
+ },
+ {
   "tipo": "lesion",
   "dia": "2026-10-17",
   "id": "29238",
