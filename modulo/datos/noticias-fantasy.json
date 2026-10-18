@@ -1,14 +1,8 @@
 {
- "cuando": "2026-10-18T20:46:48.385Z",
+ "cuando": "2026-10-18T21:07:48.037Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "18/10",
-   "titulo": "Sigue en directo el Real Madrid - Sevilla",
-   "url": "https://www.futbolfantasy.com/partidos/22510-real-madrid-sevilla",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 10 de los que han disputado la 9 disponibles",
@@ -26,6 +20,24 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Jornada 9: Real Madrid 4-1 Sevilla. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22510-real-madrid-sevilla",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Drkusic se ejercitó con normalidad en la vuelta al trabajo del Espanyol",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153070-drkusic-se-ejercito-con-normalidad-en-la-vuelta-al-trabajo-del-espanyol",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "El Valencia disputa un partidillo contra el filial en la vuelta al trabajo este domingo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153069-el-valencia-disputa-un-partidillo-contra-el-filial-en-la-vuelta-al-trabajo-este-domingo",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "18/10",
@@ -470,18 +482,6 @@
    "titulo": "Lista de Matarazzo para viajar a Málaga sin los lesionados ni el sancionado Marín",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152995-lista-de-matarazzo-para-viajar-a-malaga-sin-los-lesionados-ni-el-sancionado-marin",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Marc Aguado se retira lesionado del partido en La Cerámica",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152994-marc-aguado-se-retira-lesionado-del-partido-en-la-ceramica",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Yeremay vuelve al trabajo sin problemas y Ede está pendiente de pruebas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152993-yeremay-vuelve-al-trabajo-sin-problemas-y-ede-esta-pendiente-de-pruebas",
-   "categoria": "entrenamiento"
   }
  ]
 }

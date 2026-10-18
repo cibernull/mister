@@ -6618,15 +6618,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": [
-     "yellow"
-    ]
    }
   ],
   "asistencias": 0,
@@ -6925,20 +6916,11 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 17,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-18",
-  "partidos": 1
+  "partidos": 2
  },
  "15345": {
   "nombre": "Aihen Muñoz",
@@ -7588,8 +7570,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-13",
-  "partidos": 0
+  "dia": "2026-10-18",
+  "partidos": 1
  },
  "17453": {
   "nombre": "Frenkie De Jong",
@@ -9293,13 +9275,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 15,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -15464,7 +15439,7 @@
   "mediaCasa": 4,
   "mediaFuera": 3.5,
   "edad": 26,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 1,
   "jornadas": [
@@ -15519,9 +15494,9 @@
     ]
    }
   ],
-  "asistencias": 0,
-  "dia": "2026-10-17",
-  "partidos": 4
+  "asistencias": 1,
+  "dia": "2026-10-18",
+  "partidos": 5
  },
  "48194": {
   "nombre": "Williot Swedberg",
@@ -20266,8 +20241,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-13",
-  "partidos": 1
+  "dia": "2026-10-18",
+  "partidos": 2
  },
  "58954": {
   "nombre": "Kylian Mbappé",
@@ -20680,18 +20655,11 @@
     "rival": 12,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 15,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-18",
-  "partidos": 0
+  "partidos": 1
  },
  "59064": {
   "nombre": "Jiri Letacek",
@@ -22076,8 +22044,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-17",
-  "partidos": 2
+  "dia": "2026-10-18",
+  "partidos": 3
  },
  "59641": {
   "nombre": "Toni Martínez",
@@ -22870,18 +22838,11 @@
     "rival": 12,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 15,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-18",
-  "partidos": 0
+  "partidos": 1
  },
  "60888": {
   "nombre": "Roberto Fernández",
@@ -23745,7 +23706,7 @@
  "62904": {
   "nombre": "Yan Diomande",
   "posicion": 4,
-  "goles": 1,
+  "goles": 2,
   "tarjetas": 1,
   "mediaCasa": 4.5,
   "mediaFuera": 4.3,
@@ -23827,15 +23788,6 @@
     "eventos": [
      "sub_out",
      "goal"
-    ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": [
-     "assist"
     ]
    }
   ],
@@ -24238,8 +24190,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-12",
-  "partidos": 3
+  "dia": "2026-10-18",
+  "partidos": 2
  },
  "63784": {
   "nombre": "Jorge Cabello",
@@ -30058,15 +30010,6 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 17,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 1,
@@ -30148,13 +30091,6 @@
     "eventos": [
      "yellow"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -30617,13 +30553,6 @@
     "puntos": null,
     "rival": 2,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -33735,13 +33664,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 17,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -35854,13 +35776,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 15,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -36235,13 +36150,6 @@
     "puntos": null,
     "rival": 12,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 15,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -36726,15 +36634,6 @@
      "sub_out",
      "goal",
      "assist"
-    ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 15,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
     ]
    }
   ],
@@ -38999,18 +38898,9 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 15,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
-  "asistencias": 0,
+  "asistencias": 1,
   "dia": "2026-10-18",
   "partidos": 3
  },
@@ -39096,7 +38986,7 @@
   ],
   "asistencias": 1,
   "dia": "2026-10-18",
-  "partidos": 4
+  "partidos": 5
  },
  "4836181": {
   "nombre": "Iván Azón",
@@ -39644,13 +39534,6 @@
     "eventos": [
      "assist"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 15,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
