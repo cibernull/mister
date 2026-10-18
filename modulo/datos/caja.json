@@ -1,6 +1,22 @@
 {
- "saldo": 497390,
+ "saldo": 14790,
  "apuntes": [
+  {
+   "cuando": 1792319769,
+   "fecha": "2026-10-18 12:36",
+   "motivo": "Modificación de cláusula (100%) de Roy Revivo",
+   "tipo": "Penalización",
+   "importe": -255000,
+   "saldo": 14790
+  },
+  {
+   "cuando": 1792319761,
+   "fecha": "2026-10-18 12:36",
+   "motivo": "Modificación de cláusula (100%) de Sergi Cardona",
+   "tipo": "Penalización",
+   "importe": -227600,
+   "saldo": 269790
+  },
   {
    "cuando": 1792164753,
    "fecha": "2026-10-16 17:32",
@@ -464,22 +480,6 @@
    "tipo": "Compra",
    "importe": -2484550,
    "saldo": 27522272
-  },
-  {
-   "cuando": 1789470385,
-   "fecha": "2026-09-15 13:06",
-   "motivo": "Jonny Otto a Mister",
-   "tipo": "Venta",
-   "importe": 5306080,
-   "saldo": 30006822
-  },
-  {
-   "cuando": 1789467758,
-   "fecha": "2026-09-15 12:22",
-   "motivo": "Jornada 5",
-   "tipo": "Bonificación",
-   "importe": 3075000,
-   "saldo": 24700742
   }
  ]
 }

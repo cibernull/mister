@@ -339,6 +339,24 @@
   "entra": true
  },
  {
+  "tipo": "clausula",
+  "dia": "2026-10-18",
+  "id": "53107",
+  "equipo": "Niutin FC (Isaac)",
+  "escalones": 1,
+  "coste": 227600,
+  "clausula": 2276000
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-10-18",
+  "id": "4836165",
+  "equipo": "Niutin FC (Isaac)",
+  "escalones": 1,
+  "coste": 255000,
+  "clausula": 2550000
+ },
+ {
   "tipo": "lesion",
   "dia": "2026-10-17",
   "id": "29238",
