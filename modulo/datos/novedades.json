@@ -497,6 +497,15 @@
   "entra": true
  },
  {
+  "tipo": "clausula",
+  "dia": "2026-10-18",
+  "id": "62904",
+  "equipo": "Saiyans FC (Fran)",
+  "escalones": 1,
+  "coste": 3193600,
+  "clausula": 32000000
+ },
+ {
   "tipo": "lesion",
   "dia": "2026-10-17",
   "id": "29238",
