@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-18T11:37:35.086Z",
+ "cuando": "2026-10-18T12:07:48.646Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "18/10",
-   "titulo": "Alineaciones confirmadas del Osasuna - Racing",
+   "titulo": "Sigue en directo el Osasuna - Racing",
    "url": "https://www.futbolfantasy.com/partidos/22508-osasuna-racing",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -26,6 +26,30 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Bordalás habla de Mayoral, Carvajal y el Rayo, pero evita referirse a Jadon Sancho",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153032-bordalas-habla-de-mayoral-carvajal-y-el-rayo-pero-evita-referirse-a-jadon-sancho",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Requena valora el empate, explica su gol y destaca la importancia de volver al Ciutat",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153031-requena-valora-el-empate-explica-su-gol-y-destaca-la-importancia-de-volver-al-ciutat",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "José Alberto, sobe la mala dinámica, los goles recibidos y las dificultades de Osasuna",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153030-jose-alberto-sobe-la-mala-dinamica-los-goles-recibidos-y-las-dificultades-de-osasuna",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Arrasate, sobre la propuesta del Racing, la presencia en el área y la solidez defensiva",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153029-arrasate-sobre-la-propuesta-del-racing-la-presencia-en-el-area-y-la-solidez-defensiva",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "18/10",
@@ -458,30 +482,6 @@
    "titulo": "Hidalgo valora el empate y habla de Ede, Yeremay, Leo Román, Bil Nsongo, Angeliño y las sustituciones",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152956-hidalgo-valora-el-empate-y-habla-de-ede-yeremay-leo-roman-bil-nsongo-angelino-y-las-sustituci",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Luis Castro analiza el empate y habla de Olasagasti, Toljan, Nacho Pérez y el juego del equipo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152955-luis-castro-analiza-el-empate-y-habla-de-olasagasti-toljan-nacho-perez-y-el-juego-del-equipo",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Deportivo y Levante sacan a relucir su instinto de supervivencia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152954-deportivo-y-levante-sacan-a-relucir-sus-instintos-de-supervivencia",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Bright Ede pide el cambio por una lesión en los isquiotibiales",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152951-bright-ede-pide-el-cambio-por-una-lesion-en-los-isquiotibiales",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "16/10",
-   "titulo": "Jornada 9: Deportivo 1-1 Levante. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22504-deportivo-levante",
-   "categoria": "partido"
   }
  ]
 }
