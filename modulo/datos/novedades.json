@@ -320,6 +320,19 @@
   "equipo": null
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-10-18",
+  "id": "23147",
+  "de": "Cacaculopedopis",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "23147",
+  "entra": false
+ },
+ {
   "tipo": "lesion",
   "dia": "2026-10-17",
   "id": "29238",

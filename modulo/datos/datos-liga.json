@@ -1358,6 +1358,16 @@
  ],
  "movimientos": [
   {
+   "id": "23147",
+   "nombre": "Tete Morente",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 1085850,
+   "tipo": "normal",
+   "fecha": "2026-10-18 09:17:18",
+   "pos": 3
+  },
+  {
    "id": "476",
    "nombre": "Gerard Moreno",
    "de": "Mario80",
@@ -9072,6 +9082,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Tete Morente",
+     "id": "23147",
+     "tipo": "venta",
+     "importe": 1085850,
+     "fecha": "2026-10-18",
+     "op": "normal"
+    },
+    {
      "j": "Ville Koski",
      "id": "68652",
      "tipo": "compra",
@@ -10058,8 +10076,8 @@
     "23147": {
      "nombre": "Tete Morente",
      "compras": 1458179,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 1085850,
+     "ops": 2
     },
     "23664": {
      "nombre": "Sergio Carreira",
