@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-18T14:07:39.468Z",
+ "cuando": "2026-10-18T14:36:34.339Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "18/10",
+   "titulo": "Sigue en directo el Celta - Alavés",
+   "url": "https://www.futbolfantasy.com/partidos/22503-celta-alaves",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 10 de los que han disputado la 9 disponibles",
@@ -20,6 +26,24 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Sannadi, ante la oportunidad que le arrebató la lluvia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153046-sannadi-ante-la-oportunidad-que-le-arrebato-la-lluvia",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "El Rayo completa la última sesión sin Ratiu, Batalla ni Luiz Felipe",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153045-el-rayo-completa-la-ultima-sesion-sin-ratiu-batalla-ni-luiz-felipe",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "El Barcelona somete a pruebas a Eric García, Gerard Martín y Koundé",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153044-el-barcelona-somete-a-pruebas-a-eric-garcia-gerard-martin-y-kounde",
+   "categoria": "lesión"
   },
   {
    "fecha": "18/10",
@@ -62,12 +86,6 @@
    "titulo": "Pedri y Rodri se funden en el olimpo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153038-pedri-y-rodri-se-funden-en-el-olimpo",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "18/10",
-   "titulo": "Alineaciones confirmadas del Celta - Alavés",
-   "url": "https://www.futbolfantasy.com/partidos/22503-celta-alaves",
-   "categoria": "rueda de prensa"
   },
   {
    "fecha": "18/10",
@@ -464,24 +482,6 @@
    "titulo": "Manolo habla de Fortuño, Dmitrovic y Puado antes del partido contra el Atlético",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152971-manolo-habla-de-fortuno-dmitrovic-y-puado-antes-del-partido-contra-el-atletico",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Arrasate habla de Kike Barja, Raúl Moro, Osambela, Unai Santos, Boyomo, Oroz y el Racing",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152970-arrasate-habla-de-kike-barja-raul-moro-osambela-unai-santos-boyomo-oroz-y-el-racing",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Eriksson y Hernando, fuera de la convocatoria para viajar a Pamplona",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152968-eriksson-y-hernando-fuera-de-la-convocatoria-para-viajar-a-pamplona",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Luis Rioja, novedad en la convocatoria para recibir al Athletic",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152967-luis-rioja-novedad-en-la-convocatoria-para-recibir-al-athletic",
-   "categoria": "convocatoria"
   }
  ]
 }
