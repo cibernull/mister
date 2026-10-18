@@ -848,11 +848,21 @@
     "rival": 23,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 48,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in",
+     "assist"
+    ]
    }
   ],
-  "asistencias": 0,
-  "dia": "2026-10-12",
-  "partidos": 5
+  "asistencias": 1,
+  "dia": "2026-10-18",
+  "partidos": 3
  },
  "208": {
   "nombre": "Moi Gómez",
@@ -10425,13 +10435,6 @@
     "rival": 2,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 5,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -18595,13 +18598,6 @@
     "rival": 23,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 2,
@@ -20750,7 +20746,7 @@
  "59126": {
   "nombre": "Hugo Novoa",
   "posicion": 2,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 0,
   "mediaCasa": 0,
   "mediaFuera": 0,
@@ -20814,10 +20810,20 @@
     "rival": 2,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 5,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in",
+     "goal"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-16",
+  "dia": "2026-10-18",
   "partidos": 0
  },
  "59371": {
@@ -39806,13 +39812,6 @@
     "puntos": null,
     "rival": 2,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 5,
-    "como": "inicio",
     "eventos": []
    }
   ],
