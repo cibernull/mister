@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-18T16:07:40.632Z",
+ "cuando": "2026-10-18T16:37:41.039Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "18/10",
-   "titulo": "Sigue en directo el Celta - Alavés",
-   "url": "https://www.futbolfantasy.com/partidos/22503-celta-alaves",
-   "categoria": "análisis"
+   "titulo": "Alineaciones confirmadas del Málaga - Real Sociedad",
+   "url": "https://www.futbolfantasy.com/partidos/22507-malaga-real-sociedad",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
@@ -29,6 +29,24 @@
   },
   {
    "fecha": "18/10",
+   "titulo": "El Alavés cae atrapado en el 'escape room' de Giráldez",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153055-el-alaves-cae-atrapado-en-el-escape-room-de-giraldez",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Matarazzo, sobre la gestión de esfuerzos, la titularidad de Fort y la propuesta del Málaga",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153054-matarazzo-sobre-la-gestion-de-esfuerzos-la-titularidad-de-fort-y-la-propuesta-del-malaga",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Jornada 9: Celta 2-0 Alavés. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22503-celta-alaves",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "18/10",
    "titulo": "Parte médico oficial de Jules Koundé y Eric García y periodos estimados de baja",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153053-parte-medico-oficial-de-jules-kounde-y-eric-garcia-y-periodos-estimados-de-baja",
    "categoria": "lesión"
@@ -37,12 +55,6 @@
    "fecha": "18/10",
    "titulo": "Funes explica la pareja Chupete-Niño y habla del posible desgaste de la Real",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153052-funes-explica-la-pareja-chupete-nino-y-habla-del-posible-desgaste-de-la-real",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "18/10",
-   "titulo": "Alineaciones confirmadas del Málaga - Real Sociedad",
-   "url": "https://www.futbolfantasy.com/partidos/22507-malaga-real-sociedad",
    "categoria": "rueda de prensa"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Sebastián Cáceres será titular contra el Alavés",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152980-sebastian-caceres-sera-titular-contra-el-alaves",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Giráldez, sobre Durán, Faye, Iglesias, Javi Rodríguez, Cáceres, Lago, Driouech, Starfelt, Román, Jones, Aspas, Antañón y Radu",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152979-giraldez-sobre-duran-faye-iglesias-javi-rodriguez-caceres-lago-driouech-starfelt-roman-jones-",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Militao, novedad en una lista sin Vinicius ni los lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152978-militao-novedad-en-una-lista-sin-vinicius-ni-los-lesionados",
-   "categoria": "convocatoria"
   }
  ]
 }

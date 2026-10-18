@@ -1647,9 +1647,14 @@
     "cuando": "2026-10-18T12:00:00.000Z",
     "local": 50,
     "visitante": 1490
+   },
+   {
+    "cuando": "2026-10-18T14:15:00.000Z",
+    "local": 5,
+    "visitante": 48
    }
   ],
-  "puntos": 26,
+  "puntos": 27,
   "puesto": 5,
   "formacion": "1-3-3-4",
   "once": [
@@ -1673,7 +1678,7 @@
     "id": "60919",
     "nombre": "Yoel Lago",
     "puesto": 2,
-    "puntos": null,
+    "puntos": 2,
     "jugo": true,
     "capitan": false
    },
@@ -1689,7 +1694,7 @@
     "id": "25631",
     "nombre": "Ilaix Moriba",
     "puesto": 3,
-    "puntos": null,
+    "puntos": 1,
     "jugo": true,
     "capitan": false
    },
