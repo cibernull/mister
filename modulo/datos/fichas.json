@@ -4000,8 +4000,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-12",
-  "partidos": 4
+  "dia": "2026-10-18",
+  "partidos": 5
  },
  "6034": {
   "nombre": "Edu Expósito",
@@ -5917,7 +5917,7 @@
   "mediaCasa": 1,
   "mediaFuera": 0,
   "edad": 31,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 0,
   "jornadas": [
@@ -5939,8 +5939,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-16",
-  "partidos": 1
+  "dia": "2026-10-18",
+  "partidos": 2
  },
  "13420": {
   "nombre": "Mouctar Diakhaby",
@@ -6840,8 +6840,8 @@
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-12",
-  "partidos": 4
+  "dia": "2026-10-18",
+  "partidos": 5
  },
  "15344": {
   "nombre": "Brahim Díaz",
@@ -6996,8 +6996,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-13",
-  "partidos": 1
+  "dia": "2026-10-18",
+  "partidos": 2
  },
  "15566": {
   "nombre": "Yangel Herrera",
@@ -8540,20 +8540,11 @@
     "rival": 6,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
-    "eventos": [
-     "goal"
-    ]
    }
   ],
-  "asistencias": 0,
+  "asistencias": 1,
   "dia": "2026-10-18",
-  "partidos": 2
+  "partidos": 3
  },
  "19727": {
   "nombre": "Rodrigo Riquelme",
@@ -9634,15 +9625,6 @@
     "como": "inicio",
     "eventos": [
      "sub_out"
-    ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 16,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
     ]
    }
   ],
@@ -11929,13 +11911,6 @@
     "puntos": null,
     "rival": 8,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -16598,13 +16573,6 @@
     "puntos": null,
     "rival": 8,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -22188,7 +22156,7 @@
  "59789": {
   "nombre": "Orri Óskarsson",
   "posicion": 4,
-  "goles": 1,
+  "goles": 2,
   "tarjetas": 2,
   "mediaCasa": 5,
   "mediaFuera": -0.3,
@@ -22258,18 +22226,11 @@
      "sub_in",
      "double"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-18",
-  "partidos": 3
+  "partidos": 4
  },
  "60210": {
   "nombre": "Pau Navarro",
@@ -23063,7 +23024,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-18",
-  "partidos": 4
+  "partidos": 5
  },
  "61009": {
   "nombre": "Ángel Ortiz",
@@ -23524,20 +23485,11 @@
      "yellow",
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 16,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-18",
-  "partidos": 1
+  "partidos": 2
  },
  "61297": {
   "nombre": "Luken Beitia",
@@ -32013,13 +31965,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -32097,13 +32042,6 @@
     "puntos": null,
     "rival": 8,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -32463,13 +32401,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -32560,15 +32491,6 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 16,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,

@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-18T18:12:03.671Z",
+ "cuando": "2026-10-18T18:37:48.456Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "18/10",
-   "titulo": "Sigue en directo el Málaga - Real Sociedad",
-   "url": "https://www.futbolfantasy.com/partidos/22507-malaga-real-sociedad",
-   "categoria": "análisis"
+   "titulo": "Alineaciones confirmadas del Real Madrid - Sevilla",
+   "url": "https://www.futbolfantasy.com/partidos/22510-real-madrid-sevilla",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
@@ -29,15 +29,21 @@
   },
   {
    "fecha": "18/10",
-   "titulo": "Radu pone Balaídos patas arriba",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153059-radu-pone-balaidos-patas-arriba",
+   "titulo": "Tarde de somanta y peli en la Rosaleda",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153060-tarde-de-somanta-y-peli-en-la-rosaleda",
    "categoria": "análisis"
   },
   {
    "fecha": "18/10",
-   "titulo": "Alineaciones confirmadas del Real Madrid - Sevilla",
-   "url": "https://www.futbolfantasy.com/partidos/22510-real-madrid-sevilla",
-   "categoria": "rueda de prensa"
+   "titulo": "Jornada 9: Málaga 2-5 Real Sociedad. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22507-malaga-real-sociedad",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Radu pone Balaídos patas arriba",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153059-radu-pone-balaidos-patas-arriba",
+   "categoria": "análisis"
   },
   {
    "fecha": "18/10",
@@ -476,12 +482,6 @@
    "titulo": "Drkusic pidió el cambio por problemas físicos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152986-drkusic-pidio-el-cambio-por-problemas-fisicos",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "El Valencia - Athletic no corre peligro por la DANA, de momento",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152985-el-valencia-athletic-no-corre-peligro-por-la-dana-de-momento",
-   "categoria": "rueda de prensa"
   }
  ]
 }
