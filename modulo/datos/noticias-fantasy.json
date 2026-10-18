@@ -1,14 +1,8 @@
 {
- "cuando": "2026-10-18T13:37:37.958Z",
+ "cuando": "2026-10-18T14:07:39.468Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "18/10",
-   "titulo": "Sigue en directo el Osasuna - Racing",
-   "url": "https://www.futbolfantasy.com/partidos/22508-osasuna-racing",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 10 de los que han disputado la 9 disponibles",
@@ -25,6 +19,42 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Arrasate inicia la restauración de su reino",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153043-arrasate-comienza-la-restauracion-de-su-reino",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Jornada 9: Osasuna 2-0 Racing. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22508-osasuna-racing",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Las pruebas a Bright Ede se aplazan al lunes por el edema",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153042-las-pruebas-a-bright-ede-se-aplazan-al-lunes-por-el-edema",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Quique, sobre la baja de Ángel Pérez, el rol de Tenaglia y los cuatro ex del Celta",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153041-quique-sobre-la-baja-de-angel-perez-el-rol-de-tenaglia-y-los-cuatro-ex-del-celta",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Giráldez explica cómo llega el equipo y habla de las bajas de Borja Iglesias y Pablo Durán",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153040-giraldez-explica-como-llega-el-equipo-y-habla-de-las-bajas-de-bortja-iglesias-y-pablo-duran",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "18/10",
+   "titulo": "Lo Celso desempolva sus botas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153039-lo-celso-desempolva-sus-botas",
    "categoria": "análisis"
   },
   {
@@ -452,36 +482,6 @@
    "titulo": "Luis Rioja, novedad en la convocatoria para recibir al Athletic",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152967-luis-rioja-novedad-en-la-convocatoria-para-recibir-al-athletic",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Miguel Sierra ha sido operado con éxito y conoce el tiempo de baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152966-miguel-sierra-ha-sido-operado-con-exito-y-conoce-el-tiempo-de-baja",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Raúl Moro y Kike Barja reciben el alta y entran en la lista tras completar la sesión del sábado",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152965-raul-moro-y-kike-barja-reciben-el-alta-y-entran-en-la-lista-tras-completar-la-sesion-del-saba",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Matarazzo habla de Yangel Herrera, Fort, Gorrotxategi, Oskarsson y el Málaga",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152964-matarazzo-habla-de-yangel-herrera-fort-gorrotxategi-oskarsson-y-el-malaga",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Yangel Herrera causa baja de última hora por molestias en el gemelo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152963-yangel-herrera-causa-baja-de-ultima-hora-por-molestias-en-el-gemelo",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Rodrygo y Asencio, únicas bajas en la sesión de este sábado en Valdebebas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152962-rodrygo-y-asencio-unicas-bajas-en-la-sesion-de-este-sabado-en-valdebebas",
-   "categoria": "entrenamiento"
   }
  ]
 }
