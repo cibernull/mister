@@ -18328,13 +18328,6 @@
      "yellow",
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23064,13 +23057,6 @@
      "sub_in",
      "goal"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23536,13 +23522,6 @@
      "yellow",
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -31944,13 +31923,6 @@
     "eventos": [
      "yellow"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -32311,13 +32283,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -32584,18 +32549,11 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 16,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-18",
-  "partidos": 5
+  "partidos": 4
  },
  "71003": {
   "nombre": "Diego Murillo",
@@ -38301,13 +38259,6 @@
     "jornada": 8,
     "puntos": 6,
     "rival": 6,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 9,
-    "puntos": null,
-    "rival": 13,
     "como": "inicio",
     "eventos": []
    }
