@@ -8808,7 +8808,7 @@
    "importe": 7866560,
    "tipo": "normal",
    "cuando": "2026-10-13 06:20:13",
-   "valor": 8000000,
+   "valor": 8079000,
    "posicion": 2,
    "puntos": 23,
    "media": 5.8,
@@ -9197,6 +9197,24 @@
    "puntos": 20,
    "media": 2.5,
    "racha": "1,2,3,3,6",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 554265939,
+   "idJugador": "476",
+   "nombre": "Gerard Moreno",
+   "de": "Mario80",
+   "a": "Mister",
+   "idUcDe": 13435216,
+   "idUcA": 0,
+   "importe": 11572100,
+   "tipo": "normal",
+   "cuando": "2026-10-18 06:26:27",
+   "valor": 11829000,
+   "posicion": 4,
+   "puntos": 39,
+   "media": 4.9,
+   "racha": "10,-,2,2,2",
    "otrasPujas": []
   }
  ],

@@ -152,6 +152,174 @@
   "entra": true
  },
  {
+  "tipo": "clausula",
+  "dia": "2026-10-18",
+  "id": "328",
+  "equipo": "Mario80",
+  "escalones": 11,
+  "coste": 2901800,
+  "clausula": 9082410
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-18",
+  "id": "476",
+  "de": "Mario80",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "476",
+  "entra": false
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "22495",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "27422",
+  "estado": "other",
+  "equipo": "Betico1993"
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "40089",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "51134",
+  "estado": "injury",
+  "equipo": "Cacaculopedopis"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-18",
+  "id": "60858",
+  "entra": true
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "61092",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "63867",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "63869",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "65669",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "67870",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "67931",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "70499",
+  "estado": "other",
+  "equipo": "Betico1993"
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "70925",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "70932",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "70936",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "71019",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "1153038",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "2586746",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "4774441",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "4947928",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-18",
+  "id": "5298724",
+  "estado": "other",
+  "equipo": null
+ },
+ {
   "tipo": "lesion",
   "dia": "2026-10-17",
   "id": "29238",

@@ -1358,6 +1358,16 @@
  ],
  "movimientos": [
   {
+   "id": "476",
+   "nombre": "Gerard Moreno",
+   "de": "Mario80",
+   "a": null,
+   "importe": 11572100,
+   "tipo": "normal",
+   "fecha": "2026-10-18 06:26:27",
+   "pos": 4
+  },
+  {
    "id": "8953",
    "nombre": "Pablo Maffeo",
    "de": null,
@@ -10340,6 +10350,14 @@
      "op": "normal"
     },
     {
+     "j": "Gerard Moreno",
+     "id": "476",
+     "tipo": "venta",
+     "importe": 11572100,
+     "fecha": "2026-10-18",
+     "op": "normal"
+    },
+    {
      "j": "Bright Ede",
      "id": "71139",
      "tipo": "compra",
@@ -10814,8 +10832,8 @@
     "476": {
      "nombre": "Gerard Moreno",
      "compras": 13567040,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 11572100,
+     "ops": 2
     },
     "564": {
      "nombre": "Mikel Oyarzabal",
