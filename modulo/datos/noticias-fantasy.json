@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-19T21:05:46.825Z",
+ "cuando": "2026-10-19T21:37:55.280Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -19,6 +19,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/10",
+   "titulo": "El Betis recurre la tarjeta de Bernal para intentar reducir la sanción",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153125-el-betis-recurre-la-tarjeta-de-bernal-para-intentar-reducir-la-sancion",
+   "categoria": "sanción"
+  },
+  {
+   "fecha": "19/10",
+   "titulo": "El Coliseum intercepta aviones de papel",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153124-el-coliseum-intercepta-los-aviones-de-papel",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "José Alberto coquetea con el sadomasoquismo sin Pablo García",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153050-jose-alberto-coquetea-con-el-sadomasoquismo-sin-pablo-garcia",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "18/10",
-   "titulo": "Arrasate celebra el primer triunfo y habla de Budimir, Raúl García, Echegoyen, Rosier, Boyomo, Aitor, Herrera, Dubasin, Torró y Osambela",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153049-arrasate-celebra-el-primer-triunfo-y-habla-de-budimir-raul-garcia-echegoyen-rosier-boyomo-ait",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "18/10",
-   "titulo": "José Alberto analiza la derrota, el mal arranque, el arbitraje, la confianza en Almeida y los cambios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153048-jose-alberto-analiza-la-derrota-el-mal-arranque-el-arbitraje-la-confianza-en-almeida-y-los-ca",
-   "categoria": "rueda de prensa"
   }
  ]
 }
