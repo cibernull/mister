@@ -44865,6 +44865,46 @@
   "d": 0
  },
  {
+  "id": "17623",
+  "nombre": "Ferland Mendy",
+  "valor": 191000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 31000,
+  "sem7": 28000,
+  "mes": 2000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 15,
+  "riv": 3,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 31,
+  "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "27855",
   "nombre": "Diego Conde",
   "valor": 191000,
@@ -44944,46 +44984,6 @@
     ""
    ]
   ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "17623",
-  "nombre": "Ferland Mendy",
-  "valor": 191000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 31000,
-  "sem7": 28000,
-  "mes": 2000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 15,
-  "riv": 3,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 31,
-  "js": [],
   "p": 0,
   "d": 0
  },
@@ -46429,54 +46429,6 @@
     1,
     null,
     2,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "17450",
-  "nombre": "Aitor Ruibal",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": -48000,
-  "mk": 1,
-  "pv": 160000,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 4,
-  "riv": 5,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 30,
-  "js": [
-   [
-    6,
-    null,
-    9,
     0,
     ""
    ]
@@ -47960,103 +47912,6 @@
   "d": 0
  },
  {
-  "id": "6035",
-  "nombre": "Iván Villar",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -1000,
-  "mes": -35000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 5,
-  "riv": 4,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 29,
-  "js": [
-   [
-    1,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    23,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "65188",
   "nombre": "Thiago Pitarch",
   "valor": 160000,
@@ -48831,6 +48686,103 @@
   "d": 0
  },
  {
+  "id": "6035",
+  "nombre": "Iván Villar",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -1000,
+  "mes": -35000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 5,
+  "riv": 4,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 29,
+  "js": [
+   [
+    1,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    23,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "63784",
   "nombre": "Jorge Cabello",
   "valor": 160000,
@@ -48920,6 +48872,54 @@
     9,
     null,
     6,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "17450",
+  "nombre": "Aitor Ruibal",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -48000,
+  "mk": 1,
+  "pv": 160000,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 4,
+  "riv": 5,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 30,
+  "js": [
+   [
+    6,
+    null,
+    9,
     0,
     ""
    ]
