@@ -6075,16 +6075,7 @@
    "puntos": 14,
    "media": 2.8,
    "racha": "4,3,2,4,1",
-   "otrasPujas": [
-    {
-     "equipo": "Saiyans FC (Fran)",
-     "puja": 1800000
-    },
-    {
-     "equipo": "Niutin FC (Isaac)",
-     "puja": 1690774
-    }
-   ]
+   "otrasPujas": []
   },
   {
    "idTransfer": 549293971,
@@ -6102,12 +6093,7 @@
    "puntos": 44,
    "media": 5.5,
    "racha": "10,8,7,12,3",
-   "otrasPujas": [
-    {
-     "equipo": "Neky F.C. (Sergio)",
-     "puja": 8920000
-    }
-   ]
+   "otrasPujas": []
   },
   {
    "idTransfer": 549295090,
@@ -9305,6 +9291,60 @@
    "puntos": 46,
    "media": 5.8,
    "racha": "5,2,12,2,-",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 554524035,
+   "idJugador": "60872",
+   "nombre": "Rubén Vargas",
+   "de": "Mister",
+   "a": "Mario80",
+   "idUcDe": 0,
+   "idUcA": 13435216,
+   "importe": 1352650,
+   "tipo": "normal",
+   "cuando": "2026-10-19 17:00:14",
+   "valor": 1274000,
+   "posicion": 3,
+   "puntos": 3,
+   "media": 1.5,
+   "racha": "-,-,-,-,1",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 554525876,
+   "idJugador": "15693",
+   "nombre": "Javi Galán",
+   "de": "Mister",
+   "a": "Cacaculopedopis",
+   "idUcDe": 0,
+   "idUcA": 15435600,
+   "importe": 2209000,
+   "tipo": "normal",
+   "cuando": "2026-10-19 17:00:14",
+   "valor": 2209000,
+   "posicion": 2,
+   "puntos": 19,
+   "media": 2.7,
+   "racha": "2,1,5,3,-",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 554528406,
+   "idJugador": "53095",
+   "nombre": "Bryan Zaragoza",
+   "de": "Mister",
+   "a": "Neky F.C. (Sergio)",
+   "idUcDe": 0,
+   "idUcA": 12493688,
+   "importe": 6536000,
+   "tipo": "normal",
+   "cuando": "2026-10-19 17:00:14",
+   "valor": 6624000,
+   "posicion": 3,
+   "puntos": 25,
+   "media": 4.2,
+   "racha": "2,5,1,11,3",
    "otrasPujas": []
   }
  ],

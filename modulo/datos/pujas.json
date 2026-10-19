@@ -3871,6 +3871,42 @@
     "topeMax": 39236810,
     "exceso": 0
    }
+  ],
+  "554524035": [
+   {
+    "idTransfer": 554524035,
+    "cuando": "2026-10-19 17:00:14",
+    "jugador": "Rubén Vargas",
+    "equipo": "Mario80",
+    "puja": 1352650,
+    "gana": true,
+    "topeMax": 24286230,
+    "exceso": 0
+   }
+  ],
+  "554525876": [
+   {
+    "idTransfer": 554525876,
+    "cuando": "2026-10-19 17:00:14",
+    "jugador": "Javi Galán",
+    "equipo": "Cacaculopedopis",
+    "puja": 2209000,
+    "gana": true,
+    "topeMax": 22487888,
+    "exceso": 0
+   }
+  ],
+  "554528406": [
+   {
+    "idTransfer": 554528406,
+    "cuando": "2026-10-19 17:00:14",
+    "jugador": "Bryan Zaragoza",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 6536000,
+    "gana": true,
+    "topeMax": 48852540,
+    "exceso": 0
+   }
   ]
  }
 }

@@ -1354,9 +1354,54 @@
    "id": "11697",
    "nombre": "Lucas Boyé",
    "valor": 10176000
+  },
+  {
+   "id": "60872",
+   "nombre": "Rubén Vargas",
+   "valor": 1274000
+  },
+  {
+   "id": "15693",
+   "nombre": "Javi Galán",
+   "valor": 2209000
+  },
+  {
+   "id": "53095",
+   "nombre": "Bryan Zaragoza",
+   "valor": 6624000
   }
  ],
  "movimientos": [
+  {
+   "id": "53095",
+   "nombre": "Bryan Zaragoza",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 6536000,
+   "tipo": "normal",
+   "fecha": "2026-10-19 17:00:14",
+   "pos": 3
+  },
+  {
+   "id": "15693",
+   "nombre": "Javi Galán",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 2209000,
+   "tipo": "normal",
+   "fecha": "2026-10-19 17:00:14",
+   "pos": 2
+  },
+  {
+   "id": "60872",
+   "nombre": "Rubén Vargas",
+   "de": null,
+   "a": "Mario80",
+   "importe": 1352650,
+   "tipo": "normal",
+   "fecha": "2026-10-19 17:00:14",
+   "pos": 3
+  },
   {
    "id": "59371",
    "nombre": "Luka Sučić",
@@ -6408,6 +6453,14 @@
      "op": "normal"
     },
     {
+     "j": "Bryan Zaragoza",
+     "id": "53095",
+     "tipo": "compra",
+     "importe": 6536000,
+     "fecha": "2026-10-19",
+     "op": "normal"
+    },
+    {
      "j": "Pablo Maffeo",
      "id": "8953",
      "tipo": "compra",
@@ -7499,6 +7552,12 @@
      "nombre": "Manu Bueno",
      "compras": 0,
      "ventas": 195520,
+     "ops": 1
+    },
+    "53095": {
+     "nombre": "Bryan Zaragoza",
+     "compras": 6536000,
+     "ventas": 0,
      "ops": 1
     },
     "53098": {
@@ -9138,6 +9197,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Javi Galán",
+     "id": "15693",
+     "tipo": "compra",
+     "importe": 2209000,
+     "fecha": "2026-10-19",
+     "op": "normal"
+    },
+    {
      "j": "Tete Morente",
      "id": "23147",
      "tipo": "venta",
@@ -10101,6 +10168,12 @@
      "ventas": 8853880,
      "ops": 2
     },
+    "15693": {
+     "nombre": "Javi Galán",
+     "compras": 2209000,
+     "ventas": 0,
+     "ops": 1
+    },
     "17568": {
      "nombre": "Pol Lozano",
      "compras": 1608920,
@@ -10428,6 +10501,14 @@
      "id": "63866",
      "tipo": "venta",
      "importe": 2585050,
+     "fecha": "2026-10-19",
+     "op": "normal"
+    },
+    {
+     "j": "Rubén Vargas",
+     "id": "60872",
+     "tipo": "compra",
+     "importe": 1352650,
      "fecha": "2026-10-19",
      "op": "normal"
     },
@@ -11060,6 +11141,12 @@
     "60858": {
      "nombre": "Pablo Ramón",
      "compras": 1952070,
+     "ventas": 0,
+     "ops": 1
+    },
+    "60872": {
+     "nombre": "Rubén Vargas",
+     "compras": 1352650,
      "ventas": 0,
      "ops": 1
     },
