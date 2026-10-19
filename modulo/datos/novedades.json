@@ -151,6 +151,83 @@
   "entra": true
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-10-19",
+  "id": "27869",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-19",
+  "id": "59371",
+  "de": "Neky F.C. (Sergio)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-19",
+  "id": "59371",
+  "entra": false
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-10-19",
+  "id": "63727",
+  "equipo": "Neky F.C. (Sergio)",
+  "escalones": -2,
+  "coste": -1216000,
+  "clausula": 4560000
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-19",
+  "id": "68498",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-19",
+  "id": "71008",
+  "de": "Neky F.C. (Sergio)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-19",
+  "id": "71008",
+  "entra": false
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-19",
+  "id": "71511",
+  "estado": "other",
+  "equipo": "Los tocahuevos C.F ( juanito)"
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-19",
+  "id": "78750",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-19",
+  "id": "4836181",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-19",
+  "id": "5235428",
+  "estado": "other",
+  "equipo": null
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-18",
   "id": "5916",

@@ -331,5 +331,14 @@
   "escalones": 1,
   "antes": 1.5,
   "despues": 2
+ },
+ {
+  "idJugador": "63727",
+  "equipo": "Neky F.C. (Sergio)",
+  "dia": "2026-10-19",
+  "coste": -1216000,
+  "escalones": -2,
+  "antes": 2.5,
+  "despues": 1.5
  }
 ]

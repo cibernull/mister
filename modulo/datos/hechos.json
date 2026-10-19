@@ -5944,11 +5944,11 @@
    "importe": 15000000,
    "tipo": "normal",
    "cuando": "2026-09-18 17:00:20",
-   "valor": 14995000,
+   "valor": 14268000,
    "posicion": 4,
-   "puntos": 46,
-   "media": 7.7,
-   "racha": "8,10,6,10,10",
+   "puntos": 36,
+   "media": 7.2,
+   "racha": "-,8,10,6,10",
    "otrasPujas": []
   },
   {
@@ -5962,9 +5962,9 @@
    "importe": 4953000,
    "tipo": "normal",
    "cuando": "2026-09-18 17:00:20",
-   "valor": 2388000,
+   "valor": 2717000,
    "posicion": 2,
-   "puntos": 22,
+   "puntos": 21,
    "media": 2.6,
    "racha": "1,5,1,0,3",
    "otrasPujas": []
@@ -5980,9 +5980,9 @@
    "importe": 1059000,
    "tipo": "normal",
    "cuando": "2026-09-18 17:00:20",
-   "valor": 2401000,
+   "valor": 2105000,
    "posicion": 1,
-   "puntos": 9,
+   "puntos": 10,
    "media": 3,
    "racha": "-,-,3,3,3",
    "otrasPujas": []
@@ -5998,7 +5998,7 @@
    "importe": 11000000,
    "tipo": "normal",
    "cuando": "2026-09-18 20:37:05",
-   "valor": 3340000,
+   "valor": 3991000,
    "posicion": 4,
    "puntos": 25,
    "media": 3.6,
@@ -8844,7 +8844,7 @@
    "importe": 2047640,
    "tipo": "normal",
    "cuando": "2026-10-13 17:00:15",
-   "valor": 2278000,
+   "valor": 2304000,
    "posicion": 3,
    "puntos": 24,
    "media": 4,
@@ -9270,6 +9270,42 @@
    "media": 4.3,
    "racha": "-,5,6,3,-",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 554521607,
+   "idJugador": "71008",
+   "nombre": "Rafita Garrido",
+   "de": "Neky F.C. (Sergio)",
+   "a": "Mister",
+   "idUcDe": 12493688,
+   "idUcA": 0,
+   "importe": 5264480,
+   "tipo": "normal",
+   "cuando": "2026-10-19 16:30:03",
+   "valor": 4984000,
+   "posicion": 2,
+   "puntos": 32,
+   "media": 3.6,
+   "racha": "2,4,4,5,1",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 554521608,
+   "idJugador": "59371",
+   "nombre": "Luka Sučić",
+   "de": "Neky F.C. (Sergio)",
+   "a": "Mister",
+   "idUcDe": 12493688,
+   "idUcA": 0,
+   "importe": 10560900,
+   "tipo": "normal",
+   "cuando": "2026-10-19 16:30:04",
+   "valor": 10085000,
+   "posicion": 3,
+   "puntos": 46,
+   "media": 5.8,
+   "racha": "5,2,12,2,-",
+   "otrasPujas": []
   }
  ],
  "salidas": [
@@ -9547,62 +9583,62 @@
   {
    "idJornada": 4047,
    "jornada": 6,
-   "cuando": "2026-09-18 10:58:43",
+   "cuando": "2026-09-04 09:50:39",
    "posiciones": [
     {
      "idUc": 12493688,
-     "puntos": 52,
+     "puntos": 48,
      "puesto": 1,
-     "valorPlantilla": 94549000,
-     "premio": 1300000
+     "valorPlantilla": 70474000,
+     "premio": 0
     },
     {
      "idUc": 12493752,
-     "puntos": 43,
+     "puntos": 40,
      "puesto": 2,
-     "valorPlantilla": 86457000,
-     "premio": 1075000
+     "valorPlantilla": 71986000,
+     "premio": 0
     },
     {
      "idUc": 12493763,
-     "puntos": 37,
+     "puntos": 24,
      "puesto": 3,
-     "valorPlantilla": 67620000,
-     "premio": 925000
+     "valorPlantilla": 54979000,
+     "premio": 0
     },
     {
      "idUc": 15435600,
      "puntos": 24,
      "puesto": 4,
-     "valorPlantilla": 40052000,
-     "premio": 600000
+     "valorPlantilla": 35327000,
+     "premio": 75000
     },
     {
      "idUc": 13428410,
      "puntos": 19,
      "puesto": 5,
-     "valorPlantilla": 23905000,
-     "premio": 475000
-    },
-    {
-     "idUc": 13435216,
-     "puntos": 15,
-     "puesto": 6,
-     "valorPlantilla": 66709000,
-     "premio": 375000
+     "valorPlantilla": 28505000,
+     "premio": 0
     },
     {
      "idUc": 12493758,
-     "puntos": 11,
+     "puntos": 4,
+     "puesto": 6,
+     "valorPlantilla": 28357000,
+     "premio": 50000
+    },
+    {
+     "idUc": 13435216,
+     "puntos": 3,
      "puesto": 7,
-     "valorPlantilla": 26076000,
-     "premio": 275000
+     "valorPlantilla": 65327000,
+     "premio": 75000
     },
     {
      "idUc": 13491767,
      "puntos": -5,
      "puesto": 8,
-     "valorPlantilla": 6636000,
+     "valorPlantilla": 6539000,
      "premio": 0
     }
    ]

@@ -1358,6 +1358,26 @@
  ],
  "movimientos": [
   {
+   "id": "59371",
+   "nombre": "Luka Sučić",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 10560900,
+   "tipo": "normal",
+   "fecha": "2026-10-19 16:30:04",
+   "pos": 3
+  },
+  {
+   "id": "71008",
+   "nombre": "Rafita Garrido",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 5264480,
+   "tipo": "normal",
+   "fecha": "2026-10-19 16:30:03",
+   "pos": 2
+  },
+  {
    "id": "63866",
    "nombre": "Álvaro Núñez",
    "de": "Mario80",
@@ -6372,6 +6392,22 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Rafita Garrido",
+     "id": "71008",
+     "tipo": "venta",
+     "importe": 5264480,
+     "fecha": "2026-10-19",
+     "op": "normal"
+    },
+    {
+     "j": "Luka Sučić",
+     "id": "59371",
+     "tipo": "venta",
+     "importe": 10560900,
+     "fecha": "2026-10-19",
+     "op": "normal"
+    },
+    {
      "j": "Pablo Maffeo",
      "id": "8953",
      "tipo": "compra",
@@ -7498,8 +7534,8 @@
     "59371": {
      "nombre": "Luka Sučić",
      "compras": 6999985,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 10560900,
+     "ops": 2
     },
     "59382": {
      "nombre": "Nicolas Pépé",
@@ -7684,8 +7720,8 @@
     "71008": {
      "nombre": "Rafita Garrido",
      "compras": 3617555,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 5264480,
+     "ops": 2
     },
     "71011": {
      "nombre": "Alfonso Herrero",
