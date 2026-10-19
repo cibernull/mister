@@ -1,6 +1,14 @@
 {
- "saldo": 14790,
+ "saldo": -825059,
  "apuntes": [
+  {
+   "cuando": 1792392304,
+   "fecha": "2026-10-19 08:45",
+   "motivo": "Modificación de cláusula (100%) de Éder Militão",
+   "tipo": "Penalización",
+   "importe": -839849,
+   "saldo": -825059
+  },
   {
    "cuando": 1792319769,
    "fecha": "2026-10-18 12:36",
@@ -472,14 +480,6 @@
    "tipo": "Penalización",
    "importe": -406847,
    "saldo": 27115425
-  },
-  {
-   "cuando": 1789527600,
-   "fecha": "2026-09-16 05:00",
-   "motivo": "Nathan Saliba a Mister",
-   "tipo": "Compra",
-   "importe": -2484550,
-   "saldo": 27522272
   }
  ]
 }
