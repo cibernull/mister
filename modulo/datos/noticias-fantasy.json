@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-19T11:37:40.446Z",
+ "cuando": "2026-10-19T12:07:55.171Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "19/10",
-   "titulo": "Kubo rompe su letargo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153088-kubo-rompe-su-letargo",
-   "categoria": "análisis"
+   "titulo": "Parte médico oficial de Cucho Hernández y periodo estimado de baja",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153091-parte-medico-oficial-de-cucho-hernandez-y-periodo-estimado-de-baja",
+   "categoria": "lesión"
   },
   {
    "fecha": "02/09",
@@ -29,9 +29,21 @@
   },
   {
    "fecha": "19/10",
+   "titulo": "Dumfries o Endrick, la gran duda de Mourinho para el Clásico",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153090-dumfries-o-endrick-la-gran-duda-de-mourinho-para-el-clasico",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/10",
    "titulo": "Carvajal y Enes Ünal, novedades en la lista para recibir al Rayo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153089-carvajal-y-enes-unal-novedades-en-la-lista-para-recibir-al-rayo",
    "categoria": "convocatoria"
+  },
+  {
+   "fecha": "19/10",
+   "titulo": "Kubo rompe su letargo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153088-kubo-rompe-su-letargo",
+   "categoria": "análisis"
   },
   {
    "fecha": "19/10",
@@ -470,18 +482,6 @@
    "titulo": "Pellegrini analiza la derrota, evita señalar el arbitraje y habla de Lo Celso, Yamal, Bernal, Ceballos, Fran García y Abde",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153016-pellegrini-analiza-la-derrota-evita-senalar-el-arbitraje-y-habla-de-lo-celso-yamal-bernal-ceb",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Flick habla de Lamine Yamal, Eric García, Koundé, Gerard Martín y la gestión de minutos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153015-flick-habla-de-lamine-yamal-eric-garcia-kounde-gerard-martin-y-la-gestion-de-minutos",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Que pase El Siguiente",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153014-que-pase-el-siguiente",
-   "categoria": "análisis"
   }
  ]
 }
