@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-19T09:07:58.023Z",
+ "cuando": "2026-10-19T09:37:48.171Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "19/10",
-   "titulo": "Cardoso entra en una lista sin Koke ni Cuti Romero",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153075-cardoso-entra-en-una-lista-sin-koke-ni-cuti-romero",
-   "categoria": "convocatoria"
+   "titulo": "Nico Williams inicia su incorporación parcial al grupo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153079-nico-williams-inicia-su-incorporacion-parcial-al-grupo",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "02/09",
@@ -26,6 +26,36 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "19/10",
+   "titulo": "Militao se apunta a la causa",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153080-militao-se-apunta-a-la-causa",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/10",
+   "titulo": "El Betis retoma los entrenamientos con Cucho y Junior al margen",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153078-el-betis-retoma-los-entrenamientos-con-cucho-y-junior-al-margen",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "19/10",
+   "titulo": "El Valencia descansa este lunes pendientes de Copete, Sadiq, Foulquier y las pruebas a De Haas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153077-el-valencia-descansa-este-lunes-pendientes-de-copete-sadiq-foulquier-y-las-pruebas-a-de-haas",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "19/10",
+   "titulo": "Gerard Martín entra en la lista para viajar a París, pero Koundé y Eric se quedan fuera",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153076-gerard-martin-entra-en-la-lista-para-viajar-a-paris-pero-kounde-y-eric-se-quedan-fuera",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "19/10",
+   "titulo": "Cardoso entra en una lista sin Koke ni Cuti Romero",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153075-cardoso-entra-en-una-lista-sin-koke-ni-cuti-romero",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "18/10",
@@ -451,36 +481,6 @@
    "fecha": "17/10",
    "titulo": "Dituro seca La Cerámica",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153005-dituro-seca-la-ceramica",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Jornada 9: Villarreal 0-0 Elche. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22512-villarreal-elche",
-   "categoria": "partido"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Ratkov se asoma por los planes de Castro",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153004-ratkov-se-asoma-por-los-planes-de-castro",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Flick, sobre cómo afrontar el partido contra el Betis y la vuelta de De Jong",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153003-flick-sobre-como-afrontar-el-partido-contra-el-betis-y-la-vuelta-de-de-jong",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Pellegrini explica las rotaciones y habla del momento del Betis",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153002-pellegrini-explica-las-rotaciones-y-habla-del-momento-del-betis",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Operación recuperar a Amatucci",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153001-operacion-recuperar-a-amatucci",
    "categoria": "análisis"
   }
  ]
