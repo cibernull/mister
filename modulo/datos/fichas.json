@@ -37312,8 +37312,10 @@
     "jornada": 9,
     "puntos": null,
     "rival": 9,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -37809,7 +37811,7 @@
   "nombre": "Francho Serrano",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 2.3,
   "mediaFuera": 1,
   "edad": 25,
@@ -37880,9 +37882,20 @@
     "rival": 3,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 14,
+    "como": "banquillo",
+    "eventos": [
+     "yellow",
+     "sub_in",
+     "assist"
+    ]
    }
   ],
-  "asistencias": 0,
+  "asistencias": 1,
   "dia": "2026-10-19",
   "partidos": 4
  },
