@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-19T08:37:41.031Z",
+ "cuando": "2026-10-19T09:07:58.023Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "19/10",
+   "titulo": "Cardoso entra en una lista sin Koke ni Cuti Romero",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153075-cardoso-entra-en-una-lista-sin-koke-ni-cuti-romero",
+   "categoria": "convocatoria"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 10 de los que han disputado la 9 disponibles",
@@ -476,12 +482,6 @@
    "titulo": "Operación recuperar a Amatucci",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153001-operacion-recuperar-a-amatucci",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Stassin, novedad en una lista sin Kochorashvili, Isaac Romero ni los lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/152999-stassin-novedad-en-una-lista-sin-kochorashvili-isaac-romero-ni-los-lesionados",
-   "categoria": "convocatoria"
   }
  ]
 }
