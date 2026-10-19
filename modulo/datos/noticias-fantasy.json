@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-19T12:07:55.171Z",
+ "cuando": "2026-10-19T12:37:57.356Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/10",
+   "titulo": "Troy Parrott, pistoletazo a la maratón de otoño",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153093-troy-parrott-pistoletazo-a-la-maraton-de-otono",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/10",
+   "titulo": "Foyth refuerza la coraza del submarino",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153092-foyth-refuerza-la-coraza-del-submarino",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Guruzeta fue sustituido por una lesión de rodilla",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153017-guruzeta-fue-sustituido-por-una-lesion-de-rodilla",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Jornada 9: Valencia 0-0 Athletic. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22511-valencia-athletic",
-   "categoria": "partido"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Pellegrini analiza la derrota, evita señalar el arbitraje y habla de Lo Celso, Yamal, Bernal, Ceballos, Fran García y Abde",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153016-pellegrini-analiza-la-derrota-evita-senalar-el-arbitraje-y-habla-de-lo-celso-yamal-bernal-ceb",
-   "categoria": "rueda de prensa"
   }
  ]
 }
