@@ -1,12 +1,12 @@
 {
- "cuando": "2026-10-19T11:07:41.483Z",
+ "cuando": "2026-10-19T11:37:40.446Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "19/10",
-   "titulo": "Lookman no termina de arrancar",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153087-lookman-no-termina-de-arrancar",
+   "titulo": "Kubo rompe su letargo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153088-kubo-rompe-su-letargo",
    "categoria": "análisis"
   },
   {
@@ -25,6 +25,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "19/10",
+   "titulo": "Carvajal y Enes Ünal, novedades en la lista para recibir al Rayo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153089-carvajal-y-enes-unal-novedades-en-la-lista-para-recibir-al-rayo",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "19/10",
+   "titulo": "Lookman no termina de arrancar",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153087-lookman-no-termina-de-arrancar",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Que pase El Siguiente",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153014-que-pase-el-siguiente",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Jornada 9: Betis 2-5 Barcelona. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22509-betis-barcelona",
-   "categoria": "partido"
-  },
-  {
-   "fecha": "17/10",
-   "titulo": "Eric García cae lesionado en La Cartuja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153013-eric-garcia-cae-lesionado-en-la-cartuja",
-   "categoria": "lesión"
   }
  ]
 }
