@@ -9346,6 +9346,24 @@
    "media": 4.2,
    "racha": "2,5,1,11,3",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 554545937,
+   "idJugador": "63",
+   "nombre": "Marc Bartra",
+   "de": "Cacaculopedopis",
+   "a": "Mister",
+   "idUcDe": 15435600,
+   "idUcA": 0,
+   "importe": 6311200,
+   "tipo": "normal",
+   "cuando": "2026-10-19 19:07:19",
+   "valor": 6440000,
+   "posicion": 2,
+   "puntos": 25,
+   "media": 5,
+   "racha": "6,-,2,-,-",
+   "otrasPujas": []
   }
  ],
  "salidas": [

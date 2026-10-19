@@ -1373,6 +1373,16 @@
  ],
  "movimientos": [
   {
+   "id": "63",
+   "nombre": "Marc Bartra",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 6311200,
+   "tipo": "normal",
+   "fecha": "2026-10-19 19:07:19",
+   "pos": 2
+  },
+  {
    "id": "53095",
    "nombre": "Bryan Zaragoza",
    "de": null,
@@ -9205,6 +9215,14 @@
      "op": "normal"
     },
     {
+     "j": "Marc Bartra",
+     "id": "63",
+     "tipo": "venta",
+     "importe": 6311200,
+     "fecha": "2026-10-19",
+     "op": "normal"
+    },
+    {
      "j": "Tete Morente",
      "id": "23147",
      "tipo": "venta",
@@ -10105,8 +10123,8 @@
     "63": {
      "nombre": "Marc Bartra",
      "compras": 6224000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 6311200,
+     "ops": 2
     },
     "208": {
      "nombre": "Moi Gómez",
