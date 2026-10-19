@@ -1358,6 +1358,16 @@
  ],
  "movimientos": [
   {
+   "id": "63866",
+   "nombre": "Álvaro Núñez",
+   "de": "Mario80",
+   "a": null,
+   "importe": 2585050,
+   "tipo": "normal",
+   "fecha": "2026-10-19 05:36:57",
+   "pos": 2
+  },
+  {
    "id": "51134",
    "nombre": "Pablo Durán",
    "de": "Cacaculopedopis",
@@ -10378,6 +10388,14 @@
   "Mario80": {
    "movimientos": [
     {
+     "j": "Álvaro Núñez",
+     "id": "63866",
+     "tipo": "venta",
+     "importe": 2585050,
+     "fecha": "2026-10-19",
+     "op": "normal"
+    },
+    {
      "j": "Lucas Boyé",
      "id": "11697",
      "tipo": "compra",
@@ -11018,8 +11036,8 @@
     "63866": {
      "nombre": "Álvaro Núñez",
      "compras": 1057010,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 2585050,
+     "ops": 2
     },
     "64468": {
      "nombre": "Tyrhys Dolan",
