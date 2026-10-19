@@ -1,6 +1,14 @@
 {
- "saldo": -825059,
+ "saldo": -1313859,
  "apuntes": [
+  {
+   "cuando": 1792439608,
+   "fecha": "2026-10-19 21:53",
+   "motivo": "Modificación de cláusula (100%) de Emil Audero",
+   "tipo": "Penalización",
+   "importe": -488800,
+   "saldo": -1313859
+  },
   {
    "cuando": 1792392304,
    "fecha": "2026-10-19 08:45",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -30309629,
    "saldo": -3194204
-  },
-  {
-   "cuando": 1789569008,
-   "fecha": "2026-09-16 16:30",
-   "motivo": "Modificación de cláusula (100%) de José Giménez",
-   "tipo": "Penalización",
-   "importe": -406847,
-   "saldo": 27115425
   }
  ]
 }
