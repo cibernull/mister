@@ -6054,9 +6054,9 @@
    "cuando": "2026-09-19 15:10:11",
    "valor": 12537000,
    "posicion": 4,
-   "puntos": 76,
-   "media": 9.5,
-   "racha": "17,10,6,10,4",
+   "puntos": 72,
+   "media": 10.3,
+   "racha": "16,17,10,6,10",
    "otrasPujas": []
   },
   {
@@ -6075,7 +6075,16 @@
    "puntos": 14,
    "media": 2.8,
    "racha": "4,3,2,4,1",
-   "otrasPujas": []
+   "otrasPujas": [
+    {
+     "equipo": "Saiyans FC (Fran)",
+     "puja": 1800000
+    },
+    {
+     "equipo": "Niutin FC (Isaac)",
+     "puja": 1690774
+    }
+   ]
   },
   {
    "idTransfer": 549293971,
@@ -6093,7 +6102,12 @@
    "puntos": 44,
    "media": 5.5,
    "racha": "10,8,7,12,3",
-   "otrasPujas": []
+   "otrasPujas": [
+    {
+     "equipo": "Neky F.C. (Sergio)",
+     "puja": 8920000
+    }
+   ]
   },
   {
    "idTransfer": 549295090,
