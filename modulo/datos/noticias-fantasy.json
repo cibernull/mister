@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-20T20:07:40.405Z",
+ "cuando": "2026-10-20T20:37:26.006Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -43,6 +43,12 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "Hjulmand es expulsado en Stuttgart y podría alterar la rotación para la jornada 11",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153182-hjulmand-es-expulsado-en-stuttgart-y-podria-alterar-la-rotacion-para-la-jornada-11",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Dubasin respira aire fresco con Arrasate",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153106-dubasin-respira-aire-fresco-con-arrasate",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Osasuna descansará dos días con tres futbolistas en la enfermería",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153105-osasuna-descansara-dos-dias-con-tres-futbolistas-en-la-enfermeria",
-   "categoria": "equipo"
   }
  ]
 }
