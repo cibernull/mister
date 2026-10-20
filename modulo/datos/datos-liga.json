@@ -1379,9 +1379,24 @@
    "id": "64033",
    "nombre": "Jon Gorrotxategi",
    "valor": 642000
+  },
+  {
+   "id": "17453",
+   "nombre": "Frenkie De Jong",
+   "valor": 1835000
   }
  ],
  "movimientos": [
+  {
+   "id": "17453",
+   "nombre": "Frenkie De Jong",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 2500000,
+   "tipo": "normal",
+   "fecha": "2026-10-20 17:00:13",
+   "pos": 3
+  },
   {
    "id": "64033",
    "nombre": "Jon Gorrotxategi",
@@ -11381,6 +11396,14 @@
      "op": "normal"
     },
     {
+     "j": "Frenkie De Jong",
+     "id": "17453",
+     "tipo": "compra",
+     "importe": 2500000,
+     "fecha": "2026-10-20",
+     "op": "normal"
+    },
+    {
      "j": "Jeremy Toljan",
      "id": "64200",
      "tipo": "venta",
@@ -12331,6 +12354,12 @@
      "compras": 7900000,
      "ventas": 12672000,
      "ops": 2
+    },
+    "17453": {
+     "nombre": "Frenkie De Jong",
+     "compras": 2500000,
+     "ventas": 0,
+     "ops": 1
     },
     "20131": {
      "nombre": "Manu Sánchez",

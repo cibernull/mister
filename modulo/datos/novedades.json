@@ -574,6 +574,103 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "118",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "128",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "217",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "12900",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-20",
+  "id": "17453",
+  "de": null,
+  "a": "Saiyans FC (Fran)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "17615",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "23664",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "29163",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "56925",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "60218",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "65179",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "70934",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "71179",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "71639",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "71791",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "3688394",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-10-19",
   "id": "11761",
   "entra": false

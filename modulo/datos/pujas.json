@@ -3965,6 +3965,28 @@
     "topeMax": 38071091,
     "exceso": 0
    }
+  ],
+  "554752479": [
+   {
+    "idTransfer": 554752479,
+    "cuando": "2026-10-20 17:00:13",
+    "jugador": "Frenkie De Jong",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 2500000,
+    "gana": true,
+    "topeMax": 25638810,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 554752479,
+    "cuando": "2026-10-20 17:00:13",
+    "jugador": "Frenkie De Jong",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 2078460,
+    "gana": false,
+    "topeMax": 38931591,
+    "exceso": 0
+   }
   ]
  }
 }
