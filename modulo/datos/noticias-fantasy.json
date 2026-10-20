@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-20T00:22:57.106Z",
+ "cuando": "2026-10-20T01:07:46.774Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "20/10",
+   "titulo": "FutbolFantasy estrena indicador para identificar a los revulsivos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153136-futbolfantasy-estrena-indicador-para-identificar-a-los-revulsivos",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 10 disponibles",
@@ -476,12 +482,6 @@
    "titulo": "Tarde de somanta y peli en la Rosaleda",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153060-tarde-de-somanta-y-peli-en-la-rosaleda",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "18/10",
-   "titulo": "Jornada 9: Málaga 2-5 Real Sociedad. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/22507-malaga-real-sociedad",
-   "categoria": "partido"
   }
  ]
 }
