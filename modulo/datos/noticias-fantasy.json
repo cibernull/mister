@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-20T13:37:41.584Z",
+ "cuando": "2026-10-20T14:07:37.799Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "20/10",
-   "titulo": "Rodri apunta al banquillo ante el PSG, según Onda Cero",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153159-rodri-apunta-al-banquillo-ante-el-psg-segun-onda-cero",
-   "categoria": "rueda de prensa"
+   "titulo": "Gorrotxategi recupera el tempo perdido",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153164-gorrotxategi-recupera-el-tempo-perdido",
+   "categoria": "análisis"
   },
   {
    "fecha": "20/10",
@@ -35,6 +35,36 @@
   },
   {
    "fecha": "20/10",
+   "titulo": "Drkušić habla de su estado físico, la afición, la derrota ante el Atlético, la visita al Racing y su adaptación",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153168-drkusic-habla-de-su-estado-fisico-la-aficion-la-derrota-ante-el-atletico-la-visita-al-racing-",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "El Deportivo retoma los entrenamientos sin los cuatro lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153167-el-deportivo-retoma-los-entrenamientos-sin-los-cuatro-lesionados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "Las pruebas a Noé Carrillo descartan una lesión de importancia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153166-las-pruebas-a-noe-carrillo-descartan-una-lesion-de-importancia",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "El Racing descansa con una gran duda en su ataque para recibir al Espanyol",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153165-el-racing-descansa-con-una-gran-duda-en-su-ataque-para-recibir-al-espanyol",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "El Málaga sigue sin recuperar efectivos en la segunda sesión de la semana",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153163-el-malaga-sigue-sin-recuperar-efectivos-en-la-segunda-sesion-de-la-semana",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "20/10",
    "titulo": "Pablo Duran completa la sesión del martes y recibe el alta médica mientras Starfelt pisa césped",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153162-pablo-duran-completa-la-sesion-del-martes-y-recibe-el-alta-medica-mientras-starfelt-pisa-cesp",
    "categoria": "entrenamiento"
@@ -50,6 +80,12 @@
    "titulo": "Álvaro Núñez, pendiente de pruebas por molestias en el aductor",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153160-alvaro-nunez-pendiente-de-pruebas-por-molestias-en-el-aductor",
    "categoria": "lesión"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "Rodri apunta al banquillo ante el PSG, según Onda Cero",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153159-rodri-apunta-al-banquillo-ante-el-psg-segun-onda-cero",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "20/10",
@@ -445,42 +481,6 @@
    "fecha": "19/10",
    "titulo": "Foyth refuerza la coraza del submarino",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153092-foyth-refuerza-la-coraza-del-submarino",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Parte médico oficial de Cucho Hernández y periodo estimado de baja",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153091-parte-medico-oficial-de-cucho-hernandez-y-periodo-estimado-de-baja",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Dumfries o Endrick, la gran duda de Mourinho para el Clásico",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153090-dumfries-o-endrick-la-gran-duda-de-mourinho-para-el-clasico",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Carvajal y Enes Ünal, novedades en la lista para recibir al Rayo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153089-carvajal-y-enes-unal-novedades-en-la-lista-para-recibir-al-rayo",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Kubo rompe su letargo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153088-kubo-rompe-su-letargo",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Lookman no termina de arrancar",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153087-lookman-no-termina-de-arrancar",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Areso, Yeray y Yuri, descansados para el Ciutat",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153086-areso-yeray-y-yuri-descansados-para-el-ciutat",
    "categoria": "análisis"
   }
  ]
