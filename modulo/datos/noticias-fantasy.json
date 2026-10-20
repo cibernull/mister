@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-20T21:37:47.564Z",
+ "cuando": "2026-10-20T22:07:41.022Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "20/10",
+   "titulo": "Fermín y Rodri apuntan a ser las dos novedades del once del Clásico",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153188-fermin-y-rodri-apuntan-a-ser-las-dos-novedades-del-once-del-clasico",
+   "categoria": "análisis"
+  },
   {
    "fecha": "20/10",
    "titulo": "FutbolFantasy estrena indicador para identificar a los revulsivos",
@@ -26,6 +32,30 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "RADAR FANTASY J10 | Fichajes recomendables + Ventas Clave",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153190-radar-fantasy-j10-fichajes-recomendables-ventas-clave",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Saliba queda pendiente de evolución tras retirarse con molestias de Anfield",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153189-saliba-queda-pendiente-de-evolucion-tras-retirarse-con-molestias-de-anfield",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "Javier Miguel se adelanta a la medicina y lanza su pronóstico del tiempo de baja de Olmo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153187-javier-miguel-se-adelanta-a-la-medicina-y-lanza-su-pronostico-del-tiempo-de-baja-de-olmo",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "Flick analiza la derrota y habla de Olmo, Espart, Rodri, Bernal, Koundé, Eric García, Cancelo y Joan García",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153186-flick-analiza-la-derrota-y-habla-de-olmo-espart-rodri-bernal-kounde-eric-garcia-cancelo-y-joa",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "20/10",
@@ -451,36 +481,6 @@
    "fecha": "19/10",
    "titulo": "Toni Muñoz habla de Carvajal, Sergio Ramos y Jadon Sancho",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153115-toni-munoz-habla-de-carvajal-sergio-ramos-y-jadon-sancho",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Patricio Moreno explicó la titularidad de Carvajal en declaraciones antes del partido",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153114-patricio-moreno-explico-la-titularidad-de-carvajal-en-declaraciones-antes-del-partido",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Beñat habló de Isi, Camello y los goles encajados antes del partido contra el Getafe",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153113-benat-hablo-de-isi-camello-y-los-goles-encajados-antes-del-partido-contra-el-getafe",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Parte médico oficial: Bright Ede sufre una lesión muscular en el bíceps femoral",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153112-parte-medico-oficial-bright-ede-sufre-una-lesion-muscular-en-el-biceps-femoral",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Nteka, baja de última hora para el derbi ante el Getafe",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153111-nteka-baja-de-ultima-hora-para-el-derbi-ante-el-getafe",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Simeone habla de Cuti Romero, Oblak, Cardoso, Hjulmand y la profundidad de la plantilla",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153109-simeone-habla-de-cuti-romero-oblak-cardoso-hjulmand-y-la-profundidad-de-la-plantilla",
    "categoria": "rueda de prensa"
   }
  ]
