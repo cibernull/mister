@@ -1384,9 +1384,24 @@
    "id": "17453",
    "nombre": "Frenkie De Jong",
    "valor": 1835000
+  },
+  {
+   "id": "70939",
+   "nombre": "Yeremay Hernández",
+   "valor": 6912000
   }
  ],
  "movimientos": [
+  {
+   "id": "70939",
+   "nombre": "Yeremay Hernández",
+   "de": "Legalize F.C (Victor)",
+   "a": "Neky F.C. (Sergio)",
+   "importe": 10368000,
+   "tipo": "clause",
+   "fecha": "2026-10-20 19:57:39",
+   "pos": 4
+  },
   {
    "id": "17453",
    "nombre": "Frenkie De Jong",
@@ -6556,6 +6571,14 @@
      "op": "normal"
     },
     {
+     "j": "Yeremay Hernández",
+     "id": "70939",
+     "tipo": "compra",
+     "importe": 10368000,
+     "fecha": "2026-10-20",
+     "op": "clause"
+    },
+    {
      "j": "Rafita Garrido",
      "id": "71008",
      "tipo": "venta",
@@ -7870,6 +7893,12 @@
      "compras": 4953000,
      "ventas": 4875500,
      "ops": 2
+    },
+    "70939": {
+     "nombre": "Yeremay Hernández",
+     "compras": 10368000,
+     "ventas": 0,
+     "ops": 1
     },
     "70941": {
      "nombre": "Bil Nsongo",
@@ -12660,6 +12689,14 @@
   "Legalize F.C (Victor)": {
    "movimientos": [
     {
+     "j": "Yeremay Hernández",
+     "id": "70939",
+     "tipo": "venta",
+     "importe": 10368000,
+     "fecha": "2026-10-20",
+     "op": "clause"
+    },
+    {
      "j": "Iván Romero",
      "id": "28779",
      "tipo": "venta",
@@ -12753,6 +12790,12 @@
      "nombre": "Zaid Romero",
      "compras": 0,
      "ventas": 6864000,
+     "ops": 1
+    },
+    "70939": {
+     "nombre": "Yeremay Hernández",
+     "compras": 0,
+     "ventas": 10368000,
      "ops": 1
     },
     "5358737": {

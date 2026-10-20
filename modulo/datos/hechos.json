@@ -9505,6 +9505,24 @@
      "puja": 2078460
     }
    ]
+  },
+  {
+   "idTransfer": 554773027,
+   "idJugador": "70939",
+   "nombre": "Yeremay Hernández",
+   "de": "Legalize F.C (Victor)",
+   "a": "Neky F.C. (Sergio)",
+   "idUcDe": 12493758,
+   "idUcA": 12493688,
+   "importe": 10368000,
+   "tipo": "clause",
+   "cuando": "2026-10-20 19:57:39",
+   "valor": 6912000,
+   "posicion": 4,
+   "puntos": 36,
+   "media": 4.5,
+   "racha": "4,2,2,10,9",
+   "otrasPujas": []
   }
  ],
  "salidas": [
