@@ -1,6 +1,14 @@
 {
- "saldo": 6295091,
+ "saldo": 7995091,
  "apuntes": [
+  {
+   "cuando": 1792493972,
+   "fecha": "2026-10-20 12:59",
+   "motivo": "Jornada 9",
+   "tipo": "Bonificación",
+   "importe": 1700000,
+   "saldo": 7995091
+  },
   {
    "cuando": 1792478524,
    "fecha": "2026-10-20 08:42",
@@ -472,14 +480,6 @@
    "tipo": "Compra por cláusula",
    "importe": -12672000,
    "saldo": -12228184
-  },
-  {
-   "cuando": 1789721862,
-   "fecha": "2026-09-18 10:57",
-   "motivo": "Jornada 6",
-   "tipo": "Bonificación",
-   "importe": 925000,
-   "saldo": 443816
   }
  ]
 }
