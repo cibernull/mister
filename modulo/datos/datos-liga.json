@@ -1374,9 +1374,24 @@
    "id": "58986",
    "nombre": "Abel Bretones",
    "valor": 1393000
+  },
+  {
+   "id": "64033",
+   "nombre": "Jon Gorrotxategi",
+   "valor": 642000
   }
  ],
  "movimientos": [
+  {
+   "id": "64033",
+   "nombre": "Jon Gorrotxategi",
+   "de": "Betico1993",
+   "a": "Niutin FC (Isaac)",
+   "importe": 1000000,
+   "tipo": "clause",
+   "fecha": "2026-10-20 08:42:04",
+   "pos": 3
+  },
   {
    "id": "48203",
    "nombre": "Ramón Terrats",
@@ -7920,6 +7935,14 @@
      "op": "normal"
     },
     {
+     "j": "Jon Gorrotxategi",
+     "id": "64033",
+     "tipo": "compra",
+     "importe": 1000000,
+     "fecha": "2026-10-20",
+     "op": "clause"
+    },
+    {
      "j": "Ilaix Moriba",
      "id": "25631",
      "tipo": "compra",
@@ -9150,6 +9173,12 @@
      "compras": 1869890,
      "ventas": 4218240,
      "ops": 2
+    },
+    "64033": {
+     "nombre": "Jon Gorrotxategi",
+     "compras": 1000000,
+     "ventas": 0,
+     "ops": 1
     },
     "64382": {
      "nombre": "Gabriel Suazo",
@@ -12554,6 +12583,14 @@
   "Betico1993": {
    "movimientos": [
     {
+     "j": "Jon Gorrotxategi",
+     "id": "64033",
+     "tipo": "venta",
+     "importe": 1000000,
+     "fecha": "2026-10-20",
+     "op": "clause"
+    },
+    {
      "j": "Javi Hernandez",
      "id": "66706",
      "tipo": "venta",
@@ -12575,6 +12612,12 @@
      "nombre": "Pere Milla",
      "compras": 0,
      "ventas": 2946000,
+     "ops": 1
+    },
+    "64033": {
+     "nombre": "Jon Gorrotxategi",
+     "compras": 0,
+     "ventas": 1000000,
      "ops": 1
     },
     "66706": {

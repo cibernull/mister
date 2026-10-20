@@ -191,6 +191,26 @@
   "entra": false
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-10-20",
+  "id": "12915",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-20",
+  "id": "20449",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-20",
+  "id": "64033",
+  "de": "Betico1993",
+  "a": "Niutin FC (Isaac)"
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-19",
   "id": "11761",

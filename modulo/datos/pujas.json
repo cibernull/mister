@@ -3953,6 +3953,18 @@
     "topeMax": 26601060,
     "exceso": 0
    }
+  ],
+  "554690929": [
+   {
+    "idTransfer": 554690929,
+    "cuando": "2026-10-20 08:42:04",
+    "jugador": "Jon Gorrotxategi",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 1000000,
+    "gana": true,
+    "topeMax": 38071091,
+    "exceso": 0
+   }
   ]
  }
 }

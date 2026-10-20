@@ -1,6 +1,14 @@
 {
- "saldo": 7295091,
+ "saldo": 6295091,
  "apuntes": [
+  {
+   "cuando": 1792478524,
+   "fecha": "2026-10-20 08:42",
+   "motivo": "Jon Gorrotxategi a Betico1993",
+   "tipo": "Compra por cláusula",
+   "importe": -1000000,
+   "saldo": 6295091
+  },
   {
    "cuando": 1792477948,
    "fecha": "2026-10-20 08:32",
@@ -472,14 +480,6 @@
    "tipo": "Bonificación",
    "importe": 925000,
    "saldo": 443816
-  },
-  {
-   "cuando": 1789657307,
-   "fecha": "2026-09-17 17:01",
-   "motivo": "Rafita Garrido a Mister",
-   "tipo": "Venta",
-   "importe": 2713020,
-   "saldo": -481184
   }
  ]
 }
