@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-20T10:07:46.027Z",
+ "cuando": "2026-10-20T10:37:44.142Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -26,6 +26,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "El Real Madrid completa el último entrenamiento sin los dos lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153138-el-real-madrid-completa-el-ultimo-entrenamiento-sin-los-dos-lesionados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "El Sevilla recurre la tarjeta amarilla que Félix Correia vio en el Bernabéu",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153137-el-sevilla-recurre-la-tarjeta-amarilla-que-felix-correia-vio-en-el-bernabeu",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "20/10",
@@ -470,18 +482,6 @@
    "titulo": "El Getafe presenta una oferta a Sergio Ramos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153062-el-getafe-presenta-una-oferta-a-sergio-ramos",
    "categoria": "mercado"
-  },
-  {
-   "fecha": "18/10",
-   "titulo": "Luis García, sobre el rendimiento del equipo como visitante, la confianza, las bajas y Mourinho",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153061-luis-garcia-sobre-el-rendimiento-del-equipo-como-visitante-la-confianza-las-bajas-y-mourinho",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "18/10",
-   "titulo": "Tarde de somanta y peli en la Rosaleda",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153060-tarde-de-somanta-y-peli-en-la-rosaleda",
-   "categoria": "análisis"
   }
  ]
 }
