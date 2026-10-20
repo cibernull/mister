@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-20T11:07:38.394Z",
+ "cuando": "2026-10-20T11:37:43.128Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "20/10",
+   "titulo": "Mourinho, sobre Güler, Valverde, Espí, Mbappé, Vinicius, Diomande, el árbitro y el RB Leipzig",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153143-mourinho-sobre-guler-valverde-espi-mbappe-vinicius-diomande-el-arbitro-y-el-rb-leipzig",
+   "categoria": "rueda de prensa"
+  },
   {
    "fecha": "20/10",
    "titulo": "FutbolFantasy estrena indicador para identificar a los revulsivos",
@@ -476,12 +482,6 @@
    "titulo": "Gerard Martín se probará mañana con el grupo de cara al PSG",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153067-gerard-martin-se-probara-manana-con-el-grupo-de-cara-al-psg",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "18/10",
-   "titulo": "Driouech estrena casilla en la ruleta de Giráldez",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153066-driouech-estrena-casilla-en-la-ruleta-de-giraldez",
-   "categoria": "análisis"
   }
  ]
 }

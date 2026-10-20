@@ -5583,11 +5583,11 @@
    "importe": 5074650,
    "tipo": "normal",
    "cuando": "2026-09-13 10:27:01",
-   "valor": 3714000,
+   "valor": 3854000,
    "posicion": 3,
-   "puntos": 32,
-   "media": 4,
-   "racha": "1,2,3,-1,6",
+   "puntos": 26,
+   "media": 3.7,
+   "racha": "7,1,2,3,-1",
    "otrasPujas": []
   },
   {
@@ -5601,7 +5601,7 @@
    "importe": 3117900,
    "tipo": "normal",
    "cuando": "2026-09-13 10:27:07",
-   "valor": 6687000,
+   "valor": 6542000,
    "posicion": 2,
    "puntos": 23,
    "media": 5.5,
@@ -5619,11 +5619,11 @@
    "importe": 1952070,
    "tipo": "normal",
    "cuando": "2026-09-13 17:00:19",
-   "valor": 1582000,
+   "valor": 1689000,
    "posicion": 2,
-   "puntos": 19,
-   "media": 3.2,
-   "racha": "3,4,-,1,2",
+   "puntos": 17,
+   "media": 3.4,
+   "racha": "-,3,4,-,1",
    "otrasPujas": [
     {
      "equipo": "Neky F.C. (Sergio)",
@@ -5642,11 +5642,11 @@
    "importe": 2895330,
    "tipo": "normal",
    "cuando": "2026-09-13 17:08:02",
-   "valor": 676000,
+   "valor": 823000,
    "posicion": 2,
    "puntos": 10,
    "media": 2,
-   "racha": "1,-,-1,-,-",
+   "racha": "5,1,-,-1,-",
    "otrasPujas": []
   },
   {
@@ -5660,11 +5660,11 @@
    "importe": 1453340,
    "tipo": "normal",
    "cuando": "2026-09-14 07:33:09",
-   "valor": 3518000,
+   "valor": 3326000,
    "posicion": 3,
-   "puntos": 33,
-   "media": 5.5,
-   "racha": "6,4,-,2,12",
+   "puntos": 21,
+   "media": 4.2,
+   "racha": "6,6,4,-,2",
    "otrasPujas": []
   },
   {
@@ -5678,7 +5678,7 @@
    "importe": 5276460,
    "tipo": "normal",
    "cuando": "2026-09-14 17:09:38",
-   "valor": 3129000,
+   "valor": 2986000,
    "posicion": 3,
    "puntos": 26,
    "media": 3.7,
@@ -6052,9 +6052,9 @@
    "importe": 12672000,
    "tipo": "clause",
    "cuando": "2026-09-19 15:10:11",
-   "valor": 12407000,
+   "valor": 11676000,
    "posicion": 4,
-   "puntos": 72,
+   "puntos": 73,
    "media": 10.3,
    "racha": "16,17,10,6,10",
    "otrasPujas": []
@@ -6070,11 +6070,11 @@
    "importe": 2907770,
    "tipo": "normal",
    "cuando": "2026-09-19 17:00:21",
-   "valor": 3213000,
+   "valor": 2672000,
    "posicion": 3,
-   "puntos": 14,
-   "media": 2.8,
-   "racha": "4,3,2,4,1",
+   "puntos": 13,
+   "media": 3.3,
+   "racha": "-,4,3,2,4",
    "otrasPujas": [
     {
      "equipo": "Saiyans FC (Fran)",
@@ -6097,11 +6097,11 @@
    "importe": 8920000,
    "tipo": "normal",
    "cuando": "2026-09-19 17:00:21",
-   "valor": 10718000,
+   "valor": 10180000,
    "posicion": 2,
-   "puntos": 44,
-   "media": 5.5,
-   "racha": "10,8,7,12,3",
+   "puntos": 41,
+   "media": 5.9,
+   "racha": "-1,10,8,7,12",
    "otrasPujas": [
     {
      "equipo": "Neky F.C. (Sergio)",
@@ -6120,7 +6120,7 @@
    "importe": 6320000,
    "tipo": "normal",
    "cuando": "2026-09-19 17:00:21",
-   "valor": 5382000,
+   "valor": 5743000,
    "posicion": 2,
    "puntos": 29,
    "media": 3.6,
@@ -10068,6 +10068,69 @@
      "puesto": 8,
      "valorPlantilla": 5181000,
      "premio": 0
+    }
+   ]
+  },
+  {
+   "idJornada": 4050,
+   "jornada": 9,
+   "cuando": "2026-10-20 13:38:41",
+   "posiciones": [
+    {
+     "idUc": 12493752,
+     "puntos": 57,
+     "puesto": 1,
+     "valorPlantilla": 107843000,
+     "premio": 1625000
+    },
+    {
+     "idUc": 12493763,
+     "puntos": 50,
+     "puesto": 2,
+     "valorPlantilla": 115453000,
+     "premio": 1700000
+    },
+    {
+     "idUc": 13435216,
+     "puntos": 50,
+     "puesto": 3,
+     "valorPlantilla": 76737000,
+     "premio": 1450000
+    },
+    {
+     "idUc": 12493688,
+     "puntos": 45,
+     "puesto": 4,
+     "valorPlantilla": 121923000,
+     "premio": 1825000
+    },
+    {
+     "idUc": 15435600,
+     "puntos": 38,
+     "puesto": 5,
+     "valorPlantilla": 72698000,
+     "premio": 1300000
+    },
+    {
+     "idUc": 12493758,
+     "puntos": 25,
+     "puesto": 6,
+     "valorPlantilla": 36622000,
+     "premio": 975000
+    },
+    {
+     "idUc": 13428410,
+     "puntos": 18,
+     "puesto": 7,
+     "valorPlantilla": 20323000,
+     "premio": 550000
+    },
+    {
+     "idUc": 13491767,
+     "puntos": 4,
+     "puesto": 8,
+     "valorPlantilla": 4448000,
+     "premio": 100000
     }
    ]
   }
