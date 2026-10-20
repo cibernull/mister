@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-20T21:07:53.644Z",
+ "cuando": "2026-10-20T21:33:35.817Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,24 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "Íñigo suspende la prueba de su maestro",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153185-inigo-suspende-la-prueba-de-su-maestro",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "El Barça visita al dentista antes del Clásico",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153184-el-barca-visita-al-dentista-antes-del-clasico",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "Julián acude al rescate",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153183-julian-acude-al-rescate",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Simeone habla de Cuti Romero, Oblak, Cardoso, Hjulmand y la profundidad de la plantilla",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153109-simeone-habla-de-cuti-romero-oblak-cardoso-hjulmand-y-la-profundidad-de-la-plantilla",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Flick habla de Raphinha, Koundé, el sustituto de Gerard Martín y del PSG",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153108-flick-habla-de-raphinha-kounde-el-sustituto-de-gerard-martin-y-del-psg",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "El Real Madrid ya prepara la Champions sin Asencio ni Rodrygo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153107-el-real-madrid-ya-prepara-la-champions-sin-asencio-ni-rodrygo",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Dubasin respira aire fresco con Arrasate",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153106-dubasin-respira-aire-fresco-con-arrasate",
-   "categoria": "análisis"
   }
  ]
 }
