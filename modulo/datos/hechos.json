@@ -9043,7 +9043,7 @@
    "importe": 6913000,
    "tipo": "normal",
    "cuando": "2026-10-15 18:24:16",
-   "valor": 6376000,
+   "valor": 6243000,
    "posicion": 3,
    "puntos": 52,
    "media": 6.5,
@@ -9445,6 +9445,24 @@
    "puntos": 45,
    "media": 5,
    "racha": "7,4,7,3,0",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 554690191,
+   "idJugador": "48203",
+   "nombre": "Ramón Terrats",
+   "de": "Niutin FC (Isaac)",
+   "a": "Mister",
+   "idUcDe": 12493763,
+   "idUcA": 0,
+   "importe": 8608950,
+   "tipo": "normal",
+   "cuando": "2026-10-20 08:32:28",
+   "valor": 8175000,
+   "posicion": 3,
+   "puntos": 40,
+   "media": 5,
+   "racha": "11,-,7,2,2",
    "otrasPujas": []
   }
  ],

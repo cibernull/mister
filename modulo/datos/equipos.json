@@ -43,14 +43,14 @@
   "n": "Niutin FC (Isaac)",
   "pos": 2,
   "pts": 434,
-  "saldo": -1313859,
-  "pl": 131279000,
+  "saldo": 7295091,
+  "pl": 123104000,
   "rep": 33800000,
   "ini": 16200000,
   "com": 273868496,
-  "ven": 259438760,
+  "ven": 268047710,
   "pre": 10600000,
-  "plantilla": 18,
+  "plantilla": 17,
   "mio": 1,
   "sinValorar": [],
   "subidas": 14,
@@ -60,7 +60,7 @@
   "gastoOculto": 11114600,
   "ajustePujas": 0,
   "libro": {
-   "ventas": 259438760,
+   "ventas": 268047710,
    "compras": -273868496,
    "premios": 11525000,
    "devueltoPorClausulas": 7149300,
@@ -68,7 +68,7 @@
    "inicio": 21047000
   },
   "costeReal": 26605423,
-  "comprometido": 0
+  "comprometido": 2078460
  },
  {
   "n": "Legalize F.C (Victor)",
@@ -133,7 +133,7 @@
  {
   "n": "Mario80",
   "pos": 4,
-  "pts": 301,
+  "pts": 302,
   "saldo": 3349380,
   "pl": 79463000,
   "rep": 28838000,

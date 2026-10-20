@@ -1378,6 +1378,16 @@
  ],
  "movimientos": [
   {
+   "id": "48203",
+   "nombre": "Ramón Terrats",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 8608950,
+   "tipo": "normal",
+   "fecha": "2026-10-20 08:32:28",
+   "pos": 3
+  },
+  {
    "id": "71011",
    "nombre": "Alfonso Herrero",
    "de": "Neky F.C. (Sergio)",
@@ -7902,6 +7912,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Ramón Terrats",
+     "id": "48203",
+     "tipo": "venta",
+     "importe": 8608950,
+     "fecha": "2026-10-20",
+     "op": "normal"
+    },
+    {
      "j": "Ilaix Moriba",
      "id": "25631",
      "tipo": "compra",
@@ -9052,8 +9070,8 @@
     "48203": {
      "nombre": "Ramón Terrats",
      "compras": 2201650,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 8608950,
+     "ops": 2
     },
     "48554": {
      "nombre": "Luiz Felipe",
