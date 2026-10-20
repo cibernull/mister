@@ -1,12 +1,12 @@
 {
- "cuando": "2026-10-20T14:07:37.799Z",
+ "cuando": "2026-10-20T14:37:48.535Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "20/10",
-   "titulo": "Gorrotxategi recupera el tempo perdido",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153164-gorrotxategi-recupera-el-tempo-perdido",
+   "titulo": "Alineaciones probables para la jornada 3 de la Champions League actualizadas",
+   "url": "https://www.futbolfantasy.com/champions/posibles-alineaciones",
    "categoria": "análisis"
   },
   {
@@ -35,9 +35,21 @@
   },
   {
    "fecha": "20/10",
+   "titulo": "¡Sigue a las 16:45h en Twitch y Youtube la información fantasy para las alineaciones probables!",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153169-sigue-a-las-16-45h-en-twitch-y-youtube-la-informacion-fantasy-para-las-alineaciones-probables",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/10",
    "titulo": "Drkušić habla de su estado físico, la afición, la derrota ante el Atlético, la visita al Racing y su adaptación",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153168-drkusic-habla-de-su-estado-fisico-la-aficion-la-derrota-ante-el-atletico-la-visita-al-racing-",
    "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "Gorrotxategi recupera el tempo perdido",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153164-gorrotxategi-recupera-el-tempo-perdido",
+   "categoria": "análisis"
   },
   {
    "fecha": "20/10",
@@ -469,18 +481,6 @@
    "fecha": "19/10",
    "titulo": "Javi Rodríguez grita hacia adelante para reclamar su sitio",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153094-javi-rodriguez-grita-hacia-adelante-para-reclamar-su-sitio",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Troy Parrott, pistoletazo a la maratón de otoño",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153093-troy-parrott-pistoletazo-a-la-maraton-de-otono",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Foyth refuerza la coraza del submarino",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153092-foyth-refuerza-la-coraza-del-submarino",
    "categoria": "análisis"
   }
  ]
