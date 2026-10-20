@@ -4354,8 +4354,8 @@
   "semana": -106000,
   "sem7": -156000,
   "mes": 2150000,
-  "mk": 1,
-  "pv": 16700962,
+  "mk": 0,
+  "pv": null,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -5650,8 +5650,8 @@
   "semana": 40000,
   "sem7": 132000,
   "mes": 723000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 10942000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -27549,8 +27549,8 @@
   "semana": 21000,
   "sem7": 174000,
   "mes": -139000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 444000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -28725,8 +28725,8 @@
   "semana": 26000,
   "sem7": 7000,
   "mes": -177000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 186000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -30312,8 +30312,8 @@
   "semana": -57000,
   "sem7": -152000,
   "mes": -13000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 331000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -35156,8 +35156,8 @@
   "semana": -24000,
   "sem7": 92000,
   "mes": -297000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 263000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -36566,8 +36566,8 @@
   "semana": -51000,
   "sem7": -336000,
   "mes": -1361000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1047000,
   "ced": 0,
   "pos": 3,
   "est": "injury",
@@ -40517,8 +40517,8 @@
   "semana": 0,
   "sem7": 0,
   "mes": -33000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -42376,8 +42376,8 @@
   "semana": 20000,
   "sem7": 34000,
   "mes": -445000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 220000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -43236,87 +43236,6 @@
   "d": 0
  },
  {
-  "id": "65104",
-  "nombre": "Jozhua Vertrouwd",
-  "valor": 160000,
-  "puntos": 1,
-  "media": 0.5,
-  "partidos": 2,
-  "semana": 0,
-  "sem7": -29000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   2,
-   -1
-  ],
-  "eq": 14,
-  "riv": 23,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 2,
-  "mf": -1,
-  "tit": 2,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 22,
-  "js": [
-   [
-    1,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    2,
-    2,
-    48,
-    1,
-    ""
-   ],
-   [
-    3,
-    -1,
-    3,
-    1,
-    "o32"
-   ],
-   [
-    6,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    9,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "70934",
   "nombre": "Íñigo Sáinz-Maza",
   "valor": 160000,
@@ -43406,6 +43325,87 @@
     8,
     null,
     19,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "65104",
+  "nombre": "Jozhua Vertrouwd",
+  "valor": 160000,
+  "puntos": 1,
+  "media": 0.5,
+  "partidos": 2,
+  "semana": 0,
+  "sem7": -29000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   2,
+   -1
+  ],
+  "eq": 14,
+  "riv": 23,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 2,
+  "mf": -1,
+  "tit": 2,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 22,
+  "js": [
+   [
+    1,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    2,
+    2,
+    48,
+    1,
+    ""
+   ],
+   [
+    3,
+    -1,
+    3,
+    1,
+    "o32"
+   ],
+   [
+    6,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    9,
     0,
     ""
    ]
@@ -43575,8 +43575,8 @@
   "semana": 62000,
   "sem7": 225000,
   "mes": -1047000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1835000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -44302,8 +44302,8 @@
   "semana": 40000,
   "sem7": 40000,
   "mes": 40000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 200000,
   "ced": 0,
   "pos": 3,
   "est": "other",
@@ -46810,8 +46810,8 @@
   "semana": -32000,
   "sem7": -50000,
   "mes": 0,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 4,
   "est": "other",
@@ -47133,54 +47133,6 @@
   "d": 0
  },
  {
-  "id": "71003",
-  "nombre": "Diego Murillo",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -15000,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 13,
-  "riv": 48,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    6,
-    null,
-    20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "65669",
   "nombre": "Grady Diangana",
   "valor": 160000,
@@ -47368,61 +47320,6 @@
   "d": 0
  },
  {
-  "id": "48554",
-  "nombre": "Luiz Felipe",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -36000,
-  "sem7": -23000,
-  "mes": -27000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 14,
-  "riv": 23,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 29,
-  "js": [
-   [
-    6,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    50,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "5516712",
   "nombre": "Mauro Echegoyen",
   "valor": 160000,
@@ -47459,6 +47356,130 @@
   "asis": null,
   "edad": null,
   "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "70947",
+  "nombre": "Noé Carrillo",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 6,
+  "riv": 2,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 19,
+  "js": [
+   [
+    1,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    12,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "60290",
+  "nombre": "Raúl Asencio",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -15000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 15,
+  "riv": 3,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    5,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    2,
+    0,
+    ""
+   ]
+  ],
   "p": 0,
   "d": 0
  },
@@ -47834,6 +47855,172 @@
   "d": 0
  },
  {
+  "id": "59064",
+  "nombre": "Jiri Letacek",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -1000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 9,
+  "riv": 1,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 27,
+  "js": [
+   [
+    1,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    3,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "59532",
+  "nombre": "Marash Kumbulla",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 14,
+  "riv": 23,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 26,
+  "js": [
+   [
+    1,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    50,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "71012",
   "nombre": "Carlos López",
   "valor": 160000,
@@ -47930,103 +48117,6 @@
     9,
     null,
     16,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "59064",
-  "nombre": "Jiri Letacek",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": -1000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 9,
-  "riv": 1,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    1,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    3,
     0,
     ""
    ]
@@ -48148,8 +48238,8 @@
   "semana": 0,
   "sem7": 0,
   "mes": -8000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -48236,148 +48326,17 @@
   "d": 0
  },
  {
-  "id": "59532",
-  "nombre": "Marash Kumbulla",
+  "id": "17450",
+  "nombre": "Aitor Ruibal",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
   "semana": 0,
   "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 14,
-  "riv": 23,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 26,
-  "js": [
-   [
-    1,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    50,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "70947",
-  "nombre": "Noé Carrillo",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 6,
-  "riv": 2,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 19,
-  "js": [
-   [
-    1,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    12,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "60290",
-  "nombre": "Raúl Asencio",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": -15000,
-  "mk": 0,
-  "pv": null,
+  "mes": -36000,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 2,
   "est": "injury",
@@ -48390,8 +48349,8 @@
    null,
    null
   ],
-  "eq": 15,
-  "riv": 3,
+  "eq": 4,
+  "riv": 5,
   "casa": 0,
   "gol": 0,
   "tar": 0,
@@ -48401,26 +48360,95 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 23,
+  "edad": 30,
   "js": [
+   [
+    6,
+    null,
+    9,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "27855",
+  "nombre": "Diego Conde",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -31000,
+  "sem7": 0,
+  "mes": -11000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 4,
+  "riv": 5,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 27,
+  "js": [
+   [
+    1,
+    null,
+    19,
+    0,
+    ""
+   ],
    [
     5,
     null,
-    14,
+    20,
     0,
     ""
    ],
    [
     6,
     null,
-    23,
+    9,
     0,
     ""
    ],
    [
     7,
     null,
-    2,
+    6,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    3,
     0,
     ""
    ]
@@ -49092,17 +49120,17 @@
   "d": 0
  },
  {
-  "id": "17450",
-  "nombre": "Aitor Ruibal",
+  "id": "48554",
+  "nombre": "Luiz Felipe",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": -36000,
-  "mk": 1,
-  "pv": 160000,
+  "semana": -36000,
+  "sem7": -23000,
+  "mes": -27000,
+  "mk": 0,
+  "pv": null,
   "ced": 0,
   "pos": 2,
   "est": "injury",
@@ -49115,9 +49143,9 @@
    null,
    null
   ],
-  "eq": 4,
-  "riv": 5,
-  "casa": 0,
+  "eq": 14,
+  "riv": 23,
+  "casa": 1,
   "gol": 0,
   "tar": 0,
   "mc": 0,
@@ -49126,12 +49154,19 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 30,
+  "edad": 29,
   "js": [
    [
     6,
     null,
-    9,
+    8,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    50,
     0,
     ""
    ]
@@ -49140,20 +49175,20 @@
   "d": 0
  },
  {
-  "id": "27855",
-  "nombre": "Diego Conde",
+  "id": "71003",
+  "nombre": "Diego Murillo",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": -31000,
+  "semana": -15000,
   "sem7": 0,
-  "mes": -11000,
+  "mes": 0,
   "mk": 0,
   "pv": null,
   "ced": 0,
-  "pos": 1,
-  "est": null,
+  "pos": 2,
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -49163,8 +49198,8 @@
    null,
    null
   ],
-  "eq": 4,
-  "riv": 5,
+  "eq": 13,
+  "riv": 48,
   "casa": 0,
   "gol": 0,
   "tar": 0,
@@ -49174,47 +49209,12 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 27,
+  "edad": 25,
   "js": [
    [
-    1,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    5,
+    6,
     null,
     20,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    3,
     0,
     ""
    ]

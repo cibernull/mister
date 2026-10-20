@@ -1369,9 +1369,54 @@
    "id": "53095",
    "nombre": "Bryan Zaragoza",
    "valor": 6720000
+  },
+  {
+   "id": "58986",
+   "nombre": "Abel Bretones",
+   "valor": 1393000
   }
  ],
  "movimientos": [
+  {
+   "id": "71011",
+   "nombre": "Alfonso Herrero",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 9960000,
+   "tipo": "normal",
+   "fecha": "2026-10-20 05:49:32",
+   "pos": 1
+  },
+  {
+   "id": "340",
+   "nombre": "Isco",
+   "de": null,
+   "a": "Saiyans FC (Fran)",
+   "importe": 11000000,
+   "tipo": "normal",
+   "fecha": "2026-10-20 05:00:24",
+   "pos": 3
+  },
+  {
+   "id": "58986",
+   "nombre": "Abel Bretones",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 1381280,
+   "tipo": "normal",
+   "fecha": "2026-10-20 05:00:24",
+   "pos": 2
+  },
+  {
+   "id": "31",
+   "nombre": "Jan Oblak",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 9602000,
+   "tipo": "normal",
+   "fecha": "2026-10-20 05:00:24",
+   "pos": 1
+  },
   {
    "id": "63",
    "nombre": "Marc Bartra",
@@ -6447,6 +6492,30 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Jan Oblak",
+     "id": "31",
+     "tipo": "compra",
+     "importe": 9602000,
+     "fecha": "2026-10-20",
+     "op": "normal"
+    },
+    {
+     "j": "Abel Bretones",
+     "id": "58986",
+     "tipo": "compra",
+     "importe": 1381280,
+     "fecha": "2026-10-20",
+     "op": "normal"
+    },
+    {
+     "j": "Alfonso Herrero",
+     "id": "71011",
+     "tipo": "venta",
+     "importe": 9960000,
+     "fecha": "2026-10-20",
+     "op": "normal"
+    },
+    {
      "j": "Rafita Garrido",
      "id": "71008",
      "tipo": "venta",
@@ -7410,9 +7479,9 @@
    "porJugador": {
     "31": {
      "nombre": "Jan Oblak",
-     "compras": 6850000,
+     "compras": 16452000,
      "ventas": 10170420,
-     "ops": 2
+     "ops": 3
     },
     "42": {
      "nombre": "Koke",
@@ -7598,6 +7667,12 @@
      "nombre": "Endrick",
      "compras": 0,
      "ventas": 1974000,
+     "ops": 1
+    },
+    "58986": {
+     "nombre": "Abel Bretones",
+     "compras": 1381280,
+     "ventas": 0,
      "ops": 1
     },
     "59371": {
@@ -7795,8 +7870,8 @@
     "71011": {
      "nombre": "Alfonso Herrero",
      "compras": 8216530,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 9960000,
+     "ops": 2
     },
     "71132": {
      "nombre": "Facundo Bernal",
@@ -11251,6 +11326,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Isco",
+     "id": "340",
+     "tipo": "compra",
+     "importe": 11000000,
+     "fecha": "2026-10-20",
+     "op": "normal"
+    },
+    {
      "j": "Jeremy Toljan",
      "id": "64200",
      "tipo": "venta",
@@ -12096,9 +12179,9 @@
     },
     "340": {
      "nombre": "Isco",
-     "compras": 10400000,
+     "compras": 21400000,
      "ventas": 10240390,
-     "ops": 2
+     "ops": 3
     },
     "607": {
      "nombre": "Borja Mayoral",

@@ -3907,6 +3907,52 @@
     "topeMax": 48852540,
     "exceso": 0
    }
+  ],
+  "554622091": [
+   {
+    "idTransfer": 554622091,
+    "cuando": "2026-10-20 05:00:24",
+    "jugador": "Jan Oblak",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 9602000,
+    "gana": true,
+    "topeMax": 48852540,
+    "exceso": 0
+   }
+  ],
+  "554622093": [
+   {
+    "idTransfer": 554622093,
+    "cuando": "2026-10-20 05:00:24",
+    "jugador": "Abel Bretones",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 1381280,
+    "gana": true,
+    "topeMax": 48852540,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 554622093,
+    "cuando": "2026-10-20 05:00:24",
+    "jugador": "Abel Bretones",
+    "equipo": "Cacaculopedopis",
+    "puja": 1355000,
+    "gana": false,
+    "topeMax": 25007338,
+    "exceso": 0
+   }
+  ],
+  "554639583": [
+   {
+    "idTransfer": 554639583,
+    "cuando": "2026-10-20 05:00:24",
+    "jugador": "Isco",
+    "equipo": "Saiyans FC (Fran)",
+    "puja": 11000000,
+    "gana": true,
+    "topeMax": 26601060,
+    "exceso": 0
+   }
   ]
  }
 }
