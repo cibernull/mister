@@ -1,8 +1,26 @@
 {
- "cuando": "2026-10-20T18:37:51.105Z",
+ "cuando": "2026-10-20T19:07:36.624Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "20/10",
+   "titulo": "Sigue en directo el PSG - Barcelona",
+   "url": "https://www.futbolfantasy.com/partidos/24152-psg-barcelona",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "Sigue en directo el Liverpool - Villarreal",
+   "url": "https://www.futbolfantasy.com/partidos/24150-liverpool-villarreal",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "20/10",
+   "titulo": "Sigue en directo el Stuttgart - Atlético",
+   "url": "https://www.futbolfantasy.com/partidos/24154-stuttgart-atletico",
+   "categoria": "análisis"
+  },
   {
    "fecha": "20/10",
    "titulo": "FutbolFantasy estrena indicador para identificar a los revulsivos",
@@ -463,24 +481,6 @@
    "fecha": "19/10",
    "titulo": "La Real Sociedad descansa este lunes con Yangel Herrera, Beitia y Aramburu en la enfermería",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153098-la-real-sociedad-descansa-este-lunes-con-yangel-herrera-beitia-y-aramburu-en-la-enfermeria",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Parte médico oficial de Gorka Guruzeta: rotura de ligamento cruzado anterior",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153097-parte-medico-oficial-de-gorka-guruzeta-rotura-de-ligamento-cruzado-anterior",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Héctor Fort se abre paso en el lateral",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153096-hector-fort-se-abre-paso-en-el-lateral",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "El Celta descansa pendiente de Pablo Durán y de una enfermería todavía cargada",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153095-el-celta-descansa-pendiente-de-pablo-duran-y-de-una-enfermeria-todavia-cargada",
    "categoria": "equipo"
   }
  ]
