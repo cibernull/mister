@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-21T08:08:10.974Z",
+ "cuando": "2026-10-21T08:38:06.098Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "21/10",
+   "titulo": "Nico Williams regresa a la lista para viajar a Valencia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153204-nico-williams-regresa-a-la-lista-para-viajar-a-valencia",
+   "categoria": "convocatoria"
+  },
   {
    "fecha": "21/10",
    "titulo": "Alineaciones probables para la jornada 10 de LaLiga 26/27 en Youtube: VERSIÓN EXTENDIDA",
@@ -31,6 +37,12 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "SuperDeporte apuesta por un once con Diakhaby y Otorbi como novedades",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153203-superdeporte-apuesta-por-un-once-con-diakhaby-y-otorbi-como-novedades",
    "categoria": "análisis"
   },
   {
@@ -469,18 +481,6 @@
    "fecha": "19/10",
    "titulo": "Íñigo Pérez habla de Iraola, las rotaciones y el partido contra el Liverpool",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153129-inigo-perez-habla-de-iraola-las-rotaciones-y-el-partido-contra-el-liverpool",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Compras y Ventas Fantasy para LALIGA Fantasy 26-27 tras la jornada 9, por Carrasco",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153128-compras-y-ventas-fantasy-para-laliga-fantasy-26-27-tras-la-jornada-9-por-carrasco",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Bordalás analiza el empate, la explusión, Mangala, Romero, Iván Azón, Carvajal y los cambios",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153127-bordalas-analiza-el-empate-la-explusion-mangala-romero-ivan-azon-carvajal-y-los-cambios",
    "categoria": "rueda de prensa"
   }
  ]
