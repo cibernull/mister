@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-21T11:38:09.703Z",
+ "cuando": "2026-10-21T12:08:19.994Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "21/10",
-   "titulo": "Etta Eyong y Sotelo se concentran con el equipo, pero Dela y Bardeli no",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153226-etta-eyong-y-sotelo-se-concentran-con-el-equipo-pero-dela-y-bardeli-no",
-   "categoria": "convocatoria"
+   "titulo": "El Barcelona retoma los entrenamientos pendientes de Koundé y las pruebas a Olmo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153230-el-barcelona-retoma-los-entrenamientos-pendientes-de-kounde-y-las-pruebas-a-olmo",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "21/10",
@@ -41,9 +41,39 @@
   },
   {
    "fecha": "21/10",
+   "titulo": "Kang-In no jugó ante el Stuttgart por precaución",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153232-kang-in-no-jugo-ante-el-stuttgart-por-precaucion",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Osasuna retoma los entrenamientos en Tajonar sin los tres lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153231-osasuna-retoma-los-entrenamientos-en-tajonar-sin-los-tres-lesionados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Aramburu, Herrera y Beitia se quedan fuera de la lista para viajar a Noruega",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153229-aramburu-herrera-y-beitia-se-quedan-fuera-de-la-lista-para-viajar-a-noruega",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "El Málaga completa la sesión del miércoles con cinco bajas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153228-el-malaga-completa-la-sesion-del-miercoles-con-cinco-bajas",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "21/10",
    "titulo": "Parte médico oficial de Joaquín Muñoz",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153227-parte-medico-oficial-de-joaquin-munoz",
    "categoria": "lesión"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Etta Eyong y Sotelo se concentran con el equipo, pero Dela y Bardeli no",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153226-etta-eyong-y-sotelo-se-concentran-con-el-equipo-pero-dela-y-bardeli-no",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "21/10",
@@ -452,36 +482,6 @@
    "titulo": "Cyborg Gómez recarga baterías",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153158-cyborg-gomez-recarga-baterias",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Javi Rodríguez habla de su renovación, estado físico, Sotelo, Damián, Iglesias, Veiga y el Celtic",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153157-javi-rodriguez-habla-de-su-renovacion-estado-fisico-sotelo-damian-iglesias-veiga-y-el-celtic",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Plaza Deportiva apuesta por un once con varias novedades para recibir al Athletic",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153156-plaza-deportiva-apuesta-por-un-once-con-varias-novedades-para-recibir-al-athletic",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Aitor Ruibal recibe el alta médica y vuelve a una convocatoria",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153155-aitor-ruibal-recibe-el-alta-medica-y-vuelve-a-una-convocatoria",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Terzic habla de Guruzeta, Sannadi, Iñaki Williams, Sancet, Nico Williams, Navarro y el Levante",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153154-terzic-habla-de-guruzeta-sannadi-inaki-williams-sancet-nico-williams-navarro-y-el-levante",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Laporta habla del PSG, el Clásico, Flick, Koundé, Éric García y la polémica del Real Madrid-Sevilla",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153153-laporta-habla-del-psg-el-clasico-flick-kounde-eric-garcia-y-la-polemica-del-real-madrid-sevil",
-   "categoria": "rueda de prensa"
   }
  ]
 }
