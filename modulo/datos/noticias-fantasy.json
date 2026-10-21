@@ -1,19 +1,13 @@
 {
- "cuando": "2026-10-21T20:38:12.489Z",
+ "cuando": "2026-10-21T21:08:23.325Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "21/10",
-   "titulo": "Sigue en directo el Real Madrid - RB Leipzig",
-   "url": "https://www.futbolfantasy.com/partidos/24162-real-madrid-rb-leipzig",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Sigue en directo el Betis - Feyenoord",
+   "titulo": "Champions League: Betis 1-0 Feyenoord. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/24161-betis-feyenoord",
-   "categoria": "análisis"
+   "categoria": "partido"
   },
   {
    "fecha": "21/10",
@@ -44,6 +38,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Champions League: Real Madrid 4-1 RB Leipzig. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24162-real-madrid-rb-leipzig",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Terzic analiza la derrota y habla de Iñaki Williams, Sannadi y Berenguer",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153260-terzic-analiza-la-derrota-y-habla-de-inaki-williams-sannadi-y-berenguer",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "21/10",
@@ -476,12 +482,6 @@
    "titulo": "Flick analiza la derrota y habla de Olmo, Espart, Rodri, Bernal, Koundé, Eric García, Cancelo y Joan García",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153186-flick-analiza-la-derrota-y-habla-de-olmo-espart-rodri-bernal-kounde-eric-garcia-cancelo-y-joa",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Íñigo suspende la prueba de su maestro",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153185-inigo-suspende-la-prueba-de-su-maestro",
-   "categoria": "análisis"
   }
  ]
 }
