@@ -1564,7 +1564,7 @@
   "mediaCasa": 1.3,
   "mediaFuera": 5,
   "edad": 36,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
@@ -1617,11 +1617,18 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 19,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-17",
-  "partidos": 5
+  "dia": "2026-10-21",
+  "partidos": 4
  },
  "364": {
   "nombre": "Sergio Canales",
@@ -2785,8 +2792,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-18",
-  "partidos": 5
+  "dia": "2026-10-21",
+  "partidos": 3
  },
  "1737": {
   "nombre": "Einar Galilea",
@@ -3298,7 +3305,7 @@
   "mediaCasa": 3.3,
   "mediaFuera": 2,
   "edad": 31,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -3347,11 +3354,18 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 19,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-17",
-  "partidos": 3
+  "dia": "2026-10-21",
+  "partidos": 2
  },
  "4774": {
   "nombre": "Álvaro Fernández",
@@ -22753,7 +22767,7 @@
   "mediaCasa": 4,
   "mediaFuera": 3.3,
   "edad": 21,
-  "titular": null,
+  "titular": true,
   "titularidades": 3,
   "suplencias": 2,
   "jornadas": [
@@ -22779,6 +22793,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 12,
+    "como": "inicio",
+    "eventos": []
    },
    {
     "jornada": 7,
@@ -36251,6 +36272,13 @@
     "eventos": []
    },
    {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 1,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
     "jornada": 7,
     "puntos": 2,
     "rival": 20,
@@ -36354,7 +36382,7 @@
   "mediaCasa": 4.3,
   "mediaFuera": 4.3,
   "edad": 23,
-  "titular": null,
+  "titular": true,
   "titularidades": 5,
   "suplencias": 1,
   "jornadas": [
@@ -36400,6 +36428,13 @@
     "eventos": [
      "yellow"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 12,
+    "como": "inicio",
+    "eventos": []
    },
    {
     "jornada": 7,
@@ -38048,6 +38083,13 @@
     "puntos": null,
     "rival": 3,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 1,
+    "como": "inicio",
     "eventos": []
    },
    {
@@ -40641,7 +40683,7 @@
   "mediaCasa": 1.5,
   "mediaFuera": 2.5,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 3,
   "jornadas": [
