@@ -1,14 +1,8 @@
 {
- "cuando": "2026-10-21T20:11:57.550Z",
+ "cuando": "2026-10-21T20:38:12.489Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "21/10",
-   "titulo": "Sigue en directo el Levante - Athletic",
-   "url": "https://www.futbolfantasy.com/partidos/22478-levante-athletic",
-   "categoria": "análisis"
-  },
   {
    "fecha": "21/10",
    "titulo": "Sigue en directo el Real Madrid - RB Leipzig",
@@ -50,6 +44,36 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "La Real Sociedad se ejercitó en Noruega sin los lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153259-la-real-sociedad-se-ejercito-en-noruega-sin-los-lesionados",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "El Levante ajusta cuentas con el Athletic",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153258-el-levante-ajusta-cuentas-con-el-athletic",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "El Villarreal descansó este miércoles pendiente de Pépé, Saliba y Carlos Romero",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153257-el-villarreal-descanso-este-miercoles-pendiente-de-pepe-saliba-y-carlos-romero",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Jornada 6: Levante 3-1 Athletic. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22478-levante-athletic",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Igor Zubeldia analiza al Lillestrøm, las claves del partido y el peligro de relajarse en la Europa League",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153256-igor-zubeldia-analiza-lillestrom-claves-partido-peligro-relajarse-europa-league",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "21/10",
@@ -458,30 +482,6 @@
    "titulo": "Íñigo suspende la prueba de su maestro",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153185-inigo-suspende-la-prueba-de-su-maestro",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "El Barça visita al dentista antes del Clásico",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153184-el-barca-visita-al-dentista-antes-del-clasico",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Julián acude al rescate",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153183-julian-acude-al-rescate",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Champions League: PSG 4-2 Barcelona. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/24152-psg-barcelona",
-   "categoria": "partido"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Champions League: Liverpool 4-3 Villarreal. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/24150-liverpool-villarreal",
-   "categoria": "partido"
   }
  ]
 }
