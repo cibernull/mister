@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-21T17:08:08.712Z",
+ "cuando": "2026-10-21T17:38:14.894Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -37,6 +37,30 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Luis Castro explica las rotaciones y habla de Dela, Sotelo, Bardeli y Ratkov",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153244-luis-castro-explica-las-rotaciones-y-habla-de-dela-sotelo-bardeli-y-ratkov",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Yoel Lago habla de su crecimiento, momento personal, la salida de balón y relación con Starfelt",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153243-yoel-lago-habla-de-su-crecimiento-momento-personal-la-salida-de-balon-y-relacion-con-starfelt",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Giráldez habla de Starfelt, Aspas, Durán, Swedberg, los mediocentros, las lesiones, las rotaciones y el Celtic",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153242-giraldez-habla-de-starfelt-aspas-duran-swedberg-los-mediocentros-las-lesiones-las-rotaciones-",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Terzic sienta a Areso tras una inoportuna publicación en redes sociales",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153241-una-inoportuna-publicacion-en-redes-podria-haber-provocado-la-suplencia-de-areso",
    "categoria": "análisis"
   },
   {
@@ -458,30 +482,6 @@
    "titulo": "Alineaciones probables para la jornada 3 de la Champions League actualizadas",
    "url": "https://www.futbolfantasy.com/champions/posibles-alineaciones",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "¡Sigue a las 16:45h en Twitch y Youtube la información fantasy para las alineaciones probables!",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153169-sigue-a-las-16-45h-en-twitch-y-youtube-la-informacion-fantasy-para-las-alineaciones-probables",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Drkušić habla de su estado físico, la afición, la derrota ante el Atlético, la visita al Racing y su adaptación",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153168-drkusic-habla-de-su-estado-fisico-la-aficion-la-derrota-ante-el-atletico-la-visita-al-racing-",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Gorrotxategi recupera el tempo perdido",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153164-gorrotxategi-recupera-el-tempo-perdido",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "El Deportivo retoma los entrenamientos sin los cuatro lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153167-el-deportivo-retoma-los-entrenamientos-sin-los-cuatro-lesionados",
-   "categoria": "entrenamiento"
   }
  ]
 }
