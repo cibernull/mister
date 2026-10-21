@@ -3999,6 +3999,18 @@
     "topeMax": 48852540,
     "exceso": 0
    }
+  ],
+  "554850073": [
+   {
+    "idTransfer": 554850073,
+    "cuando": "2026-10-21 05:00:22",
+    "jugador": "Jonny Otto",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 4962000,
+    "gana": true,
+    "topeMax": 46888140,
+    "exceso": 0
+   }
   ]
  }
 }
