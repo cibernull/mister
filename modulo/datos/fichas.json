@@ -22795,13 +22795,6 @@
     ]
    },
    {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 12,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
     "jornada": 7,
     "puntos": 2,
     "rival": 48,
@@ -39130,7 +39123,9 @@
     "puntos": null,
     "rival": 12,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    },
    {
     "jornada": 7,
