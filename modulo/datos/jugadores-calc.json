@@ -42002,103 +42002,6 @@
   "d": 1
  },
  {
-  "id": "3117",
-  "nombre": "Diego Rico",
-  "valor": 160000,
-  "puntos": 2,
-  "media": 1,
-  "partidos": 2,
-  "semana": -12000,
-  "sem7": -186000,
-  "mes": -85000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   0,
-   null,
-   2
-  ],
-  "eq": 50,
-  "riv": 17,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 1,
-  "mf": 0,
-  "tit": 2,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 33,
-  "js": [
-   [
-    1,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    12,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    5,
-    0,
-    8,
-    1,
-    "o46"
-   ],
-   [
-    6,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    7,
-    2,
-    14,
-    1,
-    "o56"
-   ],
-   [
-    8,
-    null,
-    4,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "5235428",
   "nombre": "Óscar López",
   "valor": 160000,
@@ -42195,6 +42098,103 @@
     9,
     null,
     14,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "3117",
+  "nombre": "Diego Rico",
+  "valor": 160000,
+  "puntos": 2,
+  "media": 1,
+  "partidos": 2,
+  "semana": -12000,
+  "sem7": -186000,
+  "mes": -85000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   0,
+   null,
+   2
+  ],
+  "eq": 50,
+  "riv": 17,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 1,
+  "mf": 0,
+  "tit": 2,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 33,
+  "js": [
+   [
+    1,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    5,
+    0,
+    8,
+    1,
+    "o46"
+   ],
+   [
+    6,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    7,
+    2,
+    14,
+    1,
+    "o56"
+   ],
+   [
+    8,
+    null,
+    4,
     0,
     ""
    ]
@@ -43770,89 +43770,6 @@
   "d": 1
  },
  {
-  "id": "27855",
-  "nombre": "Diego Conde",
-  "valor": 208000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 48000,
-  "sem7": 48000,
-  "mes": 40000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 4,
-  "riv": 5,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    1,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    3,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 1
- },
- {
   "id": "71638",
   "nombre": "Laro Gómez",
   "valor": 208000,
@@ -43941,6 +43858,89 @@
   ],
   "p": 0,
   "d": 0
+ },
+ {
+  "id": "27855",
+  "nombre": "Diego Conde",
+  "valor": 208000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 48000,
+  "sem7": 48000,
+  "mes": 40000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 4,
+  "riv": 5,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 27,
+  "js": [
+   [
+    1,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    3,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 1
  },
  {
   "id": "65724",
@@ -47245,6 +47245,61 @@
   "d": 0
  },
  {
+  "id": "217",
+  "nombre": "Dimitri Foulquier",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -24000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "doubt",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 19,
+  "riv": 20,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 33,
+  "js": [
+   [
+    3,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    48,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "60859",
   "nombre": "Facundo Garcés",
   "valor": 160000,
@@ -47570,6 +47625,207 @@
   "asis": null,
   "edad": null,
   "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "68711",
+  "nombre": "Obed Vargas",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -10000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 2,
+  "riv": 6,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    8,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "64458",
+  "nombre": "Pablo Campos",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 12,
+  "riv": 1,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 24,
+  "js": [
+   [
+    1,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    6,
+    0,
+    ""
+   ]
+  ],
   "p": 0,
   "d": 0
  },
@@ -48222,103 +48478,6 @@
   "d": 0
  },
  {
-  "id": "59064",
-  "nombre": "Jiri Letacek",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -39000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 9,
-  "riv": 1,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    1,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    3,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "78393",
   "nombre": "Altay Bayındır",
   "valor": 160000,
@@ -48553,6 +48712,103 @@
   "d": 0
  },
  {
+  "id": "59064",
+  "nombre": "Jiri Letacek",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -39000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 9,
+  "riv": 1,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 27,
+  "js": [
+   [
+    1,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    3,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "70952",
   "nombre": "Germán Parreño",
   "valor": 160000,
@@ -48649,262 +48905,6 @@
     9,
     null,
     12,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "68711",
-  "nombre": "Obed Vargas",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": -10000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 2,
-  "riv": 6,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    8,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "64458",
-  "nombre": "Pablo Campos",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 12,
-  "riv": 1,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 24,
-  "js": [
-   [
-    1,
-    null,
-    8,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    6,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "217",
-  "nombre": "Dimitri Foulquier",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -24000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "doubt",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 19,
-  "riv": 20,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 33,
-  "js": [
-   [
-    3,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    48,
     0,
     ""
    ]
