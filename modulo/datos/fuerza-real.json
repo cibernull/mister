@@ -1,18 +1,18 @@
 {
- "cuando": "2026-10-21T21:11:41.337Z",
+ "cuando": "2026-10-21T21:41:31.720Z",
  "fuente": "football-data.co.uk",
- "partidos": 88,
+ "partidos": 89,
  "clubes": {
   "1": {
-   "partidos": 7,
-   "xgAFavor": 1.4514285714285715,
-   "xgEnContra": 1.1742857142857144,
-   "tirosAFavor": 14.714285714285714,
-   "tirosEnContra": 10.428571428571429,
-   "aPuertaAFavor": 4.285714285714286,
-   "aPuertaEnContra": 3.5714285714285716,
+   "partidos": 8,
+   "xgAFavor": 1.5075,
+   "xgEnContra": 1.2750000000000001,
+   "tirosAFavor": 15.5,
+   "tirosEnContra": 10.625,
+   "aPuertaAFavor": 4.25,
+   "aPuertaEnContra": 4,
    "golesAFavor": 1,
-   "golesEnContra": 0.8571428571428571
+   "golesEnContra": 1.125
   },
   "2": {
    "partidos": 9,
@@ -92,15 +92,15 @@
    "golesEnContra": 1.2222222222222223
   },
   "12": {
-   "partidos": 8,
-   "xgAFavor": 1.3724999999999998,
-   "xgEnContra": 2.02625,
-   "tirosAFavor": 11.875,
-   "tirosEnContra": 15.25,
-   "aPuertaAFavor": 4.25,
-   "aPuertaEnContra": 5.625,
-   "golesAFavor": 1.5,
-   "golesEnContra": 2
+   "partidos": 9,
+   "xgAFavor": 1.44,
+   "xgEnContra": 2.0122222222222224,
+   "tirosAFavor": 11.88888888888889,
+   "tirosEnContra": 15.88888888888889,
+   "aPuertaAFavor": 4.555555555555555,
+   "aPuertaEnContra": 5.444444444444445,
+   "golesAFavor": 1.6666666666666667,
+   "golesEnContra": 1.8888888888888888
   },
   "13": {
    "partidos": 9,
