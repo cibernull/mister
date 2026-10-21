@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-21T16:38:07.701Z",
+ "cuando": "2026-10-21T17:08:08.712Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "21/10",
-   "titulo": "Las pruebas a Dani Olmo confirman una rotura de grado I",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153233-las-pruebas-a-dani-olmo-confirman-una-rotura-de-grado-i",
-   "categoria": "lesión"
+   "titulo": "Alineaciones confirmadas del Levante - Athletic",
+   "url": "https://www.futbolfantasy.com/partidos/22478-levante-athletic",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "21/10",
@@ -41,6 +41,12 @@
   },
   {
    "fecha": "21/10",
+   "titulo": "Aubameyang, Casadó y Eddahchouri ya trabajan sobre el césped",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153239-aubameyang-casado-y-eddahchouri-ya-trabajan-sobre-el-cesped",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "21/10",
    "titulo": "Espart acabó algo tocado del tobillo, pero no necesitará pruebas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153238-espart-acabo-algo-tocado-del-tobillo-pero-no-necesitara-pruebas",
    "categoria": "lesión"
@@ -68,6 +74,12 @@
    "titulo": "Giménez habla de la dinámica del equipo, el Atlético y la lesión de Ede",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153234-gimenez-habla-de-la-dinamica-del-equipo-el-atletico-y-la-lesion-de-ede",
    "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Las pruebas a Dani Olmo confirman una rotura de grado I",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153233-las-pruebas-a-dani-olmo-confirman-una-rotura-de-grado-i",
+   "categoria": "lesión"
   },
   {
    "fecha": "21/10",
@@ -470,18 +482,6 @@
    "titulo": "El Deportivo retoma los entrenamientos sin los cuatro lesionados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153167-el-deportivo-retoma-los-entrenamientos-sin-los-cuatro-lesionados",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Las pruebas a Noé Carrillo descartan una lesión de importancia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153166-las-pruebas-a-noe-carrillo-descartan-una-lesion-de-importancia",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "El Racing descansa con una gran duda en su ataque para recibir al Espanyol",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153165-el-racing-descansa-con-una-gran-duda-en-su-ataque-para-recibir-al-espanyol",
-   "categoria": "equipo"
   }
  ]
 }
