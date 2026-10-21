@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-21T11:08:06.473Z",
+ "cuando": "2026-10-21T11:38:09.703Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "21/10",
-   "titulo": "El Comité sanciona a Facundo Bernal con cuatro partidos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153219-el-comite-sanciona-a-facundo-bernal-con-cuatro-partidos",
-   "categoria": "sanción"
+   "titulo": "Etta Eyong y Sotelo se concentran con el equipo, pero Dela y Bardeli no",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153226-etta-eyong-y-sotelo-se-concentran-con-el-equipo-pero-dela-y-bardeli-no",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "21/10",
@@ -41,6 +41,30 @@
   },
   {
    "fecha": "21/10",
+   "titulo": "Parte médico oficial de Joaquín Muñoz",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153227-parte-medico-oficial-de-joaquin-munoz",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "El Rayo tampoco entrena hoy y Óscar Valentín se reúne con Martín Presa en la Ciudad Deportiva",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153225-el-rayo-tampoco-entrena-hoy-y-oscar-valentin-se-reune-con-martin-presa-en-la-ciudad-deportiva",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Soria, sobre Carvajal, las expulsiones, la carga de partidos y la solidez defensiva",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153224-soria-sobre-carvajal-las-expulsiones-la-carga-de-partidos-y-la-solidez-defensiva",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Bordalás habla de las expulsiones, la identidad competitiva y el partido de Conference",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153223-bordalas-habla-de-las-expulsiones-la-identidad-competitiva-y-el-partido-de-conference",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "21/10",
    "titulo": "Pedro Felipe se retira con molestias del entrenamiento y será sometido a pruebas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153222-pedro-felipe-se-retira-con-molestias-del-entrenamiento-y-sera-sometido-a-pruebas",
    "categoria": "lesión"
@@ -55,6 +79,12 @@
    "fecha": "21/10",
    "titulo": "Competición retira la quinta amarilla a Pathé Ciss y confirma solo dos sancionados para la J10",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153220-competicion-retira-la-quinta-amarilla-a-pathe-ciss-y-confirma-solo-dos-sancionados-para-la-j1",
+   "categoria": "sanción"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "El Comité sanciona a Facundo Bernal con cuatro partidos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153219-el-comite-sanciona-a-facundo-bernal-con-cuatro-partidos",
    "categoria": "sanción"
   },
   {
@@ -451,36 +481,6 @@
    "fecha": "20/10",
    "titulo": "Laporta habla del PSG, el Clásico, Flick, Koundé, Éric García y la polémica del Real Madrid-Sevilla",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153153-laporta-habla-del-psg-el-clasico-flick-kounde-eric-garcia-y-la-polemica-del-real-madrid-sevil",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Nico Williams gana terreno antes del Levante",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153152-nico-williams-gana-terreno-antes-del-levante",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Mujaid se adueña del lugar más inestable",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153151-mujaid-se-aduena-del-lugar-mas-inestable",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Isi regresa con el freno de mano puesto",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153150-isi-regresa-con-el-freno-de-mano-puesto",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Carvajal paga el peaje de la inactividad",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153149-carvajal-paga-el-peaje-de-la-inactividad",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Konaté repasa la actualidad: adaptación, RB Leipzig, arbitrajes, polémicas, Diomandé, Mourinho y el Clásico",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153148-konate-repasa-la-actualidad-adaptacion-rb-leipzig-arbitrajes-polemicas-diomande-mourinho-y-el",
    "categoria": "rueda de prensa"
   }
  ]
