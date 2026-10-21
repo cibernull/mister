@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-21T04:07:36.246Z",
+ "cuando": "2026-10-21T04:52:29.863Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -31,6 +31,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Las alineaciones probables del Levante para la jornada 6 según la prensa especializada",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153201-las-alineaciones-probables-del-levante-para-la-jornada-6-segun-la-prensa-especializada",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Alineaciones probables y previa fantasy del Levante - Athletic",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/151242-alineaciones-probables-y-previa-fantasy-del-levante-athletic",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Beñat analiza el empate, la falta de ritmo, las sensaciones y el balance del inicio de Liga",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153126-benat-analiza-el-empate-la-falta-de-ritmo-las-sensaciones-y-el-balance-del-inicio-de-liga",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "El Betis recurre la tarjeta de Bernal para intentar reducir la sanción",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153125-el-betis-recurre-la-tarjeta-de-bernal-para-intentar-reducir-la-sancion",
-   "categoria": "sanción"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "El Coliseum intercepta aviones de papel",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153124-el-coliseum-intercepta-los-aviones-de-papel",
-   "categoria": "análisis"
   }
  ]
 }

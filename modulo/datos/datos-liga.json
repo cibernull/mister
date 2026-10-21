@@ -1393,6 +1393,16 @@
  ],
  "movimientos": [
   {
+   "id": "60210",
+   "nombre": "Pau Navarro",
+   "de": "Neky F.C. (Sergio)",
+   "a": null,
+   "importe": 2017050,
+   "tipo": "normal",
+   "fecha": "2026-10-21 06:26:19",
+   "pos": 2
+  },
+  {
    "id": "118",
    "nombre": "Jonny Otto",
    "de": null,
@@ -6565,6 +6575,14 @@
      "op": "normal"
     },
     {
+     "j": "Pau Navarro",
+     "id": "60210",
+     "tipo": "venta",
+     "importe": 2017050,
+     "fecha": "2026-10-21",
+     "op": "normal"
+    },
+    {
      "j": "Jan Oblak",
      "id": "31",
      "tipo": "compra",
@@ -7807,8 +7825,8 @@
     "60210": {
      "nombre": "Pau Navarro",
      "compras": 2665000,
-     "ventas": 1133860,
-     "ops": 3
+     "ventas": 3150910,
+     "ops": 4
     },
     "60888": {
      "nombre": "Roberto Fernández",
