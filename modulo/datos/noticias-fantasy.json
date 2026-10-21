@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-21T10:38:10.870Z",
+ "cuando": "2026-10-21T11:08:06.473Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -41,6 +41,24 @@
   },
   {
    "fecha": "21/10",
+   "titulo": "Pedro Felipe se retira con molestias del entrenamiento y será sometido a pruebas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153222-pedro-felipe-se-retira-con-molestias-del-entrenamiento-y-sera-sometido-a-pruebas",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Parte médico oficial de Marc Aguado y periodo estimado de baja",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153221-parte-medico-oficial-de-marc-aguado-y-periodo-estimado-de-baja",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Competición retira la quinta amarilla a Pathé Ciss y confirma solo dos sancionados para la J10",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153220-competicion-retira-la-quinta-amarilla-a-pathe-ciss-y-confirma-solo-dos-sancionados-para-la-j1",
+   "categoria": "sanción"
+  },
+  {
+   "fecha": "21/10",
    "titulo": "Marco Garcés reitera la importancia de ganar en Europa y habla de Borja Iglesias, las lesiones y el Celtic",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153218-marco-garces-reitera-la-importancia-de-ganar-en-europa-y-habla-de-borja-iglesias-las-lesiones",
    "categoria": "rueda de prensa"
@@ -59,7 +77,7 @@
   },
   {
    "fecha": "21/10",
-   "titulo": "Beñat abre casting en la medular",
+   "titulo": "Beñat abre casting en la medular [EXTINGUIDO]",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153215-benat-abre-casting-medular",
    "categoria": "análisis"
   },
@@ -463,24 +481,6 @@
    "fecha": "20/10",
    "titulo": "Konaté repasa la actualidad: adaptación, RB Leipzig, arbitrajes, polémicas, Diomandé, Mourinho y el Clásico",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153148-konate-repasa-la-actualidad-adaptacion-rb-leipzig-arbitrajes-polemicas-diomande-mourinho-y-el",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Otorbi no completa el entrenamiento por problemas estomacales",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153147-otorbi-no-completa-el-entrenamiento-por-problemas-estomacales",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Fornals habla de la Champions, el arbitraje, Pellegrini y la competencia con Isco y Ceballos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153146-fornals-habla-de-la-champions-el-arbitraje-pellegrini-y-la-competencia-con-isco-y-ceballos",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Pellegrini sigue confirmando rotaciones y habla de Ruibal, Parrott, Cucho, Bernal y el Feyenoord",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153145-pellegrini-sigue-confirmando-rotaciones-y-habla-de-ruibal-parrott-cucho-bernal-y-el-feyenoord",
    "categoria": "rueda de prensa"
   }
  ]
