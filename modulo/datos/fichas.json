@@ -35828,6 +35828,15 @@
     "eventos": []
    },
    {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 1,
+    "como": "inicio",
+    "eventos": [
+     "assist"
+    ]
+   },
+   {
     "jornada": 7,
     "puntos": 2,
     "rival": 20,
@@ -35856,7 +35865,7 @@
     ]
    }
   ],
-  "asistencias": 0,
+  "asistencias": 1,
   "dia": "2026-10-21",
   "partidos": 5
  },
@@ -38422,6 +38431,13 @@
     ]
    },
    {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 1,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
     "jornada": 7,
     "puntos": 2,
     "rival": 20,
@@ -39108,6 +39124,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 12,
+    "como": "inicio",
+    "eventos": []
    },
    {
     "jornada": 7,
@@ -40723,6 +40746,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 1,
+    "como": "inicio",
+    "eventos": []
    },
    {
     "jornada": 7,
