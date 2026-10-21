@@ -19881,8 +19881,8 @@
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-20",
-  "partidos": 3
+  "dia": "2026-10-21",
+  "partidos": 0
  },
  "56925": {
   "nombre": "Jon Aramburu",
@@ -22789,6 +22789,15 @@
     "jornada": 3,
     "puntos": 3,
     "rival": 5,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
+   },
+   {
+    "jornada": 6,
+    "puntos": null,
+    "rival": 12,
     "como": "banquillo",
     "eventos": [
      "sub_in"
@@ -40747,7 +40756,9 @@
     "puntos": null,
     "rival": 1,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    },
    {
     "jornada": 7,
