@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-21T08:38:06.098Z",
+ "cuando": "2026-10-21T09:08:21.564Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -37,6 +37,24 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Dituro habla de Vallecas, el Rayo, Iturbe, Anselmi, su momento personal y su futuro",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153207-dituro-habla-de-vallecas-el-rayo-iturbe-anselmi-su-momento-personal-y-su-futuro",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Otorbi se ejercita con normalidad. Copete y Foulquier repiten con el grupo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153206-otorbi-se-ejercita-con-normalidad-copete-y-foulquier-repiten-con-el-grupo",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "MundoLevante apuesta por un once sin Dela ni Iván Romero",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153205-mundolevante-apuesta-por-un-once-sin-dela-ni-ivan-romero",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Alineaciones probables y previa fantasy del PSG - Barcelona",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153132-alineaciones-probables-y-previa-fantasy-del-psg-barcelona",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "El Sevilla descansó este lunes pendiente de Kochorashvili",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153131-el-sevilla-descanso-este-lunes-pendiente-de-kochorashvili",
-   "categoria": "equipo"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Gerard Moreno habla de Anfield y la ambición del Villarreal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153130-gerard-moreno-habla-de-anfield-y-la-ambicion-del-villarreal",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "19/10",
-   "titulo": "Íñigo Pérez habla de Iraola, las rotaciones y el partido contra el Liverpool",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153129-inigo-perez-habla-de-iraola-las-rotaciones-y-el-partido-contra-el-liverpool",
-   "categoria": "rueda de prensa"
   }
  ]
 }
