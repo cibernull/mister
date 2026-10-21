@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-21T10:12:05.953Z",
+ "cuando": "2026-10-21T10:38:10.870Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "21/10",
-   "titulo": "Aguirre medita romper la pareja Pepelu-Guido",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153213-aguirre-medita-romper-la-pareja-pepelu-guido",
-   "categoria": "análisis"
+   "titulo": "El Comité sanciona a Facundo Bernal con cuatro partidos",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153219-el-comite-sanciona-a-facundo-bernal-con-cuatro-partidos",
+   "categoria": "sanción"
   },
   {
    "fecha": "21/10",
@@ -41,6 +41,18 @@
   },
   {
    "fecha": "21/10",
+   "titulo": "Marco Garcés reitera la importancia de ganar en Europa y habla de Borja Iglesias, las lesiones y el Celtic",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153218-marco-garces-reitera-la-importancia-de-ganar-en-europa-y-habla-de-borja-iglesias-las-lesiones",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Boyomo no estaba tan mal",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153217-boyomo-no-estaba-tan-mal",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "21/10",
    "titulo": "Aubameyang supera el ecuador de su proceso de recuperación",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153216-aubameyang-supera-el-ecuador-de-su-proceso-de-recuperacion",
    "categoria": "lesión"
@@ -56,6 +68,12 @@
    "titulo": "Eriksson, única baja en la sesión del Racing de este miércoles",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153214-eriksson-unica-baja-en-la-sesion-del-racing-de-este-miercoles",
    "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "21/10",
+   "titulo": "Aguirre medita romper la pareja Pepelu-Guido",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153213-aguirre-medita-romper-la-pareja-pepelu-guido",
+   "categoria": "análisis"
   },
   {
    "fecha": "21/10",
@@ -463,24 +481,6 @@
    "fecha": "20/10",
    "titulo": "Pellegrini sigue confirmando rotaciones y habla de Ruibal, Parrott, Cucho, Bernal y el Feyenoord",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153145-pellegrini-sigue-confirmando-rotaciones-y-habla-de-ruibal-parrott-cucho-bernal-y-el-feyenoord",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Luis Castro habla de Sotelo, Etta Eyong, Requena, Ratkov, Ndukwe, Nico Williams, Marc Santos, Toljan, Nacho Pérez, Rey y Tape",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153144-luis-castro-habla-de-sotelo-etta-eyong-requena-ratkov-ndukwe-nico-williams-marc-santos-toljan",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Mourinho, sobre Güler, Valverde, Espí, Mbappé, Vinicius, Diomande, el árbitro y el RB Leipzig",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153143-mourinho-sobre-guler-valverde-espi-mbappe-vinicius-diomande-el-arbitro-y-el-rb-leipzig",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "20/10",
-   "titulo": "Crerezo analiza el momento del equipo y habla de Cuti Romero y el Real Madrid",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153142-crerezo-analiza-el-momento-del-equipo-y-habla-de-cuti-romero-y-el-real-madrid",
    "categoria": "rueda de prensa"
   }
  ]
