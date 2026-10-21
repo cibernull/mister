@@ -3365,7 +3365,7 @@
   ],
   "asistencias": 1,
   "dia": "2026-10-21",
-  "partidos": 2
+  "partidos": 3
  },
  "4774": {
   "nombre": "Álvaro Fernández",
@@ -9344,8 +9344,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-18",
-  "partidos": 4
+  "dia": "2026-10-21",
+  "partidos": 5
  },
  "22495": {
   "nombre": "Giorgi Kochorashvili",
@@ -10845,8 +10845,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-17",
-  "partidos": 5
+  "dia": "2026-10-21",
+  "partidos": 4
  },
  "24792": {
   "nombre": "Juan Iglesias",
@@ -19835,8 +19835,8 @@
  "56924": {
   "nombre": "Etta Eyong",
   "posicion": 4,
-  "goles": 0,
-  "tarjetas": 0,
+  "goles": 1,
+  "tarjetas": 1,
   "mediaCasa": 4,
   "mediaFuera": 0,
   "edad": 23,
@@ -19882,7 +19882,7 @@
   ],
   "asistencias": 1,
   "dia": "2026-10-21",
-  "partidos": 0
+  "partidos": 1
  },
  "56925": {
   "nombre": "Jon Aramburu",
@@ -22795,15 +22795,6 @@
     ]
    },
    {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 12,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
-   },
-   {
     "jornada": 7,
     "puntos": 2,
     "rival": 48,
@@ -23853,11 +23844,11 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0.7,
-  "mediaFuera": 0,
+  "mediaFuera": 2,
   "edad": 25,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 3,
+  "suplencias": 4,
   "jornadas": [
    {
     "jornada": 1,
@@ -23906,11 +23897,20 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 9,
+    "puntos": 2,
+    "rival": 19,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-17",
-  "partidos": 3
+  "dia": "2026-10-21",
+  "partidos": 4
  },
  "61167": {
   "nombre": "Adam Aznou",
@@ -25159,10 +25159,10 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 2,
-  "mediaFuera": 2,
+  "mediaFuera": 3.5,
   "edad": 23,
-  "titular": null,
-  "titularidades": 1,
+  "titular": true,
+  "titularidades": 2,
   "suplencias": 1,
   "jornadas": [
    {
@@ -25211,15 +25211,15 @@
    },
    {
     "jornada": 9,
-    "puntos": null,
+    "puntos": 5,
     "rival": 19,
     "como": "inicio",
     "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-17",
-  "partidos": 1
+  "dia": "2026-10-21",
+  "partidos": 2
  },
  "64033": {
   "nombre": "Jon Gorrotxategi",
@@ -26812,11 +26812,11 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 0,
-  "mediaFuera": 0,
+  "mediaFuera": 3,
   "edad": 23,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 0,
+  "suplencias": 1,
   "jornadas": [
    {
     "jornada": 1,
@@ -26859,11 +26859,20 @@
     "rival": 48,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": 3,
+    "rival": 19,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-17",
-  "partidos": 1
+  "dia": "2026-10-21",
+  "partidos": 2
  },
  "65188": {
   "nombre": "Thiago Pitarch",
@@ -28399,7 +28408,7 @@
   "mediaCasa": 1,
   "mediaFuera": 1.5,
   "edad": 19,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 3,
   "jornadas": [
@@ -28469,8 +28478,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-20",
-  "partidos": 3
+  "dia": "2026-10-21",
+  "partidos": 2
  },
  "68465": {
   "nombre": "Abiel Osorio",
@@ -35830,15 +35839,6 @@
     "eventos": []
    },
    {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
-    "eventos": [
-     "assist"
-    ]
-   },
-   {
     "jornada": 7,
     "puntos": 2,
     "rival": 20,
@@ -36283,13 +36283,6 @@
     "eventos": []
    },
    {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
     "jornada": 7,
     "puntos": 2,
     "rival": 20,
@@ -36439,13 +36432,6 @@
     "eventos": [
      "yellow"
     ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 12,
-    "como": "inicio",
-    "eventos": []
    },
    {
     "jornada": 7,
@@ -38097,13 +38083,6 @@
     "eventos": []
    },
    {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
     "jornada": 7,
     "puntos": null,
     "rival": 20,
@@ -38433,13 +38412,6 @@
     ]
    },
    {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
     "jornada": 7,
     "puntos": 2,
     "rival": 20,
@@ -38467,7 +38439,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-21",
-  "partidos": 4
+  "partidos": 5
  },
  "3368896": {
   "nombre": "Jordi Pesquer",
@@ -39125,15 +39097,6 @@
     "como": "banquillo",
     "eventos": [
      "sub_in"
-    ]
-   },
-   {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 12,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
     ]
    },
    {
@@ -40752,15 +40715,6 @@
     ]
    },
    {
-    "jornada": 6,
-    "puntos": null,
-    "rival": 1,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
-   },
-   {
     "jornada": 7,
     "puntos": 1,
     "rival": 20,
@@ -40791,7 +40745,7 @@
   ],
   "asistencias": 1,
   "dia": "2026-10-21",
-  "partidos": 4
+  "partidos": 5
  },
  "4947932": {
   "nombre": "Mujaid Sadick",
