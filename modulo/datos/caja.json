@@ -1,6 +1,14 @@
 {
- "saldo": 7995091,
+ "saldo": 2733611,
  "apuntes": [
+  {
+   "cuando": 1792594800,
+   "fecha": "2026-10-21 17:00",
+   "motivo": "Javi Hernandez a Mister",
+   "tipo": "Compra",
+   "importe": -5261480,
+   "saldo": 2733611
+  },
   {
    "cuando": 1792496268,
    "fecha": "2026-10-20 13:37",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 7872800,
    "saldo": -4355384
-  },
-  {
-   "cuando": 1789823411,
-   "fecha": "2026-09-19 15:10",
-   "motivo": "Sergio Camello a Saiyans FC (Fran)",
-   "tipo": "Compra por cláusula",
-   "importe": -12672000,
-   "saldo": -12228184
   }
  ]
 }

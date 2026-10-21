@@ -4011,6 +4011,18 @@
     "topeMax": 46888140,
     "exceso": 0
    }
+  ],
+  "554952944": [
+   {
+    "idTransfer": 554952944,
+    "cuando": "2026-10-21 17:00:12",
+    "jugador": "Javi Hernandez",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 5261480,
+    "gana": true,
+    "topeMax": 39219841,
+    "exceso": 0
+   }
   ]
  }
 }

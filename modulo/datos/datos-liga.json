@@ -1393,6 +1393,16 @@
  ],
  "movimientos": [
   {
+   "id": "66706",
+   "nombre": "Javi Hernandez",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 5261480,
+   "tipo": "normal",
+   "fecha": "2026-10-21 17:00:12",
+   "pos": 3
+  },
+  {
    "id": "60210",
    "nombre": "Pau Navarro",
    "de": "Neky F.C. (Sergio)",
@@ -8013,6 +8023,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Javi Hernandez",
+     "id": "66706",
+     "tipo": "compra",
+     "importe": 5261480,
+     "fecha": "2026-10-21",
+     "op": "normal"
+    },
+    {
      "j": "Ramón Terrats",
      "id": "48203",
      "tipo": "venta",
@@ -9276,6 +9294,12 @@
      "nombre": "Tyrhys Dolan",
      "compras": 0,
      "ventas": 1476960,
+     "ops": 1
+    },
+    "66706": {
+     "nombre": "Javi Hernandez",
+     "compras": 5261480,
+     "ventas": 0,
      "ops": 1
     },
     "68640": {

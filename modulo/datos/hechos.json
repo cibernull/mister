@@ -9549,6 +9549,24 @@
    "media": 3.3,
    "racha": "4,4,2,3,-",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 554952944,
+   "idJugador": "66706",
+   "nombre": "Javi Hernandez",
+   "de": "Mister",
+   "a": "Niutin FC (Isaac)",
+   "idUcDe": 0,
+   "idUcA": 12493763,
+   "importe": 5261480,
+   "tipo": "normal",
+   "cuando": "2026-10-21 17:00:12",
+   "valor": 5189000,
+   "posicion": 3,
+   "puntos": 44,
+   "media": 4.9,
+   "racha": "5,5,2,5,5",
+   "otrasPujas": []
   }
  ],
  "salidas": [
