@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-22T21:08:27.341Z",
+ "cuando": "2026-10-22T21:38:19.596Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,24 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Ave, Claudio: Los que van a rotar te saludan",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153340-ave-claudio-los-que-van-a-rotar-te-saludan",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "La Real desata el Ragnarok en Lillestrøm",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153339-la-real-desata-el-rangarok-en-lillestrom",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "As gaitas galegas atronan en Escocia",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153338-as-gaitas-galegas-atronan-en-escocia",
    "categoria": "análisis"
   },
   {
@@ -464,24 +482,6 @@
    "titulo": "Pellegrini celebra el pleno y habla de Antony, Fran García, Abde, Isco y Ceballos",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153264-pellegrini-celebra-el-pleno-y-habla-de-antony-fran-garcia-abde-isco-y-ceballos",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Isco permite soñar con octavos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153263-isco-permite-sonar-con-octavos",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Luis Castro celebra el triunfo, habla de Etta, Thiago, Dela, Bardeli, Sotelo, Brugui, Requena, Romero y los horarios de LaLiga",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153262-luis-castro-celebra-el-triunfo-habla-de-etta-thiago-dela-bardeli-sotelo-brugui-requena-romero",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Goleada energética para estimular el Bernabéu",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153261-goleada-energetica-para-estimular-el-bernabeu",
-   "categoria": "análisis"
   }
  ]
 }
