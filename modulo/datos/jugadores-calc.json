@@ -45032,46 +45032,6 @@
   "d": 0
  },
  {
-  "id": "17623",
-  "nombre": "Ferland Mendy",
-  "valor": 183000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 23000,
-  "sem7": 23000,
-  "mes": 23000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 15,
-  "riv": 3,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 31,
-  "js": [],
-  "p": 0,
-  "d": 1
- },
- {
   "id": "70952",
   "nombre": "Germán Parreño",
   "valor": 183000,
@@ -45172,6 +45132,46 @@
     ""
    ]
   ],
+  "p": 0,
+  "d": 1
+ },
+ {
+  "id": "17623",
+  "nombre": "Ferland Mendy",
+  "valor": 183000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 23000,
+  "sem7": 23000,
+  "mes": 23000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 15,
+  "riv": 3,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 31,
+  "js": [],
   "p": 0,
   "d": 1
  },
@@ -45826,6 +45826,54 @@
   "d": 0
  },
  {
+  "id": "71003",
+  "nombre": "Diego Murillo",
+  "valor": 170000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 10000,
+  "sem7": -10000,
+  "mes": -5000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": "doubt",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 13,
+  "riv": 48,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    6,
+    null,
+    20,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "28677",
   "nombre": "Beñat Prados",
   "valor": 170000,
@@ -45901,54 +45949,6 @@
     9,
     null,
     19,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "71003",
-  "nombre": "Diego Murillo",
-  "valor": 170000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 10000,
-  "sem7": -10000,
-  "mes": -5000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": "doubt",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 13,
-  "riv": 48,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    6,
-    null,
-    20,
     0,
     ""
    ]
@@ -48411,6 +48411,103 @@
   "d": 0
  },
  {
+  "id": "61410",
+  "nombre": "Adrián Rodríguez",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -22000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 48,
+  "riv": 13,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    1,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    2,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "59642",
   "nombre": "Juan Musso",
   "valor": 160000,
@@ -48723,20 +48820,20 @@
   "d": 0
  },
  {
-  "id": "61410",
-  "nombre": "Adrián Rodríguez",
+  "id": "70925",
+  "nombre": "Simon Eriksson",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": 0,
+  "semana": -3000,
   "sem7": 0,
-  "mes": -22000,
+  "mes": -77000,
   "mk": 0,
   "pv": null,
   "ced": 0,
   "pos": 1,
-  "est": null,
+  "est": "doubt",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -48746,8 +48843,8 @@
    null,
    null
   ],
-  "eq": 48,
-  "riv": 13,
+  "eq": 1490,
+  "riv": 8,
   "casa": 1,
   "gol": 0,
   "tar": 0,
@@ -48757,61 +48854,40 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 25,
+  "edad": 20,
   "js": [
    [
     1,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    3,
     null,
     20,
     0,
     ""
    ],
    [
-    4,
+    2,
     null,
-    50,
+    9,
     0,
     ""
    ],
    [
-    5,
+    3,
     null,
-    1490,
+    23,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    14,
     0,
     ""
    ],
    [
     6,
     null,
-    19,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    2,
+    3,
     0,
     ""
    ]
@@ -48909,186 +48985,6 @@
     8,
     null,
     23,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "3688394",
-  "nombre": "Kayne van Oevelen",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -7000,
-  "sem7": -24000,
-  "mes": -50000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 19,
-  "riv": 20,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    1,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "70925",
-  "nombre": "Simon Eriksson",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -3000,
-  "sem7": 0,
-  "mes": -77000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": "doubt",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1490,
-  "riv": 8,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [
-   [
-    1,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    3,
     0,
     ""
    ]
@@ -49223,6 +49119,110 @@
   "asis": 0,
   "edad": 20,
   "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "3688394",
+  "nombre": "Kayne van Oevelen",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -7000,
+  "sem7": -24000,
+  "mes": -50000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 19,
+  "riv": 20,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    1,
+    0,
+    ""
+   ]
+  ],
   "p": 0,
   "d": 0
  },
