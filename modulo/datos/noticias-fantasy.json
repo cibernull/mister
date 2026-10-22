@@ -1,30 +1,12 @@
 {
- "cuando": "2026-10-22T20:38:08.376Z",
+ "cuando": "2026-10-22T21:08:27.341Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
-   "fecha": "22/10",
-   "titulo": "Sigue en directo el Celtic - Celta",
-   "url": "https://www.futbolfantasy.com/partidos/24300-celtic-celta",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Sigue en directo el Lilleström - Real Sociedad",
-   "url": "https://www.futbolfantasy.com/partidos/24303-lillestrom-real-sociedad",
-   "categoria": "análisis"
-  },
-  {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 10 actualizadas",
    "url": "https://www.futbolfantasy.com/laliga/posibles-alineaciones",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Alineaciones probables para la jornada 10 de LaLiga 26/27 en Youtube: VERSIÓN EXTENDIDA",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153200-alineaciones-probables-para-la-jornada-10-de-laliga-26-27-en-youtube-version-extendida",
    "categoria": "análisis"
   },
   {
@@ -43,6 +25,30 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Europa League: Lilleström 0-6 Real Sociedad. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24303-lillestrom-real-sociedad",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Europa League: Celtic 1-2 Celta. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24300-celtic-celta",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "El Levante descansó este jueves pendiente de Bardeli y De la Fuente",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153337-el-levante-descanso-este-jueves-pendiente-de-bardeli-y-de-la-fuente",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Luis Rioja acaricia la titularidad con el calcáneo cogido con pinzas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153336-luis-rioja-acaricia-la-titularidad-con-el-calcaneo-cogido-con-pinzas",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Goleada energética para estimular el Bernabéu",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153261-goleada-energetica-para-estimular-el-bernabeu",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Champions League: Betis 1-0 Feyenoord. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/24161-betis-feyenoord",
-   "categoria": "partido"
   }
  ]
 }
