@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-22T10:08:11.492Z",
+ "cuando": "2026-10-22T10:13:54.630Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -31,6 +31,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Bernal cumplirá en Copa uno de los cuatro partidos de sanción",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153285-bernal-cumplira-en-copa-uno-de-los-cuatro-partidos-de-sancion",
+   "categoria": "sanción"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Pellegrini tiene motivos para no rotar contra el Celta",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153284-pellegrini-tiene-motivos-para-no-rotar-contra-el-celta",
    "categoria": "análisis"
   },
   {
@@ -469,18 +481,6 @@
    "fecha": "21/10",
    "titulo": "Iván Azón completa el entrenamiento y Zaïd Romero ya toca balón",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153211-ivan-azon-completa-el-entrenamiento-y-zaid-romero-ya-toca-balon",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Balliu cumple sin alterar la jerarquía rumana",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153210-balliu-cumple-sin-alterar-la-jerarquia",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "El Elche trabaja con toda la plantilla salvo Marc Aguado",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153209-el-elche-trabaja-con-toda-la-plantilla-salvo-marc-aguado",
    "categoria": "entrenamiento"
   }
  ]
