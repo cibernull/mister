@@ -1,8 +1,20 @@
 {
- "cuando": "2026-10-22T19:08:12.028Z",
+ "cuando": "2026-10-22T19:38:09.937Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "22/10",
+   "titulo": "Sigue en directo el Celtic - Celta",
+   "url": "https://www.futbolfantasy.com/partidos/24300-celtic-celta",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Sigue en directo el Lilleström - Real Sociedad",
+   "url": "https://www.futbolfantasy.com/partidos/24303-lillestrom-real-sociedad",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 10 actualizadas",
@@ -31,6 +43,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Bordalás deja el once de Liga casi definido tras la rotación europea",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153329-bordalas-deja-el-once-de-liga-casi-definido-tras-la-rotacion-europea",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Europa es territorio hostil para el Getafe",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153328-europa-es-territorio-hostil-con-el-getafe",
    "categoria": "análisis"
   },
   {
@@ -458,30 +482,6 @@
    "titulo": "Jornada 6: Levante 3-1 Athletic. Estadísticas y puntos fantasy",
    "url": "https://www.futbolfantasy.com/partidos/22478-levante-athletic",
    "categoria": "partido"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Igor Zubeldia analiza al Lillestrøm, las claves del partido y el peligro de relajarse en la Europa League",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153256-igor-zubeldia-analiza-lillestrom-claves-partido-peligro-relajarse-europa-league",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Matarazzo defiende su idea de juego y habla de las rotaciones, los errores defensivos y el control del juego",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153255-matarazzo-defiende-idea-juego-todo-esta-bajo-control",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Laporte es expulsado en el Ciutat y se pierde la visita del Getafe",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153254-laporte-es-expulsado-en-el-ciutat-y-se-pierde-la-visita-del-getafe",
-   "categoria": "sanción"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Pellegrini habló del Feyenoord, Parrott y la clasificación de Champions",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153253-pellegrini-hablo-del-feyenoord-parrott-y-la-clasificacion-de-champions",
-   "categoria": "rueda de prensa"
   }
  ]
 }
