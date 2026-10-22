@@ -1,12 +1,12 @@
 {
- "cuando": "2026-10-22T13:08:13.248Z",
+ "cuando": "2026-10-22T13:38:09.359Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "22/10",
-   "titulo": "Antony sigue proyectando una luz muy tenue",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153303-antony-sigue-proyectando-una-luz-muy-tenue",
+   "titulo": "Drkusic obliga a Manolo a considerar el sistema",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153309-drkusic-obliga-a-manolo-a-considerar-el-sistema",
    "categoria": "análisis"
   },
   {
@@ -41,8 +41,32 @@
   },
   {
    "fecha": "22/10",
+   "titulo": "Mariano prepara un nuevo asedio al once",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153308-mariano-prepara-un-nuevo-asedio-al-once",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Nico Williams, diez minutos insuficientes de sensaciones",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153307-nico-williams-diez-minutos-insuficientes-de-sensaciones",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/10",
    "titulo": "Jauregizar extraña la sonrisa de Valverde",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153305-jauregizar-extrana-la-sonrisa-de-valverde",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "El Athletic descansa con cuatro jugadores en la enfermería",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153306-el-athletic-descansa-con-cuatro-jugadores-en-la-enfermeria",
+   "categoria": "equipo"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Antony sigue proyectando una luz muy tenue",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153303-antony-sigue-proyectando-una-luz-muy-tenue",
    "categoria": "análisis"
   },
   {
@@ -458,30 +482,6 @@
    "titulo": "El Atlético descansa este miércoles pendiente de Kang-In, Cuti y Koke",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153235-el-atletico-descansa-este-miercoles-pendiente-de-kang-in-cuti-y-koke",
    "categoria": "equipo"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Giménez habla de la dinámica del equipo, el Atlético y la lesión de Ede",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153234-gimenez-habla-de-la-dinamica-del-equipo-el-atletico-y-la-lesion-de-ede",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Las pruebas a Dani Olmo confirman una rotura de grado I",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153233-las-pruebas-a-dani-olmo-confirman-una-rotura-de-grado-i",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Kang-In no jugó ante el Stuttgart por precaución",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153232-kang-in-no-jugo-ante-el-stuttgart-por-precaucion",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "El Barcelona retoma los entrenamientos pendientes de Koundé y las pruebas a Olmo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153230-el-barcelona-retoma-los-entrenamientos-pendientes-de-kounde-y-las-pruebas-a-olmo",
-   "categoria": "entrenamiento"
   }
  ]
 }
