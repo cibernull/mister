@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-22T10:13:54.630Z",
+ "cuando": "2026-10-22T10:38:06.192Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -31,6 +31,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Amatucci atiende a la Voz de Galicia: adaptación, estado físico, demarcación, Aubameyang, Quagliata e Hidalgo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153287-amatucci-atiende-a-la-voz-de-galicia-adaptacion-estado-fisico-demarcacion-aubameyang-quagliat",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "La vuelta al cole de Valentin Rosier",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153286-la-vuelta-al-cole-de-valentin-rosier",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "Aguirre medita romper la pareja Pepelu-Guido",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153213-aguirre-medita-romper-la-pareja-pepelu-guido",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "La Voz de Galicia apuesta por Noubi para cubrir la baja de Ede",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153212-la-voz-de-galicia-apuesta-por-noubi-para-cubrir-la-baja-de-ede",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Iván Azón completa el entrenamiento y Zaïd Romero ya toca balón",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153211-ivan-azon-completa-el-entrenamiento-y-zaid-romero-ya-toca-balon",
-   "categoria": "entrenamiento"
   }
  ]
 }
