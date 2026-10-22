@@ -1,14 +1,8 @@
 {
- "cuando": "2026-10-22T18:38:23.426Z",
+ "cuando": "2026-10-22T19:08:12.028Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "22/10",
-   "titulo": "Sigue en directo el Getafe - Lugano",
-   "url": "https://www.futbolfantasy.com/partidos/24402-getafe-lugano",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 10 actualizadas",
@@ -41,19 +35,31 @@
   },
   {
    "fecha": "22/10",
-   "titulo": "Claudio Giráldez habla de Iago Aspas, Cáceres, Yoel Lago y Faye antes del partido contra el Celtic",
+   "titulo": "Conference League: Getafe 2-5 Lugano. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/24402-getafe-lugano",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Matarazzo destaca el buen momento de Take Kubo y las claves del partido ante el Lillestrøm",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153324-pellegrino-matarazzo-destaca-buen-momento-take-kubo-claves-partido-europa-league",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Giráldez habla de Aspas, Cáceres, Yoel Lago y Faye antes del partido contra el Celtic",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153323-claudio-giraldez-habla-iago-aspas-caceres-yoel-lago-faye-antes-partido-contra-celtic",
    "categoria": "rueda de prensa"
   },
   {
    "fecha": "22/10",
-   "titulo": "Kang-in Lee se reincorpora al grupo con Koke, Cardoso y Cuti Romero ausentes",
+   "titulo": "El Atlético retoma el trabajo con Kang-In a menor ritmo y sin los tres lesionados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153322-kang-in-lee-se-reincorpora-grupo-koke-cardoso-cuti-romero-ausentes",
    "categoria": "entrenamiento"
   },
   {
    "fecha": "22/10",
-   "titulo": "Mendy se entrena con el grupo, pero sigue sin el alta médica",
+   "titulo": "El Real Madrid retoma el trabajo sin Rodrygo ni Asencio y pendiente del alta de Mendy",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153321-mendy-entrena-grupo-sigue-sin-alta-medica",
    "categoria": "entrenamiento"
   },
@@ -475,12 +481,6 @@
    "fecha": "21/10",
    "titulo": "Pellegrini habló del Feyenoord, Parrott y la clasificación de Champions",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153253-pellegrini-hablo-del-feyenoord-parrott-y-la-clasificacion-de-champions",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Mourinho explica los cambios en el once y habla de Valverde, Bernardo Silva y Camavinga",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153252-mourinho-explica-los-cambios-en-el-once-y-habla-de-valverde-bernardo-silva-y-camavinga",
    "categoria": "rueda de prensa"
   }
  ]
