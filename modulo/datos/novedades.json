@@ -1,5 +1,169 @@
 [
  {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "217",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "3117",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "15107",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "19168",
+  "entra": false
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-22",
+  "id": "19562",
+  "de": null,
+  "a": "Niutin FC (Isaac)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "19562",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "20346",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "23147",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "27869",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "28791",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "36334",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-22",
+  "id": "48210",
+  "de": null,
+  "a": "Cacaculopedopis"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "48210",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "53143",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "54900",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "55743",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "58436",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "61297",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "63727",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "63866",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "64524",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "65347",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "70183",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "70934",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "71038",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "71179",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "2586746",
+  "entra": true
+ },
+ {
   "tipo": "duenio",
   "dia": "2026-10-21",
   "id": "118",

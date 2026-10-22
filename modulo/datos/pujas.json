@@ -4023,6 +4023,40 @@
     "topeMax": 39219841,
     "exceso": 0
    }
+  ],
+  "555038345": [
+   {
+    "idTransfer": 555038345,
+    "cuando": "2026-10-22 05:00:24",
+    "jugador": "Takefusa Kubo",
+    "equipo": "Niutin FC (Isaac)",
+    "puja": 6196700,
+    "gana": true,
+    "topeMax": 39219841,
+    "exceso": 0
+   },
+   {
+    "idTransfer": 555038345,
+    "cuando": "2026-10-22 05:00:24",
+    "jugador": "Takefusa Kubo",
+    "equipo": "Cacaculopedopis",
+    "puja": 6176430,
+    "gana": false,
+    "topeMax": 26430088,
+    "exceso": 0
+   }
+  ],
+  "555044384": [
+   {
+    "idTransfer": 555044384,
+    "cuando": "2026-10-22 05:00:24",
+    "jugador": "Jonathan Dubasin",
+    "equipo": "Cacaculopedopis",
+    "puja": 865300,
+    "gana": true,
+    "topeMax": 26430088,
+    "exceso": 0
+   }
   ]
  }
 }
