@@ -6528,9 +6528,9 @@
    "cuando": "2026-09-21 17:00:19",
    "valor": 1040000,
    "posicion": 3,
-   "puntos": 22,
-   "media": 3.1,
-   "racha": "4,5,4,2,3",
+   "puntos": 21,
+   "media": 3,
+   "racha": "4,5,4,2,2",
    "otrasPujas": []
   },
   {
@@ -6675,12 +6675,7 @@
    "puntos": 67,
    "media": 7.4,
    "racha": "10,5,5,5,5",
-   "otrasPujas": [
-    {
-     "equipo": "Neky F.C. (Sergio)",
-     "puja": 20072000
-    }
-   ]
+   "otrasPujas": []
   },
   {
    "idTransfer": 550057671,
@@ -6698,16 +6693,7 @@
    "puntos": 24,
    "media": 3,
    "racha": "6,6,2,1,0",
-   "otrasPujas": [
-    {
-     "equipo": "Niutin FC (Isaac)",
-     "puja": 3600320
-    },
-    {
-     "equipo": "Cacaculopedopis",
-     "puja": 3534840
-    }
-   ]
+   "otrasPujas": []
   },
   {
    "idTransfer": 550060715,
@@ -9617,6 +9603,24 @@
    "puntos": 23,
    "media": 2.6,
    "racha": "2,3,2,3,4",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 555171400,
+   "idJugador": "28619",
+   "nombre": "Iván Balliu",
+   "de": "Mister",
+   "a": "Cacaculopedopis",
+   "idUcDe": 0,
+   "idUcA": 15435600,
+   "importe": 1031630,
+   "tipo": "normal",
+   "cuando": "2026-10-22 17:00:13",
+   "valor": 379000,
+   "posicion": 2,
+   "puntos": 14,
+   "media": 2,
+   "racha": "3,1,1,1,4",
    "otrasPujas": []
   }
  ],

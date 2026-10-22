@@ -274,6 +274,109 @@
   "entra": true
  },
  {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "7024",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "11866",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "14911",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "17568",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "22956",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "23172",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "25621",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "27874",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-22",
+  "id": "28619",
+  "de": null,
+  "a": "Cacaculopedopis"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "28619",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "28772",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "52162",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "52404",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "58992",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "59382",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "63867",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-22",
+  "id": "71642",
+  "entra": true
+ },
+ {
   "tipo": "duenio",
   "dia": "2026-10-21",
   "id": "118",

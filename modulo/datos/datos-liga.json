@@ -1394,9 +1394,24 @@
    "id": "48210",
    "nombre": "Jonathan Dubasin",
    "valor": 587000
+  },
+  {
+   "id": "28619",
+   "nombre": "Iván Balliu",
+   "valor": 379000
   }
  ],
  "movimientos": [
+  {
+   "id": "28619",
+   "nombre": "Iván Balliu",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 1031630,
+   "tipo": "normal",
+   "fecha": "2026-10-22 17:00:13",
+   "pos": 2
+  },
   {
    "id": "48210",
    "nombre": "Jonathan Dubasin",
@@ -9486,6 +9501,14 @@
      "op": "normal"
     },
     {
+     "j": "Iván Balliu",
+     "id": "28619",
+     "tipo": "compra",
+     "importe": 1031630,
+     "fecha": "2026-10-22",
+     "op": "normal"
+    },
+    {
      "j": "Javi Galán",
      "id": "15693",
      "tipo": "compra",
@@ -10530,6 +10553,12 @@
      "compras": 2686270,
      "ventas": 3783200,
      "ops": 4
+    },
+    "28619": {
+     "nombre": "Iván Balliu",
+     "compras": 1031630,
+     "ventas": 0,
+     "ops": 1
     },
     "28621": {
      "nombre": "Abdel Abqar",

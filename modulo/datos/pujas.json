@@ -4057,6 +4057,18 @@
     "topeMax": 26430088,
     "exceso": 0
    }
+  ],
+  "555171400": [
+   {
+    "idTransfer": 555171400,
+    "cuando": "2026-10-22 17:00:13",
+    "jugador": "Iván Balliu",
+    "equipo": "Cacaculopedopis",
+    "puja": 1031630,
+    "gana": true,
+    "topeMax": 26430088,
+    "exceso": 0
+   }
   ]
  }
 }
