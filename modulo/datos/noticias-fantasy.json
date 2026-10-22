@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-22T16:38:08.533Z",
+ "cuando": "2026-10-22T17:08:09.577Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "22/10",
+   "titulo": "Sigue en directo el Getafe - Lugano",
+   "url": "https://www.futbolfantasy.com/partidos/24402-getafe-lugano",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 10 actualizadas",
@@ -32,6 +38,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "El Villarreal entrena sin Pépé y con Saliba y Romero como dudas para el derbi",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153319-el-villarreal-entrena-sin-pepe-con-saliba-romero-como-dudas-derbi",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "22/10",
+   "titulo": "Pepe Bordalás explica la posición de Djené y el descanso de Nemanja Gudelj frente al Lugano",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153317-pepe-bordalas-explica-posicion-djene-descanso-nemanja-gudelj-frente-lugano",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "22/10",
@@ -464,24 +482,6 @@
    "titulo": "El XI ideal de la jornada 10 de Liga, por Huugo_21",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153248-el-xi-ideal-de-la-jornada-10-de-liga-por-huugo-21",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Terzic, sobre Guruzeta, Sannadi, Iñaki Williams y Nico Williams antes del Levante",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153245-terzic-sobre-guruzeta-sannadi-inaki-williams-y-nico-williams-antes-del-levante",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Luis Castro explica las rotaciones y habla de Dela, Sotelo, Bardeli y Ratkov",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153244-luis-castro-explica-las-rotaciones-y-habla-de-dela-sotelo-bardeli-y-ratkov",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "21/10",
-   "titulo": "Yoel Lago habla de su crecimiento, momento personal, la salida de balón y relación con Starfelt",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153243-yoel-lago-habla-de-su-crecimiento-momento-personal-la-salida-de-balon-y-relacion-con-starfelt",
-   "categoria": "rueda de prensa"
   }
  ]
 }
