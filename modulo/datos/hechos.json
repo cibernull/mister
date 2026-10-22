@@ -6462,7 +6462,7 @@
    "importe": 11258030,
    "tipo": "normal",
    "cuando": "2026-09-21 05:00:28",
-   "valor": 13007000,
+   "valor": 12907000,
    "posicion": 3,
    "puntos": 56,
    "media": 6.2,
@@ -6480,12 +6480,17 @@
    "importe": 1391150,
    "tipo": "normal",
    "cuando": "2026-09-21 05:00:28",
-   "valor": 4055000,
+   "valor": 3875000,
    "posicion": 2,
    "puntos": 31,
    "media": 3.9,
    "racha": "2,7,5,4,6",
-   "otrasPujas": []
+   "otrasPujas": [
+    {
+     "equipo": "Mario80",
+     "puja": 1250020
+    }
+   ]
   },
   {
    "idTransfer": 549659437,
@@ -6498,12 +6503,17 @@
    "importe": 1640508,
    "tipo": "normal",
    "cuando": "2026-09-21 05:00:28",
-   "valor": 3135000,
+   "valor": 3088000,
    "posicion": 4,
    "puntos": 32,
    "media": 4,
    "racha": "6,5,5,1,2",
-   "otrasPujas": []
+   "otrasPujas": [
+    {
+     "equipo": "Niutin FC (Isaac)",
+     "puja": 1414870
+    }
+   ]
   },
   {
    "idTransfer": 549785062,
@@ -6516,7 +6526,7 @@
    "importe": 1011160,
    "tipo": "normal",
    "cuando": "2026-09-21 17:00:19",
-   "valor": 1041000,
+   "valor": 1040000,
    "posicion": 3,
    "puntos": 22,
    "media": 3.1,
@@ -6534,7 +6544,7 @@
    "importe": 1458179,
    "tipo": "normal",
    "cuando": "2026-09-21 17:00:19",
-   "valor": 1025000,
+   "valor": 1052000,
    "posicion": 3,
    "puntos": 29,
    "media": 3.2,
@@ -9885,62 +9895,62 @@
   {
    "idJornada": 4047,
    "jornada": 6,
-   "cuando": "2026-09-04 09:50:39",
+   "cuando": "2026-10-22 11:06:00",
    "posiciones": [
     {
      "idUc": 12493688,
-     "puntos": 48,
+     "puntos": 55,
      "puesto": 1,
-     "valorPlantilla": 70474000,
-     "premio": 0
-    },
-    {
-     "idUc": 12493752,
-     "puntos": 40,
-     "puesto": 2,
-     "valorPlantilla": 71986000,
-     "premio": 0
+     "valorPlantilla": 101610000,
+     "premio": 1825000
     },
     {
      "idUc": 12493763,
-     "puntos": 24,
+     "puntos": 55,
+     "puesto": 2,
+     "valorPlantilla": 93362000,
+     "premio": 2175000
+    },
+    {
+     "idUc": 12493752,
+     "puntos": 47,
      "puesto": 3,
-     "valorPlantilla": 54979000,
-     "premio": 0
+     "valorPlantilla": 87927000,
+     "premio": 1875000
     },
     {
      "idUc": 15435600,
-     "puntos": 24,
+     "puntos": 25,
      "puesto": 4,
-     "valorPlantilla": 35327000,
-     "premio": 75000
+     "valorPlantilla": 48030000,
+     "premio": 625000
     },
     {
      "idUc": 13428410,
      "puntos": 19,
      "puesto": 5,
-     "valorPlantilla": 28505000,
-     "premio": 0
-    },
-    {
-     "idUc": 12493758,
-     "puntos": 4,
-     "puesto": 6,
-     "valorPlantilla": 28357000,
-     "premio": 50000
+     "valorPlantilla": 20826000,
+     "premio": 475000
     },
     {
      "idUc": 13435216,
-     "puntos": 3,
+     "puntos": 15,
+     "puesto": 6,
+     "valorPlantilla": 48864000,
+     "premio": 375000
+    },
+    {
+     "idUc": 12493758,
+     "puntos": 15,
      "puesto": 7,
-     "valorPlantilla": 65327000,
-     "premio": 75000
+     "valorPlantilla": 25155000,
+     "premio": 375000
     },
     {
      "idUc": 13491767,
      "puntos": -5,
      "puesto": 8,
-     "valorPlantilla": 6539000,
+     "valorPlantilla": 4448000,
      "premio": 0
     }
    ]

@@ -1,13 +1,21 @@
 {
- "saldo": -3463089,
+ "saldo": -2213089,
  "apuntes": [
+  {
+   "cuando": 1792659900,
+   "fecha": "2026-10-22 11:05",
+   "motivo": "Jornada 6",
+   "tipo": "Bonificación",
+   "importe": 2175000,
+   "saldo": -2213089
+  },
   {
    "cuando": 1792638000,
    "fecha": "2026-10-22 05:00",
    "motivo": "Takefusa Kubo a Mister",
    "tipo": "Compra",
    "importe": -6196700,
-   "saldo": -3463089
+   "saldo": -4388089
   },
   {
    "cuando": 1792594800,
@@ -15,7 +23,7 @@
    "motivo": "Javi Hernandez a Mister",
    "tipo": "Compra",
    "importe": -5261480,
-   "saldo": 2733611
+   "saldo": 1808611
   },
   {
    "cuando": 1792496268,
@@ -23,7 +31,7 @@
    "motivo": "Jornada 9",
    "tipo": "Bonificación",
    "importe": 1700000,
-   "saldo": 7995091
+   "saldo": 7070091
   },
   {
    "cuando": 1792478524,
@@ -31,7 +39,7 @@
    "motivo": "Jon Gorrotxategi a Betico1993",
    "tipo": "Compra por cláusula",
    "importe": -1000000,
-   "saldo": 6295091
+   "saldo": 5370091
   },
   {
    "cuando": 1792477948,
@@ -39,7 +47,7 @@
    "motivo": "Ramón Terrats a Mister",
    "tipo": "Venta",
    "importe": 8608950,
-   "saldo": 7295091
+   "saldo": 6370091
   },
   {
    "cuando": 1792439608,
@@ -47,7 +55,7 @@
    "motivo": "Modificación de cláusula (100%) de Emil Audero",
    "tipo": "Penalización",
    "importe": -488800,
-   "saldo": -1313859
+   "saldo": -2238859
   },
   {
    "cuando": 1792392304,
@@ -55,7 +63,7 @@
    "motivo": "Modificación de cláusula (100%) de Éder Militão",
    "tipo": "Penalización",
    "importe": -839849,
-   "saldo": -825059
+   "saldo": -1750059
   },
   {
    "cuando": 1792319769,
@@ -63,7 +71,7 @@
    "motivo": "Modificación de cláusula (100%) de Roy Revivo",
    "tipo": "Penalización",
    "importe": -255000,
-   "saldo": 14790
+   "saldo": -910210
   },
   {
    "cuando": 1792319761,
@@ -71,7 +79,7 @@
    "motivo": "Modificación de cláusula (100%) de Sergi Cardona",
    "tipo": "Penalización",
    "importe": -227600,
-   "saldo": 269790
+   "saldo": -655210
   },
   {
    "cuando": 1792164753,
@@ -79,7 +87,7 @@
    "motivo": "Modificación de cláusula (150%) de Roger Brugué",
    "tipo": "Bonificación",
    "importe": 1020800,
-   "saldo": 497390
+   "saldo": -427610
   },
   {
    "cuando": 1792162800,
@@ -87,7 +95,7 @@
    "motivo": "Ilaix Moriba a Mister",
    "tipo": "Compra",
    "importe": -6279000,
-   "saldo": -523410
+   "saldo": -1448410
   },
   {
    "cuando": 1792081456,
@@ -95,7 +103,7 @@
    "motivo": "Miguel Sierra a Mister",
    "tipo": "Venta",
    "importe": 6913000,
-   "saldo": 5755590
+   "saldo": 4830590
   },
   {
    "cuando": 1792076400,
@@ -103,7 +111,7 @@
    "motivo": "Sergi Cardona a Mister",
    "tipo": "Compra",
    "importe": -1023000,
-   "saldo": -1157410
+   "saldo": -2082410
   },
   {
    "cuando": 1792076400,
@@ -111,7 +119,7 @@
    "motivo": "Roy Revivo a Mister",
    "tipo": "Compra",
    "importe": -1186010,
-   "saldo": -134410
+   "saldo": -1059410
   },
   {
    "cuando": 1791946800,
@@ -119,7 +127,7 @@
    "motivo": "Pere Milla a Mister",
    "tipo": "Compra",
    "importe": -528000,
-   "saldo": 1051600
+   "saldo": 126600
   },
   {
    "cuando": 1791946800,
@@ -127,7 +135,7 @@
    "motivo": "Dani Raba a Mister",
    "tipo": "Compra",
    "importe": -295000,
-   "saldo": 1579600
+   "saldo": 654600
   },
   {
    "cuando": 1791883037,
@@ -135,7 +143,7 @@
    "motivo": "Jornada 8",
    "tipo": "Bonificación",
    "importe": 950000,
-   "saldo": 1874600
+   "saldo": 949600
   },
   {
    "cuando": 1791731478,
@@ -143,7 +151,7 @@
    "motivo": "Nathan Saliba a Mister",
    "tipo": "Venta",
    "importe": 5154450,
-   "saldo": 924600
+   "saldo": -400
   },
   {
    "cuando": 1791601200,
@@ -151,7 +159,7 @@
    "motivo": "Emil Audero a Mister",
    "tipo": "Compra",
    "importe": -2001010,
-   "saldo": -4229850
+   "saldo": -5154850
   },
   {
    "cuando": 1791594874,
@@ -159,7 +167,7 @@
    "motivo": "Modificación de cláusula (100%) de Sergio Camello",
    "tipo": "Penalización",
    "importe": -2534400,
-   "saldo": -2228840
+   "saldo": -3153840
   },
   {
    "cuando": 1791472423,
@@ -167,7 +175,7 @@
    "motivo": "Xavi Espart a Mister",
    "tipo": "Venta",
    "importe": 6220590,
-   "saldo": 305560
+   "saldo": -619440
   },
   {
    "cuando": 1791385289,
@@ -175,7 +183,7 @@
    "motivo": "Pablo García a Mister",
    "tipo": "Venta",
    "importe": 4218240,
-   "saldo": -5915030
+   "saldo": -6840030
   },
   {
    "cuando": 1791214029,
@@ -183,7 +191,7 @@
    "motivo": "Cristian Romero a Mister",
    "tipo": "Venta",
    "importe": 11107200,
-   "saldo": -10133270
+   "saldo": -11058270
   },
   {
    "cuando": 1791196730,
@@ -191,7 +199,7 @@
    "motivo": "Modificación de cláusula (100%) de Kylian Mbappé",
    "tipo": "Penalización",
    "importe": -6061925,
-   "saldo": -21240470
+   "saldo": -22165470
   },
   {
    "cuando": 1791196715,
@@ -199,7 +207,7 @@
    "motivo": "Modificación de cláusula (100%) de Raphinha",
    "tipo": "Penalización",
    "importe": -5641775,
-   "saldo": -15178545
+   "saldo": -16103545
   },
   {
    "cuando": 1791181261,
@@ -207,7 +215,7 @@
    "motivo": "Germán Valera a Mister",
    "tipo": "Venta",
    "importe": 8514960,
-   "saldo": -9536770
+   "saldo": -10461770
   },
   {
    "cuando": 1791128438,
@@ -215,7 +223,7 @@
    "motivo": "Modificación de cláusula (50%) de Xavi Espart",
    "tipo": "Bonificación",
    "importe": 577400,
-   "saldo": -18051730
+   "saldo": -18976730
   },
   {
    "cuando": 1791126000,
@@ -223,7 +231,7 @@
    "motivo": "Jonathan David a Mister",
    "tipo": "Compra",
    "importe": -11669232,
-   "saldo": -18629130
+   "saldo": -19554130
   },
   {
    "cuando": 1791107217,
@@ -231,7 +239,7 @@
    "motivo": "Ilaix Moriba a Mister",
    "tipo": "Venta",
    "importe": 5781300,
-   "saldo": -6959898
+   "saldo": -7884898
   },
   {
    "cuando": 1791041601,
@@ -239,7 +247,7 @@
    "motivo": "Juan Foyth a Mister",
    "tipo": "Venta",
    "importe": 5217660,
-   "saldo": -12741198
+   "saldo": -13666198
   },
   {
    "cuando": 1791041589,
@@ -247,7 +255,7 @@
    "motivo": "Modificación de cláusula (50%) de Juan Foyth",
    "tipo": "Bonificación",
    "importe": 516600,
-   "saldo": -17958858
+   "saldo": -18883858
   },
   {
    "cuando": 1790961077,
@@ -255,7 +263,7 @@
    "motivo": "Mariano Díaz a Mister",
    "tipo": "Venta",
    "importe": 5495050,
-   "saldo": -18475458
+   "saldo": -19400458
   },
   {
    "cuando": 1790866800,
@@ -263,7 +271,7 @@
    "motivo": "Isi Palazón a Mister",
    "tipo": "Compra",
    "importe": -3915670,
-   "saldo": -23970508
+   "saldo": -24895508
   },
   {
    "cuando": 1790695536,
@@ -271,7 +279,7 @@
    "motivo": "Cucho Hernández a Mister",
    "tipo": "Venta",
    "importe": 10506000,
-   "saldo": -20054838
+   "saldo": -20979838
   },
   {
    "cuando": 1790607600,
@@ -279,7 +287,7 @@
    "motivo": "Yoel Lago a Mister",
    "tipo": "Compra",
    "importe": -2604670,
-   "saldo": -30560838
+   "saldo": -31485838
   },
   {
    "cuando": 1790495530,
@@ -287,7 +295,7 @@
    "motivo": "Modificación de cláusula (100%) de Juan Foyth",
    "tipo": "Bonificación",
    "importe": 489400,
-   "saldo": -27956168
+   "saldo": -28881168
   },
   {
    "cuando": 1790495500,
@@ -295,7 +303,7 @@
    "motivo": "Modificación de cláusula (150%) de Juan Foyth",
    "tipo": "Bonificación",
    "importe": 489400,
-   "saldo": -28445568
+   "saldo": -29370568
   },
   {
    "cuando": 1790495449,
@@ -303,7 +311,7 @@
    "motivo": "Luiz Felipe a Mister",
    "tipo": "Venta por rescisión",
    "importe": 155200,
-   "saldo": -28934968
+   "saldo": -29859968
   },
   {
    "cuando": 1790495431,
@@ -311,7 +319,7 @@
    "motivo": "Modificación de cláusula (50%) de Ramón Terrats",
    "tipo": "Bonificación",
    "importe": 633500,
-   "saldo": -29090168
+   "saldo": -30015168
   },
   {
    "cuando": 1790478000,
@@ -319,7 +327,7 @@
    "motivo": "Éder Militão a Mister",
    "tipo": "Compra",
    "importe": -4199248,
-   "saldo": -29723668
+   "saldo": -30648668
   },
   {
    "cuando": 1790435677,
@@ -327,7 +335,7 @@
    "motivo": "Marc Bartra a Mister",
    "tipo": "Venta",
    "importe": 6547380,
-   "saldo": -25524420
+   "saldo": -26449420
   },
   {
    "cuando": 1790391600,
@@ -335,7 +343,7 @@
    "motivo": "Cristian Romero a Mister",
    "tipo": "Compra",
    "importe": -10037010,
-   "saldo": -32071800
+   "saldo": -32996800
   },
   {
    "cuando": 1790349165,
@@ -343,7 +351,7 @@
    "motivo": "Pierre-Emerick Aubameyang a Mister",
    "tipo": "Venta",
    "importe": 9545550,
-   "saldo": -22034790
+   "saldo": -22959790
   },
   {
    "cuando": 1790348400,
@@ -351,7 +359,7 @@
    "motivo": "Germán Valera a Mister",
    "tipo": "Compra",
    "importe": -7272000,
-   "saldo": -31580340
+   "saldo": -32505340
   },
   {
    "cuando": 1790264956,
@@ -359,7 +367,7 @@
    "motivo": "Beñat Gerenabarrena a Mister",
    "tipo": "Venta",
    "importe": 2083120,
-   "saldo": -24308340
+   "saldo": -25233340
   },
   {
    "cuando": 1790218800,
@@ -367,7 +375,7 @@
    "motivo": "Mariano Díaz a Mister",
    "tipo": "Compra",
    "importe": -4464220,
-   "saldo": -26391460
+   "saldo": -27316460
   },
   {
    "cuando": 1790186873,
@@ -375,7 +383,7 @@
    "motivo": "Modificación de cláusula (200%) de Alex Freeman",
    "tipo": "Penalización",
    "importe": -834690,
-   "saldo": -21927240
+   "saldo": -22852240
   },
   {
    "cuando": 1790186189,
@@ -383,7 +391,7 @@
    "motivo": "Modificación de cláusula (50%) de Beñat Gerenabarrena",
    "tipo": "Bonificación",
    "importe": 392800,
-   "saldo": -21092550
+   "saldo": -22017550
   },
   {
    "cuando": 1790185315,
@@ -391,7 +399,7 @@
    "motivo": "Modificación de cláusula (50%) de Pierre-Emerick Aubameyang",
    "tipo": "Bonificación",
    "importe": 1768200,
-   "saldo": -21485350
+   "saldo": -22410350
   },
   {
    "cuando": 1790132400,
@@ -399,7 +407,7 @@
    "motivo": "Ilaix Moriba a Mister",
    "tipo": "Compra",
    "importe": -4388590,
-   "saldo": -23253550
+   "saldo": -24178550
   },
   {
    "cuando": 1790089200,
@@ -407,7 +415,7 @@
    "motivo": "Cucho Hernández a Mister",
    "tipo": "Compra",
    "importe": -9533010,
-   "saldo": -18864960
+   "saldo": -19789960
   },
   {
    "cuando": 1790046671,
@@ -415,7 +423,7 @@
    "motivo": "Miguel Sierra a Neky F.C. (Sergio)",
    "tipo": "Compra por cláusula",
    "importe": -5953500,
-   "saldo": -9331950
+   "saldo": -10256950
   },
   {
    "cuando": 1789982121,
@@ -423,7 +431,7 @@
    "motivo": "Jornada 7",
    "tipo": "Bonificación",
    "importe": 1200000,
-   "saldo": -3378450
+   "saldo": -4303450
   },
   {
    "cuando": 1789979775,
@@ -431,7 +439,7 @@
    "motivo": "Modificación de cláusula (250%) de Roger Brugué",
    "tipo": "Penalización",
    "importe": -352800,
-   "saldo": -4578450
+   "saldo": -5503450
   },
   {
    "cuando": 1789959600,
@@ -439,7 +447,7 @@
    "motivo": "Alex Freeman a Mister",
    "tipo": "Compra",
    "importe": -1391150,
-   "saldo": -4225650
+   "saldo": -5150650
   },
   {
    "cuando": 1789875355,
@@ -447,7 +455,7 @@
    "motivo": "Rodri Hernández a Neky F.C. (Sergio)",
    "tipo": "Venta por cláusula",
    "importe": 21198000,
-   "saldo": -2834500
+   "saldo": -3759500
   },
   {
    "cuando": 1789873200,
@@ -455,7 +463,7 @@
    "motivo": "Raphinha a Mister",
    "tipo": "Compra",
    "importe": -28208876,
-   "saldo": -24032500
+   "saldo": -24957500
   },
   {
    "cuando": 1789862260,
@@ -463,7 +471,7 @@
    "motivo": "Oriol Rey a Mister",
    "tipo": "Venta",
    "importe": 1311440,
-   "saldo": 4176376
+   "saldo": 3251376
   },
   {
    "cuando": 1789861968,
@@ -471,15 +479,7 @@
    "motivo": "Modificación de cláusula (50%) de Oriol Rey",
    "tipo": "Bonificación",
    "importe": 126100,
-   "saldo": 2864936
-  },
-  {
-   "cuando": 1789861888,
-   "fecha": "2026-09-20 01:51",
-   "motivo": "Sergio Canales a Mister",
-   "tipo": "Venta",
-   "importe": 7094220,
-   "saldo": 2738836
+   "saldo": 1939936
   }
  ]
 }
