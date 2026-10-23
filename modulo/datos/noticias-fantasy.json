@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-23T13:38:18.164Z",
+ "cuando": "2026-10-23T14:08:12.216Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "23/10",
-   "titulo": "Meriton vende casi la mitad del Valencia a Pitchwise, que aportará 100 millones de euros al club",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153390-meriton-vende-casi-la-mitad-del-valencia-a-pitchwise-y-aportara-100-millones-de-euros-al-club",
-   "categoria": "rueda de prensa"
+   "titulo": "Sancet ya pisa césped y se acerca al grupo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153395-sancet-ya-pisa-cesped-y-se-acerca-al-grupo",
+   "categoria": "lesión"
   },
   {
    "fecha": "23/10",
@@ -41,9 +41,15 @@
   },
   {
    "fecha": "23/10",
-   "titulo": "Sancet ya pisa césped y se acerca al grupo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153395-sancet-ya-pisa-cesped-y-se-acerca-al-grupo",
-   "categoria": "lesión"
+   "titulo": "Noubi o Loureiro, una elección basada en las características",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153397-noubi-o-loureiro-una-eleccion-basada-en-las-caracteristicas",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "El Levante retoma los entrenamientos pendiente de Dela y con Bardeli ya descartado",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153396-el-levante-retoma-los-entrenamientos-pendiente-de-dela-y-con-bardeli-ya-descartado",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "23/10",
@@ -68,6 +74,12 @@
    "titulo": "Zaid Romero y Mangala avanzan en sus procesos de recuperación y Enes Ünal recibe cuidados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153391-zaid-romero-y-mangala-avanzan-en-sus-procesos-de-recuperacion",
    "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Meriton vende casi la mitad del Valencia a Pitchwise, que aportará 100 millones de euros al club",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153390-meriton-vende-casi-la-mitad-del-valencia-a-pitchwise-y-aportara-100-millones-de-euros-al-club",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "23/10",
@@ -470,18 +482,6 @@
    "titulo": "El Atlético retoma el trabajo con Kang-In a menor ritmo y sin los tres lesionados",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153322-kang-in-lee-se-reincorpora-grupo-koke-cardoso-cuti-romero-ausentes",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "El Real Madrid retoma el trabajo sin Rodrygo ni Asencio y pendiente del alta de Mendy",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153321-mendy-entrena-grupo-sigue-sin-alta-medica",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Dubasin repasa su adaptación, primera titularidad, Moi Gómez, Budimir y la llegada de Arrasate",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153320-dubasin-repasa-su-adaptacion-primera-titularidad-moi-gomez-budimir-y-la-llegada-de-arrasate",
-   "categoria": "rueda de prensa"
   }
  ]
 }
