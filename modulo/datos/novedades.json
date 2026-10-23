@@ -175,6 +175,24 @@
   "entra": true
  },
  {
+  "tipo": "clausula",
+  "dia": "2026-10-23",
+  "id": "33896",
+  "equipo": "Saiyans FC (Fran)",
+  "escalones": -3,
+  "coste": -1707600,
+  "clausula": 7115000
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-10-23",
+  "id": "71021",
+  "equipo": "Saiyans FC (Fran)",
+  "escalones": -2,
+  "coste": -4480400,
+  "clausula": 16801500
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-22",
   "id": "217",
