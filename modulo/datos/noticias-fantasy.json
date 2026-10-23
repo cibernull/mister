@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-23T08:08:07.917Z",
+ "cuando": "2026-10-23T08:38:19.978Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "23/10",
+   "titulo": "Alineaciones probables jornada 10 de LaLiga en Youtube: FORMATO EXPRESS",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153351-alineaciones-probables-jornada-10-de-laliga-en-youtube-formato-express",
+   "categoria": "análisis"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 10 actualizadas",
@@ -29,6 +35,42 @@
   },
   {
    "fecha": "23/10",
+   "titulo": "Ángel Torres responde a Bordalás en declaraciones para Cadena SER",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153360-angel-torres-responde-a-bordalas-en-declaraciones-para-cadena-ser",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Plaza Deportiva apuesta por un once sin Dela ni Bardeli en Anoeta",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153359-plaza-deportiva-apuesta-por-un-once-sin-dela-ni-bardeli-en-anoeta",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Plaza Deportiva vuelve a apostar por Otorbi como novedad en el once",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153358-plaza-deportiva-vuelve-a-apostar-por-otorbi-como-novedad-en-el-once",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Lista de Funes para desplazarse a Vitoria sin los seis lesionados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153357-lista-de-funes-para-desplazarse-a-vitoria-sin-los-seis-lesionados",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Parte médico oficial de Pablo Martínez: Fascitis plantar",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153356-parte-medico-oficial-de-pablo-martinez-fascitis-plantar",
+   "categoria": "lesión"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Diario de Sevilla cree que Natan, Abde, Fornals e Isco descansarán en Vigo pensando en el Navalcarnero",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153355-diario-de-sevilla-cree-que-natan-abde-fornals-e-isco-descansaran-en-vigo-pensando-en-el-naval",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/10",
    "titulo": "El Rayo lanza un comunicado para intentar evitar otra suspensión en Vallecas",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153354-el-rayo-lanza-un-comunicado-para-intentar-evitar-otra-suspension-en-vallecas",
    "categoria": "rueda de prensa"
@@ -43,12 +85,6 @@
    "fecha": "23/10",
    "titulo": "Las alineaciones probables del Alavés para la jornada 10 según la prensa especializada",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153352-las-alineaciones-probables-del-alaves-para-la-jornada-10-segun-la-prensa-especializada",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Alineaciones probables jornada 10 de LaLiga en Youtube: FORMATO EXPRESS",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153351-alineaciones-probables-jornada-10-de-laliga-en-youtube-formato-express",
    "categoria": "análisis"
   },
   {
@@ -446,42 +482,6 @@
    "titulo": "Pellegrini tiene motivos para no rotar contra el Celta",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153284-pellegrini-tiene-motivos-para-no-rotar-contra-el-celta",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Stassin gestionará cargas hasta el viernes y se probará a partir del sábado",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153283-stassin-gestionara-cargas-hasta-el-viernes-y-se-probara-a-partir-del-sabado",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Pedro Felipe entrena con normalidad tras el susto de ayer",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153282-pedro-felipe-entrena-con-normalidad-tras-el-susto-de-ayer",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Iván Azón entra en una lista sin Zaïd Romero ni Mangala",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153281-ivan-azon-entra-en-una-lista-sin-zaid-romero-ni-mangala",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Kochorashvili se incorpora al grupo y Stassin gestiona las cargas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153280-kochorashvili-se-incorpora-al-grupo-y-stassin-gestiona-las-cargas",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Del Castillo, Herrando y Aimar Oroz siguen al margen del grupo este jueves",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153279-del-castillo-herrando-y-aimar-oroz-siguen-al-margen-del-grupo-este-jueves",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Sadiq inicia su incorporación progresiva y Foulquier vuelve a apartarse",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153278-sadiq-inicia-su-incorporacion-progresiva-y-foulquier-vuelve-a-apartarse",
-   "categoria": "entrenamiento"
   }
  ]
 }
