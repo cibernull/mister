@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-23T17:38:09.208Z",
+ "cuando": "2026-10-23T18:08:24.291Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "23/10",
-   "titulo": "Oskarsson quiere otra tarde de ron",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153403-oskarsson-quiere-otra-tarde-de-ron",
-   "categoria": "análisis"
+   "titulo": "Alineaciones confirmadas del Alavés - Málaga",
+   "url": "https://www.futbolfantasy.com/partidos/22516-alaves-malaga",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "23/10",
@@ -43,6 +43,12 @@
    "fecha": "23/10",
    "titulo": "¡Sigue a las 18:00h en Twitch y Youtube la información fantasy para la jornada 10!",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153404-sigue-a-las-18-00h-en-twitch-y-youtube-la-informacion-fantasy-para-la-jornada-10",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Oskarsson quiere otra tarde de ron",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153403-oskarsson-quiere-otra-tarde-de-ron",
    "categoria": "análisis"
   },
   {
@@ -476,12 +482,6 @@
    "titulo": "Bordalás analiza la derrota y carga duramente contra la confección de la plantilla",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153332-bordalas-analiza-la-derrota-y-carga-duramente-contra-la-confeccion-de-la-plantilla",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "El Dépor afina el balón parado y los remates sin los cuatro lesionados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153331-el-depor-afina-el-balon-parado-y-los-remates-sin-los-cuatro-lesionados",
-   "categoria": "entrenamiento"
   }
  ]
 }
