@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-23T21:08:26.160Z",
+ "cuando": "2026-10-23T21:38:20.604Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -25,6 +25,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Funes expresa sus sensaciones y habla de Larrubia, Chupete, Niño, Galilea, Ramón, Aznou y Pablo Martínez",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153418-funes-expresa-sus-sensaciones-y-habla-de-larrubia-chupete-nino-galilea-ramon-aznou-y-pablo-ma",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Más vale Mañas que fuerza malaguista",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153417-mas-vale-manas-que-fuerza-malaguista",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "AS analiza tres alternativas de Mourinho para completar el once del Clásico",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153343-as-analiza-tres-alternativas-de-mourinho-para-completar-el-once-del-clasico",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Marca cree que Camavinga será la sorpresa del once del Clásico",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153342-marca-cree-que-camavinga-sera-la-sorpresa-del-once-del-clasico",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Giráldez celebra la remontada y habla de Hugo Álvarez, Aspas, Burcio, Swedberg y el Celtic",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153341-giraldez-celebra-la-remontada-y-habla-de-hugo-alvarez-aspas-burcio-swedberg-y-el-celtic",
-   "categoria": "rueda de prensa"
   }
  ]
 }
