@@ -9667,6 +9667,42 @@
    "media": 4.9,
    "racha": "4,-,2,12,1",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 555403926,
+   "idJugador": "33896",
+   "nombre": "Ilias Akhomach",
+   "de": "Saiyans FC (Fran)",
+   "a": "Mister",
+   "idUcDe": 12493752,
+   "idUcA": 0,
+   "importe": 2760620,
+   "tipo": "normal",
+   "cuando": "2026-10-23 18:02:08",
+   "valor": 2846000,
+   "posicion": 3,
+   "puntos": 34,
+   "media": 4.3,
+   "racha": "-,8,9,6,4",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 555404371,
+   "idJugador": "4947929",
+   "nombre": "Emil Audero",
+   "de": "Niutin FC (Isaac)",
+   "a": "Mister",
+   "idUcDe": 12493763,
+   "idUcA": 0,
+   "importe": 2868600,
+   "tipo": "normal",
+   "cuando": "2026-10-23 18:04:35",
+   "valor": 2732000,
+   "posicion": 1,
+   "puntos": 15,
+   "media": 3.8,
+   "racha": "-,3,3,3,6",
+   "otrasPujas": []
   }
  ],
  "salidas": [

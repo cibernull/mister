@@ -1,6 +1,14 @@
 {
- "saldo": -2213089,
+ "saldo": 655511,
  "apuntes": [
+  {
+   "cuando": 1792771475,
+   "fecha": "2026-10-23 18:04",
+   "motivo": "Emil Audero a Mister",
+   "tipo": "Venta",
+   "importe": 2868600,
+   "saldo": 655511
+  },
   {
    "cuando": 1792659900,
    "fecha": "2026-10-22 11:05",
@@ -472,14 +480,6 @@
    "tipo": "Venta",
    "importe": 1311440,
    "saldo": 3251376
-  },
-  {
-   "cuando": 1789861968,
-   "fecha": "2026-09-20 01:52",
-   "motivo": "Modificación de cláusula (50%) de Oriol Rey",
-   "tipo": "Bonificación",
-   "importe": 126100,
-   "saldo": 1939936
   }
  ]
 }

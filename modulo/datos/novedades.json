@@ -359,6 +359,26 @@
   "equipo": null
  },
  {
+  "tipo": "duenio",
+  "dia": "2026-10-23",
+  "id": "33896",
+  "de": "Saiyans FC (Fran)",
+  "a": null
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-23",
+  "id": "4947929",
+  "de": "Niutin FC (Isaac)",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-23",
+  "id": "4947929",
+  "entra": false
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-22",
   "id": "217",
