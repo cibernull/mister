@@ -1399,9 +1399,34 @@
    "id": "28619",
    "nombre": "Iván Balliu",
    "valor": 424000
+  },
+  {
+   "id": "14432",
+   "nombre": "Javi Puado",
+   "valor": 1341000
   }
  ],
  "movimientos": [
+  {
+   "id": "27874",
+   "nombre": "Iván Martín",
+   "de": null,
+   "a": "Cacaculopedopis",
+   "importe": 5535943,
+   "tipo": "normal",
+   "fecha": "2026-10-23 17:00:12",
+   "pos": 3
+  },
+  {
+   "id": "14432",
+   "nombre": "Javi Puado",
+   "de": null,
+   "a": "Mario80",
+   "importe": 1341210,
+   "tipo": "normal",
+   "fecha": "2026-10-23 17:00:12",
+   "pos": 4
+  },
   {
    "id": "20449",
    "nombre": "Fer Niño",
@@ -9503,6 +9528,14 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Iván Martín",
+     "id": "27874",
+     "tipo": "compra",
+     "importe": 5535943,
+     "fecha": "2026-10-23",
+     "op": "normal"
+    },
+    {
      "j": "Jonathan Dubasin",
      "id": "48210",
      "tipo": "compra",
@@ -10560,9 +10593,9 @@
     },
     "27874": {
      "nombre": "Iván Martín",
-     "compras": 2686270,
+     "compras": 8222213,
      "ventas": 3783200,
-     "ops": 4
+     "ops": 5
     },
     "28619": {
      "nombre": "Iván Balliu",
@@ -10838,6 +10871,14 @@
   },
   "Mario80": {
    "movimientos": [
+    {
+     "j": "Javi Puado",
+     "id": "14432",
+     "tipo": "compra",
+     "importe": 1341210,
+     "fecha": "2026-10-23",
+     "op": "normal"
+    },
     {
      "j": "Álvaro Núñez",
      "id": "63866",
@@ -11382,6 +11423,12 @@
      "nombre": "Raúl de Tomás",
      "compras": 0,
      "ventas": 556500,
+     "ops": 1
+    },
+    "14432": {
+     "nombre": "Javi Puado",
+     "compras": 1341210,
+     "ventas": 0,
      "ops": 1
     },
     "15653": {

@@ -9631,6 +9631,42 @@
    "media": 5.8,
    "racha": "2,9,17,2,2",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 555386270,
+   "idJugador": "14432",
+   "nombre": "Javi Puado",
+   "de": "Mister",
+   "a": "Mario80",
+   "idUcDe": 0,
+   "idUcA": 13435216,
+   "importe": 1341210,
+   "tipo": "normal",
+   "cuando": "2026-10-23 17:00:12",
+   "valor": 1341000,
+   "posicion": 4,
+   "puntos": 2,
+   "media": 2,
+   "racha": "-,-,-,-,2",
+   "otrasPujas": []
+  },
+  {
+   "idTransfer": 555390892,
+   "idJugador": "27874",
+   "nombre": "Iván Martín",
+   "de": "Mister",
+   "a": "Cacaculopedopis",
+   "idUcDe": 0,
+   "idUcA": 15435600,
+   "importe": 5535943,
+   "tipo": "normal",
+   "cuando": "2026-10-23 17:00:12",
+   "valor": 4983000,
+   "posicion": 3,
+   "puntos": 34,
+   "media": 4.9,
+   "racha": "4,-,2,12,1",
+   "otrasPujas": []
   }
  ],
  "salidas": [

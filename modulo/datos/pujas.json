@@ -4069,6 +4069,30 @@
     "topeMax": 26430088,
     "exceso": 0
    }
+  ],
+  "555386270": [
+   {
+    "idTransfer": 555386270,
+    "cuando": "2026-10-23 17:00:12",
+    "jugador": "Javi Puado",
+    "equipo": "Mario80",
+    "puja": 1341210,
+    "gana": true,
+    "topeMax": 25044380,
+    "exceso": 0
+   }
+  ],
+  "555390892": [
+   {
+    "idTransfer": 555390892,
+    "cuando": "2026-10-23 17:00:12",
+    "jugador": "Iván Martín",
+    "equipo": "Cacaculopedopis",
+    "puja": 5535943,
+    "gana": true,
+    "topeMax": 26330788,
+    "exceso": 0
+   }
   ]
  }
 }
