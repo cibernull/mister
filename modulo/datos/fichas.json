@@ -12233,13 +12233,6 @@
     "rival": 16,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -21426,6 +21419,15 @@
      "sub_in",
      "goal"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 13,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -23704,6 +23706,7 @@
     "rival": 48,
     "como": "inicio",
     "eventos": [
+     "sub_out",
      "goal"
     ]
    }
@@ -24202,7 +24205,9 @@
     "puntos": null,
     "rival": 48,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -26160,11 +26165,20 @@
     "rival": 5,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 13,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-20",
-  "partidos": 4
+  "dia": "2026-10-23",
+  "partidos": 2
  },
  "64458": {
   "nombre": "Pablo Campos",
@@ -32992,13 +33006,6 @@
     "eventos": [
      "yellow"
     ]
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33579,8 +33586,10 @@
     "jornada": 10,
     "puntos": null,
     "rival": 48,
-    "como": "inicio",
-    "eventos": []
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -33687,6 +33696,7 @@
     "rival": 48,
     "como": "inicio",
     "eventos": [
+     "sub_out",
      "assist"
     ]
    }
@@ -33816,7 +33826,9 @@
     "puntos": null,
     "rival": 48,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -37610,7 +37622,9 @@
     "puntos": null,
     "rival": 13,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
