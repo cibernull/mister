@@ -228,6 +228,13 @@
   "equipo": "Los tocahuevos C.F ( juanito)"
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-10-23",
+  "id": "70923",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-22",
   "id": "217",

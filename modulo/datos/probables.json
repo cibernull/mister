@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-23T09:38:18.711Z",
+ "cuando": "2026-10-23T12:08:19.277Z",
  "fuente": "futbolfantasy.com",
  "leidos": 512,
  "jugadores": {
@@ -106,7 +106,7 @@
    "min": 79
   },
   "361": {
-   "prob": 60,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 545
@@ -148,7 +148,7 @@
    "min": 602
   },
   "561": {
-   "prob": 70,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 590
@@ -544,7 +544,7 @@
    "min": 490
   },
   "15653": {
-   "prob": 80,
+   "prob": 60,
    "sancionado": 0,
    "fuera": 0,
    "min": 560
@@ -718,7 +718,7 @@
    "min": 273
   },
   "22502": {
-   "prob": 70,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 526
@@ -1144,7 +1144,7 @@
    "min": 546
   },
   "35434": {
-   "prob": 60,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 493
@@ -1294,7 +1294,7 @@
    "min": 305
   },
   "51135": {
-   "prob": 70,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 405
@@ -1366,7 +1366,7 @@
    "min": 583
   },
   "53107": {
-   "prob": 50,
+   "prob": 90,
    "sancionado": 0,
    "fuera": 0,
    "min": 426
@@ -1468,7 +1468,7 @@
    "min": 420
   },
   "55743": {
-   "prob": 50,
+   "prob": 0,
    "sancionado": 0,
    "fuera": 0,
    "min": 423
@@ -1978,7 +1978,7 @@
    "min": 0
   },
   "64459": {
-   "prob": 70,
+   "prob": 80,
    "sancionado": 0,
    "fuera": 0,
    "min": 665
@@ -2218,7 +2218,7 @@
    "min": 729
   },
   "68676": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 548
@@ -2644,7 +2644,7 @@
    "min": 6
   },
   "71530": {
-   "prob": 50,
+   "prob": 70,
    "sancionado": 0,
    "fuera": 0,
    "min": 317
@@ -2830,7 +2830,7 @@
    "min": 190
   },
   "3848780": {
-   "prob": 40,
+   "prob": 30,
    "sancionado": 0,
    "fuera": 0,
    "min": 277
@@ -2866,7 +2866,7 @@
    "min": 14
   },
   "4836153": {
-   "prob": 70,
+   "prob": 50,
    "sancionado": 0,
    "fuera": 0,
    "min": 294
