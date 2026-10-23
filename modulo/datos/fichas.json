@@ -21426,13 +21426,6 @@
      "sub_in",
      "goal"
     ]
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23648,7 +23641,7 @@
  "60927": {
   "nombre": "Adrián Niño",
   "posicion": 4,
-  "goles": 3,
+  "goles": 4,
   "tarjetas": 0,
   "mediaCasa": 7.3,
   "mediaFuera": 6.5,
@@ -23710,7 +23703,9 @@
     "puntos": null,
     "rival": 48,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "goal"
+    ]
    }
   ],
   "asistencias": 0,
@@ -33691,10 +33686,12 @@
     "puntos": null,
     "rival": 48,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "assist"
+    ]
    }
   ],
-  "asistencias": 0,
+  "asistencias": 1,
   "dia": "2026-10-23",
   "partidos": 4
  },
