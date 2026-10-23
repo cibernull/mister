@@ -2885,11 +2885,18 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": null,
+    "rival": 16,
+    "como": "no jugó",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-18",
-  "partidos": 5
+  "dia": "2026-10-23",
+  "partidos": 2
  },
  "1762": {
   "nombre": "Álex Berenguer",
@@ -9832,6 +9839,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -10679,6 +10693,13 @@
     "puntos": null,
     "rival": 5,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 13,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -12211,6 +12232,13 @@
     "puntos": null,
     "rival": 16,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -16967,6 +16995,13 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -18684,7 +18719,7 @@
   "mediaCasa": 3.8,
   "mediaFuera": 3,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 7,
   "suplencias": 1,
   "jornadas": [
@@ -21377,6 +21412,13 @@
      "sub_in",
      "goal"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 13,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -23597,7 +23639,7 @@
   "mediaCasa": 7.3,
   "mediaFuera": 6.5,
   "edad": 22,
-  "titular": true,
+  "titular": null,
   "titularidades": 1,
   "suplencias": 4,
   "jornadas": [
@@ -24074,7 +24116,7 @@
   "mediaCasa": 2,
   "mediaFuera": 0,
   "edad": 20,
-  "titular": true,
+  "titular": null,
   "titularidades": 0,
   "suplencias": 2,
   "jornadas": [
@@ -24138,6 +24180,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -29296,8 +29345,8 @@
    }
   ],
   "asistencias": 3,
-  "dia": "2026-10-17",
-  "partidos": 5
+  "dia": "2026-10-23",
+  "partidos": 4
  },
  "68640": {
   "nombre": "Alex Freeman",
@@ -32927,6 +32976,13 @@
     "eventos": [
      "yellow"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33013,6 +33069,13 @@
     "rival": 16,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33097,6 +33160,13 @@
     "puntos": null,
     "rival": 16,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -33296,6 +33366,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33481,6 +33558,13 @@
     "rival": 16,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33495,7 +33579,7 @@
   "mediaCasa": 1.5,
   "mediaFuera": 1.3,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 0,
   "suplencias": 8,
   "jornadas": [
@@ -33580,6 +33664,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33618,7 +33709,7 @@
   "mediaCasa": 2.8,
   "mediaFuera": 3,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 3,
   "jornadas": [
@@ -33875,7 +33966,7 @@
   "mediaCasa": 2.8,
   "mediaFuera": 2.5,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 9,
   "suplencias": 0,
   "jornadas": [
@@ -37408,7 +37499,7 @@
   "mediaCasa": 4,
   "mediaFuera": 2.5,
   "edad": 25,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 2,
   "jornadas": [
@@ -41011,6 +41102,13 @@
     "rival": 16,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 48,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -41260,6 +41358,13 @@
     "puntos": null,
     "rival": 5,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 13,
+    "como": "inicio",
     "eventos": []
    }
   ],

@@ -1,14 +1,8 @@
 {
- "cuando": "2026-10-23T18:38:25.087Z",
+ "cuando": "2026-10-23T19:08:11.581Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "23/10",
-   "titulo": "Alineaciones confirmadas del Alavés - Málaga",
-   "url": "https://www.futbolfantasy.com/partidos/22516-alaves-malaga",
-   "categoria": "rueda de prensa"
-  },
   {
    "fecha": "23/10",
    "titulo": "Alineaciones probables jornada 10 de LaLiga en Youtube: FORMATO EXPRESS",
@@ -41,7 +35,25 @@
   },
   {
    "fecha": "23/10",
-   "titulo": "Quique Sánchez Flores analiza la mala racha del Alavés y habla de Ángel y Novoa",
+   "titulo": "Sigue en directo el Alavés - Málaga",
+   "url": "https://www.futbolfantasy.com/partidos/22516-alaves-malaga",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Rioja repite en la convocatoria del Valencia con Copete, Sadiq y Foulquier fuera",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153408-luis-rioja-repite-en-la-convocatoria-del-valencia-con-copete-sadiq-foulquier-diego-lopez-cano",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Funes analiza las bajas del Málaga y destaca el buen momento de Adrián Niño",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153407-juanfran-funes-analiza-bajas-malaga-destaca-buen-momento-adrian-nino",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Quique analiza la mala racha del Alavés y habla de Ángel Pérez y Novoa",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153406-quique-sanchez-flores-analiza-mala-racha-alaves-habla-angel-novoa",
    "categoria": "rueda de prensa"
   },
@@ -469,18 +481,6 @@
    "fecha": "22/10",
    "titulo": "Fede Redondo siente el aliento de Bigas y Lomónaco",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153335-fede-redondo-siente-el-aliento-de-bigas-y-lomonaco",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Funes medita dos novedades en el once de Mendizorroza",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153334-funes-medita-dos-novedades-en-el-once-de-mendizorroza",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "MuchoDeporte apuesta por la segunda titularidad de Vargas",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153333-muchodeporte-apuesta-por-la-segunda-titularidad-de-vargas",
    "categoria": "análisis"
   }
  ]
