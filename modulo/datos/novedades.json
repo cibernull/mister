@@ -379,6 +379,27 @@
   "entra": false
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-10-23",
+  "id": "35922",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-23",
+  "id": "70925",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-23",
+  "id": "5404997",
+  "estado": "other",
+  "equipo": "Legalize F.C (Victor)"
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-22",
   "id": "217",
