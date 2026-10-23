@@ -1,12 +1,12 @@
 {
- "cuando": "2026-10-23T09:08:21.774Z",
+ "cuando": "2026-10-23T09:38:19.591Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "23/10",
-   "titulo": "Bellerín no se ejercita y Facundo Bernal abandona la sesión con molestias",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153363-facundo-bernal-abandona-la-sesion-con-molestias",
+   "titulo": "Kang-In entrena con normalidad en una sesión con tres bajas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153364-kang-in-entrena-con-normalidad-en-una-sesion-con-tres-bajas",
    "categoria": "entrenamiento"
   },
   {
@@ -38,6 +38,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Media plantilla gestiona cargas en Lezama mientras Djaló vuelve al grupo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153365-media-plantilla-gestiona-cargas-en-lezama-mientras-djalo-vuelve-al-grupo",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Bellerín no se ejercita y Facundo Bernal abandona la sesión con molestias",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153363-facundo-bernal-abandona-la-sesion-con-molestias",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "23/10",
@@ -470,18 +482,6 @@
    "titulo": "El Barcelona descansa este jueves pendiente de Koundé, que ha acudido a la Ciutat Esportiva",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153290-el-barcelona-descansa-este-jueves-pendiente-de-kounde-que-ha-acudido-a-la-ciutat-esportiva",
    "categoria": "equipo"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Murillo regresa a los entrenamientos y hace parte de la sesión",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153288-murillo-regresa-a-los-entrenamientos-y-hace-parte-de-la-sesion",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Amatucci atiende a la Voz de Galicia: adaptación, estado físico, demarcación, Aubameyang, Quagliata e Hidalgo",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153287-amatucci-atiende-a-la-voz-de-galicia-adaptacion-estado-fisico-demarcacion-aubameyang-quagliat",
-   "categoria": "rueda de prensa"
   }
  ]
 }

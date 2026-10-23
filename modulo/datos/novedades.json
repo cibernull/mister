@@ -200,6 +200,34 @@
   "equipo": null
  },
  {
+  "tipo": "lesion",
+  "dia": "2026-10-23",
+  "id": "22595",
+  "estado": "other",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-23",
+  "id": "51060",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-23",
+  "id": "71003",
+  "estado": "injury",
+  "equipo": null
+ },
+ {
+  "tipo": "lesion",
+  "dia": "2026-10-23",
+  "id": "71511",
+  "estado": "other",
+  "equipo": "Los tocahuevos C.F ( juanito)"
+ },
+ {
   "tipo": "mercado",
   "dia": "2026-10-22",
   "id": "217",
