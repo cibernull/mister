@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-23T08:38:19.978Z",
+ "cuando": "2026-10-23T09:08:21.774Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "23/10",
+   "titulo": "Bellerín no se ejercita y Facundo Bernal abandona la sesión con molestias",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153363-facundo-bernal-abandona-la-sesion-con-molestias",
+   "categoria": "entrenamiento"
+  },
   {
    "fecha": "23/10",
    "titulo": "Alineaciones probables jornada 10 de LaLiga en Youtube: FORMATO EXPRESS",
@@ -32,6 +38,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Stassin sigue al margen por segundo día consecutivo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153362-stassin-sigue-al-margen-por-segundo-dia-consecutivo",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Mario Soriano atiende a El Ideal Gallego: Pasado atlético, demarcación, polivalencia y Aubameyang",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153361-mario-soriano-atiende-a-el-ideal-gallego-pasado-atletico-demarcacion-polivalencia-y-aubameyan",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "23/10",
@@ -464,24 +482,6 @@
    "titulo": "Amatucci atiende a la Voz de Galicia: adaptación, estado físico, demarcación, Aubameyang, Quagliata e Hidalgo",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153287-amatucci-atiende-a-la-voz-de-galicia-adaptacion-estado-fisico-demarcacion-aubameyang-quagliat",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "La vuelta al cole de Valentin Rosier",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153286-la-vuelta-al-cole-de-valentin-rosier",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Bernal cumplirá en Copa uno de los cuatro partidos de sanción",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153285-bernal-cumplira-en-copa-uno-de-los-cuatro-partidos-de-sancion",
-   "categoria": "sanción"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Pellegrini tiene motivos para no rotar contra el Celta",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153284-pellegrini-tiene-motivos-para-no-rotar-contra-el-celta",
-   "categoria": "análisis"
   }
  ]
 }
