@@ -1403,6 +1403,16 @@
  ],
  "movimientos": [
   {
+   "id": "20449",
+   "nombre": "Fer Niño",
+   "de": "Saiyans FC (Fran)",
+   "a": null,
+   "importe": 8564450,
+   "tipo": "normal",
+   "fecha": "2026-10-23 02:31:24",
+   "pos": 4
+  },
+  {
    "id": "28619",
    "nombre": "Iván Balliu",
    "de": null,
@@ -11565,6 +11575,14 @@
   "Saiyans FC (Fran)": {
    "movimientos": [
     {
+     "j": "Fer Niño",
+     "id": "20449",
+     "tipo": "venta",
+     "importe": 8564450,
+     "fecha": "2026-10-23",
+     "op": "normal"
+    },
+    {
      "j": "Isco",
      "id": "340",
      "tipo": "compra",
@@ -12547,8 +12565,8 @@
     "20449": {
      "nombre": "Fer Niño",
      "compras": 8500000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 8564450,
+     "ops": 2
     },
     "22502": {
      "nombre": "Alex Baena",

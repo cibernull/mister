@@ -9622,6 +9622,24 @@
    "media": 2,
    "racha": "3,1,1,1,4",
    "otrasPujas": []
+  },
+  {
+   "idTransfer": 555245535,
+   "idJugador": "20449",
+   "nombre": "Fer Niño",
+   "de": "Saiyans FC (Fran)",
+   "a": "Mister",
+   "idUcDe": 12493752,
+   "idUcA": 0,
+   "importe": 8564450,
+   "tipo": "normal",
+   "cuando": "2026-10-23 02:31:24",
+   "valor": 8315000,
+   "posicion": 4,
+   "puntos": 52,
+   "media": 5.8,
+   "racha": "2,9,17,2,2",
+   "otrasPujas": []
   }
  ],
  "salidas": [
