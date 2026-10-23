@@ -3848,8 +3848,8 @@
   "semana": -18000,
   "sem7": 202000,
   "mes": 3676000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 10002000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -6537,8 +6537,8 @@
   "semana": -84000,
   "sem7": -640000,
   "mes": -2425000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 11374000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -14555,8 +14555,8 @@
   "semana": 126000,
   "sem7": 698000,
   "mes": 2859000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 7690000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -20750,8 +20750,8 @@
   "semana": -3000,
   "sem7": 16000,
   "mes": -17000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1037000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -21034,8 +21034,8 @@
   "semana": -5000,
   "sem7": -191000,
   "mes": -784000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 823000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -24990,8 +24990,8 @@
   "semana": 73000,
   "sem7": 412000,
   "mes": -775000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 9293000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -28339,8 +28339,8 @@
   "semana": -12000,
   "sem7": 87000,
   "mes": 334000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 498000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -31865,8 +31865,8 @@
   "semana": -13000,
   "sem7": -35000,
   "mes": -1991000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 2019000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -40450,6 +40450,103 @@
   "d": 0
  },
  {
+  "id": "61167",
+  "nombre": "Adam Aznou",
+  "valor": 166000,
+  "puntos": 4,
+  "media": 2,
+  "partidos": 2,
+  "semana": -20000,
+  "sem7": 6000,
+  "mes": -31000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 2,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   2,
+   2
+  ],
+  "eq": 13,
+  "riv": 48,
+  "casa": 0,
+  "gol": 0,
+  "tar": 1,
+  "mc": 2,
+  "mf": 0,
+  "tit": 0,
+  "sup": 2,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [
+   [
+    1,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    8,
+    2,
+    8,
+    0,
+    "i62,y89"
+   ],
+   [
+    9,
+    2,
+    16,
+    0,
+    "i46"
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "27869",
   "nombre": "Juan Berrocal",
   "valor": 166000,
@@ -40548,103 +40645,6 @@
     16,
     0,
     ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "61167",
-  "nombre": "Adam Aznou",
-  "valor": 166000,
-  "puntos": 4,
-  "media": 2,
-  "partidos": 2,
-  "semana": -20000,
-  "sem7": 6000,
-  "mes": -31000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 2,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   2,
-   2
-  ],
-  "eq": 13,
-  "riv": 48,
-  "casa": 0,
-  "gol": 0,
-  "tar": 1,
-  "mc": 2,
-  "mf": 0,
-  "tit": 0,
-  "sup": 2,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [
-   [
-    1,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    12,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    8,
-    2,
-    8,
-    0,
-    "i62,y89"
-   ],
-   [
-    9,
-    2,
-    16,
-    0,
-    "i46"
    ]
   ],
   "p": 0,
@@ -41777,8 +41777,8 @@
   "semana": 35000,
   "sem7": 214000,
   "mes": 925000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1341000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -42658,8 +42658,8 @@
   "semana": 20000,
   "sem7": 102000,
   "mes": -289000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 263000,
   "ced": 0,
   "pos": 4,
   "est": null,
@@ -44819,96 +44819,6 @@
   "d": 0
  },
  {
-  "id": "59089",
-  "nombre": "Alex Padilla",
-  "valor": 189000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 26000,
-  "sem7": 29000,
-  "mes": 29000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1,
-  "riv": 9,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    19,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 1
- },
- {
   "id": "70952",
   "nombre": "Germán Parreño",
   "valor": 189000,
@@ -45011,6 +44921,96 @@
   ],
   "p": 0,
   "d": 0
+ },
+ {
+  "id": "59089",
+  "nombre": "Alex Padilla",
+  "valor": 189000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 26000,
+  "sem7": 29000,
+  "mes": 29000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 1,
+  "riv": 9,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    19,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 1
  },
  {
   "id": "1684",
@@ -45158,8 +45158,8 @@
   "semana": -1000,
   "sem7": 22000,
   "mes": 22000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 182000,
   "ced": 0,
   "pos": 2,
   "est": "injury",
@@ -47000,46 +47000,6 @@
   "d": 0
  },
  {
-  "id": "58383",
-  "nombre": "Christantus Uche",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -46000,
-  "mes": -1634000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 9,
-  "riv": 1,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "27422",
   "nombre": "Cristian Rivero",
   "valor": 160000,
@@ -47144,6 +47104,46 @@
   "d": 0
  },
  {
+  "id": "58383",
+  "nombre": "Christantus Uche",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -46000,
+  "mes": -1634000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 4,
+  "est": "injury",
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 9,
+  "riv": 1,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "67870",
   "nombre": "Adam Boayar",
   "valor": 160000,
@@ -47205,103 +47205,6 @@
     9,
     null,
     20,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "70496",
-  "nombre": "Alassane Diatta",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -45000,
-  "sem7": -44000,
-  "mes": -11000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 3,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 20,
-  "riv": 19,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 21,
-  "js": [
-   [
-    1,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    4,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    12,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    23,
     0,
     ""
    ]
@@ -48732,15 +48635,15 @@
   "d": 0
  },
  {
-  "id": "71012",
-  "nombre": "Carlos López",
+  "id": "27855",
+  "nombre": "Diego Conde",
   "valor": 160000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
-  "semana": 0,
-  "sem7": 0,
-  "mes": -22000,
+  "semana": -25000,
+  "sem7": -19000,
+  "mes": 0,
   "mk": 0,
   "pv": null,
   "ced": 0,
@@ -48755,8 +48658,8 @@
    null,
    null
   ],
-  "eq": 13,
-  "riv": 48,
+  "eq": 4,
+  "riv": 5,
   "casa": 0,
   "gol": 0,
   "tar": 0,
@@ -48766,68 +48669,47 @@
   "sup": 0,
   "once": null,
   "asis": 0,
-  "edad": 21,
+  "edad": 27,
   "js": [
    [
     1,
     null,
-    2,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    15,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    12,
+    19,
     0,
     ""
    ],
    [
     5,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    6,
     null,
     20,
     0,
     ""
    ],
    [
+    6,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
     7,
     null,
-    9,
+    6,
     0,
     ""
    ],
    [
     8,
     null,
-    8,
+    50,
     0,
     ""
    ],
    [
     9,
     null,
-    16,
+    3,
     0,
     ""
    ]
@@ -48940,193 +48822,6 @@
   "d": 0
  },
  {
-  "id": "78393",
-  "nombre": "Altay Bayındır",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 0,
-  "sem7": -23000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 5,
-  "riv": 4,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 28,
-  "js": [
-   [
-    1,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    48,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "27855",
-  "nombre": "Diego Conde",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -25000,
-  "sem7": -19000,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 4,
-  "riv": 5,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 27,
-  "js": [
-   [
-    1,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    6,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    3,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "59064",
   "nombre": "Jiri Letacek",
   "valor": 160000,
@@ -49223,6 +48918,214 @@
     9,
     null,
     14,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "71012",
+  "nombre": "Carlos López",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": 0,
+  "mes": -22000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 13,
+  "riv": 48,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    5,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    8,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    16,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "78393",
+  "nombre": "Altay Bayındır",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 0,
+  "sem7": -23000,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 5,
+  "riv": 4,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 28,
+  "js": [
+   [
+    1,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    48,
     0,
     ""
    ]
@@ -49674,6 +49577,103 @@
   "d": 0
  },
  {
+  "id": "70496",
+  "nombre": "Alassane Diatta",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -45000,
+  "sem7": -44000,
+  "mes": -11000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 20,
+  "riv": 19,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 21,
+  "js": [
+   [
+    1,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    6,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    4,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    15,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    23,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "71791",
   "nombre": "Pedro Felipe",
   "valor": 160000,
@@ -49683,8 +49683,8 @@
   "semana": -45000,
   "sem7": -36000,
   "mes": -2000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 160000,
   "ced": 0,
   "pos": 2,
   "est": "doubt",
