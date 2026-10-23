@@ -1,14 +1,8 @@
 {
- "cuando": "2026-10-23T20:38:05.985Z",
+ "cuando": "2026-10-23T21:08:26.160Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
-  {
-   "fecha": "23/10",
-   "titulo": "Sigue en directo el Alavés - Málaga",
-   "url": "https://www.futbolfantasy.com/partidos/22516-alaves-malaga",
-   "categoria": "análisis"
-  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 10 actualizadas",
@@ -32,6 +26,36 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Jornada 10: Alavés 1-1 Málaga. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22516-alaves-malaga",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Marc Aguado, única baja en el entrenamiento del Elche",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153416-marc-aguado-unica-baja-en-el-entrenamiento-del-elche",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "El Deportivo completa la última sesión con cuatro bajas antes de viajar a Madrid",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153415-el-deportivo-completa-la-ultima-sesion-con-cuatro-bajas-antes-de-viajar-a-madrid",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "Las peñas del Rayo conceden una tregua y rebajan el riesgo de otra suspensión en Vallecas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153414-las-penas-del-rayo-conceden-una-tregua-y-rebajan-el-riesgo-de-otra-suspension-en-vallecas",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "23/10",
+   "titulo": "De Frutos repite con el grupo; Ratiu y Nteka siguen fuera",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153413-de-frutos-repite-con-el-grupo-ratiu-y-nteka-siguen-fuera",
+   "categoria": "entrenamiento"
   },
   {
    "fecha": "23/10",
@@ -458,30 +482,6 @@
    "titulo": "Giráldez celebra la remontada y habla de Hugo Álvarez, Aspas, Burcio, Swedberg y el Celtic",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153341-giraldez-celebra-la-remontada-y-habla-de-hugo-alvarez-aspas-burcio-swedberg-y-el-celtic",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Ave, Claudio: Los que van a rotar te saludan",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153340-ave-claudio-los-que-van-a-rotar-te-saludan",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "La Real desata el Ragnarok en Lillestrøm",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153339-la-real-desata-el-rangarok-en-lillestrom",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "As gaitas galegas atronan en Escocia",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153338-as-gaitas-galegas-atronan-en-escocia",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "22/10",
-   "titulo": "Europa League: Lilleström 0-6 Real Sociedad. Estadísticas y puntos fantasy",
-   "url": "https://www.futbolfantasy.com/partidos/24303-lillestrom-real-sociedad",
-   "categoria": "partido"
   }
  ]
 }

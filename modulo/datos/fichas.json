@@ -9839,13 +9839,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -10693,13 +10686,6 @@
     "puntos": null,
     "rival": 5,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -14390,13 +14376,6 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -16995,13 +16974,6 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -18715,7 +18687,7 @@
   "nombre": "Carlos Dotor",
   "posicion": 3,
   "goles": 1,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 3.8,
   "mediaFuera": 3,
   "edad": 25,
@@ -18799,18 +18771,11 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-23",
-  "partidos": 4
+  "partidos": 5
  },
  "55009": {
   "nombre": "Fermín López",
@@ -21419,20 +21384,11 @@
      "sub_in",
      "goal"
     ]
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 13,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-23",
-  "partidos": 1
+  "partidos": 2
  },
  "59371": {
   "nombre": "Luka Sučić",
@@ -23699,16 +23655,6 @@
      "sub_out",
      "goal"
     ]
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": [
-     "sub_out",
-     "goal"
-    ]
    }
   ],
   "asistencias": 0,
@@ -24199,20 +24145,11 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-23",
-  "partidos": 2
+  "partidos": 3
  },
  "61297": {
   "nombre": "Luken Beitia",
@@ -26165,20 +26102,11 @@
     "rival": 5,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 13,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-23",
-  "partidos": 2
+  "partidos": 3
  },
  "64458": {
   "nombre": "Pablo Campos",
@@ -33092,13 +33020,6 @@
     "rival": 16,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33183,13 +33104,6 @@
     "puntos": null,
     "rival": 16,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -33389,13 +33303,6 @@
     "eventos": [
      "sub_out"
     ]
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33581,20 +33488,11 @@
     "rival": 16,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-23",
-  "partidos": 2
+  "partidos": 3
  },
  "71002": {
   "nombre": "Ramón Enríquez",
@@ -33688,16 +33586,6 @@
     "como": "banquillo",
     "eventos": [
      "sub_in"
-    ]
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": [
-     "sub_out",
-     "assist"
     ]
    }
   ],
@@ -33819,15 +33707,6 @@
     "como": "banquillo",
     "eventos": [
      "sub_in"
-    ]
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
     ]
    }
   ],
@@ -34067,13 +33946,6 @@
     "jornada": 9,
     "puntos": 0,
     "rival": 16,
-    "como": "inicio",
-    "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 48,
     "como": "inicio",
     "eventos": []
    }
@@ -37616,15 +37488,6 @@
     "rival": 5,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
-    "eventos": [
-     "sub_out"
-    ]
    }
   ],
   "asistencias": 0,
@@ -41411,13 +41274,6 @@
     "puntos": null,
     "rival": 5,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 13,
-    "como": "inicio",
     "eventos": []
    }
   ],
