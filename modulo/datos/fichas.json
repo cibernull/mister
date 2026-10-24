@@ -12245,7 +12245,7 @@
   "posicion": 4,
   "goles": 1,
   "tarjetas": 0,
-  "mediaCasa": 4.8,
+  "mediaCasa": 4.5,
   "mediaFuera": 0.5,
   "edad": 27,
   "titular": null,
@@ -12306,7 +12306,7 @@
    },
    {
     "jornada": 10,
-    "puntos": 4,
+    "puntos": 3,
     "rival": 8,
     "como": "inicio",
     "eventos": [
@@ -19617,11 +19617,18 @@
     "rival": 23,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 19,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-19",
-  "partidos": 4
+  "dia": "2026-10-24",
+  "partidos": 3
  },
  "54900": {
   "nombre": "Carlos Dotor",
@@ -23363,6 +23370,15 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -25114,11 +25130,18 @@
      "yellow",
      "sub_out"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 19,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-19",
-  "partidos": 5
+  "dia": "2026-10-24",
+  "partidos": 3
  },
  "61093": {
   "nombre": "Maroan Sannadi",
@@ -28498,11 +28521,18 @@
     "rival": 23,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 19,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
-  "dia": "2026-10-19",
-  "partidos": 5
+  "dia": "2026-10-24",
+  "partidos": 4
  },
  "65475": {
   "nombre": "Asier Osambela",
@@ -32706,7 +32736,7 @@
   "posicion": 3,
   "goles": 1,
   "tarjetas": 0,
-  "mediaCasa": 1.4,
+  "mediaCasa": 1.6,
   "mediaFuera": 5.5,
   "edad": 23,
   "titular": null,
@@ -32790,7 +32820,7 @@
    },
    {
     "jornada": 10,
-    "puntos": 1,
+    "puntos": 2,
     "rival": 8,
     "como": "banquillo",
     "eventos": [
@@ -35960,6 +35990,13 @@
     "eventos": [
      "sub_out"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 1,
@@ -38526,6 +38563,13 @@
     "rival": 23,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 19,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -38627,12 +38671,12 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 1,
-  "mediaCasa": 1,
+  "mediaCasa": 1.3,
   "mediaFuera": -2,
   "edad": 22,
   "titular": null,
   "titularidades": 2,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -38689,10 +38733,19 @@
     "rival": 50,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": 2,
+    "rival": 8,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-21",
+  "dia": "2026-10-24",
   "partidos": 2
  },
  "71792": {
@@ -39644,7 +39697,7 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 3,
-  "mediaFuera": 2.7,
+  "mediaFuera": 3.3,
   "edad": 26,
   "titular": null,
   "titularidades": 3,
@@ -39721,7 +39774,7 @@
    },
    {
     "jornada": 10,
-    "puntos": 4,
+    "puntos": 6,
     "rival": 1490,
     "como": "inicio",
     "eventos": [
@@ -41915,7 +41968,7 @@
   "posicion": 2,
   "goles": 1,
   "tarjetas": 1,
-  "mediaCasa": 5.3,
+  "mediaCasa": 5.7,
   "mediaFuera": 0.3,
   "edad": 21,
   "titular": null,
@@ -41991,7 +42044,7 @@
    },
    {
     "jornada": 10,
-    "puntos": 10,
+    "puntos": 11,
     "rival": 8,
     "como": "inicio",
     "eventos": [
