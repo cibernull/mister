@@ -4655,7 +4655,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 2.5,
   "edad": 36,
-  "titular": true,
+  "titular": null,
   "titularidades": 8,
   "suplencias": 0,
   "jornadas": [
@@ -16978,8 +16978,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-20",
-  "partidos": 4
+  "dia": "2026-10-24",
+  "partidos": 3
  },
  "48210": {
   "nombre": "Jonathan Dubasin",
@@ -33559,7 +33559,7 @@
   "mediaCasa": 3.5,
   "mediaFuera": 2,
   "edad": 21,
-  "titular": null,
+  "titular": true,
   "titularidades": 2,
   "suplencias": 2,
   "jornadas": [
@@ -33648,7 +33648,7 @@
   "mediaCasa": 2.5,
   "mediaFuera": 3,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 1,
   "jornadas": [
@@ -33741,7 +33741,7 @@
   "mediaCasa": 5.7,
   "mediaFuera": 3,
   "edad": 30,
-  "titular": null,
+  "titular": true,
   "titularidades": 2,
   "suplencias": 3,
   "jornadas": [
@@ -33868,7 +33868,7 @@
   "mediaCasa": 3.5,
   "mediaFuera": 2.3,
   "edad": 21,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
@@ -34196,7 +34196,7 @@
   "mediaCasa": 2.7,
   "mediaFuera": 2.5,
   "edad": 29,
-  "titular": null,
+  "titular": true,
   "titularidades": 2,
   "suplencias": 3,
   "jornadas": [
@@ -42140,13 +42140,6 @@
     "eventos": [
      "sub_in"
     ]
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 20,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
