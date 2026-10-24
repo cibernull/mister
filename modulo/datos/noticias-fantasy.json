@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-24T14:07:59.857Z",
+ "cuando": "2026-10-24T14:38:05.101Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "24/10",
-   "titulo": "Alineaciones confirmadas del Racing - Espanyol",
+   "titulo": "Sigue en directo el Racing - Espanyol",
    "url": "https://www.futbolfantasy.com/partidos/22519-racing-espanyol",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -31,6 +31,18 @@
    "fecha": "04/10",
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Samu Castillejo anuncia su retirada como futbolista profesional",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153459-samu-castillejo-anuncia-su-retirada-como-futbolista-profesional",
+   "categoria": "mercado"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "El Elche dinamita Vallecas en plena tregua",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153458-el-elche-dinamita-vallecas-en-plena-tregua",
    "categoria": "análisis"
   },
   {
@@ -470,18 +482,6 @@
    "titulo": "José Alberto habla de Andrés Martín, Canales, Pablo García, la marcha de Puerta, la gestión de la plantilla y el Espanyol",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153384-jose-alberto-habla-de-andres-martin-canales-pablo-garcia-la-marcha-de-puerta-la-gestion-de-la",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Gerard Romero tiene claro el once de Flick para el Clásico",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153383-gerard-romero-tiene-claro-el-once-de-flick-para-el-clasico",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "À Punt apuesta por Rioja y Otorbi como únicas novedades en el once para el derbi",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153382-a-punt-apuesta-por-rioja-y-otorbi-como-unicas-novedades-en-el-once-para-el-derbi",
-   "categoria": "análisis"
   }
  ]
 }

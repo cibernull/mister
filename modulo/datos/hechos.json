@@ -9545,7 +9545,7 @@
    "cuando": "2026-10-21 17:00:12",
    "valor": 5404000,
    "posicion": 3,
-   "puntos": 44,
+   "puntos": 45,
    "media": 4.9,
    "racha": "5,5,2,5,5",
    "otrasPujas": []
@@ -9604,9 +9604,9 @@
    "cuando": "2026-10-22 17:00:13",
    "valor": 452000,
    "posicion": 2,
-   "puntos": 15,
+   "puntos": 16,
    "media": 2,
-   "racha": "3,1,1,1,4",
+   "racha": "1,1,1,4,2",
    "otrasPujas": []
   },
   {
@@ -9622,9 +9622,9 @@
    "cuando": "2026-10-23 02:31:24",
    "valor": 8501000,
    "posicion": 4,
-   "puntos": 56,
-   "media": 5.8,
-   "racha": "2,9,17,2,2",
+   "puntos": 60,
+   "media": 6,
+   "racha": "9,17,2,2,8",
    "otrasPujas": []
   },
   {
@@ -9658,7 +9658,7 @@
    "cuando": "2026-10-23 17:00:12",
    "valor": 5057000,
    "posicion": 3,
-   "puntos": 34,
+   "puntos": 35,
    "media": 4.9,
    "racha": "4,-,2,12,1",
    "otrasPujas": []
@@ -9694,9 +9694,9 @@
    "cuando": "2026-10-23 18:04:35",
    "valor": 2767000,
    "posicion": 1,
-   "puntos": 17,
-   "media": 3.8,
-   "racha": "-,3,3,3,6",
+   "puntos": 20,
+   "media": 4,
+   "racha": "3,3,3,6,5",
    "otrasPujas": []
   },
   {
