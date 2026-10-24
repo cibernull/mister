@@ -1,5 +1,5 @@
 {
- "cuando": "2026-10-24T13:07:59.537Z",
+ "cuando": "2026-10-24T13:38:00.003Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
@@ -32,6 +32,18 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "El Getafe avanza negociaciones con Jadon Sancho",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153454-el-getafe-avanza-negociaciones-con-jadon-sancho",
+   "categoria": "mercado"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Fer Niño se retira de Vallecas con problemas lumbares",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153453-fer-nino-se-retira-de-vallecas-con-problemas-lumbares",
+   "categoria": "lesión"
   },
   {
    "fecha": "24/10",
@@ -470,18 +482,6 @@
    "titulo": "José Alberto cita a todos los disponibles para recibir al Espanyol",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153379-jose-alberto-cita-a-todos-los-disponibles-para-recibir-al-espanyol",
    "categoria": "convocatoria"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Apelación desestima el recurso del Betis y mantiene los cuatro partidos a Facundo Bernal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153378-apelacion-desestima-el-recurso-del-betis-y-mantiene-los-cuatro-partidos-a-facundo-bernal",
-   "categoria": "sanción"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Junior Firpo da un paso más y ya trabaja sobre el césped",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153377-junior-firpo-da-un-paso-mas-y-ya-trabaja-sobre-el-cesped",
-   "categoria": "lesión"
   }
  ]
 }
