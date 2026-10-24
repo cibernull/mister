@@ -1854,6 +1854,11 @@
     "cuando": "2026-10-24T14:15:00.000Z",
     "local": 1490,
     "visitante": 8
+   },
+   {
+    "cuando": "2026-10-24T16:30:00.000Z",
+    "local": 19,
+    "visitante": 20
    }
   ],
   "puntos": 17,
@@ -1888,8 +1893,8 @@
     "id": "68640",
     "nombre": "Alex Freeman",
     "puesto": 2,
-    "puntos": null,
-    "jugo": false,
+    "puntos": 8,
+    "jugo": true,
     "capitan": false
    },
    {
@@ -1954,8 +1959,8 @@
     "id": "11186",
     "nombre": "Dani Raba",
     "puesto": 4,
-    "puntos": 1,
-    "jugo": false,
+    "puntos": 2,
+    "jugo": true,
     "capitan": false
    },
    {
@@ -2003,7 +2008,7 @@
     "nombre": "Sergi Cardona",
     "puesto": 2,
     "puntos": 2,
-    "jugo": false,
+    "jugo": true,
     "capitan": false
    }
   ]
