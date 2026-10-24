@@ -1,12 +1,12 @@
 {
- "cuando": "2026-10-24T18:38:16.887Z",
+ "cuando": "2026-10-24T19:08:00.899Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "24/10",
-   "titulo": "Sigue en directo el Valencia - Villarreal",
-   "url": "https://www.futbolfantasy.com/partidos/22522-valencia-villarreal",
+   "titulo": "Sigue en diredcto el Atlético - Deportivo",
+   "url": "https://www.futbolfantasy.com/partidos/22514-atletico-deportivo",
    "categoria": "análisis"
   },
   {
@@ -35,6 +35,24 @@
   },
   {
    "fecha": "24/10",
+   "titulo": "El Villarreal hurga cruelmente en la eternidad de Mestalla",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153480-el-villarreal-hurga-cruelmente-en-la-eternidad-de-mestalla",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Jornada 10: Valencia 1-2 Villarreal. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22522-valencia-villarreal",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Hidalgo analiza el reto del Atlético, los ajustes tácticos, la portería a cero y la racha del Deportivo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153479-hidalgo-analiza-el-reto-del-atletico-los-ajustes-tacticos-la-porteria-a-cero-y-la-racha-del-d",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "24/10",
    "titulo": "Simeone, sobre la confianza del equipo, el planteamiento y el regreso de Giménez",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153478-simeone-sobre-la-confianza-del-equipo-el-planteamiento-y-el-regreso-de-gimenez",
    "categoria": "rueda de prensa"
@@ -44,12 +62,6 @@
    "titulo": "Elliot es expulsado por doble amarilla por protestar",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153477-elliot-es-expulsado-por-doble-amarilla-por-protestar",
    "categoria": "sanción"
-  },
-  {
-   "fecha": "24/10",
-   "titulo": "Alineaciones confirmadas del Atlético - Deportivo",
-   "url": "https://www.futbolfantasy.com/partidos/22514-atletico-deportivo",
-   "categoria": "rueda de prensa"
   },
   {
    "fecha": "24/10",
@@ -470,18 +482,6 @@
    "titulo": "Quique analiza la mala racha del Alavés y habla de Ángel Pérez y Novoa",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153406-quique-sanchez-flores-analiza-mala-racha-alaves-habla-angel-novoa",
    "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "¡Sigue a las 18:00h en Twitch y Youtube la información fantasy para la jornada 10!",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153404-sigue-a-las-18-00h-en-twitch-y-youtube-la-informacion-fantasy-para-la-jornada-10",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Oskarsson quiere otra tarde de ron",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153403-oskarsson-quiere-otra-tarde-de-ron",
-   "categoria": "análisis"
   }
  ]
 }
