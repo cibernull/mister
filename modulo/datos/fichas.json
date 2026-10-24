@@ -41424,6 +41424,13 @@
     "eventos": [
      "yellow"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 14,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 2,
@@ -42330,6 +42337,13 @@
     "rival": 9,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 23,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -42573,6 +42587,13 @@
     "jornada": 9,
     "puntos": 3,
     "rival": 9,
+    "como": "inicio",
+    "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 23,
     "como": "inicio",
     "eventos": []
    }
