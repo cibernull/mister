@@ -10848,7 +10848,7 @@
   "nombre": "Urko González",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 2,
+  "tarjetas": 3,
   "mediaCasa": 2.8,
   "mediaFuera": 2,
   "edad": 25,
@@ -10934,11 +10934,21 @@
     "rival": 2,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 1490,
+    "como": "banquillo",
+    "eventos": [
+     "yellow",
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-24",
-  "partidos": 5
+  "partidos": 4
  },
  "23369": {
   "nombre": "Juan Foyth",
@@ -12270,7 +12280,9 @@
     "puntos": null,
     "rival": 8,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -23234,7 +23246,7 @@
   "mediaCasa": 4,
   "mediaFuera": 4.8,
   "edad": 19,
-  "titular": null,
+  "titular": true,
   "titularidades": 2,
   "suplencias": 6,
   "jornadas": [
@@ -24225,7 +24237,7 @@
   "nombre": "Pablo Ramón",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 3,
+  "tarjetas": 4,
   "mediaCasa": 3,
   "mediaFuera": 2.8,
   "edad": 25,
@@ -24311,7 +24323,10 @@
     "puntos": null,
     "rival": 8,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow",
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -27474,11 +27489,20 @@
     "rival": 2,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 1490,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-23",
-  "partidos": 4
+  "dia": "2026-10-24",
+  "partidos": 3
  },
  "64491": {
   "nombre": "Valentín Gómez",
@@ -32727,13 +32751,6 @@
     "rival": 50,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 8,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -33178,10 +33195,12 @@
     "puntos": null,
     "rival": 8,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "assist"
+    ]
    }
   ],
-  "asistencias": 0,
+  "asistencias": 1,
   "dia": "2026-10-24",
   "partidos": 4
  },
@@ -40682,7 +40701,9 @@
     "puntos": null,
     "rival": 8,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -41822,7 +41843,7 @@
  "4836184": {
   "nombre": "Jeanuël Belocian",
   "posicion": 2,
-  "goles": 0,
+  "goles": 1,
   "tarjetas": 1,
   "mediaCasa": 3,
   "mediaFuera": 0.3,
@@ -41903,7 +41924,9 @@
     "puntos": null,
     "rival": 8,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "goal"
+    ]
    }
   ],
   "asistencias": 0,

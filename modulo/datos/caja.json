@@ -1,6 +1,14 @@
 {
- "saldo": -902909,
+ "saldo": 6055441,
  "apuntes": [
+  {
+   "cuando": 1792856528,
+   "fecha": "2026-10-24 17:42",
+   "motivo": "Ilaix Moriba a Mister",
+   "tipo": "Venta",
+   "importe": 6958350,
+   "saldo": 6055441
+  },
   {
    "cuando": 1792830403,
    "fecha": "2026-10-24 10:26",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -1391150,
    "saldo": -5150650
-  },
-  {
-   "cuando": 1789875355,
-   "fecha": "2026-09-20 05:35",
-   "motivo": "Rodri Hernández a Neky F.C. (Sergio)",
-   "tipo": "Venta por cláusula",
-   "importe": 21198000,
-   "saldo": -3759500
   }
  ]
 }

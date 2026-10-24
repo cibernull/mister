@@ -1851,7 +1851,7 @@
     "visitante": 23
    }
   ],
-  "puntos": 4,
+  "puntos": 5,
   "puesto": 3,
   "formacion": "1-3-3-4",
   "once": [
@@ -1956,14 +1956,6 @@
    {
     "id": "15109",
     "nombre": "Giovani Lo Celso",
-    "puesto": 3,
-    "puntos": null,
-    "jugo": false,
-    "capitan": false
-   },
-   {
-    "id": "25631",
-    "nombre": "Ilaix Moriba",
     "puesto": 3,
     "puntos": null,
     "jugo": false,

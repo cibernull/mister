@@ -1413,6 +1413,16 @@
  ],
  "movimientos": [
   {
+   "id": "25631",
+   "nombre": "Ilaix Moriba",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 6958350,
+   "tipo": "normal",
+   "fecha": "2026-10-24 17:42:08",
+   "pos": 3
+  },
+  {
    "id": "71623",
    "nombre": "Roger Hinojo",
    "de": "Cacaculopedopis",
@@ -8203,6 +8213,14 @@
      "op": "normal"
     },
     {
+     "j": "Ilaix Moriba",
+     "id": "25631",
+     "tipo": "venta",
+     "importe": 6958350,
+     "fecha": "2026-10-24",
+     "op": "normal"
+    },
+    {
      "j": "Emil Audero",
      "id": "4947929",
      "tipo": "venta",
@@ -9327,8 +9345,8 @@
     "25631": {
      "nombre": "Ilaix Moriba",
      "compras": 10667590,
-     "ventas": 5781300,
-     "ops": 3
+     "ventas": 12739650,
+     "ops": 4
     },
     "25885": {
      "nombre": "Carlos Dominguez",
