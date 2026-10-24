@@ -1,8 +1,14 @@
 {
- "cuando": "2026-10-24T08:38:02.687Z",
+ "cuando": "2026-10-24T09:08:10.810Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
+  {
+   "fecha": "24/10",
+   "titulo": "Stassin y Guridi vuelven al grupo y apuntan al Sevilla-Osasuna",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153423-stassin-y-guridi-vuelven-al-grupo-y-apuntan-al-sevilla-osasuna",
+   "categoria": "entrenamiento"
+  },
   {
    "fecha": "02/09",
    "titulo": "Alineaciones probables para la jornada 10 actualizadas",
@@ -26,6 +32,24 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Nteka y Ratiu, fuera de la lista para recibir al Elche",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153424-nteka-y-ratiu-fuera-de-la-lista-para-recibir-al-elche",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Dela sigue fuera del grupo y Hugo Sotelo trabaja con normalidad",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153422-dela-sigue-fuera-del-grupo-y-hugo-sotelo-trabaja-con-normalidad",
+   "categoria": "entrenamiento"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Rodri, Pedri, Fermín y Joan García hablan antes del Clásico",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153421-rodri-pedri-fermin-y-joan-garcia-hablan-antes-del-clasico",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "24/10",
@@ -457,30 +481,6 @@
    "fecha": "23/10",
    "titulo": "Posibles alineaciones y previa fantasy del Celta - Betis",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153349-posibles-alineaciones-y-previa-fantasy-del-celta-betis",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Posibles alineaciones y previa fantasy del Athletic - Getafe",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153348-posibles-alineaciones-y-previa-fantasy-del-athletic-getafe",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Varios jugadores amenazan con entrar en el once de Matarazzo desde la rotación",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153347-varios-jugadores-amenazan-con-entrar-en-el-once-de-matarazzo-desde-la-rotacion",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Matarazzo habla de Oyarzabal, Guedes, Marrero, Pacheco y Pablo Marín tras la goleada en Noruega",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153346-matarazzo-habla-de-oyarzabal-guedes-marrero-pacheco-y-pablo-marin-tras-la-goleada-en-noruega",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Alineaciones probables y pronósticos de la jornada 10 en LaLiga Fantasy 26-27, por Carrasco",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153345-alineaciones-probables-y-pronosticos-de-la-jornada-10-en-laliga-fantasy-26-27-por-carrasco",
    "categoria": "análisis"
   }
  ]
