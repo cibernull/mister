@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-24T11:37:56.486Z",
+ "cuando": "2026-10-24T12:08:16.485Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "24/10",
-   "titulo": "Alineaciones confirmadas del Rayo - Elche",
+   "titulo": "Sigue en directo el Rayo - Elche",
    "url": "https://www.futbolfantasy.com/partidos/22518-rayo-elche",
-   "categoria": "rueda de prensa"
+   "categoria": "análisis"
   },
   {
    "fecha": "02/09",
@@ -32,6 +32,24 @@
    "titulo": "FútbolFantasy ya es el quinto medio deportivo digital más leído de España",
    "url": "https://www.futbolfantasy.com/laliga/noticias/152148-futbolfantasy-ya-es-el-quinto-medio-deportivo-digital-mas-leido-espana",
    "categoria": "análisis"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Cucho, Junior y Losada, fuera de la convocatoria para viajar a Vigo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153444-cucho-junior-y-losada-fuera-de-la-convocatoria-para-viajar-a-vigo",
+   "categoria": "convocatoria"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Terzic habla de Guruzeta, Sancet, Johaneko, Navarro, Nico Williams, Vivian y Prados antes de recibir al Getafe",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153443-terzic-habla-de-guruzeta-sancet-johaneko-navarro-nico-williams-vivian-y-prados-antes-de-recib",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Lista de Giráldez sin los lesionados para recibir al Betis",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153442-lista-de-giraldez-sin-los-lesionados-para-recibir-al-betis",
+   "categoria": "convocatoria"
   },
   {
    "fecha": "24/10",
@@ -464,24 +482,6 @@
    "titulo": "Koundé sigue al margen del grupo y Espart trabaja con normalidad",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153369-kounde-sigue-al-margen-del-grupo-y-espart-trabaja-con-normalidad",
    "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Hugo Rincón irrumpe entre bandazos",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153367-hugo-rincon-irrumpe-entre-bandazos",
-   "categoria": "análisis"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Eriksson, única baja antes de recibir al Espanyol",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153368-eriksson-unica-baja-antes-de-recibir-al-espanyol",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "La prensa de Vitoria se resiste a apostar por la suplencia de Toni Martínez",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153366-la-prensa-de-vitoria-se-resiste-a-apostar-por-la-suplencia-de-toni-martinez",
-   "categoria": "análisis"
   }
  ]
 }

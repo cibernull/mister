@@ -3178,6 +3178,13 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 14,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -21824,6 +21831,13 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 23,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -38994,6 +39008,13 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 14,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -39256,6 +39277,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 23,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -39914,6 +39942,13 @@
     "puntos": null,
     "rival": 20,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 14,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -40697,6 +40732,13 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 23,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -41194,6 +41236,13 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 14,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -41301,7 +41350,7 @@
   "mediaCasa": 2.3,
   "mediaFuera": 4.3,
   "edad": 23,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 1,
   "jornadas": [
@@ -42222,7 +42271,7 @@
   "mediaCasa": 3,
   "mediaFuera": 4,
   "edad": 29,
-  "titular": true,
+  "titular": null,
   "titularidades": 4,
   "suplencias": 0,
   "jornadas": [
@@ -42463,7 +42512,7 @@
   "mediaCasa": 2,
   "mediaFuera": 2.3,
   "edad": 26,
-  "titular": true,
+  "titular": null,
   "titularidades": 3,
   "suplencias": 1,
   "jornadas": [
