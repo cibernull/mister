@@ -1413,6 +1413,36 @@
  ],
  "movimientos": [
   {
+   "id": "71623",
+   "nombre": "Roger Hinojo",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 1906880,
+   "tipo": "normal",
+   "fecha": "2026-10-24 17:06:09",
+   "pos": 2
+  },
+  {
+   "id": "30444",
+   "nombre": "Leo Román",
+   "de": "Cacaculopedopis",
+   "a": null,
+   "importe": 6997820,
+   "tipo": "normal",
+   "fecha": "2026-10-24 17:06:01",
+   "pos": 1
+  },
+  {
+   "id": "33896",
+   "nombre": "Ilias Akhomach",
+   "de": null,
+   "a": "Neky F.C. (Sergio)",
+   "importe": 2955000,
+   "tipo": "normal",
+   "fecha": "2026-10-24 17:00:08",
+   "pos": 3
+  },
+  {
    "id": "6065",
    "nombre": "Pere Milla",
    "de": "Niutin FC (Isaac)",
@@ -6697,6 +6727,14 @@
   "Neky F.C. (Sergio)": {
    "movimientos": [
     {
+     "j": "Ilias Akhomach",
+     "id": "33896",
+     "tipo": "compra",
+     "importe": 2955000,
+     "fecha": "2026-10-24",
+     "op": "normal"
+    },
+    {
      "j": "Jonny Otto",
      "id": "118",
      "tipo": "compra",
@@ -7831,6 +7869,12 @@
      "compras": 6777000,
      "ventas": 10117170,
      "ops": 2
+    },
+    "33896": {
+     "nombre": "Ilias Akhomach",
+     "compras": 2955000,
+     "ventas": 0,
+     "ops": 1
     },
     "36046": {
      "nombre": "Gonzalo Villar",
@@ -9603,6 +9647,22 @@
   "Cacaculopedopis": {
    "movimientos": [
     {
+     "j": "Leo Román",
+     "id": "30444",
+     "tipo": "venta",
+     "importe": 6997820,
+     "fecha": "2026-10-24",
+     "op": "normal"
+    },
+    {
+     "j": "Roger Hinojo",
+     "id": "71623",
+     "tipo": "venta",
+     "importe": 1906880,
+     "fecha": "2026-10-24",
+     "op": "normal"
+    },
+    {
      "j": "Iván Martín",
      "id": "27874",
      "tipo": "compra",
@@ -10693,8 +10753,8 @@
     "30444": {
      "nombre": "Leo Román",
      "compras": 8134090,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 6997820,
+     "ops": 2
     },
     "48210": {
      "nombre": "Jonathan Dubasin",
@@ -10933,8 +10993,8 @@
     "71623": {
      "nombre": "Roger Hinojo",
      "compras": 2967240,
-     "ventas": 1681980,
-     "ops": 3
+     "ventas": 3588860,
+     "ops": 4
     },
     "3848780": {
      "nombre": "Johaneko Louis-Jean",

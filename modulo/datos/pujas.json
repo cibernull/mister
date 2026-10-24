@@ -4105,6 +4105,18 @@
     "topeMax": 34532761,
     "exceso": 0
    }
+  ],
+  "555568676": [
+   {
+    "idTransfer": 555568676,
+    "cuando": "2026-10-24 17:00:08",
+    "jugador": "Ilias Akhomach",
+    "equipo": "Neky F.C. (Sergio)",
+    "puja": 2955000,
+    "gana": true,
+    "topeMax": 37201210,
+    "exceso": 0
+   }
   ]
  }
 }

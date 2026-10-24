@@ -192,6 +192,135 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "1719",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "7784",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "11472",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "14691",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "23172",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "23664",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-24",
+  "id": "30444",
+  "de": "Cacaculopedopis",
+  "a": null
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-24",
+  "id": "33896",
+  "de": null,
+  "a": "Neky F.C. (Sergio)"
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "51135",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "56628",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "59089",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "61013",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "61297",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "71006",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "71012",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "71154",
+  "entra": true
+ },
+ {
+  "tipo": "duenio",
+  "dia": "2026-10-24",
+  "id": "71623",
+  "de": "Cacaculopedopis",
+  "a": null
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "71638",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "3845074",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "4733614",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "4836242",
+  "entra": false
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-10-23",
   "id": "11472",
   "entra": true
