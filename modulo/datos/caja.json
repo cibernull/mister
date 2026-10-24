@@ -1,6 +1,14 @@
 {
- "saldo": -1097939,
+ "saldo": -902909,
  "apuntes": [
+  {
+   "cuando": 1792830403,
+   "fecha": "2026-10-24 10:26",
+   "motivo": "Pere Milla a Mister",
+   "tipo": "Venta",
+   "importe": 195030,
+   "saldo": -902909
+  },
   {
    "cuando": 1792810800,
    "fecha": "2026-10-24 05:00",
@@ -472,14 +480,6 @@
    "tipo": "Venta por cláusula",
    "importe": 21198000,
    "saldo": -3759500
-  },
-  {
-   "cuando": 1789873200,
-   "fecha": "2026-09-20 05:00",
-   "motivo": "Raphinha a Mister",
-   "tipo": "Compra",
-   "importe": -28208876,
-   "saldo": -24957500
   }
  ]
 }

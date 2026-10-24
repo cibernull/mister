@@ -1413,6 +1413,16 @@
  ],
  "movimientos": [
   {
+   "id": "6065",
+   "nombre": "Pere Milla",
+   "de": "Niutin FC (Isaac)",
+   "a": null,
+   "importe": 195030,
+   "tipo": "normal",
+   "fecha": "2026-10-24 10:26:43",
+   "pos": 4
+  },
+  {
    "id": "15109",
    "nombre": "Giovani Lo Celso",
    "de": null,
@@ -8141,6 +8151,14 @@
      "op": "normal"
     },
     {
+     "j": "Pere Milla",
+     "id": "6065",
+     "tipo": "venta",
+     "importe": 195030,
+     "fecha": "2026-10-24",
+     "op": "normal"
+    },
+    {
      "j": "Emil Audero",
      "id": "4947929",
      "tipo": "venta",
@@ -9163,8 +9181,8 @@
     "6065": {
      "nombre": "Pere Milla",
      "compras": 528000,
-     "ventas": 0,
-     "ops": 1
+     "ventas": 195030,
+     "ops": 2
     },
     "11186": {
      "nombre": "Dani Raba",
