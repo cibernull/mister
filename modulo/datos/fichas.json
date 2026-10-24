@@ -3717,7 +3717,7 @@
     "jornada": 10,
     "puntos": null,
     "rival": 8,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -3822,7 +3822,7 @@
     "jornada": 10,
     "puntos": null,
     "rival": 8,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -4915,11 +4915,11 @@
   "goles": 0,
   "tarjetas": 1,
   "mediaCasa": 2.2,
-  "mediaFuera": 3,
+  "mediaFuera": 1.5,
   "edad": 29,
   "titular": null,
   "titularidades": 5,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 1,
@@ -4990,11 +4990,20 @@
      "yellow",
      "sub_in"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": 0,
+    "rival": 1490,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-24",
-  "partidos": 2
+  "partidos": 3
  },
  "7893": {
   "nombre": "Antonio Sivera",
@@ -6506,13 +6515,13 @@
   "nombre": "Javi Puado",
   "posicion": 4,
   "goles": 0,
-  "tarjetas": 0,
+  "tarjetas": 1,
   "mediaCasa": 2,
-  "mediaFuera": 0,
+  "mediaFuera": 2,
   "edad": 28,
   "titular": null,
   "titularidades": 0,
-  "suplencias": 1,
+  "suplencias": 2,
   "jornadas": [
    {
     "jornada": 6,
@@ -6536,11 +6545,21 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": 2,
+    "rival": 1490,
+    "como": "banquillo",
+    "eventos": [
+     "yellow",
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-24",
-  "partidos": 1
+  "partidos": 2
  },
  "14670": {
   "nombre": "Thibaut Courtois",
@@ -8154,12 +8173,12 @@
   "nombre": "Pol Lozano",
   "posicion": 3,
   "goles": 0,
-  "tarjetas": 1,
+  "tarjetas": 2,
   "mediaCasa": 2.7,
-  "mediaFuera": 1.5,
+  "mediaFuera": 1.7,
   "edad": 27,
-  "titular": true,
-  "titularidades": 2,
+  "titular": null,
+  "titularidades": 3,
   "suplencias": 3,
   "jornadas": [
    {
@@ -8231,11 +8250,21 @@
     "rival": 2,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": 2,
+    "rival": 1490,
+    "como": "inicio",
+    "eventos": [
+     "yellow",
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-24",
-  "partidos": 3
+  "partidos": 4
  },
  "17614": {
   "nombre": "Kike Barja",
@@ -12216,11 +12245,11 @@
   "posicion": 4,
   "goles": 1,
   "tarjetas": 0,
-  "mediaCasa": 5,
+  "mediaCasa": 4.8,
   "mediaFuera": 0.5,
   "edad": 27,
   "titular": null,
-  "titularidades": 3,
+  "titularidades": 4,
   "suplencias": 2,
   "jornadas": [
    {
@@ -12277,7 +12306,7 @@
    },
    {
     "jornada": 10,
-    "puntos": null,
+    "puntos": 4,
     "rival": 8,
     "como": "inicio",
     "eventos": [
@@ -12287,7 +12316,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-24",
-  "partidos": 2
+  "partidos": 3
  },
  "27517": {
   "nombre": "Isi Palazón",
@@ -14251,10 +14280,10 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 9,
-  "mediaFuera": 4,
+  "mediaFuera": 6,
   "edad": 25,
-  "titular": true,
-  "titularidades": 2,
+  "titular": null,
+  "titularidades": 3,
   "suplencias": 0,
   "jornadas": [
    {
@@ -14319,11 +14348,18 @@
     "rival": 2,
     "como": "inicio",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": 8,
+    "rival": 1490,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-24",
-  "partidos": 2
+  "partidos": 3
  },
  "29169": {
   "nombre": "Pablo Ibáñez",
@@ -23246,7 +23282,7 @@
   "mediaCasa": 4,
   "mediaFuera": 4.8,
   "edad": 19,
-  "titular": true,
+  "titular": null,
   "titularidades": 2,
   "suplencias": 6,
   "jornadas": [
@@ -24187,7 +24223,7 @@
     "jornada": 10,
     "puntos": null,
     "rival": 1490,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -24238,11 +24274,11 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 4,
-  "mediaCasa": 3,
+  "mediaCasa": 3.5,
   "mediaFuera": 2.8,
   "edad": 25,
   "titular": null,
-  "titularidades": 6,
+  "titularidades": 7,
   "suplencias": 1,
   "jornadas": [
    {
@@ -24320,7 +24356,7 @@
    },
    {
     "jornada": 10,
-    "puntos": null,
+    "puntos": 5,
     "rival": 8,
     "como": "inicio",
     "eventos": [
@@ -32571,7 +32607,7 @@
     "jornada": 10,
     "puntos": null,
     "rival": 8,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -32670,12 +32706,12 @@
   "posicion": 3,
   "goles": 1,
   "tarjetas": 0,
-  "mediaCasa": 1.5,
+  "mediaCasa": 1.4,
   "mediaFuera": 5.5,
   "edad": 23,
   "titular": null,
   "titularidades": 1,
-  "suplencias": 5,
+  "suplencias": 6,
   "jornadas": [
    {
     "jornada": 1,
@@ -32751,6 +32787,15 @@
     "rival": 50,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": 1,
+    "rival": 8,
+    "como": "banquillo",
+    "eventos": [
+     "sub_in"
+    ]
    }
   ],
   "asistencias": 0,
@@ -32916,12 +32961,12 @@
   "nombre": "Jorge Salinas",
   "posicion": 2,
   "goles": 0,
-  "tarjetas": 4,
-  "mediaCasa": 4,
+  "tarjetas": 5,
+  "mediaCasa": 4.2,
   "mediaFuera": 1.4,
   "edad": 19,
   "titular": null,
-  "titularidades": 8,
+  "titularidades": 9,
   "suplencias": 1,
   "jornadas": [
    {
@@ -33001,10 +33046,12 @@
    },
    {
     "jornada": 10,
-    "puntos": null,
+    "puntos": 5,
     "rival": 8,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "yellow"
+    ]
    }
   ],
   "asistencias": 1,
@@ -33097,7 +33144,7 @@
     "jornada": 10,
     "puntos": null,
     "rival": 8,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -33110,11 +33157,11 @@
   "posicion": 2,
   "goles": 0,
   "tarjetas": 3,
-  "mediaCasa": 2.5,
+  "mediaCasa": 2.6,
   "mediaFuera": 1.5,
   "edad": 26,
   "titular": null,
-  "titularidades": 8,
+  "titularidades": 9,
   "suplencias": 0,
   "jornadas": [
    {
@@ -33192,7 +33239,7 @@
    },
    {
     "jornada": 10,
-    "puntos": null,
+    "puntos": 3,
     "rival": 8,
     "como": "inicio",
     "eventos": [
@@ -35834,7 +35881,7 @@
     "jornada": 10,
     "puntos": null,
     "rival": 8,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -35850,7 +35897,7 @@
   "mediaCasa": 3.3,
   "mediaFuera": 3,
   "edad": 26,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
@@ -36288,6 +36335,13 @@
     "rival": 1,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -36386,10 +36440,10 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 1.5,
-  "mediaFuera": 2.5,
+  "mediaFuera": 2,
   "edad": 24,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 2,
   "jornadas": [
    {
@@ -36461,7 +36515,7 @@
    },
    {
     "jornada": 10,
-    "puntos": null,
+    "puntos": 1,
     "rival": 1490,
     "como": "inicio",
     "eventos": []
@@ -36469,7 +36523,7 @@
   ],
   "asistencias": 0,
   "dia": "2026-10-24",
-  "partidos": 3
+  "partidos": 4
  },
  "71141": {
   "nombre": "Jean Ives Valou",
@@ -36635,6 +36689,13 @@
     "rival": 1,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -36731,7 +36792,7 @@
     "jornada": 10,
     "puntos": null,
     "rival": 1490,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -37972,7 +38033,7 @@
     "jornada": 10,
     "puntos": null,
     "rival": 1490,
-    "como": "inicio",
+    "como": "no jugó",
     "eventos": []
    }
   ],
@@ -38399,7 +38460,7 @@
   "mediaCasa": 5.7,
   "mediaFuera": 4.5,
   "edad": 36,
-  "titular": true,
+  "titular": null,
   "titularidades": 5,
   "suplencias": 0,
   "jornadas": [
@@ -39583,10 +39644,10 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 3,
-  "mediaFuera": 2,
+  "mediaFuera": 2.7,
   "edad": 26,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 2,
   "jornadas": [
    {
@@ -39660,10 +39721,12 @@
    },
    {
     "jornada": 10,
-    "puntos": null,
+    "puntos": 4,
     "rival": 1490,
     "como": "inicio",
-    "eventos": []
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
@@ -40607,6 +40670,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 19,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -40618,11 +40688,11 @@
   "posicion": 3,
   "goles": 0,
   "tarjetas": 0,
-  "mediaCasa": 2.3,
+  "mediaCasa": 2.5,
   "mediaFuera": 2.3,
   "edad": 22,
   "titular": null,
-  "titularidades": 5,
+  "titularidades": 6,
   "suplencias": 1,
   "jornadas": [
    {
@@ -40698,7 +40768,7 @@
    },
    {
     "jornada": 10,
-    "puntos": null,
+    "puntos": 3,
     "rival": 8,
     "como": "inicio",
     "eventos": [
@@ -41845,11 +41915,11 @@
   "posicion": 2,
   "goles": 1,
   "tarjetas": 1,
-  "mediaCasa": 3,
+  "mediaCasa": 5.3,
   "mediaFuera": 0.3,
   "edad": 21,
   "titular": null,
-  "titularidades": 4,
+  "titularidades": 5,
   "suplencias": 1,
   "jornadas": [
    {
@@ -41921,7 +41991,7 @@
    },
    {
     "jornada": 10,
-    "puntos": null,
+    "puntos": 10,
     "rival": 8,
     "como": "inicio",
     "eventos": [
@@ -42017,6 +42087,13 @@
     "eventos": [
      "sub_in"
     ]
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -43011,6 +43088,13 @@
     "rival": 1,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 20,
+    "como": "inicio",
+    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -43094,6 +43178,13 @@
     "puntos": null,
     "rival": 1,
     "como": "no jugó",
+    "eventos": []
+   },
+   {
+    "jornada": 10,
+    "puntos": null,
+    "rival": 20,
+    "como": "inicio",
     "eventos": []
    }
   ],
@@ -43252,13 +43343,6 @@
     "puntos": null,
     "rival": 2,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 1490,
-    "como": "inicio",
     "eventos": []
    }
   ],

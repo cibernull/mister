@@ -1,6 +1,14 @@
 {
- "saldo": 6055441,
+ "saldo": 5427441,
  "apuntes": [
+  {
+   "cuando": 1792859211,
+   "fecha": "2026-10-24 18:26",
+   "motivo": "Modificación de cláusula (200%) de Roy Revivo",
+   "tipo": "Penalización",
+   "importe": -628000,
+   "saldo": 5427441
+  },
   {
    "cuando": 1792856528,
    "fecha": "2026-10-24 17:42",
@@ -472,14 +480,6 @@
    "tipo": "Penalización",
    "importe": -352800,
    "saldo": -5503450
-  },
-  {
-   "cuando": 1789959600,
-   "fecha": "2026-09-21 05:00",
-   "motivo": "Alex Freeman a Mister",
-   "tipo": "Compra",
-   "importe": -1391150,
-   "saldo": -5150650
   }
  ]
 }

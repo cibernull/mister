@@ -1,12 +1,12 @@
 {
- "cuando": "2026-10-24T16:07:58.770Z",
+ "cuando": "2026-10-24T16:36:45.432Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "24/10",
-   "titulo": "Sigue en directo el Racing - Espanyol",
-   "url": "https://www.futbolfantasy.com/partidos/22519-racing-espanyol",
+   "titulo": "Sigue en directo el Valencia - Villarreal",
+   "url": "https://www.futbolfantasy.com/partidos/22522-valencia-villarreal",
    "categoria": "análisis"
   },
   {
@@ -35,6 +35,30 @@
   },
   {
    "fecha": "24/10",
+   "titulo": "El Racing agravia el calvario de Manolo",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153468-el-racing-agravia-el-calvario-de-manolo",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Jornada 10: Racing 2-1 Espanyol. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22519-racing-espanyol",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Jorge Salinas se pierde la visita del Real Madrid por acumulación de tarjetas",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153467-jorge-salinas-se-pierde-la-visita-del-real-madrid-por-acumulacion-de-tarjetas",
+   "categoria": "sanción"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Lemar se afianza en la franja",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153466-lemar-se-afianza-en-la-franja",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "24/10",
    "titulo": "Íñigo Pérez habla de Anfield, el derbi, la falta de contundencia y el acierto",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153465-inigo-perez-habla-de-anfield-el-derbi-la-falta-de-contundencia-y-el-acierto",
    "categoria": "rueda de prensa"
@@ -44,12 +68,6 @@
    "titulo": "Prati se retira con molestias del partido contra el Espanyol",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153464-prati-se-retira-con-molestias-del-partido-contra-el-espanyol",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "24/10",
-   "titulo": "Alineaciones confirmadas del Valencia - Villarreal",
-   "url": "https://www.futbolfantasy.com/partidos/22522-valencia-villarreal",
-   "categoria": "rueda de prensa"
   },
   {
    "fecha": "24/10",
@@ -463,24 +481,6 @@
    "fecha": "23/10",
    "titulo": "Radio Vila-Real lanza su pronóstico del once de Íñigo Pérez para el derbi",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153393-radio-vila-real-lanza-su-pronostico-del-once-de-inigo-perez-para-el-derbi",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Manolo convoca a los disponibles para desplazarse a Santander",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153392-manolo-convoca-a-los-disponibles-para-desplazarse-a-santander",
-   "categoria": "convocatoria"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Zaid Romero y Mangala avanzan en sus procesos de recuperación y Enes Ünal recibe cuidados",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153391-zaid-romero-y-mangala-avanzan-en-sus-procesos-de-recuperacion",
-   "categoria": "entrenamiento"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Meriton vende casi la mitad del Valencia a Pitchwise, que aportará 100 millones de euros al club",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153390-meriton-vende-casi-la-mitad-del-valencia-a-pitchwise-y-aportara-100-millones-de-euros-al-club",
    "categoria": "rueda de prensa"
   }
  ]
