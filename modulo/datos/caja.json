@@ -1,6 +1,14 @@
 {
- "saldo": 655511,
+ "saldo": -1097939,
  "apuntes": [
+  {
+   "cuando": 1792810800,
+   "fecha": "2026-10-24 05:00",
+   "motivo": "Giovani Lo Celso a Mister",
+   "tipo": "Compra",
+   "importe": -1753450,
+   "saldo": -1097939
+  },
   {
    "cuando": 1792771475,
    "fecha": "2026-10-23 18:04",
@@ -472,14 +480,6 @@
    "tipo": "Compra",
    "importe": -28208876,
    "saldo": -24957500
-  },
-  {
-   "cuando": 1789862260,
-   "fecha": "2026-09-20 01:57",
-   "motivo": "Oriol Rey a Mister",
-   "tipo": "Venta",
-   "importe": 1311440,
-   "saldo": 3251376
   }
  ]
 }
