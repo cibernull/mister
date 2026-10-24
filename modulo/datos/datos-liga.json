@@ -1404,9 +1404,24 @@
    "id": "14432",
    "nombre": "Javi Puado",
    "valor": 1368000
+  },
+  {
+   "id": "15109",
+   "nombre": "Giovani Lo Celso",
+   "valor": 1780000
   }
  ],
  "movimientos": [
+  {
+   "id": "15109",
+   "nombre": "Giovani Lo Celso",
+   "de": null,
+   "a": "Niutin FC (Isaac)",
+   "importe": 1753450,
+   "tipo": "normal",
+   "fecha": "2026-10-24 05:00:19",
+   "pos": 3
+  },
   {
    "id": "4947929",
    "nombre": "Emil Audero",
@@ -8118,6 +8133,14 @@
   "Niutin FC (Isaac)": {
    "movimientos": [
     {
+     "j": "Giovani Lo Celso",
+     "id": "15109",
+     "tipo": "compra",
+     "importe": 1753450,
+     "fecha": "2026-10-24",
+     "op": "normal"
+    },
+    {
      "j": "Emil Audero",
      "id": "4947929",
      "tipo": "venta",
@@ -9154,6 +9177,12 @@
      "compras": 9533010,
      "ventas": 10506000,
      "ops": 2
+    },
+    "15109": {
+     "nombre": "Giovani Lo Celso",
+     "compras": 1753450,
+     "ventas": 0,
+     "ops": 1
     },
     "15344": {
      "nombre": "Brahim Díaz",

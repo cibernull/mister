@@ -10310,8 +10310,8 @@
   "semana": 109000,
   "sem7": 765000,
   "mes": 2229000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 2955000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -10414,8 +10414,8 @@
   "semana": -88000,
   "sem7": -752000,
   "mes": -3944000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 6042000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -13270,8 +13270,8 @@
   "semana": 64000,
   "sem7": 587000,
   "mes": 2500000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 4526000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -15578,8 +15578,8 @@
   "semana": 36000,
   "sem7": -40000,
   "mes": 1057000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 5126000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -17117,8 +17117,8 @@
   "semana": -52000,
   "sem7": -428000,
   "mes": -2251000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 1025000,
   "ced": 0,
   "pos": 3,
   "est": "injury",
@@ -19411,8 +19411,8 @@
   "semana": -71000,
   "sem7": -616000,
   "mes": 315000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 3963000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -25364,8 +25364,8 @@
   "semana": 81000,
   "sem7": 424000,
   "mes": -2436000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 7963000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -32526,8 +32526,8 @@
   "semana": -37000,
   "sem7": -336000,
   "mes": -1936000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 467000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -38353,8 +38353,8 @@
   "semana": 27000,
   "sem7": 13000,
   "mes": 22000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 198000,
   "ced": 0,
   "pos": 2,
   "est": null,
@@ -42937,7 +42937,7 @@
   "pos": 4,
   "est": null,
   "bl": 0,
-  "sub": 0,
+  "sub": 2,
   "racha": [
    null,
    null,
@@ -44627,8 +44627,8 @@
   "semana": 10000,
   "sem7": 15000,
   "mes": 12000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 206000,
   "ced": 0,
   "pos": 3,
   "est": null,
@@ -45430,46 +45430,6 @@
   "d": 1
  },
  {
-  "id": "64496",
-  "nombre": "Roony Bardghji",
-  "valor": 204000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": 26000,
-  "sem7": 44000,
-  "mes": 44000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 4,
-  "est": "injury",
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 3,
-  "riv": 15,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 20,
-  "js": [],
-  "p": 0,
-  "d": 1
- },
- {
   "id": "65188",
   "nombre": "Thiago Pitarch",
   "valor": 204000,
@@ -45539,20 +45499,20 @@
   "d": 1
  },
  {
-  "id": "4947925",
-  "nombre": "Brian Fariñas",
-  "valor": 203000,
+  "id": "64496",
+  "nombre": "Roony Bardghji",
+  "valor": 204000,
   "puntos": 0,
   "media": 0,
   "partidos": 0,
   "semana": 26000,
-  "sem7": 7000,
-  "mes": 30000,
+  "sem7": 44000,
+  "mes": 44000,
   "mk": 0,
   "pv": null,
   "ced": 0,
-  "pos": 3,
-  "est": null,
+  "pos": 4,
+  "est": "injury",
   "bl": 0,
   "sub": 0,
   "racha": [
@@ -45574,71 +45534,7 @@
   "once": null,
   "asis": 0,
   "edad": 20,
-  "js": [
-   [
-    1,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    12,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    4,
-    0,
-    ""
-   ]
-  ],
+  "js": [],
   "p": 0,
   "d": 1
  },
@@ -45772,6 +45668,110 @@
     9,
     null,
     23,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 1
+ },
+ {
+  "id": "4947925",
+  "nombre": "Brian Fariñas",
+  "valor": 203000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": 26000,
+  "sem7": 7000,
+  "mes": 30000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 3,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 3,
+  "riv": 15,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 20,
+  "js": [
+   [
+    1,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    12,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    4,
     0,
     ""
    ]
@@ -46611,8 +46611,8 @@
   "semana": 4000,
   "sem7": 26000,
   "mes": 2000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 186000,
   "ced": 0,
   "pos": 2,
   "est": "injury",
@@ -47255,8 +47255,8 @@
   "semana": 14000,
   "sem7": 14000,
   "mes": 14000,
-  "mk": 0,
-  "pv": null,
+  "mk": 1,
+  "pv": 174000,
   "ced": 0,
   "pos": 1,
   "est": null,
@@ -49848,214 +49848,6 @@
   "d": 0
  },
  {
-  "id": "61410",
-  "nombre": "Adrián Rodríguez",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -21000,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 48,
-  "riv": 3,
-  "casa": 0,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 25,
-  "js": [
-   [
-    1,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    14,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    20,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    5,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "6035",
-  "nombre": "Iván Villar",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -16000,
-  "sem7": 0,
-  "mes": -26000,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 5,
-  "riv": 4,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 29,
-  "js": [
-   [
-    1,
-    null,
-    50,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    19,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    1,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    9,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    13,
-    0,
-    ""
-   ],
-   [
-    6,
-    null,
-    16,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    1490,
-    0,
-    ""
-   ],
-   [
-    8,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    48,
-    0,
-    ""
-   ]
-  ],
-  "p": 0,
-  "d": 0
- },
- {
   "id": "64410",
   "nombre": "Alejandro Iturbe",
   "valor": 160000,
@@ -50264,6 +50056,110 @@
   "d": 0
  },
  {
+  "id": "61410",
+  "nombre": "Adrián Rodríguez",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -21000,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 48,
+  "riv": 3,
+  "casa": 0,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 25,
+  "js": [
+   [
+    1,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    14,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    20,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    5,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
   "id": "71003",
   "nombre": "Diego Murillo",
   "valor": 160000,
@@ -50359,6 +50255,200 @@
     2,
     null,
     17,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    2,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    48,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    19,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "6035",
+  "nombre": "Iván Villar",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -16000,
+  "sem7": 0,
+  "mes": -26000,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 5,
+  "riv": 4,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 29,
+  "js": [
+   [
+    1,
+    null,
+    50,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    19,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    1,
+    0,
+    ""
+   ],
+   [
+    4,
+    null,
+    9,
+    0,
+    ""
+   ],
+   [
+    5,
+    null,
+    13,
+    0,
+    ""
+   ],
+   [
+    6,
+    null,
+    16,
+    0,
+    ""
+   ],
+   [
+    7,
+    null,
+    1490,
+    0,
+    ""
+   ],
+   [
+    8,
+    null,
+    23,
+    0,
+    ""
+   ],
+   [
+    9,
+    null,
+    48,
+    0,
+    ""
+   ]
+  ],
+  "p": 0,
+  "d": 0
+ },
+ {
+  "id": "59089",
+  "nombre": "Alex Padilla",
+  "valor": 160000,
+  "puntos": 0,
+  "media": 0,
+  "partidos": 0,
+  "semana": -29000,
+  "sem7": 0,
+  "mes": 0,
+  "mk": 0,
+  "pv": null,
+  "ced": 0,
+  "pos": 1,
+  "est": null,
+  "bl": 0,
+  "sub": 0,
+  "racha": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "eq": 1,
+  "riv": 9,
+  "casa": 1,
+  "gol": 0,
+  "tar": 0,
+  "mc": 0,
+  "mf": 0,
+  "tit": 0,
+  "sup": 0,
+  "once": null,
+  "asis": 0,
+  "edad": 23,
+  "js": [
+   [
+    1,
+    null,
+    3,
+    0,
+    ""
+   ],
+   [
+    2,
+    null,
+    17,
+    0,
+    ""
+   ],
+   [
+    3,
+    null,
+    5,
     0,
     ""
    ],
@@ -50687,96 +50777,6 @@
   "asis": 0,
   "edad": 30,
   "js": [],
-  "p": 0,
-  "d": 0
- },
- {
-  "id": "59089",
-  "nombre": "Alex Padilla",
-  "valor": 160000,
-  "puntos": 0,
-  "media": 0,
-  "partidos": 0,
-  "semana": -29000,
-  "sem7": 0,
-  "mes": 0,
-  "mk": 0,
-  "pv": null,
-  "ced": 0,
-  "pos": 1,
-  "est": null,
-  "bl": 0,
-  "sub": 0,
-  "racha": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
-  "eq": 1,
-  "riv": 9,
-  "casa": 1,
-  "gol": 0,
-  "tar": 0,
-  "mc": 0,
-  "mf": 0,
-  "tit": 0,
-  "sup": 0,
-  "once": null,
-  "asis": 0,
-  "edad": 23,
-  "js": [
-   [
-    1,
-    null,
-    3,
-    0,
-    ""
-   ],
-   [
-    2,
-    null,
-    17,
-    0,
-    ""
-   ],
-   [
-    3,
-    null,
-    5,
-    0,
-    ""
-   ],
-   [
-    4,
-    null,
-    2,
-    0,
-    ""
-   ],
-   [
-    5,
-    null,
-    23,
-    0,
-    ""
-   ],
-   [
-    7,
-    null,
-    48,
-    0,
-    ""
-   ],
-   [
-    9,
-    null,
-    19,
-    0,
-    ""
-   ]
-  ],
   "p": 0,
   "d": 0
  },

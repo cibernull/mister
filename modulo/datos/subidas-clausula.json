@@ -367,5 +367,14 @@
   "escalones": -3,
   "antes": 4,
   "despues": 2.5
+ },
+ {
+  "idJugador": "14432",
+  "equipo": "Mario80",
+  "dia": "2026-10-24",
+  "coste": 547200,
+  "escalones": 2,
+  "antes": 1.5,
+  "despues": 2.5
  }
 ]

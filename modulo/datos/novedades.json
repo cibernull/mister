@@ -80,6 +80,81 @@
  },
  {
   "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "4775",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "5916",
+  "entra": true
+ },
+ {
+  "tipo": "clausula",
+  "dia": "2026-10-24",
+  "id": "14432",
+  "equipo": "Mario80",
+  "escalones": 2,
+  "coste": 547200,
+  "clausula": 3420000
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "27855",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "28776",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "29403",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "33896",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "59484",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "63788",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "64562",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "65179",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
+  "dia": "2026-10-24",
+  "id": "70934",
+  "entra": true
+ },
+ {
+  "tipo": "mercado",
   "dia": "2026-10-23",
   "id": "11472",
   "entra": true
