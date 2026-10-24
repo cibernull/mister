@@ -1844,6 +1844,11 @@
     "cuando": "2026-10-23T19:00:00.000Z",
     "local": 48,
     "visitante": 13
+   },
+   {
+    "cuando": "2026-10-24T12:00:00.000Z",
+    "local": 14,
+    "visitante": 23
    }
   ],
   "puntos": 2,
@@ -1902,16 +1907,16 @@
     "id": "27517",
     "nombre": "Isi Palazón",
     "puesto": 3,
-    "puntos": null,
-    "jugo": false,
+    "puntos": 1,
+    "jugo": true,
     "capitan": false
    },
    {
     "id": "17290",
     "nombre": "Sergio Camello",
     "puesto": 4,
-    "puntos": null,
-    "jugo": false,
+    "puntos": 1,
+    "jugo": true,
     "capitan": false
    },
    {
@@ -1992,8 +1997,8 @@
     "id": "4836165",
     "nombre": "Roy Revivo",
     "puesto": 2,
-    "puntos": 2,
-    "jugo": false,
+    "puntos": 4,
+    "jugo": true,
     "capitan": false
    },
    {

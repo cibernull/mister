@@ -1205,8 +1205,8 @@
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-20",
-  "partidos": 3
+  "dia": "2026-10-24",
+  "partidos": 2
  },
  "270": {
   "nombre": "Rubén García",
@@ -3177,13 +3177,6 @@
     "puntos": null,
     "rival": 20,
     "como": "no jugó",
-    "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
     "eventos": []
    }
   ],
@@ -12262,10 +12255,10 @@
   "goles": 0,
   "tarjetas": 0,
   "mediaCasa": 1,
-  "mediaFuera": 6,
+  "mediaFuera": 4,
   "edad": 31,
   "titular": null,
-  "titularidades": 2,
+  "titularidades": 3,
   "suplencias": 0,
   "jornadas": [
    {
@@ -12292,11 +12285,20 @@
     "rival": 8,
     "como": "no jugó",
     "eventos": []
+   },
+   {
+    "jornada": 9,
+    "puntos": 2,
+    "rival": 9,
+    "como": "inicio",
+    "eventos": [
+     "sub_out"
+    ]
    }
   ],
   "asistencias": 0,
-  "dia": "2026-10-19",
-  "partidos": 1
+  "dia": "2026-10-24",
+  "partidos": 2
  },
  "27518": {
   "nombre": "Óscar Valentín",
@@ -21831,13 +21833,6 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 23,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -27869,20 +27864,11 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 23,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-24",
-  "partidos": 0
+  "partidos": 1
  },
  "65111": {
   "nombre": "Odysseas Vlachodimos",
@@ -39017,16 +39003,6 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 14,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in",
-     "assist"
-    ]
    }
   ],
   "asistencias": 1,
@@ -39285,15 +39261,6 @@
     "jornada": 9,
     "puntos": 4,
     "rival": 9,
-    "como": "banquillo",
-    "eventos": [
-     "sub_in"
-    ]
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 23,
     "como": "banquillo",
     "eventos": [
      "sub_in"
@@ -40746,13 +40713,6 @@
     "rival": 9,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 23,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -41250,13 +41210,6 @@
     "rival": 20,
     "como": "no jugó",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
@@ -41438,13 +41391,6 @@
     "eventos": [
      "yellow"
     ]
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 14,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 2,
@@ -42351,18 +42297,11 @@
     "rival": 9,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 23,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-24",
-  "partidos": 4
+  "partidos": 5
  },
  "4947930": {
   "nombre": "Jens-Lys Cajuste",
@@ -42603,18 +42542,11 @@
     "rival": 9,
     "como": "inicio",
     "eventos": []
-   },
-   {
-    "jornada": 10,
-    "puntos": null,
-    "rival": 23,
-    "como": "inicio",
-    "eventos": []
    }
   ],
   "asistencias": 0,
   "dia": "2026-10-24",
-  "partidos": 4
+  "partidos": 5
  },
  "5235247": {
   "nombre": "Xanet Olaiz",

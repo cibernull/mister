@@ -1,13 +1,13 @@
 {
- "cuando": "2026-10-24T13:38:00.003Z",
+ "cuando": "2026-10-24T14:07:59.857Z",
  "fuente": "futbolfantasy.com",
  "url": "https://www.futbolfantasy.com/laliga/noticias",
  "noticias": [
   {
    "fecha": "24/10",
-   "titulo": "Sigue en directo el Rayo - Elche",
-   "url": "https://www.futbolfantasy.com/partidos/22518-rayo-elche",
-   "categoria": "análisis"
+   "titulo": "Alineaciones confirmadas del Racing - Espanyol",
+   "url": "https://www.futbolfantasy.com/partidos/22519-racing-espanyol",
+   "categoria": "rueda de prensa"
   },
   {
    "fecha": "02/09",
@@ -35,6 +35,30 @@
   },
   {
    "fecha": "24/10",
+   "titulo": "Jornada 10: Rayo 0-3 Elche. Estadísticas y puntos fantasy",
+   "url": "https://www.futbolfantasy.com/partidos/22518-rayo-elche",
+   "categoria": "partido"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Pellegrini saca a la luz el problema de ansiedad de Antony",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153457-pellegrini-saca-a-la-luz-el-problema-de-ansiedad-de-antony",
+   "categoria": "análisis"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "Manolo destaca la importancia del partido, las virtudes del Racing y analiza los goles encajados",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153456-manolo-destaca-la-importancia-del-partido-las-virtudes-del-racing-y-analiza-los-goles-encajad",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "24/10",
+   "titulo": "José Alberto, sobre los goles encajados, la posición de Canales y el reencuentro con Roberto",
+   "url": "https://www.futbolfantasy.com/laliga/noticias/153455-jose-alberto-sobre-los-goles-encajados-la-posicion-de-canales-y-el-reencuentro-con-roberto",
+   "categoria": "rueda de prensa"
+  },
+  {
+   "fecha": "24/10",
    "titulo": "El Getafe avanza negociaciones con Jadon Sancho",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153454-el-getafe-avanza-negociaciones-con-jadon-sancho",
    "categoria": "mercado"
@@ -44,12 +68,6 @@
    "titulo": "Fer Niño se retira de Vallecas con problemas lumbares",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153453-fer-nino-se-retira-de-vallecas-con-problemas-lumbares",
    "categoria": "lesión"
-  },
-  {
-   "fecha": "24/10",
-   "titulo": "Alineaciones confirmadas del Racing - Espanyol",
-   "url": "https://www.futbolfantasy.com/partidos/22519-racing-espanyol",
-   "categoria": "rueda de prensa"
   },
   {
    "fecha": "24/10",
@@ -131,7 +149,7 @@
   },
   {
    "fecha": "24/10",
-   "titulo": "Pellegrini habla de Cucho, Junior, Ceballos, Bellerín, Bernal, Roca, Isco, Lo Celso y el Celta",
+   "titulo": "Pellegrini habla de Cucho, Junior, Ceballos, Bellerín, Bernal, Roca, Fran García, Isco, Antony, Lo Celso y el Celta",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153438-pellegrini-habla-de-cucho-junior-ceballos-bellerin-bernal-roca-isco-lo-celso-y-el-celta",
    "categoria": "rueda de prensa"
   },
@@ -464,24 +482,6 @@
    "titulo": "À Punt apuesta por Rioja y Otorbi como únicas novedades en el once para el derbi",
    "url": "https://www.futbolfantasy.com/laliga/noticias/153382-a-punt-apuesta-por-rioja-y-otorbi-como-unicas-novedades-en-el-once-para-el-derbi",
    "categoria": "análisis"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Parte médico oficial de Enzo Bardeli",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153381-parte-medico-oficial-de-enzo-bardeli",
-   "categoria": "lesión"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "Aguirre habla de Copete, Foulquier, Sadiq, Canós, Diego López, Elliott, Pepelu, Guerra y el Villarreal",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153380-aguirre-habla-de-copete-foulquier-sadiq-canos-diego-lopez-elliott-pepelu-guerra-y-el-villarre",
-   "categoria": "rueda de prensa"
-  },
-  {
-   "fecha": "23/10",
-   "titulo": "José Alberto cita a todos los disponibles para recibir al Espanyol",
-   "url": "https://www.futbolfantasy.com/laliga/noticias/153379-jose-alberto-cita-a-todos-los-disponibles-para-recibir-al-espanyol",
-   "categoria": "convocatoria"
   }
  ]
 }
